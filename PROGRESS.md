@@ -1,5 +1,14 @@
 # Progress
 
+## 2026-06 (session 2)
+
+- Rewrote `web/js/lessons.js` to follow SGK Toán 9 – Kết nối tri thức (Tập 1) exactly: 5 chapters, Bài 1–17, book-wording definitions, SGK examples.
+- Added pedagogy layer per lesson: tình huống mở đầu, hiểu nhanh (`.idea`), sai lầm thường gặp (`.warn`), cách nhớ (`.memory`), tự kiểm tra (`.check`), 18 inline SVG figures, hints on all 51 exercises.
+- Added login gate: hard-coded accounts in `web/js/users.js`; per-user progress in `localStorage` (`htoan9.byUser.<user>`); old progress migrated on first login; nav + logout via header button.
+- Restyled figures to 3Blue1Brown look using official manim palette (`manimlib/default_config.yml`): `#333333` camera background, GREY_A strokes, BLUE_C/RED_C/YELLOW_C/GREEN_C/PURPLE_C accents; site accents (BLUE_E links, GOLD_C stamps, YELLOW_E definition bars).
+- Added video slots: `web/js/videos.js` maps lesson id → YouTube ID (Unlisted); lesson page embeds `youtube-nocookie.com` in a 16:9 manim-dark frame only after login. YouTube cannot hard-lock to a domain — Unlisted + site login is the practical combo.
+- `.gitignore`: `images/` (book page PNGs) and `*.pdf` (textbook) stay local.
+
 ## 2026-03-22
 
 - Initialized a local Git repository on `main`.

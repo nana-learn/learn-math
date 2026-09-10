@@ -1,13 +1,21 @@
 :root {
+  /* Trang đọc: giấy ấm. Hình vẽ: palette 3b1b/manim (default_config.yml). */
   --paper: #f4efe4;
   --ink: #1f1a16;
   --muted: #5c534c;
   --line: #ddd4c6;
   --card: #fffaf2;
-  --accent: #b42318;
-  --leaf: #3f6b32;
-  --stamp: #e8d9c4;
+  --accent: #1c758a;          /* BLUE_E */
+  --leaf: #83c167;            /* GREEN_C */
+  --stamp: #f0ac5f;           /* GOLD_C */
   --shadow: 0 10px 30px rgba(60, 40, 20, 0.08);
+  --manim-bg: #333333;
+  --manim-blue: #58c4dd;
+  --manim-teal: #5cd0b3;
+  --manim-yellow: #ffff00;
+  --manim-red: #fc6255;
+  --manim-grey-a: #dddddd;
+  --manim-grey-b: #bbbbbb;
 }
 
 * { box-sizing: border-box; }
@@ -95,7 +103,7 @@ main {
 
 .btn {
   display: inline-block;
-  background: var(--ink);
+  background: var(--manim-bg);
   color: #fffaf2;
   padding: 0.65rem 1rem;
   border-radius: 999px;
@@ -143,7 +151,7 @@ main {
 .stamp {
   display: inline-block;
   background: var(--stamp);
-  color: #5a4632;
+  color: #2a1f12;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -193,6 +201,130 @@ main {
   border-radius: 0 12px 12px 0;
 }
 
+/* Hộp định nghĩa/định lí bám theo khung vàng trong SGK */
+.definition {
+  background: #fdf7dc;
+  border-left: 4px solid #e8c11c; /* YELLOW_E */
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Hiểu nhanh — giải thích theo ngôn ngữ đời thường */
+.idea {
+  background: #eef7fa;
+  border-left: 4px solid var(--manim-blue);
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Sai lầm thường gặp */
+.warn {
+  background: #fdeeea;
+  border-left: 4px solid var(--manim-red);
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Cách nhớ */
+.memory {
+  background: #f3eefb;
+  border-left: 4px solid #9a72ac; /* PURPLE_C */
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Hình vẽ: camera Manim (nền #333, nét GREY_A, điểm vàng/xanh) */
+.figure {
+  margin: 1.1rem auto;
+  text-align: center;
+  background: var(--manim-bg);
+  border-radius: 16px;
+  padding: 1.15rem 0.9rem 0.85rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+}
+.figure svg {
+  max-width: 100%;
+  height: auto;
+  font-family: "Latin Modern Roman", "CMU Serif", "Times New Roman", serif;
+}
+.figure svg text:not([fill]) { fill: var(--manim-grey-a); }
+.figure figcaption {
+  color: var(--manim-grey-b);
+  font-size: 0.9rem;
+  margin-top: 0.55rem;
+}
+.figure figcaption .katex { color: var(--manim-grey-a); }
+
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.panel {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 0.55rem 0.7rem 0.45rem;
+  text-align: center;
+}
+.panel p { margin: 0.35rem 0 0; font-size: 0.85rem; color: var(--manim-grey-b); }
+.panel p .katex { color: var(--manim-grey-a); }
+
+/* Gợi ý trong bài tập + tự kiểm tra trong bài học */
+details.hint, details.check { margin: 0.5rem 0; }
+details.hint summary, details.check summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+details.check {
+  background: var(--card);
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 0.6rem 0.9rem;
+}
+
+.article table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  background: #fff;
+}
+
+.article th,
+.article td {
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.85rem;
+  text-align: center;
+}
+
+.article th { background: #f3eade; }
+
+.watch {
+  margin: 1.6rem 0 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--line);
+}
+.watch h2 { margin: 0 0 0.7rem; letter-spacing: -0.03em; }
+.video {
+  background: var(--manim-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+}
+.video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .quiz {
   margin-top: 1.6rem;
   padding-top: 0.4rem;
@@ -231,8 +363,8 @@ main {
 }
 
 .feedback { font-weight: 650; margin-top: 0.4rem; }
-.feedback.ok { color: var(--leaf); }
-.feedback.bad { color: var(--accent); }
+.feedback.ok { color: #3f6b32; }
+.feedback.bad { color: var(--manim-red); }
 
 .explain { color: var(--muted); font-size: 0.95rem; margin-top: 0.3rem; }
 
@@ -252,6 +384,52 @@ main {
   border-radius: 10px;
   border: 1px solid var(--line);
   font: inherit;
+}
+
+.login {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.8rem 1.5rem 1.6rem;
+  box-shadow: var(--shadow);
+  max-width: 26rem;
+  margin: 2.4rem auto;
+}
+
+.login h1 {
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.04em;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.1rem;
+}
+
+.login-form label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 650;
+  font-size: 0.95rem;
+}
+
+.login-form input {
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  font: inherit;
+  font-weight: 400;
+  background: #fff;
+}
+
+.login-form .btn { justify-self: start; margin-top: 0.2rem; }
+
+.login-error {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 650;
+  font-size: 0.95rem;
 }
 
 .foot {

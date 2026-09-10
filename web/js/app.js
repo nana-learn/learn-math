@@ -14,32 +14,81 @@ function saveState(state) {
 
 function getState() {
   const s = loadState();
-  if (!s.progress) s.progress = {};
+  if (!s.byUser) s.byUser = {};
+  if (s.progress) {
+    s._legacyProgress = s.progress;
+    delete s.progress;
+    saveState(s);
+  }
   return s;
 }
 
-function setName(name) {
+function findUser(username) {
+  const key = String(username || "").trim().toLowerCase();
+  return (typeof USERS !== "undefined" ? USERS : []).find(
+    (u) => u.user.toLowerCase() === key
+  );
+}
+
+function currentAccount() {
   const s = getState();
-  s.name = name.trim();
+  if (!s.authUser) return null;
+  return findUser(s.authUser) || null;
+}
+
+function userBucket() {
+  const s = getState();
+  const acc = currentAccount();
+  if (!acc) return { progress: {} };
+  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
+  if (!s.byUser[acc.user].progress) s.byUser[acc.user].progress = {};
+  return s.byUser[acc.user];
+}
+
+function login(username, password) {
+  const acc = findUser(username);
+  if (!acc || acc.pass !== String(password ?? "")) return false;
+  const s = getState();
+  s.authUser = acc.user;
+  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
+  if (
+    s._legacyProgress &&
+    Object.keys(s.byUser[acc.user].progress || {}).length === 0
+  ) {
+    s.byUser[acc.user].progress = s._legacyProgress;
+    delete s._legacyProgress;
+  }
   saveState(s);
-  renderWho();
+  return true;
+}
+
+function logout() {
+  const s = getState();
+  delete s.authUser;
+  saveState(s);
 }
 
 function markLesson(id, score, total) {
   const s = getState();
-  s.progress[id] = { score, total, at: Date.now() };
+  const acc = currentAccount();
+  if (!acc) return;
+  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
+  s.byUser[acc.user].progress[id] = { score, total, at: Date.now() };
   saveState(s);
 }
 
-function renderWho() {
+function setChrome(loggedIn) {
+  const nav = document.getElementById("main-nav");
   const btn = document.getElementById("who-btn");
-  const s = getState();
-  if (s.name) {
-    btn.hidden = false;
-    btn.textContent = s.name;
-  } else {
+  nav.hidden = !loggedIn;
+  if (!loggedIn) {
     btn.hidden = true;
+    return;
   }
+  const acc = currentAccount();
+  btn.hidden = false;
+  btn.textContent = acc ? acc.name : "Tài khoản";
+  btn.title = "Đăng xuất";
 }
 
 function typeset(el) {
@@ -58,29 +107,71 @@ function lessonById(id) {
   return LESSONS.find((l) => l.id === id);
 }
 
+function youtubeIdFor(lesson) {
+  const raw =
+    (typeof VIDEOS !== "undefined" && VIDEOS[lesson.id]) || lesson.youtube || "";
+  const id = String(raw).trim();
+  return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : "";
+}
+
+function videoBlock(lesson) {
+  const id = youtubeIdFor(lesson);
+  if (!id) return "";
+  const src =
+    "https://www.youtube-nocookie.com/embed/" +
+    encodeURIComponent(id) +
+    "?rel=0&modestbranding=1&playsinline=1";
+  return `
+    <section class="watch">
+      <h2>Xem giải thích</h2>
+      <div class="video">
+        <iframe
+          src="${src}"
+          title="Video bài ${lesson.num}"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </section>`;
+}
+
+function loginView() {
+  return `
+    <section class="login">
+      <h1>Đăng nhập</h1>
+      <p class="lede">Trang học dành cho lớp. Em nhập tài khoản thầy/cô đã cấp.</p>
+      <form id="login-form" class="login-form">
+        <label>Tên đăng nhập
+          <input name="user" autocomplete="username" required>
+        </label>
+        <label>Mật khẩu
+          <input name="pass" type="password" autocomplete="current-password" required>
+        </label>
+        <p class="login-error" id="login-error" hidden>Sai tên đăng nhập hoặc mật khẩu.</p>
+        <button class="btn" type="submit">Vào học</button>
+      </form>
+    </section>
+  `;
+}
+
 function homeView() {
-  const s = getState();
-  const done = Object.keys(s.progress).length;
-  const hello = s.name ? `Xin chào ${escapeHtml(s.name)}` : "Xin chào";
+  const acc = currentAccount();
+  const done = Object.keys(userBucket().progress).length;
+  const hello = acc ? `Xin chào ${escapeHtml(acc.name)}` : "Xin chào";
   return `
     <section class="hero">
       <h1>${hello}, cùng học Toán 9.</h1>
       <p class="lede">
-        Bài học theo chương trình toán lớp 9 Việt Nam (GDPT 2018, sách Kết nối tri thức).
-        Làm bài xong, trang nhớ chỗ em đã tới. Sau này AI sẽ soạn thêm bài đúng với chỗ đang vướng.
+        Bài học bám sát SGK Toán 9 – Kết nối tri thức với cuộc sống (GDPT 2018):
+        Chương I–V, Bài 1–17 của tập một. Làm bài xong, trang nhớ chỗ em đã tới.
+        Sau này AI sẽ soạn thêm bài đúng với chỗ đang vướng.
       </p>
       <div class="actions">
         <a class="btn" href="#/lessons">Vào bài học</a>
-        <a class="btn ghost" href="#/lesson/c1-b1">Bắt đầu từ hệ phương trình</a>
+        <a class="btn ghost" href="#/lesson/c1-b1">Bắt đầu từ Bài 1</a>
       </div>
-      ${
-        s.name
-          ? `<p class="note">Đã hoàn thành ${done}/${LESSONS.length} bài trên trang này.</p>`
-          : `<form class="name-form" id="name-form">
-               <input name="name" maxlength="24" placeholder="Tên em (biệt danh cũng được)" required>
-               <button class="btn" type="submit">Lưu tên</button>
-             </form>`
-      }
+      <p class="note">Đã hoàn thành ${done}/${LESSONS.length} bài trên trang này.</p>
     </section>
     <div class="grid">
       ${CHAPTERS.map(
@@ -96,7 +187,7 @@ function homeView() {
 }
 
 function lessonsView() {
-  const s = getState();
+  const progress = userBucket().progress;
   const blocks = CHAPTERS.map((ch) => {
     const items = LESSONS.filter((l) => l.chapter === ch.id);
     if (!items.length) return "";
@@ -106,11 +197,11 @@ function lessonsView() {
         <div class="lesson-list">
           ${items
             .map((l) => {
-              const p = s.progress[l.id];
+              const p = progress[l.id];
               const mark = p ? `<span class="done">Đã làm ${p.score}/${p.total}</span>` : "";
               return `
                 <a class="lesson-row" href="#/lesson/${l.id}">
-                  <div class="meta"><span>Bài học</span>${mark}</div>
+                  <div class="meta"><span>Bài ${l.num}</span>${mark}</div>
                   <strong>${escapeHtml(l.title)}</strong>
                   <p>${escapeHtml(l.summary)}</p>
                 </a>`;
@@ -131,6 +222,9 @@ function lessonView(id) {
   const next = LESSONS[idx + 1];
   const exercises = lesson.exercises
     .map((ex, i) => {
+      const hint = ex.hint
+        ? `<details class="hint"><summary>Gợi ý</summary>${ex.hint}</details>`
+        : "";
       if (ex.type === "mc") {
         const choices = ex.choices
           .map(
@@ -141,6 +235,7 @@ function lessonView(id) {
         return `<div class="q" data-i="${i}" data-type="mc">
           <p><strong>Câu ${i + 1}.</strong> ${ex.prompt}</p>
           <div class="choices">${choices}</div>
+          ${hint}
           <div class="feedback" hidden></div>
           <div class="explain" hidden>${ex.explain}</div>
         </div>`;
@@ -148,6 +243,7 @@ function lessonView(id) {
       return `<div class="q" data-i="${i}" data-type="${ex.type}">
         <p><strong>Câu ${i + 1}.</strong> ${ex.prompt}</p>
         <input type="text" name="q${i}" inputmode="${ex.type === "num" ? "decimal" : "text"}" placeholder="Đáp án">
+        ${hint}
         <div class="feedback" hidden></div>
         <div class="explain" hidden>${ex.explain}</div>
       </div>`;
@@ -160,6 +256,7 @@ function lessonView(id) {
       <h1>${escapeHtml(lesson.title)}</h1>
       <p class="lede">${escapeHtml(ch.title)}</p>
       <div class="body">${lesson.body}</div>
+      ${videoBlock(lesson)}
       <section class="quiz">
         <h2>Luyện tập</h2>
         <form id="quiz-form">${exercises}
@@ -200,7 +297,7 @@ function gradeQuiz(id) {
     if (ok) score += 1;
   });
   markLesson(id, score, lesson.exercises.length);
-  renderWho();
+  setChrome(true);
 }
 
 function escapeHtml(s) {
@@ -215,19 +312,30 @@ function render() {
   const app = document.getElementById("app");
   const hash = location.hash.slice(1) || "/";
   const lessonMatch = hash.match(/^\/lesson\/([^/]+)/);
+
+  if (!currentAccount()) {
+    setChrome(false);
+    app.innerHTML = loginView();
+    const form = document.getElementById("login-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const ok = login(data.get("user"), data.get("pass"));
+      const err = document.getElementById("login-error");
+      if (!ok) {
+        err.hidden = false;
+        return;
+      }
+      render();
+    });
+    return;
+  }
+
+  setChrome(true);
   if (hash === "/lessons") app.innerHTML = lessonsView();
   else if (lessonMatch) app.innerHTML = lessonView(lessonMatch[1]);
   else app.innerHTML = homeView();
   typeset(app);
-
-  const nameForm = document.getElementById("name-form");
-  if (nameForm) {
-    nameForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      setName(new FormData(nameForm).get("name"));
-      render();
-    });
-  }
 
   const quiz = document.getElementById("quiz-form");
   if (quiz) {
@@ -240,15 +348,13 @@ function render() {
 }
 
 document.getElementById("who-btn").addEventListener("click", () => {
-  const next = prompt("Đổi tên / biệt danh:", getState().name || "");
-  if (next != null) {
-    setName(next);
+  if (!currentAccount()) return;
+  if (confirm("Đăng xuất?")) {
+    logout();
+    location.hash = "#/";
     render();
   }
 });
 
 window.addEventListener("hashchange", render);
-window.addEventListener("load", () => {
-  renderWho();
-  render();
-});
+window.addEventListener("load", render);
