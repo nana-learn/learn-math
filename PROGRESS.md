@@ -9,3 +9,5 @@
 - Decided scope: personal site for cousins first; local SQLite for answers; free Cloudflare Tunnel for testers in Vietnam; buy a domain later only if it works.
 - Looked up Vietnam Grade 9 math (GDPT 2018 / Kết nối tri thức): 10 chapters covering systems of linear equations, inequalities, square/cube roots, right-triangle trigonometry, circles, quadratics and Vieta, frequency tables, probability, inscribed/circumscribed circles, and solids.
 - Built a first website in `web/`: home page, 11 lessons with explanations and practice questions, progress stored in the browser.
+- Committed the website (`d9d9638`).
+- Set remote to `git@github.com:nana-learn/online-learning.git` and pushed `main`.
