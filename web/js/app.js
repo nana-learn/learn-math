@@ -1,4 +1,5 @@
-const STORE_NAME = "htoan9";
+const STORE_NAME = "htoan";
+const OLD_STORE = "htoan9";
 
 function loadState() {
   try {
@@ -14,29 +15,48 @@ function saveState(state) {
 
 function getState() {
   const s = loadState();
-  if (!s.progress) s.progress = {};
-  if (s.byUser && Object.keys(s.progress).length === 0) {
-    for (const u of Object.keys(s.byUser)) {
-      const p = s.byUser[u] && s.byUser[u].progress;
-      if (p) Object.assign(s.progress, p);
-    }
+  if (!s.progress || typeof s.progress !== "object" || Array.isArray(s.progress)) {
+    s.progress = {};
   }
-  if (s._legacyProgress && Object.keys(s.progress).length === 0) {
-    s.progress = s._legacyProgress;
-  }
-  if (s.byUser || s.authUser || s._legacyProgress) {
-    delete s.byUser;
-    delete s.authUser;
-    delete s._legacyProgress;
+  const first = Object.keys(s.progress)[0];
+  if (
+    first &&
+    !s.progress["9"] &&
+    s.progress[first] &&
+    typeof s.progress[first].score === "number"
+  ) {
+    s.progress = { "9": s.progress };
     saveState(s);
+  }
+  try {
+    const old = JSON.parse(localStorage.getItem(OLD_STORE) || "null");
+    if (old && old.progress && Object.keys(s.progress["9"] || {}).length === 0) {
+      const p = old.progress;
+      s.progress["9"] =
+        p["9"] && typeof p["9"] === "object" && p["9"].score == null ? p["9"] : p;
+      saveState(s);
+    }
+  } catch {
+    /* ignore */
   }
   return s;
 }
 
-function markLesson(id, score, total) {
+function progressFor(courseId) {
   const s = getState();
-  s.progress[id] = { score, total, at: Date.now() };
+  if (!s.progress[courseId]) s.progress[courseId] = {};
+  return s.progress[courseId];
+}
+
+function markLesson(courseId, id, score, total) {
+  const s = getState();
+  if (!s.progress[courseId]) s.progress[courseId] = {};
+  s.progress[courseId][id] = { score, total, at: Date.now() };
   saveState(s);
+}
+
+function courseById(id) {
+  return COURSES.find((c) => c.id === String(id));
 }
 
 function typeset(el) {
@@ -49,10 +69,6 @@ function typeset(el) {
       throwOnError: false,
     });
   }
-}
-
-function lessonById(id) {
-  return LESSONS.find((l) => l.id === id);
 }
 
 function youtubeIdFor(lesson) {
@@ -84,41 +100,91 @@ function videoBlock(lesson) {
     </section>`;
 }
 
+function setChrome(course) {
+  document.title = course ? `${course.title} · Học Toán` : "Học Toán";
+  const nav = document.getElementById("main-nav");
+  if (!nav) return;
+  nav.innerHTML = course
+    ? `<a href="#/">Các lớp</a><a href="#/g/${course.id}/lessons">Bài học</a>`
+    : `<a href="#/">Các lớp</a>`;
+}
+
+function gradeCard(course) {
+  const n = course.lessons.length;
+  const done = n ? Object.keys(progressFor(course.id)).length : 0;
+  const inner = `
+    <span class="stamp">${escapeHtml(course.level)}</span>
+    <p class="grade-num">${course.grade}</p>
+    <h3>${escapeHtml(course.title)}</h3>
+    <p>${n ? `${done}/${n} bài` : "Sắp có bài học"}</p>`;
+  if (!n) return `<article class="card soon">${inner}</article>`;
+  return `<a class="card" href="#/g/${course.id}">${inner}</a>`;
+}
+
 function homeView() {
-  const done = Object.keys(getState().progress).length;
+  const thcs = COURSES.filter((c) => c.level === "THCS");
+  const thpt = COURSES.filter((c) => c.level === "THPT");
   return `
     <section class="hero">
-      <h1>Xin chào, cùng học Toán 9.</h1>
+      <h1>Xin chào, cùng học Toán.</h1>
       <p class="lede">
-        Bài học bám sát SGK Toán 9 – Kết nối tri thức với cuộc sống (GDPT 2018):
-        Chương I–V, Bài 1–17 của tập một. Làm bài xong, trang nhớ chỗ em đã tới.
-        Sau này AI sẽ soạn thêm bài đúng với chỗ đang vướng.
+        Bài học theo chương trình GDPT 2018, bám sát SGK Kết nối tri thức.
+        Chọn lớp để vào bài. Làm xong, trang nhớ chỗ em đã tới trên máy này.
       </p>
-      <div class="actions">
-        <a class="btn" href="#/lessons">Vào bài học</a>
-        <a class="btn ghost" href="#/lesson/c1-b1">Bắt đầu từ Bài 1</a>
-      </div>
-      <p class="note">Đã hoàn thành ${done}/${LESSONS.length} bài trên trang này.</p>
     </section>
-    <div class="grid">
-      ${CHAPTERS.map(
-        (ch) => `
-        <article class="card">
-          <span class="stamp">Chương ${ch.id}</span>
-          <h3>${escapeHtml(ch.title)}</h3>
-          <p>${LESSONS.filter((l) => l.chapter === ch.id).length} bài hiện có</p>
-        </article>`
-      ).join("")}
-    </div>
+    <p class="section-label">Trung học cơ sở</p>
+    <div class="grid grades">${thcs.map(gradeCard).join("")}</div>
+    <p class="section-label">Trung học phổ thông</p>
+    <div class="grid grades">${thpt.map(gradeCard).join("")}</div>
   `;
 }
 
-function lessonsView() {
-  const progress = getState().progress;
-  const blocks = CHAPTERS.map((ch) => {
-    const items = LESSONS.filter((l) => l.chapter === ch.id);
-    if (!items.length) return "";
-    return `
+function courseView(course) {
+  const n = course.lessons.length;
+  const done = Object.keys(progressFor(course.id)).length;
+  const first = course.lessons[0];
+  return `
+    <p class="back"><a href="#/">← Các lớp</a></p>
+    <section class="hero">
+      <span class="stamp">${escapeHtml(course.level)}</span>
+      <h1>${escapeHtml(course.title)}</h1>
+      <p class="lede">${escapeHtml(course.subtitle || course.blurb)}</p>
+      ${
+        n
+          ? `<div class="actions">
+              <a class="btn" href="#/g/${course.id}/lessons">Vào bài học</a>
+              ${first ? `<a class="btn ghost" href="#/g/${course.id}/lesson/${first.id}">Bắt đầu từ Bài 1</a>` : ""}
+            </div>
+            <p class="note">Đã hoàn thành ${done}/${n} bài.</p>`
+          : `<p class="note">${escapeHtml(course.blurb)}</p>`
+      }
+    </section>
+    ${
+      n
+        ? `<div class="grid">
+        ${course.chapters
+          .map(
+            (ch) => `
+          <article class="card">
+            <span class="stamp">Chương ${ch.id}</span>
+            <h3>${escapeHtml(ch.title)}</h3>
+            <p>${course.lessons.filter((l) => l.chapter === ch.id).length} bài</p>
+          </article>`
+          )
+          .join("")}
+      </div>`
+        : ""
+    }
+  `;
+}
+
+function lessonsView(course) {
+  const progress = progressFor(course.id);
+  const blocks = course.chapters
+    .map((ch) => {
+      const items = course.lessons.filter((l) => l.chapter === ch.id);
+      if (!items.length) return "";
+      return `
       <section>
         <h2>Chương ${ch.id}. ${escapeHtml(ch.title)}</h2>
         <div class="lesson-list">
@@ -127,7 +193,7 @@ function lessonsView() {
               const p = progress[l.id];
               const mark = p ? `<span class="done">Đã làm ${p.score}/${p.total}</span>` : "";
               return `
-                <a class="lesson-row" href="#/lesson/${l.id}">
+                <a class="lesson-row" href="#/g/${course.id}/lesson/${l.id}">
                   <div class="meta"><span>Bài ${l.num}</span>${mark}</div>
                   <strong>${escapeHtml(l.title)}</strong>
                   <p>${escapeHtml(l.summary)}</p>
@@ -136,17 +202,20 @@ function lessonsView() {
             .join("")}
         </div>
       </section>`;
-  }).join("");
-  return `<p class="back"><a href="#/">← Trang chủ</a></p>${blocks}`;
+    })
+    .join("");
+  return `<p class="back"><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>${blocks || `<p class="note">${escapeHtml(course.blurb)}</p>`}`;
 }
 
-function lessonView(id) {
-  const lesson = lessonById(id);
-  if (!lesson) return `<p>Không tìm thấy bài.</p><p><a href="#/lessons">Về danh sách</a></p>`;
-  const ch = CHAPTERS.find((c) => c.id === lesson.chapter);
-  const idx = LESSONS.findIndex((l) => l.id === id);
-  const prev = LESSONS[idx - 1];
-  const next = LESSONS[idx + 1];
+function lessonView(course, id) {
+  const lesson = course.lessons.find((l) => l.id === id);
+  if (!lesson) {
+    return `<p>Không tìm thấy bài.</p><p><a href="#/g/${course.id}/lessons">Về danh sách</a></p>`;
+  }
+  const ch = course.chapters.find((c) => c.id === lesson.chapter);
+  const idx = course.lessons.findIndex((l) => l.id === id);
+  const prev = course.lessons[idx - 1];
+  const next = course.lessons[idx + 1];
   const exercises = lesson.exercises
     .map((ex, i) => {
       const hint = ex.hint
@@ -177,11 +246,11 @@ function lessonView(id) {
     })
     .join("");
   return `
-    <p class="back"><a href="#/lessons">← Tất cả bài học</a></p>
+    <p class="back"><a href="#/g/${course.id}/lessons">← Tất cả bài học</a></p>
     <article class="article">
-      <span class="stamp">Chương ${lesson.chapter}</span>
+      <span class="stamp">${escapeHtml(course.title)} · Chương ${lesson.chapter}</span>
       <h1>${escapeHtml(lesson.title)}</h1>
-      <p class="lede">${escapeHtml(ch.title)}</p>
+      <p class="lede">${escapeHtml(ch ? ch.title : "")}</p>
       <div class="body">${lesson.body}</div>
       ${videoBlock(lesson)}
       <section class="quiz">
@@ -191,15 +260,16 @@ function lessonView(id) {
         </form>
       </section>
       <p class="actions" style="margin-top:1.2rem">
-        ${prev ? `<a class="btn ghost" href="#/lesson/${prev.id}">Bài trước</a>` : ""}
-        ${next ? `<a class="btn" href="#/lesson/${next.id}">Bài tiếp</a>` : ""}
+        ${prev ? `<a class="btn ghost" href="#/g/${course.id}/lesson/${prev.id}">Bài trước</a>` : ""}
+        ${next ? `<a class="btn" href="#/g/${course.id}/lesson/${next.id}">Bài tiếp</a>` : ""}
       </p>
     </article>
   `;
 }
 
-function gradeQuiz(id) {
-  const lesson = lessonById(id);
+function gradeQuiz(courseId, id) {
+  const course = courseById(courseId);
+  const lesson = course.lessons.find((l) => l.id === id);
   const form = document.getElementById("quiz-form");
   let score = 0;
   lesson.exercises.forEach((ex, i) => {
@@ -223,7 +293,7 @@ function gradeQuiz(id) {
     fb.textContent = ok ? "Đúng." : "Chưa đúng.";
     if (ok) score += 1;
   });
-  markLesson(id, score, lesson.exercises.length);
+  markLesson(courseId, id, score, lesson.exercises.length);
 }
 
 function escapeHtml(s) {
@@ -237,18 +307,51 @@ function escapeHtml(s) {
 function render() {
   const app = document.getElementById("app");
   const hash = location.hash.slice(1) || "/";
-  const lessonMatch = hash.match(/^\/lesson\/([^/]+)/);
-  if (hash === "/lessons") app.innerHTML = lessonsView();
-  else if (lessonMatch) app.innerHTML = lessonView(lessonMatch[1]);
-  else app.innerHTML = homeView();
+
+  if (hash === "/lessons") {
+    location.replace("#/g/9/lessons");
+    return;
+  }
+  const oldLesson = hash.match(/^\/lesson\/([^/]+)/);
+  if (oldLesson) {
+    location.replace(`#/g/9/lesson/${oldLesson[1]}`);
+    return;
+  }
+
+  const lessonMatch = hash.match(/^\/g\/([^/]+)\/lesson\/([^/]+)/);
+  const listMatch = hash.match(/^\/g\/([^/]+)\/lessons\/?$/);
+  const courseMatch = hash.match(/^\/g\/([^/]+)\/?$/);
+
+  let course = null;
+  if (lessonMatch) {
+    course = courseById(lessonMatch[1]);
+    app.innerHTML = course
+      ? lessonView(course, lessonMatch[2])
+      : `<p>Không tìm thấy lớp.</p><p><a href="#/">Về trang chủ</a></p>`;
+  } else if (listMatch) {
+    course = courseById(listMatch[1]);
+    app.innerHTML = course
+      ? lessonsView(course)
+      : `<p>Không tìm thấy lớp.</p><p><a href="#/">Về trang chủ</a></p>`;
+  } else if (courseMatch) {
+    course = courseById(courseMatch[1]);
+    app.innerHTML = course
+      ? courseView(course)
+      : `<p>Không tìm thấy lớp.</p><p><a href="#/">Về trang chủ</a></p>`;
+  } else {
+    app.innerHTML = homeView();
+  }
+
+  setChrome(course);
   typeset(app);
 
   const quiz = document.getElementById("quiz-form");
-  if (quiz) {
-    const id = lessonMatch[1];
+  if (quiz && lessonMatch) {
+    const courseId = lessonMatch[1];
+    const id = lessonMatch[2];
     quiz.addEventListener("submit", (e) => {
       e.preventDefault();
-      gradeQuiz(id);
+      gradeQuiz(courseId, id);
     });
   }
 }

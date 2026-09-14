@@ -7,6 +7,7 @@
 - Live URL: https://nana-learn.github.io/learn-math/
 - Hash routes (`#/lessons`) fit Pages (no server rewrite).
 - Login removed: the Pages site is public, so the classroom gate was dropped.
+- Layout is multi-grade: home picks lớp 6–12; only Toán 9 has lessons. Routes `#/g/{grade}/…`, progress keyed per grade.
 
 ## 2026-06 (session 2)
 

@@ -1418,3 +1418,35 @@ const LESSONS = [
     ],
   },
 ];
+
+function courseStub(grade, level) {
+  return {
+    id: String(grade),
+    grade,
+    title: "Toán " + grade,
+    level,
+    subtitle: "",
+    blurb: "Bài học sẽ được thêm dần.",
+    chapters: [],
+    lessons: [],
+  };
+}
+
+const COURSES = [
+  courseStub(6, "THCS"),
+  courseStub(7, "THCS"),
+  courseStub(8, "THCS"),
+  {
+    id: "9",
+    grade: 9,
+    title: "Toán 9",
+    level: "THCS",
+    subtitle: "Tập 1 · Kết nối tri thức với cuộc sống",
+    blurb: "Chương I–V, Bài 1–17 của tập một.",
+    chapters: CHAPTERS,
+    lessons: LESSONS,
+  },
+  courseStub(10, "THPT"),
+  courseStub(11, "THPT"),
+  courseStub(12, "THPT"),
+];
