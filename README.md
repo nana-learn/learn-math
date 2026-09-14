@@ -14,13 +14,11 @@ The site is a hash-routed SPA in `web/` (no server). GitHub Pages deploys that f
 
 Open http://127.0.0.1:8090/
 
-## Accounts
-
-Edit `web/js/users.js`. This file is public (the repo and the Pages JS are both public), so login is only a mild classroom gate, not real security. Do not put a password you use anywhere else.
+Progress is stored in the browser (`localStorage`). There is no login.
 
 ## Videos
 
-Unlisted YouTube IDs go in `web/js/videos.js` (`"c1-b1": "xxxxxxxxxxx"`). YouTube cannot lock a video to this domain; Unlisted + site login is the practical combo.
+Unlisted YouTube IDs go in `web/js/videos.js` (`"c1-b1": "xxxxxxxxxxx"`). YouTube cannot lock a video to this domain; Unlisted is the practical combo.
 
 ## What is not in git
 

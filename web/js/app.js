@@ -14,81 +14,29 @@ function saveState(state) {
 
 function getState() {
   const s = loadState();
-  if (!s.byUser) s.byUser = {};
-  if (s.progress) {
-    s._legacyProgress = s.progress;
-    delete s.progress;
+  if (!s.progress) s.progress = {};
+  if (s.byUser && Object.keys(s.progress).length === 0) {
+    for (const u of Object.keys(s.byUser)) {
+      const p = s.byUser[u] && s.byUser[u].progress;
+      if (p) Object.assign(s.progress, p);
+    }
+  }
+  if (s._legacyProgress && Object.keys(s.progress).length === 0) {
+    s.progress = s._legacyProgress;
+  }
+  if (s.byUser || s.authUser || s._legacyProgress) {
+    delete s.byUser;
+    delete s.authUser;
+    delete s._legacyProgress;
     saveState(s);
   }
   return s;
 }
 
-function findUser(username) {
-  const key = String(username || "").trim().toLowerCase();
-  return (typeof USERS !== "undefined" ? USERS : []).find(
-    (u) => u.user.toLowerCase() === key
-  );
-}
-
-function currentAccount() {
-  const s = getState();
-  if (!s.authUser) return null;
-  return findUser(s.authUser) || null;
-}
-
-function userBucket() {
-  const s = getState();
-  const acc = currentAccount();
-  if (!acc) return { progress: {} };
-  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
-  if (!s.byUser[acc.user].progress) s.byUser[acc.user].progress = {};
-  return s.byUser[acc.user];
-}
-
-function login(username, password) {
-  const acc = findUser(username);
-  if (!acc || acc.pass !== String(password ?? "")) return false;
-  const s = getState();
-  s.authUser = acc.user;
-  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
-  if (
-    s._legacyProgress &&
-    Object.keys(s.byUser[acc.user].progress || {}).length === 0
-  ) {
-    s.byUser[acc.user].progress = s._legacyProgress;
-    delete s._legacyProgress;
-  }
-  saveState(s);
-  return true;
-}
-
-function logout() {
-  const s = getState();
-  delete s.authUser;
-  saveState(s);
-}
-
 function markLesson(id, score, total) {
   const s = getState();
-  const acc = currentAccount();
-  if (!acc) return;
-  if (!s.byUser[acc.user]) s.byUser[acc.user] = { progress: {} };
-  s.byUser[acc.user].progress[id] = { score, total, at: Date.now() };
+  s.progress[id] = { score, total, at: Date.now() };
   saveState(s);
-}
-
-function setChrome(loggedIn) {
-  const nav = document.getElementById("main-nav");
-  const btn = document.getElementById("who-btn");
-  nav.hidden = !loggedIn;
-  if (!loggedIn) {
-    btn.hidden = true;
-    return;
-  }
-  const acc = currentAccount();
-  btn.hidden = false;
-  btn.textContent = acc ? acc.name : "Tài khoản";
-  btn.title = "Đăng xuất";
 }
 
 function typeset(el) {
@@ -136,32 +84,11 @@ function videoBlock(lesson) {
     </section>`;
 }
 
-function loginView() {
-  return `
-    <section class="login">
-      <h1>Đăng nhập</h1>
-      <p class="lede">Trang học dành cho lớp. Em nhập tài khoản thầy/cô đã cấp.</p>
-      <form id="login-form" class="login-form">
-        <label>Tên đăng nhập
-          <input name="user" autocomplete="username" required>
-        </label>
-        <label>Mật khẩu
-          <input name="pass" type="password" autocomplete="current-password" required>
-        </label>
-        <p class="login-error" id="login-error" hidden>Sai tên đăng nhập hoặc mật khẩu.</p>
-        <button class="btn" type="submit">Vào học</button>
-      </form>
-    </section>
-  `;
-}
-
 function homeView() {
-  const acc = currentAccount();
-  const done = Object.keys(userBucket().progress).length;
-  const hello = acc ? `Xin chào ${escapeHtml(acc.name)}` : "Xin chào";
+  const done = Object.keys(getState().progress).length;
   return `
     <section class="hero">
-      <h1>${hello}, cùng học Toán 9.</h1>
+      <h1>Xin chào, cùng học Toán 9.</h1>
       <p class="lede">
         Bài học bám sát SGK Toán 9 – Kết nối tri thức với cuộc sống (GDPT 2018):
         Chương I–V, Bài 1–17 của tập một. Làm bài xong, trang nhớ chỗ em đã tới.
@@ -187,7 +114,7 @@ function homeView() {
 }
 
 function lessonsView() {
-  const progress = userBucket().progress;
+  const progress = getState().progress;
   const blocks = CHAPTERS.map((ch) => {
     const items = LESSONS.filter((l) => l.chapter === ch.id);
     if (!items.length) return "";
@@ -297,7 +224,6 @@ function gradeQuiz(id) {
     if (ok) score += 1;
   });
   markLesson(id, score, lesson.exercises.length);
-  setChrome(true);
 }
 
 function escapeHtml(s) {
@@ -312,26 +238,6 @@ function render() {
   const app = document.getElementById("app");
   const hash = location.hash.slice(1) || "/";
   const lessonMatch = hash.match(/^\/lesson\/([^/]+)/);
-
-  if (!currentAccount()) {
-    setChrome(false);
-    app.innerHTML = loginView();
-    const form = document.getElementById("login-form");
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const ok = login(data.get("user"), data.get("pass"));
-      const err = document.getElementById("login-error");
-      if (!ok) {
-        err.hidden = false;
-        return;
-      }
-      render();
-    });
-    return;
-  }
-
-  setChrome(true);
   if (hash === "/lessons") app.innerHTML = lessonsView();
   else if (lessonMatch) app.innerHTML = lessonView(lessonMatch[1]);
   else app.innerHTML = homeView();
@@ -346,15 +252,6 @@ function render() {
     });
   }
 }
-
-document.getElementById("who-btn").addEventListener("click", () => {
-  if (!currentAccount()) return;
-  if (confirm("Đăng xuất?")) {
-    logout();
-    location.hash = "#/";
-    render();
-  }
-});
 
 window.addEventListener("hashchange", render);
 window.addEventListener("load", render);

@@ -6,7 +6,7 @@
 - Hosting strategy: GitHub Pages from `web/` via `.github/workflows/pages.yml` (Actions), not Cloudflare Tunnel.
 - Live URL: https://nana-learn.github.io/learn-math/
 - Hash routes (`#/lessons`) fit Pages (no server rewrite).
-- Login stays in `web/js/users.js` as a classroom gate only — credentials are visible in a public repo.
+- Login removed: the Pages site is public, so the classroom gate was dropped.
 
 ## 2026-06 (session 2)
 
