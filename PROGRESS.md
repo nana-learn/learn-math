@@ -1,5 +1,13 @@
 # Progress
 
+## GitHub Pages
+
+- Repo moved to `git@github.com:nana-learn/learn-math.git` (public).
+- Hosting strategy: GitHub Pages from `web/` via `.github/workflows/pages.yml` (Actions), not Cloudflare Tunnel.
+- Live URL: https://nana-learn.github.io/learn-math/
+- Hash routes (`#/lessons`) fit Pages (no server rewrite).
+- Login stays in `web/js/users.js` as a classroom gate only — credentials are visible in a public repo.
+
 ## 2026-06 (session 2)
 
 - Rewrote `web/js/lessons.js` to follow SGK Toán 9 – Kết nối tri thức (Tập 1) exactly: 5 chapters, Bài 1–17, book-wording definitions, SGK examples.

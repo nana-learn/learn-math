@@ -1,15 +1,31 @@
-# Teaching
+# Học Toán 9
 
-A website for learning math, with AI that builds customized lessons and exercises from each learner's current progress.
+Static site for cousins learning **Toán lớp 9** (Vietnam GDPT 2018, sách Kết nối tri thức, Tập 1).
 
-## Now
+**Live:** https://nana-learn.github.io/learn-math/
 
-A personal setup for cousins to practice **Toán lớp 9** (Vietnam GDPT 2018, Kết nối tri thức).
+The site is a hash-routed SPA in `web/` (no server). GitHub Pages deploys that folder on every push to `main`.
 
-- Open `web/` in a browser, or run `./serve.sh` and visit http://127.0.0.1:8090/
-- Answers and progress stay in the browser (`localStorage`) for now.
-- Share a free Cloudflare Tunnel link later for testers in Vietnam.
+## Local
+
+```sh
+./serve.sh
+```
+
+Open http://127.0.0.1:8090/
+
+## Accounts
+
+Edit `web/js/users.js`. This file is public (the repo and the Pages JS are both public), so login is only a mild classroom gate, not real security. Do not put a password you use anywhere else.
+
+## Videos
+
+Unlisted YouTube IDs go in `web/js/videos.js` (`"c1-b1": "xxxxxxxxxxx"`). YouTube cannot lock a video to this domain; Unlisted + site login is the practical combo.
+
+## What is not in git
+
+Textbook PDF and page images (`images/`, `*.pdf`) stay on the machine that built the lessons. They are gitignored.
 
 ## Later
 
-If it works well, buy a domain and host it as a real site. AI will then build extra lessons from each person's progress.
+If this works well, point a custom domain at the same Pages site. AI-generated extra lessons can still be added as static files.
