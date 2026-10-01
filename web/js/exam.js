@@ -1,11 +1,15 @@
 // Ôn Toán vào lớp 10 công lập không chuyên, Hà Nội.
-// Cấu trúc đề: 120 phút, 5 câu, thang 10. Không gồm Văn hay Ngoại ngữ.
+// Câu trong bài lấy từ đề chính thức của Sở GDĐT Hà Nội, các năm 2022–2026,
+// và đề thi thử THCS Mỹ Đình 2, năm học 2026–2027.
+// Lời giải ngắn là lời giải riêng, đã đối chiếu đáp án chính thức 2024, 2025, 2026.
 const THI10_CHAPTERS = [
   { id: 1, label: "Câu I", title: "Thống kê và xác suất" },
   { id: 2, label: "Câu II", title: "Biểu thức chứa căn" },
   { id: 3, label: "Câu III", title: "Phương trình, hệ và Viète" },
   { id: 4, label: "Câu IV", title: "Hình trụ, hình nón và chứng minh" },
   { id: 5, label: "Câu V", title: "Bài toán tối ưu" },
+  { id: 6, label: "Luyện", title: "Số từ đề đã ra" },
+  { id: 7, label: "Đề thử", title: "THCS Mỹ Đình 2, 2026–2027" },
 ];
 
 const THI10_LESSONS = [
@@ -14,49 +18,38 @@ const THI10_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Tần số ghép nhóm",
-    summary: "Đọc bảng [a; b), cộng tần số ra đúng cỡ mẫu, rồi đổi thành phần trăm.",
+    summary: "Đọc đúng nhóm [a; b), cộng tần số ra đúng cỡ mẫu, rồi đổi thành phần trăm.",
     body: String.raw`
-      <p>Câu I của đề Hà Nội thường mở bằng một bảng tần số ghép nhóm. Không cần vẽ biểu đồ. Cần đọc đúng nhóm và tính đúng tỉ lệ.</p>
+      <p>Từ 2025, câu I mở bằng bảng tần số ghép nhóm. Năm 2024 không hỏi thống kê ở câu I. Kỹ năng thì giống nhau: đọc đầu mút, cộng, chia.</p>
       <div class="idea">
-        <p><strong>Ba việc, theo thứ tự.</strong> Cộng các tần số. Tổng phải bằng cỡ mẫu. Nếu lệch, đã đọc sót. Rồi lấy đúng hàng của nhóm được hỏi. Cuối cùng chia cho cỡ mẫu và nhân 100%.</p>
-        <p>Nhóm \([a;\ b)\) lấy \(a\), không lấy \(b\). Giá trị đúng bằng \(b\) sang nhóm kế tiếp. Đếm nhầm đầu mút là mất điểm phần này.</p>
+        <p><strong>Ba việc.</strong> Cộng các tần số, tổng phải bằng cỡ mẫu. Lấy đúng cột được hỏi. Chia cho cỡ mẫu rồi nhân 100%. Nhóm \([a;\ b)\) lấy \(a\), không lấy \(b\).</p>
       </div>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> 40 học sinh, thời gian tự học mỗi tối:</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu I.1.</strong> Chiều cao của 50 học sinh lớp 6, đơn vị cm.</p>
         <table>
-          <tr><th>Giờ</th><td>\([0;\ 1)\)</td><td>\([1;\ 2)\)</td><td>\([2;\ 3)\)</td><td>\([3;\ 4)\)</td></tr>
-          <tr><th>Tần số</th><td>6</td><td>10</td><td>14</td><td>10</td></tr>
+          <tr><th>Chiều cao</th><td>\([140;\ 145)\)</td><td>\([145;\ 150)\)</td><td>\([150;\ 155)\)</td><td>\([155;\ 160)\)</td><td>\([160;\ 165)\)</td></tr>
+          <tr><th>Số học sinh</th><td>10</td><td>18</td><td>14</td><td>6</td><td>2</td></tr>
         </table>
-        <p>\(6 + 10 + 14 + 10 = 40\). Bảng khớp cỡ mẫu. Nhóm \([2;\ 3)\) có tần số 14. Tần số tương đối \(\dfrac{14}{40} \cdot 100\% = 35\%\).</p>
-        <p>Bạn học đúng 2 giờ thuộc \([2;\ 3)\), không thuộc \([1;\ 2)\). Bạn học đúng 3 giờ thuộc \([3;\ 4)\).</p>
+        <p>Tần số nhóm \([150;\ 155)\) là 14. Kiểm tra \(10 + 18 + 14 + 6 + 2 = 50\). Tần số tương đối \(\dfrac{14}{50} \cdot 100\% = 28\%\). Bạn cao đúng 155 cm không thuộc nhóm này. 155 thuộc \([155;\ 160)\).</p>
       </div>
-      <div class="memory">
-        <p><strong>Cách viết.</strong> Nêu tần số trước, rồi tần số tương đối kèm phép chia. Đừng chỉ viết 35% mà không có \(\dfrac{14}{40}\).</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu I.1.</strong> Thời gian tự học của 300 học sinh lớp 9, đơn vị giờ.</p>
+        <table>
+          <tr><th>Giờ</th><td>\([0;\ 4)\)</td><td>\([4;\ 8)\)</td><td>\([8;\ 12)\)</td><td>\([12;\ 16)\)</td><td>\([16;\ 20)\)</td></tr>
+          <tr><th>Số học sinh</th><td>17</td><td>72</td><td>94</td><td>75</td><td>42</td></tr>
+        </table>
+        <p>\(17 + 72 + 94 + 75 + 42 = 300\). Nhóm \([12;\ 16)\) có tần số 75, tần số tương đối \(\dfrac{75}{300} \cdot 100\% = 25\%\). Bạn học đúng 16 giờ thuộc \([16;\ 20)\), không thuộc \([12;\ 16)\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Viết 14 mà không viết \(\dfrac{14}{50}\). Cho giá trị đúng bằng đầu mút phải vào nhóm đang xét. Cộng năm cột không ra cỡ mẫu mà vẫn chia.</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: "Ở bảng 40 học sinh trên, tần số của nhóm [2; 3) là bao nhiêu?",
-        answer: 14,
-        hint: "Đọc đúng cột [2; 3), không cộng các cột khác.",
-        explain: "Cột [2; 3) ghi 14. Tổng bốn cột là 40, đúng cỡ mẫu.",
-      },
-      {
-        type: "num",
-        prompt: "Tần số tương đối của nhóm [2; 3) bằng bao nhiêu phần trăm?",
-        answer: 35,
-        hint: "(14/40)·100.",
-        explain: "14/40 = 0,35, nhân 100% được 35%.",
-      },
-      {
-        type: "mc",
-        prompt: "Bạn học đúng 3 giờ thuộc nhóm nào?",
-        choices: ["[1; 2)", "[2; 3)", "[3; 4)", "[0; 1)"],
-        correct: 2,
-        hint: "Ngoặc tròn không lấy đầu mút phải. 3 không còn ở [2; 3).",
-        explain: "[2; 3) không lấy 3. Giá trị 3 thuộc [3; 4).",
-      },
+      { type: "num", prompt: "Đề 2026: tần số của nhóm chiều cao [150; 155) là bao nhiêu?", answer: 14, hint: "Đọc đúng cột, rồi kiểm tra tổng năm cột bằng 50.", explain: "Cột [150; 155) ghi 14. Tổng 10 + 18 + 14 + 6 + 2 = 50." },
+      { type: "num", prompt: "Đề 2026: tần số tương đối của nhóm đó bằng bao nhiêu phần trăm?", answer: 28, hint: "(14/50)·100.", explain: "14/50 = 0,28, tức 28%." },
+      { type: "num", prompt: "Đề 2025: tần số của nhóm [12; 16) là bao nhiêu?", answer: 75, hint: "Cột thứ tư trong bảng 300 học sinh.", explain: "Nhóm [12; 16) có 75 học sinh. Tổng năm cột là 300." },
+      { type: "num", prompt: "Đề 2025: tần số tương đối của nhóm [12; 16) bằng bao nhiêu phần trăm?", answer: 25, hint: "75/300 rồi nhân 100.", explain: "75/300 = 1/4 = 25%." },
+      { type: "mc", prompt: "Ở bảng 2026, học sinh cao đúng 155 cm thuộc nhóm nào?", choices: ["[145; 150)", "[150; 155)", "[155; 160)", "[160; 165)"], correct: 2, hint: "[150; 155) không lấy 155.", explain: "Ngoặc tròn bỏ đầu mút phải. 155 thuộc [155; 160)." },
     ],
   },
   {
@@ -64,53 +57,31 @@ const THI10_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Xác suất một lần rút",
-    summary: "Liệt kê không gian mẫu, đếm kết quả thuận lợi, chỉ chia khi các kết quả ngang nhau.",
+    summary: "Viết Ω, đếm kết quả thuận lợi, chỉ chia khi các kết quả ngang nhau.",
     body: String.raw`
-      <p>Ý thứ hai của câu I gần như luôn là rút một lần từ hộp thẻ hoặc bóng cùng loại. Không có hoàn lại, không có lần thứ hai.</p>
+      <p>Ý 2 của câu I, các năm 2025 và 2026, đều là rút một lần. Không có lần thứ hai, không có hoàn lại.</p>
       <div class="idea">
-        <p><strong>Ba dòng phải có trong bài.</strong> Viết \(\Omega\). Nói các kết quả đồng khả năng vì các thẻ cùng loại và rút ngẫu nhiên. Đếm kết quả thuận lợi, rồi</p>
-        \[
-          P(A) = \dfrac{n(A)}{n(\Omega)}.
-        \]
-        <p>Nếu thẻ không cùng loại, hoặc xúc xắc lệch, không được chia đều.</p>
+        <p>Viết \(\Omega\). Nói các kết quả đồng khả năng vì các thẻ hoặc các bóng cùng loại và được lấy ngẫu nhiên. Rồi</p>
+        \[ P(A) = \dfrac{n(A)}{n(\Omega)}. \]
       </div>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> Hộp có 8 thẻ ghi 1 đến 8, mỗi số một thẻ. Rút một thẻ. Biến cố \(A\): số chia hết cho 3.</p>
-        <p>\(\Omega = \{1, 2, 3, 4, 5, 6, 7, 8\}\), \(n(\Omega) = 8\). Thuận lợi: 3 và 6, nên \(n(A) = 2\). \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
-        <p>9 chia hết cho 3 nhưng không có trong hộp. Không được đếm số không nằm trong \(\Omega\).</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu I.2.</strong> Hộp có 6 quả bóng cùng loại, ghi 1, 2, 3, 4, 5, 6, mỗi số một quả. Lấy ngẫu nhiên một quả. Biến cố \(A\): số ghi trên quả bóng là số chẵn.</p>
+        <p>\(\Omega = \{1, 2, 3, 4, 5, 6\}\), sáu kết quả đồng khả năng. Thuận lợi: 2, 4, 6, nên \(n(A) = 3\). \(P(A) = \dfrac{3}{6} = \dfrac{1}{2}\). Đáp án chính thức là \(\dfrac{1}{2}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu I.2.</strong> Hộp có 8 thẻ cùng loại, ghi 1 đến 8, mỗi số một thẻ. Rút ngẫu nhiên một thẻ. Biến cố \(A\): số ghi trên thẻ chia hết cho 3.</p>
+        <p>\(\Omega\) có 8 phần tử. Thuận lợi: thẻ 3 và thẻ 6. Số 9 chia hết cho 3 nhưng không có trong hộp. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\). Đáp án chính thức là \(\dfrac{1}{4}\).</p>
       </div>
       <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Quên rút gọn phân số. Đếm cả số không có trên thẻ. Viết xác suất lớn hơn 1.</p>
+        <p><strong>Sai lầm thường gặp.</strong> Nhầm đề 2026 thành 10 thẻ. Đếm số 9 trong hộp chỉ có 8 thẻ. Quên rút gọn \(\dfrac{2}{8}\).</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: "Hộp 8 thẻ ghi 1 đến 8. Rút một thẻ. Có bao nhiêu kết quả thuận lợi cho biến cố “chia hết cho 3”?",
-        answer: 2,
-        hint: "Trong 1 đến 8, số nào chia hết cho 3?",
-        explain: "3 và 6. 9 không có trong hộp. n(A) = 2.",
-      },
-      {
-        type: "num",
-        prompt: "Với phép thử trên, P(A) = 1/k. Giá trị k bằng bao nhiêu?",
-        answer: 4,
-        hint: "2/8 rút gọn.",
-        explain: "P(A) = 2/8 = 1/4, nên k = 4.",
-      },
-      {
-        type: "mc",
-        prompt: "Khi nào được tính xác suất bằng số thuận lợi chia cho số phần tử của Ω?",
-        choices: [
-          "Khi mọi kết quả đều đồng khả năng",
-          "Khi chỉ có một kết quả thuận lợi",
-          "Khi Ω có đúng 6 phần tử",
-          "Khi biến cố là số chẵn",
-        ],
-        correct: 0,
-        hint: "Xúc xắc lệch thì mỗi mặt không còn một cơ hội như nhau.",
-        explain: "Công thức ấy cần các kết quả đồng khả năng. Thẻ cùng loại, rút ngẫu nhiên, thì được.",
-      },
+      { type: "num", prompt: "Đề 2026, 6 quả bóng ghi 1 đến 6. Biến cố “số chẵn” có bao nhiêu kết quả thuận lợi?", answer: 3, hint: "2, 4 và 6.", explain: "Ba số chẵn. n(Ω) = 6, nên P(A) = 3/6 = 1/2." },
+      { type: "num", prompt: "Cùng đề 2026, P(A) = 1/k. Giá trị k bằng bao nhiêu?", answer: 2, hint: "3/6 rút gọn.", explain: "P(A) = 1/2, nên k = 2." },
+      { type: "num", prompt: "Đề 2025, 8 thẻ ghi 1 đến 8. Biến cố “chia hết cho 3” có bao nhiêu kết quả thuận lợi?", answer: 2, hint: "Chỉ các số có thật trong hộp.", explain: "Thẻ 3 và thẻ 6. Số 9 không có trong hộp." },
+      { type: "num", prompt: "Cùng đề 2025, P(A) = 1/k. Giá trị k bằng bao nhiêu?", answer: 4, hint: "2/8 = 1/4.", explain: "Đáp án chính thức là 1/4, nên k = 4." },
+      { type: "mc", prompt: "Vì sao được lấy số thuận lợi chia cho số phần tử của Ω?", choices: ["Vì các quả bóng hoặc các thẻ cùng loại và được lấy ngẫu nhiên", "Vì biến cố là số chẵn", "Vì Ω luôn có 6 phần tử", "Vì xác suất luôn bằng 1/2"], correct: 0, hint: "Công thức ấy cần các kết quả đồng khả năng.", explain: "Cùng loại và lấy ngẫu nhiên thì mỗi kết quả một cơ hội. Không phải vì biến cố là số chẵn." },
     ],
   },
   {
@@ -118,48 +89,34 @@ const THI10_LESSONS = [
     num: 3,
     chapter: 2,
     title: "Rút gọn căn rồi mới tìm x",
-    summary: "Đặt điều kiện, thay số, chứng minh bằng đặt t = √x, rồi giải bất phương trình.",
+    summary: "Đặt điều kiện, thay số, đặt t = √x, rồi dùng kết quả đã rút.",
     body: String.raw`
-      <p>Câu II cho hai biểu thức chứa căn. Ý 1 là thế số. Ý 2 là rút gọn. Ý 3 dùng kết quả vừa rút để giải bất phương trình hoặc tìm số nguyên. Đừng giải ý 3 trên biểu thức chưa gọn.</p>
-      <div class="idea">
-        <p><strong>Đặt \(t = \sqrt{x}\).</strong> Điều kiện thường là \(x > 0\) và mẫu khác 0. Viết điều kiện trước khi thế. Khi rút gọn, nhân liên hợp hoặc tách nhân tử \((\sqrt{x} - a)(\sqrt{x} + a)\). Sau khi rút, thay lại vào ý 3.</p>
+      <p>Năm 2025 và 2026, biểu thức chứa căn là câu II. Năm 2024, cùng dạng ấy là câu I. Năm 2023 cũng mở đầu bằng hai biểu thức. Làm ý 1 bằng cách thế. Làm ý 3 trên biểu thức đã rút, không trên biểu thức gốc.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu II.</strong> \(A = \dfrac{\sqrt{x} - 4}{\sqrt{x}}\), \(B = \dfrac{4}{\sqrt{x} - 3} + \dfrac{x - 7\sqrt{x} - 12}{x - 9}\), với \(x > 0\), \(x \neq 9\).</p>
+        <p>Khi \(x = 25\), \(\sqrt{x} = 5\), \(A = \dfrac{5 - 4}{5} = \dfrac{1}{5}\).</p>
+        <p>Đặt \(t = \sqrt{x}\), \(t > 0\), \(t \neq 3\). Mẫu thứ hai là \((t - 3)(t + 3)\). Quy đồng rồi rút được \(B = \dfrac{t}{t + 3}\). Nhân lại: \(P = A \cdot B = \dfrac{t - 4}{t + 3} = 1 - \dfrac{7}{t + 3}\).</p>
+        <p>\(P\) nguyên khi \(\dfrac{7}{t + 3}\) nguyên. Với \(t > 0\) và \(t \neq 3\), chỉ còn \(t = 4\) và \(t = \dfrac{1}{2}\). Vậy \(x = 16\) hoặc \(x = \dfrac{1}{4}\). Đáp án chính thức đúng hai giá trị này.</p>
       </div>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> \(A = \dfrac{\sqrt{x} + 3}{\sqrt{x} - 1}\), \(x > 0\), \(x \neq 1\).</p>
-        <p>Với \(x = 4\): \(\sqrt{4} = 2 \neq 1\), thỏa điều kiện. \(A = \dfrac{2 + 3}{2 - 1} = 5\).</p>
-        <p>Đặt \(t = \sqrt{x}\), \(t > 0\), \(t \neq 1\). Xét \(B = \dfrac{x + 2\sqrt{x} - 3}{\sqrt{x} - 1} - \sqrt{x}\). Tử \(t^2 + 2t - 3 = (t + 3)(t - 1)\), nên</p>
-        \[
-          B = t + 3 - t = 3.
-        \]
-        <p>Muốn \(\dfrac{A}{B} < 1\): \(\dfrac{t + 3}{3(t - 1)} < 1\). Với \(t > 1\), mẫu dương, nên \(t + 3 < 3t - 3\), tức \(t > 3\), \(x > 9\). Số nguyên nhỏ nhất là \(x = 10\).</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu II.</strong> \(A = \dfrac{\sqrt{x} + 2}{\sqrt{x} - 2}\), \(x > 0\), \(x \neq 4\). Khi \(x = 9\), \(A = \dfrac{3 + 2}{3 - 2} = 5\).</p>
+        <p>Sau khi rút, \(\dfrac{A}{B} = \dfrac{\sqrt{x}}{\sqrt{x} - 2}\). Điều kiện \(\dfrac{A}{B} < \dfrac{1}{2}\) tương đương \(\dfrac{\sqrt{x} + 2}{2(\sqrt{x} - 2)} < 0\). Tử dương, nên \(\sqrt{x} - 2 < 0\), tức \(x < 4\). Số nguyên dương lớn nhất là \(x = 3\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu I.</strong> \(A = \dfrac{x}{\sqrt{x} - 3}\), \(x > 0\), \(x \neq 9\). Khi \(x = 16\), \(A = \dfrac{16}{4 - 3} = 16\). Đề còn hỏi \(A - B < 0\). Đáp án chính thức: \(0 < x < 9\) và \(x \neq 1\).</p>
+        <p><strong>Hà Nội 2023, câu 1.</strong> \(A = \dfrac{x + 2}{\sqrt{x}}\), \(x > 0\), \(x \neq 1\). Khi \(x = 9\), \(A = \dfrac{11}{3}\).</p>
       </div>
       <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Thế \(x = 1\) vào mẫu bằng 0. Rút gọn xong quên điều kiện cũ. Nhân hai vế bất phương trình khi chưa biết mẫu âm hay dương.</p>
+        <p><strong>Sai lầm thường gặp.</strong> Bỏ \(x = \dfrac{1}{4}\) vì nó là phân số. Ở đề 2025, lấy \(x = 1\) trong khi đề hỏi số lớn nhất. Ở đề 2024, nhận \(x = 1\): lúc đó \(A - B = 0\), không nhỏ hơn 0.</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: String.raw`Với \(A = \dfrac{\sqrt{x} + 3}{\sqrt{x} - 1}\), \(x = 4\). Giá trị của A là bao nhiêu?`,
-        answer: 5,
-        hint: "√4 = 2, rồi thay vào tử và mẫu.",
-        explain: "A = (2 + 3)/(2 − 1) = 5. x = 4 thỏa x > 0 và x ≠ 1.",
-      },
-      {
-        type: "num",
-        prompt: "Số nguyên nhỏ nhất x > 9 thỏa A/B < 1, với B = 3 như ví dụ, là bao nhiêu?",
-        answer: 10,
-        hint: "x > 9, x nguyên, lấy số nhỏ nhất.",
-        explain: "Từ √x > 3 được x > 9. Số nguyên nhỏ nhất là 10.",
-      },
-      {
-        type: "mc",
-        prompt: String.raw`Biểu thức \(\dfrac{\sqrt{x} + 3}{\sqrt{x} - 1}\) không xác định khi nào?`,
-        choices: ["x = 0", "x = 1", "x = 9", "x = 4"],
-        correct: 1,
-        hint: "Mẫu bằng 0 khi √x = 1.",
-        explain: "√x − 1 = 0 khi x = 1. x = 0 cũng ngoài miền x > 0, nhưng câu hỏi về mẫu bằng 0 là x = 1.",
-      },
+      { type: "num", prompt: "Đề 2026, A = (√x − 4)/√x. Khi x = 25, 5A bằng bao nhiêu?", answer: 1, hint: "A = 1/5.", explain: "√25 = 5, A = 1/5, nên 5A = 1." },
+      { type: "text", prompt: "Đề 2026, P = A·B nguyên tại x = 16 và một giá trị nữa. Viết giá trị đó dưới dạng phân số.", answer: "1/4", accept: ["1/4", "0,25", "0.25"], hint: "√x = 1/2, nên x = 1/4.", explain: "Đáp án chính thức là x = 16 và x = 1/4." },
+      { type: "num", prompt: "Đề 2025, A = (√x + 2)/(√x − 2). Khi x = 9, A bằng bao nhiêu?", answer: 5, hint: "√9 = 3.", explain: "A = (3 + 2)/(3 − 2) = 5. Đáp án chính thức." },
+      { type: "num", prompt: "Đề 2025 hỏi số nguyên dương x lớn nhất để A/B < 1/2. Số đó là bao nhiêu?", answer: 3, hint: "Bất phương trình dẫn tới x < 4.", explain: "x nguyên dương và x < 4, lớn nhất là 3." },
+      { type: "num", prompt: "Đề 2024, A = x/(√x − 3). Khi x = 16, A bằng bao nhiêu?", answer: 16, hint: "√16 = 4, mẫu bằng 1.", explain: "16/(4 − 3) = 16. Đáp án chính thức." },
+      { type: "num", prompt: "Đề 2023, A = (x + 2)/√x. Khi x = 9, 3A bằng bao nhiêu?", answer: 11, hint: "A = 11/3.", explain: "(9 + 2)/3 = 11/3, nên 3A = 11." },
     ],
   },
   {
@@ -169,53 +126,38 @@ const THI10_LESSONS = [
     title: "Một phương trình, rồi một hệ",
     summary: "Gọi ẩn, ghi điều kiện, lập quan hệ, giải, loại nghiệm không đúng đề.",
     body: String.raw`
-      <p>Câu III thường có hai bài thực tế và một bài Viète. Bài thực tế thứ nhất là một phương trình. Bài thứ hai là một hệ hai ẩn. Đừng gộp hai câu chuyện vào một phương trình.</p>
-      <div class="example">
-        <p><strong>Một ẩn.</strong> Quãng đường \(x\) km, \(x > 0\). Chiều đi 50 km/h, chiều về 30 km/h. Chiều đi ít hơn chiều về 1 giờ:</p>
-        \[
-          \dfrac{x}{30} - \dfrac{x}{50} = 1.
-        \]
-        <p>\(\dfrac{5x - 3x}{150} = 1\), \(2x = 150\), \(x = 75\). Kiểm tra: \(75/50 = 1{,}5\) giờ, \(75/30 = 2{,}5\) giờ, hiệu đúng 1 giờ.</p>
+      <p>Câu thực tế gần như năm nào cũng có. Một bài là một phương trình. Một bài là một hệ. Thời gian bằng quãng đường chia vận tốc. Tiền bằng đơn giá nhân số lượng.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu III.1.</strong> Kế hoạch may mỗi ngày \(x\) chiếc, \(x\) nguyên dương. Ba ngày đầu may đúng kế hoạch. Bảy ngày sau, mỗi ngày may hơn kế hoạch 5 chiếc. Sau 10 ngày được 335 chiếc.</p>
+        \[ 3x + 7(x + 5) = 335. \]
+        <p>\(10x + 35 = 335\), \(x = 30\). Đáp án: mỗi ngày theo kế hoạch may 30 chiếc.</p>
       </div>
-      <div class="example">
-        <p><strong>Hai ẩn.</strong> Mua vở và bút, tất cả 20 món, hết 200 nghìn đồng. Vở 15 nghìn, bút 5 nghìn. Gọi \(x\) là số vở, \(y\) là số bút, \(x, y\) nguyên, \(0 \leq x, y \leq 20\).</p>
-        \[
-          \begin{cases} x + y = 20 \\ 15x + 5y = 200. \end{cases}
-        \]
-        <p>Nhân câu thứ nhất với 5 rồi trừ: \(10x = 100\), \(x = 10\), \(y = 10\). Kiểm tra tiền: \(150 + 50 = 200\). Nhận.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu III.2.</strong> 25 bông hoa hồng và hoa cúc, hết 180 nghìn đồng. Hồng 8 nghìn, cúc 6 nghìn. Gọi \(x\) là số hoa hồng, \(y\) là số hoa cúc, nguyên không âm.</p>
+        \[ \begin{cases} x + y = 25 \\ 8x + 6y = 180. \end{cases} \]
+        <p>Thế \(y = 25 - x\): \(8x + 6(25 - x) = 180\), \(2x = 30\), \(x = 15\), \(y = 10\). Đáp án: 15 hồng và 10 cúc.</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Quên đổi đơn vị. Nhận nghiệm âm cho số món hoặc quãng đường. Viết thời gian là vận tốc nhân đường, thay vì đường chia vận tốc.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu III.1.</strong> Hà Nội đi Hải Phòng 60 km/h, về 40 km/h, cùng quãng đường. Chiều đi ít hơn chiều về 1 giờ. Gọi quãng đường \(x\) km, \(x > 0\).</p>
+        \[ \dfrac{x}{40} - \dfrac{x}{60} = 1. \]
+        <p>\(\dfrac{3x - 2x}{120} = 1\), \(x = 120\). Đáp án: 120 km.</p>
+        <p><strong>Hà Nội 2025, câu III.2.</strong> Ba lô và máy tính có giá niêm yết tổng 885 nghìn đồng. Giảm 20% ba lô và 25% máy tính thì trả 682 nghìn. Gọi giá niêm yết ba lô là \(x\), máy tính là \(y\), cả hai dương.</p>
+        \[ \begin{cases} x + y = 885 \\ 0{,}8x + 0{,}75y = 682. \end{cases} \]
+        <p>Đáp án chính thức: ba lô 365 nghìn, máy tính 520 nghìn. Kiểm tra: \(0{,}8 \cdot 365 + 0{,}75 \cdot 520 = 292 + 390 = 682\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu II.1.</strong> Đội dự định dùng \(x\) xe tải lớn, \(x\) nguyên dương. Thực tế giảm 2 xe, mỗi xe lớn chở hơn mỗi xe nhỏ 2 tấn, và cả hai cách đều chở đủ 15 tấn. Đáp án chính thức: 3 xe tải lớn. Khi đó mỗi xe lớn chở 5 tấn, 5 xe nhỏ mỗi xe chở 3 tấn.</p>
+        <p><strong>Hà Nội 2023.</strong> Phân xưởng làm 900 sản phẩm. Thực tế mỗi ngày hơn kế hoạch 15 sản phẩm và xong trước 3 ngày. Đáp án: theo kế hoạch mỗi ngày làm 60 sản phẩm.</p>
+        <p><strong>Hà Nội 2022.</strong> Ô tô và xe máy đi 60 km. Ô tô nhanh hơn 20 km/h và đến sớm hơn 30 phút. Đáp án: xe máy 40 km/h, ô tô 60 km/h. Kiểm tra: \(60/40 - 60/60 = 0{,}5\) giờ.</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: "Quãng đường đi 50 km/h và về 30 km/h, chiều đi ít hơn 1 giờ. Quãng đường dài bao nhiêu km?",
-        answer: 75,
-        hint: "x/30 − x/50 = 1.",
-        explain: "2x/150 = 1, x = 75 km. Kiểm tra hiệu thời gian đúng 1 giờ.",
-      },
-      {
-        type: "num",
-        prompt: "20 món vở và bút hết 200 nghìn đồng. Vở 15 nghìn, bút 5 nghìn. Mua bao nhiêu quyển vở?",
-        answer: 10,
-        hint: "x + y = 20 và 15x + 5y = 200.",
-        explain: "Trừ 5 lần câu thứ nhất: 10x = 100, x = 10, y = 10.",
-      },
-      {
-        type: "mc",
-        prompt: "Giải ra x = 75 và x = −20 cho bài quãng đường. Kết luận đúng là:",
-        choices: [
-          "Nhận cả hai",
-          "Chỉ nhận 75 vì x > 0",
-          "Chỉ nhận −20",
-          "Bài toán vô nghiệm",
-        ],
-        correct: 1,
-        hint: "Điều kiện đã ghi trước khi giải: x > 0.",
-        explain: "Quãng đường không âm. −20 là nghiệm của phương trình nhưng bị loại bởi điều kiện.",
-      },
+      { type: "num", prompt: "Đề 2026: theo kế hoạch, mỗi ngày may bao nhiêu chiếc áo?", answer: 30, hint: "3x + 7(x + 5) = 335.", explain: "10x = 300, x = 30. Đáp án chính thức." },
+      { type: "num", prompt: "Đề 2026: người đó mua bao nhiêu bông hoa hồng?", answer: 15, hint: "x + y = 25 và 8x + 6y = 180.", explain: "x = 15, y = 10. Đáp án chính thức." },
+      { type: "num", prompt: "Đề 2025: quãng đường Hà Nội – Hải Phòng dài bao nhiêu km?", answer: 120, hint: "x/40 − x/60 = 1.", explain: "x/120 = 1, x = 120. Đáp án chính thức." },
+      { type: "num", prompt: "Đề 2025: giá niêm yết của ba lô là bao nhiêu nghìn đồng?", answer: 365, hint: "x + y = 885 và 0,8x + 0,75y = 682.", explain: "x = 365, y = 520. Kiểm tra tiền sau giảm đúng 682." },
+      { type: "num", prompt: "Đề 2024: đội vận chuyển dùng bao nhiêu xe tải lớn?", answer: 3, hint: "Hai cách chở đều đủ 15 tấn, số xe lớn ít hơn số xe nhỏ 2 xe.", explain: "Đáp án chính thức là 3 xe tải lớn." },
+      { type: "num", prompt: "Đề 2022: vận tốc xe máy là bao nhiêu km/h?", answer: 40, hint: "Ô tô nhanh hơn 20 km/h và đến sớm 0,5 giờ trên quãng 60 km.", explain: "Xe máy 40 km/h, ô tô 60 km/h. Hiệu thời gian đúng 30 phút." },
     ],
   },
   {
@@ -225,144 +167,99 @@ const THI10_LESSONS = [
     title: "Viète, không cần giải nghiệm",
     summary: "Đọc tổng và tích từ hệ số, rồi biến biểu thức về tổng và tích.",
     body: String.raw`
-      <p>Ý cuối câu III thường cho một phương trình bậc hai đã có hai nghiệm, rồi hỏi một biểu thức. Đề không bảo tìm từng nghiệm. Dùng Viète.</p>
+      <p>Ý cuối câu phương trình thường không bảo tìm từng nghiệm. Dùng tổng và tích. Chỉ dùng khi phương trình có nghiệm.</p>
       <div class="idea">
-        <p>Với \(x^2 - sx + p = 0\), tổng hai nghiệm là \(s\), tích là \(p\). Dạng tổng quát \(ax^2 + bx + c = 0\): tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Chỉ dùng khi \(\Delta \geq 0\).</p>
-        <p>Biến \(x_1^2 + x_2^2\) thành \((x_1 + x_2)^2 - 2x_1 x_2\). Quy đồng biểu thức có mẫu \(x_1, x_2\) trước khi thế.</p>
+        <p>Với \(ax^2 + bx + c = 0\), tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Nếu mỗi nghiệm thỏa \(x^2 = px + q\), có thể thay \(x^2\) bằng \(px + q\) để hạ bậc.</p>
       </div>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> \(x^2 - 5x + 2 = 0\). \(\Delta = 25 - 8 = 17 > 0\), có hai nghiệm. Tổng \(5\), tích \(2\).</p>
-        \[
-          x_1^2 + x_2^2 = 5^2 - 2 \cdot 2 = 21.
-        \]
-        <p>Không cần viết \(\dfrac{5 \pm \sqrt{17}}{2}\).</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu III.3.</strong> \(x^2 - 3x + 1 = 0\) có hai nghiệm phân biệt \(x_1, x_2\). Tính</p>
+        \[ Q = \dfrac{3x_2 - 1}{x_1} + \dfrac{3x_1}{x_2} - x_1. \]
+        <p>Tổng 3, tích 1. Từ phương trình, \(x_2^2 = 3x_2 - 1\). Quy đồng với mẫu \(x_1 x_2 = 1\), rồi thay \(x_1^2 = 3x_1 - 1\) và \(x_2^2 = 3x_2 - 1\), được \(Q = 8(x_1 + x_2) - 6 = 24 - 6 = 18\). Đáp án chính thức: \(Q = 18\).</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Quên dấu trừ ở tổng. Dùng Viète khi \(\Delta < 0\). Thế nhầm tích vào chỗ tổng.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu III.3.</strong> \(x^2 + 8x - 6 = 0\) có hai nghiệm \(x_1, x_2\). Tìm \(m\) để</p>
+        \[ \dfrac{70 - mx_1^2}{x_2} = x_1 + mx_2. \]
+        <p>Tổng \(-8\), tích \(-6\). \(x_1^2 + x_2^2 = 64 + 12 = 76\). Đưa phương trình về \(76 = m \cdot 76\), nên \(m = 1\). Không nghiệm nào bằng 0, mẫu có nghĩa. Đáp án: \(m = 1\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu III.2.</strong> Parabol \(y = x^2\) và đường thẳng \(y = (m - 2)x + 5\). Phương trình hoành độ giao điểm là \(x^2 - (m - 2)x - 5 = 0\). \(\Delta = (m - 2)^2 + 20 > 0\) với mọi \(m\), nên luôn cắt tại hai điểm phân biệt.</p>
+        <p>Điều kiện \(x_1 + 5x_2 = 0\). Kết hợp tích bằng \(-5\), đáp án chính thức: \(m = -2\) hoặc \(m = 6\).</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: String.raw`Phương trình \(x^2 - 5x + 2 = 0\) có hai nghiệm. Tổng hai nghiệm bằng bao nhiêu?`,
-        answer: 5,
-        hint: "Tổng = −b/a = −(−5)/1.",
-        explain: "Tổng = 5, tích = 2. Δ = 17 > 0 nên Viète dùng được.",
-      },
-      {
-        type: "num",
-        prompt: String.raw`Với hai nghiệm ấy, \(x_1^2 + x_2^2\) bằng bao nhiêu?`,
-        answer: 21,
-        hint: "(x1 + x2)² − 2x1x2.",
-        explain: "25 − 2·2 = 21.",
-      },
-      {
-        type: "mc",
-        prompt: String.raw`Phương trình \(x^2 + x + 1 = 0\) có \(\Delta < 0\). Có dùng Viète để nói tổng hai nghiệm không?`,
-        choices: [
-          "Có, tổng vẫn là −1",
-          "Không, vì không có nghiệm thực",
-          "Có, nếu đổi dấu c",
-          "Chỉ dùng được khi a = 1",
-        ],
-        correct: 1,
-        hint: "Viète nói về các nghiệm đã tồn tại.",
-        explain: "Δ = 1 − 4 = −3 < 0, phương trình vô nghiệm thực. Không có tổng hai nghiệm để tính.",
-      },
+      { type: "num", prompt: "Đề 2026: Q bằng bao nhiêu?", answer: 18, hint: "Tổng hai nghiệm là 3, tích là 1. Hạ bậc bằng chính phương trình.", explain: "Đáp án chính thức là Q = 18." },
+      { type: "num", prompt: "Đề 2025: giá trị m cần tìm bằng bao nhiêu?", answer: 1, hint: "x1² + x2² = 76, và phương trình rút về 76 = 76m.", explain: "m = 1. Không nghiệm nào làm mẫu bằng 0." },
+      { type: "num", prompt: "Đề 2024: hai giá trị của m là −2 và 6. Tổng hai giá trị đó bằng bao nhiêu?", answer: 4, hint: "Cộng hai đáp án.", explain: "(−2) + 6 = 4. Cả hai đều làm đường thẳng cắt parabol tại hai điểm thỏa điều kiện." },
+      { type: "mc", prompt: "Vì sao đề 2024 kết luận đường thẳng luôn cắt parabol tại hai điểm phân biệt?", choices: ["Vì Δ = (m − 2)² + 20 luôn dương", "Vì m = 0", "Vì parabol đi qua gốc tọa độ", "Vì tích hai hoành độ bằng 5"], correct: 0, hint: "Nhìn biệt thức, không cần tìm m trước.", explain: "Biệt thức là một bình phương cộng 20, nên luôn lớn hơn 0." },
     ],
   },
   {
     id: "tv10-6",
     num: 6,
     chapter: 4,
-    title: "Hình trụ và hình nón",
-    summary: "Diện tích xung quanh trụ dùng chiều cao. Nón dùng đường sinh. Đọc kỹ một đáy hay hai đáy.",
+    title: "Hình trụ và hình cầu",
+    summary: "Diện tích xung quanh trụ dùng chiều cao. Nước đã dùng chỉ lấy phần chiều cao hao đi.",
     body: String.raw`
-      <p>Nửa đầu câu IV là hình thực tế. Công thức ít, nhưng dễ nhầm chữ.</p>
+      <p>Năm 2025 và 2026, hình trụ là nửa đầu câu IV. Năm 2024, hình trụ nằm ở câu II. Năm 2023 hỏi thể tích khối gỗ hình trụ. Năm 2022 hỏi diện tích mặt quả bóng, tức hình cầu. Đọc kỹ đề hỏi xung quanh, thể tích, hay mặt cầu.</p>
       <div class="memory">
-        <p>Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Nón: \(S_{xq} = \pi r l\), \(V = \dfrac{1}{3}\pi r^2 h\), và \(l^2 = r^2 + h^2\). Diện tích xung quanh nón không dùng \(h\). Thể tích nón không dùng \(l\).</p>
+        <p>Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Cầu: \(S = 4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\). 1 lít \(= 1000\) cm³.</p>
       </div>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> Trụ \(R = 10\) cm, \(h = 20\) cm. \(S_{xq} = 2\pi \cdot 10 \cdot 20 = 400\pi\) cm². Nếu đề lấy \(\pi \approx 3{,}14\), nhân sau khi đã gọn: \(400 \cdot 3{,}14 = 1256\) cm².</p>
-        <p>Mực nước hạ 5 cm. Thể tích đã dùng \(\pi R^2 \cdot 5 = 500\pi\) cm³, không phải thể tích cả thùng.</p>
-        <p>Nón \(r = 3\), \(h = 4\): đường sinh \(l = 5\), không lấy 4. \(S_{xq} = 15\pi\). \(V = 12\pi\).</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu IV.1.</strong> Xô hình trụ, cao 25 cm, bán kính đáy 12 cm. Coi đáy không đáng kể.</p>
+        <p>a) \(S_{xq} = 2 \cdot 3{,}14 \cdot 12 \cdot 25 = 1884\) cm². Đáp án chính thức: khoảng 1884 cm².</p>
+        <p>b) Múc vào bể 150 lít. Mỗi lần chỉ múc 80% thể tích xô. Lúc đầu bể không có nước.</p>
+        \[ V = 3{,}14 \cdot 12^2 \cdot 25 = 11304 \text{ cm}^3, \quad 80\% \text{ là } 9043{,}2 \text{ cm}^3. \]
+        <p>\(150000 : 9043{,}2 \approx 16{,}6\). Mười sáu lần chưa đủ. Đáp án chính thức: ít nhất 17 xô.</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Quên \(\dfrac{1}{3}\) của nón. Sơn một đáy mà cộng hai lần \(\pi R^2\). Đổi lít sang cm³ sai: 1 lít = 1000 cm³.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu IV.1.</strong> Thùng bán kính 50 cm, cao 150 cm.</p>
+        <p>a) \(S_{xq} = 2 \cdot 3{,}14 \cdot 50 \cdot 150 = 47100\) cm².</p>
+        <p>b) Mực nước thấp hơn ban đầu 40 cm. Nước đã dùng \(3{,}14 \cdot 50^2 \cdot 40 = 314000\) cm³. Không lấy cả chiều cao 150 cm.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu II.2.</strong> Bình bán kính 4 cm, cao 25 cm. \(S_{xq} = 2 \cdot 3{,}14 \cdot 4 \cdot 25 = 628\) cm².</p>
+        <p><strong>Hà Nội 2023.</strong> Khối gỗ hình trụ, bán kính 30 cm, cao 120 cm. \(V = 3{,}14 \cdot 30^2 \cdot 120 = 339120\) cm³.</p>
+        <p><strong>Hà Nội 2022.</strong> Quả bóng bán kính 9,5 cm. Diện tích bề mặt \(4 \cdot 3{,}14 \cdot 9{,}5^2 = 1133{,}54\) cm². Đây là hình cầu, không phải hình trụ. Dùng \(4\pi R^2\), không dùng \(2\pi Rh\).</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: String.raw`Hình trụ R = 10 cm, h = 20 cm. Diện tích xung quanh là \(k\pi\) cm². Giá trị k bằng bao nhiêu?`,
-        answer: 400,
-        hint: "Sxq = 2πRh.",
-        explain: "2·10·20 = 400, nên Sxq = 400π cm².",
-      },
-      {
-        type: "num",
-        prompt: String.raw`Cùng hình trụ, mực nước hạ 5 cm. Thể tích nước đã dùng là \(k\pi\) cm³. Giá trị k bằng bao nhiêu?`,
-        answer: 500,
-        hint: "Chỉ phần trụ cao 5 cm: πR²·5.",
-        explain: "π·100·5 = 500π cm³.",
-      },
-      {
-        type: "mc",
-        prompt: "Diện tích xung quanh hình nón dùng đại lượng nào?",
-        choices: ["Chiều cao h", "Đường sinh l", "Đường kính đáy chia 2 rồi nhân h", "Thể tích chia 3"],
-        correct: 1,
-        hint: "Trải nón ra được hình quạt bán kính bằng đường sinh.",
-        explain: "Sxq = πrl. Chiều cao chỉ dùng cho thể tích và cho l² = r² + h².",
-      },
+      { type: "num", prompt: "Đề 2026: diện tích xung quanh xô, lấy π ≈ 3,14, bằng bao nhiêu cm²?", answer: 1884, hint: "2·3,14·12·25.", explain: "Đáp án chính thức là khoảng 1884 cm²." },
+      { type: "num", prompt: "Đề 2026: cần múc ít nhất bao nhiêu xô để đổ đầy bể 150 lít?", answer: 17, hint: "Mỗi lần chỉ được 80% thể tích xô. 16 lần chưa đủ.", explain: "150000 : 9043,2 ≈ 16,6, nên ít nhất 17 xô." },
+      { type: "num", prompt: "Đề 2025: diện tích xung quanh thùng, lấy π ≈ 3,14, bằng bao nhiêu cm²?", answer: 47100, hint: "2·3,14·50·150.", explain: "2·3,14·7500 = 47100." },
+      { type: "num", prompt: "Đề 2025: thể tích nước đã dùng, khi mực thấp đi 40 cm, bằng bao nhiêu cm³?", answer: 314000, hint: "Chỉ phần trụ cao 40 cm, không lấy 150 cm.", explain: "3,14·2500·40 = 314000 cm³." },
+      { type: "num", prompt: "Đề 2024: diện tích xung quanh bình bán kính 4 cm, cao 25 cm, bằng bao nhiêu cm²?", answer: 628, hint: "2·3,14·4·25.", explain: "Đáp án chính thức là khoảng 628 cm²." },
+      { type: "mc", prompt: "Đề 2022 hỏi diện tích bề mặt quả bóng bán kính 9,5 cm. Công thức đúng là:", choices: ["2πRh", "πR²h", "4πR²", "(1/3)πR²h"], correct: 2, hint: "Quả bóng là hình cầu.", explain: "Diện tích mặt cầu là 4πR². Đề không cho chiều cao." },
     ],
   },
   {
     id: "tv10-7",
     num: 7,
     chapter: 4,
-    title: "Chứng minh: nhìn góc và đường tròn trước",
-    summary: "Góc nội tiếp bằng nửa cung. Tứ giác nội tiếp khi hai góc đối cộng 180°. Tiếp tuyến vuông góc bán kính.",
+    title: "Chứng minh: ý a thường là tứ giác nội tiếp",
+    summary: "Hai góc đối cộng 180°, hoặc cùng chắn một cung. Lấy điểm ý a trước.",
     body: String.raw`
-      <p>Nửa sau câu IV là chứng minh, khoảng 2,5 đến 3 điểm. Không cần nhớ một bài mẫu. Cần nhận ra tình huống trong 30 giây đầu.</p>
-      <div class="idea">
-        <p><strong>Ba tình huống lặp lại.</strong></p>
-        <ul>
-          <li>Hai góc cùng chắn một cung, hoặc một góc nội tiếp và một góc ở tâm: góc nội tiếp bằng nửa cung, góc ở tâm bằng cung.</li>
-          <li>Muốn bốn điểm đồng viên: tìm hai góc nhìn cùng một đoạn và bằng nhau, hoặc hai góc đối cộng \(180^\circ\), hoặc góc nội tiếp chắn đường kính thì vuông.</li>
-          <li>Hai tiếp tuyến từ một điểm ngoài thì bằng nhau, và bán kính tới tiếp điểm vuông góc với tiếp tuyến.</li>
-        </ul>
+      <p>Nửa sau câu IV là chứng minh, khoảng 2,5 đến 3 điểm. Ý a gần như luôn là chứng minh bốn điểm cùng thuộc một đường tròn, và ý đó khoảng 1 điểm. Làm xong ý a rồi mới sang ý b.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu IV.2a.</strong> Tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). \(H\) nằm trên \(AB\), \(HB > HA\), \(H\) khác \(A\). Qua \(H\) kẻ đường vuông góc với \(BC\), cắt \(BC\) tại \(D\) và cắt \(AC\) tại \(E\). Chứng minh \(A, H, D, C\) cùng thuộc một đường tròn.</p>
+        <p>Tam giác \(HAC\) vuông tại \(A\), vì \(H\) nằm trên \(AB\) và góc \(A\) của tam giác \(ABC\) là góc vuông. Tam giác \(HDC\) vuông tại \(D\), vì \(HD\) vuông góc với \(BC\). Hai góc đối của tứ giác \(AHDC\) đều bằng \(90^\circ\), cộng thành \(180^\circ\). Vậy tứ giác nội tiếp. Đáp án chính thức đi theo hướng này.</p>
       </div>
-      <div class="example">
-        <p><strong>Số đo.</strong> Góc nội tiếp chắn cung \(80^\circ\) thì bằng \(40^\circ\). Góc ở tâm chắn cùng cung bằng \(80^\circ\). Nếu góc nội tiếp bằng \(90^\circ\), cung bị chắn là nửa đường tròn, dây ấy là đường kính.</p>
-        <p>Tứ giác nội tiếp có một góc \(65^\circ\) thì góc đối bằng \(115^\circ\). Cộng hai góc kề không dùng định lí này.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu IV.2a.</strong> Tam giác \(ABC\) có ba góc nhọn, nội tiếp đường tròn \((O)\). Đường cao \(AD\) cắt đường tròn tại điểm thứ hai \(E\). \(K\) là chân đường vuông góc kẻ từ \(E\) xuống \(AB\). Chứng minh \(E, D, B, K\) cùng thuộc một đường tròn.</p>
+        <p>Chỗ cần nhìn: \(EK\) vuông góc với \(AB\), và \(AD\) là đường cao nên vuông góc với \(BC\). Tìm hai góc vuông, hoặc hai góc cùng chắn một đoạn. Đừng nhảy sang đường phân giác của ý b khi ý a chưa xong.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu IV.1.</strong> Từ \(A\) ngoài đường tròn \((O)\) kẻ hai tiếp tuyến \(AB\), \(AC\), với \(B\) và \(C\) là tiếp điểm. Chứng minh tứ giác \(ABOC\) nội tiếp.</p>
+        <p>Tiếp tuyến vuông góc bán kính, nên góc \(ABO\) và góc \(ACO\) đều bằng \(90^\circ\). Hai góc này đối nhau trong tứ giác \(ABOC\) và cộng thành \(180^\circ\). Đáp án chính thức kết luận tứ giác nội tiếp từ đó.</p>
       </div>
       <div class="memory">
-        <p><strong>Cách viết ý a.</strong> Nêu giả thiết vừa dùng, kết luận một góc, rồi nói vì sao bốn điểm đồng viên. Đừng nhảy tới ý c khi ý a chưa xong. Ý a thường là 1 điểm chắc.</p>
+        <p><strong>Ba câu hay dùng.</strong> Góc nội tiếp bằng nửa cung. Góc nội tiếp chắn đường kính thì vuông. Hai tiếp tuyến từ một điểm ngoài thì bằng nhau, và bán kính tới tiếp điểm vuông góc với tiếp tuyến.</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: "Góc nội tiếp chắn cung 80°. Số đo góc đó bằng bao nhiêu độ?",
-        answer: 40,
-        hint: "Góc nội tiếp bằng nửa cung bị chắn.",
-        explain: "80 : 2 = 40.",
-      },
-      {
-        type: "num",
-        prompt: "Tứ giác nội tiếp có một góc 65°. Góc đối bằng bao nhiêu độ?",
-        answer: 115,
-        hint: "Hai góc đối cộng 180°.",
-        explain: "180 − 65 = 115. Không cộng với góc kề.",
-      },
-      {
-        type: "mc",
-        prompt: "Góc nội tiếp chắn nửa đường tròn là:",
-        choices: ["Góc nhọn", "Góc vuông", "Góc tù", "Góc bẹt"],
-        correct: 1,
-        hint: "Nửa đường tròn là 180°. Nửa của 180° là bao nhiêu?",
-        explain: "Góc nội tiếp chắn cung 180° bằng 90°. Dây chắn cung ấy là đường kính.",
-      },
+      { type: "num", prompt: "Trong ý a đề 2026, góc tại A của tứ giác AHDC bằng bao nhiêu độ?", answer: 90, hint: "H nằm trên AB, và tam giác ABC vuông tại A.", explain: "Góc HAC chính là góc A của tam giác vuông, bằng 90°." },
+      { type: "num", prompt: "Hai góc đối của một tứ giác nội tiếp cộng lại bằng bao nhiêu độ?", answer: 180, hint: "Đây là dấu hiệu dùng ở cả đề 2024 và 2026.", explain: "Hai góc đối cộng 180° thì tứ giác nội tiếp được." },
+      { type: "mc", prompt: "Đề 2024 kết luận ABOC nội tiếp vì:", choices: ["Hai góc tại B và C đều vuông và đối nhau", "AB = BC", "O là trọng tâm", "Góc tại A bằng 60°"], correct: 0, hint: "Tiếp tuyến vuông góc với bán kính.", explain: "Góc ABO và góc ACO bằng 90°, đối nhau, tổng 180°." },
+      { type: "mc", prompt: "Khi vào bài chứng minh, nên làm ý nào trước?", choices: ["Ý c, vì điểm nhiều hơn", "Ý a, thường là bốn điểm đồng viên và khoảng 1 điểm", "Ý nào ngắn nhất trên nháp", "Bỏ chứng minh, chỉ làm hình trụ"], correct: 1, hint: "Ý a là điểm chắc nếu viết đủ lý do.", explain: "Làm ý a trước. Ý sau thường dùng kết quả của ý a." },
     ],
   },
   {
@@ -370,49 +267,122 @@ const THI10_LESSONS = [
     num: 8,
     chapter: 5,
     title: "Tối ưu rồi kiểm tra số nguyên",
-    summary: "Lập P(x), đưa về parabol hoặc AM-GM, rồi thử hai số nguyên cạnh đỉnh.",
+    summary: "Lập hàm, tìm đỉnh, rồi thử các số nguyên được phép.",
     body: String.raw`
-      <p>Câu V chỉ 0,5 điểm, nhưng là chỗ phân loại điểm 10. Đề hỏi số xe, số người, số ngày: đáp số phải là số nguyên thỏa điều kiện, không phải hoành độ đỉnh nếu đỉnh không nguyên.</p>
-      <div class="example">
-        <p><strong>Làm chậm.</strong> Có 10 quầy, mỗi quầy lãi 40 đơn vị một ngày. Thêm một quầy thì lãi mỗi quầy giảm 2 đơn vị. Gọi \(x\) là số quầy thêm, \(x\) nguyên, \(x \geq 0\), và \(40 - 2x > 0\).</p>
-        \[
-          P(x) = (10 + x)(40 - 2x) = -2(x - 5)^2 + 450.
-        \]
-        <p>Đỉnh tại \(x = 5\), đúng số nguyên. \(P(5) = 450\). Kiểm tra hai bên: \(P(4) = 448\), \(P(6) = 448\). Thêm 5 quầy thì lãi lớn nhất.</p>
-        <p>Nếu đỉnh là \(7{,}5\), phải tính cả \(x = 7\) và \(x = 8\). Không làm tròn một phía rồi dừng.</p>
+      <p>Câu V chỉ 0,5 điểm. Đáp số phải đúng điều kiện của đề: số xe, số người, số ngày. Đỉnh parabol không nguyên thì không được nộp chính hoành độ đỉnh.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2026, câu V.</strong> Hoàn thành 1000 sản phẩm. Mỗi công nhân làm 5 sản phẩm một ngày. Thuê kho 3 triệu đồng một ngày. Thưởng mỗi công nhân 1 triệu đồng khi xong việc. Gọi \(x\) là số công nhân, \(x\) nguyên dương và \(x\) là ước của 200, vì số ngày \(\dfrac{200}{x}\) phải nguyên.</p>
+        \[ C(x) = x + \dfrac{600}{x}. \]
+        <p>\(C(25) = 25 + 24 = 49\). \(C(20) = 50\). Đáp án chính thức: 25 công nhân và 8 ngày. Chi phí 49 triệu đồng.</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Quên điều kiện lãi mỗi quầy còn dương. Kết luận \(x = 7{,}5\) xe. Không thử hai số nguyên cạnh đỉnh.</p>
+      <div class="examq">
+        <p><strong>Hà Nội 2025, câu V.</strong> Đội có 35 xe, mỗi xe lãi 1 triệu đồng một ngày. Thêm một xe thì lãi mỗi xe giảm 20 nghìn đồng một ngày. Gọi \(x\) là số xe thêm, \(x\) nguyên, \(0 \leq x < 50\).</p>
+        \[ P(x) = (35 + x)(1000 - 20x). \]
+        <p>Đỉnh tại \(x = 7{,}5\). Phải tính cả hai số nguyên kề: \(P(7) = 42 \cdot 860 = 36120\), \(P(8) = 43 \cdot 840 = 36120\), đơn vị nghìn đồng. Hai cách cho cùng lợi nhuận. Nên thêm 7 xe hoặc 8 xe.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Hà Nội 2024, câu V.</strong> \(x > 0\), \(y > 0\), \(x + y + xy = 3\). Tìm giá trị nhỏ nhất của</p>
+        \[ P = \dfrac{3}{x + y} - xy. \]
+        <p>Đặt \(s = x + y\). Khi đó \(xy = 3 - s\), và \(s\) chỉ chạy từ 2 đến dưới 3. \(P = s + \dfrac{3}{s} - 3\) tăng trên đoạn đó. Nhỏ nhất tại \(s = 2\), tức \(x = y = 1\), và \(P = \dfrac{1}{2}\). Đáp án chính thức đúng giá trị này.</p>
       </div>
     `,
     exercises: [
-      {
-        type: "num",
-        prompt: "Với mô hình 10 quầy ở trên, nên thêm bao nhiêu quầy để lãi lớn nhất?",
-        answer: 5,
-        hint: "Đỉnh của −2(x − 5)² + 450.",
-        explain: "P lớn nhất khi x = 5. P(4) và P(6) đều nhỏ hơn.",
-      },
-      {
-        type: "num",
-        prompt: "Lãi lớn nhất trong mô hình đó bằng bao nhiêu đơn vị?",
-        answer: 450,
-        hint: "15 quầy, mỗi quầy lãi 30.",
-        explain: "(10 + 5)(40 − 10) = 15 · 30 = 450.",
-      },
-      {
-        type: "mc",
-        prompt: "Đỉnh parabol rơi vào x = 7,5 và x phải là số xe nguyên. Việc đúng là:",
-        choices: [
-          "Làm tròn thành 8 và dừng",
-          "Làm tròn thành 7 và dừng",
-          "Tính cả x = 7 và x = 8 rồi so sánh",
-          "Kết luận thêm 7,5 xe",
-        ],
-        correct: 2,
-        hint: "Hai số nguyên cách đỉnh đều 0,5 có thể cho cùng giá trị, hoặc một số lớn hơn.",
-        explain: "Đỉnh không nguyên thì thử hai số nguyên kề nhau. Không nộp 7,5 xe.",
-      },
+      { type: "num", prompt: "Đề 2026: nên điều động bao nhiêu công nhân?", answer: 25, hint: "Số ngày 200/x phải nguyên. Thử các ước gần √600.", explain: "Đáp án chính thức: 25 người, thuê kho 8 ngày." },
+      { type: "num", prompt: "Đề 2026: thuê kho trong bao nhiêu ngày?", answer: 8, hint: "200 sản phẩm-ngày chia cho 25 người.", explain: "200/25 = 8 ngày." },
+      { type: "num", prompt: "Đề 2025: lợi nhuận lớn nhất mỗi ngày là bao nhiêu nghìn đồng?", answer: 36120, hint: "Tính cả 7 xe thêm và 8 xe thêm.", explain: "P(7) = P(8) = 36120 nghìn đồng." },
+      { type: "mc", prompt: "Đề 2025, đỉnh rơi vào x = 7,5. Kết luận đúng là:", choices: ["Thêm 7,5 xe", "Chỉ thêm 7 xe", "Chỉ thêm 8 xe", "Thêm 7 xe hoặc 8 xe, vì hai cách cho cùng lợi nhuận"], correct: 3, hint: "Tính cả hai số nguyên kề đỉnh.", explain: "P(7) = P(8). Cả hai đều đạt lớn nhất." },
+      { type: "text", prompt: "Đề 2024: giá trị nhỏ nhất của P là bao nhiêu? Viết phân số.", answer: "1/2", accept: ["1/2", "0,5", "0.5"], hint: "Đạt khi x = y = 1.", explain: "Đáp án chính thức là 1/2, khi x = y = 1." },
+    ],
+  },
+  {
+    id: "tv10-9",
+    num: 9,
+    chapter: 6,
+    title: "Luyện số từ đề 2022–2026",
+    summary: "Một lượt các đáp số đã ra. Làm trước, rồi mới đối chiếu.",
+    body: String.raw`
+      <p>Đề không giữ một thứ tự cố định. Năm 2024 để căn ở câu I và hình trụ ở câu II. Năm 2025 và 2026 để thống kê ở câu I, căn ở câu II, hình trụ ở đầu câu IV. Luyện theo kỹ năng, rồi kiểm tra bằng số dưới đây.</p>
+      <div class="examq">
+        <p><strong>Đáp số đã đối chiếu.</strong></p>
+        <ul>
+          <li>2026: nhóm \([150;\ 155)\) có tần số 14, tức 28%. Xác suất số chẵn là \(\dfrac{1}{2}\). \(A = \dfrac{1}{5}\) khi \(x = 25\). \(P\) nguyên khi \(x = 16\) hoặc \(x = \dfrac{1}{4}\). May 30 chiếc một ngày. Mua 15 hồng và 10 cúc. \(Q = 18\). Diện tích xô khoảng 1884 cm², múc ít nhất 17 lần. Điều 25 người, thuê 8 ngày.</li>
+          <li>2025: nhóm \([12;\ 16)\) có tần số 75, tức 25%. Xác suất chia hết cho 3 là \(\dfrac{1}{4}\). \(A = 5\) khi \(x = 9\). Số nguyên dương lớn nhất là 3. Quãng đường 120 km. Ba lô 365 nghìn, máy tính 520 nghìn. \(m = 1\). Diện tích thùng 47100 cm², nước đã dùng 314000 cm³. Thêm 7 hoặc 8 xe.</li>
+          <li>2024: \(A = 16\) khi \(x = 16\). \(A - B < 0\) khi \(0 < x < 9\), \(x \neq 1\). Dùng 3 xe tải lớn. Diện tích bình 628 cm². Hệ có nghiệm \((1;\ 1)\). \(m = -2\) hoặc \(m = 6\). Giá trị nhỏ nhất của \(P\) là \(\dfrac{1}{2}\).</li>
+          <li>2023: \(A = \dfrac{11}{3}\) khi \(x = 9\). Mỗi ngày theo kế hoạch làm 60 sản phẩm. Thể tích khối gỗ 339120 cm³.</li>
+          <li>2022: xe máy 40 km/h, ô tô 60 km/h. Diện tích mặt quả bóng \(4\pi R^2\) với \(R = 9{,}5\) cm.</li>
+        </ul>
+      </div>
+      <div class="memory">
+        <p>Nếu một số trong danh sách này không tự làm ra được, quay lại bài cùng kỹ năng. Đừng học thuộc danh sách.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đề 2024, hệ có √(3x + 1). Nghiệm x bằng bao nhiêu?", answer: 1, hint: "Đặt t = √(3x + 1), tìm được t = 2, y = 1.", explain: "Đáp án chính thức là (x; y) = (1; 1)." },
+      { type: "num", prompt: "Đề 2023: theo kế hoạch, mỗi ngày phân xưởng làm bao nhiêu sản phẩm?", answer: 60, hint: "900 sản phẩm, thực tế hơn 15 sản phẩm mỗi ngày và xong trước 3 ngày.", explain: "Phương trình cho x = 60. Nghiệm âm bị loại." },
+      { type: "num", prompt: "Đề 2023: thể tích khối gỗ hình trụ, lấy π ≈ 3,14, bằng bao nhiêu cm³?", answer: 339120, hint: "R = 30, h = 120, V = πR²h.", explain: "3,14·900·120 = 339120 cm³." },
+      { type: "num", prompt: "Đề 2022: vận tốc ô tô là bao nhiêu km/h?", answer: 60, hint: "Xe máy 40 km/h, ô tô nhanh hơn 20 km/h.", explain: "60/40 − 60/60 = 0,5 giờ, đúng 30 phút sớm hơn." },
+      { type: "mc", prompt: "Năm nào để bảng thống kê ở câu I?", choices: ["2024", "2025 và 2026", "2022", "Không năm nào"], correct: 1, hint: "Năm 2024 mở đầu bằng biểu thức chứa căn.", explain: "2025 và 2026 mở bằng bảng tần số. 2024 để căn ở câu I." },
+      { type: "mc", prompt: "Đề 2024, tập nghiệm của A − B < 0 là:", choices: ["Mọi x > 0", "0 < x < 9 và x ≠ 1", "Chỉ x = 1", "x > 9"], correct: 1, hint: "Khi x = 1 thì A − B = 0, không nhỏ hơn 0.", explain: "Đáp án chính thức: 0 < x < 9, x ≠ 1." },
+    ],
+  },
+  {
+    id: "tv10-10",
+    num: 10,
+    chapter: 7,
+    title: "Đề thử THCS Mỹ Đình 2",
+    summary: "Cùng khung 5 câu với đề Hà Nội, nhưng số liệu khác. Làm số trước, chứng minh sau.",
+    body: String.raw`
+      <p>Đây là đề thi thử của trường THCS Mỹ Đình 2, năm học 2026–2027, 120 phút, 5 bài, thang 10. Không phải đề chính thức của Sở. Cấu trúc vẫn là thống kê, căn, phương trình, hình, rồi tối ưu.</p>
+      <div class="examq">
+        <p><strong>Bài I.1.</strong> Tuổi thọ của 30 bóng đèn, đơn vị giờ: ba giá trị 1150, sáu giá trị 1160, mười hai giá trị 1170, sáu giá trị 1180, ba giá trị 1190. Tổng 30.</p>
+        <p>Tần số tương đối lần lượt 10%, 20%, 40%, 20%, 10%. Từ 1160 đến 1180 gồm cả hai đầu: 6 + 12 + 6 = 24 bóng, tức 80%. Câu “trên 75%” là đúng, không phải sai.</p>
+        <p><strong>Bài I.2.</strong> Tung đồng xu ba lần, có thứ tự. \(\Omega\) có 8 kết quả. “Sấp đúng một lần”: SNN, NSN, NNS. \(P(A) = \dfrac{3}{8}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài II.</strong> \(A = \dfrac{20 - 2\sqrt{x}}{x - 25} + \dfrac{3}{\sqrt{x} + 5}\), \(B = \dfrac{\sqrt{x} + 2}{\sqrt{x} - 5}\), với \(x \geq 0\), \(x \neq 25\).</p>
+        <p>Khi \(x = 49\), \(B = \dfrac{7 + 2}{7 - 5} = \dfrac{9}{2}\).</p>
+        <p>Đặt \(t = \sqrt{x}\), \(t \geq 0\), \(t \neq 5\). Mẫu \(x - 25 = (t - 5)(t + 5)\). Quy đồng được \(A = \dfrac{1}{\sqrt{x} - 5}\).</p>
+        <p>Khi đó \(\dfrac{B}{A} = \sqrt{x} + 2\). Giải \(\sqrt{x} + 2 = |x - 4|\), được \(x = 1\) hoặc \(x = 9\). Cả hai thỏa điều kiện. Kiểm tra: \(|1 - 4| = 3 = 1 + 2\), \(|9 - 4| = 5 = 3 + 2\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài III.1.</strong> Gọi giá chưa thuế của hai loại là \(x\) và \(y\) triệu đồng, dương.</p>
+        \[
+          \begin{cases} 1{,}1x + 1{,}08y = 2{,}17 \\ 1{,}09(x + y) = 2{,}18. \end{cases}
+        \]
+        <p>Câu thứ hai cho \(x + y = 2\). Thế vào câu thứ nhất: \(x = 0{,}5\), \(y = 1{,}5\). Không kể thuế: loại thứ nhất 500 nghìn đồng, loại thứ hai 1,5 triệu đồng. Kiểm tra: \(1{,}1 \cdot 0{,}5 + 1{,}08 \cdot 1{,}5 = 2{,}17\).</p>
+        <p><strong>Bài III.2.</strong> Gọi số khẩu trang mỗi ngày theo kế hoạch là \(x\), nguyên dương. Thời gian kế hoạch \(\dfrac{8400}{x}\) ngày. Thực tế mỗi ngày may \(x + 102\) chiếc, và trước hạn 4 ngày đã may được 6416 chiếc.</p>
+        \[
+          \dfrac{8400}{x} - \dfrac{6416}{x + 102} = 4.
+        \]
+        <p>Đưa về \(x^2 - 394x - 214200 = 0\). Nghiệm dương \(x = 700\). Kiểm tra: kế hoạch 12 ngày, thực tế 8 ngày, \(8 \cdot 802 = 6416\).</p>
+        <p><strong>Bài III.3.</strong> \(x^2 - 3x - 1 = 0\), tổng 3, tích \(-1\). Từ phương trình, \(x_1^3 = 10x_1 + 3\). Nên</p>
+        \[
+          A = x_1^3 + 10x_2 - 30 = 10(x_1 + x_2) - 27 = 3.
+        \]
+      </div>
+      <div class="examq">
+        <p><strong>Bài IV.1.</strong> Phần đựng rượu cao 6 cm, miệng đường kính 6 cm. Thành là hình trụ cao 3 cm, đáy là nửa khối cầu bán kính 3 cm.</p>
+        <p>Thể tích lớn nhất \(V = \pi \cdot 3^2 \cdot 3 + \dfrac{2}{3}\pi \cdot 3^3 = 27\pi + 18\pi = 45\pi\) cm³.</p>
+        <p>12 người, mỗi người 4 ly, mỗi lần rót 60% ly. Lượng cần \(12 \cdot 4 \cdot 0{,}6 \cdot 45\pi = 1296\pi\) cm³. Với \(\pi \approx 3{,}14\), khoảng 4,79 lít. Mỗi chai 0,85 lít, nên cần ít nhất 5 chai.</p>
+        <p><strong>Bài IV.2a.</strong> \(FN\) vuông góc \(DE\), \(EQ\) vuông góc \(FP\). Hai góc nhìn đoạn \(FE\) đều vuông, nên \(F, N, Q, E\) cùng thuộc đường tròn đường kính \(FE\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài V.</strong> Hầm biogas 12 m³, kín để giữ khí. Rộng \(x\) mét, sâu \(\dfrac{3}{2}x\), dài \(y\). Thể tích cho \(y = \dfrac{8}{x^2}\).</p>
+        <p>Vật liệu là cả sáu mặt: \(S = 3x^2 + \dfrac{40}{x} = 3x^2 + \dfrac{20}{x} + \dfrac{20}{x}\). Nhỏ nhất khi \(3x^2 = \dfrac{20}{x}\), tức \(x^3 = \dfrac{20}{3}\). Dài bằng \(\dfrac{6}{5}x\), sâu bằng \(\dfrac{3}{2}x\).</p>
+        <p>Làm tròn đến hàng phần trăm: rộng 1,88 m, dài 2,26 m, sâu 2,82 m. Tích ba kích thước đúng 12 m³.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đề Mỹ Đình 2: có bao nhiêu bóng đèn tuổi thọ 1170 giờ?", answer: 12, hint: "Đếm trong 30 số, rồi kiểm tra tổng tần số bằng 30.", explain: "1170 xuất hiện 12 lần. 3 + 6 + 12 + 6 + 3 = 30." },
+      { type: "num", prompt: "Từ 1160 đến 1180 giờ, kể cả hai đầu, chiếm bao nhiêu phần trăm số bóng?", answer: 80, hint: "24 bóng trên 30.", explain: "6 + 12 + 6 = 24, 24/30 = 80%. Câu “trên 75%” là đúng." },
+      { type: "num", prompt: "Tung đồng xu ba lần. Biến cố “sấp đúng một lần” có bao nhiêu kết quả thuận lợi?", answer: 3, hint: "SNN, NSN, NNS.", explain: "Ba kết quả trên tám, P(A) = 3/8." },
+      { type: "num", prompt: "Khi x = 49, 2B bằng bao nhiêu?", answer: 9, hint: "B = 9/2.", explain: "(7 + 2)/(7 − 5) = 9/2, nên 2B = 9." },
+      { type: "num", prompt: "Phương trình B/A = |x − 4| có hai nghiệm. Tổng hai nghiệm bằng bao nhiêu?", answer: 10, hint: "Một nghiệm là 1, nghiệm kia là 9.", explain: "x = 1 và x = 9 đều thỏa x ≥ 0, x ≠ 25. Tổng bằng 10." },
+      { type: "num", prompt: "Không kể thuế, loại hàng thứ nhất giá bao nhiêu nghìn đồng?", answer: 500, hint: "x + y = 2 triệu, rồi x = 0,5 triệu.", explain: "0,5 triệu đồng là 500 nghìn đồng. Loại thứ hai là 1,5 triệu." },
+      { type: "num", prompt: "Theo kế hoạch, mỗi ngày may bao nhiêu chiếc khẩu trang?", answer: 700, hint: "8400/x − 6416/(x + 102) = 4.", explain: "x = 700. Kiểm tra: 12 ngày kế hoạch, 8 ngày thực tế, 8·802 = 6416." },
+      { type: "num", prompt: "Biểu thức A = x1³ + 10x2 − 30 bằng bao nhiêu?", answer: 3, hint: "Đưa x1³ về 10x1 + 3, rồi dùng tổng hai nghiệm.", explain: "A = 10(x1 + x2) − 27 = 30 − 27 = 3." },
+      { type: "num", prompt: "Thể tích rượu tối đa trong một ly là kπ cm³. Giá trị k bằng bao nhiêu?", answer: 45, hint: "Trụ 27π cộng nửa cầu 18π.", explain: "27π + 18π = 45π cm³." },
+      { type: "num", prompt: "Ông A cần chuẩn bị ít nhất bao nhiêu chai rượu vàng?", answer: 5, hint: "1296π cm³, mỗi chai 0,85 lít. Bốn chai không đủ.", explain: "Khoảng 4,79 lít, nên ít nhất 5 chai." },
     ],
   },
 ];
@@ -422,8 +392,8 @@ COURSES.push({
   grade: "10",
   title: "Thi vào 10",
   level: "Hà Nội",
-  subtitle: "Toán không chuyên · 120 phút · 5 câu · thang 10",
-  blurb: "Ôn đúng cấu trúc đề Toán vào lớp 10 công lập của Hà Nội. Không gồm Văn hay Ngoại ngữ.",
+  subtitle: "Toán không chuyên · đề Sở 2022–2026 · đề thử Mỹ Đình 2",
+  blurb: "Ôn bằng câu đã ra trong đề Toán vào lớp 10 công lập của Hà Nội, và đề thi thử THCS Mỹ Đình 2. Không gồm Văn hay Ngoại ngữ.",
   chapters: THI10_CHAPTERS,
   lessons: THI10_LESSONS,
 });

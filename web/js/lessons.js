@@ -2163,10 +2163,10 @@ const LESSONS = [
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.3.</strong> Năm 2026: \(x^2-3x+1=0\) có hai nghiệm \(x_1, x_2\). Tính</p>
         \[
-          Q = \dfrac{3x_2-1}{x_1}+\dfrac{3x_1-1}{x_2}.
+          Q = \dfrac{3x_2-1}{x_1}+\dfrac{3x_1}{x_2}-x_1.
         \]
-        <p>Tổng bằng 3, tích bằng 1. Quy đồng rồi thế, không cần tìm từng nghiệm.</p>
-        <p>Năm 2025: \(x^2+8x-6=0\), tìm \(m\) để \(\dfrac{70-mx_1^2}{x_2}=x_1+mx_2\). Cũng đưa về tổng và tích. Năm 2024 hỏi \(x_1^2+x_2^2=0\) với hoành độ giao điểm của đường thẳng và parabol.</p>
+        <p>Tổng bằng 3, tích bằng 1. Từ phương trình, \(3x_2-1=x_2^2\). Quy đồng rồi thế, được \(Q=18\). Không cần tìm từng nghiệm.</p>
+        <p>Năm 2025: \(x^2+8x-6=0\), tìm \(m\) để \(\dfrac{70-mx_1^2}{x_2}=x_1+mx_2\). Cũng đưa về tổng và tích, đáp án \(m=1\). Năm 2024 hỏi \(x_1+5x_2=0\) với hoành độ giao điểm của đường thẳng và parabol. Đáp án \(m=-2\) hoặc \(m=6\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
