@@ -1,6 +1,7 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–32 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
+// ví dụ làm chậm → thêm ví dụ dễ rồi ví dụ có bẫy → luyện tập.
+// Không dịch sách tiếng Anh có bản quyền. Ví dụ viết mới, cùng cách dạy nhiều ví dụ.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -596,7 +597,15 @@ const LESSONS = [
         <p>Nhân hai vế với 2: \(-6 < 2\). Chiều vẫn giữ, vì 2 dương.</p>
         <p>Nhân hai vế của \(-3 < 1\) với \(-2\): \(6 > -2\). Chiều đổi, vì nhân số âm là soi gương qua 0. Sau phép soi, 6 đứng bên phải \(-2\).</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(-4 < 1\). Cộng 6 vào hai vế: \(2 < 7\). Nhân với 3: \(-12 < 3\). Chiều giữ, vì 6 và 3 không làm đảo trái phải.</p>
+        <p>Nhân bất đẳng thức gốc với \(-1\): \(4 > -1\). Chiều đổi. Thử trên số: \(-4\) đứng bên trái 1; sau khi nhân \(-1\), 4 đứng bên phải \(-1\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Biết \(a < b\). Bạn An viết \(-2a < -2b\). Sai. Nhân với \(-2\) phải đổi chiều: \(-2a > -2b\).</p>
+        <p>Thử \(a = 1\), \(b = 4\). \(-2 \cdot 1 = -2\), \(-2 \cdot 4 = -8\). \(-2\) đứng bên phải \(-8\), nên \(-2 > -8\), không phải nhỏ hơn.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhân hai vế với số âm mà quên đổi chiều: từ \(a < b\) kết luận \(-3a < -3b\) là <strong>sai</strong>.</li>
@@ -696,7 +705,13 @@ const LESSONS = [
         <p>Chuyển 5 sang phải: \(-2x \geq -4\). Chia cho \(-2\), là số âm, phải đổi chiều: \(x \leq 2\).</p>
         <p>Kiểm tra ba điểm, đừng tin mỗi phép biến đổi. \(x = 2\): \(5 - 4 = 1\), lấy vì dấu \(\geq\). \(x = 0\): \(5 \geq 1\), đúng. \(x = 3\): \(5 - 6 = -1\), mà \(-1 \geq 1\) sai. Đúng là mọi số nhỏ hơn hoặc bằng 2.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Giải \(2x - 6 < 0\). Hệ số của \(x\) dương, chiều giữ: \(2x < 6\), \(x < 3\). Thử \(x = 0\): \(-6 < 0\), đúng. \(x = 3\): bằng 0, không thỏa dấu \(<\). \(x = 4\): \(2 > 0\), sai.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Giải \(-3x + 6 \geq 0\). \(-3x \geq -6\). Chia cho \(-3\), đổi chiều: \(x \leq 2\). Thử \(x = 2\): bằng 0, lấy vì \(\geq\). \(x = 0\): \(6 \geq 0\), đúng. \(x = 3\): \(-3 \geq 0\) sai.</p>
+      </div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Sau khi rút gọn căn, ý cuối câu II là một bất phương trình. Năm 2025: tìm số nguyên dương \(x\) lớn nhất để \(\dfrac{A}{B}<\dfrac{1}{2}\). Năm 2024: tìm mọi \(x\) để \(A-B<0\). Phải xét dấu mẫu trước khi nhân hai vế. Kết quả còn phải nằm trong điều kiện của căn.</p>
       </div>
       <div class="warn">
@@ -766,7 +781,13 @@ const LESSONS = [
         <p>\(\sqrt{(-5)^2} = |-5| = 5\). Bình phương đã xoá dấu; căn số học không trả dấu âm lại. Viết \(\sqrt{(-5)^2} = -5\) là sai.</p>
         <p>\(\sqrt{3x - 6}\) chỉ có nghĩa khi \(3x - 6 \geq 0\), tức \(x \geq 2\). Với \(x = 2\), căn bằng 0. Với \(x = 1\), dưới căn là \(-3\), không có căn bậc hai.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Diện tích hình vuông 49 m². Cạnh là \(\sqrt{49} = 7\) m, không phải \(-7\). Dấu căn chỉ trả số không âm. Hai căn bậc hai của 49 là 7 và \(-7\), nhưng \(\sqrt{49}\) chỉ là 7.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt{(-8)^2} = |-8| = 8\). Nếu viết bằng \(-8\) thì kết quả căn âm, sai. \(\sqrt{x + 5}\) chỉ có nghĩa khi \(x + 5 \geq 0\), tức \(x \geq -5\). Với \(x = -5\), căn bằng 0. Với \(x = -6\), dưới căn là \(-1\), không có căn bậc hai.</p>
+      </div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu II.1.</strong> Đề cho biểu thức chứa căn và bảo tính khi \(x\) là một số cụ thể. Phải kiểm tra điều kiện trước. Năm 2026, \(A = \dfrac{\sqrt{x}-4}{\sqrt{x}}\), \(x>0\), \(x\neq 9\). Với \(x=25\), \(\sqrt{25}=5\), \(A=\dfrac{1}{5}\). Năm 2025 tính \(A\) tại \(x=9\). Năm 2024 tính \(A\) tại \(x=16\), với mẫu \(\sqrt{x}-3\): \(x=9\) làm mẫu bằng 0, không được thế.</p>
       </div>
       <div class="warn">
@@ -973,7 +994,13 @@ const LESSONS = [
         <p>\(\sqrt[3]{-125} = -5\), vì \((-5)^3 = -125\). Số âm vẫn có căn bậc ba, và căn ấy âm.</p>
         <p>Kiểm tra tính chất với số âm: \(\bigl(\sqrt[3]{-8}\bigr)^3 = (-2)^3 = -8\). Không lấy giá trị tuyệt đối. \(\sqrt[3]{8} + \sqrt[3]{27} = 2 + 3 = 5\), trong khi \(\sqrt[3]{35}\) không bằng 5.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\sqrt[3]{8} = 2\) vì \(2^3 = 8\). \(\sqrt[3]{-8} = -2\) vì \((-2)^3 = -8\). \(\sqrt[3]{1000} = 10\) vì \(10^3 = 1000\). Mỗi số chỉ có một căn bậc ba, đúng dấu của số ấy.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt[3]{(-4)^3} = \sqrt[3]{-64} = -4\), không phải 4. Căn bậc hai mới cần giá trị tuyệt đối. \(\sqrt[3]{27} + \sqrt[3]{-8} = 3 + (-2) = 1\), không bằng \(\sqrt[3]{19}\).</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Cho rằng \(\sqrt[3]{-8}\) không xác định — đó là tính chất của căn bậc <strong>hai</strong>, không phải bậc ba.</li>
@@ -1081,7 +1108,13 @@ const LESSONS = [
         <p>Kiểm tra: \(\dfrac{9}{25} + \dfrac{16}{25} = 1\), và \(\dfrac{\sin\alpha}{\cos\alpha} = \dfrac{3}{4} = \tan\alpha\). Sin và cos đều nhỏ hơn 1 vì tử là cạnh góc vuông, mẫu là cạnh huyền.</p>
         <p>Với góc có sẵn trong bảng: \(\sin 30^\circ = \dfrac{1}{2}\). Cạnh huyền 6 cm, góc đối 30°, thì cạnh đối bằng \(6 \cdot \dfrac{1}{2} = 3\) cm.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác vuông cạnh 3, 4, huyền 5. Góc \(\alpha\) đối cạnh 3: \(\sin\alpha = \dfrac{3}{5}\), \(\cos\alpha = \dfrac{4}{5}\), \(\tan\alpha = \dfrac{3}{4}\). Kiểm tra \(\dfrac{9}{25} + \dfrac{16}{25} = 1\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Cạnh 5, 12, huyền 13. Góc đối cạnh 5: \(\sin = \dfrac{5}{13}\), \(\cos = \dfrac{12}{13}\), \(\tan = \dfrac{5}{12}\). Cùng góc 45° trong tam giác vuông cân cạnh 1: huyền \(\sqrt{2}\), \(\sin 45^\circ = \dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{2}\). Đổi kích thước tam giác, tỉ số không đổi.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhầm "đối" với "kề" — chúng đổi vai khi đổi góc xét: cạnh đối của \(\widehat{B}\) là cạnh kề của \(\widehat{C}\). Luôn tự hỏi "tôi đang đứng ở góc nào?"</li>
@@ -1170,7 +1203,13 @@ const LESSONS = [
         <p>\(b = a \sin B = 10 \cdot \sin 30^\circ = 10 \cdot \dfrac{1}{2} = 5\) cm. Cạnh kề \(c = a \cos B = 10 \cdot \cos 30^\circ = 5\sqrt{3}\) cm.</p>
         <p>Kiểm tra Pythagore: \(5^2 + (5\sqrt{3})^2 = 25 + 75 = 100 = 10^2\). Nếu lấy sin của góc kề thay vì góc đối, cạnh đối sẽ ra \(5\sqrt{3}\) cm, dài hơn nửa cạnh huyền — không khớp với góc 30°.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Cạnh huyền 8 cm, góc đối của cạnh cần tìm là \(30^\circ\). Cạnh đối \(= 8 \cdot \sin 30^\circ = 8 \cdot \dfrac{1}{2} = 4\) cm. Cạnh kề \(= 8 \cdot \cos 30^\circ = 4\sqrt{3}\) cm. Kiểm tra: \(4^2 + (4\sqrt{3})^2 = 16 + 48 = 64 = 8^2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Bóng cây dài 6 m, tia nắng tạo với đất góc \(45^\circ\). Biết cạnh kề, cần cạnh đối, dùng tan. \(\tan 45^\circ = 1\), nên chiều cao cũng là 6 m. Nếu góc là \(30^\circ\), cùng bóng 6 m thì cao \(6 \cdot \tan 30^\circ = 6 \cdot \dfrac{1}{\sqrt{3}} = 2\sqrt{3}\) m, thấp hơn. Góc lớn hơn, cùng bóng, thì cây cao hơn.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhân với sin góc <em>kề</em> thay vì góc <em>đối</em> — đọc lại Định lí 1: cạnh nào thì "sin góc đối diện nó".</li>
@@ -1249,7 +1288,13 @@ const LESSONS = [
         <p>\(OA = 3 < 5\): \(A\) ở trong đường tròn. \(OB = 5\): \(B\) nằm trên đường tròn. \(OC = 7 > 5\): \(C\) ở ngoài.</p>
         <p>Mảnh giấy tròn mất dấu tâm: gấp hai lần để được hai đường kính. Hai nếp gấp cắt nhau tại tâm, vì mọi đường kính đều đi qua tâm.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Đường tròn tâm \(O\), bán kính 6 cm. \(OA = 6\): trên đường tròn. \(OB = 2 < 6\): trong. \(OC = 9 > 6\): ngoài. Chỉ cần một phép so với 6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đoạn \(AB = 10\) cm, \(O\) là trung điểm. Đường tròn đường kính \(AB\) có bán kính 5 cm. Điểm \(M\) với \(OM = 5\) nằm trên đường tròn. Điểm \(N\) với \(ON = 4\) nằm trong, dù \(N\) có thể nằm trên đoạn \(AB\). Nằm trên đường kính chưa chắc nằm trên đường tròn.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhầm đường tròn (ranh giới) với hình tròn (cả vùng bên trong).</li>
@@ -1685,7 +1730,13 @@ const LESSONS = [
         <p>\(OO' = 8\): tiếp xúc ngoài. \(OO' = 2\): tiếp xúc trong. Tiếp điểm nằm trên đường nối hai tâm.</p>
         <p>\(OO' = 9 > 8\): ngoài nhau, không chạm. \(OO' = 1 < 2\): đường tròn nhỏ nằm hẳn trong đường tròn lớn, không chạm — đựng nhau.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(R = 6\), \(R' = 2\). Hai mốc là \(R - R' = 4\) và \(R + R' = 8\). \(OO' = 10 > 8\): ngoài nhau. \(OO' = 8\): tiếp xúc ngoài. \(OO' = 5\): cắt nhau. \(OO' = 4\): tiếp xúc trong. \(OO' = 1 < 4\): đường tròn nhỏ nằm trong, không chạm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hai đường tròn bằng nhau, \(R = R' = 5\). Không có tiếp xúc trong, vì \(R - R' = 0\). \(OO' = 10\): tiếp xúc ngoài. \(OO' = 7\): cắt nhau. \(OO' = 12\): ngoài nhau. Đừng viết \(OO' = 0\) là tiếp xúc trong.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Tiếp xúc trong chỉ xảy ra khi \(R > R'\); hai đường tròn bằng nhau không tiếp xúc trong.</li>
@@ -1790,7 +1841,13 @@ const LESSONS = [
         <p>\(x = 2\) và \(x = -2\) cho cùng một \(y\): parabol đối xứng qua trục \(Oy\), đỉnh tại gốc \(O\). Vì \(a = 2 > 0\), nhánh mở lên.</p>
         <p>Với \(y = -x^2\), cùng các \(x\) cho \(y = -4, -1, 0, -1, -4\). Cùng dạng, nhưng mở xuống vì \(a < 0\).</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(y = -2x^2\). Bảng: \(x = -2, -1, 0, 1, 2\) cho \(y = -8, -2, 0, -2, -8\). \(x\) và \(-x\) cùng \(y\): đối xứng qua \(Oy\). Mọi \(y \leq 0\): mở xuống, đỉnh tại \(O\), vì \(a = -2 < 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(y = \dfrac{1}{2}x^2\) tại \(x = 4\) là \(8\). Cùng dạng mở lên với \(y = 2x^2\), nhưng dốc thoải hơn: tại \(x = 2\), \(y = 2\) thay vì 8. Hệ số \(a\) đổi độ dốc, không đổi đỉnh và không đổi trục đối xứng.</p>
+      </div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2024, câu III.2: parabol \(y=x^2\) và đường thẳng \(y=(m-2)x+5\). Chứng minh chúng luôn cắt nhau tại hai điểm phân biệt. Thế \(y\), được phương trình bậc hai theo \(x\). \(\Delta>0\) với mọi \(m\) thì có hai giao điểm.</p>
         <p>Câu V các năm 2025 và 2026 là tìm giá trị lớn nhất hoặc nhỏ nhất của một hàm bậc hai, rồi chọn số nguyên cạnh đỉnh. Đồ thị vẫn là parabol của bài này.</p>
       </div>
@@ -1880,7 +1937,13 @@ const LESSONS = [
         <p>Kiểm tra. \(x = 5\): \(25 - 35 + 10 = 0\). \(x = 2\): \(4 - 14 + 10 = 0\).</p>
         <p>Dạng khuyết \(x^2 - 9 = 0\): \(x^2 = 9\), nên \(x = 3\) hoặc \(x = -3\). Nghiệm âm vẫn là nghiệm.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Giải \(2x^2 - 4x - 6 = 0\). Chia 2: \(x^2 - 2x - 3 = 0\). \(\Delta = 4 + 12 = 16\). \(x = \dfrac{2 \pm 4}{2}\), nên \(x = 3\) hoặc \(x = -1\). Kiểm tra: \(2 \cdot 9 - 12 - 6 = 0\), và \(2 + 4 - 6 = 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(x^2 + 2x + 5 = 0\). \(\Delta = 4 - 20 = -16 < 0\). Dừng. Không viết \(\sqrt{-16}\). Phương trình vô nghiệm. So với \(x^2 + 2x + 1 = 0\): \(\Delta = 0\), nghiệm kép \(x = -1\). Ba trường hợp của \(\Delta\) là ba bài khác nhau, đừng dùng một công thức cho cả ba.</p>
+      </div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Đề ít khi bảo giải một phương trình bậc hai trần. Nó đưa phương trình rồi hỏi biểu thức của hai nghiệm. Năm 2026 dùng \(x^2-3x+1=0\). Năm 2025 dùng \(x^2+8x-6=0\). Vẫn phải nhận ra đây là bậc hai, \(a\neq 0\), và \(\Delta>0\) trước khi nói có hai nghiệm.</p>
       </div>
       <div class="warn">
@@ -2617,7 +2680,13 @@ const LESSONS = [
         <p>Tam giác nối tâm với một cạnh là tam giác đều, nên cạnh của lục giác đều bằng bán kính đường tròn ngoại tiếp. Bán kính 4 cm thì mỗi cạnh 4 cm, chu vi 24 cm.</p>
         <p>Mỗi góc trong bằng \(\dfrac{(6 - 2) \cdot 180^\circ}{6} = 120^\circ\). Sáu góc bằng nhau, đúng định nghĩa đa giác đều.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác đều: chia đường tròn thành 3 cung, mỗi cung \(120^\circ\). Mỗi góc trong \((3-2)\cdot 180^\circ / 3 = 60^\circ\). Hình vuông: mỗi cung \(90^\circ\), mỗi góc trong \(90^\circ\). Cạnh bằng nhau và góc bằng nhau, cả hai điều kiện cùng lúc.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Lục giác đều bán kính 5 cm. Mỗi góc ở tâm \(60^\circ\), nên tam giác tâm-cạnh là tam giác đều. Mỗi cạnh bằng bán kính, 5 cm. Chu vi 30 cm. Hình thoi cạnh bằng nhau nhưng góc không bằng nhau, không phải đa giác đều. Hình chữ nhật góc bằng nhau nhưng cạnh không bằng nhau, cũng không phải.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Coi hình thoi là đa giác đều — cạnh bằng nhau nhưng góc không bằng nhau.</li>
@@ -2779,7 +2848,13 @@ const LESSONS = [
         <p>Thể tích \(V = \dfrac{4}{3}\pi R^3 = \dfrac{4}{3}\pi \cdot 27 = 36\pi\) cm³.</p>
         <p>Cắt qua tâm, mặt cắt là đường tròn bán kính 3 cm. Cắt lệch khỏi tâm, mặt cắt vẫn là đường tròn, nhưng bán kính nhỏ hơn 3 cm.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Bán kính \(R = 5\) cm. Diện tích mặt cầu \(S = 4\pi \cdot 25 = 100\pi\) cm², không phải \(\pi \cdot 25\). Đó chỉ là một mặt cắt qua tâm. Thể tích \(V = \dfrac{4}{3}\pi \cdot 125 = \dfrac{500\pi}{3}\) cm³.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đề ghi đường kính 10 cm thì \(R = 5\), không thế 10 vào công thức. Cắt bởi mặt phẳng cách tâm \(d = 3\) cm: bán kính mặt cắt \(\sqrt{5^2 - 3^2} = 4\) cm. Cách tâm 0 cm thì bán kính mặt cắt là 5 cm. Cách tâm 5 cm thì mặt phẳng chỉ chạm một điểm.</p>
+      </div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhầm đường kính với bán kính: đề cho đường kính 20 cm thì \(R = 10\) cm.</li>
