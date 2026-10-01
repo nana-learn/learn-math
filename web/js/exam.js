@@ -334,44 +334,68 @@ const THI10_LESSONS = [
     pages: ["de/my-dinh-2-1.jpg", "de/my-dinh-2-2.jpg"],
     files: [{ href: "de/my-dinh-2-2026-de.pdf", label: "Mở PDF đề Mỹ Đình 2" }],
     body: String.raw`
-      <p>Đây là đề thi thử của trường THCS Mỹ Đình 2, năm học 2026–2027, 120 phút, 5 bài, thang 10. Không phải đề chính thức của Sở. Cấu trúc vẫn là thống kê, căn, phương trình, hình, rồi tối ưu.</p>
+      <p>Đây là câu hỏi của đề thi thử THCS Mỹ Đình 2, năm học 2026–2027. Chưa có đáp án. Lời giải nằm trong mục đóng.</p>
       <div class="examq">
-        <p><strong>Bài I.1.</strong> Tuổi thọ của 30 bóng đèn, đơn vị giờ: ba giá trị 1150, sáu giá trị 1160, mười hai giá trị 1170, sáu giá trị 1180, ba giá trị 1190. Tổng 30.</p>
-        <p>Tần số tương đối lần lượt 10%, 20%, 40%, 20%, 10%. Từ 1160 đến 1180 gồm cả hai đầu: 6 + 12 + 6 = 24 bóng, tức 80%. Câu “trên 75%” là đúng, không phải sai.</p>
-        <p><strong>Bài I.2.</strong> Tung đồng xu ba lần, có thứ tự. \(\Omega\) có 8 kết quả. “Sấp đúng một lần”: SNN, NSN, NNS. \(P(A) = \dfrac{3}{8}\).</p>
+        <p><strong>Bài I.1.</strong> Thống kê tuổi thọ của 30 bóng đèn điện được lắp thử, đơn vị giờ:</p>
+        <table>
+          <tr><td>1180</td><td>1150</td><td>1190</td><td>1170</td><td>1180</td><td>1170</td><td>1160</td><td>1170</td><td>1160</td><td>1150</td></tr>
+          <tr><td>1190</td><td>1180</td><td>1170</td><td>1170</td><td>1170</td><td>1190</td><td>1170</td><td>1170</td><td>1170</td><td>1180</td></tr>
+          <tr><td>1170</td><td>1160</td><td>1160</td><td>1160</td><td>1170</td><td>1160</td><td>1180</td><td>1180</td><td>1150</td><td>1170</td></tr>
+        </table>
+        <p>a) Lập bảng tần số và tần số tương đối của mẫu số liệu trên.</p>
+        <p>b) Có người nói: “Có trên 75% bóng đèn có tuổi thọ từ 1160 đến 1180 giờ”. Nhận định đó đúng hay sai?</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Đếm được: 1150 có 3, 1160 có 6, 1170 có 12, 1180 có 6, 1190 có 3. Tổng 30. Tần số tương đối lần lượt 10%, 20%, 40%, 20%, 10%.</p>
+          <p>Từ 1160 đến 1180, kể cả hai đầu, có 6 + 12 + 6 = 24 bóng, tức 80%. 80% lớn hơn 75%, nên nhận định đúng.</p>
+        </details>
+        <p><strong>Bài I.2.</strong> Bình tung một đồng xu có hai mặt sấp (S) và ngửa (N) liên tiếp ba lần. Tính xác suất biến cố “mặt sấp xuất hiện đúng một lần”.</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Có thứ tự, nên \(\Omega\) có 8 kết quả. Thuận lợi: SNN, NSN, NNS. \(P = \dfrac{3}{8}\).</p>
+        </details>
       </div>
       <div class="examq">
-        <p><strong>Bài II.</strong> \(A = \dfrac{20 - 2\sqrt{x}}{x - 25} + \dfrac{3}{\sqrt{x} + 5}\), \(B = \dfrac{\sqrt{x} + 2}{\sqrt{x} - 5}\), với \(x \geq 0\), \(x \neq 25\).</p>
-        <p>Khi \(x = 49\), \(B = \dfrac{7 + 2}{7 - 5} = \dfrac{9}{2}\).</p>
-        <p>Đặt \(t = \sqrt{x}\), \(t \geq 0\), \(t \neq 5\). Mẫu \(x - 25 = (t - 5)(t + 5)\). Quy đồng được \(A = \dfrac{1}{\sqrt{x} - 5}\).</p>
-        <p>Khi đó \(\dfrac{B}{A} = \sqrt{x} + 2\). Giải \(\sqrt{x} + 2 = |x - 4|\), được \(x = 1\) hoặc \(x = 9\). Cả hai thỏa điều kiện. Kiểm tra: \(|1 - 4| = 3 = 1 + 2\), \(|9 - 4| = 5 = 3 + 2\).</p>
+        <p><strong>Bài II.</strong> Cho \(A = \dfrac{20 - 2\sqrt{x}}{x - 25} + \dfrac{3}{\sqrt{x} + 5}\) và \(B = \dfrac{\sqrt{x} + 2}{\sqrt{x} - 5}\), với \(x \geq 0\), \(x \neq 25\).</p>
+        <p>1) Tính \(B\) khi \(x = 49\).</p>
+        <p>2) Rút gọn \(A\).</p>
+        <p>3) Tìm \(x\) để \(\dfrac{B}{A} = |x - 4|\).</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>1) \(B = \dfrac{7 + 2}{7 - 5} = \dfrac{9}{2}\).</p>
+          <p>2) Đặt \(t = \sqrt{x}\), \(t \geq 0\), \(t \neq 5\). Quy đồng được \(A = \dfrac{1}{\sqrt{x} - 5}\).</p>
+          <p>3) \(\dfrac{B}{A} = \sqrt{x} + 2\). Giải \(\sqrt{x} + 2 = |x - 4|\) được \(x = 1\) hoặc \(x = 9\). Cả hai thỏa điều kiện.</p>
+        </details>
       </div>
       <div class="examq">
-        <p><strong>Bài III.1.</strong> Gọi giá chưa thuế của hai loại là \(x\) và \(y\) triệu đồng, dương.</p>
-        \[
-          \begin{cases} 1{,}1x + 1{,}08y = 2{,}17 \\ 1{,}09(x + y) = 2{,}18. \end{cases}
-        \]
-        <p>Câu thứ hai cho \(x + y = 2\). Thế vào câu thứ nhất: \(x = 0{,}5\), \(y = 1{,}5\). Không kể thuế: loại thứ nhất 500 nghìn đồng, loại thứ hai 1,5 triệu đồng. Kiểm tra: \(1{,}1 \cdot 0{,}5 + 1{,}08 \cdot 1{,}5 = 2{,}17\).</p>
-        <p><strong>Bài III.2.</strong> Gọi số khẩu trang mỗi ngày theo kế hoạch là \(x\), nguyên dương. Thời gian kế hoạch \(\dfrac{8400}{x}\) ngày. Thực tế mỗi ngày may \(x + 102\) chiếc, và trước hạn 4 ngày đã may được 6416 chiếc.</p>
-        \[
-          \dfrac{8400}{x} - \dfrac{6416}{x + 102} = 4.
-        \]
-        <p>Đưa về \(x^2 - 394x - 214200 = 0\). Nghiệm dương \(x = 700\). Kiểm tra: kế hoạch 12 ngày, thực tế 8 ngày, \(8 \cdot 802 = 6416\).</p>
-        <p><strong>Bài III.3.</strong> \(x^2 - 3x - 1 = 0\), tổng 3, tích \(-1\). Từ phương trình, \(x_1^3 = 10x_1 + 3\). Nên</p>
-        \[
-          A = x_1^3 + 10x_2 - 30 = 10(x_1 + x_2) - 27 = 3.
-        \]
+        <p><strong>Bài III.1.</strong> Một người mua hai loại hàng, trả 2,17 triệu đồng khi VAT loại thứ nhất là 10% và loại thứ hai là 8%. Nếu cả hai loại đều chịu VAT 9% thì phải trả 2,18 triệu đồng. Hỏi nếu không kể thuế, mỗi loại hàng giá bao nhiêu?</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Gọi giá chưa thuế là \(x\) và \(y\) triệu đồng. \(1{,}09(x + y) = 2{,}18\) cho \(x + y = 2\). Thế vào câu kia được \(x = 0{,}5\), \(y = 1{,}5\). Không kể thuế: 500 nghìn đồng và 1,5 triệu đồng.</p>
+        </details>
+        <p><strong>Bài III.2.</strong> Theo kế hoạch, một tổ phải may 8400 khẩu trang. Thực tế mỗi ngày may hơn kế hoạch 102 chiếc, nên trước hạn 4 ngày đã may được 6416 chiếc. Hỏi theo kế hoạch mỗi ngày phải may bao nhiêu chiếc?</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Gọi số chiếc mỗi ngày theo kế hoạch là \(x\), nguyên dương. \(\dfrac{8400}{x} - \dfrac{6416}{x + 102} = 4\). Nghiệm dương \(x = 700\). Kiểm tra: kế hoạch 12 ngày, thực tế 8 ngày, \(8 \cdot 802 = 6416\).</p>
+        </details>
+        <p><strong>Bài III.3.</strong> Phương trình \(x^2 - 3x - 1 = 0\) có hai nghiệm phân biệt \(x_1\), \(x_2\). Không giải phương trình, tính \(A = x_1^3 + 10x_2 - 30\).</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Tổng bằng 3, tích bằng \(-1\). Từ phương trình, \(x_1^3 = 10x_1 + 3\), nên \(A = 10(x_1 + x_2) - 27 = 3\).</p>
+        </details>
       </div>
       <div class="examq">
-        <p><strong>Bài IV.1.</strong> Phần đựng rượu cao 6 cm, miệng đường kính 6 cm. Thành là hình trụ cao 3 cm, đáy là nửa khối cầu bán kính 3 cm.</p>
-        <p>Thể tích lớn nhất \(V = \pi \cdot 3^2 \cdot 3 + \dfrac{2}{3}\pi \cdot 3^3 = 27\pi + 18\pi = 45\pi\) cm³.</p>
-        <p>12 người, mỗi người 4 ly, mỗi lần rót 60% ly. Lượng cần \(12 \cdot 4 \cdot 0{,}6 \cdot 45\pi = 1296\pi\) cm³. Với \(\pi \approx 3{,}14\), khoảng 4,79 lít. Mỗi chai 0,85 lít, nên cần ít nhất 5 chai.</p>
-        <p><strong>Bài IV.2a.</strong> \(FN\) vuông góc \(DE\), \(EQ\) vuông góc \(FP\). Hai góc nhìn đoạn \(FE\) đều vuông, nên \(F, N, Q, E\) cùng thuộc đường tròn đường kính \(FE\).</p>
+        <p><strong>Bài IV.1.</strong> Ly rượu cao 6 cm, đường kính miệng 6 cm. Thành ly là hình trụ cao 3 cm. Đáy là nửa khối cầu có đường kính bằng miệng ly.</p>
+        <p>a) Tính thể tích rượu chứa tối đa khi đổ đầy ly.</p>
+        <p>b) 12 người, mỗi người uống 4 ly, mỗi lần rót bằng 60% thể tích ly. Mỗi chai có 0,85 lít. Cần ít nhất bao nhiêu chai?</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>a) \(V = \pi \cdot 3^2 \cdot 3 + \dfrac{2}{3}\pi \cdot 3^3 = 45\pi\) cm³.</p>
+          <p>b) Lượng cần là \(1296\pi\) cm³, khoảng 4,79 lít. Bốn chai không đủ, nên cần 5 chai.</p>
+        </details>
+        <p><strong>Bài IV.2a.</strong> \(EM \perp DF\), \(FN \perp DE\), \(Q\) là hình chiếu vuông góc của \(E\) trên đường kính \(FP\). Chứng minh \(F\), \(N\), \(Q\), \(E\) cùng thuộc một đường tròn.</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>\(FN \perp DE\) và \(EQ \perp FP\), nên hai góc nhìn đoạn \(FE\) đều vuông. Bốn điểm cùng thuộc đường tròn đường kính \(FE\).</p>
+        </details>
       </div>
       <div class="examq">
-        <p><strong>Bài V.</strong> Hầm biogas 12 m³, kín để giữ khí. Rộng \(x\) mét, sâu \(\dfrac{3}{2}x\), dài \(y\). Thể tích cho \(y = \dfrac{8}{x^2}\).</p>
-        <p>Vật liệu là cả sáu mặt: \(S = 3x^2 + \dfrac{40}{x} = 3x^2 + \dfrac{20}{x} + \dfrac{20}{x}\). Nhỏ nhất khi \(3x^2 = \dfrac{20}{x}\), tức \(x^3 = \dfrac{20}{3}\). Dài bằng \(\dfrac{6}{5}x\), sâu bằng \(\dfrac{3}{2}x\).</p>
-        <p>Làm tròn đến hàng phần trăm: rộng 1,88 m, dài 2,26 m, sâu 2,82 m. Tích ba kích thước đúng 12 m³.</p>
+        <p><strong>Bài V.</strong> Hầm biogas hình hộp chữ nhật có thể tích 12 m³. Chiều sâu gấp rưỡi chiều rộng. Tìm chiều dài và chiều rộng của đáy để tiết kiệm nguyên vật liệu nhất. Không tính bề dày thành bể.</p>
+        <details class="check"><summary>Lời giải</summary>
+          <p>Hầm kín để giữ khí, nên tính cả sáu mặt. Rộng \(x\), sâu \(\dfrac{3}{2}x\), dài \(\dfrac{8}{x^2}\). Diện tích nhỏ nhất khi \(x^3 = \dfrac{20}{3}\). Làm tròn đến hàng phần trăm: rộng 1,88 m, dài 2,26 m, sâu 2,82 m.</p>
+        </details>
       </div>
     `,
     exercises: [

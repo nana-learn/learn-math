@@ -184,7 +184,7 @@ function paperView(lesson) {
     )
     .join("");
   return `
-    <p class="note">Đề gốc ở ngay dưới. Bấm ảnh để phóng to, hoặc mở file PDF. Phần chữ bên dưới là lời giải ngắn, không thay đề.</p>
+    <p class="note">Đề gốc ở ngay dưới. Phần chữ là câu hỏi, chưa có đáp án. Mở “Lời giải” sau khi đã tự làm.</p>
     ${paperLinks(files)}
     ${imgs ? `<div class="paper-pages">${imgs}</div>` : ""}
   `;
