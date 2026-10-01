@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–20 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
+// ví dụ làm chậm → luyện tập. Bài 1–32 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -1956,22 +1956,15 @@ const LESSONS = [
     num: 21,
     chapter: 6,
     title: "Giải bài toán bằng cách lập phương trình",
-    summary: "Ba bước: chọn ẩn và lập phương trình, giải, kiểm tra điều kiện rồi kết luận.",
+    summary: "Một mối liên hệ thì một ẩn đủ. Giải xong phải loại nghiệm không phải độ dài, số người, hay số dương.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Bác Lan gửi 100 triệu đồng tiết kiệm lãi kép; sau hai năm nhận đủ 118,81 triệu. Lãi suất bao nhiêu? Câu trả lời là một nghiệm của phương trình bậc hai.</p>
-      <div class="definition">
-        <p><strong>Các bước giải bài toán bằng cách lập phương trình:</strong></p>
-        <p><em>Bước 1. Lập phương trình:</em> chọn ẩn số và đặt điều kiện thích hợp cho ẩn; biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết; lập phương trình biểu thị mối quan hệ giữa các đại lượng.</p>
-        <p><em>Bước 2.</em> Giải phương trình.</p>
-        <p><em>Bước 3. Trả lời:</em> kiểm tra xem nghiệm nào thoả mãn điều kiện của ẩn, rồi kết luận.</p>
+      <p>Bài 3 lập hệ vì đề kể hai câu. Nếu chỉ có một mối liên hệ, một ẩn là đủ. Diện tích hình chữ nhật là dài nhân rộng. Viết dài theo rộng, phương trình thành bậc hai.</p>
+      <div class="idea">
+        <p><strong>Bước cuối không được bỏ.</strong> Chọn ẩn và ghi điều kiện ngay: dương, nhỏ hơn một số, là số tự nhiên. Viết mọi đại lượng khác theo ẩn ấy, lập một phương trình, giải. Rồi đối chiếu điều kiện. Nghiệm âm của phương trình không phải chiều rộng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Sân bóng đá 7 người có chiều rộng nhỏ hơn chiều dài 30 m, diện tích 1 800 m².</p>
-        <p>Gọi \(x\) (m) là chiều rộng, điều kiện \(x > 0\). Chiều dài \(x + 30\), nên \(x(x + 30) = 1800\), tức \(x^2 + 30x - 1800 = 0\).</p>
-        <p>\(\Delta = 30^2 + 4 \cdot 1800 = 8100\), \(x = \dfrac{-30 \pm 90}{2}\), chọn \(x = 30\) (nhận \(x > 0\)). Vậy sân rộng 30 m, dài 60 m.</p>
-      </div>
-      <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Khác với lập <em>hệ</em> (Bài 3): nếu đề chỉ có <em>một</em> điều kiện liên kết giữa các đại lượng chưa biết, một ẩn là đủ. Diện tích hình chữ nhật = dài × rộng chính là phương trình bậc hai tự nhiên nhất của lớp 9.</p>
+        <p><strong>Sân bóng.</strong> Chiều rộng nhỏ hơn chiều dài 30 m, diện tích 1 800 m². Gọi chiều rộng \(x\) mét, \(x > 0\). Chiều dài là \(x + 30\). \(x(x + 30) = 1800\), tức \(x^2 + 30x - 1800 = 0\).</p>
+        <p>\(\Delta = 900 + 7200 = 8100 = 90^2\). \(x = \dfrac{-30 \pm 90}{2}\), nên \(x = 30\) hoặc \(x = -60\). \(-60\) không phải chiều rộng, loại. Nhận \(x = 30\). Chiều dài 60 m. Kiểm tra: \(60 - 30 = 30\) và \(30 \cdot 60 = 1800\).</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình chữ nhật có chu vi 28 m và diện tích 48 m². Tìm hai cạnh.</p>
@@ -2021,18 +2014,14 @@ const LESSONS = [
     num: 22,
     chapter: 7,
     title: "Bảng tần số và biểu đồ tần số",
-    summary: "Tần số, mẫu dữ liệu, cỡ mẫu; lập bảng tần số và biểu đồ cột, biểu đồ đoạn thẳng.",
+    summary: "Tần số là số lần một giá trị xuất hiện. Cộng các tần số phải ra đúng cỡ mẫu, nếu không là đã đếm sót.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Muốn mua giày thể thao cho cả lớp, Huy ghi lại cỡ giày của 22 bạn nam. Dãy số dài dòng — làm sao nhìn là biết mua cỡ nào nhiều nhất?</p>
-      <div class="definition">
-        <p>Dữ liệu cần khảo sát gọi là <em>dữ liệu</em>; dãy dữ liệu thu được từ khảo sát là một phần của nó, gọi là <strong>mẫu dữ liệu</strong>. Số giá trị của mẫu dữ liệu được gọi là <strong>cỡ mẫu</strong>.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Tần số</strong> của một giá trị là số lần xuất hiện của giá trị đó trong mẫu dữ liệu.</p>
-        <p><strong>Bảng tần số</strong> là bảng thống kê cho biết tần số của các giá trị trong mẫu dữ liệu, có dạng: hàng Giá trị \(x_1, \dots, x_k\), hàng Tần số \(m_1, \dots, m_k\), trong đó \(m_i\) là tần số của \(x_i\).</p>
+      <p>Huy ghi cỡ giày của 22 bạn. Dãy số dài không cho biết ngay cỡ nào cần mua nhiều. Đếm từng cỡ: đó là tần số. Cỡ mẫu là 22, vì có 22 số đã ghi, không phải vì có 5 cỡ khác nhau.</p>
+      <div class="idea">
+        <p><strong>Phép kiểm tra.</strong> Cộng mọi tần số. Phải ra đúng cỡ mẫu. Thiếu là đã bỏ sót một bạn; thừa là đã đếm một bạn hai lần. Biểu đồ cột chỉ là bảng ấy vẽ ra: trục ngang là giá trị, chiều cao cột là số lần.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Cỡ giày 22 bạn nam: 36 xuất hiện 5 lần, 37 — 4 lần, 38 — 8 lần, 39 — 2 lần, 40 — 3 lần. Bảng tần số cho thấy giày cỡ 38 phù hợp với nhiều bạn nhất.</p>
+        <p><strong>22 bạn nam.</strong> Cỡ 36 xuất hiện 5 lần, 37 bốn lần, 38 tám lần, 39 hai lần, 40 ba lần. \(5 + 4 + 8 + 2 + 3 = 22\). Bảng đúng. Cỡ 38 cao nhất, mua nhiều đôi cỡ ấy nhất.</p>
         <table>
           <tr><th>Cỡ giày</th><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td></tr>
           <tr><td>Tần số</td><td>5</td><td>4</td><td>8</td><td>2</td><td>3</td></tr>
@@ -2086,18 +2075,15 @@ const LESSONS = [
     num: 23,
     chapter: 7,
     title: "Bảng tần số tương đối và biểu đồ tần số tương đối",
-    summary: "f = (m/n)·100% — tỉ lệ xuất hiện của mỗi giá trị (tần suất).",
+    summary: "Tần số đếm số lần. Tần số tương đối chia cho cỡ mẫu, để so hai nhóm không cùng số người.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Một túi kín đựng 10 quả bóng màu xanh, đỏ, vàng. Thực hiện 30 lần lấy bóng (lấy rồi trả lại). Biết tần số từng màu — nhưng so sánh với các túi khác cỡ mẫu khác nhau thì phải dùng <em>tỉ lệ</em>.</p>
+      <p>Sáu bạn trong lớp 8 người và chín bạn trong lớp 20 người: chín lớn hơn sáu, nhưng lớp thứ hai không "đi cỡ ấy nhiều hơn". Muốn so hai mẫu khác cỡ, chia số lần cho cỡ mẫu.</p>
       <div class="definition">
-        <p>Cho mẫu dữ liệu cỡ \(n\) với các giá trị \(x_1, \dots, x_k\) có tần số \(m_1, \dots, m_k\) (\(n = m_1 + \dots + m_k\)). <strong>Tần số tương đối</strong> \(f_i\) của giá trị \(x_i\) là tỉ số giữa tần số \(m_i\) của \(x_i\) với \(n\):</p>
+        <p>Tần số tương đối, còn gọi là tần suất, của giá trị \(x_i\) là</p>
         \[
-          f_i = \frac{m_i}{n} \cdot 100\%.
+          f_i = \dfrac{m_i}{n} \cdot 100\%.
         \]
-        <p>Bảng ghi các tần số tương đối gọi là <strong>bảng tần số tương đối</strong>. Tần số tương đối còn gọi là <em>tần suất</em>.</p>
-      </div>
-      <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Tần số trả lời <em>có bao nhiêu lần</em>; tần số tương đối trả lời <em>chiếm bao nhiêu phần trăm</em>. Tổng các tần số tương đối luôn bằng 100% — lại một phép kiểm tra nhanh.</p>
+        <p>\(m_i\) là số lần, \(n\) là cỡ mẫu. Các giá trị chia hết mẫu, nên các phần trăm cộng lại phải thành 100%. Lệch 100% là làm tròn quá sớm hoặc chia sai mẫu số.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Theo dõi chất lượng không khí 30 ngày: Tốt 8 ngày, Trung bình 13 ngày, Kém 5 ngày, Xấu 4 ngày. Tần số tương đối: Tốt \(\tfrac{8}{30} \cdot 100\% \approx 26{,}7\%\); Trung bình \(\approx 43{,}3\%\); Kém \(\approx 16{,}7\%\); Xấu \(\approx 13{,}3\%\).</p>
@@ -2145,12 +2131,11 @@ const LESSONS = [
     num: 24,
     chapter: 7,
     title: "Bảng tần số, tần số tương đối ghép nhóm và biểu đồ",
-    summary: "Gom dữ liệu thành các nhóm [a; b), lập bảng tần số và tần số tương đối ghép nhóm.",
+    summary: "Số liệu liên tục được gom thành nhóm [a; b). Ngoặc vuông lấy đầu trái, ngoặc tròn không lấy đầu phải, để không ai bị đếm hai lần.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Khảo sát thời gian tự học mỗi tối của lớp 9C: dưới 1 giờ có 10 bạn; từ 1 đến dưới 2 giờ — 15 bạn; từ 2 đến dưới 3 giờ — 8 bạn; từ 3 đến dưới 4 giờ — 7 bạn. Dữ liệu liên tục nên ghép thành <em>nhóm</em>.</p>
-      <div class="definition">
-        <p><strong>Nhóm số liệu</strong> \([a;\ b)\) là nhóm gồm các số liệu lớn hơn hoặc bằng \(a\) và nhỏ hơn \(b\) (\(a\) là đầu mút trái, \(b\) là đầu mút phải).</p>
-        <p><strong>Bảng tần số ghép nhóm</strong> là bảng tần số của các nhóm số liệu; <strong>bảng tần số tương đối ghép nhóm</strong> là bảng tần số tương đối của các nhóm đó, với \(f_i = \dfrac{m_i}{n} \cdot 100\%\).</p>
+      <p>Chiều cao tính bằng centimét không rơi vào vài giá trị rời. Gom thành nhóm thì mới nhìn được. Nhóm \([155;\ 158)\) lấy 155 và mọi số lớn hơn hoặc bằng 155, nhưng không lấy 158. 158 sang nhóm sau.</p>
+      <div class="idea">
+        <p><strong>Vì sao không lấy cả hai đầu?</strong> Nếu cả \([155;\ 158]\) và \([158;\ 161)\) đều nhận 158, bạn cao đúng 158 cm bị đếm hai lần. Tổng tần số sẽ lớn hơn cỡ mẫu. Ngoặc vuông lấy, ngoặc tròn bỏ. Cộng tần số các nhóm vẫn phải ra \(n\), và các phần trăm vẫn phải ra 100%.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Chiều cao 40 học sinh lớp 9C, ghép nhóm [155; 158), [158; 161), [161; 164), [164; 167): tần số \(m_1 = 5,\ m_2 = 12,\ m_3 = 15,\ m_4 = 8\), tổng \(n = 40\).</p>
@@ -2208,15 +2193,12 @@ const LESSONS = [
     num: 25,
     chapter: 8,
     title: "Phép thử ngẫu nhiên và không gian mẫu",
-    summary: "Phép thử: kết quả không biết trước nhưng liệt kê được; không gian mẫu Ω.",
+    summary: "Không biết trước kết quả, nhưng liệt kê được hết. Danh sách ấy là không gian mẫu. Có thứ tự thì SN khác NS.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Cửa hàng rút thăm trao hai phần quà cho 2 trong 4 khách hàng: rút một phiếu, không trả lại, rồi rút phiếu thứ hai. Có bao nhiêu kết quả có thể xảy ra?</p>
-      <div class="definition">
-        <p>Một hoặc một số hành động, thực nghiệm được tiến hành liên tiếp hay đồng thời mà kết quả không thể biết được trước khi thực hiện nhưng có thể liệt kê được tất cả các kết quả có thể xảy ra, được gọi là một <strong>phép thử ngẫu nhiên</strong>, gọi tắt là <em>phép thử</em>.</p>
-        <p>Tập hợp tất cả các kết quả có thể xảy ra của phép thử gọi là <strong>không gian mẫu</strong> của phép thử, kí hiệu là \(\Omega\).</p>
-      </div>
+      <p>Rút thăm hai phần quà cho 2 trong 4 người: không biết trước ai được, nhưng viết được mọi cách có thể xảy ra. Phép thử là việc ấy. Tập mọi kết quả có thể là không gian mẫu \(\Omega\).</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Với phép thử ghép hai hành động, liệt kê bằng <em>bảng</em>: các hàng là kết quả hành động thứ nhất, các cột là kết quả hành động thứ hai — mỗi ô là một kết quả của phép thử. Gieo xúc xắc + tung đồng xu: bảng 6 × 2 cho \(\Omega\) có 12 phần tử.</p>
+        <p><strong>Liệt kê cho hết, không trùng.</strong> Hai hành động khác nhau thì lập bảng: hàng là kết quả việc thứ nhất, cột là việc thứ hai. Gieo xúc xắc rồi tung đồng xu: 6 hàng, 2 cột, \(\Omega\) có 12 phần tử.</p>
+        <p>Có thứ tự thì \(SN\) khác \(NS\). Rút không trả lại thì lần sau ít lựa chọn hơn lần trước: 4 người rút 2 người lần lượt là \(4 \cdot 3 = 12\) kết quả, không phải \(4 \cdot 4\).</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Bạn Lan gieo một xúc xắc, bạn Hoà gieo một đồng xu. Kết quả là (số chấm; mặt): \(\Omega = \{(1;\ S); (2;\ S); \dots; (6;\ S); (1;\ N); \dots; (6;\ N)\}\). Không gian mẫu có 12 phần tử.</p>
@@ -2268,20 +2250,15 @@ const LESSONS = [
     num: 26,
     chapter: 8,
     title: "Xác suất của biến cố liên quan tới phép thử",
-    summary: "Kết quả thuận lợi; P(E) = số kết quả thuận lợi : số phần tử của Ω.",
+    summary: "Khi mọi kết quả đều ngang cơ hội, xác suất là số kết quả thuận lợi chia cho số kết quả có thể.",
     body: String.raw`
-      <div class="definition">
-        <p>Cho phép thử \(T\). Xét biến cố \(E\), trong đó việc xảy ra hay không xảy ra của \(E\) tuỳ thuộc vào kết quả của phép thử \(T\). Kết quả của phép thử \(T\) làm cho biến cố \(E\) xảy ra gọi là <strong>kết quả thuận lợi</strong> cho \(E\).</p>
-      </div>
-      <div class="definition">
-        <p><strong>Cách tính xác suất của biến cố \(E\):</strong></p>
-        <p><em>Bước 1.</em> Mô tả không gian mẫu của phép thử; xác định số phần tử của \(\Omega\).</p>
-        <p><em>Bước 2.</em> Chứng tỏ các kết quả có thể của phép thử là đồng khả năng.</p>
-        <p><em>Bước 3.</em> Mô tả các kết quả thuận lợi cho \(E\); xác định số kết quả thuận lợi.</p>
-        <p><em>Bước 4.</em> Lập tỉ số giữa số kết quả thuận lợi cho \(E\) và số phần tử của \(\Omega\):</p>
+      <p>Biến cố là một câu về kết quả: "ra số chẵn", "Bảo không ngồi ngoài cùng". Kết quả làm câu ấy đúng gọi là kết quả thuận lợi.</p>
+      <div class="idea">
+        <p><strong>Chỉ chia khi các kết quả ngang nhau.</strong> Xúc xắc cân đối: mỗi mặt một cơ hội. Khi ấy</p>
         \[
-          P(E) = \frac{\text{số kết quả thuận lợi cho } E}{\text{số phần tử của } \Omega}.
+          P(E) = \dfrac{\text{số kết quả thuận lợi}}{\text{số phần tử của } \Omega}.
         \]
+        <p>Xúc xắc lệch thì không được lấy \(\dfrac{1}{6}\). Biến cố không thể xảy ra chiếm 0 miếng, \(P = 0\). Biến cố chắc chắn chiếm hết, \(P = 1\). Xác suất không lớn hơn 1.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Ba bạn Bảo, Châu, Dương xếp ngẫu nhiên ngồi vào hàng ba ghế. \(\Omega = \{\text{BCD; BDC; CBD; DBC; CDB; DCB}\}\) có 6 phần tử, đồng khả năng.</p>
@@ -2315,10 +2292,10 @@ const LESSONS = [
       },
       {
         type: "num",
-        prompt: "Gieo một xúc xắc cân đối. Xác suất xuất hiện mặt 6 chấm bằng bao nhiêu (viết dưới dạng số thập phân)?",
-        answer: 0.16666666666666666,
-        hint: "1 trên 6.",
-        explain: "P = 1/6 ≈ 0,17.",
+        prompt: "Gieo một xúc xắc cân đối. Xác suất ra mặt 6 chấm là 1/k. Giá trị k bằng bao nhiêu?",
+        answer: 6,
+        hint: "Một mặt thuận lợi, sáu mặt có thể, xúc xắc cân đối.",
+        explain: "P = 1/6, nên k = 6. Không được làm tròn thành 0,17 rồi coi đó là đáp số chính xác.",
       },
       {
         type: "mc",
@@ -2337,7 +2314,7 @@ const LESSONS = [
     num: 27,
     chapter: 9,
     title: "Góc nội tiếp",
-    summary: "Định nghĩa góc nội tiếp, cung bị chắn; số đo góc nội tiếp bằng nửa cung bị chắn.",
+    summary: "Góc nội tiếp nhìn cung từ rìa đường tròn, nên bằng nửa góc ở tâm nhìn cùng cung ấy.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Ta biết góc ở tâm \(BOC\) bằng số đo cung \(BC\). Còn góc \(BAC\) — đỉnh nằm trên đường tròn — liên hệ với cung ấy thế nào?</p>
       <div class="definition">
@@ -2406,7 +2383,7 @@ const LESSONS = [
     num: 28,
     chapter: 9,
     title: "Đường tròn ngoại tiếp và đường tròn nội tiếp của một tam giác",
-    summary: "Đường tròn qua ba đỉnh (tâm = giao ba đường trung trực); đường tròn tiếp xúc ba cạnh (tâm = giao ba đường phân giác).",
+    summary: "Trung trực cách đều hai đỉnh, nên giao ba trung trực là tâm đường tròn qua ba đỉnh. Phân giác cách đều hai cạnh.",
     body: String.raw`
       <div class="definition">
         <p><strong>Đường tròn ngoại tiếp</strong> một tam giác là đường tròn đi qua ba đỉnh của tam giác đó; khi đó ta nói tam giác nội tiếp đường tròn. Tâm của nó là giao điểm của ba đường trung trực của tam giác.</p>
@@ -2592,7 +2569,7 @@ const LESSONS = [
     num: 31,
     chapter: 10,
     title: "Hình trụ và hình nón",
-    summary: "Đường sinh, chiều cao, bán kính đáy; diện tích xung quanh và thể tích hình trụ, hình nón.",
+    summary: "Trải hình trụ ra thành hình chữ nhật chu vi đáy nhân chiều cao. Nón dùng đường sinh, không dùng chiều cao, cho diện tích xung quanh.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Đèn lồng, nón lá, thùng sữa, ống khói — hình trụ và hình nón ở khắp nơi. Cần biết một thùng hình trụ chứa được bao nhiêu lít nước, hay làm một chiếc nón giấy tốn bao nhiêu tôn.</p>
       <div class="definition">
@@ -2676,7 +2653,7 @@ const LESSONS = [
     num: 32,
     chapter: 10,
     title: "Hình cầu",
-    summary: "Mặt cầu, hình cầu; mặt cắt là đường tròn; S = 4πR² và V = (4/3)πR³.",
+    summary: "Mặt cầu bằng bốn hình tròn lớn. Cắt lệch tâm, bán kính mặt cắt là căn của R² − d².",
     body: String.raw`
       <p><strong>Tình huống.</strong> Quả bóng đá chuẩn FIFA có dạng hình cầu đường kính khoảng 22 cm. Khi bơm căng, quả bóng chứa được bao nhiêu không khí?</p>
       <div class="definition">
@@ -2688,6 +2665,7 @@ const LESSONS = [
           <li>Mặt phẳng đi qua tâm: đường tròn có bán kính \(R\), gọi là <em>đường tròn lớn</em>;</li>
           <li>Mặt phẳng không đi qua tâm: đường tròn có bán kính nhỏ hơn \(R\).</li>
         </ul>
+        <p>Gọi \(d\) là khoảng cách từ tâm đến mặt phẳng cắt, \(d < R\). Tam giác từ tâm tới chân đường vuông góc rồi tới một điểm trên mép mặt cắt là tam giác vuông. Bán kính mặt cắt bằng \(\sqrt{R^2 - d^2}\). \(d = 0\) thì ra \(R\). \(d\) càng gần \(R\), mặt cắt càng nhỏ.</p>
       </div>
       <div class="definition">
         <p><strong>Công thức (SGK)</strong> — diện tích mặt cầu và thể tích hình cầu bán kính \(R\):</p>
@@ -2696,7 +2674,8 @@ const LESSONS = [
         \]
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Đường Xích đạo của Trái Đất là một đường tròn lớn: dài \(2\pi R \approx 40\,075\) km, suy ra đường kính Trái Đất \(\approx 12\,756\) km. Và đường kính quả bóng đá 22 cm cho \(R = 11\) cm — thay vào công thức là ra thể tích.</p>
+        <p><strong>Đừng dùng diện tích hình tròn cho mặt cầu.</strong> Một mặt cắt qua tâm có diện tích \(\pi R^2\). Mặt cầu bao quanh bằng bốn hình tròn lớn ấy: \(S = 4\pi R^2\). Thể tích là \(V = \dfrac{4}{3}\pi R^3\). Đề cho đường kính thì chia đôi trước khi thế.</p>
+        <p>Quả bóng đường kính 22 cm có \(R = 11\) cm. Thể tích \(V = \dfrac{4}{3}\pi \cdot 11^3 = \dfrac{5324\pi}{3}\) cm³, khoảng 5,6 lít. Không thế 22 vào chỗ \(R\).</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Hình cầu bán kính \(R = 10\) cm: \(S = 4\pi \cdot 100 = 400\pi\) cm²; \(V = \tfrac{4}{3}\pi \cdot 1000 = \tfrac{4000\pi}{3}\) cm³.</p>
