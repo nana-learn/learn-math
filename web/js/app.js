@@ -351,12 +351,16 @@ function lessonView(course, id) {
       ${paperView(lesson)}
       <div class="body">${lesson.body}</div>
       ${videoBlock(lesson)}
-      <section class="quiz">
+      ${
+        lesson.exercises.length
+          ? `<section class="quiz">
         <h2>Luyện tập</h2>
         <form id="quiz-form">${exercises}
           <button class="btn" type="submit">Kiểm tra</button>
         </form>
-      </section>
+      </section>`
+          : ""
+      }
       <p class="actions" style="margin-top:1.2rem">
         ${prev ? `<a class="btn ghost" href="#/g/${course.id}/lesson/${prev.id}">Bài trước</a>` : ""}
         ${next ? `<a class="btn" href="#/g/${course.id}/lesson/${next.id}">Bài tiếp</a>` : ""}

@@ -488,6 +488,53 @@ const THI10_LESSONS = [
       { type: "mc", prompt: "Đề Hà Đông, mười thẻ ghi 1 đến 10. Biến cố “số chính phương” có bao nhiêu kết quả thuận lợi?", choices: ["2", "3", "4", "5"], correct: 1, hint: "1, 4, 9. Số 16 không có trong hộp.", explain: "Ba số chính phương. P = 3/10." },
     ],
   },
+  {
+    id: "tv10-12",
+    num: 12,
+    chapter: 7,
+    title: "Đề thử Mỹ Đình 2, năm 2021",
+    summary: "Đề ngày 30/5/2021, 90 phút. Ảnh gốc ở trên, câu hỏi ở dưới, chưa có đáp án.",
+    pages: ["de/my-dinh-2-2021-de.png"],
+    files: [{ href: "de/my-dinh-2-2021-de.png", label: "Mở ảnh đề" }],
+    body: String.raw`
+      <p>Đề thi thử của THCS Mỹ Đình 2, ngày 30 tháng 5 năm 2021, 90 phút. Đây là câu hỏi, chưa có lời giải. Ảnh gốc nhỏ, mẫu số ở Bài 3 đọc là \(x - 2y\).</p>
+      <div class="examq">
+        <p><strong>Bài 1 (2,0 điểm).</strong> Cho \(A = \dfrac{4}{2\sqrt{x} - x}\) và \(B = \dfrac{\sqrt{x} - 4}{x - 2\sqrt{x}} + \dfrac{3}{\sqrt{x} - 2}\), với \(x > 0\), \(x \neq 4\).</p>
+        <p>1) Tính \(A\) khi \(x = 2\).</p>
+        <p>2) Rút gọn \(P = B : A\).</p>
+        <p>3) Tìm \(x\) để \(M \geq 0\), với \(M = P \cdot \dfrac{1 - \sqrt{x}}{\sqrt{x} - 3}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài 2 (2,5 điểm).</strong></p>
+        <p>1) Hai địa điểm \(A\) và \(B\) cách nhau 30 km. Cùng lúc, một người đi xe máy từ \(A\), một người đi xe đạp từ \(B\). Nếu đi ngược chiều thì sau 40 phút họ gặp nhau. Nếu đi cùng chiều theo hướng từ \(A\) đến \(B\) thì sau 2 giờ họ gặp nhau tại \(C\), với \(B\) nằm giữa \(A\) và \(C\). Tính vận tốc mỗi xe.</p>
+        <p>2) Một hình trụ có chiều cao bằng đường kính đáy, diện tích toàn phần \(48\pi\) cm². Tính thể tích hình trụ đó.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài 3 (2,0 điểm).</strong></p>
+        <p>1) Giải hệ</p>
+        \[
+          \begin{cases}
+            \dfrac{2}{x - 2y} + \sqrt{y - 1} = 3 \\
+            \dfrac{3}{x - 2y} - 2\sqrt{y - 1} = 1.
+          \end{cases}
+        \]
+        <p>2) Cho parabol \((P): y = \dfrac{1}{2}x^2\) và đường thẳng \((d): y = (m + 1)x - m\).</p>
+        <p>a) Chứng minh \((d)\) luôn cắt \((P)\) tại hai điểm phân biệt với mọi \(m\).</p>
+        <p>b) Gọi \(x_1, x_2\) là hoành độ các giao điểm. Tìm \(m\) để \(\sqrt{x_1} + \sqrt{x_2} = \sqrt{2}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài 4 (3,0 điểm).</strong> Cho nửa đường tròn \((O; R)\) đường kính \(BC\). Lấy \(D\) và \(E\) di động trên nửa đường tròn sao cho \(\widehat{EOD} = 90^\circ\), với \(D\) thuộc cung \(\overset{\frown}{CE}\) và \(E\) thuộc cung \(\overset{\frown}{BD}\). \(BD\) cắt \(CE\) tại \(H\). Các tia \(BE\) và \(CD\) cắt nhau tại \(A\).</p>
+        <p>a) Chứng minh tứ giác \(ADHE\) nội tiếp.</p>
+        <p>b) Chứng minh \(OD\) là tiếp tuyến của đường tròn ngoại tiếp tứ giác \(ADHE\).</p>
+        <p>c) Kẻ đường thẳng vuông góc với \(AB\) tại \(B\) và đường thẳng vuông góc với \(AC\) tại \(C\). Gọi \(K\) là giao điểm hai đường thẳng đó, \(I\) là trung điểm \(AK\). Tính số đo góc \(BIC\).</p>
+        <p>d) Tìm vị trí của \(D\) và \(E\) để \(AB + AC\) lớn nhất.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Bài 5 (0,5 điểm).</strong> Cho \(x, y\) thỏa mãn \(x^2 + 2xy + 3y^2 = 6\). Tìm giá trị lớn nhất và giá trị nhỏ nhất của \(M = x + 2y\).</p>
+      </div>
+    `,
+    exercises: [],
+  },
 ];
 
 COURSES.push({
@@ -528,10 +575,16 @@ COURSES.push({
       ],
     },
     {
-      title: "THCS Mỹ Đình 2",
+      title: "THCS Mỹ Đình 2, 2026",
       note: "Đề thi thử năm học 2026–2027.",
       pages: ["de/my-dinh-2-1.jpg", "de/my-dinh-2-2.jpg"],
       files: [{ href: "de/my-dinh-2-2026-de.pdf", label: "Đề PDF" }],
+    },
+    {
+      title: "THCS Mỹ Đình 2, 2021",
+      note: "Đề thi thử ngày 30/5/2021, 90 phút.",
+      pages: ["de/my-dinh-2-2021-de.png"],
+      files: [{ href: "de/my-dinh-2-2021-de.png", label: "Ảnh đề" }],
     },
   ],
 });
