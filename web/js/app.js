@@ -121,6 +121,28 @@ function gradeCard(course) {
   return `<a class="card" href="#/g/${course.id}">${inner}</a>`;
 }
 
+function examCard() {
+  const course = COURSES.find((c) => c.id === "thi10");
+  if (!course) return "";
+  const n = course.lessons.length;
+  const done = n ? Object.keys(progressFor(course.id)).length : 0;
+  return `
+    <a class="card" href="#/g/${course.id}">
+      <span class="stamp">Toán · Hà Nội</span>
+      <h3>${escapeHtml(course.title)}</h3>
+      <p>${n ? `${done}/${n} bài · đề không chuyên` : "Sắp có bài"}</p>
+    </a>`;
+}
+
+function chapterStamp(ch) {
+  return ch.label || `Chương ${ch.id}`;
+}
+
+function chapterHeading(ch) {
+  const name = escapeHtml(ch.title);
+  return ch.label ? `${escapeHtml(ch.label)}. ${name}` : `Chương ${ch.id}. ${name}`;
+}
+
 function homeView() {
   const thcs = COURSES.filter((c) => c.level === "THCS");
   const thpt = COURSES.filter((c) => c.level === "THPT");
@@ -132,6 +154,8 @@ function homeView() {
         Chọn lớp để vào bài. Làm xong, trang nhớ chỗ em đã tới trên máy này.
       </p>
     </section>
+    <p class="section-label">Thi vào 10</p>
+    <div class="grid">${examCard()}</div>
     <p class="section-label">Trung học cơ sở</p>
     <div class="grid grades">${thcs.map(gradeCard).join("")}</div>
     <p class="section-label">Trung học phổ thông</p>
@@ -166,7 +190,7 @@ function courseView(course) {
           .map(
             (ch) => `
           <a class="card" href="#/g/${course.id}/ch/${ch.id}">
-            <span class="stamp">Chương ${ch.id}</span>
+            <span class="stamp">${escapeHtml(chapterStamp(ch))}</span>
             <h3>${escapeHtml(ch.title)}</h3>
             <p>${course.lessons.filter((l) => l.chapter === ch.id).length} bài</p>
           </a>`
@@ -197,7 +221,7 @@ function lessonsView(course) {
       if (!items.length) return "";
       return `
       <section>
-        <h2>Chương ${ch.id}. ${escapeHtml(ch.title)}</h2>
+        <h2>${chapterHeading(ch)}</h2>
         <div class="lesson-list">
           ${items.map((l) => lessonLink(course, l, progress)).join("")}
         </div>
@@ -218,7 +242,7 @@ function chapterView(course, chapterId) {
   return `
     <p class="back"><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>
     <section>
-      <span class="stamp">Chương ${ch.id}</span>
+      <span class="stamp">${escapeHtml(chapterStamp(ch))}</span>
       <h2>${escapeHtml(ch.title)}</h2>
       ${
         rows

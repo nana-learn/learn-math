@@ -6,7 +6,7 @@ Static site for learning **Vietnamese math** (GDPT 2018, Kết nối tri thức)
 
 The site is a hash-routed SPA in `web/` (no server). GitHub Pages deploys that folder on every push to `main`.
 
-Routes: `#/` grades · `#/g/9` course · `#/g/9/ch/1` chapter lessons · `#/g/9/lessons` · `#/g/9/lesson/c1-b1`.
+Routes: `#/` grades · `#/g/thi10` Hanoi grade-10 math exam · `#/g/9` course · `#/g/9/ch/1` chapter lessons · `#/g/9/lessons` · `#/g/9/lesson/c1-b1`.
 
 ## Local
 
