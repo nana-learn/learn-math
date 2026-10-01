@@ -37,16 +37,32 @@ const LESSONS = [
         <p><strong>Hiểu nhanh.</strong> Phương trình bậc nhất hai ẩn chỉ là <em>một điều kiện</em> đặt lên hai con số. Ví dụ \(x + 2y = 3\) nói: "gấp đôi \(y\) rồi cộng \(x\), phải ra 3". Với vô số cặp số thoả mãn, mỗi cặp là một điểm — nên toàn bộ nghiệm vẽ ra là <strong>một đường thẳng</strong> trong mặt phẳng toạ độ.</p>
       </div>
       <figure class="figure">
-        <svg viewBox="0 0 320 200" role="img" aria-label="Tập nghiệm của phương trình bậc nhất hai ẩn là một đường thẳng">
-          <line x1="30" y1="165" x2="305" y2="165" stroke="#BBBBBB" stroke-width="1.5"/>
-          <line x1="50" y1="18" x2="50" y2="180" stroke="#BBBBBB" stroke-width="1.5"/>
-          <line x1="62" y1="42" x2="295" y2="178" stroke="#58C4DD" stroke-width="2"/>
-          <circle cx="170" cy="110" r="4.5" fill="#FC6255"/>
-          <text x="180" y="106" font-size="13">(3; 2)</text>
-          <circle cx="236" cy="146" r="4.5" fill="#58C4DD"/>
-          <text x="243" y="142" font-size="13">(6; 0.5)</text>
-          <text x="293" y="180" font-size="12">x</text>
-          <text x="36" y="28" font-size="12">y</text>
+        <svg viewBox="0 0 320 200" role="img" aria-label="Tập nghiệm của x + 2y = 3 là một đường thẳng">
+          <line x1="22" y1="124" x2="306" y2="124" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="100" y1="16" x2="100" y2="186" stroke="#BBBBBB" stroke-width="1.5"/>
+          <g stroke="#BBBBBB" stroke-width="1.2">
+            <line x1="64" y1="120" x2="64" y2="128"/>
+            <line x1="136" y1="120" x2="136" y2="128"/>
+            <line x1="172" y1="120" x2="172" y2="128"/>
+            <line x1="208" y1="120" x2="208" y2="128"/>
+            <line x1="96" y1="88" x2="104" y2="88"/>
+            <line x1="96" y1="52" x2="104" y2="52"/>
+          </g>
+          <g font-size="11">
+            <text x="64" y="140" text-anchor="middle">-1</text>
+            <text x="136" y="140" text-anchor="middle">1</text>
+            <text x="172" y="140" text-anchor="middle">2</text>
+            <text x="208" y="140" text-anchor="middle">3</text>
+            <text x="90" y="92" text-anchor="end">1</text>
+            <text x="108" y="56">2</text>
+          </g>
+          <line x1="40" y1="40" x2="280" y2="160" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="64" cy="52" r="4.5" fill="#FC6255"/>
+          <text x="56" y="70" font-size="13" text-anchor="end">(-1; 2)</text>
+          <circle cx="136" cy="88" r="4.5" fill="#58C4DD"/>
+          <text x="146" y="78" font-size="13">(1; 1)</text>
+          <text x="294" y="116" font-size="12">x</text>
+          <text x="108" y="24" font-size="12">y</text>
         </svg>
         <figcaption>Mỗi nghiệm là một điểm; mọi nghiệm của \(x + 2y = 3\) nằm trên cùng một đường thẳng.</figcaption>
       </figure>
