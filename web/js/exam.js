@@ -1,6 +1,6 @@
 // Ôn Toán vào lớp 10 công lập không chuyên, Hà Nội.
 // Câu trong bài lấy từ đề chính thức của Sở GDĐT Hà Nội, các năm 2022–2026,
-// và đề thi thử THCS Mỹ Đình 2, năm học 2026–2027.
+// và các đề thi thử của trường, phòng GD&ĐT Hà Nội năm học 2025–2026 và 2026–2027.
 // Lời giải ngắn là lời giải riêng, đã đối chiếu đáp án chính thức 2024, 2025, 2026.
 const THI10_CHAPTERS = [
   { id: 1, label: "Câu I", title: "Thống kê và xác suất" },
@@ -9,7 +9,7 @@ const THI10_CHAPTERS = [
   { id: 4, label: "Câu IV", title: "Hình trụ, hình nón và chứng minh" },
   { id: 5, label: "Câu V", title: "Bài toán tối ưu" },
   { id: 6, label: "Luyện", title: "Số từ đề đã ra" },
-  { id: 7, label: "Đề thử", title: "THCS Mỹ Đình 2, 2026–2027" },
+  { id: 7, label: "Đề thử", title: "Đề thử các trường Hà Nội" },
 ];
 
 const THI10_LESSONS = [
@@ -385,6 +385,83 @@ const THI10_LESSONS = [
       { type: "num", prompt: "Ông A cần chuẩn bị ít nhất bao nhiêu chai rượu vàng?", answer: 5, hint: "1296π cm³, mỗi chai 0,85 lít. Bốn chai không đủ.", explain: "Khoảng 4,79 lít, nên ít nhất 5 chai." },
     ],
   },
+  {
+    id: "tv10-11",
+    num: 11,
+    chapter: 7,
+    title: "Tám đề thử khác ở Hà Nội",
+    summary: "Cầu Giấy, Thái Thịnh, Đống Đa, Hà Đông, Ba Đình, Ngọc Hồi, Nguyễn Trường Tộ, Thạch Thất.",
+    body: String.raw`
+      <p>Các câu dưới đây lấy từ đề thi thử hoặc đề khảo sát của trường và phòng GD&ĐT ở Hà Nội, năm học 2025–2026 và 2026–2027. Không phải đề chính thức của Sở. Biểu đồ nào trang nguồn không in số thì không đưa vào, để khỏi đoán.</p>
+      <div class="examq">
+        <p><strong>THCS Cầu Giấy, lần 1, năm học 2025–2026.</strong> Điểm học kỳ: không quá 7 có 33 em, nhóm 
+(7;
+ 8] có 60, nhóm (8;
+ 9] có 189, nhóm (9;
+ 10] có 168.</p>
+        <p>Cả khối có \(33 + 60 + 189 + 168 = 450\) học sinh. Nhóm đông nhất là (8;
+ 9], chiếm \(\dfrac{189}{450} = 42\%\).</p>
+        <p>Hộp có 13 bóng đỏ, 10 bóng vàng, 80 bóng trắng. Không trắng là 23 quả trên 103 quả. \(\dfrac{23}{103} \approx 0{,}223\), làm tròn đến hàng phần trăm được 22%.</p>
+        <p>Ném 15 quả. Vào rổ được 2 điểm, ra ngoài bị trừ 1 điểm. Muốn ít nhất 15 điểm thì số quả vào rổ \(k\) thỏa \(3k - 15 \geq 15\), nên \(k \geq 10\). Mười quả vào rổ đúng 15 điểm. Chín quả chỉ được 12 điểm.</p>
+        <p>Hai tổ dự định làm tổng 600 sản phẩm. Tổ 1 vượt 10%, tổ 2 vượt 20%, cả hai làm được 685. Gọi số kế hoạch của tổ 1 là \(x\). \(1{,}1x + 1{,}2(600 - x) = 685\), được \(x = 350\), tổ 2 là 250. Kiểm tra: \(385 + 300 = 685\).</p>
+        <p>\(2x^2 - 4x + 1 = 0\). Tổng hai nghiệm là 2, tích là \(\dfrac{1}{2}\). Không nghiệm nào bằng 0. Tổng nghịch đảo bằng \(\dfrac{2}{1/2} = 4\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>THCS Thái Thịnh, năm học 2026–2027.</strong> 40 học sinh. Thời gian đến trường: nhóm 
+[0;
+ 10) chiếm 30%, [10;
+ 20) chiếm 45%, [20;
+ 30) chiếm 25%.</p>
+        <p>Tần số nhóm [20;
+ 30) là \(0{,}25 \cdot 40 = 10\). Dưới 20 phút là 75% của 40, tức 30 em.</p>
+        <p>Rút hai viên trong năm viên ghi 1 đến 5. Tích không nhỏ hơn 10: các cặp (2;
+ 5), (3;
+ 4), (3;
+ 5), (4;
+ 5). Bốn cặp trên mười cặp. \(P = \dfrac{2}{5}\). Có kể thứ tự thì vẫn ra \(\dfrac{2}{5}\).</p>
+        <p>Kế hoạch mỗi ngày 30 áo, thực tế 40 áo. Vượt 20 áo và xong sớm 2 ngày. Gọi số ngày kế hoạch là \(n\). \(40(n - 2) = 30n + 20\), \(n = 10\). Theo kế hoạch phải may 300 áo. Kiểm tra: 8 ngày thực tế may 320 áo.</p>
+        <p>20 tờ tiền loại 10 nghìn và 20 nghìn. Đơn hàng 300 nghìn, trả xong còn một tờ 20 nghìn. Tổng tiền ban đầu là 320 nghìn. Gọi \(y\) là số tờ 20 nghìn: \(10(20 - y) + 20y = 320\), \(y = 12\), tờ 10 nghìn là 8. Trả 8 tờ 10 nghìn và 11 tờ 20 nghìn đúng 300 nghìn.</p>
+        <p>Nước trong bình trụ bán kính 4 cm, cao 10 cm: \(V = 3{,}14 \cdot 16 \cdot 10 = 502{,}4\) cm³. Bát nửa cầu bán kính 6 cm chứa \(\dfrac{2}{3} \cdot 3{,}14 \cdot 216 = 452{,}16\) cm³. Nước tràn, vì 502,4 lớn hơn 452,16.</p>
+        <p>330 chỗ, xe 30 chỗ giá 3 triệu, xe 45 chỗ giá 4 triệu, xe nào cũng kín chỗ. \(2a + 3b = 22\). Chi phí nhỏ nhất khi 2 xe 30 chỗ và 6 xe 45 chỗ, hết 30 triệu. Kiểm tra: \(60 + 270 = 330\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>THCS Đống Đa, khảo sát tháng 1, năm học 2025–2026.</strong> Bạn Bình có 600 nghìn đồng. Áo giảm 30 nghìn một chiếc nên mua được gấp 1,25 lần số áo dự định. Giá niêm yết \(x\) nghìn, \(x > 30\).</p>
+        \[
+          \dfrac{600}{x - 30} = 1{,}25 \cdot \dfrac{600}{x}.
+        \]
+        <p>\(x = 150\). Giá đã mua là \(150 - 30 = 120\) nghìn đồng một chiếc. Kiểm tra: dự định 4 chiếc, thực mua 5 chiếc.</p>
+        <p><strong>THCS Hà Đông, lần 2.</strong> Mười thẻ ghi 1 đến 10. Số chính phương là 1, 4, 9. \(P = \dfrac{3}{10}\).</p>
+        <p><strong>Phường Ba Đình, lần 3, ngày 25/3/2026.</strong> Đĩa chia 12 phần, ghi 1 đến 12. Chia hết cho 4: 4, 8, 12. \(P = \dfrac{3}{12} = \dfrac{1}{4}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>THCS Ngọc Hồi, khảo sát tháng 3.</strong> Parabol \(y = ax^2\) đi qua (1;
+ 3), nên \(a = 3\). Điểm có hoành độ 2 là (2;
+ 12).</p>
+        <p>Đĩa 20 phần, ghi 1 đến 20. Chia cho 5 dư 1: 1, 6, 11, 16. \(P = \dfrac{4}{20} = \dfrac{1}{5}\).</p>
+        <p><strong>THCS Nguyễn Trường Tộ, khảo sát tháng 4.</strong> Rút một thẻ trong 48 thẻ ghi 1 đến 48. Ước của 90 không vượt quá 48: 1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45. Mười một số. \(P = \dfrac{11}{48}\). Số 90 không có trong hộp.</p>
+        <p>Thang máy chịu tối đa 1200 kg. Nhân viên 75 kg, mỗi thùng 45 kg. \(75 + 45k \leq 1200\), \(k \leq 25\). Đúng 25 thùng thì tổng đúng 1200 kg, vẫn được.</p>
+        <p><strong>Phòng GD&ĐT Thạch Thất.</strong> Ba bi vàng ghi 1, 2, 3 và hai bi nâu ghi 4, 5. Rút đồng thời hai bi. Khác màu có \(3 \cdot 2 = 6\) cách, trên \(C_5^2 = 10\) cách. \(P = \dfrac{3}{5}\).</p>
+        <p>Giá niêm yết mặt hàng A là \(a\) đồng, B là \(b\) đồng. Giảm 20% và 15%: \(1{,}6a + 0{,}85b = 362000\). Giờ vàng giảm 30% và 25%: \(2{,}1a + 1{,}5b = 552000\). Giải được \(a = 120000\), \(b = 200000\). Kiểm tra cả hai hóa đơn đều khớp.</p>
+      </div>
+      <div class="memory">
+        <p>Đề thử đổi số, không đổi việc phải làm: cộng ra cỡ mẫu, viết điều kiện, kiểm tra nghiệm, và với bài xe hoặc thùng thì thử số nguyên được phép.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đề Cầu Giấy: khối 9 có bao nhiêu học sinh?", answer: 450, hint: "Cộng bốn nhóm điểm.", explain: "33 + 60 + 189 + 168 = 450." },
+      { type: "num", prompt: "Đề Cầu Giấy: nhóm điểm đông nhất chiếm bao nhiêu phần trăm?", answer: 42, hint: "189 trên 450.", explain: "Nhóm (8; 9] có 189 em, 189/450 = 42%." },
+      { type: "num", prompt: "Đề Cầu Giấy: muốn được chọn, phải ném vào rổ ít nhất bao nhiêu quả?", answer: 10, hint: "Điểm = 3k − 15. Cần ít nhất 15 điểm.", explain: "3k − 15 ≥ 15 cho k ≥ 10. Chín quả chỉ được 12 điểm." },
+      { type: "num", prompt: "Đề Cầu Giấy: tổ 1 phải làm bao nhiêu sản phẩm theo kế hoạch?", answer: 350, hint: "x + y = 600 và 1,1x + 1,2y = 685.", explain: "x = 350, y = 250. Thực tế 385 + 300 = 685." },
+      { type: "num", prompt: "Đề Thái Thịnh: bao nhiêu học sinh đến trường dưới 20 phút?", answer: 30, hint: "30% cộng 45%, rồi nhân với 40.", explain: "75% của 40 là 30 học sinh." },
+      { type: "num", prompt: "Đề Thái Thịnh: theo kế hoạch xưởng phải may bao nhiêu áo?", answer: 300, hint: "Mười ngày, mỗi ngày 30 áo.", explain: "40(n − 2) = 30n + 20 cho n = 10. Tổng kế hoạch là 300." },
+      { type: "num", prompt: "Đề Thái Thịnh: để rẻ nhất, cần thuê bao nhiêu xe 45 chỗ?", answer: 6, hint: "2a + 3b = 22. So chi phí của các cặp nguyên.", explain: "2 xe 30 chỗ và 6 xe 45 chỗ hết 30 triệu, ít hơn các cách khác." },
+      { type: "num", prompt: "Đề Đống Đa: Bình đã mua mỗi chiếc áo với giá bao nhiêu nghìn đồng?", answer: 120, hint: "Giá niêm yết 150, đã giảm 30.", explain: "600/(x − 30) = 1,25·600/x cho x = 150. Giá mua là 120 nghìn." },
+      { type: "num", prompt: "Đề Nguyễn Trường Tộ: nhân viên mang theo tối đa bao nhiêu thùng?", answer: 25, hint: "75 + 45k ≤ 1200.", explain: "k ≤ 25. Đúng 25 thùng thì tổng đúng 1200 kg, vẫn không vượt tải." },
+      { type: "num", prompt: "Đề Thạch Thất: giá niêm yết mặt hàng A là bao nhiêu đồng?", answer: 120000, hint: "1,6a + 0,85b = 362000 và 2,1a + 1,5b = 552000.", explain: "a = 120000, b = 200000. Cả hai hóa đơn đều khớp." },
+      { type: "mc", prompt: "Đề Thái Thịnh, đổ nước từ bình trụ sang bát nửa cầu. Kết luận đúng là:", choices: ["Nước không tràn", "Nước tràn, vì 502,4 cm³ lớn hơn 452,16 cm³", "Hai thể tích bằng nhau", "Thiếu dữ liệu để so"], correct: 1, hint: "Tính cả hai thể tích với π ≈ 3,14.", explain: "Bình chứa 502,4 cm³, bát chứa 452,16 cm³. Nước tràn." },
+      { type: "mc", prompt: "Đề Hà Đông, mười thẻ ghi 1 đến 10. Biến cố “số chính phương” có bao nhiêu kết quả thuận lợi?", choices: ["2", "3", "4", "5"], correct: 1, hint: "1, 4, 9. Số 16 không có trong hộp.", explain: "Ba số chính phương. P = 3/10." },
+    ],
+  },
 ];
 
 COURSES.push({
@@ -393,7 +470,7 @@ COURSES.push({
   title: "Thi vào 10",
   level: "Hà Nội",
   subtitle: "Toán không chuyên · đề Sở 2022–2026 · đề thử Mỹ Đình 2",
-  blurb: "Ôn bằng câu đã ra trong đề Toán vào lớp 10 công lập của Hà Nội, và đề thi thử THCS Mỹ Đình 2. Không gồm Văn hay Ngoại ngữ.",
+  blurb: "Ôn bằng đề chính thức của Sở và đề thi thử của các trường Hà Nội. Không gồm Văn hay Ngoại ngữ.",
   chapters: THI10_CHAPTERS,
   lessons: THI10_LESSONS,
 });
