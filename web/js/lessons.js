@@ -1,7 +1,6 @@
-// Bài học bám sát SGK Toán 9 – Kết nối tri thức với cuộc sống (Tập 1 & Tập 2).
-// Chương I–X, Bài 1–32, theo mục lục hai tập sách.
-// Mỗi bài gồm: tình huống mở đầu → khái niệm (ngôn ngữ SGK) → hiểu nhanh →
-// ví dụ mẫu → sai lầm thường gặp → luyện tập có gợi ý.
+// Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
+// Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
+// ví dụ làm chậm → luyện tập. Bài 1 đã viết lại theo hướng này.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -22,19 +21,49 @@ const LESSONS = [
     num: 1,
     chapter: 1,
     title: "Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn",
-    summary: "Phương trình ax + by = c, nghiệm (x; y), và hệ hai phương trình cùng lúc.",
+    summary: "Một điều kiện cho hai số thì còn vô số cặp nghiệm, vẽ thành một đường thẳng. Hệ là hai điều kiện cùng lúc.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Quýt, cam mười bảy quả tươi, dem chia cho một trăm người cùng vui…
-      Trong bài toán cổ này có <em>hai</em> điều chưa biết cùng lúc: số quýt và số cam. Một ẩn \(x\) không đủ nữa — ta cần <strong>hai ẩn</strong> \(x\) và \(y\).</p>
+      <p><strong>Vì sao cần hai ẩn?</strong> Phương trình một ẩn như \(2x + 5 = 11\) thường khoá chết một số: chỉ có \(x = 3\) làm hai vế bằng nhau. Nhiều bài toán không như thế. Có <em>hai</em> số chưa biết, mà ta mới biết <em>một</em> mối liên hệ giữa chúng.</p>
+      <p>Mai mua quýt và cam. Quýt 15 nghìn một quả, cam 20 nghìn một quả, trả đúng 90 nghìn. Gọi \(x\) là số quýt, \(y\) là số cam. Câu chuyện tiền chỉ cho một hệ thức:</p>
+      \[
+        15x + 20y = 90.
+      \]
+      <p>Chia cả hai vế cho 5 thì các cặp nghiệm không đổi, vì hai vế bị chia cùng một số khác 0. Phương trình gọn hơn là \(3x + 4y = 18\). Nó <strong>chưa</strong> nói Mai mua mấy quả mỗi loại. Nó chỉ nói: tiền quýt cộng tiền cam phải bằng 90 nghìn.</p>
+      <div class="idea">
+        <p><strong>Thử một cách, rồi đổi cách.</strong> Chọn mua 2 quýt, tức \(x = 2\). Thế vào: \(3 \cdot 2 + 4y = 18\), nên \(6 + 4y = 18\), \(4y = 12\), \(y = 3\). Cặp \((2;\ 3)\) làm phương trình đúng. Kiểm lại bằng tiền: \(15 \cdot 2 + 20 \cdot 3 = 90\).</p>
+        <p>Mua 6 quýt: \(3 \cdot 6 + 4y = 18\), tức \(y = 0\). Cặp \((6;\ 0)\) cũng đúng — 6 quýt, không mua cam.</p>
+        <p>Mua 1 quýt thì \(4y = 15\), \(y = \dfrac{15}{4}\). Về số, cặp \(\left(1;\ \dfrac{15}{4}\right)\) vẫn là nghiệm. Không mua được 3,75 quả là điều kiện của bài toán thực tế, chưa nằm trong phương trình.</p>
+      </div>
+      <p>Điểm cần nắm trước định nghĩa: <strong>một phương trình hai ẩn không khoá cả hai số</strong>. Ta được chọn một số, số kia bị kéo theo. Đổi số đã chọn thì được nghiệm khác. Vì vậy thường có vô số nghiệm. Đừng đi tìm "một nghiệm duy nhất" như với phương trình một ẩn.</p>
       <div class="definition">
         <p><strong>Phương trình bậc nhất hai ẩn</strong> \(x\) và \(y\) là hệ thức dạng</p>
         \[
           ax + by = c,
         \]
-        <p>trong đó \(a\), \(b\), \(c\) là các số đã biết \((a \neq 0 \text{ hoặc } b \neq 0)\). Nếu tại \(x = x_0,\ y = y_0\) ta có \(ax_0 + by_0 = c\) là một khẳng định đúng thì cặp số \((x_0;\ y_0)\) được gọi là một <em>nghiệm</em> của phương trình.</p>
+        <p>trong đó \(a\), \(b\), \(c\) là số đã biết, và \(a \neq 0\) hoặc \(b \neq 0\): ít nhất một ẩn thật sự có mặt ở bậc 1.</p>
+        <p>Cặp \((x_0;\ y_0)\) là một <em>nghiệm</em> nếu thế \(x = x_0\), \(y = y_0\) thì \(ax_0 + by_0 = c\) là câu đúng. Nghiệm là cả cặp, không phải từng số đứng riêng.</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Phương trình bậc nhất hai ẩn chỉ là <em>một điều kiện</em> đặt lên hai con số. Ví dụ \(x + 2y = 3\) nói: "gấp đôi \(y\) rồi cộng \(x\), phải ra 3". Với vô số cặp số thoả mãn, mỗi cặp là một điểm — nên toàn bộ nghiệm vẽ ra là <strong>một đường thẳng</strong> trong mặt phẳng toạ độ.</p>
+        <p><strong>Đọc từng chữ.</strong> \(a\), \(b\), \(c\) đã biết; \(x\), \(y\) chưa biết. "Bậc nhất" nghĩa là mỗi ẩn chỉ đứng ở bậc 1: không có \(x^2\), không có \(xy\), không có \(\dfrac{1}{x}\). "Hai ẩn" vẫn đúng khi một hệ số bằng 0. \(0x + y = -1\) là phương trình bậc nhất hai ẩn, vì \(b = 1 \neq 0\): nó bắt \(y = -1\), còn \(x\) muốn bao nhiêu cũng được. Trên hình, đó là đường thẳng nằm ngang.</p>
+      </div>
+      <div class="example">
+        <p><strong>Kiểm tra một cặp — làm chậm.</strong> Xét \(4x + 3y = 5\).</p>
+        <p>Cặp \((2;\ -1)\): vế trái \(4 \cdot 2 + 3 \cdot (-1) = 8 - 3 = 5\), bằng vế phải. Đúng, nên \((2;\ -1)\) là nghiệm.</p>
+        <p>Cặp \((1;\ 0)\): vế trái \(4 \cdot 1 + 3 \cdot 0 = 4\), mà \(4 \neq 5\). Không phải nghiệm. Lệch một chút là loại; không có "gần đúng".</p>
+      </div>
+      <div class="memory">
+        <p><strong>Cách tìm thêm nghiệm.</strong> Chọn một giá trị cho \(x\) (hoặc cho \(y\)). Thế vào, được phương trình một ẩn. Giải ẩn còn lại. Viết cặp \((x;\ y)\). Đổi số đã chọn thì được nghiệm khác.</p>
+      </div>
+      <div class="example">
+        <p><strong>Làm với</strong> \(x + 2y = 3\). Câu này nói: lấy \(x\), cộng thêm gấp đôi \(y\), phải ra 3.</p>
+        <table>
+          <tr><th>Chọn</th><th>Phương trình còn lại</th><th>Cặp nghiệm</th></tr>
+          <tr><td>\(y = 0\)</td><td>\(x = 3\)</td><td>\((3;\ 0)\)</td></tr>
+          <tr><td>\(y = 1\)</td><td>\(x + 2 = 3\)</td><td>\((1;\ 1)\)</td></tr>
+          <tr><td>\(y = 2\)</td><td>\(x + 4 = 3\)</td><td>\((-1;\ 2)\)</td></tr>
+          <tr><td>\(x = 5\)</td><td>\(5 + 2y = 3\)</td><td>\((5;\ -1)\)</td></tr>
+        </table>
+        <p>Bốn cặp đều đúng. Không cặp nào "đúng hơn" cặp kia.</p>
       </div>
       <figure class="figure">
         <svg viewBox="0 0 320 200" role="img" aria-label="Tập nghiệm của x + 2y = 3 là một đường thẳng">
@@ -64,27 +93,83 @@ const LESSONS = [
           <text x="294" y="116" font-size="12">x</text>
           <text x="108" y="24" font-size="12">y</text>
         </svg>
-        <figcaption>Mỗi nghiệm là một điểm; mọi nghiệm của \(x + 2y = 3\) nằm trên cùng một đường thẳng.</figcaption>
+        <figcaption>\((-1;\ 2)\) và \((1;\ 1)\) đều thoả \(x + 2y = 3\). Đường thẳng còn cắt trục \(x\) tại \((3;\ 0)\).</figcaption>
       </figure>
-      <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Trong các hệ thức \(4x + 3y = 5\), \(0x + y = -1\), \(0x + 0y = 3\): hai hệ thức đầu là phương trình bậc nhất hai ẩn; hệ thức \(0x + 0y = 3\) có \(a = b = 0\) nên <strong>không</strong> phải. Cặp \((2;\ -1)\) là nghiệm của \(4x + 3y = 5\) vì \(4 \cdot 2 + 3 \cdot (-1) = 5\); cặp \((1;\ 0)\) không phải vì \(4 \cdot 1 + 3 \cdot 0 = 4 \neq 5\).</p>
+      <p>Vì sao là đường thẳng, không phải đường cong? Giải \(y\) theo \(x\): \(2y = 3 - x\), nên \(y = -\dfrac{1}{2}x + \dfrac{3}{2}\). Mỗi lần \(x\) tăng 2, \(y\) giảm đúng 1. Mức đổi không đổi, nên các điểm nằm thẳng hàng. Mọi nghiệm là một điểm trên đường đó; mọi điểm trên đường đó là một nghiệm.</p>
+      <div class="warn">
+        <p><strong>Cái gì trông giống mà không phải.</strong></p>
+        <ul>
+          <li>\(x^2 + y = 3\): \(x\) bậc hai, không viết được dạng \(ax + by = c\).</li>
+          <li>\(xy = 6\): hai ẩn nhân với nhau, không phải tổng \(ax + by\).</li>
+          <li>\(0x + 0y = 3\): cả \(a\) và \(b\) đều bằng 0, không còn ẩn bậc nhất. Vế trái luôn là 0, mà \(0 = 3\) sai với mọi cặp.</li>
+          <li>\(0x + y = -1\): <em>có</em> phải. \(y\) bị khoá bằng \(-1\), \(x\) tự do.</li>
+        </ul>
       </div>
+      <p><strong>Khi một điều kiện chưa đủ.</strong> Biết \(3x + 4y = 18\) thì Mai còn rất nhiều cách mua. Thêm một câu: tổng số quả là 5, tức \(x + y = 5\). Một cặp muốn được nhận phải làm <em>cả hai</em> câu đúng cùng lúc.</p>
       <div class="definition">
-        <p>1) Một cặp gồm hai phương trình bậc nhất hai ẩn \(ax + by = c\) và \(a'x + b'y = c'\) được gọi là một <strong>hệ hai phương trình bậc nhất hai ẩn</strong>, thường viết</p>
+        <p>Hai phương trình bậc nhất hai ẩn viết cùng nhau là một <strong>hệ hai phương trình bậc nhất hai ẩn</strong>:</p>
         \[
           \begin{cases} ax + by = c \\ a'x + b'y = c'. \end{cases}
         \]
-        <p>2) Mỗi cặp số \((x_0;\ y_0)\) được gọi là một <strong>nghiệm</strong> của hệ nếu nó đồng thời là nghiệm của cả hai phương trình (nghiệm chung của hai phương trình).</p>
+        <p>Cặp \((x_0;\ y_0)\) là nghiệm của hệ khi nó là nghiệm của phương trình thứ nhất <em>và</em> của phương trình thứ hai. Đúng một vế, sai vế kia: chưa phải nghiệm của hệ.</p>
       </div>
+      <div class="example">
+        <p><strong>So hai cặp của Mai.</strong> Hệ là \(\begin{cases} 3x + 4y = 18 \\ x + y = 5. \end{cases}\)</p>
+        <p>\((2;\ 3)\): tiền \(3 \cdot 2 + 4 \cdot 3 = 18\), đúng; số quả \(2 + 3 = 5\), đúng. Vậy \((2;\ 3)\) là nghiệm của hệ.</p>
+        <p>\((6;\ 0)\): tiền \(18 + 0 = 18\), đúng; số quả \(6 + 0 = 6 \neq 5\), sai. Đây là nghiệm của phương trình tiền, <strong>không</strong> phải nghiệm của hệ.</p>
+      </div>
+      <figure class="figure">
+        <div class="panels">
+          <div class="panel">
+            <svg viewBox="0 0 120 90" width="140" role="img" aria-label="Một đường thẳng mang nhiều nghiệm">
+              <line x1="14" y1="68" x2="106" y2="20" stroke="#58C4DD" stroke-width="2"/>
+              <circle cx="37" cy="56" r="3.5" fill="#FC6255"/>
+              <circle cx="60" cy="44" r="3.5" fill="#FFFF00"/>
+              <circle cx="83" cy="32" r="3.5" fill="#58C4DD"/>
+            </svg>
+            <p>Một phương trình:<br>cả đường đều là nghiệm</p>
+          </div>
+          <div class="panel">
+            <svg viewBox="0 0 120 90" width="140" role="img" aria-label="Hai đường thẳng cắt nhau tại một nghiệm">
+              <line x1="16" y1="70" x2="104" y2="18" stroke="#58C4DD" stroke-width="2"/>
+              <line x1="18" y1="20" x2="102" y2="68" stroke="#FC6255" stroke-width="2"/>
+              <circle cx="60" cy="44" r="4" fill="#FFFF00"/>
+            </svg>
+            <p>Hệ hai phương trình:<br>chỉ giao điểm mới đậu</p>
+          </div>
+        </div>
+        <figcaption>Thêm một điều kiện là thêm một đường. Nghiệm của hệ là điểm chung.</figcaption>
+      </figure>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Một phương trình là một điều kiện; hệ hai phương trình là <em>hai điều kiện cùng lúc</em>. Cặp số muốn "đậu" thì phải qua cả hai vòng thiệt. Về hình học: nghiệm của hệ là <strong>giao điểm</strong> của hai đường thẳng.</p>
+        <p><strong>Ba khả năng, nhìn trước đã.</strong> Hai đường thường cắt nhau tại một điểm: hệ có một nghiệm. Song song, không cắt: vô nghiệm. Trùng nhau: mọi điểm trên đường đó đều thoả cả hai phương trình, hệ có vô số nghiệm. Bài sau học cách tìm giao điểm bằng tính toán. Bài này cần thấy nghiệm của hệ là gì, và biết kiểm tra một cặp.</p>
       </div>
+      <div class="example">
+        <p><strong>Kiểm tra, chưa cần giải.</strong> Hệ \(\begin{cases} x + y = 5 \\ x - y = 1. \end{cases}\)</p>
+        <p>\((3;\ 2)\): \(3 + 2 = 5\) và \(3 - 2 = 1\). Cả hai đúng, nên \((3;\ 2)\) là nghiệm của hệ.</p>
+        <p>\((4;\ 1)\): \(4 + 1 = 5\) đúng, nhưng \(4 - 1 = 3 \neq 1\). Loại.</p>
+        <p>\((2;\ 3)\): tổng bằng 5, nhưng \(2 - 3 = -1 \neq 1\). Cũng loại. Đúng một phương trình thì chưa được nhận.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Bốn câu mang theo.</strong></p>
+        <ul>
+          <li>Một phương trình hai ẩn là một điều kiện: thường vô số cặp, vẽ thành một đường thẳng.</li>
+          <li>Nghiệm luôn là cặp \((x;\ y)\), không phải hai số viết rời.</li>
+          <li>Kiểm tra: thế cả hai số. Tìm thêm nghiệm: chọn một ẩn, giải ẩn kia.</li>
+          <li>Hệ là hai điều kiện cùng lúc. Đúng một phương trình chưa đủ.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao \(x + 2y = 3\) có nghiệm \((1;\ 1)\) mà vẫn còn nghiệm khác? <em>— Mới có một điều kiện cho hai số. Chọn \(y\) khác 1, giải ra \(x\) khác, vẫn thoả cùng phương trình. Các cặp ấy nằm trên cùng một đường thẳng.</em></p>
+        <p>Cặp \((6;\ 0)\) có phải nghiệm của hệ \(\begin{cases} 3x + 4y = 18 \\ x + y = 5 \end{cases}\) không? <em>— Không. Nó đúng phương trình tiền, sai phương trình số quả.</em></p>
+      </details>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
-          <li>Nghiệm là <em>cặp số</em> \((x;\ y)\), không phải hai số rời rạc — kết luận bài giải luôn viết \((x;\ y) = (...;\ ...)\).</li>
-          <li>\(0x + 0y = c\) không phải phương trình bậc nhất hai ẩn, dù "trông giống".</li>
-          <li>Một phương trình bậc nhất hai ẩn luôn có <strong>vô số nghiệm</strong> — đừng tìm "một nghiệm duy nhất".</li>
+          <li>Viết \(x = 2\), \(y = 3\) rồi quên kết luận là cặp \((2;\ 3)\).</li>
+          <li>Tìm được một nghiệm của \(ax + by = c\) và dừng, như thể chỉ có một. Một phương trình hai ẩn không hoạt động như \(2x + 5 = 11\).</li>
+          <li>Thấy \(0x + 0y = 3\) "có dạng \(ax + by = c\)" nên nhận. Thiếu điều kiện \(a \neq 0\) hoặc \(b \neq 0\).</li>
+          <li>Cặp đúng với phương trình thứ nhất đã gọi là nghiệm của hệ. Phải kiểm tra nốt phương trình thứ hai.</li>
         </ul>
       </div>
     `,
@@ -94,23 +179,47 @@ const LESSONS = [
         prompt: "Hệ thức nào là phương trình bậc nhất hai ẩn?",
         choices: [String.raw`\(3x + 2y = 5\)`, String.raw`\(x^2 + y = 3\)`, String.raw`\(0x + 0y = 1\)`, String.raw`\(xy = 6\)`],
         correct: 0,
-        hint: "Phải có đúng dạng ax + by = c với a ≠ 0 hoặc b ≠ 0.",
-        explain: "Phải có dạng ax + by = c với a ≠ 0 hoặc b ≠ 0. Các hệ thức còn lại có ẩn bậc hai, hai ẩn đều bằng 0, hoặc ẩn tích.",
+        hint: "Phải viết được ax + by = c, và ít nhất một trong hai hệ số a, b khác 0.",
+        explain: String.raw`\(3x + 2y = 5\) đúng dạng, với \(a = 3 \neq 0\). \(x^2 + y = 3\) có ẩn bậc hai; \(0x + 0y = 1\) không còn ẩn bậc nhất; \(xy = 6\) là tích hai ẩn.`,
+      },
+      {
+        type: "mc",
+        prompt: "Hệ thức nào vẫn là phương trình bậc nhất hai ẩn?",
+        choices: [String.raw`\(0x + y = -1\)`, String.raw`\(0x + 0y = 3\)`, String.raw`\(x^2 + y = 1\)`, String.raw`\(xy = 2\)`],
+        correct: 0,
+        hint: "Một hệ số bằng 0 vẫn được, miễn là ẩn kia còn bậc 1.",
+        explain: String.raw`\(0x + y = -1\) có \(b = 1 \neq 0\): nó bắt \(y = -1\), \(x\) tự do. \(0x + 0y = 3\) không còn ẩn bậc nhất.`,
       },
       {
         type: "num",
         prompt: String.raw`Biết \((2;\ y_0)\) là nghiệm của \(3x + 2y = 10\). Giá trị \(y_0\) là bao nhiêu?`,
         answer: 2,
-        hint: "Thế x = 2 vào rồi giải phương trình một ẩn theo y.",
-        explain: "3·2 + 2y = 10 ⇒ 2y = 4 ⇒ y = 2.",
+        hint: "Chọn sẵn x = 2, thế vào, giải phương trình một ẩn theo y.",
+        explain: String.raw`\(3 \cdot 2 + 2y_0 = 10\), nên \(6 + 2y_0 = 10\), \(y_0 = 2\). Cặp nghiệm là \((2;\ 2)\).`,
       },
       {
         type: "mc",
-        prompt: "Trên mặt phẳng toạ độ, tập nghiệm của phương trình bậc nhất hai ẩn là:",
-        choices: ["Một đường tròn", "Một đường thẳng", "Một nửa mặt phẳng", "Một điểm"],
+        prompt: String.raw`Cặp nào là nghiệm của \(x + 2y = 3\)?`,
+        choices: [String.raw`\((3;\ 2)\)`, String.raw`\((1;\ 1)\)`, String.raw`\((6;\ 0{,}5)\)`, String.raw`\((2;\ 2)\)`],
         correct: 1,
-        hint: "Mỗi nghiệm (x; y) là một điểm — các điểm ấy nằm ở đâu?",
-        explain: "Tập các điểm thoả mãn ax + by = c là đường thẳng ax + by = c.",
+        hint: "Thế cả hai số vào. Vế trái phải bằng 3, không phải chỉ trông giống một điểm trên hình.",
+        explain: String.raw`\(1 + 2 \cdot 1 = 3\). Các cặp kia cho 7, 7 và 6, không phải 3.`,
+      },
+      {
+        type: "mc",
+        prompt: "Trên mặt phẳng toạ độ, tập nghiệm của một phương trình bậc nhất hai ẩn thường là:",
+        choices: ["Một điểm", "Một đường thẳng", "Một nửa mặt phẳng", "Một đường tròn"],
+        correct: 1,
+        hint: "Chọn một ẩn tự do, ẩn kia bị kéo theo với mức đổi không đổi.",
+        explain: "Mỗi nghiệm là một điểm, và các điểm ấy nằm trên một đường thẳng. Một điểm mới là nghiệm của cả hệ, khi có thêm điều kiện thứ hai.",
+      },
+      {
+        type: "mc",
+        prompt: String.raw`Cặp nào là nghiệm của hệ \(\begin{cases} x + y = 5 \\ x - y = 1 \end{cases}\)?`,
+        choices: [String.raw`\((4;\ 1)\)`, String.raw`\((2;\ 3)\)`, String.raw`\((3;\ 2)\)`, String.raw`\((5;\ 0)\)`],
+        correct: 2,
+        hint: "Phải đúng cả hai phương trình, không chỉ phương trình tổng.",
+        explain: String.raw`\((3;\ 2)\): \(3 + 2 = 5\) và \(3 - 2 = 1\). \((4;\ 1)\) và \((2;\ 3)\) đúng tổng nhưng sai hiệu. \((5;\ 0)\) sai cả hai.`,
       },
     ],
   },
