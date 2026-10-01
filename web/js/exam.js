@@ -344,12 +344,12 @@ const THI10_LESSONS = [
         </table>
         <p>a) Lập bảng tần số và tần số tương đối của mẫu số liệu trên.</p>
         <p>b) Có người nói: “Có trên 75% bóng đèn có tuổi thọ từ 1160 đến 1180 giờ”. Nhận định đó đúng hay sai?</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Đếm được: 1150 có 3, 1160 có 6, 1170 có 12, 1180 có 6, 1190 có 3. Tổng 30. Tần số tương đối lần lượt 10%, 20%, 40%, 20%, 10%.</p>
           <p>Từ 1160 đến 1180, kể cả hai đầu, có 6 + 12 + 6 = 24 bóng, tức 80%. 80% lớn hơn 75%, nên nhận định đúng.</p>
         </details>
         <p><strong>Bài I.2.</strong> Bình tung một đồng xu có hai mặt sấp (S) và ngửa (N) liên tiếp ba lần. Tính xác suất biến cố “mặt sấp xuất hiện đúng một lần”.</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Có thứ tự, nên \(\Omega\) có 8 kết quả. Thuận lợi: SNN, NSN, NNS. \(P = \dfrac{3}{8}\).</p>
         </details>
       </div>
@@ -358,7 +358,7 @@ const THI10_LESSONS = [
         <p>1) Tính \(B\) khi \(x = 49\).</p>
         <p>2) Rút gọn \(A\).</p>
         <p>3) Tìm \(x\) để \(\dfrac{B}{A} = |x - 4|\).</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>1) \(B = \dfrac{7 + 2}{7 - 5} = \dfrac{9}{2}\).</p>
           <p>2) Đặt \(t = \sqrt{x}\), \(t \geq 0\), \(t \neq 5\). Quy đồng được \(A = \dfrac{1}{\sqrt{x} - 5}\).</p>
           <p>3) \(\dfrac{B}{A} = \sqrt{x} + 2\). Giải \(\sqrt{x} + 2 = |x - 4|\) được \(x = 1\) hoặc \(x = 9\). Cả hai thỏa điều kiện.</p>
@@ -366,15 +366,15 @@ const THI10_LESSONS = [
       </div>
       <div class="examq">
         <p><strong>Bài III.1.</strong> Một người mua hai loại hàng, trả 2,17 triệu đồng khi VAT loại thứ nhất là 10% và loại thứ hai là 8%. Nếu cả hai loại đều chịu VAT 9% thì phải trả 2,18 triệu đồng. Hỏi nếu không kể thuế, mỗi loại hàng giá bao nhiêu?</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Gọi giá chưa thuế là \(x\) và \(y\) triệu đồng. \(1{,}09(x + y) = 2{,}18\) cho \(x + y = 2\). Thế vào câu kia được \(x = 0{,}5\), \(y = 1{,}5\). Không kể thuế: 500 nghìn đồng và 1,5 triệu đồng.</p>
         </details>
         <p><strong>Bài III.2.</strong> Theo kế hoạch, một tổ phải may 8400 khẩu trang. Thực tế mỗi ngày may hơn kế hoạch 102 chiếc, nên trước hạn 4 ngày đã may được 6416 chiếc. Hỏi theo kế hoạch mỗi ngày phải may bao nhiêu chiếc?</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Gọi số chiếc mỗi ngày theo kế hoạch là \(x\), nguyên dương. \(\dfrac{8400}{x} - \dfrac{6416}{x + 102} = 4\). Nghiệm dương \(x = 700\). Kiểm tra: kế hoạch 12 ngày, thực tế 8 ngày, \(8 \cdot 802 = 6416\).</p>
         </details>
         <p><strong>Bài III.3.</strong> Phương trình \(x^2 - 3x - 1 = 0\) có hai nghiệm phân biệt \(x_1\), \(x_2\). Không giải phương trình, tính \(A = x_1^3 + 10x_2 - 30\).</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Tổng bằng 3, tích bằng \(-1\). Từ phương trình, \(x_1^3 = 10x_1 + 3\), nên \(A = 10(x_1 + x_2) - 27 = 3\).</p>
         </details>
       </div>
@@ -382,18 +382,18 @@ const THI10_LESSONS = [
         <p><strong>Bài IV.1.</strong> Ly rượu cao 6 cm, đường kính miệng 6 cm. Thành ly là hình trụ cao 3 cm. Đáy là nửa khối cầu có đường kính bằng miệng ly.</p>
         <p>a) Tính thể tích rượu chứa tối đa khi đổ đầy ly.</p>
         <p>b) 12 người, mỗi người uống 4 ly, mỗi lần rót bằng 60% thể tích ly. Mỗi chai có 0,85 lít. Cần ít nhất bao nhiêu chai?</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>a) \(V = \pi \cdot 3^2 \cdot 3 + \dfrac{2}{3}\pi \cdot 3^3 = 45\pi\) cm³.</p>
           <p>b) Lượng cần là \(1296\pi\) cm³, khoảng 4,79 lít. Bốn chai không đủ, nên cần 5 chai.</p>
         </details>
         <p><strong>Bài IV.2a.</strong> \(EM \perp DF\), \(FN \perp DE\), \(Q\) là hình chiếu vuông góc của \(E\) trên đường kính \(FP\). Chứng minh \(F\), \(N\), \(Q\), \(E\) cùng thuộc một đường tròn.</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>\(FN \perp DE\) và \(EQ \perp FP\), nên hai góc nhìn đoạn \(FE\) đều vuông. Bốn điểm cùng thuộc đường tròn đường kính \(FE\).</p>
         </details>
       </div>
       <div class="examq">
         <p><strong>Bài V.</strong> Hầm biogas hình hộp chữ nhật có thể tích 12 m³. Chiều sâu gấp rưỡi chiều rộng. Tìm chiều dài và chiều rộng của đáy để tiết kiệm nguyên vật liệu nhất. Không tính bề dày thành bể.</p>
-        <details class="check"><summary>Lời giải</summary>
+        <details class="check"><summary>Đáp án</summary>
           <p>Hầm kín để giữ khí, nên tính cả sáu mặt. Rộng \(x\), sâu \(\dfrac{3}{2}x\), dài \(\dfrac{8}{x^2}\). Diện tích nhỏ nhất khi \(x^3 = \dfrac{20}{3}\). Làm tròn đến hàng phần trăm: rộng 1,88 m, dài 2,26 m, sâu 2,82 m.</p>
         </details>
       </div>
