@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1 đã viết lại theo hướng này.
+// ví dụ làm chậm → luyện tập. Bài 1–3 viết lại cho hiểu; mỗi bài có thêm một ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -163,6 +163,11 @@ const LESSONS = [
         <p>Vì sao \(x + 2y = 3\) có nghiệm \((1;\ 1)\) mà vẫn còn nghiệm khác? <em>— Mới có một điều kiện cho hai số. Chọn \(y\) khác 1, giải ra \(x\) khác, vẫn thoả cùng phương trình. Các cặp ấy nằm trên cùng một đường thẳng.</em></p>
         <p>Cặp \((6;\ 0)\) có phải nghiệm của hệ \(\begin{cases} 3x + 4y = 18 \\ x + y = 5 \end{cases}\) không? <em>— Không. Nó đúng phương trình tiền, sai phương trình số quả.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Xét \(\begin{cases} 2x + y = 7 \\ x + y = 4. \end{cases}\)</p>
+        <p>Cặp \((3;\ 1)\): \(2 \cdot 3 + 1 = 7\) và \(3 + 1 = 4\). Đúng cả hai, nên là nghiệm của hệ.</p>
+        <p>Cặp \((2;\ 3)\): \(2 \cdot 2 + 3 = 7\), đúng phương trình thứ nhất; \(2 + 3 = 5 \neq 4\), sai phương trình thứ hai. Không phải nghiệm của hệ.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -228,37 +233,58 @@ const LESSONS = [
     num: 2,
     chapter: 1,
     title: "Giải hệ hai phương trình bậc nhất hai ẩn",
-    summary: "Phương pháp thế, phương pháp cộng đại số; hệ có thể có một, vô số hoặc không có nghiệm.",
+    summary: "Đưa hai điều kiện về một phương trình một ẩn bằng cách thế hoặc cộng. Kết quả có thể là một nghiệm, không có nghiệm, hoặc vô số nghiệm.",
     body: String.raw`
-      <p>Mục tiêu của bài này: biến hệ <strong>hai ẩn</strong> về phương trình <strong>một ẩn</strong> (đã biết giải từ lớp 8). Có hai cách "biến" — thế và cộng đại số.</p>
+      <p>Bài trước ta biết kiểm tra một cặp. Bài này học <strong>tìm</strong> cặp ấy. Mỗi phương trình là một đường thẳng; giải hệ là tìm giao điểm bằng tính, không bằng cách thử lần lượt.</p>
+      <p>Mấu chốt: hai ẩn là nhiều. Ta biến hệ thành một phương trình <em>một</em> ẩn, giải ẩn đó, rồi kéo ẩn kia theo. Có hai cách biến: thế, và cộng đại số.</p>
       <div class="definition">
-        <p><strong>Cách giải hệ phương trình bằng phương pháp thế:</strong></p>
-        <p><em>Bước 1.</em> Từ một phương trình của hệ, biểu diễn một ẩn theo ẩn kia rồi thế vào phương trình còn lại của hệ để được phương trình chỉ còn chứa một ẩn.</p>
-        <p><em>Bước 2.</em> Giải phương trình một ẩn vừa nhận được, từ đó suy ra nghiệm của hệ đã cho.</p>
+        <p><strong>Phương pháp thế.</strong></p>
+        <p><em>Bước 1.</em> Từ một phương trình, rút một ẩn theo ẩn kia. Thế biểu thức đó vào phương trình <em>còn lại</em>. Được một phương trình một ẩn.</p>
+        <p><em>Bước 2.</em> Giải ẩn đó, suy ra ẩn kia, viết cặp \((x;\ y)\). Thế cặp vào cả hai phương trình gốc để kiểm tra.</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> "Thế" nghĩa là <em>thay người</em>: từ phương trình thứ nhất, \(y\) nói với chúng ta "tao bằng \(2x - 3\)". Ta mang câu trả lời đó "đeo mặt nạ" vào phương trình thứ hai — chỉ còn \(x\) để giải.</p>
+        <p><strong>Vì sao phải thế vào phương trình còn lại?</strong> Phương trình vừa dùng để rút \(y\) đã tiêu hết thông tin của nó. Nhét \(y\) trở lại chính nó chỉ cho một câu luôn đúng, kiểu \(3 = 3\), không tìm được số. Phương trình kia mới là điều kiện thứ hai — đó mới là chỗ cần dùng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Giải \(\begin{cases} 2x - y = 3 \\ x + 2y = 4 \end{cases}\) bằng phương pháp thế.</p>
-        <p>Từ phương trình thứ nhất: \(y = 2x - 3\). Thế vào phương trình thứ hai: \(x + 2(2x - 3) = 4\), hay \(5x - 6 = 4\), suy ra \(x = 2\).</p>
-        <p>Từ đó \(y = 2 \cdot 2 - 3 = 1\). Vậy hệ có nghiệm là \((2;\ 1)\).</p>
+        <p><strong>Giải</strong> \(\begin{cases} 2x - y = 3 \\ x + 2y = 4. \end{cases}\)</p>
+        <p>Từ phương trình thứ nhất, chuyển vế: \(2x - 3 = y\), tức \(y = 2x - 3\). Câu này nói: nếu cặp đúng phương trình thứ nhất thì \(y\) phải bằng \(2x - 3\).</p>
+        <p>Cặp còn phải đúng phương trình thứ hai. Thay \(y\) bằng \(2x - 3\) vào đó:</p>
+        \[
+          x + 2(2x - 3) = 4.
+        \]
+        <p>Mở ngoặc: \(2(2x - 3) = 4x - 6\), không phải \(4x + 6\). Ta được \(x + 4x - 6 = 4\), tức \(5x = 10\), \(x = 2\).</p>
+        <p>Kéo \(y\) theo: \(y = 2 \cdot 2 - 3 = 1\). Cặp ứng viên là \((2;\ 1)\).</p>
+        <p>Kiểm tra cả hai phương trình gốc. Thứ nhất: \(2 \cdot 2 - 1 = 3\), đúng. Thứ hai: \(2 + 2 \cdot 1 = 4\), đúng. Vậy nghiệm của hệ là \((2;\ 1)\).</p>
       </div>
       <div class="definition">
-        <p><strong>Cách giải hệ phương trình bằng phương pháp cộng đại số</strong> (khi hệ số của cùng một ẩn nào đó trong hai phương trình bằng nhau hoặc đối nhau):</p>
-        <p><em>Bước 1.</em> Cộng hay trừ từng vế của hai phương trình trong hệ để được phương trình chỉ còn chứa một ẩn.</p>
-        <p><em>Bước 2.</em> Giải phương trình một ẩn vừa nhận được, từ đó suy ra nghiệm của hệ đã cho.</p>
+        <p><strong>Phương pháp cộng đại số.</strong> Hai câu đều đúng với cùng một cặp, nên cộng từng vế — hoặc trừ từng vế — vẫn được một câu đúng. Nếu hệ số của một ẩn bằng nhau hoặc đối nhau, ẩn đó biến mất, còn một phương trình một ẩn.</p>
+        <p>Nếu hệ số chưa bằng nhau và chưa đối nhau, nhân cả một phương trình với một số khác 0 trước. Nhân như vậy không đổi tập nghiệm của phương trình đó, cùng lí do bài trước chia hoá đơn của Mai cho 5. Chọn số nhân sao cho một ẩn có hệ số đối nhau, rồi cộng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Giải \(\begin{cases} -2x + 5y = 12 \\ 2x + 3y = 4 \end{cases}\): hệ số của \(x\) đối nhau nên cộng từng vế: \((-2x + 2x) + (5y + 3y) = 12 + 4\), tức \(8y = 16\), suy ra \(y = 2\). Thế vào phương trình thứ hai: \(2x + 6 = 4\), suy ra \(x = -1\). Vậy nghiệm là \((-1;\ 2)\).</p>
+        <p><strong>Hệ số đã đối nhau.</strong> Giải \(\begin{cases} -2x + 5y = 12 \\ 2x + 3y = 4. \end{cases}\)</p>
+        <p>Hệ số của \(x\) là \(-2\) và \(2\). Cộng từng vế:</p>
+        \[
+          (-2x + 2x) + (5y + 3y) = 12 + 4, \quad 8y = 16, \quad y = 2.
+        \]
+        <p>Thế \(y = 2\) vào phương trình thứ hai: \(2x + 6 = 4\), \(2x = -2\), \(x = -1\). Cặp \((-1;\ 2)\).</p>
+        <p>Kiểm tra. Thứ nhất: \(-2 \cdot (-1) + 5 \cdot 2 = 12\). Thứ hai: \(2 \cdot (-1) + 3 \cdot 2 = 4\). Đúng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Hệ số chưa sẵn.</strong> Giải \(\begin{cases} 2x + y = 7 \\ 3x + 2y = 12. \end{cases}\)</p>
+        <p>Muốn hệ số của \(y\) bằng nhau, nhân cả phương trình thứ nhất với 2 — cả vế trái lẫn vế phải:</p>
+        \[
+          \begin{cases} 4x + 2y = 14 \\ 3x + 2y = 12. \end{cases}
+        \]
+        <p>Trừ từng vế: \((4x + 2y) - (3x + 2y) = 14 - 12\), tức \(x = 2\). Thế vào \(2x + y = 7\): \(4 + y = 7\), \(y = 3\). Cặp \((2;\ 3)\).</p>
+        <p>Kiểm tra: \(2 \cdot 2 + 3 = 7\), \(3 \cdot 2 + 2 \cdot 3 = 12\). Đúng. Nhân trước rồi mới trừ: đó là bước dễ bị bỏ qua khi hệ số chưa đối nhau sẵn.</p>
       </div>
       <figure class="figure">
         <div class="panels">
           <div class="panel">
             <svg viewBox="0 0 100 90" width="110" role="img" aria-label="Hai đường thẳng cắt nhau">
-              <line x1="12" y1="75" x2="88" y2="18" stroke="#58C4DD" stroke-width="2"/>
-              <line x1="12" y1="25" x2="88" y2="72" stroke="#FC6255" stroke-width="2"/>
-              <circle cx="50" cy="46" r="4" fill="#FFFF00"/>
+              <line x1="12" y1="72" x2="88" y2="18" stroke="#58C4DD" stroke-width="2"/>
+              <line x1="12" y1="22" x2="88" y2="68" stroke="#FC6255" stroke-width="2"/>
+              <circle cx="50" cy="45" r="4" fill="#FFFF00"/>
             </svg>
             <p>Một nghiệm<br>(hai đường cắt nhau)</p>
           </div>
@@ -279,18 +305,39 @@ const LESSONS = [
         </div>
         <figcaption>Số nghiệm của hệ = số giao điểm của hai đường thẳng.</figcaption>
       </figure>
-      <p><strong>Nhận xét (SGK).</strong> Hệ có thể <strong>vô nghiệm</strong>: với \(\begin{cases} x - y = -2 \\ 2x - 2y = 8 \end{cases}\), thế \(x = y - 2\) ta được \(0y - 4 = 8\) — không có \(y\) nào thoả mãn. Hệ cũng có thể có <strong>vô số nghiệm</strong>: với \(\begin{cases} -x + y = -2 \\ 3x - 3y = 6 \end{cases}\), khử mẫu ta được \(0x = 0\), hệ có nghiệm \((x;\ x - 2)\) với \(x \in \mathbb{R}\) tuỳ ý.</p>
+      <p>Hình và phép tính nói cùng một chuyện. Cắt nhau: sau khi thế hoặc cộng, ra một giá trị, rồi một cặp. Song song: phép tính dẫn tới một câu sai, kiểu \(-4 = 8\), không có số nào cứu được. Trùng nhau: phép tính dẫn tới \(0 = 0\), câu luôn đúng, mọi điểm trên đường đó đều là nghiệm.</p>
+      <div class="example">
+        <p><strong>Vô nghiệm.</strong> \(\begin{cases} x - y = -2 \\ 2x - 2y = 8. \end{cases}\)</p>
+        <p>Từ phương trình thứ nhất, \(x = y - 2\). Thế vào phương trình thứ hai: \(2(y - 2) - 2y = 8\), tức \(2y - 4 - 2y = 8\), nên \(-4 = 8\). Không có \(y\) nào làm \(-4\) thành \(8\).</p>
+        <p>Nhìn hệ số cũng thấy. Gấp đôi phương trình thứ nhất phải là \(2x - 2y = -4\). Đề lại viết \(2x - 2y = 8\). Cùng vế trái, vế phải khác: hai đường song song, không giao.</p>
+      </div>
+      <div class="example">
+        <p><strong>Vô số nghiệm.</strong> \(\begin{cases} -x + y = -2 \\ 3x - 3y = 6. \end{cases}\)</p>
+        <p>Chia phương trình thứ hai cho \(-3\): \(-x + y = -2\). Đó chính là phương trình thứ nhất. Hai câu là một câu viết hai lần, hai đường trùng nhau.</p>
+        <p>Từ câu đó, \(y = x - 2\). Mọi cặp \((x;\ x - 2)\) đều là nghiệm, với \(x\) tuỳ ý. Ví dụ \((0;\ -2)\), \((2;\ 0)\), \((5;\ 3)\). Đừng viết "vô số" rồi dừng — hãy mô tả các cặp ấy.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Chọn cách nào?</strong> Một phương trình dễ rút ẩn, hệ số \(1\) hoặc \(-1\), thì thế cho gọn. Hệ số đã đối nhau hoặc bằng nhau thì cộng hoặc trừ ngay. Chưa sẵn thì nhân một phương trình để làm chúng đối nhau, rồi cộng.</p>
+        <p>Dù cách nào, kết thúc bằng cặp \((x;\ y)\) và một lần thế lại vào cả hai phương trình gốc.</p>
+      </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Vì sao phương pháp cộng đại số cần hệ số của một ẩn bằng nhau hoặc đối nhau? <em>— Vì khi đó cộng (hoặc trừ) từng vế sẽ triệt tiêu ẩn đó: \(2x + (-2x) = 0\), còn lại phương trình một ẩn.</em></p>
+        <p>Với \(y = 2x - 3\) rút từ phương trình thứ nhất, vì sao không thế vào chính phương trình thứ nhất? <em>— Sẽ ra một đẳng thức luôn đúng, không tìm được \(x\). Phải thế vào phương trình còn lại.</em></p>
+        <p>Cộng xong được \(y = 2\). Đã giải xong hệ chưa? <em>— Chưa. Còn tìm \(x\), viết cặp, và kiểm tra cả hai phương trình gốc.</em></p>
       </details>
-      <p>Máy tính cầm tay có chức năng giải hệ: máy báo "Infinite Sol" nghĩa là hệ vô số nghiệm, "No–Solution" nghĩa là hệ vô nghiệm.</p>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Giải \(\begin{cases} x + y = 9 \\ x - y = 1. \end{cases}\)</p>
+        <p>Hệ số của \(y\) đối nhau, cộng từng vế: \(2x = 10\), \(x = 5\). Thế vào câu thứ nhất: \(5 + y = 9\), \(y = 4\). Cặp \((5;\ 4)\).</p>
+        <p>Kiểm tra cả hai câu gốc: \(5 + 4 = 9\) và \(5 - 4 = 1\). Đúng.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
-          <li>Tìm ra \(x = 2\) rồi dừng — chưa tìm \(y\) và chưa viết nghiệm là cặp \((2;\ y)\).</li>
-          <li>Thế biểu diễn vào <em>chính</em> phương trình vừa rút nó ra (vòng lặp vô nghĩa) — phải thế vào phương trình <em>còn lại</em>.</li>
-          <li>Sai dấu khi khử ngoặc: \(x + 2(2x - 3) = 4\) là \(x + 4x - 6\), không phải \(x + 4x + 6\).</li>
+          <li>Tìm ra \(x = 2\) rồi dừng. Nghiệm của hệ là cặp, chưa có \(y\) thì chưa xong.</li>
+          <li>Thế biểu thức vào đúng phương trình vừa rút nó ra. Phải thế vào phương trình còn lại.</li>
+          <li>Sai dấu khi mở ngoặc: \(2(2x - 3) = 4x - 6\), không phải \(4x + 6\).</li>
+          <li>Nhân một phương trình với 2 nhưng quên nhân vế phải. Cả hai vế phải được nhân.</li>
+          <li>Thấy \(0 = 0\) thì kết luận vô nghiệm. \(0 = 0\) là câu đúng: hệ vô số nghiệm. Vô nghiệm là câu sai, kiểu \(-4 = 8\).</li>
         </ul>
       </div>
     `,
@@ -299,8 +346,8 @@ const LESSONS = [
         type: "text",
         prompt: String.raw`Nghiệm của \(\begin{cases} x+y=10 \\ x-y=2 \end{cases}\) là cặp (x; y). Viết dạng 6;4`,
         accept: ["6;4", "6; 4", "(6;4)", "(6; 4)"],
-        hint: "Hệ số của y đối nhau: cộng từng vế để triệt tiêu y.",
-        explain: "Cộng từng vế: 2x = 12 ⇒ x = 6. Thế vào: y = 4.",
+        hint: "Hệ số của y đối nhau: cộng từng vế để triệt tiêu y, rồi tìm nốt x.",
+        explain: String.raw`Cộng từng vế: \(2x = 12\), nên \(x = 6\). Thế vào \(x + y = 10\): \(y = 4\). Cặp \((6;\ 4)\). Kiểm tra: \(6 + 4 = 10\), \(6 - 4 = 2\).`,
       },
       {
         type: "mc",
@@ -308,15 +355,30 @@ const LESSONS = [
         choices: ["Một nghiệm", "Vô nghiệm", "Vô số nghiệm", "Hai nghiệm"],
         correct: 2,
         hint: "Chia cả hai vế phương trình sau cho 2 rồi so sánh với phương trình trước.",
-        explain: "Phương trình sau gấp đôi phương trình trước: hai đường thẳng trùng nhau nên hệ vô số nghiệm.",
+        explain: String.raw`Phương trình sau chính là phương trình trước nhân 2. Hai đường trùng nhau, mọi cặp thoả \(x + y = 4\) đều là nghiệm.`,
       },
       {
         type: "mc",
-        prompt: String.raw`Với \(\begin{cases} x - y = -2 \\ 2x - 2y = 8 \end{cases}\), sau khi thế \(x = y - 2\) ta được \(0y - 4 = 8\). Kết luận:`,
+        prompt: String.raw`Với \(\begin{cases} x - y = -2 \\ 2x - 2y = 8 \end{cases}\), sau khi thế \(x = y - 2\) ta được \(-4 = 8\). Kết luận:`,
         choices: ["Hệ có một nghiệm", "Hệ vô nghiệm", "Hệ vô số nghiệm", "Hệ có hai nghiệm"],
         correct: 1,
-        hint: "Có giá trị y nào nhân 0 rồi trừ 4 lại bằng 8 được không?",
-        explain: "Không có giá trị nào của y thoả mãn 0y − 4 = 8 nên hệ vô nghiệm.",
+        hint: "Có giá trị y nào làm −4 thành 8 được không?",
+        explain: String.raw`\(-4 = 8\) là câu sai, không phụ thuộc \(y\). Hệ vô nghiệm. Nếu ra \(0 = 0\) thì mới là vô số nghiệm.`,
+      },
+      {
+        type: "mc",
+        prompt: String.raw`Đã rút \(y = 2x - 3\) từ phương trình thứ nhất. Phải thế biểu thức này vào đâu?`,
+        choices: ["Vào chính phương trình thứ nhất", "Vào phương trình còn lại", "Vào cả hai, rồi cộng kết quả", "Không cần thế, y đã biết"],
+        correct: 1,
+        hint: "Phương trình vừa dùng để rút y không còn tin mới.",
+        explain: "Thế lại vào chính phương trình vừa rút sẽ ra một đẳng thức luôn đúng. Điều kiện thứ hai nằm ở phương trình còn lại.",
+      },
+      {
+        type: "num",
+        prompt: String.raw`Hệ \(\begin{cases} x + y = 8 \\ x - y = 2 \end{cases}\) có nghiệm \((x;\ y)\). Giá trị của \(y\) là bao nhiêu?`,
+        answer: 3,
+        hint: "Cộng từng vế để tìm x, rồi thế lại để tìm y.",
+        explain: String.raw`Cộng: \(2x = 10\), \(x = 5\). Thế vào \(x + y = 8\): \(y = 3\). Kiểm tra: \(5 - 3 = 2\).`,
       },
     ],
   },
@@ -325,56 +387,95 @@ const LESSONS = [
     num: 3,
     chapter: 1,
     title: "Giải bài toán bằng cách lập hệ phương trình",
-    summary: "Ba bước: lập hệ phương trình, giải hệ, kiểm tra và trả lời.",
+    summary: "Đọc đề thành hai câu về hai ẩn, giải hệ, rồi đối chiếu điều kiện. Nghiệm của hệ chưa chắc là đáp số.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Một vật hợp kim 124 g gồm đồng và kèm, 1 cm³ đồng nặng 8,9 g, 1 cm³ kèm nặng 7 g…
-      Đề bài "kể hai câu chuyện" (về khối lượng, về thể tích) — mỗi câu chuyện là một phương trình, ghép lại thành hệ.</p>
-      <div class="definition">
-        <p><strong>Các bước giải một bài toán bằng cách lập hệ phương trình:</strong></p>
-        <p><em>Bước 1. Lập hệ phương trình:</em> chọn ẩn số (thường chọn hai ẩn số) và đặt điều kiện thích hợp cho các ẩn; biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết; lập hệ phương trình biểu thị mối quan hệ giữa các đại lượng.</p>
-        <p><em>Bước 2.</em> Giải hệ phương trình.</p>
-        <p><em>Bước 3. Trả lời:</em> kiểm tra xem trong các nghiệm tìm được của hệ phương trình, nghiệm nào thoả mãn, nghiệm nào không thoả mãn điều kiện của ẩn, rồi kết luận.</p>
-      </div>
+      <p>Bài trước giải hệ khi phương trình đã có sẵn. Bài này học việc khó hơn: <strong>đọc một câu chuyện và tự viết hệ</strong>. Đề không đưa \(ax + by = c\). Đề kể hai mối liên hệ. Mỗi mối liên hệ là một phương trình.</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Đọc đề, hãy tự hỏi: "<em>Hai đại lượng chưa biết nào đang bị so sánh, cộng, trừ, nhân chia?</em>" Hai mối quan hệ rõ ràng nhất trong đề = hai phương trình. Điều kiện ẩn (nguyên? dương? nhỏ hơn?) nên ghi ngay từ đầu để bước 3 có chỗ mà kiểm tra.</p>
+        <p><strong>Ba câu hỏi trước khi viết.</strong></p>
+        <p>1. Đề đang hỏi hai đại lượng nào? Đó là hai ẩn. Ghi luôn điều kiện: số tự nhiên, số dương, số quả nguyên, số lớn hơn số kia…</p>
+        <p>2. Đề cho hai câu nào về hai đại lượng đó? Tìm chữ "tổng", "hiệu", "gấp", "còn lại", "tất cả", "mỗi". Mỗi câu là một phương trình.</p>
+        <p>3. Sau khi giải, cặp tìm được có đúng điều kiện đã ghi không? Không đúng thì không được đưa vào đáp số, dù nó là nghiệm của hệ.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Tìm hai số tự nhiên có tổng bằng 1 006, biết rằng nếu lấy số lớn chia cho số nhỏ thì được thương là 2 và số dư là 124.</p>
-        <p><em>Bước 1.</em> Gọi hai số là \(x\) và \(y\) (\(x < y\)). Vì chia \(y\) cho \(x\) dư 124 nên \(x > 124\); điều kiện: \(x, y \in \mathbb{N},\ 124 < x < y\). Tổng bằng 1 006: \(x + y = 1006\). Chia \(y\) cho \(x\) được thương 2, dư 124: \(y = 2x + 124\).</p>
-        <p><em>Bước 2.</em> \(\begin{cases} x + y = 1\,006 \\ y = 2x + 124 \end{cases} \Rightarrow 3x + 124 = 1\,006 \Rightarrow x = 294,\ y = 712.\)</p>
-        <p><em>Bước 3.</em> Hai số 294 và 712 thoả mãn điều kiện của ẩn. Vậy hai số cần tìm là 294 và 712.</p>
+        <p><strong>Một bài đếm được.</strong> Chuồng có gà và thỏ, tất cả 10 con, đếm được 28 chân. Gà 2 chân, thỏ 4 chân. Hỏi mỗi loài mấy con?</p>
+        <p>Gọi \(x\) là số gà, \(y\) là số thỏ. Điều kiện: \(x, y\) là số tự nhiên, \(x \geq 0\), \(y \geq 0\). Hai câu trong đề:</p>
+        \[
+          \begin{cases} x + y = 10 \\ 2x + 4y = 28. \end{cases}
+        \]
+        <p>Câu thứ nhất là số con. Câu thứ hai là số chân. Rút \(y = 10 - x\), thế vào câu chân: \(2x + 4(10 - x) = 28\), tức \(2x + 40 - 4x = 28\), \(-2x = -12\), \(x = 6\). Vậy \(y = 4\).</p>
+        <p>Kiểm tra điều kiện: 6 và 4 đều là số tự nhiên. Kiểm tra đề: \(6 + 4 = 10\) con, \(2 \cdot 6 + 4 \cdot 4 = 28\) chân. Đáp số: 6 gà và 4 thỏ.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Cách đọc đề.</strong> Một câu về "bao nhiêu con, bao nhiêu người, tổng hai số" thường là phương trình không nhân. Một câu về "bao nhiêu chân, bao nhiêu tiền, bao nhiêu kilôgam" thường nhân mỗi ẩn với một đơn giá rồi cộng. Đừng trộn hai câu ấy vào một phương trình.</p>
+      </div>
+      <div class="example">
+        <p><strong>Thương và dư.</strong> Tìm hai số tự nhiên có tổng 1 006. Số lớn chia cho số nhỏ được thương 2 và dư 124.</p>
+        <p>Gọi số nhỏ là \(x\), số lớn là \(y\). Điều kiện viết trước khi giải: \(x, y \in \mathbb{N}\) và \(x < y\). Dư phải nhỏ hơn số chia, nên \(124 < x\).</p>
+        <p>Tổng: \(x + y = 1006\). "Bị chia = chia × thương + dư", nên \(y = 2x + 124\), không phải \(y = 2x - 124\). Dư được cộng vào, không bị trừ.</p>
+        <p>Thế: \(x + (2x + 124) = 1006\), \(3x = 882\), \(x = 294\), \(y = 2 \cdot 294 + 124 = 712\).</p>
+        <p>Đối chiếu điều kiện: 294 và 712 là số tự nhiên, \(294 > 124\), và \(294 < 712\). Kiểm tra chia: \(294 \cdot 2 + 124 = 712\). Hai số cần tìm là 294 và 712.</p>
+      </div>
+      <div class="example">
+        <p><strong>Khi nghiệm của hệ không được nhận.</strong> Tìm hai số tự nhiên có tổng 10 và hiệu 12.</p>
+        <p>Gọi số lớn \(x\), số nhỏ \(y\), điều kiện \(x, y \in \mathbb{N}\). Hệ \(x + y = 10\), \(x - y = 12\). Cộng từng vế: \(2x = 22\), \(x = 11\), \(y = -1\).</p>
+        <p>Cặp \((11;\ -1)\) đúng là nghiệm của hệ. Nhưng \(-1\) không phải số tự nhiên, vi phạm điều kiện đã đặt. Bài toán vô nghiệm trong phạm vi đề yêu cầu. Kết luận "hai số là 11 và \(-1\)" là sai, dù phép giải hệ không sai.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hai số có tổng 15 và hiệu 3. Tìm số lớn.</p>
+        <p>Gọi số lớn là \(x\), số nhỏ là \(y\). Điều kiện: \(x > y\), cả hai dương. Hai câu trong đề: \(x + y = 15\) và \(x - y = 3\).</p>
+        <p>Cộng từng vế: \(2x = 18\), \(x = 9\), rồi \(y = 6\). Cả hai dương và \(9 > 6\), nhận. Số lớn là 9. Kiểm tra: tổng 15, hiệu 3.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
-          <li>Kết luận ngay sau bước 2: nghiệm của hệ chưa chắc thoả mãn điều kiện thực tế (số nguyên? số dương?).</li>
-          <li>Gọi ẩn xong <em>quên</em> ghi điều kiện — đến bước 3 không có gì để đối chiếu.</li>
-          <li>Nhầm "thương 2, dư 124" thành \(y = 2x - 124\); nhớ công thức bị chia = chia × thương + dư.</li>
+          <li>Giải xong hệ là viết đáp số ngay. Phải đối chiếu điều kiện: nguyên, dương, lớn hơn dư, không âm…</li>
+          <li>Quên ghi điều kiện lúc gọi ẩn. Đến lúc kiểm tra không biết loại cặp nào.</li>
+          <li>Nhầm thương và dư: bị chia \(=\) chia \(\times\) thương \(+\) dư. Dư cộng vào, và dư nhỏ hơn số chia.</li>
+          <li>Gộp "số con" và "số chân" vào một phương trình. Hai câu chuyện là hai phương trình.</li>
         </ul>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao bài gà và thỏ cần hai phương trình, không viết một phương trình \(2x + 4y + x + y = 38\)? <em>— Gộp như vậy mất một điều kiện. \(3x + 5y = 38\) có vô số cặp; đề cho hai câu riêng, phải giữ hai phương trình.</em></p>
+      </details>
     `,
     exercises: [
       {
         type: "num",
         prompt: "Tổng hai số là 30, hiệu là 8. Số lớn hơn bằng bao nhiêu?",
         answer: 19,
-        hint: "Cộng hai phương trình x + y = 30 và x − y = 8 sẽ triệt tiêu y.",
-        explain: "x + y = 30, x − y = 8 ⇒ 2x = 38 ⇒ x = 19 (số nhỏ là 11).",
+        hint: "Gọi số lớn là x, số nhỏ là y: x + y = 30 và x − y = 8. Cộng từng vế.",
+        explain: String.raw`\(x + y = 30\), \(x - y = 8\). Cộng: \(2x = 38\), \(x = 19\). Số nhỏ là \(11\). Cả hai dương, nhận được.`,
       },
       {
         type: "mc",
-        prompt: "Bước nào KHÔNG thuộc ba bước giải bài toán bằng cách lập hệ phương trình?",
-        choices: ["Lập hệ phương trình", "Giải hệ phương trình", "Kiểm tra điều kiện của ẩn rồi kết luận", "Xoá hết nghiệm âm dù đề bài cho phép"],
-        correct: 3,
-        hint: "Nghiệm bị loại chỉ khi vi phạm điều kiện của ẩn đã đặt.",
-        explain: "Chỉ những nghiệm thoả mãn điều kiện của ẩn mới được dùng để kết luận; chưa xét điều kiện thì chưa được loại bỏ nghiệm nào.",
+        prompt: String.raw`Tìm hai số tự nhiên có tổng 10 và hiệu 12. Giải hệ ra \(x = 11\), \(y = -1\). Kết luận đúng là:`,
+        choices: ["Hai số là 11 và −1", "Bài toán vô nghiệm trong số tự nhiên", "Hai số là 11 và 1", "Hệ phương trình giải sai"],
+        correct: 1,
+        hint: "Cặp (11; −1) đúng với hệ, nhưng điều kiện của đề là số tự nhiên.",
+        explain: String.raw`Hệ giải đúng, nhưng \(y = -1\) không phải số tự nhiên. Không có cặp nào vừa là nghiệm của hệ vừa thoả điều kiện. Không được sửa thành 1.`,
       },
       {
         type: "text",
         prompt: "Hai số có tổng 20 và hiệu 4. Viết hai số (số nhỏ trước), dạng 8;12",
         accept: ["8;12", "8; 12", "(8;12)", "(8; 12)"],
         hint: "Gọi số nhỏ là x, số lớn là y: x + y = 20 và y − x = 4.",
-        explain: "x + y = 20, y − x = 4 ⇒ y = 12, x = 8.",
+        explain: String.raw`\(x + y = 20\), \(y - x = 4\). Cộng: \(2y = 24\), \(y = 12\), \(x = 8\).`,
+      },
+      {
+        type: "num",
+        prompt: "Chuồng có gà và thỏ, tất cả 8 con, 22 chân. Gà 2 chân, thỏ 4 chân. Có mấy con thỏ?",
+        answer: 3,
+        hint: "Gọi x là số gà, y là số thỏ: x + y = 8 và 2x + 4y = 22.",
+        explain: String.raw`\(y = 8 - x\), thế vào số chân: \(2x + 4(8 - x) = 22\), nên \(x = 5\), \(y = 3\). Kiểm tra: 5 gà và 3 thỏ có \(10 + 12 = 22\) chân.`,
+      },
+      {
+        type: "mc",
+        prompt: String.raw`Số lớn \(y\) chia cho số nhỏ \(x\) được thương 2 và dư 5. Phương trình đúng là:`,
+        choices: [String.raw`\(y = 2x - 5\)`, String.raw`\(y = 2x + 5\)`, String.raw`\(x = 2y + 5\)`, String.raw`\(y = 5x + 2\)`],
+        correct: 1,
+        hint: "Bị chia = chia × thương + dư. Số lớn là số bị chia.",
+        explain: String.raw`Số lớn là số bị chia: \(y = x \cdot 2 + 5\). Dư được cộng, không bị trừ. Còn phải nhớ điều kiện \(x > 5\).`,
       },
     ],
   },
@@ -412,6 +513,12 @@ const LESSONS = [
         <p><strong>Ví dụ 4 (SGK).</strong> Giải \(\dfrac{2}{x + 1} + \dfrac{1}{x - 2} = \dfrac{3}{(x + 1)(x - 2)}\).</p>
         <p>Điều kiện xác định: \(x \neq -1\) và \(x \neq 2\). Quy đồng, khử mẫu: \(2(x - 2) + (x + 1) = 3\), giải được \(x = 2\).</p>
         <p>Nhưng \(x = 2\) <strong>không</strong> thoả mãn điều kiện xác định. Vậy phương trình đã cho vô nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Giải \((x - 4)(2x + 6) = 0\). Tích bằng 0 khi ít nhất một nhân tử bằng 0.</p>
+        <p>Trường hợp 1: \(x - 4 = 0\), nên \(x = 4\). Trường hợp 2: \(2x + 6 = 0\), nên \(x = -3\). Không bỏ nghiệm âm.</p>
+        <p>Kiểm tra. \(x = 4\): nhân tử thứ nhất bằng 0, tích bằng 0. \(x = -3\): nhân tử thứ hai bằng 0, tích bằng 0.</p>
+        <p>Một phương trình có mẫu, làm đủ bốn bước: \(\dfrac{3}{x - 1} = 2\). Điều kiện xác định: \(x \neq 1\). Nhân hai vế với \(x - 1\): \(3 = 2(x - 1)\), \(x = \dfrac{5}{2}\). Giá trị này khác 1, nên nhận. Kiểm tra: \(\dfrac{3}{\frac{5}{2} - 1} = \dfrac{3}{\frac{3}{2}} = 2\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -474,6 +581,12 @@ const LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Chứng minh \(\dfrac{2024}{2023} > \dfrac{2021}{2022}\): ta có \(\dfrac{2024}{2023} = 1 + \dfrac{1}{2023} > 1\) và \(\dfrac{2021}{2022} = 1 - \dfrac{1}{2022} < 1\); một số lớn hơn 1, một số nhỏ hơn 1, nên theo tính chất bắc cầu \(\dfrac{2024}{2023} > \dfrac{2021}{2022}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Bắt đầu từ \(-3 < 1\). Trên trục số, \(-3\) đứng bên trái \(1\).</p>
+        <p>Cộng 4 vào cả hai vế: \(1 < 5\). Chiều giữ, vì cả hai người đi cùng một đoạn.</p>
+        <p>Nhân hai vế với 2: \(-6 < 2\). Chiều vẫn giữ, vì 2 dương.</p>
+        <p>Nhân hai vế của \(-3 < 1\) với \(-2\): \(6 > -2\). Chiều đổi, vì nhân số âm là soi gương qua 0. Sau phép soi, 6 đứng bên phải \(-2\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -566,6 +679,11 @@ const LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Giải \(-x < -9\): bạn An viết \(x < 9\), bạn Bình viết \(x > 9\). Ai đúng, vì sao? <em>— Bình đúng: chia hai vế cho −1 (số âm) phải đổi chiều bất đẳng thức.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Giải \(5 - 2x \geq 1\).</p>
+        <p>Chuyển 5 sang phải: \(-2x \geq -4\). Chia cho \(-2\), là số âm, phải đổi chiều: \(x \leq 2\).</p>
+        <p>Kiểm tra ba điểm, đừng tin mỗi phép biến đổi. \(x = 2\): \(5 - 4 = 1\), lấy vì dấu \(\geq\). \(x = 0\): \(5 \geq 1\), đúng. \(x = 3\): \(5 - 6 = -1\), mà \(-1 \geq 1\) sai. Đúng là mọi số nhỏ hơn hoặc bằng 2.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -636,6 +754,11 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ:</strong> "Căn hỏi bình phương — âm không có mặt. Dấu \(\sqrt{\ }\) chỉ dành cho <strong>không âm</strong>. Ra khỏi căn phải qua cửa \(|a|\)."</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình vuông diện tích 64 m² có cạnh \(\sqrt{64} = 8\) m. Không lấy \(-8\): độ dài không âm, và kí hiệu \(\sqrt{\ }\) chỉ chỉ căn không âm.</p>
+        <p>\(\sqrt{(-5)^2} = |-5| = 5\). Bình phương đã xoá dấu; căn số học không trả dấu âm lại. Viết \(\sqrt{(-5)^2} = -5\) là sai.</p>
+        <p>\(\sqrt{3x - 6}\) chỉ có nghĩa khi \(3x - 6 \geq 0\), tức \(x \geq 2\). Với \(x = 2\), căn bằng 0. Với \(x = 1\), dưới căn là \(-3\), không có căn bậc hai.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -702,6 +825,11 @@ const LESSONS = [
         <p><strong>Ví dụ 5 (SGK).</strong> a) \(\sqrt{8} : \sqrt{2} = \sqrt{8 : 2} = \sqrt{4} = 2\).</p>
         <p>b) Với \(a > 0\): \(\sqrt{52a^3} : \sqrt{13a} = \sqrt{52a^3 : 13a} = \sqrt{4a^2} = \sqrt{(2a)^2} = |2a| = 2a\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(\sqrt{16 \cdot 9} = \sqrt{16} \cdot \sqrt{9} = 4 \cdot 3 = 12\). Căn tách được qua phép nhân. Không được viết \(\sqrt{16} + \sqrt{9} = 7\): căn không tách qua phép cộng, và \(\sqrt{16 + 9} = 5\), không phải 7.</p>
+        <p>\(\sqrt{50} : \sqrt{2} = \sqrt{50 : 2} = \sqrt{25} = 5\). Cùng kết quả nếu rút gọn trước: \(\sqrt{50} = 5\sqrt{2}\), rồi \(\dfrac{5\sqrt{2}}{\sqrt{2}} = 5\).</p>
+        <p>Với \(a = -3\) và \(b = 4\): \(\sqrt{a^2 b} = |a|\sqrt{b} = 3 \cdot 2 = 6\). Viết \(a\sqrt{b} = -6\) là sai, vì \(a\) âm không được kéo ra ngoài căn mà quên giá trị tuyệt đối.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -767,6 +895,11 @@ const LESSONS = [
       </div>
       <p><strong>Tranh luận (SGK).</strong> Bạn Vuông viết \(\sqrt{(-2)^2 \cdot 5} = -2\sqrt{5}\). Bạn có đồng ý không? <em>Không</em> — vì \(\sqrt{(-2)^2 \cdot 5} = |{-2}|\sqrt{5} = 2\sqrt{5}\); kết quả khai căn không bao giờ âm.</p>
       <p>Hai căn thức bậc hai gọi là <em>đồng dạng</em> nếu có cùng biểu thức lấy căn; khi đó có thể cộng, trừ chúng như cộng, trừ các đơn thức đồng dạng, ví dụ \(\sqrt{2} + 3\sqrt{2} = 4\sqrt{2}\).</p>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Rút gọn \(\sqrt{72}\). Tìm thừa số chính phương: \(72 = 36 \cdot 2\), nên \(\sqrt{72} = 6\sqrt{2}\).</p>
+        <p>Khử mẫu: \(\sqrt{\dfrac{9}{2}} = \sqrt{\dfrac{18}{4}} = \dfrac{\sqrt{18}}{2} = \dfrac{3\sqrt{2}}{2}\). Mẫu đã ra khỏi dấu căn.</p>
+        <p>Đưa số âm vào trong căn phải giữ dấu trừ bên ngoài: \(-2\sqrt{3} = -\sqrt{12}\). Không được viết \(-2\sqrt{3} = \sqrt{12}\).</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -829,6 +962,11 @@ const LESSONS = [
       <p><strong>Căn thức bậc ba</strong> là biểu thức có dạng \(\sqrt[3]{A}\), trong đó \(A\) là một biểu thức đại số. Khác với căn thức bậc hai, \(\sqrt[3]{A}\) xác định với mọi giá trị của \(A\) — ví dụ \(\sqrt[3]{-8} = -2\) vẫn có nghĩa.</p>
       <div class="memory">
         <p><strong>Cách nhớ:</strong> "<em>Căn bậc hai kén chọn (chỉ nhận không âm), căn bậc ba dễ tính (ai cũng có một căn).</em>"</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Khối lập phương thể tích 64 cm³ có cạnh \(\sqrt[3]{64}\). Vì \(4^3 = 64\), cạnh bằng 4 cm. Chỉ một đáp số: căn bậc ba không có cặp đối nhau như căn bậc hai.</p>
+        <p>\(\sqrt[3]{-125} = -5\), vì \((-5)^3 = -125\). Số âm vẫn có căn bậc ba, và căn ấy âm.</p>
+        <p>Kiểm tra tính chất với số âm: \(\bigl(\sqrt[3]{-8}\bigr)^3 = (-2)^3 = -8\). Không lấy giá trị tuyệt đối. \(\sqrt[3]{8} + \sqrt[3]{27} = 2 + 3 = 5\), trong khi \(\sqrt[3]{35}\) không bằng 5.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -928,6 +1066,12 @@ const LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Trong tam giác vuông, vì sao \(\sin\alpha\) luôn nhỏ hơn 1? <em>— Vì \(\sin\alpha = \dfrac{\text{cạnh đối}}{\text{cạnh huyền}}\) mà cạnh huyền dài nhất, nên tử số luôn nhỏ hơn mẫu số.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tam giác vuông có cạnh góc vuông 3 cm và 4 cm, cạnh huyền 5 cm. Gọi \(\alpha\) là góc đối diện cạnh 3 cm.</p>
+        <p>\(\sin\alpha = \dfrac{3}{5}\), \(\cos\alpha = \dfrac{4}{5}\), \(\tan\alpha = \dfrac{3}{4}\), \(\cot\alpha = \dfrac{4}{3}\).</p>
+        <p>Kiểm tra: \(\dfrac{9}{25} + \dfrac{16}{25} = 1\), và \(\dfrac{\sin\alpha}{\cos\alpha} = \dfrac{3}{4} = \tan\alpha\). Sin và cos đều nhỏ hơn 1 vì tử là cạnh góc vuông, mẫu là cạnh huyền.</p>
+        <p>Với góc có sẵn trong bảng: \(\sin 30^\circ = \dfrac{1}{2}\). Cạnh huyền 6 cm, góc đối 30°, thì cạnh đối bằng \(6 \cdot \dfrac{1}{2} = 3\) cm.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1015,6 +1159,11 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ 3 (SGK).</strong> Tam giác vuông \(ABC\) vuông tại \(A\), \(AB = 5\), \(AC = 8\). Theo Pythagore: \(BC = \sqrt{5^2 + 8^2} \approx 9{,}4\). Ta có \(\tan C = \dfrac{AB}{AC} = \dfrac{5}{8} = 0{,}625\), suy ra \(\widehat{C} \approx 32^\circ\) và \(\widehat{B} \approx 90^\circ - 32^\circ = 58^\circ\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tam giác \(ABC\) vuông tại \(A\), cạnh huyền \(a = 10\) cm, góc \(B = 30^\circ\). Cạnh đối của \(B\) là \(b\).</p>
+        <p>\(b = a \sin B = 10 \cdot \sin 30^\circ = 10 \cdot \dfrac{1}{2} = 5\) cm. Cạnh kề \(c = a \cos B = 10 \cdot \cos 30^\circ = 5\sqrt{3}\) cm.</p>
+        <p>Kiểm tra Pythagore: \(5^2 + (5\sqrt{3})^2 = 25 + 75 = 100 = 10^2\). Nếu lấy sin của góc kề thay vì góc đối, cạnh đối sẽ ra \(5\sqrt{3}\) cm, dài hơn nửa cạnh huyền — không khớp với góc 30°.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1089,6 +1238,11 @@ const LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Quay lại tình huống mở đầu.</strong> Gấp mảnh giấy tròn đôi lần này qua lần kia: đường gấp luôn đi qua tâm. Hai nếp gấp không song song cắt nhau — điểm cắt chính là tâm. Đó là sức mạnh của tính đối xứng!</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Đường tròn tâm \(O\), bán kính 5 cm. Không cần vẽ hết hình: so khoảng cách từ \(O\) tới điểm với 5.</p>
+        <p>\(OA = 3 < 5\): \(A\) ở trong đường tròn. \(OB = 5\): \(B\) nằm trên đường tròn. \(OC = 7 > 5\): \(C\) ở ngoài.</p>
+        <p>Mảnh giấy tròn mất dấu tâm: gấp hai lần để được hai đường kính. Hai nếp gấp cắt nhau tại tâm, vì mọi đường kính đều đi qua tâm.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1174,6 +1328,11 @@ const LESSONS = [
       </div>
       <div class="memory">
         <p><strong>Cách nhớ:</strong> "Góc ở tâm là <em>ông trùm số đo</em> — ông chắn cung nào, cung ấy mang số đo của ông (nếu là cung nhỏ); cung lớn thì trừ đi từ \(360^\circ\)."</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Đường tròn bán kính 5 cm. Đường kính dài \(2 \cdot 5 = 10\) cm. Đó là dây dài nhất.</p>
+        <p>Dây \(AB\) chắn góc ở tâm \(60^\circ\): tam giác \(OAB\) đều, nên \(AB = 5\) cm, nhỏ hơn đường kính. Dây chắn góc ở tâm \(90^\circ\): \(AB = 5\sqrt{2} \approx 7{,}1\) cm, vẫn nhỏ hơn 10 cm.</p>
+        <p>Dây càng gần tâm thì càng dài. Dây đi qua tâm — đường kính — là dài nhất.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1275,6 +1434,12 @@ const LESSONS = [
       </div>
       <div class="memory">
         <p><strong>Cách nhớ:</strong> cung n° và quạt n° đều là mảnh \(\dfrac{n}{360}\): <em>cung lấy phần chu vi, quạt lấy phần diện tích</em>. Và \(S_q = \dfrac{lR}{2}\) — "cung nhân bán kính, chia đôi" (như tam giác: đáy × cao ÷ 2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Đường tròn bán kính \(R = 6\) cm, lấy cung \(60^\circ\). Cung này là \(\dfrac{1}{6}\) vòng tròn.</p>
+        <p>Độ dài cung: \(l = \dfrac{60}{180}\pi \cdot 6 = 2\pi\) cm. Chu vi cả đường tròn là \(12\pi\), một phần sáu đúng là \(2\pi\).</p>
+        <p>Diện tích quạt: \(S_q = \dfrac{60}{360}\pi \cdot 36 = 6\pi\) cm². Công thức thứ hai cho cùng số: \(\dfrac{l R}{2} = \dfrac{2\pi \cdot 6}{2} = 6\pi\).</p>
+        <p>Vành khuyên bán kính ngoài 5 cm, trong 2 cm: \(S = \pi(5^2 - 2^2) = 21\pi\) cm². Không phải \(\pi(5 - 2)^2 = 9\pi\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1385,6 +1550,12 @@ const LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ 2 (SGK).</strong> Cho hai tiếp tuyến \(MA\), \(MB\) của \((O;\ R)\) với \(A\), \(B\) là hai tiếp điểm, \(R = 2\) cm và \(MO = 4\) cm. Theo Định lí 2, \(OM\) là tia phân giác của \(\widehat{AOB}\), nên trong tam giác cân \(AOB\), \(OM \perp AB\). Tam giác \(OAM\) vuông tại \(A\): \(AM^2 = OM^2 - OA^2 = 4^2 - 2^2 = 12\), suy ra \(AM = 2\sqrt{3}\) cm và \(BM = 2\sqrt{3}\) cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Đường tròn \((O;\ 5)\). Gọi \(d\) là khoảng cách từ tâm đến đường thẳng.</p>
+        <p>\(d = 3 < 5\): cắt nhau tại hai điểm. Nửa dây bằng \(\sqrt{5^2 - 3^2} = 4\), nên dây dài 8 cm.</p>
+        <p>\(d = 5\): tiếp xúc, đúng một tiếp điểm. Bán kính tới tiếp điểm vuông góc với tiếp tuyến.</p>
+        <p>\(d = 8 > 5\): không giao. Đường thẳng nằm ngoài đường tròn.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1507,6 +1678,12 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ.</strong> Cộng \(R + R'\): <em>đè nổi hay không?</em> Trừ \(R - R'\): <em>nhét vừa hay không?</em> Khoảng cách hai tâm nằm giữa hai mốc này thì hai vòng "cài cài" nhau — cắt nhau; chạm đúng mốc thì tiếp xúc; vọt ngoài hai mốc thì xa nhau hoặc nhốt nhau.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hai đường tròn bán kính \(R = 5\) cm và \(R' = 3\) cm. So \(OO'\) với \(R - R' = 2\) và \(R + R' = 8\).</p>
+        <p>\(OO' = 6\): \(2 < 6 < 8\), cắt nhau tại hai điểm.</p>
+        <p>\(OO' = 8\): tiếp xúc ngoài. \(OO' = 2\): tiếp xúc trong. Tiếp điểm nằm trên đường nối hai tâm.</p>
+        <p>\(OO' = 9 > 8\): ngoài nhau, không chạm. \(OO' = 1 < 2\): đường tròn nhỏ nằm hẳn trong đường tròn lớn, không chạm — đựng nhau.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1604,6 +1781,15 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Vẽ đồ thị \(y = -2x^2\): lập bảng \(x = -2; -1; 0; 1; 2\) được \(y = -8; -2; 0; -2; -8\). Năm điểm \((-2; -8), (-1; -2), (0; 0), (1; -2), (2; -8)\) nối lại cho parabol hướng xuống. Tìm điểm có tung độ \(-\tfrac{1}{2}\): \(-2x^2 = -\tfrac{1}{2} \Rightarrow x = \pm\tfrac{1}{2}\), hai điểm đối xứng qua \(Oy\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Vẽ \(y = 2x^2\) bằng vài cặp, đừng đoán hình.</p>
+        <table>
+          <tr><th>\(x\)</th><td>\(-2\)</td><td>\(-1\)</td><td>\(0\)</td><td>\(1\)</td><td>\(2\)</td></tr>
+          <tr><th>\(y\)</th><td>\(8\)</td><td>\(2\)</td><td>\(0\)</td><td>\(2\)</td><td>\(8\)</td></tr>
+        </table>
+        <p>\(x = 2\) và \(x = -2\) cho cùng một \(y\): parabol đối xứng qua trục \(Oy\), đỉnh tại gốc \(O\). Vì \(a = 2 > 0\), nhánh mở lên.</p>
+        <p>Với \(y = -x^2\), cùng các \(x\) cho \(y = -4, -1, 0, -1, -4\). Cùng dạng, nhưng mở xuống vì \(a < 0\).</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1683,6 +1869,12 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ:</strong> \(\Delta\) quyết định <em>số</em> nghiệm, \(-\dfrac{b}{2a}\) quyết định <em>giá trị</em> nghiệm. Và nếu \(a\) với \(c\) trái dấu thì \(ac < 0\) nên \(\Delta = b^2 - 4ac > 0\): phương trình <strong>luôn có hai nghiệm phân biệt</strong>.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Giải \(x^2 - 7x + 10 = 0\). Hệ số của \(x^2\) là \(1 \neq 0\), đúng là bậc hai.</p>
+        <p>\(\Delta = 49 - 40 = 9 > 0\), hai nghiệm phân biệt. \(x = \dfrac{7 \pm 3}{2}\), nên \(x = 5\) hoặc \(x = 2\).</p>
+        <p>Kiểm tra. \(x = 5\): \(25 - 35 + 10 = 0\). \(x = 2\): \(4 - 14 + 10 = 0\).</p>
+        <p>Dạng khuyết \(x^2 - 9 = 0\): \(x^2 = 9\), nên \(x = 3\) hoặc \(x = -3\). Nghiệm âm vẫn là nghiệm.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1746,6 +1938,11 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Muốn tìm hai số biết tổng \(S\) và tích \(P\): lập phương trình \(X^2 - SX + P = 0\). Hai số chính là hai nghiệm — Viète chạy theo chiều ngược lại.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Với \(x^2 - 7x + 10 = 0\), Viète đọc ngay tổng hai nghiệm là 7 và tích là 10. Hai số cộng được 7, nhân được 10 là 2 và 5. Không cần công thức nghiệm.</p>
+        <p>Nhẩm khi \(a + b + c = 0\): \(x^2 - 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = 1\) là một nghiệm. Nghiệm kia bằng tích, tức 2. Kiểm tra: \((x - 1)(x - 2) = x^2 - 3x + 2\).</p>
+        <p>Khi \(a - b + c = 0\): \(x^2 + 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = -1\) là một nghiệm. Nghiệm kia là \(-2\), vì tích bằng 2.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1801,6 +1998,12 @@ const LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Khác với lập <em>hệ</em> (Bài 3): nếu đề chỉ có <em>một</em> điều kiện liên kết giữa các đại lượng chưa biết, một ẩn là đủ. Diện tích hình chữ nhật = dài × rộng chính là phương trình bậc hai tự nhiên nhất của lớp 9.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình chữ nhật có chu vi 28 m và diện tích 48 m². Tìm hai cạnh.</p>
+        <p>Gọi chiều rộng là \(x\) mét, với \(0 < x < 14\). Nửa chu vi là 14, nên chiều dài là \(14 - x\). Diện tích cho \(x(14 - x) = 48\), tức \(x^2 - 14x + 48 = 0\).</p>
+        <p>\(\Delta = 196 - 192 = 4\), \(x = \dfrac{14 \pm 2}{2}\), nên \(x = 8\) hoặc \(x = 6\). Hai giá trị đổi vai: cạnh 6 m và 8 m.</p>
+        <p>Đối chiếu điều kiện: cả hai dương và nhỏ hơn 14. Chu vi \(2(6 + 8) = 28\), diện tích 48. Nhận một hình chữ nhật, không phải hai đáp số khác nhau.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1864,6 +2067,11 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Biểu đồ tần số giúp "nhìn thấy" tần số: <em>biểu đồ cột</em> vẽ các cột cao bằng tần số tương ứng; <em>biểu đồ đoạn thẳng</em> nối các điểm cao tương ứng. Tổng tất cả các tần số luôn bằng cỡ mẫu \(n\) — kiểm tra nhanh bảng có lập đúng không.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Cỡ giày của 8 bạn: 38, 39, 38, 40, 39, 39, 38, 41. Cỡ mẫu là 8, vì có 8 số, không phải vì có 4 cỡ khác nhau.</p>
+        <p>Đếm: 38 xuất hiện 3 lần, 39 xuất hiện 3 lần, 40 một lần, 41 một lần. Tổng tần số \(3 + 3 + 1 + 1 = 8\). Cộng không ra 8 thì đã đếm sót.</p>
+        <p>Cần mua nhiều nhất là cỡ 38 và 39, mỗi cỡ 3 đôi. Biểu đồ cột: trục ngang là cỡ giày, chiều cao cột là tần số.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1919,6 +2127,10 @@ const LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Theo dõi chất lượng không khí 30 ngày: Tốt 8 ngày, Trung bình 13 ngày, Kém 5 ngày, Xấu 4 ngày. Tần số tương đối: Tốt \(\tfrac{8}{30} \cdot 100\% \approx 26{,}7\%\); Trung bình \(\approx 43{,}3\%\); Kém \(\approx 16{,}7\%\); Xấu \(\approx 13{,}3\%\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Cùng 8 bạn ở trên. Tần số tương đối của cỡ 39 là \(\dfrac{3}{8} = 37{,}5\%\). Cỡ 40 là \(\dfrac{1}{8} = 12{,}5\%\). Các tỉ lệ của một mẫu phải cộng lại thành 100%.</p>
+        <p>So hai lớp: lớp A có 6 trong 8 bạn đi cỡ 39, tức 75%. Lớp B có 9 trong 20 bạn, tức 45%. Lớp B có nhiều bạn hơn, nhưng tỉ lệ nhỏ hơn. Muốn so hai mẫu khác cỡ, dùng tần số tương đối, không dùng số lần xuất hiện.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1976,6 +2188,11 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Dấu ngoặc có ý nghĩa: [155; 158) lấy <em>155</em>, không lấy <em>158</em> — 158 rơi vào nhóm kế tiếp. Từ bảng tần số tương đối ghép nhóm, ta vẽ <strong>biểu đồ tần số tương đối ghép nhóm</strong> bằng các cột cao theo tỉ lệ phần trăm của từng nhóm.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Thời gian tự học của 40 bạn được gom nhóm: \([0;\ 1)\) có 10 bạn, \([1;\ 2)\) có 15, \([2;\ 3)\) có 8, \([3;\ 4)\) có 7. Tổng \(10 + 15 + 8 + 7 = 40\).</p>
+        <p>Tần số tương đối: 25%, 37,5%, 20% và 17,5%. Cộng lại 100%.</p>
+        <p>Bạn học đúng 2 giờ thuộc nhóm \([2;\ 3)\), không thuộc \([1;\ 2)\). Ngoặc vuông lấy đầu mút trái; ngoặc tròn không lấy đầu mút phải.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2029,6 +2246,14 @@ const LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Bạn Lan gieo một xúc xắc, bạn Hoà gieo một đồng xu. Kết quả là (số chấm; mặt): \(\Omega = \{(1;\ S); (2;\ S); \dots; (6;\ S); (1;\ N); \dots; (6;\ N)\}\). Không gian mẫu có 12 phần tử.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tung một đồng xu hai lần. Không biết trước mặt nào, nhưng liệt kê được hết. Gọi S là sấp, N là ngửa:</p>
+        \[
+          \Omega = \{SS,\ SN,\ NS,\ NN\}.
+        \]
+        <p>Có 4 kết quả. \(SN\) khác \(NS\): lần một sấp rồi lần hai ngửa không phải cùng một kết quả với ngược lại, vì phép thử có thứ tự.</p>
+        <p>Rút lần lượt 2 người trong 4 người A, B, C, D, không trả lại: lần đầu 4 cách, lần sau còn 3 cách, tất cả \(4 \cdot 3 = 12\) kết quả. Đó là số phần tử của \(\Omega\), chưa cần viết đủ 12 cặp mới biết cỡ mẫu.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2091,6 +2316,11 @@ const LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Xác suất là <em>phần bánh</em>: chia cái bánh \(\Omega\) cho các kết quả đồng khả năng, biến cố \(E\) chiếm mấy miếng? Luôn có \(0 \leq P(E) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tung một xúc xắc cân đối. \(\Omega = \{1, 2, 3, 4, 5, 6\}\), sáu kết quả đồng khả năng.</p>
+        <p>Biến cố "ra số chẵn" có kết quả thuận lợi 2, 4, 6. Xác suất \(\dfrac{3}{6} = \dfrac{1}{2}\).</p>
+        <p>Biến cố "ra số lớn hơn 4" có kết quả thuận lợi 5 và 6. Xác suất \(\dfrac{2}{6} = \dfrac{1}{3}\). Không đếm số 4, vì 4 không lớn hơn 4.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2159,6 +2389,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Cho \(\widehat{BAC} = 60^\circ\). Hai góc nội tiếp \(\widehat{BDC}\) và \(\widehat{BAC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BDC} = 60^\circ\); góc ở tâm \(\widehat{BOC} = 2\widehat{BAC} = 120^\circ\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Cung \(AB\) có số đo \(80^\circ\). Góc ở tâm chắn cung đó cũng bằng \(80^\circ\). Góc nội tiếp chắn cùng cung \(AB\) bằng một nửa, tức \(40^\circ\).</p>
+        <p>Nếu góc nội tiếp bằng \(90^\circ\), cung bị chắn bằng \(180^\circ\). Cung nửa đường tròn nghĩa là dây chắn cung ấy là đường kính. Cách nhớ: góc nội tiếp chắn đường kính thì vuông.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2213,6 +2447,11 @@ const LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Tam giác \(ABC\) vuông tại \(A\), \(AB = 2\) cm, \(AC = 4\) cm. Đường tròn ngoại tiếp có tâm là trung điểm \(BC\): \(BC^2 = 4 + 16 = 20\), \(BC = 2\sqrt{5}\), bán kính \(R = \dfrac{BC}{2} = \sqrt{5}\) cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tam giác vuông cạnh 6 cm, 8 cm, cạnh huyền 10 cm.</p>
+        <p>Đường tròn ngoại tiếp đi qua ba đỉnh. Tâm là trung điểm cạnh huyền, bán kính bằng nửa cạnh huyền: \(R = 5\) cm. Ba đỉnh đều cách tâm đúng 5 cm.</p>
+        <p>Đường tròn nội tiếp tiếp xúc ba cạnh, bán kính \(r = \dfrac{6 + 8 - 10}{2} = 2\) cm. Kiểm tra bằng diện tích: \(\dfrac{6 \cdot 8}{2} = 24\), và bán kính nhân nửa chu vi cũng là \(2 \cdot 12 = 24\). Khớp.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2272,6 +2511,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Tứ giác \(ABCD\) nội tiếp \((O)\) với \(\widehat{DAB} = 70^\circ\), \(\widehat{ABC} = 130^\circ\). Suy ra \(\widehat{BCD} = 180^\circ - 70^\circ = 110^\circ\), \(\widehat{CDA} = 180^\circ - 130^\circ = 50^\circ\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tứ giác có các góc lần lượt \(70^\circ\), \(110^\circ\), \(110^\circ\), \(70^\circ\). Hai góc đối cộng lại \(70^\circ + 110^\circ = 180^\circ\). Tứ giác này nội tiếp được một đường tròn.</p>
+        <p>Tứ giác khác có góc \(80^\circ\), \(100^\circ\), \(70^\circ\), \(110^\circ\). Một cặp đối cộng được \(80^\circ + 70^\circ = 150^\circ \neq 180^\circ\). Không nội tiếp được. Tổng bốn góc vẫn là \(360^\circ\), nhưng điều kiện cần từng cặp đối, không phải tổng cả bốn.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2328,6 +2571,11 @@ const LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Chia bánh tròn đều \(n\) miếng, nối các vết cắt: được đa giác đều. Lục giác đều đặc biệt thân thiện: <strong>cạnh bằng bán kính</strong> — chỉ cần xoay compa quanh đường tròn là vẽ được. Các đa giác đều có khắp nơi: tổ ong (lục giác), ốc vít (lục giác), biển báo (tam giác, bát giác đều)…</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Lục giác đều có 6 cạnh bằng nhau và 6 góc bằng nhau. Chia đường tròn ngoại tiếp thành 6 cung bằng nhau, mỗi cung \(360^\circ : 6 = 60^\circ\).</p>
+        <p>Tam giác nối tâm với một cạnh là tam giác đều, nên cạnh của lục giác đều bằng bán kính đường tròn ngoại tiếp. Bán kính 4 cm thì mỗi cạnh 4 cm, chu vi 24 cm.</p>
+        <p>Mỗi góc trong bằng \(\dfrac{(6 - 2) \cdot 180^\circ}{6} = 120^\circ\). Sáu góc bằng nhau, đúng định nghĩa đa giác đều.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2406,6 +2654,10 @@ const LESSONS = [
         <p><strong>Ví dụ (SGK).</strong> Thùng rác hình trụ \(R = 11\) cm, \(h = 30\) cm, sơn mặt ngoài và một đáy: \(S = S_{xq} + S_{đáy} = 660\pi + 121\pi = 781\pi\) cm²; thể tích \(V = 121\pi \cdot 30 = 3630\pi \approx 11\,404\) cm³.</p>
         <p>Hình nón \(l = 10\) cm, \(r = 6\) cm: \(S_{xq} = 60\pi\) cm²; \(h = \sqrt{10^2 - 6^2} = 8\) cm; \(V = \tfrac{1}{3}\pi \cdot 36 \cdot 8 = 96\pi\) cm³.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình trụ bán kính đáy \(R = 3\) cm, chiều cao \(h = 5\) cm. Diện tích xung quanh \(S_{xq} = 2\pi \cdot 3 \cdot 5 = 30\pi\) cm²: trải phẳng được hình chữ nhật dài bằng chu vi đáy \(6\pi\), rộng 5. Thể tích \(V = \pi \cdot 9 \cdot 5 = 45\pi\) cm³.</p>
+        <p>Hình nón bán kính đáy \(r = 3\) cm, chiều cao 4 cm. Đường sinh \(l = \sqrt{3^2 + 4^2} = 5\) cm. Không lấy chiều cao 4 cm làm đường sinh. \(S_{xq} = \pi \cdot 3 \cdot 5 = 15\pi\) cm². Thể tích bằng một phần ba hình trụ cùng đáy cùng cao: \(V = \dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2475,6 +2727,11 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Hình cầu bán kính \(R = 10\) cm: \(S = 4\pi \cdot 100 = 400\pi\) cm²; \(V = \tfrac{4}{3}\pi \cdot 1000 = \tfrac{4000\pi}{3}\) cm³.</p>
         <p>Bể cá dạng một phần hình cầu đường kính 20 cm, đổ nước bằng \(\tfrac{2}{3}\) thể tích hình cầu: \(V_{nước} = \tfrac{2}{3} \cdot \tfrac{4}{3}\pi \cdot 10^3 \approx 932\) cm³.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình cầu bán kính \(R = 3\) cm. Diện tích mặt cầu \(S = 4\pi R^2 = 36\pi\) cm², bằng bốn lần diện tích hình tròn lớn. Không dùng \(\pi R^2\): đó chỉ là diện tích một mặt cắt qua tâm.</p>
+        <p>Thể tích \(V = \dfrac{4}{3}\pi R^3 = \dfrac{4}{3}\pi \cdot 27 = 36\pi\) cm³.</p>
+        <p>Cắt qua tâm, mặt cắt là đường tròn bán kính 3 cm. Cắt lệch khỏi tâm, mặt cắt vẫn là đường tròn, nhưng bán kính nhỏ hơn 3 cm.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
