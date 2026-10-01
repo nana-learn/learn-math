@@ -226,6 +226,16 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
   border-radius: 0 12px 12px 0;
 }
 
+/* Câu trong đề vào 10 Hà Nội */
+.examq {
+  background: #f7f1e8;
+  border-left: 4px solid var(--stamp);
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 12px 12px 0;
+}
+.examq p:last-child { margin-bottom: 0; }
+
 /* Hiểu nhanh — giải thích theo ngôn ngữ đời thường */
 .idea {
   background: #eef7fa;

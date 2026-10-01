@@ -330,6 +330,9 @@ const LESSONS = [
         <p>Hệ số của \(y\) đối nhau, cộng từng vế: \(2x = 10\), \(x = 5\). Thế vào câu thứ nhất: \(5 + y = 9\), \(y = 4\). Cặp \((5;\ 4)\).</p>
         <p>Kiểm tra cả hai câu gốc: \(5 + 4 = 9\) và \(5 - 4 = 1\). Đúng.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi đề đã cho sẵn hệ, việc còn lại là giải. Năm 2024 cho hệ có \(\sqrt{3x+1}\) ở cả hai phương trình. Đặt ẩn phụ rồi cộng hoặc thế, như bài này. Năm 2026, sau khi lập xong, hệ hoa hồng và hoa cúc cũng giải bằng cộng đại số: \(x+y=25\), \(8x+6y=180\).</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -425,6 +428,10 @@ const LESSONS = [
         <p>Gọi số lớn là \(x\), số nhỏ là \(y\). Điều kiện: \(x > y\), cả hai dương. Hai câu trong đề: \(x + y = 15\) và \(x - y = 3\).</p>
         <p>Cộng từng vế: \(2x = 18\), \(x = 9\), rồi \(y = 6\). Cả hai dương và \(9 > 6\), nhận. Số lớn là 9. Kiểm tra: tổng 15, hiệu 3.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu III.2.</strong> Năm 2026: mua 25 bông hoa hồng và cúc hết 180 nghìn đồng. Hồng 8 nghìn một bông, cúc 6 nghìn. Hỏi mỗi loại bao nhiêu. Hai câu trong đề là hai phương trình. Gọi \(x, y\), ghi điều kiện nguyên dương, giải, rồi kiểm tra.</p>
+        <p>Năm 2025 cùng dạng: ba lô và máy tính niêm yết tổng 885 nghìn đồng, giảm 20% và 25%, trả 682 nghìn đồng. Vẫn là một hệ hai ẩn, không phải một phương trình.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -517,6 +524,13 @@ const LESSONS = [
         <p>Trường hợp 1: \(x - 4 = 0\), nên \(x = 4\). Trường hợp 2: \(2x + 6 = 0\), nên \(x = -3\). Không bỏ nghiệm âm.</p>
         <p>Kiểm tra. \(x = 4\): nhân tử thứ nhất bằng 0, tích bằng 0. \(x = -3\): nhân tử thứ hai bằng 0, tích bằng 0.</p>
         <p>Một phương trình có mẫu, làm đủ bốn bước: \(\dfrac{3}{x - 1} = 2\). Điều kiện xác định: \(x \neq 1\). Nhân hai vế với \(x - 1\): \(3 = 2(x - 1)\), \(x = \dfrac{5}{2}\). Giá trị này khác 1, nên nhận. Kiểm tra: \(\dfrac{3}{\frac{5}{2} - 1} = \dfrac{3}{\frac{3}{2}} = 2\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, 2024.</strong> Hệ</p>
+        \[
+          \begin{cases} \sqrt{3x+1}+2y=4 \\ 3\sqrt{3x+1}-y=5. \end{cases}
+        \]
+        <p>Đặt \(t=\sqrt{3x+1}\), \(t\geq 0\). Hệ trở thành bậc nhất theo \(t\) và \(y\). Giải ra \(t\), rồi bình phương để tìm \(x\). Đó là quy về phương trình bậc nhất, không giải căn trực tiếp.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -682,6 +696,9 @@ const LESSONS = [
         <p>Chuyển 5 sang phải: \(-2x \geq -4\). Chia cho \(-2\), là số âm, phải đổi chiều: \(x \leq 2\).</p>
         <p>Kiểm tra ba điểm, đừng tin mỗi phép biến đổi. \(x = 2\): \(5 - 4 = 1\), lấy vì dấu \(\geq\). \(x = 0\): \(5 \geq 1\), đúng. \(x = 3\): \(5 - 6 = -1\), mà \(-1 \geq 1\) sai. Đúng là mọi số nhỏ hơn hoặc bằng 2.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Sau khi rút gọn căn, ý cuối câu II là một bất phương trình. Năm 2025: tìm số nguyên dương \(x\) lớn nhất để \(\dfrac{A}{B}<\dfrac{1}{2}\). Năm 2024: tìm mọi \(x\) để \(A-B<0\). Phải xét dấu mẫu trước khi nhân hai vế. Kết quả còn phải nằm trong điều kiện của căn.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -749,6 +766,9 @@ const LESSONS = [
         <p>\(\sqrt{(-5)^2} = |-5| = 5\). Bình phương đã xoá dấu; căn số học không trả dấu âm lại. Viết \(\sqrt{(-5)^2} = -5\) là sai.</p>
         <p>\(\sqrt{3x - 6}\) chỉ có nghĩa khi \(3x - 6 \geq 0\), tức \(x \geq 2\). Với \(x = 2\), căn bằng 0. Với \(x = 1\), dưới căn là \(-3\), không có căn bậc hai.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu II.1.</strong> Đề cho biểu thức chứa căn và bảo tính khi \(x\) là một số cụ thể. Phải kiểm tra điều kiện trước. Năm 2026, \(A = \dfrac{\sqrt{x}-4}{\sqrt{x}}\), \(x>0\), \(x\neq 9\). Với \(x=25\), \(\sqrt{25}=5\), \(A=\dfrac{1}{5}\). Năm 2025 tính \(A\) tại \(x=9\). Năm 2024 tính \(A\) tại \(x=16\), với mẫu \(\sqrt{x}-3\): \(x=9\) làm mẫu bằng 0, không được thế.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -811,6 +831,9 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> \(\sqrt{16 \cdot 9} = \sqrt{16} \cdot \sqrt{9} = 4 \cdot 3 = 12\). Căn tách được qua phép nhân. Không được viết \(\sqrt{16} + \sqrt{9} = 7\): căn không tách qua phép cộng, và \(\sqrt{16 + 9} = 5\), không phải 7.</p>
         <p>\(\sqrt{50} : \sqrt{2} = \sqrt{50 : 2} = \sqrt{25} = 5\). Cùng kết quả nếu rút gọn trước: \(\sqrt{50} = 5\sqrt{2}\), rồi \(\dfrac{5\sqrt{2}}{\sqrt{2}} = 5\).</p>
         <p>Với \(a = -3\) và \(b = 4\): \(\sqrt{a^2 b} = |a|\sqrt{b} = 3 \cdot 2 = 6\). Viết \(a\sqrt{b} = -6\) là sai, vì \(a\) âm không được kéo ra ngoài căn mà quên giá trị tuyệt đối.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi rút gọn câu II, đề tách tích và thương dưới căn. Năm 2024, mẫu \(x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)\). Đó là đưa thừa số \(\sqrt{x}\) ra ngoài, đúng phép của bài này. Không tách căn qua dấu cộng.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -878,6 +901,13 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Rút gọn \(\sqrt{72}\). Tìm thừa số chính phương: \(72 = 36 \cdot 2\), nên \(\sqrt{72} = 6\sqrt{2}\).</p>
         <p>Khử mẫu: \(\sqrt{\dfrac{9}{2}} = \sqrt{\dfrac{18}{4}} = \dfrac{\sqrt{18}}{2} = \dfrac{3\sqrt{2}}{2}\). Mẫu đã ra khỏi dấu căn.</p>
         <p>Đưa số âm vào trong căn phải giữ dấu trừ bên ngoài: \(-2\sqrt{3} = -\sqrt{12}\). Không được viết \(-2\sqrt{3} = \sqrt{12}\).</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu II.2.</strong> Năm 2026, với \(x>0\), \(x\neq 9\),</p>
+        \[
+          B = \dfrac{4}{\sqrt{x}-3} + \dfrac{x-7\sqrt{x}-12}{x-9},
+        \]
+        <p>chứng minh \(B = \dfrac{\sqrt{x}}{\sqrt{x}+3}\). Đặt \(t=\sqrt{x}\), mẫu \(x-9=(t-3)(t+3)\), rồi khử thừa số chung. Năm 2025 và 2024 cùng dạng: rút gọn một biểu thức có căn ở mẫu, rồi mới dùng kết quả cho ý bất phương trình.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -1531,6 +1561,9 @@ const LESSONS = [
         <p>\(d = 5\): tiếp xúc, đúng một tiếp điểm. Bán kính tới tiếp điểm vuông góc với tiếp tuyến.</p>
         <p>\(d = 8 > 5\): không giao. Đường thẳng nằm ngoài đường tròn.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, 2024, câu IV.</strong> Từ điểm \(A\) ngoài đường tròn \((O)\), kẻ hai tiếp tuyến \(AB\) và \(AC\), với \(B, C\) là tiếp điểm. Ý 1 chứng minh tứ giác \(ABOC\) nội tiếp. Dùng ngay dấu hiệu của bài này: bán kính tới tiếp điểm vuông góc với tiếp tuyến, nên \(\widehat{OBA}=\widehat{OCA}=90^\circ\).</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1757,6 +1790,10 @@ const LESSONS = [
         <p>\(x = 2\) và \(x = -2\) cho cùng một \(y\): parabol đối xứng qua trục \(Oy\), đỉnh tại gốc \(O\). Vì \(a = 2 > 0\), nhánh mở lên.</p>
         <p>Với \(y = -x^2\), cùng các \(x\) cho \(y = -4, -1, 0, -1, -4\). Cùng dạng, nhưng mở xuống vì \(a < 0\).</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2024, câu III.2: parabol \(y=x^2\) và đường thẳng \(y=(m-2)x+5\). Chứng minh chúng luôn cắt nhau tại hai điểm phân biệt. Thế \(y\), được phương trình bậc hai theo \(x\). \(\Delta>0\) với mọi \(m\) thì có hai giao điểm.</p>
+        <p>Câu V các năm 2025 và 2026 là tìm giá trị lớn nhất hoặc nhỏ nhất của một hàm bậc hai, rồi chọn số nguyên cạnh đỉnh. Đồ thị vẫn là parabol của bài này.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1843,6 +1880,9 @@ const LESSONS = [
         <p>Kiểm tra. \(x = 5\): \(25 - 35 + 10 = 0\). \(x = 2\): \(4 - 14 + 10 = 0\).</p>
         <p>Dạng khuyết \(x^2 - 9 = 0\): \(x^2 = 9\), nên \(x = 3\) hoặc \(x = -3\). Nghiệm âm vẫn là nghiệm.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Đề ít khi bảo giải một phương trình bậc hai trần. Nó đưa phương trình rồi hỏi biểu thức của hai nghiệm. Năm 2026 dùng \(x^2-3x+1=0\). Năm 2025 dùng \(x^2+8x-6=0\). Vẫn phải nhận ra đây là bậc hai, \(a\neq 0\), và \(\Delta>0\) trước khi nói có hai nghiệm.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1917,6 +1957,14 @@ const LESSONS = [
         <p>Nhẩm khi \(a + b + c = 0\): \(x^2 - 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = 1\) là một nghiệm. Nghiệm kia bằng tích, tức 2. Kiểm tra: \((x - 1)(x - 2) = x^2 - 3x + 2\).</p>
         <p>Khi \(a - b + c = 0\): \(x^2 + 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = -1\) là một nghiệm. Nghiệm kia là \(-2\), vì tích bằng 2.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu III.3.</strong> Năm 2026: \(x^2-3x+1=0\) có hai nghiệm \(x_1, x_2\). Tính</p>
+        \[
+          Q = \dfrac{3x_2-1}{x_1}+\dfrac{3x_1-1}{x_2}.
+        \]
+        <p>Tổng bằng 3, tích bằng 1. Quy đồng rồi thế, không cần tìm từng nghiệm.</p>
+        <p>Năm 2025: \(x^2+8x-6=0\), tìm \(m\) để \(\dfrac{70-mx_1^2}{x_2}=x_1+mx_2\). Cũng đưa về tổng và tích. Năm 2024 hỏi \(x_1^2+x_2^2=0\) với hoành độ giao điểm của đường thẳng và parabol.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1976,6 +2024,10 @@ const LESSONS = [
         <p><strong>Không phải lúc nào cũng là hình chữ nhật.</strong> Tìm hai số nguyên liên tiếp có tích 56.</p>
         <p>Gọi số nhỏ hơn là \(x\), số kia là \(x + 1\). Tích: \(x(x + 1) = 56\), tức \(x^2 + x - 56 = 0\). \(\Delta = 1 + 224 = 225 = 15^2\). \(x = \dfrac{-1 \pm 15}{2}\), nên \(x = 7\) hoặc \(x = -8\).</p>
         <p>Cả hai đều là số nguyên. Cặp \(7\) và \(8\): tích 56. Cặp \(-8\) và \(-7\): tích cũng 56. Nếu đề chỉ hỏi số nguyên, nhận cả hai cặp. Nếu đề hỏi số tự nhiên, loại cặp âm. Điều kiện quyết định, không phải cảm tính.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu III.1.</strong> Một mối liên hệ, một ẩn. Năm 2026: 3 ngày may đúng kế hoạch, 7 ngày sau mỗi ngày hơn kế hoạch 5 áo, cả 10 ngày được 335 áo. Gọi \(x\) là số áo mỗi ngày theo kế hoạch: \(3x+7(x+5)=335\).</p>
+        <p>Năm 2025: cùng quãng đường, đi 60 km/h, về 40 km/h, chiều đi ít hơn 1 giờ. Một phương trình về thời gian. Năm 2024: chở 15 tấn, đổi từ xe nhỏ sang xe lớn thì giảm 2 xe, mỗi xe lớn chở hơn 2 tấn. Đề cho phép lập một phương trình hoặc một hệ.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2040,6 +2092,9 @@ const LESSONS = [
         <p>Đếm: 38 xuất hiện 3 lần, 39 xuất hiện 3 lần, 40 một lần, 41 một lần. Tổng tần số \(3 + 3 + 1 + 1 = 8\). Cộng không ra 8 thì đã đếm sót.</p>
         <p>Cần mua nhiều nhất là cỡ 38 và 39, mỗi cỡ 3 đôi. Biểu đồ cột: trục ngang là cỡ giày, chiều cao cột là tần số.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I hỏi tần số trước, rồi mới hỏi tần số tương đối. Năm 2026, nhóm \([150;\ 155)\) có 14 học sinh. Số 14 ấy chính là tần số: đếm số lần, chưa chia cho 50.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2096,6 +2151,9 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Cùng 8 bạn ở trên. Tần số tương đối của cỡ 39 là \(\dfrac{3}{8} = 37{,}5\%\). Cỡ 40 là \(\dfrac{1}{8} = 12{,}5\%\). Các tỉ lệ của một mẫu phải cộng lại thành 100%.</p>
         <p>So hai lớp: lớp A có 6 trong 8 bạn đi cỡ 39, tức 75%. Lớp B có 9 trong 20 bạn, tức 45%. Lớp B có nhiều bạn hơn, nhưng tỉ lệ nhỏ hơn. Muốn so hai mẫu khác cỡ, dùng tần số tương đối, không dùng số lần xuất hiện.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025, 300 học sinh, nhóm \([12;\ 16)\) có 75 em. Tần số tương đối là \(\dfrac{75}{300}\cdot 100\% = 25\%\). Năm 2026, nhóm \([150;\ 155)\) có 14 em trong 50 em: \(\dfrac{14}{50}\cdot 100\% = 28\%\). Đừng viết 14% hay 75%.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2157,6 +2215,15 @@ const LESSONS = [
         <p>Tần số tương đối: 25%, 37,5%, 20% và 17,5%. Cộng lại 100%.</p>
         <p>Bạn học đúng 2 giờ thuộc nhóm \([2;\ 3)\), không thuộc \([1;\ 2)\). Ngoặc vuông lấy đầu mút trái; ngoặc tròn không lấy đầu mút phải.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu I.1.</strong> Năm 2026, chiều cao 50 học sinh lớp 6 (cm):</p>
+        <table>
+          <tr><th>Chiều cao</th><td>\([140;\ 145)\)</td><td>\([145;\ 150)\)</td><td>\([150;\ 155)\)</td><td>\([155;\ 160)\)</td><td>\([160;\ 165)\)</td></tr>
+          <tr><th>Số học sinh</th><td>10</td><td>18</td><td>14</td><td>6</td><td>2</td></tr>
+        </table>
+        <p>Hỏi tần số và tần số tương đối của nhóm \([150;\ 155)\). Cộng hàng dưới được \(10+18+14+6+2=50\). Tần số là 14. Tần số tương đối là 28%.</p>
+        <p>Năm 2025 hỏi cùng dạng với thời gian tự học của 300 học sinh. Nhóm \([12;\ 16)\) có 75 em, tần số tương đối 25%. Giá trị 16 không thuộc nhóm đó.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2215,6 +2282,9 @@ const LESSONS = [
         \]
         <p>Có 4 kết quả. \(SN\) khác \(NS\): lần một sấp rồi lần hai ngửa không phải cùng một kết quả với ngược lại, vì phép thử có thứ tự.</p>
         <p>Rút lần lượt 2 người trong 4 người A, B, C, D, không trả lại: lần đầu 4 cách, lần sau còn 3 cách, tất cả \(4 \cdot 3 = 12\) kết quả. Đó là số phần tử của \(\Omega\), chưa cần viết đủ 12 cặp mới biết cỡ mẫu.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I.2 là một phép thử: rút một lần. Năm 2026, hộp 6 bóng ghi 1 đến 6, \(\Omega = \{1,2,3,4,5,6\}\). Năm 2025, hộp 8 thẻ ghi 1 đến 8, \(\Omega\) có 8 phần tử. Đề chưa hỏi xác suất ở bước liệt kê. Viết \(\Omega\) trước, rồi mới đếm.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2278,6 +2348,10 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Tung một xúc xắc cân đối. \(\Omega = \{1, 2, 3, 4, 5, 6\}\), sáu kết quả đồng khả năng.</p>
         <p>Biến cố "ra số chẵn" có kết quả thuận lợi 2, 4, 6. Xác suất \(\dfrac{3}{6} = \dfrac{1}{2}\).</p>
         <p>Biến cố "ra số lớn hơn 4" có kết quả thuận lợi 5 và 6. Xác suất \(\dfrac{2}{6} = \dfrac{1}{3}\). Không đếm số 4, vì 4 không lớn hơn 4.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu I.2.</strong> Năm 2026: rút một bóng trong 6 bóng ghi 1 đến 6. Tính xác suất số chẵn. Thuận lợi là 2, 4, 6. \(P(A) = \dfrac{3}{6} = \dfrac{1}{2}\).</p>
+        <p>Năm 2025: rút một thẻ trong 8 thẻ ghi 1 đến 8. Tính xác suất số chia hết cho 3. Thuận lợi là 3 và 6, không có 9. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2350,6 +2424,9 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Cung \(AB\) có số đo \(80^\circ\). Góc ở tâm chắn cung đó cũng bằng \(80^\circ\). Góc nội tiếp chắn cùng cung \(AB\) bằng một nửa, tức \(40^\circ\).</p>
         <p>Nếu góc nội tiếp bằng \(90^\circ\), cung bị chắn bằng \(180^\circ\). Cung nửa đường tròn nghĩa là dây chắn cung ấy là đường kính. Cách nhớ: góc nội tiếp chắn đường kính thì vuông.</p>
       </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Phần chứng minh dùng góc nội tiếp, không hỏi thuộc lòng định nghĩa. Năm 2026 cho tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). Góc chắn nửa đường tròn là góc vuông: đó là lý do góc \(A\) bằng \(90^\circ\) khi \(BC\) là đường kính. Các ý sau so góc nội tiếp cùng chắn một cung.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2409,6 +2486,9 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Tam giác vuông cạnh 6 cm, 8 cm, cạnh huyền 10 cm.</p>
         <p>Đường tròn ngoại tiếp đi qua ba đỉnh. Tâm là trung điểm cạnh huyền, bán kính bằng nửa cạnh huyền: \(R = 5\) cm. Ba đỉnh đều cách tâm đúng 5 cm.</p>
         <p>Đường tròn nội tiếp tiếp xúc ba cạnh, bán kính \(r = \dfrac{6 + 8 - 10}{2} = 2\) cm. Kiểm tra bằng diện tích: \(\dfrac{6 \cdot 8}{2} = 24\), và bán kính nhân nửa chu vi cũng là \(2 \cdot 12 = 24\). Khớp.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025: tam giác nhọn \(ABC\) nội tiếp đường tròn \((O)\). Tâm là giao các đường trung trực, đường cao cắt lại đường tròn tại điểm thứ hai. Năm 2026: tam giác vuông nội tiếp đường tròn đường kính cạnh huyền. Đó đúng tính chất đường tròn ngoại tiếp tam giác vuông của bài này.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2471,6 +2551,9 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tứ giác có các góc lần lượt \(70^\circ\), \(110^\circ\), \(110^\circ\), \(70^\circ\). Hai góc đối cộng lại \(70^\circ + 110^\circ = 180^\circ\). Tứ giác này nội tiếp được một đường tròn.</p>
         <p>Tứ giác khác có góc \(80^\circ\), \(100^\circ\), \(70^\circ\), \(110^\circ\). Một cặp đối cộng được \(80^\circ + 70^\circ = 150^\circ \neq 180^\circ\). Không nội tiếp được. Tổng bốn góc vẫn là \(360^\circ\), nhưng điều kiện cần từng cặp đối, không phải tổng cả bốn.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội.</strong> Ý mở của phần hình thường là chứng minh bốn điểm đồng viên. Năm 2026, ý a: bốn điểm \(A, H, D, C\). Hai góc đối bằng \(90^\circ\), tổng \(180^\circ\), nên tứ giác nội tiếp. Năm 2024, ý 1: tứ giác \(ABOC\), với \(AB, AC\) là tiếp tuyến, cũng nội tiếp vì có hai góc vuông đối nhau. Năm 2025 hỏi bốn điểm \(E, D, B, K\).</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
@@ -2614,6 +2697,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình trụ bán kính đáy \(R = 3\) cm, chiều cao \(h = 5\) cm. Diện tích xung quanh \(S_{xq} = 2\pi \cdot 3 \cdot 5 = 30\pi\) cm²: trải phẳng được hình chữ nhật dài bằng chu vi đáy \(6\pi\), rộng 5. Thể tích \(V = \pi \cdot 9 \cdot 5 = 45\pi\) cm³.</p>
         <p>Hình nón bán kính đáy \(r = 3\) cm, chiều cao 4 cm. Đường sinh \(l = \sqrt{3^2 + 4^2} = 5\) cm. Không lấy chiều cao 4 cm làm đường sinh. \(S_{xq} = \pi \cdot 3 \cdot 5 = 15\pi\) cm². Thể tích bằng một phần ba hình trụ cùng đáy cùng cao: \(V = \dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³.</p>
+      </div>
+      <div class="examq">
+        <p><strong>Trong đề vào 10 Hà Nội, câu IV.1.</strong> Ba năm liền đều là hình trụ, chưa hỏi hình nón. Năm 2026: xô cao 25 cm, bán kính đáy 12 cm, \(\pi\approx 3{,}14\). Tính diện tích xung quanh. Rồi múc 80% thể tích xô vào bể 150 lít, hỏi ít nhất bao nhiêu xô. Nhớ \(1\) lít \(= 1000\) cm³.</p>
+        <p>Năm 2025: thùng bán kính 50 cm, cao 150 cm. Tính diện tích xung quanh, rồi thể tích nước khi mực hạ 40 cm. Năm 2024: bình bán kính 4 cm, cao 25 cm, chỉ hỏi diện tích xung quanh.</p>
       </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
