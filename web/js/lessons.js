@@ -169,7 +169,17 @@ const LESSONS = [
         <p>Cặp \((3;\ 1)\): \(2 \cdot 3 + 1 = 7\) và \(3 + 1 = 4\). Đúng cả hai, nên là nghiệm của hệ.</p>
         <p>Cặp \((2;\ 3)\): \(2 \cdot 2 + 3 = 7\), đúng phương trình thứ nhất; \(2 + 3 = 5 \neq 4\), sai phương trình thứ hai. Không phải nghiệm của hệ.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Phương trình \(2x + y = 7\). Cặp \((3;\ 1)\): \(6 + 1 = 7\), đúng. Cặp \((1;\ 3)\): \(2 + 3 = 5 \neq 7\), sai. Nghiệm là cả cặp, không phải từng số đứng riêng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hệ \(\begin{cases} x + y = 5 \\ 2x + y = 8. \end{cases}\) Cặp \((2;\ 3)\): câu thứ nhất đúng, câu thứ hai \(4 + 3 = 7 \neq 8\). Không phải nghiệm của hệ. Cặp \((3;\ 2)\): \(3 + 2 = 5\) và \(6 + 2 = 8\). Đúng cả hai, mới là nghiệm của hệ.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x + y = 6\) có nghiệm \((1;\ 5)\). Dừng ở đó thì sai. \((2;\ 4)\) và \((0;\ 6)\) cũng đúng. Một phương trình hai ẩn không có một nghiệm duy nhất.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Một điều kiện, vô số cặp. Hệ là hai điều kiện. Đúng một phương trình chưa đủ để là nghiệm của hệ.</p></div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Viết \(x = 2\), \(y = 3\) rồi quên kết luận là cặp \((2;\ 3)\).</li>
@@ -331,7 +341,17 @@ const LESSONS = [
         <p>Hệ số của \(y\) đối nhau, cộng từng vế: \(2x = 10\), \(x = 5\). Thế vào câu thứ nhất: \(5 + y = 9\), \(y = 4\). Cặp \((5;\ 4)\).</p>
         <p>Kiểm tra cả hai câu gốc: \(5 + 4 = 9\) và \(5 - 4 = 1\). Đúng.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\begin{cases} x + y = 7 \\ x - y = 1. \end{cases}\) Cộng từng vế, \(y\) mất: \(2x = 8\), \(x = 4\). Thế vào câu thứ nhất: \(y = 3\). Cặp \((4;\ 3)\). Kiểm tra: \(4 + 3 = 7\), \(4 - 3 = 1\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\begin{cases} 2x + y = 5 \\ 3x + 2y = 8. \end{cases}\) Hệ số chưa đối nhau. Nhân câu thứ nhất với 2: \(4x + 2y = 10\). Trừ câu thứ hai: \(x = 2\). Thế lại: \(4 + y = 5\), \(y = 1\). Cặp \((2;\ 1)\). Kiểm tra: \(4 + 1 = 5\), \(6 + 2 = 8\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hệ \(y = 2x - 1\) và \(x + y = 5\). Thế \(y\) lại vào chính câu vừa rút được thì ra \(2x - 1 = 2x - 1\), không tìm được \(x\). Phải thế vào câu còn lại: \(x + (2x - 1) = 5\), \(x = 2\), \(y = 3\). Kiểm tra: \(2 + 3 = 5\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Thế vào phương trình còn lại. Nhân cả hai vế khi làm hệ số đối nhau. Kết thúc bằng cặp \((x;\ y)\) và một lần kiểm tra.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi đề đã cho sẵn hệ, việc còn lại là giải. Năm 2024 cho hệ có \(\sqrt{3x+1}\) ở cả hai phương trình. Đặt ẩn phụ rồi cộng hoặc thế, như bài này. Năm 2026, sau khi lập xong, hệ hoa hồng và hoa cúc cũng giải bằng cộng đại số: \(x+y=25\), \(8x+6y=180\).</p>
       </div>
       <div class="warn">
@@ -429,7 +449,17 @@ const LESSONS = [
         <p>Gọi số lớn là \(x\), số nhỏ là \(y\). Điều kiện: \(x > y\), cả hai dương. Hai câu trong đề: \(x + y = 15\) và \(x - y = 3\).</p>
         <p>Cộng từng vế: \(2x = 18\), \(x = 9\), rồi \(y = 6\). Cả hai dương và \(9 > 6\), nhận. Số lớn là 9. Kiểm tra: tổng 15, hiệu 3.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hai số có tổng 12, hiệu 4. Gọi số lớn \(x\), số nhỏ \(y\), điều kiện \(x > y > 0\). \(x + y = 12\), \(x - y = 4\). Cộng: \(2x = 16\), \(x = 8\), \(y = 4\). Đúng điều kiện. Kiểm tra: tổng 12, hiệu 4.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Chuồng có 12 con gà và thỏ, 34 chân. Gà 2 chân, thỏ 4 chân. Gọi \(x\) là số gà, \(y\) là số thỏ, nguyên không âm. \(x + y = 12\), \(2x + 4y = 34\). Thế \(y = 12 - x\): \(2x + 4(12 - x) = 34\), \(48 - 2x = 34\), \(x = 7\), \(y = 5\). Chân: \(14 + 20 = 34\). Nhận.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tìm hai số tự nhiên, tổng 10, hiệu 12. Hệ cho \(x = 11\), \(y = -1\). Đó là nghiệm của hệ, nhưng \(-1\) không phải số tự nhiên. Bài toán vô nghiệm trong điều kiện đã đặt. Không sửa thành 1.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hai câu trong đề, hai phương trình. Ghi điều kiện lúc gọi ẩn. Nghiệm của hệ chưa chắc là đáp số.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.2.</strong> Năm 2026: mua 25 bông hoa hồng và cúc hết 180 nghìn đồng. Hồng 8 nghìn một bông, cúc 6 nghìn. Hỏi mỗi loại bao nhiêu. Hai câu trong đề là hai phương trình. Gọi \(x, y\), ghi điều kiện nguyên dương, giải, rồi kiểm tra.</p>
         <p>Năm 2025 cùng dạng: ba lô và máy tính niêm yết tổng 885 nghìn đồng, giảm 20% và 25%, trả 682 nghìn đồng. Vẫn là một hệ hai ẩn, không phải một phương trình.</p>
       </div>
@@ -526,7 +556,17 @@ const LESSONS = [
         <p>Kiểm tra. \(x = 4\): nhân tử thứ nhất bằng 0, tích bằng 0. \(x = -3\): nhân tử thứ hai bằng 0, tích bằng 0.</p>
         <p>Một phương trình có mẫu, làm đủ bốn bước: \(\dfrac{3}{x - 1} = 2\). Điều kiện xác định: \(x \neq 1\). Nhân hai vế với \(x - 1\): \(3 = 2(x - 1)\), \(x = \dfrac{5}{2}\). Giá trị này khác 1, nên nhận. Kiểm tra: \(\dfrac{3}{\frac{5}{2} - 1} = \dfrac{3}{\frac{3}{2}} = 2\).</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((x - 2)(x + 5) = 0\). Một thừa số bằng 0: \(x = 2\) hoặc \(x = -5\). Kiểm tra: cả hai làm tích bằng 0. Không bỏ nghiệm âm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\dfrac{2}{x - 1} = 4\). Điều kiện \(x \neq 1\). Nhân hai vế với \(x - 1\): \(2 = 4(x - 1)\), \(x = \dfrac{3}{2}\). \(\dfrac{3}{2} \neq 1\), nhận. Kiểm tra: \(\dfrac{2}{0{,}5} = 4\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\dfrac{5}{x - 2} = 1\). Điều kiện \(x \neq 2\). Nhân mẫu: \(5 = x - 2\), \(x = 7\). Kiểm tra \(\dfrac{5}{5} = 1\). Nếu phép tính ra \(x = 2\), phải loại: mẫu bằng 0, phương trình gốc không có nghĩa.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tích bằng 0 thì xét từng thừa số, kể cả nghiệm âm. Có mẫu thì viết điều kiện trước, giải xong loại giá trị làm mẫu bằng 0.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, 2024.</strong> Hệ</p>
         \[
           \begin{cases} \sqrt{3x+1}+2y=4 \\ 3\sqrt{3x+1}-y=5. \end{cases}
@@ -605,6 +645,10 @@ const LESSONS = [
         <p><strong>Ví dụ thêm một bước.</strong> Biết \(a < b\). Bạn An viết \(-2a < -2b\). Sai. Nhân với \(-2\) phải đổi chiều: \(-2a > -2b\).</p>
         <p>Thử \(a = 1\), \(b = 4\). \(-2 \cdot 1 = -2\), \(-2 \cdot 4 = -8\). \(-2\) đứng bên phải \(-8\), nên \(-2 > -8\), không phải nhỏ hơn.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(-3 < 2\) và \(-4 < 1\). Nhân từng vế với nhau được \(12 < 2\), sai. Không được nhân hai bất đẳng thức khi chưa biết dấu. Cộng cùng một số, hoặc nhân cả hai vế với cùng một số, mới là quy tắc của bài này.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Lớn hơn là đứng bên phải. Cộng cùng một số thì giữ chiều. Nhân số âm thì đổi chiều. Không nhân hai bất đẳng thức với nhau cho xong.</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -711,6 +755,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Giải \(-3x + 6 \geq 0\). \(-3x \geq -6\). Chia cho \(-3\), đổi chiều: \(x \leq 2\). Thử \(x = 2\): bằng 0, lấy vì \(\geq\). \(x = 0\): \(6 \geq 0\), đúng. \(x = 3\): \(-3 \geq 0\) sai.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(-2x > 6\). Chia cho \(-2\) mà quên đổi chiều sẽ viết \(x > -3\). Sai. Đúng là \(x < -3\). Thử \(x = 0\): \(0 > 6\) sai. Thử \(x = -4\): \(8 > 6\) đúng.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hệ số dương thì giữ chiều. Hệ số âm thì đổi chiều. Thử một điểm trong tập nghiệm và một điểm ngoài.</p></div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Sau khi rút gọn căn, ý cuối câu II là một bất phương trình. Năm 2025: tìm số nguyên dương \(x\) lớn nhất để \(\dfrac{A}{B}<\dfrac{1}{2}\). Năm 2024: tìm mọi \(x\) để \(A-B<0\). Phải xét dấu mẫu trước khi nhân hai vế. Kết quả còn phải nằm trong điều kiện của căn.</p>
       </div>
@@ -787,6 +835,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt{(-8)^2} = |-8| = 8\). Nếu viết bằng \(-8\) thì kết quả căn âm, sai. \(\sqrt{x + 5}\) chỉ có nghĩa khi \(x + 5 \geq 0\), tức \(x \geq -5\). Với \(x = -5\), căn bằng 0. Với \(x = -6\), dưới căn là \(-1\), không có căn bậc hai.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\sqrt{16 + 9} = 5\), không phải \(\sqrt{16} + \sqrt{9} = 7\). \(\sqrt{(-6)^2} = 6\), không phải \(-6\). Căn không đi xuyên dấu cộng, và dấu căn không trả số âm.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> \(\sqrt{\ }\) chỉ cho số không âm. \(\sqrt{a^2} = |a|\). Dưới căn phải không âm thì biểu thức mới có nghĩa.</p></div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu II.1.</strong> Đề cho biểu thức chứa căn và bảo tính khi \(x\) là một số cụ thể. Phải kiểm tra điều kiện trước. Năm 2026, \(A = \dfrac{\sqrt{x}-4}{\sqrt{x}}\), \(x>0\), \(x\neq 9\). Với \(x=25\), \(\sqrt{25}=5\), \(A=\dfrac{1}{5}\). Năm 2025 tính \(A\) tại \(x=9\). Năm 2024 tính \(A\) tại \(x=16\), với mẫu \(\sqrt{x}-3\): \(x=9\) làm mẫu bằng 0, không được thế.</p>
       </div>
@@ -853,7 +905,17 @@ const LESSONS = [
         <p>\(\sqrt{50} : \sqrt{2} = \sqrt{50 : 2} = \sqrt{25} = 5\). Cùng kết quả nếu rút gọn trước: \(\sqrt{50} = 5\sqrt{2}\), rồi \(\dfrac{5\sqrt{2}}{\sqrt{2}} = 5\).</p>
         <p>Với \(a = -3\) và \(b = 4\): \(\sqrt{a^2 b} = |a|\sqrt{b} = 3 \cdot 2 = 6\). Viết \(a\sqrt{b} = -6\) là sai, vì \(a\) âm không được kéo ra ngoài căn mà quên giá trị tuyệt đối.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\sqrt{4 \cdot 9} = \sqrt{4} \cdot \sqrt{9} = 2 \cdot 3 = 6\). \(\sqrt{36} : \sqrt{4} = \sqrt{36 : 4} = \sqrt{9} = 3\). Căn tách được qua nhân và chia. \(\sqrt{4 + 9} = \sqrt{13}\), không phải \(2 + 3\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt{48} : \sqrt{3} = \sqrt{16} = 4\). Với \(a = -2\): \(\sqrt{a^2 \cdot 12} = |a|\sqrt{12} = 2 \cdot 2\sqrt{3} = 4\sqrt{3}\). Viết \(a\sqrt{12} = -4\sqrt{3}\) là sai, vì \(a\) âm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \((-4) \cdot (-9) = 36\), nên \(\sqrt{36} = 6\). Không được viết \(\sqrt{-4} \cdot \sqrt{-9}\): từng số âm không có căn bậc hai. Tách căn chỉ khi mỗi thừa số không âm.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tách được qua nhân và chia, khi từng phần không âm. Không tách qua dấu cộng. Kéo số âm ra ngoài căn thì phải lấy giá trị tuyệt đối.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi rút gọn câu II, đề tách tích và thương dưới căn. Năm 2024, mẫu \(x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)\). Đó là đưa thừa số \(\sqrt{x}\) ra ngoài, đúng phép của bài này. Không tách căn qua dấu cộng.</p>
       </div>
       <div class="warn">
@@ -923,7 +985,17 @@ const LESSONS = [
         <p>Khử mẫu: \(\sqrt{\dfrac{9}{2}} = \sqrt{\dfrac{18}{4}} = \dfrac{\sqrt{18}}{2} = \dfrac{3\sqrt{2}}{2}\). Mẫu đã ra khỏi dấu căn.</p>
         <p>Đưa số âm vào trong căn phải giữ dấu trừ bên ngoài: \(-2\sqrt{3} = -\sqrt{12}\). Không được viết \(-2\sqrt{3} = \sqrt{12}\).</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\sqrt{18} = \sqrt{9 \cdot 2} = 3\sqrt{2}\). \(\sqrt{50} = \sqrt{25 \cdot 2} = 5\sqrt{2}\). Tìm thừa số chính phương lớn nhất rồi đưa ra ngoài.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt{\dfrac{8}{9}} = \dfrac{\sqrt{8}}{3} = \dfrac{2\sqrt{2}}{3}\). Mẫu đã ra khỏi căn. Đưa số âm vào trong: \(-3\sqrt{2} = -\sqrt{18}\), không phải \(\sqrt{18}\). Dấu trừ đứng ngoài.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\sqrt{12} + \sqrt{27} = 2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}\). Không phải \(\sqrt{39}\). \(\sqrt{50} = 5\sqrt{2}\), không phải \(2\sqrt{25}\): 25 xuống được, 2 ở lại dưới căn.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đưa thừa số chính phương ra ngoài. Chỉ cộng các căn cùng loại. Số âm đi vào căn thì dấu trừ đứng ngoài.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu II.2.</strong> Năm 2026, với \(x>0\), \(x\neq 9\),</p>
         \[
           B = \dfrac{4}{\sqrt{x}-3} + \dfrac{x-7\sqrt{x}-12}{x-9},
@@ -1000,6 +1072,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> \(\sqrt[3]{(-4)^3} = \sqrt[3]{-64} = -4\), không phải 4. Căn bậc hai mới cần giá trị tuyệt đối. \(\sqrt[3]{27} + \sqrt[3]{-8} = 3 + (-2) = 1\), không bằng \(\sqrt[3]{19}\).</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\sqrt[3]{-27} = -3\), có nghĩa, không phải “không xác định”. \(\sqrt[3]{8} + \sqrt[3]{27} = 2 + 3 = 5\), không bằng \(\sqrt[3]{35}\). Căn bậc ba giữ dấu, nhưng vẫn không cộng xuyên qua dấu cộng.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Mỗi số có đúng một căn bậc ba, cùng dấu với số đó. Không lấy giá trị tuyệt đối. \((\sqrt[3]{a})^3 = a\).</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1114,6 +1190,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Cạnh 5, 12, huyền 13. Góc đối cạnh 5: \(\sin = \dfrac{5}{13}\), \(\cos = \dfrac{12}{13}\), \(\tan = \dfrac{5}{12}\). Cùng góc 45° trong tam giác vuông cân cạnh 1: huyền \(\sqrt{2}\), \(\sin 45^\circ = \dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{2}\). Đổi kích thước tam giác, tỉ số không đổi.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\sin 30^\circ + \sin 60^\circ = \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\), không bằng \(\sin 90^\circ = 1\). Tỉ số lượng giác không cộng theo góc. Muốn cộng, phải tính từng tỉ số rồi cộng các số.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Sin là đối trên huyền, cos là kề trên huyền, tan là đối trên kề. Góc phụ nhau thì sin góc này bằng cos góc kia. Phóng to tam giác, tỉ số không đổi.</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1209,6 +1289,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Bóng cây dài 6 m, tia nắng tạo với đất góc \(45^\circ\). Biết cạnh kề, cần cạnh đối, dùng tan. \(\tan 45^\circ = 1\), nên chiều cao cũng là 6 m. Nếu góc là \(30^\circ\), cùng bóng 6 m thì cao \(6 \cdot \tan 30^\circ = 6 \cdot \dfrac{1}{\sqrt{3}} = 2\sqrt{3}\) m, thấp hơn. Góc lớn hơn, cùng bóng, thì cây cao hơn.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Cạnh huyền 10 cm, góc \(B = 30^\circ\). Cạnh đối của \(B\) là \(10 \cdot \sin 30^\circ = 5\) cm. Lấy nhầm \(\cos 30^\circ\) sẽ ra \(5\sqrt{3}\) cm, dài hơn nửa cạnh huyền, không khớp góc 30°.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biết cạnh huyền thì dùng sin góc đối hoặc cos góc kề. Biết cạnh kề thì dùng tan. Đọc góc đối với cạnh cần tìm, không lấy góc bên cạnh.</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1294,6 +1378,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Đoạn \(AB = 10\) cm, \(O\) là trung điểm. Đường tròn đường kính \(AB\) có bán kính 5 cm. Điểm \(M\) với \(OM = 5\) nằm trên đường tròn. Điểm \(N\) với \(ON = 4\) nằm trong, dù \(N\) có thể nằm trên đoạn \(AB\). Nằm trên đường kính chưa chắc nằm trên đường tròn.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Bán kính 5 cm. Điểm \(M\) nằm trên bán kính, \(OM = 3\) cm. \(M\) ở trong đường tròn, không nằm trên đường tròn. Nằm trên đoạn kẻ từ tâm chưa đủ. Phải có \(OM = 5\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đường tròn là ranh giới, hình tròn gồm cả phần trong. So khoảng cách tới tâm với \(R\): bằng thì trên, nhỏ hơn thì trong, lớn hơn thì ngoài.</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1386,7 +1474,17 @@ const LESSONS = [
         <p>Dây \(AB\) chắn góc ở tâm \(60^\circ\): tam giác \(OAB\) đều, nên \(AB = 5\) cm, nhỏ hơn đường kính. Dây chắn góc ở tâm \(90^\circ\): \(AB = 5\sqrt{2} \approx 7{,}1\) cm, vẫn nhỏ hơn 10 cm.</p>
         <p>Dây càng gần tâm thì càng dài. Dây đi qua tâm — đường kính — là dài nhất.</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Bán kính 6 cm, đường kính 12 cm. Dây chắn góc ở tâm \(60^\circ\) dài 6 cm, vì tam giác tâm-dây là tam giác đều. Dây chắn \(90^\circ\) dài \(6\sqrt{2} \approx 8{,}5\) cm. Cả hai đều ngắn hơn đường kính.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Góc ở tâm \(120^\circ\) chắn cung nhỏ \(120^\circ\). Cung lớn là \(360^\circ - 120^\circ = 240^\circ\), không phải \(240^\circ\) viết nhầm thành cung nhỏ, cũng không phải gấp đôi \(120^\circ\). Nửa đường tròn là cung \(180^\circ\), khi góc ở tâm là góc bẹt.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Góc ở tâm \(70^\circ\) chắn cung nhỏ \(70^\circ\). Cung lớn là \(360^\circ - 70^\circ = 290^\circ\), không phải \(140^\circ\). Gấp đôi góc ở tâm không ra cung lớn.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đường kính là dây dài nhất. Cung nhỏ bằng góc ở tâm chắn nó. Cung lớn bằng 360° trừ cung nhỏ.</p></div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nghĩ mọi dây đều là đường kính — đường kính là dây đi <em>qua tâm</em>.</li>
@@ -1494,7 +1592,17 @@ const LESSONS = [
         <p>Diện tích quạt: \(S_q = \dfrac{60}{360}\pi \cdot 36 = 6\pi\) cm². Công thức thứ hai cho cùng số: \(\dfrac{l R}{2} = \dfrac{2\pi \cdot 6}{2} = 6\pi\).</p>
         <p>Vành khuyên bán kính ngoài 5 cm, trong 2 cm: \(S = \pi(5^2 - 2^2) = 21\pi\) cm². Không phải \(\pi(5 - 2)^2 = 9\pi\).</p>
       </div>
-      <div class="warn">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Bán kính 9 cm, cung \(40^\circ\). Đó là \(\dfrac{40}{360} = \dfrac{1}{9}\) vòng. Độ dài cung \(l = \dfrac{40}{180}\pi \cdot 9 = 2\pi\) cm. Diện tích quạt \(S_q = \dfrac{40}{360}\pi \cdot 81 = 9\pi\) cm². Kiểm tra bằng \(\dfrac{lR}{2} = \dfrac{2\pi \cdot 9}{2} = 9\pi\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Vành khuyên bán kính ngoài 5 cm, trong 3 cm: \(S = \pi(5^2 - 3^2) = 16\pi\) cm². Không phải \(\pi(5 - 3)^2 = 4\pi\). Trừ bình phương, không bình phương hiệu.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Bán kính 6 cm, cung \(60^\circ\). Độ dài cung là \(\dfrac{60}{180}\pi \cdot 6 = 2\pi\) cm. Nếu chia cho 360 rồi chỉ nhân \(\pi R\), ra \(\pi\) cm, thiếu một nửa. Diện tích quạt mới chia cho 360: \(\dfrac{60}{360}\pi \cdot 36 = 6\pi\) cm².</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cung lấy phần chu vi, quạt lấy phần diện tích. Số 180 trong độ dài cung đến từ \(2\pi R \cdot \dfrac{n}{360}\). Vành khuyên là \(\pi(R^2 - r^2)\).</p></div>
+<div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
           <li>Nhầm 180 với 360: độ dài cung chia cho \(180\), diện tích quạt chia cho \(360\) — nhớ từ công thức gốc (2) và (3).</li>
@@ -1606,7 +1714,17 @@ const LESSONS = [
         <p>\(d = 5\): tiếp xúc, đúng một tiếp điểm. Bán kính tới tiếp điểm vuông góc với tiếp tuyến.</p>
         <p>\(d = 8 > 5\): không giao. Đường thẳng nằm ngoài đường tròn.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Đường tròn bán kính 5 cm. Khoảng cách từ tâm đến đường thẳng là 3 cm: cắt hai điểm, nửa dây \(\sqrt{25 - 9} = 4\) cm, dây dài 8 cm. Khoảng cách 5 cm: tiếp xúc, một điểm. Khoảng cách 7 cm: không gặp.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Từ điểm \(M\) ngoài đường tròn, \(OM = 13\) cm, bán kính 5 cm. Hai tiếp tuyến bằng nhau, mỗi tiếp tuyến dài \(\sqrt{13^2 - 5^2} = 12\) cm. Bán kính tới tiếp điểm vuông góc với tiếp tuyến. Nếu chỉ vuông góc mà không đi qua điểm trên đường tròn thì chưa phải tiếp tuyến.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(R = 5\) cm, khoảng cách từ tâm đến đường thẳng là 4 cm. \(4 < 5\), cắt nhau tại hai điểm, không phải tiếp xúc. Tiếp xúc chỉ khi khoảng cách đúng bằng bán kính. Viết \(d \leq R\) cho tiếp xúc là sai.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hạ vuông góc từ tâm, so \(d\) với \(R\). Nhỏ hơn: hai điểm. Bằng: một tiếp điểm, bán kính vuông góc tiếp tuyến. Lớn hơn: không gặp.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, 2024, câu IV.</strong> Từ điểm \(A\) ngoài đường tròn \((O)\), kẻ hai tiếp tuyến \(AB\) và \(AC\), với \(B, C\) là tiếp điểm. Ý 1 chứng minh tứ giác \(ABOC\) nội tiếp. Dùng ngay dấu hiệu của bài này: bán kính tới tiếp điểm vuông góc với tiếp tuyến, nên \(\widehat{OBA}=\widehat{OCA}=90^\circ\).</p>
       </div>
       <div class="warn">
@@ -1736,6 +1854,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Hai đường tròn bằng nhau, \(R = R' = 5\). Không có tiếp xúc trong, vì \(R - R' = 0\). \(OO' = 10\): tiếp xúc ngoài. \(OO' = 7\): cắt nhau. \(OO' = 12\): ngoài nhau. Đừng viết \(OO' = 0\) là tiếp xúc trong.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hai đường tròn cùng bán kính 4 cm, tâm trùng. Đó là đồng tâm, không phải tiếp xúc trong. Tiếp xúc trong cần \(R > R'\) và \(OO' = R - R'\). Hai bán kính bằng nhau thì \(R - R' = 0\), không có tiếp xúc trong.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đặt bán kính lớn trước. Mốc ngoài là \(R + R'\), mốc trong là \(R - R'\). Nằm giữa hai mốc thì cắt nhau.</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1847,6 +1969,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> \(y = \dfrac{1}{2}x^2\) tại \(x = 4\) là \(8\). Cùng dạng mở lên với \(y = 2x^2\), nhưng dốc thoải hơn: tại \(x = 2\), \(y = 2\) thay vì 8. Hệ số \(a\) đổi độ dốc, không đổi đỉnh và không đổi trục đối xứng.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(y = -3x^2\). Tại \(x = 1\), \(y = -3\), không phải 3. Dù \(3x^2\) dương, hệ số \(a = -3 < 0\) nên parabol mở xuống. Điểm \((-2;\ -12)\) thuộc đồ thị thì \((2;\ -12)\) cũng thuộc.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> \((-x)^2 = x^2\), nên đối xứng qua \(Oy\). Đỉnh tại \(O\). \(a > 0\) mở lên, \(a < 0\) mở xuống.</p></div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2024, câu III.2: parabol \(y=x^2\) và đường thẳng \(y=(m-2)x+5\). Chứng minh chúng luôn cắt nhau tại hai điểm phân biệt. Thế \(y\), được phương trình bậc hai theo \(x\). \(\Delta>0\) với mọi \(m\) thì có hai giao điểm.</p>
         <p>Câu V các năm 2025 và 2026 là tìm giá trị lớn nhất hoặc nhỏ nhất của một hàm bậc hai, rồi chọn số nguyên cạnh đỉnh. Đồ thị vẫn là parabol của bài này.</p>
@@ -1943,6 +2069,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> \(x^2 + 2x + 5 = 0\). \(\Delta = 4 - 20 = -16 < 0\). Dừng. Không viết \(\sqrt{-16}\). Phương trình vô nghiệm. So với \(x^2 + 2x + 1 = 0\): \(\Delta = 0\), nghiệm kép \(x = -1\). Ba trường hợp của \(\Delta\) là ba bài khác nhau, đừng dùng một công thức cho cả ba.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x^2 - 3x - 4 = 0\). \(\Delta = 9 - 4 \cdot 1 \cdot (-4) = 9 + 16 = 25\), không phải \(9 - 16\). Vì \(c\) âm, \(-4ac\) thành cộng. \(x = \dfrac{3 \pm 5}{2}\), nên \(x = 4\) hoặc \(x = -1\). Kiểm tra: \(16 - 12 - 4 = 0\), \(1 + 3 - 4 = 0\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> \(\Delta = b^2 - 4ac\). \(\Delta > 0\) hai nghiệm, \(\Delta = 0\) nghiệm kép, \(\Delta < 0\) dừng, không khai căn số âm.</p></div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Đề ít khi bảo giải một phương trình bậc hai trần. Nó đưa phương trình rồi hỏi biểu thức của hai nghiệm. Năm 2026 dùng \(x^2-3x+1=0\). Năm 2025 dùng \(x^2+8x-6=0\). Vẫn phải nhận ra đây là bậc hai, \(a\neq 0\), và \(\Delta>0\) trước khi nói có hai nghiệm.</p>
       </div>
@@ -2020,7 +2150,17 @@ const LESSONS = [
         <p>Nhẩm khi \(a + b + c = 0\): \(x^2 - 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = 1\) là một nghiệm. Nghiệm kia bằng tích, tức 2. Kiểm tra: \((x - 1)(x - 2) = x^2 - 3x + 2\).</p>
         <p>Khi \(a - b + c = 0\): \(x^2 + 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = -1\) là một nghiệm. Nghiệm kia là \(-2\), vì tích bằng 2.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(x^2 - 6x + 8 = 0\). \(\Delta = 36 - 32 = 4 > 0\). Tổng 6, tích 8. Hai số là 2 và 4. \(x_1^2 + x_2^2 = 36 - 16 = 20\). Kiểm tra: \(4 - 12 + 8 = 0\), \(16 - 24 + 8 = 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(2x^2 - 5x + 3 = 0\). \(a + b + c = 2 - 5 + 3 = 0\), nên \(x = 1\) là một nghiệm. Nghiệm kia bằng \(\dfrac{c}{a} = \dfrac{3}{2}\). Kiểm tra: \(2 \cdot \dfrac{9}{4} - 5 \cdot \dfrac{3}{2} + 3 = \dfrac{9}{2} - \dfrac{15}{2} + 3 = 0\). Không cần công thức nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x^2 + 6x + 5 = 0\). Tổng hai nghiệm là \(-6\), không phải 6. Tích là 5. Hai nghiệm \(-1\) và \(-5\). Kiểm tra: \(1 - 6 + 5 = 0\), \(25 - 30 + 5 = 0\). Bỏ dấu trừ ở tổng sẽ đi tìm 1 và 5, không thỏa phương trình.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Có dấu trừ ở tổng. Chỉ dùng khi \(\Delta \geq 0\).</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.3.</strong> Năm 2026: \(x^2-3x+1=0\) có hai nghiệm \(x_1, x_2\). Tính</p>
         \[
           Q = \dfrac{3x_2-1}{x_1}+\dfrac{3x_1-1}{x_2}.
@@ -2088,7 +2228,17 @@ const LESSONS = [
         <p>Gọi số nhỏ hơn là \(x\), số kia là \(x + 1\). Tích: \(x(x + 1) = 56\), tức \(x^2 + x - 56 = 0\). \(\Delta = 1 + 224 = 225 = 15^2\). \(x = \dfrac{-1 \pm 15}{2}\), nên \(x = 7\) hoặc \(x = -8\).</p>
         <p>Cả hai đều là số nguyên. Cặp \(7\) và \(8\): tích 56. Cặp \(-8\) và \(-7\): tích cũng 56. Nếu đề chỉ hỏi số nguyên, nhận cả hai cặp. Nếu đề hỏi số tự nhiên, loại cặp âm. Điều kiện quyết định, không phải cảm tính.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình chữ nhật chu vi 20 m, diện tích 21 m². Nửa chu vi là 10. Gọi một cạnh \(x\), cạnh kia \(10 - x\), \(0 < x < 10\). \(x(10 - x) = 21\), tức \(x^2 - 10x + 21 = 0\). \((x - 3)(x - 7) = 0\). Cạnh 3 m và 7 m. Kiểm tra: chu vi 20, diện tích 21.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hai số nguyên dương liên tiếp có tích 72. Gọi số nhỏ \(x\), \(x > 0\). \(x(x + 1) = 72\), \(x^2 + x - 72 = 0\). \(\Delta = 1 + 288 = 289 = 17^2\). \(x = \dfrac{-1 + 17}{2} = 8\). Nghiệm kia \(\dfrac{-1 - 17}{2} = -9\), loại vì không dương. Cặp 8 và 9. Kiểm tra: \(8 \cdot 9 = 72\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Quãng đường 90 km, vận tốc 45 km/h. Thời gian là \(\dfrac{90}{45} = 2\) giờ, không phải \(45 \cdot 90\). Và nếu phương trình cho thêm nghiệm âm, độ dài hoặc số người thì loại nghiệm đó.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Một mối liên hệ, một ẩn. Thời gian bằng quãng đường chia vận tốc. Ghi điều kiện trước, đối chiếu sau khi giải.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.1.</strong> Một mối liên hệ, một ẩn. Năm 2026: 3 ngày may đúng kế hoạch, 7 ngày sau mỗi ngày hơn kế hoạch 5 áo, cả 10 ngày được 335 áo. Gọi \(x\) là số áo mỗi ngày theo kế hoạch: \(3x+7(x+5)=335\).</p>
         <p>Năm 2025: cùng quãng đường, đi 60 km/h, về 40 km/h, chiều đi ít hơn 1 giờ. Một phương trình về thời gian. Năm 2024: chở 15 tấn, đổi từ xe nhỏ sang xe lớn thì giảm 2 xe, mỗi xe lớn chở hơn 2 tấn. Đề cho phép lập một phương trình hoặc một hệ.</p>
       </div>
@@ -2155,7 +2305,17 @@ const LESSONS = [
         <p>Đếm: 38 xuất hiện 3 lần, 39 xuất hiện 3 lần, 40 một lần, 41 một lần. Tổng tần số \(3 + 3 + 1 + 1 = 8\). Cộng không ra 8 thì đã đếm sót.</p>
         <p>Cần mua nhiều nhất là cỡ 38 và 39, mỗi cỡ 3 đôi. Biểu đồ cột: trục ngang là cỡ giày, chiều cao cột là tần số.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Sáu số: 2, 3, 2, 5, 3, 2. Cỡ mẫu là 6, không phải 3. Tần số của 2 là 3, của 3 là 2, của 5 là 1. Cộng \(3 + 2 + 1 = 6\). Khớp thì bảng đúng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Nếu đếm giá trị 2 thành 4 lần, tổng tần số thành 7, lớn hơn 6. Đã đếm thừa. Gạch từng số khi đếm, rồi cộng lại. Giá trị 5 và tần số 1 là hai cột khác nhau: 5 là dữ liệu, 1 là số lần.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tám số, chỉ ba giá trị khác nhau. Cỡ mẫu là 8, không phải 3. Nếu các tần số cộng được 7, đã đếm sót một số. Giá trị 5 và tần số 1 nằm ở hai chỗ: 5 là dữ liệu, 1 là số lần.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tần số là số lần xuất hiện. Tổng mọi tần số phải bằng cỡ mẫu. Biểu đồ cột chỉ vẽ lại bảng đó.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I hỏi tần số trước, rồi mới hỏi tần số tương đối. Năm 2026, nhóm \([150;\ 155)\) có 14 học sinh. Số 14 ấy chính là tần số: đếm số lần, chưa chia cho 50.</p>
       </div>
       <div class="warn">
@@ -2215,7 +2375,17 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Cùng 8 bạn ở trên. Tần số tương đối của cỡ 39 là \(\dfrac{3}{8} = 37{,}5\%\). Cỡ 40 là \(\dfrac{1}{8} = 12{,}5\%\). Các tỉ lệ của một mẫu phải cộng lại thành 100%.</p>
         <p>So hai lớp: lớp A có 6 trong 8 bạn đi cỡ 39, tức 75%. Lớp B có 9 trong 20 bạn, tức 45%. Lớp B có nhiều bạn hơn, nhưng tỉ lệ nhỏ hơn. Muốn so hai mẫu khác cỡ, dùng tần số tương đối, không dùng số lần xuất hiện.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Cùng sáu số trên. Tần số tương đối của 2 là \(\dfrac{3}{6} = 50\%\). Của 3 là \(\dfrac{2}{6} \approx 33{,}3\%\). Của 5 là \(\dfrac{1}{6} \approx 16{,}7\%\). Cộng lại 100%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Lớp A có 4 bạn trong 10 bạn thích môn Toán, tức 40%. Lớp B có 9 bạn trong 30 bạn, tức 30%. B có nhiều bạn hơn, nhưng tỉ lệ nhỏ hơn. So hai lớp phải dùng phần trăm, không dùng số lần.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> 3 bạn trong nhóm 8 bạn là \(37{,}5\%\), không phải 3%. Lớp kia có 9/30 = 30%. Chín lớn hơn ba, nhưng 30% nhỏ hơn 37,5%. So hai nhóm khác cỡ thì dùng phần trăm.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tần số tương đối là \(\dfrac{m}{n} \cdot 100\%\). Các phần trăm của một mẫu cộng lại thành 100%.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025, 300 học sinh, nhóm \([12;\ 16)\) có 75 em. Tần số tương đối là \(\dfrac{75}{300}\cdot 100\% = 25\%\). Năm 2026, nhóm \([150;\ 155)\) có 14 em trong 50 em: \(\dfrac{14}{50}\cdot 100\% = 28\%\). Đừng viết 14% hay 75%.</p>
       </div>
       <div class="warn">
@@ -2278,7 +2448,17 @@ const LESSONS = [
         <p>Tần số tương đối: 25%, 37,5%, 20% và 17,5%. Cộng lại 100%.</p>
         <p>Bạn học đúng 2 giờ thuộc nhóm \([2;\ 3)\), không thuộc \([1;\ 2)\). Ngoặc vuông lấy đầu mút trái; ngoặc tròn không lấy đầu mút phải.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Điểm của 20 bạn: \([0;\ 10)\) có 4, \([10;\ 20)\) có 6, \([20;\ 30)\) có 10. Tổng 20. Bạn được đúng 10 điểm thuộc \([10;\ 20)\), không thuộc \([0;\ 10)\). Nhóm \([20;\ 30)\) chiếm \(\dfrac{10}{20} = 50\%\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Điểm 19,9 thuộc \([10;\ 20)\). Điểm 20 thuộc \([20;\ 30)\). Nếu cả hai nhóm đều nhận 20, một bạn bị đếm hai lần và tổng tần số vượt 20. Ngoặc vuông lấy đầu trái, ngoặc tròn bỏ đầu phải.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Nhóm \([0;\ 10)\) và \([10;\ 20)\). Điểm 10 chỉ thuộc nhóm sau. Cho vào cả hai thì một bạn bị đếm hai lần, tổng tần số lớn hơn số bạn.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> \([a;\ b)\) lấy \(a\), không lấy \(b\). Mỗi giá trị vào đúng một nhóm. Cộng tần số các nhóm vẫn phải ra cỡ mẫu.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu I.1.</strong> Năm 2026, chiều cao 50 học sinh lớp 6 (cm):</p>
         <table>
           <tr><th>Chiều cao</th><td>\([140;\ 145)\)</td><td>\([145;\ 150)\)</td><td>\([150;\ 155)\)</td><td>\([155;\ 160)\)</td><td>\([160;\ 165)\)</td></tr>
@@ -2346,7 +2526,17 @@ const LESSONS = [
         <p>Có 4 kết quả. \(SN\) khác \(NS\): lần một sấp rồi lần hai ngửa không phải cùng một kết quả với ngược lại, vì phép thử có thứ tự.</p>
         <p>Rút lần lượt 2 người trong 4 người A, B, C, D, không trả lại: lần đầu 4 cách, lần sau còn 3 cách, tất cả \(4 \cdot 3 = 12\) kết quả. Đó là số phần tử của \(\Omega\), chưa cần viết đủ 12 cặp mới biết cỡ mẫu.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Gieo một xúc xắc: \(\Omega\) có 6 phần tử. Tung hai đồng xu có thứ tự: SS, SN, NS, NN. Bốn kết quả. SN khác NS.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Rút lần lượt 2 người trong A, B, C, không trả lại. Lần đầu 3 cách, lần sau 2 cách, tất cả 6: AB, AC, BA, BC, CA, CB. Nếu đề không kể thứ tự thì chỉ còn 3 cặp. Đọc đề có “lần lượt” hay không trước khi đếm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Rút lần lượt hai người trong A, B thì AB và BA là hai kết quả. Nếu đề không nói thứ tự, chỉ còn một cặp. Đọc “lần lượt” và “không trả lại” trước khi đếm. Có trả lại thì thêm cả AA, BB.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Không gian mẫu là mọi kết quả có thể, không trùng, không thiếu. Có thứ tự thì hai cách xếp khác nhau là hai phần tử.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I.2 là một phép thử: rút một lần. Năm 2026, hộp 6 bóng ghi 1 đến 6, \(\Omega = \{1,2,3,4,5,6\}\). Năm 2025, hộp 8 thẻ ghi 1 đến 8, \(\Omega\) có 8 phần tử. Đề chưa hỏi xác suất ở bước liệt kê. Viết \(\Omega\) trước, rồi mới đếm.</p>
       </div>
       <div class="warn">
@@ -2412,7 +2602,17 @@ const LESSONS = [
         <p>Biến cố "ra số chẵn" có kết quả thuận lợi 2, 4, 6. Xác suất \(\dfrac{3}{6} = \dfrac{1}{2}\).</p>
         <p>Biến cố "ra số lớn hơn 4" có kết quả thuận lợi 5 và 6. Xác suất \(\dfrac{2}{6} = \dfrac{1}{3}\). Không đếm số 4, vì 4 không lớn hơn 4.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Xúc xắc cân đối. “Ra số chẵn”: 2, 4, 6, xác suất \(\dfrac{3}{6} = \dfrac{1}{2}\). “Lớn hơn 4”: 5 và 6, \(\dfrac{2}{6} = \dfrac{1}{3}\). Không đếm 4.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hai đồng xu cân đối, có thứ tự. “Cả hai ngửa”: chỉ NN, \(P = \dfrac{1}{4}\). “Ít nhất một ngửa”: NN, NS, SN, ba kết quả, \(P = \dfrac{3}{4}\). Không phải \(\dfrac{1}{2}\). Biến cố “không thể ra mặt 7” trên một xúc xắc có \(P = 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Xúc xắc cân đối. “Chẵn hoặc lớn hơn 4”: chẵn là 2, 4, 6; lớn hơn 4 là 5, 6. Hợp là 2, 4, 5, 6, bốn kết quả, \(P = \dfrac{4}{6}\). Cộng \(\dfrac{3}{6} + \dfrac{2}{6}\) sẽ đếm 6 hai lần.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Liệt kê kết quả thuận lợi trên \(\Omega\). Chỉ chia khi các kết quả đồng khả năng. Xác suất không lớn hơn 1, không âm.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu I.2.</strong> Năm 2026: rút một bóng trong 6 bóng ghi 1 đến 6. Tính xác suất số chẵn. Thuận lợi là 2, 4, 6. \(P(A) = \dfrac{3}{6} = \dfrac{1}{2}\).</p>
         <p>Năm 2025: rút một thẻ trong 8 thẻ ghi 1 đến 8. Tính xác suất số chia hết cho 3. Thuận lợi là 3 và 6, không có 9. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
       </div>
@@ -2487,7 +2687,17 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Cung \(AB\) có số đo \(80^\circ\). Góc ở tâm chắn cung đó cũng bằng \(80^\circ\). Góc nội tiếp chắn cùng cung \(AB\) bằng một nửa, tức \(40^\circ\).</p>
         <p>Nếu góc nội tiếp bằng \(90^\circ\), cung bị chắn bằng \(180^\circ\). Cung nửa đường tròn nghĩa là dây chắn cung ấy là đường kính. Cách nhớ: góc nội tiếp chắn đường kính thì vuông.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Cung nhỏ \(100^\circ\). Góc ở tâm chắn cung ấy bằng \(100^\circ\). Góc nội tiếp chắn cùng cung bằng \(50^\circ\). Hai góc nội tiếp cùng chắn cung ấy thì bằng nhau, cùng \(50^\circ\), dù đỉnh nằm ở hai chỗ khác trên phần đường tròn còn lại.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Góc nội tiếp bằng \(90^\circ\) thì cung bị chắn bằng \(180^\circ\). Dây chắn cung ấy là đường kính. Ngược lại, nếu một cạnh của tam giác là đường kính và đỉnh kia nằm trên đường tròn, góc tại đỉnh ấy là góc vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Cung \(80^\circ\). Góc ở tâm bằng \(80^\circ\). Góc nội tiếp chắn cùng cung bằng \(40^\circ\), không phải \(80^\circ\). Viết bằng cả cung là nhầm với góc ở tâm.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Góc nội tiếp bằng nửa cung bị chắn. Góc ở tâm bằng cung. Góc nội tiếp chắn đường kính thì vuông.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Phần chứng minh dùng góc nội tiếp, không hỏi thuộc lòng định nghĩa. Năm 2026 cho tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). Góc chắn nửa đường tròn là góc vuông: đó là lý do góc \(A\) bằng \(90^\circ\) khi \(BC\) là đường kính. Các ý sau so góc nội tiếp cùng chắn một cung.</p>
       </div>
       <div class="warn">
@@ -2550,7 +2760,17 @@ const LESSONS = [
         <p>Đường tròn ngoại tiếp đi qua ba đỉnh. Tâm là trung điểm cạnh huyền, bán kính bằng nửa cạnh huyền: \(R = 5\) cm. Ba đỉnh đều cách tâm đúng 5 cm.</p>
         <p>Đường tròn nội tiếp tiếp xúc ba cạnh, bán kính \(r = \dfrac{6 + 8 - 10}{2} = 2\) cm. Kiểm tra bằng diện tích: \(\dfrac{6 \cdot 8}{2} = 24\), và bán kính nhân nửa chu vi cũng là \(2 \cdot 12 = 24\). Khớp.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác vuông cạnh 5 cm, 12 cm, cạnh huyền 13 cm. Đường tròn ngoại tiếp có bán kính bằng nửa cạnh huyền, \(R = 6{,}5\) cm. Tâm là trung điểm cạnh huyền. Đường tròn nội tiếp có bán kính \(r = \dfrac{5 + 12 - 13}{2} = 2\) cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Kiểm tra bán kính nội tiếp bằng diện tích. Diện tích tam giác là \(\dfrac{5 \cdot 12}{2} = 30\). Nửa chu vi là 15. \(r \cdot 15 = 2 \cdot 15 = 30\), khớp. Nếu nhầm tâm ngoại tiếp với giao các đường phân giác, bán kính sẽ không bằng nửa cạnh huyền.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tam giác vuông cạnh huyền 15 cm. Bán kính đường tròn ngoại tiếp là \(7{,}5\) cm, không phải 15 cm. Tâm là trung điểm cạnh huyền, không phải giao các đường phân giác. Giao các phân giác là tâm đường tròn nội tiếp.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Ngoại tiếp đi qua ba đỉnh, tâm là giao các đường trung trực. Nội tiếp chạm ba cạnh, tâm là giao các đường phân giác. Tam giác vuông: \(R\) bằng nửa cạnh huyền.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025: tam giác nhọn \(ABC\) nội tiếp đường tròn \((O)\). Tâm là giao các đường trung trực, đường cao cắt lại đường tròn tại điểm thứ hai. Năm 2026: tam giác vuông nội tiếp đường tròn đường kính cạnh huyền. Đó đúng tính chất đường tròn ngoại tiếp tam giác vuông của bài này.</p>
       </div>
       <div class="warn">
@@ -2615,7 +2835,17 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Tứ giác có các góc lần lượt \(70^\circ\), \(110^\circ\), \(110^\circ\), \(70^\circ\). Hai góc đối cộng lại \(70^\circ + 110^\circ = 180^\circ\). Tứ giác này nội tiếp được một đường tròn.</p>
         <p>Tứ giác khác có góc \(80^\circ\), \(100^\circ\), \(70^\circ\), \(110^\circ\). Một cặp đối cộng được \(80^\circ + 70^\circ = 150^\circ \neq 180^\circ\). Không nội tiếp được. Tổng bốn góc vẫn là \(360^\circ\), nhưng điều kiện cần từng cặp đối, không phải tổng cả bốn.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tứ giác có hai góc đối \(80^\circ\) và \(100^\circ\). Tổng \(180^\circ\), nội tiếp được. Tứ giác khác có hai góc đối \(70^\circ\) và \(100^\circ\). Tổng \(170^\circ \neq 180^\circ\), không nội tiếp được, dù tổng bốn góc vẫn là \(360^\circ\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình chữ nhật có mọi góc \(90^\circ\), hai góc đối cộng \(180^\circ\), luôn nội tiếp được. Hình thoi có một góc \(60^\circ\) thì góc đối cũng \(60^\circ\), tổng \(120^\circ \neq 180^\circ\). Hình thoi ấy không nội tiếp được một đường tròn, trừ khi nó là hình vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Bốn góc theo thứ tự \(100^\circ\), \(80^\circ\), \(70^\circ\), \(110^\circ\). Hai góc kề \(100^\circ + 80^\circ = 180^\circ\), nhưng góc đối là \(100^\circ + 70^\circ = 170^\circ \neq 180^\circ\). Tứ giác không nội tiếp được. Định lí không dùng góc kề.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tứ giác nội tiếp khi hai góc đối cộng \(180^\circ\). Tổng bốn góc luôn \(360^\circ\), không đủ để kết luận. Hình chữ nhật luôn nội tiếp được.</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Ý mở của phần hình thường là chứng minh bốn điểm đồng viên. Năm 2026, ý a: bốn điểm \(A, H, D, C\). Hai góc đối bằng \(90^\circ\), tổng \(180^\circ\), nên tứ giác nội tiếp. Năm 2024, ý 1: tứ giác \(ABOC\), với \(AB, AC\) là tiếp tuyến, cũng nội tiếp vì có hai góc vuông đối nhau. Năm 2025 hỏi bốn điểm \(E, D, B, K\).</p>
       </div>
       <div class="warn">
@@ -2686,6 +2916,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Lục giác đều bán kính 5 cm. Mỗi góc ở tâm \(60^\circ\), nên tam giác tâm-cạnh là tam giác đều. Mỗi cạnh bằng bán kính, 5 cm. Chu vi 30 cm. Hình thoi cạnh bằng nhau nhưng góc không bằng nhau, không phải đa giác đều. Hình chữ nhật góc bằng nhau nhưng cạnh không bằng nhau, cũng không phải.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Ngũ giác đều, góc ở tâm là \(\dfrac{360^\circ}{5} = 72^\circ\), không phải \(\dfrac{180^\circ}{5} = 36^\circ\). Góc trong là \(\dfrac{(5 - 2) \cdot 180^\circ}{5} = 108^\circ\). Chia nhầm 180 sẽ ra đa giác không khít vòng tròn.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đa giác đều cần cả cạnh bằng nhau và góc bằng nhau. Chia đường tròn thành \(n\) cung bằng \(\dfrac{360^\circ}{n}\).</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -2767,7 +3001,17 @@ const LESSONS = [
         <p><strong>Ví dụ làm chậm.</strong> Hình trụ bán kính đáy \(R = 3\) cm, chiều cao \(h = 5\) cm. Diện tích xung quanh \(S_{xq} = 2\pi \cdot 3 \cdot 5 = 30\pi\) cm²: trải phẳng được hình chữ nhật dài bằng chu vi đáy \(6\pi\), rộng 5. Thể tích \(V = \pi \cdot 9 \cdot 5 = 45\pi\) cm³.</p>
         <p>Hình nón bán kính đáy \(r = 3\) cm, chiều cao 4 cm. Đường sinh \(l = \sqrt{3^2 + 4^2} = 5\) cm. Không lấy chiều cao 4 cm làm đường sinh. \(S_{xq} = \pi \cdot 3 \cdot 5 = 15\pi\) cm². Thể tích bằng một phần ba hình trụ cùng đáy cùng cao: \(V = \dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³.</p>
       </div>
-      <div class="examq">
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình trụ bán kính 4 cm, cao 10 cm. Diện tích xung quanh \(S_{xq} = 2\pi \cdot 4 \cdot 10 = 80\pi\) cm². Thể tích \(V = \pi \cdot 16 \cdot 10 = 160\pi\) cm³. Trải ra được hình chữ nhật dài \(8\pi\), rộng 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình nón bán kính đáy 6 cm, cao 8 cm. Đường sinh \(l = \sqrt{6^2 + 8^2} = 10\) cm. Diện tích xung quanh dùng \(l\): \(\pi \cdot 6 \cdot 10 = 60\pi\) cm². Thể tích dùng \(h\), và có \(\dfrac{1}{3}\): \(\dfrac{1}{3}\pi \cdot 36 \cdot 8 = 96\pi\) cm³. Dùng nhầm \(h\) cho diện tích xung quanh sẽ ra \(48\pi\), sai.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Nón bán kính 3 cm, cao 4 cm, đường sinh 5 cm. Diện tích xung quanh là \(\pi \cdot 3 \cdot 5 = 15\pi\) cm². Dùng chiều cao sẽ ra \(12\pi\), sai. Thể tích là \(\dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³. Quên \(\dfrac{1}{3}\) sẽ ra thể tích hình trụ.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Nón: \(S_{xq} = \pi r l\), \(V = \dfrac{1}{3}\pi r^2 h\), \(l^2 = r^2 + h^2\).</p></div>
+<div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu IV.1.</strong> Ba năm liền đều là hình trụ, chưa hỏi hình nón. Năm 2026: xô cao 25 cm, bán kính đáy 12 cm, \(\pi\approx 3{,}14\). Tính diện tích xung quanh. Rồi múc 80% thể tích xô vào bể 150 lít, hỏi ít nhất bao nhiêu xô. Nhớ \(1\) lít \(= 1000\) cm³.</p>
         <p>Năm 2025: thùng bán kính 50 cm, cao 150 cm. Tính diện tích xung quanh, rồi thể tích nước khi mực hạ 40 cm. Năm 2024: bình bán kính 4 cm, cao 25 cm, chỉ hỏi diện tích xung quanh.</p>
       </div>
@@ -2854,6 +3098,10 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ thêm một bước.</strong> Đề ghi đường kính 10 cm thì \(R = 5\), không thế 10 vào công thức. Cắt bởi mặt phẳng cách tâm \(d = 3\) cm: bán kính mặt cắt \(\sqrt{5^2 - 3^2} = 4\) cm. Cách tâm 0 cm thì bán kính mặt cắt là 5 cm. Cách tâm 5 cm thì mặt phẳng chỉ chạm một điểm.</p>
       </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đường kính 14 cm thì \(R = 7\) cm. Diện tích mặt cầu \(S = 4\pi \cdot 49 = 196\pi\) cm². Thế 14 vào chỗ \(R\) thì \(R^2\) lớn gấp 4, diện tích sai gấp 4. Một mặt cắt qua tâm chỉ có diện tích \(49\pi\) cm², bằng một phần tư mặt cầu.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đề cho đường kính thì chia đôi. \(S = 4\pi R^2\), \(V = \dfrac{4}{3}\pi R^3\). Mặt cắt cách tâm \(d\) có bán kính \(\sqrt{R^2 - d^2}\).</p></div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
