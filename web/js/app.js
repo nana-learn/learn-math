@@ -165,17 +165,28 @@ function courseView(course) {
         ${course.chapters
           .map(
             (ch) => `
-          <article class="card">
+          <a class="card" href="#/g/${course.id}/ch/${ch.id}">
             <span class="stamp">Chương ${ch.id}</span>
             <h3>${escapeHtml(ch.title)}</h3>
             <p>${course.lessons.filter((l) => l.chapter === ch.id).length} bài</p>
-          </article>`
+          </a>`
           )
           .join("")}
       </div>`
         : ""
     }
   `;
+}
+
+function lessonLink(course, lesson, progress) {
+  const p = progress[lesson.id];
+  const mark = p ? `<span class="done">Đã làm ${p.score}/${p.total}</span>` : "";
+  return `
+    <a class="lesson-row" href="#/g/${course.id}/lesson/${lesson.id}">
+      <div class="meta"><span>Bài ${lesson.num}</span>${mark}</div>
+      <strong>${escapeHtml(lesson.title)}</strong>
+      <p>${escapeHtml(lesson.summary)}</p>
+    </a>`;
 }
 
 function lessonsView(course) {
@@ -188,23 +199,33 @@ function lessonsView(course) {
       <section>
         <h2>Chương ${ch.id}. ${escapeHtml(ch.title)}</h2>
         <div class="lesson-list">
-          ${items
-            .map((l) => {
-              const p = progress[l.id];
-              const mark = p ? `<span class="done">Đã làm ${p.score}/${p.total}</span>` : "";
-              return `
-                <a class="lesson-row" href="#/g/${course.id}/lesson/${l.id}">
-                  <div class="meta"><span>Bài ${l.num}</span>${mark}</div>
-                  <strong>${escapeHtml(l.title)}</strong>
-                  <p>${escapeHtml(l.summary)}</p>
-                </a>`;
-            })
-            .join("")}
+          ${items.map((l) => lessonLink(course, l, progress)).join("")}
         </div>
       </section>`;
     })
     .join("");
   return `<p class="back"><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>${blocks || `<p class="note">${escapeHtml(course.blurb)}</p>`}`;
+}
+
+function chapterView(course, chapterId) {
+  const ch = course.chapters.find((c) => String(c.id) === String(chapterId));
+  if (!ch) {
+    return `<p>Không tìm thấy chương.</p><p><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>`;
+  }
+  const items = course.lessons.filter((l) => String(l.chapter) === String(ch.id));
+  const progress = progressFor(course.id);
+  const rows = items.map((l) => lessonLink(course, l, progress)).join("");
+  return `
+    <p class="back"><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>
+    <section>
+      <span class="stamp">Chương ${ch.id}</span>
+      <h2>${escapeHtml(ch.title)}</h2>
+      ${
+        rows
+          ? `<div class="lesson-list">${rows}</div>`
+          : `<p class="note">Chương này chưa có bài học.</p>`
+      }
+    </section>`;
 }
 
 function lessonView(course, id) {
@@ -320,6 +341,7 @@ function render() {
 
   const lessonMatch = hash.match(/^\/g\/([^/]+)\/lesson\/([^/]+)/);
   const listMatch = hash.match(/^\/g\/([^/]+)\/lessons\/?$/);
+  const chapterMatch = hash.match(/^\/g\/([^/]+)\/ch\/([^/]+)\/?$/);
   const courseMatch = hash.match(/^\/g\/([^/]+)\/?$/);
 
   let course = null;
@@ -332,6 +354,11 @@ function render() {
     course = courseById(listMatch[1]);
     app.innerHTML = course
       ? lessonsView(course)
+      : `<p>Không tìm thấy lớp.</p><p><a href="#/">Về trang chủ</a></p>`;
+  } else if (chapterMatch) {
+    course = courseById(chapterMatch[1]);
+    app.innerHTML = course
+      ? chapterView(course, chapterMatch[2])
       : `<p>Không tìm thấy lớp.</p><p><a href="#/">Về trang chủ</a></p>`;
   } else if (courseMatch) {
     course = courseById(courseMatch[1]);
