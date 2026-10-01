@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–6 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
+// ví dụ làm chậm → luyện tập. Bài 1–10 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -724,36 +724,28 @@ const LESSONS = [
     num: 7,
     chapter: 3,
     title: "Căn bậc hai và căn thức bậc hai",
-    summary: "Căn bậc hai của số không âm; √(a²) = |a|; điều kiện xác định của căn thức.",
+    summary: "Bình phương không bao giờ âm, nên số âm không có căn bậc hai. Dấu √ chỉ lấy căn không âm.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Việc cạnh hình vuông khi biết diện tích 49 m²: cần một số mà <em>bình phương</em> lên bằng 49. Toán học đặt tên cho phép "hỏi ngược" ấy là khai căn bậc hai.</p>
+      <p>Hình vuông diện tích 49 m². Cạnh là một số không âm mà bình phương bằng 49. \(7^2 = 49\) và \((-7)^2 = 49\), nhưng cạnh không âm, nên cạnh là 7. Phép hỏi ngược của bình phương gọi là khai căn bậc hai.</p>
       <div class="definition">
-        <p><strong>Căn bậc hai</strong> của số thực không âm \(a\) là số thực \(x\) sao cho \(x^2 = a\).</p>
+        <p><strong>Căn bậc hai</strong> của số không âm \(a\) là số \(x\) sao cho \(x^2 = a\).</p>
       </div>
-      <p><strong>Nhận xét.</strong></p>
-      <ul>
-        <li>Số âm không có căn bậc hai;</li>
-        <li>Số 0 có một căn bậc hai duy nhất là 0;</li>
-        <li>Số dương \(a\) có đúng hai căn bậc hai đối nhau là \(\sqrt{a}\) (<em>căn bậc hai số học</em> của \(a\)) và \(-\sqrt{a}\).</li>
-      </ul>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Khai căn là "hỏi ngược": 9 bình phương ra 81, \((-9)\) cũng bình phương ra 81 — nên 81 có <em>hai</em> căn. Nhưng kí hiệu \(\sqrt{a}\) được quy ước <strong>chỉ dành cho căn không âm</strong>: \(\sqrt{81} = 9\), không bao giờ là \(-9\). Muốn nói căn âm phải tự viết dấu trừ: \(-\sqrt{81} = -9\).</p>
-      </div>
-      <div class="definition">
-        <p><strong>Tính chất:</strong> \(\sqrt{a^2} = |a|\) với mọi số thực \(a\).</p>
+        <p><strong>Vì sao số âm không có căn bậc hai?</strong> Bình phương của mọi số thực là 0 hoặc dương. Không có số nào bình phương ra \(-4\). Số 0 có đúng một căn, là 0. Số dương \(a\) có đúng hai căn, đối nhau: một dương và một âm, vì cả hai bình phương cho cùng một kết quả.</p>
+        <p>Kí hiệu \(\sqrt{a}\) chỉ dành cho căn không âm, gọi là căn bậc hai số học. \(\sqrt{81} = 9\), không bao giờ là \(-9\). Muốn nói căn âm phải tự viết dấu trừ: \(-\sqrt{81} = -9\). Đề hỏi "các căn bậc hai" thì trả lời cả hai. Đề hỏi \(\sqrt{a}\) thì chỉ trả lời số không âm.</p>
       </div>
       <div class="example">
-        <p>\(\sqrt{(-3)^2} = |-3| = 3\), nên \(\sqrt{(-3)^2} + 3 = 6\). Nếu viết \(\sqrt{(-3)^2} = -3\) thì đã sai — kết quả khai căn không thể âm.</p>
+        <p><strong>Vì sao \(\sqrt{a^2} = |a|\), không phải \(a\)?</strong> \(a^2\) không âm, nên căn tồn tại, và kết quả của dấu \(\sqrt{\ }\) phải không âm. Nếu \(a \geq 0\), kết quả là \(a\). Nếu \(a < 0\), kết quả là \(-a\). Cả hai trường hợp chính là \(|a|\).</p>
+        <p>\(\sqrt{(-3)^2} = |-3| = 3\), nên \(\sqrt{(-3)^2} + 3 = 6\). Viết \(\sqrt{(-3)^2} = -3\) là sai: dấu căn không trả về số âm.</p>
       </div>
       <div class="definition">
-        <p><strong>Căn thức bậc hai</strong> là biểu thức có dạng \(\sqrt{A}\), trong đó \(A\) là một biểu thức đại số; \(A\) được gọi là biểu thức lấy căn hoặc biểu thức dưới dấu căn.</p>
-        <p>\(\sqrt{A}\) xác định khi \(A\) lấy giá trị không âm và ta thường viết là \(A \geq 0\). Ta nói \(A \geq 0\) là <strong>điều kiện xác định</strong> (hay điều kiện có nghĩa) của \(\sqrt{A}\).</p>
+        <p>\(\sqrt{A}\) chỉ có nghĩa khi biểu thức dưới căn không âm: \(A \geq 0\). Đó là điều kiện xác định. \(\sqrt{2x - 1}\) chỉ sống khi \(2x - 1 \geq 0\), tức \(x \geq \dfrac{1}{2}\).</p>
       </div>
       <div class="memory">
-        <p><strong>Cách nhớ:</strong> "Căn hỏi bình phương — âm không có mặt. Dấu \(\sqrt{\ }\) chỉ dành cho <strong>không âm</strong>. Ra khỏi căn phải qua cửa \(|a|\)."</p>
+        <p><strong>Ba cửa.</strong> Dưới căn phải không âm. Dấu \(\sqrt{\ }\) chỉ cho ra số không âm. Ra khỏi \(\sqrt{a^2}\) phải đi qua \(|a|\).</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ làm chậm.</strong> Hình vuông diện tích 64 m² có cạnh \(\sqrt{64} = 8\) m. Không lấy \(-8\): độ dài không âm, và kí hiệu \(\sqrt{\ }\) chỉ chỉ căn không âm.</p>
+        <p><strong>Ví dụ làm chậm.</strong> Hình vuông diện tích 64 m² có cạnh \(\sqrt{64} = 8\) m. Không lấy \(-8\): độ dài không âm, và kí hiệu \(\sqrt{\ }\) chỉ lấy căn không âm.</p>
         <p>\(\sqrt{(-5)^2} = |-5| = 5\). Bình phương đã xoá dấu; căn số học không trả dấu âm lại. Viết \(\sqrt{(-5)^2} = -5\) là sai.</p>
         <p>\(\sqrt{3x - 6}\) chỉ có nghĩa khi \(3x - 6 \geq 0\), tức \(x \geq 2\). Với \(x = 2\), căn bằng 0. Với \(x = 1\), dưới căn là \(-3\), không có căn bậc hai.</p>
       </div>
@@ -797,31 +789,23 @@ const LESSONS = [
     num: 8,
     chapter: 3,
     title: "Khai căn bậc hai với phép nhân và phép chia",
-    summary: "√(AB) = √A·√B và √A : √B = √(A:B) với điều kiện xác định.",
+    summary: "Căn tách được qua nhân và chia, vì bình phương của tích là tích của các bình phương. Căn không tách qua phép cộng.",
     body: String.raw`
+      <p>Tính \(\sqrt{25 \cdot 49}\) bằng cách nhân 25 với 49 rồi tìm căn là mệt. Tách ra \(\sqrt{25} \cdot \sqrt{49} = 5 \cdot 7 = 35\) thì nhẩm được. Phép này đúng, nhưng chỉ với nhân và chia.</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Căn bậc hai chỉ chơi thân với nhân và chia: một tích/thương dưới dấu căn có thể <em>tách</em> thành từng mảnh rồi tính riêng, hoặc ngược lại <em>gom</em> nhiều căn thành một. Tính \(\sqrt{25 \cdot 49}\) thẳng tay là mệt; tách ra \(\sqrt{25}\cdot\sqrt{49} = 5 \cdot 7 = 35\) thì làm nhẩm được.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Khai căn bậc hai và phép nhân.</strong> Nếu \(A, B\) là các biểu thức với \(A \geq 0,\ B \geq 0\) thì</p>
-        \[
-          \sqrt{AB} = \sqrt{A} \cdot \sqrt{B}.
-        \]
-      </div>
-      <p><strong>Nhận xét.</strong> Nếu \(A \geq 0,\ B \geq 0,\ C \geq 0\) thì \(\sqrt{A^2 B^2 C^2} = ABC\).</p>
-      <div class="example">
-        <p>\(\sqrt{2^2 \cdot 3^2 \cdot 5^2} = \sqrt{2^2} \cdot \sqrt{3^2} \cdot \sqrt{5^2} = 2 \cdot 3 \cdot 5 = 30\).</p>
-        <p>Rút gọn \(\sqrt{25a^2b^2}\) với \(a \geq 0,\ b < 0\): \(\sqrt{25a^2b^2} = 5|a| \cdot |b| = -5ab\).</p>
-      </div>
-      <div class="definition">
-        <p><strong>Khai căn bậc hai và phép chia.</strong> Nếu \(A, B\) là các biểu thức với \(A \geq 0,\ B > 0\) thì</p>
-        \[
-          \frac{\sqrt{A}}{\sqrt{B}} = \sqrt{\frac{A}{B}}.
-        \]
+        <p><strong>Vì sao được tách tích?</strong> Nếu \(A \geq 0\) và \(B \geq 0\) thì \(\sqrt{A} \cdot \sqrt{B}\) không âm, và bình phương của nó là \(A \cdot B\). Số không âm mà bình phương bằng \(AB\) chính là \(\sqrt{AB}\). Vậy \(\sqrt{AB} = \sqrt{A} \cdot \sqrt{B}\).</p>
+        <p>Cộng thì không. \((\sqrt{9} + \sqrt{16})^2 = 9 + 16 + 2 \cdot 3 \cdot 4 = 49\), không phải 25. Nên \(\sqrt{9 + 16} = 5\), trong khi \(\sqrt{9} + \sqrt{16} = 7\). Căn không đi xuyên qua dấu cộng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ 5 (SGK).</strong> a) \(\sqrt{8} : \sqrt{2} = \sqrt{8 : 2} = \sqrt{4} = 2\).</p>
-        <p>b) Với \(a > 0\): \(\sqrt{52a^3} : \sqrt{13a} = \sqrt{52a^3 : 13a} = \sqrt{4a^2} = \sqrt{(2a)^2} = |2a| = 2a\).</p>
+        <p>\(\sqrt{2^2 \cdot 3^2 \cdot 5^2} = 2 \cdot 3 \cdot 5 = 30\), vì mỗi bình phương ra khỏi căn thành chính số dương ấy.</p>
+        <p>Với \(a \geq 0\) và \(b < 0\): \(\sqrt{25a^2b^2} = 5|a|\,|b|\). \(|b| = -b\), nên kết quả là \(-5ab\). Quên giá trị tuyệt đối sẽ sai dấu.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Chia cũng tách được.</strong> Nếu \(B > 0\) thì \(\dfrac{\sqrt{A}}{\sqrt{B}}\) không âm và bình phương của nó là \(\dfrac{A}{B}\). Đó chính là \(\sqrt{\dfrac{A}{B}}\).</p>
+      </div>
+      <div class="example">
+        <p>\(\sqrt{8} : \sqrt{2} = \sqrt{8 : 2} = \sqrt{4} = 2\).</p>
+        <p>Với \(a > 0\): \(\sqrt{52a^3} : \sqrt{13a} = \sqrt{4a^2} = |2a| = 2a\). Điều kiện \(a > 0\) mới được bỏ dấu giá trị tuyệt đối.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> \(\sqrt{16 \cdot 9} = \sqrt{16} \cdot \sqrt{9} = 4 \cdot 3 = 12\). Căn tách được qua phép nhân. Không được viết \(\sqrt{16} + \sqrt{9} = 7\): căn không tách qua phép cộng, và \(\sqrt{16 + 9} = 5\), không phải 7.</p>
@@ -868,31 +852,28 @@ const LESSONS = [
     num: 9,
     chapter: 3,
     title: "Biến đổi đơn giản và rút gọn biểu thức chứa căn thức bậc hai",
-    summary: "Đưa thừa số ra ngoài/vào trong dấu căn, khử mẫu của biểu thức lấy căn.",
+    summary: "Đưa thừa số chính phương ra ngoài căn. Số âm đi vào căn phải để dấu trừ ở ngoài. Chỉ cộng các căn cùng loại.",
     body: String.raw`
-      <p>Bộ ba thao tác cơ bản để "dọn dẹp" mọi biểu thức chứa căn bậc hai: <em>đưa ra ngoài</em>, <em>khử mẫu</em>, <em>đưa vào trong</em>.</p>
-      <div class="definition">
-        <p><strong>Đưa thừa số ra ngoài dấu căn.</strong> Với \(b \geq 0\): \(\sqrt{a^2 b} = |a|\sqrt{b}\).</p>
+      <p>\(\sqrt{12}\) đã là một số, nhưng \(2\sqrt{3}\) gọn hơn và dễ cộng tiếp. Ba thao tác dùng đi dùng lại: đưa thừa số ra ngoài, khử mẫu dưới căn, đưa thừa số vào trong.</p>
+      <div class="idea">
+        <p><strong>Đưa ra ngoài.</strong> Tìm thừa số chính phương lớn nhất dưới căn: 4, 9, 16, 25, … Phần ấy "xuống" được. Với \(b \geq 0\),</p>
+        \[
+          \sqrt{a^2 b} = |a|\sqrt{b}.
+        \]
+        <p>Có \(|a|\) vì kết quả của dấu căn không âm. \(\sqrt{12} = \sqrt{4 \cdot 3} = 2\sqrt{3}\). \(3\sqrt{27} = 3\sqrt{9 \cdot 3} = 9\sqrt{3}\). \(5\sqrt{48} = 5\sqrt{16 \cdot 3} = 20\sqrt{3}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Khử mẫu dưới căn.</strong> \(\sqrt{\dfrac{4}{7}}\) còn mẫu trong căn. Nhân tử và mẫu với 7 để mẫu thành số chính phương:</p>
+        \[
+          \sqrt{\dfrac{4}{7}} = \sqrt{\dfrac{4 \cdot 7}{7^2}} = \sqrt{\left(\dfrac{2}{7}\right)^2 \cdot 7} = \dfrac{2\sqrt{7}}{7}.
+        \]
+        <p>Giá trị không đổi, chỉ dạng gọn hơn. Kiểm tra thô: \(\sqrt{4/7} \approx 0{,}76\) và \(2\sqrt{7}/7 \approx 0{,}76\).</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Tìm trong biểu thức dưới dấu căn các <em>thừa số chính phương</em> (4, 9, 16, 25, …) — đó là những phần "xuống được": \(\sqrt{12} = \sqrt{4 \cdot 3} = 2\sqrt{3}\). Căn bậc hai của 12 tồn tại nhưng \(2\sqrt{3}\) nhìn gọn và tính tiếp dễ hơn.</p>
+        <p><strong>Đưa vào trong.</strong> Nếu \(a \geq 0\) và \(b \geq 0\) thì \(a\sqrt{b} = \sqrt{a^2 b}\). Nếu \(a < 0\), dấu căn không tạo được số âm, nên dấu trừ phải đứng ngoài: \(a\sqrt{b} = -\sqrt{a^2 b}\).</p>
+        <p>Bạn Vuông viết \(\sqrt{(-2)^2 \cdot 5} = -2\sqrt{5}\). Sai. \(\sqrt{(-2)^2 \cdot 5} = |-2|\sqrt{5} = 2\sqrt{5}\). Kết quả khai căn không âm.</p>
+        <p>Chỉ cộng được các căn <em>cùng loại</em>, cùng biểu thức dưới căn: \(\sqrt{2} + 3\sqrt{2} = 4\sqrt{2}\), như cộng 1 quả và 3 quả. \(\sqrt{2} + \sqrt{3}\) không gộp thành \(\sqrt{5}\).</p>
       </div>
-      <div class="example">
-        <p>\(\sqrt{12} = \sqrt{2^2 \cdot 3} = 2\sqrt{3}\); &nbsp; \(3\sqrt{27} = 3\sqrt{3^2 \cdot 3} = 9\sqrt{3}\); &nbsp; \(5\sqrt{48} = 5\sqrt{4^2 \cdot 3} = 20\sqrt{3}\).</p>
-      </div>
-      <p><strong>Chú ý (khử mẫu của biểu thức lấy căn — SGK).</strong> Khi tính toán với những căn thức bậc hai mà biểu thức dưới dấu căn có mẫu, ta thường khử mẫu của biểu thức lấy căn — tức biến đổi căn thức đó thành một biểu thức mà trong căn thức không còn mẫu:</p>
-      <div class="example">
-        <p>\(\sqrt{\dfrac{4}{7}} = \sqrt{\dfrac{4 \cdot 7}{7^2}} = \sqrt{\left(\dfrac{2}{7}\right)^2 \cdot 7} = \dfrac{2\sqrt{7}}{7}\).</p>
-      </div>
-      <div class="definition">
-        <p><strong>Đưa thừa số vào trong dấu căn.</strong></p>
-        <ul>
-          <li>Nếu \(a\) và \(b\) là hai số không âm thì \(a\sqrt{b} = \sqrt{a^2 b}\).</li>
-          <li>Nếu \(a\) là số âm và \(b\) là số không âm thì \(a\sqrt{b} = -\sqrt{a^2 b}\).</li>
-        </ul>
-      </div>
-      <p><strong>Tranh luận (SGK).</strong> Bạn Vuông viết \(\sqrt{(-2)^2 \cdot 5} = -2\sqrt{5}\). Bạn có đồng ý không? <em>Không</em> — vì \(\sqrt{(-2)^2 \cdot 5} = |{-2}|\sqrt{5} = 2\sqrt{5}\); kết quả khai căn không bao giờ âm.</p>
-      <p>Hai căn thức bậc hai gọi là <em>đồng dạng</em> nếu có cùng biểu thức lấy căn; khi đó có thể cộng, trừ chúng như cộng, trừ các đơn thức đồng dạng, ví dụ \(\sqrt{2} + 3\sqrt{2} = 4\sqrt{2}\).</p>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Rút gọn \(\sqrt{72}\). Tìm thừa số chính phương: \(72 = 36 \cdot 2\), nên \(\sqrt{72} = 6\sqrt{2}\).</p>
         <p>Khử mẫu: \(\sqrt{\dfrac{9}{2}} = \sqrt{\dfrac{18}{4}} = \dfrac{\sqrt{18}}{2} = \dfrac{3\sqrt{2}}{2}\). Mẫu đã ra khỏi dấu căn.</p>
@@ -938,28 +919,24 @@ const LESSONS = [
     num: 10,
     chapter: 3,
     title: "Căn bậc ba và căn thức bậc ba",
-    summary: "Mọi số thực đều có duy nhất một căn bậc ba; (∛a)³ = ∛(a³) = a.",
+    summary: "Lập phương giữ nguyên dấu, nên mọi số thực có đúng một căn bậc ba. Không lấy giá trị tuyệt đối.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Hình lập phương thể tích 27 cm³ có cạnh bao nhiêu? Lại là câu hỏi "hỏi ngược": số nào <em>lập phương</em> lên bằng 27? Đây là phép khai căn bậc ba.</p>
-      <div class="definition">
-        <p><strong>Căn bậc ba</strong> của số thực \(a\) là số thực \(x\) thoả mãn \(x^3 = a\).</p>
-      </div>
-      <p><strong>Chú ý.</strong> Mỗi số \(a\) đều có duy nhất một căn bậc ba. Căn bậc ba của số \(a\) được kí hiệu là \(\sqrt[3]{a}\). Trong kí hiệu \(\sqrt[3]{a}\), số 3 được gọi là <em>chỉ số của căn</em>. Phép tìm căn bậc ba của một số gọi là <em>phép khai căn bậc ba</em>.</p>
+      <p>Khối lập phương thể tích 27 cm³ có cạnh bao nhiêu? Cần số \(x\) sao cho \(x^3 = 27\). \(3^3 = 27\). \((-3)^3 = -27\), không phải 27. Chỉ có một số lập phương ra 27, là 3. Đó là căn bậc ba.</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> So với căn bậc hai, căn bậc ba "rộng rãi" hơn nhiều: bình phương luôn ra số không âm nên số âm không có căn bậc hai; nhưng lập phương giữ nguyên dấu — \((-3)^3 = -27\) — nên <strong>mọi số thực, kể cả số âm, đều có đúng một căn bậc ba</strong>: \(\sqrt[3]{-27} = -3\).</p>
+        <p><strong>Khác căn bậc hai ở chỗ dấu.</strong> Bình phương xoá dấu, nên số âm không có căn bậc hai, và số dương có hai căn. Lập phương giữ dấu: số dương lập phương ra dương, số âm lập phương ra âm. Mỗi số thực, kể cả số âm, có đúng một căn bậc ba. \(\sqrt[3]{-27} = -3\), và biểu thức này có nghĩa.</p>
       </div>
       <div class="example">
-        <p>Vì \(4^3 = 64\) nên \(\sqrt[3]{64} = 4\). Vì \(0^3 = 0\) nên \(\sqrt[3]{0} = 0\). Vì \((-3)^3 = -27\) nên \(\sqrt[3]{-27} = -3\).</p>
+        <p>\(4^3 = 64\) nên \(\sqrt[3]{64} = 4\). \(0^3 = 0\) nên \(\sqrt[3]{0} = 0\). \((-3)^3 = -27\) nên \(\sqrt[3]{-27} = -3\). Không có "căn đối" thứ hai.</p>
       </div>
       <div class="definition">
-        <p><strong>Nhận xét.</strong> Từ định nghĩa căn bậc ba, ta có</p>
+        <p>Vì chỉ có một căn, lập phương và khai căn bậc ba xoá nhau với mọi số thực, không cần giá trị tuyệt đối:</p>
         \[
-          \bigl(\sqrt[3]{a}\bigr)^3 = \sqrt[3]{a^3} = a \quad \text{với mọi số thực } a.
+          \bigl(\sqrt[3]{a}\bigr)^3 = \sqrt[3]{a^3} = a.
         \]
+        <p>\(\sqrt[3]{A}\) xác định với mọi \(A\). \(\sqrt[3]{-8} = -2\) vẫn có nghĩa. Đây là chỗ khác hẳn \(\sqrt{A}\), vốn đòi \(A \geq 0\).</p>
       </div>
-      <p><strong>Căn thức bậc ba</strong> là biểu thức có dạng \(\sqrt[3]{A}\), trong đó \(A\) là một biểu thức đại số. Khác với căn thức bậc hai, \(\sqrt[3]{A}\) xác định với mọi giá trị của \(A\) — ví dụ \(\sqrt[3]{-8} = -2\) vẫn có nghĩa.</p>
       <div class="memory">
-        <p><strong>Cách nhớ:</strong> "<em>Căn bậc hai kén chọn (chỉ nhận không âm), căn bậc ba dễ tính (ai cũng có một căn).</em>"</p>
+        <p><strong>Cách nhớ.</strong> Căn bậc hai kén: chỉ nhận số không âm, và dấu \(\sqrt{\ }\) chỉ trả số không âm. Căn bậc ba nhận mọi số, và trả về đúng dấu của số ấy.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Khối lập phương thể tích 64 cm³ có cạnh \(\sqrt[3]{64}\). Vì \(4^3 = 64\), cạnh bằng 4 cm. Chỉ một đáp số: căn bậc ba không có cặp đối nhau như căn bậc hai.</p>
@@ -1040,7 +1017,11 @@ const LESSONS = [
         <p><strong>Cách nhớ</strong> (viết tắt đầu chữ): Sin = <strong>Đ</strong>ối/<strong>H</strong>uyền, Cos = <strong>K</strong>ề/<strong>H</strong>uyền, Tan = <strong>Đ</strong>ối/<strong>K</strong>ề, Cot = <strong>K</strong>ề/<strong>Đ</strong>ối → "<em>Đề Hà Khỏe, Khỏe Đề Kề</em>" hay bốn cặp: ĐH – KH – ĐK – KĐ.</p>
       </div>
       <p><strong>Chú ý.</strong> \(\cot\alpha = \dfrac{1}{\tan\alpha}\), và \(\tan\alpha = \dfrac{\sin\alpha}{\cos\alpha}\). Trong tam giác vuông, \(\sin\alpha\) và \(\cos\alpha\) luôn dương và bé hơn 1 vì cạnh huyền dài nhất.</p>
-      <p><strong>Giá trị lượng giác của các góc \(30^\circ, 45^\circ, 60^\circ\)</strong> (chứng minh bằng tam giác vuông cân và tam giác đều trong SGK):</p>
+      <div class="idea">
+        <p><strong>Vì sao góc như nhau thì tỉ số như nhau?</strong> Phóng to tam giác vuông, mọi cạnh nhân cùng một số. Tử và mẫu của tỉ số đều nhân số ấy, nên tỉ số không đổi. Độ dốc là tính chất của góc, không phải của chiếc tam giác đang cầm trên tay.</p>
+        <p><strong>Số \(\dfrac{1}{2}\) từ đâu ra?</strong> Tam giác đều cạnh 2, mọi góc \(60^\circ\). Kẻ đường cao, được hai tam giác vuông. Cạnh huyền vẫn là 2, cạnh đối của góc \(30^\circ\) là 1. Vậy \(\sin 30^\circ = \dfrac{1}{2}\). Góc kề với cạnh ấy là \(60^\circ\), nên \(\cos 60^\circ\) cũng bằng \(\dfrac{1}{2}\). Hai góc phụ nhau đổi vai đối và kề, nên sin góc này bằng cos góc kia.</p>
+      </div>
+      <p><strong>Giá trị lượng giác của các góc \(30^\circ, 45^\circ, 60^\circ\)</strong>:</p>
       <table>
         <tr><th>\(\alpha\)</th><th>\(30^\circ\)</th><th>\(45^\circ\)</th><th>\(60^\circ\)</th></tr>
         <tr><td>\(\sin\alpha\)</td><td>\(\dfrac{1}{2}\)</td><td>\(\dfrac{\sqrt{2}}{2}\)</td><td>\(\dfrac{\sqrt{3}}{2}\)</td></tr>
