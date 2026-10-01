@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–10 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
+// ví dụ làm chậm → luyện tập. Bài 1–15 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -1096,13 +1096,13 @@ const LESSONS = [
     num: 12,
     chapter: 4,
     title: "Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng",
-    summary: "Cạnh góc vuông theo huyền và sin/cos; theo cạnh góc vuông kia và tan/cot; giải tam giác vuông.",
+    summary: "Đảo tỉ số lượng giác để tìm cạnh: huyền đi với sin hoặc cos, cạnh kia đi với tan hoặc cot.",
     body: String.raw`
-      <p>Bài 11 cho ta tỉ số; bài này biến tỉ số thành <strong>công cụ tính cạnh</strong>: biết cạnh nào, góc nào thì tìm được cạnh còn lại — đó là cách người ta đo chiều cao toà nhà mà không cần trèo lên.</p>
-      <p>Cho tam giác \(ABC\) vuông tại \(A\), cạnh huyền \(a\) và hai cạnh góc vuông \(b\), \(c\).</p>
-      <div class="definition">
-        <p><strong>Định lí 1.</strong> Trong tam giác vuông, mỗi cạnh góc vuông bằng cạnh huyền nhân với sin góc đối hoặc nhân với côsin góc kề.</p>
-        <p><strong>Chú ý.</strong> Trong tam giác \(ABC\) vuông tại \(A\): \(b = a \cdot \sin B = a \cdot \cos C\); &nbsp; \(c = a \cdot \sin C = a \cdot \cos B\).</p>
+      <p>Bài trước cho tỉ số. Bài này đảo tỉ số lại để tìm cạnh. Đó là cách đo chiều cao mà không trèo lên.</p>
+      <p>Tam giác \(ABC\) vuông tại \(A\). Cạnh huyền là \(a\), cạnh đối của góc \(B\) là \(b\), cạnh kề của góc \(B\) là \(c\).</p>
+      <div class="idea">
+        <p><strong>Công thức không phải phép mới.</strong> Theo định nghĩa, \(\sin B = \dfrac{b}{a}\). Nhân hai vế với \(a\): \(b = a \sin B\). Cạnh \(b\) cũng là cạnh kề của góc \(C\), nên \(\cos C = \dfrac{b}{a}\) và \(b = a \cos C\). Cùng cách, \(c = a \sin C = a \cos B\).</p>
+        <p>\(\tan B = \dfrac{b}{c}\), nên \(b = c \tan B\). Huyền đi với sin hoặc cos. Cạnh góc vuông kia đi với tan hoặc cot. Nhầm sin của góc kề sẽ ra cạnh sai.</p>
       </div>
       <figure class="figure">
         <svg viewBox="0 0 360 205" role="img" aria-label="Tam giác vuông với các cạnh a, b, c">
@@ -1119,24 +1119,21 @@ const LESSONS = [
         </svg>
         <figcaption>\(b = a\sin B = a\cos C\) và \(c = a\sin C = a\cos B\); &nbsp; \(b = c\tan B = c\cot C\), \(c = b\tan C = b\cot B\).</figcaption>
       </figure>
+      <div class="example">
+        <p><strong>Máy bay.</strong> Bay 500 km/h, đường bay nghiêng \(30^\circ\) so với mặt ngang. Sau 1,2 phút. Đổi giờ trước: \(1{,}2\) phút \(= \dfrac{1{,}2}{60} = \dfrac{1}{50}\) giờ. Quãng đường bay \(AB = 500 \cdot \dfrac{1}{50} = 10\) km. Đó là cạnh huyền. Độ cao là cạnh đối của góc \(30^\circ\):</p>
+        \[
+          h = 10 \cdot \sin 30^\circ = 10 \cdot \dfrac{1}{2} = 5\ \text{km}.
+        \]
+        <p>Không nhân 500 với 1,2: vận tốc tính theo giờ, thời gian đang tính theo phút.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bóng tháp.</strong> Biết bóng, tức cạnh kề, dài 8,6 m. Tia nắng tạo với đất góc \(34^\circ\). Cần cạnh đối. Bạn của cạnh kề là tan: \(h = 8{,}6 \cdot \tan 34^\circ \approx 6\) m. Máy tính phải để độ (DEG), không để radian.</p>
+      </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Muốn tính một cạnh góc vuông, nhìn xem <em>bạn của nó là ai</em>: cạnh huyền → dùng sin (góc đối) hoặc cos (góc kề); cạnh góc vuông kia → dùng tan (góc đối) hoặc cot (góc kề). Huyền thì "sin/cos", kề thì "tan/cot".</p>
+        <p><strong>Giải tam giác vuông</strong> là tìm hết cạnh và góc còn thiếu, khi đã biết hai yếu tố và trong đó có ít nhất một cạnh. Tỉ số chỉ cho góc, không cho độ dài. Không có một cạnh thì không ra được mét.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ 1 (SGK).</strong> Một máy bay bay lên với vận tốc 500 km/h, đường bay tạo với phương ngang góc \(30^\circ\). Sau 1,2 phút (\(= \tfrac{1}{50}\) giờ), máy bay đi được \(AB = 500 \cdot \tfrac{1}{50} = 10\) km (đường bay = cạnh huyền). Theo Định lí 1, độ cao \(BH = AB \cdot \sin 30^\circ = 10 \cdot \tfrac{1}{2} = 5\) km.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Định lí 2.</strong> Trong tam giác vuông, mỗi cạnh góc vuông bằng cạnh góc vuông kia nhân với tang góc đối hoặc nhân với cốtang góc kề.</p>
-        <p><strong>Chú ý.</strong> \(b = c \cdot \tan B = c \cdot \cot C\); &nbsp; \(c = b \cdot \tan C = b \cdot \cot B\).</p>
-      </div>
-      <div class="example">
-        <p><strong>Ví dụ 2 (SGK).</strong> Tia nắng tạo với mặt đất góc \(34^\circ\), bóng của toà tháp dài 8,6 m. Độ cao của tháp (đối diện góc \(34^\circ\)) là \(h = 8{,}6 \cdot \tan 34^\circ \approx 6\) m.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Giải tam giác vuông</strong> là tìm các cạnh và các góc (chưa biết) của tam giác vuông khi biết hai yếu tố (trong đó có ít nhất một cạnh). Ta dùng định lí Pythagore cùng Định lí 1, Định lí 2.</p>
-      </div>
-      <div class="example">
-        <p><strong>Ví dụ 3 (SGK).</strong> Tam giác vuông \(ABC\) vuông tại \(A\), \(AB = 5\), \(AC = 8\). Theo Pythagore: \(BC = \sqrt{5^2 + 8^2} \approx 9{,}4\). Ta có \(\tan C = \dfrac{AB}{AC} = \dfrac{5}{8} = 0{,}625\), suy ra \(\widehat{C} \approx 32^\circ\) và \(\widehat{B} \approx 90^\circ - 32^\circ = 58^\circ\).</p>
+        <p>Vuông tại \(A\), \(AB = 5\), \(AC = 8\). Pythagore: cạnh huyền \(BC = \sqrt{25 + 64} = \sqrt{89} \approx 9{,}4\). Góc \(C\) có cạnh đối \(AB = 5\) và cạnh kề \(AC = 8\), nên \(\tan C = \dfrac{5}{8} = 0{,}625\), \(\widehat{C} \approx 32^\circ\). Hai góc nhọn phụ nhau: \(\widehat{B} \approx 90^\circ - 32^\circ = 58^\circ\).</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tam giác \(ABC\) vuông tại \(A\), cạnh huyền \(a = 10\) cm, góc \(B = 30^\circ\). Cạnh đối của \(B\) là \(b\).</p>
@@ -1184,15 +1181,14 @@ const LESSONS = [
     num: 13,
     chapter: 5,
     title: "Mở đầu về đường tròn",
-    summary: "Định nghĩa đường tròn (O; R), vị trí điểm so với đường tròn, tính đối xứng.",
+    summary: "Đường tròn là ranh giới các điểm cách tâm đúng R. So OM với R để biết điểm ở trong, trên, hay ngoài.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Bạn Oanh có một mảnh giấy hình tròn nhưng mất dấu tâm. Làm sao tìm lại tâm? Bài này cho em công cụ để trả lời: hiểu rõ đường tròn là gì và nó đối xứng ra sao.</p>
+      <p>Mảnh giấy tròn mất dấu tâm. Muốn tìm lại, phải biết đường tròn là gì, không phải chỉ "hình tròn".</p>
       <div class="definition">
-        <p><strong>Đường tròn</strong> tâm \(O\) bán kính \(R\) (\(R > 0\)), kí hiệu là \((O;\ R)\), là hình gồm tất cả các điểm cách điểm \(O\) một khoảng bằng \(R\).</p>
-        <p>Khi không cần để ý đến bán kính ta kí hiệu đường tròn tâm \(O\) là \((O)\). Nếu \(A\) là một điểm của đường tròn \((O)\) thì ta viết \(A \in (O)\).</p>
+        <p><strong>Đường tròn</strong> tâm \(O\) bán kính \(R\) (\(R > 0\)), kí hiệu \((O;\ R)\), là tập các điểm cách \(O\) đúng \(R\). Compa vẽ đúng tập ấy: chấu tại \(O\), mở \(R\), xoay một vòng. Đường tròn là <em>ranh giới</em>. Miếng giấy, gồm cả phần bên trong, là <em>hình tròn</em>.</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Đường tròn là <em>ranh giới</em>; còn toàn bộ miếng giấy (ranh giới + bên trong) là <em>hình tròn</em>. Compa chính là "máy vẽ đường tròn": chấu compa ghim ở tâm, mở một khoảng \(R\), xoay một vòng.</p>
+        <p><strong>Một phép so sánh.</strong> Lấy điểm \(M\). Nếu \(OM = R\), \(M\) nằm trên đường tròn. Nếu \(OM < R\), compa chưa với tới ranh giới, \(M\) ở trong. Nếu \(OM > R\), \(M\) ở ngoài. Không cần vẽ hết hình.</p>
       </div>
       <figure class="figure">
         <svg viewBox="0 0 260 220" role="img" aria-label="Vị trí điểm so với đường tròn">
@@ -1301,7 +1297,9 @@ const LESSONS = [
         <figcaption>Góc ở tâm \(\alpha\) chắn cung; cung nhỏ có số đo \(&lt; 180^\circ\), cung lớn \(&gt; 180^\circ\).</figcaption>
       </figure>
       <p><strong>Chú ý (SGK).</strong> Khi góc \(AOB\) không bẹt thì cung nằm trong góc \(AOB\) gọi là <em>cung nhỏ</em> (kí hiệu gọn \(\widehat{AB}\)); cung còn lại gọi là <em>cung lớn</em>. Khi góc \(AOB\) bẹt thì mỗi cung \(AB\) được gọi là một <em>nửa đường tròn</em>. Ta còn nói góc \(AOB\) <em>chắn</em> cung \(AB\) hay cung \(AB\) <em>bị chắn</em> bởi góc \(AOB\).</p>
-      <p><strong>Số đo của cung:</strong> số đo của cung nhỏ bằng số đo của góc ở tâm chắn cung đó (nghĩa là nhỏ hơn \(180^\circ\)); số đo của cung lớn bằng \(360^\circ\) trừ số đo của cung nhỏ.</p>
+      <div class="idea">
+        <p><strong>Vì sao số đo cung bằng số đo góc ở tâm?</strong> Cung không có thước đo riêng. Ta mượn góc ở tâm chắn cung ấy. Góc \(120^\circ\) chắn cung nhỏ \(120^\circ\). Cung lớn là phần còn lại của vòng tròn, nên bằng \(360^\circ - 120^\circ = 240^\circ\), không phải gấp đôi.</p>
+      </div>
       <div class="example">
         <p>Cho \(\widehat{AOB} = 120^\circ\) với \(O\) là tâm. Khi đó cung nhỏ \(AB\) có số đo \(120^\circ\); cung lớn \(AmB\) có số đo \(360^\circ - 120^\circ = 240^\circ\).</p>
       </div>
@@ -1356,7 +1354,8 @@ const LESSONS = [
     body: String.raw`
       <p>Tỉ số giữa chu vi và đường kính của một đường tròn luôn bằng một số vô tỉ không đổi gọi là số \(\pi\) (đọc là pi); trong đời sống ta thường lấy \(\pi \approx 3{,}14\).</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Cung \(n^\circ\) là mảnh \(\dfrac{n}{360}\) của "cái bánh" tròn. Muốn độ dài cung: lấy chu vi nhân \(\dfrac{n}{360}\). Muốn diện tích mảnh quạt: lấy diện tích hình tròn nhân \(\dfrac{n}{360}\). Một công thức, hai lần dùng!</p>
+        <p><strong>Một mảnh của vòng tròn.</strong> Cung \(n^\circ\) là \(\dfrac{n}{360}\) vòng. Chu vi là \(2\pi R\), nên độ dài cung là \(\dfrac{n}{360} \cdot 2\pi R = \dfrac{n}{180}\pi R\). Số 180 xuất hiện vì \(2\) và \(360\) rút gọn, không phải vì cung dùng nửa vòng. Diện tích quạt là cùng tỉ lệ ấy của diện tích hình tròn: \(\dfrac{n}{360}\pi R^2\). Cung lấy phần chu vi, quạt lấy phần diện tích.</p>
+        <p>\(S_q = \dfrac{l R}{2}\) là cùng công thức viết khác: thay \(l = \dfrac{n}{180}\pi R\) vào thì ra \(\dfrac{n}{360}\pi R^2\). Nhớ một, kiểm tra bằng cái kia.</p>
       </div>
       <div class="definition">
         <p>Độ dài \(C\) của đường tròn \((O;\ R)\), đường kính \(d = 2R\):</p>
