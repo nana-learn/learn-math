@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–3 viết lại cho hiểu; mỗi bài có thêm một ví dụ làm chậm.
+// ví dụ làm chậm → luyện tập. Bài 1–6 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -486,33 +486,31 @@ const LESSONS = [
     num: 4,
     chapter: 2,
     title: "Phương trình quy về phương trình bậc nhất một ẩn",
-    summary: "Giải phương trình tích và phương trình chứa ẩn ở mẫu thức.",
+    summary: "Tích bằng 0 thì một nhân tử bằng 0. Khử mẫu có thể sinh nghiệm giả: phải loại giá trị làm mẫu bằng 0.",
     body: String.raw`
-      <p>Hai dạng phương trình hay gặp mà chỉ cần một "chiêu" đưa về phương trình bậc nhất: <strong>tách nhân tử</strong> và <strong>khử mẫu</strong>.</p>
+      <p>Nhiều phương trình trông rối, nhưng chỉ cần đưa về phương trình bậc nhất đã biết giải. Hai đường hay gặp: phương trình tích, và phương trình có ẩn ở mẫu.</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh (phương trình tích).</strong> Tích hai số bằng 0 thì <em>ít nhất một</em> trong hai số bằng 0. Vậy \((ax+b)(cx+d)=0\) "tra tấn" ta phải xét hai trường hợp nhỏ, mỗi trường hợp là một phương trình bậc nhất quen thuộc.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Phương trình tích.</strong> Để giải phương trình tích \((ax + b)(cx + d) = 0\), ta giải hai phương trình \(ax + b = 0\) và \(cx + d = 0\). Sau đó lấy tất cả các nghiệm của chúng.</p>
+        <p><strong>Vì sao tích bằng 0 thì một thừa số bằng 0?</strong> Nếu cả hai số đều khác 0, tích của chúng khác 0. Muốn tích bằng 0, ít nhất một thừa số phải bằng 0. Phương trình \((ax + b)(cx + d) = 0\) vì vậy tách thành hai phương trình bậc nhất: \(ax + b = 0\) hoặc \(cx + d = 0\). Lấy cả hai nghiệm, không bỏ nghiệm âm.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ 1 (SGK).</strong> \((2x + 1)(3x - 1) = 0\) nên \(2x + 1 = 0\) hoặc \(3x - 1 = 0\), suy ra \(x = -\dfrac{1}{2}\) hoặc \(x = \dfrac{1}{3}\).</p>
-        <p><strong>Ví dụ 2 (SGK).</strong> Giải \(x^2 - x = -2x + 2\): chuyển vế \(x^2 - x + 2x - 2 = 0\), phân tích theo nhóm \(x(x - 1) + 2(x - 1) = 0\), tức \((x + 2)(x - 1) = 0\). Suy ra \(x = -2\) hoặc \(x = 1\).</p>
-      </div>
-      <div class="definition">
-        <p><strong>Cách giải phương trình chứa ẩn ở mẫu thức:</strong></p>
-        <p><em>Bước 1.</em> Tìm điều kiện xác định của phương trình.</p>
-        <p><em>Bước 2.</em> Quy đồng mẫu hai vế của phương trình rồi khử mẫu.</p>
-        <p><em>Bước 3.</em> Giải phương trình vừa tìm được.</p>
-        <p><em>Bước 4 (Kết luận).</em> Trong các giá trị tìm được của ẩn ở Bước 3, giá trị nào thoả mãn điều kiện xác định chính là nghiệm của phương trình đã cho.</p>
-      </div>
-      <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Bước 4 là "cửa kiểm tra": khi khử mẫu ta đã <em>nhân cả hai vế với biểu thức chứa ẩn</em> — phép nhân đó có thể tạo ra "nghiệm giả" làm mẫu số bằng 0. Giá trị làm mẫu bằng 0 thì phương trình gốc chẳng có nghĩa gì, phải loại.</p>
+        <p><strong>Làm chậm một phương trình tích.</strong> Giải \((2x + 1)(3x - 1) = 0\).</p>
+        <p>Trường hợp 1: \(2x + 1 = 0\), \(x = -\dfrac{1}{2}\). Trường hợp 2: \(3x - 1 = 0\), \(x = \dfrac{1}{3}\).</p>
+        <p>Kiểm tra. Với \(x = -\dfrac{1}{2}\), thừa số thứ nhất bằng 0 nên tích bằng 0. Với \(x = \dfrac{1}{3}\), thừa số thứ hai bằng 0. Cả hai đều là nghiệm.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ 4 (SGK).</strong> Giải \(\dfrac{2}{x + 1} + \dfrac{1}{x - 2} = \dfrac{3}{(x + 1)(x - 2)}\).</p>
-        <p>Điều kiện xác định: \(x \neq -1\) và \(x \neq 2\). Quy đồng, khử mẫu: \(2(x - 2) + (x + 1) = 3\), giải được \(x = 2\).</p>
-        <p>Nhưng \(x = 2\) <strong>không</strong> thoả mãn điều kiện xác định. Vậy phương trình đã cho vô nghiệm.</p>
+        <p><strong>Khi đề chưa viết sẵn dạng tích.</strong> Giải \(x^2 - x = -2x + 2\).</p>
+        <p>Chuyển hết sang một vế, nhớ đổi dấu: \(x^2 - x + 2x - 2 = 0\), tức \(x^2 + x - 2 = 0\). Nhóm: \(x(x - 1) + 2(x - 1) = 0\), nên \((x + 2)(x - 1) = 0\).</p>
+        <p>Vậy \(x = -2\) hoặc \(x = 1\). Kiểm tra vào phương trình gốc. \(x = -2\): vế trái \(4 - (-2) = 6\), vế phải \(4 + 2 = 6\). \(x = 1\): hai vế đều bằng 0. Đúng cả hai.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Ẩn ở mẫu là chuyện khác.</strong> Phân số chỉ có nghĩa khi mẫu khác 0. Điều kiện xác định phải viết <em>trước</em> khi khử mẫu, và phải là "và": mọi mẫu đều khác 0 cùng lúc. Viết "\(x \neq -1\) hoặc \(x \neq 2\)" là sai, vì câu đó gần như luôn đúng.</p>
+        <p>Khử mẫu là nhân hai vế với một biểu thức chứa \(x\). Nếu biểu thức ấy bằng 0 tại một giá trị, phép nhân có thể biến một câu vô nghĩa thành một phương trình có nghiệm. Giá trị làm mẫu bằng 0 phải bị loại, dù nó lọt ra sau khi giải.</p>
+      </div>
+      <div class="example">
+        <p><strong>Nghiệm giả.</strong> Giải \(\dfrac{2}{x + 1} + \dfrac{1}{x - 2} = \dfrac{3}{(x + 1)(x - 2)}\).</p>
+        <p>Mẫu bằng 0 khi \(x = -1\) hoặc \(x = 2\). Điều kiện: \(x \neq -1\) và \(x \neq 2\).</p>
+        <p>Nhân hai vế với \((x + 1)(x - 2)\): \(2(x - 2) + (x + 1) = 3\). Mở ngoặc: \(2x - 4 + x + 1 = 3\), \(3x - 3 = 3\), \(x = 2\).</p>
+        <p>\(x = 2\) làm mẫu bằng 0, nên loại. Không còn giá trị nào khác. Phương trình vô nghiệm. Đừng viết "nghiệm là 2" chỉ vì phép tính ra số 2.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Giải \((x - 4)(2x + 6) = 0\). Tích bằng 0 khi ít nhất một nhân tử bằng 0.</p>
@@ -536,14 +534,14 @@ const LESSONS = [
         choices: [String.raw`\(x = 3\) hoặc \(x = -2\)`, "chỉ x = 3", "chỉ x = −2", "vô nghiệm"],
         correct: 0,
         hint: "Tích bằng 0 ⇒ xét từng nhân tử bằng 0.",
-        explain: "Phương trình tích: x − 3 = 0 hoặc x + 2 = 0.",
+        explain: String.raw`Tích bằng 0 khi \(x - 3 = 0\) hoặc \(x + 2 = 0\). Cả hai nghiệm đều nhận: \(x = 3\) và \(x = -2\).`,
       },
       {
         type: "num",
         prompt: String.raw`Phương trình \(x^2 - 4x = 0\) có hai nghiệm, nghiệm nhỏ hơn là bao nhiêu?`,
         answer: 0,
         hint: "Đặt nhân tử chung x rồi áp dụng phương trình tích.",
-        explain: "x(x − 4) = 0 ⇒ x = 0 hoặc x = 4. Nghiệm nhỏ là 0.",
+        explain: String.raw`\(x(x - 4) = 0\), nên \(x = 0\) hoặc \(x = 4\). Nghiệm nhỏ hơn là 0. Kiểm tra: cả hai làm một thừa số bằng 0.`,
       },
       {
         type: "mc",
@@ -551,7 +549,7 @@ const LESSONS = [
         choices: ["Nhân hai vế với −1", "Đối chiếu với điều kiện xác định", "Cộng thêm 1", "Đổi dấu hai vế"],
         correct: 1,
         hint: "Khử mẫu có thể sinh ra nghiệm giả làm mẫu số bằng 0.",
-        explain: "Giá trị của ẩn không thoả mãn điều kiện xác định phải bị loại.",
+        explain: String.raw`Khử mẫu có thể sinh nghiệm làm mẫu bằng 0. Giá trị ấy không được nhận, vì phương trình gốc không có nghĩa tại đó.`,
       },
     ],
   },
@@ -560,27 +558,23 @@ const LESSONS = [
     num: 5,
     chapter: 2,
     title: "Bất đẳng thức và tính chất",
-    summary: "Hệ thức a < b, a > b, a ≤ b, a ≥ b; tính chất bắc cầu, liên hệ với cộng và nhân.",
+    summary: "Lớn hơn là đứng bên phải trên trục số. Cộng cùng một số thì thứ tự giữ. Nhân số âm thì thứ tự đảo.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Biển báo "tốc độ tối thiểu 60 km/h" nghĩa là vận tốc \(a\) (km/h) phải thoả \(a \geq 60\). Đời sống đầy những quan hệ "hơn – kém – ít nhất – nhiều nhất", và toán học gọi chúng là bất đẳng thức.</p>
-      <div class="definition">
-        <p>Ta gọi hệ thức dạng \(a > b\) (hay \(a < b,\ a \geq b,\ a \leq b\)) là <strong>bất đẳng thức</strong> và gọi \(a\) là vế trái, \(b\) là vế phải của bất đẳng thức.</p>
-        <p>Số \(a\) lớn hơn hoặc bằng số \(b\), tức là \(a > b\) hoặc \(a = b\), kí hiệu là \(a \geq b\). Số \(a\) nhỏ hơn hoặc bằng số \(b\) kí hiệu là \(a \leq b\).</p>
-      </div>
-      <p><strong>Chú ý.</strong> Hai bất đẳng thức \(1 < 2\) và \(-3 < -2\) (hay \(6 > 3\) và \(8 > 5\)) được gọi là <em>hai bất đẳng thức cùng chiều</em>. Hai bất đẳng thức \(1 < 2\) và \(-2 > -3\) (hay \(6 > 3\) và \(5 < 8\)) được gọi là <em>hai bất đẳng thức ngược chiều</em>.</p>
+      <p>Phương trình hỏi "bằng bao nhiêu". Bất đẳng thức hỏi "nhiều hơn, ít hơn, ít nhất, nhiều nhất". Biển "tốc độ tối thiểu 60 km/h" không bắt vận tốc bằng 60. Nó bắt \(a \geq 60\): 60 được, 80 được, 59 thì không.</p>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Hãy hình dung trục số: "lớn hơn" là <em>đứng xa hơn về bên phải</em>. Cộng cùng một số vào hai vế = dịch cả hai người đi cùng một đoạn — ai trước vẫn trước. Nhân với số dương = "kéo giãn" cùng tỉ lệ — thứ tự giữ. Nhân với số âm = "soi gương" qua 0 — ai trước hoá sau!</p>
+        <p><strong>Nhìn trên trục số.</strong> Số lớn hơn đứng bên phải. \(-2 < 5\) vì \(-2\) ở bên trái 5. \(a \geq b\) nghĩa là \(a\) trùng \(b\) hoặc đứng bên phải \(b\). \(a \leq b\) là trùng hoặc đứng bên trái.</p>
+        <p>Hai bất đẳng thức <em>cùng chiều</em> khi dấu cùng hướng, như \(1 < 2\) và \(-3 < -2\). <em>Ngược chiều</em> khi một dấu mở sang phải, một dấu mở sang trái, như \(1 < 2\) và \(-2 > -3\). Hai câu ấy nói cùng một sự thật, chỉ viết ngược nhau.</p>
       </div>
       <div class="definition">
-        <p><strong>Tính chất bắc cầu của bất đẳng thức.</strong> Nếu \(a < b\) và \(b < c\) thì \(a < c\).</p>
-        <p><strong>Liên hệ giữa thứ tự và phép cộng.</strong> Khi cộng cùng một số vào hai vế của một bất đẳng thức ta được bất đẳng thức mới cùng chiều với bất đẳng thức đã cho: nếu \(a < b\) thì \(a + c < b + c\) (tương tự cho \(\leq,\ >,\ \geq\)).</p>
-        <p><strong>Liên hệ giữa thứ tự và phép nhân.</strong> Nếu \(a < b\) và \(c > 0\) thì \(ac < bc\). Nếu \(a < b\) và \(c < 0\) thì \(ac > bc\).</p>
+        <p>Nếu \(a < b\) và \(b < c\) thì \(a < c\). Đó là tính chất bắc cầu: trên trục số, ai đứng bên trái người đứng bên trái mình thì càng ở bên trái.</p>
+        <p>Cộng cùng một số vào hai vế thì chiều giữ: nếu \(a < b\) thì \(a + c < b + c\). Cả hai người đi cùng một đoạn, ai trước vẫn trước.</p>
+        <p>Nhân với số dương thì chiều giữ. Nhân với số âm thì chiều đổi: nếu \(a < b\) và \(c < 0\) thì \(ac > bc\). Nhân số âm là soi gương qua 0, trái thành phải.</p>
       </div>
       <div class="memory">
-        <p><strong>Cách nhớ:</strong> "<em>Cộng số nào, chiều hay giữ. Nhân dương giữ, nhân âm đổi.</em>"</p>
+        <p><strong>Cách nhớ.</strong> Cộng số nào, chiều hay giữ. Nhân dương giữ, nhân âm đổi. Chỉ được cộng <em>cùng một</em> số. Cộng 3 vào vế trái và 5 vào vế phải thì không còn gì để kết luận.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Chứng minh \(\dfrac{2024}{2023} > \dfrac{2021}{2022}\): ta có \(\dfrac{2024}{2023} = 1 + \dfrac{1}{2023} > 1\) và \(\dfrac{2021}{2022} = 1 - \dfrac{1}{2022} < 1\); một số lớn hơn 1, một số nhỏ hơn 1, nên theo tính chất bắc cầu \(\dfrac{2024}{2023} > \dfrac{2021}{2022}\).</p>
+        <p><strong>So hai phân số mà không cần quy đồng lớn.</strong> \(\dfrac{2024}{2023} = 1 + \dfrac{1}{2023} > 1\). \(\dfrac{2021}{2022} = 1 - \dfrac{1}{2022} < 1\). Một số đứng bên phải 1, một số đứng bên trái 1, nên số thứ nhất lớn hơn số thứ hai.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Bắt đầu từ \(-3 < 1\). Trên trục số, \(-3\) đứng bên trái \(1\).</p>
@@ -629,9 +623,14 @@ const LESSONS = [
     num: 6,
     chapter: 2,
     title: "Bất phương trình bậc nhất một ẩn",
-    summary: "Nghiệm của bất phương trình; giải ax + b > 0, nhớ đảo chiều khi nhân số âm.",
+    summary: "Nghiệm thường là cả một nửa trục số. Chia cho số âm thì đổi chiều. Bài thực tế phải làm tròn theo câu hỏi.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Thanh có 100 000 đồng, đã có sẵn 18 000 đồng tiền giấy vở, mỗi quyển vở 7 000 đồng. Mua được <em>tối đa</em> bao nhiêu quyển? Câu hỏi "tối đa" — đâu phải phương trình — đây là lúc bất phương trình vào việc.</p>
+      <p>Phương trình thường có vài nghiệm rời. Bất phương trình thường có cả một đoạn trên trục số. "Tối đa", "ít nhất", "không quá" là dấu hiệu của bất phương trình, không phải phương trình.</p>
+      <p>Thanh có 100 000 đồng, đã chi 18 000 đồng tiền giấy, mỗi quyển vở 7 000 đồng. Gọi \(x\) là số quyển, \(x\) là số tự nhiên. "Mua được" nghĩa là tiền không vượt quá số đang có:</p>
+      \[
+        7x + 18 \leq 100
+      \]
+      <p>với đơn vị nghìn đồng. Đây chưa phải "tìm một số \(x\) cho đúng bằng". Nhiều giá trị \(x\) đều mua được.</p>
       <div class="definition">
         <p><strong>Bất phương trình bậc nhất một ẩn \(x\)</strong> là bất phương trình chỉ có một ẩn \(x\), ẩn này có bậc nhất, và có dạng</p>
         \[
@@ -662,18 +661,17 @@ const LESSONS = [
         </svg>
         <figcaption>Chấm đặc cho \(\leq, \geq\); chấm rỗng cho \(&lt;, &gt;\).</figcaption>
       </figure>
-      <div class="definition">
-        <p>Bất phương trình bậc nhất một ẩn \(ax + b < 0\) (\(a \neq 0\)) được giải như sau: \(ax < -b\);</p>
-        <ul>
-          <li>nếu \(a > 0\) thì \(x < -\dfrac{b}{a}\);</li>
-          <li>nếu \(a < 0\) thì \(x > -\dfrac{b}{a}\).</li>
-        </ul>
-        <p><strong>Chú ý.</strong> Các bất phương trình \(ax + b > 0\), \(ax + b \leq 0\), \(ax + b \geq 0\) được giải tương tự.</p>
+      <div class="idea">
+        <p><strong>Chia cho số âm là chỗ dễ sai.</strong> \(ax + b < 0\) đưa về \(ax < -b\). Nếu \(a > 0\), chia giữ chiều: \(x < -\dfrac{b}{a}\). Nếu \(a < 0\), chia phải đổi chiều: \(x > -\dfrac{b}{a}\). Dấu \(>,\ \leq,\ \geq\) làm giống vậy. Giải xong, thử một điểm trong tập nghiệm và một điểm ngoài.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ 2 (SGK).</strong> Giải \(-2x - 4 > 0\): \(-2x > 4\), nhân hai vế với số âm \(-\dfrac{1}{2}\) và đổi chiều: \(x < -2\). Vậy nghiệm là \(x < -2\).</p>
-        <p><strong>Ví dụ 4a (SGK).</strong> \(2x + 5 < 3x - 4 \Rightarrow 2x - 3x < -4 - 5 \Rightarrow -x < -9 \Rightarrow x > 9\).</p>
-        <p><strong>Ví dụ 3 (SGK — quay lại tình huống mở đầu).</strong> \(7x + 18 \leq 100 \Rightarrow 7x \leq 82 \Rightarrow x \leq \dfrac{82}{7}\). Vì số vở là số tự nhiên nên Thanh mua được nhiều nhất 11 quyển.</p>
+        <p><strong>Quay lại chuyện mua vở.</strong> \(7x + 18 \leq 100\). Hệ số của \(x\) dương, chiều giữ: \(7x \leq 82\), \(x \leq \dfrac{82}{7}\). \(\dfrac{82}{7} = 11\dfrac{5}{7}\), khoảng 11,7.</p>
+        <p>Số vở là số tự nhiên, và câu hỏi là tối đa. 11,7 không mua được. Lấy số tự nhiên lớn nhất không vượt 11,7, tức 11. Kiểm tra: 11 quyển tốn \(7 \cdot 11 + 18 = 95 \leq 100\). 12 quyển tốn \(84 + 18 = 102 > 100\), không mua được. Thanh mua nhiều nhất 11 quyển.</p>
+      </div>
+      <div class="example">
+        <p><strong>Khi phải đổi chiều.</strong> Giải \(-2x - 4 > 0\). Chuyển \(-4\): \(-2x > 4\). Chia cho \(-2\), đổi chiều: \(x < -2\).</p>
+        <p>Thử. \(x = -3\): \(6 - 4 = 2 > 0\), đúng. \(x = -2\): bằng 0, không thoả dấu \(>\), nên chấm rỗng. \(x = 0\): \(-4 > 0\) sai.</p>
+        <p>Một bài có \(x\) hai vế: \(2x + 5 < 3x - 4\). Gom \(x\) về một vế: \(2x - 3x < -4 - 5\), tức \(-x < -9\). Nhân \(-1\), đổi chiều: \(x > 9\). Thử \(x = 10\): \(25 < 26\), đúng. \(x = 9\): \(23 < 23\) sai.</p>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
