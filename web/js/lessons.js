@@ -1,6 +1,6 @@
 // Bài học theo mạch Toán 9 – Kết nối tri thức (Tập 1 & Tập 2), Chương I–X, Bài 1–32.
 // Viết để học sinh hiểu vì sao, không chỉ chép định nghĩa. Mỗi bài: vì sao → cách nghĩ →
-// ví dụ làm chậm → luyện tập. Bài 1–15 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
+// ví dụ làm chậm → luyện tập. Bài 1–20 viết lại cho hiểu; mỗi bài có ví dụ làm chậm.
 const CHAPTERS = [
   { id: 1, title: "Phương trình và hệ hai phương trình bậc nhất hai ẩn" },
   { id: 2, title: "Phương trình và bất phương trình bậc nhất một ẩn" },
@@ -1458,17 +1458,12 @@ const LESSONS = [
     num: 16,
     chapter: 5,
     title: "Vị trí tương đối của đường thẳng và đường tròn",
-    summary: "Cắt nhau (d < R), tiếp xúc (d = R), không giao nhau (d > R); dấu hiệu nhận biết tiếp tuyến.",
+    summary: "Hạ vuông góc từ tâm xuống đường thẳng. So khoảng cách d với R: ngắn hơn thì cắt hai điểm, bằng thì chạm một điểm.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Gieo một đồng xu lên tờ giấy có các đường thẳng song song cách đều: đồng xu có thể đè lên một đường, không chạm đường nào, hoặc che nhiều đường. Ba cảnh ấy chính là ba vị trí tương đối của đường thẳng và đường tròn.</p>
-      <div class="definition">
-        <p>Cho đường thẳng \(a\) và đường tròn \((O)\):</p>
-        <p>1) \(a\) và \((O)\) gọi là <strong>cắt nhau</strong> nếu chúng có đúng hai điểm chung.</p>
-        <p>2) \(a\) và \((O)\) gọi là <strong>tiếp xúc</strong> với nhau nếu chúng có duy nhất một điểm chung \(H\). Điểm chung ấy gọi là <strong>tiếp điểm</strong>; khi đó đường thẳng \(a\) còn gọi là <strong>tiếp tuyến</strong> của đường tròn \((O)\) tại \(H\).</p>
-        <p>3) \(a\) và \((O)\) gọi là <strong>không giao nhau</strong> nếu chúng không có điểm chung.</p>
-      </div>
-      <div class="definition">
-        <p><strong>Nhận xét.</strong> Cho đường thẳng \(a\) và đường tròn \((O;\ R)\), gọi \(d\) là khoảng cách từ \(O\) đến \(a\): cắt nhau khi \(d < R\); tiếp xúc với nhau khi \(d = R\); không giao nhau khi \(d > R\). Nếu đường thẳng \(a\) tiếp xúc với đường tròn \((O)\) tại \(H\) thì \(OH \perp a\).</p>
+      <p>Một đường thẳng và một đường tròn gặp nhau ở hai điểm, một điểm, hoặc không gặp. Không cần đoán. Hạ vuông góc từ tâm \(O\) xuống đường thẳng, gọi chân là \(H\) và \(OH = d\).</p>
+      <div class="idea">
+        <p><strong>Vì sao chỉ cần so \(d\) với \(R\)?</strong> Nếu đường thẳng cắt đường tròn tại \(M\) thì tam giác \(OHM\) vuông tại \(H\). Pythagore: \(R^2 = d^2 + HM^2\), nên \(HM^2 = R^2 - d^2\).</p>
+        <p>\(d < R\): \(R^2 - d^2 > 0\), có hai điểm \(M\), mỗi bên \(H\) một điểm. Nửa dây dài \(\sqrt{R^2 - d^2}\). \(d = R\): \(HM = 0\), chỉ một điểm \(H\). Đó là tiếp xúc, và bán kính tới tiếp điểm vuông góc với tiếp tuyến. \(d > R\): \(R^2 - d^2 < 0\), không có điểm chung.</p>
       </div>
       <figure class="figure">
         <div class="panels">
@@ -1516,7 +1511,8 @@ const LESSONS = [
         <p><strong>Định lí 1 (dấu hiệu nhận biết tiếp tuyến).</strong> Nếu một đường thẳng đi qua một điểm nằm trên một đường tròn và vuông góc với bán kính đi qua điểm đó thì đường thẳng ấy là một tiếp tuyến của đường tròn.</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Muốn chứng minh một đường thẳng là tiếp tuyến: chỉ đường thẳng <em>đi qua điểm trên đường tròn</em> rồi chứng minh nó <em>vuông góc bán kính</em> tại điểm ấy. Hai điều kiện, không thiếu một.</p>
+        <p><strong>Nhận ra tiếp tuyến.</strong> Một đường thẳng đi qua một điểm trên đường tròn và vuông góc với bán kính tại điểm ấy thì nó là tiếp tuyến. Thiếu một trong hai điều kiện thì chưa đủ: vuông góc mà không chạm đường tròn thì chỉ là một đường thẳng ở xa.</p>
+        <p>Hai tiếp tuyến từ một điểm \(M\) bên ngoài cắt đường tròn tại \(A\) và \(B\). Tam giác \(OAM\) và \(OBM\) cùng vuông, cùng cạnh huyền \(OM\), và \(OA = OB = R\). Hai tam giác bằng nhau, nên \(MA = MB\), và \(OM\) chia đôi cả góc ở \(M\) lẫn góc ở \(O\).</p>
       </div>
       <div class="definition">
         <p><strong>Định lí 2 (hai tiếp tuyến cắt nhau).</strong> Nếu hai tiếp tuyến của đường tròn \((O)\) cắt nhau tại điểm \(M\) thì:</p>
@@ -1581,19 +1577,13 @@ const LESSONS = [
     num: 17,
     chapter: 5,
     title: "Vị trí tương đối của hai đường tròn",
-    summary: "Cắt nhau, tiếp xúc ngoài/trong, ngoài nhau, đựng nhau — so sánh OO' với R và R'.",
+    summary: "Đặt hai bán kính lên đoạn nối tâm. Chạm ngoài khi OO' = R + R', chạm trong khi OO' = R − R'.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Nguyệt thực: Mặt Trăng chui vào bóng Trái Đất — hai hình tròn đè lên nhau theo nhiều kiểu. Toán học xếp hết các kiểu ấy thành một bảng, chỉ bằng cách so sánh khoảng cách hai tâm \(OO'\) với hai bán kính \(R\), \(R'\).</p>
-      <p>Sau đây, khi nói hai đường tròn mà không có giải thích gì thêm, ta hiểu đó là hai <em>đường tròn phân biệt</em>. Đặt \((O;\ R)\) và \((O';\ R')\) với \(R \geq R'\).</p>
-      <div class="definition">
-        <p>Nếu hai đường tròn có đúng hai điểm chung thì ta nói đó là <strong>hai đường tròn cắt nhau</strong>. Hai điểm chung gọi là hai <em>giao điểm</em> của chúng. Hai đường tròn cắt nhau khi</p>
-        \[
-          R - R' < OO' < R + R' \quad (R > R').
-        \]
-      </div>
-      <div class="definition">
-        <p>Nếu hai đường tròn có duy nhất một điểm chung thì ta nói đó là <strong>hai đường tròn tiếp xúc nhau</strong>. Điểm chung gọi là <strong>tiếp điểm</strong> của chúng. Người ta phân biệt hai trường hợp: <em>tiếp xúc ngoài</em> và <em>tiếp xúc trong</em>.</p>
-        <p><strong>Nhận xét.</strong> Hai đường tròn tiếp xúc ngoài khi \(OO' = R + R'\); tiếp xúc trong khi \(OO' = R - R'\) (\(R > R'\)). Nếu hai đường tròn tiếp xúc với nhau thì <strong>tiếp điểm thẳng hàng với hai tâm</strong>.</p>
+      <p>Hai đường tròn phân biệt, \(R \geq R'\). Muốn biết chúng cắt, chạm, hay không gặp, đặt hai bán kính lên đường nối hai tâm.</p>
+      <div class="idea">
+        <p><strong>Chạm ngoài.</strong> Đi từ \(O\) một đoạn \(R\), từ \(O'\) một đoạn \(R'\) về phía nhau. Hai đầu vừa khít khi \(OO' = R + R'\). Xa hơn, \(OO' > R + R'\): không gặp, gọi là ngoài nhau. Gần hơn một chút: hai vòng cài vào nhau, cắt tại hai điểm.</p>
+        <p><strong>Chạm trong.</strong> Đường tròn nhỏ nằm trong đường tròn lớn và chạm từ bên trong khi \(OO' + R' = R\), tức \(OO' = R - R'\). Gần hơn nữa, \(OO' < R - R'\): nhỏ nằm hẳn bên trong, không chạm. Đó là \((O)\) đựng \((O')\). Hai bán kính bằng nhau thì không có tiếp xúc trong, vì \(R - R' = 0\).</p>
+        <p>Giữa hai mốc, \(R - R' < OO' < R + R'\), là cắt nhau. Tiếp điểm luôn nằm trên đường nối hai tâm, vì đó là đường ta đặt các bán kính.</p>
       </div>
       <figure class="figure">
         <div class="panels">
@@ -1709,15 +1699,14 @@ const LESSONS = [
     num: 18,
     chapter: 6,
     title: "Hàm số y = ax² (a ≠ 0)",
-    summary: "Nhận diện hàm số y = ax², bảng giá trị và đồ thị parabol đỉnh O.",
+    summary: "y = ax² luôn đối xứng qua Oy vì (−x)² = x². a > 0 thì mở lên, a < 0 thì mở xuống, đỉnh tại O.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Quãng đường rơi tự do tính bằng công thức \(s = 4{,}9t^2\), diện tích hình tròn \(S = \pi r^2\) — hai công thức khác nhau nhưng chung một dạng: hàm số \(y = ax^2\) với \(a \neq 0\).</p>
-      <div class="definition">
-        <p><strong>Nhận xét.</strong> Hàm số \(y = ax^2\) \((a \neq 0)\) xác định với mọi giá trị \(x\) thuộc \(\mathbb{R}\).</p>
+      <p>Quãng đường rơi \(s = 4{,}9t^2\) và diện tích hình tròn \(S = \pi r^2\) khác nhau ở chữ, nhưng cùng một dạng: \(y = ax^2\) với \(a \neq 0\). Hàm này xác định với mọi \(x\), vì bình phương không cần điều kiện.</p>
+      <div class="idea">
+        <p><strong>Vì sao hình như vậy?</strong> \((-x)^2 = x^2\), nên \(y\) tại \(x\) và tại \(-x\) bằng nhau. Đồ thị đối xứng qua trục \(Oy\). Chỉ cần tính nửa bên phải rồi lấy gương sang trái.</p>
+        <p>\(x^2\) nhỏ nhất tại \(x = 0\), bằng 0. Nếu \(a > 0\), \(y = ax^2 \geq 0\): đường nằm trên trục hoành, thấp nhất tại gốc \(O\), mở lên. Nếu \(a < 0\), \(y \leq 0\): nằm dưới trục hoành, cao nhất tại \(O\), mở xuống. Đỉnh luôn là \(O\), không phải điểm \((0;\ a)\).</p>
       </div>
-      <div class="definition">
-        <p><strong>Cách vẽ đồ thị hàm số \(y = ax^2\):</strong> lập bảng ghi một số cặp giá trị tương ứng của \(x\) và \(y\); trong mặt phẳng toạ độ \(Oxy\), biểu diễn các cặp điểm \((x;\ y)\) trong bảng giá trị và nối chúng lại để được một đường cong là đồ thị của hàm số.</p>
-      </div>
+      <p>Vẽ: lập bảng vài giá trị, chấm điểm, nối bằng đường cong trơn, không nối bằng đoạn thẳng gấp khúc.</p>
       <figure class="figure">
         <div class="panels">
           <div class="panel">
@@ -1811,17 +1800,18 @@ const LESSONS = [
     summary: "Dạng ax² + bx + c = 0; giải dạng đặc biệt và công thức nghiệm với biệt thức Δ.",
     body: String.raw`
       <div class="definition">
-        <p><strong>Phương trình bậc hai một ẩn</strong> \(x\) là phương trình có dạng</p>
-        \[
-          ax^2 + bx + c = 0,
-        \]
-        <p>trong đó \(x\) là ẩn; \(a\), \(b\), \(c\) là các số đã biết với \(a \neq 0\). Giải một phương trình bậc hai là tìm tất cả các nghiệm của nó.</p>
+        <p><strong>Phương trình bậc hai một ẩn</strong> \(x\) có dạng \(ax^2 + bx + c = 0\) với \(a \neq 0\). Hệ số \(a = 0\) thì mất \(x^2\), thành bậc nhất. Phương trình có \(\left(\dfrac{1}{x}\right)^2\) thì ẩn là \(\dfrac{1}{x}\), không phải phương trình bậc hai theo \(x\).</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Không phải mọi phương trình có \(x^2\) đều bậc hai: \(\bigl(\tfrac{1}{x}\bigr)^2 + 3 \cdot \tfrac{1}{x} + 2 = 0\) thì ẩn là \(\tfrac{1}{x}\), không phải \(x\). Và \(a = 0\) thì mất \(x^2\) — thành bậc nhất.</p>
+        <p><strong>Công thức từ đâu ra?</strong> Chia cho \(a\), chuyển \(c\), rồi thêm một số để vế trái thành bình phương:</p>
+        \[
+          \left(x + \dfrac{b}{2a}\right)^2 = \dfrac{b^2 - 4ac}{4a^2}.
+        \]
+        <p>Vế phải là \(\dfrac{\Delta}{4a^2}\), với \(\Delta = b^2 - 4ac\). Muốn có căn bậc hai, \(\Delta\) phải không âm.</p>
+        <p>\(\Delta > 0\): hai căn, hai nghiệm \(x = \dfrac{-b \pm \sqrt{\Delta}}{2a}\). \(\Delta = 0\): một bình phương bằng 0, nghiệm kép \(x = -\dfrac{b}{2a}\). \(\Delta < 0\): không có căn bậc hai, vô nghiệm. Đừng khai căn một số âm.</p>
       </div>
-      <div class="definition">
-        <p><strong>Dạng đặc biệt (dạng khuyết).</strong> Nếu thiếu số hàng bậc nhất (\(b = 0\)) hoặc thiếu số hạng tự do (\(c = 0\)), ta đặt nhân tử chung đưa về phương trình tích, hoặc dùng hằng đẳng thức \(A^2 = B\ (B \geq 0) \Rightarrow A = \sqrt{B}\) hoặc \(A = -\sqrt{B}\).</p>
+      <div class="idea">
+        <p><strong>Dạng khuyết thì đừng dùng công thức cho nặng.</strong> Thiếu \(c\): đặt \(x\) làm nhân tử chung. Thiếu \(b\): \(x^2 = \dfrac{-c}{a}\), nếu vế phải không âm thì \(x = \pm\) căn ấy.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> \(2x^2 - 4x = 0 \Leftrightarrow 2x(x-2) = 0 \Rightarrow x = 0\) hoặc \(x = 2\).</p>
@@ -1893,14 +1883,20 @@ const LESSONS = [
     num: 20,
     chapter: 6,
     title: "Định lí Viète và ứng dụng",
-    summary: "Tổng và tích hai nghiệm qua hệ số; nhẩm nghiệm khi a + b + c = 0 hoặc a − b + c = 0.",
+    summary: "Hai nghiệm cộng lại bằng −b/a và nhân lại bằng c/a, vì phương trình là a(x − x₁)(x − x₂) = 0.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Bác An có 40 m hàng rào rão xung quanh mảnh vườn hình chữ nhật diện tích 96 m². Dài và rộng là hai số có tổng 20 và tích 96 — định lí Viète cho phép "đọc" hai số đó từ phương trình mà không cần giải.</p>
-      <div class="definition">
-        <p><strong>Định lí Viète.</strong> Nếu \(x_1,\ x_2\) là hai nghiệm của phương trình \(ax^2 + bx + c = 0\) \((a \neq 0)\) thì</p>
+      <p>Nếu đã biết phương trình có hai nghiệm \(x_1\) và \(x_2\), không cần tính từng nghiệm mới biết tổng và tích của chúng.</p>
+      <div class="idea">
+        <p><strong>Vì sao có công thức ấy?</strong> Phương trình có hai nghiệm thì viết được</p>
         \[
-          x_1 + x_2 = -\frac{b}{a}; \qquad x_1 x_2 = \frac{c}{a}.
+          ax^2 + bx + c = a(x - x_1)(x - x_2) = a\bigl(x^2 - (x_1 + x_2)x + x_1 x_2\bigr).
         \]
+        <p>So hệ số: \(b = -a(x_1 + x_2)\) và \(c = a x_1 x_2\). Chia cho \(a\):</p>
+        \[
+          x_1 + x_2 = -\dfrac{b}{a}, \qquad x_1 x_2 = \dfrac{c}{a}.
+        \]
+        <p>Dấu trừ ở tổng là chỗ hay quên. Và chỉ dùng khi \(\Delta \geq 0\): không có nghiệm thì không có tổng để nói.</p>
+        <p>Thế \(x = 1\) vào phương trình được \(a + b + c\). Nếu tổng ấy bằng 0 thì \(x = 1\) là một nghiệm, nghiệm kia bằng tích \(\dfrac{c}{a}\). Thế \(x = -1\) được \(a - b + c\). Nếu bằng 0 thì \(x = -1\) là một nghiệm, nghiệm kia là \(-\dfrac{c}{a}\).</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> \(2x^2 + 11x + 7 = 0\): \(\Delta = 121 - 56 = 65 > 0\) nên có hai nghiệm, và \(x_1 + x_2 = -\dfrac{11}{2}\), \(x_1x_2 = \dfrac{7}{2}\) — không cần tính từng nghiệm.</p>
