@@ -1972,6 +1972,11 @@ const LESSONS = [
         <p>\(\Delta = 196 - 192 = 4\), \(x = \dfrac{14 \pm 2}{2}\), nên \(x = 8\) hoặc \(x = 6\). Hai giá trị đổi vai: cạnh 6 m và 8 m.</p>
         <p>Đối chiếu điều kiện: cả hai dương và nhỏ hơn 14. Chu vi \(2(6 + 8) = 28\), diện tích 48. Nhận một hình chữ nhật, không phải hai đáp số khác nhau.</p>
       </div>
+      <div class="example">
+        <p><strong>Không phải lúc nào cũng là hình chữ nhật.</strong> Tìm hai số nguyên liên tiếp có tích 56.</p>
+        <p>Gọi số nhỏ hơn là \(x\), số kia là \(x + 1\). Tích: \(x(x + 1) = 56\), tức \(x^2 + x - 56 = 0\). \(\Delta = 1 + 224 = 225 = 15^2\). \(x = \dfrac{-1 \pm 15}{2}\), nên \(x = 7\) hoặc \(x = -8\).</p>
+        <p>Cả hai đều là số nguyên. Cặp \(7\) và \(8\): tích 56. Cặp \(-8\) và \(-7\): tích cũng 56. Nếu đề chỉ hỏi số nguyên, nhận cả hai cặp. Nếu đề hỏi số tự nhiên, loại cặp âm. Điều kiện quyết định, không phải cảm tính.</p>
+      </div>
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1984,11 +1989,11 @@ const LESSONS = [
     exercises: [
       {
         type: "mc",
-        prompt: "Bước nào thuộc quy trình giải bài toán bằng cách lập phương trình?",
-        choices: ["Chọn ẩn và đặt điều kiện", "Giải phương trình", "Kiểm tra điều kiện rồi kết luận", "Cả ba bước trên"],
-        correct: 3,
-        hint: "Ba bước của Bài 21 giống Bài 3 nhưng với một ẩn.",
-        explain: "Quy trình gồm cả ba: lập phương trình, giải phương trình, trả lời.",
+        prompt: "Hai số nguyên liên tiếp có tích 56. Số nhỏ hơn của cặp dương bằng bao nhiêu?",
+        choices: ["7", "8", "−8", "56"],
+        correct: 0,
+        hint: "Gọi số nhỏ hơn là x, số kia là x + 1. Tích bằng 56.",
+        explain: "x(x + 1) = 56 cho x = 7 hoặc x = −8. Cặp dương là 7 và 8, số nhỏ hơn là 7.",
       },
       {
         type: "num",
@@ -2086,7 +2091,7 @@ const LESSONS = [
         <p>\(m_i\) là số lần, \(n\) là cỡ mẫu. Các giá trị chia hết mẫu, nên các phần trăm cộng lại phải thành 100%. Lệch 100% là làm tròn quá sớm hoặc chia sai mẫu số.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Theo dõi chất lượng không khí 30 ngày: Tốt 8 ngày, Trung bình 13 ngày, Kém 5 ngày, Xấu 4 ngày. Tần số tương đối: Tốt \(\tfrac{8}{30} \cdot 100\% \approx 26{,}7\%\); Trung bình \(\approx 43{,}3\%\); Kém \(\approx 16{,}7\%\); Xấu \(\approx 13{,}3\%\).</p>
+        <p><strong>Ba mươi ngày.</strong> Tốt 8, Trung bình 13, Kém 5, Xấu 4. Tổng lần \(8 + 13 + 5 + 4 = 30\), đúng cỡ mẫu. Tỉ lệ: \(\dfrac{8}{30} \approx 26{,}7\%\), \(\dfrac{13}{30} \approx 43{,}3\%\), \(\dfrac{5}{30} \approx 16{,}7\%\), \(\dfrac{4}{30} \approx 13{,}3\%\). Cộng \(26{,}7 + 43{,}3 + 16{,}7 + 13{,}3 = 100\). Tốt không phải 8%: 8 là số ngày, không phải phần trăm.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Cùng 8 bạn ở trên. Tần số tương đối của cỡ 39 là \(\dfrac{3}{8} = 37{,}5\%\). Cỡ 40 là \(\dfrac{1}{8} = 12{,}5\%\). Các tỉ lệ của một mẫu phải cộng lại thành 100%.</p>
@@ -2261,9 +2266,10 @@ const LESSONS = [
         <p>Xúc xắc lệch thì không được lấy \(\dfrac{1}{6}\). Biến cố không thể xảy ra chiếm 0 miếng, \(P = 0\). Biến cố chắc chắn chiếm hết, \(P = 1\). Xác suất không lớn hơn 1.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Ba bạn Bảo, Châu, Dương xếp ngẫu nhiên ngồi vào hàng ba ghế. \(\Omega = \{\text{BCD; BDC; CBD; DBC; CDB; DCB}\}\) có 6 phần tử, đồng khả năng.</p>
-        <p>a) \(E\): Bảo không ngồi ngoài cùng bên phải — có 4 kết quả thuận lợi, \(P(E) = \tfrac{4}{6} = \tfrac{2}{3}\).</p>
-        <p>b) \(F\): Châu và Dương không ngồi cạnh nhau — có 2 kết quả thuận lợi (CBD, DBC), \(P(F) = \tfrac{2}{6} = \tfrac{1}{3}\).</p>
+        <p><strong>Ba ghế, viết hết rồi mới đếm.</strong> Bảo, Châu, Dương xếp ngẫu nhiên. Đọc từ trái sang phải, chữ cuối là ghế ngoài cùng bên phải. Sáu cách, mỗi cách một cơ hội:</p>
+        <p>BCD, BDC: Bảo ngồi trái. CBD, DBC: Bảo ngồi giữa. CDB, DCB: Bảo ngồi phải.</p>
+        <p>Biến cố "Bảo không ngồi ngoài cùng bên phải" loại hai cách cuối. Còn 4 cách, \(P = \dfrac{4}{6} = \dfrac{2}{3}\).</p>
+        <p>Biến cố "Châu và Dương không ngồi cạnh": trong BCD, BDC, CDB, DCB thì Châu và Dương đứng liền. Chỉ CBD và DBC cách nhau bởi Bảo. \(P = \dfrac{2}{6} = \dfrac{1}{3}\). Đếm trên danh sách, đừng đoán "khoảng một nửa".</p>
       </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Xác suất là <em>phần bánh</em>: chia cái bánh \(\Omega\) cho các kết quả đồng khả năng, biến cố \(E\) chiếm mấy miếng? Luôn có \(0 \leq P(E) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
