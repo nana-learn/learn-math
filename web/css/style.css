@@ -162,6 +162,7 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
 .card.soon { opacity: 0.58; }
 
 .card h2, .card h3 { margin: 0.15rem 0 0.35rem; letter-spacing: -0.03em; }
+.card img { display: block; width: 100%; height: 180px; object-fit: cover; object-position: top; border-radius: 8px; margin-bottom: 0.6rem; background: #fff; }
 .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
 .stamp {
@@ -235,6 +236,18 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
   border-radius: 0 12px 12px 0;
 }
 .examq p:last-child { margin-bottom: 0; }
+.paper-pages { margin: 1rem 0 1.4rem; }
+.paper-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.7rem 0;
+  border: 1px solid var(--line, #ddd);
+  border-radius: 8px;
+  background: #fff;
+}
+.paper-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.8rem 0 1.2rem; }
+.paper-links a { font-weight: 650; }
 
 /* Hiểu nhanh — giải thích theo ngôn ngữ đời thường */
 .idea {

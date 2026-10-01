@@ -330,7 +330,9 @@ const THI10_LESSONS = [
     num: 10,
     chapter: 7,
     title: "Đề thử THCS Mỹ Đình 2",
-    summary: "Cùng khung 5 câu với đề Hà Nội, nhưng số liệu khác. Làm số trước, chứng minh sau.",
+    summary: "Đề gốc hai trang, rồi lời giải ngắn.",
+    pages: ["de/my-dinh-2-1.jpg", "de/my-dinh-2-2.jpg"],
+    files: [{ href: "de/my-dinh-2-2026-de.pdf", label: "Mở PDF đề Mỹ Đình 2" }],
     body: String.raw`
       <p>Đây là đề thi thử của trường THCS Mỹ Đình 2, năm học 2026–2027, 120 phút, 5 bài, thang 10. Không phải đề chính thức của Sở. Cấu trúc vẫn là thống kê, căn, phương trình, hình, rồi tối ưu.</p>
       <div class="examq">
@@ -473,4 +475,39 @@ COURSES.push({
   blurb: "Ôn bằng đề chính thức của Sở và đề thi thử của các trường Hà Nội. Không gồm Văn hay Ngoại ngữ.",
   chapters: THI10_CHAPTERS,
   lessons: THI10_LESSONS,
+  papers: [
+    {
+      title: "Hà Nội 2026",
+      note: "Đề chính thức Sở GDĐT, 31/5/2026.",
+      pages: ["de/ha-noi-2026-1.jpg", "de/ha-noi-2026-2.jpg"],
+      files: [
+        { href: "de/ha-noi-2026-de.pdf", label: "Đề PDF" },
+        { href: "de/ha-noi-2026-dap-an.pdf", label: "Đáp án PDF" },
+      ],
+    },
+    {
+      title: "Hà Nội 2025",
+      note: "Đề chính thức Sở GDĐT, 8/6/2025.",
+      pages: ["de/ha-noi-2025-1.jpg", "de/ha-noi-2025-2.jpg"],
+      files: [
+        { href: "de/ha-noi-2025-de.pdf", label: "Đề PDF" },
+        { href: "de/ha-noi-2025-dap-an.pdf", label: "Đáp án PDF" },
+      ],
+    },
+    {
+      title: "Hà Nội 2024",
+      note: "Đề chính thức Sở GDĐT, 9/6/2024. Đề một trang.",
+      pages: ["de/ha-noi-2024-1.jpg"],
+      files: [
+        { href: "de/ha-noi-2024-de.pdf", label: "Đề PDF" },
+        { href: "de/ha-noi-2024-dap-an.pdf", label: "Đáp án PDF" },
+      ],
+    },
+    {
+      title: "THCS Mỹ Đình 2",
+      note: "Đề thi thử năm học 2026–2027.",
+      pages: ["de/my-dinh-2-1.jpg", "de/my-dinh-2-2.jpg"],
+      files: [{ href: "de/my-dinh-2-2026-de.pdf", label: "Đề PDF" }],
+    },
+  ],
 });

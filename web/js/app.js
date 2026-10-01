@@ -163,6 +163,57 @@ function homeView() {
   `;
 }
 
+function paperLinks(items) {
+  if (!items || !items.length) return "";
+  return `<div class="paper-links">${items
+    .map(
+      (p) =>
+        `<a class="btn ghost" href="${escapeHtml(p.href)}" target="_blank" rel="noopener">${escapeHtml(p.label)}</a>`
+    )
+    .join("")}</div>`;
+}
+
+function paperView(lesson) {
+  const pages = lesson.pages || [];
+  const files = lesson.files || [];
+  if (!pages.length && !files.length) return "";
+  const imgs = pages
+    .map(
+      (src) =>
+        `<a href="${escapeHtml(src)}" target="_blank" rel="noopener"><img src="${escapeHtml(src)}" alt="Trang đề gốc"></a>`
+    )
+    .join("");
+  return `
+    <p class="note">Đề gốc ở ngay dưới. Bấm ảnh để phóng to, hoặc mở file PDF. Phần chữ bên dưới là lời giải ngắn, không thay đề.</p>
+    ${paperLinks(files)}
+    ${imgs ? `<div class="paper-pages">${imgs}</div>` : ""}
+  `;
+}
+
+function papersBlock(course) {
+  const papers = course.papers || [];
+  if (!papers.length) return "";
+  const cards = papers
+    .map((p) => {
+      const page = (p.pages && p.pages[0]) || "";
+      const thumb = page
+        ? `<img src="${escapeHtml(page)}" alt="${escapeHtml(p.title)}">`
+        : "";
+      return `<article class="card">
+        ${thumb}
+        <h3>${escapeHtml(p.title)}</h3>
+        <p>${escapeHtml(p.note || "")}</p>
+        ${paperLinks(p.files)}
+      </article>`;
+    })
+    .join("");
+  return `<section>
+    <h2>Đề gốc</h2>
+    <p class="note">File PDF của đề. Ảnh là trang đầu, bấm để xem rõ hơn.</p>
+    <div class="grid">${cards}</div>
+  </section>`;
+}
+
 function courseView(course) {
   const n = course.lessons.length;
   const done = Object.keys(progressFor(course.id)).length;
@@ -183,6 +234,7 @@ function courseView(course) {
           : `<p class="note">${escapeHtml(course.blurb)}</p>`
       }
     </section>
+    ${papersBlock(course)}
     ${
       n
         ? `<div class="grid">
@@ -296,6 +348,7 @@ function lessonView(course, id) {
       <span class="stamp">${escapeHtml(course.title)} · Chương ${lesson.chapter}</span>
       <h1>${escapeHtml(lesson.title)}</h1>
       <p class="lede">${escapeHtml(ch ? ch.title : "")}</p>
+      ${paperView(lesson)}
       <div class="body">${lesson.body}</div>
       ${videoBlock(lesson)}
       <section class="quiz">

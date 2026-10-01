@@ -4,3 +4,4 @@ data/
 images/
 *.pdf
 !exam-docs/**/*.pdf
+!web/de/**/*.pdf
