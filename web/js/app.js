@@ -190,6 +190,32 @@ function paperView(lesson) {
   `;
 }
 
+function examLessonsBlock(course) {
+  const exams = course.lessons.filter((l) => l.pages && l.pages.length);
+  if (!exams.length) return "";
+  const order = ["tv10-hn2026", "tv10-hn2025", "tv10-hn2024", "tv10-10", "tv10-12"];
+  exams.sort((a, b) => {
+    const ia = order.indexOf(a.id);
+    const ib = order.indexOf(b.id);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  const rows = exams
+    .map(
+      (l) => `
+      <a class="lesson-row" href="#/g/${course.id}/lesson/${l.id}">
+        <div class="meta"><span>Đề</span></div>
+        <strong>${escapeHtml(l.title)}</strong>
+        <p>${escapeHtml(l.summary)}</p>
+      </a>`
+    )
+    .join("");
+  return `<section>
+    <h2>Đề</h2>
+    <p class="note">Bấm tên đề để xem câu hỏi. Đáp án nằm trong bài và đang đóng.</p>
+    <div class="lesson-list">${rows}</div>
+  </section>`;
+}
+
 function papersBlock(course) {
   const papers = course.papers || [];
   if (!papers.length) return "";
@@ -199,17 +225,21 @@ function papersBlock(course) {
       const thumb = page
         ? `<img src="${escapeHtml(page)}" alt="${escapeHtml(p.title)}">`
         : "";
+      const lessonHref = p.lessonId ? `#/g/${course.id}/lesson/${p.lessonId}` : "";
+      const heading = lessonHref
+        ? `<a href="${lessonHref}"><h3>${escapeHtml(p.title)}</h3></a>`
+        : `<h3>${escapeHtml(p.title)}</h3>`;
       return `<article class="card">
-        ${thumb}
-        <h3>${escapeHtml(p.title)}</h3>
+        ${lessonHref ? `<a href="${lessonHref}">${thumb}</a>` : thumb}
+        ${heading}
         <p>${escapeHtml(p.note || "")}</p>
         ${paperLinks(p.files)}
       </article>`;
     })
     .join("");
   return `<section>
-    <h2>Đề gốc</h2>
-    <p class="note">File PDF của đề. Ảnh là trang đầu, bấm để xem rõ hơn.</p>
+    <h2>File gốc</h2>
+    <p class="note">Ảnh và PDF. Bấm tên đề để vào bài có câu hỏi và đáp án.</p>
     <div class="grid">${cards}</div>
   </section>`;
 }
@@ -234,6 +264,7 @@ function courseView(course) {
           : `<p class="note">${escapeHtml(course.blurb)}</p>`
       }
     </section>
+    ${examLessonsBlock(course)}
     ${papersBlock(course)}
     ${
       n

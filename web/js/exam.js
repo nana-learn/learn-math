@@ -549,6 +549,7 @@ COURSES.push({
   papers: [
     {
       title: "Hà Nội 2026",
+      lessonId: "tv10-hn2026",
       note: "Đề chính thức Sở GDĐT, 31/5/2026.",
       pages: ["de/ha-noi-2026-1.jpg", "de/ha-noi-2026-2.jpg"],
       files: [
@@ -558,6 +559,7 @@ COURSES.push({
     },
     {
       title: "Hà Nội 2025",
+      lessonId: "tv10-hn2025",
       note: "Đề chính thức Sở GDĐT, 8/6/2025.",
       pages: ["de/ha-noi-2025-1.jpg", "de/ha-noi-2025-2.jpg"],
       files: [
@@ -567,6 +569,7 @@ COURSES.push({
     },
     {
       title: "Hà Nội 2024",
+      lessonId: "tv10-hn2024",
       note: "Đề chính thức Sở GDĐT, 9/6/2024. Đề một trang.",
       pages: ["de/ha-noi-2024-1.jpg"],
       files: [
@@ -576,12 +579,14 @@ COURSES.push({
     },
     {
       title: "THCS Mỹ Đình 2, 2026",
+      lessonId: "tv10-10",
       note: "Đề thi thử năm học 2026–2027.",
       pages: ["de/my-dinh-2-1.jpg", "de/my-dinh-2-2.jpg"],
       files: [{ href: "de/my-dinh-2-2026-de.pdf", label: "Đề PDF" }],
     },
     {
       title: "THCS Mỹ Đình 2, 2021",
+      lessonId: "tv10-12",
       note: "Đề thi thử ngày 30/5/2021, 90 phút.",
       pages: ["de/my-dinh-2-2021-de.png"],
       files: [{ href: "de/my-dinh-2-2021-de.png", label: "Ảnh đề" }],
