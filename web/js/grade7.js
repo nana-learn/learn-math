@@ -6,6 +6,11 @@ const G7_CHAPTERS = [
   { id: 3, title: "Góc và đường thẳng song song" },
   { id: 4, title: "Tam giác bằng nhau" },
   { id: 5, title: "Thu thập và biểu diễn dữ liệu" },
+  { id: 6, title: "Tỉ lệ thức và đại lượng tỉ lệ" },
+  { id: 7, title: "Biểu thức đại số và đa thức một biến" },
+  { id: 8, title: "Biến cố và xác suất" },
+  { id: 9, title: "Quan hệ giữa các yếu tố trong một tam giác" },
+  { id: 10, title: "Một số hình khối trong thực tiễn" },
 ];
 
 const G7_LESSONS = [
@@ -482,13 +487,424 @@ const G7_LESSONS = [
       { type: "mc", prompt: "Muốn thấy tỉ lệ từng loại trong một năm, nên vẽ", choices: ["Biểu đồ đoạn thẳng", "Biểu đồ quạt tròn", "Chỉ ghi một số", "Trục số"], correct: 1, hint: "Cơ cấu thì quạt.", explain: "Quạt tròn." },
     ],
   },
+  {
+    id: "g7-b20",
+    num: 20,
+    chapter: 6,
+    title: "Tỉ lệ thức",
+    summary: "a/b = c/d khi ad = bc. Nhân chéo để kiểm tra hoặc tìm số chưa biết.",
+    body: String.raw`
+      <p>Hai tỉ số bằng nhau tạo thành tỉ lệ thức. \(\dfrac{a}{b} = \dfrac{c}{d}\) (với \(b, d \neq 0\)) khi và chỉ khi \(ad = bc\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\dfrac{2}{3} = \dfrac{4}{6}\) vì \(2 \cdot 6 = 3 \cdot 4 = 12\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\dfrac{x}{5} = \dfrac{6}{15}\). Nhân chéo: \(15x = 30\), \(x = 2\). Kiểm tra: \(2/5 = 6/15\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\dfrac{3}{4} = \dfrac{6}{8}\) đúng. Viết \(\dfrac{3}{4} = \dfrac{6}{7}\) sai vì \(3 \cdot 7 = 21\), \(4 \cdot 6 = 24\). Không nhìn “cùng tăng một ít” rồi kết luận bằng nhau.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân chéo. Có thể đổi chỗ: \(a/c = b/d\). Không cho mẫu bằng 0.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "x/8 = 3/4. Giá trị x bằng bao nhiêu?", answer: 6, hint: "4x = 24.", explain: "x = 6." },
+      { type: "mc", prompt: "2/5 = 4/10 vì", choices: ["2 + 4 = 5 + 10", "2 · 10 = 5 · 4", "2 · 4 = 5 · 10", "Mẫu lớn hơn thì đúng"], correct: 1, hint: "ad = bc.", explain: "20 = 20." },
+      { type: "num", prompt: "Trong 3/x = 6/10, x bằng bao nhiêu?", answer: 5, hint: "3 · 10 = 6x.", explain: "x = 5." },
+    ],
+  },
+  {
+    id: "g7-b21",
+    num: 21,
+    chapter: 6,
+    title: "Dãy tỉ số bằng nhau",
+    summary: "a/b = c/d = e/f thì mỗi tỉ số bằng tổng tử trên tổng mẫu.",
+    body: String.raw`
+      <p>Nếu \(\dfrac{a}{b} = \dfrac{c}{d} = \dfrac{e}{f} = k\) thì \(a = kb\), \(c = kd\), \(e = kf\). Cộng tử và cộng mẫu: \(\dfrac{a + c + e}{b + d + f} = k\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(1/2 = 2/4 = 3/6\). Tổng tử 6, tổng mẫu 12, \(6/12 = 1/2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không cộng tử với mẫu. \((1+2)/(2+4)\) mới đúng hướng; \(1/2 + 2/4\) là chuyện khác.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cùng một hệ số k. Tổng các tử trên tổng các mẫu vẫn bằng k.</p></div>
+    `,
+    exercises: [
+      { type: "text", prompt: "1/3 = 2/6 = 4/x. x bằng bao nhiêu?", answer: "12", accept: ["12"], hint: "1/3 = 4/x.", explain: "x = 12." },
+      { type: "text", prompt: "2/5 = 4/10. (2+4)/(5+10) bằng phân số tối giản.", answer: "2/5", accept: ["2/5"], hint: "Tính chất dãy tỉ số.", explain: "6/15 = 2/5." },
+      { type: "mc", prompt: "a/b = c/d = k thì a + c bằng", choices: ["k(b + d)", "k", "b + d", "ad"], correct: 0, hint: "a = kb, c = kd.", explain: "a + c = k(b + d)." },
+    ],
+  },
+  {
+    id: "g7-b22",
+    num: 22,
+    chapter: 6,
+    title: "Đại lượng tỉ lệ thuận",
+    summary: "y tỉ lệ thuận với x khi y = kx, k không đổi. Tăng x thì y tăng cùng tỉ số.",
+    body: String.raw`
+      <p>Tiền mua kẹo tỉ lệ thuận với số gói nếu đơn giá không đổi. \(y = kx\). Đồ thị là đường thẳng qua gốc.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 3 cái bánh giá 45 nghìn. 5 cái cùng loại giá \(45 \cdot 5/3 = 75\) nghìn.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> 2 công nhân làm xong trong 6 ngày không có nghĩa 4 công nhân xong trong 12 ngày. Số người và số ngày thường tỉ lệ nghịch, bài sau.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tỉ lệ thuận: thương y/x không đổi. Gấp x thì gấp y.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "4 cây bút hết 20 nghìn. 7 cây cùng loại hết bao nhiêu nghìn?", answer: 35, hint: "20 · 7/4.", explain: "35 nghìn." },
+      { type: "num", prompt: "y tỉ lệ thuận với x. Khi x = 2 thì y = 10. Khi x = 6, y bằng bao nhiêu?", answer: 30, hint: "k = 5, y = 5x.", explain: "30." },
+      { type: "mc", prompt: "Đồ thị y = kx (k > 0) đi qua", choices: ["Gốc tọa độ", "Điểm (1; 0) thôi", "Không có điểm nào", "Chỉ trục Oy"], correct: 0, hint: "x = 0 thì y = 0.", explain: "Qua gốc." },
+    ],
+  },
+  {
+    id: "g7-b23",
+    num: 23,
+    chapter: 6,
+    title: "Đại lượng tỉ lệ nghịch",
+    summary: "y tỉ lệ nghịch với x khi xy = k, k không đổi. Gấp x thì y giảm còn một nửa.",
+    body: String.raw`
+      <p>Cùng một quãng đường, vận tốc gấp đôi thì thời gian còn một nửa. \(xy = k\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 6 người làm xong trong 10 ngày, công việc không đổi. 5 người cần \(6 \cdot 10 / 5 = 12\) ngày.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không nhân cả hai. Tỉ lệ nghịch là tích không đổi, không phải thương.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Thuận: thương không đổi. Nghịch: tích không đổi.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "8 vòi chảy đầy bể trong 6 giờ. 12 vòi cùng loại cần bao nhiêu giờ?", answer: 4, hint: "8 · 6 = 12 · t.", explain: "t = 4 giờ." },
+      { type: "num", prompt: "xy = 24, x = 3. y bằng bao nhiêu?", answer: 8, hint: "Tích không đổi.", explain: "y = 8." },
+      { type: "mc", prompt: "Tỉ lệ nghịch nghĩa là", choices: ["y/x không đổi", "xy không đổi", "y − x không đổi", "y + x không đổi"], correct: 1, hint: "Tích.", explain: "xy = k." },
+    ],
+  },
+  {
+    id: "g7-b24",
+    num: 24,
+    chapter: 7,
+    title: "Biểu thức đại số",
+    summary: "Chữ thay số. Điều kiện là mẫu khác 0 và căn không âm.",
+    body: String.raw`
+      <p>Biểu thức đại số gồm số, chữ và phép tính. Chữ là số chưa biết. Thế số vào chữ thì ra giá trị, nếu phép tính có nghĩa.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(2x + 5\) khi \(x = 3\) bằng 11.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\dfrac{1}{x - 2}\) không tính được khi \(x = 2\). \(\sqrt{x}\) không tính được khi \(x = -1\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Ghi điều kiện trước khi thế. Mẫu ≠ 0, trong căn ≥ 0.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "3x − 1 khi x = 4 bằng bao nhiêu?", answer: 11, hint: "12 − 1.", explain: "11." },
+      { type: "mc", prompt: "1/(x − 5) không có nghĩa khi x bằng", choices: ["0", "1", "5", "−5"], correct: 2, hint: "Mẫu bằng 0.", explain: "x = 5." },
+      { type: "num", prompt: "x² khi x = −3 bằng bao nhiêu?", answer: 9, hint: "(−3)(−3).", explain: "9." },
+    ],
+  },
+  {
+    id: "g7-b25",
+    num: 25,
+    chapter: 7,
+    title: "Đa thức một biến",
+    summary: "Đa thức là tổng các hạng tử ax^n. Bậc là số mũ lớn nhất có hệ số khác 0.",
+    body: String.raw`
+      <p>\(3x^2 - 5x + 1\) là đa thức bậc 2, một biến \(x\). Hạng tử \(3x^2\) bậc 2, \(-5x\) bậc 1, \(1\) bậc 0.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(7x^3\) bậc 3. \(4\) là đa thức bậc 0. \(x + 1/x\) không phải đa thức, vì có \(x\) ở mẫu.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(0 \cdot x^5 + x^2\) bậc 2, không phải 5. Hệ số 0 không tính.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đa thức không chia chữ, không căn chữ. Bậc = mũ lớn nhất còn sống.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Bậc của 2x^4 − x + 9 là bao nhiêu?", answer: 4, hint: "Mũ lớn nhất.", explain: "4." },
+      { type: "mc", prompt: "Biểu thức nào là đa thức một biến?", choices: ["x + 1/x", "√x + 1", "x² − 3x + 2", "2^x"], correct: 2, hint: "Chỉ cộng các luỹ thừa tự nhiên của x.", explain: "x² − 3x + 2." },
+      { type: "num", prompt: "Hệ số của x trong 5x² − 7x + 1 bằng bao nhiêu? Viết kèm dấu.", answer: -7, hint: "Hạng tử bậc 1.", explain: "−7." },
+    ],
+  },
+  {
+    id: "g7-b26",
+    num: 26,
+    chapter: 7,
+    title: "Cộng và trừ đa thức",
+    summary: "Cộng trừ hạng tử đồng dạng. x² chỉ cộng với x², không cộng với x.",
+    body: String.raw`
+      <p>Đồng dạng nghĩa là cùng biến, cùng mũ. \(3x^2\) và \(-5x^2\) cộng được. \(3x^2\) và \(3x\) không cộng thành \(6x^2\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((2x + 3) + (x - 1) = 3x + 2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \((x^2 + 4x) - (x^2 - x + 2) = x^2 + 4x - x^2 + x - 2 = 5x - 2\). Dấu trừ đổi dấu cả ngoặc.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \((3x - 5) - (2x - 1) = 3x - 5 - 2x + 1 = x - 4\), không phải \(3x - 5 - 2x - 1\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trừ đa thức = cộng đa thức đối. Đổi dấu từng hạng tử trong ngoặc.</p></div>
+    `,
+    exercises: [
+      { type: "text", prompt: "(2x + 1) + (3x − 4). Viết đa thức gọn, dạng ax+b không cách.", answer: "5x-3", accept: ["5x-3", "5x − 3"], hint: "Cộng đồng dạng.", explain: "5x − 3." },
+      { type: "text", prompt: "(5x − 2) − (x + 3). Viết ax+b không cách.", answer: "4x-5", accept: ["4x-5", "4x − 5"], hint: "Đổi dấu ngoặc sau.", explain: "5x − 2 − x − 3 = 4x − 5." },
+      { type: "mc", prompt: "x² + x bằng", choices: ["x³", "2x²", "2x", "Không gộp được thành một hạng tử"], correct: 3, hint: "Khác mũ.", explain: "Không đồng dạng." },
+    ],
+  },
+  {
+    id: "g7-b27",
+    num: 27,
+    chapter: 7,
+    title: "Nhân đa thức",
+    summary: "Nhân từng hạng tử. (a+b)(c+d) = ac + ad + bc + bd.",
+    body: String.raw`
+      <p>\(x^m \cdot x^n = x^{m+n}\). Nhân đơn thức với đa thức: phân phối. Nhân hai nhị thức: bốn tích.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(3x \cdot (x + 2) = 3x^2 + 6x\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \((x + 3)(x + 1) = x^2 + x + 3x + 3 = x^2 + 4x + 3\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \((x + 2)^2 = x^2 + 4x + 4\), không phải \(x^2 + 4\). Thiếu hạng tử giữa.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng mũ khi nhân cùng cơ số. Bình phương tổng có hạng 2ab.</p></div>
+    `,
+    exercises: [
+      { type: "text", prompt: "2x(x − 5). Viết đa thức gọn, không cách.", answer: "2x^2-10x", accept: ["2x^2-10x", "2x²-10x"], hint: "Phân phối.", explain: "2x² − 10x." },
+      { type: "num", prompt: "Hệ số của x trong (x+2)(x+3) bằng bao nhiêu?", answer: 5, hint: "2x + 3x.", explain: "x² + 5x + 6." },
+      { type: "mc", prompt: "(x+1)² bằng", choices: ["x² + 1", "x² + 2x + 1", "x² + x + 1", "2x + 1"], correct: 1, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 2x + 1." },
+    ],
+  },
+  {
+    id: "g7-b28",
+    num: 28,
+    chapter: 7,
+    title: "Chia đa thức",
+    summary: "Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp lại.",
+    body: String.raw`
+      <p>\(x^5 : x^2 = x^3\) khi \(x \neq 0\). Chia đa thức cho nhị thức làm giống chia số: chia hạng tử bậc cao nhất, nhân, trừ, kéo xuống.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((6x^3) : (2x) = 3x^2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \((x^2 + 5x + 6) : (x + 2) = x + 3\), vì \((x+2)(x+3) = x^2 + 5x + 6\). Kiểm tra bằng nhân ngược.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không chia từng hạng tử lung tung: \((x^2 + x) : x = x + 1\) thì được, vì cả hai hạng đều chia hết cho \(x\). \((x^2 + 1) : x\) không còn là đa thức.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân lại để kiểm tra. Dư khác 0 thì chưa chia hết.</p></div>
+    `,
+    exercises: [
+      { type: "text", prompt: "(8x^3) : (2x). Viết đơn thức, không cách.", answer: "4x^2", accept: ["4x^2", "4x²"], hint: "8/2 và 3−1.", explain: "4x²." },
+      { type: "num", prompt: "(x² + 5x + 6) : (x + 2) = x + a. a bằng bao nhiêu?", answer: 3, hint: "Nhân ngược (x+2)(x+3).", explain: "a = 3." },
+      { type: "mc", prompt: "Chia đa thức x² + 1 cho x được", choices: ["Đa thức x", "Đa thức x + 1/x, không còn đa thức", "1", "x²"], correct: 1, hint: "Dư 1, thương có 1/x.", explain: "Không chia hết trong vành đa thức." },
+    ],
+  },
+  {
+    id: "g7-b29",
+    num: 29,
+    chapter: 8,
+    title: "Làm quen với biến cố",
+    summary: "Phép thử có nhiều kết quả. Biến cố là tập một số kết quả ấy.",
+    body: String.raw`
+      <p>Gieo xúc xắc: sáu mặt có thể xảy ra. “Ra số chẵn” gồm 2, 4, 6. Đó là một biến cố.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tung đồng xu. Biến cố “sấp” có một kết quả. Biến cố “sấp hoặc ngửa” là biến cố chắc chắn.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> “Ra mặt 7” trên xúc xắc sáu mặt là biến cố không thể. Không nhầm với xác suất nhỏ nhưng vẫn có thể.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Chắc chắn: luôn xảy ra. Không thể: không bao giờ. Còn lại: có thể.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Xúc xắc sáu mặt. Biến cố “số chẵn” có bao nhiêu kết quả thuận lợi?", answer: 3, hint: "2, 4, 6.", explain: "Ba kết quả." },
+      { type: "mc", prompt: "Tung đồng xu. Biến cố “sấp hoặc ngửa” là", choices: ["Không thể", "Chắc chắn", "Chỉ xảy ra một lần", "Không phải biến cố"], correct: 1, hint: "Luôn ra một trong hai mặt.", explain: "Chắc chắn." },
+      { type: "mc", prompt: "Biến cố “ra mặt 7” trên xúc xắc 1–6 là", choices: ["Chắc chắn", "Không thể", "Có xác suất 1/6", "Có xác suất 1/7"], correct: 1, hint: "Không có mặt 7.", explain: "Không thể." },
+    ],
+  },
+  {
+    id: "g7-b30",
+    num: 30,
+    chapter: 8,
+    title: "Xác suất của biến cố",
+    summary: "P = số kết quả thuận lợi chia cho số kết quả đồng khả năng.",
+    body: String.raw`
+      <p>Khi mỗi kết quả một cơ hội như nhau, \(P(A) = \dfrac{n(A)}{n(\Omega)}\). Xác suất từ 0 đến 1.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Xúc xắc cân đối. P(số chẵn) = 3/6 = 1/2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hộp 3 bi đỏ, 1 bi xanh. P(đỏ) = 3/4, không phải 1/2 chỉ vì có hai màu. Đếm viên, không đếm màu.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Liệt kê Ω trước. Chỉ chia khi đồng khả năng. P = 0 không thể, P = 1 chắc chắn.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Xúc xắc. P(ra 5) = 1/k. k bằng bao nhiêu?", answer: 6, hint: "Một mặt trên sáu.", explain: "1/6." },
+      { type: "num", prompt: "Hộp 5 thẻ ghi 1 đến 5. P(số lẻ) = a/5. a bằng bao nhiêu?", answer: 3, hint: "1, 3, 5.", explain: "3/5." },
+      { type: "mc", prompt: "Xác suất không thể lớn hơn", choices: ["0", "1", "1/2", "100"], correct: 1, hint: "Tối đa là chắc chắn.", explain: "P ≤ 1." },
+    ],
+  },
+  {
+    id: "g7-b31",
+    num: 31,
+    chapter: 9,
+    title: "Góc và cạnh đối diện trong tam giác",
+    summary: "Góc lớn hơn thì cạnh đối diện dài hơn. Hai góc bằng nhau thì hai cạnh đối diện bằng nhau.",
+    body: String.raw`
+      <p>Trong một tam giác, cạnh lớn kề góc lớn. Đối diện góc vuông là cạnh dài nhất.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Góc \(A = 80^\circ\), góc \(B = 40^\circ\), góc \(C = 60^\circ\). Cạnh lớn nhất là \(BC\) (đối diện A). Cạnh nhỏ nhất là \(AC\) (đối diện B).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không so cạnh của hai tam giác khác nhau chỉ bằng cách so một góc. Định lí nói trong cùng một tam giác.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Góc lớn — cạnh đối lớn. Cân khi hai góc đáy bằng nhau.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tam giác góc A = 90°, B = 30°, C = 60°. Cạnh lớn nhất là", choices: ["AB", "AC", "BC", "Không so được"], correct: 2, hint: "Đối diện góc vuông.", explain: "BC đối diện A." },
+      { type: "mc", prompt: "Hai góc bằng nhau thì hai cạnh đối diện", choices: ["Vuông góc", "Bằng nhau", "Song song", "Gấp đôi"], correct: 1, hint: "Tam giác cân.", explain: "Bằng nhau." },
+      { type: "num", prompt: "Góc 20°, 70°, 90°. Cạnh nhỏ nhất đối diện góc bao nhiêu độ?", answer: 20, hint: "Góc nhỏ nhất.", explain: "20°." },
+    ],
+  },
+  {
+    id: "g7-b32",
+    num: 32,
+    chapter: 9,
+    title: "Đường vuông góc và đường xiên",
+    summary: "Vuông góc là đoạn ngắn nhất từ một điểm đến đường thẳng. Xiên dài hơn, xiên xa chân hơn thì dài hơn.",
+    body: String.raw`
+      <p>Từ điểm \(M\) ngoài đường thẳng \(d\), hạ vuông góc được chân \(H\). \(MH\) ngắn hơn mọi đường xiên \(MA\) với \(A\) khác \(H\) trên \(d\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Khoảng cách từ điểm đến đường là độ dài đường vuông góc, không phải đường xiên.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hai đường xiên bằng nhau thì hai chân cách đều chân vuông góc. Đừng so xiên với khoảng cách.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Vuông góc ngắn nhất. Xiên càng xa chân thì càng dài.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Khoảng cách từ điểm M đến đường d là", choices: ["Một đường xiên bất kì", "Đường vuông góc MH", "Trung tuyến", "Phân giác"], correct: 1, hint: "Ngắn nhất.", explain: "Độ dài MH." },
+      { type: "mc", prompt: "Đường xiên so với đường vuông góc cùng một điểm thì", choices: ["Ngắn hơn", "Dài hơn", "Luôn bằng", "Không so được"], correct: 1, hint: "Vuông góc ngắn nhất.", explain: "Xiên dài hơn." },
+      { type: "num", prompt: "MH = 5 cm vuông góc với d. Đường xiên MA dài hơn MH. MA có thể bằng 5 cm không? Trả 0 nếu không, 1 nếu có.", answer: 0, hint: "Xiên dài hơn vuông góc.", explain: "Không. MA > 5." },
+    ],
+  },
+  {
+    id: "g7-b33",
+    num: 33,
+    chapter: 9,
+    title: "Ba cạnh của một tam giác",
+    summary: "Tổng hai cạnh lớn hơn cạnh còn lại. Hiệu hai cạnh nhỏ hơn cạnh còn lại.",
+    body: String.raw`
+      <p>Không có tam giác cạnh 2, 3, 6 vì 2 + 3 = 5 < 6. Ba điểm không khép kín.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 5, 6, 7: 5+6>7, 5+7>6, 6+7>5. Tạo được tam giác.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> 3, 4, 7 không được: 3+4=7, ba điểm thẳng hàng, diện tích 0, không phải tam giác.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phải lớn hơn, không được bằng. Kiểm tra cả ba cặp.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Ba độ dài 2, 5, 8 có tạo tam giác không?", choices: ["Có", "Không", "Chỉ khi vuông", "Chỉ khi cân"], correct: 1, hint: "2 + 5 = 7 < 8.", explain: "Không." },
+      { type: "mc", prompt: "3, 4, 5 có tạo tam giác không?", choices: ["Có", "Không", "Chỉ trên giấy", "Không vì 3+4>5 sai"], correct: 0, hint: "3+4>5.", explain: "Có, tam giác vuông." },
+      { type: "num", prompt: "Hai cạnh 6 cm và 10 cm. Cạnh thứ ba nguyên, nhỏ nhất có thể là bao nhiêu cm?", answer: 5, hint: "Lớn hơn 10 − 6 = 4, nhỏ hơn 16.", explain: "5 cm, vì 4 không được (6+4=10)." },
+    ],
+  },
+  {
+    id: "g7-b34",
+    num: 34,
+    chapter: 9,
+    title: "Đồng quy trung tuyến và phân giác",
+    summary: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
+    body: String.raw`
+      <p>Trung tuyến nối đỉnh với trung điểm cạnh đối. Ba trung tuyến đồng quy tại trọng tâm G. AG : GM = 2 : 1, M trung điểm.</p>
+      <p>Ba đường phân giác trong đồng quy tại tâm đường tròn nội tiếp, điểm cách đều ba cạnh.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Trung tuyến dài 9 cm thì đoạn từ đỉnh đến trọng tâm 6 cm, đoạn còn lại 3 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Trọng tâm không phải tâm đường tròn nội tiếp, trừ tam giác đều. Đừng nhầm hai giao điểm.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trung tuyến → trọng tâm, tỉ lệ 2:1. Phân giác → tâm nội tiếp, cách đều ba cạnh.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Trung tuyến 12 cm. Đoạn từ đỉnh đến trọng tâm bằng bao nhiêu cm?", answer: 8, hint: "2/3 của 12.", explain: "8 cm." },
+      { type: "mc", prompt: "Ba đường phân giác trong gặp nhau tại", choices: ["Trọng tâm", "Tâm đường tròn nội tiếp", "Trung điểm một cạnh", "Đỉnh"], correct: 1, hint: "Cách đều ba cạnh.", explain: "Tâm nội tiếp." },
+      { type: "num", prompt: "AG = 10 cm, G trọng tâm trên trung tuyến AM. AM bằng bao nhiêu cm?", answer: 15, hint: "AG = 2/3 AM.", explain: "15 cm." },
+    ],
+  },
+  {
+    id: "g7-b35",
+    num: 35,
+    chapter: 9,
+    title: "Đồng quy trung trực và đường cao",
+    summary: "Ba trung trực gặp nhau tại tâm đường tròn ngoại tiếp. Ba đường cao gặp nhau tại trực tâm.",
+    body: String.raw`
+      <p>Trung trực: vuông góc tại trung điểm cạnh. Giao ba trung trực là tâm đường tròn đi qua ba đỉnh.</p>
+      <p>Đường cao: vuông góc kẻ từ đỉnh xuống cạnh đối. Giao ba đường cao là trực tâm.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền. Trực tâm là đỉnh góc vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tam giác tù: trực tâm và tâm ngoại tiếp nằm ngoài tam giác. Không bắt chúng phải nằm trong.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trung trực → ngoại tiếp, qua ba đỉnh. Đường cao → trực tâm. Vuông: tâm là trung điểm huyền.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tâm đường tròn ngoại tiếp là giao", choices: ["Ba trung tuyến", "Ba trung trực", "Ba phân giác", "Ba đường cao"], correct: 1, hint: "Cách đều ba đỉnh.", explain: "Ba trung trực." },
+      { type: "mc", prompt: "Tam giác vuông, tâm ngoại tiếp nằm ở", choices: ["Đỉnh góc vuông", "Trung điểm cạnh huyền", "Trọng tâm", "Ngoài tam giác luôn"], correct: 1, hint: "Góc nội tiếp chắn đường kính.", explain: "Trung điểm cạnh huyền." },
+      { type: "mc", prompt: "Trực tâm là giao", choices: ["Ba đường cao", "Ba trung trực", "Ba trung tuyến", "Hai cạnh huyền"], correct: 0, hint: "Đường cao.", explain: "Ba đường cao." },
+    ],
+  },
+  {
+    id: "g7-b36",
+    num: 36,
+    chapter: 10,
+    title: "Hình hộp chữ nhật và hình lập phương",
+    summary: "Thể tích = dài × rộng × cao. Lập phương là hộp có mọi cạnh bằng nhau.",
+    body: String.raw`
+      <p>Hình hộp chữ nhật có 6 mặt là hình chữ nhật. Diện tích toàn phần \(S = 2(ab + bh + ha)\). Thể tích \(V = abh\).</p>
+      <p>Hình lập phương cạnh \(a\): \(S = 6a^2\), \(V = a^3\).</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hộp 3 cm, 4 cm, 5 cm. \(V = 60\) cm³. \(S = 2(12 + 20 + 15) = 94\) cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Sơn xung quanh thùng không đáy thì không lấy 2ab. Đọc kỹ: toàn phần, xung quanh, hay không nắp.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> V = đáy × cao. Lập phương: mọi cạnh bằng nhau, 6 mặt vuông.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hộp 2 cm × 3 cm × 4 cm. Thể tích bằng bao nhiêu cm³?", answer: 24, hint: "2·3·4.", explain: "24." },
+      { type: "num", prompt: "Lập phương cạnh 5 cm. Diện tích toàn phần bằng bao nhiêu cm²?", answer: 150, hint: "6a².", explain: "6·25 = 150." },
+      { type: "num", prompt: "Lập phương cạnh 3 cm. Thể tích bằng bao nhiêu cm³?", answer: 27, hint: "a³.", explain: "27." },
+    ],
+  },
+  {
+    id: "g7-b37",
+    num: 37,
+    chapter: 10,
+    title: "Hình lăng trụ đứng",
+    summary: "Hai đáy đa giác bằng nhau, mặt bên là hình chữ nhật. V = diện tích đáy × cao.",
+    body: String.raw`
+      <p>Lăng trụ đứng tam giác: đáy tam giác, ba mặt bên chữ nhật. Lăng trụ đứng tứ giác: đáy tứ giác. Chiều cao vuông góc với đáy, bằng cạnh bên.</p>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Đáy tam giác diện tích 12 cm², cao lăng trụ 5 cm. \(V = 60\) cm³.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Diện tích toàn phần = 2 đáy + các mặt bên. Quên nhân 2 đáy thì thiếu. Mặt bên dùng chu vi đáy nhân chiều cao.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> V = S_đáy · h. Xung quanh = chu vi đáy · h. Không nhầm với hình hộp nếu đáy không phải chữ nhật.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đáy diện tích 10 cm², cao 7 cm. Thể tích lăng trụ đứng bằng bao nhiêu cm³?", answer: 70, hint: "S·h.", explain: "70." },
+      { type: "num", prompt: "Tam giác đáy chu vi 12 cm, cao lăng trụ 5 cm. Diện tích xung quanh bằng bao nhiêu cm²?", answer: 60, hint: "Chu vi × cao.", explain: "60." },
+      { type: "mc", prompt: "Mặt bên của lăng trụ đứng là", choices: ["Hình tròn", "Hình chữ nhật", "Hình thoi luôn", "Tam giác đều"], correct: 1, hint: "Cạnh bên vuông góc đáy.", explain: "Hình chữ nhật." },
+    ],
+  },
 ];
 
 (function attachGrade7() {
   const course = COURSES.find((c) => c.id === "7");
   if (!course) return;
-  course.subtitle = "Tập 1 · Kết nối tri thức với cuộc sống";
-  course.blurb = "Chương I–V, Bài 1–19. Ví dụ viết mới, không chép SGK.";
+  course.subtitle = "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống";
+  course.blurb = "Chương I–X, Bài 1–37. Ví dụ viết mới, không chép SGK.";
   course.chapters = G7_CHAPTERS;
   course.lessons = G7_LESSONS;
 })();
