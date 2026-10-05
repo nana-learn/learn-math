@@ -97,7 +97,13 @@ const LESSONS = [
         <figcaption>\((-1;\ 2)\) và \((1;\ 1)\) đều thoả \(x + 2y = 3\). Đường thẳng còn cắt trục \(x\) tại \((3;\ 0)\).</figcaption>
       </figure>
       <p>Vì sao là đường thẳng, không phải đường cong? Giải \(y\) theo \(x\): \(2y = 3 - x\), nên \(y = -\dfrac{1}{2}x + \dfrac{3}{2}\). Mỗi lần \(x\) tăng 2, \(y\) giảm đúng 1. Mức đổi không đổi, nên các điểm nằm thẳng hàng. Mọi nghiệm là một điểm trên đường đó; mọi điểm trên đường đó là một nghiệm.</p>
-      <div class="warn">
+            <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Sách bài tập mở đầu bằng kiểm tra một cặp có phải nghiệm không, rồi mới vẽ đường thẳng. Làm hai việc ấy trước khi nghĩ tới hệ. Một phương trình hai ẩn: vô số nghiệm, hình là một đường. Hệ: nghiệm là giao hai đường — một điểm, không điểm, hoặc trùng nhau cả đường.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(3x - y = 7\). Cặp \((2;\ -1)\): \(6 - (-1) = 7\), đúng. Cặp \((1;\ -2)\): \(3 - (-2) = 5 \neq 7\), sai. Chỉ cần một phép thế. Không giải cả hệ khi đề mới cho một phương trình.</p>
+      </div>
+<div class="warn">
         <p><strong>Cái gì trông giống mà không phải.</strong></p>
         <ul>
           <li>\(x^2 + y = 3\): \(x\) bậc hai, không viết được dạng \(ax + by = c\).</li>
@@ -237,6 +243,8 @@ const LESSONS = [
         hint: "Phải đúng cả hai phương trình, không chỉ phương trình tổng.",
         explain: String.raw`\((3;\ 2)\): \(3 + 2 = 5\) và \(3 - 2 = 1\). \((4;\ 1)\) và \((2;\ 3)\) đúng tổng nhưng sai hiệu. \((5;\ 0)\) sai cả hai.`,
       },
+      { type: "mc", prompt: "Phương trình 2x + 3y = 6 có bao nhiêu nghiệm thực?", choices: ["Một","Hai","Vô số","Không có"], correct: 2, hint: "Một phương trình hai ẩn.", explain: "Vô số cặp, nằm trên một đường thẳng." },
+      { type: "num", prompt: "x + y = 5. Khi x = 2, y bằng bao nhiêu?", answer: 3, hint: "Thế x = 2.", explain: "y = 3. Cặp (2; 3) là một nghiệm." },
     ],
   },
   {
@@ -351,6 +359,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Hệ \(y = 2x - 1\) và \(x + y = 5\). Thế \(y\) lại vào chính câu vừa rút được thì ra \(2x - 1 = 2x - 1\), không tìm được \(x\). Phải thế vào câu còn lại: \(x + (2x - 1) = 5\), \(x = 2\), \(y = 3\). Kiểm tra: \(2 + 3 = 5\).</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Thế vào phương trình còn lại. Nhân cả hai vế khi làm hệ số đối nhau. Kết thúc bằng cặp \((x;\ y)\) và một lần kiểm tra.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Thành thạo hai thuật: thế và cộng đại số. Sau khi ra cặp, thế lại cả hai phương trình. Nếu hai đường song song, phép trừ cho \(0 = số \neq 0\): vô nghiệm. Nếu trừ được \(0 = 0\): vô số nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(\begin{cases} x + 2y = 8 \\ 3x + 6y = 24. \end{cases}\) Nhân câu thứ nhất với 3 rồi trừ câu thứ hai: \(0 = 0\). Hai phương trình cùng một đường. Vô số nghiệm, ví dụ \((8;\ 0)\) và \((0;\ 4)\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi đề đã cho sẵn hệ, việc còn lại là giải. Năm 2024 cho hệ có \(\sqrt{3x+1}\) ở cả hai phương trình. Đặt ẩn phụ rồi cộng hoặc thế, như bài này. Năm 2026, sau khi lập xong, hệ hoa hồng và hoa cúc cũng giải bằng cộng đại số: \(x+y=25\), \(8x+6y=180\).</p>
       </div>
@@ -404,6 +418,8 @@ const LESSONS = [
         hint: "Cộng từng vế để tìm x, rồi thế lại để tìm y.",
         explain: String.raw`Cộng: \(2x = 10\), \(x = 5\). Thế vào \(x + y = 8\): \(y = 3\). Kiểm tra: \(5 - 3 = 2\).`,
       },
+      { type: "mc", prompt: "Hệ x + y = 1 và 2x + 2y = 3 có", choices: ["Một nghiệm","Vô số nghiệm","Vô nghiệm","Hai nghiệm"], correct: 2, hint: "Hai đường song song.", explain: "Nhân câu 1 với 2 được 2x+2y=2, mâu thuẫn với 3." },
+      { type: "num", prompt: "Hệ x + y = 4, x − y = 2. Giá trị x bằng bao nhiêu?", answer: 3, hint: "Cộng hai phương trình.", explain: "2x = 6, x = 3, y = 1." },
     ],
   },
   {
@@ -459,6 +475,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Tìm hai số tự nhiên, tổng 10, hiệu 12. Hệ cho \(x = 11\), \(y = -1\). Đó là nghiệm của hệ, nhưng \(-1\) không phải số tự nhiên. Bài toán vô nghiệm trong điều kiện đã đặt. Không sửa thành 1.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hai câu trong đề, hai phương trình. Ghi điều kiện lúc gọi ẩn. Nghiệm của hệ chưa chắc là đáp số.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Gọi ẩn, ghi điều kiện (dương, nguyên, nhỏ hơn tổng). Một câu chuyện — một phương trình. Hai câu chuyện — hai phương trình. Sau khi giải, loại nghiệm âm hoặc không nguyên nếu đề đòi vậy.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Trộn 40 ml nước cam. Có chai 10% đường và chai 25% đường, muốn ra 16%. Gọi \(x\) ml chai 10%, \(y\) ml chai 25%, \(x>0\), \(y>0\). \(x+y=40\), \(0{,}1x+0{,}25y=0{,}16\cdot 40\). Giải được \(x=24\), \(y=16\). Kiểm tra đường: \(2{,}4+4=6{,}4\) ml trên 40 ml, đúng 16%.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.2.</strong> Năm 2026: mua 25 bông hoa hồng và cúc hết 180 nghìn đồng. Hồng 8 nghìn một bông, cúc 6 nghìn. Hỏi mỗi loại bao nhiêu. Hai câu trong đề là hai phương trình. Gọi \(x, y\), ghi điều kiện nguyên dương, giải, rồi kiểm tra.</p>
         <p>Năm 2025 cùng dạng: ba lô và máy tính niêm yết tổng 885 nghìn đồng, giảm 20% và 25%, trả 682 nghìn đồng. Vẫn là một hệ hai ẩn, không phải một phương trình.</p>
@@ -515,6 +537,8 @@ const LESSONS = [
         hint: "Bị chia = chia × thương + dư. Số lớn là số bị chia.",
         explain: String.raw`Số lớn là số bị chia: \(y = x \cdot 2 + 5\). Dư được cộng, không bị trừ. Còn phải nhớ điều kiện \(x > 5\).`,
       },
+      { type: "num", prompt: "Tổng hai số 20, hiệu 6. Số lớn bằng bao nhiêu?", answer: 13, hint: "Cộng hai phương trình.", explain: "2x = 26, x = 13, y = 7." },
+      { type: "mc", prompt: "Giải ra x = −2 cho số học sinh. Việc đúng là", choices: ["Nhận −2","Loại vì điều kiện x > 0","Đổi thành 2","Bỏ điều kiện"], correct: 1, hint: "Đối chiếu điều kiện đã ghi.", explain: "Số học sinh không âm." },
     ],
   },
 
@@ -566,6 +590,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(\dfrac{5}{x - 2} = 1\). Điều kiện \(x \neq 2\). Nhân mẫu: \(5 = x - 2\), \(x = 7\). Kiểm tra \(\dfrac{5}{5} = 1\). Nếu phép tính ra \(x = 2\), phải loại: mẫu bằng 0, phương trình gốc không có nghĩa.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tích bằng 0 thì xét từng thừa số, kể cả nghiệm âm. Có mẫu thì viết điều kiện trước, giải xong loại giá trị làm mẫu bằng 0.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tích bằng 0 thì từng thừa số bằng 0. Phương trình có mẫu: điều kiện trước, khử mẫu, đối chiếu sau. Sai lầm hay gặp: nhận nghiệm làm mẫu bằng 0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \((x-4)^2 - 9x^2 = 0\). Hiệu hai bình phương: \((x-4-3x)(x-4+3x)=0\), \((-2x-4)(4x-4)=0\). \(x=-2\) hoặc \(x=1\). Kiểm tra: cả hai đều không làm biểu thức gốc mất nghĩa.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, 2024.</strong> Hệ</p>
         \[
@@ -606,6 +636,8 @@ const LESSONS = [
         hint: "Khử mẫu có thể sinh ra nghiệm giả làm mẫu số bằng 0.",
         explain: String.raw`Khử mẫu có thể sinh nghiệm làm mẫu bằng 0. Giá trị ấy không được nhận, vì phương trình gốc không có nghĩa tại đó.`,
       },
+      { type: "num", prompt: "(x − 3)(x + 1) = 0. Tổng hai nghiệm bằng bao nhiêu?", answer: 2, hint: "x = 3 hoặc x = −1.", explain: "3 + (−1) = 2." },
+      { type: "num", prompt: "5/(x − 4) = 1. Điều kiện x ≠ 4. Nghiệm x bằng bao nhiêu?", answer: 9, hint: "5 = x − 4.", explain: "x = 9, khác 4, nhận." },
     ],
   },
   {
@@ -649,6 +681,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(-3 < 2\) và \(-4 < 1\). Nhân từng vế với nhau được \(12 < 2\), sai. Không được nhân hai bất đẳng thức khi chưa biết dấu. Cộng cùng một số, hoặc nhân cả hai vế với cùng một số, mới là quy tắc của bài này.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Lớn hơn là đứng bên phải. Cộng cùng một số thì giữ chiều. Nhân số âm thì đổi chiều. Không nhân hai bất đẳng thức với nhau cho xong.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Cộng cùng một số thì chiều không đổi. Nhân số dương: giữ chiều. Nhân số âm: đổi chiều. Không nhân hai bất đẳng thức với nhau khi chưa biết dấu.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -683,6 +718,8 @@ const LESSONS = [
         hint: "Trên trục số: a đứng bên trái b, b đứng bên trái c.",
         explain: "Tính chất bắc cầu: a < b < c ⇒ a < c.",
       },
+      { type: "mc", prompt: "Từ a < b, nhân cả hai vế với −1 thì", choices: ["a > b vẫn sai","−a > −b","−a < −b","Không đổi chiều"], correct: 1, hint: "Nhân số âm thì đổi chiều.", explain: "−a > −b." },
+      { type: "mc", prompt: "3 < 5 và 1 < 4. Có được viết 3·1 < 5·4 không?", choices: ["Có, vì cả hai dương","Không bao giờ","Chỉ khi trừ","Chỉ khi a = 0"], correct: 0, hint: "Cả bốn số dương thì nhân được.", explain: "3 < 20 đúng. Không nhân khi có số âm chưa rõ." },
     ],
   },
   {
@@ -759,6 +796,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(-2x > 6\). Chia cho \(-2\) mà quên đổi chiều sẽ viết \(x > -3\). Sai. Đúng là \(x < -3\). Thử \(x = 0\): \(0 > 6\) sai. Thử \(x = -4\): \(8 > 6\) đúng.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hệ số dương thì giữ chiều. Hệ số âm thì đổi chiều. Thử một điểm trong tập nghiệm và một điểm ngoài.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đưa về \(ax+b<0\). Nếu \(a>0\) thì \(x < -b/a\). Nếu \(a<0\) thì đổi chiều. Thử một điểm trong tập nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(5-2x \geq 1\). \(-2x \geq -4\). Chia \(-2\), đổi chiều: \(x \leq 2\). Thử \(x=0\): \(5\geq 1\) đúng. Thử \(x=3\): \(5-6\geq 1\) sai.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Sau khi rút gọn căn, ý cuối câu II là một bất phương trình. Năm 2025: tìm số nguyên dương \(x\) lớn nhất để \(\dfrac{A}{B}<\dfrac{1}{2}\). Năm 2024: tìm mọi \(x\) để \(A-B<0\). Phải xét dấu mẫu trước khi nhân hai vế. Kết quả còn phải nằm trong điều kiện của căn.</p>
       </div>
@@ -795,6 +838,8 @@ const LESSONS = [
         hint: "Chỉ một ẩn và ẩn có bậc nhất.",
         explain: "Chỉ có một ẩn x, ẩn có bậc nhất. Các bất phương trình còn lại có ẩn bậc ba, bậc hai, hoặc hai ẩn.",
       },
+      { type: "mc", prompt: "−3x > 9. Tập nghiệm là", choices: ["x > −3","x < −3","x > 3","x < 3"], correct: 1, hint: "Chia −3, đổi chiều.", explain: "x < −3." },
+      { type: "num", prompt: "x + 5 ≤ 2. Số nguyên lớn nhất thỏa là bao nhiêu?", answer: -3, hint: "x ≤ −3.", explain: "−3." },
     ],
   },
 
@@ -839,6 +884,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(\sqrt{16 + 9} = 5\), không phải \(\sqrt{16} + \sqrt{9} = 7\). \(\sqrt{(-6)^2} = 6\), không phải \(-6\). Căn không đi xuyên dấu cộng, và dấu căn không trả số âm.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> \(\sqrt{\ }\) chỉ cho số không âm. \(\sqrt{a^2} = |a|\). Dưới căn phải không âm thì biểu thức mới có nghĩa.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> \(\sqrt{A}\) có nghĩa khi \(A\geq 0\). \(\sqrt{a^2}=|a|\). Không viết \(\sqrt{a}+\sqrt{b}=\sqrt{a+b}\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu II.1.</strong> Đề cho biểu thức chứa căn và bảo tính khi \(x\) là một số cụ thể. Phải kiểm tra điều kiện trước. Năm 2026, \(A = \dfrac{\sqrt{x}-4}{\sqrt{x}}\), \(x>0\), \(x\neq 9\). Với \(x=25\), \(\sqrt{25}=5\), \(A=\dfrac{1}{5}\). Năm 2025 tính \(A\) tại \(x=9\). Năm 2024 tính \(A\) tại \(x=16\), với mẫu \(\sqrt{x}-3\): \(x=9\) làm mẫu bằng 0, không được thế.</p>
       </div>
@@ -875,6 +923,8 @@ const LESSONS = [
         hint: "Biểu thức dưới dấu căn phải không âm: 2x − 1 ≥ 0.",
         explain: "Điều kiện xác định: 2x − 1 ≥ 0 ⇔ x ≥ 1/2.",
       },
+      { type: "num", prompt: "√49 bằng bao nhiêu?", answer: 7, hint: "Không âm.", explain: "7." },
+      { type: "mc", prompt: "√(a²) bằng", choices: ["a","−a","|a|","a²"], correct: 2, hint: "Căn không âm.", explain: "|a|." },
     ],
   },
   {
@@ -915,6 +965,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \((-4) \cdot (-9) = 36\), nên \(\sqrt{36} = 6\). Không được viết \(\sqrt{-4} \cdot \sqrt{-9}\): từng số âm không có căn bậc hai. Tách căn chỉ khi mỗi thừa số không âm.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tách được qua nhân và chia, khi từng phần không âm. Không tách qua dấu cộng. Kéo số âm ra ngoài căn thì phải lấy giá trị tuyệt đối.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> \(\sqrt{AB}=\sqrt{A}\sqrt{B}\) khi \(A,B\geq 0\). Gộp tích dưới một căn rồi rút chính phương. \(\sqrt{7}\cdot\sqrt{28}=\sqrt{196}=14\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(\sqrt{8}\cdot\sqrt{18}=\sqrt{144}=12\). Hoặc \(2\sqrt{2}\cdot 3\sqrt{2}=6\cdot 2=12\). Hai đường một đáp số.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi rút gọn câu II, đề tách tích và thương dưới căn. Năm 2024, mẫu \(x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)\). Đó là đưa thừa số \(\sqrt{x}\) ra ngoài, đúng phép của bài này. Không tách căn qua dấu cộng.</p>
       </div>
@@ -951,6 +1007,8 @@ const LESSONS = [
         hint: "Căn không phân phối qua phép cộng. Kiểm tra: √25 bằng bao nhiêu, √16 + √9 bằng bao nhiêu?",
         explain: "√(16 + 9) = √25 = 5, còn √16 + √9 = 4 + 3 = 7. Căn bậc hai không phân phối qua phép cộng."
       },
+      { type: "num", prompt: "√4 · √9 bằng bao nhiêu?", answer: 6, hint: "2 · 3 hoặc √36.", explain: "6." },
+      { type: "num", prompt: "√50 : √2 bằng bao nhiêu?", answer: 5, hint: "√25.", explain: "5." },
     ],
   },
   {
@@ -995,6 +1053,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(\sqrt{12} + \sqrt{27} = 2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3}\). Không phải \(\sqrt{39}\). \(\sqrt{50} = 5\sqrt{2}\), không phải \(2\sqrt{25}\): 25 xuống được, 2 ở lại dưới căn.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đưa thừa số chính phương ra ngoài. Chỉ cộng các căn cùng loại. Số âm đi vào căn thì dấu trừ đứng ngoài.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Rút \(\sqrt{48}=4\sqrt{3}\). Cộng chỉ khi cùng loại: \(2\sqrt{3}+5\sqrt{3}=7\sqrt{3}\). Không cộng \(\sqrt{3}+\sqrt{12}\) trước khi rút \(\sqrt{12}\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu II.2.</strong> Năm 2026, với \(x>0\), \(x\neq 9\),</p>
         \[
@@ -1035,6 +1096,8 @@ const LESSONS = [
         hint: "Ra khỏi căn phải qua cửa giá trị tuyệt đối: |−2|.",
         explain: "√((−2)²·5) = |−2|√5 = 2√5.",
       },
+      { type: "text", prompt: "√18 rút gọn. Viết a√2 với a nguyên.", answer: "3√2", accept: ["3√2","3\\sqrt{2}","3sqrt2"], hint: "18 = 9 · 2.", explain: "3√2." },
+      { type: "num", prompt: "2√5 + 3√5 = k√5. k bằng bao nhiêu?", answer: 5, hint: "Cùng loại thì cộng hệ số.", explain: "5." },
     ],
   },
   {
@@ -1076,6 +1139,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(\sqrt[3]{-27} = -3\), có nghĩa, không phải “không xác định”. \(\sqrt[3]{8} + \sqrt[3]{27} = 2 + 3 = 5\), không bằng \(\sqrt[3]{35}\). Căn bậc ba giữ dấu, nhưng vẫn không cộng xuyên qua dấu cộng.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Mỗi số có đúng một căn bậc ba, cùng dấu với số đó. Không lấy giá trị tuyệt đối. \((\sqrt[3]{a})^3 = a\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Căn bậc ba của số âm có nghĩa: \(\sqrt[3]{-8}=-2\). Không lấy trị tuyệt đối. \((\sqrt[3]{a})^3=a\).</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1109,6 +1175,8 @@ const LESSONS = [
         hint: "So sánh với căn bậc hai: tại sao ở đây không cần giá trị tuyệt đối?",
         explain: "Tính chất (∛a)³ = ∛(a³) = a đúng với mọi số thực a.",
       },
+      { type: "num", prompt: "Căn bậc ba của −64 bằng bao nhiêu?", answer: -4, hint: "(−4)³ = −64.", explain: "−4." },
+      { type: "num", prompt: "(∛5)³ bằng bao nhiêu?", answer: 5, hint: "Lũy thừa và căn ngược nhau.", explain: "5." },
     ],
   },
 
@@ -1194,6 +1262,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(\sin 30^\circ + \sin 60^\circ = \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\), không bằng \(\sin 90^\circ = 1\). Tỉ số lượng giác không cộng theo góc. Muốn cộng, phải tính từng tỉ số rồi cộng các số.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Sin là đối trên huyền, cos là kề trên huyền, tan là đối trên kề. Góc phụ nhau thì sin góc này bằng cos góc kia. Phóng to tam giác, tỉ số không đổi.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Thuộc lòng sin, cos, tan của \(30^\circ, 45^\circ, 60^\circ\). sin là đối/huyền, cos kề/huyền, tan đối/kề. \(\sin 30^\circ=1/2\), không phải \(\sqrt{3}/2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Tam giác vuông tại \(A\), góc \(B=30^\circ\), cạnh huyền 10 cm. Cạnh đối của \(B\) là \(10\cdot\sin 30^\circ=5\) cm. Cạnh kề của \(B\) là \(10\cdot\cos 30^\circ=5\sqrt{3}\) cm.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1232,6 +1306,8 @@ const LESSONS = [
         hint: "Cộng hai góc lại xem được bao nhiêu độ?",
         explain: "35° + 55° = 90° nên hai góc phụ nhau, áp dụng định lí tỉ số lượng giác của hai góc phụ.",
       },
+      { type: "text", prompt: "sin 30° viết phân số.", answer: "1/2", accept: ["1/2"], hint: "Đối/huyền góc 30°.", explain: "1/2." },
+      { type: "mc", prompt: "cos 60° bằng", choices: ["√3/2","1/2","1","√3"], correct: 1, hint: "cos 60° = sin 30°.", explain: "1/2." },
     ],
   },
   {
@@ -1293,6 +1369,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Cạnh huyền 10 cm, góc \(B = 30^\circ\). Cạnh đối của \(B\) là \(10 \cdot \sin 30^\circ = 5\) cm. Lấy nhầm \(\cos 30^\circ\) sẽ ra \(5\sqrt{3}\) cm, dài hơn nửa cạnh huyền, không khớp góc 30°.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Biết cạnh huyền thì dùng sin góc đối hoặc cos góc kề. Biết cạnh kề thì dùng tan. Đọc góc đối với cạnh cần tìm, không lấy góc bên cạnh.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Biết cạnh huyền và góc nhọn: dùng sin hoặc cos. Biết hai cạnh góc vuông: dùng tan. Đọc đúng góc đối hay góc kề.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1325,6 +1404,8 @@ const LESSONS = [
         hint: "Cần tìm cạnh đối, biết cạnh kề (bóng) → dùng tan.",
         explain: "h = 25 · tan 40° ≈ 25 · 0,839 ≈ 21 m.",
       },
+      { type: "num", prompt: "Cạnh huyền 20 cm, góc 30°. Cạnh đối góc ấy bằng bao nhiêu cm?", answer: 10, hint: "sin 30° = 1/2.", explain: "10 cm." },
+      { type: "mc", prompt: "Biết cạnh kề và góc, tìm cạnh đối. Dùng", choices: ["sin","cos","tan","Cạnh huyền nhân 2"], correct: 2, hint: "tan = đối/kề.", explain: "tan." },
     ],
   },
 
@@ -1382,6 +1463,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Bán kính 5 cm. Điểm \(M\) nằm trên bán kính, \(OM = 3\) cm. \(M\) ở trong đường tròn, không nằm trên đường tròn. Nằm trên đoạn kẻ từ tâm chưa đủ. Phải có \(OM = 5\).</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đường tròn là ranh giới, hình tròn gồm cả phần trong. So khoảng cách tới tâm với \(R\): bằng thì trên, nhỏ hơn thì trong, lớn hơn thì ngoài.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> So \(OM\) với \(R\): bằng thì trên đường tròn, nhỏ hơn thì trong, lớn hơn thì ngoài. Đường kính \(=2R\).</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1416,6 +1500,8 @@ const LESSONS = [
         hint: "Đường kính đi qua tâm; tâm cách A và B đúng bằng nhau.",
         explain: "Đường tròn đường kính AB có tâm là trung điểm của AB, bán kính bằng nửa AB.",
       },
+      { type: "mc", prompt: "R = 6, OM = 6. Điểm M", choices: ["Trong đường tròn","Trên đường tròn","Ngoài đường tròn","Trùng tâm"], correct: 1, hint: "OM = R.", explain: "Trên đường tròn." },
+      { type: "num", prompt: "Bán kính 8 cm. Đường kính bằng bao nhiêu cm?", answer: 16, hint: "2R.", explain: "16 cm." },
     ],
   },
   {
@@ -1484,6 +1570,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Góc ở tâm \(70^\circ\) chắn cung nhỏ \(70^\circ\). Cung lớn là \(360^\circ - 70^\circ = 290^\circ\), không phải \(140^\circ\). Gấp đôi góc ở tâm không ra cung lớn.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đường kính là dây dài nhất. Cung nhỏ bằng góc ở tâm chắn nó. Cung lớn bằng 360° trừ cung nhỏ.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đường kính là dây dài nhất. Cung nhỏ bằng góc ở tâm chắn nó. Cung lớn \(=360^\circ\) trừ cung nhỏ.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1516,6 +1605,8 @@ const LESSONS = [
         hint: "360 trừ đi 100.",
         explain: "360° − 100° = 260°.",
       },
+      { type: "num", prompt: "Góc ở tâm 50°. Cung nhỏ bị chắn bằng bao nhiêu độ?", answer: 50, hint: "Cung nhỏ bằng góc ở tâm.", explain: "50°." },
+      { type: "num", prompt: "Cung nhỏ 80°. Cung lớn bằng bao nhiêu độ?", answer: 280, hint: "360 − 80.", explain: "280°." },
     ],
   },
   {
@@ -1602,6 +1693,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Bán kính 6 cm, cung \(60^\circ\). Độ dài cung là \(\dfrac{60}{180}\pi \cdot 6 = 2\pi\) cm. Nếu chia cho 360 rồi chỉ nhân \(\pi R\), ra \(\pi\) cm, thiếu một nửa. Diện tích quạt mới chia cho 360: \(\dfrac{60}{360}\pi \cdot 36 = 6\pi\) cm².</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Cung lấy phần chu vi, quạt lấy phần diện tích. Số 180 trong độ dài cung đến từ \(2\pi R \cdot \dfrac{n}{360}\). Vành khuyên là \(\pi(R^2 - r^2)\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Độ dài cung \(l=\dfrac{n}{180}\pi R\). Diện tích quạt \(\dfrac{n}{360}\pi R^2\). Vành khuyên \(\pi(R^2-r^2)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(R=9\) cm, cung \(40^\circ\). \(l=\dfrac{40}{180}\pi\cdot 9=2\pi\) cm. Quạt \(\dfrac{40}{360}\pi\cdot 81=9\pi\) cm². Kiểm tra \(\dfrac{lR}{2}=9\pi\).</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1634,6 +1731,8 @@ const LESSONS = [
         hint: "π(R² − r²) = π(5² − 3²) = π · ?",
         explain: "Sv = π(5² − 3²) = 16π m².",
       },
+      { type: "num", prompt: "R = 6, cung 60°. Độ dài cung là kπ. k bằng bao nhiêu?", answer: 2, hint: "(60/180)·π·6.", explain: "2π, k = 2." },
+      { type: "num", prompt: "R = 10, r = 6. Diện tích vành khuyên là kπ. k bằng bao nhiêu?", answer: 64, hint: "100 − 36.", explain: "64." },
     ],
   },
   {
@@ -1724,6 +1823,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(R = 5\) cm, khoảng cách từ tâm đến đường thẳng là 4 cm. \(4 < 5\), cắt nhau tại hai điểm, không phải tiếp xúc. Tiếp xúc chỉ khi khoảng cách đúng bằng bán kính. Viết \(d \leq R\) cho tiếp xúc là sai.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hạ vuông góc từ tâm, so \(d\) với \(R\). Nhỏ hơn: hai điểm. Bằng: một tiếp điểm, bán kính vuông góc tiếp tuyến. Lớn hơn: không gặp.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Hạ vuông góc từ tâm xuống đường thẳng, so \(d\) với \(R\). \(d<R\) hai điểm, \(d=R\) tiếp xúc, \(d>R\) không gặp. Nửa dây \(\sqrt{R^2-d^2}\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, 2024, câu IV.</strong> Từ điểm \(A\) ngoài đường tròn \((O)\), kẻ hai tiếp tuyến \(AB\) và \(AC\), với \(B, C\) là tiếp điểm. Ý 1 chứng minh tứ giác \(ABOC\) nội tiếp. Dùng ngay dấu hiệu của bài này: bán kính tới tiếp điểm vuông góc với tiếp tuyến, nên \(\widehat{OBA}=\widehat{OCA}=90^\circ\).</p>
       </div>
@@ -1766,6 +1868,8 @@ const LESSONS = [
         hint: "Định lí 2 liệt kê ba tính chất — chọn câu đúng trong số đó.",
         explain: "Theo Định lí 2: M cách đều hai tiếp điểm; MO và OM lần lượt là tia phân giác của góc tạo bởi hai tiếp tuyến và của góc tạo bởi hai bán kính qua hai tiếp điểm.",
       },
+      { type: "mc", prompt: "R = 5, d = 5. Đường thẳng và đường tròn", choices: ["Cắt hai điểm","Tiếp xúc","Không gặp","Trùng nhau"], correct: 1, hint: "d = R.", explain: "Tiếp xúc một điểm." },
+      { type: "num", prompt: "R = 13, d = 5. Nửa dây bằng bao nhiêu?", answer: 12, hint: "√(169 − 25).", explain: "12. Dây dài 24." },
     ],
   },
   {
@@ -1858,6 +1962,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Hai đường tròn cùng bán kính 4 cm, tâm trùng. Đó là đồng tâm, không phải tiếp xúc trong. Tiếp xúc trong cần \(R > R'\) và \(OO' = R - R'\). Hai bán kính bằng nhau thì \(R - R' = 0\), không có tiếp xúc trong.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đặt bán kính lớn trước. Mốc ngoài là \(R + R'\), mốc trong là \(R - R'\). Nằm giữa hai mốc thì cắt nhau.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đặt \(R\geq R'\). Mốc ngoài \(R+R'\), mốc trong \(R-R'\). Bằng mốc thì tiếp xúc. Nằm giữa thì cắt hai điểm.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -1896,6 +2003,8 @@ const LESSONS = [
         hint: "Tính R − r và R + r rồi xem OI = 2 nằm ở đâu giữa chúng.",
         explain: "R − r = 1 < OI = 2 < R + r = 9 nên hai đường tròn cắt nhau, có đúng 2 giao điểm.",
       },
+      { type: "mc", prompt: "R = 7, R' = 3, OO' = 10. Hai đường tròn", choices: ["Cắt nhau","Tiếp xúc ngoài","Tiếp xúc trong","Không gặp"], correct: 1, hint: "7 + 3 = 10.", explain: "Tiếp xúc ngoài." },
+      { type: "num", prompt: "R = 9, R' = 4. Tiếp xúc trong thì OO' bằng bao nhiêu?", answer: 5, hint: "R − R'.", explain: "5." },
     ],
   },
 
