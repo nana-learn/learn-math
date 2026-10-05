@@ -2082,6 +2082,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(y = -3x^2\). Tại \(x = 1\), \(y = -3\), không phải 3. Dù \(3x^2\) dương, hệ số \(a = -3 < 0\) nên parabol mở xuống. Điểm \((-2;\ -12)\) thuộc đồ thị thì \((2;\ -12)\) cũng thuộc.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> \((-x)^2 = x^2\), nên đối xứng qua \(Oy\). Đỉnh tại \(O\). \(a > 0\) mở lên, \(a < 0\) mở xuống.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Lập bảng giá trị, vẽ ít nhất năm điểm, kể cả gốc. Nhận trục đối xứng \(Oy\). \(a>0\) mở lên, \(a<0\) mở xuống. Bài thực tế dạng \(S = k d^2\): thế số, không đổi \(k\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(y = 2x^2\). Tại \(x = \pm 1\), \(y = 2\). Tại \(x = \pm 2\), \(y = 8\). Năm điểm: \((0;0)\), \((\pm 1; 2)\), \((\pm 2; 8)\). Đủ để phác parabol mở lên.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2024, câu III.2: parabol \(y=x^2\) và đường thẳng \(y=(m-2)x+5\). Chứng minh chúng luôn cắt nhau tại hai điểm phân biệt. Thế \(y\), được phương trình bậc hai theo \(x\). \(\Delta>0\) với mọi \(m\) thì có hai giao điểm.</p>
         <p>Câu V các năm 2025 và 2026 là tìm giá trị lớn nhất hoặc nhỏ nhất của một hàm bậc hai, rồi chọn số nguyên cạnh đỉnh. Đồ thị vẫn là parabol của bài này.</p>
@@ -2119,6 +2125,8 @@ const LESSONS = [
         hint: "Phía dưới trục hoành khi a < 0.",
         explain: "Nằm phía dưới trục hoành nếu a < 0; chỉ y = −4x² có a âm.",
       },
+      { type: "mc", prompt: "y = −2x². Parabol", choices: ["Mở lên, đỉnh O","Mở xuống, đỉnh O","Mở lên, đỉnh (1;0)","Đường thẳng"], correct: 1, hint: "a < 0.", explain: "Mở xuống, đỉnh gốc." },
+      { type: "num", prompt: "y = 3x². Tại x = 2, y bằng bao nhiêu?", answer: 12, hint: "3·4.", explain: "12. Điểm (−2; 12) cũng thuộc đồ thị." },
     ],
   },
   {
@@ -2182,6 +2190,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(x^2 - 3x - 4 = 0\). \(\Delta = 9 - 4 \cdot 1 \cdot (-4) = 9 + 16 = 25\), không phải \(9 - 16\). Vì \(c\) âm, \(-4ac\) thành cộng. \(x = \dfrac{3 \pm 5}{2}\), nên \(x = 4\) hoặc \(x = -1\). Kiểm tra: \(16 - 12 - 4 = 0\), \(1 + 3 - 4 = 0\).</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> \(\Delta = b^2 - 4ac\). \(\Delta > 0\) hai nghiệm, \(\Delta = 0\) nghiệm kép, \(\Delta < 0\) dừng, không khai căn số âm.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tính \(\Delta = b^2 - 4ac\). \(\Delta>0\) hai nghiệm, \(\Delta=0\) nghiệm kép, \(\Delta<0\) dừng. Công thức \(x = \dfrac{-b \pm \sqrt{\Delta}}{2a}\). Kiểm tra bằng thế lại.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(x^2 - x - 6 = 0\). \(\Delta = 1 + 24 = 25\). \(x = \dfrac{1 \pm 5}{2}\), nên \(x = 3\) hoặc \(x = -2\). Kiểm tra: \(9-3-6=0\), \(4+2-6=0\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Đề ít khi bảo giải một phương trình bậc hai trần. Nó đưa phương trình rồi hỏi biểu thức của hai nghiệm. Năm 2026 dùng \(x^2-3x+1=0\). Năm 2025 dùng \(x^2+8x-6=0\). Vẫn phải nhận ra đây là bậc hai, \(a\neq 0\), và \(\Delta>0\) trước khi nói có hai nghiệm.</p>
       </div>
@@ -2218,6 +2232,8 @@ const LESSONS = [
         hint: "Δ = 3² − 4·2·5 = ?",
         explain: "Δ = 9 − 40 = −31 < 0 nên phương trình vô nghiệm.",
       },
+      { type: "num", prompt: "x² − 5x + 6 = 0. Tổng hai nghiệm bằng bao nhiêu?", answer: 5, hint: "Nhẩm 2 và 3, hoặc −b/a.", explain: "2 + 3 = 5." },
+      { type: "mc", prompt: "Δ < 0. Kết luận", choices: ["Hai nghiệm thực","Nghiệm kép","Vô nghiệm thực","Vô số nghiệm"], correct: 2, hint: "Không khai căn số âm.", explain: "Vô nghiệm thực." },
     ],
   },
   {
@@ -2269,6 +2285,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(x^2 + 6x + 5 = 0\). Tổng hai nghiệm là \(-6\), không phải 6. Tích là 5. Hai nghiệm \(-1\) và \(-5\). Kiểm tra: \(1 - 6 + 5 = 0\), \(25 - 30 + 5 = 0\). Bỏ dấu trừ ở tổng sẽ đi tìm 1 và 5, không thỏa phương trình.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Có dấu trừ ở tổng. Chỉ dùng khi \(\Delta \geq 0\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Đưa \(x_1^2+x_2^2\) về \((x_1+x_2)^2-2x_1x_2\). Chỉ dùng khi đã có nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> \(x^2 - 7x + 10 = 0\). Tổng 7, tích 10. \(x_1^2+x_2^2 = 49-20=29\). \(\dfrac{1}{x_1}+\dfrac{1}{x_2}=\dfrac{7}{10}\).</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.3.</strong> Năm 2026: \(x^2-3x+1=0\) có hai nghiệm \(x_1, x_2\). Tính</p>
         \[
@@ -2309,6 +2331,8 @@ const LESSONS = [
         hint: "Lập X² − 12X + 35 = 0 rồi giải.",
         explain: "X² − 12X + 35 = 0 có Δ = 4, nghiệm 5 và 7.",
       },
+      { type: "num", prompt: "x² − 4x + 1 = 0 có hai nghiệm. Tích hai nghiệm bằng bao nhiêu?", answer: 1, hint: "c/a.", explain: "1." },
+      { type: "num", prompt: "Tổng 6, tích 8. x1² + x2² bằng bao nhiêu?", answer: 20, hint: "36 − 16.", explain: "20." },
     ],
   },
   {
@@ -2347,6 +2371,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Quãng đường 90 km, vận tốc 45 km/h. Thời gian là \(\dfrac{90}{45} = 2\) giờ, không phải \(45 \cdot 90\). Và nếu phương trình cho thêm nghiệm âm, độ dài hoặc số người thì loại nghiệm đó.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Một mối liên hệ, một ẩn. Thời gian bằng quãng đường chia vận tốc. Ghi điều kiện trước, đối chiếu sau khi giải.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Một mối liên hệ, một ẩn. Ghi điều kiện dương. Diện tích, chu vi, số liên tiếp, chuyển động: lập phương trình bậc hai, loại nghiệm âm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Hình chữ nhật chu vi 24 m, diện tích 32 m². Nửa chu vi 12. \(x(12-x)=32\), \(x^2-12x+32=0\). \((x-4)(x-8)=0\). Cạnh 4 m và 8 m. Cả hai dương, nhận.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu III.1.</strong> Một mối liên hệ, một ẩn. Năm 2026: 3 ngày may đúng kế hoạch, 7 ngày sau mỗi ngày hơn kế hoạch 5 áo, cả 10 ngày được 335 áo. Gọi \(x\) là số áo mỗi ngày theo kế hoạch: \(3x+7(x+5)=335\).</p>
         <p>Năm 2025: cùng quãng đường, đi 60 km/h, về 40 km/h, chiều đi ít hơn 1 giờ. Một phương trình về thời gian. Năm 2024: chở 15 tấn, đổi từ xe nhỏ sang xe lớn thì giảm 2 xe, mỗi xe lớn chở hơn 2 tấn. Đề cho phép lập một phương trình hoặc một hệ.</p>
@@ -2384,6 +2414,8 @@ const LESSONS = [
         hint: "Chiều rộng không thể âm.",
         explain: "Điều kiện x > 0 loại nghiệm −60; chỉ nhận x = 30.",
       },
+      { type: "num", prompt: "Hai số nguyên dương liên tiếp có tích 72. Số nhỏ bằng bao nhiêu?", answer: 8, hint: "n(n+1)=72.", explain: "8 và 9." },
+      { type: "mc", prompt: "Phương trình cho x = 9 và x = −4 cho độ dài cạnh. Nhận", choices: ["Cả hai", "Chỉ 9", "Chỉ −4", "Không nhận"], correct: 1, hint: "Độ dài dương.", explain: "Loại −4." },
     ],
   },
 
@@ -2424,6 +2456,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Tám số, chỉ ba giá trị khác nhau. Cỡ mẫu là 8, không phải 3. Nếu các tần số cộng được 7, đã đếm sót một số. Giá trị 5 và tần số 1 nằm ở hai chỗ: 5 là dữ liệu, 1 là số lần.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tần số là số lần xuất hiện. Tổng mọi tần số phải bằng cỡ mẫu. Biểu đồ cột chỉ vẽ lại bảng đó.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Cỡ mẫu bằng tổng tần số. Tần số là số lần, không phải giá trị. Biểu đồ cột chỉ vẽ lại bảng.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I hỏi tần số trước, rồi mới hỏi tần số tương đối. Năm 2026, nhóm \([150;\ 155)\) có 14 học sinh. Số 14 ấy chính là tần số: đếm số lần, chưa chia cho 50.</p>
       </div>
@@ -2460,6 +2495,8 @@ const LESSONS = [
         hint: "Tên riêng cho kích thước của mẫu.",
         explain: "Số giá trị của mẫu dữ liệu được gọi là cỡ mẫu.",
       },
+      { type: "num", prompt: "Tần số 4, 7, 9. Cỡ mẫu bằng bao nhiêu?", answer: 20, hint: "Cộng tần số.", explain: "20." },
+      { type: "mc", prompt: "Giá trị 8 xuất hiện 3 lần. Số 3 là", choices: ["Giá trị","Tần số","Cỡ mẫu","Phần trăm"], correct: 1, hint: "Số lần.", explain: "Tần số." },
     ],
   },
   {
@@ -2494,6 +2531,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> 3 bạn trong nhóm 8 bạn là \(37{,}5\%\), không phải 3%. Lớp kia có 9/30 = 30%. Chín lớn hơn ba, nhưng 30% nhỏ hơn 37,5%. So hai nhóm khác cỡ thì dùng phần trăm.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tần số tương đối là \(\dfrac{m}{n} \cdot 100\%\). Các phần trăm của một mẫu cộng lại thành 100%.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tần số tương đối \(\dfrac{m}{n}\cdot 100\%\). So hai mẫu khác cỡ thì dùng phần trăm, không dùng số lần.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> 8 lần trên 25 lần là \(32\%\), không phải 8%. Nhóm kia 12/50 = 24%. 12 lớn hơn 8 nhưng 24% nhỏ hơn 32%.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025, 300 học sinh, nhóm \([12;\ 16)\) có 75 em. Tần số tương đối là \(\dfrac{75}{300}\cdot 100\% = 25\%\). Năm 2026, nhóm \([150;\ 155)\) có 14 em trong 50 em: \(\dfrac{14}{50}\cdot 100\% = 28\%\). Đừng viết 14% hay 75%.</p>
       </div>
@@ -2529,6 +2572,8 @@ const LESSONS = [
         hint: "Tên khác trong thống kê.",
         explain: "Tần số tương đối còn gọi là tần suất.",
       },
+      { type: "num", prompt: "6 lần trên 24 lần. Tần số tương đối bằng bao nhiêu phần trăm?", answer: 25, hint: "6/24.", explain: "25%." },
+      { type: "mc", prompt: "So hai lớp khác sĩ số, nên dùng", choices: ["Tần số thô","Tần số tương đối","Cỡ mẫu lớn hơn","Giá trị lớn nhất"], correct: 1, hint: "Phần trăm.", explain: "Tần số tương đối." },
     ],
   },
   {
@@ -2567,6 +2612,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Nhóm \([0;\ 10)\) và \([10;\ 20)\). Điểm 10 chỉ thuộc nhóm sau. Cho vào cả hai thì một bạn bị đếm hai lần, tổng tần số lớn hơn số bạn.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> \([a;\ b)\) lấy \(a\), không lấy \(b\). Mỗi giá trị vào đúng một nhóm. Cộng tần số các nhóm vẫn phải ra cỡ mẫu.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> \([a; b)\) lấy \(a\), không lấy \(b\). Mỗi giá trị vào đúng một nhóm. Cộng tần số các nhóm ra đúng cỡ mẫu.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu I.1.</strong> Năm 2026, chiều cao 50 học sinh lớp 6 (cm):</p>
         <table>
@@ -2608,6 +2656,8 @@ const LESSONS = [
         hint: "Cộng bốn tần số.",
         explain: "n = 10 + 15 + 8 + 7 = 40.",
       },
+      { type: "mc", prompt: "Điểm 10 thuộc nhóm nào: [0; 10) hay [10; 20)?", choices: ["[0; 10)","[10; 20)","Cả hai","Không nhóm nào"], correct: 1, hint: "Ngoặc tròn bỏ 10 ở nhóm trước.", explain: "[10; 20)." },
+      { type: "num", prompt: "Năm nhóm tần số 5, 8, 12, 9, 6. Cỡ mẫu bằng bao nhiêu?", answer: 40, hint: "Cộng.", explain: "40." },
     ],
   },
 
@@ -2645,6 +2695,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Rút lần lượt hai người trong A, B thì AB và BA là hai kết quả. Nếu đề không nói thứ tự, chỉ còn một cặp. Đọc “lần lượt” và “không trả lại” trước khi đếm. Có trả lại thì thêm cả AA, BB.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Không gian mẫu là mọi kết quả có thể, không trùng, không thiếu. Có thứ tự thì hai cách xếp khác nhau là hai phần tử.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Viết \(\Omega\) không trùng, không thiếu. Có thứ tự thì AB khác BA. Có trả lại thì thêm cả AA.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I.2 là một phép thử: rút một lần. Năm 2026, hộp 6 bóng ghi 1 đến 6, \(\Omega = \{1,2,3,4,5,6\}\). Năm 2025, hộp 8 thẻ ghi 1 đến 8, \(\Omega\) có 8 phần tử. Đề chưa hỏi xác suất ở bước liệt kê. Viết \(\Omega\) trước, rồi mới đếm.</p>
       </div>
@@ -2680,6 +2733,8 @@ const LESSONS = [
         hint: "Liệt kê được tất cả — gom lại thành tập nào?",
         explain: "Không gian mẫu Ω là tập hợp tất cả các kết quả có thể xảy ra của phép thử.",
       },
+      { type: "num", prompt: "Tung hai đồng xu có thứ tự. n(Ω) bằng bao nhiêu?", answer: 4, hint: "SS, SN, NS, NN.", explain: "4." },
+      { type: "mc", prompt: "Rút lần lượt A rồi B, không trả lại. AB và BA", choices: ["Một kết quả", "Hai kết quả", "Không đếm", "Cùng AA"], correct: 1, hint: "Có thứ tự.", explain: "Hai phần tử khác nhau." },
     ],
   },
   {
@@ -2721,6 +2776,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Xúc xắc cân đối. “Chẵn hoặc lớn hơn 4”: chẵn là 2, 4, 6; lớn hơn 4 là 5, 6. Hợp là 2, 4, 5, 6, bốn kết quả, \(P = \dfrac{4}{6}\). Cộng \(\dfrac{3}{6} + \dfrac{2}{6}\) sẽ đếm 6 hai lần.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Liệt kê kết quả thuận lợi trên \(\Omega\). Chỉ chia khi các kết quả đồng khả năng. Xác suất không lớn hơn 1, không âm.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> \(P=\dfrac{n(A)}{n(\Omega)}\) khi đồng khả năng. Liệt kê rồi mới chia. Hợp hai biến cố thì không đếm trùng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Xúc xắc. “Chẵn hoặc lớn hơn 4”: 2, 4, 5, 6. Bốn kết quả, \(P=4/6=2/3\). Cộng \(3/6+2/6\) sẽ đếm 6 hai lần.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu I.2.</strong> Năm 2026: rút một bóng trong 6 bóng ghi 1 đến 6. Tính xác suất số chẵn. Thuận lợi là 2, 4, 6. \(P(A) = \dfrac{3}{6} = \dfrac{1}{2}\).</p>
         <p>Năm 2025: rút một thẻ trong 8 thẻ ghi 1 đến 8. Tính xác suất số chia hết cho 3. Thuận lợi là 3 và 6, không có 9. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
@@ -2757,6 +2818,8 @@ const LESSONS = [
         hint: "Biến cố nào luôn xảy ra?",
         explain: "Biến cố chắc chắn có xác suất bằng 1; biến cố không thể có xác suất bằng 0.",
       },
+      { type: "num", prompt: "Xúc xắc. P(ra 1 hoặc 2) = 1/k. k bằng bao nhiêu?", answer: 3, hint: "2/6.", explain: "1/3." },
+      { type: "mc", prompt: "P(A) = 5/4 là", choices: ["Hợp lệ","Sai, vì lớn hơn 1","Sai, vì âm","Chắc chắn"], correct: 1, hint: "Xác suất ≤ 1.", explain: "Không lớn hơn 1." },
     ],
   },
 
@@ -2806,6 +2869,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Cung \(80^\circ\). Góc ở tâm bằng \(80^\circ\). Góc nội tiếp chắn cùng cung bằng \(40^\circ\), không phải \(80^\circ\). Viết bằng cả cung là nhầm với góc ở tâm.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Góc nội tiếp bằng nửa cung bị chắn. Góc ở tâm bằng cung. Góc nội tiếp chắn đường kính thì vuông.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Góc nội tiếp bằng nửa cung bị chắn. Cùng một cung thì các góc nội tiếp bằng nhau. Chắn đường kính thì vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Cung \(70^\circ\). Góc nội tiếp chắn cung ấy \(35^\circ\). Góc ở tâm \(70^\circ\). Không viết góc nội tiếp bằng cung.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Phần chứng minh dùng góc nội tiếp, không hỏi thuộc lòng định nghĩa. Năm 2026 cho tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). Góc chắn nửa đường tròn là góc vuông: đó là lý do góc \(A\) bằng \(90^\circ\) khi \(BC\) là đường kính. Các ý sau so góc nội tiếp cùng chắn một cung.</p>
       </div>
@@ -2841,6 +2910,8 @@ const LESSONS = [
         hint: "Nửa đường tròn có số đo 180°.",
         explain: "Chắn cung 180° nên góc nội tiếp = 90°: góc vuông.",
       },
+      { type: "num", prompt: "Góc nội tiếp chắn cung 100°. Số đo góc bằng bao nhiêu độ?", answer: 50, hint: "Nửa cung.", explain: "50°." },
+      { type: "mc", prompt: "Góc nội tiếp vuông thì dây chắn cung là", choices: ["Bán kính", "Đường kính", "Dây ngắn nhất", "Tiếp tuyến"], correct: 1, hint: "Cung 180°.", explain: "Đường kính." },
     ],
   },
   {
@@ -2879,6 +2950,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Tam giác vuông cạnh huyền 15 cm. Bán kính đường tròn ngoại tiếp là \(7{,}5\) cm, không phải 15 cm. Tâm là trung điểm cạnh huyền, không phải giao các đường phân giác. Giao các phân giác là tâm đường tròn nội tiếp.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Ngoại tiếp đi qua ba đỉnh, tâm là giao các đường trung trực. Nội tiếp chạm ba cạnh, tâm là giao các đường phân giác. Tam giác vuông: \(R\) bằng nửa cạnh huyền.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Ngoại tiếp: qua ba đỉnh, tâm là giao trung trực. Nội tiếp: chạm ba cạnh, tâm là giao phân giác. Tam giác vuông: \(R\) bằng nửa cạnh huyền.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025: tam giác nhọn \(ABC\) nội tiếp đường tròn \((O)\). Tâm là giao các đường trung trực, đường cao cắt lại đường tròn tại điểm thứ hai. Năm 2026: tam giác vuông nội tiếp đường tròn đường kính cạnh huyền. Đó đúng tính chất đường tròn ngoại tiếp tam giác vuông của bài này.</p>
       </div>
@@ -2914,6 +2988,8 @@ const LESSONS = [
         hint: "r = (√3/6)·a.",
         explain: "r = (√3/6)·6 = √3, vậy k = 1.",
       },
+      { type: "num", prompt: "Tam giác vuông cạnh huyền 16 cm. R ngoại tiếp bằng bao nhiêu cm?", answer: 8, hint: "Nửa cạnh huyền.", explain: "8 cm." },
+      { type: "mc", prompt: "Tâm đường tròn nội tiếp là giao", choices: ["Trung trực", "Phân giác", "Trung tuyến", "Đường cao"], correct: 1, hint: "Cách đều ba cạnh.", explain: "Ba đường phân giác." },
     ],
   },
   {
@@ -2954,6 +3030,9 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Bốn góc theo thứ tự \(100^\circ\), \(80^\circ\), \(70^\circ\), \(110^\circ\). Hai góc kề \(100^\circ + 80^\circ = 180^\circ\), nhưng góc đối là \(100^\circ + 70^\circ = 170^\circ \neq 180^\circ\). Tứ giác không nội tiếp được. Định lí không dùng góc kề.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tứ giác nội tiếp khi hai góc đối cộng \(180^\circ\). Tổng bốn góc luôn \(360^\circ\), không đủ để kết luận. Hình chữ nhật luôn nội tiếp được.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tứ giác nội tiếp khi hai góc đối cộng \(180^\circ\). Tổng bốn góc luôn \(360^\circ\), không đủ để kết luận. Hình chữ nhật luôn nội tiếp được.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Ý mở của phần hình thường là chứng minh bốn điểm đồng viên. Năm 2026, ý a: bốn điểm \(A, H, D, C\). Hai góc đối bằng \(90^\circ\), tổng \(180^\circ\), nên tứ giác nội tiếp. Năm 2024, ý 1: tứ giác \(ABOC\), với \(AB, AC\) là tiếp tuyến, cũng nội tiếp vì có hai góc vuông đối nhau. Năm 2025 hỏi bốn điểm \(E, D, B, K\).</p>
       </div>
@@ -2990,6 +3069,8 @@ const LESSONS = [
         hint: "Hình nào có hai góc đối luôn cộng lại 180°?",
         explain: "Hình chữ nhật có các góc vuông nên tổng hai góc đối bằng 180° — luôn nội tiếp được (tâm là giao hai đường chéo).",
       },
+      { type: "num", prompt: "Tứ giác nội tiếp có một góc 70°. Góc đối bằng bao nhiêu độ?", answer: 110, hint: "Cộng 180°.", explain: "110°." },
+      { type: "mc", prompt: "Hình thoi có góc 50° (góc đối cũng 50°). Hình thoi ấy", choices: ["Luôn nội tiếp được","Không nội tiếp được, trừ khi là hình vuông","Nội tiếp được vì tổng bốn góc 360°","Nội tiếp được vì bốn cạnh bằng"], correct: 1, hint: "50+50 ≠ 180.", explain: "Góc đối không cộng 180°." },
     ],
   },
   {
@@ -3029,6 +3110,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Ngũ giác đều, góc ở tâm là \(\dfrac{360^\circ}{5} = 72^\circ\), không phải \(\dfrac{180^\circ}{5} = 36^\circ\). Góc trong là \(\dfrac{(5 - 2) \cdot 180^\circ}{5} = 108^\circ\). Chia nhầm 180 sẽ ra đa giác không khít vòng tròn.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đa giác đều cần cả cạnh bằng nhau và góc bằng nhau. Chia đường tròn thành \(n\) cung bằng \(\dfrac{360^\circ}{n}\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đa giác đều: cạnh bằng nhau và góc bằng nhau. Góc ở tâm \(\dfrac{360^\circ}{n}\). Góc trong \(\dfrac{(n-2)180^\circ}{n}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Lục giác đều, góc ở tâm \(60^\circ\), góc trong \(120^\circ\). Không chia 180 cho 6.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -3061,6 +3148,8 @@ const LESSONS = [
         hint: "Cần cả hai điều kiện.",
         explain: "Đa giác đều là đa giác lồi có các cạnh bằng nhau và các góc bằng nhau.",
       },
+      { type: "num", prompt: "Bát giác đều. Góc ở tâm bằng bao nhiêu độ?", answer: 45, hint: "360/8.", explain: "45°." },
+      { type: "num", prompt: "Ngũ giác đều. Góc trong bằng bao nhiêu độ?", answer: 108, hint: "(5−2)·180 / 5.", explain: "108°." },
     ],
   },
 
@@ -3120,6 +3209,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Nón bán kính 3 cm, cao 4 cm, đường sinh 5 cm. Diện tích xung quanh là \(\pi \cdot 3 \cdot 5 = 15\pi\) cm². Dùng chiều cao sẽ ra \(12\pi\), sai. Thể tích là \(\dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³. Quên \(\dfrac{1}{3}\) sẽ ra thể tích hình trụ.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Nón: \(S_{xq} = \pi r l\), \(V = \dfrac{1}{3}\pi r^2 h\), \(l^2 = r^2 + h^2\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Trụ: \(S_{xq}=2\pi Rh\), \(V=\pi R^2 h\). Nón: \(S_{xq}=\pi r l\), \(V=\dfrac{1}{3}\pi r^2 h\), \(l^2=r^2+h^2\). Đọc một đáy hay hai đáy. 1 lít = 1000 cm³.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Nón \(r=5\), \(h=12\). \(l=13\). \(S_{xq}=65\pi\). \(V=100\pi\). Dùng nhầm \(h\) cho diện tích xung quanh sẽ ra \(60\pi\), sai.</p>
+      </div>
 <div class="examq">
         <p><strong>Trong đề vào 10 Hà Nội, câu IV.1.</strong> Ba năm liền đều là hình trụ, chưa hỏi hình nón. Năm 2026: xô cao 25 cm, bán kính đáy 12 cm, \(\pi\approx 3{,}14\). Tính diện tích xung quanh. Rồi múc 80% thể tích xô vào bể 150 lít, hỏi ít nhất bao nhiêu xô. Nhớ \(1\) lít \(= 1000\) cm³.</p>
         <p>Năm 2025: thùng bán kính 50 cm, cao 150 cm. Tính diện tích xung quanh, rồi thể tích nước khi mực hạ 40 cm. Năm 2024: bình bán kính 4 cm, cao 25 cm, chỉ hỏi diện tích xung quanh.</p>
@@ -3161,6 +3256,8 @@ const LESSONS = [
         hint: "Hình nón sinh ra khi quay tam giác vuông — cạnh huyền quét thành gì?",
         explain: "Đường sinh là vị trí của cạnh huyền khi quay: đoạn nối đỉnh với một điểm bất kì trên đường tròn đáy.",
       },
+      { type: "num", prompt: "Trụ R = 3, h = 7. Sxq = kπ. k bằng bao nhiêu?", answer: 42, hint: "2πRh.", explain: "42." },
+      { type: "num", prompt: "Nón r = 6, h = 8. Đường sinh l bằng bao nhiêu?", answer: 10, hint: "√(36+64).", explain: "10." },
     ],
   },
   {
@@ -3211,6 +3308,12 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> Đường kính 14 cm thì \(R = 7\) cm. Diện tích mặt cầu \(S = 4\pi \cdot 49 = 196\pi\) cm². Thế 14 vào chỗ \(R\) thì \(R^2\) lớn gấp 4, diện tích sai gấp 4. Một mặt cắt qua tâm chỉ có diện tích \(49\pi\) cm², bằng một phần tư mặt cầu.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đề cho đường kính thì chia đôi. \(S = 4\pi R^2\), \(V = \dfrac{4}{3}\pi R^3\). Mặt cắt cách tâm \(d\) có bán kính \(\sqrt{R^2 - d^2}\).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đề cho đường kính thì chia đôi. \(S=4\pi R^2\), \(V=\dfrac{4}{3}\pi R^3\). Mặt cắt qua tâm là hình tròn bán kính \(R\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng sách bài tập.</strong> Đường kính 10 cm, \(R=5\). \(S=100\pi\) cm². \(V=\dfrac{500}{3}\pi\) cm³. Thế 10 vào chỗ \(R\) thì cả hai công thức sai gấp bốn hoặc tám.</p>
+      </div>
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong></p>
         <ul>
@@ -3243,6 +3346,8 @@ const LESSONS = [
         hint: "Cắt quả cam, miếng cắt có dạng gì?",
         explain: "Mặt cắt của mặt cầu bởi một mặt phẳng là một hình tròn (đường tròn lớn nếu mặt phẳng đi qua tâm).",
       },
+      { type: "num", prompt: "R = 3. S mặt cầu = kπ. k bằng bao nhiêu?", answer: 36, hint: "4πR².", explain: "36." },
+      { type: "num", prompt: "Đường kính 6. R bằng bao nhiêu?", answer: 3, hint: "Chia đôi.", explain: "3. Đừng thế 6 vào R." },
     ],
   },
 ];
