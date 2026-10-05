@@ -5,3 +5,6 @@ images/
 *.pdf
 !exam-docs/**/*.pdf
 !web/de/**/*.pdf
+
+# Local textbook reading copies (copyrighted SGK). Do not publish.
+sgk/
