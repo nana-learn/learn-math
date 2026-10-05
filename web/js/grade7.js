@@ -255,6 +255,21 @@ const G7_LESSONS = [
     summary: "Kề bù cộng 180°. Đối đỉnh bằng nhau. Phân giác cắt góc thành hai góc bằng nhau.",
     body: String.raw`
       <p>Hai góc kề bù: chung một cạnh, hai cạnh còn lại là hai tia đối nhau. Tổng \(180^\circ\). Hai góc đối đỉnh: hai cặp tia đối nhau, hai góc bằng nhau.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 320 170" role="img" aria-label="Hai đường thẳng cắt nhau tạo góc kề bù và góc đối đỉnh">
+          <line x1="20" y1="130" x2="300" y2="40" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="40" y1="30" x2="280" y2="150" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="160" cy="85" r="3" fill="#FFFF00"/>
+          <text x="168" y="78" font-size="13">O</text>
+          <path d="M 185 77 A 28 28 0 0 1 175 108" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="196" y="100" font-size="14" fill="#FC6255">55°</text>
+          <path d="M 135 93 A 28 28 0 0 1 145 62" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="98" y="78" font-size="14" fill="#58C4DD">55°</text>
+          <text x="210" y="60" font-size="12" fill="#83C167">kề bù 125°</text>
+        </svg>
+        <figcaption>Đối đỉnh bằng nhau (hai góc 55°). Kề bù cộng 180°.</figcaption>
+      </figure>
+
       <div class="definition">
         <p>Tia phân giác của một góc là tia nằm giữa hai cạnh và tạo với hai cạnh hai góc bằng nhau.</p>
       </div>
@@ -288,6 +303,22 @@ const G7_LESSONS = [
     summary: "Song song thì không gặp nhau. Cắt bởi một cát tuyến: so le trong bằng nhau, đồng vị bằng nhau.",
     body: String.raw`
       <p>Hai đường thẳng song song không có điểm chung. Khi một cát tuyến cắt hai đường song song, góc so le trong bằng nhau, góc đồng vị bằng nhau, hai góc trong cùng phía kề bù.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 320 180" role="img" aria-label="Hai đường song song cắt bởi một cát tuyến">
+          <line x1="20" y1="50" x2="300" y2="50" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="20" y1="130" x2="300" y2="130" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="90" y1="20" x2="230" y2="160" stroke="#58C4DD" stroke-width="2"/>
+          <text x="8" y="54" font-size="13">a</text>
+          <text x="8" y="134" font-size="13">b</text>
+          <path d="M 148 50 A 18 18 0 0 1 162 62" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="168" y="48" font-size="13" fill="#FC6255">70°</text>
+          <path d="M 162 130 A 18 18 0 0 1 176 142" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="182" y="156" font-size="13" fill="#FC6255">70°</text>
+          <text x="240" y="90" font-size="12" fill="#83C167">a ∥ b</text>
+        </svg>
+        <figcaption>Cát tuyến cắt hai đường song song: hai góc đồng vị cùng 70°.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Hai đường song song, cát tuyến tạo một góc đồng vị \(65^\circ\). Mọi góc đồng vị với nó cũng \(65^\circ\). Góc so le trong với nó cũng \(65^\circ\).</p>
       </div>
@@ -315,6 +346,20 @@ const G7_LESSONS = [
     summary: "Qua một điểm ngoài một đường, có đúng một đường song song với đường ấy.",
     body: String.raw`
       <p>Tiên đề Euclid (dạng dùng ở lớp 7): qua một điểm không nằm trên đường thẳng \(d\), có một và chỉ một đường thẳng song song với \(d\).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 300 160" role="img" aria-label="Qua một điểm ngoài đường thẳng có đúng một đường song song">
+          <line x1="20" y1="120" x2="280" y2="120" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="20" y1="50" x2="280" y2="50" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="150" y1="50" x2="150" y2="120" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="150" cy="50" r="4" fill="#FFFF00"/>
+          <rect x="150" y="110" width="10" height="10" fill="none" stroke="#FC6255" stroke-width="1.2"/>
+          <text x="158" y="44" font-size="13">M</text>
+          <text x="158" y="112" font-size="13">H</text>
+          <text x="8" y="124" font-size="13">d</text>
+        </svg>
+        <figcaption>MH ⊥ d. Đường qua M vuông góc MH là đường song song duy nhất với d.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> \(a \parallel b\) và \(b \parallel c\) thì \(a \parallel c\). Quan hệ song song “truyền” được.</p>
       </div>
@@ -342,6 +387,17 @@ const G7_LESSONS = [
     summary: "Định lí có giả thiết và kết luận. Chứng minh là chuỗi lý do, không phải đo hình.",
     body: String.raw`
       <p>Định lí gồm giả thiết (cái đã cho) và kết luận (cái phải ra). Chứng minh là viết các bước, mỗi bước dựa vào định nghĩa, tiên đề, hoặc định lí đã có.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Chứng minh dựa vào giả thiết, không đo hình">
+          <line x1="30" y1="110" x2="250" y2="30" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="40" y1="25" x2="240" y2="120" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="140" cy="70" r="3" fill="#FFFF00"/>
+          <text x="40" y="128" font-size="12" fill="#83C167">Giả thiết: hai góc đối đỉnh</text>
+          <text x="40" y="20" font-size="12" fill="#58C4DD">Kết luận: hai góc bằng nhau</text>
+        </svg>
+        <figcaption>Hình chỉ gợi ý. Kết luận phải đến từ giả thiết và định nghĩa.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Giả thiết: hai góc đối đỉnh. Kết luận: hai góc bằng nhau. Đó là định lí góc đối đỉnh, không cần thước đo.</p>
       </div>
@@ -369,6 +425,19 @@ const G7_LESSONS = [
     summary: "Ba góc cộng 180°. Góc ngoài bằng tổng hai góc trong không kề với nó.",
     body: String.raw`
       <p>Kẻ đường thẳng qua một đỉnh, song song cạnh đối. Hai góc ở đáy so le trong với hai góc vừa tạo, cộng với góc ở đỉnh được góc bẹt. Vậy tổng ba góc là \(180^\circ\).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 200" role="img" aria-label="Tam giác với tổng ba góc 180 độ">
+          <polygon points="40,170 240,170 140,40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="28" y="186" font-size="13">A</text>
+          <text x="244" y="186" font-size="13">B</text>
+          <text x="132" y="32" font-size="13">C</text>
+          <text x="58" y="158" font-size="13" fill="#FC6255">50°</text>
+          <text x="198" y="158" font-size="13" fill="#58C4DD">70°</text>
+          <text x="128" y="68" font-size="13" fill="#83C167">60°</text>
+        </svg>
+        <figcaption>50° + 70° + 60° = 180°. Biết hai góc thì suy được góc còn lại.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Hai góc \(50^\circ\) và \(60^\circ\) thì góc thứ ba \(70^\circ\).</p>
       </div>
@@ -399,6 +468,26 @@ const G7_LESSONS = [
     summary: "Bằng nhau nghĩa là trùng khít. cgc: hai cạnh và góc xen giữa.",
     body: String.raw`
       <p>Hai tam giác bằng nhau khi có phép đặt trùng khít đỉnh với đỉnh, cạnh với cạnh, góc với góc. Không cần đối từng cặp nếu đã có một trường hợp đủ.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 340 170" role="img" aria-label="Hai tam giác bằng nhau theo cạnh-góc-cạnh">
+          <polygon points="30,140 130,140 70,40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="200,140 310,140 250,45" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="20" y="156" font-size="13">A</text>
+          <text x="132" y="156" font-size="13">B</text>
+          <text x="62" y="32" font-size="13">C</text>
+          <text x="188" y="156" font-size="13">D</text>
+          <text x="312" y="156" font-size="13">E</text>
+          <text x="242" y="36" font-size="13">F</text>
+          <path d="M 48 140 A 16 16 0 0 1 42 124" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <path d="M 220 140 A 16 16 0 0 1 214 124" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="70" y="164" font-size="12" fill="#58C4DD">6</text>
+          <text x="248" y="164" font-size="12" fill="#58C4DD">6</text>
+          <text x="28" y="90" font-size="12" fill="#83C167">8</text>
+          <text x="198" y="90" font-size="12" fill="#83C167">8</text>
+        </svg>
+        <figcaption>AB = DE, AC = DF, góc A = góc D (xen giữa). Đó là cgc.</figcaption>
+      </figure>
+
       <div class="definition">
         <p><strong>cgc.</strong> Nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia, thì hai tam giác bằng nhau.</p>
       </div>
@@ -429,6 +518,20 @@ const G7_LESSONS = [
     summary: "gcg: hai góc và cạnh xen giữa. ccc: ba cạnh.",
     body: String.raw`
       <p>Ngoài cgc còn hai trường hợp dùng nhiều: gcg và ccc.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 340 160" role="img" aria-label="Hai tam giác bằng nhau theo ba cạnh">
+          <polygon points="40,130 150,130 95,40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="200,130 310,130 255,40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="86" y="148" font-size="12" fill="#58C4DD">7</text>
+          <text x="246" y="148" font-size="12" fill="#58C4DD">7</text>
+          <text x="48" y="80" font-size="12" fill="#FC6255">5</text>
+          <text x="208" y="80" font-size="12" fill="#FC6255">5</text>
+          <text x="128" y="80" font-size="12" fill="#83C167">9</text>
+          <text x="288" y="80" font-size="12" fill="#83C167">9</text>
+        </svg>
+        <figcaption>Ba cạnh tương ứng bằng nhau: ccc. Ba góc bằng nhau thì chưa đủ.</figcaption>
+      </figure>
+
       <div class="definition">
         <p><strong>gcg.</strong> Hai góc và cạnh xen giữa. <strong>ccc.</strong> Ba cạnh tương ứng bằng nhau.</p>
       </div>
@@ -459,6 +562,20 @@ const G7_LESSONS = [
     summary: "Vuông rồi thì cạnh huyền và một cạnh góc vuông, hoặc cạnh huyền và một góc nhọn, cũng đủ.",
     body: String.raw`
       <p>Tam giác vuông đã có một góc \(90^\circ\). Ngoài cgc, gcg, ccc còn dùng: cạnh huyền và một cạnh góc vuông; cạnh huyền và một góc nhọn.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 300 160" role="img" aria-label="Hai tam giác vuông có cạnh huyền và một cạnh góc vuông bằng nhau">
+          <polygon points="30,130 160,130 30,50" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <rect x="30" y="118" width="12" height="12" fill="none" stroke="#FC6255" stroke-width="1.4"/>
+          <polygon points="190,130 280,130 190,40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <rect x="190" y="118" width="12" height="12" fill="none" stroke="#FC6255" stroke-width="1.4"/>
+          <text x="70" y="148" font-size="12" fill="#58C4DD">5</text>
+          <text x="220" y="148" font-size="12" fill="#58C4DD">5</text>
+          <text x="90" y="78" font-size="12" fill="#83C167">13</text>
+          <text x="232" y="72" font-size="12" fill="#83C167">13</text>
+        </svg>
+        <figcaption>Vuông, cạnh huyền 13, một cạnh góc vuông 5: hai tam giác bằng nhau.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Hai tam giác vuông, cạnh huyền 13 cm, một cạnh góc vuông 5 cm. Chúng bằng nhau.</p>
       </div>
@@ -486,6 +603,21 @@ const G7_LESSONS = [
     summary: "Hai cạnh bên bằng nhau thì hai góc đáy bằng nhau. Trung trực là tập điểm cách đều hai đầu đoạn.",
     body: String.raw`
       <p>Tam giác cân: hai cạnh bằng nhau. Hai góc đáy bằng nhau. Đường trung tuyến, phân giác, đường cao kẻ từ đỉnh cân trùng nhau.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 260 180" role="img" aria-label="Tam giác cân và đường trung trực đáy">
+          <polygon points="40,150 220,150 130,30" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="130" y1="30" x2="130" y2="150" stroke="#58C4DD" stroke-width="1.8"/>
+          <rect x="130" y="138" width="12" height="12" fill="none" stroke="#FC6255" stroke-width="1.3"/>
+          <circle cx="130" cy="150" r="3" fill="#FFFF00"/>
+          <text x="122" y="24" font-size="13">A</text>
+          <text x="28" y="166" font-size="13">B</text>
+          <text x="222" y="166" font-size="13">C</text>
+          <text x="136" y="168" font-size="13">H</text>
+          <text x="70" y="88" font-size="12" fill="#83C167">AB = AC</text>
+        </svg>
+        <figcaption>Cân tại A. AH vừa đường cao, vừa trung tuyến, vừa phân giác, nằm trên trung trực BC.</figcaption>
+      </figure>
+
       <div class="definition">
         <p>Đường trung trực của đoạn \(AB\) là đường thẳng vuông góc với \(AB\) tại trung điểm. Mọi điểm trên đường trung trực cách đều \(A\) và \(B\).</p>
       </div>
@@ -909,6 +1041,18 @@ const G7_LESSONS = [
     summary: "Góc lớn hơn thì cạnh đối diện dài hơn. Hai góc bằng nhau thì hai cạnh đối diện bằng nhau.",
     body: String.raw`
       <p>Trong một tam giác, cạnh lớn kề góc lớn. Đối diện góc vuông là cạnh dài nhất.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 170" role="img" aria-label="Góc lớn đối diện cạnh lớn">
+          <polygon points="40,140 250,140 90,35" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="28" y="156" font-size="13">A</text>
+          <text x="254" y="156" font-size="13">B</text>
+          <text x="80" y="28" font-size="13">C</text>
+          <text x="148" y="158" font-size="13" fill="#FC6255">AB lớn nhất</text>
+          <text x="150" y="90" font-size="13" fill="#58C4DD">góc C lớn nhất</text>
+        </svg>
+        <figcaption>Cạnh lớn nhất đối diện góc lớn nhất. So trong cùng một tam giác.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Góc \(A = 80^\circ\), góc \(B = 40^\circ\), góc \(C = 60^\circ\). Cạnh lớn nhất là \(BC\) (đối diện A). Cạnh nhỏ nhất là \(AC\) (đối diện B).</p>
       </div>
@@ -936,6 +1080,23 @@ const G7_LESSONS = [
     summary: "Vuông góc là đoạn ngắn nhất từ một điểm đến đường thẳng. Xiên dài hơn, xiên xa chân hơn thì dài hơn.",
     body: String.raw`
       <p>Từ điểm \(M\) ngoài đường thẳng \(d\), hạ vuông góc được chân \(H\). \(MH\) ngắn hơn mọi đường xiên \(MA\) với \(A\) khác \(H\) trên \(d\).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 300 170" role="img" aria-label="Đường vuông góc ngắn hơn đường xiên">
+          <line x1="20" y1="140" x2="280" y2="140" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="120" y1="40" x2="120" y2="140" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="120" y1="40" x2="230" y2="140" stroke="#FC6255" stroke-width="2"/>
+          <rect x="120" y="128" width="12" height="12" fill="none" stroke="#58C4DD" stroke-width="1.3"/>
+          <circle cx="120" cy="40" r="3" fill="#FFFF00"/>
+          <text x="128" y="36" font-size="13">M</text>
+          <text x="108" y="158" font-size="13">H</text>
+          <text x="228" y="158" font-size="13">A</text>
+          <text x="8" y="136" font-size="13">d</text>
+          <text x="70" y="90" font-size="12" fill="#58C4DD">vuông góc</text>
+          <text x="180" y="80" font-size="12" fill="#FC6255">xiên</text>
+        </svg>
+        <figcaption>MH ngắn nhất. MA dài hơn. Khoảng cách từ M đến d là MH.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Khoảng cách từ điểm đến đường là độ dài đường vuông góc, không phải đường xiên.</p>
       </div>
@@ -963,6 +1124,17 @@ const G7_LESSONS = [
     summary: "Tổng hai cạnh lớn hơn cạnh còn lại. Hiệu hai cạnh nhỏ hơn cạnh còn lại.",
     body: String.raw`
       <p>Không có tam giác cạnh 2, 3, 6 vì 2 + 3 = 5 < 6. Ba điểm không khép kín.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 340 150" role="img" aria-label="Tổng hai cạnh phải lớn hơn cạnh còn lại">
+          <polygon points="20,120 110,120 55,40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="48" y="138" font-size="12" fill="#83C167">5, 6, 7 được</text>
+          <line x1="180" y1="80" x2="320" y2="80" stroke="#FC6255" stroke-width="2"/>
+          <text x="200" y="70" font-size="12" fill="#FC6255">2 + 3 = 5 &lt; 6</text>
+          <text x="200" y="108" font-size="12" fill="#FC6255">không khép tam giác</text>
+        </svg>
+        <figcaption>Phải lớn hơn, không được bằng. 3, 4, 7 thẳng hàng, không phải tam giác.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> 5, 6, 7: 5+6>7, 5+7>6, 6+7>5. Tạo được tam giác.</p>
       </div>
@@ -990,6 +1162,21 @@ const G7_LESSONS = [
     summary: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
     body: String.raw`
       <p>Trung tuyến nối đỉnh với trung điểm cạnh đối. Ba trung tuyến đồng quy tại trọng tâm G. AG : GM = 2 : 1, M trung điểm.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 260 180" role="img" aria-label="Ba trung tuyến đồng quy tại trọng tâm">
+          <polygon points="30,150 230,150 130,25" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="130" y1="25" x2="130" y2="150" stroke="#58C4DD" stroke-width="1.6"/>
+          <line x1="30" y1="150" x2="180" y2="88" stroke="#83C167" stroke-width="1.4"/>
+          <line x1="230" y1="150" x2="80" y2="88" stroke="#FC6255" stroke-width="1.4"/>
+          <circle cx="130" cy="108" r="4" fill="#FFFF00"/>
+          <text x="138" y="104" font-size="13">G</text>
+          <text x="122" y="20" font-size="13">A</text>
+          <text x="122" y="166" font-size="13">M</text>
+          <text x="136" y="130" font-size="11" fill="#58C4DD">2 : 1</text>
+        </svg>
+        <figcaption>Trọng tâm G chia mỗi trung tuyến theo tỉ số 2 : 1, đoạn dài về phía đỉnh.</figcaption>
+      </figure>
+
       <p>Ba đường phân giác trong đồng quy tại tâm đường tròn nội tiếp, điểm cách đều ba cạnh.</p>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Trung tuyến dài 9 cm thì đoạn từ đỉnh đến trọng tâm 6 cm, đoạn còn lại 3 cm.</p>
@@ -1018,6 +1205,20 @@ const G7_LESSONS = [
     summary: "Ba trung trực gặp nhau tại tâm đường tròn ngoại tiếp. Ba đường cao gặp nhau tại trực tâm.",
     body: String.raw`
       <p>Trung trực: vuông góc tại trung điểm cạnh. Giao ba trung trực là tâm đường tròn đi qua ba đỉnh.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 170" role="img" aria-label="Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền">
+          <polygon points="40,140 240,140 40,50" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <rect x="40" y="128" width="12" height="12" fill="none" stroke="#FC6255" stroke-width="1.3"/>
+          <circle cx="140" cy="95" r="78" fill="none" stroke="#58C4DD" stroke-width="1.4" stroke-dasharray="4 3"/>
+          <circle cx="140" cy="140" r="4" fill="#FFFF00"/>
+          <text x="28" y="48" font-size="13">A</text>
+          <text x="28" y="156" font-size="13">C</text>
+          <text x="244" y="156" font-size="13">B</text>
+          <text x="146" y="158" font-size="13">O</text>
+        </svg>
+        <figcaption>Vuông tại C. Tâm ngoại tiếp O là trung điểm cạnh huyền AB. Trực tâm trùng C.</figcaption>
+      </figure>
+
       <p>Đường cao: vuông góc kẻ từ đỉnh xuống cạnh đối. Giao ba đường cao là trực tâm.</p>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền. Trực tâm là đỉnh góc vuông.</p>
@@ -1046,6 +1247,21 @@ const G7_LESSONS = [
     summary: "Thể tích = dài × rộng × cao. Lập phương là hộp có mọi cạnh bằng nhau.",
     body: String.raw`
       <p>Hình hộp chữ nhật có 6 mặt là hình chữ nhật. Diện tích toàn phần \(S = 2(ab + bh + ha)\). Thể tích \(V = abh\).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Hình hộp chữ nhật">
+          <polygon points="50,70 170,70 170,150 50,150" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="50,70 100,35 220,35 170,70" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="170,70 220,35 220,115 170,150" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="50" y1="150" x2="100" y2="115" stroke="#DDDDDD" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <line x1="100" y1="115" x2="220" y2="115" stroke="#DDDDDD" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <line x1="100" y1="35" x2="100" y2="115" stroke="#DDDDDD" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <text x="100" y="168" font-size="12" fill="#58C4DD">dài</text>
+          <text x="18" y="118" font-size="12" fill="#83C167">cao</text>
+          <text x="200" y="150" font-size="12" fill="#FC6255">rộng</text>
+        </svg>
+        <figcaption>V = dài × rộng × cao. Sàn toàn phần = 2(ab + bh + ha).</figcaption>
+      </figure>
+
       <p>Hình lập phương cạnh \(a\): \(S = 6a^2\), \(V = a^3\).</p>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Hộp 3 cm, 4 cm, 5 cm. \(V = 60\) cm³. \(S = 2(12 + 20 + 15) = 94\) cm².</p>
@@ -1074,6 +1290,20 @@ const G7_LESSONS = [
     summary: "Hai đáy đa giác bằng nhau, mặt bên là hình chữ nhật. V = diện tích đáy × cao.",
     body: String.raw`
       <p>Lăng trụ đứng tam giác: đáy tam giác, ba mặt bên chữ nhật. Lăng trụ đứng tứ giác: đáy tứ giác. Chiều cao vuông góc với đáy, bằng cạnh bên.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Hình lăng trụ đứng đáy tam giác">
+          <polygon points="70,150 180,150 125,110" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="70,70 180,70 125,30" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="70" y1="70" x2="70" y2="150" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="70" x2="180" y2="150" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="125" y1="30" x2="125" y2="110" stroke="#58C4DD" stroke-width="2"/>
+          <text x="40" y="118" font-size="12" fill="#58C4DD">cạnh bên</text>
+          <text x="188" y="40" font-size="12">đáy trên</text>
+          <text x="188" y="168" font-size="12">đáy dưới</text>
+        </svg>
+        <figcaption>Hai đáy bằng nhau. Mặt bên là hình chữ nhật. V = diện tích đáy × cao.</figcaption>
+      </figure>
+
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Đáy tam giác diện tích 12 cm², cao lăng trụ 5 cm. \(V = 60\) cm³.</p>
       </div>
