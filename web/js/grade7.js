@@ -1343,6 +1343,11 @@ const G7_LESSONS = [
           <li>Thế sai thứ tự phép tính: \(\dfrac{x+1}{x-3}\) khi \(x = 5\) là \(\dfrac{6}{2} = 3\), không phải \(x+1\) chia \(x\) trừ 3.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\dfrac{1}{x-2}\) khi \(x = 2\) tính được không? <em>— Không. Mẫu bằng 0, biểu thức không có nghĩa. Không ghi “bằng vô cùng”.</em></p>
+        <p>\(\sqrt{x}\) khi \(x = -1\) tính được không? <em>— Không. Trong căn phải \(\geq 0\). Ghi điều kiện trước khi thế số.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Ghi điều kiện trước khi thế. Mẫu ≠ 0, trong căn ≥ 0.</p></div>
     `,
     exercises: [
@@ -1384,6 +1389,11 @@ const G7_LESSONS = [
           <li>\(4\) là đa thức bậc 0, không phải “không có bậc”. Một mình số vẫn là đa thức.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(0 \cdot x^5 + x^2\) bậc bao nhiêu? <em>— Bậc 2. Hạng tử có hệ số 0 không tính, mũ lớn nhất còn sống là 2.</em></p>
+        <p>\(x + \dfrac{1}{x}\) có phải đa thức không? <em>— Không. Có \(x\) ở mẫu; đa thức không chia chữ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đa thức không chia chữ, không căn chữ. Bậc = mũ lớn nhất còn sống.</p></div>
     `,
     exercises: [
@@ -1428,6 +1438,11 @@ const G7_LESSONS = [
           <li>Xếp theo cột (bậc \(x^2\), rồi \(x\), rồi số) để không bỏ sót hạng tử.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \((3x - 5) - (2x - 1)\): kết quả là gì? <em>— \(x - 4\). Đổi dấu cả ngoặc: \(3x - 5 - 2x + 1 = x - 4\), không phải \(3x - 5 - 2x - 1\).</em></p>
+        <p>\(3x^2 + 3x\) gộp được thành \(6x^2\) không? <em>— Không. Không đồng dạng (khác mũ), chỉ gộp cùng biến và cùng mũ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trừ đa thức = cộng đa thức đối. Đổi dấu từng hạng tử trong ngoặc.</p></div>
     `,
     exercises: [
@@ -1472,6 +1487,11 @@ const G7_LESSONS = [
           <li>Nhân lại để kiểm tra: \((x+3)(x+1)\) ra \(x^2 + 4x + 3\), thử lại bằng cách khai triển lần hai.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\((x+2)^2\) bằng \(x^2 + 4\) hay \(x^2 + 4x + 4\)? <em>— \(x^2 + 4x + 4\). Thiếu hạng tử giữa \(2ab = 4x\) là sai.</em></p>
+        <p>\((2x-1)(x+4)\) phải có mấy tích trước khi gộp? <em>— Bốn tích: \(2x \cdot x\), \(2x \cdot 4\), \((-1) \cdot x\), \((-1) \cdot 4\). Thiếu một tích là sai hệ số giữa.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cộng mũ khi nhân cùng cơ số. Bình phương tổng có hạng 2ab.</p></div>
     `,
     exercises: [
@@ -1514,6 +1534,11 @@ const G7_LESSONS = [
           <li>Luôn nhân ngược để kiểm: \((x+2)(x+3) = x^2 + 5x + 6\). Dư khác 0 thì chưa chia hết.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(x^5 : x^2\) bằng bao nhiêu, khi \(x \neq 0\)? <em>— \(x^3\). Chia đơn thức thì trừ mũ, không chia mũ: \(5 - 2 = 3\).</em></p>
+        <p>\((x^2 + 1) : x\) có còn là đa thức không? <em>— Không. Không chia hết cho \(x\) cả hai hạng; \((x^2 + x) : x = x + 1\) mới được.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Nhân lại để kiểm tra. Dư khác 0 thì chưa chia hết.</p></div>
     `,
     exercises: [
