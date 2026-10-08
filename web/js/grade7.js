@@ -1525,6 +1525,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Trong một tam giác: góc lớn hơn \(\Leftrightarrow\) cạnh đối diện dài hơn. Vuông thì cạnh huyền dài nhất.</p>
       </div>
+<div class="warn">
+        <p><strong>So trong cùng một tam giác.</strong></p>
+        <ul>
+          <li>Không so cạnh của hai tam giác khác nhau chỉ bằng cách so một góc. Định lí chỉ nói trong cùng một tam giác.</li>
+          <li>Góc lớn hơn thì cạnh đối diện dài hơn, và ngược lại. Tam giác cạnh 6, 7, 8: cạnh 8 đối diện góc lớn nhất.</li>
+          <li>Đối diện góc vuông là cạnh huyền — cạnh dài nhất. Đừng nhầm cạnh đối diện góc nhọn là dài nhất.</li>
+          <li>Cân khi hai góc đáy bằng nhau; khi ấy hai cạnh đối diện hai góc ấy bằng nhau.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Góc lớn — cạnh đối lớn. Cân khi hai góc đáy bằng nhau.</p></div>
     `,
     exercises: [
@@ -1574,6 +1583,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Khoảng cách là đường vuông góc. Xiên dài hơn. Hai xiên bằng nhau thì hai chân cách đều chân vuông góc.</p>
       </div>
+<div class="warn">
+        <p><strong>Đừng so xiên với khoảng cách.</strong></p>
+        <ul>
+          <li>Khoảng cách từ điểm đến đường là độ dài đường <em>vuông góc</em>, không phải đường xiên.</li>
+          <li>Đường xiên luôn dài hơn đường vuông góc từ cùng một điểm. Xiên càng xa chân vuông góc thì càng dài.</li>
+          <li>Hai đường xiên bằng nhau thì hai chân cách đều chân vuông góc. Không suy ra hai điểm trùng nhau.</li>
+          <li>Khi so hai xiên, so khoảng cách từ chân đến chân vuông góc: chân xa hơn thì xiên dài hơn.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông góc ngắn nhất. Xiên càng xa chân thì càng dài.</p></div>
     `,
     exercises: [
@@ -1616,6 +1634,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(|a-b|<c<a+b\). Bằng thì thẳng hàng, không phải tam giác. Kiểm tra cả ba cặp.</p>
+      </div>
+<div class="warn">
+        <p><strong>Phải lớn hơn, không được bằng.</strong></p>
+        <ul>
+          <li>3, 4, 7 không được: \(3+4=7\), ba điểm thẳng hàng, diện tích 0, không phải tam giác. Phải lớn hơn, không phải bằng.</li>
+          <li>Kiểm tra cả ba cặp: 5, 6, 7 phải thử \(5+6&gt;7\), \(5+7&gt;6\), \(6+7&gt;5\). Chỉ thử một cặp là chưa đủ.</li>
+          <li>Cạnh thứ ba \(x\) phải nằm trong khoảng \(|a-b| &lt; x &lt; a+b\): với 9 và 4 thì \(5 &lt; x &lt; 13\), \(x = 5\) và \(x = 13\) đều không được.</li>
+          <li>Bằng nhau ở một cặp nhưng vẫn khép được tam giác thì phải thử tiếp các cặp khác.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phải lớn hơn, không được bằng. Kiểm tra cả ba cặp.</p></div>
     `,
@@ -1665,6 +1692,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Trọng tâm chia trung tuyến \(2:1\). Tâm nội tiếp = giao phân giác, cách đều ba cạnh.</p>
       </div>
+<div class="warn">
+        <p><strong>Trọng tâm hay tâm nội tiếp.</strong></p>
+        <ul>
+          <li>Trọng tâm là giao ba trung tuyến; tâm nội tiếp là giao ba phân giác. Chỉ trùng nhau ở tam giác đều.</li>
+          <li>Trọng tâm chia trung tuyến theo tỉ số \(2:1\), đoạn dài về phía đỉnh. Trung tuyến 9 cm thì đoạn đỉnh→G là 6 cm, G→trung điểm là 3 cm.</li>
+          <li>Đừng nhầm tỉ số: đoạn dài gấp đôi đoạn ngắn, không phải bằng nhau. \(AG = 2 \cdot GM\).</li>
+          <li>Tâm nội tiếp cách đều ba cạnh; trọng tâm không cách đều ba cạnh.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trung tuyến → trọng tâm, tỉ lệ 2:1. Phân giác → tâm nội tiếp, cách đều ba cạnh.</p></div>
     `,
     exercises: [
@@ -1711,6 +1747,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tâm ngoại tiếp = giao trung trực. Vuông: tâm là trung điểm cạnh huyền. Trực tâm = giao đường cao; vuông thì trùng đỉnh vuông.</p>
+      </div>
+<div class="warn">
+        <p><strong>Điểm có thể nằm ngoài tam giác.</strong></p>
+        <ul>
+          <li>Tam giác tù: trực tâm và tâm ngoại tiếp nằm <em>ngoài</em> tam giác. Không bắt chúng phải nằm trong.</li>
+          <li>Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền, bán kính bằng nửa cạnh huyền. Trực tâm trùng đỉnh góc vuông.</li>
+          <li>Tâm ngoại tiếp là giao ba trung trực, cách đều ba đỉnh. Trực tâm là giao ba đường cao. Hai giao điểm khác nhau.</li>
+          <li>Trung trực vuông góc tại <em>trung điểm</em> cạnh; đường cao vuông góc kẻ từ đỉnh. Đừng nhầm hai đường.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trung trực → ngoại tiếp, qua ba đỉnh. Đường cao → trực tâm. Vuông: tâm là trung điểm huyền.</p></div>
     `,
