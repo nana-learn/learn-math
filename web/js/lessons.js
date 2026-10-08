@@ -813,7 +813,7 @@ const LESSONS = [
           <text x="184" y="24" font-size="12">−3</text>
           <text x="230" y="39" font-size="13">x ≤ −3</text>
           <line x1="30" y1="85" x2="310" y2="85" stroke="#BBBBBB" stroke-width="1.5"/>
-          <circle cx="190" cy="85" r="5" fill="#333333" stroke="#FFFF00" stroke-width="1.5"/>
+          <circle cx="190" cy="85" r="5" fill="#FFFFFF" stroke="#FFFF00" stroke-width="1.5"/>
           <line x1="190" y1="85" x2="45" y2="85" stroke="#58C4DD" stroke-width="2.5"/>
           <polygon points="45,85 55,80 55,90" fill="#58C4DD"/>
           <text x="184" y="74" font-size="12">3</text>
