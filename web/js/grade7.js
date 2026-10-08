@@ -1989,6 +1989,11 @@ const G7_LESSONS = [
           <li>Hình lập phương cạnh \(a\): \(V = a^3\), \(S = 6a^2\). Không nhân \(a^2\) với số mặt khác 6.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hộp 3 cm, 4 cm, 5 cm: thể tích bao nhiêu? <em>— \(60\) cm³. \(V = 3 \cdot 4 \cdot 5 = 60\).</em></p>
+        <p>Sơn thùng không nắp, kích thước 20 × 30 × 40 (40 cao): có lấy \(2ab\) đáy không? <em>— Không. Không nắp thì bỏ một đáy: đáy \(20\cdot30\) cộng bốn thành, không nhân 2 đáy.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = đáy × cao. Lập phương: mọi cạnh bằng nhau, 6 mặt vuông.</p></div>
     `,
     exercises: [
@@ -2044,6 +2049,11 @@ const G7_LESSONS = [
           <li>Khi đáy không phải chữ nhật, đừng áp công thức hình hộp: dùng \(S_{\text{đáy}} \cdot h\).</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Lăng trụ đứng đáy tam giác diện tích 12 cm², cao 5 cm: thể tích bao nhiêu? <em>— \(60\) cm³. \(V = S_{\text{đáy}} \cdot h = 12 \cdot 5\).</em></p>
+        <p>Diện tích toàn phần lăng trụ = gì? <em>— Hai đáy + các mặt bên. Quên nhân 2 đáy thì thiếu.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = S_đáy · h. Xung quanh = chu vi đáy · h. Không nhầm với hình hộp nếu đáy không phải chữ nhật.</p></div>
     `,
     exercises: [
