@@ -610,6 +610,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tổng trong \(180^\circ\). Góc ngoài bằng tổng hai góc trong không kề. Vuông thì hai góc nhọn phụ nhau.</p>
       </div>
+<div class="warn">
+        <p><strong>Tổng phải ra 180°.</strong></p>
+        <ul>
+          <li>Không tồn tại tam giác với các góc \(80^\circ\), \(90^\circ\), \(20^\circ\): tổng ra \(190^\circ\). Trước khi vẽ hãy cộng thử.</li>
+          <li>Góc ngoài bằng tổng hai góc trong <em>không kề</em> với nó, không phải bằng góc kề. Đọc kĩ “không kề”.</li>
+          <li>Tam giác vuông: hai góc nhọn phụ nhau (cộng \(90^\circ\)). Một góc nhọn \(35^\circ\) thì góc nhọn kia \(55^\circ\).</li>
+          <li>Biết hai góc thì suy góc thứ ba bằng \(180^\circ\) trừ tổng hai góc đã biết — không lấy \(90^\circ\) trừ.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Tổng trong 180°. Vuông thì hai góc nhọn phụ nhau.</p></div>
     `,
     exercises: [
@@ -665,6 +674,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đánh dấu hai cạnh và góc xen giữa. Viết đúng thứ tự đỉnh khi kết luận \(\Delta ABC = \Delta DEF\).</p>
       </div>
+<div class="warn">
+        <p><strong>Góc phải “xen giữa”.</strong></p>
+        <ul>
+          <li>cgc cần góc xen giữa hai cạnh ấy. Hai cạnh bằng nhau và một góc bằng nhau nhưng góc không xen giữa thì chưa đủ.</li>
+          <li>Thứ tự đỉnh phải khớp cạnh: \(\Delta ABC = \Delta DEF\) nghĩa là \(AB\) ứng \(DE\), \(AC\) ứng \(DF\). Viết \(\Delta ACB = \Delta DEF\) là sai cặp.</li>
+          <li>Góc xen giữa hai cạnh là góc nằm giữa hai cạnh ấy: với hai cạnh \(AB\), \(AC\) thì góc xen giữa là góc \(A\), không phải góc \(B\) hay \(C\).</li>
+          <li>Đánh dấu hai cạnh và góc xen giữa trên hình trước khi kết luận bằng nhau.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đọc “xen giữa”. Viết đúng thứ tự đỉnh khi kết luận bằng nhau.</p></div>
     `,
     exercises: [
@@ -714,6 +732,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> gcg: cạnh xen giữa hai góc. ccc: ba cạnh. Ba góc chỉ nói đồng dạng, chưa bằng nhau.</p>
       </div>
+<div class="warn">
+        <p><strong>Ba góc không đủ.</strong></p>
+        <ul>
+          <li>Ba góc bằng nhau chỉ nói hai tam giác đồng dạng: một cái có thể lớn hơn. Chưa nói bằng nhau.</li>
+          <li>gcg: hai góc và cạnh <em>xen giữa</em>. Nếu cạnh đã cho không nằm giữa hai góc ấy thì chưa gcg.</li>
+          <li>ccc: đủ ba cạnh. Hai cặp cạnh bằng nhau (5, 7 với 5, 7) còn cặp thứ ba khác thì không ccc.</li>
+          <li>Khi kết luận bằng nhau phải kể đúng trường hợp và đúng cặp đỉnh tương ứng.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Ba góc không đủ. Phải có cạnh trong gcg hoặc cgc, hoặc đủ ba cạnh.</p></div>
     `,
     exercises: [
@@ -759,6 +786,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Vuông rồi thì cạnh huyền kèm một cạnh góc vuông, hoặc cạnh huyền kèm một góc nhọn, cũng đủ.</p>
+      </div>
+<div class="warn">
+        <p><strong>Vuông rồi vẫn phải đủ điều kiện.</strong></p>
+        <ul>
+          <li>Chỉ bằng một cạnh góc vuông thì chưa đủ. Cần thêm cạnh huyền bằng nhau hoặc một góc nhọn bằng nhau.</li>
+          <li>“Cạnh huyền + một góc nhọn”: góc nhọn đó phải là góc nhọn tương ứng, không phải góc vuông. Góc vuông vốn đã bằng nhau ở mọi tam giác vuông, không tính là điều kiện.</li>
+          <li>Cạnh huyền là cạnh dài nhất, đối diện góc vuông. Đừng nhầm với cạnh góc vuông.</li>
+          <li>Hai góc nhọn còn lại cùng phụ với góc đã cho nên bằng nhau — có thể dùng tiếp khi cần.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông sẵn một góc. Cạnh huyền là cạnh dài nhất, đối diện góc vuông.</p></div>
     `,
@@ -807,6 +843,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Hai cạnh bằng nhau \(\Leftrightarrow\) hai góc đáy bằng nhau. Điểm trên trung trực cách đều hai đầu đoạn.</p>
+      </div>
+<div class="warn">
+        <p><strong>“Cân” phải có hai cạnh hoặc hai góc bằng nhau.</strong></p>
+        <ul>
+          <li>Một góc \(70^\circ\) chưa chắc cân: cần hai góc bằng nhau, hoặc hai cạnh bằng nhau. Tam giác có một góc \(70^\circ\) và góc \(50^\circ\) thì không cân.</li>
+          <li>Tam giác cân: hai góc đáy bằng nhau. Góc đỉnh \(40^\circ\) thì mỗi góc đáy \(\dfrac{180^\circ - 40^\circ}{2} = 70^\circ\). Không lấy \(180^\circ\) chia.</li>
+          <li>Đường cao kẻ từ đỉnh cân đồng thời là trung tuyến, phân giác — chỉ khi kẻ từ đỉnh <em>cân</em>, không phải từ đỉnh bất kì.</li>
+          <li>Điểm trên đường trung trực cách đều hai đầu đoạn. Điểm ngoài trung trực thì không cách đều.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cân: hai cạnh, hai góc đáy. Đều: ba cạnh, ba góc \(60^\circ\). Trung trực: cách đều hai đầu.</p></div>
     `,
