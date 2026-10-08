@@ -2981,7 +2981,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Cho \(\widehat{BAC} = 60^\circ\). Hai góc nội tiếp \(\widehat{BDC}\) và \(\widehat{BAC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BDC} = 60^\circ\); góc ở tâm \(\widehat{BOC} = 2\widehat{BAC} = 120^\circ\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Góc nội tiếp bằng bao nhiêu phần cung bị chắn? <em>— Nửa: \(\widehat{BAC} = \frac{1}{2}\) số đo cung \(BC\). Góc ở tâm mới bằng cả cung; viết bằng cả cung là nhầm.</em></p>
+        <p>Góc nội tiếp chắn một đường kính thì thế nào? <em>— Là góc vuông (\(90^\circ\)).</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Cung \(AB\) có số đo \(80^\circ\). Góc ở tâm chắn cung đó cũng bằng \(80^\circ\). Góc nội tiếp chắn cùng cung \(AB\) bằng một nửa, tức \(40^\circ\).</p>
         <p>Nếu góc nội tiếp bằng \(90^\circ\), cung bị chắn bằng \(180^\circ\). Cung nửa đường tròn nghĩa là dây chắn cung ấy là đường kính. Cách nhớ: góc nội tiếp chắn đường kính thì vuông.</p>
       </div>
@@ -3061,7 +3067,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Tam giác \(ABC\) vuông tại \(A\), \(AB = 2\) cm, \(AC = 4\) cm. Đường tròn ngoại tiếp có tâm là trung điểm \(BC\): \(BC^2 = 4 + 16 = 20\), \(BC = 2\sqrt{5}\), bán kính \(R = \dfrac{BC}{2} = \sqrt{5}\) cm.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tâm đường tròn ngoại tiếp là giao của gì? <em>— Ba đường trung trực của các cạnh. Giao ba đường phân giác là tâm đường tròn nội tiếp.</em></p>
+        <p>Tam giác vuông: bán kính đường tròn ngoại tiếp bằng gì? <em>— Nửa cạnh huyền; tâm là trung điểm cạnh huyền.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tam giác vuông cạnh 6 cm, 8 cm, cạnh huyền 10 cm.</p>
         <p>Đường tròn ngoại tiếp đi qua ba đỉnh. Tâm là trung điểm cạnh huyền, bán kính bằng nửa cạnh huyền: \(R = 5\) cm. Ba đỉnh đều cách tâm đúng 5 cm.</p>
         <p>Đường tròn nội tiếp tiếp xúc ba cạnh, bán kính \(r = \dfrac{6 + 8 - 10}{2} = 2\) cm. Kiểm tra bằng diện tích: \(\dfrac{6 \cdot 8}{2} = 24\), và bán kính nhân nửa chu vi cũng là \(2 \cdot 12 = 24\). Khớp.</p>
@@ -3142,7 +3154,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Tứ giác \(ABCD\) nội tiếp \((O)\) với \(\widehat{DAB} = 70^\circ\), \(\widehat{ABC} = 130^\circ\). Suy ra \(\widehat{BCD} = 180^\circ - 70^\circ = 110^\circ\), \(\widehat{CDA} = 180^\circ - 130^\circ = 50^\circ\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Điều kiện để tứ giác nội tiếp là gì? <em>— Hai góc đối nhau cộng \(180^\circ\). Tổng cả bốn góc luôn \(360^\circ\), không đủ để kết luận.</em></p>
+        <p>Cộng nhầm hai góc kề nhau có đúng không? <em>— Không. Định lí chỉ đúng cho hai góc đối nhau.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tứ giác có các góc lần lượt \(70^\circ\), \(110^\circ\), \(110^\circ\), \(70^\circ\). Hai góc đối cộng lại \(70^\circ + 110^\circ = 180^\circ\). Tứ giác này nội tiếp được một đường tròn.</p>
         <p>Tứ giác khác có góc \(80^\circ\), \(100^\circ\), \(70^\circ\), \(110^\circ\). Một cặp đối cộng được \(80^\circ + 70^\circ = 150^\circ \neq 180^\circ\). Không nội tiếp được. Tổng bốn góc vẫn là \(360^\circ\), nhưng điều kiện cần từng cặp đối, không phải tổng cả bốn.</p>
       </div>
@@ -3221,7 +3239,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Chia bánh tròn đều \(n\) miếng, nối các vết cắt: được đa giác đều. Lục giác đều đặc biệt thân thiện: <strong>cạnh bằng bán kính</strong> — chỉ cần xoay compa quanh đường tròn là vẽ được. Các đa giác đều có khắp nơi: tổ ong (lục giác), ốc vít (lục giác), biển báo (tam giác, bát giác đều)…</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình thoi có phải đa giác đều không? <em>— Không. Cạnh bằng nhau nhưng góc không bằng nhau.</em></p>
+        <p>Chia đường tròn thành \(n\) cung bằng nhau, mỗi cung bằng bao nhiêu? <em>— \(\frac{360^\circ}{n}\), không phải \(\frac{180^\circ}{n}\).</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Lục giác đều có 6 cạnh bằng nhau và 6 góc bằng nhau. Chia đường tròn ngoại tiếp thành 6 cung bằng nhau, mỗi cung \(360^\circ : 6 = 60^\circ\).</p>
         <p>Tam giác nối tâm với một cạnh là tam giác đều, nên cạnh của lục giác đều bằng bán kính đường tròn ngoại tiếp. Bán kính 4 cm thì mỗi cạnh 4 cm, chu vi 24 cm.</p>
         <p>Mỗi góc trong bằng \(\dfrac{(6 - 2) \cdot 180^\circ}{6} = 120^\circ\). Sáu góc bằng nhau, đúng định nghĩa đa giác đều.</p>
@@ -3347,7 +3371,13 @@ const LESSONS = [
         <p><strong>Ví dụ (SGK).</strong> Thùng rác hình trụ \(R = 11\) cm, \(h = 30\) cm, sơn mặt ngoài và một đáy: \(S = S_{xq} + S_{đáy} = 660\pi + 121\pi = 781\pi\) cm²; thể tích \(V = 121\pi \cdot 30 = 3630\pi \approx 11\,404\) cm³.</p>
         <p>Hình nón \(l = 10\) cm, \(r = 6\) cm: \(S_{xq} = 60\pi\) cm²; \(h = \sqrt{10^2 - 6^2} = 8\) cm; \(V = \tfrac{1}{3}\pi \cdot 36 \cdot 8 = 96\pi\) cm³.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Diện tích xung quanh hình nón dùng đường sinh \(l\) hay chiều cao \(h\)? <em>— Dùng \(l\): \(S_{xq} = \pi r l\). Tìm \(l\) bằng Pythagore \(l^2 = r^2 + h^2\).</em></p>
+        <p>Thể tích hình nón có hệ số gì? <em>— \(\frac{1}{3}\) trước \(\pi r^2 h\). Quên sẽ ra thể tích hình trụ.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình trụ bán kính đáy \(R = 3\) cm, chiều cao \(h = 5\) cm. Diện tích xung quanh \(S_{xq} = 2\pi \cdot 3 \cdot 5 = 30\pi\) cm²: trải phẳng được hình chữ nhật dài bằng chu vi đáy \(6\pi\), rộng 5. Thể tích \(V = \pi \cdot 9 \cdot 5 = 45\pi\) cm³.</p>
         <p>Hình nón bán kính đáy \(r = 3\) cm, chiều cao 4 cm. Đường sinh \(l = \sqrt{3^2 + 4^2} = 5\) cm. Không lấy chiều cao 4 cm làm đường sinh. \(S_{xq} = \pi \cdot 3 \cdot 5 = 15\pi\) cm². Thể tích bằng một phần ba hình trụ cùng đáy cùng cao: \(V = \dfrac{1}{3}\pi \cdot 9 \cdot 4 = 12\pi\) cm³.</p>
       </div>
@@ -3462,7 +3492,13 @@ const LESSONS = [
         <p><strong>Ví dụ (SGK).</strong> Hình cầu bán kính \(R = 10\) cm: \(S = 4\pi \cdot 100 = 400\pi\) cm²; \(V = \tfrac{4}{3}\pi \cdot 1000 = \tfrac{4000\pi}{3}\) cm³.</p>
         <p>Bể cá dạng một phần hình cầu đường kính 20 cm, đổ nước bằng \(\tfrac{2}{3}\) thể tích hình cầu: \(V_{nước} = \tfrac{2}{3} \cdot \tfrac{4}{3}\pi \cdot 10^3 \approx 932\) cm³.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đề cho đường kính 20 cm thì bán kính bằng bao nhiêu? <em>— 10 cm. Phải chia đôi trước khi thế vào công thức.</em></p>
+        <p>Diện tích mặt cầu là bao nhiêu lần hình tròn lớn? <em>— 4 lần: \(S = 4\pi R^2\). \(\pi R^2\) chỉ là một mặt cắt qua tâm.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình cầu bán kính \(R = 3\) cm. Diện tích mặt cầu \(S = 4\pi R^2 = 36\pi\) cm², bằng bốn lần diện tích hình tròn lớn. Không dùng \(\pi R^2\): đó chỉ là diện tích một mặt cắt qua tâm.</p>
         <p>Thể tích \(V = \dfrac{4}{3}\pi R^3 = \dfrac{4}{3}\pi \cdot 27 = 36\pi\) cm³.</p>
         <p>Cắt qua tâm, mặt cắt là đường tròn bán kính 3 cm. Cắt lệch khỏi tâm, mặt cắt vẫn là đường tròn, nhưng bán kính nhỏ hơn 3 cm.</p>
