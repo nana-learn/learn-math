@@ -960,7 +960,32 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hỏi 12 bạn số anh chị em: 0, 1, 1, 2, 0, 3, 1, 2, 2, 1, 0, 1. Tần số: 0 có 3, 1 có 5, 2 có 3, 3 có 1. Cộng \(3+5+3+1 = 12\). Khớp. Nếu cộng 11 thì phải đếm lại từ đầu, gạch từng số.</p>
       </div>
-      <div class="idea">
+            <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số số anh chị em của 12 bạn">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="54" y="38" font-size="12" text-anchor="end">5</text>
+          <text x="54" y="70" font-size="12" text-anchor="end">4</text>
+          <text x="54" y="102" font-size="12" text-anchor="end">3</text>
+          <text x="54" y="134" font-size="12" text-anchor="end">2</text>
+          <text x="54" y="166" font-size="12" text-anchor="end">1</text>
+          <rect x="110" y="70" width="55" height="100" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="180" y="10" width="55" height="160" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="250" y="70" width="55" height="100" fill="#83C167" fill-opacity="0.35" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="320" y="137" width="55" height="33" fill="#9A72AC" fill-opacity="0.35" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="137" y="62" font-size="12" text-anchor="middle">3</text>
+          <text x="207" y="2" font-size="12" text-anchor="middle">5</text>
+          <text x="277" y="62" font-size="12" text-anchor="middle">3</text>
+          <text x="347" y="129" font-size="12" text-anchor="middle">1</text>
+          <text x="137" y="186" font-size="12" text-anchor="middle">0</text>
+          <text x="207" y="186" font-size="12" text-anchor="middle">1</text>
+          <text x="277" y="186" font-size="12" text-anchor="middle">2</text>
+          <text x="347" y="186" font-size="12" text-anchor="middle">3</text>
+          <text x="200" y="202" font-size="12" fill="#9A72AC" text-anchor="middle">Số anh chị em</text>
+        </svg>
+        <figcaption>Tần số: 0 có 3, 1 có 5, 2 có 3, 3 có 1. Cộng 3 + 5 + 3 + 1 = 12, khớp số bạn đã hỏi.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cộng tần số ra cỡ mẫu. Rời rạc thì đếm từng giá trị. Liên tục thì ghép nhóm.</p>
       </div>
 <div class="warn">
@@ -1239,7 +1264,22 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> 5 kg gạo 80 nghìn. Hỏi 8 kg. \(k = 80/5 = 16\) nghìn một kg. 8 kg hết \(128\) nghìn. Hoặc \(\dfrac{8}{5} \cdot 80 = 128\). Hai cách một kết quả.</p>
       </div>
-      <div class="idea">
+            <figure class="figure">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Đồ thị tỉ lệ thuận y = 16x: giá theo số kg gạo">
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="60" y2="20" stroke="#DDDDDD" stroke-width="2"/>
+          <polyline points="60,170 110,144 160,119 210,93 260,68 310,42" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="310" y1="42" x2="310" y2="170" stroke="#FC6255" stroke-dasharray="4 3" stroke-width="1.5"/>
+          <line x1="60" y1="42" x2="310" y2="42" stroke="#FC6255" stroke-dasharray="4 3" stroke-width="1.5"/>
+          <circle cx="310" cy="42" r="3" fill="#FC6255"/>
+          <text x="322" y="38" font-size="12" fill="#FC6255">(5; 80)</text>
+          <text x="316" y="184" font-size="12" fill="#9A72AC">Số kg (x)</text>
+          <text x="24" y="46" font-size="12" fill="#9A72AC">Giá (y)</text>
+          <text x="200" y="118" font-size="12" fill="#58C4DD" text-anchor="middle" transform="rotate(-26 200 118)">y = 16x</text>
+        </svg>
+        <figcaption>Đồ thị tỉ lệ thuận là đường thẳng qua gốc. k = 80/5 = 16 nghìn/kg: gấp đôi số kg thì giá gấp đôi.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ thuận: \(y=kx\), thương không đổi. Gấp \(x\) thì gấp \(y\). Đồ thị qua gốc.</p>
       </div>
 <div class="warn">
@@ -1285,7 +1325,22 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> 4 máy in xong trong 9 giờ. Hỏi 6 máy. Tích \(4 \cdot 9 = 36\) “máy-giờ”. 6 máy cần \(36/6 = 6\) giờ. Gấp rưỡi số máy thì thời gian còn \(2/3\).</p>
       </div>
-      <div class="idea">
+            <figure class="figure">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Đồ thị tỉ lệ nghịch xy = 36: số máy in theo số giờ">
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="60" y2="20" stroke="#DDDDDD" stroke-width="2"/>
+          <polyline points="140,35 160,62 180,80 200,93 220,103 240,110 260,116 280,121 300,125" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="80" x2="180" y2="170" stroke="#FC6255" stroke-dasharray="4 3" stroke-width="1.5"/>
+          <line x1="60" y1="80" x2="180" y2="80" stroke="#FC6255" stroke-dasharray="4 3" stroke-width="1.5"/>
+          <circle cx="180" cy="80" r="3" fill="#FC6255"/>
+          <text x="192" y="76" font-size="12" fill="#FC6255">(6; 6)</text>
+          <text x="316" y="184" font-size="12" fill="#9A72AC">Số máy (x)</text>
+          <text x="24" y="40" font-size="12" fill="#9A72AC">Số giờ (y)</text>
+          <text x="300" y="160" font-size="12" fill="#58C4DD" text-anchor="end">xy = 36</text>
+        </svg>
+        <figcaption>4 máy × 9 giờ = 36 máy-giờ. 6 máy cần 36/6 = 6 giờ: gấp rưỡi số máy thì thời gian còn 2/3.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ nghịch: \(xy=k\). Gấp \(x\) thì \(y\) còn một nửa. Số người và số ngày cùng một việc thường nghịch.</p>
       </div>
 <div class="warn">
@@ -1568,7 +1623,29 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Rút một thẻ trong {1,2,3,4,5}. Biến cố A: “số nguyên tố”. Thuận lợi: 2, 3, 5. 1 không phải số nguyên tố. 4 không. Viết rõ tập kết quả trước khi đếm.</p>
       </div>
-      <div class="idea">
+            <figure class="figure">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Xúc xắc sáu mặt, biến cố số chẵn gồm 2, 4, 6">
+          <rect x="80" y="30" width="200" height="140" rx="10" fill="#DDDDDD" fill-opacity="0.25" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="80" y1="76" x2="280" y2="76" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="80" y1="122" x2="280" y2="122" stroke="#DDDDDD" stroke-width="1"/>
+          <circle cx="130" cy="53" r="16" fill="#DDDDDD" fill-opacity="0.4"/>
+          <circle cx="230" cy="53" r="16" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <circle cx="130" cy="99" r="16" fill="#DDDDDD" fill-opacity="0.4"/>
+          <circle cx="230" cy="99" r="16" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <circle cx="130" cy="145" r="16" fill="#DDDDDD" fill-opacity="0.4"/>
+          <circle cx="230" cy="145" r="16" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <text x="130" y="57" font-size="12" text-anchor="middle">1</text>
+          <text x="230" y="57" font-size="12" text-anchor="middle">2</text>
+          <text x="130" y="103" font-size="12" text-anchor="middle">3</text>
+          <text x="230" y="103" font-size="12" text-anchor="middle">4</text>
+          <text x="130" y="149" font-size="12" text-anchor="middle">5</text>
+          <text x="230" y="149" font-size="12" text-anchor="middle">6</text>
+          <text x="180" y="192" font-size="12" fill="#FC6255" text-anchor="middle">Biến cố A: số chẵn = {2, 4, 6}</text>
+        </svg>
+        <figcaption>Ra mặt 7 là biến cố không thể: không có kết quả nào thuận lợi. Số chẵn gồm 2, 4, 6.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Viết \(\Omega\). Biến cố là một tập con. Chắc chắn = cả \(\Omega\). Không thể = rỗng.</p>
       </div>
 <div class="warn">
@@ -1614,7 +1691,24 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hai đồng xu, có thứ tự. \(\Omega = \{SS, SN, NS, NN\}\), bốn kết quả đồng khả năng. “Ít nhất một ngửa”: SN, NS, NN — ba kết quả, \(P = 3/4\). Không phải 1/2.</p>
       </div>
-      <div class="idea">
+            <figure class="figure">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Gieo hai đồng xu có thứ tự, Ω = {SS, SN, NS, NN}, ít nhất một ngửa">
+          <rect x="90" y="30" width="180" height="130" fill="#DDDDDD" fill-opacity="0.25" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="180" y1="30" x2="180" y2="160" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="90" y1="95" x2="270" y2="95" stroke="#DDDDDD" stroke-width="1"/>
+          <rect x="90" y="30" width="90" height="65" fill="#DDDDDD" fill-opacity="0.4"/>
+          <rect x="180" y="30" width="90" height="65" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="90" y="95" width="90" height="65" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="180" y="95" width="90" height="65" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <text x="135" y="66" font-size="13" text-anchor="middle">S S</text>
+          <text x="225" y="66" font-size="13" text-anchor="middle">S N</text>
+          <text x="135" y="131" font-size="13" text-anchor="middle">N S</text>
+          <text x="225" y="131" font-size="13" text-anchor="middle">N N</text>
+          <text x="180" y="184" font-size="12" fill="#FC6255" text-anchor="middle">Ít nhất một ngửa: SN, NS, NN → P = 3/4</text>
+        </svg>
+        <figcaption>Ω = {SS, SN, NS, NN}, bốn kết quả đồng khả năng. “Ít nhất một ngửa” là ba kết quả, P = 3/4, không phải 1/2.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đồng khả năng thì chia. Liệt kê rồi mới đếm. \(0\leq P\leq 1\). Không đếm trùng khi “hoặc”.</p>
       </div>
 <div class="warn">
