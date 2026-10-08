@@ -2537,7 +2537,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Biểu đồ tần số giúp "nhìn thấy" tần số: <em>biểu đồ cột</em> vẽ các cột cao bằng tần số tương ứng; <em>biểu đồ đoạn thẳng</em> nối các điểm cao tương ứng. Tổng tất cả các tần số luôn bằng cỡ mẫu \(n\) — kiểm tra nhanh bảng có lập đúng không.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Cỡ mẫu là gì? <em>— Số số liệu đã ghi, bằng tổng các tần số. Không phải số giá trị khác nhau.</em></p>
+        <p>Cộng mọi tần số phải ra gì? <em>— Đúng cỡ mẫu. Thiếu là đã bỏ sót một bạn; thừa là đếm một bạn hai lần.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Cỡ giày của 8 bạn: 38, 39, 38, 40, 39, 39, 38, 41. Cỡ mẫu là 8, vì có 8 số, không phải vì có 4 cỡ khác nhau.</p>
         <p>Đếm: 38 xuất hiện 3 lần, 39 xuất hiện 3 lần, 40 một lần, 41 một lần. Tổng tần số \(3 + 3 + 1 + 1 = 8\). Cộng không ra 8 thì đã đếm sót.</p>
         <p>Cần mua nhiều nhất là cỡ 38 và 39, mỗi cỡ 3 đôi. Biểu đồ cột: trục ngang là cỡ giày, chiều cao cột là tần số.</p>
@@ -2613,7 +2619,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ba mươi ngày.</strong> Tốt 8, Trung bình 13, Kém 5, Xấu 4. Tổng lần \(8 + 13 + 5 + 4 = 30\), đúng cỡ mẫu. Tỉ lệ: \(\dfrac{8}{30} \approx 26{,}7\%\), \(\dfrac{13}{30} \approx 43{,}3\%\), \(\dfrac{5}{30} \approx 16{,}7\%\), \(\dfrac{4}{30} \approx 13{,}3\%\). Cộng \(26{,}7 + 43{,}3 + 16{,}7 + 13{,}3 = 100\). Tốt không phải 8%: 8 là số ngày, không phải phần trăm.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>3 bạn trong nhóm 8 bạn là bao nhiêu phần trăm? <em>— \(37{,}5\%\), không phải 3%. Tần số tương đối là \(\frac{m}{n} \cdot 100\%\).</em></p>
+        <p>So hai nhóm khác cỡ thì dùng số lần hay phần trăm? <em>— Dùng phần trăm (tần số tương đối). Chín lớn hơn ba, nhưng 30% nhỏ hơn 37,5%.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Cùng 8 bạn ở trên. Tần số tương đối của cỡ 39 là \(\dfrac{3}{8} = 37{,}5\%\). Cỡ 40 là \(\dfrac{1}{8} = 12{,}5\%\). Các tỉ lệ của một mẫu phải cộng lại thành 100%.</p>
         <p>So hai lớp: lớp A có 6 trong 8 bạn đi cỡ 39, tức 75%. Lớp B có 9 trong 20 bạn, tức 45%. Lớp B có nhiều bạn hơn, nhưng tỉ lệ nhỏ hơn. Muốn so hai mẫu khác cỡ, dùng tần số tương đối, không dùng số lần xuất hiện.</p>
       </div>
@@ -2693,7 +2705,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Dấu ngoặc có ý nghĩa: [155; 158) lấy <em>155</em>, không lấy <em>158</em> — 158 rơi vào nhóm kế tiếp. Từ bảng tần số tương đối ghép nhóm, ta vẽ <strong>biểu đồ tần số tương đối ghép nhóm</strong> bằng các cột cao theo tỉ lệ phần trăm của từng nhóm.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Điểm 10 thuộc nhóm nào trong \([0;\ 10)\) và \([10;\ 20)\)? <em>— Nhóm \([10;\ 20)\). Kí hiệu \([a;\ b)\) lấy \(a\), không lấy \(b\); mỗi giá trị vào đúng một nhóm.</em></p>
+        <p>Cho giá trị đầu mút vào cả hai nhóm thì sao? <em>— Một bạn bị đếm hai lần, tổng tần số lớn hơn cỡ mẫu.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Thời gian tự học của 40 bạn được gom nhóm: \([0;\ 1)\) có 10 bạn, \([1;\ 2)\) có 15, \([2;\ 3)\) có 8, \([3;\ 4)\) có 7. Tổng \(10 + 15 + 8 + 7 = 40\).</p>
         <p>Tần số tương đối: 25%, 37,5%, 20% và 17,5%. Cộng lại 100%.</p>
         <p>Bạn học đúng 2 giờ thuộc nhóm \([2;\ 3)\), không thuộc \([1;\ 2)\). Ngoặc vuông lấy đầu mút trái; ngoặc tròn không lấy đầu mút phải.</p>
@@ -2773,7 +2791,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Bạn Lan gieo một xúc xắc, bạn Hoà gieo một đồng xu. Kết quả là (số chấm; mặt): \(\Omega = \{(1;\ S); (2;\ S); \dots; (6;\ S); (1;\ N); \dots; (6;\ N)\}\). Không gian mẫu có 12 phần tử.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Trong phép thử có thứ tự, AB và BA là gì? <em>— Hai kết quả khác nhau, không phải một. Có thứ tự thì hai cách xếp khác nhau là hai phần tử của \(\Omega\).</em></p>
+        <p>Rút lần lượt 2 người trong 4 người, không trả lại: bao nhiêu kết quả? <em>— \(4 \cdot 3 = 12\), không phải \(4 \cdot 4\). Lần hai còn ít lựa chọn hơn lần một.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tung một đồng xu hai lần. Không biết trước mặt nào, nhưng liệt kê được hết. Gọi S là sấp, N là ngửa:</p>
         \[
           \Omega = \{SS,\ SN,\ NS,\ NN\}.
@@ -2857,7 +2881,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Xác suất là <em>phần bánh</em>: chia cái bánh \(\Omega\) cho các kết quả đồng khả năng, biến cố \(E\) chiếm mấy miếng? Luôn có \(0 \leq P(E) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Khi nào mới được dùng \(P = \frac{n(A)}{n(\Omega)}\)? <em>— Khi các kết quả đồng khả năng. Xúc xắc lệch thì không được lấy \(\frac{1}{6}\).</em></p>
+        <p>Biến cố "chẵn hoặc lớn hơn 4" trên xúc xắc có kết quả thuận lợi nào? <em>— 2, 4, 5, 6, bốn kết quả, \(P = \frac{4}{6}\). Cộng \(\frac{3}{6} + \frac{2}{6}\) sẽ đếm 6 hai lần.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tung một xúc xắc cân đối. \(\Omega = \{1, 2, 3, 4, 5, 6\}\), sáu kết quả đồng khả năng.</p>
         <p>Biến cố "ra số chẵn" có kết quả thuận lợi 2, 4, 6. Xác suất \(\dfrac{3}{6} = \dfrac{1}{2}\).</p>
         <p>Biến cố "ra số lớn hơn 4" có kết quả thuận lợi 5 và 6. Xác suất \(\dfrac{2}{6} = \dfrac{1}{3}\). Không đếm số 4, vì 4 không lớn hơn 4.</p>
