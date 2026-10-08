@@ -674,6 +674,11 @@ const G7_LESSONS = [
           <li>Biết hai góc thì suy góc thứ ba bằng \(180^\circ\) trừ tổng hai góc đã biết — không lấy \(90^\circ\) trừ.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tam giác có các góc \(80^\circ\), \(90^\circ\), \(20^\circ\) tồn tại không? <em>— Không. Tổng ra \(190^\circ\), vượt quá \(180^\circ\). Trước khi vẽ hãy cộng thử.</em></p>
+        <p>Tam giác vuông có một góc nhọn \(35^\circ\): góc nhọn kia bao nhiêu? <em>— \(55^\circ\). Hai góc nhọn phụ nhau, cộng \(90^\circ\).</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Tổng trong 180°. Vuông thì hai góc nhọn phụ nhau.</p></div>
     `,
     exercises: [
@@ -738,6 +743,11 @@ const G7_LESSONS = [
           <li>Đánh dấu hai cạnh và góc xen giữa trên hình trước khi kết luận bằng nhau.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\Delta ABC\) và \(\Delta DEF\) có \(AB = DE\), \(AC = DF\), góc \(B\) bằng góc \(E\). Góc \(B\) có xen giữa hai cạnh \(AB\), \(AC\) không? <em>— Không. Góc xen giữa hai cạnh \(AB\), \(AC\) là góc \(A\). Dùng góc \(B\) thì chưa đủ cgc.</em></p>
+        <p>Viết \(\Delta ACB = \Delta DEF\) khi khớp cgc đúng không? <em>— Sai. Thứ tự đỉnh phải khớp cạnh: phải viết \(\Delta ABC = \Delta DEF\) (\(AB\) ứng \(DE\), \(AC\) ứng \(DF\)).</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đọc “xen giữa”. Viết đúng thứ tự đỉnh khi kết luận bằng nhau.</p></div>
     `,
     exercises: [
@@ -796,6 +806,11 @@ const G7_LESSONS = [
           <li>Khi kết luận bằng nhau phải kể đúng trường hợp và đúng cặp đỉnh tương ứng.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Ba góc tương ứng bằng nhau: hai tam giác bằng nhau hay chỉ đồng dạng? <em>— Chỉ đồng dạng. Một cái có thể lớn hơn; chưa có cạnh thì chưa bằng nhau.</em></p>
+        <p>Hai tam giác cạnh \(5, 7, 9\) và \(5, 7, 8\): có ccc không? <em>— Không. Cặp thứ ba khác (\(9 \neq 8\)), chưa đủ ba cạnh bằng nhau.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Ba góc không đủ. Phải có cạnh trong gcg hoặc cgc, hoặc đủ ba cạnh.</p></div>
     `,
     exercises: [
@@ -851,6 +866,11 @@ const G7_LESSONS = [
           <li>Hai góc nhọn còn lại cùng phụ với góc đã cho nên bằng nhau — có thể dùng tiếp khi cần.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hai tam giác vuông chỉ bằng một cạnh góc vuông: đủ bằng nhau chưa? <em>— Chưa. Cần thêm cạnh huyền bằng nhau hoặc một góc nhọn bằng nhau.</em></p>
+        <p>Tam giác vuông, cạnh huyền 13 cm, một cạnh góc vuông 5 cm, và tam giác kia cùng vậy: bằng nhau chưa? <em>— Bằng nhau. Đủ điều kiện “cạnh huyền + một cạnh góc vuông”.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông sẵn một góc. Cạnh huyền là cạnh dài nhất, đối diện góc vuông.</p></div>
     `,
     exercises: [
@@ -908,6 +928,11 @@ const G7_LESSONS = [
           <li>Điểm trên đường trung trực cách đều hai đầu đoạn. Điểm ngoài trung trực thì không cách đều.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tam giác cân góc đỉnh \(40^\circ\): mỗi góc đáy bao nhiêu? <em>— \(70^\circ\). Hai góc đáy bằng nhau: \(\dfrac{180^\circ - 40^\circ}{2} = 70^\circ\).</em></p>
+        <p>Tam giác có một góc \(70^\circ\): có chắc cân không? <em>— Không. Cần hai góc bằng nhau hoặc hai cạnh bằng nhau, một góc \(70^\circ\) chưa đủ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cân: hai cạnh, hai góc đáy. Đều: ba cạnh, ba góc \(60^\circ\). Trung trực: cách đều hai đầu.</p></div>
     `,
     exercises: [
