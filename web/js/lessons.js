@@ -1910,8 +1910,8 @@ const LESSONS = [
               <circle cx="65" cy="55" r="40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
               <circle cx="65" cy="55" r="2.5" fill="#FFFF00"/>
               <line x1="8" y1="70" x2="122" y2="70" stroke="#58C4DD" stroke-width="2"/>
-              <circle cx="32" cy="70" r="4" fill="#FC6255"/>
-              <circle cx="98" cy="70" r="4" fill="#FC6255"/>
+              <circle cx="28" cy="70" r="4" fill="#FC6255"/>
+              <circle cx="102" cy="70" r="4" fill="#FC6255"/>
               <line x1="65" y1="55" x2="65" y2="70" stroke="#9A72AC" stroke-width="1.8"/>
               <text x="70" y="67" font-size="11">d</text>
               <text x="38" y="93" font-size="11" fill="#83C167">d &lt; R</text>
