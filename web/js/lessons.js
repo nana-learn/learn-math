@@ -574,7 +574,13 @@ const LESSONS = [
         <p>Nhân hai vế với \((x + 1)(x - 2)\): \(2(x - 2) + (x + 1) = 3\). Mở ngoặc: \(2x - 4 + x + 1 = 3\), \(3x - 3 = 3\), \(x = 2\).</p>
         <p>\(x = 2\) làm mẫu bằng 0, nên loại. Không còn giá trị nào khác. Phương trình vô nghiệm. Đừng viết "nghiệm là 2" chỉ vì phép tính ra số 2.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao phải loại \(x=2\) khi giải phương trình có ẩn ở mẫu, dù phép tính ra số 2? <em>— Vì \(x=2\) làm mẫu bằng 0, phương trình gốc mất nghĩa. Nghiệm giả phải bị loại; luôn đối chiếu với điều kiện xác định sau khi khử mẫu.</em></p>
+        <p>Điều kiện xác định viết dạng "\(x \neq -1\) hoặc \(x \neq 2\)" có đúng không? <em>— Không. Phải là "và": \(x \neq -1\) và \(x \neq 2\) cùng lúc. Viết "hoặc" gần như luôn đúng nên không chặn được giá trị nào.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Giải \((x - 4)(2x + 6) = 0\). Tích bằng 0 khi ít nhất một nhân tử bằng 0.</p>
         <p>Trường hợp 1: \(x - 4 = 0\), nên \(x = 4\). Trường hợp 2: \(2x + 6 = 0\), nên \(x = -3\). Không bỏ nghiệm âm.</p>
         <p>Kiểm tra. \(x = 4\): nhân tử thứ nhất bằng 0, tích bằng 0. \(x = -3\): nhân tử thứ hai bằng 0, tích bằng 0.</p>
@@ -663,7 +669,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>So hai phân số mà không cần quy đồng lớn.</strong> \(\dfrac{2024}{2023} = 1 + \dfrac{1}{2023} > 1\). \(\dfrac{2021}{2022} = 1 - \dfrac{1}{2022} < 1\). Một số đứng bên phải 1, một số đứng bên trái 1, nên số thứ nhất lớn hơn số thứ hai.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Từ \(a < b\), bạn viết \(-3a < -3b\). Đúng hay sai? <em>— Sai. Nhân cả hai vế với số âm \(-3\) phải đổi chiều: \(-3a > -3b\).</em></p>
+        <p>Cộng 3 vào vế trái và 5 vào vế phải của \(a < b\), kết luận được chiều không? <em>— Không. Chỉ được cộng cùng một số vào hai vế thì chiều mới giữ nguyên.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Bắt đầu từ \(-3 < 1\). Trên trục số, \(-3\) đứng bên trái \(1\).</p>
         <p>Cộng 4 vào cả hai vế: \(1 < 5\). Chiều giữ, vì cả hai người đi cùng một đoạn.</p>
         <p>Nhân hai vế với 2: \(-6 < 2\). Chiều vẫn giữ, vì 2 dương.</p>
