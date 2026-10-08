@@ -1181,7 +1181,25 @@ const LESSONS = [
     summary: "Lập phương giữ nguyên dấu, nên mọi số thực có đúng một căn bậc ba. Không lấy giá trị tuyệt đối.",
     body: String.raw`
       <p>Khối lập phương thể tích 27 cm³ có cạnh bao nhiêu? Cần số \(x\) sao cho \(x^3 = 27\). \(3^3 = 27\). \((-3)^3 = -27\), không phải 27. Chỉ có một số lập phương ra 27, là 3. Đó là căn bậc ba.</p>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Khối lập phương thể tích 27 cm khối, cạnh 3 cm">
+          <polygon points="120,60 230,60 230,140 120,140" fill="#58C4DD" fill-opacity="0.15" stroke="#58C4DD" stroke-width="2"/>
+          <polygon points="155,85 265,85 265,165 155,165" fill="#83C167" fill-opacity="0.15" stroke="#83C167" stroke-width="2"/>
+          <polygon points="120,60 155,85 265,85 230,60" fill="#9A72AC" fill-opacity="0.15" stroke="#9A72AC" stroke-width="2"/>
+          <line x1="155" y1="165" x2="120" y2="140" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="265" y1="165" x2="230" y2="140" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="155" y1="85" x2="120" y2="60" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="265" y1="85" x2="230" y2="60" stroke="#DDDDDD" stroke-width="1.5"/>
+          <text x="175" y="80" font-size="12" fill="#58C4DD">3 cm</text>
+          <text x="175" y="96" font-size="12" fill="#58C4DD">3 cm</text>
+          <text x="175" y="112" font-size="12" fill="#58C4DD">3 cm</text>
+          <text x="175" y="152" font-size="13" fill="#FC6255" text-anchor="middle">27 cm³</text>
+          <text x="175" y="172" font-size="12" fill="#FC6255" text-anchor="middle">3 × 3 × 3 = 27</text>
+        </svg>
+        <figcaption>Khối lập phương thể tích 27 cm³ có cạnh ∛27 = 3 cm. Số âm lập phương ra âm, nên ∛(−27) = −3.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Khác căn bậc hai ở chỗ dấu.</strong> Bình phương xoá dấu, nên số âm không có căn bậc hai, và số dương có hai căn. Lập phương giữ dấu: số dương lập phương ra dương, số âm lập phương ra âm. Mỗi số thực, kể cả số âm, có đúng một căn bậc ba. \(\sqrt[3]{-27} = -3\), và biểu thức này có nghĩa.</p>
       </div>
       <div class="example">
