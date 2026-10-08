@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 7 g7-b36 figcaption typo (`94c47e6`)
+- **Issue**: the figure caption said "Sàn toàn phần" (floor) instead of "Diện tích toàn phần" (total surface area). The lesson body already uses "Diện tích toàn phần S = 2(ab + bh + ha)".
+- **Fix**: corrected the figcaption to "Diện tích toàn phần = 2(ab + bh + ha)".
+- **Verified**: syntax, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Toan 9 c9-b29 figure geometry (`1450b5f`)
 - **Issue**: the cyclic-quadrilateral figure's four vertices (180,15)/(272,105)/(180,195)/(88,105) were at radii 90/92 from the circle's center (180,105) while the circle is r=95 — so the vertices sat inside the circle, and the diamond was NOT cyclic (unequal diagonals 180 vs 184).
 - **Fix**: moved the vertices onto the circle at the cardinal points (180,10)/(275,105)/(180,200)/(85,105), making a cyclic square-diamond inscribed in r=95 (all angles 90°, so ∠A+∠C=∠B+∠D=180° holds). Adjusted the A/B/C/D vertex labels accordingly.
