@@ -127,6 +127,9 @@ const THI10_LESSONS = [
     summary: "Gọi ẩn, ghi điều kiện, lập quan hệ, giải, loại nghiệm không đúng đề.",
     body: String.raw`
       <p>Câu thực tế gần như năm nào cũng có. Một bài là một phương trình. Một bài là một hệ. Thời gian bằng quãng đường chia vận tốc. Tiền bằng đơn giá nhân số lượng.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ đề hỏi một phương trình hay một hệ. “Kế hoạch may mỗi ngày \(x\)” là một ẩn; “hoa hồng và hoa cúc” là hai ẩn phải viết hai phương trình. Đổi đơn vị trước khi nhân: thời gian bằng quãng đường chia vận tốc, tiền bằng đơn giá nhân số lượng, và nhớ điều kiện \(x\) nguyên dương hay không âm.</p>
+      </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu III.1.</strong> Kế hoạch may mỗi ngày \(x\) chiếc, \(x\) nguyên dương. Ba ngày đầu may đúng kế hoạch. Bảy ngày sau, mỗi ngày may hơn kế hoạch 5 chiếc. Sau 10 ngày được 335 chiếc.</p>
         \[ 3x + 7(x + 5) = 335. \]
@@ -168,6 +171,9 @@ const THI10_LESSONS = [
     summary: "Đọc tổng và tích từ hệ số, rồi biến biểu thức về tổng và tích.",
     body: String.raw`
       <p>Ý cuối câu phương trình thường không bảo tìm từng nghiệm. Dùng tổng và tích. Chỉ dùng khi phương trình có nghiệm.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Chỉ dùng Viète khi phương trình có nghiệm thực. Tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\) — đừng nhầm dấu của \(-\dfrac{b}{a}\). Khi nghiệm thỏa \(x^2 = px + q\), thay \(x^2\) bằng \(px + q\) để hạ bậc; quy đồng với mẫu \(x_1 x_2 = 1\) rồi mới thay vào.</p>
+      </div>
       <div class="idea">
         <p>Với \(ax^2 + bx + c = 0\), tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Nếu mỗi nghiệm thỏa \(x^2 = px + q\), có thể thay \(x^2\) bằng \(px + q\) để hạ bậc.</p>
       </div>
@@ -201,6 +207,9 @@ const THI10_LESSONS = [
     summary: "Diện tích xung quanh trụ dùng chiều cao. Nước đã dùng chỉ lấy phần chiều cao hao đi.",
     body: String.raw`
       <p>Năm 2025 và 2026, hình trụ là nửa đầu câu IV. Năm 2024, hình trụ nằm ở câu II. Năm 2023 hỏi thể tích khối gỗ hình trụ. Năm 2022 hỏi diện tích mặt quả bóng, tức hình cầu. Đọc kỹ đề hỏi xung quanh, thể tích, hay mặt cầu.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ đề hỏi xung quanh, thể tích, hay mặt cầu. Trụ: xung quanh \(2\pi Rh\), thể tích \(\pi R^2 h\). Cầu: mặt \(4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\), và 1 lít = 1000 cm³ — đừng để nguyên cm³ khi so với lít.</p>
+      </div>
       <div class="memory">
         <p>Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Cầu: \(S = 4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\). 1 lít \(= 1000\) cm³.</p>
       </div>
@@ -239,6 +248,9 @@ const THI10_LESSONS = [
     summary: "Hai góc đối cộng 180°, hoặc cùng chắn một cung. Lấy điểm ý a trước.",
     body: String.raw`
       <p>Nửa sau câu IV là chứng minh, khoảng 2,5 đến 3 điểm. Ý a gần như luôn là chứng minh bốn điểm cùng thuộc một đường tròn, và ý đó khoảng 1 điểm. Làm xong ý a rồi mới sang ý b.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Chứng minh tứ giác nội tiếp thường dùng hai góc cùng nhìn một cạnh, hoặc một góc vuông ứng với đường kính. Làm xong ý a rồi mới sang ý b. Đừng kết luận bốn điểm nội tiếp khi chưa chứng minh được hai góc bằng nhau hay hai góc vuông cùng nhìn một đoạn.</p>
+      </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu IV.2a.</strong> Tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). \(H\) nằm trên \(AB\), \(HB > HA\), \(H\) khác \(A\). Qua \(H\) kẻ đường vuông góc với \(BC\), cắt \(BC\) tại \(D\) và cắt \(AC\) tại \(E\). Chứng minh \(A, H, D, C\) cùng thuộc một đường tròn.</p>
         <p>Tam giác \(HAC\) vuông tại \(A\), vì \(H\) nằm trên \(AB\) và góc \(A\) của tam giác \(ABC\) là góc vuông. Tam giác \(HDC\) vuông tại \(D\), vì \(HD\) vuông góc với \(BC\). Hai góc đối của tứ giác \(AHDC\) đều bằng \(90^\circ\), cộng thành \(180^\circ\). Vậy tứ giác nội tiếp. Đáp án chính thức đi theo hướng này.</p>
@@ -270,6 +282,9 @@ const THI10_LESSONS = [
     summary: "Lập hàm, tìm đỉnh, rồi thử các số nguyên được phép.",
     body: String.raw`
       <p>Câu V chỉ 0,5 điểm. Đáp số phải đúng điều kiện của đề: số xe, số người, số ngày. Đỉnh parabol không nguyên thì không được nộp chính hoành độ đỉnh.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Đáp số phải thỏa điều kiện số nguyên: số người, số xe, số ngày. Đỉnh parabol không nguyên thì không nộp chính hoành độ đỉnh — thử hai giá trị nguyên kề đỉnh rồi chọn. Nhớ \(x\) là ước của 200 để số ngày \(\dfrac{200}{x}\) nguyên.</p>
+      </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu V.</strong> Hoàn thành 1000 sản phẩm. Mỗi công nhân làm 5 sản phẩm một ngày. Thuê kho 3 triệu đồng một ngày. Thưởng mỗi công nhân 1 triệu đồng khi xong việc. Gọi \(x\) là số công nhân, \(x\) nguyên dương và \(x\) là ước của 200, vì số ngày \(\dfrac{200}{x}\) phải nguyên.</p>
         \[ C(x) = x + \dfrac{600}{x}. \]
@@ -302,6 +317,9 @@ const THI10_LESSONS = [
     summary: "Một lượt các đáp số đã ra. Làm trước, rồi mới đối chiếu.",
     body: String.raw`
       <p>Đề không giữ một thứ tự cố định. Năm 2024 để căn ở câu I và hình trụ ở câu II. Năm 2025 và 2026 để thống kê ở câu I, căn ở câu II, hình trụ ở đầu câu IV. Luyện theo kỹ năng, rồi kiểm tra bằng số dưới đây.</p>
+<div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ nhóm trước khi đếm tần số: giá trị bằng đầu mút phải vào nhóm đang xét, không vào nhóm trước. Cộng các cột phải ra cỡ mẫu rồi mới chia ra tần số tương đối. Mỗi số dưới đây thuộc một năm riêng — đừng dùng nhầm đáp số năm nọ cho năm kia.</p>
+      </div>
       <div class="examq">
         <p><strong>Đáp số đã đối chiếu.</strong></p>
         <ul>
