@@ -555,7 +555,7 @@ const LESSONS = [
     body: String.raw`
       <p>Nhiều phương trình trông rối, nhưng chỉ cần đưa về phương trình bậc nhất đã biết giải. Hai đường hay gặp: phương trình tích, và phương trình có ẩn ở mẫu.</p>
       <div class="definition">
-        <p><strong>Phương trình quy về phương trình bậc nhất một ẩn</strong> là phương trình chưa ở dạng (ax + b = 0) nhưng có thể đưa về dạng đó bằng biến đổi. Hai dạng hay gặp: phương trình tích ((ax+b)(cx+d)=0) (bằng 0 khi một nhân tử bằng 0) và phương trình chứa ẩn ở mẫu, với <strong>điều kiện xác định</strong> là mọi mẫu đều khác 0.</p>
+        <p><strong>Phương trình quy về phương trình bậc nhất một ẩn</strong> là phương trình chưa ở dạng \(ax + b = 0\) nhưng có thể đưa về dạng đó bằng biến đổi. Hai dạng hay gặp: phương trình tích \((ax+b)(cx+d)=0\) (bằng 0 khi một nhân tử bằng 0) và phương trình chứa ẩn ở mẫu, với <strong>điều kiện xác định</strong> là mọi mẫu đều khác 0.</p>
       </div>
 <div class="idea">
         <p><strong>Vì sao tích bằng 0 thì một thừa số bằng 0?</strong> Nếu cả hai số đều khác 0, tích của chúng khác 0. Muốn tích bằng 0, ít nhất một thừa số phải bằng 0. Phương trình \((ax + b)(cx + d) = 0\) vì vậy tách thành hai phương trình bậc nhất: \(ax + b = 0\) hoặc \(cx + d = 0\). Lấy cả hai nghiệm, không bỏ nghiệm âm.</p>
@@ -1003,7 +1003,7 @@ const LESSONS = [
     body: String.raw`
       <p>Tính \(\sqrt{25 \cdot 49}\) bằng cách nhân 25 với 49 rồi tìm căn là mệt. Tách ra \(\sqrt{25} \cdot \sqrt{49} = 5 \cdot 7 = 35\) thì nhẩm được. Phép này đúng, nhưng chỉ với nhân và chia.</p>
       <div class="definition">
-        <p>Với (a geq 0) và (b geq 0): (sqrt{ab} = sqrt{a} cdot sqrt{b}). Với (a geq 0) và (b > 0): (sqrt{dfrac{a}{b}} = dfrac{sqrt{a}}{sqrt{b}}). Căn chỉ tách được qua phép nhân và phép chia, không qua phép cộng.</p>
+        <p>Với \(a \geq 0\) và \(b \geq 0\): \(\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}\). Với \(a \geq 0\) và \(b > 0\): \(\sqrt{\dfrac{a}{b}} = \dfrac{\sqrt{a}}{\sqrt{b}}\). Căn chỉ tách được qua phép nhân và phép chia, không qua phép cộng.</p>
       </div>
 <div class="idea">
         <p><strong>Vì sao được tách tích?</strong> Nếu \(A \geq 0\) và \(B \geq 0\) thì \(\sqrt{A} \cdot \sqrt{B}\) không âm, và bình phương của nó là \(A \cdot B\). Số không âm mà bình phương bằng \(AB\) chính là \(\sqrt{AB}\). Vậy \(\sqrt{AB} = \sqrt{A} \cdot \sqrt{B}\).</p>
@@ -1096,7 +1096,7 @@ const LESSONS = [
     body: String.raw`
       <p>\(\sqrt{12}\) đã là một số, nhưng \(2\sqrt{3}\) gọn hơn và dễ cộng tiếp. Ba thao tác dùng đi dùng lại: đưa thừa số ra ngoài, khử mẫu dưới căn, đưa thừa số vào trong.</p>
       <div class="definition">
-        <p><strong>Đưa thừa số ra ngoài dấu căn</strong>: với (b geq 0), (sqrt{a^2 b} = |a|sqrt{b}). <strong>Đưa thừa số vào trong</strong>: với (a, b geq 0), (asqrt{b} = sqrt{a^2 b}), còn nếu (a < 0) thì dấu trừ đứng ngoài căn. <strong>Khử mẫu dưới căn</strong>: nhân tử và mẫu với số để mẫu thành số chính phương.</p>
+        <p><strong>Đưa thừa số ra ngoài dấu căn</strong>: với \(b \geq 0\), \(\sqrt{a^2 b} = |a|\sqrt{b}\). <strong>Đưa thừa số vào trong</strong>: với \(a, b \geq 0\), \(a\sqrt{b} = \sqrt{a^2 b}\), còn nếu \(a < 0\) thì dấu trừ đứng ngoài căn. <strong>Khử mẫu dưới căn</strong>: nhân tử và mẫu với số để mẫu thành số chính phương.</p>
       </div>
 <div class="idea">
         <p><strong>Đưa ra ngoài.</strong> Tìm thừa số chính phương lớn nhất dưới căn: 4, 9, 16, 25, … Phần ấy "xuống" được. Với \(b \geq 0\),</p>
@@ -1429,7 +1429,7 @@ const LESSONS = [
       <p>Bài trước cho tỉ số. Bài này đảo tỉ số lại để tìm cạnh. Đó là cách đo chiều cao mà không trèo lên.</p>
       <p>Tam giác \(ABC\) vuông tại \(A\). Cạnh huyền là \(a\), cạnh đối của góc \(B\) là \(b\), cạnh kề của góc \(B\) là \(c\).</p>
       <div class="definition">
-        <p>Trong tam giác vuông, mỗi cạnh góc vuông bằng cạnh huyền nhân sin của góc đối diện (hay cos của góc kề): (b = a sin B = a cos C), (c = a sin C = a cos B); và bằng cạnh góc vuông kia nhân tan của góc đối diện: (b = c 	an B).</p>
+        <p>Trong tam giác vuông, mỗi cạnh góc vuông bằng cạnh huyền nhân sin của góc đối diện (hay cos của góc kề): \(b = a \sin B = a \cos C\), \(c = a \sin C = a \cos B\); và bằng cạnh góc vuông kia nhân tan của góc đối diện: \(b = c \tan B\).</p>
       </div>
 <div class="idea">
         <p><strong>Công thức không phải phép mới.</strong> Theo định nghĩa, \(\sin B = \dfrac{b}{a}\). Nhân hai vế với \(a\): \(b = a \sin B\). Cạnh \(b\) cũng là cạnh kề của góc \(C\), nên \(\cos C = \dfrac{b}{a}\) và \(b = a \cos C\). Cùng cách, \(c = a \sin C = a \cos B\).</p>
@@ -2618,7 +2618,7 @@ const LESSONS = [
     body: String.raw`
       <p>Huy ghi cỡ giày của 22 bạn. Dãy số dài không cho biết ngay cỡ nào cần mua nhiều. Đếm từng cỡ: đó là tần số. Cỡ mẫu là 22, vì có 22 số đã ghi, không phải vì có 5 cỡ khác nhau.</p>
       <div class="definition">
-        <p><strong>Tần số</strong> của một giá trị là số lần giá trị đó xuất hiện trong mẫu. <strong>Bảng tần số</strong> liệt kê từng giá trị kèm tần số của nó; tổng các tần số luôn bằng cỡ mẫu (n).</p>
+        <p><strong>Tần số</strong> của một giá trị là số lần giá trị đó xuất hiện trong mẫu. <strong>Bảng tần số</strong> liệt kê từng giá trị kèm tần số của nó; tổng các tần số luôn bằng cỡ mẫu \(n\).</p>
       </div>
 <div class="idea">
         <p><strong>Phép kiểm tra.</strong> Cộng mọi tần số. Phải ra đúng cỡ mẫu. Thiếu là đã bỏ sót một bạn; thừa là đã đếm một bạn hai lần. Biểu đồ cột chỉ là bảng ấy vẽ ra: trục ngang là giá trị, chiều cao cột là số lần.</p>
@@ -2841,7 +2841,7 @@ const LESSONS = [
     body: String.raw`
       <p>Chiều cao tính bằng centimét không rơi vào vài giá trị rời. Gom thành nhóm thì mới nhìn được. Nhóm \([155;\ 158)\) lấy 155 và mọi số lớn hơn hoặc bằng 155, nhưng không lấy 158. 158 sang nhóm sau.</p>
       <div class="definition">
-        <p><strong>Nhóm</strong> ([a; b)) gồm mọi số lớn hơn hoặc bằng (a) và nhỏ hơn (b). <strong>Bảng tần số ghép nhóm</strong> liệt kê tần số (hay tần số tương đối) của từng nhóm; cộng các tần số lại phải bằng cỡ mẫu (n), cộng các phần trăm phải bằng 100%.</p>
+        <p><strong>Nhóm</strong> \([a; b)\) gồm mọi số lớn hơn hoặc bằng \(a\) và nhỏ hơn \(b\). <strong>Bảng tần số ghép nhóm</strong> liệt kê tần số (hay tần số tương đối) của từng nhóm; cộng các tần số lại phải bằng cỡ mẫu \(n\), cộng các phần trăm phải bằng 100%.</p>
       </div>
 <div class="idea">
         <p><strong>Vì sao không lấy cả hai đầu?</strong> Nếu cả \([155;\ 158]\) và \([158;\ 161)\) đều nhận 158, bạn cao đúng 158 cm bị đếm hai lần. Tổng tần số sẽ lớn hơn cỡ mẫu. Ngoặc vuông lấy, ngoặc tròn bỏ. Cộng tần số các nhóm vẫn phải ra \(n\), và các phần trăm vẫn phải ra 100%.</p>
@@ -2991,7 +2991,7 @@ const LESSONS = [
         <figcaption>Bảng liên kết giúp liệt kê không thiếu, không trùng: 6 × 2 = 12 kết quả trong Ω.</figcaption>
       </figure>
 <div class="definition">
-        <p><strong>Phép thử ngẫu nhiên</strong> là hành động chưa biết trước kết quả nhưng liệt kê được mọi kết quả có thể xảy ra. <strong>Không gian mẫu</strong> (Omega) là tập các kết quả đó, ghi không thiếu và không trùng; mỗi phần tử là một kết quả.</p>
+        <p><strong>Phép thử ngẫu nhiên</strong> là hành động chưa biết trước kết quả nhưng liệt kê được mọi kết quả có thể xảy ra. <strong>Không gian mẫu</strong> \(\Omega\) là tập các kết quả đó, ghi không thiếu và không trùng; mỗi phần tử là một kết quả.</p>
       </div>
 <div class="idea">
         <p><strong>Liệt kê cho hết, không trùng.</strong> Hai hành động khác nhau thì lập bảng: hàng là kết quả việc thứ nhất, cột là việc thứ hai. Gieo xúc xắc rồi tung đồng xu: 6 hàng, 2 cột, \(\Omega\) có 12 phần tử.</p>
@@ -3075,11 +3075,11 @@ const LESSONS = [
     body: String.raw`
       <p>Biến cố là một câu về kết quả: "ra số chẵn", "Bảo không ngồi ngoài cùng". Kết quả làm câu ấy đúng gọi là kết quả thuận lợi.</p>
       <div class="definition">
-        <p>Khi các kết quả của phép thử đồng khả năng, xác suất của biến cố (E) là</p>
-        [
-          P(E) = dfrac{n(E)}{n(Omega)},
-        ]
-        <p>với (n(E)) số kết quả thuận lợi. Luôn có (0 leq P(E) leq 1): biến cố không thể có (P = 0), biến cố chắc chắn có (P = 1).</p>
+        <p>Khi các kết quả của phép thử đồng khả năng, xác suất của biến cố \(E\) là</p>
+        \[
+          P(E) = \dfrac{n(E)}{n(\Omega)},
+        \]
+        <p>với \(n(E)\) số kết quả thuận lợi. Luôn có \(0 \leq P(E) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
       </div>
 <div class="idea">
         <p><strong>Chỉ chia khi các kết quả ngang nhau.</strong> Xúc xắc cân đối: mỗi mặt một cơ hội. Khi ấy</p>
