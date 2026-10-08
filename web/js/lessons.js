@@ -2655,6 +2655,7 @@ const LESSONS = [
           <tr><th>Cỡ giày</th><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td></tr>
           <tr><td>Tần số</td><td>5</td><td>4</td><td>8</td><td>2</td><td>3</td></tr>
         </table>
+      </div>
       <figure class="figure">
         <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số cỡ giày của 22 bạn">
           <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
@@ -2682,8 +2683,6 @@ const LESSONS = [
         </svg>
         <figcaption>Biểu đồ cột vẽ lại bảng tần số: cột 38 cao nhất (8), cần mua nhiều cỡ 38 nhất.</figcaption>
       </figure>
-
-      </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Biểu đồ tần số giúp "nhìn thấy" tần số: <em>biểu đồ cột</em> vẽ các cột cao bằng tần số tương ứng; <em>biểu đồ đoạn thẳng</em> nối các điểm cao tương ứng. Tổng tất cả các tần số luôn bằng cỡ mẫu \(n\) — kiểm tra nhanh bảng có lập đúng không.</p>
       </div>
