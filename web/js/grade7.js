@@ -46,6 +46,11 @@ const G7_LESSONS = [
           <li>Trước khi so, cùng đơn vị trước: 162 cm với 1,6 m phải đổi thành 162 cm với 160 cm.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao \(\dfrac{6}{8}\) và \(\dfrac{3}{4}\) không phải hai ví dụ khác nhau về số hữu tỉ? <em>— Chúng cùng một số: \(\dfrac{6}{8} = \dfrac{3}{4}\). Đề hỏi “khác nhau” thì không đếm một số hai lần.</em></p>
+        <p>So \(-\dfrac{3}{4}\) với \(-\dfrac{2}{3}\): số nào nhỏ hơn? <em>— \(-\dfrac{3}{4}\). Cùng mẫu 12 thì \(-\dfrac{9}{12} &lt; -\dfrac{8}{12}\). Hai số âm: giá trị tuyệt đối lớn hơn thì số nhỏ hơn.</em></p>
+      </details>
       <div class="example">
         <p><strong>Làm chậm.</strong> Bạn Nam cao 162 cm, muốn so với 1,6 m. Đổi 1,6 m = 160 cm. Tỉ số chiều cao so với 160 cm là \(\dfrac{162}{160} = \dfrac{81}{80}\). Đó là số hữu tỉ. Không cần số thập phân dài.</p>
         <p>Đặt \(\dfrac{81}{80}\) lên trục: lớn hơn 1 một chút, vì 81 &gt; 80. Điểm nằm ngay sau vạch 1.</p>
@@ -88,6 +93,11 @@ const G7_LESSONS = [
           <li>Kiểm tra dấu trước khi nộp: \(\dfrac{3}{4} &lt; \dfrac{5}{6}\) nên \(\dfrac{3}{4} - \dfrac{5}{6}\) phải âm.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(-\dfrac{2}{3} + \dfrac{1}{2}\): mẫu chung là mấy, kết quả ra bao nhiêu? <em>— Mẫu chung 6. \(-\dfrac{4}{6} + \dfrac{3}{6} = -\dfrac{1}{6}\). Không cộng tử với tử mà giữ nguyên mẫu cũ.</em></p>
+        <p>Vì sao \(-\dfrac{2}{3} : \dfrac{1}{2}\) không phải bằng \(-\dfrac{2}{3} \cdot \dfrac{1}{2}\)? <em>— Chia là nhân với phân số đảo ngược: \(-\dfrac{2}{3} : \dfrac{1}{2} = -\dfrac{2}{3} \cdot 2 = -\dfrac{4}{3}\). Nhân trực tiếp sẽ sai.</em></p>
+      </details>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> \(\dfrac{1}{6} + \dfrac{1}{3} = \dfrac{1}{6} + \dfrac{2}{6} = \dfrac{3}{6} = \dfrac{1}{2}\).</p>
       </div>
@@ -151,6 +161,11 @@ const G7_LESSONS = [
           <li>\(\dfrac{3^7}{3^4} = 3^{7-4}\): chia cùng cơ số thì trừ mũ, không trừ cơ số. Cơ số âm: mũ chẵn ra dương, mũ lẻ ra âm.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(2^5\) bằng \(2 \cdot 5 = 10\) hay \(2^5 = 32\)? <em>— \(32\). Luỹ thừa là nhân lặp: \(2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\). Không nhân cơ số với số mũ.</em></p>
+        <p>\((2^3)^4\) bằng \(2^{12}\) hay \(2^7\)? <em>— \(2^{12}\). Luỹ thừa của luỹ thừa thì nhân số mũ: \(3 \cdot 4 = 12\). Cộng số mũ chỉ dùng khi nhân hai luỹ thừa cùng cơ số.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cùng cơ số thì cộng trừ mũ khi nhân chia. Nhân cơ số thì mũ phân phối. Không đổi \(a^n + b^n\) thành \((a+b)^n\).</p></div>
     `,
     exercises: [
@@ -192,6 +207,11 @@ const G7_LESSONS = [
           <li>Nhân hay chia hai vế thì nhân, chia <em>cả hai</em> vế cùng một số khác 0. Quên một vế là đổi được phương trình.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(12 : 3 \cdot 2\): bằng \(8\) hay bằng \(2\)? <em>— \(8\). Nhân chia làm trước, từ trái sang phải: \((12 : 3) \cdot 2 = 4 \cdot 2 = 8\). Không gộp \(3 \cdot 2\) trước.</em></p>
+        <p>Chuyển vế \(x + 5 = 9\): viết \(x = 9 + 5\) hay \(x = 9 - 5\)? <em>— \(x = 9 - 5 = 4\). Chuyển vế đổi dấu: \(+5\) sang vế kia thành \(-5\).</em></p>
+      </details>
       <div class="example">
         <p><strong>Làm chậm.</strong> \(18 : 3 + 2 \cdot 4^2\). Mũ trước: \(4^2 = 16\). Nhân chia trái sang phải: \(18 : 3 = 6\), \(2 \cdot 16 = 32\). Cộng: \(6 + 32 = 38\). Nếu cộng 3 + 2 trước rồi chia 18 sẽ ra sai.</p>
       </div>
