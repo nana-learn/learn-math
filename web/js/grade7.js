@@ -1580,6 +1580,11 @@ const G7_LESSONS = [
           <li>Biến cố “sấp hoặc ngửa” gồm mọi kết quả — chắc chắn. Đừng gọi nó là “có thể”.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>“Ra mặt 7” trên xúc xắc sáu mặt là biến cố gì? <em>— Không thể. Không có kết quả nào thuận lợi, không phải “xác suất nhỏ vẫn có thể”.</em></p>
+        <p>Rút một thẻ trong \(\{1,2,3,4,5\}\), biến cố “số nguyên tố” có mấy kết quả? <em>— Ba: \(\{2,3,5\}\). \(1\) và \(4\) không phải số nguyên tố.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Chắc chắn: luôn xảy ra. Không thể: không bao giờ. Còn lại: có thể.</p></div>
     `,
     exercises: [
@@ -1621,6 +1626,11 @@ const G7_LESSONS = [
           <li>Khi đếm “hoặc”, đừng đếm trùng một kết quả hai lần. \(0 \leq P \leq 1\): ra ngoài khoảng ấy là đếm sai.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hộp 3 bi đỏ, 1 bi xanh: \(P(\text{đỏ})\) bằng \(1/2\) hay \(3/4\)? <em>— \(3/4\). Đếm viên, không đếm màu: 3 trong 4 viên đỏ.</em></p>
+        <p>Gieo hai đồng xu có thứ tự: \(P(\text{ít nhất một ngửa})\) bằng bao nhiêu? <em>— \(3/4\). \(\Omega = \{SS, SN, NS, NN\}\), thuận lợi là SN, NS, NN — ba trong bốn.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Liệt kê Ω trước. Chỉ chia khi đồng khả năng. P = 0 không thể, P = 1 chắc chắn.</p></div>
     `,
     exercises: [
