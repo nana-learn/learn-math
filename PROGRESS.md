@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 9 c1-b1 two-warn merge (`9448e7e`)
+- **Issue**: c1-b1 was the only Toan 9 lesson with TWO `.warn` blocks — one mid-lesson at 50% ("Cái gì trông giống mà không phải", not right after the first idea) and a stranded closing warn at 96% ("Sai lầm thường gặp") left behind by the earlier end-warn relocation.
+- **Fix**: merged all unique points into a single "Sai lầm thường gặp" warn right after the first `.idea` (11%), deduped the `0x+0y=3` point. Removed both old warns.
+- **Verified**: syntax, smoke (84 lessons/52 figures), KaTeX 0, tag balance clean, render 0 failures.
+- **Post-fix scan**: all 32 Toan 9 warns now sit right after their first `.idea` (c7-b23 after its opening `.definition` — no early idea exists, first idea at 87%; intentional). No lesson has 2+ warns.
 # Progress
 
 ## 2026-10 (session 3)
