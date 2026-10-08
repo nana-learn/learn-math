@@ -2968,7 +2968,30 @@ const LESSONS = [
         \]
         <p>(với cung \(AB\) không chứa \(C\)).</p>
       </div>
-      <p><strong>Nhận xét.</strong> Với các góc nội tiếp của một đường tròn hoặc của hai đường tròn bằng nhau:</p>
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Góc nội tiếp BAC bằng nửa góc ở tâm BOC, cùng chắn cung BC">
+          <circle cx="180" cy="100" r="85" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="180" cy="100" r="2.5" fill="#DDDDDD"/>
+          <text x="164" y="116" font-size="13">O</text>
+          <circle cx="180" cy="15" r="3" fill="#58C4DD"/>
+          <text x="172" y="28" font-size="13" fill="#58C4DD">B</text>
+          <circle cx="254" cy="143" r="3" fill="#58C4DD"/>
+          <text x="258" y="156" font-size="13" fill="#58C4DD">C</text>
+          <circle cx="95" cy="100" r="3" fill="#83C167"/>
+          <text x="76" y="112" font-size="13" fill="#83C167">A</text>
+          <line x1="95" y1="100" x2="180" y2="15" stroke="#83C167" stroke-width="2"/>
+          <line x1="95" y1="100" x2="254" y2="143" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="100" x2="180" y2="15" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
+          <line x1="180" y1="100" x2="254" y2="143" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
+          <path d="M 236 44 A 34 34 0 0 1 248 64" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="240" y="40" font-size="13" fill="#FC6255">120°</text>
+          <path d="M 140 62 A 24 24 0 0 1 156 56" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="124" y="74" font-size="13" fill="#9A72AC">60°</text>
+        </svg>
+        <figcaption>Góc nội tiếp BAC (đỉnh A trên đường tròn) chắn cung BC bằng 60°, bằng nửa góc ở tâm BOC = 120°.</figcaption>
+      </figure>
+<p><strong>Nhận xét.</strong> Với các góc nội tiếp của một đường tròn hoặc của hai đường tròn bằng nhau:</p>
       <ul>
         <li>Các góc nội tiếp bằng nhau chắn các cung bằng nhau;</li>
         <li>Các góc nội tiếp cùng chắn một cung (hoặc chắn các cung bằng nhau) thì bằng nhau;</li>
@@ -3061,7 +3084,32 @@ const LESSONS = [
         <p><strong>Đường tròn ngoại tiếp tam giác vuông</strong> có tâm là trung điểm của cạnh huyền và bán kính bằng một nửa cạnh huyền.</p>
         <p><strong>Đường tròn nội tiếp tam giác đều</strong> cạnh \(a\) có tâm là trọng tâm của tam giác và bán kính \(r = \dfrac{\sqrt{3}}{6}a\).</p>
       </div>
-      <div class="idea">
+      
+<figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác với đường tròn ngoại tiếp qua ba đỉnh và đường tròn nội tiếp chạm ba cạnh">
+          <circle cx="180" cy="105" r="88" fill="none" stroke="#58C4DD" stroke-width="2" stroke-dasharray="6 4"/>
+          <circle cx="195" cy="80" r="39.35" fill="none" stroke="#FC6255" stroke-width="2" stroke-dasharray="6 4"/>
+          <polygon points="165,192 150,22 256,61" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="165" cy="192" r="3" fill="#83C167"/>
+          <text x="169" y="202" font-size="13" fill="#83C167">A</text>
+          <circle cx="150" cy="22" r="3" fill="#83C167"/>
+          <text x="146" y="36" font-size="13" fill="#83C167">B</text>
+          <circle cx="256" cy="61" r="3" fill="#83C167"/>
+          <text x="258" y="70" font-size="13" fill="#83C167">C</text>
+          <circle cx="180" cy="105" r="2.5" fill="#9A72AC"/>
+          <text x="184" y="112" font-size="13" fill="#9A72AC">O</text>
+          <circle cx="195" cy="80" r="2.5" fill="#9A72AC"/>
+          <text x="200" y="87" font-size="13" fill="#9A72AC">I</text>
+          <line x1="180" y1="105" x2="165" y2="192" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="180" y1="105" x2="150" y2="22" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="180" y1="105" x2="256" y2="61" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="195" y1="80" x2="165" y2="192" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="195" y1="80" x2="150" y2="22" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="195" y1="80" x2="256" y2="61" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </svg>
+        <figcaption>Đường tròn ngoại tiếp (xanh) đi qua ba đỉnh, tâm O giao ba đường trung trực. Đường tròn nội tiếp (đỏ) chạm ba cạnh, tâm I giao ba đường phân giác.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Hiểu nhanh.</strong> Đường trung trực cách đều hai đầu mút nên điểm giao ba đường trung trực cách đều ba đỉnh — đó là tâm đường tròn đi qua cả ba đỉnh. Đường phân giác cách đều hai cạnh nên giao ba phân giác cách đều ba cạnh — tâm đường tròn chạm cả ba cạnh. Với tam giác vuông, góc nội tiếp chắn nửa đường tròn là góc vuông (Bài 27!) nên đường tròn đường kính huyền đi qua đỉnh vuông.</p>
       </div>
       <div class="example">
@@ -3147,7 +3195,29 @@ const LESSONS = [
           \widehat{A} + \widehat{C} = 180^\circ; \qquad \widehat{B} + \widehat{D} = 180^\circ.
         \]
       </div>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tứ giác nội tiếp ABCD với hai góc đối cộng 180 độ">
+          <circle cx="180" cy="105" r="95" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
+          <text x="166" y="121" font-size="13">O</text>
+          <polygon points="180,15 272,105 180,195 88,105" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="180" cy="15" r="3" fill="#58C4DD"/>
+          <text x="172" y="30" font-size="13" fill="#58C4DD">A</text>
+          <circle cx="272" cy="105" r="3" fill="#58C4DD"/>
+          <text x="276" y="118" font-size="13" fill="#58C4DD">B</text>
+          <circle cx="180" cy="195" r="3" fill="#58C4DD"/>
+          <text x="184" y="208" font-size="13" fill="#58C4DD">C</text>
+          <circle cx="88" cy="105" r="3" fill="#58C4DD"/>
+          <text x="72" y="118" font-size="13" fill="#58C4DD">D</text>
+          <text x="150" y="52" font-size="12" fill="#FC6255">∠A</text>
+          <text x="226" y="138" font-size="12" fill="#FC6255">∠C</text>
+          <text x="104" y="138" font-size="12" fill="#9A72AC">∠B</text>
+          <text x="210" y="52" font-size="12" fill="#9A72AC">∠D</text>
+        </svg>
+        <figcaption>Bốn đỉnh cùng nằm trên một đường tròn. Hai góc đối nhau: ∠A + ∠C = 180°, ∠B + ∠D = 180°.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Vì sao?</strong> Hai đỉnh \(B, D\) chia đường tròn thành hai cung có tổng số đo \(360^\circ\). Góc \(A\) chắn một cung, góc \(C\) chắn cung kia, mỗi góc bằng nửa cung bị chắn (Bài 27) nên tổng hai góc bằng nửa \(360^\circ\).</p>
         <p><strong>Đảo cũng đúng:</strong> nếu tổng hai góc đối của một tứ giác bằng \(180^\circ\) thì tứ giác đó nội tiếp được một đường tròn. Ví dụ hình chữ nhật (hai góc đối đều là cặp góc vuông) luôn nội tiếp được.</p>
       </div>
@@ -3236,7 +3306,33 @@ const LESSONS = [
         \]
         <p>Nối lần lượt các điểm chia ta được đa giác đều \(n\) cạnh (ví dụ ngũ giác đều: mỗi góc ở tâm \(72^\circ\)).</p>
       </div>
-      <div class="idea">
+      
+<figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Lục giác đều nội tiếp đường tròn với góc ở tâm 60 độ">
+          <circle cx="180" cy="105" r="95" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
+          <text x="166" y="121" font-size="13">O</text>
+          <polygon points="275,105 228,187 133,187 85,105 132,23 228,23" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="105" x2="275" y2="105" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <line x1="180" y1="105" x2="228" y2="187" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <line x1="180" y1="105" x2="133" y2="187" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <line x1="180" y1="105" x2="85" y2="105" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <line x1="180" y1="105" x2="132" y2="23" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <line x1="180" y1="105" x2="228" y2="23" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <path d="M 226 48 A 30 30 0 0 1 240 62" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="232" y="44" font-size="12" fill="#FC6255">60°</text>
+          <line x1="180" y1="105" x2="228" y2="23" stroke="#83C167" stroke-width="1.5"/>
+          <text x="196" y="40" font-size="12" fill="#83C167">R</text>
+          <circle cx="275" cy="105" r="3" fill="#58C4DD"/>
+          <circle cx="228" cy="187" r="3" fill="#58C4DD"/>
+          <circle cx="133" cy="187" r="3" fill="#58C4DD"/>
+          <circle cx="85" cy="105" r="3" fill="#58C4DD"/>
+          <circle cx="132" cy="23" r="3" fill="#58C4DD"/>
+          <circle cx="228" cy="23" r="3" fill="#58C4DD"/>
+        </svg>
+        <figcaption>Lục giác đều: chia đường tròn thành 6 cung bằng nhau, mỗi góc ở tâm 60°. Cạnh bằng bán kính R của đường tròn ngoại tiếp.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Hiểu nhanh.</strong> Chia bánh tròn đều \(n\) miếng, nối các vết cắt: được đa giác đều. Lục giác đều đặc biệt thân thiện: <strong>cạnh bằng bán kính</strong> — chỉ cần xoay compa quanh đường tròn là vẽ được. Các đa giác đều có khắp nơi: tổ ong (lục giác), ốc vít (lục giác), biển báo (tam giác, bát giác đều)…</p>
       </div>
       
