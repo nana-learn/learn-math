@@ -883,6 +883,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cộng tần số ra cỡ mẫu. Rời rạc thì đếm từng giá trị. Liên tục thì ghép nhóm.</p>
       </div>
+<div class="warn">
+        <p><strong>Đếm xong phải khớp.</strong></p>
+        <ul>
+          <li>Tổng tần số phải bằng cỡ mẫu (số bạn đã hỏi). Cộng tần số ra 7 mà hỏi 8 bạn là đếm sót một người.</li>
+          <li>Rời rạc (số anh chị em, số ngày) thì đếm từng giá trị. Liên tục (chiều cao, cân nặng) thì ghép nhóm \([a; b)\) — không đếm theo từng cm lẻ.</li>
+          <li>Khi ghép nhóm, mỗi dữ liệu nằm đúng một nhóm: \(145\) thuộc \([145; 150)\), không thuộc nhóm trước.</li>
+          <li>Kiểm tra bằng cách cộng lại từng nhóm; lệch một là phải đếm lại từ đầu.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Rời rạc: từng giá trị. Liên tục: nhóm [a; b). Tổng tần số bằng cỡ mẫu.</p></div>
     `,
     exercises: [
@@ -928,6 +937,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(p\%\) ứng góc \(3{,}6p\) độ. Cộng góc \(360^\circ\), cộng phần trăm \(100\%\).</p>
+      </div>
+<div class="warn">
+        <p><strong>Phần trăm nhân 3,6 ra độ.</strong></p>
+        <ul>
+          <li>\(p\%\) ứng góc \(3{,}6p\) độ: 25% thì \(90^\circ\), không phải \(25^\circ\). 40% thì \(144^\circ\), không phải \(40^\circ\).</li>
+          <li>Khi có số học sinh, đổi ra phần trăm trước: 10/40 = 25% rồi mới nhân 3,6.</li>
+          <li>Tổng các góc phải ra \(360^\circ\). Thiếu một nhóm thì hình không khép, tổng không đủ 360°.</li>
+          <li>Tổng phần trăm phải ra 100%. Cộng ra 99% hay 101% là làm tròn hoặc đếm sai, phải sửa.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phần trăm nhân 3,6 ra số độ. Kiểm tra tổng 100% và 360°.</p></div>
     `,
@@ -992,6 +1010,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đọc từng đoạn: tăng, giảm, hay không đổi. So số trên trục, không chỉ nhìn độ dốc.</p>
+      </div>
+<div class="warn">
+        <p><strong>Đọc số trên trục, đừng nhìn độ dốc.</strong></p>
+        <ul>
+          <li>Đường dốc hơn chưa chắc tăng nhiều hơn nếu hai trục khác đơn vị. So các số trên trục đứng.</li>
+          <li>Đọc từng đoạn, không đọc cả đường rồi nói “trời nóng dần”: 7→8 tăng 3, 8→9 không đổi, 9→10 giảm 2.</li>
+          <li>Nằm ngang nghĩa là giá trị không đổi, không phải “bằng 0” hay “không quan trọng”.</li>
+          <li>Điểm dữ liệu là giá trị đúng tại mốc thời gian. Giữa hai điểm, đường chỉ là “chuyển dần”, chưa chắc thực đo.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Quạt: cơ cấu một thời điểm. Đoạn thẳng: biến thiên theo thời gian. Cột: so từng nhóm.</p></div>
     `,
