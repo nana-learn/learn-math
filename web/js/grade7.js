@@ -1055,6 +1055,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Kiểm tra tỉ lệ thức bằng nhân chéo \(ad=bc\). Từ \(a:b=c:d\) viết được \(a/c=b/d\). Tìm ẩn thì cô lập, nhớ mẫu khác 0.</p>
       </div>
+<div class="warn">
+        <p><strong>Nhân chéo trước khi kết luận.</strong></p>
+        <ul>
+          <li>\(\dfrac{3}{4} = \dfrac{6}{8}\) đúng vì \(3 \cdot 8 = 4 \cdot 6 = 24\). \(\dfrac{3}{4} = \dfrac{6}{7}\) sai vì \(21 \neq 24\). Đừng nhìn “cùng tăng một ít” rồi kết luận.</li>
+          <li>Nhân chéo nhớ có ngoặc: \(\dfrac{x-1}{4} = \dfrac{3}{6}\) cho \(6(x-1) = 12\). Viết \(6x - 1 = 12\) là sai, ra \(x\) sai.</li>
+          <li>Mẫu phải khác 0. \(\dfrac{a}{b} = \dfrac{c}{d}\) chỉ có nghĩa khi \(b, d \neq 0\).</li>
+          <li>Thế nghiệm trở lại để kiểm tra: \(x = 3\) thì \(\dfrac{2}{4} = \dfrac{3}{6}\), đúng.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Nhân chéo. Có thể đổi chỗ: \(a/c = b/d\). Không cho mẫu bằng 0.</p></div>
     `,
     exercises: [
@@ -1086,6 +1095,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Dãy tỉ số bằng \(k\) thì tổng tử trên tổng mẫu vẫn bằng \(k\). Chia một tổng theo tỉ số: cộng các phần, lấy một phần rồi nhân.</p>
+      </div>
+<div class="warn">
+        <p><strong>Cộng tử với tử, mẫu với mẫu.</strong></p>
+        <ul>
+          <li>\(\dfrac{a+c+e}{b+d+f}\) mới giữ được hệ số \(k\), khi các tỉ số bằng nhau. Không cộng tử với mẫu, không nhân hai tỉ số với nhau.</li>
+          <li>\(\dfrac{1}{2} + \dfrac{2}{4}\) là tổng hai phân số, chuyện khác với tổng các tử trên tổng các mẫu.</li>
+          <li>Chia theo tỉ số \(2 : 3 : 7\): cộng các phần trước \(2+3+7 = 12\), lấy một phần rồi nhân. Không chia từng số cho số phần của nó.</li>
+          <li>Kiểm tra bằng dãy: \(\dfrac{2}{2} = \dfrac{3}{3} = \dfrac{7}{7} = 1\), tất cả cùng hệ số.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cùng một hệ số k. Tổng các tử trên tổng các mẫu vẫn bằng k.</p></div>
     `,
@@ -1119,6 +1137,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ thuận: \(y=kx\), thương không đổi. Gấp \(x\) thì gấp \(y\). Đồ thị qua gốc.</p>
       </div>
+<div class="warn">
+        <p><strong>Thương không đổi mới thuận.</strong></p>
+        <ul>
+          <li>Tỉ lệ thuận nghĩa là thương \(y/x\) không đổi: \(y = kx\). Gấp \(x\) lên thì \(y\) gấp theo.</li>
+          <li>2 công nhân làm xong trong 6 ngày không suy ra 4 công nhân xong trong 12 ngày — số người với số ngày thường tỉ lệ <em>nghịch</em>, bài sau.</li>
+          <li>Đồ thị tỉ lệ thuận là đường thẳng qua gốc. Đường thẳng không qua gốc không phải tỉ lệ thuận.</li>
+          <li>Tính \(k\) trước: 5 kg hết 80 nghìn thì \(k = 16\) nghìn/kg, rồi mới nhân số kg. Không nhân số kg vào giá của một kg đã sai.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Tỉ lệ thuận: thương y/x không đổi. Gấp x thì gấp y.</p></div>
     `,
     exercises: [
@@ -1150,6 +1177,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ nghịch: \(xy=k\). Gấp \(x\) thì \(y\) còn một nửa. Số người và số ngày cùng một việc thường nghịch.</p>
+      </div>
+<div class="warn">
+        <p><strong>Thuận hay nghịch, đừng nhầm.</strong></p>
+        <ul>
+          <li>Tỉ lệ nghịch là tích không đổi \(xy = k\), không phải thương. Gấp \(x\) lên thì \(y\) giảm xuống còn một phần.</li>
+          <li>Không nhân cả hai đại lượng: 6 người làm xong trong 10 ngày, 5 người cần \(6 \cdot 10 / 5 = 12\) ngày, không phải \(5 \cdot 10\).</li>
+          <li>Lập tích “máy-giờ” hay “người-ngày” trước: 4 máy × 9 giờ = 36, rồi chia cho số máy mới.</li>
+          <li>Gấp rưỡi số máy thì thời gian còn \(2/3\): kiểm tra xem đã dùng đúng hướng nghịch chưa.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Thuận: thương không đổi. Nghịch: tích không đổi.</p></div>
     `,
