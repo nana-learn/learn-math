@@ -1159,6 +1159,11 @@ const G7_LESSONS = [
           <li>Thế nghiệm trở lại để kiểm tra: \(x = 3\) thì \(\dfrac{2}{4} = \dfrac{3}{6}\), đúng.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\dfrac{3}{4}\) và \(\dfrac{6}{7}\) có tạo tỉ lệ thức không? <em>— Không. Nhân chéo: \(3 \cdot 7 = 21\), \(4 \cdot 6 = 24\). Khác nhau nên không phải.</em></p>
+        <p>Giải \(\dfrac{x-1}{4} = \dfrac{3}{6}\): nhân chéo phải viết thế nào? <em>— \(6(x-1) = 12\). Nhớ ngoặc: \(6x - 1 = 12\) là sai, ra \(x\) sai.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Nhân chéo. Có thể đổi chỗ: \(a/c = b/d\). Không cho mẫu bằng 0.</p></div>
     `,
     exercises: [
@@ -1200,6 +1205,11 @@ const G7_LESSONS = [
           <li>Kiểm tra bằng dãy: \(\dfrac{2}{2} = \dfrac{3}{3} = \dfrac{7}{7} = 1\), tất cả cùng hệ số.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Chia 12 cái kẹo theo tỉ số \(2 : 3 : 7\): mỗi nhóm được bao nhiêu? <em>— \(2, 3, 7\). Cộng phần \(2+3+7 = 12\), mỗi phần 1 kẹo, nhân từng số phần.</em></p>
+        <p>\(\dfrac{1}{2} + \dfrac{2}{4}\) có phải cách dùng dãy tỉ số bằng nhau không? <em>— Không. Dãy tỉ số dùng \(\dfrac{a+c+e}{b+d+f}\), cộng tử với tử, mẫu với mẫu — không cộng hai phân số rời.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cùng một hệ số k. Tổng các tử trên tổng các mẫu vẫn bằng k.</p></div>
     `,
     exercises: [
@@ -1241,6 +1251,11 @@ const G7_LESSONS = [
           <li>Tính \(k\) trước: 5 kg hết 80 nghìn thì \(k = 16\) nghìn/kg, rồi mới nhân số kg. Không nhân số kg vào giá của một kg đã sai.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>5 kg gạo giá 80 nghìn: 8 kg giá bao nhiêu? <em>— \(128\) nghìn. \(k = 80/5 = 16\) nghìn/kg, \(8 \cdot 16 = 128\).</em></p>
+        <p>2 công nhân làm xong trong 6 ngày: 4 công nhân xong trong 12 ngày đúng không? <em>— Không. Số người với số ngày thường tỉ lệ nghịch, bài sau; thuận thì gấp người làm giảm ngày.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Tỉ lệ thuận: thương y/x không đổi. Gấp x thì gấp y.</p></div>
     `,
     exercises: [
@@ -1282,6 +1297,11 @@ const G7_LESSONS = [
           <li>Gấp rưỡi số máy thì thời gian còn \(2/3\): kiểm tra xem đã dùng đúng hướng nghịch chưa.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>6 người làm xong trong 10 ngày: 5 người cần bao nhiêu ngày? <em>— \(12\) ngày. Tích không đổi \(6 \cdot 10 = 60\) “người-ngày”, chia cho 5: \(60/5 = 12\).</em></p>
+        <p>Tỉ lệ nghịch là thương không đổi hay tích không đổi? <em>— Tích không đổi \(xy = k\). Thuận mới là thương không đổi.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Thuận: thương không đổi. Nghịch: tích không đổi.</p></div>
     `,
     exercises: [
