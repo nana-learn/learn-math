@@ -2174,7 +2174,7 @@ const G7_LESSONS = [
           <text x="18" y="118" font-size="12" fill="#83C167">cao</text>
           <text x="200" y="150" font-size="12" fill="#FC6255">rộng</text>
         </svg>
-        <figcaption>V = dài × rộng × cao. Sàn toàn phần = 2(ab + bh + ha).</figcaption>
+        <figcaption>V = dài × rộng × cao. Diện tích toàn phần = 2(ab + bh + ha).</figcaption>
       </figure>
 
       <p>Hình lập phương cạnh \(a\): \(S = 6a^2\), \(V = a^3\).</p>
