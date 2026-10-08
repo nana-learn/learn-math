@@ -1,5 +1,11 @@
 # Progress
 
+## 2026-10 (session 3)
+
+- Repo refocused on the public GitHub Pages site: removed `serve.sh` (local `python3 http.server`) — the site is viewed at https://nana-learn.github.io/learn-math/ only.
+- Rewrote `README.md` around the Pages workflow (push `main` → Actions deploys `web/`); fixed the stale "only Toán 9" note (Toán 7 and Thi vào 10 are also populated).
+- `.gitignore`: dropped `data/` and `*.db` (leftover from the abandoned local SQLite plan).
+
 ## GitHub Pages
 
 - Repo moved to `git@github.com:nana-learn/learn-math.git` (public).
