@@ -1219,6 +1219,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Thế số sau khi ghi điều kiện. Mẫu \(\neq 0\), trong căn \(\geq 0\). Không ghi “bằng vô cùng” khi mẫu bằng 0.</p>
       </div>
+<div class="warn">
+        <p><strong>Ghi điều kiện trước khi thế.</strong></p>
+        <ul>
+          <li>\(\dfrac{1}{x-2}\) không tính được khi \(x = 2\). Mẫu bằng 0 thì gạch bỏ, không ghi “bằng vô cùng”.</li>
+          <li>\(\sqrt{x}\) không tính được khi \(x = -1\). Trong căn phải \(\geq 0\).</li>
+          <li>Biểu thức \(\dfrac{x+1}{x-3}\) chỉ có nghĩa khi \(x \neq 3\). Ghi điều kiện trước, rồi mới thế số.</li>
+          <li>Thế sai thứ tự phép tính: \(\dfrac{x+1}{x-3}\) khi \(x = 5\) là \(\dfrac{6}{2} = 3\), không phải \(x+1\) chia \(x\) trừ 3.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Ghi điều kiện trước khi thế. Mẫu ≠ 0, trong căn ≥ 0.</p></div>
     `,
     exercises: [
@@ -1250,6 +1259,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Sắp theo bậc giảm. Bậc là mũ lớn nhất có hệ số khác 0. \(1/x\) không phải đa thức.</p>
+      </div>
+<div class="warn">
+        <p><strong>Bậc là mũ lớn nhất còn sống.</strong></p>
+        <ul>
+          <li>\(0 \cdot x^5 + x^2\) bậc 2, không phải 5: hạng tử có hệ số 0 không tính.</li>
+          <li>\(x + \dfrac{1}{x}\) không phải đa thức, vì có \(x\) ở mẫu. Đa thức không chia chữ, không căn chữ.</li>
+          <li>Sắp theo bậc giảm trước: \(4x - x^3 + 2x^2 - 7\) thành \(-x^3 + 2x^2 + 4x - 7\). Hệ số cao nhất là \(-1\), không phải \(4\). Nhìn mũ, không nhìn số đứng đầu khi chưa sắp.</li>
+          <li>\(4\) là đa thức bậc 0, không phải “không có bậc”. Một mình số vẫn là đa thức.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đa thức không chia chữ, không căn chữ. Bậc = mũ lớn nhất còn sống.</p></div>
     `,
@@ -1286,6 +1304,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cộng trừ hạng tử đồng dạng. Trừ đa thức: đổi dấu cả ngoặc rồi cộng. \(x^2\) không cộng với \(x\).</p>
       </div>
+<div class="warn">
+        <p><strong>Trừ đa thức: đổi dấu cả ngoặc.</strong></p>
+        <ul>
+          <li>\((3x - 5) - (2x - 1) = 3x - 5 - 2x + 1 = x - 4\). Không để dấu \(-1\) thành \(-1\) mà quên đổi: phải \(+1\).</li>
+          <li>\(x^2\) không cộng với \(x\): chỉ gộp hạng tử đồng dạng (cùng biến, cùng mũ). \(3x^2 + 3x\) không thành \(6x^2\).</li>
+          <li>Trừ là cộng đa thức đối: \((x^2+4x) - (x^2 - x + 2) = x^2 + 4x - x^2 + x - 2 = 5x - 2\).</li>
+          <li>Xếp theo cột (bậc \(x^2\), rồi \(x\), rồi số) để không bỏ sót hạng tử.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trừ đa thức = cộng đa thức đối. Đổi dấu từng hạng tử trong ngoặc.</p></div>
     `,
     exercises: [
@@ -1321,6 +1348,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Phân phối từng hạng. \((a+b)^2=a^2+2ab+b^2\), đừng quên \(2ab\). Nhân lại để kiểm tra.</p>
       </div>
+<div class="warn">
+        <p><strong>Đừng quên hạng tử giữa.</strong></p>
+        <ul>
+          <li>\((x+2)^2 = x^2 + 4x + 4\), không phải \(x^2 + 4\): thiếu \(2ab = 4x\) là sai.</li>
+          <li>Nhân hai nhị thức là bốn tích: \((2x-1)(x+4)\) phải có \(2x \cdot x\), \(2x \cdot 4\), \((-1) \cdot x\), \((-1) \cdot 4\). Thiếu một tích là sai hệ số giữa.</li>
+          <li>Nhân cùng cơ số thì cộng mũ: \(x^2 \cdot x^3 = x^5\), không nhân mũ với nhau.</li>
+          <li>Nhân lại để kiểm tra: \((x+3)(x+1)\) ra \(x^2 + 4x + 3\), thử lại bằng cách khai triển lần hai.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cộng mũ khi nhân cùng cơ số. Bình phương tổng có hạng 2ab.</p></div>
     `,
     exercises: [
@@ -1353,6 +1389,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp. Dư 0 thì chia hết; nhân ngược để kiểm.</p>
+      </div>
+<div class="warn">
+        <p><strong>Chia có thứ tự, nhân ngược để kiểm.</strong></p>
+        <ul>
+          <li>\((x^2 + x) : x = x + 1\) được vì cả hai hạng chia hết cho \(x\). Nhưng \((x^2 + 1) : x\) không còn là đa thức — đừng chia từng hạng lung tung khi không chia hết.</li>
+          <li>Chia đơn thức: trừ mũ, không chia mũ: \(x^5 : x^2 = x^3\), và chỉ khi \(x \neq 0\).</li>
+          <li>Chia đa thức: chia hạng bậc cao nhất, nhân, trừ, kéo xuống — làm từng bước như chia số. Nhảy cóc sẽ sai hệ số giữa.</li>
+          <li>Luôn nhân ngược để kiểm: \((x+2)(x+3) = x^2 + 5x + 6\). Dư khác 0 thì chưa chia hết.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Nhân lại để kiểm tra. Dư khác 0 thì chưa chia hết.</p></div>
     `,
