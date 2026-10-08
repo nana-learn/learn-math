@@ -972,6 +972,11 @@ const G7_LESSONS = [
           <li>Kiểm tra bằng cách cộng lại từng nhóm; lệch một là phải đếm lại từ đầu.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hỏi 8 bạn số anh chị em, cộng tần số được 7. Có vấn đề gì? <em>— Đếm sót một bạn. Tổng tần số phải bằng cỡ mẫu (số người đã hỏi), phải đếm lại từ đầu.</em></p>
+        <p>Chiều cao đo từng cm rồi đếm từng giá trị có phải cách làm đúng không? <em>— Không. Chiều cao liên tục phải ghép nhóm \([a; b)\), không đếm theo từng cm lẻ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Rời rạc: từng giá trị. Liên tục: nhóm [a; b). Tổng tần số bằng cỡ mẫu.</p></div>
     `,
     exercises: [
@@ -1027,6 +1032,11 @@ const G7_LESSONS = [
           <li>Tổng phần trăm phải ra 100%. Cộng ra 99% hay 101% là làm tròn hoặc đếm sai, phải sửa.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Nhóm chiếm 25%: góc ở tâm bao nhiêu độ? <em>— \(90^\circ\). \(25 \cdot 3{,}6 = 90\). Không phải \(25^\circ\).</em></p>
+        <p>40 học sinh, 10 em thích bóng đá: góc ở tâm bằng \(10^\circ\) hay \(90^\circ\)? <em>— \(90^\circ\). Tỉ lệ là \(\dfrac{10}{40} = 25\%\), góc \(90^\circ\). Không lấy số học sinh làm độ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phần trăm nhân 3,6 ra số độ. Kiểm tra tổng 100% và 360°.</p></div>
     `,
     exercises: [
@@ -1100,6 +1110,11 @@ const G7_LESSONS = [
           <li>Điểm dữ liệu là giá trị đúng tại mốc thời gian. Giữa hai điểm, đường chỉ là “chuyển dần”, chưa chắc thực đo.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Nhiệt độ 7 giờ \(20^\circ\), 8 giờ \(23^\circ\), 9 giờ \(23^\circ\), 10 giờ \(21^\circ\): từ 9 đến 10 thế nào? <em>— Giảm \(2^\circ\). Đọc số trên trục: \(23 \to 21\), giảm 2, không chỉ nhìn độ dốc.</em></p>
+        <p>Đoạn nằm ngang trên biểu đồ đoạn thẳng nghĩa là gì? <em>— Giá trị không đổi, không phải bằng 0 hay “không quan trọng”.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Quạt: cơ cấu một thời điểm. Đoạn thẳng: biến thiên theo thời gian. Cột: so từng nhóm.</p></div>
     `,
     exercises: [
