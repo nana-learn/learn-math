@@ -2533,6 +2533,34 @@ const LESSONS = [
           <tr><th>Cỡ giày</th><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td></tr>
           <tr><td>Tần số</td><td>5</td><td>4</td><td>8</td><td>2</td><td>3</td></tr>
         </table>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số cỡ giày của 22 bạn">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="30" y="56" font-size="12" fill="#9A72AC">Tần số</text>
+          <line x1="60" y1="95" x2="345" y2="95" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1"/>
+          <text x="54" y="98" font-size="12" text-anchor="end">4</text>
+          <text x="54" y="50" font-size="12" text-anchor="end">8</text>
+          <rect x="90" y="95" width="40" height="75" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="145" y="110" width="40" height="60" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="200" y="50" width="40" height="120" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="255" y="140" width="40" height="30" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="310" y="125" width="40" height="45" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="110" y="92" font-size="12" text-anchor="middle">5</text>
+          <text x="165" y="107" font-size="12" text-anchor="middle">4</text>
+          <text x="220" y="47" font-size="12" text-anchor="middle">8</text>
+          <text x="275" y="137" font-size="12" text-anchor="middle">2</text>
+          <text x="330" y="122" font-size="12" text-anchor="middle">3</text>
+          <text x="110" y="186" font-size="12" text-anchor="middle">36</text>
+          <text x="165" y="186" font-size="12" text-anchor="middle">37</text>
+          <text x="220" y="186" font-size="12" text-anchor="middle">38</text>
+          <text x="275" y="186" font-size="12" text-anchor="middle">39</text>
+          <text x="330" y="186" font-size="12" text-anchor="middle">40</text>
+          <text x="180" y="202" font-size="12" fill="#9A72AC" text-anchor="middle">Cỡ giày</text>
+        </svg>
+        <figcaption>Biểu đồ cột vẽ lại bảng tần số: cột 38 cao nhất (8), cần mua nhiều cỡ 38 nhất.</figcaption>
+      </figure>
+
       </div>
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Biểu đồ tần số giúp "nhìn thấy" tần số: <em>biểu đồ cột</em> vẽ các cột cao bằng tần số tương ứng; <em>biểu đồ đoạn thẳng</em> nối các điểm cao tương ứng. Tổng tất cả các tần số luôn bằng cỡ mẫu \(n\) — kiểm tra nhanh bảng có lập đúng không.</p>
@@ -2619,6 +2647,30 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ba mươi ngày.</strong> Tốt 8, Trung bình 13, Kém 5, Xấu 4. Tổng lần \(8 + 13 + 5 + 4 = 30\), đúng cỡ mẫu. Tỉ lệ: \(\dfrac{8}{30} \approx 26{,}7\%\), \(\dfrac{13}{30} \approx 43{,}3\%\), \(\dfrac{5}{30} \approx 16{,}7\%\), \(\dfrac{4}{30} \approx 13{,}3\%\). Cộng \(26{,}7 + 43{,}3 + 16{,}7 + 13{,}3 = 100\). Tốt không phải 8%: 8 là số ngày, không phải phần trăm.</p>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số tương đối của 30 ngày">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="28" y="56" font-size="12" fill="#9A72AC">%</text>
+          <text x="54" y="40" font-size="12" text-anchor="end">45</text>
+          <text x="54" y="82" font-size="12" text-anchor="end">25</text>
+          <text x="54" y="124" font-size="12" text-anchor="end">10</text>
+          <rect x="80" y="68" width="55" height="102" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="155" y="38" width="55" height="132" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="230" y="92" width="55" height="78" fill="#83C167" fill-opacity="0.35" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="305" y="104" width="55" height="66" fill="#9A72AC" fill-opacity="0.35" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="107" y="60" font-size="12" text-anchor="middle">26,7%</text>
+          <text x="182" y="30" font-size="12" text-anchor="middle">43,3%</text>
+          <text x="257" y="84" font-size="12" text-anchor="middle">16,7%</text>
+          <text x="332" y="96" font-size="12" text-anchor="middle">13,3%</text>
+          <text x="107" y="186" font-size="12" text-anchor="middle">Tốt</text>
+          <text x="182" y="186" font-size="12" text-anchor="middle">TB</text>
+          <text x="257" y="186" font-size="12" text-anchor="middle">Kém</text>
+          <text x="332" y="186" font-size="12" text-anchor="middle">Xấu</text>
+        </svg>
+        <figcaption>Mỗi cột cao theo phần trăm của nhóm đó; tổng các phần trăm bằng 100%.</figcaption>
+      </figure>
+
       
       <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2735,6 +2787,30 @@ const LESSONS = [
           <tr><th>Chiều cao</th><td>\([140;\ 145)\)</td><td>\([145;\ 150)\)</td><td>\([150;\ 155)\)</td><td>\([155;\ 160)\)</td><td>\([160;\ 165)\)</td></tr>
           <tr><th>Số học sinh</th><td>10</td><td>18</td><td>14</td><td>6</td><td>2</td></tr>
         </table>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số tương đối ghép nhóm chiều cao">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="30" y="50" font-size="12" fill="#9A72AC">%</text>
+          <text x="54" y="42" font-size="12" text-anchor="end">40</text>
+          <text x="54" y="72" font-size="12" text-anchor="end">30</text>
+          <text x="54" y="112" font-size="12" text-anchor="end">10</text>
+          <rect x="75" y="120" width="60" height="50" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="140" y="62" width="60" height="108" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="205" y="45" width="60" height="125" fill="#83C167" fill-opacity="0.35" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="270" y="95" width="60" height="75" fill="#9A72AC" fill-opacity="0.35" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="105" y="116" font-size="12" text-anchor="middle">12,5%</text>
+          <text x="170" y="58" font-size="12" text-anchor="middle">30%</text>
+          <text x="235" y="41" font-size="12" text-anchor="middle">37,5%</text>
+          <text x="300" y="91" font-size="12" text-anchor="middle">20%</text>
+          <text x="105" y="186" font-size="12" text-anchor="middle">[155;158)</text>
+          <text x="170" y="186" font-size="12" text-anchor="middle">[158;161)</text>
+          <text x="235" y="186" font-size="12" text-anchor="middle">[161;164)</text>
+          <text x="300" y="186" font-size="12" text-anchor="middle">[164;167)</text>
+        </svg>
+        <figcaption>Biểu đồ tần số tương đối ghép nhóm: cột cao theo phần trăm của nhóm [161;164) là 37,5%.</figcaption>
+      </figure>
+
         <p>Hỏi tần số và tần số tương đối của nhóm \([150;\ 155)\). Cộng hàng dưới được \(10+18+14+6+2=50\). Tần số là 14. Tần số tương đối là 28%.</p>
         <p>Năm 2025 hỏi cùng dạng với thời gian tự học của 300 học sinh. Nhóm \([12;\ 16)\) có 75 em, tần số tương đối 25%. Giá trị 16 không thuộc nhóm đó.</p>
       </div>
@@ -2784,7 +2860,38 @@ const LESSONS = [
     summary: "Không biết trước kết quả, nhưng liệt kê được hết. Danh sách ấy là không gian mẫu. Có thứ tự thì SN khác NS.",
     body: String.raw`
       <p>Rút thăm hai phần quà cho 2 trong 4 người: không biết trước ai được, nhưng viết được mọi cách có thể xảy ra. Phép thử là việc ấy. Tập mọi kết quả có thể là không gian mẫu \(\Omega\).</p>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bảng liên kết gieo xúc xắc và tung đồng xu: 6 nhân 2 bằng 12 kết quả">
+          <line x1="60" y1="40" x2="60" y2="180" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="180" x2="340" y2="180" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="40" x2="340" y2="40" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="180" x2="340" y2="180" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="200" y1="40" x2="200" y2="180" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="130" y="30" font-size="12" fill="#9A72AC" text-anchor="middle">Xúc xắc 1–6</text>
+          <text x="270" y="30" font-size="12" fill="#9A72AC" text-anchor="middle">Đồng xu</text>
+          <line x1="60" y1="63" x2="340" y2="63" stroke="#DDDDDD" stroke-opacity="0.3" stroke-width="1"/>
+          <line x1="60" y1="86" x2="340" y2="86" stroke="#DDDDDD" stroke-opacity="0.3" stroke-width="1"/>
+          <line x1="60" y1="109" x2="340" y2="109" stroke="#DDDDDD" stroke-opacity="0.3" stroke-width="1"/>
+          <line x1="60" y1="132" x2="340" y2="132" stroke="#DDDDDD" stroke-opacity="0.3" stroke-width="1"/>
+          <line x1="60" y1="155" x2="340" y2="155" stroke="#DDDDDD" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="130" y="55" font-size="12" text-anchor="middle">(1; S)</text>
+          <text x="270" y="55" font-size="12" text-anchor="middle">(1; N)</text>
+          <text x="130" y="78" font-size="12" text-anchor="middle">(2; S)</text>
+          <text x="270" y="78" font-size="12" text-anchor="middle">(2; N)</text>
+          <text x="130" y="101" font-size="12" text-anchor="middle">(3; S)</text>
+          <text x="270" y="101" font-size="12" text-anchor="middle">(3; N)</text>
+          <text x="130" y="124" font-size="12" text-anchor="middle">(4; S)</text>
+          <text x="270" y="124" font-size="12" text-anchor="middle">(4; N)</text>
+          <text x="130" y="147" font-size="12" text-anchor="middle">(5; S)</text>
+          <text x="270" y="147" font-size="12" text-anchor="middle">(5; N)</text>
+          <text x="130" y="170" font-size="12" text-anchor="middle">(6; S)</text>
+          <text x="270" y="170" font-size="12" text-anchor="middle">(6; N)</text>
+          <text x="200" y="200" font-size="12" fill="#9A72AC" text-anchor="middle">6 hàng × 2 cột = 12 phần tử</text>
+        </svg>
+        <figcaption>Bảng liên kết giúp liệt kê không thiếu, không trùng: 6 × 2 = 12 kết quả trong Ω.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Liệt kê cho hết, không trùng.</strong> Hai hành động khác nhau thì lập bảng: hàng là kết quả việc thứ nhất, cột là việc thứ hai. Gieo xúc xắc rồi tung đồng xu: 6 hàng, 2 cột, \(\Omega\) có 12 phần tử.</p>
         <p>Có thứ tự thì \(SN\) khác \(NS\). Rút không trả lại thì lần sau ít lựa chọn hơn lần trước: 4 người rút 2 người lần lượt là \(4 \cdot 3 = 12\) kết quả, không phải \(4 \cdot 4\).</p>
       </div>
@@ -2878,7 +2985,30 @@ const LESSONS = [
         <p>Biến cố "Bảo không ngồi ngoài cùng bên phải" loại hai cách cuối. Còn 4 cách, \(P = \dfrac{4}{6} = \dfrac{2}{3}\).</p>
         <p>Biến cố "Châu và Dương không ngồi cạnh": trong BCD, BDC, CDB, DCB thì Châu và Dương đứng liền. Chỉ CBD và DBC cách nhau bởi Bảo. \(P = \dfrac{2}{6} = \dfrac{1}{3}\). Đếm trên danh sách, đừng đoán "khoảng một nửa".</p>
       </div>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Xúc xắc với các kết quả thuận lợi 2, 4, 5, 6 cho biến cố chẵn hoặc lớn hơn 4">
+          <circle cx="180" cy="105" r="75" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
+          <circle cx="180" cy="105" r="70" fill="#58C4DD" fill-opacity="0.12"/>
+          <circle cx="180" cy="30" r="3" fill="#83C167"/>
+          <text x="172" y="44" font-size="12" fill="#83C167">1</text>
+          <circle cx="255" cy="105" r="3" fill="#83C167"/>
+          <text x="260" y="118" font-size="12" fill="#83C167">6</text>
+          <circle cx="105" cy="105" r="3" fill="#83C167"/>
+          <text x="96" y="118" font-size="12" fill="#83C167">2</text>
+          <circle cx="180" cy="180" r="3" fill="#83C167"/>
+          <text x="172" y="194" font-size="12" fill="#83C167">3</text>
+          <circle cx="222" cy="60" r="3" fill="#83C167"/>
+          <text x="226" y="72" font-size="12" fill="#83C167">4</text>
+          <circle cx="138" cy="60" r="3" fill="#83C167"/>
+          <text x="126" y="72" font-size="12" fill="#83C167">5</text>
+          <text x="200" y="150" font-size="12" fill="#FC6255">2, 4, 5, 6</text>
+          <text x="200" y="166" font-size="12" fill="#FC6255">P = 4/6</text>
+        </svg>
+        <figcaption>Biến cố "chẵn hoặc lớn hơn 4" có kết quả thuận lợi 2, 4, 5, 6 — đừng đếm 6 hai lần, P = 4/6 = 2/3.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Hiểu nhanh.</strong> Xác suất là <em>phần bánh</em>: chia cái bánh \(\Omega\) cho các kết quả đồng khả năng, biến cố \(E\) chiếm mấy miếng? Luôn có \(0 \leq P(E) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
       </div>
       
