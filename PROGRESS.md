@@ -6,6 +6,9 @@
 - Rewrote `README.md` around the Pages workflow (push `main` → Actions deploys `web/`); fixed the stale "only Toán 9" note (Toán 7 and Thi vào 10 are also populated).
 - `.gitignore`: dropped `data/` and `*.db` (leftover from the abandoned local SQLite plan).
 - Content pass (item 2): added figures to the four figureless visual lessons — Toán 9 `c10-b31` (trụ/nón with R, h, l) and `c10-b32` (mặt cắt hình cầu: right triangle O–chân vuông góc–P), Toán 7 `g7-b18` (quạt tròn 25/40/35%) and `g7-b19` (đoạn thẳng with tăng/không đổi/giảm, using the lesson's 20°/23°/23°/21° data).
+- Toàn 7 `.warn` pass (largest measured consistency gap, 0/37): added a `sai lầm thường gặp` box to all 37 lessons, one commit per chapter (ch1..ch10), placed after the first `.idea` block matching the Toán 9 template.
+- Toàn 7 `.check` pass: added a `<details class="check">` self-test (`Tự kiểm tra`, `<em>— answer</em>` pairs) to all 37 lessons, one commit per chapter, placed right after each `.warn` block.
+- Thi-10 `.warn` pass: added `Sai lầm thường gặp` boxes to the six skill lessons lacking one (`tv10-4..tv10-9`); the three raw mock-paper lessons (`tv10-10..12`) stay as exam content (9/12 `.warn`).
 
 ## GitHub Pages
 
