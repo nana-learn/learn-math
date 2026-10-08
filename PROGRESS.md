@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 9 c9-b29 figure geometry (`1450b5f`)
+- **Issue**: the cyclic-quadrilateral figure's four vertices (180,15)/(272,105)/(180,195)/(88,105) were at radii 90/92 from the circle's center (180,105) while the circle is r=95 — so the vertices sat inside the circle, and the diamond was NOT cyclic (unequal diagonals 180 vs 184).
+- **Fix**: moved the vertices onto the circle at the cardinal points (180,10)/(275,105)/(180,200)/(85,105), making a cyclic square-diamond inscribed in r=95 (all angles 90°, so ∠A+∠C=∠B+∠D=180° holds). Adjusted the A/B/C/D vertex labels accordingly.
+- **Verified**: syntax, SVG XML well-formed (xmllint), all 4 vertices on the circle, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Thi-10 tv10-6 memory title (`5504d78`)
 - **Issue**: tv10-6's `.memory` block (a formula recap right after its `.check`, mid-lesson at 59%) was the only untitled memory among the Thi-10 skill lessons — tv10-1/2/3/4/5/8 all use `<strong>Nhớ nhanh.</strong>`.
 - **Fix**: added the `<strong>Nhớ nhanh.</strong>` title to tv10-6's memory. (tv10-7's "Ba câu hay dùng." and tv10-9's untitled closing formula memory keep the author's intentional closing-memory style.)
