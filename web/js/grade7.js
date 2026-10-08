@@ -262,6 +262,11 @@ const G7_LESSONS = [
           <li>Chỉ thập phân vô hạn <em>không</em> tuần hoàn (như \(\sqrt{2} \approx 1{,}41421\ldots\)) mới vô tỉ.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(0{,}3\overline{3}\) là số vô tỉ hay hữu tỉ? <em>— Hữu tỉ: \(0{,}3\overline{3} = \dfrac{1}{3}\), một phân số hai số nguyên. Thập phân dài nhưng lặp chu kì thì vẫn hữu tỉ.</em></p>
+        <p>\(0{,}9\overline{9}\) bằng bao nhiêu? <em>— Bằng 1. Chu kì lặp vô hạn số 9 cho đúng giá trị 1, không phải “nhỏ hơn 1 một chút”.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Hữu hạn hay tuần hoàn thì hữu tỉ. Thập phân vô hạn không tuần hoàn thì không hữu tỉ.</p></div>
     `,
     exercises: [
@@ -306,6 +311,11 @@ const G7_LESSONS = [
           <li>\(\sqrt{a}\) chỉ có nghĩa khi \(a \geq 0\). Bài yêu cầu “so sánh” thì kiểm tra trước xem biểu thức có nghĩa chưa.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\sqrt{9}\) bằng \(3\) hay \(\pm 3\)? <em>— \(3\). \(\sqrt{}\) lấy giá trị không âm. \(\pm 3\) là hai nghiệm của phương trình \(x^2 = 9\), chuyện khác.</em></p>
+        <p>\(\sqrt{(-3)^2}\) bằng bao nhiêu? <em>— \(3\). \((-3)^2 = 9\), căn của 9 là 3, không phải \(-3\).</em></p>
+      </details>
       <div class="example">
         <p><strong>Làm chậm.</strong> Ước lượng \(\sqrt{10}\). \(3^2 = 9\), \(4^2 = 16\), nên \(\sqrt{10}\) nằm giữa 3 và 4, gần 3 hơn. \(3{,}1^2 = 9{,}61\), \(3{,}2^2 = 10{,}24\). Vậy \(\sqrt{10} \approx 3{,}16\). Không cần máy cũng nói được “hơn 3 một chút”.</p>
       </div>
@@ -344,6 +354,11 @@ const G7_LESSONS = [
           <li>Đề “chia các số vào đúng tập”: xếp vào tập <em>nhỏ nhất</em> nó thuộc, tránh viết đi viết lại bốn lần một số.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(0{,}3\overline{3}\) thuộc tập nào nhỏ nhất: \(\mathbb{N}\), \(\mathbb{Z}\), \(\mathbb{Q}\), hay \(\mathbb{R}\)? <em>— \(\mathbb{Q}\). Nó là phân số \(\dfrac{1}{3}\), không phải số nguyên, nên không thuộc \(\mathbb{N}\) hay \(\mathbb{Z}\), nhưng là hữu tỉ.</em></p>
+        <p>Vì sao \(\sqrt{5}\) không thuộc \(\mathbb{Q}\)? <em>— Không viết được thành phân số hai số nguyên. Nó là số vô tỉ, chỉ nằm trong \(\mathbb{R}\).</em></p>
+      </details>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> \(5\) vừa là tự nhiên, nguyên, hữu tỉ, vừa thực. \(\sqrt{2}\) thực nhưng không hữu tỉ.</p>
       </div>
