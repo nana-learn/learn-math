@@ -389,6 +389,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Nhìn hình: kề bù thì hai cạnh còn lại thẳng hàng. Đối đỉnh thì hai cặp tia đối nhau. Phân giác cắt góc thành hai góc bằng nhau.</p>
       </div>
+<div class="warn">
+        <p><strong>Kề bù hay đối đỉnh, phân giác hay không.</strong></p>
+        <ul>
+          <li>Kề nhau chưa chắc kề bù: kề bù cần hai cạnh còn lại <em>thẳng hàng</em> và tổng \(180^\circ\).</li>
+          <li>Bằng nhau chưa chắc đối đỉnh: đối đỉnh cần hai cặp tia đối nhau xuất phát từ hai góc ấy.</li>
+          <li>Tia phân giác chia góc thành hai góc <em>bằng nhau</em>: góc \(80^\circ\) thì hai nửa là \(40^\circ\), không phải \(30^\circ\) và \(50^\circ\).</li>
+          <li>Hai đường thẳng cắt nhau tạo bốn góc. Cộng lại phải ra \(360^\circ\); ra số khác là đã nhầm kề bù với đối đỉnh.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Kề bù: tổng 180°. Đối đỉnh: bằng nhau. Phân giác: hai nửa bằng nhau.</p></div>
     `,
     exercises: [
@@ -437,6 +446,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tô một góc đã biết, kéo đồng vị và so le trong. Muốn chứng minh song song: chỉ một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng \(180^\circ\).</p>
       </div>
+<div class="warn">
+        <p><strong>Vị trí hai góc mới quan trọng.</strong></p>
+        <ul>
+          <li>Hai góc bằng \(70^\circ\) chưa kết luận được hai đường song song, nếu chúng không phải cặp so le trong hoặc đồng vị. Phải nói rõ vị trí.</li>
+          <li>So le trong là <em>trong</em> hai đường và khác phía cát tuyến. Đồng vị cùng phía và cùng vị trí. Đọc sai chữ “trong” là đổi kết luận.</li>
+          <li>Hai góc trong cùng phía thì cộng \(180^\circ\), không phải bằng nhau.</li>
+          <li>Muốn chứng minh song song: một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng \(180^\circ\).</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Muốn chứng minh song song: tìm một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng 180°.</p></div>
     `,
     exercises: [
@@ -483,6 +501,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Qua một điểm ngoài, đúng một đường song song. Hai đường cùng vuông góc một đường thì song song với nhau.</p>
       </div>
+<div class="warn">
+        <p><strong>“Đúng một” và hai đường cùng vuông góc.</strong></p>
+        <ul>
+          <li>Qua một điểm ngoài đường thẳng có đúng <em>một</em> đường song song. Viết “ít nhất một” là sai.</li>
+          <li>Hai đường cùng vuông góc với đường thứ ba thì song song với nhau. Đổi thành “cùng cắt góc \(70^\circ\)” thì hai đường ấy không song song.</li>
+          <li>\(a \parallel b\), \(b \parallel c\) thì \(a \parallel c\): quan hệ song song truyền được. Nhưng “cùng cắt nhau ở một điểm” thì không.</li>
+          <li>Đường qua \(M\) vuông góc với \(MH\) (chân \(H\)) là đường song song duy nhất với \(d\): không kẻ được đường thứ hai.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đúng một đường song song kẻ từ một điểm ngoài. Hai đường cùng vuông góc một đường thì song song.</p></div>
     `,
     exercises: [
@@ -525,6 +552,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Viết giả thiết / kết luận. Mỗi bước một lý do. Không đo góc trên hình rồi coi đó là chứng minh.</p>
+      </div>
+<div class="warn">
+        <p><strong>Đo hình không phải chứng minh.</strong></p>
+        <ul>
+          <li>Đo trên hình được \(89^\circ\) rồi viết “góc vuông” không phải chứng minh. Hình chỉ gợi ý.</li>
+          <li>Mỗi bước phải có một lý do: định nghĩa, tiên đề, hoặc định lí đã có. Câu không có vì sao là câu bị “trôi”.</li>
+          <li>Giả thiết và kết luận phải viết rõ trước khi chứng minh. Trộn giả thiết vào kết luận là đảo trật tự.</li>
+          <li>Đừng dùng điều chưa chứng minh như “hai góc nhìn bằng nhau”. Chứng minh góc kề bù với góc vuông thì dùng kề bù cộng \(180^\circ\), không dùng thước đo.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Viết rõ giả thiết. Mỗi câu có vì sao. Đừng dùng điều chưa chứng minh.</p></div>
     `,
