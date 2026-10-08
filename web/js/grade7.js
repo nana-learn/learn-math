@@ -233,6 +233,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đổi thập phân tuần hoàn thành phân số: nhân \(10^k\) nếu cụm lặp \(k\) chữ số, trừ, rút gọn. Hữu hạn thì mẫu là luỹ thừa 10.</p>
       </div>
+<div class="warn">
+        <p><strong>Đừng gọi mọi thập phân dài là vô tỉ.</strong></p>
+        <ul>
+          <li>\(0,\overline{3}\) là hữu tỉ, vì bằng \(\dfrac{1}{3}\). Thập phân nào có cụm lặp cũng đổi được về phân số.</li>
+          <li>Ở \(0,1\overline{6}\) cụm lặp là \(6\), không phải \(16\): \(100x - 10x = 16{,}666\ldots - 1{,}666\ldots = 15\), nên \(x = \dfrac{15}{90} = \dfrac{1}{6}\).</li>
+          <li>\(0,\overline{9} = 1\), không phải “gần 1 mà nhỏ hơn 1”.</li>
+          <li>Chỉ thập phân vô hạn <em>không</em> tuần hoàn (như \(\sqrt{2} \approx 1{,}41421\ldots\)) mới vô tỉ.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Hữu hạn hay tuần hoàn thì hữu tỉ. Thập phân vô hạn không tuần hoàn thì không hữu tỉ.</p></div>
     `,
     exercises: [
@@ -268,6 +277,15 @@ const G7_LESSONS = [
             <div class="idea">
         <p>Căn bậc hai số học là <em>độ dài</em>. Độ dài không âm. Phương trình \(x^2 = 9\) mới có hai nghiệm. Dấu \(\sqrt{\ }\) chỉ giữ một giá trị, cái không âm.</p>
       </div>
+<div class="warn">
+        <p><strong>Ba cái bẫy của dấu căn.</strong></p>
+        <ul>
+          <li>\(\sqrt{9} = 3\), không phải \(\pm 3\). Có hai nghiệm \(3\) và \(-3\) là phương trình \(x^2 = 9\), không phải dấu căn.</li>
+          <li>\(\sqrt{(-3)^2} = 3\), không phải \(-3\): \(\sqrt{a^2} = |a|\), kết quả không bao giờ âm.</li>
+          <li>\(\sqrt{4 + 5} = \sqrt{9} = 3\), không phải \(2 + \sqrt{5}\): dấu căn không chui qua phép cộng.</li>
+          <li>\(\sqrt{a}\) chỉ có nghĩa khi \(a \geq 0\). Bài yêu cầu “so sánh” thì kiểm tra trước xem biểu thức có nghĩa chưa.</li>
+        </ul>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> Ước lượng \(\sqrt{10}\). \(3^2 = 9\), \(4^2 = 16\), nên \(\sqrt{10}\) nằm giữa 3 và 4, gần 3 hơn. \(3{,}1^2 = 9{,}61\), \(3{,}2^2 = 10{,}24\). Vậy \(\sqrt{10} \approx 3{,}16\). Không cần máy cũng nói được “hơn 3 một chút”.</p>
       </div>
@@ -296,6 +314,15 @@ const G7_LESSONS = [
       <p>Gộp \(\mathbb{Q}\) với các số vô tỉ được tập hợp số thực \(\mathbb{R}\). Trên trục số, mỗi điểm ứng đúng một số thực, mỗi số thực ứng đúng một điểm.</p>
       <div class="idea">
         <p>\(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\). Số tự nhiên nằm trong số nguyên, số nguyên nằm trong hữu tỉ, hữu tỉ nằm trong thực.</p>
+      </div>
+<div class="warn">
+        <p><strong>Bốn tập lồng nhau.</strong></p>
+        <ul>
+          <li>\(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\): thuộc tập nhỏ là tự thuộc mọi tập lớn. \(5\) vừa thuộc \(\mathbb{N}\), vừa \(\mathbb{Z}\), \(\mathbb{Q}\), \(\mathbb{R}\).</li>
+          <li>\(0,\overline{3}\) thuộc \(\mathbb{Q}\), vì bằng \(\dfrac{1}{3}\). Thập phân vô hạn không tự động vô tỉ.</li>
+          <li>\(\sqrt{5}\) thuộc \(\mathbb{R}\) nhưng không thuộc \(\mathbb{Q}\). Căn của số không chính phương là vô tỉ.</li>
+          <li>Đề “chia các số vào đúng tập”: xếp vào tập <em>nhỏ nhất</em> nó thuộc, tránh viết đi viết lại bốn lần một số.</li>
+        </ul>
       </div>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> \(5\) vừa là tự nhiên, nguyên, hữu tỉ, vừa thực. \(\sqrt{2}\) thực nhưng không hữu tỉ.</p>
