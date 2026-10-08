@@ -9,6 +9,7 @@
 - Toàn 7 `.warn` pass (largest measured consistency gap, 0/37): added a `sai lầm thường gặp` box to all 37 lessons, one commit per chapter (ch1..ch10), placed after the first `.idea` block matching the Toán 9 template.
 - Toàn 7 `.check` pass: added a `<details class="check">` self-test (`Tự kiểm tra`, `<em>— answer</em>` pairs) to all 37 lessons, one commit per chapter, placed right after each `.warn` block.
 - Thi-10 `.warn` pass: added `Sai lầm thường gặp` boxes to the six skill lessons lacking one (`tv10-4..tv10-9`); the three raw mock-paper lessons (`tv10-10..12`) stay as exam content (9/12 `.warn`).
+- Toàn 9 `.check` pass: added a `<details class="check">` self-test to the 27 lessons still missing one (Toán 9 had only 5/32), placed right before the last "Ví dụ làm chậm." example and reusing each lesson's `.warn` trap material — commits `fbe7899`, `9c78c98`, `d5a240a`, `ea1b11e`, `1ae64a1`, `42ef945`; now 32/32.
 
 ## GitHub Pages
 
