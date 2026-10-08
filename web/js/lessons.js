@@ -35,6 +35,18 @@ const LESSONS = [
         <p>Mua 6 quýt: \(3 \cdot 6 + 4y = 18\), tức \(y = 0\). Cặp \((6;\ 0)\) cũng đúng — 6 quýt, không mua cam.</p>
         <p>Mua 1 quýt thì \(4y = 15\), \(y = \dfrac{15}{4}\). Về số, cặp \(\left(1;\ \dfrac{15}{4}\right)\) vẫn là nghiệm. Không mua được 3,75 quả là điều kiện của bài toán thực tế, chưa nằm trong phương trình.</p>
       </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong></p>
+        <ul>
+          <li>\(x^2 + y = 3\): \(x\) bậc hai, không viết được dạng \(ax + by = c\).</li>
+          <li>\(xy = 6\): hai ẩn nhân với nhau, không phải tổng \(ax + by\).</li>
+          <li>\(0x + 0y = 3\): cả \(a\) và \(b\) bằng 0, không còn ẩn bậc nhất; vế trái luôn là 0 mà \(0 = 3\) sai với mọi cặp.</li>
+          <li>\(0x + y = -1\): <em>có</em> phải. \(y\) bị khoá bằng \(-1\), \(x\) tự do.</li>
+          <li>Tìm được một nghiệm của \(ax + by = c\) và dừng, như thể chỉ có một. Một phương trình hai ẩn không hoạt động như \(2x + 5 = 11\).</li>
+          <li>Viết \(x = 2\), \(y = 3\) rồi quên kết luận là cặp \((2;\ 3)\).</li>
+          <li>Cặp đúng với phương trình thứ nhất đã gọi là nghiệm của hệ. Phải kiểm tra nốt phương trình thứ hai.</li>
+        </ul>
+      </div>
       <p>Điểm cần nắm trước định nghĩa: <strong>một phương trình hai ẩn không khoá cả hai số</strong>. Ta được chọn một số, số kia bị kéo theo. Đổi số đã chọn thì được nghiệm khác. Vì vậy thường có vô số nghiệm. Đừng đi tìm "một nghiệm duy nhất" như với phương trình một ẩn.</p>
       <div class="definition">
         <p><strong>Phương trình bậc nhất hai ẩn</strong> \(x\) và \(y\) là hệ thức dạng</p>
@@ -103,15 +115,7 @@ const LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng sách bài tập.</strong> \(3x - y = 7\). Cặp \((2;\ -1)\): \(6 - (-1) = 7\), đúng. Cặp \((1;\ -2)\): \(3 - (-2) = 5 \neq 7\), sai. Chỉ cần một phép thế. Không giải cả hệ khi đề mới cho một phương trình.</p>
       </div>
-<div class="warn">
-        <p><strong>Cái gì trông giống mà không phải.</strong></p>
-        <ul>
-          <li>\(x^2 + y = 3\): \(x\) bậc hai, không viết được dạng \(ax + by = c\).</li>
-          <li>\(xy = 6\): hai ẩn nhân với nhau, không phải tổng \(ax + by\).</li>
-          <li>\(0x + 0y = 3\): cả \(a\) và \(b\) đều bằng 0, không còn ẩn bậc nhất. Vế trái luôn là 0, mà \(0 = 3\) sai với mọi cặp.</li>
-          <li>\(0x + y = -1\): <em>có</em> phải. \(y\) bị khoá bằng \(-1\), \(x\) tự do.</li>
-        </ul>
-      </div>
+
       <p><strong>Khi một điều kiện chưa đủ.</strong> Biết \(3x + 4y = 18\) thì Mai còn rất nhiều cách mua. Thêm một câu: tổng số quả là 5, tức \(x + y = 5\). Một cặp muốn được nhận phải làm <em>cả hai</em> câu đúng cùng lúc.</p>
       <div class="definition">
         <p>Hai phương trình bậc nhất hai ẩn viết cùng nhau là một <strong>hệ hai phương trình bậc nhất hai ẩn</strong>:</p>
@@ -185,15 +189,7 @@ const LESSONS = [
         <p><strong>Ví dụ có bẫy.</strong> \(x + y = 6\) có nghiệm \((1;\ 5)\). Dừng ở đó thì sai. \((2;\ 4)\) và \((0;\ 6)\) cũng đúng. Một phương trình hai ẩn không có một nghiệm duy nhất.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Một điều kiện, vô số cặp. Hệ là hai điều kiện. Đúng một phương trình chưa đủ để là nghiệm của hệ.</p></div>
-<div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong></p>
-        <ul>
-          <li>Viết \(x = 2\), \(y = 3\) rồi quên kết luận là cặp \((2;\ 3)\).</li>
-          <li>Tìm được một nghiệm của \(ax + by = c\) và dừng, như thể chỉ có một. Một phương trình hai ẩn không hoạt động như \(2x + 5 = 11\).</li>
-          <li>Thấy \(0x + 0y = 3\) "có dạng \(ax + by = c\)" nên nhận. Thiếu điều kiện \(a \neq 0\) hoặc \(b \neq 0\).</li>
-          <li>Cặp đúng với phương trình thứ nhất đã gọi là nghiệm của hệ. Phải kiểm tra nốt phương trình thứ hai.</li>
-        </ul>
-      </div>
+
     `,
     exercises: [
       {
