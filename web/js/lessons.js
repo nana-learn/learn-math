@@ -1390,7 +1390,13 @@ const LESSONS = [
       <div class="example">
         <p>Vuông tại \(A\), \(AB = 5\), \(AC = 8\). Pythagore: cạnh huyền \(BC = \sqrt{25 + 64} = \sqrt{89} \approx 9{,}4\). Góc \(C\) có cạnh đối \(AB = 5\) và cạnh kề \(AC = 8\), nên \(\tan C = \dfrac{5}{8} = 0{,}625\), \(\widehat{C} \approx 32^\circ\). Hai góc nhọn phụ nhau: \(\widehat{B} \approx 90^\circ - 32^\circ = 58^\circ\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Cạnh huyền 10 cm, góc \(B = 30^\circ\). Cạnh đối của góc \(B\) tính thế nào? <em>— \(b = a \sin B = 10 \cdot \sin 30^\circ = 5\) cm. Lấy \(\cos 30^\circ\) sẽ ra \(5\sqrt{3}\), sai vì dùng sin của góc kề.</em></p>
+        <p>Thời gian 1,2 phút mà vận tốc tính theo giờ phải đổi thế nào? <em>— Thành \(\frac{1}{50}\) giờ trước khi nhân, không nhân 500 với 1,2.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Tam giác \(ABC\) vuông tại \(A\), cạnh huyền \(a = 10\) cm, góc \(B = 30^\circ\). Cạnh đối của \(B\) là \(b\).</p>
         <p>\(b = a \sin B = 10 \cdot \sin 30^\circ = 10 \cdot \dfrac{1}{2} = 5\) cm. Cạnh kề \(c = a \cos B = 10 \cdot \cos 30^\circ = 5\sqrt{3}\) cm.</p>
         <p>Kiểm tra Pythagore: \(5^2 + (5\sqrt{3})^2 = 25 + 75 = 100 = 10^2\). Nếu lấy sin của góc kề thay vì góc đối, cạnh đối sẽ ra \(5\sqrt{3}\) cm, dài hơn nửa cạnh huyền — không khớp với góc 30°.</p>
@@ -1484,7 +1490,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Quay lại tình huống mở đầu.</strong> Gấp mảnh giấy tròn đôi lần này qua lần kia: đường gấp luôn đi qua tâm. Hai nếp gấp không song song cắt nhau — điểm cắt chính là tâm. Đó là sức mạnh của tính đối xứng!</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Bán kính 5 cm, điểm \(M\) trên bán kính với \(OM = 3\) cm. \(M\) nằm ở đâu? <em>— Ở trong đường tròn, không nằm trên đường tròn. Nằm trên đoạn kẻ từ tâm chưa đủ; phải \(OM = 5\).</em></p>
+        <p>Đường tròn là ranh giới hay gồm cả phần bên trong? <em>— Là ranh giới: tập điểm cách tâm đúng \(R\). Phần bên trong là hình tròn.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Đường tròn tâm \(O\), bán kính 5 cm. Không cần vẽ hết hình: so khoảng cách từ \(O\) tới điểm với 5.</p>
         <p>\(OA = 3 < 5\): \(A\) ở trong đường tròn. \(OB = 5\): \(B\) nằm trên đường tròn. \(OC = 7 > 5\): \(C\) ở ngoài.</p>
         <p>Mảnh giấy tròn mất dấu tâm: gấp hai lần để được hai đường kính. Hai nếp gấp cắt nhau tại tâm, vì mọi đường kính đều đi qua tâm.</p>
@@ -1591,7 +1603,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ:</strong> "Góc ở tâm là <em>ông trùm số đo</em> — ông chắn cung nào, cung ấy mang số đo của ông (nếu là cung nhỏ); cung lớn thì trừ đi từ \(360^\circ\)."</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Mọi dây có phải đường kính không? <em>— Không. Đường kính là dây đi qua tâm và là dây dài nhất.</em></p>
+        <p>Cung lớn tính thế nào? <em>— Bằng \(360^\circ\) trừ số đo cung nhỏ, không phải gấp đôi góc ở tâm.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Đường tròn bán kính 5 cm. Đường kính dài \(2 \cdot 5 = 10\) cm. Đó là dây dài nhất.</p>
         <p>Dây \(AB\) chắn góc ở tâm \(60^\circ\): tam giác \(OAB\) đều, nên \(AB = 5\) cm, nhỏ hơn đường kính. Dây chắn góc ở tâm \(90^\circ\): \(AB = 5\sqrt{2} \approx 7{,}1\) cm, vẫn nhỏ hơn 10 cm.</p>
         <p>Dây càng gần tâm thì càng dài. Dây đi qua tâm — đường kính — là dài nhất.</p>
@@ -1713,7 +1731,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ:</strong> cung n° và quạt n° đều là mảnh \(\dfrac{n}{360}\): <em>cung lấy phần chu vi, quạt lấy phần diện tích</em>. Và \(S_q = \dfrac{lR}{2}\) — "cung nhân bán kính, chia đôi" (như tam giác: đáy × cao ÷ 2).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Độ dài cung chia cho bao nhiêu? <em>— 180: \(l = \frac{n}{180}\pi R\), đến từ \(2\pi R \cdot \frac{n}{360}\). Diện tích quạt chia cho 360.</em></p>
+        <p>Vành khuyên bán kính ngoài 5 cm, trong 3 cm có diện tích? <em>— \(\pi(5^2 - 3^2) = 16\pi\), không phải \(\pi(5 - 3)^2 = 4\pi\). Trừ bình phương, không bình phương hiệu.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Đường tròn bán kính \(R = 6\) cm, lấy cung \(60^\circ\). Cung này là \(\dfrac{1}{6}\) vòng tròn.</p>
         <p>Độ dài cung: \(l = \dfrac{60}{180}\pi \cdot 6 = 2\pi\) cm. Chu vi cả đường tròn là \(12\pi\), một phần sáu đúng là \(2\pi\).</p>
         <p>Diện tích quạt: \(S_q = \dfrac{60}{360}\pi \cdot 36 = 6\pi\) cm². Công thức thứ hai cho cùng số: \(\dfrac{l R}{2} = \dfrac{2\pi \cdot 6}{2} = 6\pi\).</p>
@@ -1843,7 +1867,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ 2 (SGK).</strong> Cho hai tiếp tuyến \(MA\), \(MB\) của \((O;\ R)\) với \(A\), \(B\) là hai tiếp điểm, \(R = 2\) cm và \(MO = 4\) cm. Theo Định lí 2, \(OM\) là tia phân giác của \(\widehat{AOB}\), nên trong tam giác cân \(AOB\), \(OM \perp AB\). Tam giác \(OAM\) vuông tại \(A\): \(AM^2 = OM^2 - OA^2 = 4^2 - 2^2 = 12\), suy ra \(AM = 2\sqrt{3}\) cm và \(BM = 2\sqrt{3}\) cm.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Điều kiện để đường thẳng tiếp xúc đường tròn là gì? <em>— \(d = R\), khoảng cách từ tâm đến đường thẳng đúng bằng bán kính. Viết \(d \le R\) là sai: d nhỏ hơn thì cắt nhau ở hai điểm.</em></p>
+        <p>Định lí 1 nhận biết tiếp tuyến cần mấy điều kiện? <em>— Cả hai: đi qua điểm trên đường tròn và vuông góc bán kính qua điểm đó. Chỉ vuông góc thôi chưa đủ.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Đường tròn \((O;\ 5)\). Gọi \(d\) là khoảng cách từ tâm đến đường thẳng.</p>
         <p>\(d = 3 < 5\): cắt nhau tại hai điểm. Nửa dây bằng \(\sqrt{5^2 - 3^2} = 4\), nên dây dài 8 cm.</p>
         <p>\(d = 5\): tiếp xúc, đúng một tiếp điểm. Bán kính tới tiếp điểm vuông góc với tiếp tuyến.</p>
@@ -1982,7 +2012,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ.</strong> Cộng \(R + R'\): <em>đè nổi hay không?</em> Trừ \(R - R'\): <em>nhét vừa hay không?</em> Khoảng cách hai tâm nằm giữa hai mốc này thì hai vòng "cài cài" nhau — cắt nhau; chạm đúng mốc thì tiếp xúc; vọt ngoài hai mốc thì xa nhau hoặc nhốt nhau.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hai đường tròn bằng nhau \(R = R' = 5\) có tiếp xúc trong không? <em>— Không. Tiếp xúc trong cần \(R > R'\) và \(OO' = R - R'\); với bán kính bằng nhau thì \(R - R' = 0\).</em></p>
+        <p>Khoảng cách \(OO'\) nằm giữa hai mốc thì hai đường tròn thế nào? <em>— Cắt nhau tại hai điểm: \(R - R' < OO' < R + R'\).</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hai đường tròn bán kính \(R = 5\) cm và \(R' = 3\) cm. So \(OO'\) với \(R - R' = 2\) và \(R + R' = 8\).</p>
         <p>\(OO' = 6\): \(2 < 6 < 8\), cắt nhau tại hai điểm.</p>
         <p>\(OO' = 8\): tiếp xúc ngoài. \(OO' = 2\): tiếp xúc trong. Tiếp điểm nằm trên đường nối hai tâm.</p>
