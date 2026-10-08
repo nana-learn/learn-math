@@ -24,6 +24,9 @@ const THI10_LESSONS = [
       <div class="idea">
         <p><strong>Ba việc.</strong> Cộng các tần số, tổng phải bằng cỡ mẫu. Lấy đúng cột được hỏi. Chia cho cỡ mẫu rồi nhân 100%. Nhóm \([a;\ b)\) lấy \(a\), không lấy \(b\).</p>
       </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Viết 14 mà không viết \(\dfrac{14}{50}\). Cho giá trị đúng bằng đầu mút phải vào nhóm đang xét. Cộng năm cột không ra cỡ mẫu mà vẫn chia.</p>
+      </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu I.1.</strong> Chiều cao của 50 học sinh lớp 6, đơn vị cm.</p>
         <table>
@@ -73,9 +76,7 @@ const THI10_LESSONS = [
         </table>
         <p>\(17 + 72 + 94 + 75 + 42 = 300\). Nhóm \([12;\ 16)\) có tần số 75, tần số tương đối \(\dfrac{75}{300} \cdot 100\% = 25\%\). Bạn học đúng 16 giờ thuộc \([16;\ 20)\), không thuộc \([12;\ 16)\).</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Viết 14 mà không viết \(\dfrac{14}{50}\). Cho giá trị đúng bằng đầu mút phải vào nhóm đang xét. Cộng năm cột không ra cỡ mẫu mà vẫn chia.</p>
-      </div>
+      
       <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Nhóm [150; 155) có 14 học sinh trong 50. Tần số tương đối là gì? <em>— 14/50 × 100% = 28%, không phải 14%.</em></p>
