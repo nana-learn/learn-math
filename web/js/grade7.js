@@ -81,7 +81,11 @@ const G7_LESSONS = [
     summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.",
     body: String.raw`
       <p>Phép tính trên \(\mathbb{Q}\) không mới. Việc cần làm là viết mỗi số thành phân số, mẫu dương, rồi dùng quy tắc cũ.</p>
-      <div class="idea">
+      <div class="definition">
+        <p>Số hữu tỉ là số viết được dưới dạng \(\dfrac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \neq 0\). Phép cộng, trừ quy đồng mẫu; nhân: tử nhân tử, mẫu nhân mẫu; chia: nhân với nghịch đảo của số chia. Mẫu của kết quả phải khác 0.</p>
+      </div>
+
+<div class="idea">
         <p>Cộng trừ: quy đồng mẫu. Nhân: tử nhân tử, mẫu nhân mẫu. Chia: nhân với nghịch đảo. Mẫu của kết quả phải khác 0.</p>
       </div>
 <div class="warn">
@@ -195,7 +199,11 @@ const G7_LESSONS = [
       <div class="example">
         <p><strong>Ví dụ có bẫy.</strong> \(12 : 3 \cdot 2 = 4 \cdot 2 = 8\), không phải \(12 : 6 = 2\). Nhân và chia cùng bậc, làm từ trái sang phải. \(2^{3^2}\) nếu viết chồng thì từ trên xuống, còn \( (2^3)^2 = 64\).</p>
       </div>
-            <div class="idea">
+            <div class="definition">
+        <p><strong>Thứ tự thực hiện phép tính</strong> trong một biểu thức: làm trong ngoặc trước, rồi luỹ thừa, rồi nhân và chia từ trái sang phải, cuối cùng cộng và trừ từ trái sang phải.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Thứ tự nhớ như lớp.</strong> Ngoặc như “phòng kín”: xong việc trong phòng rồi mới ra. Mũ như “lũy lên”. Nhân chia như “nhóm ngang hàng”, làm trái sang phải. Cộng trừ ra sau cùng.</p>
       </div>
 <div class="warn">
@@ -250,7 +258,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Đổi \(0,\overline{12}\) thành phân số. Đặt \(x = 0{,}121212\ldots\). Nhân 100 vì cụm lặp 2 chữ số: \(100x = 12{,}1212\ldots\). Trừ: \(99x = 12\), \(x = \dfrac{12}{99} = \dfrac{4}{33}\). Mọi thập phân tuần hoàn đều làm được vậy.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Số thập phân vô hạn tuần hoàn</strong> là số thập phân có phần sau dấu phẩy lặp lại một cụm chữ số. Ví dụ \(0{,}333\ldots\) viết gọn là \(0{,}(3)\). Mỗi số như vậy vẫn là số hữu tỉ, vì viết được thành phân số.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đổi thập phân tuần hoàn thành phân số: nhân \(10^k\) nếu cụm lặp \(k\) chữ số, trừ, rút gọn. Hữu hạn thì mẫu là luỹ thừa 10.</p>
       </div>
 <div class="warn">
@@ -342,7 +354,11 @@ const G7_LESSONS = [
     summary: "Số thực gồm hữu tỉ và vô tỉ. Mỗi điểm trên trục số là một số thực.",
     body: String.raw`
       <p>Gộp \(\mathbb{Q}\) với các số vô tỉ được tập hợp số thực \(\mathbb{R}\). Trên trục số, mỗi điểm ứng đúng một số thực, mỗi số thực ứng đúng một điểm.</p>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Số thực</strong> là tập hợp gồm số hữu tỉ và số vô tỉ: \(\mathbb{R} = \mathbb{Q} \cup\) số vô tỉ. Trên trục số, mỗi số thực ứng với đúng một điểm và ngược lại.</p>
+      </div>
+
+<div class="idea">
         <p>\(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\). Số tự nhiên nằm trong số nguyên, số nguyên nằm trong hữu tỉ, hữu tỉ nằm trong thực.</p>
       </div>
 <div class="warn">
@@ -483,7 +499,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hai đường song song, cát tuyến. Một góc trong bên trái trên bằng \(70^\circ\). Góc so le trong (trong bên phải dưới) cũng \(70^\circ\). Góc trong cùng phía còn lại \(110^\circ\). Chỉ cần một góc, kéo được cả bốn góc “trong”.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Hai đường thẳng song song</strong> là hai đường thẳng không có điểm chung, kí hiệu \(a \parallel b\). Khi một đường thẳng cắt hai đường thẳng song song, các góc so le trong bằng nhau, các góc đồng vị bằng nhau, hai góc trong cùng phía kề bù.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tô một góc đã biết, kéo đồng vị và so le trong. Muốn chứng minh song song: chỉ một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng \(180^\circ\).</p>
       </div>
 <div class="warn">
@@ -543,7 +563,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Cho đường \(d\) và điểm \(M\) ngoài \(d\). Kẻ vuông góc từ \(M\) xuống \(d\), được chân \(H\). Đường qua \(M\) vuông góc với \(MH\) sẽ song song với \(d\). Đó là đúng một đường: tiên đề nói không có đường thứ hai.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Tiên đề Euclid:</strong> qua một điểm không nằm trên đường thẳng \(d\), có một và chỉ một đường thẳng song song với \(d\). Từ đó, nếu \(a \parallel b\) và \(b \parallel c\) thì \(a \parallel c\).</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Qua một điểm ngoài, đúng một đường song song. Hai đường cùng vuông góc một đường thì song song với nhau.</p>
       </div>
 <div class="warn">
@@ -600,7 +624,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Chứng minh góc kề bù với góc vuông thì vuông. Giả thiết: góc \(A\) vuông, góc \(B\) kề bù với \(A\). Kết luận: góc \(B\) vuông. Lý do: kề bù cộng \(180^\circ\), mà góc \(A = 90^\circ\), nên góc \(B = 90^\circ\). Ba câu, đủ. Không đo hình.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Định lí</strong> là một khẳng định gồm giả thiết (điều đã cho) và kết luận (điều phải chứng minh). <strong>Chứng minh định lí</strong> là viết các bước suy luận, mỗi bước dựa vào định nghĩa, tiên đề hoặc định lí đã biết.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Viết giả thiết / kết luận. Mỗi bước một lý do. Không đo góc trên hình rồi coi đó là chứng minh.</p>
       </div>
 <div class="warn">
@@ -662,7 +690,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Tam giác có góc ngoài \(120^\circ\) kề góc \(A\). Góc \(A = 60^\circ\) vì kề bù. Hai góc còn lại cộng \(120^\circ\). Nếu thêm góc \(B = 50^\circ\) thì góc \(C = 70^\circ\). Góc ngoài bằng \(B + C = 120^\circ\), khớp.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Định lí tổng ba góc trong một tam giác:</strong> tổng ba góc của một tam giác bằng \(180^\circ\). Góc ngoài tại một đỉnh bằng tổng hai góc trong không kề với nó.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tổng trong \(180^\circ\). Góc ngoài bằng tổng hai góc trong không kề. Vuông thì hai góc nhọn phụ nhau.</p>
       </div>
 <div class="warn">
@@ -854,7 +886,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hai tam giác vuông, cạnh huyền bằng nhau, một góc nhọn bằng nhau. Góc nhọn đó không phải góc vuông, nên cặp “cạnh huyền + góc nhọn” đủ. Hai góc nhọn còn lại cũng bằng nhau vì cùng phụ với góc đã cho.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Hai tam giác vuông bằng nhau nếu chúng có: hai cạnh góc vuông bằng nhau; cạnh huyền và một cạnh góc vuông bằng nhau; hoặc cạnh huyền và một góc nhọn bằng nhau.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Vuông rồi thì cạnh huyền kèm một cạnh góc vuông, hoặc cạnh huyền kèm một góc nhọn, cũng đủ.</p>
       </div>
 <div class="warn">
@@ -985,6 +1021,10 @@ const G7_LESSONS = [
         </svg>
         <figcaption>Tần số: 0 có 3, 1 có 5, 2 có 3, 3 có 1. Cộng 3 + 5 + 3 + 1 = 12, khớp số bạn đã hỏi.</figcaption>
       </figure>
+<div class="definition">
+        <p>Dữ liệu <strong>rời rạc</strong> là các giá trị đếm được (số anh chị em, số ngày), đếm từng giá trị. Dữ liệu <strong>liên tục</strong> là các giá trị đo được (chiều cao, cân nặng), phải ghép nhóm \([a; b)\). <strong>Tần số</strong> của một giá trị là số lần nó xuất hiện.</p>
+      </div>
+
 <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cộng tần số ra cỡ mẫu. Rời rạc thì đếm từng giá trị. Liên tục thì ghép nhóm.</p>
       </div>
@@ -1045,7 +1085,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> 40 bạn: 10 thích Toán, 16 Văn, 14 Anh. Phần trăm 25%, 40%, 35%. Góc \(90^\circ\), \(144^\circ\), \(126^\circ\). Cộng góc \(360^\circ\), cộng phần trăm 100%. Vẽ xong phải kiểm tra hai tổng ấy.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Biểu đồ hình quạt tròn</strong> biểu diễn tỉ lệ các nhóm bằng các hình quạt; nhóm chiếm \(p\%\) thì góc ở tâm của quạt là \(\dfrac{p}{100} \cdot 360^\circ\).</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(p\%\) ứng góc \(3{,}6p\) độ. Cộng góc \(360^\circ\), cộng phần trăm \(100\%\).</p>
       </div>
 <div class="warn">
@@ -1123,7 +1167,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Nhiệt độ 7 giờ: \(20^\circ\), 8 giờ: \(23^\circ\), 9 giờ: \(23^\circ\), 10 giờ: \(21^\circ\). Từ 7 đến 8 tăng 3. Từ 8 đến 9 nằm ngang. Từ 9 đến 10 giảm 2. Đọc từng đoạn, không nhìn cả đường rồi nói “trời nóng dần”.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Biểu đồ đoạn thẳng</strong> là đường gấp khúc nối các điểm biểu diễn giá trị theo thời gian; dốc lên là tăng, dốc xuống là giảm, nằm ngang là không đổi.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đọc từng đoạn: tăng, giảm, hay không đổi. So số trên trục, không chỉ nhìn độ dốc.</p>
       </div>
 <div class="warn">
@@ -1172,7 +1220,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Tìm \(x\) để \(\dfrac{x-1}{4} = \dfrac{3}{6}\). Nhân chéo: \(6(x-1) = 12\), \(x-1 = 2\), \(x = 3\). Thế lại: \(\dfrac{2}{4} = \dfrac{3}{6}\), đúng. Quên ngoặc, viết \(6x - 1 = 12\), sẽ ra \(x\) sai.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Tỉ lệ thức</strong> là đẳng thức của hai tỉ số \(\dfrac{a}{b} = \dfrac{c}{d}\) với \(b, d \neq 0\). Nó đúng khi và chỉ khi \(ad = bc\).</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Kiểm tra tỉ lệ thức bằng nhân chéo \(ad=bc\). Từ \(a:b=c:d\) viết được \(a/c=b/d\). Tìm ẩn thì cô lập, nhớ mẫu khác 0.</p>
       </div>
 <div class="warn">
@@ -1218,7 +1270,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Chia 12 cái kẹo theo tỉ số 2 : 3 : 7. Tổng phần \(2+3+7 = 12\). Mỗi phần 1 kẹo. Ba nhóm được 2, 3, 7. Tỉ số \(\dfrac{2}{2} = \dfrac{3}{3} = \dfrac{7}{7} = 1\), khớp dãy tỉ số.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Nếu \(\dfrac{a}{b} = \dfrac{c}{d} = \dfrac{e}{f} = k\) thì \(a = kb\), \(c = kd\), \(e = kf\), và \(\dfrac{a + c + e}{b + d + f} = k\) (dãy tỉ số bằng nhau).</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Dãy tỉ số bằng \(k\) thì tổng tử trên tổng mẫu vẫn bằng \(k\). Chia một tổng theo tỉ số: cộng các phần, lấy một phần rồi nhân.</p>
       </div>
 <div class="warn">
@@ -1279,6 +1335,10 @@ const G7_LESSONS = [
         </svg>
         <figcaption>Đồ thị tỉ lệ thuận là đường thẳng qua gốc. k = 80/5 = 16 nghìn/kg: gấp đôi số kg thì giá gấp đôi.</figcaption>
       </figure>
+<div class="definition">
+        <p>Đại lượng \(y\) <strong>tỉ lệ thuận</strong> với đại lượng \(x\) theo hệ số \(k \neq 0\) nếu \(y = kx\). Thương \(y/x\) không đổi; đồ thị là đường thẳng đi qua gốc toạ độ.</p>
+      </div>
+
 <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ thuận: \(y=kx\), thương không đổi. Gấp \(x\) thì gấp \(y\). Đồ thị qua gốc.</p>
       </div>
@@ -1340,6 +1400,10 @@ const G7_LESSONS = [
         </svg>
         <figcaption>4 máy × 9 giờ = 36 máy-giờ. 6 máy cần 36/6 = 6 giờ: gấp rưỡi số máy thì thời gian còn 2/3.</figcaption>
       </figure>
+<div class="definition">
+        <p>Đại lượng \(y\) <strong>tỉ lệ nghịch</strong> với đại lượng \(x\) theo hệ số \(k \neq 0\) nếu \(xy = k\). Tích không đổi; gấp \(x\) lên thì \(y\) giảm còn một phần.</p>
+      </div>
+
 <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tỉ lệ nghịch: \(xy=k\). Gấp \(x\) thì \(y\) còn một nửa. Số người và số ngày cùng một việc thường nghịch.</p>
       </div>
@@ -1386,7 +1450,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Biểu thức \(\dfrac{x+1}{x-3}\). Điều kiện \(x \neq 3\). Khi \(x = 5\): \(\dfrac{6}{2} = 3\). Khi \(x = 3\): mẫu 0, gạch bỏ, không ghi “bằng vô cùng”.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Biểu thức đại số</strong> gồm các số, chữ (biểu thị số chưa biết) và phép tính. Thế giá trị của chữ vào thì tính được giá trị của biểu thức, nếu phép tính có nghĩa.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Thế số sau khi ghi điều kiện. Mẫu \(\neq 0\), trong căn \(\geq 0\). Không ghi “bằng vô cùng” khi mẫu bằng 0.</p>
       </div>
 <div class="warn">
@@ -1432,7 +1500,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Sắp \(4x - x^3 + 2x^2 - 7\) theo bậc giảm: \(-x^3 + 2x^2 + 4x - 7\). Bậc 3. Hệ số cao nhất \(-1\), không phải 4. Nhìn mũ, không nhìn số đứng đầu lúc chưa sắp.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Đa thức một biến</strong> là tổng các đơn thức cùng một biến, mỗi hạng tử có bậc là số mũ của biến. <strong>Bậc của đa thức</strong> là bậc của hạng tử có bậc cao nhất; đa thức bậc 0 là số khác 0.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Sắp theo bậc giảm. Bậc là mũ lớn nhất có hệ số khác 0. \(1/x\) không phải đa thức.</p>
       </div>
 <div class="warn">
@@ -1481,7 +1553,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> \((2x^2 - x + 3) - (x^2 - 4x + 1)\). Đổi dấu ngoặc sau: \(2x^2 - x + 3 - x^2 + 4x - 1 = x^2 + 3x + 2\). Từng cột: \(x^2\), rồi \(x\), rồi số.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Hai đơn thức <strong>đồng dạng</strong> nếu cùng biến và cùng số mũ. Chỉ cộng, trừ được các đơn thức đồng dạng: cộng, trừ hệ số và giữ nguyên phần biến.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cộng trừ hạng tử đồng dạng. Trừ đa thức: đổi dấu cả ngoặc rồi cộng. \(x^2\) không cộng với \(x\).</p>
       </div>
 <div class="warn">
@@ -1530,7 +1606,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> \((2x - 1)(x + 4) = 2x \cdot x + 2x \cdot 4 + (-1) \cdot x + (-1) \cdot 4 = 2x^2 + 8x - x - 4 = 2x^2 + 7x - 4\). Bốn tích, rồi gộp. Thiếu một tích là sai hệ số giữa.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Nhân hai đơn thức: nhân hệ số với nhau và nhân phần biến theo luỹ thừa (\(x^m \cdot x^n = x^{m+n}\)). Nhân đơn thức với đa thức: phân phối; nhân hai đa thức: nhân từng hạng tử rồi cộng.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Phân phối từng hạng. \((a+b)^2=a^2+2ab+b^2\), đừng quên \(2ab\). Nhân lại để kiểm tra.</p>
       </div>
 <div class="warn">
@@ -1577,7 +1657,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Chia \(x^2 + 7x + 10\) cho \(x + 2\). \(x^2 : x = x\). \(x(x+2) = x^2 + 2x\). Trừ: \(5x + 10\). \(5x : x = 5\). \(5(x+2) = 5x + 10\). Dư 0. Thương \(x + 5\). Nhân lại: \((x+2)(x+5) = x^2 + 7x + 10\).</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Chia đơn thức cho đơn thức (khi phần biến của số chia là ước của số bị chia): chia hệ số và chia phần biến (\(x^m : x^n = x^{m-n}\) khi \(x \neq 0\)). Chia đa thức cho đơn thức: chia từng hạng tử.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp. Dư 0 thì chia hết; nhân ngược để kiểm.</p>
       </div>
 <div class="warn">
@@ -1645,6 +1729,10 @@ const G7_LESSONS = [
         </svg>
         <figcaption>Ra mặt 7 là biến cố không thể: không có kết quả nào thuận lợi. Số chẵn gồm 2, 4, 6.</figcaption>
       </figure>
+<div class="definition">
+        <p><strong>Biến cố</strong> là một sự kiện có thể xảy ra hoặc không trong một phép thử. Biến cố <strong>chắc chắn</strong> luôn xảy ra; biến cố <strong>không thể</strong> không bao giờ xảy ra; còn lại là biến cố có thể.</p>
+      </div>
+
 <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Viết \(\Omega\). Biến cố là một tập con. Chắc chắn = cả \(\Omega\). Không thể = rỗng.</p>
       </div>
@@ -1708,6 +1796,14 @@ const G7_LESSONS = [
         </svg>
         <figcaption>Ω = {SS, SN, NS, NN}, bốn kết quả đồng khả năng. “Ít nhất một ngửa” là ba kết quả, P = 3/4, không phải 1/2.</figcaption>
       </figure>
+<div class="definition">
+        <p>Khi các kết quả đồng khả năng, xác suất của biến cố \(A\) là</p>
+        \[
+          P(A) = \dfrac{n(A)}{n(\Omega)},
+        \]
+        <p>với \(n(A)\) số kết quả thuận lợi. Luôn có \(0 \leq P(A) \leq 1\): biến cố không thể có \(P = 0\), biến cố chắc chắn có \(P = 1\).</p>
+      </div>
+
 <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đồng khả năng thì chia. Liệt kê rồi mới đếm. \(0\leq P\leq 1\). Không đếm trùng khi “hoặc”.</p>
       </div>
@@ -1766,7 +1862,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Tam giác cạnh 6, 7, 8. Cạnh 8 lớn nhất nên góc đối diện cạnh 8 lớn nhất. Cạnh 6 nhỏ nhất nên góc đối diện cạnh 6 nhỏ nhất. Không cần đo góc vẫn so được.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p>Trong một tam giác, cạnh lớn hơn đối diện góc lớn hơn và ngược lại. Góc vuông đối diện cạnh huyền, là cạnh dài nhất.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Trong một tam giác: góc lớn hơn \(\Leftrightarrow\) cạnh đối diện dài hơn. Vuông thì cạnh huyền dài nhất.</p>
       </div>
 <div class="warn">
@@ -1829,7 +1929,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Điểm \(M\) cách đường 5 cm (đường vuông góc). Hai điểm \(A, B\) trên đường, \(HA = HB = 12\) cm thì hai xiên \(MA, MB\) bằng nhau. Điểm \(C\) với \(HC = 20\) cm thì xiên \(MC\) dài hơn \(MA\).</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Đường vuông góc</strong> kẻ từ điểm \(M\) xuống đường thẳng \(d\) có chân tại \(H\). <strong>Đường xiên</strong> kẻ từ \(M\) đến một điểm khác \(H\) trên \(d\). Đường vuông góc ngắn hơn mọi đường xiên; <strong>khoảng cách</strong> từ \(M\) đến \(d\) là độ dài đường vuông góc.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Khoảng cách là đường vuông góc. Xiên dài hơn. Hai xiên bằng nhau thì hai chân cách đều chân vuông góc.</p>
       </div>
 <div class="warn">
@@ -1886,7 +1990,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Cạnh 9 cm và 4 cm. Cạnh thứ ba \(x\) phải \(9 - 4 &lt; x &lt; 9 + 4\), tức \(5 &lt; x &lt; 13\). \(x = 5\) không được. \(x = 13\) không được. \(x = 6\) được: \(4+6=10&gt;9\), \(4+9&gt;6\), \(6+9&gt;4\).</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Bất đẳng thức tam giác:</strong> với ba đoạn thẳng tạo được tam giác thì độ dài cạnh lớn nhất phải nhỏ hơn tổng hai cạnh kia, tức \(a + b > c\) cho mọi cách xếp.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(|a-b|<c<a+b\). Bằng thì thẳng hàng, không phải tam giác. Kiểm tra cả ba cặp.</p>
       </div>
 <div class="warn">
@@ -1948,7 +2056,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Trung tuyến \(AM = 15\) cm, G trọng tâm. \(AG = 10\), \(GM = 5\). Nếu đề cho \(GM = 4\) thì \(AM = 12\), \(AG = 8\). Luôn gấp đôi đoạn ngắn.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Trung tuyến</strong> nối một đỉnh với trung điểm cạnh đối diện. Ba trung tuyến đồng quy tại <strong>trọng tâm</strong> \(G\), với \(AG : GM = 2 : 1\). Ba đường phân giác trong đồng quy tại <strong>tâm đường tròn nội tiếp</strong>, cách đều ba cạnh.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Trọng tâm chia trung tuyến \(2:1\). Tâm nội tiếp = giao phân giác, cách đều ba cạnh.</p>
       </div>
 <div class="warn">
@@ -2009,7 +2121,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Tam giác vuông cạnh huyền 10 cm. Tâm ngoại tiếp là trung điểm cạnh huyền, bán kính 5 cm. Đường cao từ đỉnh vuông chính là hai cạnh góc vuông, trực tâm trùng đỉnh vuông.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Đường trung trực</strong> của một đoạn thẳng vuông góc với nó tại trung điểm. Giao của ba đường trung trực là <strong>tâm đường tròn ngoại tiếp</strong> tam giác. <strong>Đường cao</strong> vuông góc kẻ từ đỉnh xuống cạnh đối; ba đường cao đồng quy tại <strong>trực tâm</strong>.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Tâm ngoại tiếp = giao trung trực. Vuông: tâm là trung điểm cạnh huyền. Trực tâm = giao đường cao; vuông thì trùng đỉnh vuông.</p>
       </div>
 <div class="warn">
@@ -2071,7 +2187,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Thùng không nắp, 20 cm × 30 cm × 40 cm, 40 cm là chiều cao. Diện tích cần sơn: đáy \(20 \cdot 30 = 600\), bốn thành \(2 \cdot 20 \cdot 40 + 2 \cdot 30 \cdot 40 = 4000\). Tổng 4600 cm². Không nhân 2 đáy.</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Hình hộp chữ nhật</strong> có 6 mặt là hình chữ nhật, kích thước \(a, b, h\); diện tích toàn phần \(S = 2(ab + bh + ha)\), thể tích \(V = abh\). <strong>Hình lập phương</strong> cạnh \(a\): \(S = 6a^2\), \(V = a^3\).</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(V=abh\). Toàn phần \(2(ab+bh+ha)\). Không nắp thì bỏ một đáy. Lập phương: \(V=a^3\), \(S=6a^2\).</p>
       </div>
 <div class="warn">
@@ -2131,7 +2251,11 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Lăng trụ đứng đáy tam giác vuông 6 cm, 8 cm, cạnh huyền 10 cm, cao 12 cm. \(S_{đáy} = 24\). \(V = 288\) cm³. Chu vi đáy 24, xung quanh \(24 \cdot 12 = 288\) cm². Toàn phần \(288 + 2 \cdot 24 = 336\) cm².</p>
       </div>
-      <div class="idea">
+      <div class="definition">
+        <p><strong>Hình lăng trụ đứng</strong> có hai đáy là đa giác song song và bằng nhau, các mặt bên là hình chữ nhật, cạnh bên vuông góc với đáy. Thể tích \(V = S_{\text{đáy}} \cdot h\) với \(h\) là chiều cao.</p>
+      </div>
+
+<div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(V=S_{\text{đáy}}\cdot h\). Xung quanh = chu vi đáy \(\times\) cao. Mặt bên lăng trụ đứng là chữ nhật.</p>
       </div>
 <div class="warn">
