@@ -654,7 +654,35 @@ const LESSONS = [
     summary: "Lớn hơn là đứng bên phải trên trục số. Cộng cùng một số thì thứ tự giữ. Nhân số âm thì thứ tự đảo.",
     body: String.raw`
       <p>Phương trình hỏi "bằng bao nhiêu". Bất đẳng thức hỏi "nhiều hơn, ít hơn, ít nhất, nhiều nhất". Biển "tốc độ tối thiểu 60 km/h" không bắt vận tốc bằng 60. Nó bắt \(a \geq 60\): 60 được, 80 được, 59 thì không.</p>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Trục số: -2 nhỏ hơn 5; nhân cả hai vế với -1 thì trái phải đảo, thành 2 lớn hơn -5">
+          <line x1="60" y1="60" x2="320" y2="60" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="60" x2="320" y2="60" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="190" cy="60" r="3" fill="#DDDDDD"/>
+          <text x="184" y="46" font-size="12">0</text>
+          <circle cx="146" cy="60" r="3.5" fill="#58C4DD"/>
+          <text x="132" y="48" font-size="12" fill="#58C4DD">-2</text>
+          <circle cx="300" cy="60" r="3.5" fill="#83C167"/>
+          <text x="304" y="48" font-size="12" fill="#83C167">5</text>
+          <path d="M 146 60 L 300 60" stroke="#58C4DD" stroke-width="2"/>
+          <polygon points="300,54 312,60 300,66" fill="#58C4DD"/>
+          <text x="214" y="52" font-size="12" fill="#58C4DD">-2 &lt; 5</text>
+          <line x1="60" y1="150" x2="320" y2="150" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="190" cy="150" r="3" fill="#DDDDDD"/>
+          <text x="184" y="136" font-size="12">0</text>
+          <circle cx="80" cy="150" r="3.5" fill="#83C167"/>
+          <text x="66" y="138" font-size="12" fill="#83C167">-5</text>
+          <circle cx="234" cy="150" r="3.5" fill="#58C4DD"/>
+          <text x="238" y="138" font-size="12" fill="#58C4DD">2</text>
+          <path d="M 80 150 L 234 150" stroke="#83C167" stroke-width="2"/>
+          <polygon points="234,144 246,150 234,156" fill="#83C167"/>
+          <text x="152" y="142" font-size="12" fill="#83C167">-5 &lt; 2</text>
+          <text x="180" y="184" font-size="12" fill="#FC6255" text-anchor="middle">Nhân với -1: soi gương qua 0, trái thành phải</text>
+        </svg>
+        <figcaption>Từ -2 &lt; 5, nhân cả hai vế với -1 được 2 > -5. Số âm làm đảo chiều vì mọi điểm soi gương qua 0.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Nhìn trên trục số.</strong> Số lớn hơn đứng bên phải. \(-2 < 5\) vì \(-2\) ở bên trái 5. \(a \geq b\) nghĩa là \(a\) trùng \(b\) hoặc đứng bên phải \(b\). \(a \leq b\) là trùng hoặc đứng bên trái.</p>
         <p>Hai bất đẳng thức <em>cùng chiều</em> khi dấu cùng hướng, như \(1 < 2\) và \(-3 < -2\). <em>Ngược chiều</em> khi một dấu mở sang phải, một dấu mở sang trái, như \(1 < 2\) và \(-2 > -3\). Hai câu ấy nói cùng một sự thật, chỉ viết ngược nhau.</p>
       </div>
@@ -864,7 +892,22 @@ const LESSONS = [
     summary: "Bình phương không bao giờ âm, nên số âm không có căn bậc hai. Dấu √ chỉ lấy căn không âm.",
     body: String.raw`
       <p>Hình vuông diện tích 49 m². Cạnh là một số không âm mà bình phương bằng 49. \(7^2 = 49\) và \((-7)^2 = 49\), nhưng cạnh không âm, nên cạnh là 7. Phép hỏi ngược của bình phương gọi là khai căn bậc hai.</p>
-      <div class="definition">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình vuông diện tích 49 mét vuông, cạnh 7 mét">
+          <rect x="110" y="30" width="140" height="140" fill="#58C4DD" fill-opacity="0.12" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="110" y1="30" x2="250" y2="30" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="180" y="20" font-size="12" fill="#58C4DD" text-anchor="middle">7 m</text>
+          <line x1="250" y1="30" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="258" y="104" font-size="12" fill="#58C4DD">7 m</text>
+          <line x1="110" y1="170" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="180" y="188" font-size="12" fill="#58C4DD" text-anchor="middle">7 m</text>
+          <text x="180" y="104" font-size="13" fill="#FC6255" text-anchor="middle">49 m²</text>
+          <text x="180" y="124" font-size="12" fill="#FC6255" text-anchor="middle">7 × 7 = 49</text>
+        </svg>
+        <figcaption>Hình vuông diện tích 49 m² có cạnh √49 = 7 m. Căn bậc hai của một số không âm a là số x sao cho x² = a.</figcaption>
+      </figure>
+<div class="definition">
         <p><strong>Căn bậc hai</strong> của số không âm \(a\) là số \(x\) sao cho \(x^2 = a\).</p>
       </div>
       <div class="idea">
@@ -2433,7 +2476,21 @@ const LESSONS = [
     summary: "Một mối liên hệ thì một ẩn đủ. Giải xong phải loại nghiệm không phải độ dài, số người, hay số dương.",
     body: String.raw`
       <p>Bài 3 lập hệ vì đề kể hai câu. Nếu chỉ có một mối liên hệ, một ẩn là đủ. Diện tích hình chữ nhật là dài nhân rộng. Viết dài theo rộng, phương trình thành bậc hai.</p>
-      <div class="idea">
+      
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Sân bóng hình chữ nhật: chiều rộng x mét, chiều dài x + 30 mét, diện tích 1800 mét vuông">
+          <rect x="60" y="40" width="240" height="80" fill="#83C167" fill-opacity="0.12" stroke="#83C167" stroke-width="2"/>
+          <text x="180" y="84" font-size="12" fill="#FC6255" text-anchor="middle">Diện tích 1 800 m²</text>
+          <text x="180" y="102" font-size="12" fill="#FC6255" text-anchor="middle">x(x + 30) = 1800</text>
+          <line x1="60" y1="40" x2="300" y2="40" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="180" y="30" font-size="12" fill="#58C4DD" text-anchor="middle">chiều dài x + 30</text>
+          <line x1="60" y1="40" x2="60" y2="120" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="52" y="86" font-size="12" fill="#58C4DD">x</text>
+          <text x="52" y="100" font-size="12" fill="#58C4DD">(chiều rộng)</text>
+        </svg>
+        <figcaption>Chiều rộng x, chiều dài x + 30, diện tích x(x + 30) = 1800 → x² + 30x − 1800 = 0; x = 30, chiều dài 60.</figcaption>
+      </figure>
+<div class="idea">
         <p><strong>Bước cuối không được bỏ.</strong> Chọn ẩn và ghi điều kiện ngay: dương, nhỏ hơn một số, là số tự nhiên. Viết mọi đại lượng khác theo ẩn ấy, lập một phương trình, giải. Rồi đối chiếu điều kiện. Nghiệm âm của phương trình không phải chiều rộng.</p>
       </div>
       <div class="example">
