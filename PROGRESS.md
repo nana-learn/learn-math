@@ -15,6 +15,8 @@
   - ch7–8 statistics `c7-b22`..`c7-b24`, `c8-b25`..`c8-b26` (cột tần số cỡ giày, cột tần số tương đối, biểu đồ ghép nhóm, bảng liên kết xúc xắc–đồng xu 6×2=12, xúc xắc thuận lợi {2,4,5,6}) — commit `c69c297`.
   - algebra with natural visuals `c2-b5` (trục số đảo chiều khi ×(−1)), `c3-b7` (hình vuông 49 m²), `c6-b21` (sân bóng x·(x+30)=1800), `c3-b10` (khối lập phương 27 cm³) — commits `5d849c3`, `b90c5f5`.
   - Intentionally left figureless (purely symbolic algebra, no natural diagram): `c1-b3`, `c2-b4`, `c3-b8`, `c3-b9`, `c6-b19`, `c6-b20`. Figures there would be forced and add no pedagogical value.
+- Thi-10 pedagogy pass (exam.js): the 9 skill lessons were the least-developed course. Added a `<details class="check">` self-test (`Tự kiểm tra`, reusing each lesson's `.warn` trap material, placed after the `.warn` block) to `tv10-1..tv10-9` — commit `d0d0f93`; then `Nhớ nhanh` `.memory` blocks to the six still-missing skill lessons `tv10-1..tv10-5` and `tv10-8` — commit `7bbf507`. The three raw mock-paper lessons (`tv10-10..12`) stay as exam content (no warn/self-test/memory).
+- Thi-10 figure pass: added 3 inline SVG figures to the genuinely visual lessons — `tv10-1` (cột tần số ghép nhóm: Hà Nội 2026 heights 10/18/14/6/2, bars proportional at 7.2 px/unit), `tv10-6` (hình trụ S_xq=2πRh, V=πR²h bên cạnh hình cầu S=4πR²), `tv10-7` (tứ giác AHDC nội tiếp đường kính HC, ∠HAC=∠HDC=90° verified numerically) — commit `727b47a`. Geometry/bar heights checked numerically; XML well-formedness verified via xmllint (resvg renderer broken in this environment).
 
 ## GitHub Pages
 
