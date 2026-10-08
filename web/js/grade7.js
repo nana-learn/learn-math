@@ -1431,6 +1431,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Viết \(\Omega\). Biến cố là một tập con. Chắc chắn = cả \(\Omega\). Không thể = rỗng.</p>
       </div>
+<div class="warn">
+        <p><strong>Chắc chắn, không thể, có thể.</strong></p>
+        <ul>
+          <li>“Ra mặt 7” trên xúc xắc sáu mặt là biến cố <em>không thể</em>, không phải “xác suất nhỏ vẫn có thể”. Không thể là không có kết quả nào thuận lợi.</li>
+          <li>Biến cố chắc chắn là cả tập \(\Omega\), không phải “xác suất lớn”. Biến cố không thể là tập rỗng.</li>
+          <li>Viết rõ tập kết quả trước khi đếm: “số nguyên tố” trong {1,2,3,4,5} là {2,3,5}; \(1\) không phải số nguyên tố, \(4\) không.</li>
+          <li>Biến cố “sấp hoặc ngửa” gồm mọi kết quả — chắc chắn. Đừng gọi nó là “có thể”.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Chắc chắn: luôn xảy ra. Không thể: không bao giờ. Còn lại: có thể.</p></div>
     `,
     exercises: [
@@ -1462,6 +1471,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Đồng khả năng thì chia. Liệt kê rồi mới đếm. \(0\leq P\leq 1\). Không đếm trùng khi “hoặc”.</p>
+      </div>
+<div class="warn">
+        <p><strong>Liệt kê Ω rồi mới đếm.</strong></p>
+        <ul>
+          <li>Hộp 3 bi đỏ, 1 bi xanh: \(P(\text{đỏ}) = 3/4\), không phải \(1/2\) chỉ vì có hai màu. Đếm viên, không đếm màu.</li>
+          <li>Hai đồng xu có thứ tự: \(\Omega = \{SS, SN, NS, NN\}\), bốn kết quả đồng khả năng. “Ít nhất một ngửa” là ba kết quả, \(P = 3/4\), không phải \(1/2\).</li>
+          <li>Chỉ chia khi các kết quả đồng khả năng. Nếu không đồng khả năng thì đừng dùng công thức chia.</li>
+          <li>Khi đếm “hoặc”, đừng đếm trùng một kết quả hai lần. \(0 \leq P \leq 1\): ra ngoài khoảng ấy là đếm sai.</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Liệt kê Ω trước. Chỉ chia khi đồng khả năng. P = 0 không thể, P = 1 chắc chắn.</p></div>
     `,
