@@ -1805,6 +1805,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(V=abh\). Toàn phần \(2(ab+bh+ha)\). Không nắp thì bỏ một đáy. Lập phương: \(V=a^3\), \(S=6a^2\).</p>
       </div>
+<div class="warn">
+        <p><strong>Đọc kĩ: toàn phần, xung quanh, hay không nắp.</strong></p>
+        <ul>
+          <li>Diện tích toàn phần \(S = 2(ab + bh + ha)\): ba cặp mặt. Không nhân \(2\) vào một cặp rồi quên các cặp khác.</li>
+          <li>Thùng không nắp: bỏ một đáy, không lấy \(2ab\). Đọc kĩ “không đáy”, “không nắp”, “xung quanh”.</li>
+          <li>Thể tích \(V = abh\), đơn vị khối. Diện tích là bình phương, thể tích là lập phương — đừng trộn đơn vị cm² với cm³.</li>
+          <li>Hình lập phương cạnh \(a\): \(V = a^3\), \(S = 6a^2\). Không nhân \(a^2\) với số mặt khác 6.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = đáy × cao. Lập phương: mọi cạnh bằng nhau, 6 mặt vuông.</p></div>
     `,
     exercises: [
@@ -1850,6 +1859,15 @@ const G7_LESSONS = [
       </div>
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> \(V=S_{\text{đáy}}\cdot h\). Xung quanh = chu vi đáy \(\times\) cao. Mặt bên lăng trụ đứng là chữ nhật.</p>
+      </div>
+<div class="warn">
+        <p><strong>Đừng quên hai đáy.</strong></p>
+        <ul>
+          <li>Diện tích toàn phần = 2 đáy + các mặt bên. Quên nhân 2 đáy thì thiếu.</li>
+          <li>Mặt bên lăng trụ đứng là chữ nhật: xung quanh = chu vi đáy × chiều cao. Không nhân diện tích đáy với chiều cao khi tính xung quanh.</li>
+          <li>Thể tích = diện tích đáy × chiều cao. Đáy tam giác vuông 6×8 thì \(S_{đáy} = 24\), không phải tích hai cạnh nhân đôi.</li>
+          <li>Khi đáy không phải chữ nhật, đừng áp công thức hình hộp: dùng \(S_{\text{đáy}} \cdot h\).</li>
+        </ul>
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = S_đáy · h. Xung quanh = chu vi đáy · h. Không nhầm với hình hộp nếu đáy không phải chữ nhật.</p></div>
     `,
