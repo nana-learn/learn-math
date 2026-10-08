@@ -699,7 +699,7 @@ COURSES.push({
   grade: "10",
   title: "Thi vào 10",
   level: "Hà Nội",
-  subtitle: "Toán không chuyên · đề Sở 2022–2026 · đề thử Mỹ Đình 2",
+  subtitle: "Toán không chuyên · đề Sở 2022–2026 · đề thử các trường Hà Nội (Mỹ Đình 2, Cầu Giấy, Đống Đa, ...)",
   blurb: "Ôn bằng đề chính thức của Sở và đề thi thử của các trường Hà Nội. Không gồm Văn hay Ngoại ngữ.",
   chapters: THI10_CHAPTERS,
   lessons: THI10_LESSONS,
