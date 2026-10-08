@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 9 c5-b16 cut-circle dots (`d256ba3`)
+- **Issue**: the "cắt nhau" panel's 2 intersection dots at (32,70)/(98,70) were at radius 36.2 from the center (65,55), but the circle is r=40 and the secant line y=70 meets it at radius 40 (x=65±37.1) — the dots sat 4px inside the circle instead of on it.
+- **Fix**: moved the dots to (28,70)/(102,70) so both lie exactly on the circle (radius 39.92 ≈ 40).
+- **Verified**: syntax, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Toan 9 c2-b6 open-dot figure fix (`99c663b`)
 - **Issue**: the number-line figure's bottom "x < 3" dot used fill=#333333 (dark solid), contradicting the figcaption "chấm rỗng cho <, >" — it should be an open/hollow dot. The top "x ≤ −3" dot was correctly solid yellow (closed dot).
 - **Fix**: changed the bottom dot's fill to #FFFFFF so it renders hollow with the yellow ring, matching the closed/open convention.
