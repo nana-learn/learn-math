@@ -1684,6 +1684,11 @@ const G7_LESSONS = [
           <li>Cân khi hai góc đáy bằng nhau; khi ấy hai cạnh đối diện hai góc ấy bằng nhau.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tam giác có góc \(A = 80^\circ\), \(B = 40^\circ\), \(C = 60^\circ\): cạnh nào lớn nhất? <em>— \(BC\), đối diện góc \(A\) lớn nhất.</em></p>
+        <p>Tam giác cạnh 6, 7, 8: góc đối diện cạnh nào lớn nhất? <em>— Cạnh 8. Góc lớn hơn đối diện cạnh dài hơn, trong cùng một tam giác.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Góc lớn — cạnh đối lớn. Cân khi hai góc đáy bằng nhau.</p></div>
     `,
     exercises: [
@@ -1742,6 +1747,11 @@ const G7_LESSONS = [
           <li>Khi so hai xiên, so khoảng cách từ chân đến chân vuông góc: chân xa hơn thì xiên dài hơn.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Khoảng cách từ điểm đến đường thẳng là độ dài đường nào? <em>— Đường vuông góc. Đường xiên luôn dài hơn.</em></p>
+        <p>Hai đường xiên \(MA\), \(MB\) bằng nhau: hai chân \(A\), \(B\) thế nào? <em>— Cách đều chân vuông góc \(H\): \(HA = HB\). Không suy ra chúng trùng nhau.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông góc ngắn nhất. Xiên càng xa chân thì càng dài.</p></div>
     `,
     exercises: [
@@ -1794,6 +1804,11 @@ const G7_LESSONS = [
           <li>Bằng nhau ở một cặp nhưng vẫn khép được tam giác thì phải thử tiếp các cặp khác.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Cạnh 3, 4, 7 có tạo tam giác không? <em>— Không. \(3+4=7\), ba điểm thẳng hàng, diện tích 0. Phải lớn hơn, không được bằng.</em></p>
+        <p>Cạnh 9 cm và 4 cm: cạnh thứ ba \(x\) phải nằm trong khoảng nào? <em>— \(5 &lt; x &lt; 13\). \(x = 5\) và \(x = 13\) đều không được.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phải lớn hơn, không được bằng. Kiểm tra cả ba cặp.</p></div>
     `,
     exercises: [
@@ -1851,6 +1866,11 @@ const G7_LESSONS = [
           <li>Tâm nội tiếp cách đều ba cạnh; trọng tâm không cách đều ba cạnh.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Trung tuyến dài 9 cm: đoạn từ đỉnh đến trọng tâm dài bao nhiêu? <em>— \(6\) cm. Trọng tâm chia theo tỉ số \(2:1\), đoạn dài về phía đỉnh: \(9 \cdot \dfrac{2}{3} = 6\).</em></p>
+        <p>Trọng tâm có cách đều ba cạnh không? <em>— Không. Tâm nội tiếp (giao phân giác) mới cách đều ba cạnh; trọng tâm chỉ trùng ở tam giác đều.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trung tuyến → trọng tâm, tỉ lệ 2:1. Phân giác → tâm nội tiếp, cách đều ba cạnh.</p></div>
     `,
     exercises: [
@@ -1907,6 +1927,11 @@ const G7_LESSONS = [
           <li>Trung trực vuông góc tại <em>trung điểm</em> cạnh; đường cao vuông góc kẻ từ đỉnh. Đừng nhầm hai đường.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tam giác vuông cạnh huyền 10 cm: tâm ngoại tiếp nằm ở đâu, bán kính bao nhiêu? <em>— Trung điểm cạnh huyền, bán kính 5 cm.</em></p>
+        <p>Tam giác tù: trực tâm và tâm ngoại tiếp nằm trong hay ngoài tam giác? <em>— Nằm ngoài. Không bắt chúng phải ở trong.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trung trực → ngoại tiếp, qua ba đỉnh. Đường cao → trực tâm. Vuông: tâm là trung điểm huyền.</p></div>
     `,
     exercises: [
