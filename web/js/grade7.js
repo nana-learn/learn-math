@@ -759,6 +759,17 @@ const G7_LESSONS = [
     summary: "Cả vòng 360°. Mỗi phần lấy đúng tỉ lệ của nhóm ấy.",
     body: String.raw`
       <p>Quạt tròn cho thấy cơ cấu. Nhóm chiếm \(p\%\) thì góc ở tâm là \(\dfrac{p}{100} \cdot 360^\circ\).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 220 200" role="img" aria-label="Biểu đồ hình quạt tròn ba phần 25%, 40%, 35%">
+          <path d="M 110 100 L 110 30 A 70 70 0 0 1 180 100 Z" fill="#58C4DD" fill-opacity="0.35" stroke="#DDDDDD" stroke-width="2"/>
+          <path d="M 110 100 L 180 100 A 70 70 0 0 1 53 141 Z" fill="#FC6255" fill-opacity="0.35" stroke="#DDDDDD" stroke-width="2"/>
+          <path d="M 110 100 L 53 141 A 70 70 0 0 1 110 30 Z" fill="#83C167" fill-opacity="0.35" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="138" y="76" font-size="12" fill="#58C4DD" text-anchor="middle">Toán 25%</text>
+          <text x="124" y="142" font-size="12" fill="#FC6255" text-anchor="middle">Văn 40%</text>
+          <text x="72" y="84" font-size="12" fill="#83C167" text-anchor="middle">Anh 35%</text>
+        </svg>
+        <figcaption>25% → 90°, 40% → 144°, 35% → 126°. Tổng góc 360°, tổng phần trăm 100%.</figcaption>
+      </figure>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> 25% thì góc \(90^\circ\). 50% thì nửa vòng, \(180^\circ\).</p>
       </div>
@@ -794,6 +805,38 @@ const G7_LESSONS = [
     summary: "Dùng khi dữ liệu theo thời gian. Đọc dốc để biết tăng hay giảm.",
     body: String.raw`
       <p>Trục ngang thường là thời gian, trục đứng là đại lượng. Gãy khúc nối các điểm. Dốc lên là tăng, dốc xuống là giảm, nằm ngang là không đổi.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Biểu đồ đoạn thẳng nhiệt độ từ 7 giờ đến 10 giờ">
+          <line x1="60" y1="50" x2="350" y2="50" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1"/>
+          <line x1="60" y1="90" x2="350" y2="90" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1"/>
+          <line x1="60" y1="130" x2="350" y2="130" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1"/>
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="350" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="44" y="42" font-size="12">°C</text>
+          <text x="54" y="54" font-size="12" text-anchor="end">24</text>
+          <text x="54" y="94" font-size="12" text-anchor="end">22</text>
+          <text x="54" y="134" font-size="12" text-anchor="end">20</text>
+          <text x="90" y="190" font-size="12" text-anchor="middle">7</text>
+          <text x="170" y="190" font-size="12" text-anchor="middle">8</text>
+          <text x="250" y="190" font-size="12" text-anchor="middle">9</text>
+          <text x="330" y="190" font-size="12" text-anchor="middle">10</text>
+          <line x1="90" y1="130" x2="170" y2="70" stroke="#83C167" stroke-width="2.5"/>
+          <line x1="170" y1="70" x2="250" y2="70" stroke="#58C4DD" stroke-width="2.5"/>
+          <line x1="250" y1="70" x2="330" y2="110" stroke="#FC6255" stroke-width="2.5"/>
+          <circle cx="90" cy="130" r="4" fill="#58C4DD"/>
+          <circle cx="170" cy="70" r="4" fill="#58C4DD"/>
+          <circle cx="250" cy="70" r="4" fill="#58C4DD"/>
+          <circle cx="330" cy="110" r="4" fill="#58C4DD"/>
+          <text x="90" y="118" font-size="12" text-anchor="middle">20°</text>
+          <text x="170" y="58" font-size="12" text-anchor="middle">23°</text>
+          <text x="250" y="58" font-size="12" text-anchor="middle">23°</text>
+          <text x="330" y="98" font-size="12" text-anchor="middle">21°</text>
+          <text x="98" y="98" font-size="12" fill="#83C167">tăng</text>
+          <text x="210" y="88" font-size="12" fill="#58C4DD">không đổi</text>
+          <text x="300" y="82" font-size="12" fill="#FC6255">giảm</text>
+        </svg>
+        <figcaption>Đọc từng đoạn: từ 7 đến 8 giờ tăng 3°, 8 đến 9 giờ không đổi, 9 đến 10 giờ giảm 2°. Đọc số trên trục, đừng chỉ nhìn độ dốc.</figcaption>
+      </figure>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> Năm 1: 10, năm 2: 14. Tăng 4 đơn vị trong một năm.</p>
       </div>

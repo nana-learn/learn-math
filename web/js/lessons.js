@@ -3178,6 +3178,32 @@ const LESSONS = [
           <li>Chiều cao \(h = SO\) (đường cao của hình nón).</li>
         </ul>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 370 205" role="img" aria-label="Hình trụ và hình nón: bán kính đáy R, chiều cao h, đường sinh l">
+          <ellipse cx="105" cy="42" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <ellipse cx="105" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="50" y1="42" x2="50" y2="158" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="160" y1="42" x2="160" y2="158" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="105" cy="42" r="2.5" fill="#DDDDDD"/>
+          <text x="90" y="41" font-size="13">O′</text>
+          <line x1="105" y1="42" x2="160" y2="42" stroke="#83C167" stroke-width="2"/>
+          <text x="122" y="56" font-size="13" fill="#83C167">R</text>
+          <line x1="28" y1="42" x2="28" y2="158" stroke="#FC6255" stroke-width="2"/>
+          <text x="14" y="105" font-size="13" fill="#FC6255">h</text>
+          <ellipse cx="270" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="270" y1="32" x2="215" y2="158" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="270" y1="32" x2="325" y2="158" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="270" y1="32" x2="270" y2="158" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="278" y="100" font-size="13" fill="#FC6255">h</text>
+          <text x="258" y="26" font-size="13">S</text>
+          <line x1="270" y1="158" x2="325" y2="158" stroke="#83C167" stroke-width="2"/>
+          <text x="297" y="184" font-size="13" fill="#83C167">R</text>
+          <text x="302" y="92" font-size="13" fill="#58C4DD">l</text>
+          <circle cx="270" cy="158" r="2.5" fill="#DDDDDD"/>
+          <text x="252" y="156" font-size="13">O</text>
+        </svg>
+        <figcaption>Trụ: cao h, bán kính đáy R. Nón: đường sinh l, cao h — dùng l cho diện tích xung quanh, dùng h cho thể tích.</figcaption>
+      </figure>
       <div class="definition">
         <p><strong>Công thức (SGK):</strong></p>
         \[
@@ -3279,6 +3305,23 @@ const LESSONS = [
         </ul>
         <p>Gọi \(d\) là khoảng cách từ tâm đến mặt phẳng cắt, \(d < R\). Tam giác từ tâm tới chân đường vuông góc rồi tới một điểm trên mép mặt cắt là tam giác vuông. Bán kính mặt cắt bằng \(\sqrt{R^2 - d^2}\). \(d = 0\) thì ra \(R\). \(d\) càng gần \(R\), mặt cắt càng nhỏ.</p>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 360 205" role="img" aria-label="Hình cầu bị mặt phẳng cách tâm d cắt thành hình tròn bán kính r">
+          <circle cx="150" cy="102" r="75" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <circle cx="150" cy="102" r="2.5" fill="#DDDDDD"/>
+          <text x="158" y="116" font-size="13">O</text>
+          <line x1="81" y1="72" x2="219" y2="72" stroke="#58C4DD" stroke-width="2.5"/>
+          <line x1="150" y1="102" x2="150" y2="72" stroke="#FC6255" stroke-width="2"/>
+          <text x="132" y="94" font-size="13" fill="#FC6255">d</text>
+          <rect x="150" y="72" width="10" height="10" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="150" y1="102" x2="219" y2="72" stroke="#83C167" stroke-width="2"/>
+          <text x="196" y="94" font-size="13" fill="#83C167">R</text>
+          <text x="181" y="64" font-size="13" fill="#58C4DD">r</text>
+          <circle cx="219" cy="72" r="3" fill="#58C4DD"/>
+          <text x="226" y="64" font-size="13">P</text>
+        </svg>
+        <figcaption>Mặt cắt cách tâm d có bán kính r = √(R² − d²); d = 0 thì ra đường tròn lớn bán kính R.</figcaption>
+      </figure>
       <div class="definition">
         <p><strong>Công thức (SGK)</strong> — diện tích mặt cầu và thể tích hình cầu bán kính \(R\):</p>
         \[

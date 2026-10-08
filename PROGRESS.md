@@ -5,6 +5,7 @@
 - Repo refocused on the public GitHub Pages site: removed `serve.sh` (local `python3 http.server`) — the site is viewed at https://nana-learn.github.io/learn-math/ only.
 - Rewrote `README.md` around the Pages workflow (push `main` → Actions deploys `web/`); fixed the stale "only Toán 9" note (Toán 7 and Thi vào 10 are also populated).
 - `.gitignore`: dropped `data/` and `*.db` (leftover from the abandoned local SQLite plan).
+- Content pass (item 2): added figures to the four figureless visual lessons — Toán 9 `c10-b31` (trụ/nón with R, h, l) and `c10-b32` (mặt cắt hình cầu: right triangle O–chân vuông góc–P), Toán 7 `g7-b18` (quạt tròn 25/40/35%) and `g7-b19` (đoạn thẳng with tăng/không đổi/giảm, using the lesson's 20°/23°/23°/21° data).
 
 ## GitHub Pages
 
