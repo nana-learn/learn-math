@@ -10,6 +10,11 @@
 - Toàn 7 `.check` pass: added a `<details class="check">` self-test (`Tự kiểm tra`, `<em>— answer</em>` pairs) to all 37 lessons, one commit per chapter, placed right after each `.warn` block.
 - Thi-10 `.warn` pass: added `Sai lầm thường gặp` boxes to the six skill lessons lacking one (`tv10-4..tv10-9`); the three raw mock-paper lessons (`tv10-10..12`) stay as exam content (9/12 `.warn`).
 - Toàn 9 `.check` pass: added a `<details class="check">` self-test to the 27 lessons still missing one (Toán 9 had only 5/32), placed right before the last "Ví dụ làm chậm." example and reusing each lesson's `.warn` trap material — commits `fbe7899`, `9c78c98`, `d5a240a`, `ea1b11e`, `1ae64a1`, `42ef945`; now 32/32.
+- Toàn 9 figure pass (geometry/visual lessons): added inline SVG figures to the figureless lessons that are naturally visual, matching the house figure style (palette `#DDDDDD`/`#58C4DD`/`#FC6255`/`#83C167`/`#9A72AC`, font 12–13, Vietnamese labels, plain-text `<figcaption>`):
+  - ch9 geometry `c9-b27`..`c9-b30` (góc nội tiếp, đường tròn ngoại/nội tiếp, tứ giác nội tiếp, đa giác đều) — geometry verified numerically (circumcenter/incenter, 60°-spaced hexagon, inscribed/central angles) — commit `4ce3f60`.
+  - ch7–8 statistics `c7-b22`..`c7-b24`, `c8-b25`..`c8-b26` (cột tần số cỡ giày, cột tần số tương đối, biểu đồ ghép nhóm, bảng liên kết xúc xắc–đồng xu 6×2=12, xúc xắc thuận lợi {2,4,5,6}) — commit `c69c297`.
+  - algebra with natural visuals `c2-b5` (trục số đảo chiều khi ×(−1)), `c3-b7` (hình vuông 49 m²), `c6-b21` (sân bóng x·(x+30)=1800), `c3-b10` (khối lập phương 27 cm³) — commits `5d849c3`, `b90c5f5`.
+  - Intentionally left figureless (purely symbolic algebra, no natural diagram): `c1-b3`, `c2-b4`, `c3-b8`, `c3-b9`, `c6-b19`, `c6-b20`. Figures there would be forced and add no pedagogical value.
 
 ## GitHub Pages
 
