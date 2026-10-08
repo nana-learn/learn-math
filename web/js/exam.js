@@ -47,7 +47,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Nhóm [150; 155) có 14 học sinh trong 50. Tần số tương đối là gì? <em>— 14/50 × 100% = 28%, không phải 14%.</em></p>
         <p>Bạn cao đúng 155 cm thuộc nhóm nào? <em>— [155; 160), không thuộc [150; 155). Nhóm [a; b) lấy a, không lấy b.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Cộng các tần số phải ra cỡ mẫu. Tần số tương đối = tần số : cỡ mẫu × 100%. Nhóm [a; b) lấy a, không lấy b.</p></div>
+>
 
     `,
     exercises: [
@@ -85,7 +87,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Hộp 8 thẻ ghi 1 đến 8, rút một thẻ. Xác suất chia hết cho 3? <em>— 2/8 = 1/4. Không đếm số 9 vì không có trong hộp.</em></p>
         <p>Trước khi chia phải làm gì? <em>— Viết Ω và nói các kết quả đồng khả năng vì các thẻ cùng loại, lấy ngẫu nhiên.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Viết Ω, nói các kết quả đồng khả năng, rồi P = n(A) : n(Ω). Rút gọn phân số trước khi nộp.</p></div>
+>
 
     `,
     exercises: [
@@ -125,7 +129,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Khi tìm x để P nguyên, nghiệm x = 1/4 có bị loại vì là phân số không? <em>— Không. Phân số không phải lý do loại; chỉ loại theo điều kiện x > 0, x ≠ 9.</em></p>
         <p>Đề hỏi số nguyên dương lớn nhất thì có chọn x = 1 không? <em>— Không, kiểm tra điều kiện rồi mới chọn; x = 1 không thỏa bất phương trình.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Đặt t = √x, phân tích mẫu (x - 9 = (t-3)(t+3)), rút gọn rồi mới thế. Chọn nghiệm theo điều kiện của đề.</p></div>
+>
 
     `,
     exercises: [
@@ -152,7 +158,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>"Kế hoạch may mỗi ngày x" là một ẩn hay hai? <em>— Một ẩn, nên một phương trình. "Hoa hồng và hoa cúc" là hai ẩn, phải viết hai phương trình.</em></p>
         <p>Thời gian bằng gì? <em>— Quãng đường chia vận tốc, không phải nhân. Tiền bằng đơn giá nhân số lượng.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Đọc đề hỏi một phương trình hay một hệ. Thời gian = quãng đường : vận tốc. Tiền = đơn giá × số lượng. Ghi điều kiện nguyên dương.</p></div>
+>
 
       <div class="examq">
         <p><strong>Hà Nội 2026, câu III.1.</strong> Kế hoạch may mỗi ngày \(x\) chiếc, \(x\) nguyên dương. Ba ngày đầu may đúng kế hoạch. Bảy ngày sau, mỗi ngày may hơn kế hoạch 5 chiếc. Sau 10 ngày được 335 chiếc.</p>
@@ -202,7 +210,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Tổng và tích của ax² + bx + c = 0 là gì? <em>— -b/a và c/a. Đừng nhầm dấu của -b/a.</em></p>
         <p>Khi nào được dùng Viète? <em>— Khi phương trình có nghiệm thực. Rồi mới thay x² = px + q để hạ bậc nếu nghiệm thỏa.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Tổng -b/a, tích c/a. Chỉ dùng khi phương trình có nghiệm thực. Nếu nghiệm thỏa x² = px + q thì thay x² bằng px + q để hạ bậc.</p></div>
+>
 
       <div class="idea">
         <p>Với \(ax^2 + bx + c = 0\), tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Nếu mỗi nghiệm thỏa \(x^2 = px + q\), có thể thay \(x^2\) bằng \(px + q\) để hạ bậc.</p>
@@ -331,7 +341,9 @@ const THI10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Đỉnh parabol không nguyên thì nộp đáp số nào? <em>— Thử hai giá trị nguyên kề đỉnh rồi chọn, không nộp hoành độ đỉnh.</em></p>
         <p>Số ngày phải nguyên, x phải là gì? <em>— Ước của 200, vì số ngày 200/x phải nguyên.</em></p>
-      </details>
+      </details
+      <div class="memory"><p><strong>Nhớ nhanh.</strong> Đáp số phải thỏa điều kiện nguyên: số người, số xe, số ngày. Đỉnh parabol không nguyên thì thử hai giá trị nguyên kề đỉnh rồi chọn.</p></div>
+>
 
       <div class="examq">
         <p><strong>Hà Nội 2026, câu V.</strong> Hoàn thành 1000 sản phẩm. Mỗi công nhân làm 5 sản phẩm một ngày. Thuê kho 3 triệu đồng một ngày. Thưởng mỗi công nhân 1 triệu đồng khi xong việc. Gọi \(x\) là số công nhân, \(x\) nguyên dương và \(x\) là ước của 200, vì số ngày \(\dfrac{200}{x}\) phải nguyên.</p>
