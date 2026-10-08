@@ -3465,15 +3465,15 @@ const LESSONS = [
           <circle cx="180" cy="105" r="95" fill="none" stroke="#DDDDDD" stroke-width="2"/>
           <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
           <text x="166" y="121" font-size="13">O</text>
-          <polygon points="180,15 272,105 180,195 88,105" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="180" cy="15" r="3" fill="#58C4DD"/>
-          <text x="172" y="30" font-size="13" fill="#58C4DD">A</text>
-          <circle cx="272" cy="105" r="3" fill="#58C4DD"/>
-          <text x="276" y="118" font-size="13" fill="#58C4DD">B</text>
-          <circle cx="180" cy="195" r="3" fill="#58C4DD"/>
-          <text x="184" y="208" font-size="13" fill="#58C4DD">C</text>
-          <circle cx="88" cy="105" r="3" fill="#58C4DD"/>
-          <text x="72" y="118" font-size="13" fill="#58C4DD">D</text>
+          <polygon points="180,10 275,105 180,200 85,105" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="180" cy="10" r="3" fill="#58C4DD"/>
+          <text x="172" y="26" font-size="13" fill="#58C4DD">A</text>
+          <circle cx="275" cy="105" r="3" fill="#58C4DD"/>
+          <text x="279" y="118" font-size="13" fill="#58C4DD">B</text>
+          <circle cx="180" cy="200" r="3" fill="#58C4DD"/>
+          <text x="184" y="214" font-size="13" fill="#58C4DD">C</text>
+          <circle cx="85" cy="105" r="3" fill="#58C4DD"/>
+          <text x="69" y="118" font-size="13" fill="#58C4DD">D</text>
           <text x="150" y="52" font-size="12" fill="#FC6255">∠A</text>
           <text x="226" y="138" font-size="12" fill="#FC6255">∠C</text>
           <text x="104" y="138" font-size="12" fill="#9A72AC">∠B</text>
