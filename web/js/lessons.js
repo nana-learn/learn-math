@@ -2135,7 +2135,13 @@ const LESSONS = [
       <div class="example">
         <p><strong>Ví dụ (SGK).</strong> Vẽ đồ thị \(y = -2x^2\): lập bảng \(x = -2; -1; 0; 1; 2\) được \(y = -8; -2; 0; -2; -8\). Năm điểm \((-2; -8), (-1; -2), (0; 0), (1; -2), (2; -8)\) nối lại cho parabol hướng xuống. Tìm điểm có tung độ \(-\tfrac{1}{2}\): \(-2x^2 = -\tfrac{1}{2} \Rightarrow x = \pm\tfrac{1}{2}\), hai điểm đối xứng qua \(Oy\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(y = -3x^2\) hướng lên hay hướng xuống? <em>— Hướng xuống. Dù \(3x^2\) dương, hệ số \(a = -3 < 0\) nên parabol mở xuống, đỉnh tại gốc \(O\).</em></p>
+        <p>\((2;\ 8)\) thuộc đồ thị \(y = 2x^2\) thì còn điểm nào thuộc? <em>— \((-2;\ 8)\), vì \((-x)^2 = x^2\) và đồ thị đối xứng qua trục \(Oy\).</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Vẽ \(y = 2x^2\) bằng vài cặp, đừng đoán hình.</p>
         <table>
           <tr><th>\(x\)</th><td>\(-2\)</td><td>\(-1\)</td><td>\(0\)</td><td>\(1\)</td><td>\(2\)</td></tr>
@@ -2246,7 +2252,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ:</strong> \(\Delta\) quyết định <em>số</em> nghiệm, \(-\dfrac{b}{2a}\) quyết định <em>giá trị</em> nghiệm. Và nếu \(a\) với \(c\) trái dấu thì \(ac < 0\) nên \(\Delta = b^2 - 4ac > 0\): phương trình <strong>luôn có hai nghiệm phân biệt</strong>.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\Delta = b^2 - 4ac\) với \(c\) âm thì sao? <em>— Ví dụ \(c = -1\), \(-4ac\) thành cộng \(4a\). Quên dấu trừ sẽ tính sai delta.</em></p>
+        <p>\(\Delta < 0\) thì làm gì? <em>— Dừng lại: phương trình vô nghiệm. Không khai căn số âm.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Giải \(x^2 - 7x + 10 = 0\). Hệ số của \(x^2\) là \(1 \neq 0\), đúng là bậc hai.</p>
         <p>\(\Delta = 49 - 40 = 9 > 0\), hai nghiệm phân biệt. \(x = \dfrac{7 \pm 3}{2}\), nên \(x = 5\) hoặc \(x = 2\).</p>
         <p>Kiểm tra. \(x = 5\): \(25 - 35 + 10 = 0\). \(x = 2\): \(4 - 14 + 10 = 0\).</p>
@@ -2342,7 +2354,13 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Hiểu nhanh.</strong> Muốn tìm hai số biết tổng \(S\) và tích \(P\): lập phương trình \(X^2 - SX + P = 0\). Hai số chính là hai nghiệm — Viète chạy theo chiều ngược lại.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tổng hai nghiệm của \(ax^2 + bx + c = 0\) là gì? <em>— \(-\frac{b}{a}\), có dấu trừ. Với \(x^2 - 7x + 10 = 0\), tổng là 7, tích là 10.</em></p>
+        <p>Khi nào mới được dùng Viète? <em>— Khi đã chứng minh phương trình có nghiệm, tức \(\Delta \ge 0\). Không có nghiệm thì không có tổng để nói.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Với \(x^2 - 7x + 10 = 0\), Viète đọc ngay tổng hai nghiệm là 7 và tích là 10. Hai số cộng được 7, nhân được 10 là 2 và 5. Không cần công thức nghiệm.</p>
         <p>Nhẩm khi \(a + b + c = 0\): \(x^2 - 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = 1\) là một nghiệm. Nghiệm kia bằng tích, tức 2. Kiểm tra: \((x - 1)(x - 2) = x^2 - 3x + 2\).</p>
         <p>Khi \(a - b + c = 0\): \(x^2 + 3x + 2 = 0\) có \(1 - 3 + 2 = 0\), nên \(x = -1\) là một nghiệm. Nghiệm kia là \(-2\), vì tích bằng 2.</p>
@@ -2422,7 +2440,13 @@ const LESSONS = [
         <p><strong>Sân bóng.</strong> Chiều rộng nhỏ hơn chiều dài 30 m, diện tích 1 800 m². Gọi chiều rộng \(x\) mét, \(x > 0\). Chiều dài là \(x + 30\). \(x(x + 30) = 1800\), tức \(x^2 + 30x - 1800 = 0\).</p>
         <p>\(\Delta = 900 + 7200 = 8100 = 90^2\). \(x = \dfrac{-30 \pm 90}{2}\), nên \(x = 30\) hoặc \(x = -60\). \(-60\) không phải chiều rộng, loại. Nhận \(x = 30\). Chiều dài 60 m. Kiểm tra: \(60 - 30 = 30\) và \(30 \cdot 60 = 1800\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Nghiệm âm của phương trình có phải đáp số không? <em>— Không, nếu nó là độ dài, số người… Phải loại theo điều kiện ẩn đã ghi từ đầu.</em></p>
+        <p>Diện tích hình chữ nhật lập phương trình thế nào? <em>— dài × rộng. (Dài + rộng) × 2 là chu vi, không phải diện tích.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình chữ nhật có chu vi 28 m và diện tích 48 m². Tìm hai cạnh.</p>
         <p>Gọi chiều rộng là \(x\) mét, với \(0 < x < 14\). Nửa chu vi là 14, nên chiều dài là \(14 - x\). Diện tích cho \(x(14 - x) = 48\), tức \(x^2 - 14x + 48 = 0\).</p>
         <p>\(\Delta = 196 - 192 = 4\), \(x = \dfrac{14 \pm 2}{2}\), nên \(x = 8\) hoặc \(x = 6\). Hai giá trị đổi vai: cạnh 6 m và 8 m.</p>
