@@ -32,6 +32,39 @@ const THI10_LESSONS = [
         </table>
         <p>Tần số nhóm \([150;\ 155)\) là 14. Kiểm tra \(10 + 18 + 14 + 6 + 2 = 50\). Tần số tương đối \(\dfrac{14}{50} \cdot 100\% = 28\%\). Bạn cao đúng 155 cm không thuộc nhóm này. 155 thuộc \([155;\ 160)\).</p>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số chiều cao 50 học sinh lớp 6">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="28" y="46" font-size="12" fill="#9A72AC">HS</text>
+          <text x="54" y="30" font-size="12" text-anchor="end">20</text>
+          <text x="54" y="66" font-size="12" text-anchor="end">15</text>
+          <text x="54" y="102" font-size="12" text-anchor="end">10</text>
+          <text x="54" y="138" font-size="12" text-anchor="end">5</text>
+          <line x1="60" y1="26" x2="345" y2="26" stroke="#DDDDDD" stroke-width="0.5" stroke-dasharray="3 3"/>
+          <line x1="60" y1="62" x2="345" y2="62" stroke="#DDDDDD" stroke-width="0.5" stroke-dasharray="3 3"/>
+          <line x1="60" y1="98" x2="345" y2="98" stroke="#DDDDDD" stroke-width="0.5" stroke-dasharray="3 3"/>
+          <line x1="60" y1="134" x2="345" y2="134" stroke="#DDDDDD" stroke-width="0.5" stroke-dasharray="3 3"/>
+          <rect x="70" y="98" width="50" height="72" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="125" y="40" width="50" height="130" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
+          <rect x="180" y="69" width="50" height="101" fill="#83C167" fill-opacity="0.35" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="235" y="127" width="50" height="43" fill="#9A72AC" fill-opacity="0.35" stroke="#9A72AC" stroke-width="1.5"/>
+          <rect x="290" y="156" width="50" height="14" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="95" y="90" font-size="12" text-anchor="middle">10</text>
+          <text x="150" y="32" font-size="12" text-anchor="middle">18</text>
+          <text x="205" y="61" font-size="12" text-anchor="middle">14</text>
+          <text x="260" y="119" font-size="12" text-anchor="middle">6</text>
+          <text x="315" y="148" font-size="12" text-anchor="middle">2</text>
+          <text x="95" y="186" font-size="12" text-anchor="middle">[140;145)</text>
+          <text x="150" y="186" font-size="12" text-anchor="middle">[145;150)</text>
+          <text x="205" y="186" font-size="12" text-anchor="middle">[150;155)</text>
+          <text x="260" y="186" font-size="12" text-anchor="middle">[155;160)</text>
+          <text x="315" y="186" font-size="12" text-anchor="middle">[160;165)</text>
+          <text x="180" y="202" font-size="12" fill="#9A72AC" text-anchor="middle">Chiều cao (cm)</text>
+        </svg>
+        <figcaption>Cộng các cột: 10 + 18 + 14 + 6 + 2 = 50. Nhóm [150;155) có 14 học sinh, tần số tương đối 28%.</figcaption>
+      </figure>
+
       <div class="examq">
         <p><strong>Hà Nội 2025, câu I.1.</strong> Thời gian tự học của 300 học sinh lớp 9, đơn vị giờ.</p>
         <table>
@@ -250,6 +283,25 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ đề hỏi xung quanh, thể tích, hay mặt cầu. Trụ: xung quanh \(2\pi Rh\), thể tích \(\pi R^2 h\). Cầu: mặt \(4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\), và 1 lít = 1000 cm³ — đừng để nguyên cm³ khi so với lít.</p>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình trụ bán kính R cao h và hình cầu bán kính R với công thức">
+          <ellipse cx="115" cy="130" rx="42" ry="13" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="73" y1="130" x2="73" y2="65" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="157" y1="130" x2="157" y2="65" stroke="#58C4DD" stroke-width="2"/>
+          <ellipse cx="115" cy="65" rx="42" ry="13" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="115" y1="65" x2="115" y2="130" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="119" y="102" font-size="12" fill="#FC6255">h</text>
+          <line x1="73" y1="130" x2="115" y2="130" stroke="#83C167" stroke-width="1.5"/>
+          <text x="92" y="148" font-size="12" fill="#83C167">R</text>
+          <text x="115" y="178" font-size="12" fill="#FC6255" text-anchor="middle">S_xq = 2πRh, V = πR²h</text>
+          <circle cx="260" cy="100" r="45" fill="#9A72AC" fill-opacity="0.25" stroke="#9A72AC" stroke-width="2"/>
+          <line x1="260" y1="100" x2="305" y2="100" stroke="#83C167" stroke-width="1.5"/>
+          <text x="309" y="104" font-size="12" fill="#83C167">R</text>
+          <text x="260" y="176" font-size="12" fill="#9A72AC" text-anchor="middle">S = 4πR²</text>
+        </svg>
+        <figcaption>Đọc đề hỏi xung quanh, thể tích hay mặt cầu: trụ dùng 2πRh và πR²h, cầu dùng 4πR². Đề lấy π ≈ 3,14; 1 lít = 1000 cm³.</figcaption>
+      </figure>
+
       <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Hình trụ: diện tích xung quanh và thể tích là gì? <em>— 2πRh và πR²h. Đề lấy π ≈ 3,14.</em></p>
@@ -307,6 +359,30 @@ const THI10_LESSONS = [
         <p><strong>Hà Nội 2026, câu IV.2a.</strong> Tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). \(H\) nằm trên \(AB\), \(HB > HA\), \(H\) khác \(A\). Qua \(H\) kẻ đường vuông góc với \(BC\), cắt \(BC\) tại \(D\) và cắt \(AC\) tại \(E\). Chứng minh \(A, H, D, C\) cùng thuộc một đường tròn.</p>
         <p>Tam giác \(HAC\) vuông tại \(A\), vì \(H\) nằm trên \(AB\) và góc \(A\) của tam giác \(ABC\) là góc vuông. Tam giác \(HDC\) vuông tại \(D\), vì \(HD\) vuông góc với \(BC\). Hai góc đối của tứ giác \(AHDC\) đều bằng \(90^\circ\), cộng thành \(180^\circ\). Vậy tứ giác nội tiếp. Đáp án chính thức đi theo hướng này.</p>
       </div>
+      <figure class="figure">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tứ giác AHDC nội tiếp đường tròn đường kính HC, góc tại A và D vuông">
+          <circle cx="180" cy="105" r="85" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <line x1="95" y1="105" x2="265" y2="105" stroke="#FC6255" stroke-dasharray="4 3" stroke-width="1.5"/>
+          <circle cx="180" cy="20" r="3" fill="#58C4DD"/>
+          <text x="180" y="12" font-size="12" fill="#58C4DD" text-anchor="middle">A</text>
+          <circle cx="95" cy="105" r="3" fill="#83C167"/>
+          <text x="88" y="118" font-size="12" fill="#83C167">H</text>
+          <circle cx="180" cy="190" r="3" fill="#58C4DD"/>
+          <text x="180" y="204" font-size="12" fill="#58C4DD" text-anchor="middle">D</text>
+          <circle cx="265" cy="105" r="3" fill="#83C167"/>
+          <text x="272" y="118" font-size="12" fill="#83C167">C</text>
+          <line x1="180" y1="20" x2="95" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="20" x2="265" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="190" x2="95" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="190" x2="265" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <polygon points="176,28 168,32 172,40 180,36" fill="#FC6255"/>
+          <polygon points="176,182 172,190 180,194 184,186" fill="#FC6255"/>
+          <text x="150" y="70" font-size="12" fill="#FC6255">∠HAC = 90°</text>
+          <text x="206" y="150" font-size="12" fill="#FC6255">∠HDC = 90°</text>
+        </svg>
+        <figcaption>HC là đường kính; A và D trên đường tròn nên ∠HAC và ∠HDC cùng nhìn HC và bằng 90° → tứ giác AHDC nội tiếp.</figcaption>
+      </figure>
+
       <div class="examq">
         <p><strong>Hà Nội 2025, câu IV.2a.</strong> Tam giác \(ABC\) có ba góc nhọn, nội tiếp đường tròn \((O)\). Đường cao \(AD\) cắt đường tròn tại điểm thứ hai \(E\). \(K\) là chân đường vuông góc kẻ từ \(E\) xuống \(AB\). Chứng minh \(E, D, B, K\) cùng thuộc một đường tròn.</p>
         <p>Chỗ cần nhìn: \(EK\) vuông góc với \(AB\), và \(AD\) là đường cao nên vuông góc với \(BC\). Tìm hai góc vuông, hoặc hai góc cùng chắn một đoạn. Đừng nhảy sang đường phân giác của ý b khi ý a chưa xong.</p>
