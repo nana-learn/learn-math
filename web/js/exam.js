@@ -307,7 +307,7 @@ const THI10_LESSONS = [
       </details>
 
       <div class="memory">
-        <p>Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Cầu: \(S = 4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\). 1 lít \(= 1000\) cm³.</p>
+        <p><strong>Nhớ nhanh.</strong> Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Cầu: \(S = 4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\). 1 lít \(= 1000\) cm³.</p>
       </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu IV.1.</strong> Xô hình trụ, cao 25 cm, bán kính đáy 12 cm. Coi đáy không đáng kể.</p>
