@@ -105,6 +105,9 @@ const THI10_LESSONS = [
         <p>Viết \(\Omega\). Nói các kết quả đồng khả năng vì các thẻ hoặc các bóng cùng loại và được lấy ngẫu nhiên. Rồi</p>
         \[ P(A) = \dfrac{n(A)}{n(\Omega)}. \]
       </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Nhầm đề 2026 thành 10 thẻ. Đếm số 9 trong hộp chỉ có 8 thẻ. Quên rút gọn \(\dfrac{2}{8}\).</p>
+      </div>
       <div class="examq">
         <p><strong>Hà Nội 2026, câu I.2.</strong> Hộp có 6 quả bóng cùng loại, ghi 1, 2, 3, 4, 5, 6, mỗi số một quả. Lấy ngẫu nhiên một quả. Biến cố \(A\): số ghi trên quả bóng là số chẵn.</p>
         <p>\(\Omega = \{1, 2, 3, 4, 5, 6\}\), sáu kết quả đồng khả năng. Thuận lợi: 2, 4, 6, nên \(n(A) = 3\). \(P(A) = \dfrac{3}{6} = \dfrac{1}{2}\). Đáp án chính thức là \(\dfrac{1}{2}\).</p>
@@ -113,9 +116,7 @@ const THI10_LESSONS = [
         <p><strong>Hà Nội 2025, câu I.2.</strong> Hộp có 8 thẻ cùng loại, ghi 1 đến 8, mỗi số một thẻ. Rút ngẫu nhiên một thẻ. Biến cố \(A\): số ghi trên thẻ chia hết cho 3.</p>
         <p>\(\Omega\) có 8 phần tử. Thuận lợi: thẻ 3 và thẻ 6. Số 9 chia hết cho 3 nhưng không có trong hộp. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\). Đáp án chính thức là \(\dfrac{1}{4}\).</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Nhầm đề 2026 thành 10 thẻ. Đếm số 9 trong hộp chỉ có 8 thẻ. Quên rút gọn \(\dfrac{2}{8}\).</p>
-      </div>
+      
       <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Hộp 8 thẻ ghi 1 đến 8, rút một thẻ. Xác suất chia hết cho 3? <em>— 2/8 = 1/4. Không đếm số 9 vì không có trong hộp.</em></p>
@@ -140,7 +141,10 @@ const THI10_LESSONS = [
     summary: "Đặt điều kiện, thay số, đặt t = √x, rồi dùng kết quả đã rút.",
     body: String.raw`
       <p>Năm 2025 và 2026, biểu thức chứa căn là câu II. Năm 2024, cùng dạng ấy là câu I. Năm 2023 cũng mở đầu bằng hai biểu thức. Làm ý 1 bằng cách thế. Làm ý 3 trên biểu thức đã rút, không trên biểu thức gốc.</p>
-      <div class="examq">
+      
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong> Bỏ \(x = \dfrac{1}{4}\) vì nó là phân số. Ở đề 2025, lấy \(x = 1\) trong khi đề hỏi số lớn nhất. Ở đề 2024, nhận \(x = 1\): lúc đó \(A - B = 0\), không nhỏ hơn 0.</p>
+      </div><div class="examq">
         <p><strong>Hà Nội 2026, câu II.</strong> \(A = \dfrac{\sqrt{x} - 4}{\sqrt{x}}\), \(B = \dfrac{4}{\sqrt{x} - 3} + \dfrac{x - 7\sqrt{x} - 12}{x - 9}\), với \(x > 0\), \(x \neq 9\).</p>
         <p>Khi \(x = 25\), \(\sqrt{x} = 5\), \(A = \dfrac{5 - 4}{5} = \dfrac{1}{5}\).</p>
         <p>Đặt \(t = \sqrt{x}\), \(t > 0\), \(t \neq 3\). Mẫu thứ hai là \((t - 3)(t + 3)\). Quy đồng rồi rút được \(B = \dfrac{t}{t + 3}\). Nhân lại: \(P = A \cdot B = \dfrac{t - 4}{t + 3} = 1 - \dfrac{7}{t + 3}\).</p>
@@ -154,9 +158,7 @@ const THI10_LESSONS = [
         <p><strong>Hà Nội 2024, câu I.</strong> \(A = \dfrac{x}{\sqrt{x} - 3}\), \(x > 0\), \(x \neq 9\). Khi \(x = 16\), \(A = \dfrac{16}{4 - 3} = 16\). Đề còn hỏi \(A - B < 0\). Đáp án chính thức: \(0 < x < 9\) và \(x \neq 1\).</p>
         <p><strong>Hà Nội 2023, câu 1.</strong> \(A = \dfrac{x + 2}{\sqrt{x}}\), \(x > 0\), \(x \neq 1\). Khi \(x = 9\), \(A = \dfrac{11}{3}\).</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong> Bỏ \(x = \dfrac{1}{4}\) vì nó là phân số. Ở đề 2025, lấy \(x = 1\) trong khi đề hỏi số lớn nhất. Ở đề 2024, nhận \(x = 1\): lúc đó \(A - B = 0\), không nhỏ hơn 0.</p>
-      </div>
+      
       <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Khi tìm x để P nguyên, nghiệm x = 1/4 có bị loại vì là phân số không? <em>— Không. Phân số không phải lý do loại; chỉ loại theo điều kiện x > 0, x ≠ 9.</em></p>
