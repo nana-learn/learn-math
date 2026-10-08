@@ -473,6 +473,11 @@ const LESSONS = [
         <p>Gọi số lớn \(x\), số nhỏ \(y\), điều kiện \(x, y \in \mathbb{N}\). Hệ \(x + y = 10\), \(x - y = 12\). Cộng từng vế: \(2x = 22\), \(x = 11\), \(y = -1\).</p>
         <p>Cặp \((11;\ -1)\) đúng là nghiệm của hệ. Nhưng \(-1\) không phải số tự nhiên, vi phạm điều kiện đã đặt. Bài toán vô nghiệm trong phạm vi đề yêu cầu. Kết luận "hai số là 11 và \(-1\)" là sai, dù phép giải hệ không sai.</p>
       </div>
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao bài gà và thỏ cần hai phương trình, không viết một phương trình \(2x + 4y + x + y = 38\)? <em>— Gộp như vậy mất một điều kiện. \(3x + 5y = 38\) có vô số cặp; đề cho hai câu riêng, phải giữ hai phương trình.</em></p>
+      </details>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hai số có tổng 15 và hiệu 3. Tìm số lớn.</p>
         <p>Gọi số lớn là \(x\), số nhỏ là \(y\). Điều kiện: \(x > y\), cả hai dương. Hai câu trong đề: \(x + y = 15\) và \(x - y = 3\).</p>
@@ -499,10 +504,7 @@ const LESSONS = [
         <p>Năm 2025 cùng dạng: ba lô và máy tính niêm yết tổng 885 nghìn đồng, giảm 20% và 25%, trả 682 nghìn đồng. Vẫn là một hệ hai ẩn, không phải một phương trình.</p>
       </div>
       
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Vì sao bài gà và thỏ cần hai phương trình, không viết một phương trình \(2x + 4y + x + y = 38\)? <em>— Gộp như vậy mất một điều kiện. \(3x + 5y = 38\) có vô số cặp; đề cho hai câu riêng, phải giữ hai phương trình.</em></p>
-      </details>
+      
     `,
     exercises: [
       {
