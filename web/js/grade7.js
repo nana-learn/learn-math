@@ -433,6 +433,11 @@ const G7_LESSONS = [
           <li>Hai đường thẳng cắt nhau tạo bốn góc. Cộng lại phải ra \(360^\circ\); ra số khác là đã nhầm kề bù với đối đỉnh.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hai góc kề nhau, tổng \(90^\circ\), có phải kề bù không? <em>— Không. Kề bù cần hai cạnh còn lại thẳng hàng và tổng \(180^\circ\). Kề nhau chưa chắc kề bù.</em></p>
+        <p>Hai góc bằng \(70^\circ\) ở hai nửa khác nhau có phải đối đỉnh không? <em>— Chưa chắc. Đối đỉnh cần hai cặp tia đối nhau xuất phát từ hai góc ấy, không chỉ cần bằng nhau.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Kề bù: tổng 180°. Đối đỉnh: bằng nhau. Phân giác: hai nửa bằng nhau.</p></div>
     `,
     exercises: [
@@ -490,6 +495,11 @@ const G7_LESSONS = [
           <li>Muốn chứng minh song song: một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng \(180^\circ\).</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hai góc so le trong bằng \(70^\circ\): hai đường thẳng có song song không? <em>— Có. Một cặp so le trong bằng nhau chứng tỏ hai đường song song.</em></p>
+        <p>Hai góc trong cùng phía bằng nhau chứ không cộng \(180^\circ\): có kết luận song song được không? <em>— Không. Trong cùng phía phải cộng \(180^\circ\) mới đủ; bằng nhau không phải điều kiện.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Muốn chứng minh song song: tìm một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng 180°.</p></div>
     `,
     exercises: [
@@ -545,6 +555,11 @@ const G7_LESSONS = [
           <li>Đường qua \(M\) vuông góc với \(MH\) (chân \(H\)) là đường song song duy nhất với \(d\): không kẻ được đường thứ hai.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Qua một điểm ngoài đường thẳng, kẻ được mấy đường song song với đường ấy? <em>— Đúng một. Viết “ít nhất một” là sai: tiên đề Euclid nói đúng một.</em></p>
+        <p>Hai đường cùng vuông góc với đường thứ ba thì thế nào với nhau? <em>— Song song với nhau. Cùng cắt góc \(70^\circ\) thì chưa chắc, chỉ cùng vuông góc mới đủ.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đúng một đường song song kẻ từ một điểm ngoài. Hai đường cùng vuông góc một đường thì song song.</p></div>
     `,
     exercises: [
@@ -597,6 +612,11 @@ const G7_LESSONS = [
           <li>Đừng dùng điều chưa chứng minh như “hai góc nhìn bằng nhau”. Chứng minh góc kề bù với góc vuông thì dùng kề bù cộng \(180^\circ\), không dùng thước đo.</li>
         </ul>
       </div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đo trên hình được \(89^\circ\) rồi viết “góc vuông” có phải chứng minh không? <em>— Không. Hình chỉ gợi ý; phải dùng định nghĩa hay định lí để suy ra, không dùng thước đo.</em></p>
+        <p>Chứng minh góc kề bù với góc vuông: dùng điều gì? <em>— Dùng kề bù cộng \(180^\circ\), trừ đi \(90^\circ\) còn \(90^\circ\). Không dùng thước đo hay “nhìn bằng nhau”.</em></p>
+      </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Viết rõ giả thiết. Mỗi câu có vì sao. Đừng dùng điều chưa chứng minh.</p></div>
     `,
     exercises: [
