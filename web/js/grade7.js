@@ -37,6 +37,15 @@ const G7_LESSONS = [
             <div class="idea">
         <p><strong>Cách nghĩ khi gặp một số lạ.</strong> Hỏi ba câu: Có viết được thành tử nguyên trên mẫu nguyên khác 0 không? Nếu có, nó hữu tỉ. Số đó còn viết được cách khác không? Trên trục số nó đứng bên nào của gốc, cách gốc bao nhiêu?</p>
       </div>
+<div class="warn">
+        <p><strong>Trông giống mà không phải.</strong></p>
+        <ul>
+          <li>\(\dfrac{6}{8}\) và \(\dfrac{3}{4}\) là cùng một số. Đề hỏi “cho các ví dụ khác nhau” thì không được đếm một số hai lần.</li>
+          <li>\(\pi\), \(\sqrt{2}\) không viết được thành phân số hai số nguyên, nên không nằm trong \(\mathbb{Q}\).</li>
+          <li>Hai số âm: số có giá trị tuyệt đối lớn hơn lại <em>nhỏ hơn</em>. \(-\dfrac{3}{4} &lt; -\dfrac{2}{3}\), vì cùng mẫu 12 thì \(-\dfrac{9}{12} &lt; -\dfrac{8}{12}\).</li>
+          <li>Trước khi so, cùng đơn vị trước: 162 cm với 1,6 m phải đổi thành 162 cm với 160 cm.</li>
+        </ul>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> Bạn Nam cao 162 cm, muốn so với 1,6 m. Đổi 1,6 m = 160 cm. Tỉ số chiều cao so với 160 cm là \(\dfrac{162}{160} = \dfrac{81}{80}\). Đó là số hữu tỉ. Không cần số thập phân dài.</p>
         <p>Đặt \(\dfrac{81}{80}\) lên trục: lớn hơn 1 một chút, vì 81 &gt; 80. Điểm nằm ngay sau vạch 1.</p>
@@ -69,6 +78,15 @@ const G7_LESSONS = [
       <p>Phép tính trên \(\mathbb{Q}\) không mới. Việc cần làm là viết mỗi số thành phân số, mẫu dương, rồi dùng quy tắc cũ.</p>
       <div class="idea">
         <p>Cộng trừ: quy đồng mẫu. Nhân: tử nhân tử, mẫu nhân mẫu. Chia: nhân với nghịch đảo. Mẫu của kết quả phải khác 0.</p>
+      </div>
+<div class="warn">
+        <p><strong>Lỗi cũ mà vẫn phạm.</strong></p>
+        <ul>
+          <li>\(\dfrac{2}{-3} + \dfrac{1}{2}\): không lấy tử cộng tử, mẫu cộng mẫu. Chuyển dấu âm lên tử trước: \(-\dfrac{2}{3} + \dfrac{1}{2} = -\dfrac{1}{6}\).</li>
+          <li>Chia là nhân với nghịch đảo của số bị chia: \(\dfrac{2}{5} : \dfrac{4}{7} = \dfrac{2}{5} \cdot \dfrac{7}{4}\). Không đảo ngược số đứng trước.</li>
+          <li>Chia cho 0 thì phép tính không có nghĩa. Kiểm tra mẫu của kết quả và số chia trước khi bấm.</li>
+          <li>Kiểm tra dấu trước khi nộp: \(\dfrac{3}{4} &lt; \dfrac{5}{6}\) nên \(\dfrac{3}{4} - \dfrac{5}{6}\) phải âm.</li>
+        </ul>
       </div>
       <div class="example">
         <p><strong>Ví dụ dễ.</strong> \(\dfrac{1}{6} + \dfrac{1}{3} = \dfrac{1}{6} + \dfrac{2}{6} = \dfrac{3}{6} = \dfrac{1}{2}\).</p>
@@ -124,6 +142,15 @@ const G7_LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng sách bài tập.</strong> Cùng cơ số thì cộng mũ khi nhân. Mũ chẵn làm cơ số âm thành dương. \(a^0=1\) khi \(a\neq 0\). Không viết \(0^0\).</p>
       </div>
+<div class="warn">
+        <p><strong>Nơi dễ sai nhất với luỹ thừa.</strong></p>
+        <ul>
+          <li>\(2^5 \neq 2 \cdot 5\). Mũ là <em>số lượng</em> thừa số: \(2^5 = 32\).</li>
+          <li>\(2^3 + 2^3 = 2 \cdot 2^3 = 2^4\). Cộng các luỹ thừa thì không cộng mũ — chỉ nhân cùng cơ số mới cộng mũ.</li>
+          <li>\((2^3)^2 = 2^{3 \cdot 2} = 2^6 = 64\), không phải \(2^9\): luỹ thừa của luỹ thừa thì nhân các mũ.</li>
+          <li>\(\dfrac{3^7}{3^4} = 3^{7-4}\): chia cùng cơ số thì trừ mũ, không trừ cơ số. Cơ số âm: mũ chẵn ra dương, mũ lẻ ra âm.</li>
+        </ul>
+      </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cùng cơ số thì cộng trừ mũ khi nhân chia. Nhân cơ số thì mũ phân phối. Không đổi \(a^n + b^n\) thành \((a+b)^n\).</p></div>
     `,
     exercises: [
@@ -155,6 +182,15 @@ const G7_LESSONS = [
       </div>
             <div class="idea">
         <p><strong>Thứ tự nhớ như lớp.</strong> Ngoặc như “phòng kín”: xong việc trong phòng rồi mới ra. Mũ như “lũy lên”. Nhân chia như “nhóm ngang hàng”, làm trái sang phải. Cộng trừ ra sau cùng.</p>
+      </div>
+<div class="warn">
+        <p><strong>Thứ tự và dấu đổi.</strong></p>
+        <ul>
+          <li>\(12 : 3 \cdot 2 = 8\), không phải \(2\): nhân và chia cùng bậc, làm từ trái sang phải.</li>
+          <li>\(3 + 4 \cdot 2 = 11\), không phải \(14\): nhân trước, cộng sau.</li>
+          <li>Chuyển vế thì đổi dấu: từ \(x + \dfrac{2}{5} = \dfrac{7}{5}\) ra \(x = \dfrac{7}{5} - \dfrac{2}{5}\), không phải \(+ \dfrac{2}{5}\).</li>
+          <li>Nhân hay chia hai vế thì nhân, chia <em>cả hai</em> vế cùng một số khác 0. Quên một vế là đổi được phương trình.</li>
+        </ul>
       </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> \(18 : 3 + 2 \cdot 4^2\). Mũ trước: \(4^2 = 16\). Nhân chia trái sang phải: \(18 : 3 = 6\), \(2 \cdot 16 = 32\). Cộng: \(6 + 32 = 38\). Nếu cộng 3 + 2 trước rồi chia 18 sẽ ra sai.</p>
