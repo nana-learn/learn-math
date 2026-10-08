@@ -1,3 +1,9 @@
+## 2026-10-08 Toan 9 c7-b22 figure nesting (`38c9e7d`)
+- **Issue**: c7-b22 was the ONLY Toan 9 lesson whose `<figure>` was nested inside a `<div class="example">` (a bar-chart of the frequency table) — all 25 other figure lessons keep figures standalone.
+- **Fix**: moved the figure out of the example div to standalone (between the example and the `Hiểu nhanh` idea), matching the convention.
+- **Verified**: syntax, tag balance clean (line/rect are SVG self-closing tags — false positives), KaTeX balanced, SVG well-formed (xmllint), smoke 84/52, render 0 failures.
+- **Post-fix scan**: all 26 Toan 9 figure lessons now have standalone figures.
+
 ## 2026-10-08 Toan 9 c1-b1 two-warn merge (`9448e7e`)
 - **Issue**: c1-b1 was the only Toan 9 lesson with TWO `.warn` blocks — one mid-lesson at 50% ("Cái gì trông giống mà không phải", not right after the first idea) and a stranded closing warn at 96% ("Sai lầm thường gặp") left behind by the earlier end-warn relocation.
 - **Fix**: merged all unique points into a single "Sai lầm thường gặp" warn right after the first `.idea` (11%), deduped the `0x+0y=3` point. Removed both old warns.
