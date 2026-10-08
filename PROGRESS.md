@@ -1,3 +1,8 @@
+## 2026-10-08 Thi-10 tv10-6 memory title (`5504d78`)
+- **Issue**: tv10-6's `.memory` block (a formula recap right after its `.check`, mid-lesson at 59%) was the only untitled memory among the Thi-10 skill lessons — tv10-1/2/3/4/5/8 all use `<strong>Nhớ nhanh.</strong>`.
+- **Fix**: added the `<strong>Nhớ nhanh.</strong>` title to tv10-6's memory. (tv10-7's "Ba câu hay dùng." and tv10-9's untitled closing formula memory keep the author's intentional closing-memory style.)
+- **Verified**: syntax, KaTeX balanced (18/18), tag balance clean, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Toan 9 c7-b22 figure nesting (`38c9e7d`)
 - **Issue**: c7-b22 was the ONLY Toan 9 lesson whose `<figure>` was nested inside a `<div class="example">` (a bar-chart of the frequency table) — all 25 other figure lessons keep figures standalone.
 - **Fix**: moved the figure out of the example div to standalone (between the example and the `Hiểu nhanh` idea), matching the convention.
