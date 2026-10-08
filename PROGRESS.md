@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 9 c2-b6 open-dot figure fix (`99c663b`)
+- **Issue**: the number-line figure's bottom "x < 3" dot used fill=#333333 (dark solid), contradicting the figcaption "chấm rỗng cho <, >" — it should be an open/hollow dot. The top "x ≤ −3" dot was correctly solid yellow (closed dot).
+- **Fix**: changed the bottom dot's fill to #FFFFFF so it renders hollow with the yellow ring, matching the closed/open convention.
+- **Verified**: syntax, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Toan 7 g7-b36 figcaption typo (`94c47e6`)
 - **Issue**: the figure caption said "Sàn toàn phần" (floor) instead of "Diện tích toàn phần" (total surface area). The lesson body already uses "Diện tích toàn phần S = 2(ab + bh + ha)".
 - **Fix**: corrected the figcaption to "Diện tích toàn phần = 2(ab + bh + ha)".
