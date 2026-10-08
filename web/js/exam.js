@@ -43,6 +43,12 @@ const THI10_LESSONS = [
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Viết 14 mà không viết \(\dfrac{14}{50}\). Cho giá trị đúng bằng đầu mút phải vào nhóm đang xét. Cộng năm cột không ra cỡ mẫu mà vẫn chia.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Nhóm [150; 155) có 14 học sinh trong 50. Tần số tương đối là gì? <em>— 14/50 × 100% = 28%, không phải 14%.</em></p>
+        <p>Bạn cao đúng 155 cm thuộc nhóm nào? <em>— [155; 160), không thuộc [150; 155). Nhóm [a; b) lấy a, không lấy b.</em></p>
+      </details>
+
     `,
     exercises: [
       { type: "num", prompt: "Đề 2026: tần số của nhóm chiều cao [150; 155) là bao nhiêu?", answer: 14, hint: "Đọc đúng cột, rồi kiểm tra tổng năm cột bằng 50.", explain: "Cột [150; 155) ghi 14. Tổng 10 + 18 + 14 + 6 + 2 = 50." },
@@ -75,6 +81,12 @@ const THI10_LESSONS = [
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Nhầm đề 2026 thành 10 thẻ. Đếm số 9 trong hộp chỉ có 8 thẻ. Quên rút gọn \(\dfrac{2}{8}\).</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hộp 8 thẻ ghi 1 đến 8, rút một thẻ. Xác suất chia hết cho 3? <em>— 2/8 = 1/4. Không đếm số 9 vì không có trong hộp.</em></p>
+        <p>Trước khi chia phải làm gì? <em>— Viết Ω và nói các kết quả đồng khả năng vì các thẻ cùng loại, lấy ngẫu nhiên.</em></p>
+      </details>
+
     `,
     exercises: [
       { type: "num", prompt: "Đề 2026, 6 quả bóng ghi 1 đến 6. Biến cố “số chẵn” có bao nhiêu kết quả thuận lợi?", answer: 3, hint: "2, 4 và 6.", explain: "Ba số chẵn. n(Ω) = 6, nên P(A) = 3/6 = 1/2." },
@@ -109,6 +121,12 @@ const THI10_LESSONS = [
       <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Bỏ \(x = \dfrac{1}{4}\) vì nó là phân số. Ở đề 2025, lấy \(x = 1\) trong khi đề hỏi số lớn nhất. Ở đề 2024, nhận \(x = 1\): lúc đó \(A - B = 0\), không nhỏ hơn 0.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Khi tìm x để P nguyên, nghiệm x = 1/4 có bị loại vì là phân số không? <em>— Không. Phân số không phải lý do loại; chỉ loại theo điều kiện x > 0, x ≠ 9.</em></p>
+        <p>Đề hỏi số nguyên dương lớn nhất thì có chọn x = 1 không? <em>— Không, kiểm tra điều kiện rồi mới chọn; x = 1 không thỏa bất phương trình.</em></p>
+      </details>
+
     `,
     exercises: [
       { type: "num", prompt: "Đề 2026, A = (√x − 4)/√x. Khi x = 25, 5A bằng bao nhiêu?", answer: 1, hint: "A = 1/5.", explain: "√25 = 5, A = 1/5, nên 5A = 1." },
@@ -130,6 +148,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ đề hỏi một phương trình hay một hệ. “Kế hoạch may mỗi ngày \(x\)” là một ẩn; “hoa hồng và hoa cúc” là hai ẩn phải viết hai phương trình. Đổi đơn vị trước khi nhân: thời gian bằng quãng đường chia vận tốc, tiền bằng đơn giá nhân số lượng, và nhớ điều kiện \(x\) nguyên dương hay không âm.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>"Kế hoạch may mỗi ngày x" là một ẩn hay hai? <em>— Một ẩn, nên một phương trình. "Hoa hồng và hoa cúc" là hai ẩn, phải viết hai phương trình.</em></p>
+        <p>Thời gian bằng gì? <em>— Quãng đường chia vận tốc, không phải nhân. Tiền bằng đơn giá nhân số lượng.</em></p>
+      </details>
+
       <div class="examq">
         <p><strong>Hà Nội 2026, câu III.1.</strong> Kế hoạch may mỗi ngày \(x\) chiếc, \(x\) nguyên dương. Ba ngày đầu may đúng kế hoạch. Bảy ngày sau, mỗi ngày may hơn kế hoạch 5 chiếc. Sau 10 ngày được 335 chiếc.</p>
         \[ 3x + 7(x + 5) = 335. \]
@@ -174,6 +198,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Chỉ dùng Viète khi phương trình có nghiệm thực. Tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\) — đừng nhầm dấu của \(-\dfrac{b}{a}\). Khi nghiệm thỏa \(x^2 = px + q\), thay \(x^2\) bằng \(px + q\) để hạ bậc; quy đồng với mẫu \(x_1 x_2 = 1\) rồi mới thay vào.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tổng và tích của ax² + bx + c = 0 là gì? <em>— -b/a và c/a. Đừng nhầm dấu của -b/a.</em></p>
+        <p>Khi nào được dùng Viète? <em>— Khi phương trình có nghiệm thực. Rồi mới thay x² = px + q để hạ bậc nếu nghiệm thỏa.</em></p>
+      </details>
+
       <div class="idea">
         <p>Với \(ax^2 + bx + c = 0\), tổng \(-\dfrac{b}{a}\), tích \(\dfrac{c}{a}\). Nếu mỗi nghiệm thỏa \(x^2 = px + q\), có thể thay \(x^2\) bằng \(px + q\) để hạ bậc.</p>
       </div>
@@ -210,6 +240,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ đề hỏi xung quanh, thể tích, hay mặt cầu. Trụ: xung quanh \(2\pi Rh\), thể tích \(\pi R^2 h\). Cầu: mặt \(4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\), và 1 lít = 1000 cm³ — đừng để nguyên cm³ khi so với lít.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình trụ: diện tích xung quanh và thể tích là gì? <em>— 2πRh và πR²h. Đề lấy π ≈ 3,14.</em></p>
+        <p>Hình cầu thì dùng công thức nào? <em>— 4πR², không phải 2πRh. 1 lít = 1000 cm³.</em></p>
+      </details>
+
       <div class="memory">
         <p>Trụ: \(S_{xq} = 2\pi Rh\), \(V = \pi R^2 h\). Cầu: \(S = 4\pi R^2\). Đề lấy \(\pi \approx 3{,}14\). 1 lít \(= 1000\) cm³.</p>
       </div>
@@ -251,6 +287,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Chứng minh tứ giác nội tiếp thường dùng hai góc cùng nhìn một cạnh, hoặc một góc vuông ứng với đường kính. Làm xong ý a rồi mới sang ý b. Đừng kết luận bốn điểm nội tiếp khi chưa chứng minh được hai góc bằng nhau hay hai góc vuông cùng nhìn một đoạn.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Chứng minh tứ giác nội tiếp thường dùng cách nào? <em>— Hai góc cùng nhìn một cạnh, hoặc một góc vuông ứng với đường kính.</em></p>
+        <p>Khi nào kết luận bốn điểm cùng thuộc một đường tròn? <em>— Khi đã chứng minh hai góc bằng nhau hoặc hai góc vuông cùng nhìn một đoạn.</em></p>
+      </details>
+
       <div class="examq">
         <p><strong>Hà Nội 2026, câu IV.2a.</strong> Tam giác \(ABC\) vuông tại \(A\), nội tiếp đường tròn đường kính \(BC\). \(H\) nằm trên \(AB\), \(HB > HA\), \(H\) khác \(A\). Qua \(H\) kẻ đường vuông góc với \(BC\), cắt \(BC\) tại \(D\) và cắt \(AC\) tại \(E\). Chứng minh \(A, H, D, C\) cùng thuộc một đường tròn.</p>
         <p>Tam giác \(HAC\) vuông tại \(A\), vì \(H\) nằm trên \(AB\) và góc \(A\) của tam giác \(ABC\) là góc vuông. Tam giác \(HDC\) vuông tại \(D\), vì \(HD\) vuông góc với \(BC\). Hai góc đối của tứ giác \(AHDC\) đều bằng \(90^\circ\), cộng thành \(180^\circ\). Vậy tứ giác nội tiếp. Đáp án chính thức đi theo hướng này.</p>
@@ -285,6 +327,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Đáp số phải thỏa điều kiện số nguyên: số người, số xe, số ngày. Đỉnh parabol không nguyên thì không nộp chính hoành độ đỉnh — thử hai giá trị nguyên kề đỉnh rồi chọn. Nhớ \(x\) là ước của 200 để số ngày \(\dfrac{200}{x}\) nguyên.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đỉnh parabol không nguyên thì nộp đáp số nào? <em>— Thử hai giá trị nguyên kề đỉnh rồi chọn, không nộp hoành độ đỉnh.</em></p>
+        <p>Số ngày phải nguyên, x phải là gì? <em>— Ước của 200, vì số ngày 200/x phải nguyên.</em></p>
+      </details>
+
       <div class="examq">
         <p><strong>Hà Nội 2026, câu V.</strong> Hoàn thành 1000 sản phẩm. Mỗi công nhân làm 5 sản phẩm một ngày. Thuê kho 3 triệu đồng một ngày. Thưởng mỗi công nhân 1 triệu đồng khi xong việc. Gọi \(x\) là số công nhân, \(x\) nguyên dương và \(x\) là ước của 200, vì số ngày \(\dfrac{200}{x}\) phải nguyên.</p>
         \[ C(x) = x + \dfrac{600}{x}. \]
@@ -320,6 +368,12 @@ const THI10_LESSONS = [
 <div class="warn">
         <p><strong>Sai lầm thường gặp.</strong> Đọc kĩ nhóm trước khi đếm tần số: giá trị bằng đầu mút phải vào nhóm đang xét, không vào nhóm trước. Cộng các cột phải ra cỡ mẫu rồi mới chia ra tần số tương đối. Mỗi số dưới đây thuộc một năm riêng — đừng dùng nhầm đáp số năm nọ cho năm kia.</p>
       </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Giá trị bằng đầu mút phải vào nhóm nào? <em>— Nhóm đang xét, không vào nhóm trước. [a; b) lấy a, không lấy b.</em></p>
+        <p>Trước khi chia ra tần số tương đối phải làm gì? <em>— Cộng các cột ra đúng cỡ mẫu rồi mới chia.</em></p>
+      </details>
+
       <div class="examq">
         <p><strong>Đáp số đã đối chiếu.</strong></p>
         <ul>
