@@ -881,7 +881,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Ba cửa.</strong> Dưới căn phải không âm. Dấu \(\sqrt{\ }\) chỉ cho ra số không âm. Ra khỏi \(\sqrt{a^2}\) phải đi qua \(|a|\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vì sao \(\sqrt{(-3)^2} = 3\), không phải \(-3\)? <em>— Dấu căn chỉ trả về số không âm. Bình phương đã xoá dấu, nên \(\sqrt{a^2} = |a|\), không phải \(a\).</em></p>
+        <p>Đề hỏi "các căn bậc hai của 121" thì trả lời gì? <em>— 11 và \(-11\). Còn \(\sqrt{121}\) chỉ bằng 11, vì kí hiệu \(\sqrt{\ }\) chỉ lấy căn không âm.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Hình vuông diện tích 64 m² có cạnh \(\sqrt{64} = 8\) m. Không lấy \(-8\): độ dài không âm, và kí hiệu \(\sqrt{\ }\) chỉ lấy căn không âm.</p>
         <p>\(\sqrt{(-5)^2} = |-5| = 5\). Bình phương đã xoá dấu; căn số học không trả dấu âm lại. Viết \(\sqrt{(-5)^2} = -5\) là sai.</p>
         <p>\(\sqrt{3x - 6}\) chỉ có nghĩa khi \(3x - 6 \geq 0\), tức \(x \geq 2\). Với \(x = 2\), căn bằng 0. Với \(x = 1\), dưới căn là \(-3\), không có căn bậc hai.</p>
@@ -962,7 +968,13 @@ const LESSONS = [
         <p>\(\sqrt{8} : \sqrt{2} = \sqrt{8 : 2} = \sqrt{4} = 2\).</p>
         <p>Với \(a > 0\): \(\sqrt{52a^3} : \sqrt{13a} = \sqrt{4a^2} = |2a| = 2a\). Điều kiện \(a > 0\) mới được bỏ dấu giá trị tuyệt đối.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\sqrt{9 + 16}\) có bằng \(\sqrt{9} + \sqrt{16}\) không? <em>— Không. \(\sqrt{9+16}=5\), còn \(\sqrt{9}+\sqrt{16}=7\). Căn chỉ tách được qua phép nhân và phép chia.</em></p>
+        <p>Với \(a = -3\), \(\sqrt{a^2 b}\) bằng gì? <em>— Bằng \(|a|\sqrt{b}\), không phải \(a\sqrt{b}\). Vì \(a\) âm, kéo ra ngoài căn phải lấy giá trị tuyệt đối.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> \(\sqrt{16 \cdot 9} = \sqrt{16} \cdot \sqrt{9} = 4 \cdot 3 = 12\). Căn tách được qua phép nhân. Không được viết \(\sqrt{16} + \sqrt{9} = 7\): căn không tách qua phép cộng, và \(\sqrt{16 + 9} = 5\), không phải 7.</p>
         <p>\(\sqrt{50} : \sqrt{2} = \sqrt{50 : 2} = \sqrt{25} = 5\). Cùng kết quả nếu rút gọn trước: \(\sqrt{50} = 5\sqrt{2}\), rồi \(\dfrac{5\sqrt{2}}{\sqrt{2}} = 5\).</p>
         <p>Với \(a = -3\) và \(b = 4\): \(\sqrt{a^2 b} = |a|\sqrt{b} = 3 \cdot 2 = 6\). Viết \(a\sqrt{b} = -6\) là sai, vì \(a\) âm không được kéo ra ngoài căn mà quên giá trị tuyệt đối.</p>
@@ -1050,7 +1062,13 @@ const LESSONS = [
         <p>Bạn Vuông viết \(\sqrt{(-2)^2 \cdot 5} = -2\sqrt{5}\). Sai. \(\sqrt{(-2)^2 \cdot 5} = |-2|\sqrt{5} = 2\sqrt{5}\). Kết quả khai căn không âm.</p>
         <p>Chỉ cộng được các căn <em>cùng loại</em>, cùng biểu thức dưới căn: \(\sqrt{2} + 3\sqrt{2} = 4\sqrt{2}\), như cộng 1 quả và 3 quả. \(\sqrt{2} + \sqrt{3}\) không gộp thành \(\sqrt{5}\).</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Viết \(-2\sqrt{5} = \sqrt{(-2)^2 \cdot 5}\) có đúng không? <em>— Không. Kết quả khai căn không âm, nên phải là \(-\sqrt{20}\). Dấu trừ đứng ngoài căn.</em></p>
+        <p>\(\sqrt{50}\) rút gọn là bao nhiêu? <em>— \(5\sqrt{2}\). 25 xuống được thành 5, 2 ở lại dưới căn — không phải \(2\sqrt{25}\).</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Rút gọn \(\sqrt{72}\). Tìm thừa số chính phương: \(72 = 36 \cdot 2\), nên \(\sqrt{72} = 6\sqrt{2}\).</p>
         <p>Khử mẫu: \(\sqrt{\dfrac{9}{2}} = \sqrt{\dfrac{18}{4}} = \dfrac{\sqrt{18}}{2} = \dfrac{3\sqrt{2}}{2}\). Mẫu đã ra khỏi dấu căn.</p>
         <p>Đưa số âm vào trong căn phải giữ dấu trừ bên ngoài: \(-2\sqrt{3} = -\sqrt{12}\). Không được viết \(-2\sqrt{3} = \sqrt{12}\).</p>
@@ -1136,7 +1154,13 @@ const LESSONS = [
       <div class="memory">
         <p><strong>Cách nhớ.</strong> Căn bậc hai kén: chỉ nhận số không âm, và dấu \(\sqrt{\ }\) chỉ trả số không âm. Căn bậc ba nhận mọi số, và trả về đúng dấu của số ấy.</p>
       </div>
-      <div class="example">
+      
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(\sqrt[3]{-8}\) có nghĩa không? <em>— Có, bằng \(-2\). Căn bậc ba nhận mọi số thực và giữ dấu; "không xác định" là tính chất của căn bậc hai.</em></p>
+        <p>\(\sqrt[3]{8} + \sqrt[3]{27}\) có bằng \(\sqrt[3]{35}\) không? <em>— Không. Bằng \(2 + 3 = 5\); căn không cộng xuyên qua dấu cộng.</em></p>
+      </details>
+<div class="example">
         <p><strong>Ví dụ làm chậm.</strong> Khối lập phương thể tích 64 cm³ có cạnh \(\sqrt[3]{64}\). Vì \(4^3 = 64\), cạnh bằng 4 cm. Chỉ một đáp số: căn bậc ba không có cặp đối nhau như căn bậc hai.</p>
         <p>\(\sqrt[3]{-125} = -5\), vì \((-5)^3 = -125\). Số âm vẫn có căn bậc ba, và căn ấy âm.</p>
         <p>Kiểm tra tính chất với số âm: \(\bigl(\sqrt[3]{-8}\bigr)^3 = (-2)^3 = -8\). Không lấy giá trị tuyệt đối. \(\sqrt[3]{8} + \sqrt[3]{27} = 2 + 3 = 5\), trong khi \(\sqrt[3]{35}\) không bằng 5.</p>
