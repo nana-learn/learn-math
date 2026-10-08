@@ -440,6 +440,15 @@ const LESSONS = [
         <p>2. Đề cho hai câu nào về hai đại lượng đó? Tìm chữ "tổng", "hiệu", "gấp", "còn lại", "tất cả", "mỗi". Mỗi câu là một phương trình.</p>
         <p>3. Sau khi giải, cặp tìm được có đúng điều kiện đã ghi không? Không đúng thì không được đưa vào đáp số, dù nó là nghiệm của hệ.</p>
       </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong></p>
+        <ul>
+          <li>Giải xong hệ là viết đáp số ngay. Phải đối chiếu điều kiện: nguyên, dương, lớn hơn dư, không âm…</li>
+          <li>Quên ghi điều kiện lúc gọi ẩn. Đến lúc kiểm tra không biết loại cặp nào.</li>
+          <li>Nhầm thương và dư: bị chia \(=\) chia \(\times\) thương \(+\) dư. Dư cộng vào, và dư nhỏ hơn số chia.</li>
+          <li>Gộp "số con" và "số chân" vào một phương trình. Hai câu chuyện là hai phương trình.</li>
+        </ul>
+      </div>
       <div class="example">
         <p><strong>Một bài đếm được.</strong> Chuồng có gà và thỏ, tất cả 10 con, đếm được 28 chân. Gà 2 chân, thỏ 4 chân. Hỏi mỗi loài mấy con?</p>
         <p>Gọi \(x\) là số gà, \(y\) là số thỏ. Điều kiện: \(x, y\) là số tự nhiên, \(x \geq 0\), \(y \geq 0\). Hai câu trong đề:</p>
@@ -489,15 +498,7 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội, câu III.2.</strong> Năm 2026: mua 25 bông hoa hồng và cúc hết 180 nghìn đồng. Hồng 8 nghìn một bông, cúc 6 nghìn. Hỏi mỗi loại bao nhiêu. Hai câu trong đề là hai phương trình. Gọi \(x, y\), ghi điều kiện nguyên dương, giải, rồi kiểm tra.</p>
         <p>Năm 2025 cùng dạng: ba lô và máy tính niêm yết tổng 885 nghìn đồng, giảm 20% và 25%, trả 682 nghìn đồng. Vẫn là một hệ hai ẩn, không phải một phương trình.</p>
       </div>
-      <div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong></p>
-        <ul>
-          <li>Giải xong hệ là viết đáp số ngay. Phải đối chiếu điều kiện: nguyên, dương, lớn hơn dư, không âm…</li>
-          <li>Quên ghi điều kiện lúc gọi ẩn. Đến lúc kiểm tra không biết loại cặp nào.</li>
-          <li>Nhầm thương và dư: bị chia \(=\) chia \(\times\) thương \(+\) dư. Dư cộng vào, và dư nhỏ hơn số chia.</li>
-          <li>Gộp "số con" và "số chân" vào một phương trình. Hai câu chuyện là hai phương trình.</li>
-        </ul>
-      </div>
+      
       <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Vì sao bài gà và thỏ cần hai phương trình, không viết một phương trình \(2x + 4y + x + y = 38\)? <em>— Gộp như vậy mất một điều kiện. \(3x + 5y = 38\) có vô số cặp; đề cho hai câu riêng, phải giữ hai phương trình.</em></p>
@@ -2760,6 +2761,14 @@ const LESSONS = [
         \]
         <p>\(m_i\) là số lần, \(n\) là cỡ mẫu. Các giá trị chia hết mẫu, nên các phần trăm cộng lại phải thành 100%. Lệch 100% là làm tròn quá sớm hoặc chia sai mẫu số.</p>
       </div>
+      <div class="warn">
+        <p><strong>Sai lầm thường gặp.</strong></p>
+        <ul>
+          <li>Quên nhân 100% khi đề yêu cầu tỉ lệ phần trăm.</li>
+          <li>Làm tròn quá sớm khiến tổng không đúng 100%.</li>
+          <li>Nhầm tần số \(m\) với tần số tương đối \(f\).</li>
+        </ul>
+      </div>
       <div class="example">
         <p><strong>Ba mươi ngày.</strong> Tốt 8, Trung bình 13, Kém 5, Xấu 4. Tổng lần \(8 + 13 + 5 + 4 = 30\), đúng cỡ mẫu. Tỉ lệ: \(\dfrac{8}{30} \approx 26{,}7\%\), \(\dfrac{13}{30} \approx 43{,}3\%\), \(\dfrac{5}{30} \approx 16{,}7\%\), \(\dfrac{4}{30} \approx 13{,}3\%\). Cộng \(26{,}7 + 43{,}3 + 16{,}7 + 13{,}3 = 100\). Tốt không phải 8%: 8 là số ngày, không phải phần trăm.</p>
       </div>
@@ -2810,14 +2819,7 @@ const LESSONS = [
       <div class="idea">
         <p><strong>Kĩ năng cần luyện.</strong> Tần số tương đối \(\dfrac{m}{n}\cdot 100\%\). So hai mẫu khác cỡ thì dùng phần trăm, không dùng số lần.</p>
       </div>
-<div class="warn">
-        <p><strong>Sai lầm thường gặp.</strong></p>
-        <ul>
-          <li>Quên nhân 100% khi đề yêu cầu tỉ lệ phần trăm.</li>
-          <li>Làm tròn quá sớm khiến tổng không đúng 100%.</li>
-          <li>Nhầm tần số \(m\) với tần số tương đối \(f\).</li>
-        </ul>
-      </div>
+
       <div class="example">
         <p><strong>Luyện dạng sách bài tập.</strong> 8 lần trên 25 lần là \(32\%\), không phải 8%. Nhóm kia 12/50 = 24%. 12 lớn hơn 8 nhưng 24% nhỏ hơn 32%.</p>
       </div>
