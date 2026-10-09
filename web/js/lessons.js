@@ -1306,18 +1306,18 @@ const LESSONS = [
     body: String.raw`
       <p><strong>Tình huống.</strong> Làm sao biết "độ dốc" của một con đèo mà không cần leo lên đo từng mét? Người ta so sánh <em>chiều cao</em> với <em>độ dài đoạn dốc</em> — đó chính là một tỉ số giữa các cạnh của tam giác vuông. Tỉ số ấy đặc trưng cho góc dốc: góc như nhau thì tỉ số như nhau, dù tam giác to hay nhỏ.</p>
       <p>Cho tam giác \(ABC\) vuông tại \(A\). Xét góc nhọn \(B\): cạnh \(AC\) gọi là <em>cạnh đối</em> của góc \(B\) (đối diện, không chạm vào \(B\)), cạnh \(AB\) gọi là <em>cạnh kề</em> của góc \(B\) (nằm kề bên góc), cạnh \(BC\) là <em>cạnh huyền</em> (đối diện góc vuông).</p>
-      <figure class="figure">
-        <svg viewBox="0 0 360 205" role="img" aria-label="Tam giác vuông với cạnh đối, cạnh kề, cạnh huyền">
-          <polygon points="50,170 300,170 300,35" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <rect x="50" y="150" width="18" height="18" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
-          <path d="M 266 170 A 34 34 0 0 1 272 152" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="243" y="161" font-size="15" fill="#FC6255">α</text>
-          <text x="160" y="188" font-size="13" fill="#58C4DD">cạnh kề</text>
-          <text x="306" y="105" font-size="13" fill="#83C167">cạnh đối</text>
-          <text x="120" y="82" font-size="13" fill="#9A72AC" transform="rotate(-28 150 95)">cạnh huyền</text>
-          <text x="40" y="188" font-size="13">A</text>
-          <text x="306" y="188" font-size="13">B</text>
-          <text x="306" y="30" font-size="13">C</text>
+      <figure class="figure" data-animation="c4-b11-triangle">
+        <svg viewBox="0 0 360 205" role="img" aria-label="Tam giác vuông với cạnh đối, cạnh kề, cạnh huyền" id="fig-c4-b11">
+          <polygon points="50,170 300,170 300,35" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="450" stroke-dashoffset="450"/>
+          <rect x="50" y="150" width="18" height="18" fill="none" stroke="#DDDDDD" stroke-width="1.5" opacity="0"/>
+          <path d="M 266 170 A 34 34 0 0 1 272 152" fill="none" stroke="#FC6255" stroke-width="2" stroke-dasharray="45" stroke-dashoffset="45" opacity="0"/>
+          <text x="243" y="161" font-size="15" fill="#FC6255" opacity="0">α</text>
+          <text x="160" y="188" font-size="13" fill="#58C4DD" opacity="0">cạnh kề</text>
+          <text x="306" y="105" font-size="13" fill="#83C167" opacity="0">cạnh đối</text>
+          <text x="120" y="82" font-size="13" fill="#9A72AC" transform="rotate(-28 150 95)" opacity="0">cạnh huyền</text>
+          <text x="40" y="188" font-size="13" opacity="0">A</text>
+          <text x="306" y="188" font-size="13" opacity="0">B</text>
+          <text x="306" y="30" font-size="13" opacity="0">C</text>
         </svg>
         <figcaption>Cạnh huyền luôn dài nhất, đứng đối diện góc vuông.</figcaption>
       </figure>
@@ -1559,19 +1559,19 @@ const LESSONS = [
           <li>Viết \((O; R)\) với \(R < 0\) — bán kính phải dương.</li>
         </ul>
       </div>
-      <figure class="figure">
-        <svg viewBox="0 0 260 220" role="img" aria-label="Vị trí điểm so với đường tròn">
-          <circle cx="120" cy="110" r="80" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <circle cx="120" cy="110" r="3" fill="#FFFF00"/>
-          <text x="104" y="126" font-size="13">O</text>
-          <line x1="120" y1="110" x2="177" y2="53" stroke="#FC6255" stroke-width="2"/>
-          <text x="140" y="70" font-size="14" fill="#FC6255">R</text>
-          <circle cx="177" cy="53" r="4" fill="#83C167"/>
-          <text x="185" y="48" font-size="13">A ∈ (O)</text>
-          <circle cx="140" cy="88" r="4" fill="#58C4DD"/>
-          <text x="148" y="92" font-size="13">C trong</text>
-          <circle cx="222" cy="150" r="4" fill="#9A72AC"/>
-          <text x="196" y="168" font-size="13">B ngoài</text>
+      <figure class="figure" data-animation="c5-b13-circle">
+        <svg viewBox="0 0 260 220" role="img" aria-label="Vị trí điểm so với đường tròn" id="fig-c5-b13">
+          <circle cx="120" cy="110" r="80" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="300" stroke-dashoffset="300"/>
+          <circle cx="120" cy="110" r="3" fill="#FFFF00" opacity="0"/>
+          <text x="104" y="126" font-size="13" opacity="0">O</text>
+          <line x1="120" y1="110" x2="177" y2="53" stroke="#FC6255" stroke-width="2" stroke-dasharray="60" stroke-dashoffset="60"/>
+          <text x="140" y="70" font-size="14" fill="#FC6255" opacity="0">R</text>
+          <circle cx="177" cy="53" r="4" fill="#83C167" opacity="0"/>
+          <text x="185" y="48" font-size="13" opacity="0">A ∈ (O)</text>
+          <circle cx="140" cy="88" r="4" fill="#58C4DD" opacity="0"/>
+          <text x="148" y="92" font-size="13" opacity="0">C trong</text>
+          <circle cx="222" cy="150" r="4" fill="#9A72AC" opacity="0"/>
+          <text x="196" y="168" font-size="13" opacity="0">B ngoài</text>
         </svg>
         <figcaption>\(OM = R\): trên; \(OM &lt; R\): trong; \(OM &gt; R\): ngoài.</figcaption>
       </figure>
