@@ -306,6 +306,114 @@ const AnimationManager = {
           { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // c4-b12: Một số hệ thức giữa cạnh, góc trong tam giác vuông
+      'c4-b12': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.2 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c5-b14: Cung chứa góc
+      'c5-b14': {
+        steps: [
+          { selector: 'circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'path[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c5-b15: Độ dài đường tròn và hình tròn
+      'c5-b15': {
+        steps: [
+          { selector: 'circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+        ]
+      },
+      
+      // c5-b17: Hình quạt tròn
+      'c5-b17': {
+        steps: [
+          { selector: 'circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b19: Đồ thị của hàm số y = ax²
+      'c6-b19': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'text[fill]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b20: Đồ thị của hàm số y = ax² (tiếp)
+      'c6-b20': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:not([stroke])', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'path[stroke]', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'text[fill]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b21: Giải bài toán bằng cách lập phương trình
+      'c6-b21': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+        ]
+      },
+      
+      // c8-b25: Hình trụ - Diện tích xung quanh
+      'c8-b25': {
+        steps: [
+          { selector: 'ellipse:not([cy="180"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'ellipse[cy="180"]', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c8-b26: Thể tích hình trụ
+      'c8-b26': {
+        steps: [
+          { selector: 'ellipse:not([cy="180"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'ellipse[cy="180"]', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c10-b1: Mở đầu về hình cầu
+      'c10-b1': {
+        steps: [
+          { selector: 'circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     

@@ -79,6 +79,15 @@ const LESSONS = [
         <p>Bốn cặp đều đúng. Không cặp nào "đúng hơn" cặp kia.</p>
       </div>
       <figure class="figure">
+        <figure class="figure" data-animation="c4-b12">
+        <figure class="figure" data-animation="c5-b14">
+        <figure class="figure" data-animation="c5-b15">
+        <figure class="figure" data-animation="c5-b17">
+        <figure class="figure" data-animation="c6-b19">
+        <figure class="figure" data-animation="c6-b20">
+        <figure class="figure" data-animation="c6-b21">
+        <figure class="figure" data-animation="c8-b25">
+        <figure class="figure" data-animation="c8-b26">
         <svg viewBox="0 0 320 200" role="img" aria-label="Tập nghiệm của x + 2y = 3 là một đường thẳng">
           <line x1="22" y1="124" x2="306" y2="124" stroke="#BBBBBB" stroke-width="1.5"/>
           <line x1="100" y1="16" x2="100" y2="186" stroke="#BBBBBB" stroke-width="1.5"/>
