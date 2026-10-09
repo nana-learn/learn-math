@@ -7,8 +7,8 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 ### Current Status
 
 - **Total lessons to implement**: 39 (g8-b1 to g8-b39)
-- **Completed**: 29 lessons (g8-b1 to g8-b29)
-- **Remaining**: 10 lessons (g8-b30 to g8-b39)
+- **Completed**: 32 lessons (g8-b1 to g8-b32)
+- **Remaining**: 7 lessons (g8-b33 to g8-b39)
 
 ## Completed Lessons
 
@@ -53,9 +53,9 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 | g8-b27 | 7 | Khái niệm hàm số và đồ thị của hàm số | ⏳ |
 | g8-b28 | 7 | Hàm số bậc nhất và đồ thị của hàm số bậc nhất | ⏳ |
 | g8-b29 | 7 | Hệ số góc của đường thẳng | ⏳ |
-| g8-b30 | 8 | Kết quả có thể và kết quả thuận lợi | ⏳ |
-| g8-b31 | 8 | Cách tính xác suất của biến cố bằng tỉ số | ⏳ |
-| g8-b32 | 8 | Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng | ⏳ |
+| g8-b30 | 8 | Kết quả có thể và kết quả thuận lợi | ✅ |
+| g8-b31 | 8 | Cách tính xác suất của biến cố bằng tỉ số | ✅ |
+| g8-b32 | 8 | Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng | ✅ |
 | g8-b33 | 9 | Hai tam giác đồng dạng | ⏳ |
 | g8-b34 | 9 | Ba trường hợp đồng dạng của hai tam giác | ⏳ |
 | g8-b35 | 9 | Định lí Pythagore và ứng dụng | ⏳ |
@@ -80,9 +80,9 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 - [x] g8-b29: Hệ số góc của đường thẳng
 
 ### Phase 3: Chapter VIII - Mở đầu về tính xác suất (3 lessons)
-- [ ] g8-b30: Kết quả có thể và kết quả thuận lợi
-- [ ] g8-b31: Cách tính xác suất của biến cố bằng tỉ số
-- [ ] g8-b32: Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng
+- [x] g8-b30: Kết quả có thể và kết quả thuận lợi
+- [x] g8-b31: Cách tính xác suất của biến cố bằng tỉ số
+- [x] g8-b32: Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng
 
 ### Phase 4: Chapter IX - Tam giác đồng dạng (5 lessons)
 - [ ] g8-b33: Hai tam giác đồng dạng
