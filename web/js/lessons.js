@@ -5527,6 +5527,143 @@ const G8_LESSONS = [
       { type: "num", prompt: "Giá trị lớn nhất của \(\dfrac{5}{x^2+1}\) là bao nhiêu?", answer: 5, hint: "x²+1 ≥ 1.", explain: "x²+1 ≥ 1 nên 5/(x²+1) ≤ 5. Đạt tại x=0." },
     ],
   },
+
+  // ===== CHAPTER 6: PHÂN THỨC ĐẠI SỐ =====
+  {
+    id: "g8-b22",
+    num: 22,
+    chapter: 6,
+    title: "Tính chất cơ bản của phân thức đại số",
+    summary: "Tính chất cơ bản: nhân/chia tử và mẫu với cùng một đa thức khác 0. Quy đồng mẫu thức bằng cách tìm mẫu chung.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Khi cộng hai phân thức $\frac{1}{x}$ và $\frac{1}{x+1}$, ta cần quy đồng mẫu thức.</p>
+      <div class="definition">
+        <p><strong>Tính chất 1:</strong> $\frac{A}{B} = \frac{A\cdot M}{B\cdot M}$ với M là đa thức ≠ 0.</p>
+        <p><strong>Tính chất 2:</strong> $\frac{A}{B} = \frac{A:N}{B:N}$ với N là đa thức ≠ 0.</p>
+        <p><strong>Tính chất 3:</strong> $\frac{A}{B} = \frac{-A}{-B}$.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Biến đổi $\frac{x-2}{x+3} = \frac{x^2-4}{?}$</p>
+        <p>Tử mới = (x-2)(x+2) = x²-4, nên mẫu mới = (x+3)(x+2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Quy đồng $\frac{2}{x-1}$ và $\frac{3}{x+1}$</p>
+        <p>MC = (x-1)(x+1) = x²-1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> $\frac{3x}{6} = \frac{x}{2}$ (rút gọn).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhân mẫu nhưng quên nhân tử: $\frac{x}{x+1} ≠ \frac{x^2}{x+1}$.</li>
+          <li>Chia mẫu nhưng quên chia tử: $\frac{2x}{4} ≠ \frac{x}{4}$.</li>
+          <li>Thay đổi giá trị khi rút gọn: luôn kiểm tra điều kiện.</li>
+        </ul>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân/chia tử mẫu với cùng biểu thức ≠ 0.</p></div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Rút gọn $\frac{4x^2}{8x}$ khi x ≠ 0. <em>— = x/2.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Rút gọn $\frac{6x^2}{9x}$ khi x ≠ 0.", answer: "2x/3", accept: ["2x/3", "2x:3"], hint: "Rút 3x.", explain: "6x²/9x = 2x/3." },
+      { type: "num", prompt: "Giá trị của $\frac{x+3}{2x+6}$ tại x = 1.", answer: 0.5, accept: ["0.5", "1/2"], hint: "Rút gọn trước.", explain: "(x+3)/[2(x+3)] = 1/2." },
+      { type: "mc", prompt: "Phân thức nào bằng $\frac{x}{x+1}$?", choices: ["$\frac{x^2}{x(x+1)}$", "$\frac{x+1}{x+2}$"], correct: 0, hint: "Nhân tử và mẫu với x.", explain: "x²/[x(x+1)] = x/(x+1)." },
+      { type: "text", prompt: "Quy đồng $\frac{1}{x}$ và $\frac{1}{x+2}$. Mẫu chung là gì?", answer: "x(x+2)", accept: ["x(x+2)"], hint: "Tích của hai mẫu.", explain: "x(x+2)." },
+      { type: "text", prompt: "Rút gọn $\frac{x^2-4}{x^2+4x+4}$ khi x ≠ -2.", answer: "(x-2)/(x+2)", accept: ["(x-2)/(x+2)"], hint: "Phân tích thành nhân tử.", explain: "(x-2)(x+2)/(x+2)² = (x-2)/(x+2)." },
+      { type: "num", prompt: "Giá trị của $\frac{x^2-1}{x^2+2x+1}$ tại x = 3.", answer: 0.5, accept: ["0.5", "1/2"], hint: "Rút gọn trước.", explain: "(x-1)/(x+1) = 2/4 = 1/2." },
+    ],
+  },
+
+  {
+    id: "g8-b23",
+    num: 23,
+    chapter: 6,
+    title: "Phép cộng và phép trừ phân thức đại số",
+    summary: "Cộng/trừ cùng mẫu: giữ mẫu, cộng/trừ tử. Khác mẫu: quy đồng rồi cộng/trừ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tổng thời gian: $\frac{9}{x} + \frac{5}{y}$ giờ.</p>
+      <div class="definition">
+        <p><strong>Cộng/trừ cùng mẫu:</strong> $\frac{A}{M} \pm \frac{B}{M} = \frac{A\pm B}{M}$.</p>
+        <p><strong>Cộng/trừ khác mẫu:</strong> Quy đồng rồi cộng/trừ.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> $\frac{3}{x-1} + \frac{2}{x+1}$</p>
+        <p>MC = x²-1. Kết quả: $\frac{5x+1}{x^2-1}$.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> $\frac{2x}{x^2-4} - \frac{1}{x-2}$</p>
+        <p>Kết quả: $\frac{1}{x+2}$ (khi x ≠ 2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> $\frac{1}{x} + \frac{1}{x} = \frac{2}{x}$.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Cộng mẫu với mẫu: $\frac{1}{x} + \frac{1}{y} ≠ \frac{1}{x+y}$.</li>
+          <li>Quên dấu trừ khi trừ: $\frac{x}{x-1} - \frac{1}{x-1} = \frac{x-1}{x-1} = 1$.</li>
+        </ul>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cùng mẫu: giữ mẫu. Khác mẫu: quy đồng trước.</p></div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>$\frac{1}{x} + \frac{1}{2x} = ?$ <em>— = 3/(2x).</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tính $\frac{2}{x} + \frac{3}{x}$.", answer: "5/x", accept: ["5/x", "5:x"], hint: "Cùng mẫu.", explain: "5/x." },
+      { type: "text", prompt: "Tính $\frac{1}{x-1} + \frac{1}{x-1}$.", answer: "2/(x-1)", accept: ["2/(x-1)", "2:(x-1)"], hint: "Cùng mẫu.", explain: "2/(x-1)." },
+      { type: "text", prompt: "Tính $\frac{1}{x} + \frac{1}{x+1}$.", answer: "(2x+1)/(x(x+1))", accept: ["(2x+1)/(x(x+1))"], hint: "Quy đồng.", explain: "(x+1+x)/(x(x+1))." },
+      { type: "text", prompt: "Tính $\frac{x}{x+2} - \frac{2}{x+2}$.", answer: "(x-2)/(x+2)", accept: ["(x-2)/(x+2)"], hint: "Cùng mẫu.", explain: "(x-2)/(x+2)." },
+      { type: "text", prompt: "Tính $\frac{1}{x-2} - \frac{1}{x+2}$.", answer: "4/(x^2-4)", accept: ["4/(x^2-4)", "4:(x^2-4)"], hint: "MC = x²-4.", explain: "[(x+2)-(x-2)]/(x²-4)." },
+    ],
+  },
+
+  {
+    id: "g8-b24",
+    num: 24,
+    chapter: 6,
+    title: "Phép nhân và phép chia phân thức đại số",
+    summary: "Nhân: nhân tử với tử, mẫu với mẫu. Chia: nhân với nghịch đảo.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Diện tích: $\frac{x+1}{2} \cdot \frac{2}{x-1}$.</p>
+      <div class="definition">
+        <p><strong>Nhân:</strong> $\frac{A}{B} \cdot \frac{C}{D} = \frac{A\cdot C}{B\cdot D}$.</p>
+        <p><strong>Chia:</strong> $\frac{A}{B} : \frac{C}{D} = \frac{A}{B} \cdot \frac{D}{C}$.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> $\frac{x+1}{x-1} \cdot \frac{x-1}{x+2}$ = $\frac{x+1}{x+2}$.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> $\frac{2x}{x+3} : \frac{4x}{x+3}$ = $\frac{1}{2}$.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> $\frac{x}{2} \cdot \frac{2}{x} = 1$ (x ≠ 0).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhân mẫu với tử: $\frac{x}{y} \cdot \frac{y}{x} ≠ \frac{xy}{yx}$ (sai logic).</li>
+          <li>Chia cho phân thức: phải nhân với nghịch đảo.</li>
+        </ul>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân: tử×tử, mẫu×mẫu. Chia: nhân với nghịch đảo.</p></div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>$\frac{x}{y} \cdot \frac{y}{x} = ?$ <em>— = 1.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tính $\frac{x}{2} \cdot \frac{4}{x}$.", answer: "2", accept: ["2"], hint: "Rút gọn.", explain: "4/2 = 2." },
+      { type: "text", prompt: "Tính $\frac{x+1}{x} \cdot \frac{x}{x+2}$.", answer: "(x+1)/(x+2)", accept: ["(x+1)/(x+2)"], hint: "Rút x.", explain: "(x+1)/(x+2)." },
+      { type: "text", prompt: "Tính $\frac{3x}{4} : \frac{6x}{8}$.", answer: "1", accept: ["1"], hint: "Nhân với nghịch đảo.", explain: "1." },
+      { type: "text", prompt: "Tính $\frac{x^2-1}{x} : \frac{x+1}{x}$.", answer: "x-1", accept: ["x-1"], hint: "Phân tích tử.", explain: "(x-1)(x+1)/x \cdot x/(x+1) = x-1." },
+      { type: "text", prompt: "Tính $\frac{2}{x-1} \cdot \frac{x-1}{3}$.", answer: "2/3", accept: ["2/3", "2:3"], hint: "Rút (x-1).", explain: "2/3." },
+    ],
+  },
 ];
 
 const COURSES = [
