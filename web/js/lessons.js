@@ -5536,7 +5536,7 @@ const COURSES = [
     title: "Toán 8",
     level: "THCS",
     subtitle: "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống",
-    blurb: "Chương I–V, Bài 1–20. Ví dụ viết mới, không chép SGK.",
+    blurb: "Chương I–X, Bài 1–39 của cả hai tập. Ví dụ viết mới, không chép SGK.",
     chapters: G8_CHAPTERS,
     lessons: G8_LESSONS,
   },
