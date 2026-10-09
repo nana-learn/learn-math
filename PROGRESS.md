@@ -194,3 +194,33 @@ Files modified:
 - web/js/lessons.js: +472 lines for 5 new lessons
 
 Committed c1c5be9. Pushed to GitHub Pages main branch.
+
+## 2026-01-10 Grade 8 Part 2 lessons g8-b30 through g8-b32 (c1c5bd1)
+
+Added Grade 8 Part 2 lessons covering Chapter VIII: Mở đầu về tính xác suất của biến cố (Introduction to probability of events):
+
+- g8-b30: Kết quả có thể và kết quả thuận lợi (Possible outcomes and favorable outcomes)
+  - Sample space Ω, possible outcomes, events, favorable outcomes
+  - Probability P(E) = number of favorable outcomes / number of possible outcomes
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b31: Cách tính xác suất của biến cố bằng tỉ số (Calculating probability using ratio)
+  - Formula P(E) = m/n where n = number of possible outcomes, m = number of favorable outcomes
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b32: Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng (Relationship between experimental probability and theoretical probability)
+  - Experimental probability P_n(E) = number of favorable outcomes / number of trials
+  - Theoretical probability P(E)
+  - Law of large numbers: P_n(E) → P(E) as n → ∞
+  - 6 interactive exercises with hints and detailed explanations
+
+Each lesson follows Vietnamese pedagogy:
+- Situation (tình huống) → Definitions → Examples (slow down → easy → hard → pitfalls)
+- Look Back (nhìn lại) → Self-check (tự kiểm tra) → Practice exercises (luyện dạng SBT)
+
+Files modified:
+- web/js/lessons.js: +286 lines for 3 new lessons
+
+Committed c1c5bd1. Pushed to GitHub Pages main branch.
+
+**Note**: The insertion script `insert_g8_b30_32.py` was fixed to add a comma to the previous lesson's closing brace before inserting new lessons, ensuring valid JavaScript array syntax.
