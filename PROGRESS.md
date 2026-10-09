@@ -1,3 +1,8 @@
+## 2026-10-08 Toan 7 g7-b35 circumcircle fix (`94c6e81`)
+- **Issue**: two errors: (1) yellow O dot at (140,140) (midpoint of base BC) instead of circumcenter (140,95); (2) dashed circumcircle r=78 centered (140,95) didn't pass through triangle vertices (actual r=109.66).
+- **Fix**: redesigned triangle (A=(40,80), B=(140,140), C=(40,140)) with circumcenter O=(90,110) and r=58.3, so the circle passes through all vertices and the O dot marks the center correctly.
+- **Verified**: syntax, smoke 84/52, render 0 failures.
+
 ## 2026-10-08 Toan 9 c5-b16 cut-circle dots (`d256ba3`)
 - **Issue**: the "cắt nhau" panel's 2 intersection dots at (32,70)/(98,70) were at radius 36.2 from the center (65,55), but the circle is r=40 and the secant line y=70 meets it at radius 40 (x=65±37.1) — the dots sat 4px inside the circle instead of on it.
 - **Fix**: moved the dots to (28,70)/(102,70) so both lie exactly on the circle (radius 39.92 ≈ 40).
