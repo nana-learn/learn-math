@@ -3461,6 +3461,7 @@ const LESSONS = [
       </div>
       
       <figure class="figure">
+        <figure class="figure" data-animation="c9-b29-cyclic">
         <svg viewBox="0 0 360 210" role="img" aria-label="Tứ giác nội tiếp ABCD với hai góc đối cộng 180 độ">
           <circle cx="180" cy="105" r="95" fill="none" stroke="#DDDDDD" stroke-width="2"/>
           <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
@@ -3573,6 +3574,7 @@ const LESSONS = [
       </div>
       
 <figure class="figure">
+        <figure class="figure" data-animation="c9-b30-regular">
         <svg viewBox="0 0 360 210" role="img" aria-label="Lục giác đều nội tiếp đường tròn với góc ở tâm 60 độ">
           <circle cx="180" cy="105" r="95" fill="none" stroke="#DDDDDD" stroke-width="2"/>
           <circle cx="180" cy="105" r="2.5" fill="#DDDDDD"/>
