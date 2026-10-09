@@ -6135,6 +6135,292 @@ const G8_LESSONS = [
       { type: "text", prompt: "Đường thẳng nào dốc hơn: y = 2x + 1 hay y = 5x - 3?", answer: "y=5x-3", accept: ["y=5x-3", "đường thẳng y = 5x - 3"], hint: "So sánh |a|.", explain: "|5| > |2| → y = 5x - 3 dốc hơn." },
       { type: "text", prompt: "Hệ số góc của đường thẳng y = 7 là:", answer: "0", accept: ["0"], hint: "y = 7 tương đương y = 0x + 7.", explain: "a = 0." }
     ]
+  },
+  {
+    id: "g8-b30",
+    num: 30,
+    chapter: 8,
+    title: "Kết quả có thể và kết quả thuận lợi",
+    summary: "Không gian mẫu, kết quả có thể của phép thử, kết quả thuận lợi cho biến cố. Xác suất P(E) = số kết quả thuận lợi / số kết quả có thể.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Khi tung một đồng xu cân đối, bạn có thể kết quả là sấp (S) hoặc ngửa (N). Khi tung hai đồng xu, có bao nhiêu kết quả có thể? Đâu là kết quả thuận lợi cho biến cố "ít nhất một ngửa"?</p>
+      
+      <div class="definition">
+        <p><strong>Không gian mẫu:</strong> Tập hợp tất cả các kết quả có thể của một phép thử ngẫu nhiên được gọi là không gian mẫu, ký hiệu Ω (omega).</p>
+        <p><strong>Kết quả có thể:</strong> Mỗi phần tử của không gian mẫu là một kết quả có thể của phép thử.</p>
+        <p><strong>Biến cố:</strong> Là một tập hợp các kết quả có thể xảy ra khi thực hiện phép thử.</p>
+        <p><strong>Kết quả thuận lợi:</strong> Là các kết quả thuộc tập hợp mô tả biến cố.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Tung một đồng xu cân đối. Xác định không gian mẫu và số kết quả có thể.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Kết quả có thể: S (sấp), N (ngửa)</p>
+        <p>Không gian mẫu: Ω = {S, N}</p>
+        <p>Số kết quả có thể: 2</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Tung một con xúc xắc cân đối 6 mặt. Xác định không gian mẫu và số kết quả có thể.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Kết quả có thể: 1 chấm, 2 chấm, 3 chấm, 4 chấm, 5 chấm, 6 chấm</p>
+        <p>Không gian mẫu: Ω = {1, 2, 3, 4, 5, 6}</p>
+        <p>Số kết quả có thể: 6</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Tung hai đồng xu cân đối. Xác định không gian mẫu.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Mỗi đồng xu có 2 kết quả: S hoặc N</p>
+        <p>Kết quả có thể:</p>
+        <p>- Đồng 1: S, Đồng 2: S → SS</p>
+        <p>- Đồng 1: S, Đồng 2: N → SN</p>
+        <p>- Đồng 1: N, Đồng 2: S → NS</p>
+        <p>- Đồng 1: N, Đồng 2: N → NN</p>
+        <p>Không gian mẫu: Ω = {SS, SN, NS, NN}</p>
+        <p>Số kết quả có thể: 4</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Trong ví dụ tung hai đồng xu, biến cố A: "ít nhất một ngửa". Tìm kết quả thuận lợi cho A.</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh chỉ liệt kê {NN} (cả hai ngửa), bỏ qua {SN, NS} (một ngửa).</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Biến cố A: "ít nhất một ngửa" = "có ít nhất một kết quả N"</p>
+        <p>Kết quả thuận lợi: SN, NS, NN (ba kết quả)</p>
+        <p>Không phải chỉ {NN}!</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> Tung một con xúc xắc. Xác định kết quả thuận lợi cho các biến cố sau:</p>
+        <p>A: "số chấm chẵn"</p>
+        <p>B: "số chấm lớn hơn 4"</p>
+        <p><strong>Giải:</strong></p>
+        <p>Không gian mẫu: Ω = {1, 2, 3, 4, 5, 6}</p>
+        <p>A: "số chẵn" = {2, 4, 6}</p>
+        <p>B: "lớn hơn 4" = {5, 6}</p>
+      </div>
+      
+      <div class="definition">
+        <p><strong>Xác suất của biến cố:</strong> Nếu mọi kết quả có thể của một phép thử có khả năng xảy ra như nhau, thì xác suất của biến cố E được tính bằng:</p>
+        <p>P(E) = số kết quả thuận lợi cho E / số kết quả có thể của phép thử</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Không gian mẫu Ω = tất cả kết quả có thể. Kết quả thuận lợi = kết quả thuộc biến cố. P(E) = (số kết quả thuận lợi) / (số kết quả có thể). Luôn liệt kê đầy đủ!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là không gian mẫu? Cho ví dụ với tung một đồng xu.</p>
+        <p>2. Trong ví dụ tung hai đồng xu, biến cố "hai mặt giống nhau" có kết quả thuận lợi nào?</p>
+        <p><em>— Không gian mẫu là tập hợp tất cả kết quả có thể. Tung đồng xu: Ω = {S, N}. Biến cố "hai mặt giống nhau": SS, NN.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tung một con xúc xắc. Xác định không gian mẫu.</p>
+        <p>2. Tung ba đồng xu. Liệt kê các kết quả có thể.</p>
+        <p><em>— 1) Ω = {1, 2, 3, 4, 5, 6}. 2) Ω = {SSS, SSN, SNS, SNN, NSS, NSN, NNS, NNN}.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tung một đồng xu. Không gian mẫu có bao nhiêu kết quả?", answer: "2", accept: ["2"], hint: "Đồng xu có hai mặt: sấp hoặc ngửa.", explain: "Ω = {S, N} → 2 kết quả." },
+      { type: "text", prompt: "Tung một con xúc xắc 6 mặt. Kết quả có thể là:", answer: "1,2,3,4,5,6", accept: ["1,2,3,4,5,6", "1 2 3 4 5 6", "1;2;3;4;5;6"], hint: "Xúc xắc có 6 mặt, mỗi mặt có số chấm từ 1 đến 6.", explain: "Ω = {1, 2, 3, 4, 5, 6}." },
+      { type: "text", prompt: "Tung hai đồng xu. Không gian mẫu là:", answer: "{SS,SN,NS,NN}", accept: ["{SS,SN,NS,NN}"], hint: "Mỗi đồng xu có 2 kết quả, tổng cộng 2×2=4 kết quả.", explain: "Ω = {SS, SN, NS, NN}." },
+      { type: "text", prompt: "Biến cố A: 'ít nhất một sấp' trong tung hai đồng xu có bao nhiêu kết quả thuận lợi?", answer: "3", accept: ["3"], hint: "Liệt kê tất cả kết quả có ít nhất một S.", explain: "SS, SN, NS → 3 kết quả." },
+      { type: "text", prompt: "Tung một xúc xắc. Biến cố 'số chấm lẻ' có kết quả thuận lợi là:", answer: "1,3,5", accept: ["1,3,5", "1 3 5"], hint: "Số chấm lẻ là 1, 3, 5.", explain: "Ω = {1, 2, 3, 4, 5, 6}, số lẻ = {1, 3, 5}." },
+      { type: "text", prompt: "Tung ba đồng xu. Số kết quả có thể là:", answer: "8", accept: ["8"], hint: "Mỗi đồng xu có 2 kết quả, 2×2×2=8.", explain: "2^3 = 8 kết quả." }
+    ]
+  },
+
+  {
+    id: "g8-b31",
+    num: 31,
+    chapter: 8,
+    title: "Cách tính xác suất của biến cố bằng tỉ số",
+    summary: "Tính xác suất theo công thức P(E) = m/n trong đó m là số kết quả thuận lợi, n là số kết quả có thể. Cần liệt kê đầy đủ không gian mẫu.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một hộp có 5 quả cầu: 2 đỏ và 3 xanh. Rút ngẫu nhiên một quả. Xác suất rút được quả cầu đỏ là bao nhiêu?</p>
+      
+      <div class="definition">
+        <p><strong>Công thức xác suất:</strong> Nếu mọi kết quả có thể của phép thử có khả năng xảy ra như nhau, thì xác suất của biến cố E được tính bằng:</p>
+        <p><strong>P(E) = m / n</strong></p>
+        <p>trong đó:</p>
+        <p>- n = số kết quả có thể của phép thử</p>
+        <p>- m = số kết quả thuận lợi cho biến cố E</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Một hộp có 4 quả cầu: 1 đỏ, 2 xanh, 1 vàng. Rút ngẫu nhiên một quả. Tính xác suất rút được quả cầu xanh.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tổng số kết quả có thể: n = 4 (mỗi quả cầu là một kết quả)</p>
+        <p>Số kết quả thuận lợi (xanh): m = 2</p>
+        <p>P(xanh) = m/n = 2/4 = 1/2</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Một tổ học sinh có 8 em: 3 nam, 5 nữ. Chọn ngẫu nhiên một em. Tính xác suất chọn được em nữ.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tổng số kết quả có thể: n = 8</p>
+        <p>Số kết quả thuận lợi (nữ): m = 5</p>
+        <p>P(nữ) = 5/8</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Một袋子 có 6 bi: 2 đỏ, 3 xanh, 1 vàng. Rút ngẫu nhiên 2 bi (không hoàn lại). Tính xác suất rút được 2 bi cùng màu.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Không gian mẫu: chọn 2 bi từ 6 bi → C(6,2) = 15 cách</p>
+        <p>Kết quả thuận lợi:</p>
+        <p>- 2 đỏ: C(2,2) = 1</p>
+        <p>- 2 xanh: C(3,2) = 3</p>
+        <p>- 2 vàng: C(1,2) = 0 (không thể)</p>
+        <p>Tổng m = 1 + 3 = 4</p>
+        <p>P(cùng màu) = 4/15</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tung một xúc xắc cân đối. Tính xác suất xuất hiện mặt có số chấm chia hết cho 3.</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh liệt kê kết quả thuận lợi là {3, 6} nhưng lại đếm n = 5 (bỏ qua một kết quả nào đó).</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Không gian mẫu: Ω = {1, 2, 3, 4, 5, 6} → n = 6</p>
+        <p>Kết quả thuận lợi (chia hết cho 3): {3, 6} → m = 2</p>
+        <p>P = 2/6 = 1/3</p>
+        <p><em>Luôn nhớ: xúc xắc 6 mặt có 6 kết quả, không phải 5!</em></p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> Gieo hai đồng xu cân đối. Tính xác suất:</p>
+        <p>a) Hai mặt giống nhau</p>
+        <p><strong>Giải:</strong></p>
+        <p>Không gian mẫu: Ω = {SS, SN, NS, NN} → n = 4</p>
+        <p>a) Hai mặt giống nhau: {SS, NN} → m = 2</p>
+        <p>P = 2/4 = 1/2</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> P(E) = m/n. Bước 1: liệt kê đầy đủ không gian mẫu (n). Bước 2: đếm kết quả thuận lợi (m). Bước 3: rút gọn phân số. Luôn kiểm tra n!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Công thức tính xác suất là gì?</p>
+        <p>2. Khi nào thì P(E) = 0? Khi nào thì P(E) = 1?</p>
+        <p><em>— P(E) = m/n. P(E) = 0 khi không có kết quả thuận lợi (biến cố 불가). P(E) = 1 khi mọi kết quả đều thuận lợi (biến cố chắc chắn).</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Một hộp có 10 bi: 4 đỏ, 6 xanh. Rút ngẫu nhiên 1 bi. Tính P(đỏ).</p>
+        <p>2. Tung một xúc xắc. Tính P(số chấm > 4).</p>
+        <p><em>— 1) P = 4/10 = 2/5. 2) Số > 4: {5, 6}, P = 2/6 = 1/3.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Một hộp có 6 bi: 2 đỏ, 4 xanh. Rút ngẫu nhiên 1 bi. P(đỏ) =", answer: "1/3", accept: ["1/3", "0.333"], hint: "n=6, m=2, P=2/6=1/3.", explain: "P = 2/6 = 1/3." },
+      { type: "text", prompt: "Tung một xúc xắc cân đối. P(số chấm chẵn) =", answer: "1/2", accept: ["1/2", "0.5"], hint: "Số chẵn: {2,4,6}, n=6, m=3.", explain: "P = 3/6 = 1/2." },
+      { type: "text", prompt: "Một lớp có 30 học sinh: 12 nam, 18 nữ. Chọn ngẫu nhiên 1 HS. P(nữ) =", answer: "3/5", accept: ["3/5", "0.6"], hint: "n=30, m=18, P=18/30=3/5.", explain: "P = 18/30 = 3/5." },
+      { type: "text", prompt: "Tung hai đồng xu. P(một sấp một ngửa) =", answer: "1/2", accept: ["1/2", "0.5"], hint: "Kết quả thuận lợi: SN, NS (2 kết quả), n=4.", explain: "P = 2/4 = 1/2." },
+      { type: "text", prompt: "Một袋子 có 5 bi: 2 đỏ, 3 xanh. Rút ngẫu nhiên 1 bi, rồi trả lại. Lần 2 rút 1 bi. P(lần 1 đỏ, lần 2 xanh) =", answer: "6/25", accept: ["6/25", "0.24"], hint: "Lần 1: P(đỏ)=2/5. Lần 2: P(xanh)=3/5. Độc lập: P=2/5·3/5=6/25.", explain: "P = 2/5 × 3/5 = 6/25." },
+      { type: "text", prompt: "Tung một xúc xắc. P(số chấm < 3) =", answer: "1/3", accept: ["1/3"], hint: "Số < 3: {1,2}, n=6, m=2.", explain: "P = 2/6 = 1/3." }
+    ]
+  },
+
+  {
+    id: "g8-b32",
+    num: 32,
+    chapter: 8,
+    title: "Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng",
+    summary: "Xác suất thực nghiệm (thử nghiệm thực tế) tiến gần đến xác suất lý thuyết khi số lần thử lớn. Ứng dụng: dự đoán, quyết định.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn tung một đồng xu 10 lần và thấy có 6 lần ngửa. Xác suất thực nghiệm của biến cố 'ngửa' là 6/10 = 0.6. Nhưng xác suất lý thuyết là 0.5. Tại sao lại khác nhau?</p>
+      
+      <div class="definition">
+        <p><strong>Xác suất thực nghiệm:</strong> Là tỉ số giữa số lần một biến cố xảy ra và tổng số lần thực hiện phép thử.</p>
+        <p><strong>Công thức:</strong> P_n(E) = số lần E xảy ra / n</p>
+        <p><strong>Xác suất lý thuyết:</strong> Là xác suất tính theo công thức P(E) = m/n dựa trên mô hình xác suất.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Tung một đồng xu 20 lần, kết quả như sau:</p>
+        <p>S: 8 lần, N: 12 lần</p>
+        <p>Tính xác suất thực nghiệm của biến cố 'ngửa'.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Số lần ngửa: 12</p>
+        <p>Tổng số lần: 20</p>
+        <p>P_n(N) = 12/20 = 3/5 = 0.6</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Tung một xúc xắc 30 lần, số lần xuất hiện mỗi mặt:</p>
+        <p>1: 5 lần, 2: 4 lần, 3: 6 lần, 4: 5 lần, 5: 5 lần, 6: 5 lần</p>
+        <p>Tính xác suất thực nghiệm của biến cố 'xuất hiện mặt chẵn'.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Mặt chẵn: 2, 4, 6</p>
+        <p>Số lần: 4 + 5 + 5 = 14</p>
+        <p>Tổng lần: 30</p>
+        <p>P_n(chẵn) = 14/30 = 7/15 ≈ 0.467</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Một người ném bi vào mục tiêu 50 lần, trúng 35 lần.</p>
+        <p>a) Tính xác suất thực nghiệm trúng đích</p>
+        <p>b) Nếu người đó ném 100 lần, dự đoán số lần trúng</p>
+        <p><strong>Giải:</strong></p>
+        <p>a) P_n(trúng) = 35/50 = 0.7</p>
+        <p>b) Dự đoán: 100 × 0.7 = 70 lần trúng</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tung một đồng xu 10 lần, kết quả: 7 lần ngửa. Kết luận 'xác suất ngửa là 0.7'.</p>
+        <p><strong>Sai lầm thường gặp:</strong> Dựa vào quá ít lần thử (chỉ 10) để kết luận xác suất.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>With chỉ 10 lần, xác suất thực nghiệm 0.7 có thể khác xa xác suất lý thuyết 0.5 do biến động ngẫu nhiên.</p>
+        <p>Cần thử nhiều lần hơn (100, 1000, ...) để xác suất thực nghiệm tiệm cận xác suất lý thuyết.</p>
+        <p><em>Luôn nhớ: số lần thử càng lớn, xác suất thực nghiệm càng gần xác suất lý thuyết!</em></p>
+      </div>
+      
+      <div class="definition">
+        <p><strong>Định luật số lớn:</strong> Khi số lần thực hiện phép thử tăng lên vô hạn, xác suất thực nghiệm tiến dần đến xác suất lý thuyết.</p>
+        <p><strong>Ứng dụng:</strong></p>
+        <p>- Dự đoán kết quả trong thực tế (bảo hiểm, kinh doanh)</p>
+        <p>- Kiểm định giả thuyết thống kê</p>
+        <p>- Ra quyết định dựa trên xác suất</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> Một nhà sản xuất biết rằng 5% sản phẩm của họ có lỗi. Nếu sản xuất 1000 sản phẩm, dự đoán số sản phẩm lỗi.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Xác suất lỗi: P = 5% = 0.05</p>
+        <p>Số sản phẩm: n = 1000</p>
+        <p>Dự đoán số lỗi: 1000 × 0.05 = 50 sản phẩm</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> P_n(E) = số lần E xảy ra / n. Khi n lớn, P_n(E) → P(E) (xác suất lý thuyết). Ứng dụng: dự đoán số lần xảy ra = n × P(E).</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Xác suất thực nghiệm khác xác suất lý thuyết ở điểm nào?</p>
+        <p>2. Khi nào thì P_n(E) ≈ P(E)?</p>
+        <p><em>— P_n(E) tính từ thực nghiệm (thay đổi theo từng lần thử), P(E) tính từ mô hình (không đổi). Khi số lần thử n rất lớn.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tung đồng xu 40 lần, có 22 lần ngửa. P_n(ngửa) = ?</p>
+        <p>2. Một máy sản xuất có 10% sản phẩm lỗi. Trong 500 sản phẩm, dự đoán số lỗi.</p>
+        <p><em>— 1) P_n = 22/40 = 0.55. 2) Dự đoán: 500 × 0.1 = 50 sản phẩm lỗi.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tung đồng xu 50 lần, có 28 lần ngửa. P_n(ngửa) =", answer: "0.56", accept: ["0.56", "14/25"], hint: "P_n = 28/50 = 0.56.", explain: "P_n = 28/50 = 0.56." },
+      { type: "text", prompt: "Một người bắn súng 100 phát, trúng 85 phát. P_n(trúng) =", answer: "0.85", accept: ["0.85", "17/20"], hint: "P_n = 85/100 = 0.85.", explain: "P_n = 85/100 = 0.85." },
+      { type: "text", prompt: "Tung xúc xắc 60 lần, mặt 3 xuất hiện 8 lần. P_n(mặt 3) =", answer: "2/15", accept: ["2/15", "0.133"], hint: "P_n = 8/60 = 2/15.", explain: "P_n = 8/60 = 2/15." },
+      { type: "text", prompt: "Biết P(trúng đích) = 0.6. Nếu bắn 100 phát, dự đoán số lần trúng.", answer: "60", accept: ["60"], hint: "Dự đoán = n × P = 100 × 0.6.", explain: "Dự đoán = 100 × 0.6 = 60." },
+      { type: "text", prompt: "Tung đồng xu nhiều lần, P_n(ngửa) tiến gần giá trị nào?", answer: "0.5", accept: ["0.5", "1/2"], hint: "Xác suất lý thuyết của đồng xu cân đối là 0.5.", explain: "P_n → P = 0.5." },
+      { type: "text", prompt: "Một hộp có 3 bi đỏ, 7 bi xanh. Rút 100 lần (có hoàn lại), mỗi lần rút 1 bi. Dự đoán số lần rút được bi đỏ.", answer: "30", accept: ["30"], hint: "P(đỏ) = 3/10, dự đoán = 100 × 3/10.", explain: "Dự đoán = 100 × 3/10 = 30." }
+    ]
   }
 ];
 
