@@ -3940,6 +3940,11 @@ const G8_CHAPTERS = [
   { id: 3, title: "Tứ giác" },
   { id: 4, title: "Định lí Thalès" },
   { id: 5, title: "Dữ liệu và biểu đồ" },
+  { id: 6, title: "Phân thức đại số" },
+  { id: 7, title: "Phương trình bậc nhất và hàm số bậc nhất" },
+  { id: 8, title: "Mở đầu về tính xác suất của biến cố" },
+  { id: 9, title: "Tam giác đồng dạng" },
+  { id: 10, title: "Một số hình khối trong thực tiễn" },
 ];
 
 const G8_LESSONS = [
@@ -5444,11 +5449,87 @@ const G8_LESSONS = [
       { type: "num", prompt: "Nhiệt độ: 18, 20, 23, 26, 28, 30, 31, 30, 28, 25, 22, 19. Nhiệt độ cao nhất = ?", answer: 31, hint: "Max của dãy.", explain: "31°C." },
     ],
   },
+
+  // ===== CHAPTER 6: PHÂN THỨC ĐẠI SỐ =====
+  {
+    id: "g8-b21",
+    num: 21,
+    chapter: 6,
+    title: "Phân thức đại số",
+    summary: "Phân thức đại số là biểu thức dạng A/B với A, B là đa thức và B ≠ 0. Hai phân thức bằng nhau khi tích chéo bằng nhau.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Trong một cuộc đua xe đạp, vận động viên phải đi 9 km leo dốc, 5 km xuống dốc và một đoạn đường bằng. Tốc độ leo dốc là x km/h, xuống dốc là y km/h. Thời gian leo dốc là 9/x giờ, xuống dốc là 5/y giờ. Tổng thời gian là biểu thức phân thức.</p>
+      <div class="definition">
+        <p><strong>Phân thức đại số</strong> là biểu thức có dạng \(\dfrac{A}{B}\) với A, B là các đa thức và B không đồng nhất bằng 0.</p>
+        <p>A gọi là tử thức, B gọi là mẫu thức. Điều kiện xác định: mẫu thức ≠ 0.</p>
+        <p>Ví dụ: \(\dfrac{3x+2}{x-1}\), \(\dfrac{x^2-4}{x^2+1}\), \(\dfrac{5}{x}\).</p>
+      </div>
+      <div class="definition">
+        <p><strong>Hai phân thức bằng nhau:</strong> \(\dfrac{A}{B} = \dfrac{C}{D}\) khi và chỉ khi \(A·D = B·C\) (với B ≠ 0, D ≠ 0).</p>
+        <p>Ví dụ: \(\dfrac{2x}{4} = \dfrac{x}{2}\) vì \(2x·2 = 4·x = 4x\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Phân thức đại số = "phân số có biểu thức". Tử và mẫu đều là đa thức. Điều kiện xác định là mẫu ≠ 0 (không chia cho 0).</p>
+        <p>Ví dụ: \(\dfrac{x}{x-3}\) xác định khi x ≠ 3. \(\dfrac{x+1}{x^2-4}\) xác định khi x ≠ 2 và x ≠ -2.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Bỏ qua điều kiện xác định: luôn kiểm tra mẫu ≠ 0 trước khi làm phép toán.</li>
+          <li>Nhầm bằng nhau: \(\dfrac{2x}{4x} = \dfrac{1}{2}\) chỉ đúng khi x ≠ 0.</li>
+          <li>Sai khi rút gọn: \(\dfrac{x+2}{x+3}\) không thể rút gọn (không có nhân tử chung).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \(\dfrac{3x-6}{x-2}\) có điều kiện xác định x ≠ 2.</p>
+        <p>Khi x ≠ 2, \(\dfrac{3x-6}{x-2} = \dfrac{3(x-2)}{x-2} = 3\).</p>
+        <p>Nếu x = 2 thì phân thức không xác định (mẫu = 0).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(\dfrac{x^2-4}{x+2}\) có điều kiện x ≠ -2.</p>
+        <p>Khi x ≠ -2, \(\dfrac{x^2-4}{x+2} = \dfrac{(x-2)(x+2)}{x+2} = x-2\).</p>
+        <p>Giá trị tại x = 3: \(\dfrac{9-4}{3+2} = \dfrac{5}{5} = 1\) hoặc x-2 = 1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\dfrac{5x}{10x} = \dfrac{1}{2}\) khi x ≠ 0.</p>
+        <p>\(\dfrac{x^2}{x} = x\) khi x ≠ 0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\dfrac{x^2+5x+6}{x+2}\) có điều kiện x ≠ -2.</p>
+        <p>\(x^2+5x+6 = (x+2)(x+3)\). Khi x ≠ -2: \(\dfrac{(x+2)(x+3)}{x+2} = x+3\).</p>
+        <p>Giá trị tại x = 1: x+3 = 4.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(\dfrac{x-2}{2-x} = -1\) khi x ≠ 2.</p>
+        <p>\(2-x = -(x-2)\), nên \(\dfrac{x-2}{2-x} = \dfrac{x-2}{-(x-2)} = -1\).</p>
+        <p>Đừng nhầm \(\dfrac{x-2}{2-x} = 1\)!</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân thức = A/B với A,B là đa thức, B≠0. Hai phân thức bằng nhau khi tích chéo bằng nhau. Rút gọn bằng cách phân tích tử và mẫu thành nhân tử.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định điều kiện. Rút gọn phân thức. Chứng minh hai phân thức bằng nhau.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Phân thức \(\dfrac{x}{x-5}\) xác định khi nào? <em>— x ≠ 5.</em></p>
+        <p>\(\dfrac{2x+4}{x+2} = ?\) khi x ≠ -2. <em>— = 2.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \(\dfrac{x^2-9}{x-3} = x+3\) khi x ≠ 3.</p>
+        <p>\(\dfrac{4x^2-1}{2x-1} = 2x+1\) khi x ≠ 1/2.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Phân thức \(\dfrac{3x}{x-4}\) xác định khi nào?", answer: "x ≠ 4", accept: ["x ≠ 4", "x != 4"], hint: "Mẫu ≠ 0.", explain: "x - 4 ≠ 0 → x ≠ 4." },
+      { type: "num", prompt: "Giá trị của \(\dfrac{x+1}{x-1}\) tại x = 3 là bao nhiêu?", answer: 2, hint: "Thay x=3 vào.", explain: "(3+1)/(3-1) = 4/2 = 2." },
+      { type: "text", prompt: "Rút gọn \(\dfrac{2x^2}{4x}\) khi x ≠ 0.", answer: "x/2", accept: ["x/2", "x:2", "x\\/2"], hint: "Rút 2x từ tử và mẫu.", explain: "2x²/4x = x/2." },
+      { type: "mc", prompt: "Phân thức nào sau đây xác định khi x = 2?", choices: ["\(\dfrac{x}{x-2}\)", "\(\dfrac{x+1}{x+2}\)", "\(\dfrac{3}{x-3}\)", "\(\dfrac{x}{x}\)"], correct: 1, hint: "Mẫu ≠ 0 tại x=2.", explain: "(x+1)/(x+2) có mẫu = 4 ≠ 0." },
+      { type: "text", prompt: "Chứng minh \(\dfrac{x-3}{2(3-x)} = -\dfrac{1}{2}\) khi x ≠ 3.", answer: "-1/2", accept: ["-1/2", "-0.5"], hint: "3-x = -(x-3).", explain: "(x-3)/[2(3-x)] = (x-3)/[-2(x-3)] = -1/2." },
+      { type: "num", prompt: "Giá trị lớn nhất của \(\dfrac{5}{x^2+1}\) là bao nhiêu?", answer: 5, hint: "x²+1 ≥ 1.", explain: "x²+1 ≥ 1 nên 5/(x²+1) ≤ 5. Đạt tại x=0." },
+    ],
+  },
 ];
 
 const COURSES = [
-  courseStub(6, "THCS"),
-  courseStub(7, "THCS"),
   {
     id: "8",
     grade: 8,
