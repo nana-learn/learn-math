@@ -223,4 +223,61 @@ Files modified:
 
 Committed c1c5bd1. Pushed to GitHub Pages main branch.
 
+## 2026-01-10 Grade 8 Part 2 lessons g8-b33 through g8-b39 (b37749c)
+
+Added Grade 8 Part 2 lessons covering Chapters IX (Tam giác đồng dạng) and X (Một số hình khối trong thực tiễn):
+
+- g8-b33: Hai tam giác đồng dạng (Similar triangles definition)
+  - Definition: Two triangles are similar if corresponding angles equal and corresponding sides proportional
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b34: Ba trường hợp đồng dạng của hai tam giác (Three similarity cases)
+  - GG (angle-angle), CCC (side-side-side), CGC (side-angle-side)
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b35: Định lí Pythagore và ứng dụng (Pythagorean theorem and applications)
+  - a² + b² = c² for right triangles
+  - Converse theorem: if a² + b² = c² then triangle is right
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b36: Các trường hợp đồng dạng của hai tam giác vuông (Similarity cases for right triangles)
+  - Two legs proportional, hypotenuse and leg proportional, or one acute angle equal
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b37: Hình đồng dạng (Similar figures)
+  - Similar figures related by dilation (phép vị tự)
+  - Ratio of areas = k², ratio of perimeters = k
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b38: Hình chóp tam giác đều (Regular triangular pyramid)
+  - Base: equilateral triangle, lateral edges equal, apex above centroid
+  - Volume formula: V = 1/3·S_base·h
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b39: Hình chóp tứ giác đều (Regular quadrilateral pyramid)
+  - Base: square, lateral edges equal, apex above center
+  - Volume formula: V = 1/3·S_base·h
+  - 6 interactive exercises with hints and detailed explanations
+
+Each lesson follows Vietnamese pedagogy:
+- Situation (tình huống) → Definitions → Examples (slow down → easy → hard → pitfalls)
+- Look Back (nhìn lại) → Self-check (tự kiểm tra) → Practice exercises (luyện dạng SBT)
+
+Files modified:
+- web/js/lessons.js: +717 lines for 7 new lessons (net 718 lines added)
+
+Committed b37749c. Pushed to GitHub Pages main branch.
+
+**Note**: Fixed syntax error by removing duplicate '];' closing bracket after insertion.
+
+**Final Status**: Complete Grade 8 course with 39 lessons (g8-b1 through g8-b39) covering both volumes.
+
+### Completion Status:
+- ✅ Chapters I–V (Part 1): g8-b1 through g8-b20
+- ✅ Chapter VI (Phân thức đại số): g8-b21 through g8-b24
+- ✅ Chapter VII (Phương trình bậc nhất và hàm số bậc nhất): g8-b25 through g8-b29
+- ✅ Chapter VIII (Xác suất biến cố): g8-b30 through g8-b32
+- ✅ Chapter IX (Tam giác đồng dạng): g8-b33 through g8-b37
+- ✅ Chapter X (Một số hình khối trong thực tiễn): g8-b38, g8-b39
+
 **Note**: The insertion script `insert_g8_b30_32.py` was fixed to add a comma to the previous lesson's closing brace before inserting new lessons, ensuring valid JavaScript array syntax.
