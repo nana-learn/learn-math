@@ -88,6 +88,14 @@ const LESSONS = [
         <figure class="figure" data-animation="c6-b21">
         <figure class="figure" data-animation="c8-b25">
         <figure class="figure" data-animation="c8-b26">
+        <figure class="figure" data-animation="c1-b1">
+        <figure class="figure" data-animation="c1-b2">
+        <figure class="figure" data-animation="c1-b3">
+        <figure class="figure" data-animation="c3-b8">
+        <figure class="figure" data-animation="c3-b9">
+        <figure class="figure" data-animation="c3-b10">
+        <figure class="figure" data-animation="c7-b23">
+        <figure class="figure" data-animation="c7-b24">
         <svg viewBox="0 0 320 200" role="img" aria-label="Tập nghiệm của x + 2y = 3 là một đường thẳng">
           <line x1="22" y1="124" x2="306" y2="124" stroke="#BBBBBB" stroke-width="1.5"/>
           <line x1="100" y1="16" x2="100" y2="186" stroke="#BBBBBB" stroke-width="1.5"/>
