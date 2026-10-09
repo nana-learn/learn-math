@@ -237,6 +237,16 @@ const AnimationManager = {
           { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // c3-b7: Căn bậc hai và căn thức bậc hai
+      'c3-b7-square': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text[fill="#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     

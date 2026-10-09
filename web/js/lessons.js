@@ -902,17 +902,17 @@ const LESSONS = [
     body: String.raw`
       <p>Hình vuông diện tích 49 m². Cạnh là một số không âm mà bình phương bằng 49. \(7^2 = 49\) và \((-7)^2 = 49\), nhưng cạnh không âm, nên cạnh là 7. Phép hỏi ngược của bình phương gọi là khai căn bậc hai.</p>
       
-      <figure class="figure">
-        <svg viewBox="0 0 360 210" role="img" aria-label="Hình vuông diện tích 49 mét vuông, cạnh 7 mét">
-          <rect x="110" y="30" width="140" height="140" fill="#58C4DD" fill-opacity="0.12" stroke="#58C4DD" stroke-width="2"/>
-          <line x1="110" y1="30" x2="250" y2="30" stroke="#58C4DD" stroke-width="1.5"/>
-          <text x="180" y="20" font-size="12" fill="#58C4DD" text-anchor="middle">7 m</text>
-          <line x1="250" y1="30" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5"/>
-          <text x="258" y="104" font-size="12" fill="#58C4DD">7 m</text>
-          <line x1="110" y1="170" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5"/>
-          <text x="180" y="188" font-size="12" fill="#58C4DD" text-anchor="middle">7 m</text>
-          <text x="180" y="104" font-size="13" fill="#FC6255" text-anchor="middle">49 m²</text>
-          <text x="180" y="124" font-size="12" fill="#FC6255" text-anchor="middle">7 × 7 = 49</text>
+      <figure class="figure" data-animation="c3-b7-square">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình vuông diện tích 49 mét vuông, cạnh 7 mét" id="fig-c3-b7">
+          <rect x="110" y="30" width="140" height="140" fill="#58C4DD" fill-opacity="0.12" stroke="#58C4DD" stroke-width="2" stroke-dasharray="480" stroke-dashoffset="480"/>
+          <line x1="110" y1="30" x2="250" y2="30" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+          <text x="180" y="20" font-size="12" fill="#58C4DD" text-anchor="middle" opacity="0">7 m</text>
+          <line x1="250" y1="30" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+          <text x="258" y="104" font-size="12" fill="#58C4DD" opacity="0">7 m</text>
+          <line x1="110" y1="170" x2="250" y2="170" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+          <text x="180" y="188" font-size="12" fill="#58C4DD" text-anchor="middle" opacity="0">7 m</text>
+          <text x="180" y="104" font-size="13" fill="#FC6255" text-anchor="middle" opacity="0">49 m²</text>
+          <text x="180" y="124" font-size="12" fill="#FC6255" text-anchor="middle" opacity="0">7 × 7 = 49</text>
         </svg>
         <figcaption>Hình vuông diện tích 49 m² có cạnh √49 = 7 m. Căn bậc hai của một số không âm a là số x sao cho x² = a.</figcaption>
       </figure>
