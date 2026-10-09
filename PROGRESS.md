@@ -270,7 +270,7 @@ Committed 2c4d8a0. Pushed to GitHub Pages main branch.
 - c10-b31: Cylinder/cone ✅
 - c10-b32: Sphere ✅
 
-**Total: 21 animated Grade 9 lessons**
+**Total: 29 animated Grade 9 lessons**
 
 ## 2026-01-10 Grade 8 Part 2 lessons g8-b33 through g8-b39 (b37749c)
 
