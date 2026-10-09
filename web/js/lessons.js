@@ -1903,42 +1903,42 @@ const LESSONS = [
           <li>Hai tiếp tuyến cắt nhau: nhớ cả ba hệ quả (cách đều, phân giác góc tiếp tuyến, phân giác góc bán kính), đừng chỉ nhớ MA = MB.</li>
         </ul>
       </div>
-      <figure class="figure">
+      <figure class="figure" data-animation="c5-b16-positions">
         <div class="panels">
           <div class="panel">
-            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng cắt đường tròn">
-              <circle cx="65" cy="55" r="40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-              <circle cx="65" cy="55" r="2.5" fill="#FFFF00"/>
-              <line x1="8" y1="70" x2="122" y2="70" stroke="#58C4DD" stroke-width="2"/>
-              <circle cx="28" cy="70" r="4" fill="#FC6255"/>
-              <circle cx="102" cy="70" r="4" fill="#FC6255"/>
-              <line x1="65" y1="55" x2="65" y2="70" stroke="#9A72AC" stroke-width="1.8"/>
-              <text x="70" y="67" font-size="11">d</text>
-              <text x="38" y="93" font-size="11" fill="#83C167">d &lt; R</text>
+            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng cắt đường tròn" id="fig-c5-b16-1">
+              <circle cx="65" cy="55" r="40" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251"/>
+              <circle cx="65" cy="55" r="2.5" fill="#FFFF00" opacity="0"/>
+              <line x1="8" y1="70" x2="122" y2="70" stroke="#58C4DD" stroke-width="2" stroke-dasharray="114" stroke-dashoffset="114"/>
+              <circle cx="28" cy="70" r="4" fill="#FC6255" opacity="0"/>
+              <circle cx="102" cy="70" r="4" fill="#FC6255" opacity="0"/>
+              <line x1="65" y1="55" x2="65" y2="70" stroke="#9A72AC" stroke-width="1.8" stroke-dasharray="15" stroke-dashoffset="15" opacity="0"/>
+              <text x="70" y="67" font-size="11" opacity="0">d</text>
+              <text x="38" y="93" font-size="11" fill="#83C167" opacity="0">d &lt; R</text>
             </svg>
             <p>Cắt nhau: 2 điểm chung</p>
           </div>
           <div class="panel">
-            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng tiếp xúc đường tròn">
-              <circle cx="65" cy="55" r="40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-              <circle cx="65" cy="55" r="2.5" fill="#FFFF00"/>
-              <line x1="8" y1="95" x2="122" y2="95" stroke="#58C4DD" stroke-width="2"/>
-              <circle cx="65" cy="95" r="4" fill="#FC6255"/>
-              <line x1="65" y1="55" x2="65" y2="95" stroke="#9A72AC" stroke-width="1.8"/>
-              <text x="70" y="80" font-size="11">d = R</text>
-              <text x="70" y="108" font-size="11">H</text>
-              <rect x="65" y="88" width="8" height="7" fill="none" stroke="#DDDDDD" stroke-width="1"/>
+            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng tiếp xúc đường tròn" id="fig-c5-b16-2">
+              <circle cx="65" cy="55" r="40" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251"/>
+              <circle cx="65" cy="55" r="2.5" fill="#FFFF00" opacity="0"/>
+              <line x1="8" y1="95" x2="122" y2="95" stroke="#58C4DD" stroke-width="2" stroke-dasharray="114" stroke-dashoffset="114"/>
+              <circle cx="65" cy="95" r="4" fill="#FC6255" opacity="0"/>
+              <line x1="65" y1="55" x2="65" y2="95" stroke="#9A72AC" stroke-width="1.8" stroke-dasharray="40" stroke-dashoffset="40" opacity="0"/>
+              <text x="70" y="80" font-size="11" opacity="0">d = R</text>
+              <text x="70" y="108" font-size="11" opacity="0">H</text>
+              <rect x="65" y="88" width="8" height="7" fill="none" stroke="#DDDDDD" stroke-width="1" opacity="0"/>
             </svg>
             <p>Tiếp xúc: 1 tiếp điểm, \(OH \perp a\)</p>
           </div>
           <div class="panel">
-            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng không giao đường tròn">
-              <circle cx="65" cy="52" r="40" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-              <circle cx="65" cy="52" r="2.5" fill="#FFFF00"/>
-              <line x1="8" y1="112" x2="122" y2="112" stroke="#58C4DD" stroke-width="2"/>
-              <line x1="65" y1="52" x2="65" y2="112" stroke="#9A72AC" stroke-width="1.8"/>
-              <text x="70" y="90" font-size="11">d</text>
-              <text x="38" y="104" font-size="11" fill="#83C167">d &gt; R</text>
+            <svg viewBox="0 0 130 130" width="120" role="img" aria-label="Đường thẳng không giao đường tròn" id="fig-c5-b16-3">
+              <circle cx="65" cy="52" r="40" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251"/>
+              <circle cx="65" cy="52" r="2.5" fill="#FFFF00" opacity="0"/>
+              <line x1="8" y1="112" x2="122" y2="112" stroke="#58C4DD" stroke-width="2" stroke-dasharray="114" stroke-dashoffset="114"/>
+              <line x1="65" y1="52" x2="65" y2="112" stroke="#9A72AC" stroke-width="1.8" stroke-dasharray="60" stroke-dashoffset="60" opacity="0"/>
+              <text x="70" y="90" font-size="11" opacity="0">d</text>
+              <text x="38" y="104" font-size="11" fill="#83C167" opacity="0">d &gt; R</text>
             </svg>
             <p>Không giao nhau: 0 điểm chung</p>
           </div>
@@ -2192,27 +2192,27 @@ const LESSONS = [
         </ul>
       </div>
       <p>Vẽ: lập bảng vài giá trị, chấm điểm, nối bằng đường cong trơn, không nối bằng đoạn thẳng gấp khúc.</p>
-      <figure class="figure">
+      <figure class="figure" data-animation="c6-b18-parabola">
         <div class="panels">
           <div class="panel">
-            <svg viewBox="0 0 120 112" width="125" role="img" aria-label="a lớn hơn 0">
-              <line x1="10" y1="55" x2="112" y2="55" stroke="#BBBBBB" stroke-width="1.5"/>
-              <line x1="60" y1="6" x2="60" y2="108" stroke="#BBBBBB" stroke-width="1.5"/>
-              <path d="M 25 100 Q 60 10 95 100" fill="none" stroke="#58C4DD" stroke-width="2.5"/>
-              <circle cx="60" cy="55" r="3.5" fill="#FC6255"/>
-              <text x="66" y="64" font-size="10">O</text>
-              <text x="14" y="18" font-size="12" fill="#FFFF00">a &gt; 0</text>
+            <svg viewBox="0 0 120 112" width="125" role="img" aria-label="a lớn hơn 0" id="fig-c6-b18-1">
+              <line x1="10" y1="55" x2="112" y2="55" stroke="#BBBBBB" stroke-width="1.5" stroke-dasharray="102" stroke-dashoffset="102" opacity="0"/>
+              <line x1="60" y1="6" x2="60" y2="108" stroke="#BBBBBB" stroke-width="1.5" stroke-dasharray="102" stroke-dashoffset="102" opacity="0"/>
+              <path d="M 25 100 Q 60 10 95 100" fill="none" stroke="#58C4DD" stroke-width="2.5" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+              <circle cx="60" cy="55" r="3.5" fill="#FC6255" opacity="0"/>
+              <text x="66" y="64" font-size="10" opacity="0">O</text>
+              <text x="14" y="18" font-size="12" fill="#FFFF00" opacity="0">a &gt; 0</text>
             </svg>
             <p>Hướng lên: \(a &gt; 0\)</p>
           </div>
           <div class="panel">
-            <svg viewBox="0 0 120 112" width="125" role="img" aria-label="a nhỏ hơn 0">
-              <line x1="10" y1="55" x2="112" y2="55" stroke="#BBBBBB" stroke-width="1.5"/>
-              <line x1="60" y1="6" x2="60" y2="108" stroke="#BBBBBB" stroke-width="1.5"/>
-              <path d="M 25 10 Q 60 100 95 10" fill="none" stroke="#58C4DD" stroke-width="2.5"/>
-              <circle cx="60" cy="55" r="3.5" fill="#FFFF00"/>
-              <text x="66" y="66" font-size="10">O</text>
-              <text x="14" y="100" font-size="12" fill="#FC6255">a &lt; 0</text>
+            <svg viewBox="0 0 120 112" width="125" role="img" aria-label="a nhỏ hơn 0" id="fig-c6-b18-2">
+              <line x1="10" y1="55" x2="112" y2="55" stroke="#BBBBBB" stroke-width="1.5" stroke-dasharray="102" stroke-dashoffset="102" opacity="0"/>
+              <line x1="60" y1="6" x2="60" y2="108" stroke="#BBBBBB" stroke-width="1.5" stroke-dasharray="102" stroke-dashoffset="102" opacity="0"/>
+              <path d="M 25 10 Q 60 100 95 10" fill="none" stroke="#58C4DD" stroke-width="2.5" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+              <circle cx="60" cy="55" r="3.5" fill="#FFFF00" opacity="0"/>
+              <text x="66" y="66" font-size="10" opacity="0">O</text>
+              <text x="14" y="100" font-size="12" fill="#FC6255" opacity="0">a &lt; 0</text>
             </svg>
             <p>Hướng xuống: \(a &lt; 0\)</p>
           </div>
@@ -3231,25 +3231,25 @@ const LESSONS = [
         <p>(với cung \(AB\) không chứa \(C\)).</p>
       </div>
       
-      <figure class="figure">
-        <svg viewBox="0 0 360 210" role="img" aria-label="Góc nội tiếp BAC bằng nửa góc ở tâm BOC, cùng chắn cung BC">
-          <circle cx="180" cy="100" r="85" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <circle cx="180" cy="100" r="2.5" fill="#DDDDDD"/>
-          <text x="164" y="116" font-size="13">O</text>
-          <circle cx="180" cy="15" r="3" fill="#58C4DD"/>
-          <text x="172" y="28" font-size="13" fill="#58C4DD">B</text>
-          <circle cx="254" cy="143" r="3" fill="#58C4DD"/>
-          <text x="258" y="156" font-size="13" fill="#58C4DD">C</text>
-          <circle cx="95" cy="100" r="3" fill="#83C167"/>
-          <text x="76" y="112" font-size="13" fill="#83C167">A</text>
-          <line x1="95" y1="100" x2="180" y2="15" stroke="#83C167" stroke-width="2"/>
-          <line x1="95" y1="100" x2="254" y2="143" stroke="#83C167" stroke-width="2"/>
-          <line x1="180" y1="100" x2="180" y2="15" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
-          <line x1="180" y1="100" x2="254" y2="143" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
-          <path d="M 236 44 A 34 34 0 0 1 248 64" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="240" y="40" font-size="13" fill="#FC6255">120°</text>
-          <path d="M 140 62 A 24 24 0 0 1 156 56" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="124" y="74" font-size="13" fill="#9A72AC">60°</text>
+      <figure class="figure" data-animation="c9-b27-inscribed">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Góc nội tiếp BAC bằng nửa góc ở tâm BOC, cùng chắn cung BC" id="fig-c9-b27">
+          <circle cx="180" cy="100" r="85" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="534" stroke-dashoffset="534"/>
+          <circle cx="180" cy="100" r="2.5" fill="#DDDDDD" opacity="0"/>
+          <text x="164" y="116" font-size="13" opacity="0">O</text>
+          <circle cx="180" cy="15" r="3" fill="#58C4DD" opacity="0"/>
+          <text x="172" y="28" font-size="13" fill="#58C4DD" opacity="0">B</text>
+          <circle cx="254" cy="143" r="3" fill="#58C4DD" opacity="0"/>
+          <text x="258" y="156" font-size="13" fill="#58C4DD" opacity="0">C</text>
+          <circle cx="95" cy="100" r="3" fill="#83C167" opacity="0"/>
+          <text x="76" y="112" font-size="13" fill="#83C167" opacity="0">A</text>
+          <line x1="95" y1="100" x2="180" y2="15" stroke="#83C167" stroke-width="2" stroke-dasharray="92" stroke-dashoffset="92" opacity="0"/>
+          <line x1="95" y1="100" x2="254" y2="143" stroke="#83C167" stroke-width="2" stroke-dasharray="97" stroke-dashoffset="97" opacity="0"/>
+          <line x1="180" y1="100" x2="180" y2="15" stroke="#FC6255" stroke-width="2" stroke-dasharray="85" stroke-dashoffset="85" opacity="0"/>
+          <line x1="180" y1="100" x2="254" y2="143" stroke="#FC6255" stroke-width="2" stroke-dasharray="78" stroke-dashoffset="78" opacity="0"/>
+          <path d="M 236 44 A 34 34 0 0 1 248 64" fill="none" stroke="#FC6255" stroke-width="2" stroke-dasharray="16" stroke-dashoffset="16" opacity="0"/>
+          <text x="240" y="40" font-size="13" fill="#FC6255" opacity="0">120°</text>
+          <path d="M 140 62 A 24 24 0 0 1 156 56" fill="none" stroke="#9A72AC" stroke-width="2" stroke-dasharray="13" stroke-dashoffset="13" opacity="0"/>
+          <text x="124" y="74" font-size="13" fill="#9A72AC" opacity="0">60°</text>
         </svg>
         <figcaption>Góc nội tiếp BAC (đỉnh A trên đường tròn) chắn cung BC bằng 60°, bằng nửa góc ở tâm BOC = 120°.</figcaption>
       </figure>
@@ -3348,27 +3348,27 @@ const LESSONS = [
         <p><strong>Đường tròn nội tiếp tam giác đều</strong> cạnh \(a\) có tâm là trọng tâm của tam giác và bán kính \(r = \dfrac{\sqrt{3}}{6}a\).</p>
       </div>
       
-<figure class="figure">
-        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác với đường tròn ngoại tiếp qua ba đỉnh và đường tròn nội tiếp chạm ba cạnh">
-          <circle cx="180" cy="105" r="88" fill="none" stroke="#58C4DD" stroke-width="2" stroke-dasharray="6 4"/>
-          <circle cx="195" cy="80" r="39.35" fill="none" stroke="#FC6255" stroke-width="2" stroke-dasharray="6 4"/>
-          <polygon points="165,192 150,22 256,61" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <circle cx="165" cy="192" r="3" fill="#83C167"/>
-          <text x="169" y="202" font-size="13" fill="#83C167">A</text>
-          <circle cx="150" cy="22" r="3" fill="#83C167"/>
-          <text x="146" y="36" font-size="13" fill="#83C167">B</text>
-          <circle cx="256" cy="61" r="3" fill="#83C167"/>
-          <text x="258" y="70" font-size="13" fill="#83C167">C</text>
-          <circle cx="180" cy="105" r="2.5" fill="#9A72AC"/>
-          <text x="184" y="112" font-size="13" fill="#9A72AC">O</text>
-          <circle cx="195" cy="80" r="2.5" fill="#9A72AC"/>
-          <text x="200" y="87" font-size="13" fill="#9A72AC">I</text>
-          <line x1="180" y1="105" x2="165" y2="192" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <line x1="180" y1="105" x2="150" y2="22" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <line x1="180" y1="105" x2="256" y2="61" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <line x1="195" y1="80" x2="165" y2="192" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <line x1="195" y1="80" x2="150" y2="22" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <line x1="195" y1="80" x2="256" y2="61" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+<figure class="figure" data-animation="c9-b28-triangle">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác với đường tròn ngoại tiếp qua ba đỉnh và đường tròn nội tiếp chạm ba cạnh" id="fig-c9-b28">
+          <circle cx="180" cy="105" r="88" fill="none" stroke="#58C4DD" stroke-width="2" stroke-dasharray="6 4" stroke-dashoffset="6" opacity="0"/>
+          <circle cx="195" cy="80" r="39.35" fill="none" stroke="#FC6255" stroke-width="2" stroke-dasharray="6 4" stroke-dashoffset="6" opacity="0"/>
+          <polygon points="165,192 150,22 256,61" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="250" stroke-dashoffset="250"/>
+          <circle cx="165" cy="192" r="3" fill="#83C167" opacity="0"/>
+          <text x="169" y="202" font-size="13" fill="#83C167" opacity="0">A</text>
+          <circle cx="150" cy="22" r="3" fill="#83C167" opacity="0"/>
+          <text x="146" y="36" font-size="13" fill="#83C167" opacity="0">B</text>
+          <circle cx="256" cy="61" r="3" fill="#83C167" opacity="0"/>
+          <text x="258" y="70" font-size="13" fill="#83C167" opacity="0">C</text>
+          <circle cx="180" cy="105" r="2.5" fill="#9A72AC" opacity="0"/>
+          <text x="184" y="112" font-size="13" fill="#9A72AC" opacity="0">O</text>
+          <circle cx="195" cy="80" r="2.5" fill="#9A72AC" opacity="0"/>
+          <text x="200" y="87" font-size="13" fill="#9A72AC" opacity="0">I</text>
+          <line x1="180" y1="105" x2="165" y2="192" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
+          <line x1="180" y1="105" x2="150" y2="22" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
+          <line x1="180" y1="105" x2="256" y2="61" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
+          <line x1="195" y1="80" x2="165" y2="192" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
+          <line x1="195" y1="80" x2="150" y2="22" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
+          <line x1="195" y1="80" x2="256" y2="61" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3" stroke-dashoffset="4" opacity="0"/>
         </svg>
         <figcaption>Đường tròn ngoại tiếp (xanh) đi qua ba đỉnh, tâm O giao ba đường trung trực. Đường tròn nội tiếp (đỏ) chạm ba cạnh, tâm I giao ba đường phân giác.</figcaption>
       </figure>

@@ -167,32 +167,65 @@ const AnimationManager = {
       // c5-b13: Mở đầu về đường tròn
       'c5-b13-circle': {
         steps: [
-          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 1.0 },
+          { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'draw', duration: 1.0 },
           { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.5 },
         ]
       },
       
-      // c5-b16: Vị trí tương đối của đường thẳng và đường tròn
+      // c5-b16: Vị trí tương đối của đường thẳng và đường tròn (3 panels)
       'c5-b16-positions': {
         steps: [
-          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.8 },
-          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.8 },
-          { selector: 'circle[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
-          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-1 circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: '#fig-c5-b16-1 circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-1 line:not([x1="65"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: '#fig-c5-b16-1 circle[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-1 line[x1="65"]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: '#fig-c5-b16-1 text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          
+          // Panel 2: tangent case
+          { selector: '#fig-c5-b16-2 circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: '#fig-c5-b16-2 circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-2 line:not([x1="65"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: '#fig-c5-b16-2 circle[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-2 line[x1="65"]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: '#fig-c5-b16-2 text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-2 rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          
+          // Panel 3: no intersection case
+          { selector: '#fig-c5-b16-3 circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: '#fig-c5-b16-3 circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: '#fig-c5-b16-3 line:not([x1="65"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: '#fig-c5-b16-3 line[x1="65"]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: '#fig-c5-b16-3 text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
       },
       
       // c9-b27: Góc nội tiếp
       'c9-b27-inscribed': {
         steps: [
-          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.8 },
-          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle:not([r="2.5"])', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.5 },
-          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.5 },
-          { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray="5 4"]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
           { selector: 'text[fill]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c9-b28: Đường tròn ngoại tiếp và nội tiếp
+      'c9-b28-triangle': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#9A72AC"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[stroke="none"]', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
         ]
       },
       
@@ -201,7 +234,7 @@ const AnimationManager = {
         steps: [
           { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.5 },
           { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 1.0 },
-          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
       }
