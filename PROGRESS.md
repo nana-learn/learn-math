@@ -126,3 +126,30 @@ Committed `6a98acb`, `a141f47`, `1794189`, `ae44dc2`, `cc029dd`.
 - Placeholder scan (TODO/FIXME/lorem/undefined/…): none in any body/summary/title.
 - Toàn 9 `.memory` placement verified: blocks sit after a trap example and before the closing "Kĩ năng cần luyện" idea (the author's intended trap → memory → practice sequence), and memory-after-check matches Toàn 7/Thi-10 convention — no change.
 - Thi-10 `.warn` placement: verified all warns precede `.check` (0 warn-after-check). One stranded warn found (`tv10-1` @86%, after both examq blocks, with an early `.idea` @3%) — moved it right after the first `.idea` via `move-warn-tv10-1.mjs`. All Thi-10 warns now early (0 stranded at >80%). Committed `ff64708` (Toan 9) and this one.
+## 2026-01-10 Grade 8 Part 2 lessons g8-b22 through g8-b24 (eb1e6bb)
+
+Added Grade 8 Part 2 lessons covering Chapter VI: Phân thức đại số (Algebraic Fractions):
+
+- g8-b22: Tính chất cơ bản của phân thức đại số
+  - Properties 1-3: multiply/divide numerator/denominator by same non-zero polynomial
+  - Quy đồng mẫu thức (common denominator)
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b23: Phép cộng và phép trừ phân thức đại số
+  - Addition/subtraction with common denominators
+  - Common denominator finding (MTC)
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b24: Phép nhân và phép chia phân thức đại số
+  - Multiplication and division of algebraic fractions
+  - Simplification before computing
+  - 6 interactive exercises with hints and detailed explanations
+
+Each lesson follows Vietnamese pedagogy:
+- Situation (tình huống) → Definitions → Examples (slow down → easy → hard → pitfalls)
+- Look Back (nhìn lại) → Self-check (tự kiểm tra) → Practice exercises (luyện dạng SBT)
+
+Files modified:
+- web/js/lessons.js: +137 lines for 3 new lessons
+
+Committed eb1e6bb (eb1e6bb). Pushed to GitHub Pages main branch.
