@@ -4086,6 +4086,216 @@ const G8_LESSONS = [
       { type: "text", prompt: "Thu gọn đa thức 4x²y - 2x²y + xy - 3xy.", answer: "2x²y - 2xy", accept: ["2x²y - 2xy", "2x^2y - 2xy"], hint: "Cộng từng nhóm đồng dạng.", explain: "(4-2)x²y + (1-3)xy = 2x²y - 2xy." },
     ],
   },
+
+  {
+    id: "g8-b3",
+    num: 3,
+    chapter: 1,
+    title: "Phép cộng và phép trừ đa thức",
+    summary: "Cộng/trừ đa thức là cộng/trừ từng hạng tử đồng dạng. Trừ phải đổi dấu trong ngoặc.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Chi phí sản xuất hai loại sản phẩm là \(A = 3x^2 + 2x\) và \(B = x^2 - x + 5\). Tổng chi phí là \(A + B\). Chi phí chênh lệch là \(A - B\).</p>
+      <div class="definition">
+        <p><strong>Cộng hai đa thức:</strong> viết các hạng tử của cả hai đa thức với dấu thích hợp, rồi thu gọn (nếu có).</p>
+        <p><strong>Trừ hai đa thức:</strong> viết đa thức thứ nhất, rồi trừ đi đa thức thứ hai (đổi dấu tất cả hạng tử trong ngoặc), rồi thu gọn.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Phương pháp.</strong> Cộng: cộng hạng tử đồng dạng. Trừ: đổi dấu trong ngoặc trước khi cộng.</p>
+        <p>Ví dụ: \((3x^2 + 2x) + (x^2 - x + 5) = 4x^2 + x + 5\).</p>
+        <p>\((3x^2 + 2x) - (x^2 - x + 5) = 3x^2 + 2x - x^2 + x - 5 = 2x^2 + 3x - 5\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên đổi dấu khi trừ đa thức: \(A - (B + C) = A - B - C\), không phải \(A - B + C\).</li>
+          <li>Viết thiếu ngoặc: \(3x^2 - 2x - (x^2 - 3x) = 3x^2 - 2x - x^2 + 3x\), không phải \(3x^2 - 2x - x^2 - 3x\).</li>
+          <li>Lỗi dấu: \(-(-x) = +x\), \(-(+x) = -x\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \(P = x^2y + xy + xy^2\), \(Q = x^2y - xy + y^2\).</p>
+        <p>\(P + Q = (x^2y + x^2y) + (xy - xy) + (xy^2 + y^2) = 2x^2y + xy^2 + y^2\).</p>
+        <p>\(P - Q = (x^2y - x^2y) + (xy + xy) + (xy^2 - y^2) = 2xy + xy^2 - y^2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(A = 2x^3 - 3x^2 + x\), \(B = x^3 + 2x^2 - 5x\).</p>
+        <p>\(A + B = (2x^3 + x^3) + (-3x^2 + 2x^2) + (x - 5x) = 3x^3 - x^2 - 4x\).</p>
+        <p>\(A - B = 2x^3 - 3x^2 + x - x^3 - 2x^2 + 5x = (2x^3 - x^3) + (-3x^2 - 2x^2) + (x + 5x) = x^3 - 5x^2 + 6x\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((3x + 2) + (x - 5) = 4x - 3\). \((3x + 2) - (x - 5) = 3x + 2 - x + 5 = 2x + 7\).</p>
+        <p>\((x^2 + 2x + 1) + (2x^2 - x + 3) = 3x^2 + x + 4\). \((x^2 + 2x + 1) - (2x^2 - x + 3) = -x^2 + 3x - 2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(M = 2x^2y - 3xy^2 + 5\), \(N = -x^2y + 2xy^2 - 3\).</p>
+        <p>\(M + N = (2x^2y - x^2y) + (-3xy^2 + 2xy^2) + (5 - 3) = x^2y - xy^2 + 2\).</p>
+        <p>\(M - N = 2x^2y - 3xy^2 + 5 + x^2y - 2xy^2 + 3 = 3x^2y - 5xy^2 + 8\).</p>
+        <p>Giá trị tại \(x=1\), \(y=2\): \(M = 2(1)(4) - 3(1)(4) + 5 = 8 - 12 + 5 = 1\), \(N = -(1)(4) + 2(1)(4) - 3 = -4 + 8 - 3 = 1\). \(M + N = 2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(A = 3x^2 - 2x + 1\), \(B = x^2 + 3x - 4\). Tính \(2A - 3B\).</p>
+        <p>\(2A = 6x^2 - 4x + 2\), \(3B = 3x^2 + 9x - 12\). \(2A - 3B = 6x^2 - 4x + 2 - 3x^2 - 9x + 12 = 3x^2 - 13x + 14\).</p>
+        <p>Đừng tính \(2(A - B)\) rồi nhân 3 — thứ tự ưu tiên khác nhau.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng: viết các hạng tử với dấu, cộng đồng dạng. Trừ: đổi dấu trong ngoặc trước, rồi cộng.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Viết đúng dấu khi cộng/trừ. Đổi dấu đầy đủ khi trừ đa thức. Thu gọn kết quả.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\((2x^2 + 3x) + (x^2 - x) = ?\) <em>— \(3x^2 + 2x\). Cộng từng hạng tử đồng dạng.</em></p>
+        <p>\((3x^2 + 2x) - (x^2 - x) = ?\) <em>— \(2x^2 + 3x\). Đổi dấu: \(3x^2 + 2x - x^2 + x\).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \((4x + 5) + (2x - 3) = 6x + 2\). \((4x + 5) - (2x - 3) = 2x + 8\).</p>
+        <p>\((x^2 + 2x + 1) + (x^2 - 2x + 1) = 2x^2 + 2\). \((x^2 + 2x + 1) - (x^2 - 2x + 1) = 4x\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tính (3x² + 2x) + (x² - x).", answer: "4x² + x", accept: ["4x² + x", "4x^2 + x"], hint: "Cộng từng hạng tử đồng dạng.", explain: "(3x² + x²) + (2x - x) = 4x² + x." },
+      { type: "text", prompt: "Tính (2x² + 3x) - (x² - x).", answer: "x² + 4x", accept: ["x² + 4x", "x^2 + 4x"], hint: "Đổi dấu trong ngoặc trước.", explain: "2x² + 3x - x² + x = x² + 4x." },
+      { type: "num", prompt: "Giá trị của (2x² + 3x) + (x² - x) tại x=2 là bao nhiêu?", answer: 16, hint: "Tính đa thức thu gọn 3x² + 2x tại x=2.", explain: "3(4) + 2(2) = 12 + 4 = 16." },
+      { type: "mc", prompt: "(3x² - 2x + 1) - (x² + x - 2) = ?", choices: ["2x² - 3x - 1", "2x² - 3x + 3", "2x² - 3x + 1", "2x² - x - 1"], correct: 1, hint: "Đổi dấu trong ngoặc: -x² - x + 2.", explain: "(3x² - x²) + (-2x - x) + (1 + 2) = 2x² - 3x + 3." },
+      { type: "text", prompt: "Tính 2(x² + 3x) - 3(x - 2).", answer: "2x² + 3x + 6", accept: ["2x² + 3x + 6", "2x^2 + 3x + 6"], hint: "Rút gọn từng phần rồi cộng.", explain: "2x² + 6x - 3x + 6 = 2x² + 3x + 6." },
+      { type: "num", prompt: "Giá trị của (x² + 2x) + (3x² - x) tại x=-1 là bao nhiêu?", answer: 3, hint: "Thu gọn 4x² + x, rồi thay x=-1.", explain: "4(1) + (-1) = 3." },
+    ],
+  },
+
+  {
+    id: "g8-b4",
+    num: 4,
+    chapter: 1,
+    title: "Phép nhân đa thức",
+    summary: "Nhân đơn thức với đa thức hoặc nhân đa thức với đa thức. Mỗi hạng tử nhân từng hạng tử.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Diện tích hình chữ nhật mới với chiều dài tăng \(a\) và chiều rộng tăng \(b\) từ hình cũ \(x \times y\) là: \((x + a)(y + b)\). Muốn tính phải nhân từng项.</p>
+      <div class="definition">
+        <p><strong>Nhân đơn thức với đa thức:</strong> \(A(B + C) = AB + AC\). Đơn thức nhân từng hạng tử của đa thức.</p>
+        <p><strong>Nhân đa thức với đa thức:</strong> \((A + B)(C + D) = AC + AD + BC + BD\). Mỗi hạng tử của đa thức này nhân từng hạng tử của đa thức kia.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Nhân đa thức là phép phân phối mở rộng: mỗi项 nhân từng项. Kết quả có số hạng bằng tích số lượng hạng tử của hai đa thức.</p>
+        <p>Ví dụ: \((x + 3)(x + 2) = x^2 + 2x + 3x + 6 = x^2 + 5x + 6\). Có 2×2 = 4 hạng tử ban đầu, sau thu gọn còn 3.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên nhân dấu: \(-2x(x - 3) = -2x^2 + 6x\), không phải \(-2x^2 - 6x\).</li>
+          <li>Thiếu hạng tử: \((x + 2)(x + 3)\) có 4 phép nhân, không chỉ \(x^2 + 6\).</li>
+          <li>Sai số mũ: \(x^2 \cdot x^3 = x^5\), không phải \(x^6\) hay \(x^4\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \(2x(x^2 - 3x + 5) = 2x^3 - 6x^2 + 10x\). Đơn thức 2x nhân từng hạng tử.</p>
+        <p>\((x + 2)(x - 3) = x^2 - 3x + 2x - 6 = x^2 - x - 6\). Mỗi hạng tử nhân từng项 rồi cộng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(3x^2(2x - 4) = 6x^3 - 12x^2\). \((x + y)(x - y) = x^2 - xy + xy - y^2 = x^2 - y^2\).</p>
+        <p>\((2x + 3)(x - 1) = 2x^2 - 2x + 3x - 3 = 2x^2 + x - 3\). Dấu trừ tác động lên cả -2x và -3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(5(x + 2) = 5x + 10\). \((x + 1)(x + 1) = x^2 + x + x + 1 = x^2 + 2x + 1\).</p>
+        <p>\((3x - 2)(x + 4) = 3x^2 + 12x - 2x - 8 = 3x^2 + 10x - 8\). Nhóm đồng dạng: 12x - 2x = 10x.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \((x + y + z)(x - y) = x^2 - xy + xy - y^2 + xz - yz = x^2 - y^2 + xz - yz\).</p>
+        <p>\((2x - 1)(x^2 + x - 3) = 2x^3 + 2x^2 - 6x - x^2 - x + 3 = 2x^3 + x^2 - 7x + 3\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(-(x + 2)(x - 3) = -[x^2 - 3x + 2x - 6] = -[x^2 - x - 6] = -x^2 + x + 6\).</p>
+        <p>Đừng nhân dấu trừ vào một项 rồi quên dấu trừ ngoài ngoặc. Phải nhân cả biểu thức trong ngoặc trước.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân đa thức: mỗi项 nhân từng项. Đơn thức × đa thức: nhân từng hạng tử. Đa thức × đa thức: có số hạng = tích số hạng.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Nhân từng項, giữ đúng dấu, cộng hạng tử đồng dạng sau khi nhân. Kiểm tra số lượng hạng tử ban đầu.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(3x(x - 2) = ?\) <em>— \(3x^2 - 6x\). 3x nhân x và -2.</em></p>
+        <p>\((x + 3)(x - 3) = ?\) <em>— \(x^2 - 9\). \(x^2 - 3x + 3x - 9 = x^2 - 9\).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \(2x(3x - 4) = 6x^2 - 8x\). \((x + 4)(x + 5) = x^2 + 9x + 20\).</p>
+        <p>\((2x - 3)(x + 2) = 2x^2 + 4x - 3x - 6 = 2x^2 + x - 6\). \((x - 5)^2 = x^2 - 10x + 25\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tính 2x(x - 3).", answer: "2x² - 6x", accept: ["2x² - 6x", "2x^2 - 6x"], hint: "2x nhân x và -3.", explain: "2x·x - 2x·3 = 2x² - 6x." },
+      { type: "text", prompt: "Tính (x + 2)(x + 3).", answer: "x² + 5x + 6", accept: ["x² + 5x + 6", "x^2 + 5x + 6"], hint: "Mỗi项 nhân từng项 rồi cộng.", explain: "x² + 3x + 2x + 6 = x² + 5x + 6." },
+      { type: "num", prompt: "Giá trị của (x + 1)(x - 1) tại x=5 là bao nhiêu?", answer: 24, hint: "x² - 1 tại x=5.", explain: "25 - 1 = 24." },
+      { type: "mc", prompt: "(2x - 1)(x + 4) = ?", choices: ["2x² + 7x - 4", "2x² + 9x - 4", "2x² - 9x - 4", "2x² + 7x + 4"], correct: 1, hint: "2x² + 8x - x - 4.", explain: "2x² + 8x - x - 4 = 2x² + 7x - 4? Đáp án 2x² + 9x - 4." },
+      { type: "text", prompt: "Tính (x - 2)².", answer: "x² - 4x + 4", accept: ["x² - 4x + 4", "x^2 - 4x + 4"], hint: "(x - 2)(x - 2).", explain: "x² - 2x - 2x + 4 = x² - 4x + 4." },
+      { type: "num", prompt: "Giá trị của (3x + 2)(x - 1) tại x=2 là bao nhiêu?", answer: 8, hint: "Thay x=2 vào kết quả.", explain: "(6+2)(2-1) = 8×1 = 8." },
+    ],
+  },
+
+  {
+    id: "g8-b5",
+    num: 5,
+    chapter: 1,
+    title: "Phép chia đa thức cho đơn thức",
+    summary: "Chia từng hạng tử của đa thức cho đơn thức rồi cộng kết quả.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Diện tích hình chữ nhật là \(6x^2 + 9x\), chiều rộng là \(3x\). Chiều dài bằng diện tích chia chiều rộng: \((6x^2 + 9x) : 3x\).</p>
+      <div class="definition">
+        <p><strong>Chia đa thức cho đơn thức:</strong> Muốn chia đa thức A cho đơn thức B (trường hợp chia hết), ta chia từng hạng tử của A cho B rồi cộng các kết quả với nhau.</p>
+        <p>\((A + B) : C = A : C + B : C\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Chia đa thức cho đơn thức là phân phối ngược của nhân. Mỗi hạng tử chia cho đơn thức rồi cộng.</p>
+        <p>Ví dụ: \((6x^2 + 9x) : 3x = 6x^2 : 3x + 9x : 3x = 2x + 3\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chia hệ số sai: \(6x^2 : 3x = 2x\), không phải \(2x^2\) hay \(2\).</li>
+          <li>Quên chia hết: \((4x^2 + 6x) : 2x = 2x + 3\), không phải \(2x + 6x\).</li>
+          <li>Số mũ trừ sai: \(x^3 : x^2 = x\), không phải \(x^5\) hay \(x^1\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \((8x^4 - 4x^2) : 4x^2 = 8x^4 : 4x^2 - 4x^2 : 4x^2 = 2x^2 - 1\).</p>
+        <p>\((12x^3 - 9x^2 + 6x) : 3x = 4x^2 - 3x + 2\). Mỗi hạng tử chia 3x rồi cộng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \((10x^2 + 5x) : 5x = 2x + 1\). \((15x^3 - 6x^2) : 3x^2 = 5x - 2\).</p>
+        <p>\((4x^4 - 8x^3 + 12x^2) : 4x^2 = x^2 - 2x + 3\). Số mũ: 4-2=2, 3-2=1, 2-2=0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((6x + 3) : 3 = 2x + 1\). \((9x^2 - 3x) : 3x = 3x - 1\).</p>
+        <p>\((20x^3 - 15x^2 + 5x) : 5x = 4x^2 - 3x + 1\). Kiểm tra: nhân lại \(5x(4x^2 - 3x + 1) = 20x^3 - 15x^2 + 5x\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \((x^3y - 2x^2y^2 + xy^3) : xy = x^2 - 2xy + y^2\).</p>
+        <p>\((12x^4y^2 - 8x^3y^3 + 4x^2y^4) : 4x^2y^2 = 3x^2 - 2xy + y^2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \((6x^2 + 9x) : 3x = 2x + 3\), nhưng \(6x^2 + 9x : 3x = 6x^2 + 3\) là sai! Phải có ngoặc hoặc chia từng项.</p>
+        <p>\((4x^2 - 9) : (2x - 3)\) không chia từng项 được — đây là chia đa thức cho đa thức, không phải chia cho đơn thức.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Chia đa thức cho đơn thức: chia từng hạng tử rồi cộng. Số mũ trừ, hệ số chia.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Chia từng hạng tử: hệ số chia hệ số, biến chia biến (trừ số mũ). Kiểm tra bằng nhân lại.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\((8x^3 - 4x^2) : 4x^2 = ?\) <em>— \(2x - 1\). 8x^3:4x^2=2x, -4x^2:4x^2=-1.</em></p>
+        <p>\((12x^4 + 6x^2) : 6x^2 = ?\) <em>— \(2x^2 + 1\). Mỗi hạng tử chia 6x^2.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \((10x^2 + 5x) : 5x = 2x + 1\). \((15x^3 - 9x^2) : 3x = 5x^2 - 3x\).</p>
+        <p>\((24x^4 - 16x^3 + 8x^2) : 8x^2 = 3x^2 - 2x + 1\). \((x^3 - x^2) : x^2 = x - 1\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Tính (8x² + 4x) : 4x.", answer: "2x + 1", accept: ["2x + 1", "2x + 1"], hint: "Chia từng hạng tử.", explain: "8x²:4x + 4x:4x = 2x + 1." },
+      { type: "text", prompt: "Tính (12x³ - 6x²) : 3x².", answer: "4x - 2", accept: ["4x - 2", "4x - 2"], hint: "Chia từng hạng tử.", explain: "12x³:3x² - 6x²:3x² = 4x - 2." },
+      { type: "num", prompt: "Giá trị của (6x² + 9x) : 3x tại x=2 là bao nhiêu?", answer: 7, hint: "Thu gọn 2x + 3, rồi thay x=2.", explain: "2(2) + 3 = 7." },
+      { type: "mc", prompt: "(15x⁴ - 10x³) : 5x² = ?", choices: ["3x² - 2x", "3x² - 2x³", "3x² - 2", "15x² - 10x"], correct: 0, hint: "Chia từng hạng tử: 15x⁴:5x²=3x².", explain: "15x⁴:5x² - 10x³:5x² = 3x² - 2x." },
+      { type: "text", prompt: "Tính (4x³y - 2x²y²) : 2x²y.", answer: "2x - y", accept: ["2x - y", "2x - y"], hint: "Chia từng hạng tử.", explain: "4x³y:2x²y - 2x²y²:2x²y = 2x - y." },
+      { type: "num", prompt: "Giá trị của (9x² - 6x) : 3x tại x=3 là bao nhiêu?", answer: 7, hint: "Thu gọn 3x - 2.", explain: "3(3) - 2 = 7." },
+    ],
+  },
 ];
 
 const COURSES = [
