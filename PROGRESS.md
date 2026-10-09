@@ -223,6 +223,48 @@ Files modified:
 
 Committed c1c5bd1. Pushed to GitHub Pages main branch.
 
+## 2026-01-10 Grade 9 animations for c9-b29 and c9-b30 (2c4d8a0)
+
+Added visual animations for Grade 9 lessons:
+
+- **c9-b29: Tứ giác nội tiếp (Cyclic quadrilateral)**
+  - Circle with center O, cyclic quadrilateral ABCD inscribed
+  - Two opposite angles: ∠A + ∠C = 180°, ∠B + ∠D = 180°
+  - Animation steps: circle → quadrilateral → points → labels (4 colors for angles)
+
+- **c9-b30: Đa giác đều (Regular polygons)**
+  - Lục giác đều (regular hexagon) inscribed in circle with radius R
+  - Center lines dividing circle into 6 equal arcs (60° each)
+  - Side length equals radius R (special property of regular hexagon)
+  - Animation steps: circle → center lines → hexagon → points → labels
+
+Both lessons use the same animation framework:
+- Circle and polygon edges use `stroke-dasharray`/`stroke-dashoffset` for drawing effect
+- Points and text use `opacity` fade-in
+- Interactive controls: play/pause/step/reset buttons
+
+Files modified:
+- `web/js/animations.js`: Added `c9-b29-cyclic` and `c9-b30-regular` configurations
+- `web/js/lessons.js`: Added `data-animation` attributes to lesson figures
+
+Committed 2c4d8a0. Pushed to GitHub Pages main branch.
+
+### Final Grade 9 Animation Status:
+- c3-b7: Square root (geometric) ✅
+- c4-b11: Right triangle trig ✅
+- c5-b13: Circle introduction ✅
+- c5-b16: Line-circle positions ✅
+- c6-b18: Parabola ✅
+- c7-b22: Frequency chart ✅
+- c9-b27: Inscribed angle ✅
+- c9-b28: Circumcircle/incircle ✅
+- c9-b29: Cyclic quadrilateral ✅ NEW
+- c9-b30: Regular polygons ✅ NEW
+- c10-b31: Cylinder/cone ✅
+- c10-b32: Sphere ✅
+
+**Total: 12 animated Grade 9 lessons**
+
 ## 2026-01-10 Grade 8 Part 2 lessons g8-b33 through g8-b39 (b37749c)
 
 Added Grade 8 Part 2 lessons covering Chapters IX (Tam giác đồng dạng) and X (Một số hình khối trong thực tiễn):
