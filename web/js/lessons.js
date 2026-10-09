@@ -4511,6 +4511,240 @@ const G8_LESSONS = [
       { type: "num", prompt: "Giá trị của biểu thức x² + 10x + 25 tại x=3 là bao nhiêu?", answer: 64, hint: "(x+5)² tại x=3.", explain: "(3+5)² = 64." },
     ],
   },
+
+  {
+    id: "g8-b9",
+    num: 9,
+    chapter: 3,
+    title: "Tứ giác",
+    summary: "Tứ giác có 4 cạnh, 4 đỉnh, 4 góc. Tổng các góc trong bằng 360°. Các loại:凸 (lồi), lõm, đều, cân, vuông.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một mảnh đất hình tứ giác ABCD cần chia làm hai phần bằng nhau. Biết số đo ba góc: ∠A = 80°, ∠B = 100°, ∠C = 110°. Hỏi ∠D bằng bao nhiêu? Vì tổng bốn góc trong tứ giác bằng 360° nên ∠D = 360° - 80° - 100° - 110° = 70°.</p>
+      <div class="definition">
+        <p><strong>Tứ giác ABCD</strong> gồm bốn đoạn thẳng AB, BC, CD, DA nối tiếp nhau tạo thành hình kín. Các điểm A, B, C, D là đỉnh. Các đoạn AB, BC, CD, DA là cạnh.</p>
+        <p><strong>Góc trong tứ giác</strong> là góc tạo bởi hai cạnh kề nhau. Tứ giác có bốn góc trong.</p>
+      </div>
+      <div class="definition">
+        <p><strong>Tổng các góc trong tứ giác bằng 360°.</strong> ∠A + ∠B + ∠C + ∠D = 360°.</p>
+        <p><strong>Tứ giác lồi</strong> là tứ giác luôn nằm trong một nửa mặt phẳng có bờ là đường thẳng chứa bất kì cạnh nào của nó.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Tứ giác là hình có 4 cạnh, 4 đỉnh, 4 góc. Góc trong = 180° - góc kề bù bên ngoài. Tổng bốn góc = 360° (chia tứ giác thành hai tam giác, mỗi tam giác 180°).</p>
+        <p>Hình chữ nhật: bốn góc vuông = 90°×4 = 360°. Hình thang cân: hai góc kề một cạnh bên bù nhau.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm tổng góc: tứ giác 360°, tam giác 180°. Đừng lấy (4−2)×180°=360° rồi chia 4 = 90° như hình chữ nhật — chỉ đúng với tứ giác đều.</li>
+          <li>Thiếu góc: cho ba góc, tìm góc thứ tư bằng cách trừ từ 360°. Đừng cộng ba góc rồi kết luận là góc thứ tư.</li>
+          <li>Định nghĩa lồi: hình thoi, hình chữ nhật, hình vuông đều là tứ giác lồi. Nếu một góc > 180°, tứ giác lõm.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Tứ giác ABCD có ∠A = 110°, ∠B = 100°, ∠C = 70°. ∠D = 360° − 110° − 100° − 70° = 80°.</p>
+        <p>Tứ giác MNPQ có ∠M = ∠N = ∠P = 90° thì ∠Q = 360° − 270° = 90°. Đây là hình chữ nhật hoặc hình vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Tứ giác ABCD: ∠A = 85°, ∠B = 105°, ∠C = 90°. ∠D = 360° − 85° − 105° − 90° = 80°.</p>
+        <p>Tổng hai góc đối: ∠A + ∠C = 85° + 90° = 175°, ∠B + ∠D = 105° + 80° = 185°. Không bằng nhau (trừ khi là tứ giác nội tiếp).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình vuông: bốn góc đều 90°. Tổng: 90°×4 = 360°. ✓</p>
+        <p>Hình chữ nhật: bốn góc đều 90°. Tổng: 360°. ✓</p>
+        <p>Hình thoi: hai góc nhọn bằng nhau, hai góc tù bằng nhau. Nếu góc nhọn = 60° thì góc tù = 120° (vì 60° + 120° + 60° + 120° = 360°).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tứ giác ABCD có ∠A = 2x, ∠B = 3x, ∠C = x, ∠D = 4x. Tìm x.</p>
+        <p>2x + 3x + x + 4x = 360° → 10x = 360° → x = 36°.</p>
+        <p>∠A = 72°, ∠B = 108°, ∠C = 36°, ∠D = 144°. Kiểm tra: 72 + 108 + 36 + 144 = 360°.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tứ giác có ba góc bằng 90° thì góc còn nhất định phải bằng 90° (vì 360° − 270° = 90°). Hình này là hình chữ nhật (hoặc vuông nếu bốn cạnh bằng nhau).</p>
+        <p>Đừng nghĩ chỉ cần hai góc vuông là đủ — hình thang vuông có hai góc vuông nhưng tổng bốn góc vẫn 360°.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tứ giác: 4 đỉnh, 4 cạnh, 4 góc. Tổng bốn góc trong = 360°. Tứ giác lồi: mọi góc ≤ 180°.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Tính góc thiếu bằng cách trừ từ 360°. Chứng minh tổng góc bằng 360° (chia thành hai tam giác). Nhận dạng tứ giác lồi.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tứ giác có ba góc lần lượt bằng 80°, 100°, 90°. Góc thứ tư bằng bao nhiêu? <em>— 360° − 270° = 90°.</em></p>
+        <p>Hình bình hành có góc A = 70°. Góc C bằng bao nhiêu? <em>— 70° (hai góc đối bằng nhau). Góc B = 110° (kề bù với A).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tứ giác ABCD: ∠A = 60°, ∠B = 120°, ∠C = 100° → ∠D = 80°.</p>
+        <p>Tứ giác MNPQ: ∠M = ∠Q = 110°, ∠N = 70° → ∠P = 70° (tổng 360°).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tứ giác ABCD có ∠A=75°, ∠B=105°, ∠C=90°. Tính ∠D.", answer: 90, hint: "360° trừ ba góc đã cho.", explain: "360° - 75° - 105° - 90° = 90°." },
+      { type: "mc", prompt: "Tứ giác có bốn góc đều bằng bao nhiêu độ nếu bằng nhau?", choices: ["75°", "80°", "90°", "100°"], correct: 2, hint: "360° chia 4.", explain: "360° ÷ 4 = 90°." },
+      { type: "text", prompt: "Tứ giác ABCD có ∠A=2x, ∠B=3x, ∠C=x, ∠D=4x. Tìm x.", answer: "36", accept: ["36", "36"], hint: "10x=360°.", explain: "10x=360° → x=36°." },
+      { type: "num", prompt: "Hình bình hành có ∠A=120°. Tính ∠B.", answer: 60, hint: "Hai góc kề bù: ∠A+∠B=180°.", explain: "180° - 120° = 60°." },
+      { type: "text", prompt: "Tứ giác có ba góc bằng 85°, 95°, 100°. Góc thứ tư bằng bao nhiêu?", answer: 80, accept: ["80", "80"], hint: "360° trừ tổng ba góc.", explain: "360° - 85° - 95° - 100° = 80°." },
+      { type: "mc", prompt: "Điều kiện nào sau đây luôn đúng với tứ giác?", choices: ["Bốn góc đều bằng 90°", "Hai góc đối bằng nhau", "Tổng bốn góc bằng 360°", "Bốn cạnh bằng nhau"], correct: 2, hint: "Định lí tổng góc trong tứ giác.", explain: "Tổng bốn góc trong bất kỳ tứ giác nào đều bằng 360°." },
+    ],
+  },
+
+  {
+    id: "g8-b10",
+    num: 10,
+    chapter: 3,
+    title: "Hình thang",
+    summary: "Hình thang có một cặp cạnh song song (đáy). Các loại: thường, cân, vuông. Đường trung bình bằng nửa tổng hai đáy.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một thang máy tiết diện hình thang ABCD (AB ∥ CD), đáy lớn CD = 120 cm, đáy nhỏ AB = 80 cm. Cần tính chiều dài thanh ngang ở chính giữa — đường trung bình: (AB + CD) : 2 = 100 cm.</p>
+      <div class="definition">
+        <p><strong>Hình thang</strong> là tứ giác có hai cạnh song song. Hai cạnh song song gọi là hai <strong>đáy</strong>. Hai cạnh còn lại gọi là <strong>cạnh bên</strong>.</p>
+        <p><strong>Hình thang cân</strong> là hình thang có hai cạnh bên bằng nhau và hai góc kề một đáy bằng nhau.</p>
+        <p><strong>Hình thang vuông</strong> là hình thang có một cạnh bên vuông góc với hai đáy.</p>
+      </div>
+      <div class="definition">
+        <p><strong>Đường trung bình của hình thang</strong> là đoạn thẳng nối trung điểm hai cạnh bên. Đường trung bình song song với hai đáy và bằng nửa tổng hai đáy.</p>
+        <p>Độ dài đường trung bình: \(m = \dfrac{a + b}{2}\), với \(a, b\) là độ dài hai đáy.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Hình thang = một cặp cạnh song song. Đáy dài hơn gọi là đáy lớn, ngắn hơn là đáy nhỏ. Hình thang cân có tính chất đối xứng qua trục vuông góc với đáy.</p>
+        <p>Đường trung bình = "cân bằng" giữa hai đáy — nếu đáy lớn = 10, đáy nhỏ = 4 thì đường trung bình = 7.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm hình thang với hình bình hành: hình bình hành có hai cặp cạnh song song, là trường hợp đặc biệt của hình thang (theo định nghĩa hiện đại).</li>
+          <li>Quên điều kiện cân: hai cạnh bên bằng nhau KHÔNG đủ để khẳng định hình thang cân — cần thêm góc kề đáy bằng nhau hoặc đường chéo bằng nhau.</li>
+          <li>Đường trung bình: chỉ nối trung điểm cạnh bên, không phải nối trung điểm đáy.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Hình thang ABCD (AB ∥ CD), AB = 6 cm, CD = 10 cm. Đường trung bình \(EF = \dfrac{6 + 10}{2} = 8\) cm.</p>
+        <p>Hình thang cân ABCD (AB ∥ CD), AB = 4 cm, CD = 10 cm, cạnh bên BC = 5 cm. Kẻ đường cao AH, BH = \(\dfrac{10 - 4}{2} = 3\) cm, AH = 4 cm (tam giác vuông 3-4-5).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình thang vuông ABCD (AB ∥ CD, ∠A = ∠D = 90°), AB = 8 cm, AD = 6 cm, CD = 14 cm.</p>
+        <p>Đường trung bình \(EF = \dfrac{8 + 14}{2} = 11\) cm. Kẻ BH vuông góc CD, HC = CD − AB = 6 cm, tam giác BHC vuông cân tại H.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình thang thường: đáy lớn = 12 cm, đáy nhỏ = 8 cm, đường trung bình = 10 cm.</p>
+        <p>Hình thang vuông: hai đáy 5 cm và 9 cm, đường trung bình = 7 cm. Chiều cao không ảnh hưởng đến đường trung bình.</p>
+        <p>Hình thang cân: đáy lớn = 16 cm, đường trung bình = 12 cm → đáy nhỏ = 8 cm (vì 12 × 2 − 16 = 8).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình thang ABCD (AB ∥ CD), đường trung bình MN = 15 cm. Biết AB = 2CD. Tìm AB, CD.</p>
+        <p>Đặt CD = x, AB = 2x. \(\dfrac{x + 2x}{2} = 15\) → \(\dfrac{3x}{2} = 15\) → \(x = 10\).</p>
+        <p>CD = 10 cm, AB = 20 cm. Kiểm tra: \(\dfrac{10 + 20}{2} = 15\) cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tứ giác ABCD có AB ∥ CD, AB = CD. Hỏi đây có phải hình thang cân không? <strong>Không</strong> — đây là hình bình hành. Hình thang cân phải có AB ≠ CD (trừ trường hợp suy biến thành hình chữ nhật).</p>
+        <p>Hình thang có hai góc kề một cạnh bên bằng nhau không nhất thiết là cân — cần kiểm tra hai góc kề cùng một đáy.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình thang: một cặp cạnh song song. Đường trung bình = (đáy lớn + đáy nhỏ) : 2. Hình thang cân: đối xứng qua trục vuông góc đáy.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định hai đáy song song. Áp dụng công thức đường trung bình. Vẽ đường cao từ đỉnh để tạo tam giác vuông.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình thang có đáy lớn = 14 cm, đáy nhỏ = 6 cm. Đường trung bình bằng bao nhiêu? <em>— (14 + 6) : 2 = 10 cm.</em></p>
+        <p>Hình thang cân ABCD (AB ∥ CD) có AB = 8 cm, CD = 12 cm. Đường trung bình = ? <em>— 10 cm. Cạnh bên không cần biết để tính đường trung bình.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Hình thang: đáy lớn 18 cm, đáy nhỏ 12 cm → đường trung bình = 15 cm.</p>
+        <p>Hình thang cân: đường trung bình = 13 cm, đáy lớn = 16 cm → đáy nhỏ = 10 cm (2×13−16).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình thang có đáy lớn 15 cm, đáy nhỏ 9 cm. Tính đường trung bình.", answer: 12, hint: "(15+9):2.", explain: "(15 + 9) ÷ 2 = 12 cm." },
+      { type: "num", prompt: "Hình thang có đường trung bình = 11 cm, đáy lớn = 14 cm. Tính đáy nhỏ.", answer: 8, hint: "2×11−14.", explain: "2 × 11 − 14 = 8 cm." },
+      { type: "mc", prompt: "Hình thang cân ABCD (AB ∥ CD) có AB = 6 cm, CD = 14 cm. Đường trung bình bằng bao nhiêu?", choices: ["8 cm", "10 cm", "12 cm", "20 cm"], correct: 1, hint: "(6+14):2.", explain: "10 cm." },
+      { type: "text", prompt: "Hình thang vuông ABCD (AB ∥ CD) có AB=8cm, CD=12cm, AD=5cm. Tính đường trung bình.", answer: "10 cm", accept: ["10 cm", "10cm"], hint: "Chỉ cần hai đáy.", explain: "(8 + 12) ÷ 2 = 10 cm. Chiều cao không ảnh hưởng." },
+      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD) có AB = x, CD = 3x, đường trung bình = 16 cm. Tìm x.", answer: 8, hint: "(x+3x):2=16.", explain: "2x = 16 → x = 8." },
+      { type: "mc", prompt: "Tứ giác nào sau đây KHÔNG phải là hình thang?", choices: ["Hình bình hành", "Hình chữ nhật", "Hình vuông", "Tứ giác không có cạnh nào song song"], correct: 3, hint: "Hình thang cần ít nhất một cặp cạnh song song.", explain: "Tứ giác không có cạnh nào song song không phải hình thang. Các hình còn lại đều có hai cặp cạnh song song." },
+    ],
+  },
+
+  {
+    id: "g8-b11",
+    num: 11,
+    chapter: 3,
+    title: "Hình bình hành",
+    summary: "Hình bình hành có hai cặp cạnh đối song song. Các tính chất: đối bằng nhau, song song, góc đối bằng nhau, đường chéo cắt nhau tại trung điểm.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một khung cửa sổ hình bình hành ABCD có AB = 60 cm, BC = 40 cm. Cạnh CD bằng bao nhiêu? AD bằng bao nhiêu? Vì AB ∥ CD và AD ∥ BC nên AB = CD = 60 cm, AD = BC = 40 cm.</p>
+      <div class="definition">
+        <p><strong>Hình bình hành</strong> là tứ giác có hai cặp cạnh đối song song: AB ∥ CD và AD ∥ BC.</p>
+        <p><strong>Các tính chất của hình bình hành:</strong></p>
+        <ul>
+          <li>Hai cạnh đối bằng nhau: AB = CD, AD = BC.</li>
+          <li>Hai góc đối bằng nhau: ∠A = ∠C, ∠B = ∠D.</li>
+          <li>Hai đường chéo cắt nhau tại trung điểm mỗi đường.</li>
+        </ul>
+      </div>
+      <div class="definition">
+        <p><strong>Dấu hiệu nhận biết hình bình hành:</strong></p>
+        <ul>
+          <li>Tứ giác có hai cặp cạnh đối song song.</li>
+          <li>Tứ giác có hai cặp cạnh đối bằng nhau.</li>
+          <li>Tứ giác có một cặp cạnh đối vừa song song vừa bằng nhau.</li>
+          <li>Tứ giác có hai đường chéo cắt nhau tại trung điểm mỗi đường.</li>
+        </ul>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Hình bình hành là "hình thang đặc biệt" có hai đáy bằng nhau về độ dài và song song. Mọi tính chất của hình thang đều đúng với hình bình hành, cộng thêm đối xứng tâm tại giao điểm đường chéo.</p>
+        <p>Đường chéo AC cắt BD tại O thì OA = OC, OB = OD. Giao điểm O là tâm đối xứng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm góc kề: góc A và góc B kề nhau nên bù nhau (∠A + ∠B = 180°), không bằng nhau trừ khi đều bằng 90°.</li>
+          <li>Quên điều kiện: chỉ có một cặp cạnh đối song song là hình thang, không phải hình bình hành.</li>
+          <li>Dấu hiệu nhận biết: cần đủ điều kiện. AB = CD nhưng không song song thì chưa chắc là hình bình hành.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Hình bình hành ABCD có ∠A = 70°. Tính các góc còn lại.</p>
+        <p>∠C = ∠A = 70° (hai góc đối). ∠B = 180° − ∠A = 110° (hai góc kề bù). ∠D = ∠B = 110°.</p>
+        <p>AB = 8 cm, BC = 5 cm → CD = 8 cm, DA = 5 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình bình hành MNPQ có MN = 12 cm, NP = 9 cm, ∠M = 60°.</p>
+        <p> PQ = MN = 12 cm, QM = NP = 9 cm. ∠P = 180° − 60° = 120° (kề bù). ∠N = ∠Q = 120° (đối).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình bình hành có một góc = 90° thì mọi góc đều = 90° (hình chữ nhật).</p>
+        <p>Hình bình hành có hai cạnh kề bằng nhau thì mọi cạnh đều bằng nhau (hình thoi).</p>
+        <p>Hình bình hành vừa là chữ nhật vừa là thoi → hình vuông.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình bình hành ABCD có AC cắt BD tại O. Biết OA = 5 cm, OB = 4 cm. Tính AC, BD.</p>
+        <p>AC = 2 × OA = 10 cm. BD = 2 × OB = 8 cm. (Giao điểm chia đôi đường chéo).</p>
+        <p>Nếu AB = 6 cm, tam giác AOB có cạnh OA=5, OB=4, AB=6 — kiểm tra bất đẳng thức tam giác: 4+5>6 ✓.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tứ giác ABCD có AB ∥ CD và AB = CD. Hỏi có phải hình bình hành không? <strong>Có</strong> — đây là dấu hiệu nhận biết: một cặp cạnh đối vừa song song vừa bằng nhau.</p>
+        <p>Tứ giác có hai đường chéo bằng nhau và cắt nhau tại trung điểm → hình chữ nhật (đặc biệt của hình bình hành).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình bình hành: hai cặp cạnh đối song song. Tính chất: cạnh đối bằng nhau, góc đối bằng nhau, đường chéo cắt nhau tại trung điểm.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Áp dụng tính chất để tính độ dài cạnh, số đo góc. Nhận biết hình bình hành từ dấu hiệu. Chứng minh một tứ giác là hình bình hành.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình bình hành ABCD có ∠A = 110°. Tính ∠B, ∠C, ∠D. <em>— ∠C = 110° (đối). ∠B = ∠D = 70° (kề bù với A).</em></p>
+        <p>Hình bình hành có AB = 10 cm, BC = 7 cm. Tính CD, DA. <em>— CD = 10 cm, DA = 7 cm (cạnh đối bằng nhau).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Hình bình hành MNOP có MN = 15 cm, NO = 9 cm. OP = 15 cm, PM = 9 cm.</p>
+        <p>Hình bình hành ABCD có ∠A = 45°. ∠B = 135°, ∠C = 45°, ∠D = 135°.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình bình hành ABCD có AB=8cm, BC=5cm. Tính CD, DA.", answer: "8,5", accept: ["8,5", "8, 5", "CD=8,DA=5"], hint: "Cạnh đối bằng nhau.", explain: "CD = AB = 8 cm, DA = BC = 5 cm." },
+      { type: "num", prompt: "Hình bình hành có ∠A=60°. Tính ∠B.", answer: 120, hint: "Hai góc kề bù.", explain: "180° - 60° = 120°." },
+      { type: "mc", prompt: "Điều kiện nào sau đây KHÔNG đảm bảo tứ giác là hình bình hành?", choices: ["Hai cặp cạnh đối song song", "Hai cặp cạnh đối bằng nhau", "Một cặp cạnh đối song song và bằng nhau", "Hai đường chéo bằng nhau"], correct: 3, hint: "Hai đường chéo bằng nhau là hình chữ nhật (đặc biệt), nhưng tứ giác có hai đường chéo bằng nhau mà không cắt nhau tại trung điểm thì không phải hình bình hành.", explain: "Hai đường chéo bằng nhau chưa đủ. Cần thêm điều kiện cắt nhau tại trung điểm." },
+      { type: "num", prompt: "Hình bình hành ABCD có AC cắt BD tại O, OA=6cm, OB=4cm. Tính AC, BD.", answer: "12,8", accept: ["12,8", "12, 8"], hint: "Đường chéo chia đôi.", explain: "AC = 12 cm, BD = 8 cm." },
+      { type: "text", prompt: "Hình bình hành có một góc = 90°. Hỏi đó là hình gì?", answer: "Hình chữ nhật", accept: ["hình chữ nhật", "hcn", "chữ nhật"], hint: "Góc vuông + hình bình hành.", explain: "Hình bình hành có góc vuông là hình chữ nhật." },
+      { type: "num", prompt: "Hình bình hành ABCD có ∠A=2x, ∠B=3x. Tìm x và tính các góc.", answer: 36, accept: ["36", "36"], hint: "Hai góc kề bù: 2x+3x=180°.", explain: "5x=180° → x=36°. ∠A=72°, ∠B=108°." },
+    ],
+  },
 ];
 
 const COURSES = [
