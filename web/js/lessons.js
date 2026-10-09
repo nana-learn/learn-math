@@ -4296,6 +4296,221 @@ const G8_LESSONS = [
       { type: "num", prompt: "Giá trị của (9x² - 6x) : 3x tại x=3 là bao nhiêu?", answer: 7, hint: "Thu gọn 3x - 2.", explain: "3(3) - 2 = 7." },
     ],
   },
+
+  {
+    id: "g8-b6",
+    num: 6,
+    chapter: 2,
+    title: "Hằng đẳng thức đáng nhớ (bình phương của tổng, hiệu, hiệu hai bình phương)",
+    summary: "Ba hằng đẳng thức: (A+B)² = A²+2AB+B², (A−B)² = A²−2AB+B², A²−B² = (A−B)(A+B).",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tính nhẩm \(101^2\)? Dùng công thức \((a + b)^2 = a^2 + 2ab + b^2\) với \(a = 100, b = 1\): \(100^2 + 2·100·1 + 1^2 = 10201\). Tính nhẩm \(99^2\)? \((100 - 1)^2 = 10000 - 200 + 1 = 9801\).</p>
+      <div class="definition">
+        <p><strong>Bình phương của một tổng:</strong> \((A + B)^2 = A^2 + 2AB + B^2\).</p>
+        <p><strong>Bình phương của một hiệu:</strong> \((A - B)^2 = A^2 - 2AB + B^2\).</p>
+        <p><strong>Hiệu hai bình phương:</strong> \(A^2 - B^2 = (A - B)(A + B)\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Bình phương tổng: bình phương cộng hai lần tích. Bình phương hiệu: bình phương trừ hai lần tích. Hiệu bình phương: hiệu nhân tổng.</p>
+        <p>\((x + 3)^2 = x^2 + 6x + 9\). \((x - 3)^2 = x^2 - 6x + 9\). \(x^2 - 9 = (x - 3)(x + 3)\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên nhân đôi: \((x + 3)^2 = x^2 + 6x + 9\), không phải \(x^2 + 3x + 9\) hay \(x^2 + 9\).</li>
+          <li>Sai dấu: \((x - 3)^2 = x^2 - 6x + 9\), không phải \(x^2 - 6x - 9\).</li>
+          <li>Đảo ngược: \(x^2 - 9 = (x - 3)(x + 3)\), không phải \((x - 3)(x - 3)\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \((2x + 3)^2 = (2x)^2 + 2·2x·3 + 3^2 = 4x^2 + 12x + 9\).</p>
+        <p>\((x - 5)^2 = x^2 - 2·x·5 + 5^2 = x^2 - 10x + 25\). \(4x^2 - 9 = (2x - 3)(2x + 3)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \((3x + 2)^2 = 9x^2 + 12x + 4\). \((x - 4)^2 = x^2 - 8x + 16\).</p>
+        <p>\(x^2 - 16 = (x - 4)(x + 4)\). \(9x^2 - 4 = (3x - 2)(3x + 2)\). Nhận diện: \(9x^2 = (3x)^2, 4 = 2^2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((a + b)^2 = a^2 + 2ab + b^2\). \((m - n)^2 = m^2 - 2mn + n^2\). \(p^2 - q^2 = (p - q)(p + q)\).</p>
+        <p>\((5 + x)^2 = 25 + 10x + x^2\). \((7 - y)^2 = 49 - 14y + y^2\). \(36 - z^2 = (6 - z)(6 + z)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tính nhẩm: \(102^2, 98^2, 51^2, 49^2\).</p>
+        <p>\(102^2 = (100 + 2)^2 = 10000 + 400 + 4 = 10404\). \(98^2 = (100 - 2)^2 = 10000 - 400 + 4 = 9604\).</p>
+        <p>\(51^2 = (50 + 1)^2 = 2500 + 100 + 1 = 2601\). \(49^2 = (50 - 1)^2 = 2500 - 100 + 1 = 2401\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x^2 + 9\) không thể viết dưới dạng hiệu hai bình phương với số thực — chỉ có \(x^2 - 9 = (x - 3)(x + 3)\).</p>
+        <p>\((x + 3)^2 = x^2 + 9\) là sai! Đúng là \(x^2 + 6x + 9\). Đừng quên \(2AB = 2·x·3 = 6x\).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> (A+B)² = A²+2AB+B². (A−B)² = A²−2AB+B². A²−B² = (A−B)(A+B). Nhớ "hai lần tích" và "tổng nhân hiệu".</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Áp dụng đúng công thức, không quên 2AB, kiểm tra bằng nhân ngược. Nhận diện A²−B² để phân tích.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\((x + 4)^2 = ?\) <em>— \(x^2 + 8x + 16\). A=x, B=4: x²+2·x·4+4².</em></p>
+        <p>\(x^2 - 25 = ?\) <em>— \((x - 5)(x + 5)\). A=x, B=5: hiệu nhân tổng.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \((2a + 3b)^2 = 4a^2 + 12ab + 9b^2\). \((x - 2y)^2 = x^2 - 4xy + 4y^2\).</p>
+        <p>\(9a^2 - 4b^2 = (3a - 2b)(3a + 2b)\). \(16 - x^2 = (4 - x)(4 + x)\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Viết (x + 5)² dưới dạng đa thức.", answer: "x² + 10x + 25", accept: ["x² + 10x + 25", "x^2 + 10x + 25"], hint: "A=x, B=5: A²+2AB+B².", explain: "x² + 2·x·5 + 5² = x² + 10x + 25." },
+      { type: "text", prompt: "Viết (3x - 2)² dưới dạng đa thức.", answer: "9x² - 12x + 4", accept: ["9x² - 12x + 4", "9x^2 - 12x + 4"], hint: "A=3x, B=2: A²-2AB+B².", explain: "9x² - 2·3x·2 + 4 = 9x² - 12x + 4." },
+      { type: "text", prompt: "Phân tích x² - 36 thành nhân tử.", answer: "(x - 6)(x + 6)", accept: ["(x - 6)(x + 6)", "(x-6)(x+6)"], hint: "A=x, B=6: A²-B²=(A-B)(A+B).", explain: "x² - 6² = (x - 6)(x + 6)." },
+      { type: "mc", prompt: "Kết quả của (2x + 3)² là:", choices: ["4x² + 9", "4x² + 6x + 9", "4x² + 12x + 9", "2x² + 12x + 9"], correct: 2, hint: "(2x)² + 2·2x·3 + 3².", explain: "4x² + 12x + 9." },
+      { type: "num", prompt: "Giá trị của (x + 3)² tại x=2 là bao nhiêu?", answer: 25, hint: "Thay x=2: (5)².", explain: "(2 + 3)² = 5² = 25." },
+      { type: "text", prompt: "Phân tích 4x² - 9 thành nhân tử.", answer: "(2x - 3)(2x + 3)", accept: ["(2x - 3)(2x + 3)", "(2x-3)(2x+3)"], hint: "4x²=(2x)², 9=3².", explain: "(2x)² - 3² = (2x - 3)(2x + 3)." },
+      { type: "text", prompt: "Tính nhanh 101² - 1.", answer: "10200", accept: ["10200", "10200"], hint: "101²=(100+1)²=10201.", explain: "10201 - 1 = 10200." },
+    ],
+  },
+
+  {
+    id: "g8-b7",
+    num: 7,
+    chapter: 2,
+    title: "Hằng đẳng thức đáng nhớ (lập phương của tổng, hiệu, tổng/hiệu hai lập phương)",
+    summary: "Bốn hằng đẳng thức: (A+B)³=A³+3A²B+3AB²+B³, (A−B)³=A³−3A²B+3AB²−B³, A³+B³=(A+B)(A²−AB+B²), A³−B³=(A−B)(A²+AB+B²).",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tính nhẩm \(101^3\)? Dùng \((a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\) với \(a = 100, b = 1\): \(1000000 + 30000 + 300 + 1 = 1030301\).</p>
+      <div class="definition">
+        <p><strong>Lập phương của một tổng:</strong> \((A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\).</p>
+        <p><strong>Lập phương của một hiệu:</strong> \((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\).</p>
+        <p><strong>Tổng hai lập phương:</strong> \(A^3 + B^3 = (A + B)(A^2 - AB + B^2)\).</p>
+        <p><strong>Hiệu hai lập phương:</strong> \(A^3 - B^3 = (A - B)(A^2 + AB + B^2)\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Lập phương tổng: lập phương cộng ba lần bình tích, cộng ba lần tích bình, cộng lập phương. Lập phương hiệu: dấu đan xen.</p>
+        <p>Lưu ý hệ số: 1, 3, 3, 1 (tam giác Pascal). Dấu: +, +, +, + (tổng); +, −, +, − (hiệu).</p>
+        <p>\((x + 2)^3 = x^3 + 6x^2 + 12x + 8\). \((x - 2)^3 = x^3 - 6x^2 + 12x - 8\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên hệ số 3: \((x + 2)^3 = x^3 + 6x^2 + 12x + 8\), không phải \(x^3 + 2x^2 + 4x + 8\).</li>
+          <li>Sai dấu giữa các hạng tử: \((x - 2)^3 = x^3 - 6x^2 + 12x - 8\), không phải \(x^3 - 6x^2 - 12x - 8\).</li>
+          <li>Phân tích sai: \(x^3 + 8 = (x + 2)(x^2 - 2x + 4)\), không phải \((x + 2)(x^2 + 2x + 4)\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \((2x + 1)^3 = 8x^3 + 12x^2 + 6x + 1\).</p>
+        <p>\((x - 3)^3 = x^3 - 9x^2 + 27x - 27\). \(x^3 + 8 = (x + 2)(x^2 - 2x + 4)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \((x + 3)^3 = x^3 + 3x^2·3 + 3x·9 + 27 = x^3 + 9x^2 + 27x + 27\).</p>
+        <p>\((2x - 1)^3 = 8x^3 - 3·4x^2·1 + 3·2x·1 - 1 = 8x^3 - 12x^2 + 6x - 1\).</p>
+        <p>\(8x^3 + 27 = (2x)^3 + 3^3 = (2x + 3)(4x^2 - 6x + 9)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \((a + 1)^3 = a^3 + 3a^2 + 3a + 1\). \((a - 1)^3 = a^3 - 3a^2 + 3a - 1\).</p>
+        <p>\(m^3 + n^3 = (m + n)(m^2 - mn + n^2)\). \(p^3 - q^3 = (p - q)(p^2 + pq + q^2)\).</p>
+        <p>\(27 + x^3 = (3 + x)(9 - 3x + x^2)\). \(64 - y^3 = (4 - y)(16 + 4y + y^2)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tính nhẩm: \(102^3, 98^3\).</p>
+        <p>\(102^3 = (100 + 2)^3 = 1000000 + 3·10000·2 + 3·100·4 + 8 = 1000000 + 60000 + 1200 + 8 = 1061208\).</p>
+        <p>\(98^3 = (100 - 2)^3 = 1000000 - 3·10000·2 + 3·100·4 - 8 = 1000000 - 60000 + 1200 - 8 = 941192\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x^3 + 27 = (x + 3)(x^2 + 3x + 9)\) là sai! Dấu trong ngoặc thứ hai phải là \(-AB\): \((x + 3)(x^2 - 3x + 9)\).</p>
+        <p>\(8x^3 - 1 = (2x - 1)(4x^2 + 2x + 1)\). Đừng viết \(4x^2 - 2x + 1\) — công thức hiệu có \(+AB\) trong ngoặc thứ hai.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> (A+B)³=A³+3A²B+3AB²+B³. (A−B)³=A³−3A²B+3AB²−B³. A³±B³=(A±B)(A²∓AB+B²). Nhớ tam giác Pascal và dấu đan xen.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Ghi nhớ hệ số 1-3-3-1, dấu đan xen cho hiệu. Phân tích tổng/hiệu lập phương: dấu trong ngoặc thứ hai trái dấu với dấu giữa A³ và B³.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\((x + 2)^3 = ?\) <em>— \(x^3 + 6x^2 + 12x + 8\). A=x, B=2: x³+3x²·2+3x·4+8.</em></p>
+        <p>\(x^3 - 8 = ?\) <em>— \((x - 2)(x^2 + 2x + 4)\). A=x, B=2: hiệu nhân (A²+AB+B²).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \((3x + 1)^3 = 27x^3 + 27x^2 + 9x + 1\). \((2x - 3)^3 = 8x^3 - 36x^2 + 54x - 27\).</p>
+        <p>\(x^3 + 64 = (x + 4)(x^2 - 4x + 16)\). \(27x^3 - 8 = (3x - 2)(9x^2 + 6x + 4)\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Viết (x + 3)³ dưới dạng đa thức.", answer: "x³ + 9x² + 27x + 27", accept: ["x³ + 9x² + 27x + 27", "x^3 + 9x^2 + 27x + 27"], hint: "A=x, B=3: A³+3A²B+3AB²+B³.", explain: "x³ + 3x²·3 + 3x·9 + 27 = x³ + 9x² + 27x + 27." },
+      { type: "text", prompt: "Viết (2x - 1)³ dưới dạng đa thức.", answer: "8x³ - 12x² + 6x - 1", accept: ["8x³ - 12x² + 6x - 1", "8x^3 - 12x^2 + 6x - 1"], hint: "A=2x, B=1: A³-3A²B+3AB²-B³.", explain: "8x³ - 12x² + 6x - 1." },
+      { type: "text", prompt: "Phân tích x³ + 27 thành nhân tử.", answer: "(x + 3)(x² - 3x + 9)", accept: ["(x + 3)(x² - 3x + 9)", "(x+3)(x^2 - 3x + 9)"], hint: "27=3³, dấu trong ngoặc thứ hai là -AB.", explain: "(x + 3)(x² - 3x + 9)." },
+      { type: "mc", prompt: "(x - 2)³ = ?", choices: ["x³ - 6x² + 12x - 8", "x³ - 6x² - 12x - 8", "x³ - 4x² + 8x - 8", "x³ - 8"], correct: 0, hint: "Dấu đan xen: +, −, +, −.", explain: "x³ - 6x² + 12x - 8." },
+      { type: "num", prompt: "Giá trị của (x + 1)³ tại x=2 là bao nhiêu?", answer: 27, hint: "(3)³.", explain: "3³ = 27." },
+      { type: "text", prompt: "Phân tích 8x³ - 1 thành nhân tử.", answer: "(2x - 1)(4x² + 2x + 1)", accept: ["(2x - 1)(4x² + 2x + 1)", "(2x-1)(4x^2 + 2x + 1)"], hint: "8x³=(2x)³, 1=1³, hiệu nhân (A²+AB+B²).", explain: "(2x - 1)(4x² + 2x + 1)." },
+      { type: "text", prompt: "Tính nhanh 1001³ - 1.", answer: "1003003000", accept: ["1003003000", "1003003000"], hint: "1001³=(1000+1)³=1003003001.", explain: "1003003001 - 1 = 1003003000." },
+    ],
+  },
+
+  {
+    id: "g8-b8",
+    num: 8,
+    chapter: 2,
+    title: "Luyện tập: Phân tích đa thức thành nhân tử bằng hằng đẳng thức",
+    summary: "Ứng dụng bảy hằng đẳng thức để phân tích đa thức thành nhân tử. Nhận dạng A²±2AB+B²=(A±B)², A²−B², A³±B³.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Cho biểu thức \(x^2 + 6x + 9\). Nhìn vào dạng, ta thấy \(x^2\) và \(9 = 3^2\), giữa là \(6x = 2·x·3\). Đây là \((x + 3)^2\) theo hằng đẳng thức bình phương của một tổng.</p>
+      <div class="idea">
+        <p><strong>Phương pháp.</strong> Bước 1: Nhận dạng đa thức có dạng hằng đẳng thức nào. Bước 2: Ghi lại biểu thức dạng \((A ± B)^n\).</p>
+        <p>Các dạng thường gặp:
+        <ul>
+          <li>Bình phương: \(A^2 ± 2AB + B^2 = (A ± B)^2\)</li>
+          <li>Hiệu bình phương: \(A^2 - B^2 = (A - B)(A + B)\)</li>
+          <li>Lập phương: \(A^3 ± B^3 = (A ± B)(A^2 ∓ AB + B^2)\)</li>
+        </ul></p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Không rút gọn trước: \(2x^2 + 8x + 8 = 2(x^2 + 4x + 4) = 2(x + 2)^2\), không phải \((x + 2)^2\).</li>
+          <li>Sai nhận dạng: \(x^2 + 4x + 4 = (x + 2)^2\), không phải \((x + 4)^2\).</li>
+          <li>Bỏ qua hệ số chung: \(9x^2 - 16 = (3x - 4)(3x + 4)\), nhưng \(9x^2 - 12x + 4 = (3x - 2)^2\) — khác nhau!</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \(x^2 + 4x + 4 = (x + 2)^2\). \(4x^2 - 9 = (2x - 3)(2x + 3)\).</p>
+        <p>\(x^3 + 3x^2 + 3x + 1 = (x + 1)^3\). \(8x^3 - y^3 = (2x - y)(4x^2 + 2xy + y^2)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(x^2 + 10x + 25 = (x + 5)^2\). Nhận dạng: \(x^2, 25=5^2, 10x=2·x·5\).</p>
+        <p>\(9x^2 - 6x + 1 = (3x - 1)^2\). \(9x^2 = (3x)^2, 1 = 1^2, 6x = 2·3x·1\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(a^2 + 2ab + b^2 = (a + b)^2\). \(m^2 - n^2 = (m - n)(m + n)\).</p>
+        <p>\(x^2 - 16 = (x - 4)(x + 4)\). \(27 + a^3 = (3 + a)(9 - 3a + a^2)\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(4x^2 + 12x + 9 = (2x + 3)^2\). Nhận hệ số chung: \((2x)^2 + 2·2x·3 + 3^2\).</p>
+        <p>\(x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)\). Dùng hiệu bình phương hai lần.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(x^2 + 5x + 6\) không dùng hằng đẳng thức — đây là dạng \((x + a)(x + b)\) với \(a + b = 5, ab = 6\), tức \((x + 2)(x + 3)\).</p>
+        <p>\(x^2 + 4x + 5\) không phân tích được theo hằng đẳng thức — biệt thức âm, không có nghiệm thực.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân tích thành nhân tử: nhận dạng hằng đẳng thức, ghi dạng (A±B)ⁿ. Lưu ý hệ số chung trước khi áp dụng.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Quan sát dạng biểu thức: hai hạng tử đầu tạo bình phương? Hạng tử cuối có phải bình phương/lập phương? Dấu giữa là + hay −?</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(x^2 + 8x + 16 = ?\) <em>— \((x + 4)^2\). 8x = 2·x·4.</em></p>
+        <p>\(25x^2 - 4 = ?\) <em>— \((5x - 2)(5x + 2)\). 25x²=(5x)², 4=2².</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \(x^2 + 12x + 36 = (x + 6)^2\). \(4x^2 - 25 = (2x - 5)(2x + 5)\).</p>
+        <p>\(8x^3 + 27 = (2x + 3)(4x^2 - 6x + 9)\). \(x^4 - 81 = (x^2 - 9)(x^2 + 9) = (x - 3)(x + 3)(x^2 + 9)\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Phân tích x² + 6x + 9 thành nhân tử.", answer: "(x + 3)²", accept: ["(x + 3)²", "(x+3)^2"], hint: "6x=2·x·3.", explain: "(x + 3)²." },
+      { type: "text", prompt: "Phân tích 9x² - 4 thành nhân tử.", answer: "(3x - 2)(3x + 2)", accept: ["(3x - 2)(3x + 2)", "(3x-2)(3x+2)"], hint: "9x²=(3x)², 4=2².", explain: "(3x - 2)(3x + 2)." },
+      { type: "text", prompt: "Phân tích x³ + 8 thành nhân tử.", answer: "(x + 2)(x² - 2x + 4)", accept: ["(x + 2)(x² - 2x + 4)", "(x+2)(x^2 - 2x + 4)"], hint: "8=2³, tổng lập phương.", explain: "(x + 2)(x² - 2x + 4)." },
+      { type: "mc", prompt: "4x² + 4x + 1 = ?", choices: ["(2x + 1)²", "(2x - 1)²", "(4x + 1)²", "(2x + 1)(2x - 1)"], correct: 0, hint: "(2x)² + 2·2x·1 + 1².", explain: "(2x + 1)²." },
+      { type: "text", prompt: "Phân tích x⁴ - 16 thành nhân tử.", answer: "(x - 2)(x + 2)(x² + 4)", accept: ["(x - 2)(x + 2)(x² + 4)", "(x-2)(x+2)(x^2 + 4)"], hint: "Hiệu bình phương hai lần.", explain: "(x² - 4)(x² + 4) = (x-2)(x+2)(x²+4)." },
+      { type: "num", prompt: "Giá trị của biểu thức x² + 10x + 25 tại x=3 là bao nhiêu?", answer: 64, hint: "(x+5)² tại x=3.", explain: "(3+5)² = 64." },
+    ],
+  },
 ];
 
 const COURSES = [
