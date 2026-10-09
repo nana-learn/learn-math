@@ -2656,30 +2656,30 @@ const LESSONS = [
           <tr><td>Tần số</td><td>5</td><td>4</td><td>8</td><td>2</td><td>3</td></tr>
         </table>
       </div>
-      <figure class="figure">
-        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số cỡ giày của 22 bạn">
-          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
-          <text x="30" y="56" font-size="12" fill="#9A72AC">Tần số</text>
-          <line x1="60" y1="95" x2="345" y2="95" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1"/>
-          <text x="54" y="98" font-size="12" text-anchor="end">4</text>
-          <text x="54" y="50" font-size="12" text-anchor="end">8</text>
-          <rect x="90" y="95" width="40" height="75" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
-          <rect x="145" y="110" width="40" height="60" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
-          <rect x="200" y="50" width="40" height="120" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5"/>
-          <rect x="255" y="140" width="40" height="30" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
-          <rect x="310" y="125" width="40" height="45" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5"/>
-          <text x="110" y="92" font-size="12" text-anchor="middle">5</text>
-          <text x="165" y="107" font-size="12" text-anchor="middle">4</text>
-          <text x="220" y="47" font-size="12" text-anchor="middle">8</text>
-          <text x="275" y="137" font-size="12" text-anchor="middle">2</text>
-          <text x="330" y="122" font-size="12" text-anchor="middle">3</text>
-          <text x="110" y="186" font-size="12" text-anchor="middle">36</text>
-          <text x="165" y="186" font-size="12" text-anchor="middle">37</text>
-          <text x="220" y="186" font-size="12" text-anchor="middle">38</text>
-          <text x="275" y="186" font-size="12" text-anchor="middle">39</text>
-          <text x="330" y="186" font-size="12" text-anchor="middle">40</text>
-          <text x="180" y="202" font-size="12" fill="#9A72AC" text-anchor="middle">Cỡ giày</text>
+      <figure class="figure" data-animation="c7-b22-chart">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số cỡ giày của 22 bạn" id="fig-c7-b22">
+          <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="140" opacity="0"/>
+          <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="285" stroke-dashoffset="285" opacity="0"/>
+          <text x="30" y="56" font-size="12" fill="#9A72AC" opacity="0">Tần số</text>
+          <line x1="60" y1="95" x2="345" y2="95" stroke="#DDDDDD" stroke-opacity="0.25" stroke-width="1" opacity="0"/>
+          <text x="54" y="98" font-size="12" text-anchor="end" opacity="0">4</text>
+          <text x="54" y="50" font-size="12" text-anchor="end" opacity="0">8</text>
+          <rect x="90" y="95" width="40" height="75" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5" opacity="0"/>
+          <rect x="145" y="110" width="40" height="60" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5" opacity="0"/>
+          <rect x="200" y="50" width="40" height="120" fill="#FC6255" fill-opacity="0.35" stroke="#FC6255" stroke-width="1.5" opacity="0"/>
+          <rect x="255" y="140" width="40" height="30" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5" opacity="0"/>
+          <rect x="310" y="125" width="40" height="45" fill="#58C4DD" fill-opacity="0.35" stroke="#58C4DD" stroke-width="1.5" opacity="0"/>
+          <text x="110" y="92" font-size="12" text-anchor="middle" opacity="0">5</text>
+          <text x="165" y="107" font-size="12" text-anchor="middle" opacity="0">4</text>
+          <text x="220" y="47" font-size="12" text-anchor="middle" opacity="0">8</text>
+          <text x="275" y="137" font-size="12" text-anchor="middle" opacity="0">2</text>
+          <text x="330" y="122" font-size="12" text-anchor="middle" opacity="0">3</text>
+          <text x="110" y="186" font-size="12" text-anchor="middle" opacity="0">36</text>
+          <text x="165" y="186" font-size="12" text-anchor="middle" opacity="0">37</text>
+          <text x="220" y="186" font-size="12" text-anchor="middle" opacity="0">38</text>
+          <text x="275" y="186" font-size="12" text-anchor="middle" opacity="0">39</text>
+          <text x="330" y="186" font-size="12" text-anchor="middle" opacity="0">40</text>
+          <text x="180" y="202" font-size="12" fill="#9A72AC" text-anchor="middle" opacity="0">Cỡ giày</text>
         </svg>
         <figcaption>Biểu đồ cột vẽ lại bảng tần số: cột 38 cao nhất (8), cần mua nhiều cỡ 38 nhất.</figcaption>
       </figure>
