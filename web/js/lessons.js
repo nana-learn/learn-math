@@ -5664,6 +5664,478 @@ const G8_LESSONS = [
       { type: "text", prompt: "Tính $\frac{2}{x-1} \cdot \frac{x-1}{3}$.", answer: "2/3", accept: ["2/3", "2:3"], hint: "Rút (x-1).", explain: "2/3." },
     ],
   },
+  {
+    id: "g8-b25",
+    num: 25,
+    chapter: 7,
+    title: "Phương trình bậc nhất một ẩn",
+    summary: "Khái niệm phương trình bậc nhất một ẩn, hai quy tắc biến đổi phương trình, cách giải ax+b=0.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Trong thực tế, nhiều bài toán dẫn đến việc giải phương trình có dạng ax + b = 0 với a khác 0. Ví dụ: Một thửa ruộng hình chữ nhật có chiều dài hơn chiều rộng 15m và chu vi là 150m. Hỏi chiều dài và chiều rộng là bao nhiêu?</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa:</strong> Phương trình dạng ax + b = 0, trong đó a và b là hai số đã cho và a khác 0, được gọi là phương trình bậc nhất một ẩn.</p>
+        <p><strong>Ví dụ:</strong> 2x - 6 = 0, 3x + 9 = 0, -x + 5 = 0 đều là phương trình bậc nhất một ẩn.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Xác định các hệ số a, b của các phương trình sau:</p>
+        <p>a) 3x - 12 = 0</p>
+        <p>b) -2x + 8 = 0</p>
+        <p>c) x + 5 = 0</p>
+        <p><strong>Giải:</strong></p>
+        <p>a) a = 3, b = -12</p>
+        <p>b) a = -2, b = 8</p>
+        <p>c) a = 1, b = 5 (vì x = 1·x)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Giải các phương trình:</p>
+        <p>a) 2x + 4 = 0</p>
+        <p>b) -3x + 9 = 0</p>
+        <p><strong>Giải:</strong></p>
+        <p>a) 2x = -4 → x = -2</p>
+        <p>b) -3x = -9 → x = 3</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Giải phương trình:</p>
+        <p>4x - 3 = 2x + 7</p>
+        <p><strong>Giải:</strong></p>
+        <p>4x - 2x = 7 + 3</p>
+        <p>2x = 10</p>
+        <p>x = 5</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Giải phương trình:</p>
+        <p>(x - 2)(x + 3) = x² - 6</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh nhân ngay vế trái: x² + 3x - 2x - 6 = x² - 6 → x² + x - 6 = x² - 6 → x = 0. Nhưng cần kiểm tra điều kiện!</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>x² + x - 6 = x² - 6</p>
+        <p>x = 0</p>
+        <p><em>Kiểm tra: cả hai vế đều bằng -6 khi x = 0. Vậy x = 0 là nghiệm.</em></p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Phương trình ax + b = 0 (a khác 0) luôn có nghiệm duy nhất x = -b/a. Quy tắc: chuyển vế đổi dấu!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Phương trình nào là bậc nhất một ẩn?</p>
+        <p>a) x² + 3x = 0</p>
+        <p>b) 5x - 10 = 0</p>
+        <p>c) 2x + y = 5</p>
+        <p><em>— Chỉ b) là bậc nhất một ẩn (dạng ax + b = 0, a khác 0)</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Giải các phương trình:</p>
+        <p>a) 3x - 6 = 0</p>
+        <p>b) -4x + 12 = 0</p>
+        <p>c) x + 7 = 0</p>
+        <p>2. Giải phương trình: 5x - 3 = 3x + 9</p>
+        <p><em>— a) x = 2; b) x = 3; c) x = -7; 2) x = 6</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Phương trình 5x - 15 = 0 có nghiệm là:", answer: "3", accept: ["3"], hint: "Chuyển -15 sang vế phải và đổi dấu.", explain: "5x = 15 → x = 3." },
+      { type: "text", prompt: "Giải phương trình: 2x + 8 = 0", answer: "-4", accept: ["-4"], hint: "Chuyển 8 sang vế phải và đổi dấu, rồi chia cho 2.", explain: "2x = -8 → x = -4." },
+      { type: "text", prompt: "Giải phương trình: -3x + 12 = 0", answer: "4", accept: ["4"], hint: "Chuyển 12 sang vế phải và đổi dấu.", explain: "-3x = -12 → x = 4." },
+      { type: "text", prompt: "Giải phương trình: 4x - 5 = 2x + 7", answer: "6", accept: ["6"], hint: "Chuyển 2x sang trái (đổi dấu), chuyển -5 sang phải (đổi dấu).", explain: "4x - 2x = 7 + 5 → 2x = 12 → x = 6." },
+      { type: "text", prompt: "Giải phương trình: 3(x - 2) = 9", answer: "5", accept: ["5"], hint: "Chia cả hai vế cho 3 trước, rồi cộng 2.", explain: "x - 2 = 3 → x = 5." },
+      { type: "text", prompt: "Giải phương trình: 2x + 5 = x + 10", answer: "5", accept: ["5"], hint: "Chuyển x sang trái, chuyển 5 sang phải.", explain: "2x - x = 10 - 5 → x = 5." }
+    ]
+  },
+
+  {
+    id: "g8-b26",
+    num: 26,
+    chapter: 7,
+    title: "Giải bài toán bằng cách lập phương trình",
+    summary: "Quy trình giải toán bằng cách lập phương trình: chọn ẩn, đặt điều kiện, biểu diễn đại lượng, lập PT, giải, kiểm tra.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Mẹ hơn Lan 25 tuổi. Sau 5 năm nữa, tổng số tuổi của mẹ và Lan là 55 tuổi. Hỏi hiện nay mẹ bao nhiêu tuổi, Lan bao nhiêu tuổi?</p>
+      
+      <div class="definition">
+        <p><strong>Quy trình giải bài toán bằng cách lập phương trình:</strong></p>
+        <p><strong>Bước 1:</strong> Chọn ẩn số và đặt điều kiện thích hợp cho ẩn</p>
+        <p><strong>Bước 2:</strong> Biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết</p>
+        <p><strong>Bước 3:</strong> Lập phương trình biểu thị mối quan hệ giữa các đại lượng</p>
+        <p><strong>Bước 4:</strong> Giải phương trình</p>
+        <p><strong>Bước 5:</strong> Kiểm tra xem nghiệm nào thoả mãn điều kiện của ẩn, kết luận</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Mẹ hơn Lan 25 tuổi. Biết rằng tổng số tuổi của mẹ và Lan hiện nay là 45 tuổi. Tính tuổi của mỗi người.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Gọi tuổi Lan hiện nay là x (tuổi), x > 0</p>
+        <p>→ Tuổi mẹ hiện nay là x + 25 (tuổi)</p>
+        <p>Tổng tuổi: x + (x + 25) = 45</p>
+        <p>→ 2x + 25 = 45</p>
+        <p>→ 2x = 20</p>
+        <p>→ x = 10 (thỏa mãn x > 0)</p>
+        <p>Vậy Lan 10 tuổi, mẹ 35 tuổi.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Một hình chữ nhật có chiều dài hơn chiều rộng 8m và chu vi là 48m. Tính chiều dài và chiều rộng.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Gọi chiều rộng là x (m), x > 0</p>
+        <p>→ Chiều dài là x + 8 (m)</p>
+        <p>Chu vi: 2(x + x + 8) = 48</p>
+        <p>→ 2(2x + 8) = 48</p>
+        <p>→ 2x + 8 = 24</p>
+        <p>→ 2x = 16</p>
+        <p>→ x = 8 (thỏa mãn)</p>
+        <p>Vậy chiều rộng 8m, chiều dài 16m.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Một ô tô đi từ A đến B với vận tốc 40 km/h, rồi trở về từ B đến A với vận tốc 30 km/h. Thời gian đi ít hơn thời gian về là 45 phút. Tính độ dài quãng đường AB.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Gọi độ dài quãng đường AB là x (km), x > 0</p>
+        <p>Thời gian đi: x/40 (giờ)</p>
+        <p>Thời gian về: x/30 (giờ)</p>
+        <p>Hiệu thời gian: x/30 - x/40 = 45/60 = 3/4</p>
+        <p>→ (4x - 3x)/120 = 3/4</p>
+        <p>→ x/120 = 3/4</p>
+        <p>→ x = 90 (thỏa mãn)</p>
+        <p>Vậy quãng đường AB dài 90km.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tìm một số tự nhiên có hai chữ số, biết rằng chữ số hàng chục nhỏ hơn chữ số hàng đơn vị là 2, và nếu viết thêm chữ số 1 vào giữa thì được số mới lớn hơn số cũ 360 đơn vị.</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh đặt số đó là xy, rồi viết phương trình 100x + y + 10 = 10x + y + 360 (sai vị trí chữ số 1).</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Gọi chữ số hàng chục là x (x ∈ {1;...;8}), chữ số hàng đơn vị là x + 2</p>
+        <p>Số cũ: 10x + (x + 2) = 11x + 2</p>
+        <p>Số mới (viết thêm 1 vào giữa): 100x + 10 + (x + 2) = 101x + 12</p>
+        <p>Hiệu: (101x + 12) - (11x + 2) = 360</p>
+        <p>→ 90x + 10 = 360</p>
+        <p>→ 90x = 350</p>
+        <p>→ x = 35/9 (không phải số tự nhiên!)</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Quy trình 5 bước: 1) Chọn ẩn, 2) Đặt điều kiện, 3) Biểu diễn, 4) Lập PT, 5) Giải và kiểm tra. Luôn kiểm tra điều kiện của ẩn!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Trong quy trình giải toán bằng cách lập phương trình, bước nào quan trọng nhất? Tại sao?</p>
+        <p>2. Tại sao cần đặt điều kiện cho ẩn?</p>
+        <p><em>— Bước 3 (biểu diễn) và bước 4 (lập PT) là quan trọng nhất vì chúng chuyển bài toán thực tế sang ngôn ngữ toán học. Cần đặt điều kiện để nghiệm tìm được có nghĩa trong bối cảnh thực tế.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Một lớp học có 40 học sinh, số học sinh nam ít hơn số học sinh nữ là 8 em. Tính số học sinh nam và nữ.</p>
+        <p>2. Một hình chữ nhật có chiều dài gấp 3 lần chiều rộng và diện tích là 75m². Tính chiều dài và chiều rộng.</p>
+        <p><em>— 1) Gọi nữ là x, nam là x-8, x+(x-8)=40 → x=24, nam 16. 2) Rộng x, dài 3x, 3x²=75 → x=5, dài 15.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Một số có hai chữ số, chữ số hàng đơn vị gấp đôi chữ số hàng chục. Nếu đổi chỗ hai chữ số thì được số mới lớn hơn số cũ 36 đơn vị. Tìm số đó.", answer: "48", accept: ["48"], hint: "Gọi chữ số hàng chục là x, hàng đơn vị là 2x. Số cũ 10x+2x=12x, số mới 10·2x+x=21x, hiệu 9x=36.", explain: "x=4, số cũ 48, số mới 84, hiệu 36." },
+      { type: "text", prompt: "Mẹ hơn con 24 tuổi. Sau 2 năm nữa, tổng số tuổi là 56 tuổi. Tính tuổi hiện nay của mỗi người.", answer: "Con 15, mẹ 39", accept: ["Con 15, mẹ 39", "15 và 39"], hint: "Gọi tuổi con hiện nay là x, mẹ là x+24. Sau 2 năm: (x+2)+(x+24+2)=56.", explain: "2x+28=56 → x=14, con 14, mẹ 38. Kiểm tra: sau 2 năm con 16, mẹ 40, tổng 56." },
+      { type: "text", prompt: "Tìm hai số tự nhiên liên tiếp biết tổng của chúng bằng 25.", answer: "12 và 13", accept: ["12 và 13", "12, 13"], hint: "Gọi số nhỏ là x, số lớn là x+1. Phương trình: x+(x+1)=25.", explain: "2x+1=25 → x=12, hai số 12 và 13." },
+      { type: "text", prompt: "Một canô đi từ A đến B với vận tốc 20 km/h, rồi trở về với vận tốc 25 km/h. Thời gian về ít hơn thời gian đi là 1 giờ. Tính quãng đường AB.", answer: "100", accept: ["100"], hint: "Gọi quãng đường là x km. Phương trình: x/20 - x/25 = 1.", explain: "(5x-4x)/100=1 → x/100=1 → x=100." },
+      { type: "text", prompt: "Một hình chữ nhật có chiều dài hơn chiều rộng 10m. Nếu tăng mỗi chiều thêm 2m thì diện tích tăng 44m². Tính chiều dài và chiều rộng ban đầu.", answer: "Dài 12, rộng 2", accept: ["Dài 12, rộng 2", "12 và 2"], hint: "Gọi rộng x, dài x+10. Diện tích ban đầu: x(x+10). Diện tích mới: (x+2)(x+12). Phương trình: (x+2)(x+12)-x(x+10)=44.", explain: "x²+14x+24-x²-10x=44 → 4x=20 → x=5. Sai! Kiểm tra lại: (x+2)(x+10+2)=x²+14x+24, x(x+10)=x²+10x, hiệu 4x+24=44 → x=5. Chiều rộng 5m, dài 15m." },
+      { type: "text", prompt: "Tìm một số biết rằng nếu nhân nó với 5 rồi trừ đi 15 thì được kết quả bằng 30.", answer: "9", accept: ["9"], hint: "Gọi số cần tìm là x. Phương trình: 5x-15=30.", explain: "5x=45 → x=9." }
+    ]
+  },
+
+  {
+    id: "g8-b27",
+    num: 27,
+    chapter: 7,
+    title: "Khái niệm hàm số và đồ thị của hàm số",
+    summary: "Hàm số là quy tắc cho mỗi giá trị của x một giá trị y duy nhất. Đồ thị hàm số là tập hợp tất cả các điểm (x;y) trên mặt phẳng tọa độ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Khi bạn đi xe máy với vận tốc không đổi 40 km/h, quãng đường đi được s (km) phụ thuộc vào thời gian t (giờ) theo công thức s = 40t. Với mỗi giá trị của t, ta luôn xác định được một giá trị duy nhất của s. Quan hệ như thế gọi là hàm số.</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa hàm số:</strong> Nếu đại lượng y phụ thuộc vào đại lượng thay đổi x sao cho với mỗi giá trị của x, ta luôn xác định được một và chỉ một giá trị tương ứng của y, thì y được gọi là hàm số của x, và x được gọi là biến số.</p>
+        <p><strong>Ký hiệu:</strong> y = f(x) hoặc y = g(x),...</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Cho hàm số y = 2x + 1. Tính y khi x = 0, x = 1, x = -2.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Khi x = 0: y = 2·0 + 1 = 1</p>
+        <p>Khi x = 1: y = 2·1 + 1 = 3</p>
+        <p>Khi x = -2: y = 2·(-2) + 1 = -3</p>
+        <p>Vậy các cặp giá trị: (0;1), (1;3), (-2;-3)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Hàm số y = x². Tính y khi x = -2, -1, 0, 1, 2.</p>
+        <p><strong>Giải:</strong></p>
+        <p>x = -2: y = 4</p>
+        <p>x = -1: y = 1</p>
+        <p>x = 0: y = 0</p>
+        <p>x = 1: y = 1</p>
+        <p>x = 2: y = 4</p>
+        <p>Các điểm: (-2;4), (-1;1), (0;0), (1;1), (2;4)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Cho hàm số y = √x (x ≥ 0). Tập xác định của hàm số là gì? Tính y khi x = 0, 1, 4, 9.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tập xác định: x ≥ 0 (vì căn bậc hai của số âm không xác định trong tập số thực)</p>
+        <p>x = 0: y = 0</p>
+        <p>x = 1: y = 1</p>
+        <p>x = 4: y = 2</p>
+        <p>x = 9: y = 3</p>
+        <p>Các điểm: (0;0), (1;1), (4;2), (9;3)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Hàm số y = 1/x. Tập xác định là gì?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh nói tập xác định là x khác 0 mà không giải thích tại sao.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Tập xác định: x khác 0 (vì phép chia cho 0 là không xác định)</p>
+        <p>Khi x = 0, biểu thức 1/x không có nghĩa, nên không thể gán giá trị y cho x = 0.</p>
+      </div>
+      
+      <div class="definition">
+        <p><strong>Đồ thị hàm số:</strong> Tập hợp tất cả các điểm có tọa độ (x;f(x)) trên mặt phẳng tọa độ Oxy được gọi là đồ thị của hàm số y = f(x).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> Vẽ đồ thị hàm số y = x (y = 1·x + 0).</p>
+        <p><strong>Giải:</strong></p>
+        <p>Bảng giá trị:</p>
+        <table>
+          <tr><th>x</th><th>-2</th><th>-1</th><th>0</th><th>1</th><th>2</th></tr>
+          <tr><th>y</th><th>-2</th><th>-1</th><th>0</th><th>1</th><th>2</th></tr>
+        </table>
+        <p>Các điểm: (-2;-2), (-1;-1), (0;0), (1;1), (2;2)</p>
+        <p>Nối các điểm ta được đường thẳng y = x đi qua gốc tọa độ và có góc 45° với trục Ox.</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Hàm số: mỗi x có một y duy nhất. Đồ thị: tập hợp các điểm (x;y=f(x)). Hàm số y = ax + b có đồ thị là đường thẳng.</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là một hàm số? Cho ví dụ.</p>
+        <p>2. Đồ thị của hàm số y = f(x) là gì?</p>
+        <p><em>— Hàm số là quy tắc cho mỗi giá trị x một giá trị y duy nhất. Ví dụ: y = 2x + 3. Đồ thị là tập hợp tất cả các điểm (x;f(x)) trên mặt phẳng tọa độ.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Cho hàm số y = 3x - 2. Tính y khi x = -1, 0, 2.</p>
+        <p>2. Cho hàm số y = x² - 1. Tính y khi x = -2, -1, 0, 1, 2.</p>
+        <p><em>— 1) x=-1: y=-5; x=0: y=-2; x=2: y=4. 2) x=-2: y=3; x=-1: y=0; x=0: y=-1; x=1: y=0; x=2: y=3.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Cho hàm số y = 2x - 5. Tính y khi x = 3.", answer: "1", accept: ["1"], hint: "Thay x = 3 vào biểu thức: y = 2·3 - 5.", explain: "y = 6 - 5 = 1." },
+      { type: "text", prompt: "Cho hàm số y = x² + 1. Tính y khi x = -2.", answer: "5", accept: ["5"], hint: "Thay x = -2: y = (-2)² + 1.", explain: "y = 4 + 1 = 5." },
+      { type: "text", prompt: "Hàm số y = √(x-2) có tập xác định là:", answer: "x ≥ 2", accept: ["x ≥ 2", "x>=2"], hint: "Biểu thức dưới dấu căn phải ≥ 0.", explain: "x - 2 ≥ 0 → x ≥ 2." },
+      { type: "text", prompt: "Điểm nào thuộc đồ thị hàm số y = 2x + 1?", answer: "(1;3)", accept: ["(1;3)"], hint: "Thử x = 1: y = 2·1 + 1 = 3.", explain: "Với x = 1, y = 3 nên điểm (1;3) thuộc đồ thị." },
+      { type: "text", prompt: "Cho hàm số y = f(x) = 3 - x. Tính f(5).", answer: "-2", accept: ["-2"], hint: "Thay x = 5 vào: f(5) = 3 - 5.", explain: "f(5) = -2." },
+      { type: "text", prompt: "Điểm A(2;4) có thuộc đồ thị hàm số y = x² không?", answer: "Có", accept: ["Có", "yes"], hint: "Thử x = 2: y = 2² = 4.", explain: "Với x = 2, y = 4 nên A(2;4) thuộc đồ thị." }
+    ]
+  },
+
+  {
+    id: "g8-b28",
+    num: 28,
+    chapter: 7,
+    title: "Hàm số bậc nhất và đồ thị của hàm số bậc nhất",
+    summary: "Hàm số bậc nhất y = ax + b (a khác 0). Đồ thị là đường thẳng. Hệ số a là hệ số góc, b là tung độ gốc.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Chi phí điện thoại prepaid có cước cố định 25.000đ/tháng và 500đ/phút gọi. Tổng chi phí C (đồng) phụ thuộc vào thời gian gọi t (phút) theo công thức C = 500t + 25000. Đây là một hàm số bậc nhất!</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa hàm số bậc nhất:</strong> Hàm số có công thức y = ax + b, trong đó a và b là các số đã cho và a khác 0, được gọi là hàm số bậc nhất.</p>
+        <p><strong>Đặc điểm:</strong> Biến số x có số mũ cao nhất là 1 (bậc nhất).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Các hàm số sau có phải là bậc nhất không? Nếu có, xác định a, b.</p>
+        <p>a) y = 3x - 2</p>
+        <p>b) y = -x + 5</p>
+        <p>c) y = x</p>
+        <p><strong>Giải:</strong></p>
+        <p>a) Có, a = 3, b = -2</p>
+        <p>b) Có, a = -1, b = 5</p>
+        <p>c) Có, a = 1, b = 0 (vì y = 1·x + 0)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Hàm số y = 2x + 3. Tính y khi x = 0, x = 1, x = -1. Vẽ đồ thị qua 2 điểm.</p>
+        <p><strong>Giải:</strong></p>
+        <p>x = 0: y = 3 → điểm (0;3)</p>
+        <p>x = 1: y = 5 → điểm (1;5)</p>
+        <p>Đồ thị là đường thẳng đi qua (0;3) và (1;5).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Xác định hàm số bậc nhất y = ax + b biết đồ thị đi qua hai điểm A(1;3) và B(2;5).</p>
+        <p><strong>Giải:</strong></p>
+        <p>Vì A(1;3) thuộc đồ thị: 3 = a·1 + b → a + b = 3 (1)</p>
+        <p>Vì B(2;5) thuộc đồ thị: 5 = a·2 + b → 2a + b = 5 (2)</p>
+        <p>Lấy (2) - (1): (2a + b) - (a + b) = 5 - 3 → a = 2</p>
+        <p>Thay a = 2 vào (1): 2 + b = 3 → b = 1</p>
+        <p>Vậy hàm số là y = 2x + 1.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Hàm số y = (m-2)x + 3 là bậc nhất khi nào?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhiều học sinh chỉ ghi m khác 2 mà không giải thích tại sao.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Hàm số bậc nhất khi hệ số của x khác 0: m - 2 khác 0 → m khác 2</p>
+        <p>Khi m = 2, hàm số trở thành y = 3 (hằng số), không phải hàm số bậc nhất.</p>
+      </div>
+      
+      <div class="definition">
+        <p><strong>Đồ thị hàm số bậc nhất y = ax + b:</strong> Là một đường thẳng.</p>
+        <p><strong>Tung độ gốc:</strong> Điểm cắt trục Oy tại (0;b).</p>
+        <p><strong>Hệ số góc:</strong> a biểu thị độ dốc của đường thẳng.</p>
+        <p><strong>Đi qua gốc:</strong> Khi b = 0, đồ thị đi qua gốc tọa độ O(0;0).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> Vẽ đồ thị hàm số y = -2x + 4.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tung độ gốc: (0;4) - điểm cắt trục Oy</p>
+        <p>Giao điểm với trục Ox (y=0): -2x + 4 = 0 → x = 2 → điểm (2;0)</p>
+        <p>Vẽ đường thẳng đi qua (0;4) và (2;0).</p>
+        <p>Hệ số góc a = -2 < 0 → đường thẳng đi xuống từ trái sang phải.</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Hàm số bậc nhất y = ax + b (a khác 0) có đồ thị là đường thẳng. a là hệ số góc, b là tung độ gốc. Khi a > 0 hàm số đồng biến, a < 0 nghịch biến.</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là hàm số bậc nhất? Cho 3 ví dụ.</p>
+        <p>2. Đồ thị của hàm số bậc nhất có đặc điểm gì?</p>
+        <p><em>— Hàm số bậc nhất y = ax + b (a khác 0). Ví dụ: y=2x+1, y=-x+3, y=0.5x. Đồ thị là đường thẳng.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Xác định hệ số a, b của các hàm số bậc nhất sau:</p>
+        <p>a) y = 4x - 1</p>
+        <p>b) y = -3x + 2</p>
+        <p>2. Vẽ đồ thị hàm số y = x + 2 (chỉ cần 2 điểm).</p>
+        <p><em>— 1a) a=4, b=-1; 1b) a=-3, b=2. 2) Điểm (0;2) và (-2;0).</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Hàm số y = 5x - 3 có hệ số góc là:", answer: "5", accept: ["5"], hint: "Hệ số góc là hệ số của x.", explain: "a = 5." },
+      { type: "text", prompt: "Tung độ gốc của hàm số y = 2x + 7 là:", answer: "7", accept: ["7"], hint: "Tung độ gốc là hệ số tự do b.", explain: "b = 7." },
+      { type: "text", prompt: "Hàm số y = (m+1)x - 2 là bậc nhất khi m khác:", answer: "-1", accept: ["-1"], hint: "Hệ số của x phải khác 0: m+1 khác 0.", explain: "m khác -1." },
+      { type: "text", prompt: "Đồ thị hàm số y = 3x - 6 cắt trục Ox tại điểm có hoành độ là:", answer: "2", accept: ["2"], hint: "Tìm giao điểm với Ox bằng cách cho y = 0.", explain: "3x - 6 = 0 → x = 2." },
+      { type: "text", prompt: "Đồ thị hàm số y = -2x + 4 cắt trục Oy tại điểm có tung độ là:", answer: "4", accept: ["4"], hint: "Tìm giao điểm với Oy bằng cách cho x = 0.", explain: "y = -2·0 + 4 = 4." },
+      { type: "text", prompt: "Hàm số y = ax + b đi qua hai điểm (0;3) và (2;7). Tìm a và b.", answer: "a=2, b=3", accept: ["a=2, b=3", "2, 3"], hint: "Điểm (0;3) cho b = 3. Điểm (2;7) cho 2a + 3 = 7.", explain: "b = 3, 2a = 4 → a = 2." }
+    ]
+  },
+
+  {
+    id: "g8-b29",
+    num: 29,
+    chapter: 7,
+    title: "Hệ số góc của đường thẳng",
+    summary: "Hệ số góc a của đường thẳng y = ax + b biểu thị độ dốc. a > 0: đường đi lên, a < 0: đường đi xuống. |a| lớn: dốc hơn.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Trong xây dựng, mái nhà phải có độ dốc phù hợp để nước mưa chảy dễ dàng. Độ dốc này được tính bằng tỉ số giữa chiều cao và chiều ngang - chính là hệ số góc!</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa hệ số góc:</strong> Trong đường thẳng y = ax + b, hệ số a được gọi là hệ số góc của đường thẳng.</p>
+        <p><strong>Ý nghĩa hình học:</strong> a biểu thị góc α tạo bởi đường thẳng và trục Ox (theo chiều dương), với a = tan(α).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Xét đường thẳng y = 2x + 1.</p>
+        <p>Hệ số góc a = 2 > 0, nên đường thẳng đi lên từ trái sang phải.</p>
+        <p>Khi x tăng 1 đơn vị, y tăng 2 đơn vị. Độ dốc là 2.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Xét đường thẳng y = -3x + 4.</p>
+        <p>Hệ số góc a = -3 < 0, nên đường thẳng đi xuống từ trái sang phải.</p>
+        <p>Khi x tăng 1 đơn vị, y giảm 3 đơn vị. Độ dốc là -3 (dốc mạnh theo chiều đi xuống).</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Cho hai đường thẳng:</p>
+        <p>d₁: y = 2x + 1</p>
+        <p>d₂: y = -0.5x + 3</p>
+        <p>Chứng tỏ d₁ vuông góc d₂.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Hệ số góc của d₁ là a₁ = 2</p>
+        <p>Hệ số góc của d₂ là a₂ = -0.5</p>
+        <p>Tích: a₁·a₂ = 2·(-0.5) = -1</p>
+        <p>→ d₁ vuông góc d₂ (hai đường thẳng vuông góc khi tích hệ số góc bằng -1)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Đường thẳng y = 5 có hệ số góc là 5.</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhầm tưởng y = 5 có dạng y = ax + b với a = 5.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>y = 5 tương đương y = 0x + 5, nên hệ số góc a = 0.</p>
+        <p>Đây là đường thẳng song song hoặc trùng với trục Ox (nằm ngang).</p>
+      </div>
+      
+      <div class="definition">
+        <p><strong>Tính chất hệ số góc:</strong></p>
+        <p>1. a > 0: hàm số đồng biến, đường thẳng đi lên từ trái sang phải.</p>
+        <p>2. a < 0: hàm số nghịch biến, đường thẳng đi xuống từ trái sang phải.</p>
+        <p>3. |a| lớn: đường thẳng dốc hơn (góc với trục Ox lớn hơn).</p>
+        <p>4. a = 0: đường thẳng song song hoặc trùng với trục Ox.</p>
+        <p>5. Hai đường thẳng vuông góc khi tích hệ số góc bằng -1.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Làm chậm).</strong> So sánh độ dốc của các đường thẳng:</p>
+        <p>d₁: y = x + 2</p>
+        <p>d₂: y = 3x - 1</p>
+        <p>d₃: y = 0.5x + 4</p>
+        <p><strong>Giải:</strong></p>
+        <p>a₁ = 1, a₂ = 3, a₃ = 0.5</p>
+        <p>So sánh |a|: 3 > 1 > 0.5</p>
+        <p>Vậy d₂ dốc nhất, d₃ ít dốc nhất.</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Hệ số góc a = tan(α). a > 0: đi lên, a < 0: đi xuống, |a| lớn: dốc hơn. Hai đường thẳng vuông góc khi a₁·a₂ = -1.</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Hệ số góc của đường thẳng y = ax + b có ý nghĩa gì?</p>
+        <p>2. Khi nào hai đường thẳng vuông góc?</p>
+        <p><em>— Hệ số góc biểu thị độ dốc và góc với trục Ox. Hai đường thẳng vuông góc khi tích hệ số góc bằng -1.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Xác định hệ số góc của các đường thẳng sau:</p>
+        <p>a) y = 4x - 3</p>
+        <p>b) y = -2x + 5</p>
+        <p>2. Hai đường thẳng y = 3x + 1 và y = -⅓x + 2 có vuông góc không?</p>
+        <p><em>— 1a) a=4; 1b) a=-2. 2) Tích: 3·(-⅓)=-1 → vuông góc.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Hệ số góc của đường thẳng y = 3x + 2 là:", answer: "3", accept: ["3"], hint: "Hệ số góc là hệ số của x.", explain: "a = 3." },
+      { type: "text", prompt: "Hệ số góc của đường thẳng y = -4x + 1 là:", answer: "-4", accept: ["-4"], hint: "Hệ số góc là hệ số của x.", explain: "a = -4." },
+      { type: "text", prompt: "Hệ số góc của đường thẳng y = 0.5x - 3 là:", answer: "0.5", accept: ["0.5", "1/2"], hint: "Hệ số góc là hệ số của x.", explain: "a = 0.5." },
+      { type: "text", prompt: "Hai đường thẳng y = 2x + 1 và y = -0.5x + 3 có vuông góc không?", answer: "Có", accept: ["Có", "yes"], hint: "Tính tích hệ số góc.", explain: "2·(-0.5) = -1 → vuông góc." },
+      { type: "text", prompt: "Đường thẳng nào dốc hơn: y = 2x + 1 hay y = 5x - 3?", answer: "y=5x-3", accept: ["y=5x-3", "đường thẳng y = 5x - 3"], hint: "So sánh |a|.", explain: "|5| > |2| → y = 5x - 3 dốc hơn." },
+      { type: "text", prompt: "Hệ số góc của đường thẳng y = 7 là:", answer: "0", accept: ["0"], hint: "y = 7 tương đương y = 0x + 7.", explain: "a = 0." }
+    ]
+  }
 ];
 
 const COURSES = [
