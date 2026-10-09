@@ -4745,6 +4745,158 @@ const G8_LESSONS = [
       { type: "num", prompt: "Hình bình hành ABCD có ∠A=2x, ∠B=3x. Tìm x và tính các góc.", answer: 36, accept: ["36", "36"], hint: "Hai góc kề bù: 2x+3x=180°.", explain: "5x=180° → x=36°. ∠A=72°, ∠B=108°." },
     ],
   },
+
+  {
+    id: "g8-b12",
+    num: 12,
+    chapter: 4,
+    title: "Định lí Thalès trong tam giác",
+    summary: "Nếu một đường thẳng cắt hai cạnh của tam giác và song song với cạnh thứ ba thì chia hai cạnh đó thành các cặp đoạn thẳng tỷ lệ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Muốn đo chiều cao一棵 cây mà không cần leo lên, ta dùng định lí Thalès: đặt một cọc thẳng đứng CA = 2 m, lùi lại sao cho mắt nhìn thấy ngọn cây và đỉnh cọc thẳng hàng. Đo khoảng cách từ cọc đến cây là 15 m, từ chân cọc đến chân người là 1.5 m. Tính chiều cao cây.</p>
+      <div class="definition">
+        <p><strong>Định lí Thalès trong tam giác:</strong> Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh thứ ba thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỷ lệ.</p>
+        <p>Cho ΔABC, đường thẳng d cắt AB tại D, AC tại E, và d ∥ BC. Khi đó: \(\dfrac{AD}{AB} = \dfrac{AE}{AC} = \dfrac{DE}{BC}\).</p>
+      </div>
+      <div class="definition">
+        <p><strong>Định lí Thalès đảo:</strong> Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỷ lệ thì đường thẳng đó song song với cạnh thứ ba.</p>
+        <p>Cho ΔABC, D ∈ AB, E ∈ AC, \(\dfrac{AD}{AB} = \dfrac{AE}{AC}\). Khi đó: DE ∥ BC.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Định lí Thalès nói về "tỷ lệ" khi có đường thẳng song song. Nếu DE ∥ BC thì các đoạn trên AB, AC tỷ lệ thuận với BC.</p>
+        <p>Hệ quả: nếu \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) thì DE ∥ BC. Dạng này hay dùng hơn trong bài toán chứng minh song song.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Viết tỷ lệ sai: \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\), không phải \(\dfrac{AD}{AB} = \dfrac{AE}{EC}\).</li>
+          <li>Quên điều kiện: chỉ áp dụng khi đường thẳng song song với cạnh thứ ba. Nếu không song song, định lí không đúng.</li>
+          <li>Định lí đảo: cần đủ điều kiện tỷ lệ. Chỉ có \(\dfrac{AD}{AB} = \dfrac{AE}{AC}\) mới suy ra DE ∥ BC.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
+        <p>Theo định lí: \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) → \(\dfrac{4}{6} = \dfrac{3}{EC}\) → \(4·EC = 18\) → \(EC = 4.5\) cm.</p>
+        <p>Độ dài AB = AD + DB = 10 cm. \(\dfrac{AD}{AB} = \dfrac{4}{10} = 0.4\), \(\dfrac{AE}{AC} = \dfrac{3}{7.5} = 0.4\). Tỷ lệ bằng nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> ΔMNP, PQ ∥ MN, PQ cắt MP tại Q, MN tại R. Biết MP = 12 cm, MQ = 4 cm, NR = 6 cm. Tính MR.</p>
+        <p>MP = MQ + QP → QP = 12 − 4 = 8 cm. \(\dfrac{MQ}{QP} = \dfrac{MR}{RN}\) → \(\dfrac{4}{8} = \dfrac{MR}{6}\) → \(MR = 3\) cm.</p>
+        <p>Hoặc dùng \(\dfrac{MQ}{MP} = \dfrac{MR}{MN}\) nếu biết MN. Nhưng NR = 6 cm nên MN = MR + RN = MR + 6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> ΔABC, DE ∥ BC, AD = 5 cm, AB = 15 cm. Tỷ lệ \(\dfrac{AD}{AB} = \dfrac{1}{3}\). Suy ra \(\dfrac{AE}{AC} = \dfrac{1}{3}\), \(\dfrac{DE}{BC} = \dfrac{1}{3}\).</p>
+        <p>Nếu BC = 9 cm thì DE = 3 cm. Nếu AC = 12 cm thì AE = 4 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ΔABC, M ∈ AB, N ∈ AC, \(\dfrac{AM}{MB} = \dfrac{2}{3}\). MN ∥ BC. Biết AC = 20 cm. Tính AN, NC.</p>
+        <p>Đặt AM = 2x, MB = 3x → AB = 5x. \(\dfrac{AN}{NC} = \dfrac{2}{3}\). Đặt AN = 2y, NC = 3y.</p>
+        <p>AC = AN + NC = 5y = 20 → y = 4. AN = 8 cm, NC = 12 cm.</p>
+        <p>Độ dài MN = \(\dfrac{2}{5}\) BC (vì \(\dfrac{AM}{AB} = \dfrac{2x}{5x} = \dfrac{2}{5}\)).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> ΔABC, D ∈ AB, E ∈ AC, AD = 3 cm, DB = 2 cm, AE = 4 cm, EC = 3 cm. MN có song song BC không?</p>
+        <p>\(\dfrac{AD}{DB} = \dfrac{3}{2} = 1.5\), \(\dfrac{AE}{EC} = \dfrac{4}{3} ≈ 1.333\). Không bằng nhau → MN không song song BC.</p>
+        <p>Đừng chỉ so sánh tổng: AD + DB = AB = 5 cm, AE + EC = AC = 7 cm. Tỷ lệ AB:AC = 5:7 khác với AD:AE = 3:4.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Định lí Thalès: đường thẳng ∥ cạnh thứ ba → chia hai cạnh thành đoạn tỷ lệ. Định lí đảo: nếu tỷ lệ bằng nhau thì đường thẳng ∥ cạnh thứ ba.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định tam giác và đường thẳng song song. Viết đúng tỷ lệ giữa các đoạn. Chứng minh song song bằng định lí đảo.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>ΔABC, DE ∥ BC, AD=2cm, DB=3cm, AE=4cm. Tính EC. <em>— \(\dfrac{2}{3} = \dfrac{4}{EC}\) → EC = 6 cm.</em></p>
+        <p>ΔMNP, QR ∥ NP, MQ=5cm, QP=10cm. Tỷ lệ \(\dfrac{MR}{RN} = ?\) <em>— \(\dfrac{MQ}{QP} = \dfrac{1}{2}\) → \(\dfrac{MR}{RN} = \dfrac{1}{2}\).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> ΔABC, DE ∥ BC, AD=6cm, AB=15cm, DE=4cm. Tính BC.</p>
+        <p>\(\dfrac{AD}{AB} = \dfrac{6}{15} = 0.4\). BC = DE : 0.4 = 4 : 0.4 = 10 cm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AD=3cm, DB=5cm, AE=4cm. Tính EC.", answer: 6.67, accept: ["6.67", "20/3", "6.7"], hint: "AD/DB = AE/EC.", explain: "3/5 = 4/EC → EC = 20/3 ≈ 6.67 cm." },
+      { type: "num", prompt: "ΔMNP, QR ∥ NP, MQ=4cm, QP=6cm, NR=9cm. Tính MR.", answer: 6, hint: "MQ/QP = MR/RN.", explain: "4/6 = MR/9 → MR = 6 cm." },
+      { type: "mc", prompt: "ΔABC, D∈AB, E∈AC, AD=5cm, DB=10cm, AE=3cm, EC=6cm. Kết luận nào đúng?", choices: ["DE ∥ BC", "DE không song song BC", "Không đủ thông tin", "DE = BC"], correct: 0, hint: "AD/DB = AE/EC.", explain: "5/10 = 3/6 = 0.5 → DE ∥ BC." },
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AD=4cm, AB=12cm, BC=9cm. Tính DE.", answer: 3, hint: "AD/AB = DE/BC.", explain: "4/12 = DE/9 → DE = 3 cm." },
+      { type: "text", prompt: "ΔABC, M∈AB, N∈AC, AM/MB = 2/5. MN ∥ BC. Tính AN/NC.", answer: "2/5", accept: ["2/5", "2:5"], hint: "Định lí Thalès.", explain: "AN/NC = AM/MB = 2/5." },
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AE=6cm, EC=4cm, BC=15cm. Tính DE.", answer: 9, hint: "AE/AC = DE/BC.", explain: "6/10 = DE/15 → DE = 9 cm." },
+    ],
+  },
+
+  {
+    id: "g8-b13",
+    num: 13,
+    chapter: 4,
+    title: "Định lí Thalès trong hình thang",
+    summary: "Định lí Thalès mở rộng cho hình thang: đường thẳng song song hai đáy chia hai cạnh bên thành đoạn tỷ lệ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một tấm kim loại hình thang ABCD (AB ∥ CD), AB = 6 cm, CD = 14 cm. Cần cắt một đường thẳng song song hai đáy chia cạnh bên AD thành hai đoạn bằng nhau (trung điểm). Hỏi đoạn cắt trên CD bằng bao nhiêu?</p>
+      <div class="definition">
+        <p><strong>Định lí Thalès trong hình thang:</strong> Nếu một đường thẳng song song với hai đáy của hình thang và cắt hai cạnh bên thì nó định ra trên hai cạnh bên những đoạn thẳng tương ứng tỷ lệ.</p>
+        <p>Cho hình thang ABCD (AB ∥ CD), đường thẳng EF cắt AD tại E, BC tại F, và EF ∥ AB ∥ CD. Khi đó: \(\dfrac{AE}{ED} = \dfrac{BF}{FC}\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Trong hình thang, nếu có đường thẳng song song hai đáy, thì nó chia hai cạnh bên thành tỷ lệ bằng nhau. Đặc biệt, đường trung bình là trường hợp đặc biệt khi AE/ED = BF/FC = 1.</p>
+        <p>Độ dài đoạn cắt: nếu \(\dfrac{AE}{AD} = k\) thì EF = AB + k(CD − AB) = (1−k)AB + kCD.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Áp dụng sai: định lí chỉ đúng khi đường thẳng song song hai đáy. Nếu không song song, không áp dụng được.</li>
+          <li>Nhầm đáy và cạnh bên: AB, CD là đáy (song song), AD, BC là cạnh bên.</li>
+          <li>Công thức đoạn cắt: EF = \(\dfrac{AB + CD}{2}\) chỉ đúng khi EF là đường trung bình (AE = ED). Nếu AE/ED = k ≠ 1, dùng công thức tổng quát.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Hình thang ABCD (AB ∥ CD), AB = 8 cm, CD = 16 cm. Đường thẳng EF ∥ AB cắt AD tại E, BC tại F, với AE = 3 cm, ED = 5 cm.</p>
+        <p>Độ dài EF = AB + \(\dfrac{AE}{AD}\)(CD − AB) = 8 + \(\dfrac{3}{8}\)(16 − 8) = 8 + 3 = 11 cm.</p>
+        <p>Hoặc: EF = (1 − 3/8)·8 + (3/8)·16 = 5 + 6 = 11 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Hình thang MNPQ (MN ∥ PQ), MN = 10 cm, PQ = 22 cm. E ∈ MP, F ∈ NQ, EF ∥ MN, EP/MP = 1/4.</p>
+        <p>MP = ME + EP. Đặt MP = 4x → EP = x, ME = 3x. EF = (1 − 1/4)·10 + (1/4)·22 = 7.5 + 5.5 = 13 cm.</p>
+        <p>Tỷ lệ ME/EP = 3/1. Theo định lí Thalès: MF/FQ = 3/1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình thang ABCD (AB ∥ CD), AB = 6 cm, CD = 10 cm. Đường trung bình EF (AE = ED, BF = FC).</p>
+        <p>EF = \(\dfrac{6 + 10}{2}\) = 8 cm. Đây là trường hợp đặc biệt của định lí với AE/ED = 1.</p>
+        <p>Nếu AE/ED = 2, EF = (1 − 2/3)·6 + (2/3)·10 = 2 + 6.67 = 8.67 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình thang ABCD (AB ∥ CD), AB = a, CD = b. Tìm vị trí E ∈ AD sao cho EF = \(\dfrac{2a + b}{3}\).</p>
+        <p>Đặt k = AE/AD. EF = (1 − k)a + kb = \(\dfrac{2a + b}{3}\).</p>
+        <p>→ a − ka + kb = \(\dfrac{2a + b}{3}\) → a(1 − k) + bk = \(\dfrac{2a + b}{3}\).</p>
+        <p>Đồng nhất hệ số: 1 − k = 2/3 → k = 1/3. Kiểm tra bk = b/3 ✓.</p>
+        <p>Vậy AE = \(\dfrac{1}{3}\) AD.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hình thang ABCD (AB ∥ CD), AB = 4 cm, CD = 8 cm. Điểm E trên AD sao cho AE = 3 cm, ED = 2 cm. Gọi F là điểm trên BC sao cho EF ∥ AB. Tính BF/FC.</p>
+        <p>Theo định lí: AE/ED = BF/FC = 3/2. Không cần biết độ dài BC!</p>
+        <p>Đừng tính EF trước: EF = (2/5)·4 + (3/5)·8 = 1.6 + 4.8 = 6.4 cm. Nhưng câu hỏi yêu cầu BF/FC = 3/2.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Định lí Thalès trong hình thang: đường thẳng ∥ hai đáy → chia cạnh bên thành đoạn tỷ lệ. Đường trung bình là trường hợp đặc biệt.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định đáy và cạnh bên. Áp dụng công thức độ dài đoạn cắt. Chứng minh tỷ lệ trên cạnh bên.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình thang ABCD (AB ∥ CD), AB=6cm, CD=14cm, đường trung bình EF. Tính EF. <em>— (6+14):2 = 10 cm.</em></p>
+        <p>Hình thang MNPQ (MN ∥ PQ), MN=8cm, PQ=12cm, E∈MP, F∈NQ, EF∥MN, ME/EP=2/3. Tính EF. <em>— (3/5)·8 + (2/5)·12 = 4.8 + 4.8 = 9.6 cm.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Hình thang ABCD (AB ∥ CD), AB=10cm, CD=18cm, AE=4cm, ED=6cm. EF∥AB. Tính EF.</p>
+        <p>EF = (6/10)·10 + (4/10)·18 = 6 + 7.2 = 13.2 cm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD), AB=8cm, CD=16cm, AE=3cm, ED=5cm. EF∥AB. Tính EF.", answer: 11, hint: "(5/8)·8 + (3/8)·16.", explain: "5 + 6 = 11 cm." },
+      { type: "num", prompt: "Hình thang MNPQ (MN ∥ PQ), MN=6cm, PQ=14cm. Đường trung bình EF. Tính EF.", answer: 10, hint: "(6+14):2.", explain: "10 cm." },
+      { type: "mc", prompt: "Hình thang ABCD (AB ∥ CD), AB=5cm, CD=11cm, E∈AD, F∈BC, EF∥AB, AE/ED=1/2. Tính BF/FC.", choices: ["1/2", "2/1", "1/1", "Không xác định được"], correct: 0, hint: "Định lí Thalès.", explain: "AE/ED = BF/FC = 1/2." },
+      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD), AB=12cm, CD=20cm, AE/ED=3/5. Tính EF.", answer: 15, hint: "(5/8)·12 + (3/8)·20.", explain: "7.5 + 7.5 = 15 cm." },
+      { type: "text", prompt: "Hình thang ABCD (AB ∥ CD), AB=a, CD=b, AE/ED=k. Viết công thức EF theo a, b, k.", answer: "(1-k)a + kb", accept: ["(1-k)a + kb", "a - ka + kb"], hint: "Định lí Thalès.", explain: "EF = (1 − k)a + kb." },
+      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD), AB=10cm, CD=18cm, EF=13cm, EF∥AB. Tính AE/ED.", answer: 3, accept: ["3", "3/5"], hint: "Gọi k=AE/AD, (1-k)·10 + k·18 = 13.", explain: "10 + 8k = 13 → k=3/8 → AE/ED=3/5." },
+    ],
+  },
 ];
 
 const COURSES = [
