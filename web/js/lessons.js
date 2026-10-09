@@ -4897,6 +4897,88 @@ const G8_LESSONS = [
       { type: "num", prompt: "Hình thang ABCD (AB ∥ CD), AB=10cm, CD=18cm, EF=13cm, EF∥AB. Tính AE/ED.", answer: 3, accept: ["3", "3/5"], hint: "Gọi k=AE/AD, (1-k)·10 + k·18 = 13.", explain: "10 + 8k = 13 → k=3/8 → AE/ED=3/5." },
     ],
   },
+
+  {
+    id: "g8-b14",
+    num: 14,
+    chapter: 5,
+    title: "Dữ liệu và biểu đồ",
+    summary: "Dữ liệu rời rạc và liên tục. Biểu đồ tần số, biểu đồ đoạn thẳng, biểu đồ quạt tròn. Phân tích và đọc biểu đồ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Lớp 8A có 40 học sinh. Theo dõi số anh chị em trong mỗi gia đình: 3 học sinh có 1 anh/chị, 12 học sinh có 1 em, 8 học sinh có 2 em, 10 học sinh là con út, 7 học sinh chỉ có 1 em. Dữ liệu này là rời rạc. Vẽ biểu đồ tần số để trực quan.</p>
+      <div class="definition">
+        <p><strong>Dữ liệu rời rạc</strong> là dữ liệu chỉ nhận các giá trị riêng lẻ, thường là số nguyên. Ví dụ: số học sinh trong lớp, số anh chị em trong gia đình.</p>
+        <p><strong>Dữ liệu liên tục</strong> là dữ liệu có thể nhận mọi giá trị trong một khoảng. Ví dụ: chiều cao, cân nặng, nhiệt độ.</p>
+        <p><strong>Tần số</strong> của một giá trị là số lần giá trị đó xuất hiện trong dãy dữ liệu.</p>
+      </div>
+      <div class="definition">
+        <p><strong>Biểu đồ tần số hình cột</strong> là biểu đồ dùng cột để biểu diễn tần số của mỗi giá trị. Chiều cao cột tỷ lệ với tần số.</p>
+        <p><strong>Biểu đồ đoạn thẳng</strong> là biểu đồ nối các điểm biểu diễn tần số, tạo thành đường gấp khúc.</p>
+        <p><strong>Biểu đồ quạt tròn</strong> là biểu đồ dùng các quạt để biểu diễn tỷ lệ phần trăm của mỗi giá trị so với tổng.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Dữ liệu rời rạc: đếm được, giá trị riêng lẻ. Dữ liệu liên tục: đo được, giá trị trong khoảng. Biểu đồ = trực quan hóa dữ liệu.</p>
+        <p>Chọn biểu đồ phù hợp:
+        <ul>
+          <li>Tần số rời rạc: biểu đồ tần số hình cột hoặc đoạn thẳng</li>
+          <li>Tỷ lệ phần trăm: biểu đồ quạt tròn</li>
+          <li>Xu hướng theo thời gian: biểu đồ đoạn thẳng (thời gian trên trục hoành)</li>
+        </ul></p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm dữ liệu: chiều cao học sinh là liên tục (mỗi giá trị trong khoảng), không phải rời rạc.</li>
+          <li>Tỷ lệ sai: trong biểu đồ quạt tròn, tổng tỷ lệ phải bằng 100% (hoặc 1). Đừng để tổng >100% hoặc <100%.</li>
+          <li>Đơn vị: biểu đồ tần số có đơn vị là số lần xuất hiện, biểu đồ quạt tròn là phần trăm.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán của 20 học sinh: 5, 6, 7, 8, 9, 10. Tần số: điểm 5 (2 HS), điểm 6 (3 HS), điểm 7 (5 HS), điểm 8 (4 HS), điểm 9 (4 HS), điểm 10 (2 HS).</p>
+        <p>Biểu đồ tần số: cột cao tương ứng với tần số. Điểm 7 có cột cao nhất (5). Điểm 5 và 10 có cột thấp nhất (2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Số cây trồng được của 5 tổ: tổ 1 (12 cây), tổ 2 (15 cây), tổ 3 (10 cây), tổ 4 (18 cây), tổ 5 (8 cây).</p>
+        <p>Biểu đồ tần số: cột cao 12, 15, 10, 18, 8. Tổ 4 trồng nhiều nhất (18 cây), tổ 5 trồng ít nhất (8 cây).</p>
+        <p>Tổng số cây: 12+15+10+18+8 = 63 cây. Trung bình mỗi tổ: 63:5 = 12.6 cây.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ quạt tròn biểu diễn sở thích giải trí: xem phim (40%), đọc sách (25%), thể thao (20%), nghe nhạc (15%).</p>
+        <p>Tổng: 40% + 25% + 20% + 15% = 100%. ✓</p>
+        <p>Nếu có 100 học sinh: xem phim 40 em, đọc sách 25 em, thể thao 20 em, nghe nhạc 15 em.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Nhiệt độ trung bình các tháng trong năm (°C): 18, 20, 23, 26, 28, 30, 31, 30, 28, 25, 22, 19.</p>
+        <p>Biểu đồ đoạn thẳng: trục hoành là tháng (1-12), trục tung là nhiệt độ. Nối các điểm (1,18), (2,20), ..., (12,19).</p>
+        <p>Nhiệt độ cao nhất: tháng 7 (31°C). Nhiệt độ thấp nhất: tháng 12 (19°C). Chênh lệch: 31-19 = 12°C.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Biểu đồ quạt tròn có 4 quạt: A (30%), B (40%), C (20%), D (20%). Tổng = 110% → sai! Phải điều chỉnh: chia mỗi tỷ lệ cho 1.1 hoặc kiểm tra lại dữ liệu.</p>
+        <p>Biểu đồ tần số có cột cao nhất không phải giá trị lớn nhất! Ví dụ: điểm 5 có 10 HS (cao nhất), điểm 10 có 2 HS (thấp nhất). Cột cao反映 tần số, không phải giá trị.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu rời rạc: giá trị riêng lẻ. Dữ liệu liên tục: giá trị trong khoảng. Biểu đồ tần số = cột hoặc đoạn thẳng. Biểu đồ quạt tròn = phần trăm.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định loại dữ liệu. Vẽ và đọc biểu đồ tần số, đoạn thẳng, quạt tròn. Tính tần số, tỷ lệ, tổng, trung bình.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Dữ liệu nào là rời rạc: số học sinh, chiều cao, số anh chị em, cân nặng? <em>— Số học sinh và số anh chị em là rời rạc. Chiều cao và cân nặng là liên tục.</em></p>
+        <p>Biểu đồ quạt tròn có 3 quạt: 40%, 35%, ? <em>— Quạt thứ ba = 25% (100% − 40% − 35% = 25%).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tần số: giá trị 5 (3 lần), giá trị 7 (5 lần), giá trị 9 (2 lần). Tổng tần số = 10.</p>
+        <p>Biểu đồ tần số: cột cao 3, 5, 2. Giá trị 7 có tần số cao nhất.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc (0, 1, 2,...). Chiều cao, nhiệt độ, thời gian là liên tục." },
+      { type: "num", prompt: "Biểu đồ quạt tròn có 3 quạt: 30%, 45%, ?", answer: 25, hint: "100% − 30% − 45%.", explain: "25%." },
+      { type: "text", prompt: "Dãy dữ liệu: 5, 7, 5, 8, 5, 7. Tần số của giá trị 5 là bao nhiêu?", answer: "3", accept: ["3", "3"], hint: "Đếm số lần xuất hiện.", explain: "5 xuất hiện 3 lần." },
+      { type: "mc", prompt: "Biểu đồ nào phù hợp nhất để biểu diễn tỷ lệ phần trăm?", choices: ["Biểu đồ tần số hình cột", "Biểu đồ đoạn thẳng", "Biểu đồ quạt tròn", "Bảng số liệu"], correct: 2, hint: "Biểu đồ quạt tròn biểu diễn phần trăm.", explain: "Biểu đồ quạt tròn dùng các quạt biểu diễn tỷ lệ phần trăm." },
+      { type: "num", prompt: "Tần số: giá trị 2 (4 lần), giá trị 4 (6 lần), giá trị 6 (5 lần). Tổng tần số = ?", answer: 15, hint: "4 + 6 + 5.", explain: "15." },
+      { type: "text", prompt: "Biểu đồ tần số có cột cao nhất ứng với giá trị nào? <em>— Ứng với giá trị có tần số cao nhất (xuất hiện nhiều nhất), không nhất thiết là giá trị lớn nhất.</em>", answer: "Giá trị có tần số cao nhất", accept: ["giá trị có tần số cao nhất", "giá trị xuất hiện nhiều nhất", "giá trị lớn nhất"], hint: "Cột cao = tần số lớn.", explain: "Cột cao nhất ứng với giá trị có tần số cao nhất." },
+    ],
+  },
 ];
 
 const COURSES = [
