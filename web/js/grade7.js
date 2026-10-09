@@ -2099,14 +2099,14 @@ const G7_LESSONS = [
       <p>Trung trực: vuông góc tại trung điểm cạnh. Giao ba trung trực là tâm đường tròn đi qua ba đỉnh.</p>
       <figure class="figure">
         <svg viewBox="0 0 280 170" role="img" aria-label="Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền">
-          <polygon points="40,140 240,140 40,50" fill="none" stroke="#DDDDDD" stroke-width="2"/>
+          <polygon points="40,140 140,140 40,80" fill="none" stroke="#DDDDDD" stroke-width="2"/>
           <rect x="40" y="128" width="12" height="12" fill="none" stroke="#FC6255" stroke-width="1.3"/>
-          <circle cx="140" cy="95" r="78" fill="none" stroke="#58C4DD" stroke-width="1.4" stroke-dasharray="4 3"/>
-          <circle cx="140" cy="140" r="4" fill="#FFFF00"/>
-          <text x="28" y="48" font-size="13">A</text>
+          <circle cx="90" cy="110" r="58.3" fill="none" stroke="#58C4DD" stroke-width="1.4" stroke-dasharray="4 3"/>
+          <circle cx="90" cy="110" r="4" fill="#FFFF00"/>
+          <text x="28" y="76" font-size="13">A</text>
           <text x="28" y="156" font-size="13">C</text>
-          <text x="244" y="156" font-size="13">B</text>
-          <text x="146" y="158" font-size="13">O</text>
+          <text x="144" y="156" font-size="13">B</text>
+          <text x="96" y="114" font-size="13">O</text>
         </svg>
         <figcaption>Vuông tại C. Tâm ngoại tiếp O là trung điểm cạnh huyền AB. Trực tâm trùng C.</figcaption>
       </figure>
