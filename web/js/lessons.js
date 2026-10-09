@@ -3934,10 +3934,173 @@ function courseStub(grade, level) {
   };
 }
 
+const G8_CHAPTERS = [
+  { id: 1, title: "Đa thức" },
+  { id: 2, title: "Hằng đẳng thức đáng nhớ và ứng dụng" },
+  { id: 3, title: "Tứ giác" },
+  { id: 4, title: "Định lí Thalès" },
+  { id: 5, title: "Dữ liệu và biểu đồ" },
+];
+
+const G8_LESSONS = [
+  // ===== CHAPTER 1: ĐA THỨC =====
+  {
+    id: "g8-b1",
+    num: 1,
+    chapter: 1,
+    title: "Đơn thức",
+    summary: "Đơn thức là biểu thức chỉ gồm số, biến hoặc tích của chúng. Đơn thức thu gọn có một hệ số và phần biến.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Diện tích hình chữ nhật bằng chiều dài nhân chiều rộng. Nếu chiều dài là \(x\), chiều rộng là \(y\) thì diện tích là \(xy\). Nếu chiều dài là \(3x\), chiều rộng là \(2y\) thì diện tích là \(3x \cdot 2y = 6xy\). Các biểu thức này là đơn thức.</p>
+      <div class="definition">
+        <p><strong>Đơn thức</strong> là biểu thức đại số chỉ gồm một số hoặc một biến, hoặc có dạng tích của những số và biến. Ví dụ: \(5\), \(x\), \(-3y\), \(2xy\), \(-\dfrac{1}{2}x^2y^3\).</p>
+      </div>
+      <div class="definition">
+        <p>Đơn thức thu gọn là đơn thức chỉ gồm một hệ số (số khác 0) nhân với một phần biến (gồm các biến viết dưới dạng lũy thừa với số mũ nguyên dương, mỗi biến viết một lần).</p>
+        <p>Hệ số là phần số. Phần biến là tích các biến. Ví dụ: \(5x^2y\) có hệ số 5, phần biến \(x^2y\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Đơn thức là "tích thuần túy" của số và biến. Không có phép cộng/trừ, không có biến ở mẫu, không có biến dưới dấu căn. Mỗi biến chỉ xuất hiện một lần với số mũ dương.</p>
+        <p>Hệ số là phần "tỉ lệ", phần biến là "dạng". Đơn thức \(7x^3y^2\) tăng 8 lần khi \(x\) tăng 2 lần (vì \(2^3 = 8\)), tăng 4 lần khi \(y\) tăng 2 lần (vì \(2^2 = 4\)).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Trông giống mà không phải.</strong></p>
+        <ul>
+          <li>\(\dfrac{3}{x}\) không phải đơn thức: biến ở mẫu.</li>
+          <li>\(2x + y\) không phải đơn thức: có phép cộng.</li>
+          <li>\(\sqrt{x}\) không phải đơn thức: biến dưới dấu căn.</li>
+          <li>\(x^{-2}\) không phải đơn thức: số mũ âm. Đơn thức phải có số mũ nguyên dương hoặc 0.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Những biểu thức sau là đơn thức: \(5\), \(x\), \(-3y\), \(2xy\), \(-\dfrac{1}{2}x^2y^3\). Hệ số lần lượt là \(5\), \(1\), \(-3\), \(2\), \(-\dfrac{1}{2}\).</p>
+        <p>Biểu thức \(3x + 2\) không phải đơn thức vì có phép cộng. Biểu thức \(\dfrac{4}{x}\) không phải đơn thức vì biến ở mẫu.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(-7x^3y^2\) là đơn thức: hệ số \(-7\), phần biến \(x^3y^2\). Giá trị tại \(x = 2\), \(y = 1\) là \(-7 \cdot 8 \cdot 1 = -56\).</p>
+        <p>\(\dfrac{2}{3}xy^4\) có hệ số \(\dfrac{2}{3}\), phần biến \(xy^4\). Tại \(x = -3\), \(y = 1\) giá trị là \(\dfrac{2}{3} \cdot (-3) \cdot 1 = -2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(0\) là đơn thức đặc biệt: hệ số 0, không có phần biến. \(7\) là đơn thức: hệ số 7, phần biến rỗng. \(-x\) là đơn thức: hệ số \(-1\), phần biến \(x\).</p>
+        <p>Biểu thức \(x + y\) không phải đơn thức (có phép cộng). \(\dfrac{1}{x}\) không phải (biến ở mẫu). \(\sqrt{xy}\) không phải (dấu căn).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đơn thức \(A = -\dfrac{3}{4}x^2y^3z\). Hệ số là \(-\dfrac{3}{4}\). Số mũ của \(x\) là 2, của \(y\) là 3, của \(z\) là 1. Tổng số mũ: \(2 + 3 + 1 = 6\). Đơn thức này bậc 6.</p>
+        <p>Giá trị tại \(x = 2\), \(y = -1\), \(z = 3\): \(-\dfrac{3}{4} \cdot 4 \cdot (-1) \cdot 3 = 9\). Tính: \((2)^2 = 4\), \((-1)^3 = -1\), nhân lần lượt: \(-\dfrac{3}{4} \cdot 4 = -3\), \(-3 \cdot (-1) = 3\), \(3 \cdot 3 = 9\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(5x^0 = 5\) vì \(x^0 = 1\) (với \(x \neq 0\)). Vậy \(5x^0\) là đơn thức bậc 0, giống như số 5. Đừng nghĩ \(x^0\) có bậc 0 nên đơn thức có bậc 0 — đúng, nhưng phải hiểu \(x^0 = 1\).</p>
+        <p>\(\dfrac{6x^2}{2} = 3x^2\) là đơn thức sau khi rút gọn. Đừng vội kết luận không phải đơn thức vì có phân số: cần rút gọn trước.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đơn thức = tích số × biến^số mũ. Hệ số ≠ 0. Phần biến: mỗi biến một lần, số mũ nguyên dương.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Nhận diện đơn thức: không có +, -, biến ở mẫu, căn, số mũ âm. Tìm hệ số và phần biến. Tính giá trị tại giá trị cụ thể của biến.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Biểu thức nào là đơn thức: \(7x^2y\), \(\dfrac{3}{x}\), \(5\), \(x + y\)? <em>— \(7x^2y\) và \(5\). \(\dfrac{3}{x}\) có biến ở mẫu, \(x + y\) có phép cộng.</em></p>
+        <p>Đơn thức \(-4x^3y^2\) có hệ số và phần biến gì? <em>— Hệ số \(-4\), phần biến \(x^3y^2\). Bậc: 3 + 2 = 5.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \(0,75a^2b^3 = \dfrac{3}{4}a^2b^3\). Hệ số \(\dfrac{3}{4}\), bậc 5. \(2xy^5z^2\) bậc 8. \(-x^4y\) bậc 5.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Biểu thức nào là đơn thức?", choices: ["3x + 2", "5/x", "-7y²", "√x"], correct: 2, hint: "Đơn thức là tích số × biến^số mũ.", explain: "-7y² là tích -7 × y². Các biểu thức khác có phép cộng, biến ở mẫu hoặc dấu căn." },
+      { type: "num", prompt: "Đơn thức -3x²y³ có bậc là bao nhiêu?", answer: 5, hint: "Bậc là tổng số mũ các biến.", explain: "2 + 3 = 5." },
+      { type: "text", prompt: "Viết hệ số và phần biến của 5/8 x⁴y.", answer: "Hệ số: 5/8, phần biến: x⁴y", accept: ["5/8", "x⁴y", "5/8 x⁴y"], hint: "Phân số viết như a/b.", explain: "5/8 là hệ số, x⁴y là phần biến." },
+      { type: "mc", prompt: "Biểu thức nào không phải đơn thức?", choices: ["-1", "x⁰", "3/x²", "2xy"], correct: 2, hint: "Kiểm tra biến ở mẫu.", explain: "3/x² có biến ở mẫu. -1 là đơn thức (số), x⁰=1, 2xy là tích." },
+      { type: "num", prompt: "Giá trị của -2x³y tại x=2, y=-1 là bao nhiêu?", answer: 16, hint: "Tính x³=8, rồi nhân từng bước.", explain: "-2 × 8 × (-1) = 16." },
+      { type: "num", prompt: "Giá trị của 3/4 x²y³ tại x=-2, y=1 là bao nhiêu?", answer: 3, hint: "(-2)²=4, 1³=1, nhân 3/4.", explain: "3/4 × 4 × 1 = 3." },
+      { type: "mc", prompt: "Đơn thức 5x²y³z có bậc bao nhiêu?", choices: ["5", "6", "8", "10"], correct: 1, hint: "Tổng số mũ: 2+3+1.", explain: "2+3+1=6." },
+    ],
+  },
+  {
+    id: "g8-b2",
+    num: 2,
+    chapter: 1,
+    title: "Đa thức",
+    summary: "Đa thức là tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một hạng tử của đa thức.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Chu vi hình chữ nhật bằng 2 × (chiều dài + chiều rộng). Nếu chiều dài là \(x\), chiều rộng là \(y\) thì chu vi là \(2x + 2y\). Biểu thức này gồm hai đơn thức \(2x\) và \(2y\) cộng lại — đó là đa thức.</p>
+      <div class="definition">
+        <p><strong>Đa thức</strong> là tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một <strong>hạng tử</strong> của đa thức đó.</p>
+        <p>Ví dụ: \(3x^2 + 2x - 5\) là đa thức gồm ba hạng tử: \(3x^2\), \(2x\), \(-5\).</p>
+      </div>
+      <div class="definition">
+        <p>Đa thức thu gọn là đa thức không có hai hạng tử nào đồng dạng. Để thu gọn, cộng/trừ các hạng tử đồng dạng.</p>
+        <p>Hạng tử đồng dạng là các đơn thức có phần biến giống nhau. Ví dụ: \(3x^2y\) và \(-5x^2y\) là đồng dạng.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Đa thức = tổng đơn thức. Hạng tử đồng dạng = "cùng loại" — cùng biến và số mũ. Thu gọn = cộng/trừ các hạng tử cùng loại.</p>
+        <p>Đa thức \(2x^2 + 3x - x^2 + 5\) thu gọn thành \((2x^2 - x^2) + 3x + 5 = x^2 + 3x + 5\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Đừng nhầm hạng tử với đơn thức: số \(-5\) là cả đơn thức và hạng tử của đa thức.</li>
+          <li>Thu gọn phải cùng phần biến: \(3x^2\) và \(2x\) không cộng được — khác phần biến.</li>
+          <li>Dấu trừ trước ngoặc: đổi dấu tất cả hạng tử trong ngoặc. \(2x - (3x - 5) = 2x - 3x + 5 = -x + 5\).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> \(P = x^2y + xy + xy^2\) là đa thức ba biến, ba hạng tử. Mỗi hạng tử là một đơn thức.</p>
+        <p>Đa thức \(Q = 3x^2 - 5x + x^2 + 2\) có hai hạng tử đồng dạng: \(3x^2\) và \(x^2\). Thu gọn: \(Q = 4x^2 - 5x + 2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> \(A = 2x^3y - 5x^3y + 3xy^2\). Hạng tử \(2x^3y\) và \(-5x^3y\) đồng dạng. Cộng: \((2 - 5)x^3y = -3x^3y\). Thu gọn: \(A = -3x^3y + 3xy^2\).</p>
+        <p>Đa thức \(B = x^2 + 2xy - 3x^2 + xy + 5\). Nhóm đồng dạng: \((x^2 - 3x^2) + (2xy + xy) + 5 = -2x^2 + 3xy + 5\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(7\) là đa thức một hạng tử (cũng là đơn thức). \(x + y\) là đa thức hai hạng tử. \(3x^2 - 2x + 1\) là đa thức ba hạng tử.</p>
+        <p>Đa thức \(C = 5x^2 - 3x^2 + 2x - x + 4\). Thu gọn: \(2x^2 + x + 4\). Hạng tử \(2x^2\), \(x\), \(4\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(D = 2x^2y^2 - 3x^2y^2 + xy - 5xy + 7\). Thu gọn: \((2-3)x^2y^2 + (1-5)xy + 7 = -x^2y^2 - 4xy + 7\).</p>
+        <p>Giá trị tại \(x=2\), \(y=1\): \(-(4)(1) - 4(2)(1) + 7 = -4 - 8 + 7 = -5\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(E = 3x^2 + 2y^2 - 5x^2 + y^2\). Đừng cộng \(3x^2 + 2y^2\) trước — chỉ cộng đồng dạng. Thu gọn: \((3-5)x^2 + (2+1)y^2 = -2x^2 + 3y^2\).</p>
+        <p>\(F = x^2 + 2x + 1 - (x^2 - 2x + 1)\). Đổi dấu trong ngoặc: \(x^2 + 2x + 1 - x^2 + 2x - 1 = 4x\). Đừng quên dấu trừ tác động lên mọi hạng tử.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đa thức = tổng đơn thức. Hạng tử = số hạng. Thu gọn = cộng/trừ hạng tử đồng dạng (cùng phần biến).</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Nhận diện đa thức và hạng tử. Tìm hạng tử đồng dạng. Thu gọn đa thức. Tính giá trị tại giá trị cụ thể.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đa thức \(3x^2 + 2x - x^2 + 5\) thu gọn thành gì? <em>— \(2x^2 + 2x + 5\). Hạng tử đồng dạng: \(3x^2\) và \(-x^2\).</em></p>
+        <p>Biểu thức nào là hạng tử đồng dạng: \(2x^2y\), \(3xy^2\), \(-5x^2y\)? <em>— \(2x^2y\) và \(-5x^2y\) (cùng phần biến). \(3xy^2\) khác phần biến.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> \(4x^2 - 3x + 2x^2 + 7 = 6x^2 - 3x + 7\). \(xy + 2x^2y - 3xy = 2x^2y - 2xy\). \(5x^3 - 2x^3 + x - 4x = 3x^3 - 3x\).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Đa thức nào sau đây có ba hạng tử?", choices: ["5x²", "x + y", "3x² - 2x + 1", "2x + 3y + 4z + 5"], correct: 2, hint: "Hạng tử là các số hạng trong tổng.", explain: "3x² - 2x + 1 có ba hạng tử: 3x², -2x, 1." },
+      { type: "text", prompt: "Thu gọn đa thức 2x² + 3x - x² + 5.", answer: "x² + 3x + 5", accept: ["x² + 3x + 5", "x^2 + 3x + 5"], hint: "Cộng x² và -x².", explain: "(2x² - x²) + 3x + 5 = x² + 3x + 5." },
+      { type: "num", prompt: "Giá trị của đa thức x² + 2x - 3 tại x=2 là bao nhiêu?", answer: 5, hint: "Thay x=2 vào: 4 + 4 - 3.", explain: "2² + 2×2 - 3 = 4 + 4 - 3 = 5." },
+      { type: "mc", prompt: "Đa thức 3x²y - 5x²y + 2xy thu gọn thành gì?", choices: ["-2x²y + 2xy", "-8x²y + 2xy", "8x²y + 2xy", "2x²y + 2xy"], correct: 0, hint: "3 - 5 = -2.", explain: "(3-5)x²y + 2xy = -2x²y + 2xy." },
+      { type: "mc", prompt: "Đa thức nào không có hạng tử đồng dạng?", choices: ["2x² + 3x²", "5xy - 3xy", "x² + y²", "4x - x"], correct: 2, hint: "Hạng tử đồng dạng phải cùng phần biến.", explain: "x² và y² khác phần biến. Các biểu thức khác có hạng tử cùng biến." },
+      { type: "num", prompt: "Giá trị của đa thức 2x² - 3x + 1 tại x=-1 là bao nhiêu?", answer: 6, hint: "Thay x=-1: 2(1) - 3(-1) + 1.", explain: "2×1 - 3×(-1) + 1 = 2 + 3 + 1 = 6." },
+      { type: "text", prompt: "Thu gọn đa thức 4x²y - 2x²y + xy - 3xy.", answer: "2x²y - 2xy", accept: ["2x²y - 2xy", "2x^2y - 2xy"], hint: "Cộng từng nhóm đồng dạng.", explain: "(4-2)x²y + (1-3)xy = 2x²y - 2xy." },
+    ],
+  },
+];
+
 const COURSES = [
   courseStub(6, "THCS"),
   courseStub(7, "THCS"),
-  courseStub(8, "THCS"),
+  {
+    id: "8",
+    grade: 8,
+    title: "Toán 8",
+    level: "THCS",
+    subtitle: "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống",
+    blurb: "Chương I–V, Bài 1–20. Ví dụ viết mới, không chép SGK.",
+    chapters: G8_CHAPTERS,
+    lessons: G8_LESSONS,
+  },
   {
     id: "9",
     grade: 9,
