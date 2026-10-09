@@ -153,3 +153,44 @@ Files modified:
 - web/js/lessons.js: +137 lines for 3 new lessons
 
 Committed eb1e6bb (eb1e6bb). Pushed to GitHub Pages main branch.
+
+## 2026-01-10 Grade 8 Part 2 lessons g8-b25 through g8-b29 (c1c5be9)
+
+Added Grade 8 Part 2 lessons covering Chapter VII: Phương trình bậc nhất và hàm số bậc nhất (Linear equations and linear functions):
+
+- g8-b25: Phương trình bậc nhất một ẩn (Linear equations with one variable)
+  - Definition: ax + b = 0 (a ≠ 0)
+  - Two transformation rules for equations
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b26: Giải bài toán bằng cách lập phương trình (Solve problems by setting up equations)
+  - 5-step problem solving process: choose variable, set condition, express quantities, set equation, solve and verify
+  - Real-world problems (age, geometry, travel)
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b27: Khái niệm hàm số và đồ thị của hàm số (Concept of function and graph)
+  - Function definition: each x has exactly one y
+  - Graph: set of all points (x;f(x)) on coordinate plane
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b28: Hàm số bậc nhất và đồ thị của hàm số bậc nhất (Linear functions and their graphs)
+  - Linear function: y = ax + b (a ≠ 0)
+  - Graph is a straight line
+  - y-intercept (tung độ gốc) and slope (hệ số góc)
+  - 6 interactive exercises with hints and detailed explanations
+
+- g8-b29: Hệ số góc của đường thẳng (Slope of a line)
+  - Slope a = tan(α) represents steepness
+  - a > 0: increasing, a < 0: decreasing
+  - |a| large: steeper
+  - Perpendicular lines: a₁·a₂ = -1
+  - 6 interactive exercises with hints and detailed explanations
+
+Each lesson follows Vietnamese pedagogy:
+- Situation (tình huống) → Definitions → Examples (slow down → easy → hard → pitfalls)
+- Look Back (nhìn lại) → Self-check (tự kiểm tra) → Practice exercises (luyện dạng SBT)
+
+Files modified:
+- web/js/lessons.js: +472 lines for 5 new lessons
+
+Committed c1c5be9. Pushed to GitHub Pages main branch.
