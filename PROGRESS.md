@@ -39,7 +39,31 @@
 - **Fix**: merged all unique points into a single "Sai lầm thường gặp" warn right after the first `.idea` (11%), deduped the `0x+0y=3` point. Removed both old warns.
 - **Verified**: syntax, smoke (84 lessons/52 figures), KaTeX 0, tag balance clean, render 0 failures.
 - **Post-fix scan**: all 32 Toan 9 warns now sit right after their first `.idea` (c7-b23 after its opening `.definition` — no early idea exists, first idea at 87%; intentional). No lesson has 2+ warns.
-# Progress
+## 2026-10-09 Toán 9 animations pass (grade 9 visual lessons with animations)
+
+Added step-by-step animations to 10 lessons:
+
+- `c5-b13`: Circle with radius and points (animate circle, points, radius labels)
+- `c4-b11`: Right triangle with trig labels (animate hypotenuse, legs, angles)
+- `c5-b16`: Line-circle positions (3 panels: intersect, tangent, no-intersection)
+- `c9-b27`: Inscribed angle with central angle comparison
+- `c9-b28`: Circumcircle and incircle of a triangle
+- `c6-b18`: Parabola y = ax² (both a>0 and a<0 cases)
+- `c3-b7`: Square root with geometric interpretation (square 49 m² → side 7 m)
+- `c7-b22`: Frequency table and bar chart (chart axes, grid lines, bars, labels)
+- `c10-b31`: Cylinder and cone (ellipse bases, vertical lines, labels R, h, l)
+- `c10-b32`: Sphere with cross-section (circle with chord, distance d, radii R and r)
+
+All animations use:
+- Drawing effect for lines/curves via `stroke-dasharray`/`stroke-dashoffset`
+- Fade-in for text/points via `opacity` transitions
+- Step-by-step reveal following pedagogical flow
+
+Modified files:
+- `web/js/animations.js` — added 10 animation configs with step-by-step reveals
+- `web/js/lessons.js` — added `data-animation` attributes and SVG modifications
+
+Committed `6a98acb`, `a141f47`, `1794189`, `ae44dc2`, `cc029dd`.
 
 ## 2026-10 (session 3)
 
