@@ -3690,29 +3690,29 @@ const LESSONS = [
           <li>Chiều cao \(h = SO\) (đường cao của hình nón).</li>
         </ul>
       </div>
-      <figure class="figure">
-        <svg viewBox="0 0 370 205" role="img" aria-label="Hình trụ và hình nón: bán kính đáy R, chiều cao h, đường sinh l">
-          <ellipse cx="105" cy="42" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <ellipse cx="105" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="50" y1="42" x2="50" y2="158" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="160" y1="42" x2="160" y2="158" stroke="#DDDDDD" stroke-width="2"/>
-          <circle cx="105" cy="42" r="2.5" fill="#DDDDDD"/>
-          <text x="90" y="41" font-size="13">O′</text>
-          <line x1="105" y1="42" x2="160" y2="42" stroke="#83C167" stroke-width="2"/>
-          <text x="122" y="56" font-size="13" fill="#83C167">R</text>
-          <line x1="28" y1="42" x2="28" y2="158" stroke="#FC6255" stroke-width="2"/>
-          <text x="14" y="105" font-size="13" fill="#FC6255">h</text>
-          <ellipse cx="270" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="270" y1="32" x2="215" y2="158" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="270" y1="32" x2="325" y2="158" stroke="#DDDDDD" stroke-width="2"/>
-          <line x1="270" y1="32" x2="270" y2="158" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 4"/>
-          <text x="278" y="100" font-size="13" fill="#FC6255">h</text>
-          <text x="258" y="26" font-size="13">S</text>
-          <line x1="270" y1="158" x2="325" y2="158" stroke="#83C167" stroke-width="2"/>
-          <text x="297" y="184" font-size="13" fill="#83C167">R</text>
-          <text x="302" y="92" font-size="13" fill="#58C4DD">l</text>
-          <circle cx="270" cy="158" r="2.5" fill="#DDDDDD"/>
-          <text x="252" y="156" font-size="13">O</text>
+      <figure class="figure" data-animation="c10-b31-3d">
+        <svg viewBox="0 0 370 205" role="img" aria-label="Hình trụ và hình nón: bán kính đáy R, chiều cao h, đường sinh l" id="fig-c10-b31">
+          <ellipse cx="105" cy="42" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="178" stroke-dashoffset="178" opacity="0"/>
+          <ellipse cx="105" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="178" stroke-dashoffset="178" opacity="0"/>
+          <line x1="50" y1="42" x2="50" y2="158" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="116" stroke-dashoffset="116" opacity="0"/>
+          <line x1="160" y1="42" x2="160" y2="158" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="116" stroke-dashoffset="116" opacity="0"/>
+          <circle cx="105" cy="42" r="2.5" fill="#DDDDDD" opacity="0"/>
+          <text x="90" y="41" font-size="13" opacity="0">O′</text>
+          <line x1="105" y1="42" x2="160" y2="42" stroke="#83C167" stroke-width="2" stroke-dasharray="55" stroke-dashoffset="55" opacity="0"/>
+          <text x="122" y="56" font-size="13" fill="#83C167" opacity="0">R</text>
+          <line x1="28" y1="42" x2="28" y2="158" stroke="#FC6255" stroke-width="2" stroke-dasharray="116" stroke-dashoffset="116" opacity="0"/>
+          <text x="14" y="105" font-size="13" fill="#FC6255" opacity="0">h</text>
+          <ellipse cx="270" cy="158" rx="55" ry="15" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="178" stroke-dashoffset="178" opacity="0"/>
+          <line x1="270" y1="32" x2="215" y2="158" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="135" stroke-dashoffset="135" opacity="0"/>
+          <line x1="270" y1="32" x2="325" y2="158" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="135" stroke-dashoffset="135" opacity="0"/>
+          <line x1="270" y1="32" x2="270" y2="158" stroke="#FC6255" stroke-width="2" stroke-dasharray="126" stroke-dashoffset="126" opacity="0"/>
+          <text x="278" y="100" font-size="13" fill="#FC6255" opacity="0">h</text>
+          <text x="258" y="26" font-size="13" opacity="0">S</text>
+          <line x1="270" y1="158" x2="325" y2="158" stroke="#83C167" stroke-width="2" stroke-dasharray="55" stroke-dashoffset="55" opacity="0"/>
+          <text x="297" y="184" font-size="13" fill="#83C167" opacity="0">R</text>
+          <text x="302" y="92" font-size="13" fill="#58C4DD" opacity="0">l</text>
+          <circle cx="270" cy="158" r="2.5" fill="#DDDDDD" opacity="0"/>
+          <text x="252" y="156" font-size="13" opacity="0">O</text>
         </svg>
         <figcaption>Trụ: cao h, bán kính đáy R. Nón: đường sinh l, cao h — dùng l cho diện tích xung quanh, dùng h cho thể tích.</figcaption>
       </figure>

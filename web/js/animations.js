@@ -257,6 +257,17 @@ const AnimationManager = {
           { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // c10-b31: Hình trụ và hình nón
+      'c10-b31-3d': {
+        steps: [
+          { selector: 'ellipse', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
