@@ -6421,7 +6421,723 @@ const G8_LESSONS = [
       { type: "text", prompt: "Tung đồng xu nhiều lần, P_n(ngửa) tiến gần giá trị nào?", answer: "0.5", accept: ["0.5", "1/2"], hint: "Xác suất lý thuyết của đồng xu cân đối là 0.5.", explain: "P_n → P = 0.5." },
       { type: "text", prompt: "Một hộp có 3 bi đỏ, 7 bi xanh. Rút 100 lần (có hoàn lại), mỗi lần rút 1 bi. Dự đoán số lần rút được bi đỏ.", answer: "30", accept: ["30"], hint: "P(đỏ) = 3/10, dự đoán = 100 × 3/10.", explain: "Dự đoán = 100 × 3/10 = 30." }
     ]
-  }
+  },
+
+  {
+    id: "g8-b33",
+    num: 33,
+    chapter: 9,
+    title: "Hai tam giác đồng dạng",
+    summary: "Hai tam giác đồng dạng là hai tam giác có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ. Tỉ số các cạnh tương ứng gọi là tỉ số đồng dạng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn muốn vẽ một tam giác nhỏ hơn một tam giác đã cho, nhưng giữ nguyên hình dạng (góc không đổi, chỉ thu nhỏ kích thước). Làm thế nào để vẽ tam giác mới sao cho nó "giống hệt" tam giác ban đầu?</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa:</strong> Hai tam giác được gọi là đồng dạng với nhau nếu góc của tam giác này bằng góc tương ứng của tam giác kia và cạnh của tam giác này tỉ lệ với cạnh tương ứng của tam giác kia.</p>
+        <p><strong>Kí hiệu:</strong> Nếu ΔABC ∼ ΔA'B'C', thì:</p>
+        <p>∠A = ∠A', ∠B = ∠B', ∠C = ∠C'</p>
+        <p>AB/A'B' = BC/B'C' = CA/C'A' = k (tỉ số đồng dạng)</p>
+        <p>Nếu k = 1 thì hai tam giác bằng nhau.</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Hai tam giác ABC và A'B'C' có:</p>
+        <p>∠A = ∠A' = 60°, ∠B = ∠B' = 70°, ∠C = ∠C' = 50°</p>
+        <p>AB = 6cm, A'B' = 3cm; BC = 8cm, B'C' = 4cm; CA = 10cm, C'A' = 5cm</p>
+        <p>Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>Đối góc: ∠A = ∠A', ∠B = ∠B', ∠C = ∠C' (đều bằng nhau) ✓</p>
+        <p>Tỉ số cạnh: AB/A'B' = 6/3 = 2, BC/B'C' = 8/4 = 2, CA/C'A' = 10/5 = 2</p>
+        <p>Tất cả tỉ số đều bằng 2 → hai tam giác đồng dạng</p>
+        <p>Tỉ số đồng dạng k = 2 (tam giác ABC lớn gấp 2 lần tam giác A'B'C')</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Tam giác ABC có AB = 4cm, BC = 5cm, CA = 6cm. Tam giác A'B'C' có A'B' = 8cm, B'C' = 10cm, C'A' = 12cm. Chứng minh ΔABC ∼ ΔA'B'C' và tìm tỉ số đồng dạng.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tính tỉ số các cạnh tương ứng:</p>
+        <p>AB/A'B' = 4/8 = 1/2</p>
+        <p>BC/B'C' = 5/10 = 1/2</p>
+        <p>CA/C'A' = 6/12 = 1/2</p>
+        <p>Tất cả tỉ số bằng nhau = 1/2 → hai tam giác đồng dạng</p>
+        <p>Tỉ số đồng dạng k = 1/2 (tam giác A'B'C' lớn gấp 2 lần tam giác ABC)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Tam giác ABC cân tại A có AB = AC = 10cm, BC = 8cm. Tam giác A'B'C' cân tại A' có A'B' = A'C' = 15cm, B'C' = 12cm. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>Vì cả hai tam giác đều cân tại đỉnh, nên góc ở đỉnh bằng nhau: ∠A = ∠A'</p>
+        <p>Tính tỉ số cạnh:</p>
+        <p>AB/A'B' = 10/15 = 2/3</p>
+        <p>AC/A'C' = 10/15 = 2/3</p>
+        <p>BC/B'C' = 8/12 = 2/3</p>
+        <p>Tất cả tỉ số bằng nhau → hai tam giác đồng dạng</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tam giác ABC có AB = 3cm, BC = 4cm, CA = 5cm. Tam giác A'B'C' có A'B' = 6cm, B'C' = 8cm, A'C' = 10cm. Bạn A nói: "Hai tam giác đồng dạng vì AB/A'B' = BC/B'C' = 1/2". Bạn B nói: "Chưa thể kết luận vì chưa kiểm tra CA/A'C'". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Chỉ kiểm tra hai cặp cạnh là chưa đủ. Phải kiểm tra tất cả ba cặp cạnh tương ứng.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>AB/A'B' = 3/6 = 1/2</p>
+        <p>BC/B'C' = 4/8 = 1/2</p>
+        <p>CA/C'A' = 5/10 = 1/2</p>
+        <p>Tất cả tỉ số bằng nhau → hai tam giác đồng dạng</p>
+        <p>Chú ý: Nếu đã biết hai tam giác có cùng dạng (ví dụ cả hai đều vuông hoặc cả hai đều cân), việc kiểm tra hai cặp cạnh có thể đủ. Nhưng trong trường hợp tổng quát, phải kiểm tra cả ba cặp.</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong> Hai tam giác đồng dạng khi:</p>
+        <p>1. Góc-góc (GG): Hai góc bằng nhau → tam giác đồng dạng</p>
+        <p>2. Cạnh-cạnh-cạnh (CCC): Ba cạnh tỉ lệ → tam giác đồng dạng</p>
+        <p>3. Cạnh-góc-cạnh (CGC): Hai cạnh tỉ lệ và góc xen giữa bằng nhau → tam giác đồng dạng</p>
+        <p>Hôm nay học khái niệm, ngày sau học ba trường hợp đồng dạng!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là hai tam giác đồng dạng? Cho ví dụ.</p>
+        <p>2. Hai tam giác bằng nhau có đồng dạng không? Vì sao?</p>
+        <p><em>— Hai tam giác đồng dạng khi góc bằng nhau và cạnh tỉ lệ. Ví dụ: tam giác 3-4-5 và 6-8-10.</em></p>
+        <p><em>— Có. Vì khi bằng nhau, góc bằng nhau và cạnh bằng nhau → tỉ số = 1 → đồng dạng với k = 1.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tam giác ABC có AB = 5cm, BC = 7cm, CA = 9cm. Tam giác A'B'C' có A'B' = 10cm, B'C' = 14cm, C'A' = 18cm. Hai tam giác có đồng dạng không?</p>
+        <p>2. Tam giác ABC cân tại A có AB = AC = 8cm, BC = 6cm. Tam giác A'B'C' cân tại A' có A'B' = A'C' = 12cm, B'C' = 9cm. Hai tam giác có đồng dạng không?</p>
+        <p><em>— 1) AB/A'B' = 5/10 = 1/2, BC/B'C' = 7/14 = 1/2, CA/C'A' = 9/18 = 1/2 → đồng dạng.</em></p>
+        <p><em>— 2) AB/A'B' = 8/12 = 2/3, BC/B'C' = 6/9 = 2/3 → đồng dạng (do cân, góc ở đỉnh bằng nhau).</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Hai tam giác được gọi là đồng dạng khi nào?", answer: "Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", accept: ["Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", "góc bằng nhau và cạnh tỉ lệ"], hint: "Định nghĩa hai tam giác đồng dạng.", explain: "Hai tam giác đồng dạng khi góc bằng nhau và cạnh tỉ lệ." },
+      { type: "num", prompt: "Tam giác ABC có AB = 6cm, BC = 8cm, CA = 10cm. Tam giác A'B'C' có A'B' = 3cm, B'C' = 4cm, C'A' = 5cm. Tỉ số đồng dạng của ABC so với A'B'C' là bao nhiêu?", answer: 2, hint: "Tính AB/A'B'.", explain: "AB/A'B' = 6/3 = 2 → tam giác ABC lớn gấp 2 lần A'B'C'." },
+      { type: "text", prompt: "Nếu hai tam giác bằng nhau thì có đồng dạng không? Tỉ số đồng dạng bằng bao nhiêu?", answer: "Có, bằng 1", accept: ["Có, bằng 1", "Có, k=1", "Có, k = 1"], hint: "Hai tam giác bằng nhau thì cạnh bằng nhau.", explain: "Cạnh bằng nhau → tỉ số = 1 → đồng dạng với k = 1." },
+      { type: "text", prompt: "Tam giác ABC có AB = 4cm, BC = 6cm, CA = 8cm. Tam giác A'B'C' có A'B' = 6cm, B'C' = 9cm. Để ΔABC ∼ ΔA'B'C', thì C'A' phải bằng bao nhiêu?", answer: 12, accept: ["12", "12cm"], hint: "Tính CA từ tỉ số AB/A'B'.", explain: "AB/A'B' = 4/6 = 2/3 → CA = 8 = (2/3)·C'A' → C'A' = 12." },
+      { type: "text", prompt: "Điền vào chỗ trống: Nếu ΔABC ∼ ΔMNP với tỉ số đồng dạng k = 3 thì chu vi ABC gấp _____ lần chu vi MNP.", answer: "3", accept: ["3", "ba"], hint: "Tỉ số chu vi bằng tỉ số đồng dạng.", explain: "Tỉ số chu vi bằng tỉ số đồng dạng k = 3." },
+      { type: "text", prompt: "Tam giác đều có các cạnh 5cm, 10cm, 15cm lần lượt. Tam giác đều khác có các cạnh 2cm, 4cm, x cm. Để hai tam giác đồng dạng thì x bằng bao nhiêu?", answer: 6, accept: ["6", "6cm"], hint: "Tỉ số cạnh = 5/2 = 10/4 = 15/x.", explain: "15/x = 5/2 → x = 6." }
+    ]
+  },
+
+  {
+    id: "g8-b34",
+    num: 34,
+    chapter: 9,
+    title: "Ba trường hợp đồng dạng của hai tam giác",
+    summary: "Có ba trường hợp giúp nhận biết hai tam giác đồng dạng: góc-góc (GG), cạnh-cạnh-cạnh (CCC), và cạnh-góc-cạnh (CGC). Đây là công cụ mạnh mẽ để chứng minh tam giác đồng dạng mà không cần kiểm tra tất cả góc và cạnh.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn cần chứng minh hai tam giác đồng dạng, nhưng việc kiểm tra tất cả 3 góc và 3 cạnh tốn nhiều thời gian. Có cách nào nhanh hơn không?</p>
+      
+      <div class="definition">
+        <p><strong>Trường hợp 1: Góc-góc (GG)</strong></p>
+        <p>Nếu hai góc của tam giác này bằng hai góc tương ứng của tam giác kia thì hai tam giác đồng dạng.</p>
+        <p>ΔABC ∼ ΔA'B'C' nếu ∠A = ∠A' và ∠B = ∠B'</p>
+        
+        <p><strong>Trường hợp 2: Cạnh-cạnh-cạnh (CCC)</strong></p>
+        <p>Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh tương ứng của tam giác kia thì hai tam giác đồng dạng.</p>
+        <p>ΔABC ∼ ΔA'B'C' nếu AB/A'B' = BC/B'C' = CA/C'A'</p>
+        
+        <p><strong>Trường hợp 3: Cạnh-góc-cạnh (CGC)</strong></p>
+        <p>Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh tương ứng của tam giác kia và góc xen giữa bằng nhau thì hai tam giác đồng dạng.</p>
+        <p>ΔABC ∼ ΔA'B'C' nếu AB/A'B' = AC/A'C' và ∠A = ∠A'</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm - GG).</strong> Tam giác ABC có ∠A = 50°, ∠B = 60°. Tam giác A'B'C' có ∠A' = 50°, ∠B' = 60°. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>∠A = ∠A' = 50° (đã cho)</p>
+        <p>∠B = ∠B' = 60° (đã cho)</p>
+        <p>→ ΔABC ∼ ΔA'B'C' (GG)</p>
+        <p>Chú ý: góc thứ ba tự động bằng nhau vì tổng ba góc = 180°</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ - CCC).</strong> Tam giác ABC có AB = 3cm, BC = 4cm, CA = 5cm. Tam giác A'B'C' có A'B' = 6cm, B'C' = 8cm, C'A' = 10cm. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>AB/A'B' = 3/6 = 1/2</p>
+        <p>BC/B'C' = 4/8 = 1/2</p>
+        <p>CA/C'A' = 5/10 = 1/2</p>
+        <p>Tất cả tỉ số bằng nhau → ΔABC ∼ ΔA'B'C' (CCC)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn - CGC).</strong> Tam giác ABC có AB = 4cm, AC = 6cm, ∠A = 70°. Tam giác A'B'C' có A'B' = 6cm, A'C' = 9cm, ∠A' = 70°. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>AB/A'B' = 4/6 = 2/3</p>
+        <p>AC/A'C' = 6/9 = 2/3</p>
+        <p>∠A = ∠A' = 70°</p>
+        <p>Hai cạnh tỉ lệ và góc xen giữa bằng nhau → ΔABC ∼ ΔA'B'C' (CGC)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tam giác ABC có AB = 3cm, BC = 4cm, ∠B = 50°. Tam giác A'B'C' có A'B' = 6cm, B'C' = 8cm, ∠B' = 60°. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhìn thấy AB/A'B' = BC/B'C' = 1/2 nên kết luận đồng dạng, nhưng bỏ qua điều kiện góc xen giữa phải bằng nhau.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>AB/A'B' = 3/6 = 1/2, BC/B'C' = 4/8 = 1/2</p>
+        <p>Nhưng ∠B = 50° ≠ ∠B' = 60°</p>
+        <p>→ Không áp dụng CGC → không kết luận được đồng dạng</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một cái cột điện cao 12m tạo bóng trên mặt đất dài 8m. Cùng lúc đó, một cái cọc cao 1.5m tạo bóng dài bao nhiêu?</p>
+        <p><strong>Giải:</strong></p>
+        <p>Hai tam giác tạo bởi cột điện và cọc đều vuông tại chân cột, và góc đỉnh bằng nhau (góc ánh sáng mặt trời)</p>
+        <p>→ Hai tam giác đồng dạng (GG)</p>
+        <p>Tỉ số đồng dạng: 12/1.5 = 8</p>
+        <p>Bóng cọc = 8/8 = 1m</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>GG: Kiểm tra 2 góc bằng nhau</p>
+        <p>CCC: Kiểm tra 3 cạnh tỉ lệ</p>
+        <p>CGC: Kiểm tra 2 cạnh tỉ lệ và góc xen giữa bằng nhau</p>
+        <p>Chú ý: GG là trường hợp đơn giản nhất vì chỉ cần kiểm tra 2 góc!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Nêu ba trường hợp đồng dạng của hai tam giác.</p>
+        <p>2. Khi nào thì chỉ cần kiểm tra hai góc để kết luận tam giác đồng dạng?</p>
+        <p><em>— GG, CCC, CGC.</em></p>
+        <p><em>— Khi hai góc của tam giác này bằng hai góc tương ứng của tam giác kia.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tam giác ABC có ∠A = 40°, ∠B = 70°. Tam giác A'B'C' có ∠A' = 40°, ∠C' = 70°. Hai tam giác có đồng dạng không?</p>
+        <p>2. Tam giác ABC có AB = 5cm, BC = 7cm, CA = 9cm. Tam giác A'B'C' có A'B' = 10cm, B'C' = 14cm, C'A' = 18cm. Hai tam giác có đồng dạng không?</p>
+        <p>3. Tam giác ABC vuông tại A có AB = 3cm, AC = 4cm. Tam giác A'B'C' vuông tại A' có A'B' = 6cm, A'C' = 8cm. Hai tam giác có đồng dạng không?</p>
+        <p><em>— 1) ∠A = ∠A' = 40°, ∠B = 70° = ∠C' → ∠C = 70° = ∠B' → GG → đồng dạng.</em></p>
+        <p><em>— 2) 5/10 = 7/14 = 9/18 = 1/2 → CCC → đồng dạng.</em></p>
+        <p><em>— 3) ∠A = ∠A' = 90°, AB/A'B' = 3/6 = 1/2, AC/A'C' = 4/8 = 1/2 → CGC → đồng dạng.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Nêu ba trường hợp đồng dạng của hai tam giác.", answer: "Góc-góc (GG), cạnh-cạnh-cạnh (CCC), cạnh-góc-cạnh (CGC)", accept: ["GG, CCC, CGC", "Góc-góc, cạnh-cạnh-cạnh, cạnh-góc-cạnh"], hint: "Định nghĩa ba trường hợp.", explain: "GG: 2 góc bằng nhau; CCC: 3 cạnh tỉ lệ; CGC: 2 cạnh tỉ lệ + góc xen giữa bằng nhau." },
+      { type: "text", prompt: "Tam giác ABC có ∠A = 50°, ∠B = 60°. Tam giác A'B'C' có ∠A' = 50°, ∠B' = 60°. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra hai góc.", explain: "∠A = ∠A', ∠B = ∠B' → GG → đồng dạng." },
+      { type: "text", prompt: "Tam giác ABC có AB = 4cm, BC = 6cm, CA = 8cm. Tam giác A'B'C' có A'B' = 6cm, B'C' = 9cm, C'A' = 12cm. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra ba cạnh.", explain: "4/6 = 6/9 = 8/12 = 2/3 → CCC → đồng dạng." },
+      { type: "text", prompt: "Tam giác ABC có AB = 5cm, AC = 7cm, ∠A = 80°. Tam giác A'B'C' có A'B' = 10cm, A'C' = 14cm, ∠A' = 80°. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra hai cạnh và góc xen giữa.", explain: "5/10 = 7/14 = 1/2, ∠A = ∠A' = 80° → CGC → đồng dạng." },
+      { type: "num", prompt: "Tam giác ABC có chu vi 24cm, tam giác A'B'C' đồng dạng với ABC với tỉ số đồng dạng k = 3/2. Chu vi tam giác A'B'C' là bao nhiêu?", answer: 36, accept: ["36", "36cm"], hint: "Chu vi tỉ lệ với tỉ số đồng dạng.", explain: "Chu vi A'B'C' = 24 × (3/2) = 36cm." },
+      { type: "text", prompt: "Tam giác ABC vuông tại A, tam giác A'B'C' vuông tại A'. AB = 3cm, AC = 4cm, A'B' = 6cm, A'C' = 8cm. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Tam giác vuông, kiểm tra hai cạnh góc vuông.", explain: "AB/A'B' = 3/6 = 1/2, AC/A'C' = 4/8 = 1/2, ∠A = ∠A' = 90° → CGC → đồng dạng." }
+    ]
+  },
+
+  {
+    id: "g8-b35",
+    num: 35,
+    chapter: 9,
+    title: "Định lí Pythagore và ứng dụng",
+    summary: "Định lí Pythagore: Trong tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông. Đây là công thức nền tảng để tính cạnh và kiểm tra tam giác vuông.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn muốn kiểm tra xem một góc có vuông không mà không cần thước đo góc. Làm thế nào chỉ dùng thước đo độ dài?</p>
+      
+      <div class="definition">
+        <p><strong>Định lí Pythagore:</strong> Trong tam giác vuông, bình phương độ dài cạnh huyền bằng tổng bình phương độ dài hai cạnh góc vuông.</p>
+        <p>Cho ΔABC vuông tại A:</p>
+        <p>BC² = AB² + AC²</p>
+        <p>trong đó BC là cạnh huyền, AB và AC là hai cạnh góc vuông.</p>
+        
+        <p><strong>Định lí Pythagore đảo:</strong> Nếu một tam giác có bình phương một cạnh bằng tổng bình phương hai cạnh kia thì tam giác đó là tam giác vuông.</p>
+        <p>ΔABC có BC² = AB² + AC² → ∠A = 90°</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Tam giác ABC vuông tại A có AB = 3cm, AC = 4cm. Tính BC.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Áp dụng định lí Pythagore:</p>
+        <p>BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25</p>
+        <p>BC = √25 = 5cm</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Tam giác ABC vuông tại A có AB = 5cm, BC = 13cm. Tính AC.</p>
+        <p><strong>Giải:</strong></p>
+        <p>BC² = AB² + AC²</p>
+        <p>13² = 5² + AC²</p>
+        <p>169 = 25 + AC²</p>
+        <p>AC² = 144</p>
+        <p>AC = √144 = 12cm</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Tam giác ABC có AB = 7cm, AC = 24cm, BC = 25cm. Tam giác ABC có vuông không? Nếu có, vuông ở đâu?</p>
+        <p><strong>Giải:</strong></p>
+        <p>Kiểm tra định lí Pythagore đảo:</p>
+        <p>BC² = 25² = 625</p>
+        <p>AB² + AC² = 7² + 24² = 49 + 576 = 625</p>
+        <p>BC² = AB² + AC² → tam giác vuông tại A</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tam giác ABC có AB = 3cm, AC = 4cm, BC = 5cm. Bạn A nói: "Vì 3² + 4² = 5² nên tam giác vuông tại A". Bạn B nói: "Chưa chắc, phải kiểm tra xem cạnh nào là huyền". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Gắn công thức 3² + 4² = 5² với "vuông tại A" mà không kiểm tra cạnh huyền là BC.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>5cm là cạnh lớn nhất → cạnh huyền là BC</p>
+        <p>AB² + AC² = 9 + 16 = 25 = BC²</p>
+        <p>→ Tam giác vuông tại A (góc đối diện cạnh huyền BC)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một cái thang dài 5m dựa vào tường, chân thang cách tường 3m. Hỏi thang tiếp xúc với tường ở độ cao bao nhiêu?</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tạo tam giác vuông: thang = cạnh huyền = 5m, chân thang-wall = 3m</p>
+        <p>Chiều cao h thỏa mãn: h² + 3² = 5²</p>
+        <p>h² = 25 - 9 = 16</p>
+        <p>h = 4m</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>Thuận: Tam giác vuông → c² = a² + b²</p>
+        <p>Đảo: c² = a² + b² → tam giác vuông</p>
+        <p>Chú ý: Cạnh huyền là cạnh lớn nhất và đối diện góc vuông</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Phát biểu định lí Pythagore và định lí Pythagore đảo.</p>
+        <p>2. Tam giác có cạnh 5, 12, 13 có vuông không? Vì sao?</p>
+        <p><em>— Thuận: Trong tam giác vuông, c² = a² + b². Đảo: Nếu c² = a² + b² thì tam giác vuông.</em></p>
+        <p><em>— Có. 5² + 12² = 25 + 144 = 169 = 13².</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tam giác vuông có hai cạnh góc vuông 6cm và 8cm. Tính cạnh huyền.</p>
+        <p>2. Tam giác vuông có cạnh huyền 15cm, một cạnh góc vuông 9cm. Tính cạnh còn lại.</p>
+        <p>3. Tam giác ABC có AB = 8cm, AC = 15cm, BC = 17cm. Tam giác ABC có vuông không?</p>
+        <p><em>— 1) √(6² + 8²) = √(36 + 64) = √100 = 10cm.</em></p>
+        <p><em>— 2) √(15² - 9²) = √(225 - 81) = √144 = 12cm.</em></p>
+        <p><em>— 3) 8² + 15² = 64 + 225 = 289 = 17² → vuông tại A.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tam giác vuông có hai cạnh góc vuông 5cm và 12cm. Cạnh huyền bằng bao nhiêu?", answer: 13, accept: ["13", "13cm"], hint: "Áp dụng định lí Pythagore.", explain: "√(5² + 12²) = √(25 + 144) = √169 = 13cm." },
+      { type: "num", prompt: "Tam giác vuông có cạnh huyền 25cm, một cạnh góc vuông 7cm. Cạnh còn lại bằng bao nhiêu?", answer: 24, accept: ["24", "24cm"], hint: "Tính từ BC² - AB² = AC².", explain: "AC² = 25² - 7² = 625 - 49 = 576 → AC = 24cm." },
+      { type: "text", prompt: "Tam giác ABC có AB = 9cm, AC = 40cm, BC = 41cm. Tam giác ABC có vuông không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra AB² + AC² = BC².", explain: "9² + 40² = 81 + 1600 = 1681 = 41² → vuông tại A." },
+      { type: "text", prompt: "Tam giác ABC có AB = 6cm, AC = 8cm, BC = 10cm. Góc nào là góc vuông?", answer: "A", accept: ["A", "góc A", "∠A"], hint: "Cạnh lớn nhất là BC → góc đối diện là A.", explain: "BC = 10cm là cạnh lớn nhất → cạnh huyền → góc A vuông." },
+      { type: "num", prompt: "Một hình chữ nhật có chiều dài 12cm, đường chéo 13cm. Tính chiều rộng.", answer: 5, accept: ["5", "5cm"], hint: "Hai chiều và đường chéo tạo tam giác vuông.", explain: "r² + 12² = 13² → r² = 169 - 144 = 25 → r = 5cm." },
+      { type: "text", prompt: "Tam giác có cạnh 8, 15, 17 là tam giác gì?", answer: "vuông", accept: ["vuông", "tam giác vuông"], hint: "Kiểm tra định lí Pythagore đảo.", explain: "8² + 15² = 64 + 225 = 289 = 17² → tam giác vuông." }
+    ]
+  },
+
+  {
+    id: "g8-b36",
+    num: 36,
+    chapter: 9,
+    title: "Các trường hợp đồng dạng của hai tam giác vuông",
+    summary: "Với tam giác vuông, chỉ cần thêm điều kiện về cạnh hoặc góc nhọn là có thể kết luận đồng dạng. Đặc biệt: hai cạnh góc vuông tỉ lệ hoặc một góc nhọn bằng nhau đều đủ để kết luận.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hai tam giác vuông có một cạnh góc vuông và cạnh huyền tỉ lệ. Hai tam giác có đồng dạng không? Với tam giác vuông, các điều kiện để đồng dạng có đơn giản hơn không?</p>
+      
+      <div class="definition">
+        <p><strong>Trường hợp 1: Hai cạnh góc vuông tỉ lệ</strong></p>
+        <p>ΔABC và ΔA'B'C' vuông tại A, A'</p>
+        <p>AB/A'B' = AC/A'C' → ΔABC ∼ ΔA'B'C'</p>
+        
+        <p><strong>Trường hợp 2: Cạnh huyền và một cạnh góc vuông tỉ lệ</strong></p>
+        <p>ΔABC và ΔA'B'C' vuông tại A, A'</p>
+        <p>AB/A'B' = BC/B'C' → ΔABC ∼ ΔA'B'C'</p>
+        
+        <p><strong>Trường hợp 3: Một góc nhọn bằng nhau</strong></p>
+        <p>ΔABC và ΔA'B'C' vuông tại A, A'</p>
+        <p>∠B = ∠B' → ΔABC ∼ ΔA'B'C'</p>
+        <p>hoặc ∠C = ∠C' → ΔABC ∼ ΔA'B'C'</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm - hai cạnh góc vuông).</strong> Tam giác ABC vuông tại A có AB = 3cm, AC = 4cm. Tam giác A'B'C' vuông tại A' có A'B' = 6cm, A'C' = 8cm. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>AB/A'B' = 3/6 = 1/2</p>
+        <p>AC/A'C' = 4/8 = 1/2</p>
+        <p>Hai cạnh góc vuông tỉ lệ → ΔABC ∼ ΔA'B'C'</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ - cạnh huyền và một cạnh góc vuông).</strong> Tam giác ABC vuông tại A có AB = 5cm, BC = 13cm. Tam giác A'B'C' vuông tại A' có A'B' = 10cm, B'C' = 26cm. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>AB/A'B' = 5/10 = 1/2</p>
+        <p>BC/B'C' = 13/26 = 1/2</p>
+        <p>Cạnh huyền và một cạnh góc vuông tỉ lệ → ΔABC ∼ ΔA'B'C'</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn - góc nhọn).</strong> Tam giác ABC vuông tại A có ∠B = 35°. Tam giác A'B'C' vuông tại A' có ∠B' = 35°. Hai tam giác có đồng dạng không?</p>
+        <p><strong>Giải:</strong></p>
+        <p>∠B = ∠B' = 35° (đã cho)</p>
+        <p>∠A = ∠A' = 90° (hai tam giác vuông)</p>
+        <p>Hai góc bằng nhau → ΔABC ∼ ΔA'B'C' (GG)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Tam giác ABC vuông tại A có AB = 3cm, BC = 5cm. Tam giác A'B'C' vuông tại A' có A'B' = 4cm, B'C' = 6cm. Bạn A nói: "AB/A'B' = BC/B'C' nên đồng dạng". Bạn B nói: "Chưa kiểm tra AC/A'C'". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Không kiểm tra điều kiện đủ. AB/A'B' = 3/4, BC/B'C' = 5/6 ≠ 3/4.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>AB/A'B' = 3/4 = 0.75</p>
+        <p>BC/B'C' = 5/6 ≈ 0.833 ≠ 0.75</p>
+        <p>Tỉ số không bằng nhau → không áp dụng trường hợp 2</p>
+        <p>Cần kiểm tra thêm hoặc sử dụng định lí Pythagore để tính cạnh còn lại</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một cái cột điện cao 15m tạo bóng dài 20m. Cùng lúc đó, một建筑物 có bóng dài 60m. Tính chiều cao建筑物.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Cột điện và建筑物 đều vuông góc với mặt đất → hai tam giác vuông</p>
+        <p>Tỉ số: 15/20 =建筑物/60</p>
+        <p>建筑物 = 60 × 15/20 = 45m</p>
+        <p>(Đây là cách sử dụng tam giác đồng dạng để đo chiều cao vật inaccessible)</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>Với tam giác vuông, chỉ cần:</p>
+        <p>1. Hai cạnh góc vuông tỉ lệ, hoặc</p>
+        <p>2. Cạnh huyền và một cạnh góc vuông tỉ lệ, hoặc</p>
+        <p>3. Một góc nhọn bằng nhau</p>
+        <p>→ Hai tam giác vuông đồng dạng!</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Nêu ba trường hợp đồng dạng của hai tam giác vuông.</p>
+        <p>2. Tam giác vuông ABC và A'B'C' có AB = 3cm, AC = 4cm, A'B' = 6cm, A'C' = 8cm. Hai tam giác có đồng dạng không?</p>
+        <p><em>— Hai cạnh góc vuông tỉ lệ, cạnh huyền và một cạnh góc vuông tỉ lệ, một góc nhọn bằng nhau.</em></p>
+        <p><em>— Có. AB/A'B' = 3/6 = 1/2, AC/A'C' = 4/8 = 1/2 → đồng dạng.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Tam giác vuông ABC (vuông tại A) có AB = 5cm, AC = 12cm. Tam giác A'B'C' (vuông tại A') có A'B' = 10cm, A'C' = 24cm. Hai tam giác có đồng dạng không?</p>
+        <p>2. Tam giác vuông ABC có BC = 15cm, AB = 9cm. Tam giác vuông A'B'C' có B'C' = 25cm, A'B' = 15cm. Hai tam giác có đồng dạng không?</p>
+        <p>3. Tam giác vuông ABC có ∠B = 40°. Tam giác vuông A'B'C' có ∠C' = 50°. Hai tam giác có đồng dạng không?</p>
+        <p><em>— 1) 5/10 = 12/24 = 1/2 → đồng dạng.</em></p>
+        <p><em>— 2) AB/BC = 9/15 = 3/5, A'B'/B'C' = 15/25 = 3/5 → đồng dạng (cạnh huyền và một cạnh góc vuông).</em></p>
+        <p><em>— 3) ∠B = 40°, ∠C' = 50° → ∠C = 50° = ∠C' → đồng dạng.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Hai tam giác vuông đồng dạng khi nào?", answer: "Hai cạnh góc vuông tỉ lệ, hoặc cạnh huyền và một cạnh góc vuông tỉ lệ, hoặc một góc nhọn bằng nhau", accept: ["2 cạnh góc vuông tỉ lệ", "cạnh huyền và 1 cạnh góc vuông tỉ lệ", "1 góc nhọn bằng nhau"], hint: "Ba trường hợp đặc biệt cho tam giác vuông.", explain: "Với tam giác vuông, chỉ cần 1 trong 3 điều kiện." },
+      { type: "text", prompt: "Tam giác vuông ABC (vuông tại A) có AB = 6cm, AC = 8cm. Tam giác vuông A'B'C' (vuông tại A') có A'B' = 9cm, A'C' = 12cm. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra hai cạnh góc vuông.", explain: "6/9 = 8/12 = 2/3 → đồng dạng." },
+      { type: "text", prompt: "Tam giác vuông ABC có BC = 10cm, AB = 6cm. Tam giác vuông A'B'C' có B'C' = 15cm, A'B' = 9cm. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra cạnh huyền và một cạnh góc vuông.", explain: "AB/BC = 6/10 = 3/5, A'B'/B'C' = 9/15 = 3/5 → đồng dạng." },
+      { type: "text", prompt: "Tam giác vuông ABC có ∠B = 30°. Tam giác vuông A'B'C' có ∠B' = 60°. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Tính góc còn lại.", explain: "∠C = 60° = ∠B' → đồng dạng (một góc nhọn bằng nhau)." },
+      { type: "num", prompt: "Tam giác vuông ABC (vuông tại A) có AB = 5cm, AC = 12cm, BC = 13cm. Tam giác vuông A'B'C' đồng dạng với ABC và A'B' = 10cm. Tính A'C'.", answer: 24, accept: ["24", "24cm"], hint: "Tỉ số đồng dạng = 2.", explain: "AB/A'B' = 5/10 = 1/2 → A'C' = 12 × 2 = 24cm." },
+      { type: "text", prompt: "Tam giác vuông ABC (vuông tại A) có AB = 3cm, AC = 4cm. Tam giác vuông A'B'C' đồng dạng với ABC và chu vi A'B'C' là 36cm. Tính chu vi ABC.", answer: 12, accept: ["12", "12cm"], hint: "Chu vi tỉ lệ với tỉ số đồng dạng.", explain: "Chu vi ABC = 3 + 4 + 5 = 12cm. Tỉ số = 36/12 = 3." }
+    ]
+  },
+
+  {
+    id: "g8-b37",
+    num: 37,
+    chapter: 9,
+    title: "Hình đồng dạng",
+    summary: "Hai hình phẳng được gọi là đồng dạng nếu tồn tại một phép biến hình (phép vị tự) biến hình này thành hình kia. Tỉ số biến hình gọi là tỉ số đồng dạng. Hai hình bằng nhau là trường hợp riêng với tỉ số đồng dạng bằng 1.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn muốn thu nhỏ một bản đồ hoặc phóng to một ảnh mà giữ nguyên hình dạng. Làm thế nào để đảm bảo hình sau khi thu/phóng vẫn "giống hệt" hình ban đầu?</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa:</strong> Hai hình được gọi là đồng dạng với nhau nếu tồn tại một phép vị tự biến hình này thành hình kia.</p>
+        <p><strong>Tỉ số đồng dạng:</strong> Tỉ số k của phép vị tự gọi là tỉ số đồng dạng của hai hình.</p>
+        <p>• Nếu k > 0: phép vị tự cùng chiều</p>
+        <p>• Nếu k < 0: phép vị tự ngược chiều</p>
+        <p>• Nếu k = 1: hai hình bằng nhau</p>
+        
+        <p><strong>Tính chất:</strong></p>
+        <p>1. Phép vị tự biến đường thẳng thành đường thẳng song song hoặc trùng với nó</p>
+        <p>2. Phép vị tự biến đoạn thẳng thành đoạn thẳng có độ dài gấp |k| lần</p>
+        <p>3. Phép vị tự biến góc thành góc bằng nó</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Hình chữ nhật ABCD có AB = 4cm, AD = 6cm. Hình chữ nhật A'B'C'D' là ảnh của ABCD qua phép vị tự tâm O, tỉ số k = 2. Tính A'B' và A'D'.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Phép vị tự tỉ số k = 2 biến AB thành A'B' với A'B' = k·AB = 2·4 = 8cm</p>
+        <p>A'D' = k·AD = 2·6 = 12cm</p>
+        <p>Hình chữ nhật A'B'C'D' có A'B' = 8cm, A'D' = 12cm</p>
+        <p>Hai hình chữ nhật đồng dạng với tỉ số đồng dạng k = 2</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Tam giác ABC có diện tích 12cm². Tam giác A'B'C' đồng dạng với ABC với tỉ số đồng dạng k = 3/2. Tính diện tích A'B'C'.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tỉ số diện tích bằng bình phương tỉ số đồng dạng:</p>
+        <p>S_A'B'C' / S_ABC = k² = (3/2)² = 9/4</p>
+        <p>S_A'B'C' = 12 × 9/4 = 27cm²</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Hai hình chữ nhật đồng dạng với tỉ số đồng dạng k = 2/3. Chu vi hình thứ nhất là 30cm. Tính chu vi hình thứ hai.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tỉ số chu vi bằng tỉ số đồng dạng:</p>
+        <p>P₂ / P₁ = k = 2/3</p>
+        <p>P₂ = 30 × 2/3 = 20cm</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Hai hình vuông bất kỳ có đồng dạng không? Bạn A nói: "Có, vì tất cả hình vuông có góc bằng nhau (90°)". Bạn B nói: "Chưa đủ, cần thêm cạnh tỉ lệ". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Chỉ kiểm tra góc, bỏ qua điều kiện cạnh.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Hình vuông: tất cả góc = 90° (bằng nhau)</p>
+        <p>Tất cả cạnh bằng nhau trong mỗi hình</p>
+        <p>→ Tỉ số cạnh = cạnh₁/cạnh₂ (hằng số cho mỗi cặp hình)</p>
+        <p>→ Hai hình vuông bất kỳ luôn đồng dạng!</p>
+        <p>(Tương tự: hai hình tròn bất kỳ luôn đồng dạng)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Bản đồ tỉ lệ 1:100000. Khoảng cách hai thành phố trên bản đồ là 5cm. Tính khoảng cách thực tế.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Tỉ số đồng dạng k = 1/100000 (bản đồ nhỏ hơn thực tế)</p>
+        <p>Khoảng cách thực tế = 5cm × 100000 = 500000cm = 5km</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>Phép vị tự: đổi kích thước nhưng giữ nguyên hình dạng</p>
+        <p>Tỉ số đồng dạng k:</p>
+        <p>• k > 0: cùng chiều</p>
+        <p>• k < 0: ngược chiều</p>
+        <p>• k = 1: bằng nhau</p>
+        <p>Tỉ số diện tích = k², tỉ số chu vi = k</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là hai hình đồng dạng?</p>
+        <p>2. Hai hình vuông bất kỳ có đồng dạng không? Hai hình chữ nhật bất kỳ?</p>
+        <p><em>— Hai hình đồng dạng nếu tồn tại phép vị tự biến hình này thành hình kia.</em></p>
+        <p><em>— Hai hình vuông bất kỳ luôn đồng dạng. Hai hình chữ nhật bất kỳ không nhất thiết đồng dạng (chỉ khi cạnh tỉ lệ).</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Hình chữ nhật ABCD có AB = 6cm, AD = 4cm. Hình chữ nhật A'B'C'D' đồng dạng với ABCD với tỉ số k = 3/2. Tính A'B' và A'D'.</p>
+        <p>2. Tam giác ABC có diện tích 18cm². Tam giác A'B'C' đồng dạng với ABC với tỉ số k = 2/3. Tính diện tích A'B'C'.</p>
+        <p>3. Hai hình tròn có bán kính 5cm và 15cm. Tỉ số đồng dạng là bao nhiêu?</p>
+        <p><em>— 1) A'B' = 6×(3/2) = 9cm, A'D' = 4×(3/2) = 6cm.</em></p>
+        <p><em>— 2) S = 18×(2/3)² = 18×4/9 = 8cm².</em></p>
+        <p><em>— 3) k = 5/15 = 1/3 hoặc k = 15/5 = 3 (tùy thứ tự).</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Thế nào là hai hình đồng dạng?", answer: "Tồn tại phép vị tự biến hình này thành hình kia", accept: ["Có phép vị tự biến hình này thành hình kia", "biến hình này thành hình kia bằng phép vị tự"], hint: "Định nghĩa hình đồng dạng.", explain: "Hai hình đồng dạng nếu tồn tại phép vị tự biến hình này thành hình kia." },
+      { type: "text", prompt: "Hai hình vuông bất kỳ có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Tất cả hình vuông có góc bằng nhau và cạnh tỉ lệ.", explain: "Tất cả góc = 90°, tất cả cạnh bằng nhau trong mỗi hình → cạnh tỉ lệ." },
+      { type: "text", prompt: "Hình chữ nhật ABCD có AB = 8cm, AD = 5cm. Hình chữ nhật A'B'C'D' đồng dạng với ABCD với tỉ số k = 1/2. Tính A'B'.", answer: 4, accept: ["4", "4cm"], hint: "A'B' = k·AB.", explain: "A'B' = (1/2)×8 = 4cm." },
+      { type: "num", prompt: "Tam giác ABC có diện tích 32cm². Tam giác A'B'C' đồng dạng với ABC với tỉ số k = 3/4. Tính diện tích A'B'C'.", answer: 18, accept: ["18", "18cm²"], hint: "Diện tích tỉ lệ với k².", explain: "S = 32×(3/4)² = 32×9/16 = 18cm²." },
+      { type: "text", prompt: "Hình tròn có bán kính 6cm và hình tròn có bán kính 18cm. Tỉ số đồng dạng của hình nhỏ so với hình lớn là bao nhiêu?", answer: "1/3", accept: ["1/3", "1/3", "0.33"], hint: "k = r₁/r₂.", explain: "k = 6/18 = 1/3." },
+      { type: "text", prompt: "Phép vị tự tỉ số k = -2 biến đoạn thẳng AB thành đoạn thẳng A'B'. Nếu AB = 5cm thì A'B' bằng bao nhiêu?", answer: 10, accept: ["10", "10cm"], hint: "Độ dài gấp |k| lần.", explain: "|k| = 2 → A'B' = 2×5 = 10cm." }
+    ]
+  },
+  {
+    id: "g8-b38",
+    num: 38,
+    chapter: 10,
+    title: "Hình chóp tam giác đều",
+    summary: "Hình chóp tam giác đều có mặt đáy là tam giác đều và các cạnh bên bằng nhau. Đây là một trong những hình chóp đơn giản nhất, thường được sử dụng để minh họa khái niệm hình chóp đều và hình chóp cụt.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Bạn muốn làm mô hình một ngôi nhà hình tam giác với đỉnh nhọn (như hình chóp Ai Cập nhưng có đáy tam giác). Làm thế nào để xác định các đặc điểm của hình này?</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa:</strong> Hình chóp tam giác đều là hình chóp có:</p>
+        <p>• Đáy là tam giác đều</p>
+        <p>• Các cạnh bên bằng nhau</p>
+        <p>• Chân đường cao trùng với trọng tâm của tam giác đáy</p>
+        
+        <p><strong>Các yếu tố:</strong></p>
+        <p>• Đỉnh S</p>
+        <p>• Đáy ΔABC (tam giác đều)</p>
+        <p>• Các cạnh bên: SA = SB = SC</p>
+        <p>• Chiều cao SH (H là trọng tâm ΔABC)</p>
+        <p>• Các mặt bên: ΔSAB, ΔSBC, ΔSCA (là các tam giác cân bằng nhau)</p>
+        
+        <p><strong>Công thức:</strong></p>
+        <p>Diện tích xung quanh: Sxq = p·d (p là nửa chu vi đáy, d là trung đoạn)</p>
+        <p>Diện tích toàn phần: Stp = Sxq + Sđáy</p>
+        <p>Thể tích: V = 1/3·Sđáy·h (h là chiều cao)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Hình chóp tam giác đều S.ABC có cạnh đáy AB = 6cm, cạnh bên SA = 5cm. Tính chiều cao SH.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Gọi H là trọng tâm ΔABC → H là giao điểm 3 đường trung tuyến</p>
+        <p>AM là đường trung tuyến → AM = (√3/2)·AB = (√3/2)·6 = 3√3 cm</p>
+        <p>AH = 2/3·AM = 2/3·3√3 = 2√3 cm</p>
+        <p>Xét ΔSHA vuông tại H: SH² = SA² - AH² = 25 - 12 = 13</p>
+        <p>SH = √13 cm</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Hình chóp tam giác đều có cạnh đáy 4cm, chiều cao 3cm. Tính thể tích.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = (√3/4)·4² = 4√3 cm²</p>
+        <p>V = 1/3·Sđáy·h = 1/3·4√3·3 = 4√3 cm³</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Hình chóp tam giác đều S.ABC có cạnh đáy AB = 6cm, cạnh bên SA = 10cm. Tính diện tích toàn phần.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = (√3/4)·6² = 9√3 cm²</p>
+        <p>Tính trung đoạn SM (M là trung điểm BC):</p>
+        <p>SM² = SA² - AM² = 100 - 9 = 91</p>
+        <p>SM = √91 cm</p>
+        <p>Sxq = 3·(1/2)·6·√91 = 9√91 cm²</p>
+        <p>Stp = Sxq + Sđáy = 9√91 + 9√3 cm²</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Bạn A nói: "Hình chóp có đáy tam giác đều và các cạnh bên bằng nhau thì là hình chóp đều". Bạn B nói: "Chưa đủ, cần kiểm tra chân đường cao". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Nhầm lẫn giữa "cạnh bên bằng nhau" và "chân đường cao trùng trọng tâm".</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Để là hình chóp đều, cần cả hai điều kiện:</p>
+        <p>1. Đáy là đa giác đều</p>
+        <p>2. Chân đường cao trùng tâm của đáy</p>
+        <p>Nếu chỉ có cạnh bên bằng nhau nhưng chân đường cao không trùng trọng tâm thì không phải hình chóp đều</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một lều trại hình chóp tam giác đều có cạnh đáy 3m, chiều cao 2m. Tính thể tích không gian bên trong.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = (√3/4)·3² = 2.25√3 m²</p>
+        <p>V = 1/3·2.25√3·2 = 1.5√3 ≈ 2.6 m³</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>Hình chóp tam giác đều:</p>
+        <p>• Đáy: tam giác đều</p>
+        <p>• Cạnh bên: bằng nhau</p>
+        <p>• Chân đường cao: trọng tâm đáy</p>
+        <p>V = 1/3·Sđáy·h</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là hình chóp tam giác đều?</p>
+        <p>2. Công thức tính thể tích hình chóp tam giác đều?</p>
+        <p><em>— Có đáy là tam giác đều, các cạnh bên bằng nhau, chân đường cao trùng trọng tâm.</em></p>
+        <p><em>— V = 1/3·Sđáy·h.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Hình chóp tam giác đều có cạnh đáy 6cm, chiều cao 4cm. Tính thể tích.</p>
+        <p>2. Hình chóp tam giác đều có cạnh đáy 8cm, cạnh bên 10cm. Tính chiều cao.</p>
+        <p><em>— 1) Sđáy = 9√3 cm², V = 1/3·9√3·4 = 12√3 cm³.</em></p>
+        <p><em>— 2) AH = 2/3·(√3/2)·8 = 8√3/3 cm, SH = √(100 - 64/3) = √(236/3) cm.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Thế nào là hình chóp tam giác đều?", answer: "Có đáy là tam giác đều, các cạnh bên bằng nhau, chân đường cao trùng trọng tâm", accept: ["đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trọng tâm"], hint: "Định nghĩa hình chóp tam giác đều.", explain: "Ba điều kiện: đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trùng trọng tâm." },
+      { type: "text", prompt: "Công thức tính thể tích hình chóp tam giác đều?", answer: "V = 1/3·Sđáy·h", accept: ["V = 1/3·Sđáy·h", "V = 1/3 * Sđáy * h"], hint: "Tương tự thể tích hình chóp nói chung.", explain: "V = 1/3·diện tích đáy·chiều cao." },
+      { type: "num", prompt: "Hình chóp tam giác đều có cạnh đáy 6cm, chiều cao 4cm. Tính thể tích (lấy √3 ≈ 1.73).", answer: 20, accept: ["20", "20cm³"], hint: "Sđáy = (√3/4)·6² = 9√3, V = 1/3·Sđáy·h.", explain: "Sđáy = 9√3 ≈ 15.57 cm², V ≈ 1/3·15.57·4 ≈ 20.76 cm³ ≈ 20 cm³." },
+      { type: "text", prompt: "Hình chóp tam giác đều S.ABC có cạnh đáy AB = 4cm. Gọi M là trung điểm BC. Tam giác SAB là tam giác gì?", answer: "cân", accept: ["cân", "tam giác cân"], hint: "SA = SB (cạnh bên bằng nhau).", explain: "SA = SB → ΔSAB cân tại S." },
+      { type: "text", prompt: "Trong hình chóp tam giác đều, chân đường cao nằm ở vị trí nào của đáy?", answer: "trọng tâm", accept: ["trọng tâm", "giao điểm 3 đường trung tuyến"], hint: "Tính chất của hình chóp đều.", explain: "Chân đường cao trùng trọng tâm của tam giác đáy." },
+      { type: "text", prompt: "Hình chóp tam giác đều có diện tích đáy 9√3 cm², chiều cao 6cm. Tính thể tích.", answer: "18√3", accept: ["18√3", "18*sqrt(3)"], hint: "V = 1/3·Sđáy·h.", explain: "V = 1/3·9√3·6 = 18√3 cm³." }
+    ]
+  },
+
+  {
+    id: "g8-b39",
+    num: 39,
+    chapter: 10,
+    title: "Hình chóp tứ giác đều",
+    summary: "Hình chóp tứ giác đều có mặt đáy là hình vuông và các cạnh bên bằng nhau. Đây là dạng hình chóp phổ biến nhất, thường được thấy trong kiến trúc (như các kim tự tháp).",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Kim tự tháp Ai Cập có dạng hình chóp tứ giác đều. Làm thế nào để tính toán các kích thước của hình này?</p>
+      
+      <div class="definition">
+        <p><strong>Định nghĩa:</strong> Hình chóp tứ giác đều là hình chóp có:</p>
+        <p>• Đáy là hình vuông</p>
+        <p>• Các cạnh bên bằng nhau</p>
+        <p>• Chân đường cao trùng với tâm của hình vuông đáy (giao điểm 2 đường chéo)</p>
+        
+        <p><strong>Các yếu tố:</strong></p>
+        <p>• Đỉnh S</p>
+        <p>• Đáy ABCD (hình vuông)</p>
+        <p>• Các cạnh bên: SA = SB = SC = SD</p>
+        <p>• Chiều cao SH (H là tâm hình vuông)</p>
+        <p>• Các mặt bên: ΔSAB, ΔSBC, ΔSCD, ΔSDA (là các tam giác cân bằng nhau)</p>
+        
+        <p><strong>Công thức:</strong></p>
+        <p>Diện tích xung quanh: Sxq = p·d (p là nửa chu vi đáy, d là trung đoạn)</p>
+        <p>Diện tích toàn phần: Stp = Sxq + Sđáy</p>
+        <p>Thể tích: V = 1/3·Sđáy·h (h là chiều cao)</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 1 (Làm chậm).</strong> Hình chóp tứ giác đều S.ABCD có cạnh đáy AB = 4cm, cạnh bên SA = 6cm. Tính chiều cao SH.</p>
+        <p><strong>Giải:</strong></p>
+        <p>H là tâm hình vuông ABCD → AH = AC/2 = (4√2)/2 = 2√2 cm</p>
+        <p>Xét ΔSHA vuông tại H: SH² = SA² - AH² = 36 - 8 = 28</p>
+        <p>SH = √28 = 2√7 cm</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 2 (Dễ).</strong> Hình chóp tứ giác đều có cạnh đáy 4cm, chiều cao 6cm. Tính thể tích.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = 4² = 16 cm²</p>
+        <p>V = 1/3·Sđáy·h = 1/3·16·6 = 32 cm³</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Kim tự tháp Giza có dạng hình chóp tứ giác đều với cạnh đáy 230m, chiều cao 146m. Tính thể tích.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = 230² = 52900 m²</p>
+        <p>V = 1/3·52900·146 ≈ 2574933 m³</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 4 (Bẫy).</strong> Bạn A nói: "Hình chóp có đáy hình vuông và các cạnh bên bằng nhau thì là hình chóp đều". Bạn B nói: "Chưa đủ, cần kiểm tra chân đường cao". Ai đúng?</p>
+        <p><strong>Sai lầm thường gặp:</strong> Tương tự hình chóp tam giác đều, chỉ kiểm tra cạnh bên mà bỏ qua điều kiện chân đường cao.</p>
+        <p><strong>Giải đúng:</strong></p>
+        <p>Để là hình chóp đều, cần:</p>
+        <p>1. Đáy là đa giác đều (hình vuông là đa giác đều)</p>
+        <p>2. Chân đường cao trùng tâm của đáy (giao điểm 2 đường chéo)</p>
+        <p>Chỉ có cạnh bên bằng nhau nhưng chân đường cao không trùng tâm thì không phải hình chóp đều</p>
+      </div>
+      
+      <div class="example">
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một chiếc nón giấy có dạng hình chóp tứ giác đều với cạnh đáy 10cm, chiều cao 15cm. Tính thể tích.</p>
+        <p><strong>Giải:</strong></p>
+        <p>Sđáy = 10² = 100 cm²</p>
+        <p>V = 1/3·100·15 = 500 cm³</p>
+      </div>
+      
+      <div class="remember">
+        <p><strong>Nhớ nhanh:</strong></p>
+        <p>Hình chóp tứ giác đều:</p>
+        <p>• Đáy: hình vuông</p>
+        <p>• Cạnh bên: bằng nhau</p>
+        <p>• Chân đường cao: tâm đáy (giao 2 đường chéo)</p>
+        <p>V = 1/3·Sđáy·h</p>
+      </div>
+      
+      <div class="check">
+        <p><strong>Tự kiểm tra.</strong></p>
+        <p>1. Thế nào là hình chóp tứ giác đều?</p>
+        <p>2. Kim tự tháp Giza có dạng hình gì?</p>
+        <p><em>— Có đáy là hình vuông, các cạnh bên bằng nhau, chân đường cao trùng tâm.</em></p>
+        <p><em>— Hình chóp tứ giác đều.</em></p>
+      </div>
+      
+      <div class="practice">
+        <p><strong>Luyện dạng SBT.</strong></p>
+        <p>1. Hình chóp tứ giác đều có cạnh đáy 8cm, chiều cao 9cm. Tính thể tích.</p>
+        <p>2. Hình chóp tứ giác đều có cạnh đáy 6cm, cạnh bên 5cm. Tính chiều cao.</p>
+        <p><em>— 1) Sđáy = 64 cm², V = 1/3·64·9 = 192 cm³.</em></p>
+        <p><em>— 2) AH = 3√2 cm, SH = √(25 - 18) = √7 cm.</em></p>
+      </div>
+    `,
+    exercises: [
+      { type: "text", prompt: "Thế nào là hình chóp tứ giác đều?", answer: "Có đáy là hình vuông, các cạnh bên bằng nhau, chân đường cao trùng tâm", accept: ["đáy hình vuông, cạnh bên bằng nhau, chân đường cao tâm"], hint: "Định nghĩa hình chóp tứ giác đều.", explain: "Ba điều kiện: đáy hình vuông, cạnh bên bằng nhau, chân đường cao trùng tâm." },
+      { type: "num", prompt: "Hình chóp tứ giác đều có cạnh đáy 4cm, chiều cao 6cm. Tính thể tích.", answer: 32, accept: ["32", "32cm³"], hint: "Sđáy = 4² = 16, V = 1/3·Sđáy·h.", explain: "V = 1/3·16·6 = 32 cm³." },
+      { type: "text", prompt: "Kim tự tháp Giza có dạng hình gì?", answer: "hình chóp tứ giác đều", accept: ["hình chóp tứ giác đều", "hình chóp tứ giác đều"], hint: "Đây là ví dụ kinh điển của hình chóp tứ giác đều.", explain: "Kim tự tháp Giza là hình chóp tứ giác đều." },
+      { type: "text", prompt: "Trong hình chóp tứ giác đều, chân đường cao nằm ở vị trí nào của đáy?", answer: "tâm", accept: ["tâm", "giao điểm 2 đường chéo"], hint: "Tính chất của hình chóp đều.", explain: "Chân đường cao trùng tâm của hình vuông đáy (giao điểm 2 đường chéo)." },
+      { type: "text", prompt: "Hình chóp tứ giác đều S.ABCD có cạnh đáy AB = 6cm. Gọi M là trung điểm BC. Tam giác SAB là tam giác gì?", answer: "cân", accept: ["cân", "tam giác cân"], hint: "SA = SB (cạnh bên bằng nhau).", explain: "SA = SB → ΔSAB cân tại S." },
+      { type: "text", prompt: "Hình chóp tứ giác đều có diện tích đáy 25 cm², chiều cao 9cm. Tính thể tích.", answer: 75, accept: ["75", "75cm³"], hint: "V = 1/3·Sđáy·h.", explain: "V = 1/3·25·9 = 75 cm³." }
+    ]
+  },
+
 ];
 
 const COURSES = [
