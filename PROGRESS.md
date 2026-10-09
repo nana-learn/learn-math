@@ -252,9 +252,16 @@ Committed 2c4d8a0. Pushed to GitHub Pages main branch.
 ### Final Grade 9 Animation Status:
 - c3-b7: Square root (geometric) ✅
 - c4-b11: Right triangle trig ✅
+- c4-b12: Trigonometric relationships ✅ NEW
 - c5-b13: Circle introduction ✅
+- c5-b14: Arc containing angle ✅ NEW
+- c5-b15: Circumference and area ✅ NEW
 - c5-b16: Line-circle positions ✅
+- c5-b17: Circular sector ✅ NEW
 - c6-b18: Parabola ✅
+- c6-b19: Graph y = ax² ✅ NEW
+- c6-b20: Graph y = ax² (continued) ✅ NEW
+- c6-b21: Word problems with equations ✅ NEW
 - c7-b22: Frequency chart ✅
 - c9-b27: Inscribed angle ✅
 - c9-b28: Circumcircle/incircle ✅
@@ -263,7 +270,7 @@ Committed 2c4d8a0. Pushed to GitHub Pages main branch.
 - c10-b31: Cylinder/cone ✅
 - c10-b32: Sphere ✅
 
-**Total: 12 animated Grade 9 lessons**
+**Total: 21 animated Grade 9 lessons**
 
 ## 2026-01-10 Grade 8 Part 2 lessons g8-b33 through g8-b39 (b37749c)
 
