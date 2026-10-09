@@ -7,8 +7,8 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 ### Current Status
 
 - **Total lessons to implement**: 39 (g8-b1 to g8-b39)
-- **Completed**: 24 lessons (g8-b1 to g8-b24)
-- **Remaining**: 15 lessons (g8-b25 to g8-b39)
+- **Completed**: 29 lessons (g8-b1 to g8-b29)
+- **Remaining**: 10 lessons (g8-b30 to g8-b39)
 
 ## Completed Lessons
 
@@ -43,6 +43,11 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 | g8-b22 | 6 | Tính chất cơ bản của phân thức đại số | ⏳ |
 | g8-b23 | 6 | Phép cộng và phép trừ phân thức đại số | ⏳ |
 | g8-b24 | 6 | Phép nhân và phép chia phân thức đại số | ✅ |
+| g8-b25 | 7 | Phương trình bậc nhất một ẩn | ✅ |
+| g8-b26 | 7 | Giải bài toán bằng cách lập phương trình | ✅ |
+| g8-b27 | 7 | Khái niệm hàm số và đồ thị của hàm số | ✅ |
+| g8-b28 | 7 | Hàm số bậc nhất và đồ thị của hàm số bậc nhất | ✅ |
+| g8-b29 | 7 | Hệ số góc của đường thẳng | ✅ |
 | g8-b25 | 7 | Phương trình bậc nhất một ẩn | ⏳ |
 | g8-b26 | 7 | Giải bài toán bằng cách lập phương trình | ⏳ |
 | g8-b27 | 7 | Khái niệm hàm số và đồ thị của hàm số | ⏳ |
@@ -68,11 +73,11 @@ Implementing complete Grade 8 Part 2 (Tập 2) content following "Toán 8 Tập 
 - [x] g8-b24: Phép nhân và phép chia phân thức đại số
 
 ### Phase 2: Chapter VII - Phương trình bậc nhất và hàm số bậc nhất (5 lessons)
-- [ ] g8-b25: Phương trình bậc nhất một ẩn
-- [ ] g8-b26: Giải bài toán bằng cách lập phương trình
-- [ ] g8-b27: Khái niệm hàm số và đồ thị của hàm số
-- [ ] g8-b28: Hàm số bậc nhất và đồ thị của hàm số bậc nhất
-- [ ] g8-b29: Hệ số góc của đường thẳng
+- [x] g8-b25: Phương trình bậc nhất một ẩn
+- [x] g8-b26: Giải bài toán bằng cách lập phương trình
+- [x] g8-b27: Khái niệm hàm số và đồ thị của hàm số
+- [x] g8-b28: Hàm số bậc nhất và đồ thị của hàm số bậc nhất
+- [x] g8-b29: Hệ số góc của đường thẳng
 
 ### Phase 3: Chapter VIII - Mở đầu về tính xác suất (3 lessons)
 - [ ] g8-b30: Kết quả có thể và kết quả thuận lợi
