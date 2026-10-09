@@ -3824,20 +3824,20 @@ const LESSONS = [
         </ul>
         <p>Gọi \(d\) là khoảng cách từ tâm đến mặt phẳng cắt, \(d < R\). Tam giác từ tâm tới chân đường vuông góc rồi tới một điểm trên mép mặt cắt là tam giác vuông. Bán kính mặt cắt bằng \(\sqrt{R^2 - d^2}\). \(d = 0\) thì ra \(R\). \(d\) càng gần \(R\), mặt cắt càng nhỏ.</p>
       </div>
-      <figure class="figure">
-        <svg viewBox="0 0 360 205" role="img" aria-label="Hình cầu bị mặt phẳng cách tâm d cắt thành hình tròn bán kính r">
-          <circle cx="150" cy="102" r="75" fill="none" stroke="#DDDDDD" stroke-width="2"/>
-          <circle cx="150" cy="102" r="2.5" fill="#DDDDDD"/>
-          <text x="158" y="116" font-size="13">O</text>
-          <line x1="81" y1="72" x2="219" y2="72" stroke="#58C4DD" stroke-width="2.5"/>
-          <line x1="150" y1="102" x2="150" y2="72" stroke="#FC6255" stroke-width="2"/>
-          <text x="132" y="94" font-size="13" fill="#FC6255">d</text>
-          <rect x="150" y="72" width="10" height="10" fill="none" stroke="#DDDDDD" stroke-width="1.5"/>
-          <line x1="150" y1="102" x2="219" y2="72" stroke="#83C167" stroke-width="2"/>
-          <text x="196" y="94" font-size="13" fill="#83C167">R</text>
-          <text x="181" y="64" font-size="13" fill="#58C4DD">r</text>
-          <circle cx="219" cy="72" r="3" fill="#58C4DD"/>
-          <text x="226" y="64" font-size="13">P</text>
+      <figure class="figure" data-animation="c10-b32-sphere">
+        <svg viewBox="0 0 360 205" role="img" aria-label="Hình cầu bị mặt phẳng cách tâm d cắt thành hình tròn bán kính r" id="fig-c10-b32">
+          <circle cx="150" cy="102" r="75" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-dasharray="471" stroke-dashoffset="471" opacity="0"/>
+          <circle cx="150" cy="102" r="2.5" fill="#DDDDDD" opacity="0"/>
+          <text x="158" y="116" font-size="13" opacity="0">O</text>
+          <line x1="81" y1="72" x2="219" y2="72" stroke="#58C4DD" stroke-width="2.5" stroke-dasharray="138" stroke-dashoffset="138" opacity="0"/>
+          <line x1="150" y1="102" x2="150" y2="72" stroke="#FC6255" stroke-width="2" stroke-dasharray="30" stroke-dashoffset="30" opacity="0"/>
+          <text x="132" y="94" font-size="13" fill="#FC6255" opacity="0">d</text>
+          <rect x="150" y="72" width="10" height="10" fill="none" stroke="#DDDDDD" stroke-width="1.5" opacity="0"/>
+          <line x1="150" y1="102" x2="219" y2="72" stroke="#83C167" stroke-width="2" stroke-dasharray="87" stroke-dashoffset="87" opacity="0"/>
+          <text x="196" y="94" font-size="13" fill="#83C167" opacity="0">R</text>
+          <text x="181" y="64" font-size="13" fill="#58C4DD" opacity="0">r</text>
+          <circle cx="219" cy="72" r="3" fill="#58C4DD" opacity="0"/>
+          <text x="226" y="64" font-size="13" opacity="0">P</text>
         </svg>
         <figcaption>Mặt cắt cách tâm d có bán kính r = √(R² − d²); d = 0 thì ra đường tròn lớn bán kính R.</figcaption>
       </figure>
