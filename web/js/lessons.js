@@ -4979,6 +4979,471 @@ const G8_LESSONS = [
       { type: "text", prompt: "Biểu đồ tần số có cột cao nhất ứng với giá trị nào? <em>— Ứng với giá trị có tần số cao nhất (xuất hiện nhiều nhất), không nhất thiết là giá trị lớn nhất.</em>", answer: "Giá trị có tần số cao nhất", accept: ["giá trị có tần số cao nhất", "giá trị xuất hiện nhiều nhất", "giá trị lớn nhất"], hint: "Cột cao = tần số lớn.", explain: "Cột cao nhất ứng với giá trị có tần số cao nhất." },
     ],
   },
+
+  {
+    id: "g8-b15",
+    num: 15,
+    chapter: 4,
+    title: "Định lí Thalès trong tam giác",
+    summary: "Định lí Thalès: đường thẳng ∥ cạnh thứ ba chia hai cạnh còn lại thành đoạn tỷ lệ. Giao điểm đường thẳng với hai cạnh tạo ra đoạn tỷ lệ với cạnh tương ứng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Muốn đo chiều cao một toà nhà mà không leo lên được, ta dùng cọc và định lí Thalès. Đặt cọc CA = 1.5 m, lùi lại sao cho mắt A nhìn thấy đỉnh toà nhà B và đỉnh cọc C thẳng hàng. Đo CD = 10 m (khoảng cách từ cọc đến toà nhà), AD = 2 m (khoảng cách từ mắt đến cọc). Tính chiều cao toà nhà.</p>
+      <div class="definition">
+        <p><strong>Định lí Thalès trong tam giác:</strong> Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh thứ ba thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỷ lệ.</p>
+        <p>Cho ΔABC, DE ∥ BC, D ∈ AB, E ∈ AC. Khi đó: \(\dfrac{AD}{AB} = \dfrac{AE}{AC} = \dfrac{DE}{BC}\).</p>
+      </div>
+      <div class="definition">
+        <p><strong>Hệ quả của định lí Thalès:</strong> Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỷ lệ thì đường thẳng đó song song với cạnh thứ ba.</p>
+        <p>Cho ΔABC, D ∈ AB, E ∈ AC, \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\). Khi đó: DE ∥ BC.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Định lí Thalès nói về tỷ lệ khi có đường thẳng song song. Tỷ lệ các đoạn trên hai cạnh bằng nhau và bằng tỷ lệ cạnh song song với cạnh thứ ba.</p>
+        <p>Ví dụ: DE ∥ BC, AD = 3, DB = 2 → AD/AB = 3/5. Suy ra AE/AC = 3/5 và DE/BC = 3/5.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Sai tỷ lệ: \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\), không phải \(\dfrac{AD}{AB} = \dfrac{AE}{EC}\).</li>
+          <li>Quên điều kiện: chỉ áp dụng khi DE ∥ BC. Nếu không song song, định lí không đúng.</li>
+          <li>Định lí đảo: cần đủ điều kiện tỷ lệ. Chỉ \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) mới suy ra DE ∥ BC.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
+        <p>\(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) → \(\dfrac{4}{6} = \dfrac{3}{EC}\) → EC = 4.5 cm.</p>
+        <p>\(\dfrac{AD}{AB} = \dfrac{4}{10} = 0.4\), \(\dfrac{AE}{AC} = \dfrac{3}{7.5} = 0.4\). Tỷ lệ bằng nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> ΔMNP, PQ ∥ MN, PQ cắt MP tại Q, MN tại R. Biết MP = 12 cm, MQ = 4 cm, NR = 6 cm. Tính MR.</p>
+        <p>QP = MP − MQ = 8 cm. \(\dfrac{MQ}{QP} = \dfrac{MR}{RN}\) → \(\dfrac{4}{8} = \dfrac{MR}{6}\) → MR = 3 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> ΔABC, DE ∥ BC, AD = 5 cm, AB = 15 cm. Tỷ lệ AD/AB = 1/3. Suy ra AE/AC = 1/3, DE/BC = 1/3.</p>
+        <p>Nếu BC = 9 cm thì DE = 3 cm. Nếu AC = 12 cm thì AE = 4 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ΔABC, M ∈ AB, N ∈ AC, \(\dfrac{AM}{MB} = \dfrac{2}{3}\). MN ∥ BC. Biết AC = 20 cm. Tính AN, NC.</p>
+        <p>\(\dfrac{AN}{NC} = \dfrac{2}{3}\). Đặt AN = 2y, NC = 3y. AC = 5y = 20 → y = 4.</p>
+        <p>AN = 8 cm, NC = 12 cm. MN = \(\dfrac{2}{5}\) BC.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> ΔABC, D ∈ AB, E ∈ AC, AD = 3 cm, DB = 2 cm, AE = 4 cm, EC = 3 cm. MN có song song BC không?</p>
+        <p>\(\dfrac{AD}{DB} = \dfrac{3}{2} = 1.5\), \(\dfrac{AE}{EC} = \dfrac{4}{3} ≈ 1.333\). Không bằng nhau → MN không song song BC.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Định lí Thalès: đường thẳng ∥ cạnh thứ ba → chia hai cạnh thành đoạn tỷ lệ. Định lí đảo: nếu tỷ lệ bằng nhau thì đường thẳng ∥ cạnh thứ ba.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định tam giác và đường thẳng song song. Viết đúng tỷ lệ. Chứng minh song song bằng định lí đảo.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>ΔABC, DE ∥ BC, AD=2cm, DB=3cm, AE=4cm. Tính EC. <em>— \(\dfrac{2}{3} = \dfrac{4}{EC}\) → EC = 6 cm.</em></p>
+        <p>ΔMNP, QR ∥ NP, MQ=5cm, QP=10cm. Tỷ lệ MR/RN = ? <em>— \(\dfrac{5}{10} = \dfrac{1}{2}\).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> ΔABC, DE ∥ BC, AD=6cm, AB=15cm, DE=4cm. Tính BC.</p>
+        <p>\(\dfrac{6}{15} = 0.4\). BC = 4 : 0.4 = 10 cm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AD=3cm, DB=5cm, AE=4cm. Tính EC.", answer: 6.67, accept: ["6.67", "20/3", "6.7"], hint: "AD/DB = AE/EC.", explain: "3/5 = 4/EC → EC = 20/3 ≈ 6.67 cm." },
+      { type: "num", prompt: "ΔMNP, QR ∥ NP, MQ=4cm, QP=6cm, NR=9cm. Tính MR.", answer: 6, hint: "MQ/QP = MR/RN.", explain: "4/6 = MR/9 → MR = 6 cm." },
+      { type: "mc", prompt: "ΔABC, D∈AB, E∈AC, AD=5cm, DB=10cm, AE=3cm, EC=6cm. Kết luận nào đúng?", choices: ["DE ∥ BC", "DE không song song BC", "Không đủ thông tin", "DE = BC"], correct: 0, hint: "AD/DB = AE/EC.", explain: "5/10 = 3/6 = 0.5 → DE ∥ BC." },
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AD=4cm, AB=12cm, BC=9cm. Tính DE.", answer: 3, hint: "AD/AB = DE/BC.", explain: "4/12 = DE/9 → DE = 3 cm." },
+      { type: "text", prompt: "ΔABC, M∈AB, N∈AC, AM/MB = 2/5. MN ∥ BC. Tính AN/NC.", answer: "2/5", accept: ["2/5", "2:5"], hint: "Định lí Thalès.", explain: "AN/NC = AM/MB = 2/5." },
+      { type: "num", prompt: "ΔABC, DE ∥ BC, AE=6cm, EC=4cm, BC=15cm. Tính DE.", answer: 9, hint: "AE/AC = DE/BC.", explain: "6/10 = DE/15 → DE = 9 cm." },
+    ],
+  },
+
+  {
+    id: "g8-b16",
+    num: 16,
+    chapter: 4,
+    title: "Đường trung bình của tam giác",
+    summary: "Đường trung bình là đoạn nối trung điểm hai cạnh. Nó song song cạnh thứ ba và bằng nửa cạnh ấy.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một mảnh đất hình tam giác ABC. Muốn chia làm hai phần bằng nhau theo chiều ngang, người ta vẽ đường trung bình MN (M, N là trung điểm AB, AC). Hỏi MN bằng bao nhiêu nếu BC = 100 m?</p>
+      <div class="definition">
+        <p><strong>Đường trung bình của tam giác</strong> là đoạn thẳng nối trung điểm hai cạnh của tam giác.</p>
+        <p><strong>Tính chất:</strong> Đường trung bình song song với cạnh thứ ba và bằng nửa cạnh ấy.</p>
+        <p>Cho ΔABC, M là trung điểm AB, N là trung điểm AC. Khi đó: MN ∥ BC và \(MN = \dfrac{1}{2}BC\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Đường trung bình = "nửa đường": ngắn bằng nửa cạnh đáy và song song với nó. Nó chia tam giác thành hai phần: tam giác nhỏ và hình thang.</p>
+        <p>Đường trung bình gần giống hình thang có một đáy bằng 0 (điểm).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm với đường cao: đường trung bình nối trung điểm, đường cao vuông góc với cạnh.</li>
+          <li>Quên điều kiện: phải là trung điểm cả hai cạnh. Nếu chỉ một trung điểm thì không phải đường trung bình.</li>
+          <li>Tỷ lệ: đường trung bình chia cạnh bên thành tỷ lệ 1:1, nên tam giác nhỏ bằng 1/4 tam giác lớn (diện tích).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> ΔABC, AB = 8 cm, AC = 10 cm, BC = 12 cm. M, N là trung điểm AB, AC.</p>
+        <p>MN là đường trung bình → MN ∥ BC và \(MN = \dfrac{1}{2}BC = 6\) cm.</p>
+        <p>AM = MB = 4 cm, AN = NC = 5 cm. Tam giác AMN bằng 1/4 tam giác ABC (vì các cạnh tương ứng tỷ lệ 1:2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> ΔMNP, MN = 6 cm, MP = 8 cm, NP = 10 cm. A, B là trung điểm MN, MP.</p>
+        <p>AB là đường trung bình → AB ∥ NP và \(AB = \dfrac{1}{2}NP = 5\) cm.</p>
+        <p>MA = AN = 3 cm, MB = BP = 4 cm. Chu vi ΔMAB = 3 + 4 + 5 = 12 cm. Chu vi ΔMNP = 6 + 8 + 10 = 24 cm. Tỷ lệ chu vi = 1:2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> ΔABC đều cạnh 6 cm. Đường trung bình MN = 3 cm.</p>
+        <p>ΔABC vuông tại A, AB = 3 cm, AC = 4 cm, BC = 5 cm. Đường trung bình nối trung điểm AB, AC = 2.5 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ΔABC, M, N, P lần lượt là trung điểm AB, AC, BC.</p>
+        <p>Có ba đường trung bình: MN, MP, NP.</p>
+        <p>MN ∥ BC, MP ∥ AC, NP ∥ AB. Tam giác MNP gọi là tam giác trung bình của ΔABC.</p>
+        <p>Chu vi ΔMNP = \(\dfrac{1}{2}\) chu vi ΔABC. Diện tích ΔMNP = \(\dfrac{1}{4}\) diện tích ΔABC.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> ΔABC có AB = 6 cm, AC = 8 cm. Điểm M trên AB sao cho AM = 3 cm. Nếu N là trung điểm AC thì MN là đường trung bình?</p>
+        <p><strong>Có</strong> — AM = MB = 3 cm (M là trung điểm AB), AN = NC (N là trung điểm AC). MN là đường trung bình.</p>
+        <p>Điểm M cách A 2 cm thì không phải trung điểm, MN không phải đường trung bình.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đường trung bình: nối trung điểm hai cạnh. Song song cạnh thứ ba và bằng nửa cạnh ấy.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định trung điểm. Vẽ đường trung bình. Tính độ dài bằng một nửa cạnh thứ ba.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>ΔABC, M, N là trung điểm AB, AC. BC = 12 cm. MN = ? <em>— 6 cm (nửa BC).</em></p>
+        <p>ΔMNP, AB là đường trung bình, NP = 10 cm. AB = ? <em>— 5 cm.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> ΔABC đều cạnh 10 cm. Đường trung bình = 5 cm.</p>
+        <p>ΔABC vuông tại A, AB=6cm, AC=8cm, BC=10cm. Đường trung bình nối trung điểm AB, AC = 5 cm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "ΔABC, M, N là trung điểm AB, AC. BC=14cm. Tính MN.", answer: 7, hint: "MN = BC/2.", explain: "7 cm." },
+      { type: "num", prompt: "ΔMNP, AB là đường trung bình, NP=16cm. Tính AB.", answer: 8, hint: "AB = NP/2.", explain: "8 cm." },
+      { type: "mc", prompt: "ΔABC có ba đường trung bình. Số tam giác trung bình tạo thành là:", choices: ["1", "2", "3", "4"], correct: 0, hint: "Một tam giác trung bình là tam giác nối ba trung điểm.", explain: "1 tam giác trung bình (tam giác MNP nếu M, N, P là trung điểm)." },
+      { type: "num", prompt: "ΔABC đều cạnh 12 cm. Chu vi tam giác trung bình bằng bao nhiêu?", answer: 18, hint: "Cạnh tam giác trung bình = 6 cm.", explain: "6 × 3 = 18 cm." },
+      { type: "text", prompt: "ΔABC, M, N là trung điểm AB, AC. MN=5cm. Tính BC.", answer: "10 cm", accept: ["10 cm", "10cm"], hint: "BC = 2×MN.", explain: "10 cm." },
+      { type: "num", prompt: "ΔABC vuông tại A, AB=6cm, AC=8cm. Đường trung bình nối trung điểm AB, AC.", answer: 5, accept: ["5", "5"], hint: "BC=10cm (tam giác 3-4-5), MN=BC/2.", explain: "5 cm." },
+    ],
+  },
+
+  {
+    id: "g8-b17",
+    num: 17,
+    chapter: 4,
+    title: "Tính chất đường phân giác của tam giác",
+    summary: "Đường phân giác chia cạnh đối diện thành hai đoạn tỷ lệ với hai cạnh kề. Tỷ lệ này bằng tỷ lệ của hai cạnh bên.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một mảnh đất hình tam giác ABC, cần chia thành hai phần theo đường phân giác từ A. Hỏi điểm D trên BC chia BC thành tỷ lệ bao nhiêu nếu AB = 6 cm, AC = 9 cm?</p>
+      <div class="definition">
+        <p><strong>Định lí đường phân giác:</strong> Trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn tỷ lệ với hai cạnh kề.</p>
+        <p>Cho ΔABC, AD là đường phân giác của góc A, D ∈ BC. Khi đó: \(\dfrac{BD}{DC} = \dfrac{AB}{AC}\).</p>
+        <p>Độ dài đoạn: \(BD = \dfrac{AB}{AB + AC}·BC\), \(DC = \dfrac{AC}{AB + AC}·BC\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Đường phân giác "chia đều góc" nhưng không chia đều cạnh. Nó chia cạnh đối diện theo tỷ lệ của hai cạnh kề.</p>
+        <p>Ví dụ: AB = 6, AC = 9 → BD/DC = 6/9 = 2/3. Nếu BC = 15 cm thì BD = 6 cm, DC = 9 cm.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Đảo ngược tỷ lệ: \(\dfrac{BD}{DC} = \dfrac{AB}{AC}\), không phải \(\dfrac{AC}{AB}\).</li>
+          <li>Quên điều kiện: chỉ áp dụng khi AD là đường phân giác. Nếu chỉ là đường thẳng bất kỳ, định lí không đúng.</li>
+          <li>Nếu góc A vuông và AB = AC thì D là trung điểm BC (đường phân giác cũng là trung tuyến).</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> ΔABC, AB = 5 cm, AC = 7 cm, BC = 9 cm. AD là đường phân giác.</p>
+        <p>\(\dfrac{BD}{DC} = \dfrac{5}{7}\). Đặt BD = 5x, DC = 7x. BC = 12x = 9 → x = 0.75.</p>
+        <p>BD = 3.75 cm, DC = 5.25 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> ΔMNP, MN = 8 cm, MP = 12 cm, NP = 15 cm. MQ là đường phân giác.</p>
+        <p>\(\dfrac{NQ}{QP} = \dfrac{MN}{MP} = \dfrac{8}{12} = \dfrac{2}{3}\).</p>
+        <p>Đặt NQ = 2y, QP = 3y. NP = 5y = 15 → y = 3.</p>
+        <p>NQ = 6 cm, QP = 9 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> ΔABC cân tại A, AB = AC = 10 cm, BC = 12 cm. AD là đường phân giác.</p>
+        <p>\(\dfrac{BD}{DC} = \dfrac{AB}{AC} = 1\) → BD = DC = 6 cm. AD cũng là đường trung tuyến và đường cao.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ΔABC, AB = 6 cm, AC = 10 cm, BC = 14 cm. AD là đường phân giác.</p>
+        <p>\(\dfrac{BD}{DC} = \dfrac{6}{10} = \dfrac{3}{5}\). Đặt BD = 3x, DC = 5x. BC = 8x = 14 → x = 1.75.</p>
+        <p>BD = 5.25 cm, DC = 8.75 cm.</p>
+        <p>Độ dài AD có thể tính bằng công thức đường phân giác: \(\dfrac{2·AB·AC·\cos(\frac{A}{2})}{AB + AC}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> ΔABC, AB = 5 cm, AC = 8 cm. Điểm D trên BC sao cho BD = 5 cm, DC = 8 cm. AD có phải đường phân giác không?</p>
+        <p><strong>Có</strong> — \(\dfrac{BD}{DC} = \dfrac{5}{8} = \dfrac{AB}{AC}\). Điều kiện định lí được thỏa mãn → AD là đường phân giác.</p>
+        <p>Ngược lại: nếu BD = 6 cm, DC = 7 cm thì \(\dfrac{6}{7} ≠ \dfrac{5}{8}\) → AD không phải đường phân giác.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đường phân giác chia cạnh đối diện theo tỷ lệ hai cạnh kề: BD/DC = AB/AC.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định đường phân giác. Áp dụng định lí để tính độ dài đoạn. Chứng minh một đường thẳng là đường phân giác.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>ΔABC, AB=6cm, AC=9cm, BC=15cm. AD là đường phân giác. Tính BD, DC. <em>— BD:DC = 6:9 = 2:3. BD=6cm, DC=9cm.</em></p>
+        <p>ΔMNP cân tại M, MN=MP=10cm, NP=12cm. MQ là đường phân giác. Tính NQ. <em>— NQ = NP/2 = 6cm (tam giác cân).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> ΔABC, AB=8cm, AC=12cm, BC=20cm. AD là đường phân giác. BD=8cm, DC=12cm.</p>
+        <p>ΔMNP, MN=5cm, MP=7cm, NP=18cm. MQ là đường phân giác. NQ=7.5cm, QP=10.5cm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "ΔABC, AB=6cm, AC=9cm, BC=15cm. AD là đường phân giác. Tính BD.", answer: 6, hint: "BD:DC = 6:9 = 2:3. BC=15cm.", explain: "BD = 15 × 2/5 = 6 cm." },
+      { type: "num", prompt: "ΔMNP, MN=8cm, MP=12cm, NP=25cm. MQ là đường phân giác. Tính NQ.", answer: 10, hint: "NQ:QP = 8:12 = 2:3. NP=25cm.", explain: "NQ = 25 × 2/5 = 10 cm." },
+      { type: "mc", prompt: "ΔABC cân tại A, AB=AC=10cm, BC=16cm. AD là đường phân giác. Kết luận nào đúng?", choices: ["BD=8cm", "BD=6cm", "BD=10cm", "BD=4cm"], correct: 0, hint: "Tam giác cân → BD=DC.", explain: "BD = BC/2 = 8 cm." },
+      { type: "num", prompt: "ΔABC, AB=5cm, AC=7cm, BD=4cm. AD là đường phân giác. Tính DC.", answer: 5.6, accept: ["5.6", "28/5"], hint: "BD/DC = AB/AC.", explain: "4/DC = 5/7 → DC = 28/5 = 5.6 cm." },
+      { type: "text", prompt: "ΔABC, AB=8cm, AC=10cm, BC=18cm. AD là đường phân giác. Tính BD/DC.", answer: "4/5", accept: ["4/5", "4:5"], hint: "BD/DC = AB/AC.", explain: "8/10 = 4/5." },
+      { type: "num", prompt: "ΔMNP, MN=6cm, MP=9cm, NP=20cm. MQ là đường phân giác. Tính QP.", answer: 12, hint: "NQ:QP = 6:9 = 2:3. NP=20cm.", explain: "QP = 20 × 3/5 = 12 cm." },
+    ],
+  },
+
+  {
+    id: "g8-b18",
+    num: 18,
+    chapter: 5,
+    title: "Thu thập và phân loại dữ liệu",
+    summary: "Dữ liệu rời rạc và liên tục. Tần số. Cách thu thập dữ liệu từ thực tế và phân loại.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Lớp 8A có 40 học sinh. Cần biết số anh chị em trong mỗi gia đình để phân tích. Gọi là dữ liệu rời rạc (số nguyên). Nếu đo chiều cao thì là dữ liệu liên tục.</p>
+      <div class="definition">
+        <p><strong>Dữ liệu rời rạc</strong> là dữ liệu chỉ nhận các giá trị riêng lẻ, thường là số nguyên. Ví dụ: số học sinh, số anh chị em, số xe ô tô trong gia đình.</p>
+        <p><strong>Dữ liệu liên tục</strong> là dữ liệu có thể nhận mọi giá trị trong một khoảng. Ví dụ: chiều cao, cân nặng, nhiệt độ, thời gian.</p>
+        <p><strong>Tần số</strong> của một giá trị là số lần giá trị đó xuất hiện trong dãy dữ liệu.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Dữ liệu rời rạc: đếm được (số nguyên). Dữ liệu liên tục: đo được (giá trị trong khoảng). Tần số = số lần xuất hiện.</p>
+        <p>Ví dụ: số anh chị em: 0, 1, 2, 3,... (rời rạc). Chiều cao: 1.50m, 1.51m, 1.52m,... (liên tục).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm loại dữ liệu: chiều cao là liên tục, không phải rời rạc. Nhiệt độ là liên tục.</li>
+          <li>Tần số sai: đếm nhầm số lần xuất hiện. Nên sắp xếp dữ liệu theo thứ tự trước khi đếm.</li>
+          <li>Nhầm tần số với giá trị: tần số là số lần, giá trị là dữ liệu thực tế.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Số anh chị em của 20 học sinh: 0, 1, 2, 1, 3, 1, 0, 2, 1, 1, 2, 0, 1, 1, 2, 3, 1, 0, 1, 2.</p>
+        <p>Giá trị 0 xuất hiện 4 lần → tần số = 4.</p>
+        <p>Giá trị 1 xuất hiện 8 lần → tần số = 8.</p>
+        <p>Giá trị 2 xuất hiện 6 lần → tần số = 6.</p>
+        <p>Giá trị 3 xuất hiện 2 lần → tần số = 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Chiều cao (cm) của 10 học sinh: 150, 155, 160, 155, 165, 150, 160, 155, 160, 165.</p>
+        <p>Giá trị 150: tần số 2.</p>
+        <p>Giá trị 155: tần số 3.</p>
+        <p>Giá trị 160: tần số 3.</p>
+        <p>Giá trị 165: tần số 2.</p>
+        <p>Đây là dữ liệu liên tục nhưng đã được làm tròn thành rời rạc (150, 155, 160, 165).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Số lượng xe ô tô trong 10 gia đình: 1, 2, 1, 0, 1, 2, 1, 1, 0, 1.</p>
+        <p>Tần số 0: 2, tần số 1: 6, tần số 2: 2.</p>
+        <p>Tổng tần số = 10 = số học sinh.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Điểm kiểm tra Toán của 25 học sinh: 5, 6, 7, 8, 9, 10.</p>
+        <p>Tần số: 5 (3), 6 (5), 7 (7), 8 (4), 9 (3), 10 (3).</p>
+        <p>Tổng tần số: 3+5+7+4+3+3 = 25 ✓</p>
+        <p>Điểm trung bình: \(\dfrac{5·3 + 6·5 + 7·7 + 8·4 + 9·3 + 10·3}{25} = \dfrac{165}{25} = 6.6\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Dãy số: 1, 2, 2, 3, 3, 3, 4, 4, 4, 4. Giá trị nào có tần số lớn nhất?</p>
+        <p>Giá trị 4 có tần số 4 (lớn nhất). Đừng nhầm với giá trị lớn nhất (cũng là 4 trong trường hợp này, nhưng không phải luôn đúng).</p>
+        <p>Dãy số: 1, 2, 2, 3, 3, 3, 100. Tần số lớn nhất vẫn là 3 (tần số 3), không phải 100 (tần số 1).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu rời rạc: giá trị riêng lẻ. Dữ liệu liên tục: giá trị trong khoảng. Tần số = số lần xuất hiện.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định loại dữ liệu. Tính tần số. Sắp xếp dữ liệu theo thứ tự.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Dữ liệu nào là rời rạc: số học sinh, chiều cao, số anh chị em? <em>— Số học sinh và số anh chị em là rời rạc.</em></p>
+        <p>Dãy số: 2, 3, 2, 4, 2, 3. Tần số của 2 là bao nhiêu? <em>— 3 lần.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Dãy số: 1, 1, 2, 2, 2, 3, 3, 4. Tần số: 1(2), 2(3), 3(2), 4(1).</p>
+        <p>Điểm số: 7(5), 8(8), 9(4), 10(3). Tổng = 20 học sinh.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc. Chiều cao, nhiệt độ, thời gian là liên tục." },
+      { type: "num", prompt: "Dãy số: 3, 5, 3, 7, 3, 5. Tần số của 3 là bao nhiêu?", answer: 3, hint: "Đếm số lần xuất hiện.", explain: "3 lần." },
+      { type: "num", prompt: "Dãy số: 2, 2, 2, 4, 4, 6. Tần số lớn nhất là bao nhiêu?", answer: 3, hint: "Giá trị 2 xuất hiện 3 lần.", explain: "3." },
+      { type: "text", prompt: "Số anh chị em của 10 học sinh: 1, 2, 1, 0, 1, 2, 1, 1, 0, 1. Tần số của 1 là bao nhiêu?", answer: "6", accept: ["6", "6"], hint: "Đếm số lần.", explain: "6 lần." },
+      { type: "num", prompt: "Tổng tần số của dãy số 1, 2, 3, 4, 5 bằng bao nhiêu?", answer: 5, hint: "Mỗi số xuất hiện 1 lần.", explain: "5." },
+      { type: "mc", prompt: "Dữ liệu liên tục là:", choices: ["Số học sinh", "Số xe ô tô", "Chiều cao", "Số sách đọc"], correct: 2, hint: "Chiều cao có thể nhận mọi giá trị trong khoảng.", explain: "Chiều cao là dữ liệu liên tục." },
+    ],
+  },
+
+  {
+    id: "g8-b19",
+    num: 19,
+    chapter: 5,
+    title: "Biểu diễn dữ liệu bằng bảng, biểu đồ",
+    summary: "Biểu đồ tần số hình cột, biểu đồ đoạn thẳng, biểu đồ quạt tròn. Cách vẽ và đọc biểu đồ.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Dữ liệu số anh chị em: 0(4), 1(8), 2(6), 3(2). Vẽ biểu đồ tần số hình cột để trực quan hóa.</p>
+      <div class="definition">
+        <p><strong>Biểu đồ tần số hình cột</strong> là biểu đồ dùng cột để biểu diễn tần số của mỗi giá trị. Chiều cao cột tỷ lệ với tần số.</p>
+        <p><strong>Biểu đồ đoạn thẳng</strong> là biểu đồ nối các điểm biểu diễn tần số, tạo thành đường gấp khúc.</p>
+        <p><strong>Biểu đồ quạt tròn</strong> là biểu đồ dùng các quạt để biểu diễn tỷ lệ phần trăm của mỗi giá trị so với tổng.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Hiểu nhanh.</strong> Biểu đồ = hình ảnh hóa dữ liệu. Cột = tần số. Đoạn thẳng = xu hướng. Quạt tròn = phần trăm.</p>
+        <p>Chọn biểu đồ phù hợp:
+        <ul>
+          <li>Tần số rời rạc: cột hoặc đoạn thẳng</li>
+          <li>Tỷ lệ phần trăm: quạt tròn</li>
+          <li>Xu hướng theo thời gian: đoạn thẳng (thời gian trên trục hoành)</li>
+        </ul></p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Nhầm dữ liệu: chiều cao là liên tục, không vẽ biểu đồ quạt tròn.</li>
+          <li>Tỷ lệ sai: tổng tỷ lệ phải bằng 100% (hoặc 1). Đừng để tổng >100% hoặc <100%.</li>
+          <li>Đơn vị: biểu đồ tần số có đơn vị là số lần xuất hiện, biểu đồ quạt tròn là phần trăm.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán của 20 học sinh: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
+        <p>Biểu đồ tần số: cột cao tương ứng với tần số. Điểm 7 có cột cao nhất (5). Điểm 5 và 10 có cột thấp nhất (2).</p>
+        <p>Biểu đồ quạt tròn: điểm 7 chiếm \(\dfrac{5}{20} = 25\)% → quạt 90°.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Số cây trồng được của 5 tổ: tổ 1 (12), tổ 2 (15), tổ 3 (10), tổ 4 (18), tổ 5 (8).</p>
+        <p>Biểu đồ tần số: cột cao 12, 15, 10, 18, 8. Tổ 4 trồng nhiều nhất (18 cây), tổ 5 trồng ít nhất (8 cây).</p>
+        <p>Tổng số cây: 63. Biểu đồ quạt tròn: tổ 4 chiếm \(\dfrac{18}{63} ≈ 28.6\)%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ quạt tròn biểu diễn sở thích: xem phim (40%), đọc sách (25%), thể thao (20%), nghe nhạc (15%).</p>
+        <p>Tổng: 100%. ✓</p>
+        <p>Nếu 100 học sinh: xem phim 40 em, đọc sách 25 em, thể thao 20 em, nghe nhạc 15 em.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Nhiệt độ trung bình các tháng (°C): 18, 20, 23, 26, 28, 30, 31, 30, 28, 25, 22, 19.</p>
+        <p>Biểu đồ đoạn thẳng: trục hoành là tháng (1-12), trục tung là nhiệt độ. Nối các điểm.</p>
+        <p>Nhiệt độ cao nhất: tháng 7 (31°C). Nhiệt độ thấp nhất: tháng 12 (19°C). Chênh lệch: 12°C.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Biểu đồ quạt tròn có 4 quạt: A (30%), B (40%), C (20%), D (20%). Tổng = 110% → sai!</p>
+        <p>Biểu đồ tần số có cột cao nhất không phải giá trị lớn nhất! Ví dụ: điểm 5 có 10 HS (cao nhất), điểm 10 có 2 HS (thấp nhất).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ tần số = cột hoặc đoạn thẳng. Biểu đồ quạt tròn = phần trăm. Tổng phần trăm = 100%.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Xác định loại dữ liệu. Vẽ và đọc biểu đồ. Tính tần số, tỷ lệ, tổng, trung bình.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Biểu đồ quạt tròn có 3 quạt: 30%, 45%, ? <em>— Quạt thứ ba = 25%.</em></p>
+        <p>Biểu đồ tần số có cột cao nhất ứng với giá trị nào? <em>— Giá trị có tần số cao nhất (xuất hiện nhiều nhất).</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tần số: giá trị 5 (3), giá trị 7 (5), giá trị 9 (2). Tổng tần số = 10.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc." },
+      { type: "num", prompt: "Biểu đồ quạt tròn có 3 quạt: 30%, 45%, ?", answer: 25, hint: "100% − 30% − 45%.", explain: "25%." },
+      { type: "text", prompt: "Dãy dữ liệu: 5, 7, 5, 8, 5, 7. Tần số của giá trị 5 là bao nhiêu?", answer: "3", accept: ["3", "3"], hint: "Đếm số lần xuất hiện.", explain: "5 xuất hiện 3 lần." },
+      { type: "mc", prompt: "Biểu đồ nào phù hợp nhất để biểu diễn tỷ lệ phần trăm?", choices: ["Biểu đồ tần số hình cột", "Biểu đồ đoạn thẳng", "Biểu đồ quạt tròn", "Bảng số liệu"], correct: 2, hint: "Biểu đồ quạt tròn biểu diễn phần trăm.", explain: "Biểu đồ quạt tròn dùng các quạt biểu diễn tỷ lệ phần trăm." },
+      { type: "num", prompt: "Tần số: giá trị 2 (4 lần), giá trị 4 (6 lần), giá trị 6 (5 lần). Tổng tần số = ?", answer: 15, hint: "4 + 6 + 5.", explain: "15." },
+      { type: "mc", prompt: "Biểu đồ tần số có cột cao nhất ứng với:", choices: ["Giá trị lớn nhất", "Giá trị có tần số cao nhất", "Giá trị nhỏ nhất", "Giá trị trung bình"], correct: 1, hint: "Cột cao = tần số lớn.", explain: "Cột cao nhất ứng với giá trị có tần số cao nhất." },
+    ],
+  },
+
+  {
+    id: "g8-b20",
+    num: 20,
+    chapter: 5,
+    title: "Phân tích số liệu thống kê dựa vào biểu đồ",
+    summary: "Đọc và phân tích biểu đồ để rút ra kết luận. Tính trung bình, tìm giá trị lớn nhất/nhỏ nhất, xu hướng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Biểu đồ tần số điểm kiểm tra: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2). Hỏi điểm trung bình? Điểm nào phổ biến nhất?</p>
+      <div class="idea">
+        <p><strong>Phân tích biểu đồ tần số:</strong></p>
+        <ul>
+          <li>Tìm giá trị có tần số lớn nhất → giá trị phổ biến nhất</li>
+          <li>Tính điểm trung bình: \(\dfrac{∑(giá trị × tần số)}{tổng tần số}\)</li>
+          <li>Tìm giá trị lớn nhất/nhỏ nhất</li>
+          <li>Nhận xét phân bố: tập trung ở đâu, có giá trị bất thường không</li>
+        </ul>
+      </div>
+      <div class="idea">
+        <p><strong>Phân tích biểu đồ quạt tròn:</strong></p>
+        <ul>
+          <li>Phần nào lớn nhất →占比 cao nhất</li>
+          <li>So sánh tỷ lệ giữa các nhóm</li>
+          <li>Tính số lượng nếu biết tổng</li>
+        </ul>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Tính trung bình sai: nhân giá trị với tần số, không cộng trước rồi chia.</li>
+          <li>Đọc sai biểu đồ quạt tròn: nhầm phần trăm với số tuyệt đối.</li>
+          <li>Không chú ý đơn vị: biểu đồ tần số là số lần, biểu đồ quạt tròn là phần trăm.</li>
+        </ul>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
+        <p>Giá trị phổ biến nhất: 7 (tần số 5).</p>
+        <p>Điểm trung bình: \(\dfrac{5·2 + 6·3 + 7·5 + 8·4 + 9·4 + 10·2}{20} = \dfrac{141}{20} = 7.05\).</p>
+        <p>Tỷ lệ điểm >= 8: \(\dfrac{4 + 4 + 2}{20} = 50\)%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ làm chậm.</strong> Số cây trồng được của 5 tổ: 12, 15, 10, 18, 8.</p>
+        <p>Tổng: 63 cây. Trung bình: 63:5 = 12.6 cây/tổ.</p>
+        <p>Tổ 4 trồng nhiều nhất (18 cây), tổ 5 trồng ít nhất (8 cây).</p>
+        <p>Tỷ lệ tổ trồng >= 15 cây: 2/5 = 40%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ quạt tròn: xem phim (40%), đọc sách (25%), thể thao (20%), nghe nhạc (15%).</p>
+        <p>Nếu có 100 học sinh: xem phim 40 em, đọc sách 25 em, thể thao 20 em, nghe nhạc 15 em.</p>
+        <p>Phổ biến nhất: xem phim (40%). Ít phổ biến nhất: nghe nhạc (15%).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Nhiệt độ trung bình các tháng: 18, 20, 23, 26, 28, 30, 31, 30, 28, 25, 22, 19.</p>
+        <p>Nhiệt độ trung bình năm: \(\dfrac{∑}{12}\) ≈ 24.75°C.</p>
+        <p>Tháng có nhiệt độ cao nhất: tháng 7 (31°C).</p>
+        <p>Tháng có nhiệt độ thấp nhất: tháng 12 (19°C).</p>
+        <p>Chênh lệch: 12°C. Mùa nóng kéo dài từ tháng 6-9 (nhiệt độ >= 28°C).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Biểu đồ tần số có cột cao nhất ứng với giá trị 5 (tần số 10), nhưng giá trị 5 không phải điểm trung bình!</p>
+        <p>Điểm: 3(2), 4(5), 5(10), 6(8), 7(4). Giá trị phổ biến nhất = 5, nhưng điểm trung bình ≈ 5.4.</p>
+        <p>Đừng nhầm giá trị phổ biến nhất với điểm trung bình!</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân tích biểu đồ: giá trị phổ biến nhất, điểm trung bình, giá trị lớn nhất/nhỏ nhất, xu hướng.</p></div>
+      <div class="idea">
+        <p><strong>Kĩ năng cần luyện.</strong> Đọc biểu đồ, tính toán, rút ra kết luận. Không chỉ đọc số liệu mà còn phân tích ý nghĩa.</p>
+      </div>
+      <div class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Điểm: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2). Giá trị phổ biến nhất = ? <em>— 7 (tần số 5).</em></p>
+        <p>Biểu đồ quạt tròn có 3 quạt: 30%, 45%, 25%. Quạt lớn nhất = ? <em>— Quạt 45%.</em></p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Dãy số: 1(2), 2(3), 3(4), 4(1). Trung bình = 2.6.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Điểm: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2). Tính điểm trung bình.", answer: 7.05, accept: ["7.05", "7.1"], hint: "(5×2 + 6×3 + 7×5 + 8×4 + 9×4 + 10×2)/20.", explain: "141/20 = 7.05." },
+      { type: "num", prompt: "Dãy số: 1(2), 2(3), 3(4), 4(1). Tính trung bình.", answer: 2.6, accept: ["2.6", "13/5"], hint: "(1×2 + 2×3 + 3×4 + 4×1)/10.", explain: "26/10 = 2.6." },
+      { type: "mc", prompt: "Điểm: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2). Giá trị phổ biến nhất là:", choices: ["5", "6", "7", "10"], correct: 2, hint: "Tần số lớn nhất là 5 (giá trị 7).", explain: "7." },
+      { type: "num", prompt: "Biểu đồ quạt tròn: 30%, 45%, 25%. Tổng = 200 người. Số người quạt lớn nhất = ?", answer: 90, hint: "45% × 200.", explain: "90 người." },
+      { type: "text", prompt: "Điểm: 6(3), 7(5), 8(4), 9(2). Tính % điểm >= 8.", answer: "60%", accept: ["60%", "60%", "0.6"], hint: "(4+2)/(3+5+4+2) = 6/10.", explain: "60%." },
+      { type: "num", prompt: "Nhiệt độ: 18, 20, 23, 26, 28, 30, 31, 30, 28, 25, 22, 19. Nhiệt độ cao nhất = ?", answer: 31, hint: "Max của dãy.", explain: "31°C." },
+    ],
+  },
 ];
 
 const COURSES = [
