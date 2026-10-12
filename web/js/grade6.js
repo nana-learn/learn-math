@@ -288,6 +288,116 @@ const G6_LESSONS = [
       { type: "num", prompt: "Chia đều 48 cái kẹo cho 6 bạn. Mỗi bạn được bao nhiêu kẹo?", answer: 8, hint: "48 : 6 = 8.", explain: "8 kẹo." },
     ],
   },
+  {
+    id: "g6-b6",
+    num: 6,
+    chapter: 1,
+    title: "Luỹ thừa với số mũ tự nhiên",
+    summary: "a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0). Quy ước 0^0 không xác định.",
+    body: String.raw`
+      <p><strong>Vì sao cần luỹ thừa?</strong> Khi nhân nhiều số giống nhau, việc viết lại dưới dạng luỹ thừa giúp ngắn gọn và dễ tính toán.</p>
+      <div class="definition">
+        <p>Luỹ thừa: \(a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ lần}}\), \(a\) là cơ số, \(n\) là số mũ. Qui ước \(a^0 = 1\) (với \(a \neq 0\)).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(2^3 = 2 \cdot 2 \cdot 2 = 8\). \(5^2 = 5 \cdot 5 = 25\). \(10^4 = 10 \cdot 10 \cdot 10 \cdot 10 = 10000\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(3^4 = 81\). Tính nhẩm: 3^2 = 9, 9^2 = 81. \(2^5 = 32\). Tính nhẩm: 2^3 = 8, 8 × 2 = 16, 16 × 2 = 32.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(0^0\) không xác định. \(0^5 = 0\) (một số khác 0). Đừng nhầm \(0^0 = 1\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Các luỹ thừa cần nhớ.</strong> 2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32, 2^6=64, 2^7=128, 2^8=256, 2^9=512, 2^10=1024. 3^2=9, 3^3=27, 3^4=81.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>\(0^0\) không xác định. Đừng ghi kết quả là 1.</li>
+          <li>\(a^1 = a\). Mọi số mũ 1 đều bằng chính số đó.</li>
+          <li>\(1^n = 1\). 1 mũ bao nhiêu cũng bằng 1.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(2^5 = ?\) <em>— 32.</em></p>
+        <p>\(3^3 = ?\) <em>— 27.</em></p>
+        <p>\(10^3 = ?\) <em>— 1000.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> \(4^3\). Bước 1: 4 × 4 = 16. Bước 2: 16 × 4 = 64. Kết quả: 64.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một hình lập phương cạnh 5 cm. Thể tích bằng bao nhiêu? <em>— 5^3 = 125 cm³.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0). 1^n = 1, 0^n = 0 (n > 0).</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "2^5 bằng bao nhiêu?", answer: 32, hint: "2^3=8, 8×2=16, 16×2=32.", explain: "32." },
+      { type: "num", prompt: "3^3 bằng bao nhiêu?", answer: 27, hint: "3×3=9, 9×3=27.", explain: "27." },
+      { type: "num", prompt: "10^3 bằng bao nhiêu?", answer: 1000, hint: "10×10=100, 100×10=1000.", explain: "1000." },
+      { type: "num", prompt: "4^2 bằng bao nhiêu?", answer: 16, hint: "4×4=16.", explain: "16." },
+      { type: "mc", prompt: "Kết quả của 0^4 là gì?", choices: ["0", "1", "4", "Không xác định"], correct: 0, hint: "0 mũ dương luôn bằng 0.", explain: "0." },
+      { type: "mc", prompt: "Kết quả của 1^100 là gì?", choices: ["0", "1", "100", "1000"], correct: 1, hint: "1 mũ bao nhiêu cũng bằng 1.", explain: "1." },
+      { type: "num", prompt: "Một hình lập phương cạnh 3 cm. Thể tích bằng bao nhiêu?", answer: 27, hint: "3^3 = 27.", explain: "27 cm³." },
+    ],
+  },
+  {
+    id: "g6-b7",
+    num: 7,
+    chapter: 1,
+    title: "Thứ tự thực hiện các phép tính",
+    summary: "Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia → cộng/trừ. Có dấu ngoặc: trong ngoặc trước.",
+    body: String.raw`
+      <p><strong>Vì sao cần thứ tự?</strong> Trong biểu thức nhiều phép tính, phải làm theo thứ tự đúng thì mới ra kết quả đúng. Ví dụ: 2 + 3 × 4 ≠ (2 + 3) × 4.</p>
+      <div class="definition">
+        <p>Thứ tự thực hiện: 1) Biểu thức có dấu ngoặc: làm trong ngoặc trước ((), {}, []). 2) Không có dấu ngoặc: luỹ thừa → nhân/chia (từ trái sang phải) → cộng/trừ (từ trái sang phải).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(2 + 3 \cdot 4 = 2 + 12 = 14\). \((2 + 3) \cdot 4 = 5 \cdot 4 = 20\). \(2^3 + 5 = 8 + 5 = 13\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(10 - 2 \cdot 3^2 = 10 - 2 \cdot 9 = 10 - 18 = -8\). \(20 : 4 + 3^2 = 5 + 9 = 14\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(8 - 3 + 2\) không phải \(8 - 5 = 3\). Phải làm từ trái sang phải: \(8 - 3 = 5\), rồi \(5 + 2 = 7\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Qui tắc nhớ.</strong> PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction. Từ trái sang phải cho cùng cấp độ.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>\(8 - 3 + 2 = 7\), không phải 3. Phải làm từ trái sang phải.</li>
+          <li>\(2 + 3 \cdot 4 = 14\), không phải 20. Nhân làm trước cộng.</li>
+          <li>\((2 + 3) \cdot 4 = 20\), có dấu ngoặc thì làm trong ngoặc trước.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(5 + 3 \cdot 2 = ?\) <em>— 11.</em></p>
+        <p>\((5 + 3) \cdot 2 = ?\) <em>— 16.</em></p>
+        <p>\(2^3 + 4 = ?\) <em>— 12.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> \(15 - 3 \cdot 2^2\). Bước 1: luỹ thừa \(2^2 = 4\). Bước 2: nhân \(3 \cdot 4 = 12\). Bước 3: trừ \(15 - 12 = 3\). Kết quả: 3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Mai mua 3 bút giá 5 nghìn và 2 vở giá 10 nghìn. Tổng cộng bao nhiêu? <em>— 3 \cdot 5 + 2 \cdot 10 = 15 + 20 = 35 nghìn.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Luỹ thừa trước, rồi nhân/chia, rồi cộng/trừ. Trong ngoặc trước. Từ trái sang phải cho cùng cấp.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "5 + 3 × 2 bằng bao nhiêu?", answer: 11, hint: "3×2=6, 5+6=11.", explain: "11." },
+      { type: "num", prompt: "(5 + 3) × 2 bằng bao nhiêu?", answer: 16, hint: "5+3=8, 8×2=16.", explain: "16." },
+      { type: "num", prompt: "2^3 + 4 bằng bao nhiêu?", answer: 12, hint: "2^3=8, 8+4=12.", explain: "12." },
+      { type: "num", prompt: "15 - 3 × 2^2 bằng bao nhiêu?", answer: 3, hint: "2^2=4, 3×4=12, 15-12=3.", explain: "3." },
+      { type: "mc", prompt: "8 - 3 + 2 bằng bao nhiêu?", choices: ["3", "7", "1", "13"], correct: 1, hint: "Làm từ trái sang phải: 8-3=5, 5+2=7.", explain: "7." },
+      { type: "num", prompt: "20 : 4 + 3^2 bằng bao nhiêu?", answer: 14, hint: "20:4=5, 3^2=9, 5+9=14.", explain: "14." },
+      { type: "num", prompt: "Một hình chữ nhật chiều dài 8 cm, chiều rộng 5 cm. Chu vi bằng bao nhiêu?", answer: 26, hint: "Chu vi = (dài + rộng) × 2 = (8+5)×2.", explain: "26 cm." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
