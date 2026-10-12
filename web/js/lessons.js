@@ -5768,6 +5768,20 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> \(\dfrac{x^2-9}{x-3} = x+3\) khi x ≠ 3.</p>
         <p>\(\dfrac{4x^2-1}{2x-1} = 2x+1\) khi x ≠ 1/2.</p>
       </div>
+      <figure class="figure" data-animation="g8-b21-algebraic-fraction">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phân thức đại số A/B với mẫu khác 0">
+          <rect x="100" y="130" width="160" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="100" y1="160" x2="260" y2="160" stroke="#58C4DD" stroke-width="2"/>
+          <text x="180" y="150" font-size="14" fill="#58C4DD" text-anchor="middle">A</text>
+          <text x="180" y="180" font-size="14" fill="#58C4DD" text-anchor="middle">B</text>
+          <text x="180" y="120" font-size="12" fill="#9A72AC" text-anchor="middle">Phân thức đại số A/B</text>
+          <text x="180" y="100" font-size="10" fill="#FC6255" text-anchor="middle">Điều kiện: B ≠ 0</text>
+          <circle cx="100" cy="130" r="2" fill="#58C4DD"/>
+          <circle cx="260" cy="130" r="2" fill="#58C4DD"/>
+          <circle cx="260" cy="190" r="2" fill="#58C4DD"/>
+          <circle cx="100" cy="190" r="2" fill="#58C4DD"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Phân thức \(\dfrac{3x}{x-4}\) xác định khi nào?", answer: "x ≠ 4", accept: ["x ≠ 4", "x != 4"], hint: "Mẫu ≠ 0.", explain: "x - 4 ≠ 0 → x ≠ 4." },
@@ -5817,6 +5831,21 @@ const G8_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Rút gọn $\frac{4x^2}{8x}$ khi x ≠ 0. <em>— = x/2.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b22-fraction-properties">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tính chất cơ bản của phân thức đại số">
+          <rect x="60" y="120" width="120" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="60" y1="150" x2="180" y2="150" stroke="#58C4DD" stroke-width="2"/>
+          <text x="120" y="140" font-size="14" fill="#58C4DD" text-anchor="middle">A</text>
+          <text x="120" y="170" font-size="14" fill="#58C4DD" text-anchor="middle">B</text>
+          <line x1="200" y1="150" x2="300" y2="150" stroke="#9A72AC" stroke-width="1" stroke-dasharray="5 3"/>
+          <rect x="210" y="120" width="120" height="60" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="210" y1="150" x2="330" y2="150" stroke="#58C4DD" stroke-width="2"/>
+          <text x="270" y="140" font-size="14" fill="#58C4DD" text-anchor="middle">A·M</text>
+          <text x="270" y="170" font-size="14" fill="#58C4DD" text-anchor="middle">B·M</text>
+          <text x="165" y="145" font-size="12" fill="#9A72AC" text-anchor="middle">=</text>
+          <text x="160" y="100" font-size="11" fill="#FC6255" text-anchor="middle">A/B = A·M / B·M (M ≠ 0)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Rút gọn $\frac{6x^2}{9x}$ khi x ≠ 0.", answer: "2x/3", accept: ["2x/3", "2x:3"], hint: "Rút 3x.", explain: "6x²/9x = 2x/3." },
@@ -5863,6 +5892,25 @@ const G8_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>$\frac{1}{x} + \frac{1}{2x} = ?$ <em>— = 3/(2x).</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b23-fraction-addition">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phép cộng phân thức đại số">
+          <rect x="40" y="130" width="80" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="40" y1="155" x2="120" y2="155" stroke="#58C4DD" stroke-width="2"/>
+          <text x="80" y="145" font-size="12" fill="#58C4DD" text-anchor="middle">A</text>
+          <text x="80" y="170" font-size="12" fill="#58C4DD" text-anchor="middle">B</text>
+          <text x="140" y="155" font-size="12" fill="#9A72AC">+</text>
+          <rect x="170" y="130" width="80" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="170" y1="155" x2="250" y2="155" stroke="#FC6255" stroke-width="2"/>
+          <text x="210" y="145" font-size="12" fill="#FC6255" text-anchor="middle">C</text>
+          <text x="210" y="170" font-size="12" fill="#FC6255" text-anchor="middle">D</text>
+          <text x="290" y="155" font-size="12" fill="#9A72AC">=</text>
+          <rect x="310" y="125" width="30" height="60" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <line x1="310" y1="155" x2="340" y2="155" stroke="#9A72AC" stroke-width="2"/>
+          <text x="325" y="145" font-size="12" fill="#9A72AC" text-anchor="middle">AD+BC</text>
+          <text x="325" y="175" font-size="12" fill="#9A72AC" text-anchor="middle">BD</text>
+          <text x="180" y="100" font-size="11" fill="#83C167" text-anchor="middle">A/B + C/D = (AD+BC)/BD</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Tính $\frac{2}{x} + \frac{3}{x}$.", answer: "5/x", accept: ["5/x", "5:x"], hint: "Cùng mẫu.", explain: "5/x." },
@@ -5906,6 +5954,25 @@ const G8_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>$\frac{x}{y} \cdot \frac{y}{x} = ?$ <em>— = 1.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b24-fraction-multiplication">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phép nhân phân thức đại số">
+          <rect x="50" y="130" width="80" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="50" y1="155" x2="130" y2="155" stroke="#58C4DD" stroke-width="2"/>
+          <text x="90" y="145" font-size="12" fill="#58C4DD" text-anchor="middle">A</text>
+          <text x="90" y="170" font-size="12" fill="#58C4DD" text-anchor="middle">B</text>
+          <text x="150" y="155" font-size="12" fill="#9A72AC">×</text>
+          <rect x="170" y="130" width="80" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="170" y1="155" x2="250" y2="155" stroke="#FC6255" stroke-width="2"/>
+          <text x="210" y="145" font-size="12" fill="#FC6255" text-anchor="middle">C</text>
+          <text x="210" y="170" font-size="12" fill="#FC6255" text-anchor="middle">D</text>
+          <text x="290" y="155" font-size="12" fill="#9A72AC">=</text>
+          <rect x="310" y="125" width="30" height="60" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <line x1="310" y1="155" x2="340" y2="155" stroke="#9A72AC" stroke-width="2"/>
+          <text x="325" y="145" font-size="12" fill="#9A72AC" text-anchor="middle">A·C</text>
+          <text x="325" y="175" font-size="12" fill="#9A72AC" text-anchor="middle">B·D</text>
+          <text x="180" y="100" font-size="11" fill="#83C167" text-anchor="middle">A/B × C/D = (A·C)/(B·D)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Tính $\frac{x}{2} \cdot \frac{4}{x}$.", answer: "2", accept: ["2"], hint: "Rút gọn.", explain: "4/2 = 2." },

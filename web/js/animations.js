@@ -706,6 +706,43 @@ const AnimationManager = {
           { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b21: Phân thức đại số
+      'g8-b21-algebraic-fraction': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b22: Tính chất cơ bản của phân thức đại số
+      'g8-b22-fraction-properties': {
+        steps: [
+          { selector: 'rect:nth-child(1), rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b23: Phép cộng và phép trừ phân thức đại số
+      'g8-b23-fraction-addition': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b24: Phép nhân và phép chia phân thức đại số
+      'g8-b24-fraction-multiplication': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
