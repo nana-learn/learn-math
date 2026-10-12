@@ -506,6 +506,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Số nào sau đây chia hết cho cả 2 và 5?", choices: ["20", "25", "30", "Cả A và C"], correct: 3, hint: "Chia hết cho 2 và 5 thì phải tận cùng là 0.", explain: "20 và 30 đều tận cùng là 0." },
     ],
   },
+  {
+    id: "g6-b10",
+    num: 10,
+    chapter: 2,
+    title: "Số nguyên tố",
+    summary: "Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số có nhiều hơn hai ước.",
+    body: String.raw`
+      <p><strong>Vì sao cần số nguyên tố?</strong> Số nguyên tố là "nguyên liệu xây dựng" của mọi số tự nhiên. Mọi số tự nhiên lớn hơn 1 đều phân tích được thành tích các số nguyên tố.</p>
+      <div class="definition">
+        <p>Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số tự nhiên lớn hơn 1 và có nhiều hơn hai ước.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2, 3, 5, 7, 11 là số nguyên tố. 4, 6, 8, 9, 10 là hợp số. Số 1 không phải số nguyên tố và không phải hợp số.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 13 là số nguyên tố vì chỉ chia hết cho 1 và 13. 15 là hợp số vì chia hết cho 1, 3, 5, 15. 17 là số nguyên tố.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Số 2 là số nguyên tố chẵn duy nhất. Tất cả các số nguyên tố khác đều lẻ. Đừng nghĩ số lẻ nào cũng là số nguyên tố (ví dụ: 9, 15, 21).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Bảng số nguyên tố nhỏ.</strong> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Số 1 không phải số nguyên tố và không phải hợp số. Đây là trường hợp đặc biệt.</li>
+          <li>Số 2 là số nguyên tố chẵn duy nhất. Các số nguyên tố khác đều lẻ.</li>
+          <li>Số lẻ không hẳn là số nguyên tố (9, 15, 21, 25, 27, 33, 35, 39, 45, 49, 51, 55, 57, 63, 65, 69, 75, 77, 81, 85, 87, 91, 93, 95, 99).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Số nào là số nguyên tố trong các số: 11, 12, 13? <em>— 11 và 13.</em></p>
+        <p>Số nào là hợp số trong các số: 14, 15, 16? <em>— Cả ba đều là hợp số.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Kiểm tra 17 có phải số nguyên tố không. Bước 1: 17 > 1. Bước 2: kiểm tra chia hết cho 2, 3, 5. Bước 3: 17 không chia hết cho 2 (lẻ), 3 (1+7=8 không chia hết cho 3), 5 (không tận cùng 0 hoặc 5). Bước 4: không chia hết cho số nào, vậy 17 là số nguyên tố.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Viết số 12 thành tích các số nguyên tố. <em>— 12 = 2 × 2 × 3 = 2² × 3.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Số nguyên tố > 1 và chỉ có hai ước. Hợp số > 1 và có nhiều hơn hai ước. Số 1 không phải nguyên tố cũng không phải hợp số.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Số nào là số nguyên tố?", choices: ["1", "2", "4", "9"], correct: 1, hint: "2 chỉ chia hết cho 1 và 2.", explain: "2." },
+      { type: "mc", prompt: "Số nào là hợp số?", choices: ["3", "5", "7", "9"], correct: 3, hint: "9 = 3 × 3 có nhiều ước.", explain: "9." },
+      { type: "num", prompt: "Số nào là số nguyên tố trong các số: 13, 14, 15?", answer: "13", accept: ["13"], hint: "13 chỉ chia hết cho 1 và 13.", explain: "13." },
+      { type: "num", prompt: "Số nào là hợp số trong các số: 17, 18, 19?", answer: "18", accept: ["18"], hint: "18 có nhiều ước: 1, 2, 3, 6, 9, 18.", explain: "18." },
+      { type: "mc", prompt: "Số nguyên tố chẵn duy nhất là số nào?", choices: ["0", "2", "4", "Không có"], correct: 1, hint: "2 là số nguyên tố chẵn duy nhất.", explain: "2." },
+      { type: "num", prompt: "Phân tích số 18 thành tích các số nguyên tố.", answer: "2 × 3²", accept: ["2 × 3²", "2*3^2", "2 × 3 × 3", "2*3*3"], hint: "18 = 2 × 9 = 2 × 3 × 3.", explain: "2 × 3²." },
+      { type: "mc", prompt: "Số nào sau đây không phải số nguyên tố?", choices: ["11", "13", "17", "21"], correct: 3, hint: "21 = 3 × 7 là hợp số.", explain: "21." },
+    ],
+  },
+  {
+    id: "g6-b11",
+    num: 11,
+    chapter: 2,
+    title: "Ước chung. Ước chung lớn nhất",
+    summary: "Ước chung của hai hay nhiều số là ước của tất cả các số đó. ƯCLN là ước chung lớn nhất.",
+    body: String.raw`
+      <p><strong>Vì sao cần ước chung?</strong> Ước chung giúp ta tìm các số chia hết đồng thời cho nhiều số. ƯCLN giúp rút gọn phân số và giải nhiều bài toán chia đều.</p>
+      <div class="definition">
+        <p>Ước chung của hai hay nhiều số là ước của tất cả các số đó. Ước chung lớn nhất (ƯCLN) là số lớn nhất trong tập ước chung. Kí hiệu ƯCLN(a, b) hoặc (a, b).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Ước chung của 12 và 18 là 1, 2, 3, 6. ƯCLN(12, 18) = 6. Ước chung của 8 và 12 là 1, 2, 4. ƯCLN(8, 12) = 4.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ƯCLN(24, 36, 48) = 12. ƯCLN(15, 25) = 5. Hai số có ƯCLN = 1 gọi là nguyên tố cùng nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> ƯCLN(0, a) = a (với a ≠ 0). Đừng nghĩ ƯCLN(0, a) = 0. Nhưng ƯCLN(0, 0) không xác định.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Tìm ƯCLN bằng phân tích ra thừa số nguyên tố.</strong> Phân tích mỗi số ra thừa số nguyên tố, rồi lấy các thừa số chung với số mũ nhỏ nhất. Tích đó là ƯCLN.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>ƯCLN(0, a) = a với a ≠ 0. Đừng nhầm là 0.</li>
+          <li> Hai số nguyên tố khác nhau luôn nguyên tố cùng nhau. Ví dụ: ƯCLN(5, 7) = 1.</li>
+          <li>ƯCLN(a, a) = a. Hai số bằng nhau thì ƯCLN là chính số đó.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>ƯCLN(12, 18) bằng bao nhiêu? <em>— 6.</em></p>
+        <p>ƯCLN(8, 12) bằng bao nhiêu? <em>— 4.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tìm ƯCLN(24, 36). Bước 1: phân tích 24 = 2³ × 3, 36 = 2² × 3². Bước 2: thừa số chung là 2 và 3. Bước 3: lấy số mũ nhỏ nhất: 2², 3¹. Bước 4: 2² × 3 = 4 × 3 = 12.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Rút gọn phân số 24/36. <em>— 24/36 = (24:12)/(36:12) = 2/3.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> ƯCLN là ước chung lớn nhất. Phân tích ra thừa số nguyên tố để tìm ƯCLN. Hai số nguyên tố cùng nhau khi ƯCLN = 1.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "ƯCLN(12, 18) bằng bao nhiêu?", answer: 6, hint: "Ước chung: 1, 2, 3, 6. Lớn nhất là 6.", explain: "6." },
+      { type: "num", prompt: "ƯCLN(8, 12) bằng bao nhiêu?", answer: 4, hint: "Ước chung: 1, 2, 4. Lớn nhất là 4.", explain: "4." },
+      { type: "num", prompt: "ƯCLN(15, 25) bằng bao nhiêu?", answer: 5, hint: "15 = 3×5, 25 = 5². Thừa số chung: 5.", explain: "5." },
+      { type: "mc", prompt: "ƯCLN(7, 11) bằng bao nhiêu?", choices: ["1", "7", "11", "77"], correct: 0, hint: "7 và 11 là hai số nguyên tố khác nhau.", explain: "1." },
+      { type: "num", prompt: "Rút gọn phân số 24/36.", answer: "2/3", accept: ["2/3"], hint: "ƯCLN(24,36)=12, 24:12=2, 36:12=3.", explain: "2/3." },
+      { type: "num", prompt: "Hai số 8 và 9 có nguyên tố cùng nhau không?", answer: "Có", accept: ["Có", "có"], hint: "ƯCLN(8,9)=1 vì 8=2³, 9=3² không có thừa số chung.", explain: "Có, ƯCLN(8,9)=1." },
+      { type: "num", prompt: "ƯCLN(0, 15) bằng bao nhiêu?", answer: 15, hint: "ƯCLN(0, a) = a với a ≠ 0.", explain: "15." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
