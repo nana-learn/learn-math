@@ -1400,7 +1400,21 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Thống kê loại quả của 20 bạn: 5 bạn thích táo, 8 bạn thích cam, 4 bạn thích chuối, 3 bạn thích xoài. Tính tổng. <em>— 5 + 8 + 4 + 3 = 20.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu định lượng là số, định tính là văn bản. Thu thập → phân loại → lập bảng.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu định lượng là số, định tính là văn bản. Thu thập → phân loại → lập bảng.</p>
+      <figure id="fig-g6-b24-data-table" class="figure" data-animation="g6-b24-data-table">
+        <svg width="400" height="100" viewBox="0 0 400 100">
+          <rect x="20" y="10" width="360" height="80" fill="none" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="20" y1="30" x2="380" y2="30" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="20" y1="50" x2="380" y2="50" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="20" y1="70" x2="380" y2="70" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="120" y1="10" x2="120" y2="90" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="280" y1="10" x2="280" y2="90" stroke="#333" stroke-width="1" opacity="0"/>
+          <text x="70" y="25" font-size="12" text-anchor="middle" opacity="0">Quả</text>
+          <text x="200" y="25" font-size="12" text-anchor="middle" opacity="0">Táo</text>
+          <text x="330" y="25" font-size="12" text-anchor="middle" opacity="0">8</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "mc", prompt: "Dữ liệu 'chiều cao: 145cm, 150cm, 155cm' là", choices: ["Định tính", "Định lượng", "Cả hai", "Không xác định"], correct: 1, hint: "Chiều cao là số đo.", explain: "Định lượng." },
