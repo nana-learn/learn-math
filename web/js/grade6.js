@@ -2053,6 +2053,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tính \(3\frac{1}{3} \cdot \frac{3}{5}\).", answer: "2", accept: ["2", "2/1"], hint: "\(\frac{10}{3} \cdot \frac{3}{5} = \frac{30}{15} = 2\).", explain: "2." },
     ],
   },
+  {
+    id: "g6-b36",
+    num: 36,
+    chapter: 6,
+    title: "Phép chia phân số",
+    summary: "Chia phân số: nhân với phân số nghịch đảo.",
+    body: String.raw`
+      <p><strong>Vì sao cần chia phân số?</strong> Chia phân số giúp tìm giá trị của một đơn vị khi biết tổng và số lượng.</p>
+      <div class="definition">
+        <p>Để chia phân số, nhân với phân số nghịch đảo: \(\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}\) với \(\frac{c}{d} \ne 0\). Với số tự nhiên, \(a : \frac{b}{c} = a \cdot \frac{c}{b}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{3}{4} : \frac{1}{2} = \frac{3}{4} \cdot \frac{2}{1} = \frac{6}{4} = \frac{3}{2}\). \(2 : \frac{1}{3} = 2 \cdot 3 = 6\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{5}{6} : \frac{3}{4} = \frac{5}{6} \cdot \frac{4}{3} = \frac{20}{18} = \frac{10}{9}\). \(3\frac{1}{2} : \frac{7}{4} = \frac{7}{2} \cdot \frac{4}{7} = 2\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được chia \(\frac{3}{4} : \frac{1}{2} = \frac{3}{4} : \frac{2}{1}\) (sai nghịch đảo). Phải nhân với nghịch đảo: \(\frac{3}{4} \cdot \frac{2}{1}\). Đừng quên đổi hỗn số về phân số trước khi chia.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> \(\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}\). Phân số nghịch đảo của \(\frac{c}{d}\) là \(\frac{d}{c}\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Không đổi dấu khi lấy nghịch đảo.</li>
+          <li>Quên đổi hỗn số về phân số trước khi chia.</li>
+          <li>Chia mẫu cho tử thay vì lấy nghịch đảo.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(\frac{2}{3} : \frac{4}{5}\). <em>— \(\frac{5}{6}\).</em></p>
+        <p>Tính \(5 : \frac{2}{3}\). <em>— \(\frac{15}{2}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính \(\frac{3}{4} : \frac{2}{5}\). Bước 1: nghịch đảo \(\frac{2}{5}\) thành \(\frac{5}{2}\). Bước 2: \(\frac{3}{4} \cdot \frac{5}{2} = \frac{15}{8}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{8} : \frac{10}{9}\). <em>— \(\frac{9}{16}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Chia phân số: nhân với nghịch đảo. \(\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}\).</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính \(\frac{3}{5} : \frac{2}{3}\).", answer: "9/10", accept: ["9/10", "9:10"], hint: "\(\frac{3}{5} \cdot \frac{3}{2} = \frac{9}{10}\).", explain: "\(\frac{9}{10}\)." },
+      { type: "num", prompt: "Tính \(4 : \frac{2}{3}\).", answer: "6", accept: ["6", "6/1"], hint: "4 \(\cdot \frac{3}{2} = 6\).", explain: "6." },
+      { type: "num", prompt: "Tính \(\frac{5}{6} : \frac{10}{9}\).", answer: "3/4", accept: ["3/4", "3:4"], hint: "\(\frac{5}{6} \cdot \frac{9}{10} = \frac{45}{60} = \frac{3}{4}\).", explain: "\(\frac{3}{4}\)." },
+      { type: "num", prompt: "Tính \(2\frac{1}{2} : \frac{5}{4}\).", answer: "2", accept: ["2", "2/1"], hint: "\(\frac{5}{2} \cdot \frac{4}{5} = 2\).", explain: "2." },
+      { type: "mc", prompt: "Kết quả \(\frac{4}{5} : \frac{2}{3}\) là", choices: ["\(\frac{6}{5}\)", "\(\frac{5}{6}\)", "\(\frac{8}{15}\)", "\(\frac{12}{10}\)"], correct: 0, hint: "\(\frac{4}{5} \cdot \frac{3}{2} = \frac{12}{10} = \frac{6}{5}\).", explain: "\(\frac{6}{5}\)." },
+      { type: "num", prompt: "Tính \(6 : \frac{3}{4}\).", answer: "8", accept: ["8", "8/1"], hint: "6 \(\cdot \frac{4}{3} = 8\).", explain: "8." },
+      { type: "num", prompt: "Tính \(\frac{7}{8} : \frac{14}{9}\).", answer: "9/16", accept: ["9/16", "9:16"], hint: "\(\frac{7}{8} \cdot \frac{9}{14} = \frac{63}{112} = \frac{9}{16}\).", explain: "\(\frac{9}{16}\)." },
+    ],
+  },
+  {
+    id: "g6-b37",
+    num: 37,
+    chapter: 6,
+    title: "Giá trị của phân số",
+    summary: "Tính giá trị biểu thức chứa phân số, áp dụng thứ tự phép tính.",
+    body: String.raw`
+      <p><strong>Vì sao cần tính giá trị phân số?</strong> Tính giá trị giúp hiểu rõ kết quả của biểu thức phức tạp.</p>
+      <div class="definition">
+        <p>Để tính giá trị biểu thức chứa phân số, áp dụng thứ tự phép tính: nhân/chia trước, cộng/trừ sau. Với biểu thức có dấu ngoặc, tính trong ngoặc trước.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{1}{2} + \frac{1}{3} \cdot \frac{3}{4} = \frac{1}{2} + \frac{1}{4} = \frac{3}{4}\). \(\left(\frac{1}{2} + \frac{1}{3}\right) \cdot \frac{3}{5} = \frac{5}{6} \cdot \frac{3}{5} = \frac{1}{2}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{3}{4} \cdot \left(\frac{2}{3} + \frac{1}{6}\right) = \frac{3}{4} \cdot \frac{5}{6} = \frac{5}{8}\). \(\frac{5}{6} - \frac{1}{4} : \frac{1}{2} = \frac{5}{6} - \frac{1}{2} = \frac{1}{3}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên thứ tự phép tính. \(\frac{1}{2} + \frac{1}{3} \cdot \frac{3}{4}\) là \(\frac{1}{2} + \frac{1}{4}\), không phải \(\frac{2}{5} \cdot \frac{3}{4}\). Đừng quên dấu ngoặc ảnh hưởng đến thứ tự.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Thứ tự.</strong> Bước 1: dấu ngoặc. Bước 2: nhân/chia (từ trái sang phải). Bước 3: cộng/trừ (từ trái sang phải).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên thứ tự phép tính.</li>
+          <li>Không xử lý đúng dấu ngoặc.</li>
+          <li>Lỗi khi chuyển đổi hỗn số.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(\frac{1}{2} + \frac{1}{4} \cdot \frac{2}{3}\). <em>— \(\frac{2}{3}\).</em></p>
+        <p>Tính \(\left(\frac{3}{4} - \frac{1}{2}\right) \cdot 4\). <em>— 1.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính \(\frac{3}{4} + \frac{1}{2} \cdot \frac{4}{5}\). Bước 1: nhân \(\frac{1}{2} \cdot \frac{4}{5} = \frac{2}{5}\). Bước 2: cộng \(\frac{3}{4} + \frac{2}{5} = \frac{15}{20} + \frac{8}{20} = \frac{23}{20}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính \(\left(\frac{2}{3} + \frac{1}{6}\right) : \frac{5}{6}\). <em>— 1.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Thứ tự phép tính: ngoặc → nhân/chia → cộng/trừ. Tính từ trái sang phải.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính \(\frac{1}{2} + \frac{1}{3} \cdot \frac{3}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "\(\frac{1}{3} \cdot \frac{3}{4} = \frac{1}{4}\), \(\frac{1}{2} + \frac{1}{4} = \frac{3}{4}\).", explain: "\(\frac{3}{4}\)." },
+      { type: "num", prompt: "Tính \(\left(\frac{1}{2} + \frac{1}{4}\right) \cdot \frac{4}{3}\).", answer: "1", accept: ["1", "1/1"], hint: "\(\frac{3}{4} \cdot \frac{4}{3} = 1\).", explain: "1." },
+      { type: "num", prompt: "Tính \(\frac{5}{6} - \frac{1}{3} \cdot \frac{3}{5}\).", answer: "1/2", accept: ["1/2", "1:2"], hint: "\(\frac{1}{3} \cdot \frac{3}{5} = \frac{1}{5}\), \(\frac{5}{6} - \frac{1}{5} = \frac{19}{30}\).", explain: "\(\frac{19}{30}\)." },
+      { type: "num", prompt: "Tính \(\frac{3}{4} \cdot \left(\frac{2}{3} + \frac{1}{6}\right)\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "\(\frac{2}{3} + \frac{1}{6} = \frac{5}{6}\), \(\frac{3}{4} \cdot \frac{5}{6} = \frac{5}{8}\).", explain: "\(\frac{5}{8}\)." },
+      { type: "mc", prompt: "Kết quả \(\frac{1}{2} \cdot \left(\frac{2}{3} + \frac{1}{3}\right)\) là", choices: ["\(\frac{1}{2}\)", "\(\frac{1}{3}\)", "\(\frac{1}{6}\)", "1"], correct: 0, hint: "\(\frac{2}{3} + \frac{1}{3} = 1\), \(\frac{1}{2} \cdot 1 = \frac{1}{2}\).", explain: "\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(\frac{4}{5} : \left(\frac{1}{2} + \frac{1}{3}\right)\).", answer: "24/25", accept: ["24/25", "24:25"], hint: "\(\frac{1}{2} + \frac{1}{3} = \frac{5}{6}\), \(\frac{4}{5} : \frac{5}{6} = \frac{24}{25}\).", explain: "\(\frac{24}{25}\)." },
+      { type: "num", prompt: "Tính \(\left(\frac{3}{4} - \frac{1}{2}\right) : \frac{1}{4}\).", answer: "1", accept: ["1", "1/1"], hint: "\(\frac{3}{4} - \frac{1}{2} = \frac{1}{4}\), \(\frac{1}{4} : \frac{1}{4} = 1\).", explain: "1." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
