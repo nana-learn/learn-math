@@ -258,6 +258,18 @@ These 8 lessons deal with pure symbolic algebra without natural visual represent
 
 Committed 132ef5f. Pushed to GitHub Pages main branch.
 
+## 2026-01-11 Grade 7 g7-b34 animation (e10e518)
+
+Added animation to Grade 7 lesson g7-b34 (Concurrency of medians and angle bisectors):
+
+- Triangle with three medians intersecting at centroid G
+- AG : GM = 2 : 1 ratio labeled
+- Animation steps: triangle → medians → centroid point → labels
+
+**Final Grade 7 Animation Status: 17/37 lessons (45.9%)**
+
+Committed e10e518. Pushed to GitHub Pages main branch.
+
 ## 2026-01-11 Grade 9 animations complete (0d665aa)
 
 Added animations to Grade 9 lessons:
