@@ -955,6 +955,35 @@ const AnimationManager = {
         ]
       },
       
+      // g7-b11: Định lí và chứng minh định lí
+      'g7-b11-proof': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b22: Đại lượng tỉ lệ thuận
+      'g7-b22-proportional': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'polyline', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b23: Đại lượng tỉ lệ nghịch
+      'g7-b23-inverse': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'polyline', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b17: Thu thập và phân loại dữ liệu
       'g7-b17-statistics-data': {
         steps: [

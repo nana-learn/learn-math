@@ -654,7 +654,7 @@ const G7_LESSONS = [
     summary: "Định lí có giả thiết và kết luận. Chứng minh là chuỗi lý do, không phải đo hình.",
     body: String.raw`
       <p>Định lí gồm giả thiết (cái đã cho) và kết luận (cái phải ra). Chứng minh là viết các bước, mỗi bước dựa vào định nghĩa, tiên đề, hoặc định lí đã có.</p>
-      <figure class="figure">
+      <figure class="figure" data-animation="g7-b11-proof">
         <svg viewBox="0 0 280 140" role="img" aria-label="Chứng minh dựa vào giả thiết, không đo hình">
           <line x1="30" y1="110" x2="250" y2="30" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="40" y1="25" x2="240" y2="120" stroke="#DDDDDD" stroke-width="2"/>
@@ -1499,7 +1499,7 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> 5 kg gạo 80 nghìn. Hỏi 8 kg. \(k = 80/5 = 16\) nghìn một kg. 8 kg hết \(128\) nghìn. Hoặc \(\dfrac{8}{5} \cdot 80 = 128\). Hai cách một kết quả.</p>
       </div>
-            <figure class="figure">
+            <figure class="figure" data-animation="g7-b22-proportional">
         <svg viewBox="0 0 360 200" role="img" aria-label="Đồ thị tỉ lệ thuận y = 16x: giá theo số kg gạo">
           <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="60" y1="170" x2="60" y2="20" stroke="#DDDDDD" stroke-width="2"/>
@@ -1564,7 +1564,7 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> 4 máy in xong trong 9 giờ. Hỏi 6 máy. Tích \(4 \cdot 9 = 36\) “máy-giờ”. 6 máy cần \(36/6 = 6\) giờ. Gấp rưỡi số máy thì thời gian còn \(2/3\).</p>
       </div>
-            <figure class="figure">
+            <figure class="figure" data-animation="g7-b23-inverse">
         <svg viewBox="0 0 360 200" role="img" aria-label="Đồ thị tỉ lệ nghịch xy = 36: số máy in theo số giờ">
           <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="60" y1="170" x2="60" y2="20" stroke="#DDDDDD" stroke-width="2"/>
