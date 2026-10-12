@@ -309,9 +309,9 @@ Both lessons use simple animation framework:
 ### Complete Animation Coverage Summary:
 - ✅ Grade 9: 30/30 lessons (100%)
 - ✅ Grade 8: 31/39 lessons (79.5%)
-- ✅ Grade 7: 19/37 lessons (51.4%)
+- ✅ Grade 7: 20/37 lessons (54.1%)
 
-**Total: 80 animated lessons across all grades**
+**Total: 81 animated lessons across all grades**
 
 ### Remaining Lessons for Animation:
 - Grade 8: g8-b1, g8-b2, g8-b3, g8-b4, g8-b5, g8-b6, g8-b7, g8-b8 (purely symbolic algebra)
