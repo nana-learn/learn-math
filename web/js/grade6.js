@@ -1945,6 +1945,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tính \(\frac{3}{8} + \frac{1}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "Quy đồng \(\frac{3}{8} + \frac{2}{8}\).", explain: "\(\frac{5}{8}\)." },
     ],
   },
+  {
+    id: "g6-b34",
+    num: 34,
+    chapter: 6,
+    title: "Phép trừ phân số",
+    summary: "Trừ phân số: quy đồng mẫu rồi trừ tử số, giữ mẫu số.",
+    body: String.raw`
+      <p><strong>Vì sao cần trừ phân số?</strong> Trừ phân số giúp tính hiệu giữa các phần không nguyên.</p>
+      <div class="definition">
+        <p>Để trừ hai phân số, quy đồng mẫu số rồi trừ tử số, giữ mẫu số: \(\frac{a}{m} - \frac{b}{m} = \frac{a-b}{m}\). Với hỗn số, trừ phần nguyên với nhau, trừ phần phân số với nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{3}{4} - \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\). \(2\frac{3}{4} - 1\frac{1}{4} = 1 + \frac{2}{4} = 1\frac{1}{2}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{3}{4} - \frac{1}{3} = \frac{9}{12} - \frac{4}{12} = \frac{5}{12}\). \(3\frac{1}{2} - 1\frac{3}{4} = 2\frac{3}{2} - 1\frac{3}{4} = 1\frac{3}{4}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được trừ \(\frac{3}{4} - \frac{1}{2} = \frac{2}{2} = 1\) (sai quy tắc). Phải quy đồng trước: \(\frac{3}{4} - \frac{2}{4} = \frac{1}{4}\). Đừng quên quy đồng mẫu số.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> \(\frac{a}{m} - \frac{b}{n} = \frac{a \cdot n - b \cdot m}{m \cdot n}\) (hoặc dùng BCNN).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Trừ trực tiếp tử với tử, mẫu với mẫu là sai.</li>
+          <li>Quên quy đồng mẫu số khi trừ.</li>
+          <li>Không rút gọn kết quả nếu có thể.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(\frac{5}{7} - \frac{2}{7}\). <em>— \(\frac{3}{7}\).</em></p>
+        <p>Tính \(\frac{3}{4} - \frac{1}{2}\). <em>— \(\frac{1}{4}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính \(\frac{2}{3} - \frac{1}{4}\). Bước 1: BCNN(3,4) = 12. Bước 2: \(\frac{2}{3} = \frac{8}{12}\), \(\frac{1}{4} = \frac{3}{12}\). Bước 3: \(\frac{8}{12} - \frac{3}{12} = \frac{5}{12}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{6} - \frac{1}{4}\). <em>— \(\frac{7}{12}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trừ phân số: quy đồng mẫu → trừ tử → giữ mẫu. Rút gọn nếu có thể.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính \(\frac{5}{8} - \frac{3}{8}\).", answer: "1/4", accept: ["1/4", "1:4", "2/8"], hint: "Cùng mẫu, trừ tử: 5-3=2, rút gọn \(\frac{2}{8} = \frac{1}{4}\).", explain: "\(\frac{1}{4}\)." },
+      { type: "num", prompt: "Tính \(\frac{4}{5} - \frac{1}{5}\).", answer: "3/5", accept: ["3/5", "3:5"], hint: "Cùng mẫu, trừ tử: 4-1=3.", explain: "\(\frac{3}{5}\)." },
+      { type: "num", prompt: "Tính \(\frac{3}{4} - \frac{1}{2}\).", answer: "1/4", accept: ["1/4", "1:4"], hint: "Quy đồng \(\frac{3}{4} - \frac{2}{4}\).", explain: "\(\frac{1}{4}\)." },
+      { type: "num", prompt: "Tính \(2\frac{3}{4} - 1\frac{1}{4}\).", answer: "1.5", accept: ["1.5", "3/2", "1 1/2", "1 1/2"], hint: "2-1=1, \(\frac{3}{4} - \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\).", explain: "1\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(\frac{7}{8} - \frac{1}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "Quy đồng \(\frac{7}{8} - \frac{2}{8}\).", explain: "\(\frac{5}{8}\)." },
+      { type: "mc", prompt: "Kết quả \(\frac{5}{6} - \frac{1}{3}\) là", choices: ["\(\frac{4}{3}\)", "\(\frac{1}{2}\)", "\(\frac{2}{3}\)", "\(\frac{1}{6}\)"], correct: 2, hint: "\(\frac{5}{6} - \frac{2}{6} = \frac{3}{6} = \frac{1}{2}\).", explain: "\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(3\frac{1}{2} - 1\frac{1}{4}\).", answer: "2.25", accept: ["2.25", "9/4", "2 1/4"], hint: "3-1=2, \(\frac{1}{2} - \frac{1}{4} = \frac{1}{4}\).", explain: "2\(\frac{1}{4}\)." },
+    ],
+  },
+  {
+    id: "g6-b35",
+    num: 35,
+    chapter: 6,
+    title: "Phép nhân phân số",
+    summary: "Nhân phân số: nhân tử với tử, mẫu với mẫu.",
+    body: String.raw`
+      <p><strong>Vì sao cần nhân phân số?</strong> Nhân phân số giúp tính giá trị của một phần của phân số.</p>
+      <div class="definition">
+        <p>Nhân hai phân số: \(\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}\). Với hỗn số, đổi về phân số rồi nhân.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{2}{3} \cdot \frac{3}{4} = \frac{6}{12} = \frac{1}{2}\). \(2 \cdot \frac{3}{4} = \frac{6}{4} = \frac{3}{2}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{3}{5} \cdot \frac{10}{9} = \frac{30}{45} = \frac{2}{3}\) (rút gọn trước khi nhân). \(2\frac{1}{2} \cdot \frac{3}{4} = \frac{5}{2} \cdot \frac{3}{4} = \frac{15}{8} = 1\frac{7}{8}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được nhân \(\frac{2}{3} \cdot \frac{3}{4} = \frac{5}{7}\) (sai quy tắc). Phải nhân tử với tử, mẫu với mẫu: \(\frac{6}{12}\). Đừng quên rút gọn kết quả.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> \(\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}\). Rút gọn trước khi nhân để tính dễ hơn.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Không rút gọn trước khi nhân.</li>
+          <li>Nhân tử với mẫu thay vì tử với tử, mẫu với mẫu.</li>
+          <li>Quên đổi hỗn số về phân số trước khi nhân.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(\frac{2}{5} \cdot \frac{3}{4}\). <em>— \(\frac{3}{10}\).</em></p>
+        <p>Tính \(3 \cdot \frac{2}{7}\). <em>— \(\frac{6}{7}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính \(\frac{3}{4} \cdot \frac{2}{9}\). Bước 1: \(\frac{3 \cdot 2}{4 \cdot 9} = \frac{6}{36}\). Bước 2: rút gọn \(\frac{6}{36} = \frac{1}{6}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{6} \cdot \frac{3}{10}\). <em>— \(\frac{1}{4}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân phân số: tử × tử, mẫu × mẫu. Rút gọn nếu có thể.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính \(\frac{3}{5} \cdot \frac{2}{3}\).", answer: "2/5", accept: ["2/5", "2:5"], hint: "\(\frac{6}{15} = \frac{2}{5}\).", explain: "\(\frac{2}{5}\)." },
+      { type: "num", prompt: "Tính \(\frac{4}{7} \cdot \frac{7}{8}\).", answer: "1/2", accept: ["1/2", "1:2"], hint: "\(\frac{28}{56} = \frac{1}{2}\).", explain: "\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(5 \cdot \frac{2}{3}\).", answer: "10/3", accept: ["10/3", "10:3"], hint: "\(\frac{10}{3} = 3\frac{1}{3}\).", explain: "\(\frac{10}{3}\)." },
+      { type: "num", prompt: "Tính \(2\frac{1}{2} \cdot \frac{4}{5}\).", answer: "2", accept: ["2", "2/1"], hint: "\(\frac{5}{2} \cdot \frac{4}{5} = \frac{20}{10} = 2\).", explain: "2." },
+      { type: "mc", prompt: "Kết quả \(\frac{3}{4} \cdot \frac{2}{3}\) là", choices: ["\(\frac{5}{7}\)", "\(\frac{6}{12}\)", "\(\frac{1}{2}\)", "\(\frac{2}{4}\)"], correct: 2, hint: "\(\frac{6}{12} = \frac{1}{2}\).", explain: "\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(\frac{7}{8} \cdot \frac{4}{7}\).", answer: "1/2", accept: ["1/2", "1:2"], hint: "\(\frac{28}{56} = \frac{1}{2}\).", explain: "\(\frac{1}{2}\)." },
+      { type: "num", prompt: "Tính \(3\frac{1}{3} \cdot \frac{3}{5}\).", answer: "2", accept: ["2", "2/1"], hint: "\(\frac{10}{3} \cdot \frac{3}{5} = \frac{30}{15} = 2\).", explain: "2." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
