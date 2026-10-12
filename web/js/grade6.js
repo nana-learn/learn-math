@@ -710,7 +710,28 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -2°C, buổi chiều tăng 5°C. Nhiệt độ buổi chiều là bao nhiêu? <em>— -2 + 5 = 3°C.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Số nguyên gồm số dương, 0, và số âm. Hai số đối nhau có tổng bằng 0. |a| = |-a|.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Số nguyên gồm số dương, 0, và số âm. Hai số đối nhau có tổng bằng 0. |a| = |-a|.</p>
+      <figure id="fig-g6-b13-integers" class="figure" data-animation="g6-b13-integers">
+        <svg width="600" height="120" viewBox="0 0 600 120">
+          <line x1="50" y1="60" x2="550" y2="60" stroke="#333" stroke-width="2" stroke-dasharray="500" stroke-dashoffset="500" opacity="0"/>
+          <polygon points="550,60 540,55 540,65" fill="#333" opacity="0"/>
+          <g id="g6-b13-points">
+            <circle cx="100" cy="60" r="4" fill="#333" opacity="0"/>
+            <circle cx="200" cy="60" r="4" fill="#333" opacity="0"/>
+            <circle cx="300" cy="60" r="4" fill="#333" opacity="0"/>
+            <circle cx="400" cy="60" r="4" fill="#333" opacity="0"/>
+            <circle cx="500" cy="60" r="4" fill="#333" opacity="0"/>
+          </g>
+          <g id="g6-b13-labels" opacity="0">
+            <text x="100" y="90" font-size="14" text-anchor="middle">-2</text>
+            <text x="200" y="90" font-size="14" text-anchor="middle">-1</text>
+            <text x="300" y="90" font-size="14" text-anchor="middle">0</text>
+            <text x="400" y="90" font-size="14" text-anchor="middle">1</text>
+            <text x="500" y="90" font-size="14" text-anchor="middle">2</text>
+          </g>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "mc", prompt: "Số nào là số nguyên?", choices: ["-5", "0", "7", "Cả ba số trên"], correct: 3, hint: "Tất cả số nguyên dương, 0, và số âm đều là số nguyên.", explain: "Cả ba số đều là số nguyên." },
@@ -764,7 +785,27 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -3°C, buổi chiều giảm thêm 5°C. Nhiệt độ buổi chiều là bao nhiêu? <em>— (-3) + (-5) = -8°C.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Cùng dấu thì cộng giá trị tuyệt đối, giữ dấu chung. 0 + a = a. |a + b| ≤ |a| + |b|.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cùng dấu thì cộng giá trị tuyệt đối, giữ dấu chung. 0 + a = a. |a + b| ≤ |a| + |b|.</p>
+      <figure id="fig-g6-b14-addition-same-sign" class="figure" data-animation="g6-b14-addition-same-sign">
+        <svg width="600" height="120" viewBox="0 0 600 120">
+          <line x1="50" y1="60" x2="550" y2="60" stroke="#333" stroke-width="2" stroke-dasharray="500" stroke-dashoffset="500" opacity="0"/>
+          <polygon points="550,60 540,55 540,65" fill="#333" opacity="0"/>
+          <circle cx="150" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="150" y="90" font-size="14" text-anchor="middle" opacity="0">-3</text>
+          <circle cx="250" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="250" y="90" font-size="14" text-anchor="middle" opacity="0">-2</text>
+          <circle cx="350" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="350" y="90" font-size="14" text-anchor="middle" opacity="0">-1</text>
+          <circle cx="450" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="450" y="90" font-size="14" text-anchor="middle" opacity="0">0</text>
+          <circle cx="500" cy="60" r="6" fill="#FC6255" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="500" y="90" font-size="14" text-anchor="middle" opacity="0">-5</text>
+          <path d="M 250 60 L 350 60" stroke="#58C4DD" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="100" opacity="0" class="arrow"/>
+          <path d="M 350 60 L 450 60" stroke="#58C4DD" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="100" opacity="0" class="arrow"/>
+          <path d="M 150 60 L 500 60" stroke="#83C167" stroke-width="2" stroke-dasharray="350" stroke-dashoffset="350" opacity="0" class="result-arrow"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "(-4) + (-6) bằng bao nhiêu?", answer: -10, hint: "Cộng 4+6=10, đặt dấu âm: -10.", explain: "-10." },
@@ -818,7 +859,22 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Bạn An có 50 nghìn, mua sách hết 30 nghìn. Số tiền còn lại là bao nhiêu? <em>— 50 + (-30) = 20 nghìn.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Khác dấu thì trừ giá trị tuyệt đối, kết quả mang dấu của số lớn hơn. a + (-a) = 0. |a + (-b)| = |a - b|.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Khác dấu thì trừ giá trị tuyệt đối, kết quả mang dấu của số lớn hơn. a + (-a) = 0. |a + (-b)| = |a - b|.</p>
+      <figure id="fig-g6-b15-addition-different-signs" class="figure" data-animation="g6-b15-addition-different-signs">
+        <svg width="600" height="120" viewBox="0 0 600 120">
+          <line x1="50" y1="60" x2="550" y2="60" stroke="#333" stroke-width="2" stroke-dasharray="500" stroke-dashoffset="500" opacity="0"/>
+          <polygon points="550,60 540,55 540,65" fill="#333" opacity="0"/>
+          <circle cx="150" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="150" y="90" font-size="14" text-anchor="middle" opacity="0">-3</text>
+          <circle cx="350" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="350" y="90" font-size="14" text-anchor="middle" opacity="0">2</text>
+          <circle cx="300" cy="60" r="6" fill="#FC6255" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="300" y="90" font-size="14" text-anchor="middle" opacity="0">-1</text>
+          <path d="M 150 60 L 350 60" stroke="#58C4DD" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="200" opacity="0" class="arrow"/>
+          <path d="M 350 60 L 300 60" stroke="#83C167" stroke-width="2" stroke-dasharray="50" stroke-dashoffset="50" opacity="0" class="result-arrow"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "(-7) + 4 bằng bao nhiêu?", answer: -3, hint: "7-4=3, số lớn hơn là -7 nên kết quả âm: -3.", explain: "-3." },
@@ -872,7 +928,32 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Một công ty có lợi nhuận 50 triệu, lỗ 30 triệu, lợi nhuận 20 triệu, lỗ 40 triệu trong 4 quý. Lợi nhuận cả năm là bao nhiêu? <em>— 50 + (-30) + 20 + (-40) = (50+20) + (-30-40) = 70 + (-70) = 0.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Phép cộng số nguyên có tính chất giao hoán và kết hợp. a + 0 = a. a + (-a) = 0.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phép cộng số nguyên có tính chất giao hoán và kết hợp. a + 0 = a. a + (-a) = 0.</p>
+      <figure id="fig-g6-b16-commutative" class="figure" data-animation="g6-b16-commutative">
+        <svg width="600" height="140" viewBox="0 0 600 140">
+          <!-- Top: a + b -->
+          <line x1="50" y1="40" x2="350" y2="40" stroke="#333" stroke-width="2" stroke-dasharray="300" stroke-dashoffset="300" opacity="0"/>
+          <circle cx="150" cy="40" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="150" y="70" font-size="14" text-anchor="middle" opacity="0">a</text>
+          <circle cx="250" cy="40" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="250" y="70" font-size="14" text-anchor="middle" opacity="0">b</text>
+          <path d="M 150 40 L 250 40" stroke="#58C4DD" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="100" opacity="0" class="arrow-a-b"/>
+          <text x="300" y="70" font-size="14" opacity="0" class="text-sum">a + b</text>
+          
+          <!-- Bottom: b + a -->
+          <line x1="50" y1="100" x2="350" y2="100" stroke="#333" stroke-width="2" stroke-dasharray="300" stroke-dashoffset="300" opacity="0"/>
+          <circle cx="150" cy="100" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="150" y="130" font-size="14" text-anchor="middle" opacity="0">b</text>
+          <circle cx="250" cy="100" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="250" y="130" font-size="14" text-anchor="middle" opacity="0">a</text>
+          <path d="M 150 100 L 250 100" stroke="#58C4DD" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="100" opacity="0" class="arrow-b-a"/>
+          <text x="300" y="130" font-size="14" opacity="0" class="text-sum">b + a</text>
+          
+          <!-- Equality sign -->
+          <line x1="450" y1="55" x2="450" y2="85" stroke="#333" stroke-width="2" opacity="0"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "(-3) + 5 và 5 + (-3) có bằng nhau không?", answer: "Có", accept: ["Có", "có"], hint: "Phép cộng có tính chất giao hoán.", explain: "Có, bằng nhau đều là 2." },
@@ -926,7 +1007,22 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -3°C, buổi chiều là 5°C. Độ chênh lệch nhiệt độ là bao nhiêu? <em>— 5 - (-3) = 5 + 3 = 8°C.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> a - b = a + (-b). Trừ là cộng với số đối. Phép trừ không có tính chất giao hoán và kết hợp.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> a - b = a + (-b). Trừ là cộng với số đối. Phép trừ không có tính chất giao hoán và kết hợp.</p>
+      <figure id="fig-g6-b17-subtraction" class="figure" data-animation="g6-b17-subtraction">
+        <svg width="600" height="120" viewBox="0 0 600 120">
+          <line x1="50" y1="60" x2="550" y2="60" stroke="#333" stroke-width="2" stroke-dasharray="500" stroke-dashoffset="500" opacity="0"/>
+          <polygon points="550,60 540,55 540,65" fill="#333" opacity="0"/>
+          <circle cx="200" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="200" y="90" font-size="14" text-anchor="middle" opacity="0">5</text>
+          <circle cx="350" cy="60" r="5" fill="#333" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="350" y="90" font-size="14" text-anchor="middle" opacity="0">3</text>
+          <circle cx="275" cy="60" r="6" fill="#FC6255" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="275" y="90" font-size="14" text-anchor="middle" opacity="0">2</text>
+          <path d="M 200 60 L 350 60" stroke="#58C4DD" stroke-width="2" stroke-dasharray="150" stroke-dashoffset="150" opacity="0" class="arrow-subtrahend"/>
+          <path d="M 350 60 L 275 60" stroke="#83C167" stroke-width="2" stroke-dasharray="75" stroke-dashoffset="75" opacity="0" class="arrow-result"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "12 - 5 bằng bao nhiêu?", answer: 7, hint: "12 + (-5) = 7.", explain: "7." },

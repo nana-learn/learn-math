@@ -875,6 +875,57 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b13: Tập hợp các số nguyên
+      'g6-b13-integers': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'polygon', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="4"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 5 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b14: Cộng hai số nguyên cùng dấu
+      'g6-b14-addition-same-sign': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle.point', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'arrow.addition', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle.result', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b15: Cộng hai số nguyên khác dấu
+      'g6-b15-addition-different-signs': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle.positive', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle.negative', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'arrow.sum', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle.result', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b16: Tính chất giao hoán của phép cộng
+      'g6-b16-commutative': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'arrow.a-b', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'arrow.b-a', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text.sum', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b17: Phép trừ hai số nguyên
+      'g6-b17-subtraction': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle.minuend', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'arrow.subtraction', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle.result', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
