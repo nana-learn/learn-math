@@ -5370,6 +5370,23 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tần số: giá trị 5 (3 lần), giá trị 7 (5 lần), giá trị 9 (2 lần). Tổng tần số = 10.</p>
         <p>Biểu đồ tần số: cột cao 3, 5, 2. Giá trị 7 có tần số cao nhất.</p>
       </div>
+      <figure class="figure" data-animation="g8-b14-data-charts">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Dữ liệu và biểu đồ">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="50" y1="50" x2="50" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="80" y="140" width="30" height="40" fill="#83C167"/>
+          <rect x="130" y="120" width="30" height="60" fill="#58C4DD"/>
+          <rect x="180" y="100" width="30" height="80" fill="#FC6255"/>
+          <rect x="230" y="90" width="30" height="90" fill="#9A72AC"/>
+          <text x="85" y="195" font-size="9" fill="#555">A</text>
+          <text x="135" y="195" font-size="9" fill="#555">B</text>
+          <text x="185" y="195" font-size="9" fill="#555">C</text>
+          <text x="235" y="195" font-size="9" fill="#555">D</text>
+          <text x="180" y="40" font-size="11" fill="#9A72AC">Biểu đồ cột</text>
+          <text x="180" y="60" font-size="10" fill="#83C167">Tần số</text>
+          <text x="180" y="200" font-size="10" fill="#58C4DD">Giá trị</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc (0, 1, 2,...). Chiều cao, nhiệt độ, thời gian là liên tục." },

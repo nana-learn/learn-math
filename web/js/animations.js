@@ -499,6 +499,16 @@ const AnimationManager = {
         ]
       },
       
+      // g8-b14: Dữ liệu và biểu đồ
+      'g8-b14-data-charts': {
+        steps: [
+          { selector: 'line:not([stroke-opacity])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-opacity]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g8-b9: Tứ giác
       'g8-b9-quadrilateral': {
         steps: [
