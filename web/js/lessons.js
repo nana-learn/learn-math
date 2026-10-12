@@ -207,6 +207,18 @@ const LESSONS = [
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Một điều kiện, vô số cặp. Hệ là hai điều kiện. Đúng một phương trình chưa đủ để là nghiệm của hệ.</p></div>
 
+      <figure class="figure" data-animation="c1-b1-equation-system">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình và hệ hai phương trình bậc nhất hai ẩn">
+          <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="100" y="100" font-size="12" fill="#58C4DD">2x + y = 3</text>
+          <text x="100" y="120" font-size="12" fill="#58C4DD">x - y = 1</text>
+          <text x="260" y="95" font-size="11" fill="#83C167">x</text>
+          <text x="170" y="25" font-size="11" fill="#83C167">y</text>
+          <text x="180" y="20" font-size="11" fill="#9A72AC">Hệ phương trình bậc nhất 2 ẩn</text>
+          <text x="180" y="40" font-size="10" fill="#58C4DD">Dạng: ax + by = c, a'x + b'y = c'</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -392,6 +404,21 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi đề đã cho sẵn hệ, việc còn lại là giải. Năm 2024 cho hệ có \(\sqrt{3x+1}\) ở cả hai phương trình. Đặt ẩn phụ rồi cộng hoặc thế, như bài này. Năm 2026, sau khi lập xong, hệ hoa hồng và hoa cúc cũng giải bằng cộng đại số: \(x+y=25\), \(8x+6y=180\).</p>
       </div>
       
+      <figure class="figure" data-animation="c1-b2-system-solution">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Giải hệ hai phương trình bậc nhất hai ẩn">
+          <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="80" y1="150" x2="280" y2="50" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="80" y1="50" x2="280" y2="150" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="180" cy="100" r="2.5" fill="#9A72AC"/>
+          <text x="170" y="90" font-size="11" fill="#9A72AC">O</text>
+          <text x="180" y="20" font-size="11" fill="#83C167">x</text>
+          <text x="170" y="185" font-size="11" fill="#83C167">y</text>
+          <text x="180" y="130" font-size="11" fill="#FC6255">d₁: 2x + y = 3</text>
+          <text x="180" y="150" font-size="11" fill="#58C4DD">d₂: x - y = 1</text>
+          <text x="180" y="40" font-size="11" fill="#9A72AC">Giao điểm (2, 1) là nghiệm</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -518,6 +545,18 @@ const LESSONS = [
       </div>
       
       
+      <figure class="figure" data-animation="c1-b3-system-word-problem">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Giải bài toán bằng cách lập hệ phương trình">
+          <text x="180" y="60" font-size="12" fill="#83C167" text-anchor="middle">Bài toán: Hai người làm chung công việc</text>
+          <text x="180" y="80" font-size="11" fill="#58C4DD" text-anchor="middle">Gọi: x = thời gian người 1 làm một mình</text>
+          <text x="180" y="100" font-size="11" fill="#58C4DD" text-anchor="middle">y = thời gian người 2 làm một mình</text>
+          <text x="180" y="120" font-size="11" fill="#FC6255" text-anchor="middle">1/x + 1/y = 1/6 (cùng làm)</text>
+          <text x="180" y="140" font-size="11" fill="#FC6255" text-anchor="middle">1/x = 1/12 (người 1 làm một mình)</text>
+          <text x="180" y="160" font-size="11" fill="#9A72AC" text-anchor="middle">Hệ phương trình: giải tìm x, y</text>
+          <line x1="80" y1="170" x2="280" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="80" y1="40" x2="80" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -641,6 +680,19 @@ const LESSONS = [
         <p>Đặt \(t=\sqrt{3x+1}\), \(t\geq 0\). Hệ trở thành bậc nhất theo \(t\) và \(y\). Giải ra \(t\), rồi bình phương để tìm \(x\). Đó là quy về phương trình bậc nhất, không giải căn trực tiếp.</p>
       </div>
       
+      <figure class="figure" data-animation="c2-b4-linear-equation">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình quy về phương trình bậc nhất một ẩn">
+          <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="100" y="100" font-size="12" fill="#58C4DD">ax + b = 0 (a ≠ 0)</text>
+          <text x="100" y="120" font-size="12" fill="#58C4DD">x = -b/a</text>
+          <text x="260" y="95" font-size="11" fill="#83C167">x</text>
+          <text x="170" y="25" font-size="11" fill="#83C167">y</text>
+          <text x="180" y="20" font-size="11" fill="#9A72AC">Phương trình bậc nhất một ẩn</text>
+          <text x="180" y="40" font-size="10" fill="#58C4DD">Quy tắc: chuyển vế - đổi dấu</text>
+          <text x="180" y="60" font-size="10" fill="#58C4DD">Quy tắc: nhân/chia cả hai vế</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1080,6 +1132,16 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi rút gọn câu II, đề tách tích và thương dưới căn. Năm 2024, mẫu \(x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)\). Đó là đưa thừa số \(\sqrt{x}\) ra ngoài, đúng phép của bài này. Không tách căn qua dấu cộng.</p>
       </div>
       
+      <figure class="figure" data-animation="c3-b8-square-root">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Khai căn bậc hai với phép nhân và phép chia">
+          <text x="180" y="60" font-size="12" fill="#83C167" text-anchor="middle">Căn bậc hai của số không âm a: √a</text>
+          <text x="180" y="80" font-size="12" fill="#58C4DD" text-anchor="middle">√(a·b) = √a · √b (a ≥ 0, b ≥ 0)</text>
+          <text x="180" y="100" font-size="12" fill="#58C4DD" text-anchor="middle">√(a/b) = √a / √b (a ≥ 0, b > 0)</text>
+          <text x="180" y="120" font-size="11" fill="#FC6255" text-anchor="middle">Ví dụ: √(4·9) = √4 · √9 = 2·3 = 6</text>
+          <line x1="60" y1="140" x2="300" y2="140" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="40" x2="60" y2="140" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1179,6 +1241,17 @@ const LESSONS = [
         <p>chứng minh \(B = \dfrac{\sqrt{x}}{\sqrt{x}+3}\). Đặt \(t=\sqrt{x}\), mẫu \(x-9=(t-3)(t+3)\), rồi khử thừa số chung. Năm 2025 và 2024 cùng dạng: rút gọn một biểu thức có căn ở mẫu, rồi mới dùng kết quả cho ý bất phương trình.</p>
       </div>
       
+      <figure class="figure" data-animation="c3-b9-radical-simplification">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biến đổi đơn giản biểu thức chứa căn">
+          <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Dạng 1: a√b = √(a²·b)</text>
+          <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Ví dụ: 3√2 = √(9·2) = √18</text>
+          <text x="180" y="90" font-size="12" fill="#FC6255" text-anchor="middle">Dạng 2: khử căn ở mẫu</text>
+          <text x="180" y="110" font-size="11" fill="#FC6255" text-anchor="middle">a/√b = (a√b)/b</text>
+          <text x="180" y="130" font-size="11" fill="#9A72AC" text-anchor="middle">Ví dụ: 5/√3 = (5√3)/3</text>
+          <line x1="60" y1="150" x2="300" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="40" x2="60" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1283,6 +1356,17 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Căn bậc ba của số âm có nghĩa: \(\sqrt[3]{-8}=-2\). Không lấy trị tuyệt đối. \((\sqrt[3]{a})^3=a\).</p>
       </div>
 
+      <figure class="figure" data-animation="c3-b10-cube-root">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Căn bậc ba và căn thức bậc ba">
+          <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Căn bậc ba của a: ∛a (số x sao cho x³ = a)</text>
+          <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Tính chất: ∛(a·b) = ∛a · ∛b</text>
+          <text x="180" y="90" font-size="12" fill="#58C4DD" text-anchor="middle">Tính chất: ∛(a/b) = ∛a / ∛b (b ≠ 0)</text>
+          <text x="180" y="110" font-size="11" fill="#FC6255" text-anchor="middle">Ví dụ: ∛(8·27) = ∛8 · ∛27 = 2·3 = 6</text>
+          <text x="180" y="130" font-size="11" fill="#FC6255" text-anchor="middle">Ví dụ: ∛(-27) = -3</text>
+          <line x1="60" y1="150" x2="300" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="40" x2="60" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1524,6 +1608,23 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Biết cạnh huyền và góc nhọn: dùng sin hoặc cos. Biết hai cạnh góc vuông: dùng tan. Đọc đúng góc đối hay góc kề.</p>
       </div>
 
+      <figure class="figure" data-animation="c4-b12-triangle-relationships">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hệ thức giữa cạnh và góc trong tam giác vuông">
+          <polygon points="50,170 250,170 50,70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="50" y="150" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <circle cx="50" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="250" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="50" cy="70" r="2.5" fill="#58C4DD"/>
+          <text x="38" y="188" font-size="12" fill="#58C4DD">B</text>
+          <text x="262" y="188" font-size="12" fill="#58C4DD">C</text>
+          <text x="42" y="55" font-size="12" fill="#58C4DD">A</text>
+          <text x="55" y="120" font-size="12" fill="#83C167">b</text>
+          <text x="150" y="185" font-size="12" fill="#83C167">a</text>
+          <text x="100" y="135" font-size="12" fill="#83C167">c</text>
+          <text x="150" y="45" font-size="11" fill="#9A72AC">b = a·sin(B) = a·cos(C)</text>
+          <text x="150" y="65" font-size="11" fill="#58C4DD">c = a·sin(C) = a·cos(B)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -3205,6 +3306,17 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I.2 là một phép thử: rút một lần. Năm 2026, hộp 6 bóng ghi 1 đến 6, \(\Omega = \{1,2,3,4,5,6\}\). Năm 2025, hộp 8 thẻ ghi 1 đến 8, \(\Omega\) có 8 phần tử. Đề chưa hỏi xác suất ở bước liệt kê. Viết \(\Omega\) trước, rồi mới đếm.</p>
       </div>
       
+      <figure class="figure" data-animation="c8-b25-random-experiment">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phép thử ngẫu nhiên và không gian mẫu">
+          <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Phép thử ngẫu nhiên: kết quả không đoán trước</text>
+          <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Ví dụ: gieo xúc xắc, tung đồng xu</text>
+          <text x="180" y="90" font-size="12" fill="#FC6255" text-anchor="middle">Không gian mẫu Ω: tập tất cả kết quả</text>
+          <text x="180" y="110" font-size="11" fill="#9A72AC" text-anchor="middle">Ví dụ: gieo xúc xắc 6 mặt → Ω = {1,2,3,4,5,6}</text>
+          <text x="180" y="130" font-size="11" fill="#FC6255" text-anchor="middle">Biến cố: tập con của Ω</text>
+          <line x1="60" y1="150" x2="300" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="40" x2="60" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -3327,6 +3439,18 @@ const LESSONS = [
         <p>Năm 2025: rút một thẻ trong 8 thẻ ghi 1 đến 8. Tính xác suất số chia hết cho 3. Thuận lợi là 3 và 6, không có 9. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
       </div>
       
+      <figure class="figure" data-animation="c8-b26-probability-event">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Xác suất của biến cố liên quan tới phép thử">
+          <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Xác suất của biến cố E: P(E) = m/n</text>
+          <text x="180" y="70" font-size="11" fill="#58C4DD" text-anchor="middle">m = số kết quả thuận lợi cho E</text>
+          <text x="180" y="90" font-size="11" fill="#58C4DD" text-anchor="middle">n = tổng số kết quả có thể</text>
+          <text x="180" y="110" font-size="12" fill="#FC6255" text-anchor="middle">Tính chất: 0 ≤ P(E) ≤ 1</text>
+          <text x="180" y="130" font-size="11" fill="#FC6255" text-anchor="middle">P(∅) = 0, P(Ω) = 1</text>
+          <text x="180" y="150" font-size="11" fill="#9A72AC" text-anchor="middle">Ví dụ: tung đồng xu → P(sấp) = 1/2</text>
+          <line x1="60" y1="170" x2="300" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="40" x2="60" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
