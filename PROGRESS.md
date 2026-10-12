@@ -223,6 +223,29 @@ Files modified:
 
 Committed c1c5bd1. Pushed to GitHub Pages main branch.
 
+## 2026-01-11 Grade 8 g8-b14 animation (132ef5f)
+
+Added animation to Grade 8 lesson g8-b14 (Data and charts):
+
+- Bar chart showing data distribution with axes and labeled bars
+- Animation steps: coordinate axes → bars → labels
+
+**Final Grade 8 Animation Status: 31/39 lessons (79.5%)**
+
+### Remaining Grade 8 Lessons (Purely Algebraic):
+- g8-b1: Đơn thức (Monomials) - symbolic only
+- g8-b2: Đa thức (Polynomials) - symbolic only
+- g8-b3: Phép cộng và phép trừ đa thức - symbolic only
+- g8-b4: Phép nhân đa thức - symbolic only
+- g8-b5: Phép chia đa thức cho đơn thức - symbolic only
+- g8-b6: Hằng đẳng thức đáng nhớ - symbolic only
+- g8-b7: Hằng đẳng thức đáng nhớ (continued) - symbolic only
+- g8-b8: Luyện tập: Phân tích đa thức thành nhân tử bằng hằng đẳng thức - symbolic only
+
+These 8 lessons deal with pure symbolic algebra without natural visual representations.
+
+Committed 132ef5f. Pushed to GitHub Pages main branch.
+
 ## 2026-01-11 Grade 9 animations complete (0d665aa)
 
 Added animations to Grade 9 lessons:
