@@ -2269,6 +2269,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "So sánh 6.25 và 6.250.", answer: "=", accept: ["=", "eq"], hint: "6.25 = 6.250.", explain: "6.25 = 6.250." },
     ],
   },
+  {
+    id: "g6-b40",
+    num: 40,
+    chapter: 7,
+    title: "Cộng, trừ số thập phân",
+    summary: "Cộng/trừ số thập phân: đặt tính theo hàng dọc, dấu phẩy thẳng hàng.",
+    body: String.raw`
+      <p><strong>Vì sao cần cộng/trừ số thập phân?</strong> Đây là phép tính cơ bản với số thập phân, dùng thường xuyên trong đời sống.</p>
+      <div class="definition">
+        <p>Cộng/trừ số thập phân: đặt tính sao cho dấu phẩy thẳng hàng (hàng đơn vị dưới hàng đơn vị, phần thập phân dưới phần thập phân). Cộng/trừ như số tự nhiên, viết dấu phẩy ở kết quả thẳng hàng với các dấu phẩy.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2.5 + 1.3 = 3.8. 4.7 - 2.4 = 2.3. Đặt tính: dấu phẩy thẳng hàng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 3.25 + 2.8 = 6.05 (viết 2.8 thành 2.80). 5.6 - 2.45 = 3.15 (viết 5.6 thành 5.60).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên viết thêm số 0 để dấu phẩy thẳng hàng. 3.2 + 1.45 ≠ 4.65 (sai!). Phải viết 3.2 thành 3.20, kết quả là 4.65. Đừng nhầm 3.2 + 1.45 = 4.25 (sai!).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Quy tắc.</strong> Bước 1: viết các số sao cho dấu phẩy thẳng hàng. Bước 2: cộng/trừ như số tự nhiên. Bước 3: viết dấu phẩy ở kết quả thẳng hàng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Không viết thêm số 0 để dấu phẩy thẳng hàng.</li>
+          <li>Quên viết dấu phẩy ở kết quả.</li>
+          <li>Đặt tính sai hàng (đơn vị dưới hàng chục, v.v.).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính 4.5 + 2.3. <em>— 6.8.</em></p>
+        <p>Tính 5.7 - 2.4. <em>— 3.3.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính 3.25 + 2.8. Bước 1: viết 2.8 thành 2.80. Bước 2: đặt tính: 3.25 + 2.80. Bước 3: 5+0=5, 2+8=10 (viết 0 nhớ 1), 3+2+1=6. Kết quả: 6.05.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính 7.25 + 3.8. <em>— 11.05.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đặt tính dấu phẩy thẳng hàng. Cộng/trừ như số tự nhiên. Viết dấu phẩy ở kết quả.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính 4.5 + 2.3.", answer: "6.8", accept: ["6.8", "6,8"], hint: "4+2=6, 5+3=8.", explain: "6.8." },
+      { type: "num", prompt: "Tính 5.7 - 2.4.", answer: "3.3", accept: ["3.3", "3,3"], hint: "5-2=3, 7-4=3.", explain: "3.3." },
+      { type: "num", prompt: "Tính 3.25 + 2.8.", answer: "6.05", accept: ["6.05", "6,05"], hint: "Viết 2.8 thành 2.80, 5+0=5, 2+8=10, 3+2+1=6.", explain: "6.05." },
+      { type: "num", prompt: "Tính 6.4 - 2.75.", answer: "3.65", accept: ["3.65", "3,65"], hint: "Viết 6.4 thành 6.40, 0-5 mượn 1, 10-5=5, 3-7 mượn 1, 13-7=6, 5-2=3.", explain: "3.65." },
+      { type: "num", prompt: "Tính 8.5 + 4.75.", answer: "13.25", accept: ["13.25", "13,25"], hint: "Viết 8.5 thành 8.50, 0+5=5, 5+7=12, 8+4+1=13.", explain: "13.25." },
+      { type: "num", prompt: "Tính 9.3 - 5.8.", answer: "3.5", accept: ["3.5", "3,5"], hint: "Mượn 1: 13-8=5, 8-5=3.", explain: "3.5." },
+      { type: "num", prompt: "Tính 12.5 + 8.75.", answer: "21.25", accept: ["21.25", "21,25"], hint: "Viết 12.5 thành 12.50, 0+5=5, 5+7=12, 12+8+1=21.", explain: "21.25." },
+    ],
+  },
+  {
+    id: "g6-b41",
+    num: 41,
+    chapter: 7,
+    title: "Nhân số thập phân",
+    summary: "Nhân số thập phân: nhân như số tự nhiên, đếm số chữ số sau dấu phẩy.",
+    body: String.raw`
+      <p><strong>Vì sao cần nhân số thập phân?</strong> Nhân số thập phân giúp tính diện tích, thể tích và nhiều bài toán thực tế.</p>
+      <div class="definition">
+        <p>Nhân số thập phân: nhân như số tự nhiên. Đếm tổng số chữ số sau dấu phẩy ở hai thừa số, đặt dấu phẩy ở kết quả từ phải sang trái bấy nhiêu chữ số.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2.5 × 3 = 7.5. 0.4 × 2 = 0.8. 1.2 × 3 = 3.6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 2.5 × 1.3 = 3.25 (một chữ số sau dấu phẩy + một chữ số = hai chữ số). 0.25 × 0.4 = 0.1 (hai chữ số + một chữ số = ba chữ số: 0.100 = 0.1).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên đếm đúng số chữ số sau dấu phẩy. 2.5 × 1.3 = 3.25 (không phải 32.5 hay 0.325). Đừng nhầm 0.5 × 0.2 = 0.1 (hai chữ số sau dấu phẩy).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Quy tắc.</strong> Bước 1: nhân như số tự nhiên. Bước 2: đếm tổng số chữ số sau dấu phẩy. Bước 3: đặt dấu phẩy từ phải sang trái.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Sai đếm số chữ số sau dấu phẩy.</li>
+          <li>Đặt dấu phẩy sai vị trí.</li>
+          <li>Bỏ qua số 0 ở cuối phần thập phân khi kiểm tra kết quả.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính 3.2 × 2. <em>— 6.4.</em></p>
+        <p>Tính 0.5 × 0.4. <em>— 0.2.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính 2.5 × 1.2. Bước 1: 25 × 12 = 300. Bước 2: một chữ số + một chữ số = hai chữ số sau dấu phẩy. Bước 3: 3.00 = 3. Kết quả: 3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính 3.5 × 2.4. <em>— 8.4.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân như số tự nhiên, đếm tổng số chữ số sau dấu phẩy, đặt dấu phẩy từ phải sang trái.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính 3.2 × 2.", answer: "6.4", accept: ["6.4", "6,4"], hint: "32 × 2 = 64, một chữ số sau dấu phẩy.", explain: "6.4." },
+      { type: "num", prompt: "Tính 0.5 × 0.4.", answer: "0.2", accept: ["0.2", ".2"], hint: "5 × 4 = 20, hai chữ số sau dấu phẩy: 0.20 = 0.2.", explain: "0.2." },
+      { type: "num", prompt: "Tính 1.5 × 3.", answer: "4.5", accept: ["4.5", "4,5"], hint: "15 × 3 = 45, một chữ số sau dấu phẩy.", explain: "4.5." },
+      { type: "num", prompt: "Tính 2.5 × 1.2.", answer: "3", accept: ["3", "3.0"], hint: "25 × 12 = 300, hai chữ số sau dấu phẩy: 3.00 = 3.", explain: "3." },
+      { type: "num", prompt: "Tính 0.75 × 4.", answer: "3", accept: ["3", "3.0"], hint: "75 × 4 = 300, hai chữ số sau dấu phẩy: 3.00 = 3.", explain: "3." },
+      { type: "num", prompt: "Tính 1.25 × 0.8.", answer: "1", accept: ["1", "1.0"], hint: "125 × 8 = 1000, ba chữ số sau dấu phẩy: 1.000 = 1.", explain: "1." },
+      { type: "num", prompt: "Tính 4.5 × 2.", answer: "9", accept: ["9", "9.0"], hint: "45 × 2 = 90, một chữ số sau dấu phẩy: 9.0 = 9.", explain: "9." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
