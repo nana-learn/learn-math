@@ -1023,6 +1023,15 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b19: Hình vuông, hình chữ nhật
+      'g6-b19-rectangles': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.4, stagger: 2 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3, stagger: 4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 2 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [

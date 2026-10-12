@@ -1171,7 +1171,26 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Một hình vuông có diện tích 64 cm². Tính chu vi. <em>— Cạnh = √64 = 8 cm, chu vi = 8 × 4 = 32 cm.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Hình vuông: 4 cạnh bằng nhau, 4 góc vuông. Hình chữ nhật: 4 góc vuông, hai cặp cạnh bằng nhau.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình vuông: 4 cạnh bằng nhau, 4 góc vuông. Hình chữ nhật: 4 góc vuông, hai cặp cạnh bằng nhau.</p>
+      <figure id="fig-g6-b19-rectangles" class="figure" data-animation="g6-b19-rectangles">
+        <svg width="500" height="150" viewBox="0 0 500 150">
+          <!-- Rectangle -->
+          <rect x="50" y="50" width="120" height="80" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="110" y="145" font-size="14" text-anchor="middle" opacity="0">Hình chữ nhật</text>
+          <line x1="50" y1="50" x2="50" y2="130" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="50" y1="130" x2="170" y2="130" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="170" y1="130" x2="170" y2="50" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="170" y1="50" x2="50" y2="50" stroke="#333" stroke-width="1" opacity="0"/>
+          <!-- Square (special rectangle) -->
+          <rect x="250" y="50" width="80" height="80" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="290" y="145" font-size="14" text-anchor="middle" opacity="0">Hình vuông</text>
+          <line x1="250" y1="50" x2="250" y2="130" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="250" y1="130" x2="330" y2="130" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="330" y1="130" x2="330" y2="50" stroke="#333" stroke-width="1" opacity="0"/>
+          <line x1="330" y1="50" x2="250" y2="50" stroke="#333" stroke-width="1" opacity="0"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Hình vuông cạnh 6 cm có chu vi bao nhiêu?", answer: 24, hint: "6 × 4 = 24.", explain: "24 cm." },
