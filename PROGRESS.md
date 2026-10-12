@@ -270,6 +270,17 @@ Added animation to Grade 7 lesson g7-b34 (Concurrency of medians and angle bisec
 
 Committed e10e518. Pushed to GitHub Pages main branch.
 
+## 2026-01-11 Grade 7 g7-b29 animation (7fafd34)
+
+Added animation to Grade 7 lesson g7-b29 (Random events):
+
+- Six-sided die figure showing even numbers (2, 4, 6) as favorable outcomes
+- Animation steps: dice box → internal grid lines → dots (2, 4, 6 highlighted) → labels
+
+**Final Grade 7 Animation Status: 19/37 lessons (51.4%)**
+
+Committed 7fafd34. Pushed to GitHub Pages main branch.
+
 ## 2026-01-11 Grade 7 g7-b17 animation (29253c2)
 
 Added animation to Grade 7 lesson g7-b17 (Data collection and classification):
