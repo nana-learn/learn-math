@@ -179,6 +179,115 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tìm số tự nhiên x lẻ thỏa 4 < x < 9.", answer: 5, hint: "Các số 5, 6, 7, 8. Lẻ là 5 và 7.", accept: "5 hoặc 7", explain: "5 và 7 đều thỏa." },
     ],
   },
+  {
+    id: "g6-b4",
+    num: 4,
+    chapter: 1,
+    title: "Phép cộng và phép trừ số tự nhiên",
+    summary: "Cộng trừ theo hàng dọc hoặc ngang. Phép trừ chỉ thực hiện khi số bị trừ lớn hơn hoặc bằng số trừ.",
+    body: String.raw`
+      <p><strong>Vì sao cần cộng trừ?</strong> Cộng là gộp nhóm, trừ là bớt đi. Đây là phép tính cơ bản nhất trong số học.</p>
+      <div class="definition">
+        <p>Phép cộng: \(a + b = c\), trong đó \(a, b\) là số hạng, \(c\) là tổng. Phép trừ: \(a - b = c\), \(a\) là số bị trừ, \(b\) là số trừ, \(c\) là hiệu. Phép trừ chỉ thực hiện được khi \(a \geq b\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(23 + 15 = 38\). \(47 - 24 = 23\). Kiểm tra: \(38 - 15 = 23\), \(23 + 24 = 47\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(128 + 76 = 204\). Tính nhẩm: 128 + 70 = 198, 198 + 6 = 204. \(215 - 89 = 126\). Tính nhẩm: 215 - 90 = 125, cộng lại 1 được 126.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(45 - 54\) không thực hiện được trong tập số tự nhiên. Đừng viết kết quả âm. Phép trừ chỉ có nghĩa khi số bị trừ ≥ số trừ.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách tính nhẩm.</strong> Gộp số tròn chục trước: 37 + 26 = (30 + 20) + (7 + 6) = 50 + 13 = 63. Trừ từng phần: 85 - 38 = (85 - 30) - 8 = 55 - 8 = 47.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>\(a - b\) chỉ có nghĩa khi \(a \geq b\) trong tập \(\mathbb{N}\). Đừng viết kết quả âm.</li>
+          <li>\(a - a = 0\), \(a - 0 = a\). Những qui tắc này đúng với mọi \(a \in \mathbb{N}\).</li>
+          <li>\(a + b = b + a\) (giao hoán), \((a + b) + c = a + (b + c)\) (kết hợp). Những tính chất này giúp tính nhẩm nhanh.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(35 + 27 = ?\) <em>— 62.</em></p>
+        <p>\(83 - 46 = ?\) <em>— 37.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> \(145 + 87\). Bước 1: 5 + 7 = 12, viết 2 nhớ 1. Bước 2: 4 + 8 + 1 = 13, viết 3 nhớ 1. Bước 3: 1 + 1 = 2. Kết quả: 232.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một ô tô đi từ A đến B dài 120 km, đã đi 75 km. Còn bao nhiêu km? <em>— 120 - 75 = 45 km.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng là gộp, trừ là bớt. Phép trừ chỉ thực hiện khi số bị trừ ≥ số trừ. Tính chất giao hoán và kết hợp giúp tính nhẩm.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "35 + 27 bằng bao nhiêu?", answer: 62, hint: "5+7=12, nhớ 1; 3+2+1=6.", explain: "62." },
+      { type: "num", prompt: "83 - 46 bằng bao nhiêu?", answer: 37, hint: "3-6 không được, mượn 11-6=5, 7-4=3.", explain: "37." },
+      { type: "num", prompt: "128 + 76 bằng bao nhiêu?", answer: 204, hint: "8+6=14, nhớ 1; 2+7+1=10, nhớ 1; 1+1=2.", explain: "204." },
+      { type: "num", prompt: "215 - 89 bằng bao nhiêu?", answer: 126, hint: "5-9 không được, mượn 15-9=6, 0-8 không được mượn 10-8=2, 1-0=1.", explain: "126." },
+      { type: "mc", prompt: "Phép trừ a - b có nghĩa khi nào?", choices: ["a > b", "a ≥ b", "a < b", "a ≤ b"], correct: 1, hint: "Phép trừ trong N chỉ khi số bị trừ ≥ số trừ.", explain: "a ≥ b." },
+      { type: "num", prompt: "Một hình chữ nhật có chiều dài 25 cm, chiều rộng 18 cm. Chu vi bằng bao nhiêu?", answer: 86, hint: "Chu vi = (dài + rộng) × 2.", explain: "(25+18)×2 = 43×2 = 86 cm." },
+      { type: "mc", prompt: "Tính chất nào đúng với phép cộng?", choices: ["Giao hoán", "Kết hợp", "Cả hai tính chất trên", "Không có tính chất nào"], correct: 2, hint: "a+b=b+a (giao hoán), (a+b)+c=a+(b+c) (kết hợp).", explain: "Cả hai tính chất đều đúng." },
+    ],
+  },
+  {
+    id: "g6-b5",
+    num: 5,
+    chapter: 1,
+    title: "Phép nhân và phép chia số tự nhiên",
+    summary: "Nhân là phép cộng lặp lại. Chia là phép trừ lặp lại. Phép chia có dư khi số bị chia không chia hết cho số chia.",
+    body: String.raw`
+      <p><strong>Vì sao cần nhân chia?</strong> Nhân giúp gộp nhiều nhóm bằng nhau nhanh chóng. Chia giúp chia đều hoặc chia theo nhóm.</p>
+      <div class="definition">
+        <p>Phép nhân: \(a \cdot b = c\), \(a, b\) là thừa số, \(c\) là tích. Phép chia: \(a : b = c\), \(a\) là số bị chia, \(b\) là số chia (\(b \neq 0\)), \(c\) là thương. Phép chia có dư: \(a = b \cdot q + r\), \(0 \leq r < b\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(7 \cdot 6 = 42\). \(42 : 6 = 7\). \(17 : 5 = 3\) dư 2, vì \(5 \cdot 3 + 2 = 17\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(25 \cdot 4 = 100\). Tính nhẩm: 25 nhân 4 là một trăm. \(120 : 8 = 15\). Tính nhẩm: 8 × 15 = 120.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Phép chia cho 0 không có nghĩa. \(a : 0\) là sai. Đừng bao giờ chia cho 0.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Tính chất.</strong> \(a \cdot b = b \cdot a\) (giao hoán), \((a \cdot b) \cdot c = a \cdot (b \cdot c)\) (kết hợp), \(a \cdot (b + c) = a \cdot b + a \cdot c\) (phân phối).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chia cho 0 là sai. \(a : 0\) không có nghĩa.</li>
+          <li>\(a \cdot 0 = 0\), \(a \cdot 1 = a\). Những qui tắc này đúng với mọi \(a \in \mathbb{N}\).</li>
+          <li>Phép chia có dư: số dư luôn nhỏ hơn số chia. Đừng viết số dư bằng hoặc lớn hơn số chia.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>\(8 \cdot 7 = ?\) <em>— 56.</em></p>
+        <p>\(56 : 7 = ?\) <em>— 8.</em></p>
+        <p>\(23 : 5 = ?\) dư bao nhiêu? <em>— 4.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> \(125 \cdot 8\). Bước 1: 5 × 8 = 40, viết 0 nhớ 4. Bước 2: 2 × 8 + 4 = 20, viết 0 nhớ 2. Bước 3: 1 × 8 + 2 = 10. Kết quả: 1000.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một lớp có 36 học sinh, chia đều vào 4 tổ. Mỗi tổ có bao nhiêu học sinh? <em>— 36 : 4 = 9 học sinh.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân là cộng lặp lại. Chia là trừ lặp lại. Chia cho 0 là sai. Số dư luôn nhỏ hơn số chia.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "8 × 7 bằng bao nhiêu?", answer: 56, hint: "Bảng cửu chương.", explain: "56." },
+      { type: "num", prompt: "56 : 7 bằng bao nhiêu?", answer: 8, hint: "7 × 8 = 56.", explain: "8." },
+      { type: "num", prompt: "125 × 8 bằng bao nhiêu?", answer: 1000, hint: "125 × 8 = 1000 (một trong những tích cần nhớ).", explain: "1000." },
+      { type: "num", prompt: "23 : 5 bằng bao nhiêu? Dư bao nhiêu?", answer: "4 dư 3", accept: ["4 dư 3", "4dư3", "4,3"], hint: "5 × 4 = 20, 23 - 20 = 3.", explain: "4 dư 3." },
+      { type: "mc", prompt: "Phép chia a : b có nghĩa khi nào?", choices: ["b > 0", "b ≥ 0", "b ≠ 0", "b = 0"], correct: 2, hint: "Số chia phải khác 0.", explain: "b ≠ 0." },
+      { type: "num", prompt: "Một hình chữ nhật có chiều dài 12 cm, chiều rộng 8 cm. Diện tích bằng bao nhiêu?", answer: 96, hint: "Diện tích = dài × rộng.", explain: "12 × 8 = 96 cm²." },
+      { type: "num", prompt: "Chia đều 48 cái kẹo cho 6 bạn. Mỗi bạn được bao nhiêu kẹo?", answer: 8, hint: "48 : 6 = 8.", explain: "8 kẹo." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
