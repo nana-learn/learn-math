@@ -441,6 +441,22 @@ const AnimationManager = {
         ]
       },
       
+      // c2-b5: Bất đẳng thức và tính chất
+      'c2-b5': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c2-b6: Bất phương trình bậc nhất một ẩn
+      'c2-b6': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // c3-b8: Căn thức bậc hai
       'c3-b8': {
         steps: [
