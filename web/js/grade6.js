@@ -1244,7 +1244,18 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Hình bình hành có chu vi 40 cm, một cạnh bằng 12 cm. Tính cạnh kề. <em>— Gọi cạnh kề là x: 2 × (12 + x) = 40 ⇒ x = 8 cm.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Hình thoi: 4 cạnh bằng nhau. Diện tích = (d1 × d2) / 2. Hình bình hành: hai cặp cạnh đối song song. Diện tích = đáy × chiều cao.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình thoi: 4 cạnh bằng nhau. Diện tích = (d1 × d2) / 2. Hình bình hành: hai cặp cạnh đối song song. Diện tích = đáy × chiều cao.</p>
+      <figure id="fig-g6-b20-parallelograms" class="figure" data-animation="g6-b20-parallelograms">
+        <svg width="500" height="150" viewBox="0 0 500 150">
+          <!-- Parallelogram -->
+          <polygon points="80,100 200,100 240,50 120,50" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="160" y="145" font-size="14" text-anchor="middle" opacity="0">Hình bình hành</text>
+          <!-- Rhombus -->
+          <polygon points="320,100 360,50 400,100 360,150" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="360" y="170" font-size="14" text-anchor="middle" opacity="0">Hình thoi</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Hình thoi có đường chéo 10 cm và 6 cm. Diện tích bằng bao nhiêu?", answer: 30, hint: "(10 × 6) / 2 = 30.", explain: "30 cm²." },

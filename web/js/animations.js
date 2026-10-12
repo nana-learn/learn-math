@@ -1032,6 +1032,14 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b20: Hình thoi, hình bình hành
+      'g6-b20-parallelograms': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4, stagger: 2 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 2 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
