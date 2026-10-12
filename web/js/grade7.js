@@ -1958,7 +1958,7 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hai đồng xu, có thứ tự. \(\Omega = \{SS, SN, NS, NN\}\), bốn kết quả đồng khả năng. “Ít nhất một ngửa”: SN, NS, NN — ba kết quả, \(P = 3/4\). Không phải 1/2.</p>
       </div>
-            <figure class="figure">
+            <figure class="figure" data-animation="g7-b30-probability">
         <svg viewBox="0 0 360 200" role="img" aria-label="Gieo hai đồng xu có thứ tự, Ω = {SS, SN, NS, NN}, ít nhất một ngửa">
           <rect x="90" y="30" width="180" height="130" fill="#DDDDDD" fill-opacity="0.25" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="180" y1="30" x2="180" y2="160" stroke="#DDDDDD" stroke-width="1"/>

@@ -994,6 +994,16 @@ const AnimationManager = {
         ]
       },
       
+      // g7-b30: Xác suất của biến cố
+      'g7-b30-probability': {
+        steps: [
+          { selector: 'rect:not([fill-opacity])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect[fill-opacity]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b31: Góc và cạnh đối diện trong tam giác
       'g7-b31-triangle-relationships': {
         steps: [
