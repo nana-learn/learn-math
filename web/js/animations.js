@@ -770,6 +770,162 @@ const AnimationManager = {
           { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
+      'g7-b8-angles': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b9: Hai đường thẳng song song
+      'g7-b9-parallel-lines': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="1.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b10: Tiên đề Euclid và tính chất đường song song
+      'g7-b10-euclid-parallel': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b12: Tổng các góc trong một tam giác
+      'g7-b12-triangle-angles': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b13: Hai tam giác bằng nhau (cạnh-góc-cạnh)
+      'g7-b13-congruent-triangles': {
+        steps: [
+          { selector: 'polygon:nth-child(1), polygon:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b14: Trường hợp góc-cạnh-góc và cạnh-cạnh-cạnh
+      'g7-b14-congruent-cases': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b15: Trường hợp bằng nhau của tam giác vuông
+      'g7-b15-right-triangle': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b16: Tam giác cân và đường trung trực
+      'g7-b16-isosceles': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b18: Biểu đồ hình quạt tròn
+      'g7-b18-pie-chart': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b19: Biểu đồ đoạn thẳng
+      'g7-b19-line-chart': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'polyline', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b31: Góc và cạnh đối diện trong tam giác
+      'g7-b31-triangle-relationships': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b32: Đường vuông góc và đường xiên
+      'g7-b32-perpendicular': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b33: Ba cạnh của một tam giác
+      'g7-b33-triangle-inequality': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b35: Đồng quy trung trực và đường cao
+      'g7-b35-concurrency': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b36: Hình hộp chữ nhật và hình lập phương
+      'g7-b36-cuboid': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b37: Hình lăng trụ đứng
+      'g7-b37-prism': {
+        steps: [
+          { selector: 'polygon:nth-child(1), polygon:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     

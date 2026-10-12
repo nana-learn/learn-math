@@ -455,6 +455,21 @@ const G7_LESSONS = [
         <p>Hai góc bằng \(70^\circ\) ở hai nửa khác nhau có phải đối đỉnh không? <em>— Chưa chắc. Đối đỉnh cần hai cặp tia đối nhau xuất phát từ hai góc ấy, không chỉ cần bằng nhau.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Kề bù: tổng 180°. Đối đỉnh: bằng nhau. Phân giác: hai nửa bằng nhau.</p></div>
+      <figure class="figure" data-animation="g7-b8-angles">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Góc kề bù, đối đỉnh và tia phân giác">
+          <line x1="50" y1="150" x2="310" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="180" y1="150" x2="180" y2="50" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="150" x2="260" y2="80" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="180" cy="150" r="2.5" fill="#9A72AC"/>
+          <text x="170" y="168" font-size="11" fill="#9A72AC">O</text>
+          <text x="185" y="40" font-size="10" fill="#83C167">Ox</text>
+          <text x="270" y="70" font-size="10" fill="#58C4DD">Oy</text>
+          <text x="145" y="140" font-size="10" fill="#FC6255">xOy</text>
+          <text x="215" y="140" font-size="10" fill="#FC6255">yOx'</text>
+          <text x="175" y="120" font-size="11" fill="#9A72AC">xOy + yOx' = 180°</text>
+          <text x="175" y="100" font-size="11" fill="#9A72AC">Hai góc kề bù</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Góc kề bù với 55° bằng bao nhiêu độ?", answer: 125, hint: "180 − 55.", explain: "125°." },
@@ -521,6 +536,25 @@ const G7_LESSONS = [
         <p>Hai góc trong cùng phía bằng nhau chứ không cộng \(180^\circ\): có kết luận song song được không? <em>— Không. Trong cùng phía phải cộng \(180^\circ\) mới đủ; bằng nhau không phải điều kiện.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Muốn chứng minh song song: tìm một cặp so le trong bằng nhau, hoặc đồng vị bằng nhau, hoặc trong cùng phía cộng 180°.</p></div>
+      <figure class="figure" data-animation="g7-b9-parallel-lines">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hai đường thẳng song song">
+          <line x1="50" y1="80" x2="310" y2="80" stroke="#83C167" stroke-width="2"/>
+          <line x1="50" y1="150" x2="310" y2="150" stroke="#83C167" stroke-width="2"/>
+          <line x1="30" y1="40" x2="330" y2="180" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="30" y1="180" x2="330" y2="40" stroke="#FC6255" stroke-width="2"/>
+          <text x="320" y="75" font-size="11" fill="#83C167">a</text>
+          <text x="320" y="155" font-size="11" fill="#83C167">b</text>
+          <text x="325" y="45" font-size="11" fill="#58C4DD">c</text>
+          <text x="325" y="185" font-size="11" fill="#FC6255">d</text>
+          <text x="180" y="30" font-size="12" fill="#9A72AC">a ∥ b (hai đường thẳng song song)</text>
+          <circle cx="160" cy="110" r="1.5" fill="#58C4DD"/>
+          <circle cx="180" cy="115" r="1.5" fill="#FC6255"/>
+          <circle cx="200" cy="120" r="1.5" fill="#58C4DD"/>
+          <circle cx="220" cy="125" r="1.5" fill="#FC6255"/>
+          <circle cx="240" cy="130" r="1.5" fill="#58C4DD"/>
+          <circle cx="260" cy="135" r="1.5" fill="#FC6255"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Hai đường song song, góc đồng vị 40°. Góc so le trong với góc ấy bằng bao nhiêu độ?", answer: 40, hint: "So le trong bằng đồng vị khi hai đường song song.", explain: "40°." },
@@ -585,6 +619,22 @@ const G7_LESSONS = [
         <p>Hai đường cùng vuông góc với đường thứ ba thì thế nào với nhau? <em>— Song song với nhau. Cùng cắt góc \(70^\circ\) thì chưa chắc, chỉ cùng vuông góc mới đủ.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đúng một đường song song kẻ từ một điểm ngoài. Hai đường cùng vuông góc một đường thì song song.</p></div>
+      <figure class="figure" data-animation="g7-b10-euclid-parallel">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tiên đề Euclid và tính chất đường song song">
+          <line x1="50" y1="100" x2="310" y2="100" stroke="#83C167" stroke-width="2"/>
+          <line x1="50" y1="160" x2="310" y2="160" stroke="#83C167" stroke-width="2"/>
+          <line x1="30" y1="50" x2="330" y2="180" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="180" cy="100" r="2.5" fill="#9A72AC"/>
+          <circle cx="180" cy="160" r="2.5" fill="#9A72AC"/>
+          <text x="170" y="90" font-size="11" fill="#9A72AC">A</text>
+          <text x="170" y="178" font-size="11" fill="#9A72AC">B</text>
+          <text x="320" y="95" font-size="11" fill="#83C167">a</text>
+          <text x="320" y="165" font-size="11" fill="#83C167">b</text>
+          <text x="325" y="55" font-size="11" fill="#58C4DD">c</text>
+          <text x="180" y="35" font-size="11" fill="#FC6255">Tiên đề Euclid:</text>
+          <text x="180" y="55" font-size="10" fill="#FC6255">Qua A ∉ b, có một và chỉ một đường thẳng ∥ b</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Qua một điểm ngoài đường d, số đường thẳng song song với d là", choices: ["0", "1", "2", "Vô số"], correct: 1, hint: "Tiên đề Euclid.", explain: "Đúng một đường." },
@@ -712,6 +762,21 @@ const G7_LESSONS = [
         <p>Tam giác vuông có một góc nhọn \(35^\circ\): góc nhọn kia bao nhiêu? <em>— \(55^\circ\). Hai góc nhọn phụ nhau, cộng \(90^\circ\).</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Tổng trong 180°. Vuông thì hai góc nhọn phụ nhau.</p></div>
+      <figure class="figure" data-animation="g7-b12-triangle-angles">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tổng các góc trong một tam giác">
+          <polygon points="50,170 250,170 150,50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="250" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="150" cy="50" r="2.5" fill="#58C4DD"/>
+          <text x="40" y="188" font-size="12" fill="#58C4DD">A</text>
+          <text x="262" y="188" font-size="12" fill="#58C4DD">B</text>
+          <text x="162" y="38" font-size="12" fill="#58C4DD">C</text>
+          <text x="90" y="145" font-size="10" fill="#83C167">∠A</text>
+          <text x="210" y="145" font-size="10" fill="#83C167">∠B</text>
+          <text x="150" y="80" font-size="10" fill="#83C167">∠C</text>
+          <text x="180" y="190" font-size="12" fill="#9A72AC">∠A + ∠B + ∠C = 180°</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Tam giác có hai góc 45° và 70°. Góc thứ ba bằng bao nhiêu độ?", answer: 65, hint: "180 − 45 − 70.", explain: "65°." },
@@ -781,6 +846,26 @@ const G7_LESSONS = [
         <p>Viết \(\Delta ACB = \Delta DEF\) khi khớp cgc đúng không? <em>— Sai. Thứ tự đỉnh phải khớp cạnh: phải viết \(\Delta ABC = \Delta DEF\) (\(AB\) ứng \(DE\), \(AC\) ứng \(DF\)).</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Đọc “xen giữa”. Viết đúng thứ tự đỉnh khi kết luận bằng nhau.</p></div>
+      <figure class="figure" data-animation="g7-b13-congruent-triangles">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hai tam giác bằng nhau (cạnh-góc-cạnh)">
+          <polygon points="50,170 130,170 90,90" fill="none" stroke="#83C167" stroke-width="2"/>
+          <polygon points="230,170 310,170 270,90" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="170" x2="130" y2="170" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="230" y1="170" x2="310" y2="170" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="90" y1="90" x2="50" y2="170" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="270" y1="90" x2="230" y2="170" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="90" cy="90" r="2" fill="#9A72AC"/>
+          <circle cx="270" cy="90" r="2" fill="#9A72AC"/>
+          <text x="55" y="185" font-size="10" fill="#58C4DD">A</text>
+          <text x="120" y="185" font-size="10" fill="#58C4DD">B</text>
+          <text x="80" y="80" font-size="10" fill="#9A72AC">C</text>
+          <text x="235" y="185" font-size="10" fill="#58C4DD">A'</text>
+          <text x="300" y="185" font-size="10" fill="#58C4DD">B'</text>
+          <text x="260" y="80" font-size="10" fill="#9A72AC">C'</text>
+          <text x="170" y="45" font-size="11" fill="#83C167">ΔABC = ΔA'B'C'</text>
+          <text x="170" y="65" font-size="10" fill="#83C167">AB = A'B', ∠B = ∠B', BC = B'C'</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Trường hợp cgc cần", choices: ["Hai cạnh và góc xen giữa", "Hai góc và cạnh xen giữa", "Ba cạnh", "Ba góc"], correct: 0, hint: "Chữ cgc là cạnh–góc–cạnh.", explain: "Góc phải nằm giữa hai cạnh." },
@@ -844,6 +929,30 @@ const G7_LESSONS = [
         <p>Hai tam giác cạnh \(5, 7, 9\) và \(5, 7, 8\): có ccc không? <em>— Không. Cặp thứ ba khác (\(9 \neq 8\)), chưa đủ ba cạnh bằng nhau.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Ba góc không đủ. Phải có cạnh trong gcg hoặc cgc, hoặc đủ ba cạnh.</p></div>
+      <figure class="figure" data-animation="g7-b14-congruent-cases">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Trường hợp góc-cạnh-góc và cạnh-cạnh-cạnh">
+          <!-- Case 1: góc-cạnh-góc -->
+          <polygon points="40,160 120,160 80,80" fill="none" stroke="#83C167" stroke-width="2"/>
+          <path d="M 75 90 A 10 10 0 0 1 85 90" fill="none" stroke="#FC6255" stroke-width="1.5"/>
+          <path d="M 85 90 A 10 10 0 0 0 75 90" fill="none" stroke="#FC6255" stroke-width="1.5"/>
+          <line x1="40" y1="160" x2="120" y2="160" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="80" cy="80" r="2" fill="#9A72AC"/>
+          <text x="75" y="70" font-size="9" fill="#9A72AC">α</text>
+          <text x="50" y="175" font-size="9" fill="#58C4DD">A</text>
+          <text x="110" y="175" font-size="9" fill="#58C4DD">B</text>
+          <!-- Case 2: cạnh-cạnh-cạnh -->
+          <polygon points="180,160 260,160 220,80" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="160" x2="260" y2="160" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="180" y1="160" x2="220" y2="80" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="260" y1="160" x2="220" y2="80" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="220" cy="80" r="2" fill="#58C4DD"/>
+          <text x="215" y="70" font-size="9" fill="#58C4DD">C</text>
+          <text x="210" y="135" font-size="9" fill="#83C167">a</text>
+          <text x="165" y="140" font-size="9" fill="#83C167">b</text>
+          <text x="255" y="140" font-size="9" fill="#83C167">c</text>
+          <text x="210" y="45" font-size="11" fill="#9A72AC">ΔABC = ΔA'B'C' (c-c-c)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Ba góc bằng nhau thì hai tam giác", choices: ["Luôn bằng nhau", "Đồng dạng, chưa chắc bằng nhau", "Vuông", "Cân"], correct: 1, hint: "Thiếu cạnh.", explain: "Cùng hình dạng, khác kích thước được." },
@@ -908,6 +1017,27 @@ const G7_LESSONS = [
         <p>Tam giác vuông, cạnh huyền 13 cm, một cạnh góc vuông 5 cm, và tam giác kia cùng vậy: bằng nhau chưa? <em>— Bằng nhau. Đủ điều kiện “cạnh huyền + một cạnh góc vuông”.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông sẵn một góc. Cạnh huyền là cạnh dài nhất, đối diện góc vuông.</p></div>
+      <figure class="figure" data-animation="g7-b15-right-triangle">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Trường hợp bằng nhau của tam giác vuông">
+          <!-- Case 1: cạnh-góc-cạnh -->
+          <polygon points="50,170 150,170 50,70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="50" y="150" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <line x1="50" y1="170" x2="150" y2="170" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="50" y1="70" x2="50" y2="170" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="150" cy="170" r="2.5" fill="#9A72AC"/>
+          <text x="145" y="188" font-size="11" fill="#9A72AC">C</text>
+          <!-- Case 2: cạnh-huyền-góc nhọn -->
+          <polygon points="230,170 330,170 230,70" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <rect x="230" y="150" width="20" height="20" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <path d="M 235 150 A 15 15 0 0 1 245 160" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="250" y="145" font-size="10" fill="#9A72AC">α</text>
+          <line x1="230" y1="170" x2="330" y2="170" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="230" y1="70" x2="330" y2="170" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="330" cy="170" r="2.5" fill="#9A72AC"/>
+          <text x="325" y="188" font-size="11" fill="#9A72AC">C'</text>
+          <text x="280" y="45" font-size="11" fill="#FC6255">ΔABC = ΔA'B'C' (c-h-gn)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Hai tam giác vuông bằng nhau. Cạnh huyền của tam giác này 13 cm. Cạnh huyền kia bằng bao nhiêu cm?", answer: 13, hint: "Cạnh tương ứng bằng nhau.", explain: "13 cm." },
@@ -970,6 +1100,23 @@ const G7_LESSONS = [
         <p>Tam giác có một góc \(70^\circ\): có chắc cân không? <em>— Không. Cần hai góc bằng nhau hoặc hai cạnh bằng nhau, một góc \(70^\circ\) chưa đủ.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cân: hai cạnh, hai góc đáy. Đều: ba cạnh, ba góc \(60^\circ\). Trung trực: cách đều hai đầu.</p></div>
+      <figure class="figure" data-animation="g7-b16-isosceles">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác cân và đường trung trực">
+          <polygon points="100,160 260,160 180,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="60" x2="180" y2="160" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="140" y1="160" x2="220" y2="160" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <circle cx="100" cy="160" r="2.5" fill="#58C4DD"/>
+          <circle cx="260" cy="160" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="60" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="160" r="2.5" fill="#9A72AC"/>
+          <text x="88" y="178" font-size="12" fill="#58C4DD">B</text>
+          <text x="272" y="178" font-size="12" fill="#58C4DD">C</text>
+          <text x="192" y="48" font-size="12" fill="#58C4DD">A</text>
+          <text x="172" y="178" font-size="12" fill="#9A72AC">M</text>
+          <text x="175" y="110" font-size="11" fill="#58C4DD">AM (trung tuyến)</text>
+          <text x="175" y="90" font-size="11" fill="#FC6255">AB = AC (tam giác cân)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Tam giác cân có góc đỉnh 50°. Mỗi góc đáy bằng bao nhiêu độ?", answer: 65, hint: "(180 − 50) : 2.", explain: "65°." },
@@ -1107,6 +1254,20 @@ const G7_LESSONS = [
         <p>40 học sinh, 10 em thích bóng đá: góc ở tâm bằng \(10^\circ\) hay \(90^\circ\)? <em>— \(90^\circ\). Tỉ lệ là \(\dfrac{10}{40} = 25\%\), góc \(90^\circ\). Không lấy số học sinh làm độ.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phần trăm nhân 3,6 ra số độ. Kiểm tra tổng 100% và 360°.</p></div>
+      <figure class="figure" data-animation="g7-b18-pie-chart">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ hình quạt tròn">
+          <circle cx="180" cy="110" r="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <path d="M 180 110 L 180 50 A 60 60 0 0 1 232 142 Z" fill="#83C167" opacity="0.6"/>
+          <path d="M 180 110 L 232 142 A 60 60 0 0 1 208 172 Z" fill="#58C4DD" opacity="0.6"/>
+          <path d="M 180 110 L 208 172 A 60 60 0 0 1 132 172 Z" fill="#FC6255" opacity="0.6"/>
+          <path d="M 180 110 L 132 172 A 60 60 0 0 1 180 50 Z" fill="#9A72AC" opacity="0.6"/>
+          <text x="180" y="30" font-size="11" fill="#9A72AC">Biểu đồ hình quạt tròn</text>
+          <text x="230" y="60" font-size="9" fill="#555">20%</text>
+          <text x="230" y="80" font-size="9" fill="#555">30%</text>
+          <text x="230" y="100" font-size="9" fill="#555">25%</text>
+          <text x="230" y="120" font-size="9" fill="#555">25%</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Nhóm 20% trên biểu đồ quạt. Góc ở tâm bằng bao nhiêu độ?", answer: 72, hint: "0,2 · 360.", explain: "72°." },
@@ -1189,6 +1350,24 @@ const G7_LESSONS = [
         <p>Đoạn nằm ngang trên biểu đồ đoạn thẳng nghĩa là gì? <em>— Giá trị không đổi, không phải bằng 0 hay “không quan trọng”.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Quạt: cơ cấu một thời điểm. Đoạn thẳng: biến thiên theo thời gian. Cột: so từng nhóm.</p></div>
+      <figure class="figure" data-animation="g7-b19-line-chart">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ đoạn thẳng">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="50" y1="30" x2="50" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="80" cy="150" r="3" fill="#83C167"/>
+          <circle cx="130" cy="120" r="3" fill="#83C167"/>
+          <circle cx="180" cy="90" r="3" fill="#83C167"/>
+          <circle cx="230" cy="70" r="3" fill="#83C167"/>
+          <circle cx="280" cy="60" r="3" fill="#83C167"/>
+          <polyline points="80,150 130,120 180,90 230,70 280,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="75" y="195" font-size="9" fill="#555">Tháng 1</text>
+          <text x="125" y="195" font-size="9" fill="#555">Tháng 2</text>
+          <text x="175" y="195" font-size="9" fill="#555">Tháng 3</text>
+          <text x="225" y="195" font-size="9" fill="#555">Tháng 4</text>
+          <text x="275" y="195" font-size="9" fill="#555">Tháng 5</text>
+          <text x="180" y="20" font-size="11" fill="#9A72AC">Biểu đồ đoạn thẳng</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Năm 2020 có 12, năm 2021 có 18. Tăng bao nhiêu?", answer: 6, hint: "18 − 12.", explain: "6." },
@@ -1884,6 +2063,24 @@ const G7_LESSONS = [
         <p>Tam giác cạnh 6, 7, 8: góc đối diện cạnh nào lớn nhất? <em>— Cạnh 8. Góc lớn hơn đối diện cạnh dài hơn, trong cùng một tam giác.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Góc lớn — cạnh đối lớn. Cân khi hai góc đáy bằng nhau.</p></div>
+      <figure class="figure" data-animation="g7-b31-triangle-relationships">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Góc và cạnh đối diện trong tam giác">
+          <polygon points="50,170 250,170 150,50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="250" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="150" cy="50" r="2.5" fill="#58C4DD"/>
+          <text x="40" y="188" font-size="12" fill="#58C4DD">A</text>
+          <text x="262" y="188" font-size="12" fill="#58C4DD">B</text>
+          <text x="162" y="38" font-size="12" fill="#58C4DD">C</text>
+          <text x="150" y="175" font-size="10" fill="#83C167">a = BC</text>
+          <text x="80" y="140" font-size="10" fill="#83C167">b = AC</text>
+          <text x="220" y="140" font-size="10" fill="#83C167">c = AB</text>
+          <text x="150" y="90" font-size="10" fill="#83C167">∠A</text>
+          <text x="95" y="160" font-size="10" fill="#83C167">∠B</text>
+          <text x="205" y="160" font-size="10" fill="#83C167">∠C</text>
+          <text x="180" y="190" font-size="11" fill="#9A72AC">∠A > ∠B ⇔ a > b</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Tam giác góc A = 90°, B = 30°, C = 60°. Cạnh lớn nhất là", choices: ["AB", "AC", "BC", "Không so được"], correct: 2, hint: "Đối diện góc vuông.", explain: "BC đối diện A." },
@@ -1951,6 +2148,25 @@ const G7_LESSONS = [
         <p>Hai đường xiên \(MA\), \(MB\) bằng nhau: hai chân \(A\), \(B\) thế nào? <em>— Cách đều chân vuông góc \(H\): \(HA = HB\). Không suy ra chúng trùng nhau.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Vuông góc ngắn nhất. Xiên càng xa chân thì càng dài.</p></div>
+      <figure class="figure" data-animation="g7-b32-perpendicular">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đường vuông góc và đường xiên">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="180" x2="180" y2="50" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="250" y1="180" x2="180" y2="50" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="110" y1="180" x2="180" y2="50" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 3"/>
+          <circle cx="180" cy="180" r="2.5" fill="#9A72AC"/>
+          <circle cx="250" cy="180" r="2.5" fill="#58C4DD"/>
+          <circle cx="110" cy="180" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="50" r="2.5" fill="#58C4DD"/>
+          <text x="170" y="198" font-size="12" fill="#9A72AC">H</text>
+          <text x="262" y="198" font-size="12" fill="#58C4DD">B</text>
+          <text x="95" y="198" font-size="12" fill="#58C4DD">A</text>
+          <text x="192" y="38" font-size="12" fill="#58C4DD">C</text>
+          <text x="175" y="130" font-size="11" fill="#58C4DD">CH (vuông góc)</text>
+          <text x="165" y="110" font-size="11" fill="#FC6255">CA, CB (đường xiên)</text>
+          <text x="180" y="30" font-size="11" fill="#9A72AC">CH < CA, CH < CB</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Khoảng cách từ điểm M đến đường d là", choices: ["Một đường xiên bất kì", "Đường vuông góc MH", "Trung tuyến", "Phân giác"], correct: 1, hint: "Ngắn nhất.", explain: "Độ dài MH." },
@@ -2012,6 +2228,21 @@ const G7_LESSONS = [
         <p>Cạnh 9 cm và 4 cm: cạnh thứ ba \(x\) phải nằm trong khoảng nào? <em>— \(5 &lt; x &lt; 13\). \(x = 5\) và \(x = 13\) đều không được.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Phải lớn hơn, không được bằng. Kiểm tra cả ba cặp.</p></div>
+      <figure class="figure" data-animation="g7-b33-triangle-inequality">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Ba cạnh của một tam giác">
+          <polygon points="80,170 280,170 180,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="80" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="280" cy="170" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="60" r="2.5" fill="#58C4DD"/>
+          <text x="68" y="188" font-size="12" fill="#58C4DD">A</text>
+          <text x="292" y="188" font-size="12" fill="#58C4DD">B</text>
+          <text x="192" y="48" font-size="12" fill="#58C4DD">C</text>
+          <text x="180" y="175" font-size="11" fill="#83C167">a = BC</text>
+          <text x="110" y="140" font-size="11" fill="#83C167">b = AC</text>
+          <text x="250" y="140" font-size="11" fill="#83C167">c = AB</text>
+          <text x="180" y="30" font-size="12" fill="#9A72AC">b + c > a, a + c > b, a + b > c</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Ba độ dài 2, 5, 8 có tạo tam giác không?", choices: ["Có", "Không", "Chỉ khi vuông", "Chỉ khi cân"], correct: 1, hint: "2 + 5 = 7 < 8.", explain: "Không." },
@@ -2143,6 +2374,26 @@ const G7_LESSONS = [
         <p>Tam giác tù: trực tâm và tâm ngoại tiếp nằm trong hay ngoài tam giác? <em>— Nằm ngoài. Không bắt chúng phải ở trong.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Trung trực → ngoại tiếp, qua ba đỉnh. Đường cao → trực tâm. Vuông: tâm là trung điểm huyền.</p></div>
+      <figure class="figure" data-animation="g7-b35-concurrency">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đồng quy trung trực và đường cao">
+          <polygon points="80,170 280,170 180,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <!-- Trung trực -->
+          <line x1="130" y1="170" x2="130" y2="100" stroke="#58C4DD" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="230" y1="170" x2="230" y2="100" stroke="#58C4DD" stroke-width="2" stroke-dasharray="4 3"/>
+          <!-- Đường cao -->
+          <line x1="180" y1="60" x2="180" y2="170" stroke="#FC6255" stroke-width="2"/>
+          <line x1="80" y1="170" x2="280" y2="170" stroke="#9A72AC" stroke-width="2" stroke-dasharray="5 3"/>
+          <circle cx="180" cy="170" r="2.5" fill="#9A72AC"/>
+          <circle cx="130" cy="100" r="2" fill="#58C4DD"/>
+          <circle cx="230" cy="100" r="2" fill="#58C4DD"/>
+          <circle cx="180" cy="60" r="2.5" fill="#58C4DD"/>
+          <text x="170" y="188" font-size="12" fill="#9A72AC">H</text>
+          <text x="125" y="90" font-size="10" fill="#58C4DD">M</text>
+          <text x="235" y="90" font-size="10" fill="#58C4DD">N</text>
+          <text x="192" y="48" font-size="12" fill="#58C4DD">C</text>
+          <text x="180" y="30" font-size="11" fill="#83C167">Đồng quy tại trực tâm H</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Tâm đường tròn ngoại tiếp là giao", choices: ["Ba trung tuyến", "Ba trung trực", "Ba phân giác", "Ba đường cao"], correct: 1, hint: "Cách đều ba đỉnh.", explain: "Ba trung trực." },
@@ -2209,6 +2460,19 @@ const G7_LESSONS = [
         <p>Sơn thùng không nắp, kích thước 20 × 30 × 40 (40 cao): có lấy \(2ab\) đáy không? <em>— Không. Không nắp thì bỏ một đáy: đáy \(20\cdot30\) cộng bốn thành, không nhân 2 đáy.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = đáy × cao. Lập phương: mọi cạnh bằng nhau, 6 mặt vuông.</p></div>
+      <figure class="figure" data-animation="g7-b36-cuboid">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình hộp chữ nhật và hình lập phương">
+          <rect x="80" y="100" width="120" height="70" fill="none" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <rect x="140" y="60" width="120" height="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="80" y1="100" x2="140" y2="60" stroke="#83C167" stroke-width="2"/>
+          <line x1="200" y1="100" x2="260" y2="60" stroke="#83C167" stroke-width="2"/>
+          <line x1="200" y1="170" x2="260" y2="130" stroke="#83C167" stroke-width="2"/>
+          <line x1="140" y1="60" x2="140" y2="130" stroke="#83C167" stroke-width="2"/>
+          <line x1="200" y1="60" x2="200" y2="130" stroke="#83C167" stroke-width="2"/>
+          <text x="180" y="25" font-size="12" fill="#9A72AC">Hình hộp chữ nhật</text>
+          <text x="180" y="45" font-size="11" fill="#58C4DD">Chiều dài, chiều rộng, chiều cao</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Hộp 2 cm × 3 cm × 4 cm. Thể tích bằng bao nhiêu cm³?", answer: 24, hint: "2·3·4.", explain: "24." },
@@ -2273,6 +2537,19 @@ const G7_LESSONS = [
         <p>Diện tích toàn phần lăng trụ = gì? <em>— Hai đáy + các mặt bên. Quên nhân 2 đáy thì thiếu.</em></p>
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> V = S_đáy · h. Xung quanh = chu vi đáy · h. Không nhầm với hình hộp nếu đáy không phải chữ nhật.</p></div>
+      <figure class="figure" data-animation="g7-b37-prism">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình lăng trụ đứng">
+          <polygon points="80,140 200,140 240,100 120,100" fill="none" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <polygon points="80,60 200,60 240,20 120,20" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="80" y1="60" x2="80" y2="140" stroke="#83C167" stroke-width="2"/>
+          <line x1="200" y1="60" x2="200" y2="140" stroke="#83C167" stroke-width="2"/>
+          <line x1="240" y1="20" x2="240" y2="100" stroke="#83C167" stroke-width="2"/>
+          <line x1="120" y1="20" x2="120" y2="100" stroke="#83C167" stroke-width="2"/>
+          <text x="160" y="20" font-size="12" fill="#9A72AC">Hình lăng trụ đứng</text>
+          <text x="160" y="40" font-size="11" fill="#58C4DD">Đáy: tam giác, mặt bên: hình chữ nhật</text>
+          <text x="160" y="60" font-size="10" fill="#FC6255">Chiều cao: đoạn thẳng nối hai đáy</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Đáy diện tích 10 cm², cao 7 cm. Thể tích lăng trụ đứng bằng bao nhiêu cm³?", answer: 70, hint: "S·h.", explain: "70." },
