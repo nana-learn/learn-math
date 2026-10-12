@@ -1076,7 +1076,24 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Tam giác đều ABC có chu vi 24 cm. Tính độ dài mỗi cạnh. <em>— Mỗi cạnh = 24 : 3 = 8 cm.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Tam giác cân: hai cạnh bằng nhau, hai góc đáy bằng nhau. Tam giác đều: ba cạnh bằng nhau, ba góc bằng 60°.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tam giác cân: hai cạnh bằng nhau, hai góc đáy bằng nhau. Tam giác đều: ba cạnh bằng nhau, ba góc bằng 60°.</p>
+      <figure id="fig-g6-b18-triangle" class="figure" data-animation="g6-b18-triangle">
+        <svg width="400" height="120" viewBox="0 0 400 120">
+          <!-- Isosceles triangle -->
+          <polygon points="100,90 150,30 200,90" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <line x1="100" y1="90" x2="150" y2="30" stroke="#333" stroke-width="2" opacity="0"/>
+          <line x1="150" y1="30" x2="200" y2="90" stroke="#333" stroke-width="2" opacity="0"/>
+          <line x1="200" y1="90" x2="100" y2="90" stroke="#333" stroke-width="2" opacity="0"/>
+          <text x="150" y="20" font-size="12" opacity="0">Tam giác cân</text>
+          <!-- Equilateral triangle -->
+          <polygon points="300,90 350,30 400,90" fill="none" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <line x1="300" y1="90" x2="350" y2="30" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <line x1="350" y1="30" x2="400" y2="90" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <line x1="400" y1="90" x2="300" y2="90" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <text x="350" y="20" font-size="12" opacity="0">Tam giác đều</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "mc", prompt: "Tam giác có hai cạnh bằng nhau là", choices: ["Tam giác đều", "Tam giác cân", "Tam giác vuông", "Tam giác thường"], correct: 1, hint: "Tam giác cân có hai cạnh bằng nhau.", explain: "Tam giác cân." },

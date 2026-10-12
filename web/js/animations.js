@@ -943,6 +943,15 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b18: Tam giác cân, tam giác đều
+      'g6-b18-triangle': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
