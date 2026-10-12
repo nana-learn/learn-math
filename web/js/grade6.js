@@ -1660,7 +1660,41 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Biểu đồ cột kép có cột 2022 cao 6cm, cột 2023 cao 9cm. Tỷ lệ 1cm = 5 cây. Tính tổng số cây hai năm. <em>— (6+9) × 5 = 75 cây.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng so sánh hai bộ dữ liệu. Mỗi cột phải có màu/kiểu khác nhau và chú giải rõ ràng.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng so sánh hai bộ dữ liệu. Mỗi cột phải có màu/kiểu khác nhau và chú giải rõ ràng.</p>
+      <figure id="fig-g6-b27-double-bar-chart" class="figure" data-animation="g6-b27-double-bar-chart">
+        <svg width="500" height="280" viewBox="0 0 500 280">
+          <!-- Coordinate axes -->
+          <line x1="50" y1="230" x2="50" y2="30" stroke="#333" stroke-width="2" opacity="0"/>
+          <line x1="50" y1="230" x2="450" y2="230" stroke="#333" stroke-width="2" opacity="0"/>
+          <!-- Y-axis labels -->
+          <text x="40" y="235" font-size="12" text-anchor="end" opacity="0">10</text>
+          <text x="40" y="200" font-size="12" text-anchor="end" opacity="0">8</text>
+          <text x="40" y="165" font-size="12" text-anchor="end" opacity="0">6</text>
+          <text x="40" y="130" font-size="12" text-anchor="end" opacity="0">4</text>
+          <text x="40" y="95" font-size="12" text-anchor="end" opacity="0">2</text>
+          <text x="40" y="60" font-size="12" text-anchor="end" opacity="0">0</text>
+          <!-- Male bars -->
+          <rect x="90" y="130" width="40" height="100" fill="#58C4DD" opacity="0"/>
+          <rect x="190" y="95" width="40" height="135" fill="#58C4DD" opacity="0"/>
+          <rect x="290" y="165" width="40" height="65" fill="#58C4DD" opacity="0"/>
+          <!-- Female bars -->
+          <rect x="130" y="165" width="40" height="65" fill="#FC6255" opacity="0"/>
+          <rect x="230" y="130" width="40" height="100" fill="#FC6255" opacity="0"/>
+          <rect x="330" y="95" width="40" height="135" fill="#FC6255" opacity="0"/>
+          <!-- Labels -->
+          <text x="110" y="250" font-size="12" text-anchor="middle" opacity="0">Tèo</text>
+          <text x="210" y="250" font-size="12" text-anchor="middle" opacity="0">Mọi</text>
+          <text x="310" y="250" font-size="12" text-anchor="middle" opacity="0">Bố</text>
+          <!-- Legend -->
+          <rect x="350" y="100" width="15" height="15" fill="#58C4DD" opacity="0"/>
+          <text x="370" y="112" font-size="12" opacity="0">Nam</text>
+          <rect x="350" y="120" width="15" height="15" fill="#FC6255" opacity="0"/>
+          <text x="370" y="132" font-size="12" opacity="0">Nữ</text>
+          <!-- Title -->
+          <text x="250" y="20" font-size="16" text-anchor="middle" opacity="0">Chiều cao nam/nữ (cm)</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Biểu đồ cột kép có bao nhiêu cột cho mỗi đối tượng?", answer: 2, hint: "Hai cột, mỗi cột đại diện cho một bộ dữ liệu.", explain: "2 cột." },

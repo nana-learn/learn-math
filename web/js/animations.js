@@ -1009,6 +1009,20 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b27: Biểu đồ cột kép
+      'g6-b27-double-bar-chart': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 6 },
+          { selector: 'rect[fill="#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.4, stagger: 3 },
+          { selector: 'rect[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.4, stagger: 3 },
+          { selector: 'text[x="110"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 3 },
+          { selector: 'rect[x="350"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[x="370"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[x="250"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
