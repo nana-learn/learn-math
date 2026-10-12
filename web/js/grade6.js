@@ -830,6 +830,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "(-50) + 30 bằng bao nhiêu?", answer: -20, hint: "50-30=20, số lớn hơn là -50 nên kết quả âm: -20.", explain: "-20." },
     ],
   },
+  {
+    id: "g6-b16",
+    num: 16,
+    chapter: 3,
+    title: "Tính chất của phép cộng số nguyên",
+    summary: "Giao hoán: a + b = b + a. Kết hợp: (a + b) + c = a + (b + c). Cộng với 0: a + 0 = a.",
+    body: String.raw`
+      <p><strong>Vì sao cần tính chất?</strong> Các tính chất của phép cộng giúp ta tính nhẩm nhanh, biến đổi biểu thức, và giải toán một cách linh hoạt.</p>
+      <div class="definition">
+        <p>Tính chất giao hoán: \(a + b = b + a\). Tính chất kết hợp: \((a + b) + c = a + (b + c)\). Cộng với 0: \(a + 0 = a\). Tổng của hai số đối nhau bằng 0: \(a + (-a) = 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> (-3) + 5 = 5 + (-3) = 2. (-2) + (-3) = (-3) + (-2) = -5. 7 + 0 = 7. (-5) + 5 = 0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> (-12) + 15 + (-8) = (-12) + (-8) + 15 = (-20) + 15 = -5. Sử dụng giao hoán và kết hợp để tính nhanh.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> (-5) + 3 ≠ 3 + (-5) là sai. Phép cộng số nguyên cũng có tính chất giao hoán như số tự nhiên. Đừng nhầm với phép trừ.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Tính chất quan trọng.</strong> Giao hoán và kết hợp giúp hoán đổi thứ tự và nhóm số để tính nhẩm nhanh. Ví dụ: 25 + (-17) + (-25) = (25 + (-25)) + (-17) = 0 + (-17) = -17.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Phép cộng số nguyên có đầy đủ tính chất giao hoán và kết hợp như số tự nhiên.</li>
+          <li>Phép trừ KHÔNG có tính chất giao hoán: a - b ≠ b - a.</li>
+          <li>Phép trừ KHÔNG có tính chất kết hợp: (a - b) - c ≠ a - (b - c).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>(-3) + 5 và 5 + (-3) có bằng nhau không? <em>— Bằng nhau (giao hoán).</em></p>
+        <p>((-2) + 3) + 4 và (-2) + (3 + 4) có bằng nhau không? <em>— Bằng nhau (kết hợp).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính (-15) + 20 + (-5) + 10 theo cách thuận tiện. Bước 1: nhóm (-15) + (-5) = -20 và 20 + 10 = 30. Bước 2: -20 + 30 = 10. Kết quả: 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một công ty có lợi nhuận 50 triệu, lỗ 30 triệu, lợi nhuận 20 triệu, lỗ 40 triệu trong 4 quý. Lợi nhuận cả năm là bao nhiêu? <em>— 50 + (-30) + 20 + (-40) = (50+20) + (-30-40) = 70 + (-70) = 0.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phép cộng số nguyên có tính chất giao hoán và kết hợp. a + 0 = a. a + (-a) = 0.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "(-3) + 5 và 5 + (-3) có bằng nhau không?", answer: "Có", accept: ["Có", "có"], hint: "Phép cộng có tính chất giao hoán.", explain: "Có, bằng nhau đều là 2." },
+      { type: "num", prompt: "((-2) + 3) + 4 bằng bao nhiêu?", answer: 5, hint: "(-2+3)=1, 1+4=5.", explain: "5." },
+      { type: "num", prompt: "(-2) + (3 + 4) bằng bao nhiêu?", answer: 5, hint: "(3+4)=7, -2+7=5.", explain: "5." },
+      { type: "num", prompt: "Tính 25 + (-17) + (-25) theo cách thuận tiện.", answer: -17, hint: "(25+(-25)) + (-17) = 0 + (-17) = -17.", explain: "-17." },
+      { type: "num", prompt: "Tính (-12) + 18 + (-8) + 12 theo cách thuận tiện.", answer: 10, hint: "((-12)+12) + (18+(-8)) = 0 + 10 = 10.", explain: "10." },
+      { type: "num", prompt: "Tổng của một số và số đối của nó bằng bao nhiêu?", answer: 0, hint: "a + (-a) = 0.", explain: "0." },
+      { type: "num", prompt: "Cộng một số với 0 thì được gì?", answer: "Chính số đó", accept: ["Chính số đó", "chính số đó"], hint: "a + 0 = a.", explain: "Chính số đó." },
+    ],
+  },
+  {
+    id: "g6-b17",
+    num: 17,
+    chapter: 3,
+    title: "Phép trừ hai số nguyên",
+    summary: "a - b = a + (-b). Trừ một số là cộng với số đối của nó.",
+    body: String.raw`
+      <p><strong>Vì sao cần trừ số nguyên?</strong> Phép trừ giúp tính hiệu, độ chênh lệch, và nhiều bài toán thực tế như nhiệt độ, độ cao, lợi nhuận/lỗ.</p>
+      <div class="definition">
+        <p>Phép trừ số nguyên: \(a - b = a + (-b)\). Nghĩa là trừ một số là cộng với số đối của nó.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 5 - 3 = 5 + (-3) = 2. (-7) - 4 = (-7) + (-4) = -11. 8 - (-5) = 8 + 5 = 13. (-10) - (-3) = (-10) + 3 = -7.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 20 - (-15) = 20 + 15 = 35. (-50) - 30 = (-50) + (-30) = -80. 100 - 75 = 25. (-25) - (-25) = 0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> 8 - (-5) ≠ 3. Phải cộng với số đối: 8 + 5 = 13. Đừng nhầm dấu trừ kép.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhớ.</strong> Trừ là cộng với số đối. Ví dụ: a - (-b) = a + b. Trừ một số âm là cộng với số dương.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>8 - (-5) = 13, không phải 3. Phải cộng với số đối.</li>
+          <li>Phép trừ KHÔNG có tính chất giao hoán: a - b ≠ b - a.</li>
+          <li>Phép trừ KHÔNG có tính chất kết hợp: (a - b) - c ≠ a - (b - c).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>12 - 5 bằng bao nhiêu? <em>— 7.</em></p>
+        <p>12 - (-5) bằng bao nhiêu? <em>— 17.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> (-8) - 5. Bước 1: đổi dấu số trừ: 5 thành -5. Bước 2: (-8) + (-5) = -13. Kết quả: -13.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -3°C, buổi chiều là 5°C. Độ chênh lệch nhiệt độ là bao nhiêu? <em>— 5 - (-3) = 5 + 3 = 8°C.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> a - b = a + (-b). Trừ là cộng với số đối. Phép trừ không có tính chất giao hoán và kết hợp.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "12 - 5 bằng bao nhiêu?", answer: 7, hint: "12 + (-5) = 7.", explain: "7." },
+      { type: "num", prompt: "12 - (-5) bằng bao nhiêu?", answer: 17, hint: "12 + 5 = 17.", explain: "17." },
+      { type: "num", prompt: "(-8) - 5 bằng bao nhiêu?", answer: -13, hint: "(-8) + (-5) = -13.", explain: "-13." },
+      { type: "num", prompt: "(-8) - (-5) bằng bao nhiêu?", answer: -3, hint: "(-8) + 5 = -3.", explain: "-3." },
+      { type: "num", prompt: "20 - (-15) bằng bao nhiêu?", answer: 35, hint: "20 + 15 = 35.", explain: "35." },
+      { type: "num", prompt: "(-50) - 30 bằng bao nhiêu?", answer: -80, hint: "(-50) + (-30) = -80.", explain: "-80." },
+      { type: "num", prompt: "(-25) - (-25) bằng bao nhiêu?", answer: 0, hint: "(-25) + 25 = 0.", explain: "0." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
