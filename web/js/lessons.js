@@ -6325,6 +6325,27 @@ const G8_LESSONS = [
         <p>2. Hai đường thẳng y = 3x + 1 và y = -⅓x + 2 có vuông góc không?</p>
         <p><em>— 1a) a=4; 1b) a=-2. 2) Tích: 3·(-⅓)=-1 → vuông góc.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b29-slope">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đường thẳng y = ax + b với hệ số góc a">
+          <line x1="10" y1="100" x2="350" y2="100" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="180" y1="200" x2="180" y2="10" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="50" y1="150" x2="300" y2="60" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="150" r="3" fill="#58C4DD"/>
+          <circle cx="300" cy="60" r="3" fill="#58C4DD"/>
+          <circle cx="180" cy="100" r="3" fill="#9A72AC"/>
+          <text x="170" y="90" font-size="13" fill="#9A72AC">O</text>
+          <text x="32" y="165" font-size="13" fill="#58C4DD">A</text>
+          <text x="282" y="75" font-size="13" fill="#58C4DD">B</text>
+          <text x="175" y="190" font-size="12" fill="#DDDDDD">x</text>
+          <text x="340" y="115" font-size="12" fill="#DDDDDD">y</text>
+          <text x="80" y="135" font-size="11" fill="#83C167">y = ax + b</text>
+          <text x="100" y="80" font-size="11" fill="#FC6255">a &gt; 0</text>
+          <path d="M 180 100 L 200 100 L 200 90" fill="none" stroke="#FC6255" stroke-width="1"/>
+          <text x="195" y="95" font-size="10" fill="#FC6255">α</text>
+          <text x="170" y="60" font-size="11" fill="#FC6255">tan(α) = a</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "text", prompt: "Hệ số góc của đường thẳng y = 3x + 2 là:", answer: "3", accept: ["3"], hint: "Hệ số góc là hệ số của x.", explain: "a = 3." },
@@ -6707,6 +6728,27 @@ const G8_LESSONS = [
         <p><em>— 1) AB/A'B' = 5/10 = 1/2, BC/B'C' = 7/14 = 1/2, CA/C'A' = 9/18 = 1/2 → đồng dạng.</em></p>
         <p><em>— 2) AB/A'B' = 8/12 = 2/3, BC/B'C' = 6/9 = 2/3 → đồng dạng (do cân, góc ở đỉnh bằng nhau).</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b33-similar-triangles">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hai tam giác đồng dạng ABC và A'B'C'">
+          <polygon points="50,180 250,180 150,50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <polygon points="80,170 280,170 180,40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="50" cy="180" r="2" fill="#83C167"/>
+          <circle cx="250" cy="180" r="2" fill="#83C167"/>
+          <circle cx="150" cy="50" r="2" fill="#83C167"/>
+          <circle cx="80" cy="170" r="2" fill="#58C4DD"/>
+          <circle cx="280" cy="170" r="2" fill="#58C4DD"/>
+          <circle cx="180" cy="40" r="2" fill="#58C4DD"/>
+          <text x="40" y="195" font-size="11" fill="#83C167">A</text>
+          <text x="260" y="195" font-size="11" fill="#83C167">B</text>
+          <text x="145" y="35" font-size="11" fill="#83C167">C</text>
+          <text x="70" y="185" font-size="11" fill="#58C4DD">A'</text>
+          <text x="290" y="185" font-size="11" fill="#58C4DD">B'</text>
+          <text x="175" y="25" font-size="11" fill="#58C4DD">C'</text>
+          <text x="150" y="200" font-size="10" fill="#83C167">ΔABC</text>
+          <text x="180" y="190" font-size="10" fill="#58C4DD">ΔA'B'C'</text>
+          <text x="160" y="110" font-size="11" fill="#9A72AC">AB/A'B' = BC/B'C' = CA/C'A' = k</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Hai tam giác được gọi là đồng dạng khi nào?", answer: "Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", accept: ["Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", "góc bằng nhau và cạnh tỉ lệ"], hint: "Định nghĩa hai tam giác đồng dạng.", explain: "Hai tam giác đồng dạng khi góc bằng nhau và cạnh tỉ lệ." },
@@ -6811,6 +6853,28 @@ const G8_LESSONS = [
         <p><em>— 2) 5/10 = 7/14 = 9/18 = 1/2 → CCC → đồng dạng.</em></p>
         <p><em>— 3) ∠A = ∠A' = 90°, AB/A'B' = 3/6 = 1/2, AC/A'C' = 4/8 = 1/2 → CGC → đồng dạng.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b34-similarity-cases">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Ba trường hợp đồng dạng của tam giác">
+          <!-- Case 1: SSS -->
+          <polygon points="30,150 90,150 60,90" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <polygon points="120,150 240,150 180,60" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <text x="50" y="170" font-size="10" fill="#83C167">a</text>
+          <text x="165" y="170" font-size="10" fill="#83C167">ka</text>
+          <text x="35" y="120" font-size="10" fill="#83C167">b</text>
+          <text x="135" y="100" font-size="10" fill="#83C167">kb</text>
+          <text x="70" y="120" font-size="10" fill="#83C167">c</text>
+          <text x="205" y="100" font-size="10" fill="#83C167">kc</text>
+          <text x="50" y="185" font-size="10" fill="#83C167">SSS</text>
+          <!-- Case 2: SAS -->
+          <polygon points="260,150 300,150 280,90" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <polygon points="280,150 340,150 310,60" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="285" y="120" font-size="10" fill="#58C4DD">α</text>
+          <text x="305" y="120" font-size="10" fill="#58C4DD">α</text>
+          <text x="285" y="170" font-size="10" fill="#58C4DD">b</text>
+          <text x="305" y="170" font-size="10" fill="#58C4DD">kb</text>
+          <text x="290" y="185" font-size="10" fill="#58C4DD">SAS</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Nêu ba trường hợp đồng dạng của hai tam giác.", answer: "Góc-góc (GG), cạnh-cạnh-cạnh (CCC), cạnh-góc-cạnh (CGC)", accept: ["GG, CCC, CGC", "Góc-góc, cạnh-cạnh-cạnh, cạnh-góc-cạnh"], hint: "Định nghĩa ba trường hợp.", explain: "GG: 2 góc bằng nhau; CCC: 3 cạnh tỉ lệ; CGC: 2 cạnh tỉ lệ + góc xen giữa bằng nhau." },
@@ -6910,6 +6974,23 @@ const G8_LESSONS = [
         <p><em>— 2) √(15² - 9²) = √(225 - 81) = √144 = 12cm.</em></p>
         <p><em>— 3) 8² + 15² = 64 + 225 = 289 = 17² → vuông tại A.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b35-pythagoras">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Định lí Pythagore trong tam giác vuông">
+          <polygon points="50,180 250,180 50,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="50" y="160" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <circle cx="50" cy="180" r="2" fill="#58C4DD"/>
+          <circle cx="250" cy="180" r="2" fill="#58C4DD"/>
+          <circle cx="50" cy="60" r="2" fill="#58C4DD"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="262" y="198" font-size="13" fill="#58C4DD">C</text>
+          <text x="42" y="45" font-size="13" fill="#58C4DD">A</text>
+          <text x="55" y="120" font-size="12" fill="#83C167">b</text>
+          <text x="150" y="195" font-size="12" fill="#83C167">a</text>
+          <text x="110" y="135" font-size="12" fill="#83C167">c</text>
+          <text x="140" y="50" font-size="12" fill="#9A72AC">a² + b² = c²</text>
+          <text x="140" y="75" font-size="11" fill="#9A72AC">(Định lí Pythagore)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Tam giác vuông có hai cạnh góc vuông 5cm và 12cm. Cạnh huyền bằng bao nhiêu?", answer: 13, accept: ["13", "13cm"], hint: "Áp dụng định lí Pythagore.", explain: "√(5² + 12²) = √(25 + 144) = √169 = 13cm." },
@@ -7014,6 +7095,28 @@ const G8_LESSONS = [
         <p><em>— 2) AB/BC = 9/15 = 3/5, A'B'/B'C' = 15/25 = 3/5 → đồng dạng (cạnh huyền và một cạnh góc vuông).</em></p>
         <p><em>— 3) ∠B = 40°, ∠C' = 50° → ∠C = 50° = ∠C' → đồng dạng.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b36-right-triangle-similarity">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Các trường hợp đồng dạng của tam giác vuông">
+          <!-- Case 1: Hai cạnh góc vuông -->
+          <polygon points="40,170 100,170 40,90" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="40" y="150" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1"/>
+          <polygon points="140,170 260,170 140,50" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <rect x="140" y="150" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1"/>
+          <text x="100" y="190" font-size="10" fill="#83C167">b</text>
+          <text x="200" y="190" font-size="10" fill="#83C167">b'</text>
+          <text x="45" y="130" font-size="10" fill="#83C167">a</text>
+          <text x="145" y="110" font-size="10" fill="#83C167">a'</text>
+          <text x="95" y="200" font-size="10" fill="#83C167">Case 1: a/a' = b/b'</text>
+          <!-- Case 2: Góc nhọn -->
+          <polygon points="280,170 340,170 280,90" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <rect x="280" y="150" width="20" height="20" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <polygon points="280,170 310,170 310,140" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <path d="M 290 160 A 10 10 0 0 1 298 168" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <path d="M 298 168 A 10 10 0 0 0 290 160" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="285" y="145" font-size="9" fill="#9A72AC">α</text>
+          <text x="280" y="190" font-size="10" fill="#58C4DD">Case 2: có góc nhọn bằng nhau</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Hai tam giác vuông đồng dạng khi nào?", answer: "Hai cạnh góc vuông tỉ lệ, hoặc cạnh huyền và một cạnh góc vuông tỉ lệ, hoặc một góc nhọn bằng nhau", accept: ["2 cạnh góc vuông tỉ lệ", "cạnh huyền và 1 cạnh góc vuông tỉ lệ", "1 góc nhọn bằng nhau"], hint: "Ba trường hợp đặc biệt cho tam giác vuông.", explain: "Với tam giác vuông, chỉ cần 1 trong 3 điều kiện." },
@@ -7117,6 +7220,19 @@ const G8_LESSONS = [
         <p><em>— 2) S = 18×(2/3)² = 18×4/9 = 8cm².</em></p>
         <p><em>— 3) k = 5/15 = 1/3 hoặc k = 15/5 = 3 (tùy thứ tự).</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b37-similar-shapes">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình đồng dạng - mở rộng từ tam giác">
+          <circle cx="80" cy="100" r="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="260" cy="100" r="75" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="180" font-size="11" fill="#83C167">Hình tròn (R)</text>
+          <text x="235" y="190" font-size="11" fill="#58C4DD">Hình tròn (kR)</text>
+          <line x1="80" y1="100" x2="130" y2="60" stroke="#83C167" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="260" y1="100" x2="310" y2="35" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="100" y="75" font-size="10" fill="#83C167">R</text>
+          <text x="285" y="55" font-size="10" fill="#58C4DD">kR</text>
+          <text x="150" y="50" font-size="12" fill="#9A72AC">Hình đồng dạng với tỷ số k</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Thế nào là hai hình đồng dạng?", answer: "Tồn tại phép vị tự biến hình này thành hình kia", accept: ["Có phép vị tự biến hình này thành hình kia", "biến hình này thành hình kia bằng phép vị tự"], hint: "Định nghĩa hình đồng dạng.", explain: "Hai hình đồng dạng nếu tồn tại phép vị tự biến hình này thành hình kia." },
@@ -7224,6 +7340,23 @@ const G8_LESSONS = [
         <p><em>— 1) Sđáy = 9√3 cm², V = 1/3·9√3·4 = 12√3 cm³.</em></p>
         <p><em>— 2) AH = 2/3·(√3/2)·8 = 8√3/3 cm, SH = √(100 - 64/3) = √(236/3) cm.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b38-triangular-pyramid">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình chóp tam giác đều S.ABC">
+          <polygon points="100,150 260,150 180,70" fill="none" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="85" x2="180" y2="30" stroke="#83C167" stroke-width="2"/>
+          <circle cx="100" cy="150" r="2" fill="#58C4DD"/>
+          <circle cx="260" cy="150" r="2" fill="#58C4DD"/>
+          <circle cx="180" cy="70" r="2" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="2" fill="#9A72AC"/>
+          <text x="88" y="168" font-size="12" fill="#58C4DD">A</text>
+          <text x="272" y="168" font-size="12" fill="#58C4DD">B</text>
+          <text x="192" y="88" font-size="12" fill="#58C4DD">C</text>
+          <text x="192" y="20" font-size="12" fill="#9A72AC">S</text>
+          <text x="180" y="120" font-size="10" fill="#83C167">Đáy: ΔABC đều</text>
+          <text x="180" y="50" font-size="10" fill="#58C4DD">Cạnh bên: SA = SB = SC</text>
+          <text x="165" y="100" font-size="10" fill="#83C167">Trung đoạn</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Thế nào là hình chóp tam giác đều?", answer: "Có đáy là tam giác đều, các cạnh bên bằng nhau, chân đường cao trùng trọng tâm", accept: ["đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trọng tâm"], hint: "Định nghĩa hình chóp tam giác đều.", explain: "Ba điều kiện: đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trùng trọng tâm." },
@@ -7326,6 +7459,25 @@ const G8_LESSONS = [
         <p><em>— 1) Sđáy = 64 cm², V = 1/3·64·9 = 192 cm³.</em></p>
         <p><em>— 2) AH = 3√2 cm, SH = √(25 - 18) = √7 cm.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b39-quadrilateral-pyramid">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình chóp tứ giác đều S.ABCD">
+          <polygon points="100,150 260,150 260,70 100,70" fill="none" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="110" x2="180" y2="30" stroke="#83C167" stroke-width="2"/>
+          <circle cx="100" cy="150" r="2" fill="#58C4DD"/>
+          <circle cx="260" cy="150" r="2" fill="#58C4DD"/>
+          <circle cx="260" cy="70" r="2" fill="#58C4DD"/>
+          <circle cx="100" cy="70" r="2" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="2" fill="#9A72AC"/>
+          <text x="88" y="168" font-size="12" fill="#58C4DD">A</text>
+          <text x="272" y="168" font-size="12" fill="#58C4DD">B</text>
+          <text x="272" y="88" font-size="12" fill="#58C4DD">C</text>
+          <text x="88" y="88" font-size="12" fill="#58C4DD">D</text>
+          <text x="192" y="20" font-size="12" fill="#9A72AC">S</text>
+          <text x="180" y="135" font-size="10" fill="#83C167">Đáy: ABCD vuông</text>
+          <text x="180" y="50" font-size="10" fill="#58C4DD">Cạnh bên: SA = SB = SC = SD</text>
+          <text x="165" y="95" font-size="10" fill="#83C167">Trung đoạn</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Thế nào là hình chóp tứ giác đều?", answer: "Có đáy là hình vuông, các cạnh bên bằng nhau, chân đường cao trùng tâm", accept: ["đáy hình vuông, cạnh bên bằng nhau, chân đường cao tâm"], hint: "Định nghĩa hình chóp tứ giác đều.", explain: "Ba điều kiện: đáy hình vuông, cạnh bên bằng nhau, chân đường cao trùng tâm." },

@@ -562,6 +562,86 @@ const AnimationManager = {
           { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b29: Hệ số góc của đường thẳng
+      'g8-b29-slope': {
+        steps: [
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b33: Hai tam giác đồng dạng
+      'g8-b33-similar-triangles': {
+        steps: [
+          { selector: 'polygon:nth-child(1)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b34: Ba trường hợp đồng dạng của tam giác
+      'g8-b34-similarity-cases': {
+        steps: [
+          { selector: 'polygon:nth-child(1), polygon:nth-child(3)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon:nth-child(2), polygon:nth-child(4)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b35: Định lí Pythagore và ứng dụng
+      'g8-b35-pythagoras': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b36: Các trường hợp đồng dạng của tam giác vuông
+      'g8-b36-right-triangle-similarity': {
+        steps: [
+          { selector: 'polygon:nth-child(odd)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon:nth-child(even)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b37: Hình đồng dạng
+      'g8-b37-similar-shapes': {
+        steps: [
+          { selector: 'circle:nth-child(1)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b38: Hình chóp tam giác đều
+      'g8-b38-triangular-pyramid': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b39: Hình chóp tứ giác đều
+      'g8-b39-quadrilateral-pyramid': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
