@@ -1739,6 +1739,23 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Đường kính là dây dài nhất. Cung nhỏ bằng góc ở tâm chắn nó. Cung lớn \(=360^\circ\) trừ cung nhỏ.</p>
       </div>
 
+      <figure class="figure" data-animation="c5-b14-arc-chord">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Cung và dây của một đường tròn">
+          <circle cx="180" cy="110" r="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="110" y1="60" x2="250" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <path d="M 110 60 A 70 70 0 0 1 250 60" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="180" y1="110" x2="110" y2="60" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="180" y1="110" x2="250" y2="60" stroke="#9A72AC" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="110" cy="60" r="2.5" fill="#58C4DD"/>
+          <circle cx="250" cy="60" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="110" r="2.5" fill="#9A72AC"/>
+          <text x="95" y="50" font-size="11" fill="#58C4DD">A</text>
+          <text x="262" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="192" y="128" font-size="11" fill="#9A72AC">O</text>
+          <text x="180" y="40" font-size="12" fill="#FC6255">Cung AB</text>
+          <text x="180" y="130" font-size="11" fill="#9A72AC">Dây AB</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1872,6 +1889,25 @@ const LESSONS = [
         <p><strong>Luyện dạng sách bài tập.</strong> \(R=9\) cm, cung \(40^\circ\). \(l=\dfrac{40}{180}\pi\cdot 9=2\pi\) cm. Quạt \(\dfrac{40}{360}\pi\cdot 81=9\pi\) cm². Kiểm tra \(\dfrac{lR}{2}=9\pi\).</p>
       </div>
 
+      <figure class="figure" data-animation="c5-b15-arc-sector">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Độ dài cung tròn và diện tích hình quạt">
+          <circle cx="180" cy="110" r="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <path d="M 180 110 L 180 40 A 70 70 0 0 1 226 153 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <path d="M 180 110 L 180 40 A 70 70 0 0 1 226 153 Z" fill="#58C4DD" opacity="0.3"/>
+          <line x1="180" y1="110" x2="180" y2="40" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="180" y1="110" x2="226" y2="153" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <circle cx="180" cy="110" r="2.5" fill="#9A72AC"/>
+          <circle cx="180" cy="40" r="2.5" fill="#58C4DD"/>
+          <circle cx="226" cy="153" r="2.5" fill="#58C4DD"/>
+          <text x="170" y="128" font-size="11" fill="#9A72AC">O</text>
+          <text x="192" y="30" font-size="11" fill="#58C4DD">A</text>
+          <text x="238" y="165" font-size="11" fill="#58C4DD">B</text>
+          <text x="180" y="30" font-size="11" fill="#83C167">R</text>
+          <text x="155" y="75" font-size="10" fill="#83C167">α°</text>
+          <text x="180" y="20" font-size="12" fill="#9A72AC">Cung AB: l = 2πR·α/360</text>
+          <text x="180" y="40" font-size="12" fill="#58C4DD">Sector OAB: S = πR²·α/360</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2152,6 +2188,28 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Đặt \(R\geq R'\). Mốc ngoài \(R+R'\), mốc trong \(R-R'\). Bằng mốc thì tiếp xúc. Nằm giữa thì cắt hai điểm.</p>
       </div>
 
+      <figure class="figure" data-animation="c5-b17-circle-positions">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Vị trí tương đối của hai đường tròn">
+          <!-- Case 1: cắt nhau -->
+          <circle cx="110" cy="110" r="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="200" cy="110" r="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="155" cy="76" r="2" fill="#FC6255"/>
+          <circle cx="155" cy="144" r="2" fill="#FC6255"/>
+          <text x="60" y="180" font-size="10" fill="#83C167">(1)</text>
+          <text x="50" y="190" font-size="9" fill="#83C167">Cắt nhau: d < R + r</text>
+          <!-- Case 2: tiếp xúc ngoài -->
+          <circle cx="310" cy="60" r="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="380" cy="60" r="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="340" cy="60" r="2" fill="#FC6255"/>
+          <text x="315" y="110" font-size="10" fill="#83C167">(2)</text>
+          <text x="305" y="120" font-size="9" fill="#83C167">Tiếp xúc ngoài: d = R + r</text>
+          <!-- Case 3: không giao nhau -->
+          <circle cx="110" cy="180" r="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="220" cy="180" r="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="85" y="230" font-size="10" fill="#83C167">(3)</text>
+          <text x="75" y="240" font-size="9" fill="#83C167">Không giao nhau: d > R + r</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2400,6 +2458,22 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Đề ít khi bảo giải một phương trình bậc hai trần. Nó đưa phương trình rồi hỏi biểu thức của hai nghiệm. Năm 2026 dùng \(x^2-3x+1=0\). Năm 2025 dùng \(x^2+8x-6=0\). Vẫn phải nhận ra đây là bậc hai, \(a\neq 0\), và \(\Delta>0\) trước khi nói có hai nghiệm.</p>
       </div>
       
+      <figure class="figure" data-animation="c6-b19-quadratic">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình bậc hai một ẩn">
+          <line x1="50" y1="100" x2="310" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="180" y1="50" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <path d="M 80 150 Q 180 60 280 150" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="80" cy="150" r="2.5" fill="#58C4DD"/>
+          <circle cx="280" cy="150" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="100" r="2.5" fill="#9A72AC"/>
+          <text x="170" y="90" font-size="11" fill="#9A72AC">O</text>
+          <text x="180" y="40" font-size="10" fill="#DDDDDD">x</text>
+          <text x="170" y="185" font-size="10" fill="#DDDDDD">y</text>
+          <text x="180" y="30" font-size="12" fill="#83C167">y = ax² + bx + c (a ≠ 0)</text>
+          <text x="180" y="10" font-size="11" fill="#58C4DD">Đồ thị là parabol</text>
+          <text x="180" y="200" font-size="11" fill="#FC6255">ax² + bx + c = 0</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2507,6 +2581,16 @@ const LESSONS = [
         <p>Năm 2025: \(x^2+8x-6=0\), tìm \(m\) để \(\dfrac{70-mx_1^2}{x_2}=x_1+mx_2\). Cũng đưa về tổng và tích, đáp án \(m=1\). Năm 2024 hỏi \(x_1+5x_2=0\) với hoành độ giao điểm của đường thẳng và parabol. Đáp án \(m=-2\) hoặc \(m=6\).</p>
       </div>
       
+      <figure class="figure" data-animation="c6-b20-viete">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Định lí Viète và ứng dụng">
+          <text x="180" y="60" font-size="14" fill="#9A72AC" text-anchor="middle">Phương trình: ax² + bx + c = 0</text>
+          <text x="180" y="90" font-size="12" fill="#83C167" text-anchor="middle">Có hai nghiệm x₁, x₂</text>
+          <text x="180" y="120" font-size="14" fill="#58C4DD" text-anchor="middle">x₁ + x₂ = -b/a</text>
+          <text x="180" y="140" font-size="14" fill="#58C4DD" text-anchor="middle">x₁·x₂ = c/a</text>
+          <text x="180" y="170" font-size="12" fill="#FC6255" text-anchor="middle">Ứng dụng: tính nhẩm nghiệm</text>
+          <text x="180" y="190" font-size="11" fill="#FC6255" text-anchor="middle">Nếu a + b + c = 0 thì x₁ = 1, x₂ = c/a</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2613,6 +2697,18 @@ const LESSONS = [
         <p>Năm 2025: cùng quãng đường, đi 60 km/h, về 40 km/h, chiều đi ít hơn 1 giờ. Một phương trình về thời gian. Năm 2024: chở 15 tấn, đổi từ xe nhỏ sang xe lớn thì giảm 2 xe, mỗi xe lớn chở hơn 2 tấn. Đề cho phép lập một phương trình hoặc một hệ.</p>
       </div>
       
+      <figure class="figure" data-animation="c6-b21-word-problem">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Giải bài toán bằng cách lập phương trình">
+          <rect x="80" y="120" width="60" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="220" y="120" width="60" height="60" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="140" y1="150" x2="220" y2="150" stroke="#9A72AC" stroke-width="2"/>
+          <text x="95" y="190" font-size="11" fill="#83C167">x (m)</text>
+          <text x="235" y="190" font-size="11" fill="#58C4DD">x + 5 (m)</text>
+          <text x="175" y="145" font-size="11" fill="#9A72AC">Diện tích: x(x+5) = 150</text>
+          <text x="160" y="100" font-size="12" fill="#83C167">Bài toán hình chữ nhật</text>
+          <text x="160" y="80" font-size="11" fill="#FC6255">Phương trình: x² + 5x - 150 = 0</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2841,6 +2937,22 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Năm 2025, 300 học sinh, nhóm \([12;\ 16)\) có 75 em. Tần số tương đối là \(\dfrac{75}{300}\cdot 100\% = 25\%\). Năm 2026, nhóm \([150;\ 155)\) có 14 em trong 50 em: \(\dfrac{14}{50}\cdot 100\% = 28\%\). Đừng viết 14% hay 75%.</p>
       </div>
       
+      <figure class="figure" data-animation="c7-b23-relative-frequency">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bảng tần số tương đối và biểu đồ">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="50" y1="50" x2="50" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="80" y="140" width="30" height="40" fill="#83C167"/>
+          <rect x="130" y="110" width="30" height="70" fill="#58C4DD"/>
+          <rect x="180" y="90" width="30" height="90" fill="#FC6255"/>
+          <rect x="230" y="100" width="30" height="80" fill="#9A72AC"/>
+          <text x="85" y="195" font-size="9" fill="#555">A</text>
+          <text x="135" y="195" font-size="9" fill="#555">B</text>
+          <text x="185" y="195" font-size="9" fill="#555">C</text>
+          <text x="235" y="195" font-size="9" fill="#555">D</text>
+          <text x="180" y="40" font-size="11" fill="#9A72AC">Bảng tần số tương đối</text>
+          <text x="180" y="60" font-size="10" fill="#83C167">Tần số tương đối = tần số / tổng số</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -2959,6 +3071,22 @@ const LESSONS = [
         <p>Năm 2025 hỏi cùng dạng với thời gian tự học của 300 học sinh. Nhóm \([12;\ 16)\) có 75 em, tần số tương đối 25%. Giá trị 16 không thuộc nhóm đó.</p>
       </div>
       
+      <figure class="figure" data-animation="c7-b24-grouped-frequency">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bảng tần số ghép nhóm và biểu đồ">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="50" y1="50" x2="50" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="70" y="150" width="40" height="30" fill="#83C167"/>
+          <rect x="120" y="130" width="40" height="50" fill="#58C4DD"/>
+          <rect x="170" y="100" width="40" height="80" fill="#FC6255"/>
+          <rect x="220" y="120" width="40" height="60" fill="#9A72AC"/>
+          <text x="80" y="195" font-size="9" fill="#555">[10-20)</text>
+          <text x="130" y="195" font-size="9" fill="#555">[20-30)</text>
+          <text x="180" y="195" font-size="9" fill="#555">[30-40)</text>
+          <text x="230" y="195" font-size="9" fill="#555">[40-50)</text>
+          <text x="180" y="40" font-size="11" fill="#9A72AC">Bảng tần số ghép nhóm</text>
+          <text x="180" y="60" font-size="10" fill="#83C167">Ghép dữ liệu vào các khoảng</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {

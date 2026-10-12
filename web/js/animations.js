@@ -492,6 +492,83 @@ const AnimationManager = {
         ]
       },
       
+      // c5-b14: Cung và dây của một đường tròn
+      'c5-b14-arc-chord': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c5-b15: Độ dài cung tròn và diện tích hình quạt
+      'c5-b15-arc-sector': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c5-b17: Vị trí tương đối của hai đường tròn
+      'c5-b17-circle-positions': {
+        steps: [
+          { selector: 'circle:nth-child(odd)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle:nth-child(even)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b19: Phương trình bậc hai một ẩn
+      'c6-b19-quadratic': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b20: Định lí Viète và ứng dụng
+      'c6-b20-viete': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c6-b21: Giải bài toán bằng cách lập phương trình
+      'c6-b21-word-problem': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c7-b23: Bảng tần số tương đối và biểu đồ
+      'c7-b23-relative-frequency': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // c7-b24: Bảng tần số, tần số tương đối ghép nhóm
+      'c7-b24-grouped-frequency': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g8-b10: Hình thang
       'g8-b10-trapezoid': {
         steps: [
