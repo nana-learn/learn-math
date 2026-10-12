@@ -993,6 +993,18 @@ const AnimationManager = {
         ]
       },
       
+      // g7-b34: Đồng quy trung tuyến và phân giác
+      'g7-b34-concurrency': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line:nth-child(1)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line:nth-child(3)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="4"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b33: Ba cạnh của một tam giác
       'g7-b33-triangle-inequality': {
         steps: [

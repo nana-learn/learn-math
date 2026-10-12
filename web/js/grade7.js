@@ -2262,7 +2262,7 @@ const G7_LESSONS = [
     summary: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
     body: String.raw`
       <p>Trung tuyến nối đỉnh với trung điểm cạnh đối. Ba trung tuyến đồng quy tại trọng tâm G. AG : GM = 2 : 1, M trung điểm.</p>
-      <figure class="figure">
+      <figure class="figure" data-animation="g7-b34-concurrency">
         <svg viewBox="0 0 260 180" role="img" aria-label="Ba trung tuyến đồng quy tại trọng tâm">
           <polygon points="30,150 230,150 130,25" fill="none" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="130" y1="25" x2="130" y2="150" stroke="#58C4DD" stroke-width="1.6"/>
@@ -2274,7 +2274,6 @@ const G7_LESSONS = [
           <text x="122" y="166" font-size="13">M</text>
           <text x="136" y="130" font-size="11" fill="#58C4DD">2 : 1</text>
         </svg>
-        <figcaption>Trọng tâm G chia mỗi trung tuyến theo tỉ số 2 : 1, đoạn dài về phía đỉnh.</figcaption>
       </figure>
 
       <p>Ba đường phân giác trong đồng quy tại tâm đường tròn nội tiếp, điểm cách đều ba cạnh.</p>
