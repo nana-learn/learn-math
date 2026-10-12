@@ -1142,6 +1142,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Hình chữ nhật có chiều dài gấp đôi chiều rộng thì", choices: ["Là hình vuông", "Không phải hình vuông", "Luôn là hình vuông", "Không xác định"], correct: 1, hint: "Hình vuông cần dài = rộng.", explain: "Không phải hình vuông." },
     ],
   },
+  {
+    id: "g6-b20",
+    num: 20,
+    chapter: 4,
+    title: "Hình thoi. Hình bình hành",
+    summary: "Hình thoi: bốn cạnh bằng nhau. Hình bình hành: hai cặp cạnh đối song song và bằng nhau.",
+    body: String.raw`
+      <p><strong>Vì sao cần hình thoi hình bình hành?</strong> Đây là các hình đặc biệt có tính chất đối xứng và song song, quan trọng trong hình học và ứng dụng thực tế.</p>
+      <div class="definition">
+        <p>Hình thoi: bốn cạnh bằng nhau, hai đường chéo vuông góc với nhau và cắt nhau tại trung điểm. Hình bình hành: hai cặp cạnh đối song song và bằng nhau, hai đường chéo cắt nhau tại trung điểm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình thoi ABCD có AB = BC = CD = DA = 5 cm. Hình bình hành MNPQ có MN ∥ PQ, MN = PQ = 8 cm, MQ ∥ NP, MQ = NP = 6 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình thoi có đường chéo d1 = 6 cm, d2 = 8 cm. Diện tích = (6 × 8) / 2 = 24 cm². Hình bình hành có đáy 10 cm, chiều cao 5 cm có diện tích 50 cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hình vuông là hình thoi đặc biệt (có hai đường chéo bằng nhau). Hình chữ nhật là hình bình hành đặc biệt (có một góc vuông). Nhưng hình thoi ≠ hình bình hành thông thường.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> Hình thoi: diện tích = (d1 × d2) / 2. Hình bình hành: chu vi = 2 × (a + b), diện tích = đáy × chiều cao.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hình thoi chỉ cần bốn cạnh bằng nhau (góc không nhất thiết vuông).</li>
+          <li>Hình bình hành cần hai cặp cạnh đối song song (không cần góc vuông).</li>
+          <li>Diện tích hình thoi dùng tích hai đường chéo, không phải tích hai cạnh.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình thoi có đường chéo 8 cm và 6 cm. Diện tích bằng bao nhiêu? <em>— 24 cm².</em></p>
+        <p>Hình bình hành có đáy 12 cm, chiều cao 5 cm. Diện tích bằng bao nhiêu? <em>— 60 cm².</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính diện tích hình thoi có đường chéo d1 = 10 cm, d2 = 8 cm. Bước 1: diện tích = (d1 × d2) / 2. Bước 2: (10 × 8) / 2 = 40 cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Hình bình hành có chu vi 40 cm, một cạnh bằng 12 cm. Tính cạnh kề. <em>— Gọi cạnh kề là x: 2 × (12 + x) = 40 ⇒ x = 8 cm.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình thoi: 4 cạnh bằng nhau. Diện tích = (d1 × d2) / 2. Hình bình hành: hai cặp cạnh đối song song. Diện tích = đáy × chiều cao.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình thoi có đường chéo 10 cm và 6 cm. Diện tích bằng bao nhiêu?", answer: 30, hint: "(10 × 6) / 2 = 30.", explain: "30 cm²." },
+      { type: "num", prompt: "Hình bình hành có đáy 15 cm, chiều cao 8 cm. Diện tích bằng bao nhiêu?", answer: 120, hint: "15 × 8 = 120.", explain: "120 cm²." },
+      { type: "num", prompt: "Hình thoi có diện tích 48 cm², đường chéo d1 = 8 cm. Tính d2.", answer: 12, hint: "(8 × d2) / 2 = 48 ⇒ d2 = 12.", explain: "12 cm." },
+      { type: "mc", prompt: "Hình nào có hai cặp cạnh đối song song?", choices: ["Hình thoi", "Hình bình hành", "Cả hai hình trên", "Không có"], correct: 2, hint: "Cả hình thoi và bình hành đều có hai cặp cạnh đối song song.", explain: "Cả hai hình trên." },
+      { type: "num", prompt: "Hình bình hành có chu vi 36 cm, một cạnh bằng 10 cm. Tính cạnh kề.", answer: 8, hint: "2 × (10 + x) = 36 ⇒ x = 8.", explain: "8 cm." },
+      { type: "num", prompt: "Hình thoi có bốn cạnh đều bằng 7 cm. Chu vi bằng bao nhiêu?", answer: 28, hint: "7 × 4 = 28.", explain: "28 cm." },
+      { type: "mc", prompt: "Hình vuông là hình thoi", choices: ["Đúng", "Sai", "Chỉ khi có góc vuông", "Không xác định"], correct: 0, hint: "Hình vuông có bốn cạnh bằng nhau nên là hình thoi đặc biệt.", explain: "Đúng." },
+    ],
+  },
+  {
+    id: "g6-b21",
+    num: 21,
+    chapter: 4,
+    title: "Hình lục giác đều",
+    summary: "Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằng nhau và đều bằng 120°.",
+    body: String.raw`
+      <p><strong>Vì sao cần hình lục giác đều?</strong> Hình lục giác đều xuất hiện nhiều trong tự nhiên (tổ ong, tinh thể) và ứng dụng trong thiết kế.</p>
+      <div class="definition">
+        <p>Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằng nhau và đều bằng \(120^\circ\), có sáu trục đối xứng. Tâm đối xứng là giao điểm các đường chéo chính.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình lục giác đều ABCDEF có AB = BC = CD = DE = EF = FA = 4 cm. Mỗi góc bằng 120°.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình lục giác đều cạnh a có chu vi 6a. Nếu cạnh bằng 5 cm, chu vi bằng 30 cm. Tổng các góc trong bằng \((6-2) \times 180^\circ = 720^\circ\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không phải hình lục giác nào cũng đều. Hình lục giác đều yêu cầu sáu cạnh bằng nhau VÀ sáu góc bằng nhau. Hình lục giác thường không có tính chất đối xứng mạnh như vậy.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách vẽ.</strong> Vẽ đường tròn, đặt compa bằng bán kính, chia đường tròn thành sáu phần bằng nhau, nối các điểm chia.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hình lục giác đều khác với hình lục giác thường.</li>
+          <li>Tổng góc trong lục giác = 720°, không phải 360°.</li>
+          <li>Hình lục giác đều có sáu trục đối xứng (ba qua đỉnh đối diện, ba qua trung điểm cạnh đối diện).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình lục giác đều cạnh 6 cm có chu vi bao nhiêu? <em>— 36 cm.</em></p>
+        <p>Mỗi góc trong hình lục giác đều bằng bao nhiêu? <em>— 120°.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính tổng các góc trong hình lục giác đều. Bước 1: công thức tổng góc = (n - 2) × 180°. Bước 2: với n = 6, tổng = 4 × 180° = 720°. Bước 3: mỗi góc = 720° / 6 = 120°.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một tổ ong có tổ hình lục giác đều cạnh 2 cm. Tính chu vi tổ. <em>— 2 × 6 = 12 cm.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình lục giác đều: 6 cạnh bằng nhau, 6 góc bằng 120°, tổng góc = 720°.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình lục giác đều cạnh 5 cm có chu vi bao nhiêu?", answer: 30, hint: "5 × 6 = 30.", explain: "30 cm." },
+      { type: "num", prompt: "Mỗi góc trong hình lục giác đều bằng bao nhiêu?", answer: 120, hint: "720° / 6 = 120°.", explain: "120°." },
+      { type: "num", prompt: "Hình lục giác đều có tổng các góc trong bằng bao nhiêu?", answer: 720, hint: "(6-2) × 180° = 720°.", explain: "720°." },
+      { type: "mc", prompt: "Hình lục giác đều có bao nhiêu trục đối xứng?", choices: ["3", "4", "6", "8"], correct: 2, hint: "3 trục qua đỉnh đối diện, 3 trục qua trung điểm cạnh đối diện.", explain: "6 trục đối xứng." },
+      { type: "num", prompt: "Hình lục giác đều cạnh 3 cm. Chu vi bằng bao nhiêu?", answer: 18, hint: "3 × 6 = 18.", explain: "18 cm." },
+      { type: "num", prompt: "Tổ ong hình lục giác đều cạnh 1.5 cm. Tính chu vi.", answer: 9, hint: "1.5 × 6 = 9.", explain: "9 cm." },
+      { type: "mc", prompt: "Hình lục giác nào dưới đây là đều?", choices: ["Có 6 cạnh bằng nhau", "Có 6 góc bằng nhau", "Có cả 6 cạnh và 6 góc bằng nhau", "Có 3 cặp cạnh song song"], correct: 2, hint: "Cần cả 6 cạnh bằng nhau VÀ 6 góc bằng nhau.", explain: "Có cả 6 cạnh và 6 góc bằng nhau." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
