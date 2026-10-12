@@ -6627,6 +6627,26 @@ const G8_LESSONS = [
         <p>2. Tung ba đồng xu. Liệt kê các kết quả có thể.</p>
         <p><em>— 1) Ω = {1, 2, 3, 4, 5, 6}. 2) Ω = {SSS, SSN, SNS, SNN, NSS, NSN, NNS, NNN}.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b30-probability-outcomes">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Kết quả có thể và kết quả thuận lợi của biến cố">
+          <circle cx="180" cy="110" r="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="110" x2="180" y2="40" stroke="#58C4DD" stroke-width="1.5"/>
+          <line x1="180" y1="110" x2="250" y2="155" stroke="#58C4DD" stroke-width="1.5"/>
+          <line x1="180" y1="110" x2="110" y2="155" stroke="#58C4DD" stroke-width="1.5"/>
+          <line x1="180" y1="110" x2="180" y2="180" stroke="#FC6255" stroke-width="1.5"/>
+          <circle cx="180" cy="40" r="2.5" fill="#58C4DD"/>
+          <circle cx="250" cy="155" r="2.5" fill="#58C4DD"/>
+          <circle cx="110" cy="155" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="180" r="2.5" fill="#FC6255"/>
+          <text x="175" y="30" font-size="11" fill="#58C4DD">Nửa</text>
+          <text x="260" y="155" font-size="11" fill="#58C4DD">Sáp</text>
+          <text x="95" y="155" font-size="11" fill="#58C4DD">Nửa</text>
+          <text x="170" y="195" font-size="11" fill="#FC6255">Sáp</text>
+          <text x="180" y="25" font-size="10" fill="#9A72AC" text-anchor="middle">Ω = {Nửa, Sáp}</text>
+          <text x="180" y="55" font-size="10" fill="#83C167" text-anchor="middle">Sự kiện E: Ra mặt Sáp</text>
+          <text x="180" y="75" font-size="10" fill="#83C167" text-anchor="middle">Kết quả thuận lợi: {Sáp}</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Tung một đồng xu. Không gian mẫu có bao nhiêu kết quả?", answer: "2", accept: ["2"], hint: "Đồng xu có hai mặt: sấp hoặc ngửa.", explain: "Ω = {S, N} → 2 kết quả." },
@@ -6719,6 +6739,19 @@ const G8_LESSONS = [
         <p>2. Tung một xúc xắc. Tính P(số chấm > 4).</p>
         <p><em>— 1) P = 4/10 = 2/5. 2) Số > 4: {5, 6}, P = 2/6 = 1/3.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b31-probability-ratio">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tính xác suất bằng tỉ số">
+          <circle cx="180" cy="110" r="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <path d="M 180 110 L 180 50 A 60 60 0 0 1 222 142 Z" fill="#83C167" opacity="0.5"/>
+          <path d="M 180 110 L 222 142 A 60 60 0 0 1 138 142 Z" fill="#58C4DD" opacity="0.5"/>
+          <path d="M 180 110 L 138 142 A 60 60 0 0 1 180 50 Z" fill="#FC6255" opacity="0.5"/>
+          <text x="180" y="110" font-size="12" fill="#9A72AC" text-anchor="middle">P(E)</text>
+          <text x="180" y="135" font-size="11" fill="#9A72AC" text-anchor="middle">= m/n</text>
+          <text x="180" y="35" font-size="10" fill="#83C167" text-anchor="middle">Xác suất: P(E) = số kết quả thuận lợi / số kết quả có thể</text>
+          <text x="180" y="60" font-size="10" fill="#58C4DD" text-anchor="middle">P(E) = m/n, 0 ≤ m ≤ n</text>
+          <text x="180" y="80" font-size="10" fill="#FC6255" text-anchor="middle">P(∅) = 0, P(Ω) = 1</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Một hộp có 6 bi: 2 đỏ, 4 xanh. Rút ngẫu nhiên 1 bi. P(đỏ) =", answer: "1/3", accept: ["1/3", "0.333"], hint: "n=6, m=2, P=2/6=1/3.", explain: "P = 2/6 = 1/3." },
@@ -6817,6 +6850,27 @@ const G8_LESSONS = [
         <p>2. Một máy sản xuất có 10% sản phẩm lỗi. Trong 500 sản phẩm, dự đoán số lỗi.</p>
         <p><em>— 1) P_n = 22/40 = 0.55. 2) Dự đoán: 500 × 0.1 = 50 sản phẩm lỗi.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b32-probability-experimental">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Mối liên hệ giữa xác suất thực nghiệm và xác suất">
+          <line x1="60" y1="180" x2="300" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="60" y1="50" x2="60" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="80" cy="160" r="3" fill="#83C167"/>
+          <circle cx="120" cy="150" r="3" fill="#58C4DD"/>
+          <circle cx="160" cy="140" r="3" fill="#FC6255"/>
+          <circle cx="200" cy="135" r="3" fill="#9A72AC"/>
+          <circle cx="240" cy="130" r="3" fill="#83C167"/>
+          <circle cx="280" cy="128" r="3" fill="#58C4DD"/>
+          <text x="70" y="195" font-size="9" fill="#555">10</text>
+          <text x="110" y="195" font-size="9" fill="#555">50</text>
+          <text x="150" y="195" font-size="9" fill="#555">100</text>
+          <text x="190" y="195" font-size="9" fill="#555">500</text>
+          <text x="230" y="195" font-size="9" fill="#555">1000</text>
+          <text x="270" y="195" font-size="9" fill="#555">∞</text>
+          <text x="180" y="30" font-size="11" fill="#9A72AC" text-anchor="middle">P_n → P khi n → ∞</text>
+          <text x="180" y="50" font-size="10" fill="#FC6255" text-anchor="middle">Xác suất thực nghiệm</text>
+          <text x="180" y="70" font-size="10" fill="#83C167" text-anchor="middle">Xác suất lý thuyết</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Tung đồng xu 50 lần, có 28 lần ngửa. P_n(ngửa) =", answer: "0.56", accept: ["0.56", "14/25"], hint: "P_n = 28/50 = 0.56.", explain: "P_n = 28/50 = 0.56." },

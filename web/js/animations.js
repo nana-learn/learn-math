@@ -743,6 +743,33 @@ const AnimationManager = {
           { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b30: Kết quả có thể và kết quả thuận lợi
+      'g8-b30-probability-outcomes': {
+        steps: [
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b31: Cách tính xác suất bằng tỉ số
+      'g8-b31-probability-ratio': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b32: Mối liên hệ giữa xác suất thực nghiệm và xác suất
+      'g8-b32-probability-experimental': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
