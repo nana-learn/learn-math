@@ -308,14 +308,14 @@ Both lessons use simple animation framework:
 
 ### Complete Animation Coverage Summary:
 - ✅ Grade 9: 30/30 lessons (100%)
-- ✅ Grade 8: 30/39 lessons (76.9%)
-- ✅ Grade 7: 16/37 lessons (43.2%)
+- ✅ Grade 8: 31/39 lessons (79.5%)
+- ✅ Grade 7: 19/37 lessons (51.4%)
 
-**Total: 76 animated lessons across all grades**
+**Total: 80 animated lessons across all grades**
 
 ### Remaining Lessons for Animation:
-- Grade 8: g8-b1, g8-b2, g8-b3, g8-b4, g8-b5, g8-b6, g8-b7, g8-b8, g8-b14
-- Grade 7: g7-b1, g7-b2, g7-b3, g7-b4, g7-b5, g7-b6, g7-b7, g7-b11, g7-b17, g7-b20 through g7-b28, g7-b34
+- Grade 8: g8-b1, g8-b2, g8-b3, g8-b4, g8-b5, g8-b6, g8-b7, g8-b8 (purely symbolic algebra)
+- Grade 7: g7-b1, g7-b2, g7-b3, g7-b4, g7-b5, g7-b6, g7-b7, g7-b11, g7-b20 through g7-b28 (purely symbolic algebra)
 
 Committed 0d665aa. Pushed to GitHub Pages main branch.
 
