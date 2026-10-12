@@ -926,6 +926,15 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b24: Thu thập và phân loại dữ liệu
+      'g6-b24-data-table': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
