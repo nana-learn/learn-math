@@ -1579,7 +1579,34 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Biểu đồ cột có 4 cột với chiều cao 6cm, 9cm, 4cm, 7cm. Tỷ lệ 1cm = 5 đơn vị. Tính tổng giá trị. <em>— (6+9+4+7) × 5 = 130.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột dùng cột (hình chữ nhật đứng) để trình bày dữ liệu. Trục ngang ghi tên, trục dọc ghi giá trị.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột dùng cột (hình chữ nhật đứng) để trình bày dữ liệu. Trục ngang ghi tên, trục dọc ghi giá trị.</p>
+      <figure id="fig-g6-b26-bar-chart" class="figure" data-animation="g6-b26-bar-chart">
+        <svg width="500" height="250" viewBox="0 0 500 250">
+          <!-- Coordinate axes -->
+          <line x1="50" y1="200" x2="50" y2="30" stroke="#333" stroke-width="2" opacity="0"/>
+          <line x1="50" y1="200" x2="450" y2="200" stroke="#333" stroke-width="2" opacity="0"/>
+          <!-- Y-axis labels -->
+          <text x="40" y="205" font-size="12" text-anchor="end" opacity="0">10</text>
+          <text x="40" y="170" font-size="12" text-anchor="end" opacity="0">8</text>
+          <text x="40" y="135" font-size="12" text-anchor="end" opacity="0">6</text>
+          <text x="40" y="100" font-size="12" text-anchor="end" opacity="0">4</text>
+          <text x="40" y="65" font-size="12" text-anchor="end" opacity="0">2</text>
+          <text x="40" y="30" font-size="12" text-anchor="end" opacity="0">0</text>
+          <!-- Bars -->
+          <rect x="90" y="135" width="60" height="65" fill="#58C4DD" opacity="0"/>
+          <text x="120" y="220" font-size="12" text-anchor="middle" opacity="0">Tèo</text>
+          <rect x="190" y="100" width="60" height="100" fill="#58C4DD" opacity="0"/>
+          <text x="220" y="220" font-size="12" text-anchor="middle" opacity="0">Mọi</text>
+          <rect x="290" y="170" width="60" height="30" fill="#58C4DD" opacity="0"/>
+          <text x="320" y="220" font-size="12" text-anchor="middle" opacity="0">Bố</text>
+          <text x="120" y="130" font-size="14" text-anchor="middle" opacity="0">6</text>
+          <text x="220" y="95" font-size="14" text-anchor="middle" opacity="0">8</text>
+          <text x="320" y="165" font-size="14" text-anchor="middle" opacity="0">3</text>
+          <!-- Title -->
+          <text x="250" y="20" font-size="16" text-anchor="middle" opacity="0">Chiều cao (cm)</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Biểu đồ cột có cột cao 4cm, tỷ lệ 1cm = 3 đơn vị. Giá trị là bao nhiêu?", answer: 12, hint: "4 × 3 = 12.", explain: "12 đơn vị." },

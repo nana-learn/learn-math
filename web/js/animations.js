@@ -998,6 +998,17 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b26: Biểu đồ cột
+      'g6-b26-bar-chart': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 6 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.4, stagger: 3 },
+          { selector: 'text[x="120"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 3 },
+          { selector: 'text[x="250"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
