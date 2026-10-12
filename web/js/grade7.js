@@ -407,7 +407,7 @@ const G7_LESSONS = [
     summary: "Kề bù cộng 180°. Đối đỉnh bằng nhau. Phân giác cắt góc thành hai góc bằng nhau.",
     body: String.raw`
       <p>Hai góc kề bù: chung một cạnh, hai cạnh còn lại là hai tia đối nhau. Tổng \(180^\circ\). Hai góc đối đỉnh: hai cặp tia đối nhau, hai góc bằng nhau.</p>
-      <figure class="figure">
+      <figure class="figure" data-animation="g7-b8-angles">
         <svg viewBox="0 0 320 170" role="img" aria-label="Hai đường thẳng cắt nhau tạo góc kề bù và góc đối đỉnh">
           <line x1="20" y1="130" x2="300" y2="40" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="40" y1="30" x2="280" y2="150" stroke="#DDDDDD" stroke-width="2"/>
