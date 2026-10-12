@@ -984,6 +984,16 @@ const AnimationManager = {
         ]
       },
       
+      // g7-b29: Làm quen với biến cố
+      'g7-b29-random-events': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="16"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b31: Góc và cạnh đối diện trong tam giác
       'g7-b31-triangle-relationships': {
         steps: [

@@ -1886,7 +1886,7 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Rút một thẻ trong {1,2,3,4,5}. Biến cố A: “số nguyên tố”. Thuận lợi: 2, 3, 5. 1 không phải số nguyên tố. 4 không. Viết rõ tập kết quả trước khi đếm.</p>
       </div>
-            <figure class="figure">
+            <figure class="figure" data-animation="g7-b29-random-events">
         <svg viewBox="0 0 360 200" role="img" aria-label="Xúc xắc sáu mặt, biến cố số chẵn gồm 2, 4, 6">
           <rect x="80" y="30" width="200" height="140" rx="10" fill="#DDDDDD" fill-opacity="0.25" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="180" y1="30" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1"/>
