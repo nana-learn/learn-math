@@ -270,6 +270,17 @@ Added animation to Grade 7 lesson g7-b34 (Concurrency of medians and angle bisec
 
 Committed e10e518. Pushed to GitHub Pages main branch.
 
+## 2026-01-11 Grade 7 g7-b17 animation (29253c2)
+
+Added animation to Grade 7 lesson g7-b17 (Data collection and classification):
+
+- Bar chart showing frequency of number of siblings (values 0,1,2,3 with frequencies 3,5,3,1)
+- Animation steps: coordinate axes → bars → frequency labels → value labels
+
+**Final Grade 7 Animation Status: 18/37 lessons (48.6%)**
+
+Committed 29253c2. Pushed to GitHub Pages main branch.
+
 ## 2026-01-11 Grade 9 animations complete (0d665aa)
 
 Added animations to Grade 9 lessons:
