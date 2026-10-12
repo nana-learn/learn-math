@@ -4996,6 +4996,29 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Hình thang ABCD (AB ∥ CD), AB=10cm, CD=18cm, AE=4cm, ED=6cm. EF∥AB. Tính EF.</p>
         <p>EF = (6/10)·10 + (4/10)·18 = 6 + 7.2 = 13.2 cm.</p>
       </div>
+      <figure class="figure" data-animation="g8-b13-thales-trapezoid">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình thang ABCD với đường thẳng song song hai đáy">
+          <polygon points="50,180 250,180 230,80 70,80" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="70" y1="80" x2="230" y2="80" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="50" y1="180" x2="250" y2="180" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="95" y1="130" x2="205" y2="130" stroke="#9A72AC" stroke-width="2"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="250" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="230" cy="80" r="3" fill="#58C4DD"/>
+          <circle cx="70" cy="80" r="3" fill="#58C4DD"/>
+          <circle cx="95" cy="130" r="3" fill="#9A72AC"/>
+          <circle cx="205" cy="130" r="3" fill="#9A72AC"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">A</text>
+          <text x="262" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="242" y="70" font-size="13" fill="#58C4DD">C</text>
+          <text x="62" y="70" font-size="13" fill="#58C4DD">D</text>
+          <text x="83" y="148" font-size="13" fill="#9A72AC">M</text>
+          <text x="217" y="148" font-size="13" fill="#9A72AC">N</text>
+          <text x="160" y="60" font-size="12" fill="#FC6255">Đáy AB ∥ CD</text>
+          <text x="155" y="120" font-size="11" fill="#9A72AC">MN ∥ AB ∥ CD</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Hình thang ABCD (AB ∥ CD), AB=8cm, CD=16cm, AE=3cm, ED=5cm. EF∥AB. Tính EF.", answer: 11, hint: "(5/8)·8 + (3/8)·16.", explain: "5 + 6 = 11 cm." },
@@ -5152,6 +5175,30 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> ΔABC, DE ∥ BC, AD=6cm, AB=15cm, DE=4cm. Tính BC.</p>
         <p>\(\dfrac{6}{15} = 0.4\). BC = 4 : 0.4 = 10 cm.</p>
       </div>
+      <figure class="figure" data-animation="g8-b15-thales-triangle">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC với DE song song BC">
+          <polygon points="50,180 310,180 180,30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="105" y1="130" x2="255" y2="130" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
+          <circle cx="105" cy="130" r="3" fill="#FC6255"/>
+          <circle cx="255" cy="130" r="3" fill="#FC6255"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">A</text>
+          <text x="322" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="192" y="20" font-size="13" fill="#58C4DD">C</text>
+          <text x="93" y="148" font-size="13" fill="#FC6255">D</text>
+          <text x="267" y="148" font-size="13" fill="#FC6255">E</text>
+          <text x="165" y="115" font-size="11" fill="#83C167">DE ∥ BC</text>
+          <text x="80" y="100" font-size="10" fill="#58C4DD">AD</text>
+          <text x="270" y="100" font-size="10" fill="#58C4DD">AE</text>
+          <text x="180" y="195" font-size="10" fill="#58C4DD">AB</text>
+          <text x="180" y="40" font-size="10" fill="#58C4DD">AC</text>
+          <text x="155" y="60" font-size="11" fill="#FC6255">DB</text>
+          <text x="185" y="60" font-size="11" fill="#FC6255">EC</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "ΔABC, DE ∥ BC, AD=3cm, DB=5cm, AE=4cm. Tính EC.", answer: 6.67, accept: ["6.67", "20/3", "6.7"], hint: "AD/DB = AE/EC.", explain: "3/5 = 4/EC → EC = 20/3 ≈ 6.67 cm." },
@@ -5226,6 +5273,29 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> ΔABC đều cạnh 10 cm. Đường trung bình = 5 cm.</p>
         <p>ΔABC vuông tại A, AB=6cm, AC=8cm, BC=10cm. Đường trung bình nối trung điểm AB, AC = 5 cm.</p>
       </div>
+      <figure class="figure" data-animation="g8-b16-midsegment">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC với đường trung bình DE">
+          <polygon points="50,180 310,180 180,30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="105" y1="105" x2="255" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
+          <circle cx="105" cy="105" r="3" fill="#FC6255"/>
+          <circle cx="255" cy="105" r="3" fill="#FC6255"/>
+          <circle cx="180" cy="105" r="2" fill="#9A72AC"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">A</text>
+          <text x="322" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="192" y="20" font-size="13" fill="#58C4DD">C</text>
+          <text x="93" y="123" font-size="13" fill="#FC6255">D</text>
+          <text x="267" y="123" font-size="13" fill="#FC6255">E</text>
+          <text x="172" y="123" font-size="11" fill="#9A72AC">M</text>
+          <text x="165" y="90" font-size="11" fill="#58C4DD">DE (đường trung bình)</text>
+          <text x="180" y="200" font-size="10" fill="#83C167">BC = 2·DE</text>
+          <path d="M 105 102 A 25 25 0 0 1 130 115" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="135" y="100" font-size="10" fill="#58C4DD">∥</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "ΔABC, M, N là trung điểm AB, AC. BC=14cm. Tính MN.", answer: 7, hint: "MN = BC/2.", explain: "7 cm." },
@@ -5301,6 +5371,31 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> ΔABC, AB=8cm, AC=12cm, BC=20cm. AD là đường phân giác. BD=8cm, DC=12cm.</p>
         <p>ΔMNP, MN=5cm, MP=7cm, NP=18cm. MQ là đường phân giác. NQ=7.5cm, QP=10.5cm.</p>
       </div>
+      <figure class="figure" data-animation="g8-b17-angle-bisector">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC với đường phân giác AD">
+          <polygon points="50,180 310,180 180,30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="180" y1="30" x2="195" y2="180" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
+          <circle cx="195" cy="180" r="3" fill="#FC6255"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="322" y="198" font-size="13" fill="#58C4DD">C</text>
+          <text x="192" y="20" font-size="13" fill="#58C4DD">A</text>
+          <text x="207" y="198" font-size="13" fill="#FC6255">D</text>
+          <text x="165" y="100" font-size="11" fill="#83C167">AD (phân giác)</text>
+          <text x="110" y="150" font-size="10" fill="#58C4DD">AB</text>
+          <text x="250" y="150" font-size="10" fill="#58C4DD">AC</text>
+          <text x="170" y="175" font-size="10" fill="#FC6255">BD</text>
+          <text x="220" y="175" font-size="10" fill="#FC6255">DC</text>
+          <path d="M 185 55 A 20 20 0 0 1 175 75" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <path d="M 175 75 A 20 20 0 0 0 185 55" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="165" y="65" font-size="10" fill="#9A72AC">α</text>
+          <text x="195" y="65" font-size="10" fill="#9A72AC">α</text>
+          <text x="165" y="40" font-size="11" fill="#9A72AC">∠BAD = ∠CAD = α</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "ΔABC, AB=6cm, AC=9cm, BC=15cm. AD là đường phân giác. Tính BD.", answer: 6, hint: "BD:DC = 6:9 = 2:3. BC=15cm.", explain: "BD = 15 × 2/5 = 6 cm." },
