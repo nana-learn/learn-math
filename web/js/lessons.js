@@ -8018,6 +8018,26 @@ const G8_LESSONS = [
 
 const COURSES = [
   {
+    id: "6",
+    grade: 6,
+    title: "Toán 6",
+    level: "THCS",
+    subtitle: "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống",
+    blurb: "Chương I–IX, Bài 1–43 của cả hai tập. Ví dụ viết mới, không chép SGK.",
+    chapters: [
+      { id: 1, title: "Tập hợp các số tự nhiên" },
+      { id: 2, title: "Tính chia hết trong tập hợp các số tự nhiên" },
+      { id: 3, title: "Số nguyên" },
+      { id: 4, title: "Một số hình phẳng trong thực tiễn" },
+      { id: 5, title: "Tính đối xứng của hình phẳng trong tự nhiên" },
+      { id: 6, title: "Phân số" },
+      { id: 7, title: "Số thập phân" },
+      { id: 8, title: "Những hình hình học cơ bản" },
+      { id: 9, title: "Dữ liệu và xác suất thực nghiệm" },
+    ],
+    lessons: [],
+  },
+  {
     id: "8",
     grade: 8,
     title: "Toán 8",
