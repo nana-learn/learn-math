@@ -221,7 +221,31 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Một ô tô đi từ A đến B dài 120 km, đã đi 75 km. Còn bao nhiêu km? <em>— 120 - 75 = 45 km.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng là gộp, trừ là bớt. Phép trừ chỉ thực hiện khi số bị trừ ≥ số trừ. Tính chất giao hoán và kết hợp giúp tính nhẩm.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng là gộp, trừ là bớt. Phép trừ chỉ thực hiện khi số bị trừ ≥ số trừ. Tính chất giao hoán và kết hợp giúp tính nhẩm.</p>
+      <figure id="fig-g6-b4-number-line" class="figure" data-animation="g6-b4-number-line">
+        <svg width="500" height="100" viewBox="0 0 500 100">
+          <line x1="30" y1="50" x2="470" y2="50" stroke="#333" stroke-width="2" stroke-dasharray="440" stroke-dashoffset="440" opacity="0"/>
+          <polygon points="470,50 460,45 460,55" fill="#333" opacity="0"/>
+          <circle cx="50" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="100" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="150" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="200" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="250" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="300" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="350" cy="50" r="4" fill="#333" opacity="0"/>
+          <circle cx="400" cy="50" r="4" fill="#333" opacity="0"/>
+          <text x="50" y="75" font-size="12" text-anchor="middle" opacity="0">0</text>
+          <text x="100" y="75" font-size="12" text-anchor="middle" opacity="0">1</text>
+          <text x="150" y="75" font-size="12" text-anchor="middle" opacity="0">2</text>
+          <text x="200" y="75" font-size="12" text-anchor="middle" opacity="0">3</text>
+          <text x="250" y="75" font-size="12" text-anchor="middle" opacity="0">4</text>
+          <text x="300" y="75" font-size="12" text-anchor="middle" opacity="0">5</text>
+          <text x="350" y="75" font-size="12" text-anchor="middle" opacity="0">6</text>
+          <text x="400" y="75" font-size="12" text-anchor="middle" opacity="0">7</text>
+          <line x1="50" y1="30" x2="250" y2="30" stroke="#58C4DD" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="200" opacity="0" class="add-arrow"/>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "35 + 27 bằng bao nhiêu?", answer: 62, hint: "5+7=12, nhớ 1; 3+2+1=6.", explain: "62." },

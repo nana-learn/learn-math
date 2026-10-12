@@ -952,6 +952,17 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b4: Phép cộng và phép trừ số tự nhiên
+      'g6-b4-number-line': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 5 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 5 },
+          { selector: 'line.add-arrow', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
