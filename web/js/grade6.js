@@ -1466,6 +1466,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Chú giải trong biểu đồ tranh dùng để", choices: ["Trang trí", "Giải thích biểu tượng", "Ghi số liệu", "Không cần thiết"], correct: 1, hint: "Chú giải giúp người đọc hiểu mỗi biểu tượng đại diện gì.", explain: "Giải thích biểu tượng." },
     ],
   },
+  {
+    id: "g6-b26",
+    num: 26,
+    chapter: 9,
+    title: "Biểu đồ cột",
+    summary: "Biểu đồ cột dùng các hình chữ nhật (cột) để trình bày và so sánh dữ liệu.",
+    body: String.raw`
+      <p><strong>Vì sao cần biểu đồ cột?</strong> Biểu đồ cột rất hiệu quả để so sánh số lượng giữa các nhóm hoặc theo thời gian.</p>
+      <div class="definition">
+        <p>Biểu đồ cột là biểu đồ dùng các cột (hình chữ nhật đứng) để trình bày dữ liệu. Trục ngang (trục hoành) ghi tên đối tượng, trục dọc (trục tung) ghi giá trị. Mỗi cột có chiều cao tương ứng với giá trị dữ liệu.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ cột thể hiện số học sinh thích các môn: Toán (15), Văn (12), Anh (10), Sử (8). Mỗi cột có chiều cao tương ứng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Biểu đồ cột thể hiện doanh thu theo tháng: Tháng 1 (100 triệu), Tháng 2 (120 triệu), Tháng 3 (90 triệu). So sánh: Tháng 2 cao nhất, Tháng 3 thấp nhất.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng vẽ cột có chiều cao sai với tỷ lệ. Nếu 1cm = 10 đơn vị, thì giá trị 50 phải là 5cm, không phải 10cm. Tỷ lệ trục dọc phải rõ ràng và nhất quán.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách vẽ.</strong> Xác định trục hoành (tên đối tượng) và trục tung (giá trị) → xác định tỷ lệ trên trục tung → vẽ các cột với chiều cao tương ứng → thêm tiêu đề và chú thích.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chiều cao cột không đúng với tỷ lệ đã chọn.</li>
+          <li>Không có tiêu đề hoặc chú thích trên trục.</li>
+          <li>Cột quá rộng hoặc quá hẹp, không cân đối.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Biểu đồ cột có cột cao 5cm, tỷ lệ 1cm = 2 đơn vị. Giá trị là bao nhiêu? <em>— 10 đơn vị.</em></p>
+        <p>Biểu đồ cột có cột cao 3cm, tỷ lệ 1cm = 5 học sinh. Có bao nhiêu học sinh? <em>— 15 học sinh.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Vẽ biểu đồ cột thể hiện số sách: Văn (10), Toán (15), Anh (8). Tỷ lệ 1cm = 2 sách. Bước 1: Văn = 10/2 = 5cm. Bước 2: Toán = 15/2 = 7.5cm. Bước 3: Anh = 8/2 = 4cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Biểu đồ cột có 4 cột với chiều cao 6cm, 9cm, 4cm, 7cm. Tỷ lệ 1cm = 5 đơn vị. Tính tổng giá trị. <em>— (6+9+4+7) × 5 = 130.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột dùng cột (hình chữ nhật đứng) để trình bày dữ liệu. Trục ngang ghi tên, trục dọc ghi giá trị.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Biểu đồ cột có cột cao 4cm, tỷ lệ 1cm = 3 đơn vị. Giá trị là bao nhiêu?", answer: 12, hint: "4 × 3 = 12.", explain: "12 đơn vị." },
+      { type: "num", prompt: "Biểu đồ cột có cột cao 6cm, tỷ lệ 1cm = 5 học sinh. Có bao nhiêu học sinh?", answer: 30, hint: "6 × 5 = 30.", explain: "30 học sinh." },
+      { type: "num", prompt: "Biểu đồ có 3 cột cao 5cm, 7cm, 4cm. Tỷ lệ 1cm = 2 đơn vị. Tổng giá trị là bao nhiêu?", answer: 32, hint: "(5+7+4) × 2 = 32.", explain: "32 đơn vị." },
+      { type: "mc", prompt: "Trục ngang trong biểu đồ cột thường ghi", choices: ["Giá trị dữ liệu", "Tên đối tượng", "Tần số", "Tỷ lệ"], correct: 1, hint: "Trục ngang ghi tên đối tượng (học sinh, tháng, môn học, v.v.).", explain: "Tên đối tượng." },
+      { type: "num", prompt: "Biểu đồ cột có 4 cột cao 3cm, 5cm, 4cm, 6cm. Tỷ lệ 1cm = 10 đơn vị. Tổng là bao nhiêu?", answer: 180, hint: "(3+5+4+6) × 10 = 180.", explain: "180 đơn vị." },
+      { type: "num", prompt: "Cột cao 8cm, tỷ lệ 1cm = 2.5 đơn vị. Giá trị là bao nhiêu?", answer: 20, hint: "8 × 2.5 = 20.", explain: "20 đơn vị." },
+      { type: "mc", prompt: "Biểu đồ cột phù hợp nhất để", choices: ["Thể hiện tỷ lệ phần trăm", "So sánh số lượng giữa các nhóm", "Thể hiện xu hướng theo thời gian", "Cả B và C"], correct: 3, hint: "Biểu đồ cột tốt cho so sánh và xu hướng.", explain: "Cả B và C." },
+    ],
+  },
+  {
+    id: "g6-b27",
+    num: 27,
+    chapter: 9,
+    title: "Biểu đồ cột kép",
+    summary: "Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng để so sánh hai bộ dữ liệu.",
+    body: String.raw`
+      <p><strong>Vì sao cần biểu đồ cột kép?</strong> Biểu đồ cột kép giúp so sánh hai bộ dữ liệu trên cùng một đối tượng hoặc thời điểm.</p>
+      <div class="definition">
+        <p>Biểu đồ cột kép là biểu đồ có hai cột cho mỗi đối tượng, thường dùng để so sánh hai nhóm (nam/nữ, hai năm, hai phương pháp...). Mỗi cột đại diện cho một bộ dữ liệu.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ cột kép thể hiện số học sinh nam và nữ của các lớp: Lớp 6A (nam 15, nữ 18), Lớp 6B (nam 16, nữ 17). Hai cột cạnh nhau cho mỗi lớp.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Biểu đồ cột kép thể hiện doanh thu hai năm: 2023 và 2024. Tháng 1 (2023: 100 triệu, 2024: 120 triệu), Tháng 2 (2023: 90 triệu, 2024: 110 triệu). So sánh: 2024 cao hơn 2023 ở mọi tháng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng lẫn lộn hai cột. Mỗi cột phải có màu hoặc kiểu phân biệt rõ ràng. Cần có chú giải để biết cột nào đại diện cho dữ liệu nào. Đừng đọc nhầm cột của năm này với năm kia.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách vẽ.</strong> Xác định hai bộ dữ liệu → chọn màu/kiểu khác nhau cho từng bộ → vẽ hai cột cạnh nhau cho mỗi đối tượng → thêm chú giải và tiêu đề.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hai cột quá gần nhau hoặc quá xa nhau, không rõ ràng.</li>
+          <li>Không có chú giải, người đọc không biết cột nào đại diện cho dữ liệu nào.</li>
+          <li>Chiều cao hai cột không đúng với tỷ lệ chung.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Biểu đồ cột kép có bao nhiêu cột cho mỗi đối tượng? <em>— Hai cột.</em></p>
+        <p>Biểu đồ cột kép dùng để so sánh bao nhiêu bộ dữ liệu? <em>— Hai bộ dữ liệu.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Vẽ biểu đồ cột kép thể hiện số cây trồng: Năm 2022 và 2023. Lớp 6A: 2022 (10 cây), 2023 (15 cây). Bước 1: vẽ trục ngang ghi Lớp 6A. Bước 2: vẽ hai cột cạnh nhau, cột 2022 cao 10, cột 2023 cao 15.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Biểu đồ cột kép có cột 2022 cao 6cm, cột 2023 cao 9cm. Tỷ lệ 1cm = 5 cây. Tính tổng số cây hai năm. <em>— (6+9) × 5 = 75 cây.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng so sánh hai bộ dữ liệu. Mỗi cột phải có màu/kiểu khác nhau và chú giải rõ ràng.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Biểu đồ cột kép có bao nhiêu cột cho mỗi đối tượng?", answer: 2, hint: "Hai cột, mỗi cột đại diện cho một bộ dữ liệu.", explain: "2 cột." },
+      { type: "num", prompt: "Cột 2022 cao 5cm, cột 2023 cao 8cm. Tỷ lệ 1cm = 10 sản phẩm. Tính hiệu số sản phẩm.", answer: 30, hint: "(8-5) × 10 = 30.", explain: "30 sản phẩm." },
+      { type: "num", prompt: "Cột 2021 cao 4cm, cột 2022 cao 6cm. Tỷ lệ 1cm = 5 đơn vị. Tổng hai năm là bao nhiêu?", answer: 50, hint: "(4+6) × 5 = 50.", explain: "50 đơn vị." },
+      { type: "mc", prompt: "Biểu đồ cột kép nên có", choices: ["Một cột cho mỗi đối tượng", "Hai cột cho mỗi đối tượng", "Ba cột cho mỗi đối tượng", "Không xác định"], correct: 1, hint: "Hai cột để so sánh hai bộ dữ liệu.", explain: "Hai cột cho mỗi đối tượng." },
+      { type: "num", prompt: "Cột A cao 7cm, cột B cao 5cm. Tỷ lệ 1cm = 3 đơn vị. Cột A hơn cột B bao nhiêu đơn vị?", answer: 6, hint: "(7-5) × 3 = 6.", explain: "6 đơn vị." },
+      { type: "mc", prompt: "Biểu đồ cột kép dùng để so sánh", choices: ["Một bộ dữ liệu", "Hai bộ dữ liệu", "Ba bộ dữ liệu", "Không xác định"], correct: 1, hint: "Hai bộ dữ liệu cho mỗi đối tượng.", explain: "Hai bộ dữ liệu." },
+      { type: "num", prompt: "Cột năm 1 cao 9cm, cột năm 2 cao 6cm. Tỷ lệ 1cm = 2 học sinh. Năm 1 hơn năm 2 bao nhiêu học sinh?", answer: 6, hint: "(9-6) × 2 = 6.", explain: "6 học sinh." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
