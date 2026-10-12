@@ -1729,6 +1729,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Phân số \(\frac{a}{a}\) (a ≠ 0) rút gọn được", choices: ["\(\frac{1}{1}\)", "\(\frac{a}{1}\)", "\(\frac{1}{a}\)", "\(\frac{a}{a}\)"], correct: 0, hint: "\(\frac{a}{a} = 1 = \frac{1}{1}\).", explain: "\(\frac{1}{1}\)." },
     ],
   },
+  {
+    id: "g6-b30",
+    num: 30,
+    chapter: 6,
+    title: "Quy đồng mẫu số nhiều phân số",
+    summary: "Quy đồng mẫu số là biến các phân số có mẫu khác nhau về cùng một mẫu số chung.",
+    body: String.raw`
+      <p><strong>Vì sao cần quy đồng mẫu số?</strong> Quy đồng mẫu số giúp so sánh và cộng/trừ phân số dễ dàng hơn.</p>
+      <div class="definition">
+        <p>Quy đồng mẫu số là tìm mẫu số chung của nhiều phân số rồi biến đổi các phân số sao cho có cùng mẫu số đó. Mẫu số chung thường là bội chung nhỏ nhất (BCNN) của các mẫu số.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Quy đồng \(\frac{1}{2}\) và \(\frac{1}{3}\): BCNN(2,3) = 6, \(\frac{1}{2} = \frac{3}{6}\), \(\frac{1}{3} = \frac{2}{6}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Quy đồng \(\frac{2}{3}\), \(\frac{3}{4}\), \(\frac{5}{6}\): BCNN(3,4,6) = 12. \(\frac{2}{3} = \frac{8}{12}\), \(\frac{3}{4} = \frac{9}{12}\), \(\frac{5}{6} = \frac{10}{12}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên nhân cả tử và mẫu khi quy đồng. \(\frac{1}{2} = \frac{3}{6}\) là đúng, nhưng \(\frac{1}{2} = \frac{1}{6}\) là sai. Đừng chọn bội chung lớn hơn cần thiết.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Các bước.</strong> Bước 1: tìm BCNN của các mẫu số. Bước 2: tìm thừa số phụ (BCNN : mẫu số). Bước 3: nhân cả tử và mẫu với thừa số phụ.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chỉ nhân mẫu mà không nhân tử.</li>
+          <li>Chọn bội chung lớn hơn cần thiết làm mẫu số chung.</li>
+          <li>Không rút gọn trước khi quy đồng (nếu có thể).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Quy đồng \(\frac{1}{4}\) và \(\frac{1}{6}\). <em>— \(\frac{3}{12}\) và \(\frac{2}{12}\).</em></p>
+        <p>Quy đồng \(\frac{2}{5}\) và \(\frac{3}{10}\). <em>— \(\frac{4}{10}\) và \(\frac{3}{10}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Quy đồng \(\frac{1}{3}\) và \(\frac{2}{5}\). Bước 1: BCNN(3,5) = 15. Bước 2: thừa số phụ: 15:3 = 5, 15:5 = 3. Bước 3: \(\frac{1}{3} = \frac{5}{15}\), \(\frac{2}{5} = \frac{6}{15}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Quy đồng \(\frac{3}{8}\) và \(\frac{5}{12}\). <em>— BCNN = 24, \(\frac{9}{24}\) và \(\frac{10}{24}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Quy đồng mẫu số: tìm BCNN của mẫu số, nhân cả tử và mẫu với thừa số phụ.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Quy đồng \(\frac{1}{2}\) và \(\frac{1}{5}\).", answer: "5/10 và 2/10", accept: ["5/10", "2/10"], hint: "BCNN(2,5) = 10.", explain: "\(\frac{5}{10}\) và \(\frac{2}{10}\)." },
+      { type: "num", prompt: "Quy đồng \(\frac{2}{3}\) và \(\frac{1}{6}\).", answer: "4/6 và 1/6", accept: ["4/6", "1/6"], hint: "BCNN(3,6) = 6.", explain: "\(\frac{4}{6}\) và \(\frac{1}{6}\)." },
+      { type: "num", prompt: "Quy đồng \(\frac{1}{4}\), \(\frac{1}{6}\), \(\frac{1}{8}\).", answer: "6/24, 4/24, 3/24", accept: ["6/24", "4/24", "3/24"], hint: "BCNN(4,6,8) = 24.", explain: "\(\frac{6}{24}\), \(\frac{4}{24}\), \(\frac{3}{24}\)." },
+      { type: "mc", prompt: "Mẫu số chung của \(\frac{1}{3}\) và \(\frac{1}{4}\) là", choices: ["3", "4", "12", "24"], correct: 2, hint: "BCNN(3,4) = 12.", explain: "12." },
+      { type: "num", prompt: "Quy đồng \(\frac{3}{5}\) và \(\frac{2}{3}\).", answer: "9/15 và 10/15", accept: ["9/15", "10/15"], hint: "BCNN(5,3) = 15.", explain: "\(\frac{9}{15}\) và \(\frac{10}{15}\)." },
+      { type: "num", prompt: "Quy đồng \(\frac{1}{6}\) và \(\frac{1}{9}\).", answer: "3/18 và 2/18", accept: ["3/18", "2/18"], hint: "BCNN(6,9) = 18.", explain: "\(\frac{3}{18}\) và \(\frac{2}{18}\)." },
+      { type: "mc", prompt: "Khi quy đồng \(\frac{2}{5}\) thành \(\frac{8}{20}\), đã nhân với", choices: ["2", "3", "4", "5"], correct: 2, hint: "20:5 = 4.", explain: "4." },
+    ],
+  },
+  {
+    id: "g6-b31",
+    num: 31,
+    chapter: 6,
+    title: "So sánh phân số",
+    summary: "So sánh phân số dựa trên quy đồng mẫu số hoặc so sánh với 1, so sánh phần bù.",
+    body: String.raw`
+      <p><strong>Vì sao cần so sánh phân số?</strong> So sánh phân số giúp đánh giá giá trị tương đối của các phân số.</p>
+      <div class="definition">
+        <p>Để so sánh hai phân số, có thể: (1) quy đồng mẫu số rồi so sánh tử số; (2) so sánh với 1; (3) so sánh phần bù đến 1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> So sánh \(\frac{3}{5}\) và \(\frac{4}{5}\): cùng mẫu, 3 < 4 nên \(\frac{3}{5} < \frac{4}{5}\). So sánh \(\frac{2}{3}\) và \(\frac{3}{2}\): \(\frac{2}{3} < 1 < \frac{3}{2}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> So sánh \(\frac{5}{7}\) và \(\frac{7}{9}\): quy đồng \(\frac{45}{63}\) và \(\frac{49}{63}\), nên \(\frac{5}{7} < \frac{7}{9}\). So sánh \(\frac{8}{9}\) và \(\frac{9}{10}\): phần bù lần lượt là \(\frac{1}{9}\) và \(\frac{1}{10}\), nên \(\frac{8}{9} > \frac{9}{10}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được so sánh tử với tử và mẫu với mẫu riêng lẻ. \(\frac{5}{7}\) và \(\frac{7}{9}\): 5 < 7 nhưng 7 < 9, không thể kết luận. Đừng quên quy đồng trước khi so sánh tử số.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Các cách.</strong> Cách 1: quy đồng mẫu → so sánh tử. Cách 2: so sánh với 1. Cách 3: so sánh phần bù (cho phân số gần 1).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>So sánh tử với tử, mẫu với mẫu riêng lẻ là sai.</li>
+          <li>Phân số âm cần xử lý riêng (dương < 0 < âm).</li>
+          <li>Phần bù chỉ áp dụng cho phân số bé hơn 1.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>So sánh \(\frac{2}{7}\) và \(\frac{5}{7}\). <em>— \(\frac{2}{7} < \frac{5}{7}\).</em></p>
+        <p>So sánh \(\frac{3}{4}\) và 1. <em>— \(\frac{3}{4} < 1\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> So sánh \(\frac{3}{8}\) và \(\frac{5}{12}\). Bước 1: quy đồng \(\frac{9}{24}\) và \(\frac{10}{24}\). Bước 2: 9 < 10 nên \(\frac{3}{8} < \frac{5}{12}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> So sánh \(\frac{7}{10}\) và \(\frac{4}{5}\). <em>— \(\frac{4}{5} = \frac{8}{10}\), nên \(\frac{7}{10} < \frac{4}{5}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> So sánh phân số: quy đồng mẫu → so sánh tử; hoặc so sánh với 1; hoặc so sánh phần bù.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "So sánh \(\frac{2}{5}\) và \(\frac{3}{5}\)", choices: ["\(\frac{2}{5} > \frac{3}{5}\)", "\(\frac{2}{5} < \frac{3}{5}\)", "Bằng nhau", "Không xác định"], correct: 1, hint: "Cùng mẫu, tử 2 < 3.", explain: "\(\frac{2}{5} < \frac{3}{5}\)." },
+      { type: "num", prompt: "So sánh \(\frac{3}{7}\) và 1.", answer: "< 1", accept: ["< 1", "<1", "lt 1"], hint: "Tử < mẫu nên phân số < 1.", explain: "\(\frac{3}{7} < 1\)." },
+      { type: "mc", prompt: "So sánh \(\frac{5}{6}\) và \(\frac{7}{8}\)", choices: ["\(\frac{5}{6} > \frac{7}{8}\)", "\(\frac{5}{6} < \frac{7}{8}\)", "Bằng nhau", "Không xác định"], correct: 0, hint: "Phần bù: \(\frac{1}{6} > \frac{1}{8}\), nên \(\frac{5}{6} < \frac{7}{8}\).", explain: "\(\frac{5}{6} < \frac{7}{8}\)." },
+      { type: "num", prompt: "So sánh \(\frac{2}{3}\) và \(\frac{3}{4}\).", answer: "<", accept: ["<", "lt"], hint: "Quy đồng \(\frac{8}{12}\) và \(\frac{9}{12}\).", explain: "\(\frac{2}{3} < \frac{3}{4}\)." },
+      { type: "mc", prompt: "Phân số nào lớn hơn 1?", choices: ["\(\frac{3}{4}\)", "\(\frac{5}{5}\)", "\(\frac{7}{6}\)", "\(\frac{2}{3}\)"], correct: 2, hint: "Tử > mẫu thì phân số > 1.", explain: "\(\frac{7}{6}\)." },
+      { type: "num", prompt: "So sánh \(\frac{4}{9}\) và \(\frac{5}{12}\).", answer: "<", accept: ["<", "lt"], hint: "Quy đồng \(\frac{16}{36}\) và \(\frac{15}{36}\).", explain: "\(\frac{4}{9} > \frac{5}{12}\)." },
+      { type: "mc", prompt: "So sánh \(\frac{8}{9}\) và \(\frac{9}{10}\)", choices: ["\(\frac{8}{9} > \frac{9}{10}\)", "\(\frac{8}{9} < \frac{9}{10}\)", "Bằng nhau", "Không xác định"], correct: 0, hint: "Phần bù: \(\frac{1}{9} > \frac{1}{10}\), nên \(\frac{8}{9} > \frac{9}{10}\).", explain: "\(\frac{8}{9} > \frac{9}{10}\)." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
