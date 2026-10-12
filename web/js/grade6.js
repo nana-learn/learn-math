@@ -1837,6 +1837,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "So sánh \(\frac{8}{9}\) và \(\frac{9}{10}\)", choices: ["\(\frac{8}{9} > \frac{9}{10}\)", "\(\frac{8}{9} < \frac{9}{10}\)", "Bằng nhau", "Không xác định"], correct: 0, hint: "Phần bù: \(\frac{1}{9} > \frac{1}{10}\), nên \(\frac{8}{9} > \frac{9}{10}\).", explain: "\(\frac{8}{9} > \frac{9}{10}\)." },
     ],
   },
+  {
+    id: "g6-b32",
+    num: 32,
+    chapter: 6,
+    title: "Hỗn số. Số thập phân",
+    summary: "Hỗn số là tổng của số nguyên và phân số. Số thập phân là phân số đặc biệt với mẫu là lũy thừa của 10.",
+    body: String.raw`
+      <p><strong>Vì sao cần hỗn số và số thập phân?</strong> Chúng là cách biểu diễn số khác nhau, tiện lợi trong các tình huống khác nhau.</p>
+      <div class="definition">
+        <p>Hỗn số là tổng của số nguyên và phân số (\(a\frac{b}{c}\) với \(a, b, c \in \mathbb{Z}\), \(c > 0\), \(b < c\)). Số thập phân là phân số có mẫu là lũy thừa của 10 (\(\frac{a}{10^n}\)).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hỗn số \(2\frac{3}{4} = 2 + \frac{3}{4}\). Số thập phân \(0.5 = \frac{5}{10}\), \(0.25 = \frac{25}{100}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đổi \(2\frac{3}{4}\) ra phân số: \(\frac{2 \cdot 4 + 3}{4} = \frac{11}{4}\). Đổi \(\frac{3}{5}\) ra số thập phân: \(\frac{3}{5} = \frac{6}{10} = 0.6\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được viết \(2\frac{5}{4}\) (vì \(\frac{5}{4} > 1\)). Phải đổi về \(3\frac{1}{4}\). Đừng nhầm 0.05 với 0.5: 0.05 = \(\frac{5}{100}\), 0.5 = \(\frac{5}{10}\).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> Hỗn số \(a\frac{b}{c} = \frac{a \cdot c + b}{c}\). Số thập phân: số chữ số sau dấu phẩy = số zero sau 1 trong mẫu.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hỗn số phải có phần phân số bé hơn 1.</li>
+          <li>Số thập phân 0.5 khác 0.05 (khác 10 lần).</li>
+          <li>Không viết \(0\frac{b}{c}\) (đơn giản là \(\frac{b}{c}\)).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đổi \(3\frac{1}{2}\) ra phân số. <em>— \(\frac{7}{2}\).</em></p>
+        <p>Đổi \(\frac{2}{5}\) ra số thập phân. <em>— 0.4.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Đổi \(4\frac{2}{3}\) ra phân số. Bước 1: 4 × 3 = 12. Bước 2: 12 + 2 = 14. Bước 3: \(\frac{14}{3}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Đổi \(\frac{7}{20}\) ra số thập phân. <em>— \(\frac{35}{100} = 0.35\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hỗn số \(a\frac{b}{c} = \frac{a \cdot c + b}{c}\). Số thập phân có mẫu là 10, 100, 1000, v.v.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đổi \(2\frac{1}{2}\) ra phân số.", answer: "5/2", accept: ["5/2", "5:2"], hint: "2 × 2 + 1 = 5.", explain: "\(\frac{5}{2}\)." },
+      { type: "num", prompt: "Đổi \(\frac{3}{4}\) ra số thập phân.", answer: "0.75", accept: ["0.75", ".75"], hint: "\(\frac{3}{4} = \frac{75}{100}\).", explain: "0.75." },
+      { type: "num", prompt: "Đổi \(5\frac{2}{5}\) ra phân số.", answer: "27/5", accept: ["27/5", "27:5"], hint: "5 × 5 + 2 = 27.", explain: "\(\frac{27}{5}\)." },
+      { type: "mc", prompt: "Số thập phân 0.05 bằng phân số", choices: ["\(\frac{5}{10}\)", "\(\frac{5}{100}\)", "\(\frac{5}{1000}\)", "\(\frac{50}{100}\)"], correct: 1, hint: "0.05 = \(\frac{5}{100}\).", explain: "\(\frac{5}{100}\)." },
+      { type: "num", prompt: "Đổi \(\frac{1}{2}\) ra số thập phân.", answer: "0.5", accept: ["0.5", ".5"], hint: "\(\frac{1}{2} = \frac{5}{10}\).", explain: "0.5." },
+      { type: "num", prompt: "Đổi \(3\frac{3}{4}\) ra phân số.", answer: "15/4", accept: ["15/4", "15:4"], hint: "3 × 4 + 3 = 15.", explain: "\(\frac{15}{4}\)." },
+      { type: "mc", prompt: "Số nào lớn hơn: 2.5 hay 2.05?", choices: ["2.5", "2.05", "Bằng nhau", "Không xác định"], correct: 0, hint: "2.5 = 2.50 > 2.05.", explain: "2.5." },
+    ],
+  },
+  {
+    id: "g6-b33",
+    num: 33,
+    chapter: 6,
+    title: "Phép cộng phân số",
+    summary: "Cộng phân số: quy đồng mẫu rồi cộng tử số, giữ mẫu số.",
+    body: String.raw`
+      <p><strong>Vì sao cần cộng phân số?</strong> Cộng phân số giúp tính tổng các phần không nguyên.</p>
+      <div class="definition">
+        <p>Để cộng hai phân số, quy đồng mẫu số rồi cộng tử số, giữ mẫu số: \(\frac{a}{m} + \frac{b}{m} = \frac{a+b}{m}\). Với hỗn số, cộng phần nguyên với nhau, cộng phần phân số với nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{1}{4} + \frac{2}{4} = \frac{3}{4}\). \(1\frac{1}{3} + 2\frac{2}{3} = 3 + 1 = 4\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{1}{2} + \frac{1}{3} = \frac{3}{6} + \frac{2}{6} = \frac{5}{6}\). \(2\frac{1}{4} + 1\frac{1}{2} = 3 + \frac{1}{4} + \frac{2}{4} = 3\frac{3}{4}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được cộng \(\frac{1}{2} + \frac{1}{3} = \frac{2}{5}\) (sai quy tắc). Phải quy đồng trước: \(\frac{3}{6} + \frac{2}{6} = \frac{5}{6}\). Đừng quên quy đồng mẫu số.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> \(\frac{a}{m} + \frac{b}{n} = \frac{a \cdot n + b \cdot m}{m \cdot n}\) (hoặc dùng BCNN).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Cộng trực tiếp tử với tử, mẫu với mẫu là sai.</li>
+          <li>Quên quy đồng mẫu số khi cộng.</li>
+          <li>Không rút gọn kết quả nếu có thể.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính \(\frac{2}{5} + \frac{3}{5}\). <em>— \(\frac{5}{5} = 1\).</em></p>
+        <p>Tính \(\frac{1}{3} + \frac{1}{6}\). <em>— \(\frac{1}{2}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính \(\frac{1}{3} + \frac{1}{4}\). Bước 1: BCNN(3,4) = 12. Bước 2: \(\frac{1}{3} = \frac{4}{12}\), \(\frac{1}{4} = \frac{3}{12}\). Bước 3: \(\frac{4}{12} + \frac{3}{12} = \frac{7}{12}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{2}{3} + \frac{3}{4}\). <em>— \(\frac{17}{12} = 1\frac{5}{12}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng phân số: quy đồng mẫu → cộng tử → giữ mẫu. Rút gọn nếu có thể.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính \(\frac{3}{7} + \frac{2}{7}\).", answer: "5/7", accept: ["5/7", "5:7"], hint: "Cùng mẫu, cộng tử: 3+2=5.", explain: "\(\frac{5}{7}\)." },
+      { type: "num", prompt: "Tính \(\frac{1}{2} + \frac{1}{4}\).", answer: "3/4", accept: ["3/4", "3:4"], hint: "Quy đồng \(\frac{2}{4} + \frac{1}{4}\).", explain: "\(\frac{3}{4}\)." },
+      { type: "num", prompt: "Tính \(1\frac{1}{2} + 2\frac{1}{2}\).", answer: "4", accept: ["4", "4/1"], hint: "1+2=3, \(\frac{1}{2} + \frac{1}{2} = 1\), 3+1=4.", explain: "4." },
+      { type: "num", prompt: "Tính \(\frac{2}{5} + \frac{3}{10}\).", answer: "7/10", accept: ["7/10", "7:10"], hint: "Quy đồng \(\frac{4}{10} + \frac{3}{10}\).", explain: "\(\frac{7}{10}\)." },
+      { type: "mc", prompt: "Kết quả \(\frac{1}{3} + \frac{1}{3}\) là", choices: ["\(\frac{2}{3}\)", "\(\frac{2}{6}\)", "\(\frac{1}{6}\)", "\(\frac{3}{6}\)"], correct: 0, hint: "\(\frac{1}{3} + \frac{1}{3} = \frac{2}{3}\).", explain: "\(\frac{2}{3}\)." },
+      { type: "num", prompt: "Tính \(2\frac{1}{3} + 1\frac{2}{3}\).", answer: "4", accept: ["4", "4/1"], hint: "2+1=3, \(\frac{1}{3} + \frac{2}{3} = 1\), 3+1=4.", explain: "4." },
+      { type: "num", prompt: "Tính \(\frac{3}{8} + \frac{1}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "Quy đồng \(\frac{3}{8} + \frac{2}{8}\).", explain: "\(\frac{5}{8}\)." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
