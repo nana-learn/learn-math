@@ -963,6 +963,17 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b28: Phân số. Tính chất cơ bản của phân số
+      'g6-b28-fractions': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3, stagger: 4 },
+          { selector: 'rect', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3, stagger: 4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [

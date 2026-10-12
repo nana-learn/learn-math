@@ -1687,7 +1687,30 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Rút gọn \(\frac{24}{36}\). <em>— ƯCLN = 12, \(\frac{2}{3}\).</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Phân số \(\frac{a}{b}\) với \(b \ne 0\). Tính chất: nhân/chia tử và mẫu với cùng số khác 0.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân số \(\frac{a}{b}\) với \(b \ne 0\). Tính chất: nhân/chia tử và mẫu với cùng số khác 0.</p>
+      <figure id="fig-g6-b28-fractions" class="figure" data-animation="g6-b28-fractions">
+        <svg width="500" height="120" viewBox="0 0 500 120">
+          <!-- Circle divided into 4 parts, 3 shaded -->
+          <circle cx="100" cy="60" r="40" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <path d="M 100 60 L 100 20" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 140 60" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 100 100" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 60 60" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 128 32" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 128 88" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 72 32" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 100 60 L 72 88" stroke="#333" stroke-width="1" opacity="0"/>
+          <text x="100" y="20" font-size="14" text-anchor="middle" opacity="0">3/4</text>
+          <!-- Rectangle divided into 5 parts, 2 shaded -->
+          <rect x="200" y="40" width="80" height="40" fill="none" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <line x1="220" y1="40" x2="220" y2="80" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="240" y1="40" x2="240" y2="80" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="260" y1="40" x2="260" y2="80" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="280" y1="40" x2="280" y2="80" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <text x="240" y="30" font-size="14" text-anchor="middle" opacity="0">2/5</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Rút gọn \(\frac{6}{9}\).", answer: "2/3", accept: ["2/3", "2:3"], hint: "Chia cả tử và mẫu cho 3.", explain: "\(\frac{2}{3}\)." },
