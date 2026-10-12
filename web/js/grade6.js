@@ -1872,7 +1872,31 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> So sánh \(\frac{7}{10}\) và \(\frac{4}{5}\). <em>— \(\frac{4}{5} = \frac{8}{10}\), nên \(\frac{7}{10} < \frac{4}{5}\).</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> So sánh phân số: quy đồng mẫu → so sánh tử; hoặc so sánh với 1; hoặc so sánh phần bù.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> So sánh phân số: quy đồng mẫu → so sánh tử; hoặc so sánh với 1; hoặc so sánh phần bù.</p>
+      <figure id="fig-g6-b31-fraction-compare" class="figure" data-animation="g6-b31-fraction-compare">
+        <svg width="500" height="140" viewBox="0 0 500 140">
+          <!-- 2/3 = 6/9 -->
+          <text x="80" y="40" font-size="16" opacity="0">2/3 = 6/9</text>
+          <circle cx="60" cy="80" r="40" fill="none" stroke="#333" stroke-width="2" opacity="0"/>
+          <path d="M 60 80 L 60 40" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 60 80 L 94.64 100" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 60 80 L 25.36 100" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 60 80 L 94.64 60" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 60 80 L 25.36 60" stroke="#333" stroke-width="1" opacity="0"/>
+          <path d="M 60 80 L 60 120" stroke="#333" stroke-width="1" opacity="0"/>
+          <rect x="180" y="60" width="100" height="80" fill="none" stroke="#FC6255" stroke-width="2" opacity="0"/>
+          <line x1="200" y1="60" x2="200" y2="140" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="220" y1="60" x2="220" y2="140" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="240" y1="60" x2="240" y2="140" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="260" y1="60" x2="260" y2="140" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="280" y1="60" x2="280" y2="140" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="180" y1="80" x2="280" y2="80" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="180" y1="100" x2="280" y2="100" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <line x1="180" y1="120" x2="280" y2="120" stroke="#FC6255" stroke-width="1" opacity="0"/>
+          <text x="230" y="50" font-size="16" opacity="0">6/9</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "mc", prompt: "So sánh \(\frac{2}{5}\) và \(\frac{3}{5}\)", choices: ["\(\frac{2}{5} > \frac{3}{5}\)", "\(\frac{2}{5} < \frac{3}{5}\)", "Bằng nhau", "Không xác định"], correct: 1, hint: "Cùng mẫu, tử 2 < 3.", explain: "\(\frac{2}{5} < \frac{3}{5}\)." },
