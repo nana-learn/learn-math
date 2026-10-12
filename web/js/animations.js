@@ -985,6 +985,19 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b38: So sánh số thập phân
+      'g6-b38-decimal-number-line': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 4 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 4 },
+          { selector: 'circle[fill="#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[x="200"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[x="300"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
