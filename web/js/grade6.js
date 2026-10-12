@@ -398,6 +398,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Một hình chữ nhật chiều dài 8 cm, chiều rộng 5 cm. Chu vi bằng bao nhiêu?", answer: 26, hint: "Chu vi = (dài + rộng) × 2 = (8+5)×2.", explain: "26 cm." },
     ],
   },
+  {
+    id: "g6-b8",
+    num: 8,
+    chapter: 2,
+    title: "Quan hệ chia hết và tính chất",
+    summary: "a chia hết b (a \u2223 b) khi tồn tại k sao cho a = b \u22c5 k. Tính chất: nếu a \u2223 b và a \u2223 c thì a \u2223 (b \u00b1 c).",
+    body: String.raw`
+      <p><strong>Vì sao cần quan hệ chia hết?</strong> Biết một số có chia hết cho số khác hay không giúp ta phân tích số, tìm ước, bội, và giải nhiều bài toán số học.</p>
+      <div class="definition">
+        <p>Số tự nhiên \(a\) chia hết cho số tự nhiên \(b\) (\(b \neq 0\)) nếu tồn tại số tự nhiên \(k\) sao cho \(a = b \cdot k\). Kí hiệu \(b \mid a\). Khi đó \(a\) là bội của \(b\), \(b\) là ước của \(a\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(12 \mid 36\) vì \(36 = 12 \cdot 3\). \(5 \mid 20\) vì \(20 = 5 \cdot 4\). \(7 \nmid 15\) vì không tồn tại \(k\) nguyên sao cho \(15 = 7 \cdot k\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(6 \mid 24\) và \(6 \mid 18\), nên \(6 \mid (24 + 18) = 42\) và \(6 \mid (24 - 18) = 6\). Đây là tính chất quan trọng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> \(0 \mid 5\) là sai. Không có số nào chia hết cho 0. Nhưng \(5 \mid 0\) đúng vì \(0 = 5 \cdot 0\). Đừng nhầm giữa số chia và số bị chia.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Tính chất quan trọng.</strong> Nếu \(a \mid b\) và \(a \mid c\) thì \(a \mid (b + c)\) và \(a \mid (b - c)\). Nếu \(a \mid b\) thì \(a \mid (b \cdot k)\) với mọi \(k \in \mathbb{N}\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>\(0 \mid a\) sai với mọi \(a\). Số chia không thể bằng 0.</li>
+          <li>\(a \mid 0\) đúng với mọi \(a \neq 0\). Mọi số khác 0 đều chia hết cho 0.</li>
+          <li>\(1 \mid a\) đúng với mọi \(a\). 1 là ước của mọi số tự nhiên.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Viết tất cả ước của 12. <em>— 1, 2, 3, 4, 6, 12.</em></p>
+        <p>Viết 5 bội đầu tiên của 7. <em>— 0, 7, 14, 21, 28.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Kiểm tra \(8 \mid 56\). Bước 1: tìm \(k\) sao cho \(56 = 8 \cdot k\). Bước 2: \(56 : 8 = 7\). Bước 3: \(k = 7\) là số tự nhiên. Kết luận: \(8 \mid 56\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Biết \(6 \mid a\) và \(6 \mid b\). Hỏi \(6\) có chia hết cho \(a + b\) không? <em>— Có. Vì \(a = 6m\), \(b = 6n\), nên \(a + b = 6(m + n)\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> \(b \mid a\) khi \(a = b \cdot k\) với \(k\) nguyên. \(1 \mid a\) với mọi \(a\). \(a \mid 0\) với mọi \(a \neq 0\).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Số nào là ước của mọi số tự nhiên?", choices: ["0", "1", "2", "Mọi số"], correct: 1, hint: "1 chia hết cho mọi số.", explain: "1." },
+      { type: "mc", prompt: "Số nào chia hết cho mọi số tự nhiên?", choices: ["0", "1", "2", "Không có"], correct: 0, hint: "0 chia hết cho mọi số khác 0.", explain: "0." },
+      { type: "num", prompt: "Viết tất cả ước của 15.", answer: "1, 3, 5, 15", accept: ["1, 3, 5, 15", "1,3,5,15"], hint: "1×15=15, 3×5=15.", explain: "1, 3, 5, 15." },
+      { type: "num", prompt: "Viết 4 bội đầu tiên của 9.", answer: "0, 9, 18, 27", accept: ["0, 9, 18, 27", "0,9,18,27"], hint: "9×0=0, 9×1=9, 9×2=18, 9×3=27.", explain: "0, 9, 18, 27." },
+      { type: "mc", prompt: "Nếu 4 | a và 4 | b thì", choices: ["4 | (a+b)", "4 | (a-b)", "Cả hai đều đúng", "Không có kết luận"], correct: 2, hint: "Tính chất chia hết của tổng và hiệu.", explain: "Cả hai đều đúng." },
+      { type: "num", prompt: "Biết 6 | 36 và 6 | 18. 6 có chia hết cho 36 + 18 không?", answer: "Có", accept: ["Có", "có"], hint: "Tính chất: nếu a|b và a|c thì a|(b+c).", explain: "36+18=54, 54:6=9." },
+      { type: "mc", prompt: "Số nào sau đây chia hết cho 3?", choices: ["10", "11", "12", "13"], correct: 2, hint: "12 = 3×4.", explain: "12." },
+    ],
+  },
+  {
+    id: "g6-b9",
+    num: 9,
+    chapter: 2,
+    title: "Dấu hiệu chia hết",
+    summary: "Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3: tổng các chữ số chia hết cho 3.",
+    body: String.raw`
+      <p><strong>Vì sao cần dấu hiệu?</strong> Dấu hiệu chia hết giúp ta nhanh chóng biết một số có chia hết cho 2, 3, 5, 9 mà không cần thực hiện phép chia dài.</p>
+      <div class="definition">
+        <p>Dấu hiệu chia hết: 2 - chữ số tận cùng chẵn (0, 2, 4, 6, 8); 5 - chữ số tận cùng 0 hoặc 5; 3 - tổng các chữ số chia hết cho 3; 9 - tổng các chữ số chia hết cho 9.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 24 chia hết cho 2 vì tận cùng là 4. 35 chia hết cho 5 vì tận cùng là 5. 123 chia hết cho 3 vì 1+2+3=6 chia hết cho 3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 108 chia hết cho 3 vì 1+0+8=9 chia hết cho 3. 972 chia hết cho 9 vì 9+7+2=18 chia hết cho 9. 540 chia hết cho cả 2, 3, 5, 9.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> 105 chia hết cho 3 và 5 nhưng không chia hết cho 2. Đừng nhầm: số chia hết cho 5 chưa chắc chia hết cho 2.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Ghi nhớ.</strong> 2 và 5 chỉ cần xem chữ số cuối. 3 và 9 cần tính tổng các chữ số. Số chia hết cho 9 thì luôn chia hết cho 3, nhưng ngược lại không đúng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>105 chia hết cho 3 và 5 nhưng không chia hết cho 2. Đừng nhầm.</li>
+          <li>9 chia hết cho 3 nhưng 6 không chia hết cho 9. Số chia hết cho 3 chưa chắc chia hết cho 9.</li>
+          <li>0 chia hết cho 2, 3, 5, 9. Số 0 chia hết cho mọi số khác 0.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Số nào chia hết cho 2 trong các số: 14, 15, 16? <em>— 14 và 16.</em></p>
+        <p>Số nào chia hết cho 3 trong các số: 21, 22, 23? <em>— 21 (2+1=3).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Kiểm tra 234 chia hết cho 3. Bước 1: tính tổng 2+3+4=9. Bước 2: 9 chia hết cho 3. Kết luận: 234 chia hết cho 3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tìm chữ số thích hợp thay cho * để 3*4 chia hết cho 3. <em>— * = 2 hoặc 5 hoặc 8. Vì 3+*+4 = 7+* chia hết cho 3 khi *=2,5,8.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> 2: tận cùng chẵn. 5: tận cùng 0 hoặc 5. 3: tổng chữ số chia hết cho 3. 9: tổng chữ số chia hết cho 9.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Số nào chia hết cho 2 trong các số: 24, 35, 46?", answer: "24, 46", accept: ["24, 46", "24,46"], hint: "Tận cùng chẵn: 0, 2, 4, 6, 8.", explain: "24 và 46." },
+      { type: "num", prompt: "Số nào chia hết cho 5 trong các số: 15, 23, 40?", answer: "15, 40", accept: ["15, 40", "15,40"], hint: "Tận cùng 0 hoặc 5.", explain: "15 và 40." },
+      { type: "num", prompt: "Số nào chia hết cho 3 trong các số: 123, 124, 125?", answer: "123", accept: ["123"], hint: "1+2+3=6 chia hết cho 3.", explain: "123." },
+      { type: "num", prompt: "Tìm chữ số * để 4*5 chia hết cho 3.", answer: "2, 5, 8", accept: ["2, 5, 8", "2,5,8"], hint: "4+*+5=9+* chia hết cho 3 khi *=0,3,6,9.", explain: "* = 0, 3, 6, 9." },
+      { type: "mc", prompt: "Số chia hết cho 9 thì", choices: ["Luôn chia hết cho 3", "Luôn chia hết cho 2", "Luôn chia hết cho 5", "Không có kết luận"], correct: 0, hint: "9 chia hết cho 3, nên số chia hết cho 9 cũng chia hết cho 3.", explain: "Luôn chia hết cho 3." },
+      { type: "num", prompt: "Số 108 chia hết cho những số nào trong 2, 3, 5, 9?", answer: "2, 3, 9", accept: ["2, 3, 9", "2,3,9"], hint: "Tận cùng 8 chẵn (2); 1+0+8=9 chia hết cho 3 và 9.", explain: "2, 3, 9." },
+      { type: "mc", prompt: "Số nào sau đây chia hết cho cả 2 và 5?", choices: ["20", "25", "30", "Cả A và C"], correct: 3, hint: "Chia hết cho 2 và 5 thì phải tận cùng là 0.", explain: "20 và 30 đều tận cùng là 0." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
