@@ -5938,6 +5938,25 @@ const G8_LESSONS = [
         <p>2. Giải phương trình: 5x - 3 = 3x + 9</p>
         <p><em>— a) x = 2; b) x = 3; c) x = -7; 2) x = 6</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b25-linear-equation">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình bậc nhất ax + b = 0">
+          <line x1="50" y1="100" x2="310" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="180" y1="50" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="80" y1="130" x2="280" y2="70" stroke="#83C167" stroke-width="2"/>
+          <circle cx="80" cy="130" r="2" fill="#58C4DD"/>
+          <circle cx="280" cy="70" r="2" fill="#58C4DD"/>
+          <text x="170" y="95" font-size="11" fill="#9A72AC">O</text>
+          <text x="300" y="115" font-size="11" fill="#DDDDDD">x</text>
+          <text x="170" y="40" font-size="11" fill="#DDDDDD">y</text>
+          <text x="100" y="95" font-size="11" fill="#83C167">y = ax + b (a ≠ 0)</text>
+          <text x="160" y="160" font-size="11" fill="#FC6255">ax + b = 0</text>
+          <text x="140" y="180" font-size="10" fill="#FC6255">Nghiệm: x = -b/a</text>
+          <circle cx="140" cy="100" r="2.5" fill="#FC6255"/>
+          <text x="132" y="115" font-size="9" fill="#FC6255">x₀</text>
+          <text x="85" y="145" font-size="9" fill="#58C4DD">A(0, b)</text>
+          <text x="265" y="55" font-size="9" fill="#58C4DD">B(-b/a, 0)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Phương trình 5x - 15 = 0 có nghiệm là:", answer: "3", accept: ["3"], hint: "Chuyển -15 sang vế phải và đổi dấu.", explain: "5x = 15 → x = 3." },
@@ -6035,6 +6054,18 @@ const G8_LESSONS = [
         <p>2. Một hình chữ nhật có chiều dài gấp 3 lần chiều rộng và diện tích là 75m². Tính chiều dài và chiều rộng.</p>
         <p><em>— 1) Gọi nữ là x, nam là x-8, x+(x-8)=40 → x=24, nam 16. 2) Rộng x, dài 3x, 3x²=75 → x=5, dài 15.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b26-equation-word-problem">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bài toán giải bằng cách lập phương trình">
+          <rect x="60" y="120" width="80" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="220" y="120" width="80" height="60" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="140" y1="150" x2="220" y2="150" stroke="#9A72AC" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="85" y="190" font-size="11" fill="#83C167">x (km/h)</text>
+          <text x="235" y="190" font-size="11" fill="#58C4DD">x + 20 (km/h)</text>
+          <text x="165" y="145" font-size="11" fill="#9A72AC">Cách đều 40km</text>
+          <text x="160" y="100" font-size="12" fill="#FC6255">Bài toán: Tìm vận tốc</text>
+          <text x="150" y="80" font-size="11" fill="#FC6255">Phương trình: 40/x - 40/(x+20) = 1</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Một số có hai chữ số, chữ số hàng đơn vị gấp đôi chữ số hàng chục. Nếu đổi chỗ hai chữ số thì được số mới lớn hơn số cũ 36 đơn vị. Tìm số đó.", answer: "48", accept: ["48"], hint: "Gọi chữ số hàng chục là x, hàng đơn vị là 2x. Số cũ 10x+2x=12x, số mới 10·2x+x=21x, hiệu 9x=36.", explain: "x=4, số cũ 48, số mới 84, hiệu 36." },
@@ -6132,6 +6163,24 @@ const G8_LESSONS = [
         <p>2. Cho hàm số y = x² - 1. Tính y khi x = -2, -1, 0, 1, 2.</p>
         <p><em>— 1) x=-1: y=-5; x=0: y=-2; x=2: y=4. 2) x=-2: y=3; x=-1: y=0; x=0: y=-1; x=1: y=0; x=2: y=3.</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b27-function-graph">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đồ thị hàm số y = f(x)">
+          <line x1="50" y1="100" x2="310" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="180" y1="50" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="100" cy="140" r="2.5" fill="#83C167"/>
+          <circle cx="150" cy="120" r="2.5" fill="#83C167"/>
+          <circle cx="200" cy="80" r="2.5" fill="#83C167"/>
+          <circle cx="250" cy="60" r="2.5" fill="#83C167"/>
+          <text x="90" y="155" font-size="10" fill="#83C167">A(1, 2)</text>
+          <text x="140" y="135" font-size="10" fill="#83C167">B(2, 1)</text>
+          <text x="190" y="95" font-size="10" fill="#83C167">C(3, -1)</text>
+          <text x="240" y="75" font-size="10" fill="#83C167">D(4, -2)</text>
+          <text x="160" y="20" font-size="12" fill="#9A72AC">Đồ thị hàm số y = f(x)</text>
+          <text x="175" y="190" font-size="10" fill="#DDDDDD">x</text>
+          <text x="165" y="40" font-size="10" fill="#DDDDDD">y</text>
+          <text x="170" y="90" font-size="10" fill="#9A72AC">O</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Cho hàm số y = 2x - 5. Tính y khi x = 3.", answer: "1", accept: ["1"], hint: "Thay x = 3 vào biểu thức: y = 2·3 - 5.", explain: "y = 6 - 5 = 1." },
@@ -6229,6 +6278,23 @@ const G8_LESSONS = [
         <p>2. Vẽ đồ thị hàm số y = x + 2 (chỉ cần 2 điểm).</p>
         <p><em>— 1a) a=4, b=-1; 1b) a=-3, b=2. 2) Điểm (0;2) và (-2;0).</em></p>
       </div>
+      <figure class="figure" data-animation="g8-b28-linear-function-graph">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đồ thị hàm số bậc nhất y = ax + b">
+          <line x1="50" y1="100" x2="310" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="180" y1="50" x2="180" y2="170" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="70" y1="140" x2="290" y2="60" stroke="#83C167" stroke-width="2"/>
+          <circle cx="70" cy="140" r="2.5" fill="#58C4DD"/>
+          <circle cx="290" cy="60" r="2.5" fill="#58C4DD"/>
+          <circle cx="180" cy="100" r="2.5" fill="#9A72AC"/>
+          <text x="170" y="90" font-size="11" fill="#9A72AC">O</text>
+          <text x="170" y="185" font-size="10" fill="#DDDDDD">x</text>
+          <text x="165" y="40" font-size="10" fill="#DDDDDD">y</text>
+          <text x="90" y="115" font-size="11" fill="#83C167">y = ax + b (a ≠ 0)</text>
+          <text x="75" y="155" font-size="9" fill="#58C4DD">B(0, b)</text>
+          <text x="275" y="45" font-size="9" fill="#58C4DD">A(-b/a, 0)</text>
+          <text x="150" y="140" font-size="9" fill="#FC6255">a &gt; 0 (đồng biến)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "text", prompt: "Hàm số y = 5x - 3 có hệ số góc là:", answer: "5", accept: ["5"], hint: "Hệ số góc là hệ số của x.", explain: "a = 5." },

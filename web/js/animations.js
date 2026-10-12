@@ -642,6 +642,43 @@ const AnimationManager = {
           { selector: 'circle[r="2"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b25: Phương trình bậc nhất một ẩn
+      'g8-b25-linear-equation': {
+        steps: [
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b26: Giải bài toán bằng cách lập phương trình
+      'g8-b26-equation-word-problem': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b27: Khái niệm hàm số và đồ thị
+      'g8-b27-function-graph': {
+        steps: [
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b28: Hàm số bậc nhất và đồ thị
+      'g8-b28-linear-function-graph': {
+        steps: [
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
