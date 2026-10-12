@@ -223,6 +223,33 @@ Files modified:
 
 Committed c1c5bd1. Pushed to GitHub Pages main branch.
 
+## 2026-01-11 Grade 9 animations complete (0d665aa)
+
+Added animations to Grade 9 lessons:
+
+- **c2-b5: Bất đẳng thức và tính chất**
+- **c2-b6: Bất phương trình bậc nhất một ẩn**
+
+Both lessons use simple animation framework:
+- Coordinate axes with `stroke-dasharray`/`stroke-dashoffset` for drawing effect
+- Text labels with `opacity` fade-in
+- Interactive controls: play/pause/step/reset buttons
+
+**Final Grade 9 Animation Status: 100% coverage (30/30 lessons)**
+
+### Complete Animation Coverage Summary:
+- ✅ Grade 9: 30/30 lessons (100%)
+- ✅ Grade 8: 30/39 lessons (76.9%)
+- ✅ Grade 7: 16/37 lessons (43.2%)
+
+**Total: 76 animated lessons across all grades**
+
+### Remaining Lessons for Animation:
+- Grade 8: g8-b1, g8-b2, g8-b3, g8-b4, g8-b5, g8-b6, g8-b7, g8-b8, g8-b14
+- Grade 7: g7-b1, g7-b2, g7-b3, g7-b4, g7-b5, g7-b6, g7-b7, g7-b11, g7-b17, g7-b20 through g7-b28, g7-b34
+
+Committed 0d665aa. Pushed to GitHub Pages main branch.
+
 ## 2026-01-10 Grade 9 animations for c9-b29 and c9-b30 (2c4d8a0)
 
 Added visual animations for Grade 9 lessons:
