@@ -1358,6 +1358,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tâm đối xứng của hình vuông là", answer: "giao điểm hai đường chéo", accept: ["giao điểm hai đường chéo", "giao điểm hai duong cheo"], hint: "Giao điểm của hai đường chéo vuông góc nhau.", explain: "Giao điểm hai đường chéo." },
     ],
   },
+  {
+    id: "g6-b24",
+    num: 24,
+    chapter: 9,
+    title: "Thu thập và phân loại dữ liệu",
+    summary: "Thu thập dữ liệu từ thực tế, phân loại theo đặc điểm, lập bảng thống kê.",
+    body: String.raw`
+      <p><strong>Vì sao cần thu thập dữ liệu?</strong> Dữ liệu giúp chúng ta hiểu rõ tình hình, đưa ra quyết định dựa trên thông tin thực tế.</p>
+      <div class="definition">
+        <p>Dữ liệu là thông tin thu thập được từ thực tế. Phân loại dữ liệu là sắp xếp dữ liệu theo các đặc điểm chung. Bảng thống kê là cách trình bày dữ liệu đã phân loại.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Thống kê loại quả yêu thích của lớp: táo, cam, chuối, xoài. Đếm số bạn thích mỗi loại và lập bảng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Điều tra số lượng học sinh thích các môn: Toán (15), Văn (12), Anh (10), Sử (8). Dữ liệu định lượng là số lượng học sinh. Dữ liệu định tính là tên môn học.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không phân biệt dữ liệu định lượng (số) và định tính (văn bản). Dữ liệu "tôi thích..." là định tính, không thể cộng trừ như dữ liệu định lượng. Đừng nhầm giữa "số bạn" và "tên bạn".</p>
+      </div>
+      <div class="idea">
+        <p><strong>Các bước thu thập.</strong> Xác định đối tượng khảo sát → xác định đặc điểm cần thu thập → thu thập dữ liệu → phân loại và ghi chép.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Dữ liệu định lượng là số (số lượng, chiều cao, cân nặng).</li>
+          <li>Dữ liệu định tính là văn bản (tên, loại, sở thích).</li>
+          <li>Trong bảng thống kê, cần rõ đối tượng và giá trị tương ứng.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Trong dữ liệu "chiều cao: 150cm, 155cm, 160cm", đây là dữ liệu gì? <em>— Định lượng.</em></p>
+        <p>Trong dữ liệu "tên môn: Toán, Văn, Anh", đây là dữ liệu gì? <em>— Định tính.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Thu thập dữ liệu điểm kiểm tra Toán của tổ: 8, 9, 7, 10, 6. Bước 1: ghi chép điểm. Bước 2: phân loại theo khoảng điểm. Bước 3: lập bảng tần số.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Thống kê loại quả của 20 bạn: 5 bạn thích táo, 8 bạn thích cam, 4 bạn thích chuối, 3 bạn thích xoài. Tính tổng. <em>— 5 + 8 + 4 + 3 = 20.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu định lượng là số, định tính là văn bản. Thu thập → phân loại → lập bảng.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Dữ liệu 'chiều cao: 145cm, 150cm, 155cm' là", choices: ["Định tính", "Định lượng", "Cả hai", "Không xác định"], correct: 1, hint: "Chiều cao là số đo.", explain: "Định lượng." },
+      { type: "mc", prompt: "Dữ liệu 'tên học sinh: Lan, Dũng, Mai' là", choices: ["Định tính", "Định lượng", "Cả hai", "Không xác định"], correct: 0, hint: "Tên là văn bản, không phải số.", explain: "Định tính." },
+      { type: "num", prompt: "Thống kê điểm: 8, 9, 7, 10, 6, 8. Có bao nhiêu bạn được 8 điểm?", answer: 2, hint: "Đếm số lần xuất hiện của 8.", explain: "2 bạn." },
+      { type: "num", prompt: "Trong 30 học sinh, 12 bạn thích Toán, 10 bạn thích Văn. Hỏi có bao nhiêu bạn không thích Toán?", answer: 18, hint: "30 - 12 = 18.", explain: "18 bạn." },
+      { type: "num", prompt: "Lập bảng: 5 bạn táo, 7 bạn cam, 6 bạn chuối, 2 bạn xoài. Tổng số bạn là bao nhiêu?", answer: 20, hint: "5 + 7 + 6 + 2 = 20.", explain: "20 bạn." },
+      { type: "mc", prompt: "Trong bảng thống kê, cột đầu tiên thường là", choices: ["Giá trị dữ liệu", "Tên đối tượng", "Tần số", "Tổng cộng"], correct: 1, hint: "Tên đối tượng (học sinh, môn học, v.v.) thường ở cột đầu.", explain: "Tên đối tượng." },
+      { type: "num", prompt: "Điểm kiểm tra: 7, 8, 9, 10, 8, 9, 8. Tần số của điểm 8 là bao nhiêu?", answer: 3, hint: "Đếm số lần điểm 8 xuất hiện.", explain: "3 lần." },
+    ],
+  },
+  {
+    id: "g6-b25",
+    num: 25,
+    chapter: 9,
+    title: "Biểu đồ tranh",
+    summary: "Biểu đồ tranh sử dụng hình vẽ hoặc biểu tượng để trình bày dữ liệu.",
+    body: String.raw`
+      <p><strong>Vì sao cần biểu đồ tranh?</strong> Biểu đồ tranh giúp trực quan hóa dữ liệu, dễ so sánh và hiểu nhanh thông tin.</p>
+      <div class="definition">
+        <p>Biểu đồ tranh là cách trình bày dữ liệu bằng hình vẽ hoặc biểu tượng. Mỗi biểu tượng đại diện cho một hoặc nhiều đơn vị dữ liệu. Cần có chú giải để hiểu biểu tượng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Biểu đồ tranh thể hiện loại quả yêu thích: 🍎 = 5 bạn, 🍊 = 8 bạn, 🍌 = 4 bạn, 🥭 = 3 bạn.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Biểu đồ tranh có 6 hình 🍎, mỗi hình đại diện cho 2 bạn yêu thích táo. Vậy có 6 × 2 = 12 bạn yêu thích táo. Khi số lượng lớn, mỗi biểu tượng có thể đại diện nhiều đơn vị.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng hiểu nhầm số biểu tượng với số đơn vị. Nếu mỗi 🍎 đại diện cho 3 bạn, thì 4 hình 🍎 là 12 bạn, không phải 4 bạn. Luôn đọc chú giải kỹ.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách vẽ.</strong> Xác định dữ liệu → chọn biểu tượng phù hợp → xác định tỷ lệ (mỗi biểu tượng = bao nhiêu đơn vị) → vẽ biểu đồ → thêm chú giải.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chọn biểu tượng không phù hợp với dữ liệu (không rõ nghĩa).</li>
+          <li>Không ghi chú giải, người đọc không hiểu biểu tượng.</li>
+          <li>Tính sai khi mỗi biểu tượng đại diện nhiều đơn vị.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Mỗi 🚗 = 10 xe, có 5 hình 🚗. Có bao nhiêu xe? <em>— 50 xe.</em></p>
+        <p>Mỗi 🌳 = 5 cây, có 3 hình đầy và 1 nửa hình. Có bao nhiêu cây? <em>— 3 × 5 + 2.5 = 17.5 cây (hoặc 18 cây làm tròn).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Vẽ biểu đồ tranh cho: Táo (12), Cam (8), Chuối (6), Xoài (4), biết mỗi 🍎 = 2 bạn. Bước 1: Táo = 12/2 = 6 hình. Bước 2: Cam = 8/2 = 4 hình. Bước 3: Chuối = 6/2 = 3 hình. Bước 4: Xoài = 4/2 = 2 hình.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Biểu đồ tranh có 7 hình 🍎 (mỗi hình = 3 bạn), 5 hình 🍊 (mỗi hình = 3 bạn). Tính tổng. <em>— (7 + 5) × 3 = 36 bạn.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ tranh dùng hình vẽ, mỗi biểu tượng đại diện một hoặc nhiều đơn vị. Luôn đọc chú giải.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Mỗi 🍎 = 3 bạn, có 4 hình 🍎. Có bao nhiêu bạn thích táo?", answer: 12, hint: "4 × 3 = 12.", explain: "12 bạn." },
+      { type: "num", prompt: "Biểu đồ có 6 hình 🚗 (mỗi hình = 5 xe). Có bao nhiêu xe?", answer: 30, hint: "6 × 5 = 30.", explain: "30 xe." },
+      { type: "num", prompt: "Mỗi 🌳 = 10 cây, có 3 hình đầy và 1 nửa hình. Có bao nhiêu cây?", answer: 35, hint: "3 × 10 + 5 = 35.", explain: "35 cây." },
+      { type: "mc", prompt: "Mỗi biểu tượng trong biểu đồ tranh có thể đại diện", choices: ["Chỉ 1 đơn vị", "Chỉ nhiều đơn vị", "1 hoặc nhiều đơn vị", "Không xác định"], correct: 2, hint: "Có thể là 1 hoặc nhiều đơn vị, tùy theo tỷ lệ.", explain: "1 hoặc nhiều đơn vị." },
+      { type: "num", prompt: "Biểu đồ tranh có 8 hình 🍊 (mỗi hình = 2 bạn). Có bao nhiêu bạn?", answer: 16, hint: "8 × 2 = 16.", explain: "16 bạn." },
+      { type: "num", prompt: "Mỗi 🐶 = 4 con, có 5 hình 🐶 và 1 nửa hình. Có bao nhiêu con?", answer: 22, hint: "5 × 4 + 2 = 22.", explain: "22 con." },
+      { type: "mc", prompt: "Chú giải trong biểu đồ tranh dùng để", choices: ["Trang trí", "Giải thích biểu tượng", "Ghi số liệu", "Không cần thiết"], correct: 1, hint: "Chú giải giúp người đọc hiểu mỗi biểu tượng đại diện gì.", explain: "Giải thích biểu tượng." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
