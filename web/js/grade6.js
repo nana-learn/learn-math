@@ -1250,6 +1250,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Hình lục giác nào dưới đây là đều?", choices: ["Có 6 cạnh bằng nhau", "Có 6 góc bằng nhau", "Có cả 6 cạnh và 6 góc bằng nhau", "Có 3 cặp cạnh song song"], correct: 2, hint: "Cần cả 6 cạnh bằng nhau VÀ 6 góc bằng nhau.", explain: "Có cả 6 cạnh và 6 góc bằng nhau." },
     ],
   },
+  {
+    id: "g6-b22",
+    num: 22,
+    chapter: 5,
+    title: "Hình có trục đối xứng",
+    summary: "Hình có trục đối xứng: nếu gấp hình dọc theo trục thì hai phần trùng nhau hoàn toàn.",
+    body: String.raw`
+      <p><strong>Vì sao cần trục đối xứng?</strong> Trục đối xứng giúp nhận biết tính đối xứng trong hình học, tự nhiên và nghệ thuật.</p>
+      <div class="definition">
+        <p>Trục đối xứng của hình: đường thẳng mà khi gấp hình dọc theo đường đó, hai phần của hình trùng nhau hoàn toàn. Một hình có thể có một hoặc nhiều trục đối xứng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình tròn có vô số trục đối xứng (mọi đường kính). Đoạn thẳng có một trục đối xứng (đường trung trực). Góc có một trục đối xứng (tia phân giác).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tam giác cân có một trục đối xứng (đường cao từ đỉnh). Tam giác đều có ba trục đối xứng. Hình vuông có bốn trục đối xứng (hai đường chéo, hai đường trung trực).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không phải hình nào cũng có trục đối xứng. Tam giác thường (không cân) không có trục đối xứng.parallelogram không vuông cũng không có trục đối xứng. Đừng nhầm với tâm đối xứng.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhận biết.</strong> Gấp hình dọc theo đường nào đó nếu hai phần trùng nhau hoàn toàn thì đường đó là trục đối xứng. Một hình có thể có nhiều trục đối xứng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hình tròn có VÔ SỐ trục đối xứng, không phải một.</li>
+          <li>Hình không đối xứng không có trục đối xứng.</li>
+          <li>Trục đối xứng khác với tâm đối xứng (hình có thể có một mà không có cái kia).</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình tròn có bao nhiêu trục đối xứng? <em>— Vô số.</em></p>
+        <p>Tam giác cân có bao nhiêu trục đối xứng? <em>— Một.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Xác định trục đối xứng của hình vuông. Bước 1: vẽ hai đường chéo (đó là trục đối xứng). Bước 2: vẽ hai đường trung trực (cũng là trục đối xứng). Bước 3: có tất cả 4 trục đối xứng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Trong các hình: hình chữ nhật, hình thoi, hình vuông. Hình nào có nhiều trục đối xứng nhất? <em>— Hình vuông (4 trục).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Trục đối xứng là đường thẳng chia hình thành hai phần trùng nhau. Số trục đối xứng: hình vuông = 4, tam giác đều = 3, hình tròn = vô số.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình vuông có bao nhiêu trục đối xứng?", answer: 4, hint: "2 đường chéo + 2 đường trung trực.", explain: "4 trục đối xứng." },
+      { type: "num", prompt: "Tam giác đều có bao nhiêu trục đối xứng?", answer: 3, hint: "Mỗi đường cao là một trục đối xứng.", explain: "3 trục đối xứng." },
+      { type: "num", prompt: "Hình tròn có bao nhiêu trục đối xứng?", answer: "vô số", accept: ["vô số", "vsons", "vôsố"], hint: "Mọi đường kính đều là trục đối xứng.", explain: "Vô số trục đối xứng." },
+      { type: "mc", prompt: "Hình nào sau đây KHÔNG có trục đối xứng?", choices: ["Tam giác cân", "Tam giác đều", "Tam giác thường", "Hình tròn"], correct: 2, hint: "Tam giác thường không có trục đối xứng.", explain: "Tam giác thường." },
+      { type: "num", prompt: "Hình chữ nhật có bao nhiêu trục đối xứng?", answer: 2, hint: "Hai đường trung trực của các cạnh.", explain: "2 trục đối xứng." },
+      { type: "num", prompt: "Tam giác cân có một trục đối xứng đi qua", choices: ["Chỉ đỉnh", "Chỉ trung điểm cạnh đáy", "Đỉnh và trung điểm cạnh đáy", "Không xác định"], correct: 2, hint: "Trục đối xứng đi qua đỉnh và vuông góc với cạnh đáy tại trung điểm.", explain: "Đỉnh và trung điểm cạnh đáy." },
+      { type: "mc", prompt: "Hình nào có vô số trục đối xứng?", choices: ["Hình vuông", "Hình tròn", "Tam giác đều", "Hình chữ nhật"], correct: 1, hint: "Hình tròn có mọi đường kính là trục đối xứng.", explain: "Hình tròn." },
+    ],
+  },
+  {
+    id: "g6-b23",
+    num: 23,
+    chapter: 5,
+    title: "Hình có tâm đối xứng",
+    summary: "Hình có tâm đối xứng: nếu quay hình 180° quanh tâm thì hình trùng với chính nó.",
+    body: String.raw`
+      <p><strong>Vì sao cần tâm đối xứng?</strong> Tâm đối xứng là tính chất quan trọng của nhiều hình học, ứng dụng trong thiết kế và công nghệ.</p>
+      <div class="definition">
+        <p>Tâm đối xứng của hình: điểm mà khi quay hình 180° quanh điểm đó, hình trùng với chính nó. Một số hình có tâm đối xứng, một số không có.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình tròn có tâm đối xứng là tâm đường tròn. Hình bình hành có tâm đối xứng là giao điểm hai đường chéo. Đoạn thẳng có tâm đối xứng là trung điểm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình vuông có tâm đối xứng là giao điểm hai đường chéo. Hình chữ nhật có tâm đối xứng là giao điểm hai đường chéo. Tam giác đều KHÔNG có tâm đối xứng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không phải hình nào cũng có tâm đối xứng. Tam giác thường, tam giác cân (không đều), hình thoi vuông không có tâm đối xứng. Hình có trục đối xứng không nhất thiết có tâm đối xứng.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhận biết.</strong> Quay hình 180° quanh điểm nào đó nếu hình trùng với chính nó thì điểm đó là tâm đối xứng. Hình có thể có hoặc không có tâm đối xứng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hình vuông, hình chữ nhật, hình bình hành có tâm đối xứng (giao điểm đường chéo).</li>
+          <li>Tam giác đều KHÔNG có tâm đối xứng (quay 180° không trùng).</li>
+          <li>Trục đối xứng và tâm đối xứng là hai khái niệm khác nhau.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình bình hành có tâm đối xứng là gì? <em>— Giao điểm hai đường chéo.</em></p>
+        <p>Hình tròn có tâm đối xứng là gì? <em>— Tâm đường tròn.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Xác định tâm đối xứng của hình chữ nhật. Bước 1: vẽ hai đường chéo. Bước 2: giao điểm của hai đường chéo là tâm đối xứng. Bước 3: quay 180° quanh điểm này, hình trùng với chính nó.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Trong các hình: tam giác đều, hình vuông, hình tròn, hình bình hành. Hình nào KHÔNG có tâm đối xứng? <em>— Tam giác đều.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tâm đối xứng là điểm quay 180° hình trùng với chính nó. Hình bình hành, hình chữ nhật, hình vuông, hình tròn có tâm đối xứng. Tam giác đều không có.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình bình hành có tâm đối xứng là", answer: "giao điểm hai đường chéo", accept: ["giao điểm hai đường chéo", "giao điểm hai đường chéo", "giao điểm hai duong cheo"], hint: "Điểm giao nhau của hai đường chéo là tâm đối xứng.", explain: "Giao điểm hai đường chéo." },
+      { type: "num", prompt: "Hình tròn có tâm đối xứng là", answer: "tâm đường tròn", accept: ["tâm đường tròn", "tam duong tron", "tâm"], hint: "Tâm của đường tròn là tâm đối xứng.", explain: "Tâm đường tròn." },
+      { type: "mc", prompt: "Hình nào sau đây KHÔNG có tâm đối xứng?", choices: ["Hình vuông", "Hình chữ nhật", "Tam giác đều", "Hình bình hành"], correct: 2, hint: "Tam giác đều quay 180° không trùng.", explain: "Tam giác đều." },
+      { type: "num", prompt: "Hình chữ nhật có bao nhiêu tâm đối xứng?", answer: 1, hint: "Chỉ có một điểm giao nhau của hai đường chéo.", explain: "1 tâm đối xứng." },
+      { type: "num", prompt: "Đoạn thẳng AB có tâm đối xứng là", answer: "trung điểm AB", accept: ["trung điểm AB", "trung điểm", "trung điểm ab"], hint: "Trung điểm của đoạn thẳng là tâm đối xứng.", explain: "Trung điểm AB." },
+      { type: "mc", prompt: "Hình nào có tâm đối xứng?", choices: ["Tam giác cân", "Tam giác đều", "Hình thoi", "Hình thang cân"], correct: 2, hint: "Hình thoi có tâm đối xứng là giao điểm hai đường chéo.", explain: "Hình thoi." },
+      { type: "num", prompt: "Tâm đối xứng của hình vuông là", answer: "giao điểm hai đường chéo", accept: ["giao điểm hai đường chéo", "giao điểm hai duong cheo"], hint: "Giao điểm của hai đường chéo vuông góc nhau.", explain: "Giao điểm hai đường chéo." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
