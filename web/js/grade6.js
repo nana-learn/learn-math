@@ -614,6 +614,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "ƯCLN(0, 15) bằng bao nhiêu?", answer: 15, hint: "ƯCLN(0, a) = a với a ≠ 0.", explain: "15." },
     ],
   },
+  {
+    id: "g6-b12",
+    num: 12,
+    chapter: 2,
+    title: "Bội chung. Bội chung nhỏ nhất",
+    summary: "Bội chung của hai hay nhiều số là bội của tất cả các số đó. BCNN là bội chung nhỏ nhất.",
+    body: String.raw`
+      <p><strong>Vì sao cần bội chung?</strong> Bội chung giúp ta tìm các số chia hết đồng thời cho nhiều số. BCNN thường dùng để quy đồng mẫu số và giải bài toán tìm thời điểm đồng bộ.</p>
+      <div class="definition">
+        <p>Bội chung của hai hay nhiều số là bội của tất cả các số đó. Bội chung nhỏ nhất (BCNN) là số nhỏ nhất khác 0 trong tập bội chung. Kí hiệu BCNN(a, b) hoặc [a, b].</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Bội chung của 3 và 4 là 12, 24, 36, ... BCNN(3, 4) = 12. Bội chung của 2 và 5 là 10, 20, 30, ... BCNN(2, 5) = 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> BCNN(6, 8, 12) = 24. BCNN(9, 12) = 36. BCNN(a, b) × ƯCLN(a, b) = a × b.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> BCNN(0, a) không xác định. Đừng nghĩ BCNN(0, a) = 0. Bội chung chỉ xét với số khác 0.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Tìm BCNN bằng phân tích ra thừa số nguyên tố.</strong> Phân tích mỗi số ra thừa số nguyên tố, rồi lấy các thừa số chung và riêng với số mũ lớn nhất. Tích đó là BCNN.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>BCNN(0, a) không xác định. Đừng viết kết quả là 0.</li>
+          <li>BCNN(a, a) = a. Hai số bằng nhau thì BCNN là chính số đó.</li>
+          <li>BCNN(a, b) × ƯCLN(a, b) = a × b. Đây là công thức quan trọng.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>BCNN(3, 4) bằng bao nhiêu? <em>— 12.</em></p>
+        <p>BCNN(2, 5) bằng bao nhiêu? <em>— 10.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tìm BCNN(12, 18). Bước 1: phân tích 12 = 2² × 3, 18 = 2 × 3². Bước 2: thừa số chung là 2 và 3, thừa số riêng: không có. Bước 3: lấy số mũ lớn nhất: 2², 3². Bước 4: 2² × 3² = 4 × 9 = 36.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Hai bạn An và Bình cùng tập thể dục. An tập 3 ngày một lần, Bình tập 4 ngày một lần. Hỏi sau ít nhất bao nhiêu ngày họ cùng tập? <em>— BCNN(3, 4) = 12 ngày.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> BCNN là bội chung nhỏ nhất khác 0. Phân tích ra thừa số nguyên tố để tìm BCNN. BCNN(a,b) × ƯCLN(a,b) = a × b.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "BCNN(3, 4) bằng bao nhiêu?", answer: 12, hint: "Bội của 3: 3,6,9,12,15,... Bội của 4: 4,8,12,16,... Chung nhỏ nhất: 12.", explain: "12." },
+      { type: "num", prompt: "BCNN(2, 5) bằng bao nhiêu?", answer: 10, hint: "Bội của 2: 2,4,6,8,10,... Bội của 5: 5,10,15,... Chung nhỏ nhất: 10.", explain: "10." },
+      { type: "num", prompt: "BCNN(6, 8) bằng bao nhiêu?", answer: 24, hint: "6=2×3, 8=2³. Lấy 2³×3=24.", explain: "24." },
+      { type: "num", prompt: "BCNN(9, 12) bằng bao nhiêu?", answer: 36, hint: "9=3², 12=2²×3. Lấy 2²×3²=36.", explain: "36." },
+      { type: "num", prompt: "BCNN(5, 7) bằng bao nhiêu?", answer: 35, hint: "5 và 7 là hai số nguyên tố.", explain: "35." },
+      { type: "mc", prompt: "BCNN(12, 18) × ƯCLN(12, 18) bằng bao nhiêu?", choices: ["12", "18", "216", "54"], correct: 2, hint: "BCNN × ƯCLN = a × b = 12 × 18 = 216.", explain: "216." },
+      { type: "num", prompt: "BCNN(4, 6, 8) bằng bao nhiêu?", answer: 24, hint: "4=2², 6=2×3, 8=2³. Lấy 2³×3=24.", explain: "24." },
+    ],
+  },
+  {
+    id: "g6-b13",
+    num: 13,
+    chapter: 3,
+    title: "Tập hợp các số nguyên",
+    summary: "Số nguyên gồm số dương, số 0, và số âm. Kí hiệu Z.",
+    body: String.raw`
+      <p><strong>Vì sao cần số nguyên?</strong> Số tự nhiên không đủ để biểu thị các đại lượng có chiều (nhiệt độ, độ cao, thời gian trước/sau). Số nguyên giúp biểu thị cả hai chiều.</p>
+      <div class="definition">
+        <p>Tập hợp số nguyên kí hiệu là \(\mathbb{Z}\). Gồm: số nguyên dương (1, 2, 3, ...), số 0, và số nguyên âm (-1, -2, -3, ...).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> -5 là số nguyên âm. 0 là số nguyên. 7 là số nguyên dương. Tất cả đều thuộc tập \(\mathbb{Z}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> -100 là số nguyên âm. 100 là số nguyên dương. Chúng là hai số đối nhau. | -100 | = | 100 | = 100.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Số 0 không phải số dương cũng không phải số âm. Đừng nhầm 0 là số dương.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Số đối.</strong> Hai số gọi là đối nhau nếu tổng của chúng bằng 0. Ví dụ: 5 và -5 là hai số đối nhau. Số đối của 0 là 0.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Số 0 không phải số dương cũng không phải số âm. Đây là điểm đặc biệt.</li>
+          <li>| -a | = | a |. Giá trị tuyệt đối của số và số đối của nó bằng nhau.</li>
+          <li>-(-a) = a. Âm của âm là dương.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Số nào là số nguyên trong các số: -3, 0, 5? <em>— Cả ba đều là số nguyên.</em></p>
+        <p>Số đối của 7 là bao nhiêu? <em>— -7.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tìm số đối của -4. Bước 1: số đối là số cộng với -4 được 0. Bước 2: -4 + x = 0 ⇒ x = 4. Bước 3: số đối của -4 là 4.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -2°C, buổi chiều tăng 5°C. Nhiệt độ buổi chiều là bao nhiêu? <em>— -2 + 5 = 3°C.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Số nguyên gồm số dương, 0, và số âm. Hai số đối nhau có tổng bằng 0. |a| = |-a|.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Số nào là số nguyên?", choices: ["-5", "0", "7", "Cả ba số trên"], correct: 3, hint: "Tất cả số nguyên dương, 0, và số âm đều là số nguyên.", explain: "Cả ba số đều là số nguyên." },
+      { type: "num", prompt: "Số đối của 8 là bao nhiêu?", answer: -8, hint: "8 + (-8) = 0.", explain: "-8." },
+      { type: "num", prompt: "Số đối của -3 là bao nhiêu?", answer: 3, hint: "-3 + 3 = 0.", explain: "3." },
+      { type: "num", prompt: "| -7 | bằng bao nhiêu?", answer: 7, hint: "Giá trị tuyệt đối luôn dương hoặc bằng 0.", explain: "7." },
+      { type: "num", prompt: "| -5 | + | 5 | bằng bao nhiêu?", answer: 10, hint: "|-5|=5, |5|=5, 5+5=10.", explain: "10." },
+      { type: "num", prompt: "-(-4) bằng bao nhiêu?", answer: 4, hint: "Âm của âm là dương.", explain: "4." },
+      { type: "mc", prompt: "Số 0 là", choices: ["Số dương", "Số âm", "Cả hai", "Không phải số dương cũng không phải số âm"], correct: 3, hint: "0 là trung tính, không phải dương cũng không phải âm.", explain: "Không phải số dương cũng không phải số âm." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
