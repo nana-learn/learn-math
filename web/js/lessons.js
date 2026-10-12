@@ -5476,6 +5476,24 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Dãy số: 1, 1, 2, 2, 2, 3, 3, 4. Tần số: 1(2), 2(3), 3(2), 4(1).</p>
         <p>Điểm số: 7(5), 8(8), 9(4), 10(3). Tổng = 20 học sinh.</p>
       </div>
+      <figure class="figure" data-animation="g8-b18-statistics-data">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Thu thập và phân loại dữ liệu thống kê">
+          <rect x="80" y="130" width="20" height="50" fill="#83C167"/>
+          <rect x="120" y="110" width="20" height="70" fill="#58C4DD"/>
+          <rect x="160" y="90" width="20" height="90" fill="#FC6255"/>
+          <rect x="200" y="100" width="20" height="80" fill="#9A72AC"/>
+          <text x="85" y="195" font-size="9" fill="#555">Tốt</text>
+          <text x="125" y="195" font-size="9" fill="#555">Khá</text>
+          <text x="165" y="195" font-size="9" fill="#555">Trung bình</text>
+          <text x="205" y="195" font-size="9" fill="#555">Yếu</text>
+          <text x="140" y="40" font-size="11" fill="#9A72AC">Dữ liệu thống kê: Điểm kiểm tra</text>
+          <line x1="60" y1="180" x2="280" y2="180" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="70" y1="130" x2="70" y2="180" stroke="#83C167" stroke-width="1.5"/>
+          <line x1="110" y1="110" x2="110" y2="180" stroke="#58C4DD" stroke-width="1.5"/>
+          <line x1="150" y1="90" x2="150" y2="180" stroke="#FC6255" stroke-width="1.5"/>
+          <line x1="190" y1="100" x2="190" y2="180" stroke="#9A72AC" stroke-width="1.5"/>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc. Chiều cao, nhiệt độ, thời gian là liên tục." },
@@ -5553,6 +5571,22 @@ const G8_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Tần số: giá trị 5 (3), giá trị 7 (5), giá trị 9 (2). Tổng tần số = 10.</p>
       </div>
+      <figure class="figure" data-animation="g8-b19-bar-chart">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột biểu diễn dữ liệu thống kê">
+          <line x1="50" y1="180" x2="310" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="50" y1="50" x2="50" y2="180" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="80" y="120" width="30" height="60" fill="#83C167"/>
+          <rect x="130" y="90" width="30" height="90" fill="#58C4DD"/>
+          <rect x="180" y="70" width="30" height="110" fill="#FC6255"/>
+          <rect x="230" y="100" width="30" height="80" fill="#9A72AC"/>
+          <text x="85" y="195" font-size="9" fill="#555">A</text>
+          <text x="135" y="195" font-size="9" fill="#555">B</text>
+          <text x="185" y="195" font-size="9" fill="#555">C</text>
+          <text x="235" y="195" font-size="9" fill="#555">D</text>
+          <text x="155" y="35" font-size="11" fill="#9A72AC">Biểu đồ cột</text>
+          <text x="55" y="45" font-size="9" fill="#DDDDDD">Số lượng</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "mc", prompt: "Dữ liệu nào là rời rạc?", choices: ["Chiều cao học sinh", "Nhiệt độ buổi sáng", "Số học sinh giỏi", "Thời gian chạy"], correct: 2, hint: "Đếm được, giá trị riêng lẻ.", explain: "Số học sinh giỏi là rời rạc." },
@@ -5638,6 +5672,24 @@ const G8_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Dãy số: 1(2), 2(3), 3(4), 4(1). Trung bình = 2.6.</p>
       </div>
+      <figure class="figure" data-animation="g8-b20-pie-chart">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ hình quạt phân tích số liệu">
+          <circle cx="180" cy="110" r="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <path d="M 180 110 L 180 50 A 60 60 0 0 1 232 142 Z" fill="#83C167" opacity="0.6"/>
+          <path d="M 180 110 L 232 142 A 60 60 0 0 1 208 172 Z" fill="#58C4DD" opacity="0.6"/>
+          <path d="M 180 110 L 208 172 A 60 60 0 0 1 132 172 Z" fill="#FC6255" opacity="0.6"/>
+          <path d="M 180 110 L 132 172 A 60 60 0 0 1 180 50 Z" fill="#9A72AC" opacity="0.6"/>
+          <rect x="250" y="60" width="20" height="10" fill="#83C167"/>
+          <rect x="250" y="80" width="20" height="10" fill="#58C4DD"/>
+          <rect x="250" y="100" width="20" height="10" fill="#FC6255"/>
+          <rect x="250" y="120" width="20" height="10" fill="#9A72AC"/>
+          <text x="280" y="68" font-size="9" fill="#555">20%</text>
+          <text x="280" y="88" font-size="9" fill="#555">30%</text>
+          <text x="280" y="108" font-size="9" fill="#555">25%</text>
+          <text x="280" y="128" font-size="9" fill="#555">25%</text>
+          <text x="140" y="40" font-size="11" fill="#9A72AC">Biểu đồ hình quạt</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Điểm: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2). Tính điểm trung bình.", answer: 7.05, accept: ["7.05", "7.1"], hint: "(5×2 + 6×3 + 7×5 + 8×4 + 9×4 + 10×2)/20.", explain: "141/20 = 7.05." },

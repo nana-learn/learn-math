@@ -679,6 +679,33 @@ const AnimationManager = {
           { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b18: Thu thập và phân loại dữ liệu
+      'g8-b18-statistics-data': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b19: Biểu diễn dữ liệu bằng bảng, biểu đồ
+      'g8-b19-bar-chart': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b20: Phân tích số liệu thống kê
+      'g8-b20-pie-chart': {
+        steps: [
+          { selector: 'circle', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
