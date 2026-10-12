@@ -88,7 +88,6 @@ const LESSONS = [
         <figure class="figure" data-animation="c6-b21">
         <figure class="figure" data-animation="c8-b25">
         <figure class="figure" data-animation="c8-b26">
-        <figure class="figure" data-animation="c1-b1">
         <figure class="figure" data-animation="c1-b2">
         <figure class="figure" data-animation="c1-b3">
         <figure class="figure" data-animation="c3-b8">
@@ -207,7 +206,7 @@ const LESSONS = [
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Một điều kiện, vô số cặp. Hệ là hai điều kiện. Đúng một phương trình chưa đủ để là nghiệm của hệ.</p></div>
 
-      <figure class="figure" data-animation="c1-b1-equation-system">
+      <figure class="figure" data-animation="c1-b1">
         <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình và hệ hai phương trình bậc nhất hai ẩn">
           <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
           <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
@@ -404,7 +403,6 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi đề đã cho sẵn hệ, việc còn lại là giải. Năm 2024 cho hệ có \(\sqrt{3x+1}\) ở cả hai phương trình. Đặt ẩn phụ rồi cộng hoặc thế, như bài này. Năm 2026, sau khi lập xong, hệ hoa hồng và hoa cúc cũng giải bằng cộng đại số: \(x+y=25\), \(8x+6y=180\).</p>
       </div>
       
-      <figure class="figure" data-animation="c1-b2-system-solution">
         <svg viewBox="0 0 360 210" role="img" aria-label="Giải hệ hai phương trình bậc nhất hai ẩn">
           <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
           <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
@@ -545,7 +543,6 @@ const LESSONS = [
       </div>
       
       
-      <figure class="figure" data-animation="c1-b3-system-word-problem">
         <svg viewBox="0 0 360 210" role="img" aria-label="Giải bài toán bằng cách lập hệ phương trình">
           <text x="180" y="60" font-size="12" fill="#83C167" text-anchor="middle">Bài toán: Hai người làm chung công việc</text>
           <text x="180" y="80" font-size="11" fill="#58C4DD" text-anchor="middle">Gọi: x = thời gian người 1 làm một mình</text>
@@ -680,7 +677,7 @@ const LESSONS = [
         <p>Đặt \(t=\sqrt{3x+1}\), \(t\geq 0\). Hệ trở thành bậc nhất theo \(t\) và \(y\). Giải ra \(t\), rồi bình phương để tìm \(x\). Đó là quy về phương trình bậc nhất, không giải căn trực tiếp.</p>
       </div>
       
-      <figure class="figure" data-animation="c2-b4-linear-equation">
+      <figure class="figure" data-animation="c2-b4">
         <svg viewBox="0 0 360 210" role="img" aria-label="Phương trình quy về phương trình bậc nhất một ẩn">
           <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
           <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
@@ -809,6 +806,19 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Cộng cùng một số thì chiều không đổi. Nhân số dương: giữ chiều. Nhân số âm: đổi chiều. Không nhân hai bất đẳng thức với nhau khi chưa biết dấu.</p>
       </div>
 
+      <figure class="figure" data-animation="c2-b5-inequality">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bất đẳng thức và tính chất">
+          <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="100" y="100" font-size="12" fill="#58C4DD">a > b or a < b</text>
+          <text x="100" y="120" font-size="12" fill="#58C4DD">a ≥ b or a ≤ b</text>
+          <text x="260" y="95" font-size="11" fill="#83C167">x</text>
+          <text x="170" y="25" font-size="11" fill="#83C167">y</text>
+          <text x="180" y="20" font-size="11" fill="#9A72AC">Bất đẳng thức</text>
+          <text x="180" y="40" font-size="10" fill="#58C4DD">Tính chất: cộng, nhân, transitive</text>
+          <text x="180" y="60" font-size="10" fill="#FC6255">a > b ⇔ a - b > 0</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -931,6 +941,19 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Sau khi rút gọn căn, ý cuối câu II là một bất phương trình. Năm 2025: tìm số nguyên dương \(x\) lớn nhất để \(\dfrac{A}{B}<\dfrac{1}{2}\). Năm 2024: tìm mọi \(x\) để \(A-B<0\). Phải xét dấu mẫu trước khi nhân hai vế. Kết quả còn phải nằm trong điều kiện của căn.</p>
       </div>
       
+      <figure class="figure" data-animation="c2-b6-linear-inequality">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bất phương trình bậc nhất một ẩn">
+          <line x1="100" y1="100" x2="260" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="180" y1="30" x2="180" y2="170" stroke="#83C167" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="100" y="100" font-size="12" fill="#58C4DD">ax + b > 0</text>
+          <text x="100" y="120" font-size="12" fill="#58C4DD">ax + b < 0</text>
+          <text x="260" y="95" font-size="11" fill="#83C167">x</text>
+          <text x="170" y="25" font-size="11" fill="#83C167">y</text>
+          <text x="180" y="20" font-size="11" fill="#9A72AC">Bất phương trình bậc nhất</text>
+          <text x="180" y="40" font-size="10" fill="#58C4DD">Dạng: ax + b > 0 (a ≠ 0)</text>
+          <text x="180" y="60" font-size="10" fill="#FC6255">Nghiệm: x > -b/a (nếu a > 0)</text>
+        </svg>
+      </figure>
     `,
     exercises: [
       {
@@ -1132,7 +1155,6 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Khi rút gọn câu II, đề tách tích và thương dưới căn. Năm 2024, mẫu \(x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)\). Đó là đưa thừa số \(\sqrt{x}\) ra ngoài, đúng phép của bài này. Không tách căn qua dấu cộng.</p>
       </div>
       
-      <figure class="figure" data-animation="c3-b8-square-root">
         <svg viewBox="0 0 360 210" role="img" aria-label="Khai căn bậc hai với phép nhân và phép chia">
           <text x="180" y="60" font-size="12" fill="#83C167" text-anchor="middle">Căn bậc hai của số không âm a: √a</text>
           <text x="180" y="80" font-size="12" fill="#58C4DD" text-anchor="middle">√(a·b) = √a · √b (a ≥ 0, b ≥ 0)</text>
@@ -1241,7 +1263,6 @@ const LESSONS = [
         <p>chứng minh \(B = \dfrac{\sqrt{x}}{\sqrt{x}+3}\). Đặt \(t=\sqrt{x}\), mẫu \(x-9=(t-3)(t+3)\), rồi khử thừa số chung. Năm 2025 và 2024 cùng dạng: rút gọn một biểu thức có căn ở mẫu, rồi mới dùng kết quả cho ý bất phương trình.</p>
       </div>
       
-      <figure class="figure" data-animation="c3-b9-radical-simplification">
         <svg viewBox="0 0 360 210" role="img" aria-label="Biến đổi đơn giản biểu thức chứa căn">
           <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Dạng 1: a√b = √(a²·b)</text>
           <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Ví dụ: 3√2 = √(9·2) = √18</text>
@@ -1356,7 +1377,6 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Căn bậc ba của số âm có nghĩa: \(\sqrt[3]{-8}=-2\). Không lấy trị tuyệt đối. \((\sqrt[3]{a})^3=a\).</p>
       </div>
 
-      <figure class="figure" data-animation="c3-b10-cube-root">
         <svg viewBox="0 0 360 210" role="img" aria-label="Căn bậc ba và căn thức bậc ba">
           <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Căn bậc ba của a: ∛a (số x sao cho x³ = a)</text>
           <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Tính chất: ∛(a·b) = ∛a · ∛b</text>
@@ -1608,7 +1628,6 @@ const LESSONS = [
         <p><strong>Kĩ năng cần luyện.</strong> Biết cạnh huyền và góc nhọn: dùng sin hoặc cos. Biết hai cạnh góc vuông: dùng tan. Đọc đúng góc đối hay góc kề.</p>
       </div>
 
-      <figure class="figure" data-animation="c4-b12-triangle-relationships">
         <svg viewBox="0 0 360 210" role="img" aria-label="Hệ thức giữa cạnh và góc trong tam giác vuông">
           <polygon points="50,170 250,170 50,70" fill="none" stroke="#83C167" stroke-width="2"/>
           <rect x="50" y="150" width="20" height="20" fill="none" stroke="#83C167" stroke-width="1.5"/>
@@ -3306,7 +3325,6 @@ const LESSONS = [
         <p><strong>Trong đề vào 10 Hà Nội.</strong> Câu I.2 là một phép thử: rút một lần. Năm 2026, hộp 6 bóng ghi 1 đến 6, \(\Omega = \{1,2,3,4,5,6\}\). Năm 2025, hộp 8 thẻ ghi 1 đến 8, \(\Omega\) có 8 phần tử. Đề chưa hỏi xác suất ở bước liệt kê. Viết \(\Omega\) trước, rồi mới đếm.</p>
       </div>
       
-      <figure class="figure" data-animation="c8-b25-random-experiment">
         <svg viewBox="0 0 360 210" role="img" aria-label="Phép thử ngẫu nhiên và không gian mẫu">
           <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Phép thử ngẫu nhiên: kết quả không đoán trước</text>
           <text x="180" y="70" font-size="12" fill="#58C4DD" text-anchor="middle">Ví dụ: gieo xúc xắc, tung đồng xu</text>
@@ -3439,7 +3457,6 @@ const LESSONS = [
         <p>Năm 2025: rút một thẻ trong 8 thẻ ghi 1 đến 8. Tính xác suất số chia hết cho 3. Thuận lợi là 3 và 6, không có 9. \(P(A) = \dfrac{2}{8} = \dfrac{1}{4}\).</p>
       </div>
       
-      <figure class="figure" data-animation="c8-b26-probability-event">
         <svg viewBox="0 0 360 210" role="img" aria-label="Xác suất của biến cố liên quan tới phép thử">
           <text x="180" y="50" font-size="12" fill="#83C167" text-anchor="middle">Xác suất của biến cố E: P(E) = m/n</text>
           <text x="180" y="70" font-size="11" fill="#58C4DD" text-anchor="middle">m = số kết quả thuận lợi cho E</text>
