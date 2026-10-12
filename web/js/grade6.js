@@ -1034,6 +1034,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "(-25) - (-25) bằng bao nhiêu?", answer: 0, hint: "(-25) + 25 = 0.", explain: "0." },
     ],
   },
+  {
+    id: "g6-b18",
+    num: 18,
+    chapter: 4,
+    title: "Tam giác cân. Tam giác đều",
+    summary: "Tam giác cân: hai cạnh bằng nhau. Tam giác đều: ba cạnh bằng nhau.",
+    body: String.raw`
+      <p><strong>Vì sao cần tam giác cân đều?</strong> Tam giác cân và đều có nhiều tính chất đặc biệt giúp giải toán hình học và ứng dụng trong thực tế (kiến trúc, thiết kế).</p>
+      <div class="definition">
+        <p>Tam giác cân: có hai cạnh bằng nhau. Hai góc ở đáy bằng nhau. Tam giác đều: có ba cạnh bằng nhau, ba góc bằng nhau và đều bằng \(60^\circ\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác ABC có AB = AC = 5 cm, BC = 6 cm là tam giác cân. Tam giác DEF có DE = EF = FD = 4 cm là tam giác đều.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tam giác cân ABC (AB = AC) có \(\widehat{B} = 50^\circ\). Khi đó \(\widehat{C} = 50^\circ\) và \(\widehat{A} = 80^\circ\) (vì tổng bằng 180°). Tam giác đều luôn có ba góc 60°.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Tam giác đều là tam giác cân, nhưng tam giác cân chưa chắc là tam giác đều. Đừng nhầm: tam giác đều có ba cạnh bằng nhau, tam giác cân chỉ có hai cạnh bằng nhau.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhận biết.</strong> Tam giác cân: hai cạnh bằng nhau hoặc hai góc bằng nhau. Tam giác đều: ba cạnh bằng nhau hoặc ba góc bằng nhau (mỗi góc 60°).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Tam giác đều ⇒ tam giác cân, nhưng tam giác cân ≠ tam giác đều.</li>
+          <li>Trong tam giác đều, mọi đường cao, trung tuyến, phân giác đều trùng nhau.</li>
+          <li>Tổng ba góc trong tam giác luôn bằng 180°, không phụ thuộc vào loại tam giác.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p> Tam giác có hai cạnh bằng 5 cm và 5 cm, cạnh thứ ba bằng 6 cm là tam giác gì? <em>— Tam giác cân.</em></p>
+        <p> Tam giác có ba cạnh đều bằng 4 cm là tam giác gì? <em>— Tam giác đều.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tam giác ABC cân tại A có AB = 7 cm, chu vi bằng 20 cm. Tính BC. Bước 1: AB = AC = 7 cm (tam giác cân). Bước 2: AB + AC + BC = 20. Bước 3: 7 + 7 + BC = 20 ⇒ BC = 6 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tam giác đều ABC có chu vi 24 cm. Tính độ dài mỗi cạnh. <em>— Mỗi cạnh = 24 : 3 = 8 cm.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tam giác cân: hai cạnh bằng nhau, hai góc đáy bằng nhau. Tam giác đều: ba cạnh bằng nhau, ba góc bằng 60°.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tam giác có hai cạnh bằng nhau là", choices: ["Tam giác đều", "Tam giác cân", "Tam giác vuông", "Tam giác thường"], correct: 1, hint: "Tam giác cân có hai cạnh bằng nhau.", explain: "Tam giác cân." },
+      { type: "num", prompt: "Tam giác đều có chu vi 30 cm. Mỗi cạnh bằng bao nhiêu?", answer: 10, hint: "30 : 3 = 10.", explain: "10 cm." },
+      { type: "num", prompt: "Tam giác cân có góc ở đỉnh bằng 40°. Góc ở đáy bằng bao nhiêu?", answer: 70, hint: "Góc đáy = (180 - 40) / 2 = 70.", explain: "70°." },
+      { type: "mc", prompt: "Tam giác đều có bao nhiêu trục đối xứng?", choices: ["1", "2", "3", "6"], correct: 3, hint: "Mỗi đường cao là một trục đối xứng.", explain: "3 trục đối xứng." },
+      { type: "num", prompt: "Tam giác cân ABC (AB = AC) có AB = 8 cm, BC = 6 cm. Chu vi bằng bao nhiêu?", answer: 22, hint: "AB + AC + BC = 8 + 8 + 6 = 22.", explain: "22 cm." },
+      { type: "mc", prompt: "Tam giác nào có ba góc bằng nhau?", choices: ["Tam giác cân", "Tam giác đều", "Tam giác vuông", "Tam giác tù"], correct: 1, hint: "Tam giác đều có ba góc bằng 60°.", explain: "Tam giác đều." },
+      { type: "num", prompt: "Tam giác đều ABC có cạnh 5 cm. Tính chu vi.", answer: 15, hint: "5 × 3 = 15.", explain: "15 cm." },
+    ],
+  },
+  {
+    id: "g6-b19",
+    num: 19,
+    chapter: 4,
+    title: "Hình vuông. Hình chữ nhật",
+    summary: "Hình vuông: bốn cạnh bằng nhau, bốn góc vuông. Hình chữ nhật: bốn góc vuông, hai cặp cạnh bằng nhau.",
+    body: String.raw`
+      <p><strong>Vì sao cần hình vuông chữ nhật?</strong> Đây là hai hình cơ bản nhất trong hình học phẳng, dùng rộng rãi trong kiến trúc, thiết kế, và đời sống.</p>
+      <div class="definition">
+        <p>Hình vuông: bốn cạnh bằng nhau, bốn góc bằng \(90^\circ\), hai đường chéo bằng nhau và vuông góc với nhau. Hình chữ nhật: bốn góc bằng \(90^\circ\), hai cặp cạnh đối bằng nhau, hai đường chéo bằng nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Hình vuông ABCD có AB = BC = CD = DA = 5 cm. Hình chữ nhật MNPQ có MN = PQ = 8 cm, NP = QM = 5 cm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Hình vuông cạnh 6 cm có chu vi 24 cm và diện tích 36 cm². Hình chữ nhật chiều dài 10 cm, chiều rộng 6 cm có chu vi 32 cm và diện tích 60 cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Hình vuông là hình chữ nhật đặc biệt (có chiều dài = chiều rộng). Nhưng hình chữ nhật chưa chắc là hình vuông. Đừng nhầm giữa hai hình.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> Hình vuông: chu vi = 4 × cạnh, diện tích = cạnh². Hình chữ nhật: chu vi = 2 × (dài + rộng), diện tích = dài × rộng.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Hình vuông là hình chữ nhật đặc biệt, nhưng ngược lại không đúng.</li>
+          <li>Chu vi có đơn vị độ dài (cm, m), diện tích có đơn vị vuông (cm², m²).</li>
+          <li>Trong hình vuông, đường chéo dài hơn cạnh: đường chéo = cạnh × √2.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Hình vuông cạnh 4 cm có chu vi bao nhiêu? <em>— 16 cm.</em></p>
+        <p>Hình chữ nhật dài 8 cm, rộng 5 cm có diện tích bao nhiêu? <em>— 40 cm².</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính chu vi và diện tích hình chữ nhật có chiều dài 12 cm, chiều rộng 7 cm. Bước 1: chu vi = 2 × (12 + 7) = 38 cm. Bước 2: diện tích = 12 × 7 = 84 cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Một hình vuông có diện tích 64 cm². Tính chu vi. <em>— Cạnh = √64 = 8 cm, chu vi = 8 × 4 = 32 cm.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hình vuông: 4 cạnh bằng nhau, 4 góc vuông. Hình chữ nhật: 4 góc vuông, hai cặp cạnh bằng nhau.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình vuông cạnh 6 cm có chu vi bao nhiêu?", answer: 24, hint: "6 × 4 = 24.", explain: "24 cm." },
+      { type: "num", prompt: "Hình chữ nhật dài 10 cm, rộng 6 cm có diện tích bao nhiêu?", answer: 60, hint: "10 × 6 = 60.", explain: "60 cm²." },
+      { type: "num", prompt: "Hình vuông có chu vi 40 cm. Tính diện tích.", answer: 100, hint: "Cạnh = 40 : 4 = 10, diện tích = 10 × 10 = 100.", explain: "100 cm²." },
+      { type: "mc", prompt: "Hình nào có bốn góc vuông?", choices: ["Hình vuông", "Hình chữ nhật", "Cả hai hình trên", "Không có"], correct: 2, hint: "Cả hình vuông và chữ nhật đều có 4 góc vuông.", explain: "Cả hai hình trên." },
+      { type: "num", prompt: "Hình chữ nhật dài 15 cm, chiều rộng bằng 2/3 chiều dài. Tính diện tích.", answer: 150, hint: "Rộng = 15 × 2/3 = 10, diện tích = 15 × 10 = 150.", explain: "150 cm²." },
+      { type: "num", prompt: "Hình vuông cạnh 8 cm có đường chéo bằng bao nhiêu? (Gần đúng)", answer: 11.3, accept: ["11.3", "11", "12"], hint: "Đường chéo = cạnh × √2 ≈ 8 × 1.414 = 11.3.", explain: "Gần đúng 11.3 cm." },
+      { type: "mc", prompt: "Hình chữ nhật có chiều dài gấp đôi chiều rộng thì", choices: ["Là hình vuông", "Không phải hình vuông", "Luôn là hình vuông", "Không xác định"], correct: 1, hint: "Hình vuông cần dài = rộng.", explain: "Không phải hình vuông." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
