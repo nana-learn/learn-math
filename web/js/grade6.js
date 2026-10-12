@@ -2161,6 +2161,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tính \(\left(\frac{3}{4} - \frac{1}{2}\right) : \frac{1}{4}\).", answer: "1", accept: ["1", "1/1"], hint: "\(\frac{3}{4} - \frac{1}{2} = \frac{1}{4}\), \(\frac{1}{4} : \frac{1}{4} = 1\).", explain: "1." },
     ],
   },
+  {
+    id: "g6-b38",
+    num: 38,
+    chapter: 7,
+    title: "Số thập phân",
+    summary: "Số thập phân là phân số có mẫu là lũy thừa của 10, biểu diễn với dấu phẩy.",
+    body: String.raw`
+      <p><strong>Vì sao cần số thập phân?</strong> Số thập phân tiện lợi trong tính toán và đời sống (tiền bạc, đo đạc).</p>
+      <div class="definition">
+        <p>Số thập phân là số có phần nguyên và phần thập phân được ngăn cách bởi dấu phẩy. Phần thập phân có giá trị là \(\frac{1}{10}\), \(\frac{1}{100}\), \(\frac{1}{1000}\), v.v.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2.5 = \(2 + \frac{5}{10}\). 0.25 = \(\frac{25}{100}\). 3.75 = \(3 + \frac{75}{100}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đọc 4.08: "bốn phẩy không tám" (không đọc "bốn phẩy tám" vì có số 0 ở hàng phần trăm). Đổi \(\frac{7}{20}\) = \(\frac{35}{100}\) = 0.35.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng nhầm 0.5 với 0.05: 0.5 = \(\frac{5}{10}\), 0.05 = \(\frac{5}{100}\) (khác 10 lần). Đừng bỏ qua số 0 trong phần thập phân: 2.05 khác 2.5.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách đọc.</strong> Đọc số nguyên trước, đọc "phẩy", rồi đọc từng chữ số phần thập phân. Ví dụ: 3.07 = "ba phẩy không bảy".</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Bỏ qua số 0 trong phần thập phân (0.05 ≠ 0.5).</li>
+          <li>Đọc sai số 0 trong phần thập phân.</li>
+          <li>Không chuyển đúng phân số sang thập phân.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đọc số 5.08. <em>— "Năm phẩy không tám".</em></p>
+        <p>Đổi \(\frac{3}{4}\) ra số thập phân. <em>— 0.75.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Đọc số 7.025. Bước 1: phần nguyên là 7. Bước 2: phần thập phân là 025. Bước 3: đọc "bảy phẩy không không năm".</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Đọc số 12.003. <em>— "Mười hai phẩy không không ba".</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Số thập phân có dấu phẩy ngăn cách phần nguyên và phần thập phân. Đọc từng chữ số phần thập phân.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Đọc số 4.07.", answer: "bốn phẩy không bảy", accept: ["bốn phẩy không bảy", "4 phẩy 0 7"], hint: "Đọc số 0 trong phần thập phân.", explain: "Bốn phẩy không bảy." },
+      { type: "num", prompt: "Đọc số 15.006.", answer: "mười lăm phẩy không không sáu", accept: ["mười lăm phẩy không không sáu", "15 phẩy 0 0 6"], hint: "Đọc từng chữ số phần thập phân.", explain: "Mười lăm phẩy không không sáu." },
+      { type: "num", prompt: "Đổi \(\frac{1}{2}\) ra số thập phân.", answer: "0.5", accept: ["0.5", ".5"], hint: "\(\frac{1}{2} = \frac{5}{10}\).", explain: "0.5." },
+      { type: "num", prompt: "Đổi \(\frac{3}{8}\) ra số thập phân.", answer: "0.375", accept: ["0.375", ".375"], hint: "\(\frac{3}{8} = \frac{375}{1000}\).", explain: "0.375." },
+      { type: "mc", prompt: "Số nào lớn hơn: 2.05 hay 2.5?", choices: ["2.05", "2.5", "Bằng nhau", "Không xác định"], correct: 1, hint: "2.5 = 2.50 > 2.05.", explain: "2.5." },
+      { type: "num", prompt: "Đọc số 8.025.", answer: "tám phẩy không hai lăm", accept: ["tám phẩy không hai lăm", "8 phẩy 0 2 5"], hint: "Đọc từng chữ số phần thập phân.", explain: "Tám phẩy không hai lăm." },
+      { type: "num", prompt: "Đổi \(\frac{7}{5}\) ra số thập phân.", answer: "1.4", accept: ["1.4", "1.40"], hint: "\(\frac{7}{5} = \frac{14}{10}\).", explain: "1.4." },
+    ],
+  },
+  {
+    id: "g6-b39",
+    num: 39,
+    chapter: 7,
+    title: "So sánh số thập phân",
+    summary: "So sánh số thập phân: so sánh phần nguyên trước, nếu bằng nhau so sánh phần thập phân.",
+    body: String.raw`
+      <p><strong>Vì sao cần so sánh số thập phân?</strong> So sánh số thập phân giúp đánh giá giá trị số trong tính toán và đời sống.</p>
+      <div class="definition">
+        <p>Để so sánh hai số thập phân: (1) so sánh phần nguyên trước. (2) Nếu phần nguyên bằng nhau, so sánh từng chữ số tương ứng từ trái sang phải ở phần thập phân.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2.5 > 1.8 (2 > 1). 3.7 < 3.9 (cùng phần nguyên 3, 7 < 9). 5.0 = 5.00 (bằng nhau).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 4.25 > 4.2 (cùng phần nguyên, cùng hàng phần mười là 2, hàng phần trăm 5 > 0). 3.14 < 3.142 (cùng đến hàng phần trăm, hàng phần nghìn 0 < 2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng nghĩ 0.5 < 0.25 vì 5 > 25 (sai!). Thực tế 0.5 > 0.25. Đừng so sánh như số tự nhiên - phần thập phân có giá trị giảm dần từ trái sang phải.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Quy tắc.</strong> So sánh từ trái sang phải: phần nguyên → phần mười → phần trăm → phần nghìn, v.v. Số nào lớn hơn ở hàng đầu tiên khác nhau thì lớn hơn.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>So sánh phần thập phân như số tự nhiên (sai).</li>
+          <li>Bỏ qua số 0 trong phần thập phân khi so sánh.</li>
+          <li>Không viết thêm số 0 để so sánh cùng độ dài.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>So sánh 2.5 và 2.05. <em>— 2.5 > 2.05.</em></p>
+        <p>So sánh 3.14 và 3.142. <em>— 3.14 < 3.142.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> So sánh 5.62 và 5.6. Bước 1: cùng phần nguyên 5. Bước 2: cùng hàng phần mười là 6. Bước 3: 5.62 có hàng phần trăm là 2, 5.6 có hàng phần trăm là 0. Bước 4: 2 > 0 nên 5.62 > 5.6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> So sánh 7.08 và 7.8. <em>— 7.08 < 7.8.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> So sánh số thập phân: phần nguyên trước, rồi từng hàng phần thập phân từ trái sang phải.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "So sánh 3.5 và 3.05", choices: ["3.5 > 3.05", "3.5 < 3.05", "Bằng nhau", "Không xác định"], correct: 0, hint: "3.5 = 3.50 > 3.05.", explain: "3.5 > 3.05." },
+      { type: "mc", prompt: "So sánh 4.2 và 4.25", choices: ["4.2 > 4.25", "4.2 < 4.25", "Bằng nhau", "Không xác định"], correct: 1, hint: "4.2 = 4.20 < 4.25.", explain: "4.2 < 4.25." },
+      { type: "num", prompt: "So sánh 1.75 và 1.8.", answer: "<", accept: ["<", "lt"], hint: "1.75 = 1.75, 1.8 = 1.80, 75 < 80.", explain: "1.75 < 1.8." },
+      { type: "num", prompt: "So sánh 5.003 và 5.03.", answer: "<", accept: ["<", "lt"], hint: "5.003 = 5.003, 5.03 = 5.030, 3 < 30.", explain: "5.003 < 5.03." },
+      { type: "mc", prompt: "Số nào lớn nhất: 2.3, 2.03, 2.30, 2.003?", choices: ["2.3", "2.03", "2.30", "2.003"], correct: 0, hint: "2.3 = 2.30 > 2.03 > 2.003.", explain: "2.3." },
+      { type: "num", prompt: "So sánh 0.75 và 0.8.", answer: "<", accept: ["<", "lt"], hint: "0.75 < 0.80.", explain: "0.75 < 0.8." },
+      { type: "num", prompt: "So sánh 6.25 và 6.250.", answer: "=", accept: ["=", "eq"], hint: "6.25 = 6.250.", explain: "6.25 = 6.250." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
