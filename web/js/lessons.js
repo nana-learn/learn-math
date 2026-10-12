@@ -4599,6 +4599,29 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tứ giác ABCD: ∠A = 60°, ∠B = 120°, ∠C = 100° → ∠D = 80°.</p>
         <p>Tứ giác MNPQ: ∠M = ∠Q = 110°, ∠N = 70° → ∠P = 70° (tổng 360°).</p>
       </div>
+      <figure class="figure" data-animation="g8-b9-quadrilateral">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tứ giác ABCD với các đỉnh và góc">
+          <polygon points="50,150 280,120 300,60 80,40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="150" r="3" fill="#58C4DD"/>
+          <circle cx="280" cy="120" r="3" fill="#58C4DD"/>
+          <circle cx="300" cy="60" r="3" fill="#58C4DD"/>
+          <circle cx="80" cy="40" r="3" fill="#58C4DD"/>
+          <text x="38" y="168" font-size="13" fill="#58C4DD">A</text>
+          <text x="292" y="138" font-size="13" fill="#58C4DD">B</text>
+          <text x="312" y="56" font-size="13" fill="#58C4DD">C</text>
+          <text x="72" y="24" font-size="13" fill="#58C4DD">D</text>
+          <text x="70" y="90" font-size="12" fill="#FC6255">∠A</text>
+          <text x="260" y="80" font-size="12" fill="#FC6255">∠B</text>
+          <text x="270" y="150" font-size="12" fill="#9A72AC">∠C</text>
+          <text x="100" y="140" font-size="12" fill="#9A72AC">∠D</text>
+          <line x1="165" y1="85" x2="195" y2="85" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="5 3"/>
+          <text x="160" y="105" font-size="11" fill="#DDDDDD">AB</text>
+          <text x="295" y="95" font-size="11" fill="#DDDDDD">BC</text>
+          <text x="190" y="165" font-size="11" fill="#DDDDDD">CD</text>
+          <text x="65" y="95" font-size="11" fill="#DDDDDD">DA</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tứ giác ABCD có ∠A=75°, ∠B=105°, ∠C=90°. Tính ∠D.", answer: 90, hint: "360° trừ ba góc đã cho.", explain: "360° - 75° - 105° - 90° = 90°." },
@@ -4674,6 +4697,68 @@ const G8_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Hình thang: đáy lớn 18 cm, đáy nhỏ 12 cm → đường trung bình = 15 cm.</p>
         <p>Hình thang cân: đường trung bình = 13 cm, đáy lớn = 16 cm → đáy nhỏ = 10 cm (2×13−16).</p>
       </div>
+      <figure class="figure" data-animation="g8-b10-trapezoid">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình thang ABCD với hai đáy song song">
+          <polygon points="60,160 260,160 240,60 80,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="80" y1="60" x2="240" y2="60" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="60" y1="160" x2="260" y2="160" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <circle cx="60" cy="160" r="3" fill="#58C4DD"/>
+          <circle cx="260" cy="160" r="3" fill="#58C4DD"/>
+          <circle cx="240" cy="60" r="3" fill="#58C4DD"/>
+          <circle cx="80" cy="60" r="3" fill="#58C4DD"/>
+          <text x="48" y="178" font-size="13" fill="#58C4DD">A</text>
+          <text x="272" y="178" font-size="13" fill="#58C4DD">B</text>
+          <text x="252" y="50" font-size="13" fill="#58C4DD">C</text>
+          <text x="72" y="50" font-size="13" fill="#58C4DD">D</text>
+          <text x="160" y="40" font-size="12" fill="#FC6255">Đáy AB ∥ CD</text>
+          <text x="40" y="110" font-size="12" fill="#83C167">Đường cao h</text>
+          <line x1="75" y1="160" x2="75" y2="65" stroke="#83C167" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <rect x="68" y="152" width="14" height="14" fill="none" stroke="#83C167" stroke-width="1"/>
+        </svg>
+      </figure>
+
+      <figure class="figure" data-animation="g8-b11-parallelogram">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Hình bình hành ABCD với cặp cạnh đối song song">
+          <polygon points="60,150 260,150 280,60 80,60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="60" y1="150" x2="260" y2="150" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="80" y1="60" x2="280" y2="60" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="60" y1="150" x2="80" y2="60" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="260" y1="150" x2="280" y2="60" stroke="#FC6255" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <circle cx="60" cy="150" r="3" fill="#58C4DD"/>
+          <circle cx="260" cy="150" r="3" fill="#58C4DD"/>
+          <circle cx="280" cy="60" r="3" fill="#58C4DD"/>
+          <circle cx="80" cy="60" r="3" fill="#58C4DD"/>
+          <text x="48" y="168" font-size="13" fill="#58C4DD">A</text>
+          <text x="272" y="168" font-size="13" fill="#58C4DD">B</text>
+          <text x="292" y="56" font-size="13" fill="#58C4DD">C</text>
+          <text x="72" y="50" font-size="13" fill="#58C4DD">D</text>
+          <text x="160" y="40" font-size="12" fill="#58C4DD">AB ∥ CD</text>
+          <text x="160" y="190" font-size="12" fill="#FC6255">AD ∥ BC</text>
+        </svg>
+      </figure>
+
+      <figure class="figure" data-animation="g8-b12-thales">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC với DE song song BC">
+          <polygon points="50,180 310,180 180,30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="105" y1="130" x2="255" y2="130" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
+          <circle cx="105" cy="130" r="3" fill="#FC6255"/>
+          <circle cx="255" cy="130" r="3" fill="#FC6255"/>
+          <text x="38" y="198" font-size="13" fill="#58C4DD">A</text>
+          <text x="322" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="192" y="20" font-size="13" fill="#58C4DD">C</text>
+          <text x="93" y="148" font-size="13" fill="#FC6255">D</text>
+          <text x="267" y="148" font-size="13" fill="#FC6255">E</text>
+          <text x="165" y="115" font-size="11" fill="#83C167">DE ∥ BC</text>
+          <path d="M 252 128 A 20 20 0 0 1 264 140" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="268" y="120" font-size="11" fill="#9A72AC">∠C</text>
+          <path d="M 108 128 A 20 20 0 0 0 96 140" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="88" y="120" font-size="11" fill="#FC6255">∠B</text>
+        </svg>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Hình thang có đáy lớn 15 cm, đáy nhỏ 9 cm. Tính đường trung bình.", answer: 12, hint: "(15+9):2.", explain: "(15 + 9) ÷ 2 = 12 cm." },

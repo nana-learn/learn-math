@@ -481,6 +481,45 @@ const AnimationManager = {
           { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g8-b9: Tứ giác
+      'g8-b9-quadrilateral': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b10: Hình thang
+      'g8-b10-trapezoid': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b11: Hình bình hành
+      'g8-b11-parallelogram': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b12: Định lí Thalès trong tam giác
+      'g8-b12-thales': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
