@@ -955,6 +955,16 @@ const AnimationManager = {
         ]
       },
       
+      // g7-b17: Thu thập và phân loại dữ liệu
+      'g7-b17-statistics-data': {
+        steps: [
+          { selector: 'line:not([stroke-opacity])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-opacity]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g7-b18: Biểu đồ hình quạt tròn
       'g7-b18-pie-chart': {
         steps: [

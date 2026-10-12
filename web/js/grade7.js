@@ -1143,7 +1143,7 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Hỏi 12 bạn số anh chị em: 0, 1, 1, 2, 0, 3, 1, 2, 2, 1, 0, 1. Tần số: 0 có 3, 1 có 5, 2 có 3, 3 có 1. Cộng \(3+5+3+1 = 12\). Khớp. Nếu cộng 11 thì phải đếm lại từ đầu, gạch từng số.</p>
       </div>
-            <figure class="figure">
+            <figure class="figure" data-animation="g7-b17-statistics-data">
         <svg viewBox="0 0 360 210" role="img" aria-label="Biểu đồ cột tần số số anh chị em của 12 bạn">
           <line x1="60" y1="30" x2="60" y2="170" stroke="#DDDDDD" stroke-width="2"/>
           <line x1="60" y1="170" x2="345" y2="170" stroke="#DDDDDD" stroke-width="2"/>
