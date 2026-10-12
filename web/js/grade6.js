@@ -2377,6 +2377,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Tính 4.5 × 2.", answer: "9", accept: ["9", "9.0"], hint: "45 × 2 = 90, một chữ số sau dấu phẩy: 9.0 = 9.", explain: "9." },
     ],
   },
+  {
+    id: "g6-b42",
+    num: 42,
+    chapter: 7,
+    title: "Chia số thập phân",
+    summary: "Chia số thập phân: chuyển thành chia số tự nhiên bằng cách nhân cả số bị chia và chia với 10.",
+    body: String.raw`
+      <p><strong>Vì sao cần chia số thập phân?</strong> Chia số thập phân giúp tính giá trị trung bình, tỷ lệ và nhiều bài toán thực tế.</p>
+      <div class="definition">
+        <p>Chia số thập phân: nếu số chia có phần thập phân, nhân cả số bị chia và số chia với 10, 100, 1000,... để biến số chia thành số tự nhiên. Sau đó chia như số tự nhiên.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 4.5 : 0.5 = 45 : 5 = 9. 6.4 : 0.8 = 64 : 8 = 8. 3.6 : 0.6 = 36 : 6 = 6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 7.2 : 0.08 = 720 : 8 = 90 (nhân cả hai số với 100). 5.4 : 1.5 = 54 : 15 = 3.6 (nhân cả hai số với 10).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên nhân cả số bị chia và số chia với cùng số. 4.5 : 0.5 ≠ 45 : 0.5 (sai!). Phải nhân cả hai: 45 : 5 = 9. Đừng nhầm 4.5 : 0.5 = 0.9 (sai!).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Quy tắc.</strong> Bước 1: chuyển số chia thành số tự nhiên bằng nhân với 10, 100,.... Bước 2: nhân số bị chia với cùng số. Bước 3: chia như số tự nhiên.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Chỉ nhân số chia mà không nhân số bị chia.</li>
+          <li>Sai số lần nhân (nhân với 10 thay vì 100).</li>
+          <li>Đặt dấu phẩy sai trong thương.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tính 6.3 : 0.7. <em>— 9.</em></p>
+        <p>Tính 8.4 : 0.04. <em>— 210.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính 5.4 : 0.6. Bước 1: nhân cả hai số với 10: 54 : 6. Bước 2: 54 : 6 = 9. Kết quả: 9.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính 7.2 : 0.08. <em>— 90.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Chia số thập phân: nhân cả số bị chia và số chia để biến số chia thành số tự nhiên.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Tính 4.5 : 0.5.", answer: "9", accept: ["9", "9.0"], hint: "45 : 5 = 9.", explain: "9." },
+      { type: "num", prompt: "Tính 6.4 : 0.8.", answer: "8", accept: ["8", "8.0"], hint: "64 : 8 = 8.", explain: "8." },
+      { type: "num", prompt: "Tính 3.6 : 0.6.", answer: "6", accept: ["6", "6.0"], hint: "36 : 6 = 6.", explain: "6." },
+      { type: "num", prompt: "Tính 5.4 : 0.09.", answer: "60", accept: ["60", "60.0"], hint: "540 : 9 = 60.", explain: "60." },
+      { type: "num", prompt: "Tính 8.4 : 1.2.", answer: "7", accept: ["7", "7.0"], hint: "84 : 12 = 7.", explain: "7." },
+      { type: "num", prompt: "Tính 9.6 : 0.12.", answer: "80", accept: ["80", "80.0"], hint: "960 : 12 = 80.", explain: "80." },
+      { type: "num", prompt: "Tính 2.5 : 0.05.", answer: "50", accept: ["50", "50.0"], hint: "250 : 5 = 50.", explain: "50." },
+    ],
+  },
+  {
+    id: "g6-b43",
+    num: 43,
+    chapter: 7,
+    title: "Tỉ số phần trăm",
+    summary: "Tỉ số phần trăm là tỉ số có mẫu là 100, viết với ký hiệu %.",
+    body: String.raw`
+      <p><strong>Vì sao cần tỉ số phần trăm?</strong> Tỉ số phần trăm phổ biến trong đời sống: lãi suất, giảm giá, điểm thi, v.v.</p>
+      <div class="definition">
+        <p>Tỉ số phần trăm là tỉ số có mẫu là 100. Viết \(\frac{a}{100}\) là \(a\)%. Tỉ số phần trăm của a và b là \(\frac{a \cdot 100}{b}\)%. Để tìm tỉ số phần trăm, thực hiện phép chia rồi nhân với 100.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{50}{100} = 50\)%. \(\frac{25}{100} = 25\)%. 3 : 4 = 0.75 = 75%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 15 : 60 = 0.25 = 25%. 8 : 20 = 0.4 = 40%. 30 : 50 = 0.6 = 60%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Đừng quên nhân với 100 khi chuyển sang phần trăm. 0.5 ≠ 5% (sai!). Phải là 0.5 = 50%. Đừng nhầm 25% = 0.25 (đúng), nhưng 2.5% = 0.025 (không phải 0.25).</p>
+      </div>
+      <div class="idea">
+        <p><strong>Công thức.</strong> Tỉ số phần trăm của a và b: \(\frac{a}{b} \cdot 100\)%. Đọc: "a phần trăm của b" là \(\frac{a \cdot b}{100}\).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Quên nhân với 100 khi chuyển sang phần trăm.</li>
+          <li>Đổi 0.5 thành 5% thay vì 50%.</li>
+          <li>Sai khi tính a% của b: không nhân a × b rồi chia 100.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Viết \(\frac{75}{100}\) thành phần trăm. <em>— 75%.</em></p>
+        <p>Tính 20% của 50. <em>— 10.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tính 12 : 48 dưới dạng phần trăm. Bước 1: 12 : 48 = 0.25. Bước 2: 0.25 × 100 = 25. Kết quả: 25%.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Tính 15 : 60 dưới dạng phần trăm. <em>— 25%.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tỉ số phần trăm: chia rồi nhân với 100, viết với ký hiệu %. a% của b = (a × b) / 100.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Viết \(\frac{30}{100}\) thành phần trăm.", answer: "30%", accept: ["30%", "30 %"], hint: "30/100 = 30%.", explain: "30%." },
+      { type: "num", prompt: "Viết \(\frac{5}{100}\) thành phần trăm.", answer: "5%", accept: ["5%", "5 %"], hint: "5/100 = 5%.", explain: "5%." },
+      { type: "num", prompt: "Tính 20% của 60.", answer: "12", accept: ["12", "12.0"], hint: "(20 × 60) / 100 = 12.", explain: "12." },
+      { type: "num", prompt: "Tính 50% của 80.", answer: "40", accept: ["40", "40.0"], hint: "(50 × 80) / 100 = 40.", explain: "40." },
+      { type: "num", prompt: "Viết 0.75 thành phần trăm.", answer: "75%", accept: ["75%", "75 %"], hint: "0.75 × 100 = 75.", explain: "75%." },
+      { type: "num", prompt: "Tính 10% của 200.", answer: "20", accept: ["20", "20.0"], hint: "(10 × 200) / 100 = 20.", explain: "20." },
+      { type: "num", prompt: "Viết 0.05 thành phần trăm.", answer: "5%", accept: ["5%", "5 %"], hint: "0.05 × 100 = 5.", explain: "5%." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
