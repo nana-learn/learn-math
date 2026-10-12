@@ -1621,6 +1621,114 @@ const G6_LESSONS = [
       { type: "num", prompt: "Cột năm 1 cao 9cm, cột năm 2 cao 6cm. Tỷ lệ 1cm = 2 học sinh. Năm 1 hơn năm 2 bao nhiêu học sinh?", answer: 6, hint: "(9-6) × 2 = 6.", explain: "6 học sinh." },
     ],
   },
+  {
+    id: "g6-b28",
+    num: 28,
+    chapter: 6,
+    title: "Phân số. Tính chất cơ bản của phân số",
+    summary: "Phân số là tỉ số của hai số nguyên. Tính chất cơ bản: nhân/chia tử và mẫu với cùng số khác 0.",
+    body: String.raw`
+      <p><strong>Vì sao cần phân số?</strong> Phân số dùng để biểu thị một phần của đơn vị, rất phổ biến trong đời sống và toán học.</p>
+      <div class="definition">
+        <p>Phân số là biểu thức \(\frac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \ne 0\). a gọi là tử số, b gọi là mẫu số. Tính chất cơ bản: \(\frac{a}{b} = \frac{a \cdot m}{b \cdot m}\) và \(\frac{a}{b} = \frac{a : n}{b : n}\) với \(m, n \ne 0\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{3}{4}\) là phân số với tử số 3, mẫu số 4. \(\frac{2}{5} = \frac{4}{10}\) vì nhân cả tử và mẫu với 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Rút gọn \(\frac{12}{18}\): tìm ước chung lớn nhất là 6, chia cả tử và mẫu cho 6: \(\frac{12:6}{18:6} = \frac{2}{3}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không được nhân/chia với 0. \(\frac{a}{0}\) là vô nghĩa. Đừng nhầm giữa tử số và mẫu số trong phép tính.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách rút gọn.</strong> Tìm ước chung lớn nhất của tử và mẫu → chia cả tử và mẫu cho ƯCLN.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Mẫu số không thể bằng 0.</li>
+          <li>Rút gọn phải chia cả tử và mẫu cho cùng một số.</li>
+          <li>Phân số bằng 1 khi tử bằng mẫu.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Rút gọn \(\frac{8}{12}\). <em>— \(\frac{2}{3}\).</em></p>
+        <p>Viết \(\frac{3}{4}\) với mẫu số 12. <em>— \(\frac{9}{12}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Rút gọn \(\frac{15}{25}\). Bước 1: tìm ƯCLN(15, 25) = 5. Bước 2: chia cả tử và mẫu cho 5. Bước 3: \(\frac{15:5}{25:5} = \frac{3}{5}\).</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Rút gọn \(\frac{24}{36}\). <em>— ƯCLN = 12, \(\frac{2}{3}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân số \(\frac{a}{b}\) với \(b \ne 0\). Tính chất: nhân/chia tử và mẫu với cùng số khác 0.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Rút gọn \(\frac{6}{9}\).", answer: "2/3", accept: ["2/3", "2:3"], hint: "Chia cả tử và mẫu cho 3.", explain: "\(\frac{2}{3}\)." },
+      { type: "num", prompt: "Viết \(\frac{2}{5}\) với mẫu số 15.", answer: "6/15", accept: ["6/15", "6:15"], hint: "Nhân cả tử và mẫu với 3.", explain: "\(\frac{6}{15}\)." },
+      { type: "num", prompt: "Rút gọn \(\frac{18}{24}\).", answer: "3/4", accept: ["3/4", "3:4"], hint: "Chia cả tử và mẫu cho 6.", explain: "\(\frac{3}{4}\)." },
+      { type: "mc", prompt: "Phân số nào bằng \(\frac{2}{3}\)?", choices: ["\(\frac{4}{5}\)", "\(\frac{6}{9}\)", "\(\frac{3}{2}\)", "\(\frac{2}{6}\)"], correct: 1, hint: "\(\frac{6}{9} = \frac{2}{3}\) sau khi rút gọn.", explain: "\(\frac{6}{9}\)." },
+      { type: "num", prompt: "Rút gọn \(\frac{20}{30}\).", answer: "2/3", accept: ["2/3", "2:3"], hint: "Chia cả tử và mẫu cho 10.", explain: "\(\frac{2}{3}\)." },
+      { type: "num", prompt: "Viết \(\frac{3}{4}\) với mẫu số 20.", answer: "15/20", accept: ["15/20", "15:20"], hint: "Nhân cả tử và mẫu với 5.", explain: "\(\frac{15}{20}\)." },
+      { type: "mc", prompt: "Phân số \(\frac{a}{0}\)", choices: ["Bằng 0", "Bằng a", "Vô nghĩa", "Bằng 1"], correct: 2, hint: "Mẫu số không thể bằng 0.", explain: "Vô nghĩa." },
+    ],
+  },
+  {
+    id: "g6-b29",
+    num: 29,
+    chapter: 6,
+    title: "Rút gọn phân số. Phân số tối giản",
+    summary: "Rút gọn phân số về dạng tối giản (tử và mẫu nguyên tố cùng nhau).",
+    body: String.raw`
+      <p><strong>Vì sao cần rút gọn phân số?</strong> Phân số tối giản giúp dễ dàng so sánh và tính toán.</p>
+      <div class="definition">
+        <p>Phân số tối giản là phân số mà tử và mẫu chỉ có ước chung là 1 và -1. Rút gọn phân số là biến phân số về dạng tối giản.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> \(\frac{3}{4}\) là phân số tối giản (ƯCLN(3,4) = 1). \(\frac{6}{8}\) không tối giản vì ƯCLN(6,8) = 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> \(\frac{13}{26}\) rút gọn: ƯCLN(13,26) = 13, \(\frac{13:13}{26:13} = \frac{1}{2}\). Phân số \(\frac{5}{7}\) đã tối giản vì 5 và 7 là số nguyên tố.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> Không phải phân số có tử là số nguyên tố đều tối giản. \(\frac{3}{6}\) không tối giản dù 3 là số nguyên tố (ƯCLN(3,6) = 3). Đừng nhầm với phân số có mẫu là số nguyên tố.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Các bước.</strong> Bước 1: tìm ƯCLN của tử và mẫu. Bước 2: chia cả tử và mẫu cho ƯCLN. Bước 3: kiểm tra kết quả đã tối giản chưa.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>Phân số \(\frac{0}{a}\) (a ≠ 0) bằng 0 và là tối giản.</li>
+          <li>Phân số \(\frac{a}{1}\) bằng a và là tối giản.</li>
+          <li>Không được rút gọn tử và mẫu với các số khác ước chung.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Phân số \(\frac{7}{11}\) có tối giản không? <em>— Có (7 và 11 nguyên tố).</em></p>
+        <p>Rút gọn \(\frac{9}{12}\). <em>— \(\frac{3}{4}\).</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Rút gọn \(\frac{21}{28}\). Bước 1: tìm ƯCLN(21,28) = 7. Bước 2: \(\frac{21:7}{28:7} = \frac{3}{4}\). Bước 3: 3 và 4 nguyên tố cùng nhau ⇒ tối giản.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Rút gọn \(\frac{36}{48}\). <em>— ƯCLN = 12, \(\frac{3}{4}\).</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phân số tối giản: tử và mẫu nguyên tố cùng nhau (ƯCLN = 1).</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Phân số \(\frac{5}{8}\) có tối giản không?", answer: "có", accept: ["có", "co"], hint: "5 và 8 nguyên tố cùng nhau (ƯCLN = 1).", explain: "Có, đã tối giản." },
+      { type: "num", prompt: "Rút gọn \(\frac{14}{21}\).", answer: "2/3", accept: ["2/3", "2:3"], hint: "Chia cả tử và mẫu cho 7.", explain: "\(\frac{2}{3}\)." },
+      { type: "num", prompt: "Phân số nào sau đây là tối giản?", choices: ["\(\frac{4}{6}\)", "\(\frac{5}{9}\)", "\(\frac{6}{8}\)", "\(\frac{8}{12}\)"], correct: 1, hint: "\(\frac{5}{9}\) có ƯCLN(5,9) = 1.", explain: "\(\frac{5}{9}\)." },
+      { type: "num", prompt: "Rút gọn \(\frac{25}{30}\).", answer: "5/6", accept: ["5/6", "5:6"], hint: "Chia cả tử và mẫu cho 5.", explain: "\(\frac{5}{6}\)." },
+      { type: "num", prompt: "Phân số \(\frac{0}{7}\) có tối giản không?", answer: "có", accept: ["có", "co"], hint: "\(\frac{0}{7} = 0\), tử và mẫu nguyên tố cùng nhau.", explain: "Có, đã tối giản." },
+      { type: "num", prompt: "Rút gọn \(\frac{45}{60}\).", answer: "3/4", accept: ["3/4", "3:4"], hint: "Chia cả tử và mẫu cho 15.", explain: "\(\frac{3}{4}\)." },
+      { type: "mc", prompt: "Phân số \(\frac{a}{a}\) (a ≠ 0) rút gọn được", choices: ["\(\frac{1}{1}\)", "\(\frac{a}{1}\)", "\(\frac{1}{a}\)", "\(\frac{a}{a}\)"], correct: 0, hint: "\(\frac{a}{a} = 1 = \frac{1}{1}\).", explain: "\(\frac{1}{1}\)." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
