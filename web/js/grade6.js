@@ -1468,7 +1468,23 @@ const G6_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> Biểu đồ tranh có 7 hình 🍎 (mỗi hình = 3 bạn), 5 hình 🍊 (mỗi hình = 3 bạn). Tính tổng. <em>— (7 + 5) × 3 = 36 bạn.</em></p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ tranh dùng hình vẽ, mỗi biểu tượng đại diện một hoặc nhiều đơn vị. Luôn đọc chú giải.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ tranh dùng hình vẽ, mỗi biểu tượng đại diện một hoặc nhiều đơn vị. Luôn đọc chú giải.</p>
+      <figure id="fig-g6-b25-pictograph" class="figure" data-animation="g6-b25-pictograph">
+        <svg width="400" height="120" viewBox="0 0 400 120">
+          <text x="100" y="30" font-size="14" opacity="0">Táo 🍎</text>
+          <circle cx="150" cy="50" r="8" fill="#FF6B6B" opacity="0"/>
+          <circle cx="170" cy="50" r="8" fill="#FF6B6B" opacity="0"/>
+          <circle cx="190" cy="50" r="8" fill="#FF6B6B" opacity="0"/>
+          <circle cx="210" cy="50" r="8" fill="#FF6B6B" opacity="0"/>
+          <circle cx="230" cy="50" r="8" fill="#FF6B6B" opacity="0"/>
+          <text x="100" y="80" font-size="14" opacity="0">Cam 🍊</text>
+          <circle cx="150" cy="100" r="8" fill="#FFA500" opacity="0"/>
+          <circle cx="170" cy="100" r="8" fill="#FFA500" opacity="0"/>
+          <circle cx="190" cy="100" r="8" fill="#FFA500" opacity="0"/>
+          <text x="50" y="25" font-size="12" opacity="0">Mỗi 🍎 = 2 bạn</text>
+        </svg>
+      </figure>
+</div>
     `,
     exercises: [
       { type: "num", prompt: "Mỗi 🍎 = 3 bạn, có 4 hình 🍎. Có bao nhiêu bạn thích táo?", answer: 12, hint: "4 × 3 = 12.", explain: "12 bạn." },

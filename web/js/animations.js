@@ -935,6 +935,14 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b25: Biểu đồ tranh
+      'g6-b25-pictograph': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3, stagger: 3 },
+        ]
+      },
+      
       // g7-b8: Góc kề bù, đối đỉnh và tia phân giác
       'g7-b8-angles': {
         steps: [
