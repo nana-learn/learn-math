@@ -722,6 +722,114 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Số 0 là", choices: ["Số dương", "Số âm", "Cả hai", "Không phải số dương cũng không phải số âm"], correct: 3, hint: "0 là trung tính, không phải dương cũng không phải âm.", explain: "Không phải số dương cũng không phải số âm." },
     ],
   },
+  {
+    id: "g6-b14",
+    num: 14,
+    chapter: 3,
+    title: "Cộng hai số nguyên cùng dấu",
+    summary: "Cộng hai số nguyên cùng dấu: cộng giá trị tuyệt đối, giữ dấu chung.",
+    body: String.raw`
+      <p><strong>Vì sao cần cộng số nguyên?</strong> Cộng số nguyên giúp tính toán với các đại lượng có chiều như nhiệt độ, độ cao, thời gian, lợi nhuận/lỗ.</p>
+      <div class="definition">
+        <p>Cộng hai số nguyên cùng dấu: cộng hai giá trị tuyệt đối của chúng, rồi đặt dấu chung trước kết quả. Ví dụ: (-3) + (-5) = -(3+5) = -8.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> (-2) + (-3) = -5. (-7) + (-4) = -11. 5 + 8 = 13. (-10) + (-15) = -25.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> (-20) + (-30) = -50. (-100) + (-200) = -300. 25 + 35 = 60. (-500) + (-400) = -900.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> (-5) + (-3) ≠ -2. Phải cộng giá trị tuyệt đối: 5+3=8, rồi đặt dấu âm: -8. Đừng nhầm với phép trừ.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhớ.</strong> Cùng dấu thì cộng, khác dấu thì trừ. Kết quả mang dấu của số lớn hơn (trong phép cộng khác dấu).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>(-5) + (-3) = -8, không phải -2. Phải cộng giá trị tuyệt đối.</li>
+          <li>0 + (-a) = -a. Cộng với 0 không đổi.</li>
+          <li>|a + b| ≤ |a| + |b|. Bất đẳng thức tam giác.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>(-4) + (-6) bằng bao nhiêu? <em>— -10.</em></p>
+        <p>7 + 9 bằng bao nhiêu? <em>— 16.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> (-8) + (-12). Bước 1: tìm giá trị tuyệt đối: 8 và 12. Bước 2: cộng 8+12=20. Bước 3: đặt dấu âm: -20. Kết quả: -20.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Nhiệt độ buổi sáng là -3°C, buổi chiều giảm thêm 5°C. Nhiệt độ buổi chiều là bao nhiêu? <em>— (-3) + (-5) = -8°C.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cùng dấu thì cộng giá trị tuyệt đối, giữ dấu chung. 0 + a = a. |a + b| ≤ |a| + |b|.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "(-4) + (-6) bằng bao nhiêu?", answer: -10, hint: "Cộng 4+6=10, đặt dấu âm: -10.", explain: "-10." },
+      { type: "num", prompt: "(-7) + (-3) bằng bao nhiêu?", answer: -10, hint: "Cộng 7+3=10, đặt dấu âm: -10.", explain: "-10." },
+      { type: "num", prompt: "12 + 18 bằng bao nhiêu?", answer: 30, hint: "Cộng thông thường.", explain: "30." },
+      { type: "num", prompt: "(-20) + (-30) bằng bao nhiêu?", answer: -50, hint: "Cộng 20+30=50, đặt dấu âm: -50.", explain: "-50." },
+      { type: "num", prompt: "(-100) + (-200) bằng bao nhiêu?", answer: -300, hint: "Cộng 100+200=300, đặt dấu âm: -300.", explain: "-300." },
+      { type: "num", prompt: "0 + (-5) bằng bao nhiêu?", answer: -5, hint: "Cộng với 0 không đổi.", explain: "-5." },
+      { type: "num", prompt: "|(-3) + (-7)| bằng bao nhiêu?", answer: 10, hint: "(-3)+(-7)=-10, |-10|=10.", explain: "10." },
+    ],
+  },
+  {
+    id: "g6-b15",
+    num: 15,
+    chapter: 3,
+    title: "Cộng hai số nguyên khác dấu",
+    summary: "Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.",
+    body: String.raw`
+      <p><strong>Vì sao cần cộng số nguyên khác dấu?</strong> Đây là phép cộng phổ biến nhất với số nguyên, ví dụ: lợi nhuận và lỗ, nhiệt độ tăng và giảm, thời gian trước và sau.</p>
+      <div class="definition">
+        <p>Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối của số lớn hơn cho giá trị tuyệt đối của số nhỏ hơn, rồi đặt dấu của số có giá trị tuyệt đối lớn hơn trước kết quả.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> (-5) + 3 = -2. 7 + (-4) = 3. (-10) + 6 = -4. 8 + (-5) = 3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> (-20) + 15 = -5. 30 + (-25) = 5. (-100) + 80 = -20. 50 + (-45) = 5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ có bẫy.</strong> (-8) + 5 ≠ 3. Số có giá trị tuyệt đối lớn hơn là -8, nên kết quả mang dấu âm: -3. Đừng nhầm với phép cộng số dương.</p>
+      </div>
+      <div class="idea">
+        <p><strong>Cách nhớ.</strong> Khác dấu thì trừ, kết quả mang dấu của số lớn hơn. Ví dụ: (-15) + 10 = -5 (vì 15 > 10 và -15 mang dấu âm).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong></p>
+        <ul>
+          <li>(-8) + 5 = -3, không phải 3. Kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.</li>
+          <li>5 + (-5) = 0. Hai số đối nhau thì tổng bằng 0.</li>
+          <li>|a + (-b)| = |a - b|. Công thức này thường dùng.</li>
+        </ul>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>(-7) + 4 bằng bao nhiêu? <em>— -3.</em></p>
+        <p>9 + (-6) bằng bao nhiêu? <em>— 3.</em></p>
+      </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> (-12) + 7. Bước 1: so sánh giá trị tuyệt đối: 12 > 7. Bước 2: trừ 12-7=5. Bước 3: số -12 có giá trị tuyệt đối lớn hơn và mang dấu âm. Kết quả: -5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Luyện dạng SBT.</strong> Bạn An có 50 nghìn, mua sách hết 30 nghìn. Số tiền còn lại là bao nhiêu? <em>— 50 + (-30) = 20 nghìn.</em></p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Khác dấu thì trừ giá trị tuyệt đối, kết quả mang dấu của số lớn hơn. a + (-a) = 0. |a + (-b)| = |a - b|.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "(-7) + 4 bằng bao nhiêu?", answer: -3, hint: "7-4=3, số lớn hơn là -7 nên kết quả âm: -3.", explain: "-3." },
+      { type: "num", prompt: "9 + (-6) bằng bao nhiêu?", answer: 3, hint: "9-6=3, số lớn hơn là 9 nên kết quả dương: 3.", explain: "3." },
+      { type: "num", prompt: "(-15) + 10 bằng bao nhiêu?", answer: -5, hint: "15-10=5, số lớn hơn là -15 nên kết quả âm: -5.", explain: "-5." },
+      { type: "num", prompt: "20 + (-25) bằng bao nhiêu?", answer: -5, hint: "25-20=5, số lớn hơn là -25 nên kết quả âm: -5.", explain: "-5." },
+      { type: "num", prompt: "(-100) + 120 bằng bao nhiêu?", answer: 20, hint: "120-100=20, số lớn hơn là 120 nên kết quả dương: 20.", explain: "20." },
+      { type: "num", prompt: "8 + (-8) bằng bao nhiêu?", answer: 0, hint: "Hai số đối nhau thì tổng bằng 0.", explain: "0." },
+      { type: "num", prompt: "(-50) + 30 bằng bao nhiêu?", answer: -20, hint: "50-30=20, số lớn hơn là -50 nên kết quả âm: -20.", explain: "-20." },
+    ],
+  },
 ];
 
 module.exports = { G6_CHAPTERS, G6_LESSONS };
