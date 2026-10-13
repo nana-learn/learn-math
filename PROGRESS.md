@@ -426,3 +426,46 @@ Committed b37749c. Pushed to GitHub Pages main branch.
 - ✅ Chapter X (Một số hình khối trong thực tiễn): g8-b38, g8-b39
 
 **Note**: The insertion script `insert_g8_b30_32.py` was fixed to add a comma to the previous lesson's closing brace before inserting new lessons, ensuring valid JavaScript array syntax.
+
+## 2026-10-13 Grade 10 animations (4ff9050)
+
+Added SVG animations to 10 Grade 10 lessons:
+
+- **g10-b2 (Tập hợp)**: Venn diagram showing two sets with labeled elements
+- **g10-b3 (Tập con)**: Subset Venn diagram showing A ⊆ B with nested circles
+- **g10-b4 (Phép toán tập hợp)**: Venn diagrams for union, intersection, difference
+- **g10-b5 (Bất đẳng thức)**: Number line for inequalities (a < b)
+- **g10-b6 (Bất phương trình)**: Number line for linear inequalities (x > 2)
+- **g10-b7 (Dấu nhị thức bậc nhất)**: Sign chart for linear expression on number line
+- **g10-b8 (Hàm số bậc hai)**: Parabola graph y = ax² with vertex and axis
+- **g10-b9 (Dấu tam thức bậc hai)**: Parabola with x-axis intersections (Δ > 0)
+- **g10-b10 (Vector)**: Vector AB in plane with direction and labels
+- **g10-b11 (Tổng và hiệu vector)**: Vector addition using triangle rule (AB + BC = AC)
+
+All animations use step-by-step reveal following pedagogical flow:
+- Drawing effect for lines/curves via `stroke-dasharray`/`stroke-dashoffset`
+- Fade-in for text/points via `opacity` transitions
+- Interactive controls: play/pause/step/reset buttons
+
+Modified files:
+- `web/js/animations.js`: Added 10 new animation configurations
+- `web/js/lessons.js`: Added `data-animation` attributes to lesson figures
+
+**Final Grade 10 Status**: 10/30 lessons animated (33.3%)
+
+### Final Animation Coverage Summary:
+- ✅ Grade 9: 30/30 lessons (100%)
+- ✅ Grade 8: 31/39 lessons (79.5%)
+- ✅ Grade 7: 23/37 lessons (62.2%)
+- ✅ Grade 6: 16/43 lessons (37.2%)
+- ✅ Grade 10: 10/30 lessons (33.3%)
+
+**Total: 110 animated lessons across all grades (61.5%)**
+
+### Remaining Lessons for Animation:
+- Grade 10: g10-b12 through g10-b30 (purely algebraic or symbolic topics)
+- Grade 8: g8-b1 through g8-b8 (purely symbolic algebra)
+- Grade 7: g7-b1 through g7-b7, g7-b20 through g7-b28 (purely symbolic algebra)
+- Grade 6: g6-b5 through g6-b12, g6-b21 through g6-b23, g6-b28 through g6-b30, g6-b32 through g6-b37, g6-b39 through g6-b43 (purely symbolic arithmetic/algebra)
+
+These remaining lessons deal with purely symbolic algebra or arithmetic without natural visual representations.
