@@ -8066,6 +8066,29 @@ const G10_LESSONS = [
         <p>"5 > 3" là mệnh đề? <em>— Có, đúng.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Mệnh đề là khẳng định đúng hoặc sai.</p></div>
+      <figure class="figure" data-animation="g10-b1-truth-table">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Bảng chân trị của mệnh đề">
+          <line x1="40" y1="40" x2="220" y2="40" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="40" y1="60" x2="220" y2="60" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="40" y1="80" x2="220" y2="80" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="40" y1="100" x2="220" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="100" y1="40" x2="100" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="160" y1="40" x2="160" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <text x="60" y="55" font-size="11" fill="#58C4DD">p</text>
+          <text x="120" y="55" font-size="11" fill="#58C4DD">q</text>
+          <text x="180" y="55" font-size="11" fill="#58C4DD">p ∧ q</text>
+          <text x="65" y="75" font-size="10" fill="#DDDDDD">Đ</text>
+          <text x="125" y="75" font-size="10" fill="#DDDDDD">Đ</text>
+          <text x="185" y="75" font-size="10" fill="#83C167">Đ</text>
+          <text x="65" y="95" font-size="10" fill="#DDDDDD">S</text>
+          <text x="125" y="95" font-size="10" fill="#DDDDDD">Đ</text>
+          <text x="185" y="95" font-size="10" fill="#FC6255">S</text>
+          <text x="130" y="30" font-size="11" fill="#58C4DD">Bảng chân trị</text>
+          <text x="90" y="125" font-size="10" fill="#83C167">p ∧ q: Đ khi cả p và q đều Đ</text>
+        </svg>
+        <figcaption>Bảng chân trị của mệnh đề p ∧ q (p và q).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
@@ -8544,6 +8567,27 @@ const G10_LESSONS = [
         <p>Cho tam giác ABC. AB - AC = ? <em>— CB.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc trừ: cùng điểm đầu, hiệu là vector từ cuối này đến cuối kia.</p></div>
+      <figure class="figure" data-animation="g10-b12-vector-diff">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Hiệu hai vector AB - AC = CB">
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="120" x2="210" y2="120" stroke="#FC6255" stroke-width="2"/>
+          <line x1="150" y1="60" x2="210" y2="120" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="60" r="3" fill="#DDDDDD"/>
+          <circle cx="210" cy="120" r="3" fill="#DDDDDD"/>
+          <text x="40" y="130" font-size="11" fill="#58C4DD">A</text>
+          <text x="160" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="220" y="130" font-size="11" fill="#FC6255">C</text>
+          <text x="100" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="115" y="95" font-size="10" fill="#58C4DD">AB</text>
+          <text x="130" y="140" font-size="11" fill="#FC6255">→</text>
+          <text x="145" y="145" font-size="10" fill="#FC6255">AC</text>
+          <text x="180" y="90" font-size="11" fill="#83C167">→</text>
+          <text x="195" y="95" font-size="10" fill="#83C167">CB</text>
+        </svg>
+        <figcaption>Quy tắc trừ: AB - AC = CB.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "AB - AC = ?", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
@@ -8576,6 +8620,24 @@ const G10_LESSONS = [
         <p>3·AB với AB = (1, -2) là? <em>— (3, -6).</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> k·AB: cùng/phản hướng, độ dài |k|·AB.</p></div>
+      <figure class="figure" data-animation="g10-b13-scalar-mul">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Tích vector với số k">
+          <line x1="50" y1="80" x2="150" y2="40" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="80" x2="210" y2="20" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="40" r="3" fill="#DDDDDD"/>
+          <circle cx="210" cy="20" r="3" fill="#DDDDDD"/>
+          <text x="40" y="95" font-size="11" fill="#DDDDDD">A</text>
+          <text x="160" y="30" font-size="11" fill="#58C4DD">B</text>
+          <text x="220" y="15" font-size="11" fill="#83C167">C</text>
+          <text x="80" y="60" font-size="11" fill="#58C4DD">→</text>
+          <text x="95" y="65" font-size="10" fill="#58C4DD">AB</text>
+          <text x="130" y="50" font-size="11" fill="#83C167">→</text>
+          <text x="145" y="55" font-size="10" fill="#83C167">k·AB</text>
+        </svg>
+        <figcaption>Tích vector AB với số k: k·AB.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "2·AB với AB = (3, 4) là?", choices: ["(6, 8)", "(3, 4)", "(1.5, 2)", "(-6, -8)"], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
@@ -8608,6 +8670,20 @@ const G10_LESSONS = [
         <p>Tọa độ trung điểm AB với A(1,2), B(3,4) là? <em>— (2, 3).</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> M(x, y) ↔ OM = x·i + y·j.</p></div>
+      <figure class="figure" data-animation="g10-b14-coordinate-system">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Hệ trục tọa độ Oxy">
+          <line x1="20" y1="80" x2="240" y2="80" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="130" y1="10" x2="130" y2="150" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="130" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="125" y="95" font-size="11" fill="#DDDDDD">O</text>
+          <text x="230" y="95" font-size="11" fill="#DDDDDD">x</text>
+          <text x="140" y="20" font-size="11" fill="#DDDDDD">y</text>
+          <circle cx="80" cy="50" r="3" fill="#58C4DD"/>
+          <text x="70" y="65" font-size="11" fill="#58C4DD">M(x;y)</text>
+        </svg>
+        <figcaption>Hệ trục tọa độ Oxy với điểm M(x;y).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Tọa độ điểm A(2, -3) là?", choices: ["(2, -3)", "(-3, 2)", "(2, 3)", "(-2, 3)"], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
@@ -8640,6 +8716,24 @@ const G10_LESSONS = [
         <p>Vector AB với A(2,3), B(5,7) là? <em>— (3, 4).</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> AB = (xB - xA, yB - yA).</p></div>
+      <figure class="figure" data-animation="g10-b15-vector-coords">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Tọa độ của vector">
+          <line x1="50" y1="120" x2="180" y2="50" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="120" x2="230" y2="120" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="180" y1="50" x2="230" y2="120" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="50" r="3" fill="#DDDDDD"/>
+          <circle cx="230" cy="120" r="3" fill="#DDDDDD"/>
+          <text x="40" y="135" font-size="11" fill="#DDDDDD">A(x₁;y₁)</text>
+          <text x="190" y="40" font-size="11" fill="#DDDDDD">B(x₂;y₂)</text>
+          <text x="220" y="135" font-size="11" fill="#DDDDDD">M</text>
+          <text x="115" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="130" y="95" font-size="10" fill="#58C4DD">AB</text>
+          <text x="125" y="140" font-size="10" fill="#83C167">AB = (x₂-x₁; y₂-y₁)</text>
+        </svg>
+        <figcaption>Tọa độ vector AB = (x₂-x₁; y₂-y₁).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Vector AB với A(1,2), B(4,5) là?", choices: ["(3, 3)", "(1, 1)", "(-3, -3)", "(5, 7)"], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
@@ -8673,6 +8767,27 @@ const G10_LESSONS = [
         <p>AB = (3, -2), CD = (-1, 4). AB - CD = ? <em>— (4, -6).</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Làm trên tọa độ: cộng, trừ, nhân từng thành phần.</p></div>
+      <figure class="figure" data-animation="g10-b16-vector-expr">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Biểu thức tọa độ của phép toán vector">
+          <line x1="50" y1="120" x2="120" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="120" y1="60" x2="200" y2="100" stroke="#FC6255" stroke-width="2"/>
+          <line x1="50" y1="120" x2="200" y2="100" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="120" cy="60" r="3" fill="#DDDDDD"/>
+          <circle cx="200" cy="100" r="3" fill="#DDDDDD"/>
+          <text x="40" y="135" font-size="11" fill="#DDDDDD">A</text>
+          <text x="130" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="210" y="115" font-size="11" fill="#FC6255">C</text>
+          <text x="80" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="95" y="95" font-size="10" fill="#58C4DD">AB</text>
+          <text x="160" y="80" font-size="11" fill="#FC6255">→</text>
+          <text x="175" y="85" font-size="10" fill="#FC6255">BC</text>
+          <text x="120" y="140" font-size="10" fill="#83C167">AB + BC = AC</text>
+          <text x="110" y="60" font-size="10" fill="#DDDDDD">(x₁+x₂; y₁+y₂)</text>
+        </svg>
+        <figcaption>Biểu thức tọa độ: AB + BC = AC.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "AB = (2, 3), CD = (-1, 2). AB + CD = ?", choices: ["(1, 5)", "(3, 5)", "(1, 1)", "(-2, 6)"], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
@@ -8705,6 +8820,24 @@ const G10_LESSONS = [
         <p>cos 120° = ? <em>— -1/2.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> sin(180°-α)=sin α, cos(180°-α)=-cos α.</p></div>
+      <figure class="figure" data-animation="g10-b17-trig-values">
+        <svg viewBox="0 0 240 160" role="img" aria-label="Giá trị lượng giác trên đường tròn đơn vị">
+          <circle cx="120" cy="80" r="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="120" y1="80" x2="170" y2="50" stroke="#83C167" stroke-width="2"/>
+          <line x1="120" y1="80" x2="170" y2="80" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="170" y1="80" x2="170" y2="50" stroke="#FC6255" stroke-width="1" stroke-dasharray="3 2"/>
+          <circle cx="120" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="170" cy="50" r="3" fill="#DDDDDD"/>
+          <text x="115" y="95" font-size="11" fill="#DDDDDD">O</text>
+          <text x="175" y="45" font-size="11" fill="#DDDDDD">M</text>
+          <text x="175" y="75" font-size="11" fill="#FC6255">H</text>
+          <text x="130" y="70" font-size="11" fill="#58C4DD">α</text>
+          <text x="175" y="60" font-size="10" fill="#FC6255">sinα</text>
+          <text x="145" y="85" font-size="10" fill="#58C4DD">cosα</text>
+        </svg>
+        <figcaption>Giá trị lượng giác của góc α trên đường tròn đơn vị.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "sin 150° = ?", choices: ["1/2", "-1/2", "√3/2", "-√3/2"], correct: 0, hint: "sin(180°-30°)=sin 30°=1/2.", explain: "1/2." },
@@ -8738,6 +8871,27 @@ const G10_LESSONS = [
         <p>AB = (2, 3), AC = (4, -1). AB·AC = ? <em>— 5.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> AB·AC = x1x2 + y1y2 trong tọa độ.</p></div>
+      <figure class="figure" data-animation="g10-b18-dot-product">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Tích vô hướng của hai vector">
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="120" x2="200" y2="80" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="60" r="3" fill="#DDDDDD"/>
+          <circle cx="200" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="40" y="135" font-size="11" fill="#DDDDDD">A</text>
+          <text x="160" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="210" y="90" font-size="11" fill="#FC6255">C</text>
+          <text x="100" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="115" y="95" font-size="10" fill="#58C4DD">→</text>
+          <text x="120" y="100" font-size="10" fill="#58C4DD">AB</text>
+          <text x="125" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="150" y="90" font-size="11" fill="#FC6255">→</text>
+          <text x="155" y="95" font-size="10" fill="#FC6255">AC</text>
+          <text x="110" y="50" font-size="10" fill="#83C167">AB · AC = |AB||AC|cosα</text>
+        </svg>
+        <figcaption>Tích vô hướng: AB · AC = |AB||AC|cos(α).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "AB = (1, 2), AC = (3, -1). AB·AC = ?", choices: ["1", "-1", "5", "-5"], correct: 0, hint: "1·3 + 2·(-1) = 1.", explain: "1." },
@@ -8770,6 +8924,26 @@ const G10_LESSONS = [
         <p>Góc giữa AB=(1,0) và AC=(0,1) là? <em>— 90°.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> cos α = (AB·AC)/(|AB|·|AC|).</p></div>
+      <figure class="figure" data-animation="g10-b19-dot-product-app">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Ứng dụng tích vô hướng vào độ dài và góc">
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="120" x2="200" y2="120" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="60" r="3" fill="#DDDDDD"/>
+          <circle cx="200" cy="120" r="3" fill="#DDDDDD"/>
+          <text x="40" y="135" font-size="11" fill="#DDDDDD">A</text>
+          <text x="160" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="210" y="135" font-size="11" fill="#FC6255">C</text>
+          <text x="100" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="115" y="95" font-size="10" fill="#58C4DD">AB</text>
+          <text x="150" y="140" font-size="11" fill="#FC6255">→</text>
+          <text x="165" y="145" font-size="10" fill="#FC6255">AC</text>
+          <text x="80" y="40" font-size="10" fill="#83C167">|AB| = √(x² + y²)</text>
+          <text x="130" y="50" font-size="10" fill="#83C167">AB · AC = |AB||AC|cosα</text>
+        </svg>
+        <figcaption>Ứng dụng tích vô hướng: độ dài và góc.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "|AB| với AB = (5, 12) là?", choices: ["13", "12", "5", "17"], correct: 0, hint: "√(25+144) = 13.", explain: "13." },
@@ -8802,6 +8976,24 @@ const G10_LESSONS = [
         <p>BC với AB=5, AC=8, góc A=60° là? <em>— √49 = 7.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> a² = b² + c² - 2bc·cos A.</p></div>
+      <figure class="figure" data-animation="g10-b20-law-of-cosines">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Các hệ thức lượng trong tam giác">
+          <polygon points="50,130 200,130 130,40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="130" y1="40" x2="130" y2="130" stroke="#83C167" stroke-width="1" stroke-dasharray="3 2"/>
+          <circle cx="50" cy="130" r="3" fill="#DDDDDD"/>
+          <circle cx="200" cy="130" r="3" fill="#DDDDDD"/>
+          <circle cx="130" cy="40" r="3" fill="#DDDDDD"/>
+          <text x="40" y="145" font-size="11" fill="#DDDDDD">A</text>
+          <text x="210" y="145" font-size="11" fill="#DDDDDD">B</text>
+          <text x="130" y="30" font-size="11" fill="#DDDDDD">C</text>
+          <text x="85" y="135" font-size="10" fill="#DDDDDD">b</text>
+          <text x="165" y="135" font-size="10" fill="#DDDDDD">a</text>
+          <text x="140" y="85" font-size="10" fill="#83C167">h</text>
+          <text x="110" y="60" font-size="10" fill="#58C4DD">c² = a² + b² - 2ab·cosC</text>
+        </svg>
+        <figcaption>Hệ thức lượng trong tam giác: định lý cosin.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Tam giác ABC: AB=3, AC=4, góc A=90°. BC = ?", choices: ["5", "4", "3", "7"], correct: 0, hint: "BC² = 9 + 16 = 25 ⇒ BC = 5.", explain: "5." },
@@ -8834,6 +9026,20 @@ const G10_LESSONS = [
         <p>Đường tròn tâm (1, 2), bán kính 3 là? <em>— (x-1)² + (y-2)² = 9.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Phương trình: (x - a)² + (y - b)² = R².</p></div>
+      <figure class="figure" data-animation="g10-b21-circle">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Đường tròn trong mặt phẳng tọa độ">
+          <circle cx="130" cy="80" r="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="130" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="80" r="3" fill="#DDDDDD"/>
+          <line x1="130" y1="80" x2="180" y2="80" stroke="#83C167" stroke-width="2"/>
+          <text x="125" y="95" font-size="11" fill="#DDDDDD">I(a;b)</text>
+          <text x="175" y="95" font-size="11" fill="#DDDDDD">M</text>
+          <text x="150" y="95" font-size="10" fill="#83C167">R</text>
+          <text x="100" y="40" font-size="11" fill="#58C4DD">(x-a)² + (y-b)² = R²</text>
+        </svg>
+        <figcaption>Đường tròn (x-a)² + (y-b)² = R² với tâm I(a;b) và bán kính R.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Đường tròn tâm O(0,0), bán kính 2 là?", choices: ["x² + y² = 4", "x² + y² = 2", "(x-2)² + y² = 4", "x² + (y-2)² = 4"], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
@@ -8867,6 +9073,26 @@ const G10_LESSONS = [
         <p>Phương trình nào là parabol? <em>— y² = 4x.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều焦点 và đường chuẩn.</p></div>
+      <figure class="figure" data-animation="g10-b22-conic">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Ba đường conic: elip, parabol, hyperbol">
+          <!-- Ellipse -->
+          <ellipse cx="60" cy="80" rx="40" ry="25" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="60" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="20" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="100" cy="80" r="3" fill="#DDDDDD"/>
+          <!-- Parabola -->
+          <path d="M140,130 Q180,30 220,130" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="180" cy="80" r="3" fill="#DDDDDD"/>
+          <!-- Hyperbola -->
+          <path d="M20,30 Q60,30 100,80 Q140,130 180,130" fill="none" stroke="#83C167" stroke-width="1"/>
+          <path d="M20,130 Q60,130 100,80 Q140,30 180,30" fill="none" stroke="#83C167" stroke-width="1"/>
+          <text x="30" y="160" font-size="9" fill="#58C4DD">Elip</text>
+          <text x="150" y="160" font-size="9" fill="#FC6255">Parabol</text>
+          <text x="200" y="160" font-size="9" fill="#83C167">Hyperbol</text>
+        </svg>
+        <figcaption>Ba đường conic: elip, parabol, hyperbol.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Phương trình nào là elip?", choices: ["x²/4 + y²/9 = 1", "y² = 4x", "x²/4 - y²/9 = 1", "x² + y² = 4"], correct: 0, hint: "Elip có dạng x²/a² + y²/b² = 1.", explain: "x²/4 + y²/9 = 1." },
@@ -8899,6 +9125,20 @@ const G10_LESSONS = [
         <p>Chọn 1 môn từ 3 môn Toán, Văn, Anh là? <em>— 3 cách.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Cộng: loại trừ, Nhân: phối hợp.</p></div>
+      <figure class="figure" data-animation="g10-b23-addition-rule">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Quy tắc cộng và quy tắc nhân">
+          <circle cx="80" cy="80" r="30" fill="#58C4DD" fill-opacity="0.3" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="180" cy="80" r="30" fill="#FC6255" fill-opacity="0.3" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="80" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="65" y="105" font-size="11" fill="#58C4DD">A</text>
+          <text x="165" y="105" font-size="11" fill="#FC6255">B</text>
+          <text x="110" y="45" font-size="11" fill="#58C4DD">n(A ∪ B) = n(A) + n(B)</text>
+          <text x="110" y="140" font-size="11" fill="#FC6255">Quy tắc cộng</text>
+        </svg>
+        <figcaption>Quy tắc cộng: n(A ∪ B) = n(A) + n(B).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Từ nhà đến bến xe có 4 đường, bến xe đến trường có 3 đường. Số cách đi từ nhà đến trường là?", choices: ["12", "7", "4", "3"], correct: 0, hint: "4 × 3 = 12.", explain: "12." },
@@ -8931,6 +9171,26 @@ const G10_LESSONS = [
         <p>Sắp xếp 4 người vào 4 ghế là? <em>— 4! = 24.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hoán vị: P_n = n!, Chỉnh hợp: A_n^k = n!/(n-k)!.</p></div>
+      <figure class="figure" data-animation="g10-b24-permutations">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Hoán vị, chỉnh hợp">
+          <rect x="30" y="40" width="40" height="40" fill="#58C4DD"/>
+          <rect x="80" y="40" width="40" height="40" fill="#83C167"/>
+          <rect x="130" y="40" width="40" height="40" fill="#FC6255"/>
+          <rect x="180" y="40" width="40" height="40" fill="#9A72AC"/>
+          <circle cx="30" cy="100" r="3" fill="#DDDDDD"/>
+          <circle cx="80" cy="100" r="3" fill="#DDDDDD"/>
+          <circle cx="130" cy="100" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="100" r="3" fill="#DDDDDD"/>
+          <text x="10" y="125" font-size="10" fill="#58C4DD">A</text>
+          <text x="60" y="125" font-size="10" fill="#83C167">B</text>
+          <text x="110" y="125" font-size="10" fill="#FC6255">C</text>
+          <text x="160" y="125" font-size="10" fill="#9A72AC">D</text>
+          <text x="80" y="20" font-size="11" fill="#DDDDDD">P₄ = 4! = 24</text>
+          <text x="85" y="145" font-size="11" fill="#58C4DD">Hoán vị</text>
+        </svg>
+        <figcaption>Hoán vị: Pₙ = n! (4! = 24 sắp xếp).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Sắp xếp 5 người vào 5 ghế là?", choices: ["120", "25", "5", "10"], correct: 0, hint: "5! = 120.", explain: "120." },
@@ -8963,6 +9223,24 @@ const G10_LESSONS = [
         <p>C_4^2 = ? <em>— 6.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> C_n^k = n!/(k!(n-k)!).</p></div>
+      <figure class="figure" data-animation="g10-b25-combinations">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Tổ hợp">
+          <circle cx="80" cy="60" r="20" fill="#58C4DD" fill-opacity="0.3" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="130" cy="60" r="20" fill="#83C167" fill-opacity="0.3" stroke="#83C167" stroke-width="2"/>
+          <circle cx="180" cy="60" r="20" fill="#FC6255" fill-opacity="0.3" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="105" cy="120" r="20" fill="#9A72AC" fill-opacity="0.3" stroke="#9A72AC" stroke-width="2"/>
+          <circle cx="155" cy="120" r="20" fill="#DDDDDD" fill-opacity="0.3" stroke="#DDDDDD" stroke-width="2"/>
+          <text x="75" y="65" font-size="11" fill="#58C4DD">A</text>
+          <text x="125" y="65" font-size="11" fill="#83C167">B</text>
+          <text x="175" y="65" font-size="11" fill="#FC6255">C</text>
+          <text x="100" y="125" font-size="11" fill="#9A72AC">D</text>
+          <text x="150" y="125" font-size="11" fill="#DDDDDD">E</text>
+          <text x="100" y="30" font-size="11" fill="#58C4DD">C(5,3) = 10</text>
+          <text x="80" y="150" font-size="11" fill="#83C167">Tổ hợp (không sắp xếp)</text>
+        </svg>
+        <figcaption>Tổ hợp: C(n,k) = n!/(k!(n-k)!) - chọn k phần tử từ n mà không sắp xếp.</text>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "C_5^2 =", choices: ["10", "20", "25", "5"], correct: 0, hint: "5 × 4 / 2 = 10.", explain: "10." },
@@ -8996,6 +9274,24 @@ const G10_LESSONS = [
         <p>2.71828 quy tròn đến hàng phần nghìn là? <em>— 2.718.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tròn đến hàng nào thì chữ số hàng đó giữ nguyên, các chữ số sau bằng 0.</p></div>
+      <figure class="figure" data-animation="g10-b26-approximation">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Số gần đúng và sai số">
+          <line x1="50" y1="80" x2="210" y2="80" stroke="#DDDDDD" stroke-width="1.5"/>
+          <line x1="130" y1="50" x2="130" y2="110" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="100" y1="70" x2="100" y2="90" stroke="#FC6255" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="160" y1="70" x2="160" y2="90" stroke="#FC6255" stroke-width="1" stroke-dasharray="3 2"/>
+          <circle cx="130" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="100" cy="80" r="3" fill="#FC6255"/>
+          <circle cx="160" cy="80" r="3" fill="#FC6255"/>
+          <text x="125" y="95" font-size="11" fill="#DDDDDD">a</text>
+          <text x="90" y="95" font-size="11" fill="#FC6255">a - Δa</text>
+          <text x="165" y="95" font-size="11" fill="#FC6255">a + Δa</text>
+          <text x="110" y="40" font-size="11" fill="#58C4DD">[a - Δa; a + Δa]</text>
+          <text x="115" y="130" font-size="11" fill="#58C167">Độ chính xác Δa</text>
+        </svg>
+        <figcaption>Số gần đúng a với độ chính xác Δa: khoảng [a - Δa; a + Δa].</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "3.14159 quy tròn đến hàng phần trăm là?", choices: ["3.14", "3.15", "3.142", "3.1"], correct: 0, hint: "Hàng phần trăm là số 4, chữ số sau là 1 < 5 nên giữ nguyên.", explain: "3.14." },
@@ -9029,6 +9325,25 @@ const G10_LESSONS = [
         <p>Mẫu: 1, 3, 5, 7, 9. Trung vị là? <em>— 5.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Số trung bình: tổng chia n, Trung vị: giá trị giữa, Mode: xuất hiện nhiều nhất.</p></div>
+      <figure class="figure" data-animation="g10-b27-mean">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Số trung bình cộng">
+          <line x1="20" y1="100" x2="240" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="40" y="70" width="30" height="30" fill="#58C4DD"/>
+          <rect x="80" y="50" width="30" height="50" fill="#83C167"/>
+          <rect x="120" y="40" width="30" height="60" fill="#FC6255"/>
+          <rect x="160" y="60" width="30" height="40" fill="#9A72AC"/>
+          <rect x="200" y="80" width="30" height="20" fill="#DDDDDD"/>
+          <line x1="20" y1="60" x2="240" y2="60" stroke="#58C4DD" stroke-width="1" stroke-dasharray="5 3"/>
+          <text x="55" y="110" font-size="10" fill="#58C4DD">4</text>
+          <text x="95" y="110" font-size="10" fill="#83C167">6</text>
+          <text x="135" y="110" font-size="10" fill="#FC6255">7</text>
+          <text x="175" y="110" font-size="10" fill="#9A72AC">5</text>
+          <text x="215" y="110" font-size="10" fill="#DDDDDD">3</text>
+          <text x="130" y="50" font-size="11" fill="#58C4DD">x̄ = 5</text>
+        </svg>
+        <figcaption>Số trung bình cộng: x̄ = (x₁ + x₂ + ... + xₙ)/n.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Mẫu: 2, 4, 6, 8, 10. Số trung bình là?", choices: ["6", "5", "4", "7"], correct: 0, hint: "(2+4+6+8+10)/5 = 30/5 = 6.", explain: "6." },
@@ -9061,6 +9376,24 @@ const G10_LESSONS = [
         <p>Độ lệch chuẩn là căn bậc hai của? <em>— Phương sai.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Phương sai đo bình phương khoảng cách, độ lệch chuẩn có cùng đơn vị.</p></div>
+      <figure class="figure" data-animation="g10-b28-stddev">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Độ lệch chuẩn">
+          <line x1="20" y1="100" x2="240" y2="100" stroke="#DDDDDD" stroke-width="1.5"/>
+          <rect x="40" y="70" width="30" height="30" fill="#58C4DD"/>
+          <rect x="80" y="50" width="30" height="50" fill="#83C167"/>
+          <rect x="120" y="40" width="30" height="60" fill="#FC6255"/>
+          <rect x="160" y="60" width="30" height="40" fill="#9A72AC"/>
+          <rect x="200" y="80" width="30" height="20" fill="#DDDDDD"/>
+          <line x1="20" y1="60" x2="240" y2="60" stroke="#58C4DD" stroke-width="1" stroke-dasharray="5 3"/>
+          <line x1="20" y1="80" x2="240" y2="80" stroke="#58C4DD" stroke-width="1" stroke-dasharray="5 3"/>
+          <circle cx="130" cy="100" r="3" fill="#DDDDDD"/>
+          <text x="125" y="115" font-size="11" fill="#DDDDDD">x̄</text>
+          <text x="30" y="160" font-size="9" fill="#58C4DD">σ ≈ 1.41</text>
+          <text x="120" y="50" font-size="11" fill="#58C4DD">Độ lệch chuẩn</text>
+        </svg>
+        <figcaption>Độ lệch chuẩn: σ = √[(x₁-x̄)² + ... + (xₙ-x̄)²]/n.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Độ lệch chuẩn là căn bậc hai của?", choices: ["Phương sai", "Số trung bình", "Trung vị", "Mode"], correct: 0, hint: "s = √s².", explain: "Phương sai." },
@@ -9093,6 +9426,25 @@ const G10_LESSONS = [
         <p>Gieo đồng xu: P(sấp) = ? <em>— 1/2.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> P(A) = số kết quả thuận lợi / tổng số kết quả đồng khả năng.</p></div>
+      <figure class="figure" data-animation="g10-b29-probability-game">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Xác suất trong trò chơi đơn giản">
+          <circle cx="130" cy="80" r="50" fill="#58C4DD" fill-opacity="0.3" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="130" cy="80" r="3" fill="#DDDDDD"/>
+          <line x1="130" y1="80" x2="180" y2="30" stroke="#FC6255" stroke-width="2"/>
+          <line x1="130" y1="80" x2="80" y2="130" stroke="#83C167" stroke-width="2"/>
+          <line x1="130" y1="80" x2="180" y2="130" stroke="#9A72AC" stroke-width="2"/>
+          <circle cx="180" cy="30" r="3" fill="#DDDDDD"/>
+          <circle cx="80" cy="130" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="130" r="3" fill="#DDDDDD"/>
+          <text x="125" y="95" font-size="11" fill="#DDDDDD">Ω</text>
+          <text x="185" y="25" font-size="11" fill="#FC6255">A</text>
+          <text x="65" y="145" font-size="11" fill="#83C167">B</text>
+          <text x="185" y="145" font-size="11" fill="#9A72AC">C</text>
+          <text x="120" y="40" font-size="11" fill="#58C4DD">P(A) = 1/3</text>
+        </svg>
+        <figcaption>Xác suất trong trò chơi đơn giản với không gian mẫu Ω.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Gieo xúc xắc: P(ra số lẻ) =", choices: ["1/2", "1/3", "1/6", "5/6"], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
@@ -9126,6 +9478,21 @@ const G10_LESSONS = [
         <p>P(A) = 0.3 ⇒ P(A') = ? <em>— 0.7.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> P(A') = 1 - P(A), P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</p></div>
+      <figure class="figure" data-animation="g10-b30-probability">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Xác suất của biến cố">
+          <rect x="30" y="50" width="200" height="80" fill="#58C4DD" fill-opacity="0.2" stroke="#58C4DD" stroke-width="2"/>
+          <rect x="60" y="70" width="140" height="40" fill="#FC6255" fill-opacity="0.4" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="60" cy="90" r="3" fill="#DDDDDD"/>
+          <circle cx="200" cy="90" r="3" fill="#DDDDDD"/>
+          <text x="45" y="40" font-size="11" fill="#58C167">Ω</text>
+          <text x="110" y="65" font-size="11" fill="#FC6255">E</text>
+          <text x="75" y="95" font-size="11" fill="#DDDDDD">A</text>
+          <text x="185" y="95" font-size="11" fill="#DDDDDD">B</text>
+          <text x="115" y="135" font-size="11" fill="#58C4DD">P(E) = n(E)/n(Ω)</text>
+        </svg>
+        <figcaption>Xác suất của biến cố E: P(E) = n(E)/n(Ω).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "P(A) = 0.25 ⇒ P(A') =", choices: ["0.75", "0.25", "0.5", "1"], correct: 0, hint: "1 - 0.25 = 0.75.", explain: "0.75." },
