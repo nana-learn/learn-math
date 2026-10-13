@@ -8016,6 +8016,326 @@ const G8_LESSONS = [
 
 ];
 
+const G10_CHAPTERS = [
+  { id: 1, title: "Mệnh đề và tập hợp" },
+  { id: 2, title: "Bất đẳng thức và bất phương trình" },
+  { id: 3, title: "Hàm số bậc hai" },
+  { id: 4, title: "Vector" },
+  { id: 5, title: "Tích vô hướng của hai vector" },
+  { id: 6, title: "Thống kê" },
+  { id: 7, title: "Góc lượng giác" },
+  { id: 8, title: "Cung và góc lượng giác" },
+  { id: 9, title: "Hệ tọa độ" },
+  { id: 10, title: "Đường thẳng" },
+];
+
+const G10_LESSONS = [
+  {
+    id: "g10-b1",
+    num: 1,
+    chapter: 1,
+    title: "Mệnh đề",
+    summary: "Mệnh đề là câu khẳng định đúng hoặc sai.",
+    body: String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
+      <div class="definition">
+        <p><strong>Mệnh đề</strong> là một câu khẳng định có tính đúng hoặc sai.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> "2 + 3 = 5" là mệnh đề đúng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> "x + 2 = 5" không phải mệnh đề.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Câu hỏi, câu lệnh không phải mệnh đề.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>"5 > 3" là mệnh đề? <em>— Có, đúng.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Mệnh đề là khẳng định đúng hoặc sai.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
+      { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
+    ],
+  },
+  {
+    id: "g10-b2",
+    num: 2,
+    chapter: 1,
+    title: "Tập hợp",
+    summary: "Tập hợp là nhóm các phần tử.",
+    body: String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
+      <div class="definition">
+        <p><strong>Tập hợp</strong> gồm các phần tử.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> {0, 2, 4, 6, 8} là các số chẵn < 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tập rỗng ∅ không có phần tử.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên tập rỗng.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Tập hợp là nhóm phần tử.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "Số phần tử của tập {1, 3, 5, 7, 9} là", answer: "5", accept: ["5"], hint: "Đếm các phần tử.", explain: "5 phần tử." },
+      { type: "mc", prompt: "Tập nào có 0 phần tử?", choices: ["{0}", "{1}", "∅", "{x}"], correct: 2, hint: "∅ là tập rỗng.", explain: "∅ là tập rỗng." },
+    ],
+  },
+  {
+    id: "g10-b3",
+    num: 3,
+    chapter: 1,
+    title: "Tập con và tập bằng nhau",
+    summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
+    body: String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả mối quan hệ giữa các tập hợp.</p>
+      <div class="definition">
+        <p>Tập A là <strong>tập con</strong> của B (viết A ⊆ B) nếu mọi phần tử của A đều thuộc B.</p>
+        <p>Hai tập bằng nhau nếu A ⊆ B và B ⊆ A.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> {1, 2} ⊆ {1, 2, 3}. {a, b} = {b, a} (bằng nhau).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> ∅ ⊆ A với mọi tập A.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> {a} ≠ a (một là tập, một là phần tử).</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> A ⊆ B nếu mọi phần tử của A đều trong B.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tập nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{4, 5}", "{1, 2, 3, 4}"], correct: 0, hint: "1 và 2 đều trong tập.", explain: "{1, 2} là tập con." },
+      { type: "mc", prompt: "Tập nào bằng {a, b}?", choices: ["{b, a}", "{a, b, c}", "{a}", "{b}"], correct: 0, hint: "Thứ tự không quan trọng.", explain: "{b, a} = {a, b}." },
+      { type: "mc", prompt: "Tập rỗng có phải tập con của {1, 2} không?", choices: ["Có", "Không", "Tùy trường hợp", "Không xác định"], correct: 0, hint: "∅ là tập con của mọi tập.", explain: "Có." },
+    ],
+  },
+  {
+    id: "g10-b4",
+    num: 4,
+    chapter: 1,
+    title: "Các phép toán tập hợp",
+    summary: "Hợp, giao, hiệu của hai tập hợp.",
+    body: String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toán giúp phân tích mối quan hệ.</p>
+      <div class="definition">
+        <p><strong>Hợp</strong> A ∪ B: các phần tử thuộc A hoặc B.</p>
+        <p><strong>Giao</strong> A ∩ B: các phần tử thuộc cả A và B.</p>
+        <p><strong>Hiệu</strong> A \\ B: các phần tử thuộc A nhưng không thuộc B.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> {1, 2} ∪ {2, 3} = {1, 2, 3}. {1, 2} ∩ {2, 3} = {2}.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> {1, 2, 3} \\ {2} = {1, 3}.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> A \\ B ≠ B \\ A.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hợp: hoặc, Giao: và, Hiệu: nhưng không.</p></div>
+    `,
+    exercises: [
+      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B có bao nhiêu phần tử?", answer: "4", accept: ["4"], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
+      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B là?", answer: "{2, 3}", accept: ["{2, 3}"], hint: "Phần tử chung.", explain: "{2, 3}." },
+      { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3}. A \\ B là?", choices: ["{1}", "{2, 3}", "{1, 2, 3}", "∅"], correct: 0, hint: "Loại 2 và 3 ra.", explain: "{1}." },
+    ],
+  },
+  {
+    id: "g10-b5",
+    num: 5,
+    chapter: 2,
+    title: "Bất đẳng thức",
+    summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
+    body: String.raw`<p><strong>Vì sao cần bất đẳng thức?</strong> Bất đẳng thức giúp so sánh các đại lượng.</p>
+      <div class="definition">
+        <p><strong>Bất đẳng thức</strong> là mệnh đề so sánh hai biểu thức: A > B, A < B, A ≥ B, A ≤ B.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 5 > 3, 2 + 3 ≥ 4. Nếu a > b thì a + c > b + c.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Nếu a > b > 0 thì a² > b².</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nếu a > b thì ka > kb chỉ đúng khi k > 0.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Cho a > b. Khẳng định nào đúng? <em>— a + 2 > b + 2.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Bất đẳng thức là so sánh A > B hoặc A < B.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Bất đẳng thức nào đúng?", choices: ["3 > 5", "2 < 1", "4 ≥ 4", "-1 > 0"], correct: 2, hint: "4 = 4 nên 4 ≥ 4 đúng.", explain: "4 ≥ 4 là đúng." },
+      { type: "mc", prompt: "Nếu a > b thì bất đẳng thức nào đúng?", choices: ["a - 3 > b - 3", "a + 3 < b + 3", "-a > -b", "2a < 2b"], correct: 0, hint: "Cộng cùng số vào cả hai vế.", explain: "a - 3 > b - 3 đúng." },
+      { type: "num", prompt: "Giá trị nhỏ nhất của x² + 1 với x thực là", answer: "1", accept: ["1"], hint: "x² ≥ 0 với mọi x.", explain: "x² ≥ 0 nên x² + 1 ≥ 1." },
+    ],
+  },
+  {
+    id: "g10-b6",
+    num: 6,
+    chapter: 2,
+    title: "Bất phương trình một ẩn",
+    summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
+    body: String.raw`<p><strong>Vì sao cần bất phương trình?</strong> Bất phương trình mô tả điều kiện.</p>
+      <div class="definition">
+        <p><strong>Bất phương trình một ẩn</strong> là mệnh đề chứa biến: f(x) > g(x).</p>
+        <p>Nghiệm là giá trị của x làm bất đẳng thức đúng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> 2x + 3 > 7 ⇔ 2x > 4 ⇔ x > 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> -3x + 6 ≤ 0 ⇔ -3x ≤ -6 ⇔ x ≥ 2 (đổi chiều).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Khi nhân/chia âm phải đổi chiều bất đẳng thức.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Nghiệm của 3x - 6 < 0 là? <em>— x < 2.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Giải bất phương trình là tìm tập nghiệm.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Nghiệm của 2x - 4 > 0 là?", choices: ["x > 2", "x < 2", "x > 4", "x < 4"], correct: 0, hint: "2x > 4 ⇒ x > 2.", explain: "x > 2." },
+      { type: "mc", prompt: "Nghiệm của -x + 3 ≥ 0 là?", choices: ["x ≤ 3", "x ≥ 3", "x ≤ -3", "x ≥ -3"], correct: 0, hint: "-x ≥ -3 ⇒ x ≤ 3.", explain: "x ≤ 3." },
+      { type: "num", prompt: "Số nguyên dương nhỏ nhất thỏa 3x - 5 > 4 là", answer: "4", accept: ["4"], hint: "3x > 9 ⇒ x > 3.", explain: "x > 3 nên x = 4." },
+    ],
+  },
+  {
+    id: "g10-b7",
+    num: 7,
+    chapter: 2,
+    title: "Dấu của nhị thức bậc nhất",
+    summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
+    body: String.raw`<p><strong>Vì sao cần dấu nhị thức?</strong> Dấu nhị thức giúp giải bất phương trình.</p>
+      <div class="definition">
+        <p>Nhị thức bậc nhất: f(x) = ax + b (a ≠ 0).</p>
+        <p>Dấu: cùng dấu a khi x > -b/a, trái dấu a khi x < -b/a.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> f(x) = 2x - 4: dương khi x > 2, âm khi x < 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> f(x) = -3x + 6: dương khi x < 2, âm khi x > 2.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm dấu khi a < 0.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Dấu của f(x) = -x + 5 khi x = 3? <em>— Dương.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nghiệm x = -b/a, dấu thay đổi tại nghiệm.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Nghiệm của f(x) = 3x - 6 là?", choices: ["x = 2", "x = -2", "x = 3", "x = -3"], correct: 0, hint: "3x = 6 ⇒ x = 2.", explain: "x = 2." },
+      { type: "mc", prompt: "f(x) = -2x + 4 dương khi?", choices: ["x < 2", "x > 2", "x < -2", "x > -2"], correct: 0, hint: "a = -2 < 0 nên dương khi x < 2.", explain: "x < 2." },
+      { type: "num", prompt: "Giá trị của f(x) = 5x - 10 tại x = 3 là", answer: "5", accept: ["5"], hint: "5·3 - 10 = 5.", explain: "5." },
+    ],
+  },
+  {
+    id: "g10-b8",
+    num: 8,
+    chapter: 3,
+    title: "Hàm số bậc hai",
+    summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
+    body: String.raw`<p><strong>Vì sao cần hàm số bậc hai?</strong> Hàm số bậc hai mô tả quỹ đạo parabol.</p>
+      <div class="definition">
+        <p>Hàm số bậc hai: y = ax² + bx + c (a ≠ 0).</p>
+        <p>Đồ thị là parabol, đỉnh tại (-b/2a, -Δ/4a).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> y = x²: đồ thị đi qua (0,0), (1,1), (-1,1), hướng lên.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> y = -x² + 2: đỉnh (0,2), hướng xuống.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm hướng parabol (a > 0 lên, a < 0 xuống).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đỉnh của y = x² - 4x + 3 là? <em>— (2, -1).</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Đồ thị parabol, đỉnh (-b/2a, -Δ/4a).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Đồ thị y = 2x² có hướng?", choices: ["Lên", "Xuống", "Trái", "Phải"], correct: 0, hint: "a = 2 > 0 nên hướng lên.", explain: "Hướng lên." },
+      { type: "mc", prompt: "Đỉnh của y = x² - 2x là?", choices: ["(1, -1)", "(-1, 1)", "(1, 1)", "(-1, -1)"], correct: 0, hint: "-b/2a = 1, y(1) = -1.", explain: "(1, -1)." },
+      { type: "num", prompt: "Giá trị nhỏ nhất của y = x² + 2 là", answer: "2", accept: ["2"], hint: "x² ≥ 0 nên y ≥ 2.", explain: "2." },
+    ],
+  },
+  {
+    id: "g10-b9",
+    num: 9,
+    chapter: 3,
+    title: "Dấu của tam thức bậc hai",
+    summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
+    body: String.raw`<p><strong>Vì sao cần dấu tam thức?</strong> Dấu tam thức giúp giải bất phương trình bậc hai.</p>
+      <div class="definition">
+        <p>Tam thức bậc hai: f(x) = ax² + bx + c (a ≠ 0).</p>
+        <p>Δ = b² - 4ac: Δ < 0 cùng dấu a, Δ = 0 cùng dấu a (trừ nghiệm), Δ > 0 đổi dấu tại 2 nghiệm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> f(x) = x² + 1: Δ = -4 < 0, luôn dương (a > 0).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> f(x) = x² - 4: Δ = 16 > 0, nghiệm ±2, âm trong (−2, 2).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên xét a khi kết luận dấu.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Dấu của f(x) = x² - 5x + 6 tại x = 4? <em>— Âm.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Δ < 0 cùng dấu a, Δ > 0 đổi dấu tại 2 nghiệm.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "f(x) = x² + 1 có bao nhiêu nghiệm?", choices: ["0", "1", "2", "Vô số"], correct: 0, hint: "Δ = -4 < 0 nên vô nghiệm.", explain: "0 nghiệm." },
+      { type: "mc", prompt: "f(x) = -x² + 4 dương khi?", choices: ["-2 < x < 2", "x < -2", "x > 2", "x ≠ ±2"], correct: 0, hint: "a = -1 < 0, nghiệm ±2.", explain: "-2 < x < 2." },
+      { type: "num", prompt: "Số nguyên thỏa x² - 4x + 3 ≤ 0 là", answer: "3", accept: ["3"], hint: "(x-1)(x-3) ≤ 0 ⇒ 1 ≤ x ≤ 3.", explain: "x = 1, 2, 3." },
+    ],
+  },
+  {
+    id: "g10-b10",
+    num: 10,
+    chapter: 4,
+    title: "Vector trong mặt phẳng",
+    summary: "Vector là đoạn thẳng có hướng.",
+    body: String.raw`<p><strong>Vì sao cần vector?</strong> Vector biểu diễn đại lượng có hướng.</p>
+      <div class="definition">
+        <p><strong>Vector</strong> là đoạn thẳng có hướng: AB (đi từ A đến B).</p>
+        <p>Hai vector bằng nhau nếu cùng hướng và cùng độ dài.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB = CD nếu AB ∥ CD, AB = CD và cùng hướng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Vector không (zero vector) có điểm đầu = điểm cuối.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB ≠ BA (ngược hướng).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>AB và BA là? <em>— Hai vector ngược nhau.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Vector có điểm đầu và điểm cuối.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB và BA là hai vector?", choices: ["Bằng nhau", "Đối nhau", "Cùng hướng", "Cùng độ dài"], correct: 1, hint: "AB và BA ngược hướng.", explain: "Đối nhau (ngược hướng, cùng độ dài)." },
+      { type: "mc", prompt: "Vector không có điểm đầu và điểm cuối?", choices: ["Khác nhau", "Giống nhau", "Tùy trường hợp", "Không xác định"], correct: 1, hint: "Zero vector: điểm đầu = điểm cuối.", explain: "Giống nhau." },
+      { type: "num", prompt: "Số vector tạo thành từ 3 điểm phân biệt A, B, C là", answer: "6", accept: ["6"], hint: "Mỗi cặp tạo 2 vector: AB, BA, AC, CA, BC, CB.", explain: "6 vector." },
+    ],
+  },
+];
+
 const COURSES = [
   {
     id: "6",
@@ -8057,7 +8377,14 @@ const COURSES = [
     chapters: CHAPTERS,
     lessons: LESSONS,
   },
-  courseStub(10, "THPT"),
-  courseStub(11, "THPT"),
-  courseStub(12, "THPT"),
-];
+  {
+    id: "10",
+    grade: 10,
+    title: "Toán 10",
+    level: "THPT",
+    subtitle: "Chương I–X, Bài 1–10",
+    blurb: "Bài học mới đang được thêm dần.",
+    chapters: G10_CHAPTERS,
+    lessons: G10_LESSONS,
+  },
+  ];
