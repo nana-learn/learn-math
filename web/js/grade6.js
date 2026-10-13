@@ -1310,6 +1310,22 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Một tổ ong có tổ hình lục giác đều cạnh 2 cm. Tính chu vi tổ. <em>— 2 × 6 = 12 cm.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hình lục giác đều: 6 cạnh bằng nhau, 6 góc bằng 120°, tổng góc = 720°.</p></div>
+      <figure class="figure" data-animation="g6-b21-hexagon">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Hình lục giác đều">
+          <polygon points="130,30 200,65 200,135 130,170 60,135 60,65" fill="#58C167" fill-opacity="0.3" stroke="#58C167" stroke-width="2"/>
+          <circle cx="130" cy="100" r="70" fill="none" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="130" y1="30" x2="130" y2="170" stroke="#83C167" stroke-width="2"/>
+          <line x1="60" y1="65" x2="200" y2="135" stroke="#83C167" stroke-width="2"/>
+          <line x1="200" y1="65" x2="60" y2="135" stroke="#83C167" stroke-width="2"/>
+          <circle cx="130" cy="100" r="3" fill="#DDDDDD"/>
+          <text x="125" y="115" font-size="11" fill="#DDDDDD">O</text>
+          <text x="160" y="65" font-size="11" fill="#83C167">R</text>
+          <text x="95" y="115" font-size="10" fill="#58C167">a = R</text>
+          <text x="100" y="20" font-size="10" fill="#58C167">Lục giác đều</text>
+        </svg>
+        <figcaption>Hình lục giác đều: cạnh bằng bán kính đường tròn ngoại tiếp.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Hình lục giác đều cạnh 5 cm có chu vi bao nhiêu?", answer: 30, hint: "5 × 6 = 30.", explain: "30 cm." },
@@ -1364,6 +1380,20 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Trong các hình: hình chữ nhật, hình thoi, hình vuông. Hình nào có nhiều trục đối xứng nhất? <em>— Hình vuông (4 trục).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Trục đối xứng là đường thẳng chia hình thành hai phần trùng nhau. Số trục đối xứng: hình vuông = 4, tam giác đều = 3, hình tròn = vô số.</p></div>
+      <figure class="figure" data-animation="g6-b22-axis-symmetry">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Hình có trục đối xứng">
+          <!-- Butterfly shape with symmetry -->
+          <path d="M130,70 Q80,20 50,70 Q80,120 130,70" fill="#58C167" fill-opacity="0.3" stroke="#58C167" stroke-width="2"/>
+          <path d="M130,70 Q180,20 210,70 Q180,120 130,70" fill="#58C167" fill-opacity="0.3" stroke="#58C167" stroke-width="2"/>
+          <line x1="130" y1="20" x2="130" y2="120" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <circle cx="130" cy="70" r="3" fill="#DDDDDD"/>
+          <text x="120" y="60" font-size="11" fill="#DDDDDD">A</text>
+          <text x="125" y="30" font-size="11" fill="#DDDDDD">Trục đối xứng</text>
+          <text x="100" y="130" font-size="10" fill="#58C167">Hình có trục đối xứng</text>
+        </svg>
+        <figcaption>Hình có trục đối xứng (đường đứt nét là trục đối xứng).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Hình vuông có bao nhiêu trục đối xứng?", answer: 4, hint: "2 đường chéo + 2 đường trung trực.", explain: "4 trục đối xứng." },
@@ -1418,6 +1448,20 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Trong các hình: tam giác đều, hình vuông, hình tròn, hình bình hành. Hình nào KHÔNG có tâm đối xứng? <em>— Tam giác đều.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tâm đối xứng là điểm quay 180° hình trùng với chính nó. Hình bình hành, hình chữ nhật, hình vuông, hình tròn có tâm đối xứng. Tam giác đều không có.</p></div>
+      <figure class="figure" data-animation="g6-b23-center-symmetry">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Hình có tâm đối xứng">
+          <!-- Parallelogram as center symmetry example -->
+          <polygon points="70,80 190,80 210,40 90,40" fill="#58C167" fill-opacity="0.3" stroke="#58C167" stroke-width="2"/>
+          <circle cx="130" cy="60" r="3" fill="#DDDDDD"/>
+          <line x1="70" y1="80" x2="190" y2="40" stroke="#FC6255" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="190" y1="80" x2="70" y2="40" stroke="#FC6255" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="125" y="75" font-size="11" fill="#DDDDDD">O</text>
+          <text x="135" y="75" font-size="11" fill="#DDDDDD">Tâm đối xứng</text>
+          <text x="100" y="130" font-size="10" fill="#58C167">Hình có tâm đối xứng</text>
+        </svg>
+        <figcaption>Hình có tâm đối xứng (điểm O là tâm đối xứng).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Hình bình hành có tâm đối xứng là", answer: "giao điểm hai đường chéo", accept: ["giao điểm hai đường chéo", "giao điểm hai đường chéo", "giao điểm hai duong cheo"], hint: "Điểm giao nhau của hai đường chéo là tâm đối xứng.", explain: "Giao điểm hai đường chéo." },
@@ -1856,6 +1900,18 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Rút gọn \(\frac{36}{48}\). <em>— ƯCLN = 12, \(\frac{3}{4}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Phân số tối giản: tử và mẫu nguyên tố cùng nhau (ƯCLN = 1).</p></div>
+      <figure class="figure" data-animation="g6-b29-simplify-fraction">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Rút gọn phân số">
+          <text x="50" y="60" font-size="24" fill="#58C167">12/18</text>
+          <line x1="100" y1="50" x2="130" y2="50" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="100" y1="70" x2="130" y2="70" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="140" y="60" font-size="24" fill="#FC6255">2/3</text>
+          <text x="95" y="100" font-size="11" fill="#DDDDDD">Chia cả tử và mẫu cho 6</text>
+          <text x="110" y="20" font-size="10" fill="#58C167">Phân số tối giản</text>
+        </svg>
+        <figcaption>Rút gọn phân số: 12/18 = 2/3 (phân số tối giản).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Phân số \(\frac{5}{8}\) có tối giản không?", answer: "có", accept: ["có", "co"], hint: "5 và 8 nguyên tố cùng nhau (ƯCLN = 1).", explain: "Có, đã tối giản." },
@@ -1910,6 +1966,19 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Quy đồng \(\frac{3}{8}\) và \(\frac{5}{12}\). <em>— BCNN = 24, \(\frac{9}{24}\) và \(\frac{10}{24}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy đồng mẫu số: tìm BCNN của mẫu số, nhân cả tử và mẫu với thừa số phụ.</p></div>
+      <figure class="figure" data-animation="g6-b30-common-denominator">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Quy đồng mẫu số">
+          <text x="40" y="60" font-size="20" fill="#58C167">1/2 = ?/6</text>
+          <text x="40" y="90" font-size="20" fill="#FC6255">1/3 = ?/6</text>
+          <line x1="120" y1="50" x2="160" y2="50" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="120" y1="80" x2="160" y2="80" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="170" y="60" font-size="20" fill="#58C167">3/6</text>
+          <text x="170" y="90" font-size="20" fill="#FC6255">2/6</text>
+          <text x="85" y="20" font-size="10" fill="#58C167">Quy đồng mẫu số chung 6</text>
+        </svg>
+        <figcaption>Quy đồng mẫu số: 1/2 = 3/6, 1/3 = 2/6.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Quy đồng \(\frac{1}{2}\) và \(\frac{1}{5}\).", answer: "5/10 và 2/10", accept: ["5/10", "2/10"], hint: "BCNN(2,5) = 10.", explain: "\(\frac{5}{10}\) và \(\frac{2}{10}\)." },
@@ -2042,6 +2111,18 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Đổi \(\frac{7}{20}\) ra số thập phân. <em>— \(\frac{35}{100} = 0.35\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hỗn số \(a\frac{b}{c} = \frac{a \cdot c + b}{c}\). Số thập phân có mẫu là 10, 100, 1000, v.v.</p></div>
+      <figure class="figure" data-animation="g6-b32-mixed-decimal">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Hỗn số và số thập phân">
+          <text x="50" y="60" font-size="20" fill="#58C167">2 1/4</text>
+          <line x1="100" y1="55" x2="120" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="100" y1="75" x2="120" y2="75" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="130" y="60" font-size="20" fill="#FC6255">2.25</text>
+          <text x="90" y="95" font-size="11" fill="#DDDDDD">2 1/4 = 2 + 0.25 = 2.25</text>
+          <text x="100" y="20" font-size="10" fill="#58C167">Hỗn số = Số thập phân</text>
+        </svg>
+        <figcaption>Hỗn số 2 1/4 = Số thập phân 2.25.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Đổi \(2\frac{1}{2}\) ra phân số.", answer: "5/2", accept: ["5/2", "5:2"], hint: "2 × 2 + 1 = 5.", explain: "\(\frac{5}{2}\)." },
@@ -2096,6 +2177,17 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{2}{3} + \frac{3}{4}\). <em>— \(\frac{17}{12} = 1\frac{5}{12}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Cộng phân số: quy đồng mẫu → cộng tử → giữ mẫu. Rút gọn nếu có thể.</p></div>
+      <figure class="figure" data-animation="g6-b33-fraction-add">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Phép cộng phân số">
+          <text x="40" y="60" font-size="20" fill="#58C167">1/4 + 2/4</text>
+          <line x1="140" y1="55" x2="160" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="140" y1="75" x2="160" y2="75" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="170" y="60" font-size="20" fill="#FC6255">3/4</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Cộng tử số, giữ mẫu số</text>
+        </svg>
+        <figcaption>Phép cộng phân số: 1/4 + 2/4 = 3/4.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính \(\frac{3}{7} + \frac{2}{7}\).", answer: "5/7", accept: ["5/7", "5:7"], hint: "Cùng mẫu, cộng tử: 3+2=5.", explain: "\(\frac{5}{7}\)." },
@@ -2150,6 +2242,17 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{6} - \frac{1}{4}\). <em>— \(\frac{7}{12}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Trừ phân số: quy đồng mẫu → trừ tử → giữ mẫu. Rút gọn nếu có thể.</p></div>
+      <figure class="figure" data-animation="g6-b34-fraction-sub">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Phép trừ phân số">
+          <text x="40" y="60" font-size="20" fill="#58C167">3/5 - 1/5</text>
+          <line x1="140" y1="55" x2="160" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="140" y1="75" x2="160" y2="75" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="170" y="60" font-size="20" fill="#FC6255">2/5</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Trừ tử số, giữ mẫu số</text>
+        </svg>
+        <figcaption>Phép trừ phân số: 3/5 - 1/5 = 2/5.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính \(\frac{5}{8} - \frac{3}{8}\).", answer: "1/4", accept: ["1/4", "1:4", "2/8"], hint: "Cùng mẫu, trừ tử: 5-3=2, rút gọn \(\frac{2}{8} = \frac{1}{4}\).", explain: "\(\frac{1}{4}\)." },
@@ -2204,6 +2307,17 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{6} \cdot \frac{3}{10}\). <em>— \(\frac{1}{4}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Nhân phân số: tử × tử, mẫu × mẫu. Rút gọn nếu có thể.</p></div>
+      <figure class="figure" data-animation="g6-b35-fraction-mul">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Phép nhân phân số">
+          <text x="40" y="60" font-size="20" fill="#58C167">2/3 × 1/2</text>
+          <line x1="140" y1="55" x2="160" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="140" y1="75" x2="160" y2="75" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="170" y="60" font-size="20" fill="#FC6255">2/6 = 1/3</text>
+          <text x="115" y="20" font-size="10" fill="#58C167">Nhân tử × tử, mẫu × mẫu</text>
+        </svg>
+        <figcaption>Phép nhân phân số: 2/3 × 1/2 = 2/6 = 1/3.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính \(\frac{3}{5} \cdot \frac{2}{3}\).", answer: "2/5", accept: ["2/5", "2:5"], hint: "\(\frac{6}{15} = \frac{2}{5}\).", explain: "\(\frac{2}{5}\)." },
@@ -2258,6 +2372,17 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính \(\frac{5}{8} : \frac{10}{9}\). <em>— \(\frac{9}{16}\).</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Chia phân số: nhân với nghịch đảo. \(\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}\).</p></div>
+      <figure class="figure" data-animation="g6-b36-fraction-div">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Phép chia phân số">
+          <text x="40" y="60" font-size="20" fill="#58C167">3/4 ÷ 1/2</text>
+          <line x1="140" y1="55" x2="160" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="140" y1="75" x2="160" y2="75" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="170" y="60" font-size="20" fill="#FC6255">3/4 × 2/1 = 3/2</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Chia = nhân với nghịch đảo</text>
+        </svg>
+        <figcaption>Phép chia phân số: 3/4 ÷ 1/2 = 3/4 × 2/1 = 3/2.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính \(\frac{3}{5} : \frac{2}{3}\).", answer: "9/10", accept: ["9/10", "9:10"], hint: "\(\frac{3}{5} \cdot \frac{3}{2} = \frac{9}{10}\).", explain: "\(\frac{9}{10}\)." },
@@ -2312,6 +2437,19 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính \(\left(\frac{2}{3} + \frac{1}{6}\right) : \frac{5}{6}\). <em>— 1.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Thứ tự phép tính: ngoặc → nhân/chia → cộng/trừ. Tính từ trái sang phải.</p></div>
+      <figure class="figure" data-animation="g6-b37-fraction-value">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Giá trị của phân số">
+          <circle cx="130" cy="70" r="50" fill="#58C167" fill-opacity="0.2" stroke="#58C167" stroke-width="2"/>
+          <line x1="130" y1="20" x2="130" y2="120" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="80" y1="70" x2="180" y2="70" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="115" y="35" font-size="10" fill="#58C167">1/2</text>
+          <text x="165" y="65" font-size="10" fill="#58C167">1/4</text>
+          <text x="115" y="105" font-size="10" fill="#58C167">1/4</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Phân số = phần/đơn vị</text>
+        </svg>
+        <figcaption>Giá trị của phân số: 1/2, 1/4, v.v.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính \(\frac{1}{2} + \frac{1}{3} \cdot \frac{3}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "\(\frac{1}{3} \cdot \frac{3}{4} = \frac{1}{4}\), \(\frac{1}{2} + \frac{1}{4} = \frac{3}{4}\).", explain: "\(\frac{3}{4}\)." },
@@ -2442,6 +2580,20 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> So sánh 7.08 và 7.8. <em>— 7.08 < 7.8.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> So sánh số thập phân: phần nguyên trước, rồi từng hàng phần thập phân từ trái sang phải.</p></div>
+      <figure class="figure" data-animation="g6-b39-compare-decimal">
+        <svg viewBox="0 0 260 140" role="img" aria-label="So sánh số thập phân">
+          <text x="50" y="60" font-size="20" fill="#58C167">3.75</text>
+          <text x="120" y="60" font-size="20" fill="#DDDDDD">&gt;</text>
+          <text x="150" y="60" font-size="20" fill="#FC6255">3.5</text>
+          <line x1="50" y1="85" x2="80" y2="85" stroke="#58C167" stroke-width="2"/>
+          <line x1="150" y1="85" x2="180" y2="85" stroke="#FC6255" stroke-width="2"/>
+          <text x="55" y="100" font-size="11" fill="#58C167">3.75</text>
+          <text x="155" y="100" font-size="11" fill="#FC6255">3.50</text>
+          <text x="100" y="20" font-size="10" fill="#58C167">So sánh hàng phần mười</text>
+        </svg>
+        <figcaption>So sánh số thập phân: 3.75 &gt; 3.50.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "So sánh 3.5 và 3.05", choices: ["3.5 > 3.05", "3.5 < 3.05", "Bằng nhau", "Không xác định"], correct: 0, hint: "3.5 = 3.50 > 3.05.", explain: "3.5 > 3.05." },
@@ -2496,6 +2648,19 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính 7.25 + 3.8. <em>— 11.05.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đặt tính dấu phẩy thẳng hàng. Cộng/trừ như số tự nhiên. Viết dấu phẩy ở kết quả.</p></div>
+      <figure class="figure" data-animation="g6-b40-decimal-add">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Cộng số thập phân">
+          <text x="50" y="50" font-size="18" fill="#58C167">  2.45</text>
+          <text x="50" y="70" font-size="18" fill="#58C167">+ 1.73</text>
+          <line x1="50" y1="80" x2="130" y2="80" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="50" y="100" font-size="18" fill="#FC6255">  4.18</text>
+          <text x="135" y="55" font-size="10" fill="#58C167">2.45 = 2 + 0.45</text>
+          <text x="135" y="75" font-size="10" fill="#FC6255">1.73 = 1 + 0.73</text>
+          <text x="115" y="20" font-size="10" fill="#58C167">Cộng theo hàng</text>
+        </svg>
+        <figcaption>Cộng số thập phân: 2.45 + 1.73 = 4.18.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính 4.5 + 2.3.", answer: "6.8", accept: ["6.8", "6,8"], hint: "4+2=6, 5+3=8.", explain: "6.8." },
@@ -2550,6 +2715,18 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính 3.5 × 2.4. <em>— 8.4.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Nhân như số tự nhiên, đếm tổng số chữ số sau dấu phẩy, đặt dấu phẩy từ phải sang trái.</p></div>
+      <figure class="figure" data-animation="g6-b41-decimal-mul">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Nhân số thập phân">
+          <text x="50" y="50" font-size="18" fill="#58C167">  1.5</text>
+          <text x="50" y="70" font-size="18" fill="#58C167">× 2.4</text>
+          <line x1="50" y1="85" x2="110" y2="85" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="50" y="100" font-size="18" fill="#FC6255">  3.60</text>
+          <text x="110" y="35" font-size="10" fill="#58C167">1.5 × 2.4 = 3.60</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Tổng số chữ số thập phân</text>
+        </svg>
+        <figcaption>Nhân số thập phân: 1.5 × 2.4 = 3.60.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính 3.2 × 2.", answer: "6.4", accept: ["6.4", "6,4"], hint: "32 × 2 = 64, một chữ số sau dấu phẩy.", explain: "6.4." },
@@ -2604,6 +2781,18 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính 7.2 : 0.08. <em>— 90.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Chia số thập phân: nhân cả số bị chia và số chia để biến số chia thành số tự nhiên.</p></div>
+      <figure class="figure" data-animation="g6-b42-decimal-div">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Chia số thập phân">
+          <text x="50" y="60" font-size="20" fill="#58C167">4.8 ÷ 0.6</text>
+          <text x="50" y="90" font-size="18" fill="#FC6255">= 48 ÷ 6 = 8</text>
+          <line x1="150" y1="55" x2="190" y2="55" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="150" y1="85" x2="190" y2="85" stroke="#DDDDDD" stroke-width="1"/>
+          <text x="200" y="60" font-size="20" fill="#58C167">8</text>
+          <text x="125" y="20" font-size="10" fill="#58C167">Chia số thập phân = loại bỏ dấu phẩy</text>
+        </svg>
+        <figcaption>Chia số thập phân: 4.8 ÷ 0.6 = 8.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Tính 4.5 : 0.5.", answer: "9", accept: ["9", "9.0"], hint: "45 : 5 = 9.", explain: "9." },
@@ -2658,6 +2847,18 @@ const G6_LESSONS = [
         <p><strong>Luyện dạng SBT.</strong> Tính 15 : 60 dưới dạng phần trăm. <em>— 25%.</em></p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tỉ số phần trăm: chia rồi nhân với 100, viết với ký hiệu %. a% của b = (a × b) / 100.</p></div>
+      <figure class="figure" data-animation="g6-b43-percentage">
+        <svg viewBox="0 0 260 140" role="img" aria-label="Tỉ số phần trăm">
+          <rect x="40" y="60" width="80" height="60" fill="#58C167" fill-opacity="0.3" stroke="#58C167" stroke-width="2"/>
+          <line x1="80" y1="60" x2="80" y2="120" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <line x1="40" y1="90" x2="120" y2="90" stroke="#DDDDDD" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="60" y="115" font-size="11" fill="#58C167">50%</text>
+          <text x="100" y="75" font-size="11" fill="#FC6255">50%</text>
+          <text x="100" y="20" font-size="10" fill="#58C167">50% = 50/100 = 0.5</text>
+        </svg>
+        <figcaption>Tỉ số phần trăm: 50% = 50/100 = 0.5.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "Viết \(\frac{30}{100}\) thành phần trăm.", answer: "30%", accept: ["30%", "30 %"], hint: "30/100 = 30%.", explain: "30%." },

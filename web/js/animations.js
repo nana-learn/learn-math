@@ -1009,6 +1009,132 @@ const AnimationManager = {
         ]
       },
       
+      // g6-b22: Hình có trục đối xứng
+      'g6-b22-axis-symmetry': {
+        steps: [
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b23: Hình có tâm đối xứng
+      'g6-b23-center-symmetry': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b29: Rút gọn phân số
+      'g6-b29-simplify-fraction': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b30: Quy đồng mẫu số
+      'g6-b30-common-denominator': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b32: Hỗn số và số thập phân
+      'g6-b32-mixed-decimal': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b39: So sánh số thập phân
+      'g6-b39-compare-decimal': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b33: Phép cộng phân số
+      'g6-b33-fraction-add': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b34: Phép trừ phân số
+      'g6-b34-fraction-sub': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b35: Phép nhân phân số
+      'g6-b35-fraction-mul': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b36: Phép chia phân số
+      'g6-b36-fraction-div': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b37: Giá trị của phân số
+      'g6-b37-fraction-value': {
+        steps: [
+          { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b41: Nhân số thập phân
+      'g6-b41-decimal-mul': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b42: Chia số thập phân
+      'g6-b42-decimal-div': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b43: Tỉ số phần trăm
+      'g6-b43-percentage': {
+        steps: [
+          { selector: 'rect:not([fill-opacity])', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b40: Cộng số thập phân
+      'g6-b40-decimal-add': {
+        steps: [
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+        ]
+      },
+      
       // g6-b27: Biểu đồ cột kép
       'g6-b27-double-bar-chart': {
         steps: [
