@@ -8655,6 +8655,330 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Tam giác ABC: a=6, b=8, góc C=60°. c² = ?", choices: ["52", "28", "100", "16"], correct: 0, hint: "c² = 36 + 64 - 2·6·8·0.5 = 52.", explain: "52." },
       { type: "num", prompt: "Tam giác ABC: AB=5, AC=7, góc A=60°. BC² =", answer: "39", accept: ["39"], hint: "BC² = 25 + 49 - 2·5·7·0.5 = 39.", explain: "39." },
     ],
+  },,
+  {
+    id: "g10-b21",
+    num: 21,
+    chapter: 7,
+    title: "Đường tròn trong mặt phẳng tọa độ",
+    summary: "Đường tròn được xác định bởi tâm và bán kính.",
+    body: String.raw`<p><strong>Vì sao cần đường tròn?</strong> Đường tròn xuất hiện nhiều trong hình học và thực tế.</p>
+      <div class="definition">
+        <p>Đường tròn tâm I(a, b), bán kính R: (x - a)² + (y - b)² = R².</p>
+        <p>Điểm M(x, y) thuộc đường tròn khi IM = R.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Đường tròn tâm O(0,0), bán kính 5: x² + y² = 25.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Đường tròn tâm I(2, -3), bán kính 4: (x-2)² + (y+3)² = 16.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm dấu khi viết phương trình: (x - a)², không phải (x + a)².</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Đường tròn tâm (1, 2), bán kính 3 là? <em>— (x-1)² + (y-2)² = 9.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phương trình: (x - a)² + (y - b)² = R².</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Đường tròn tâm O(0,0), bán kính 2 là?", choices: ["x² + y² = 4", "x² + y² = 2", "(x-2)² + y² = 4", "x² + (y-2)² = 4"], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
+      { type: "mc", prompt: "Đường tròn tâm I(3, -1), bán kính 5 là?", choices: ["(x-3)² + (y+1)² = 25", "(x+3)² + (y-1)² = 25", "(x-3)² + (y-1)² = 25", "(x+3)² + (y+1)² = 25"], correct: 0, hint: "a=3, b=-1 ⇒ (x-3)² + (y-(-1))² = 25.", explain: "(x-3)² + (y+1)² = 25." },
+      { type: "num", prompt: "Đường tròn tâm (2, 3), bán kính √5 có phương trình là", answer: "(x-2)² + (y-3)² = 5", accept: ["(x-2)^2 + (y-3)^2 = 5", "(x-2)² + (y-3)² = 5"], hint: "R² = 5.", explain: "(x-2)² + (y-3)² = 5." },
+    ],
+  },
+  {
+    id: "g10-b22",
+    num: 22,
+    chapter: 7,
+    title: "Ba đường conic",
+    summary: "Elip, parabol, hypebol là ba đường conic.",
+    body: String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
+      <div class="definition">
+        <p>Elip: tổng khoảng cách đến hai tiêu điểm không đổi.</p>
+        <p>Parabol: tập hợp điểm cách đều điểm焦点 và đường chuẩn.</p>
+        <p>Hypebol: hiệu khoảng cách đến hai tiêu điểm không đổi.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Elip chuẩn: x²/a² + y²/b² = 1 (a > b > 0).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Parabol chuẩn: y² = 2px (p > 0).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm dạng phương trình giữa elip, parabol, hypebol.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Phương trình nào là parabol? <em>— y² = 4x.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều焦点 và đường chuẩn.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phương trình nào là elip?", choices: ["x²/4 + y²/9 = 1", "y² = 4x", "x²/4 - y²/9 = 1", "x² + y² = 4"], correct: 0, hint: "Elip có dạng x²/a² + y²/b² = 1.", explain: "x²/4 + y²/9 = 1." },
+      { type: "mc", prompt: "Phương trình nào là hypebol?", choices: ["x²/4 - y²/9 = 1", "x²/4 + y²/9 = 1", "y² = 4x", "x² + y² = 4"], correct: 0, hint: "Hypebol có dấu trừ giữa hai phân số.", explain: "x²/4 - y²/9 = 1." },
+      { type: "num", prompt: "Parabol y² = 8x có tham số p =", answer: "4", accept: ["4"], hint: "2p = 8 ⇒ p = 4.", explain: "4." },
+    ],
+  },
+  {
+    id: "g10-b23",
+    num: 23,
+    chapter: 8,
+    title: "Quy tắc cộng và quy tắc nhân",
+    summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
+    body: String.raw`<p><strong>Vì sao cần quy tắc cộng và nhân?</strong> Giải bài toán đếm số cách thực hiện hành động.</p>
+      <div class="definition">
+        <p>Quy tắc cộng: Nếu có m cách cho công việc A, n cách cho công việc B, và A, B loại trừ nhau, thì có m + n cách.</p>
+        <p>Quy tắc nhân: Nếu có m cách cho công việc A, n cách cho công việc B sau A, thì có m × n cách.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Từ A đến B có 3 đường, B đến C có 2 đường. Từ A đến C có 3 × 2 = 6 cách.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Có 5 nam, 4 nữ. Chọn 1 người: 5 + 4 = 9 cách.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm quy tắc cộng và nhân khi A và B không loại trừ nhau.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Chọn 1 môn từ 3 môn Toán, Văn, Anh là? <em>— 3 cách.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Cộng: loại trừ, Nhân: phối hợp.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Từ nhà đến bến xe có 4 đường, bến xe đến trường có 3 đường. Số cách đi từ nhà đến trường là?", choices: ["12", "7", "4", "3"], correct: 0, hint: "4 × 3 = 12.", explain: "12." },
+      { type: "mc", prompt: "Có 5 cuốn sách Toán, 4 cuốn Văn. Chọn 1 cuốn là?", choices: ["9", "20", "5", "4"], correct: 0, hint: "5 + 4 = 9.", explain: "9." },
+      { type: "num", prompt: "Từ A đến B có 3 đường, B đến C có 2 đường, C đến D có 2 đường. Số cách từ A đến D là", answer: "12", accept: ["12"], hint: "3 × 2 × 2 = 12.", explain: "12." },
+    ],
+  },
+  {
+    id: "g10-b24",
+    num: 24,
+    chapter: 8,
+    title: "Hoán vị, chỉnh hợp",
+    summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
+    body: String.raw`<p><strong>Vì sao cần hoán vị và chỉnh hợp?</strong> Đếm số cách sắp xếp và chọn phần tử.</p>
+      <div class="definition">
+        <p>Hoán vị n phần tử: P_n = n!.</p>
+        <p>Chỉnh hợp chập k của n phần tử: A_n^k = n!/(n-k)!.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Sắp xếp 3 người vào 3 ghế: 3! = 6 cách.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Chọn 2 người từ 5 người và sắp xếp: A_5^2 = 5 × 4 = 20.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm hoán vị (sắp xếp toàn bộ) với chỉnh hợp (chọn có thứ tự).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Sắp xếp 4 người vào 4 ghế là? <em>— 4! = 24.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Hoán vị: P_n = n!, Chỉnh hợp: A_n^k = n!/(n-k)!.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Sắp xếp 5 người vào 5 ghế là?", choices: ["120", "25", "5", "10"], correct: 0, hint: "5! = 120.", explain: "120." },
+      { type: "mc", prompt: "Chọn 2 người từ 6 người và sắp xếp là?", choices: ["30", "15", "12", "6"], correct: 0, hint: "A_6^2 = 6 × 5 = 30.", explain: "30." },
+      { type: "num", prompt: "A_5^3 =", answer: "60", accept: ["60"], hint: "5 × 4 × 3 = 60.", explain: "60." },
+    ],
+  },
+  {
+    id: "g10-b25",
+    num: 25,
+    chapter: 8,
+    title: "Tổ hợp",
+    summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
+    body: String.raw`<p><strong>Vì sao cần tổ hợp?</strong> Khi chọn phần tử mà thứ tự không quan trọng.</p>
+      <div class="definition">
+        <p>Tổ hợp chập k của n phần tử: C_n^k = n!/(k!(n-k)!).</p>
+        <p>C_n^k = C_n^{n-k}, C_n^k + C_n^{k-1} = C_{n+1}^k.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Chọn 2 người từ 5 người: C_5^2 = 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> C_6^2 = C_6^4 = 15.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm tổ hợp (không thứ tự) với chỉnh hợp (có thứ tự).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>C_4^2 = ? <em>— 6.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> C_n^k = n!/(k!(n-k)!).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "C_5^2 =", choices: ["10", "20", "25", "5"], correct: 0, hint: "5 × 4 / 2 = 10.", explain: "10." },
+      { type: "mc", prompt: "C_6^3 =", choices: ["20", "30", "60", "15"], correct: 0, hint: "6 × 5 × 4 / 6 = 20.", explain: "20." },
+      { type: "num", prompt: "Chọn 2 người từ 8 người là", answer: "28", accept: ["28"], hint: "C_8^2 = 8 × 7 / 2 = 28.", explain: "28." },
+    ],
+  },
+  {
+    id: "g10-b26",
+    num: 26,
+    chapter: 9,
+    title: "Số gần đúng và sai số",
+    summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
+    body: String.raw`<p><strong>Vì sao cần số gần đúng?</strong> Đo đạc thực tế luôn có sai số.</p>
+      <div class="definition">
+        <p>Số gần đúng là số gần giá trị đúng.</p>
+        <p>Sai số tuyệt đối: |a - ā|, trong đó a là giá trị đúng, ā là giá trị gần đúng.</p>
+        <p>Quy tròn số: làm tròn đến hàng nhất định.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> π ≈ 3.14, sai số ≈ 0.0016.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> 3.14159 quy tròn đến hàng phần trăm là 3.14.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm quy tròn số với làm tròn sai số.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>2.71828 quy tròn đến hàng phần nghìn là? <em>— 2.718.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Quy tròn đến hàng nào thì chữ số hàng đó giữ nguyên, các chữ số sau bằng 0.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "3.14159 quy tròn đến hàng phần trăm là?", choices: ["3.14", "3.15", "3.142", "3.1"], correct: 0, hint: "Hàng phần trăm là số 4, chữ số sau là 1 < 5 nên giữ nguyên.", explain: "3.14." },
+      { type: "mc", prompt: "5.678 quy tròn đến hàng đơn vị là?", choices: ["6", "5", "5.7", "5.68"], correct: 0, hint: "Chữ số hàng đơn vị là 5, chữ số sau là 6 ≥ 5 nên cộng thêm 1.", explain: "6." },
+      { type: "num", prompt: "12.3456 quy tròn đến hàng phần trăm là", answer: "12.35", accept: ["12.35"], hint: "Hàng phần trăm là 4, chữ số sau là 5 nên cộng thêm 1.", explain: "12.35." },
+    ],
+  },
+  {
+    id: "g10-b27",
+    num: 27,
+    chapter: 9,
+    title: "Các số đặc trưng đo xu thế trung tâm",
+    summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
+    body: String.raw`<p><strong>Vì sao cần số đặc trưng?</strong> Mô tả mẫu số liệu bằng một giá trị đại diện.</p>
+      <div class="definition">
+        <p>Số trung bình: x̄ = (x₁ + x₂ + ... + x_n)/n.</p>
+        <p>Trung vị: giá trị ở giữa khi sắp xếp thứ tự.</p>
+        <p>Mode: giá trị xuất hiện nhiều nhất.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Mẫu: 2, 3, 5, 7, 8. Số trung bình = 5, trung vị = 5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Mẫu: 1, 2, 2, 3, 4. Mode = 2.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm trung vị với số trung bình khi có giá trị bất thường.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Mẫu: 1, 3, 5, 7, 9. Trung vị là? <em>— 5.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Số trung bình: tổng chia n, Trung vị: giá trị giữa, Mode: xuất hiện nhiều nhất.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Mẫu: 2, 4, 6, 8, 10. Số trung bình là?", choices: ["6", "5", "4", "7"], correct: 0, hint: "(2+4+6+8+10)/5 = 30/5 = 6.", explain: "6." },
+      { type: "mc", prompt: "Mẫu: 1, 2, 2, 3, 4, 5. Trung vị là?", choices: ["2.5", "2", "3", "2.25"], correct: 0, hint: "6 số, trung vị = (2+3)/2 = 2.5.", explain: "2.5." },
+      { type: "num", prompt: "Mẫu: 3, 5, 7, 9, 11, 13. Số trung bình là", answer: "8", accept: ["8"], hint: "(3+5+7+9+11+13)/6 = 48/6 = 8.", explain: "8." },
+    ],
+  },
+  {
+    id: "g10-b28",
+    num: 28,
+    chapter: 9,
+    title: "Các số đặc trưng đo độ phân tán",
+    summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
+    body: String.raw`<p><strong>Vì sao cần số đặc trưng đo độ phân tán?</strong> Đánh giá mức độ phân tán quanh giá trị trung bình.</p>
+      <div class="definition">
+        <p>Phương sai: s² = Σ(x_i - x̄)²/(n-1).</p>
+        <p>Độ lệch chuẩn: s = √s².</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Mẫu: 2, 4, 6, 8, 10. x̄ = 6. Phương sai ≈ 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Độ lệch chuẩn là căn bậc hai phương sai.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên chia cho n-1 (mẫu) thay vì n (dân số).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Độ lệch chuẩn là căn bậc hai của? <em>— Phương sai.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phương sai đo bình phương khoảng cách, độ lệch chuẩn có cùng đơn vị.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Độ lệch chuẩn là căn bậc hai của?", choices: ["Phương sai", "Số trung bình", "Trung vị", "Mode"], correct: 0, hint: "s = √s².", explain: "Phương sai." },
+      { type: "mc", prompt: "Phương sai càng lớn thì dữ liệu?", choices: ["Phân tán nhiều", "Phân tán ít", "Đều nhau", "Không thay đổi"], correct: 0, hint: "Phương sai đo độ phân tán.", explain: "Phân tán nhiều." },
+      { type: "num", prompt: "Mẫu: 2, 4, 6. Phương sai ≈", answer: "4", accept: ["4"], hint: "x̄=4, (4+0+4)/2 = 4.", explain: "4." },
+    ],
+  },
+  {
+    id: "g10-b29",
+    num: 29,
+    chapter: 10,
+    title: "Xác suất của biến cố trong một số trò chơi đơn giản",
+    summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
+    body: String.raw`<p><strong>Vì sao cần xác suất?</strong> Đánh giá khả năng xảy ra của biến cố.</p>
+      <div class="definition">
+        <p>Xác suất của biến cố A: P(A) = số kết quả thuận lợi / tổng số kết quả.</p>
+        <p>0 ≤ P(A) ≤ 1. P(∅) = 0, P(Ω) = 1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Gieo xúc xắc: P(ra số chẵn) = 3/6 = 1/2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Gieo 2 xúc xắc: P(tổng bằng 7) = 6/36 = 1/6.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên rằng các kết quả phải đồng khả năng.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Gieo đồng xu: P(sấp) = ? <em>— 1/2.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> P(A) = số kết quả thuận lợi / tổng số kết quả đồng khả năng.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Gieo xúc xắc: P(ra số lẻ) =", choices: ["1/2", "1/3", "1/6", "5/6"], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
+      { type: "mc", prompt: "Gieo đồng xu 2 lần: P(được 1 sấp 1 ngửa) =", choices: ["1/2", "1/4", "3/4", "1"], correct: 0, hint: "2 kết quả thuận lợi (sấp-ngửa, ngửa-sấp) / 4 kết quả.", explain: "1/2." },
+      { type: "num", prompt: "Gieo xúc xắc: P(ra số > 4) =", answer: "1/3", accept: ["1/3", "0.333", "0.33"], hint: "2 số (5,6) / 6 mặt = 1/3.", explain: "1/3." },
+    ],
+  },
+  {
+    id: "g10-b30",
+    num: 30,
+    chapter: 10,
+    title: "Xác suất của biến cố",
+    summary: "Xác suất của hợp, giao, và biến cố đối.",
+    body: String.raw`<p><strong>Vì sao cần xác suất của biến cố?</strong> Tính xác suất khi có nhiều biến cố kết hợp.</p>
+      <div class="definition">
+        <p>P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</p>
+        <p>P(A') = 1 - P(A) (biến cố đối).</p>
+        <p>A và B độc lập: P(A ∩ B) = P(A) × P(B).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> P(A) = 0.4, P(B) = 0.3, P(A ∩ B) = 0.1. P(A ∪ B) = 0.6.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> P(A) = 0.2 ⇒ P(A') = 0.8.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên trừ P(A ∩ B) khi tính P(A ∪ B).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>P(A) = 0.3 ⇒ P(A') = ? <em>— 0.7.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> P(A') = 1 - P(A), P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "P(A) = 0.25 ⇒ P(A') =", choices: ["0.75", "0.25", "0.5", "1"], correct: 0, hint: "1 - 0.25 = 0.75.", explain: "0.75." },
+      { type: "mc", prompt: "P(A) = 0.4, P(B) = 0.3, P(A ∩ B) = 0.1. P(A ∪ B) =", choices: ["0.6", "0.7", "0.5", "0.8"], correct: 0, hint: "0.4 + 0.3 - 0.1 = 0.6.", explain: "0.6." },
+      { type: "num", prompt: "P(A) = 0.6 ⇒ P(A') =", answer: "0.4", accept: ["0.4", ".4"], hint: "1 - 0.6 = 0.4.", explain: "0.4." },
+    ],
   },
 ];
 
