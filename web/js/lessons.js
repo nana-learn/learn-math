@@ -4297,6 +4297,18 @@ const G8_LESSONS = [
       <div class="example">
         <p><strong>Luyện dạng SBT.</strong> \(0,75a^2b^3 = \dfrac{3}{4}a^2b^3\). Hệ số \(\dfrac{3}{4}\), bậc 5. \(2xy^5z^2\) bậc 8. \(-x^4y\) bậc 5.</p>
       </div>
+      <figure class="figure" data-animation="g10-b2-sets">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Venn diagram của hai tập hợp">
+          <circle cx="90" cy="80" r="48" fill="#83C167" fill-opacity="0.3" stroke="#83C167" stroke-width="2"/>
+          <circle cx="170" cy="80" r="48" fill="#FC6255" fill-opacity="0.3" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="90" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="170" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="70" y="75" font-size="12" fill="#83C167">A</text>
+          <text x="190" y="75" font-size="12" fill="#FC6255">B</text>
+        </svg>
+        <figcaption>Venn diagram của hai tập hợp A và B.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Biểu thức nào là đơn thức?", choices: ["3x + 2", "5/x", "-7y²", "√x"], correct: 2, hint: "Đơn thức là tích số × biến^số mũ.", explain: "-7y² là tích -7 × y². Các biểu thức khác có phép cộng, biến ở mẫu hoặc dấu căn." },
@@ -8080,6 +8092,17 @@ const G10_LESSONS = [
         <p><strong>Lỗi thường gặp.</strong> Quên tập rỗng.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tập hợp là nhóm phần tử.</p></div>
+      <figure class="figure" data-animation="g10-b2-sets">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Venn diagram của hai tập hợp">
+          <circle cx="90" cy="80" r="48" fill="#83C167" fill-opacity="0.3" stroke="#83C167" stroke-width="2"/>
+          <circle cx="170" cy="80" r="48" fill="#FC6255" fill-opacity="0.3" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="90" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="170" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="70" y="75" font-size="12" fill="#83C167">A</text>
+          <text x="190" y="75" font-size="12" fill="#FC6255">B</text>
+        </svg>
+        <figcaption>Venn diagram của hai tập hợp A và B.</figcaption>
+      </figure>
     `,
     exercises: [
       { type: "num", prompt: "Số phần tử của tập {1, 3, 5, 7, 9} là", answer: "5", accept: ["5"], hint: "Đếm các phần tử.", explain: "5 phần tử." },
@@ -8107,6 +8130,19 @@ const G10_LESSONS = [
         <p><strong>Lỗi thường gặp.</strong> {a} ≠ a (một là tập, một là phần tử).</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> A ⊆ B nếu mọi phần tử của A đều trong B.</p></div>
+      <figure class="figure" data-animation="g10-b3-subset">
+        <svg viewBox="0 0 240 160" role="img" aria-label="Tập A là tập con của tập B">
+          <circle cx="120" cy="80" r="64" fill="#83C167" fill-opacity="0.2" stroke="#83C167" stroke-width="2"/>
+          <circle cx="120" cy="70" r="32" fill="#FC6255" fill-opacity="0.3" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="120" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="120" cy="70" r="3" fill="#DDDDDD"/>
+          <text x="145" y="55" font-size="12" fill="#FC6255">A</text>
+          <text x="175" y="100" font-size="12" fill="#83C167">B</text>
+          <text x="80" y="135" font-size="11" fill="#DDDDDD">A ⊆ B</text>
+        </svg>
+        <figcaption>Tập A là tập con của tập B (A ⊆ B).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Tập nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{4, 5}", "{1, 2, 3, 4}"], correct: 0, hint: "1 và 2 đều trong tập.", explain: "{1, 2} là tập con." },
@@ -8136,6 +8172,20 @@ const G10_LESSONS = [
         <p><strong>Lỗi thường gặp.</strong> A \\ B ≠ B \\ A.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hợp: hoặc, Giao: và, Hiệu: nhưng không.</p></div>
+      <figure class="figure" data-animation="g10-b4-set-operations">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Hợp, giao, hiệu của hai tập hợp">
+          <circle cx="90" cy="80" r="48" fill="#83C167" fill-opacity="0.2" stroke="#83C167" stroke-width="2"/>
+          <circle cx="170" cy="80" r="48" fill="#FC6255" fill-opacity="0.2" stroke="#FC6255" stroke-width="2"/>
+          <path d="M90,32 A48,48 0 1,1 90,128 A48,48 0 1,1 90,32 M170,32 A48,48 0 1,1 170,128 A48,48 0 1,1 170,32" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <circle cx="90" cy="80" r="3" fill="#DDDDDD"/>
+          <circle cx="170" cy="80" r="3" fill="#DDDDDD"/>
+          <text x="70" y="75" font-size="12" fill="#83C167">A</text>
+          <text x="190" y="75" font-size="12" fill="#FC6255">B</text>
+          <text x="115" y="45" font-size="11" fill="#58C4DD">A ∪ B</text>
+        </svg>
+        <figcaption>Venn diagram của hợp (A ∪ B), giao (A ∩ B), hiệu (A \ B).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B có bao nhiêu phần tử?", answer: "4", accept: ["4"], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
@@ -8167,6 +8217,20 @@ const G10_LESSONS = [
         <p>Cho a > b. Khẳng định nào đúng? <em>— a + 2 > b + 2.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Bất đẳng thức là so sánh A > B hoặc A < B.</p></div>
+      <figure class="figure" data-animation="g10-b5-inequality">
+        <svg viewBox="0 0 260 80" role="img" aria-label="Minh họa bất đẳng thức trên trục số">
+          <line x1="20" y1="40" x2="240" y2="40" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="80" cy="40" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="40" r="3" fill="#DDDDDD"/>
+          <line x1="80" y1="35" x2="80" y2="45" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="180" y1="35" x2="180" y2="45" stroke="#FC6255" stroke-width="2"/>
+          <text x="75" y="55" font-size="11" fill="#DDDDDD">a</text>
+          <text x="175" y="55" font-size="11" fill="#DDDDDD">b</text>
+          <text x="130" y="65" font-size="11" fill="#83C167">a < b</text>
+        </svg>
+        <figcaption>Minh họa a < b trên trục số.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Bất đẳng thức nào đúng?", choices: ["3 > 5", "2 < 1", "4 ≥ 4", "-1 > 0"], correct: 2, hint: "4 = 4 nên 4 ≥ 4 đúng.", explain: "4 ≥ 4 là đúng." },
@@ -8199,6 +8263,17 @@ const G10_LESSONS = [
         <p>Nghiệm của 3x - 6 < 0 là? <em>— x < 2.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Giải bất phương trình là tìm tập nghiệm.</p></div>
+      <figure class="figure" data-animation="g10-b6-linear-inequality">
+        <svg viewBox="0 0 260 80" role="img" aria-label="Giải bất phương trình trên trục số">
+          <line x1="20" y1="40" x2="240" y2="40" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="130" cy="40" r="3" fill="#DDDDDD"/>
+          <line x1="130" y1="40" x2="230" y2="40" stroke="#58C4DD" stroke-width="2"/>
+          <text x="125" y="55" font-size="11" fill="#DDDDDD">2</text>
+          <text x="180" y="65" font-size="11" fill="#58C4DD">x > 2</text>
+        </svg>
+        <figcaption>Giải bất phương trình x > 2 trên trục số.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Nghiệm của 2x - 4 > 0 là?", choices: ["x > 2", "x < 2", "x > 4", "x < 4"], correct: 0, hint: "2x > 4 ⇒ x > 2.", explain: "x > 2." },
@@ -8231,6 +8306,19 @@ const G10_LESSONS = [
         <p>Dấu của f(x) = -x + 5 khi x = 3? <em>— Dương.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Nghiệm x = -b/a, dấu thay đổi tại nghiệm.</p></div>
+      <figure class="figure" data-animation="g10-b7-linear-sign">
+        <svg viewBox="0 0 260 80" role="img" aria-label="Dấu của nhị thức bậc nhất trên trục số">
+          <line x1="20" y1="40" x2="240" y2="40" stroke="#DDDDDD" stroke-width="1.5"/>
+          <circle cx="130" cy="40" r="3" fill="#DDDDDD"/>
+          <line x1="20" y1="40" x2="130" y2="40" stroke="#FC6255" stroke-width="2" stroke-dasharray="5 3"/>
+          <line x1="130" y1="40" x2="240" y2="40" stroke="#58C4DD" stroke-width="2"/>
+          <text x="125" y="55" font-size="11" fill="#DDDDDD">2</text>
+          <text x="80" y="65" font-size="11" fill="#FC6255">f(x) < 0</text>
+          <text x="170" y="65" font-size="11" fill="#58C4DD">f(x) > 0</text>
+        </svg>
+        <figcaption>Dấu của nhị thức f(x) = ax + b trên trục số.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Nghiệm của f(x) = 3x - 6 là?", choices: ["x = 2", "x = -2", "x = 3", "x = -3"], correct: 0, hint: "3x = 6 ⇒ x = 2.", explain: "x = 2." },
@@ -8263,6 +8351,21 @@ const G10_LESSONS = [
         <p>Đỉnh của y = x² - 4x + 3 là? <em>— (2, -1).</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đồ thị parabol, đỉnh (-b/2a, -Δ/4a).</p></div>
+      <figure class="figure" data-animation="g10-b8-quadratic">
+        <svg viewBox="0 0 260 180" role="img" aria-label="Đồ thị hàm số y = ax²">
+          <line x1="20" y1="90" x2="240" y2="90" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="130" y1="10" x2="130" y2="170" stroke="#DDDDDD" stroke-width="1"/>
+          <path d="M20,160 Q130,10 240,160" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="130" cy="90" r="3" fill="#DDDDDD"/>
+          <circle cx="130" cy="10" r="3" fill="#DDDDDD"/>
+          <text x="140" y="85" font-size="11" fill="#DDDDDD">O</text>
+          <text x="140" y="95" font-size="11" fill="#DDDDDD">(0,0)</text>
+          <text x="135" y="20" font-size="11" fill="#58C4DD">Đỉnh</text>
+          <text x="200" y="40" font-size="12" fill="#58C4DD">y = x²</text>
+        </svg>
+        <figcaption>Đồ thị hàm số y = ax² (a > 0).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "Đồ thị y = 2x² có hướng?", choices: ["Lên", "Xuống", "Trái", "Phải"], correct: 0, hint: "a = 2 > 0 nên hướng lên.", explain: "Hướng lên." },
@@ -8295,6 +8398,21 @@ const G10_LESSONS = [
         <p>Dấu của f(x) = x² - 5x + 6 tại x = 4? <em>— Âm.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Δ < 0 cùng dấu a, Δ > 0 đổi dấu tại 2 nghiệm.</p></div>
+      <figure class="figure" data-animation="g10-b9-quadratic-sign">
+        <svg viewBox="0 0 260 180" role="img" aria-label="Đồ thị tam thức bậc hai và dấu của nó">
+          <line x1="20" y1="90" x2="240" y2="90" stroke="#DDDDDD" stroke-width="1"/>
+          <line x1="130" y1="10" x2="130" y2="170" stroke="#DDDDDD" stroke-width="1"/>
+          <path d="M20,160 Q130,10 240,160" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="80" cy="90" r="3" fill="#DDDDDD"/>
+          <circle cx="180" cy="90" r="3" fill="#DDDDDD"/>
+          <text x="70" y="105" font-size="11" fill="#DDDDDD">x₁</text>
+          <text x="190" y="105" font-size="11" fill="#DDDDDD">x₂</text>
+          <text x="140" y="95" font-size="11" fill="#DDDDDD">O</text>
+          <text x="135" y="20" font-size="11" fill="#58C4DD">Đỉnh</text>
+        </svg>
+        <figcaption>Đồ thị tam thức bậc hai với hai nghiệm phân biệt (Δ > 0).</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "f(x) = x² + 1 có bao nhiêu nghiệm?", choices: ["0", "1", "2", "Vô số"], correct: 0, hint: "Δ = -4 < 0 nên vô nghiệm.", explain: "0 nghiệm." },
@@ -8327,6 +8445,20 @@ const G10_LESSONS = [
         <p>AB và BA là? <em>— Hai vector ngược nhau.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Vector có điểm đầu và điểm cuối.</p></div>
+      <figure class="figure" data-animation="g10-b10-vector">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Vector trong mặt phẳng">
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="0" marker-end="url(#arrow)"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="60" r="3" fill="#DDDDDD"/>
+          <text x="40" y="130" font-size="11" fill="#58C4DD">A</text>
+          <text x="160" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="90" y="140" font-size="12" fill="#DDDDDD">→</text>
+          <text x="105" y="145" font-size="10" fill="#DDDDDD">AB</text>
+        </svg>
+        <figcaption>Vector AB từ điểm A đến điểm B.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "AB và BA là hai vector?", choices: ["Bằng nhau", "Đối nhau", "Cùng hướng", "Cùng độ dài"], correct: 1, hint: "AB và BA ngược hướng.", explain: "Đối nhau (ngược hướng, cùng độ dài)." },
@@ -8359,6 +8491,27 @@ const G10_LESSONS = [
         <p>AB + BC + CA = ? <em>— Vector không 0.</em></p>
       </details>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc tam giác: AB + BC = AC.</p></div>
+      <figure class="figure" data-animation="g10-b11-vector-sum">
+        <svg viewBox="0 0 260 160" role="img" aria-label="Tổng hai vector theo quy tắc tam giác">
+          <line x1="50" y1="120" x2="150" y2="60" stroke="#58C4DD" stroke-width="2"/>
+          <line x1="150" y1="60" x2="210" y2="120" stroke="#FC6255" stroke-width="2"/>
+          <line x1="50" y1="120" x2="210" y2="120" stroke="#83C167" stroke-width="2"/>
+          <circle cx="50" cy="120" r="3" fill="#DDDDDD"/>
+          <circle cx="150" cy="60" r="3" fill="#DDDDDD"/>
+          <circle cx="210" cy="120" r="3" fill="#DDDDDD"/>
+          <text x="40" y="130" font-size="11" fill="#58C4DD">A</text>
+          <text x="160" y="50" font-size="11" fill="#58C4DD">B</text>
+          <text x="220" y="130" font-size="11" fill="#FC6255">C</text>
+          <text x="100" y="90" font-size="11" fill="#58C4DD">→</text>
+          <text x="115" y="95" font-size="10" fill="#58C4DD">AB</text>
+          <text x="180" y="90" font-size="11" fill="#FC6255">→</text>
+          <text x="195" y="95" font-size="10" fill="#FC6255">BC</text>
+          <text x="130" y="140" font-size="11" fill="#83C167">→</text>
+          <text x="145" y="145" font-size="10" fill="#83C167">AC</text>
+        </svg>
+        <figcaption>Quy tắc tam giác: AB + BC = AC.</figcaption>
+      </figure>
+
     `,
     exercises: [
       { type: "mc", prompt: "AB + BC = ?", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },

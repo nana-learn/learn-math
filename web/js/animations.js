@@ -1265,6 +1265,96 @@ const AnimationManager = {
           { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
           { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
+      },
+      
+      // g10-b2: Tập hợp
+      'g10-b2-sets': {
+        steps: [
+          { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b3: Tập con
+      'g10-b3-subset': {
+        steps: [
+          { selector: 'circle[r="28"]', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'circle[r="16"]', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b4: Phép toán tập hợp (union, intersection, difference)
+      'g10-b4-set-operations': {
+        steps: [
+          { selector: 'circle:not([r="3"])', initialState: 'hidden', animate: 'draw', duration: 0.6 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.4 },
+          { selector: 'text[fill="\#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b8: Hàm số bậc hai
+      'g10-b8-quadratic': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b9: Dấu tam thức bậc hai
+      'g10-b9-quadratic-sign': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.8 },
+          { selector: 'circle[r="2.5"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b7: Dấu của nhị thức bậc nhất
+      'g10-b7-linear-sign': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b10: Vector trong mặt phẳng
+      'g10-b10-vector': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b11: Tổng và hiệu của hai vector
+      'g10-b11-vector-sum': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
       }
     };
     
