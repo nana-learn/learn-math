@@ -8333,6 +8333,328 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Vector không có điểm đầu và điểm cuối?", choices: ["Khác nhau", "Giống nhau", "Tùy trường hợp", "Không xác định"], correct: 1, hint: "Zero vector: điểm đầu = điểm cuối.", explain: "Giống nhau." },
       { type: "num", prompt: "Số vector tạo thành từ 3 điểm phân biệt A, B, C là", answer: "6", accept: ["6"], hint: "Mỗi cặp tạo 2 vector: AB, BA, AC, CA, BC, CB.", explain: "6 vector." },
     ],
+  },,
+  {
+    id: "g10-b11",
+    num: 11,
+    chapter: 4,
+    title: "Tổng và hiệu của hai vector",
+    summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
+    body: String.raw`<p><strong>Vì sao cần tổng vector?</strong> Nhiều đại lượng vector cần cộng lại.</p>
+      <div class="definition">
+        <p>Tổng của hai vector: AB + BC = AC (quy tắc tam giác).</p>
+        <p>Quy tắc hình bình hành: nếu ABCD là hình bình hành thì AB + AD = AC.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Cho AB = (2, 3), BC = (1, 4). Khi đó AC = AB + BC = (3, 7).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> AB + BA = AA = 0 (vector không).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB + BC ≠ AC nếu A, B, C không tạo thành đường gãy.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>AB + BC + CA = ? <em>— Vector không 0.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc tam giác: AB + BC = AC.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB + BC = ?", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
+      { type: "mc", prompt: "AB + BA = ?", choices: ["0", "2AB", "AB", "BA"], correct: 0, hint: "AB và BA ngược nhau.", explain: "Vector không 0." },
+      { type: "num", prompt: "AB = (3, -2), BC = (-1, 4). AC = ?", answer: "(2, 2)", accept: ["(2, 2)", "2, 2"], hint: "Cộng tọa độ tương ứng.", explain: "(3-1, -2+4) = (2, 2)." },
+    ],
+  },
+  {
+    id: "g10-b12",
+    num: 12,
+    chapter: 4,
+    title: "Hiệu của hai vector",
+    summary: "Hiệu AB - AC = CB (quy tắc trừ).",
+    body: String.raw`<p><strong>Vì sao cần hiệu vector?</strong> Hiệu vector giúp tính khoảng cách.</p>
+      <div class="definition">
+        <p>Hiệu AB - AC = CB (quy tắc trừ: cùng điểm đầu B, hiệu là vector từ cuối này đến cuối kia).</p>
+        <p>AB = -BA (hai vector đối nhau).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB - AC = CB. Nếu A(1,2), B(4,5), C(2,3) thì AB=(3,3), AC=(1,1), CB=(2,2).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> M là trung điểm AB: MA + MB = 0.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB - AC ≠ BC (phải là CB).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Cho tam giác ABC. AB - AC = ? <em>— CB.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc trừ: cùng điểm đầu, hiệu là vector từ cuối này đến cuối kia.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB - AC = ?", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
+      { type: "mc", prompt: "AB - BA = ?", choices: ["2AB", "0", "AB", "-2AB"], correct: 0, hint: "BA = -AB nên AB - BA = AB - (-AB) = 2AB.", explain: "2AB." },
+      { type: "num", prompt: "A(1,1), B(3,4), C(2,3). AB - AC = ?", answer: "(1,1)", accept: ["(1, 1)", "1, 1"], hint: "AB=(2,3), AC=(1,2), hiệu=(1,1).", explain: "(2-1, 3-2) = (1, 1)." },
+    ],
+  },
+  {
+    id: "g10-b13",
+    num: 13,
+    chapter: 4,
+    title: "Tích của vector với một số",
+    summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
+    body: String.raw`<p><strong>Vì sao cần tích vector với số?</strong> scaling vector thay đổi độ dài.</p>
+      <div class="definition">
+        <p>Tích k·AB: cùng hướng AB nếu k > 0, ngược hướng nếu k < 0, độ dài |k|·AB.</p>
+        <p>k = 0: vector không. k = 1: AB. k = -1: -AB.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB = (2, 3). 2·AB = (4, 6). -1·AB = (-2, -3).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> M là trung điểm AB: OM = 1/2·OA + 1/2·OB.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm dấu khi k < 0.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>3·AB với AB = (1, -2) là? <em>— (3, -6).</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> k·AB: cùng/phản hướng, độ dài |k|·AB.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "2·AB với AB = (3, 4) là?", choices: ["(6, 8)", "(3, 4)", "(1.5, 2)", "(-6, -8)"], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
+      { type: "mc", prompt: "-1·AB với AB = (2, -3) là?", choices: ["(-2, 3)", "(2, -3)", "(-2, -3)", "(2, 3)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(-2, 3)." },
+      { type: "num", prompt: "k = 1/2, AB = (4, -6). k·AB = ?", answer: "(2, -3)", accept: ["(2, -3)", "2, -3"], hint: "Chia từng tọa độ cho 2.", explain: "(4/2, -6/2) = (2, -3)." },
+    ],
+  },
+  {
+    id: "g10-b14",
+    num: 14,
+    chapter: 4,
+    title: "Hệ trục tọa độ",
+    summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
+    body: String.raw`<p><strong>Vì sao cần hệ tọa độ?</strong> Hệ tọa độ liên kết hình học với đại số.</p>
+      <div class="definition">
+        <p>Hệ trục tọa độ Oxy: Ox (hoành), Oy (tung), gốc O, đơn vị bằng nhau.</p>
+        <p>Điểm M(x, y): OM = x·i + y·j.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> M(3, 2): từ O đi 3 đơn vị Ox, 2 đơn vị Oy.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Trung điểm AB: ((xA+xB)/2, (yA+yB)/2).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm hoành và tung (x trước, y sau).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Tọa độ trung điểm AB với A(1,2), B(3,4) là? <em>— (2, 3).</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> M(x, y) ↔ OM = x·i + y·j.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tọa độ điểm A(2, -3) là?", choices: ["(2, -3)", "(-3, 2)", "(2, 3)", "(-2, 3)"], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
+      { type: "mc", prompt: "Trung điểm AB với A(1,1), B(3,5) là?", choices: ["(2, 3)", "(1, 3)", "(2, 5)", "(4, 6)"], correct: 0, hint: "((1+3)/2, (1+5)/2) = (2, 3).", explain: "(2, 3)." },
+      { type: "num", prompt: "Điểm M(4, -2) có tọa độ là", answer: "(4, -2)", accept: ["(4, -2)", "4, -2"], hint: "x = 4, y = -2.", explain: "(4, -2)." },
+    ],
+  },
+  {
+    id: "g10-b15",
+    num: 15,
+    chapter: 4,
+    title: "Tọa độ của vector",
+    summary: "Vector AB = (xB - xA, yB - yA).",
+    body: String.raw`<p><strong>Vì sao cần tọa độ vector?</strong> Vector biểu diễn bằng cặp số.</p>
+      <div class="definition">
+        <p>Vector AB = (xB - xA, yB - yA).</p>
+        <p>Độ dài AB = √[(xB-xA)² + (yB-yA)²].</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> A(1, 2), B(4, 6). AB = (3, 4). |AB| = √(9+16) = 5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> AB + CD = (xA+xC, yA+yC) nếu AB=(xA,yA), CD=(xC,yC).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB = (xA - xB, yA - yB) (sai, phải là B - A).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Vector AB với A(2,3), B(5,7) là? <em>— (3, 4).</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> AB = (xB - xA, yB - yA).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Vector AB với A(1,2), B(4,5) là?", choices: ["(3, 3)", "(1, 1)", "(-3, -3)", "(5, 7)"], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
+      { type: "mc", prompt: "Độ dài AB với A(0,0), B(3,4) là?", choices: ["5", "3", "4", "7"], correct: 0, hint: "√(9+16) = 5.", explain: "5." },
+      { type: "num", prompt: "Vector AB với A(-1,2), B(2,-1) là", answer: "(3, -3)", accept: ["(3, -3)", "3, -3"], hint: "(2-(-1), -1-2) = (3, -3).", explain: "(3, -3)." },
+    ],
+  },
+  {
+    id: "g10-b16",
+    num: 16,
+    chapter: 4,
+    title: "Biểu thức tọa độ của phép toán vector",
+    summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
+    body: String.raw`<p><strong>Vì sao cần biểu thức tọa độ?</strong> Tính toán vector qua số học.</p>
+      <div class="definition">
+        <p>AB + CD = (xA+xC, yA+yC).</p>
+        <p>k·AB = (k·xA, k·yA).</p>
+        <p>AB - CD = (xA-xC, yA-yC).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB = (2, 3), CD = (1, 4). AB + CD = (3, 7). 2·AB = (4, 6).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> M là trung điểm AB: OM = (OA + OB)/2.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB - CD ≠ (xA-xC, yA-yC) nếu dùng sai công thức.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>AB = (3, -2), CD = (-1, 4). AB - CD = ? <em>— (4, -6).</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Làm trên tọa độ: cộng, trừ, nhân từng thành phần.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB = (2, 3), CD = (-1, 2). AB + CD = ?", choices: ["(1, 5)", "(3, 5)", "(1, 1)", "(-2, 6)"], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
+      { type: "mc", prompt: "AB = (4, -2), k = 1/2. k·AB = ?", choices: ["(2, -1)", "(8, -4)", "(2, 1)", "(-2, 1)"], correct: 0, hint: "(4/2, -2/2) = (2, -1).", explain: "(2, -1)." },
+      { type: "num", prompt: "AB = (5, -3), CD = (2, 1). AB - 2·CD = ?", answer: "(1, -5)", accept: ["(1, -5)", "1, -5"], hint: "2·CD=(4,2), (5-4, -3-2)=(1,-5).", explain: "(1, -5)." },
+    ],
+  },
+  {
+    id: "g10-b17",
+    num: 17,
+    chapter: 5,
+    title: "Giá trị lượng giác của một góc từ 0° đến 180°",
+    summary: "Sin, cos, tan của góc trong tam giác.",
+    body: String.raw`<p><strong>Vì sao cần giá trị lượng giác?</strong> Mở rộng khái niệm lượng giác cho góc tù.</p>
+      <div class="definition">
+        <p>Với góc α (0° ≤ α ≤ 180°): sin α, cos α, tan α được định nghĩa qua đường tròn đơn vị.</p>
+        <p>sin(180° - α) = sin α, cos(180° - α) = -cos α, tan(180° - α) = -tan α.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> sin 30° = 1/2, sin 150° = 1/2. cos 60° = 1/2, cos 120° = -1/2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> sin²α + cos²α = 1 với mọi α.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm dấu cos khi góc tù (cos 120° = -1/2, không phải 1/2).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>cos 120° = ? <em>— -1/2.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> sin(180°-α)=sin α, cos(180°-α)=-cos α.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "sin 150° = ?", choices: ["1/2", "-1/2", "√3/2", "-√3/2"], correct: 0, hint: "sin(180°-30°)=sin 30°=1/2.", explain: "1/2." },
+      { type: "mc", prompt: "cos 120° = ?", choices: ["-1/2", "1/2", "-√3/2", "√3/2"], correct: 0, hint: "cos(180°-60°)=-cos 60°=-1/2.", explain: "-1/2." },
+      { type: "num", prompt: "sin²30° + cos²30° =", answer: "1", accept: ["1"], hint: "sin²α + cos²α = 1 với mọi α.", explain: "1." },
+    ],
+  },
+  {
+    id: "g10-b18",
+    num: 18,
+    chapter: 5,
+    title: "Tích vô hướng của hai vector",
+    summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
+    body: String.raw`<p><strong>Vì sao cần tích vô hướng?</strong> Tích vô hướng liên hệ độ dài và góc.</p>
+      <div class="definition">
+        <p>Tích vô hướng: AB·AC = |AB|·|AC|·cos(angle BAC).</p>
+        <p>AB·AC = 0 khi và chỉ khi AB ⊥ AC.</p>
+        <p>Trong tọa độ: (x1, y1)·(x2, y2) = x1x2 + y1y2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB = (3, 0), AC = (0, 4). AB·AC = 3·0 + 0·4 = 0 ⇒ AB ⊥ AC.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> AB·AB = |AB|² (bình phương độ dài).</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> AB·AC ≠ |AB|·|AC| (thiếu cos).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>AB = (2, 3), AC = (4, -1). AB·AC = ? <em>— 5.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> AB·AC = x1x2 + y1y2 trong tọa độ.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB = (1, 2), AC = (3, -1). AB·AC = ?", choices: ["1", "-1", "5", "-5"], correct: 0, hint: "1·3 + 2·(-1) = 1.", explain: "1." },
+      { type: "mc", prompt: "AB = (2, 3), AC = (-3, 2). AB·AC = ?", choices: ["0", "12", "-12", "6"], correct: 0, hint: "2·(-3) + 3·2 = 0 ⇒ vuông góc.", explain: "0." },
+      { type: "num", prompt: "AB = (4, -1), AC = (2, 3). AB·AC =", answer: "5", accept: ["5"], hint: "4·2 + (-1)·3 = 8 - 3 = 5.", explain: "5." },
+    ],
+  },
+  {
+    id: "g10-b19",
+    num: 19,
+    chapter: 5,
+    title: "Ứng dụng tích vô hướng vào tính độ dài và góc",
+    summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
+    body: String.raw`<p><strong>Vì sao cần ứng dụng tích vô hướng?</strong> Từ tích vô hướng suy ra độ dài và góc.</p>
+      <div class="definition">
+        <p>|AB| = √(AB·AB).</p>
+        <p>cos(angle BAC) = (AB·AC)/(|AB|·|AC|).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> AB = (3, 4). |AB| = √(9+16) = 5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> A(0,0), B(1,0), C(0,1). cos(angle BAC) = 0 ⇒ góc 90°.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Quên căn bậc hai khi tính độ dài.</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Góc giữa AB=(1,0) và AC=(0,1) là? <em>— 90°.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> cos α = (AB·AC)/(|AB|·|AC|).</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "|AB| với AB = (5, 12) là?", choices: ["13", "12", "5", "17"], correct: 0, hint: "√(25+144) = 13.", explain: "13." },
+      { type: "mc", prompt: "Góc giữa AB=(1,1) và AC=(1,-1) là?", choices: ["90°", "45°", "60°", "30°"], correct: 0, hint: "AB·AC = 0 ⇒ vuông góc.", explain: "90°." },
+      { type: "num", prompt: "Độ dài AB với A(1,2), B(4,6) là", answer: "5", accept: ["5"], hint: "AB=(3,4), √(9+16)=5.", explain: "5." },
+    ],
+  },
+  {
+    id: "g10-b20",
+    num: 20,
+    chapter: 5,
+    title: "Các hệ thức lượng trong tam giác",
+    summary: "Định lí cosin và định lí sin trong tam giác.",
+    body: String.raw`<p><strong>Vì sao cần hệ thức lượng?</strong> Tính cạnh, góc khi biết một số yếu tố.</p>
+      <div class="definition">
+        <p>Định lí cosin: a² = b² + c² - 2bc·cos A.</p>
+        <p>Định lí sin: a/sin A = b/sin B = c/sin C = 2R.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ dễ.</strong> Tam giác ABC: AB = 3, AC = 4, góc A = 60°. BC² = 9 + 16 - 2·3·4·0.5 = 13.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ thêm một bước.</strong> Tam giác ABC: a = 5, b = 7, góc C = 60°. c² = 25 + 49 - 2·5·7·0.5 = 39.</p>
+      </div>
+      <div class="warn">
+        <p><strong>Lỗi thường gặp.</strong> Nhầm công thức cosin (dấu trừ, không phải cộng).</p>
+      </div>
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>BC với AB=5, AC=8, góc A=60° là? <em>— √49 = 7.</em></p>
+      </details>
+      <div class="memory"><p><strong>Nhìn lại.</strong> a² = b² + c² - 2bc·cos A.</p></div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Tam giác ABC: AB=3, AC=4, góc A=90°. BC = ?", choices: ["5", "4", "3", "7"], correct: 0, hint: "BC² = 9 + 16 = 25 ⇒ BC = 5.", explain: "5." },
+      { type: "mc", prompt: "Tam giác ABC: a=6, b=8, góc C=60°. c² = ?", choices: ["52", "28", "100", "16"], correct: 0, hint: "c² = 36 + 64 - 2·6·8·0.5 = 52.", explain: "52." },
+      { type: "num", prompt: "Tam giác ABC: AB=5, AC=7, góc A=60°. BC² =", answer: "39", accept: ["39"], hint: "BC² = 25 + 49 - 2·5·7·0.5 = 39.", explain: "39." },
+    ],
   },
 ];
 
