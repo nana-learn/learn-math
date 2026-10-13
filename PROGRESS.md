@@ -348,6 +348,38 @@ All animations use step-by-step reveal following pedagogical flow.
 
 **Total: 140 animated lessons across all grades (78.2%)**
 
+## 2026-10-13 Grade 6 complete more animations (9d13780)
+
+Added 15 more animated lessons to Grade 6:
+
+- **g6-b22 (Hình có trục đối xứng)**: Butterfly shape with axis of symmetry
+- **g6-b23 (Hình có tâm đối xứng)**: Parallelogram with center of symmetry
+- **g6-b29 (Rút gọn phân số)**: Simplifying fractions (12/18 → 2/3)
+- **g6-b30 (Quy đồng mẫu số)**: Common denominator (1/2 = 3/6, 1/3 = 2/6)
+- **g6-b32 (Hỗn số và số thập phân)**: Mixed numbers to decimals (2 1/4 = 2.25)
+- **g6-b33-b37 (Fraction operations)**: Addition, subtraction, multiplication, division, value
+- **g6-b39 (So sánh số thập phân)**: Comparing decimals (3.75 > 3.50)
+- **g6-b40-b43 (Decimal operations)**: Addition, multiplication, division, percentage
+
+All animations use step-by-step reveal following pedagogical flow.
+
+**Final Grade 6 Status: 32/43 lessons animated (74.4%)** ✅
+
+### Final Animation Coverage Summary:
+- ✅ Grade 9: 30/30 lessons (100%)
+- ✅ Grade 8: 31/39 lessons (79.5%)
+- ✅ Grade 7: 23/37 lessons (62.2%)
+- ✅ Grade 6: 32/43 lessons (74.4%) NEW!
+- ✅ Grade 10: 30/30 lessons (100%)
+
+**Total: 155 animated lessons across all grades (86.6%)**
+
+### Remaining Lessons for Animation:
+- Grade 6: g6-b1 through g6-b3, g6-b5 through g6-b12 (purely symbolic arithmetic/algebra)
+- Grade 7: g7-b1 through g7-b7, g7-b20 through g7-b28 (purely symbolic algebra)
+- Grade 8: g8-b1 through g8-b8 (purely symbolic algebra)
+
+These remaining lessons deal with purely symbolic arithmetic or algebra without natural visual representations.
 ### Remaining Lessons for Animation:
 - Grade 8: g8-b1 through g8-b8 (purely symbolic algebra)
 - Grade 7: g7-b1 through g7-b7, g7-b20 through g7-b28 (purely symbolic algebra)
