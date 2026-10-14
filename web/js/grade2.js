@@ -81,6 +81,7 @@ const G2_LESSONS = [
           <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">7</text>
           <text x="160" y="150" font-size="14" text-anchor="middle">47 = 4 chục + 7 đơn vị</text>
         </svg>
+              <figcaption>Đếm, đọc, viết, so sánh số trong phạm vi 100.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Lớp 1 đã học số đến 100. Lớp 2 ôn lại cho chắc trước khi cộng trừ có nhớ và số đến 1000.</p>
       <div class="definition">
@@ -117,15 +118,14 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Hai chữ số: chục | đơn vị. So sánh: chục trước, đơn vị sau.</p></div>
     `,
     exercises: [
+      {"type":"text","prompt":"Đọc số 70 (gõ không dấu cũng được):","answer":"bay muoi","accept":["bay muoi","bảy mươi","bay mươi"],"hint":"bảy mươi","explain":"bảy mươi."},
       {"type":"mc","prompt":"Số 48 gồm","choices":["4 chục 8 đơn vị","8 chục 4 đơn vị","48 chục","12 đơn vị"],"correct":0,"hint":"Trái = chục.","explain":"4 chục 8 đơn vị."},
       {"type":"num","prompt":"Viết số gồm 9 chục và 0 đơn vị.","answer":90,"hint":"9 chục = 90.","explain":"90."},
       {"type":"mc","prompt":"Số lớn nhất trong các số 27, 72, 17, 71 là","choices":["72","27","71","17"],"correct":0,"hint":"So hàng chục.","explain":"72."},
       {"type":"num","prompt":"Số liền sau 99 là","answer":100,"hint":"+1.","explain":"100."},
       {"type":"mc","prompt":"Số nhỏ nhất: 45, 54, 40, 50","choices":["40","45","50","54"],"correct":0,"hint":"So chục rồi đơn vị.","explain":"40."},
-      {"type":"num","prompt":"3 chục + 5 đơn vị = ?","answer":35,"hint":"Ghép hàng.","explain":"35."},
-      {"type":"mc","prompt":"Đọc số 70","choices":["Bảy mươi","Bảy không","Bảy đơn vị","Mười bảy"],"correct":0,"hint":"Tròn chục.","explain":"Bảy mươi."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"An có 7 chục que và 4 que rời. Tất cả mấy que?","answer":74,"hint":"chục × 10 + đơn vị.","explain":"74."},
+      {"type":"num","prompt":"Viết số gồm 6 chục và 4 đơn vị.","answer":64,"hint":"Ghép hàng.","explain":"64."},
     ],
   },
 
@@ -153,6 +153,7 @@ const G2_LESSONS = [
           <circle cx="136" cy="80" r="5" fill="#FC6255"/>
           <text x="136" y="50" font-size="12" text-anchor="middle" fill="#FC6255">đang xét</text>
         </svg>
+              <figcaption>Đặt số trên tia số; tìm số liền trước và liền sau.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Tia số giúp “nhìn thấy” thứ tự các số. Số liền trước/sau dùng rất nhiều khi đếm và so sánh.</p>
       <div class="definition">
@@ -193,10 +194,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Số đứng giữa 44 và 46 là","choices":["45","43","47","40"],"correct":0,"hint":"Giữa hai số cách 2.","explain":"45."},
       {"type":"num","prompt":"Liền sau của 99?","answer":100,"hint":"+1.","explain":"100."},
       {"type":"mc","prompt":"Trên tia số, số bên trái 30 là số","choices":["bé hơn 30","lớn hơn 30","bằng 30","không so được"],"correct":0,"hint":"Trái → nhỏ.","explain":"Bé hơn 30."},
-      {"type":"num","prompt":"Liền trước của 1?","answer":0,"hint":"0.","explain":"0."},
-      {"type":"num","prompt":"Hai số liền sau liên tiếp của 10 là 11 và …?","answer":12,"hint":"+2.","explain":"12."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"Nam có 4 chục que và 3 que rời. Tất cả mấy que?","answer":43,"hint":"chục × 10 + đơn vị.","explain":"43."},
+      {"type":"num","prompt":"Viết số gồm 9 chục và 3 đơn vị.","answer":93,"hint":"Ghép hàng.","explain":"93."},
     ],
   },
 
@@ -222,6 +221,7 @@ const G2_LESSONS = [
           <text x="205" y="72" font-size="20">=</text>
           <text x="160" y="130" font-size="13" text-anchor="middle">8 + 5 = 13</text>
         </svg>
+              <figcaption>Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Biết tên từng “người trong phép tính” giúp giải bài tìm x và nói toán đúng.</p>
       <div class="definition">
@@ -262,10 +262,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tổng của 8 và 7?","answer":15,"hint":"Cộng.","explain":"15."},
       {"type":"num","prompt":"Hiệu 19 − 6?","answer":13,"hint":"Trừ.","explain":"13."},
       {"type":"num","prompt":"□ + 5 = 14. □ = ?","answer":9,"hint":"14 − 5.","explain":"9."},
-      {"type":"num","prompt":"12 − □ = 7. □ = ?","answer":5,"hint":"12 − 7.","explain":"5."},
-      {"type":"mc","prompt":"Muốn tìm số hạng, lấy","choices":["Tổng trừ số hạng kia","Hai số hạng cộng","Hiệu trừ tổng","Không làm được"],"correct":0,"hint":"Phép ngược.","explain":"Tổng − số hạng kia."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"Hà có 12 bông hoa, được thêm 9 bông hoa. Tất cả mấy bông hoa?","answer":21,"hint":"Thêm → cộng.","explain":"12 + 9 = 21."},
+      {"type":"num","prompt":"Trong hộp có 20 lá cờ, bạn cho thêm 2. Tất cả mấy?","answer":22,"hint":"Cộng.","explain":"20 + 2 = 22."},
     ],
   },
 
@@ -284,6 +282,7 @@ const G2_LESSONS = [
           <text x="210" y="155" font-size="12" text-anchor="middle">B = 8</text>
           <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
         </svg>
+              <figcaption>Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Trong đời sống ta hay hỏi “nhiều hơn bao nhiêu?” — đó chính là tìm hiệu.</p>
       <div class="definition">
@@ -321,13 +320,13 @@ const G2_LESSONS = [
     exercises: [
       {"type":"num","prompt":"17 hơn 10 bao nhiêu?","answer":7,"hint":"17 − 10.","explain":"7."},
       {"type":"num","prompt":"25 kém 30 bao nhiêu?","answer":5,"hint":"30 − 25.","explain":"5."},
-      {"type":"num","prompt":"An 14, Bình 9. An hơn Bình?","answer":5,"hint":"14 − 9.","explain":"5."},
+      {"type":"num","prompt":"An có 14 tem, Bình có 9 tem. An hơn Bình mấy tem?","answer":5,"hint":"14 − 9.","explain":"5."},
       {"type":"mc","prompt":"“Kém nhau bao nhiêu” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Hiệu.","explain":"Trừ."},
       {"type":"num","prompt":"42 hơn 35?","answer":7,"hint":"42 − 35.","explain":"7."},
       {"type":"num","prompt":"Số lớn hơn 50 là 58. Lớn hơn mấy?","answer":8,"hint":"58 − 50.","explain":"8."},
       {"type":"num","prompt":"100 kém 100 bao nhiêu?","answer":0,"hint":"Bằng nhau.","explain":"0."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"Bình có 15 lá cờ. Chi nhiều hơn Bình 6 lá cờ. Chi có mấy?","answer":21,"hint":"Nhiều hơn → cộng.","explain":"15 + 6 = 21."},
+      {"type":"num","prompt":"Bình có 21 tem. Chi ít hơn Bình 6. Chi có mấy?","answer":15,"hint":"Ít hơn → trừ.","explain":"21 − 6 = 15."},
     ],
   },
 
@@ -340,17 +339,22 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b5-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <text x="200" y="40" font-size="11" fill="#888888">chục</text>
-          <text x="250" y="40" font-size="11" fill="#888888">đv</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
           
-          <text x="200" y="85" font-size="28" text-anchor="middle">3</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">4</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">5</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">2</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="#333330" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="#83C167">Cộng đơn vị trước</text>
+          <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">4</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">5</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">2</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">86</text>
+          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="#888888">Không nhớ</text>
+          <text x="40" y="110" font-size="13">34 + 52</text>
         </svg>
+              <figcaption>Cộng trừ không nhớ với số có hai chữ số.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đặt tính thẳng cột là nền để sau này cộng trừ có nhớ không bị lệch hàng.</p>
       <div class="definition">
@@ -391,10 +395,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"60 + 30 = ?","answer":90,"hint":"Tròn chục.","explain":"90."},
       {"type":"num","prompt":"99 − 40 = ?","answer":59,"hint":"Trừ chục.","explain":"59."},
       {"type":"mc","prompt":"Phép nào không nhớ?","choices":["34 + 21","28 + 15","19 + 6","47 + 8"],"correct":0,"hint":"Đơn vị 4+1=5.","explain":"34+21."},
-      {"type":"num","prompt":"11 + 22 + 33 = ?","answer":66,"hint":"66.","explain":"66."},
-      {"type":"num","prompt":"85 − 30 = ?","answer":55,"hint":"Trừ.","explain":"55."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"Oanh có 6 tem, được thêm 3 tem. Tất cả mấy tem?","answer":9,"hint":"Thêm → cộng.","explain":"6 + 3 = 9."},
+      {"type":"num","prompt":"Trong hộp có 12 bút, bạn cho thêm 6. Tất cả mấy?","answer":18,"hint":"Cộng.","explain":"12 + 6 = 18."},
     ],
   },
 
@@ -407,13 +409,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b6-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Luyện chủ đề 1">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Luyện chủ đề 1</text>
         </svg>
+              <figcaption>Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Gộp các ý vừa học để xem chỗ nào còn lung lay trước khi sang cộng qua 10.</p>
       <div class="definition">
@@ -454,10 +464,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"36 hơn 29?","answer":7,"hint":"Hiệu.","explain":"7."},
       {"type":"mc","prompt":"Trong 50 − 18 = 32, 32 là","choices":["Hiệu","Tổng","Số trừ","Số hạng"],"correct":0,"hint":"Kết quả trừ.","explain":"Hiệu."},
       {"type":"num","prompt":"□ + 12 = 45. □=?","answer":33,"hint":"45−12.","explain":"33."},
-      {"type":"num","prompt":"90 − 40 = ?","answer":50,"hint":"Trừ.","explain":"50."},
-      {"type":"num","prompt":"Liền sau 99?","answer":100,"hint":"+1.","explain":"100."},
-      {"type":"num","prompt":"Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?","answer":46,"hint":"40 + 6.","explain":"46."},
-      {"type":"num","prompt":"Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?","answer":35,"hint":"Ghép hàng.","explain":"35."},
+      {"type":"num","prompt":"Có 17 bút, Lan lấy 8. Còn lại mấy?","answer":9,"hint":"Bớt → trừ.","explain":"17 − 8 = 9."},
+      {"type":"num","prompt":"Trên kệ có 40 quyển sách, đem đi 23. Còn mấy quyển?","answer":17,"hint":"Trừ.","explain":"40 − 23 = 17."},
     ],
   },
 
@@ -482,6 +490,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="13" text-anchor="middle">8+2=10, còn 4 → 14</text>
           <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">8 + 6 = 14</text>
         </svg>
+              <figcaption>Cộng hai số có tổng lớn hơn 10, không quá 20.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Cộng qua 10 là bước đệm bắt buộc trước cộng có nhớ ở phạm vi 100.</p>
       <div class="definition">
@@ -522,10 +531,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"7 + 7 = ?","answer":14,"hint":"Đôi.","explain":"14."},
       {"type":"num","prompt":"4 + 9 = ?","answer":13,"hint":"9+1+3.","explain":"13."},
       {"type":"mc","prompt":"Tổng lớn nhất","choices":["9+8","8+5","7+6","9+4"],"correct":0,"hint":"17.","explain":"9+8=17."},
-      {"type":"num","prompt":"6 + 8 = ?","answer":14,"hint":"Qua 10.","explain":"14."},
-      {"type":"num","prompt":"5 + 9 = ?","answer":14,"hint":"Qua 10.","explain":"14."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Lan có 9 quyển vở, được thêm 4 quyển vở. Tất cả mấy quyển vở?","answer":13,"hint":"Thêm → cộng.","explain":"9 + 4 = 13."},
+      {"type":"num","prompt":"Trong hộp có 13 bông hoa, bạn cho thêm 7. Tất cả mấy?","answer":20,"hint":"Cộng.","explain":"13 + 7 = 20."},
     ],
   },
 
@@ -550,6 +557,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="13" text-anchor="middle">9+1=10, còn 8 → 18</text>
           <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">9 + 9 = 18</text>
         </svg>
+              <figcaption>Thuộc các công thức cộng qua 10 trong phạm vi 20.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Thuộc bảng giúp tính nhẩm nhanh, không phụ thuộc đếm mỗi lần.</p>
       <div class="definition">
@@ -590,10 +598,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"7 + 8 = ?","answer":15,"hint":"Bảng.","explain":"15."},
       {"type":"num","prompt":"6 + 9 = ?","answer":15,"hint":"Bảng.","explain":"15."},
       {"type":"num","prompt":"5 + 8 = ?","answer":13,"hint":"Bảng.","explain":"13."},
-      {"type":"num","prompt":"9 + 6 = ?","answer":15,"hint":"Bảng.","explain":"15."},
-      {"type":"num","prompt":"8 + 8 = ?","answer":16,"hint":"Đôi.","explain":"16."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 21 bông hoa, Chi lấy 9. Còn lại mấy?","answer":12,"hint":"Bớt → trừ.","explain":"21 − 9 = 12."},
+      {"type":"num","prompt":"Trên kệ có 27 quyển sách, đem đi 24. Còn mấy quyển?","answer":3,"hint":"Trừ.","explain":"27 − 24 = 3."},
     ],
   },
 
@@ -612,6 +618,7 @@ const G2_LESSONS = [
           <text x="210" y="155" font-size="12" text-anchor="middle">B = 9</text>
           <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
         </svg>
+              <figcaption>Lời văn: thêm → cộng; bớt → trừ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Toán lời văn gắn với chuyện thật: thêm kẹo, bớt bút, mua thêm…</p>
       <div class="definition">
@@ -654,8 +661,6 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"“Bớt đi” →","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Lấy đi.","explain":"Trừ."},
       {"type":"num","prompt":"15 + 4 − 3 = ?","answer":16,"hint":"Từng bước.","explain":"16."},
       {"type":"num","prompt":"Có 10, bớt 2, thêm 5. Còn?","answer":13,"hint":"10−2+5.","explain":"13."},
-      {"type":"num","prompt":"Minh có 15 nhãn. Nam nhiều hơn Minh 4 nhãn. Nam có mấy nhãn?","answer":19,"hint":"Nhiều hơn → cộng.","explain":"15 + 4 = 19."},
-      {"type":"num","prompt":"Hoa có 14 tem. Bình ít hơn Hoa 5 tem. Bình có mấy tem?","answer":9,"hint":"Ít hơn → trừ.","explain":"14 − 5 = 9."},
     ],
   },
 
@@ -668,13 +673,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b10-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Luyện cộng trừ 20">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Luyện cộng trừ 20</text>
         </svg>
+              <figcaption>Ôn cộng trừ qua 10 và bài toán thêm bớt.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Củng cố nhẩm qua 10 trước khi sang trừ qua 10.</p>
       <div class="definition">
@@ -715,10 +728,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"11 thêm 6?","answer":17,"hint":"Cộng.","explain":"17."},
       {"type":"num","prompt":"18 bớt 9?","answer":9,"hint":"Trừ.","explain":"9."},
       {"type":"num","prompt":"□ + 7 = 16","answer":9,"hint":"16−7.","explain":"9."},
-      {"type":"num","prompt":"9 + 8 − 6 = ?","answer":11,"hint":"Trái→phải.","explain":"11."},
-      {"type":"num","prompt":"5 + 7 + 4 = ?","answer":16,"hint":"12+4.","explain":"16."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 9 tem, Minh lấy 3. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"9 − 3 = 6."},
+      {"type":"num","prompt":"Trên kệ có 41 quyển sách, đem đi 16. Còn mấy quyển?","answer":25,"hint":"Trừ.","explain":"41 − 16 = 25."},
     ],
   },
 
@@ -743,6 +754,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="13" text-anchor="middle">15+5=10, còn 2 → 8</text>
           <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">15 + 7 = 8</text>
         </svg>
+              <figcaption>Trừ khi không đủ đơn vị, phạm vi 20.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Trừ qua 10 đi cùng cộng qua 10 — hai mặt của một bảng.</p>
       <div class="definition">
@@ -783,10 +795,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"11 − 8 = ?","answer":3,"hint":"8+3=11.","explain":"3."},
       {"type":"num","prompt":"17 − 9 = ?","answer":8,"hint":"9+8=17.","explain":"8."},
       {"type":"num","prompt":"15 − 6 = ?","answer":9,"hint":"6+9=15.","explain":"9."},
-      {"type":"num","prompt":"14 − 8 = ?","answer":6,"hint":"8+6=14.","explain":"6."},
-      {"type":"num","prompt":"12 − 7 = ?","answer":5,"hint":"7+5=12.","explain":"5."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Dũng có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
+      {"type":"num","prompt":"Trong hộp có 27 nhãn, bạn cho thêm 3. Tất cả mấy?","answer":30,"hint":"Cộng.","explain":"27 + 3 = 30."},
     ],
   },
 
@@ -811,6 +821,7 @@ const G2_LESSONS = [
           <text x="100" y="72" font-size="20">−</text>
           <text x="205" y="72" font-size="20">=</text>
         </svg>
+              <figcaption>Thuộc các phép trừ qua 10 trong phạm vi 20.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Từ bảng cộng suy bảng trừ — học một được hai.</p>
       <div class="definition">
@@ -851,10 +862,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"14 − 7 = ?","answer":7,"hint":"Đôi 7.","explain":"7."},
       {"type":"num","prompt":"12 − 5 = ?","answer":7,"hint":"5+7=12.","explain":"7."},
       {"type":"num","prompt":"19 − 9 = ?","answer":10,"hint":"Trừ 9.","explain":"10."},
-      {"type":"num","prompt":"16 − 8 = ?","answer":8,"hint":"Đôi.","explain":"8."},
-      {"type":"num","prompt":"15 − 9 = ?","answer":6,"hint":"9+6=15.","explain":"6."},
-      {"type":"num","prompt":"Minh có 15 nhãn. Nam nhiều hơn Minh 4 nhãn. Nam có mấy nhãn?","answer":19,"hint":"Nhiều hơn → cộng.","explain":"15 + 4 = 19."},
-      {"type":"num","prompt":"Hoa có 14 tem. Bình ít hơn Hoa 5 tem. Bình có mấy tem?","answer":9,"hint":"Ít hơn → trừ.","explain":"14 − 5 = 9."},
+      {"type":"num","prompt":"An có 12 nhãn. Bình nhiều hơn An 5 nhãn. Bình có mấy?","answer":17,"hint":"Nhiều hơn → cộng.","explain":"12 + 5 = 17."},
+      {"type":"num","prompt":"An có 17 bi. Bình ít hơn An 5. Bình có mấy?","answer":12,"hint":"Ít hơn → trừ.","explain":"17 − 5 = 12."},
     ],
   },
 
@@ -873,6 +882,7 @@ const G2_LESSONS = [
           <text x="210" y="155" font-size="12" text-anchor="middle">B = 11</text>
           <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
         </svg>
+              <figcaption>Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> “Nhiều hơn / ít hơn” là dạng lời văn rất hay gặp ở lớp 2–3.</p>
       <div class="definition">
@@ -927,13 +937,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b14-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Luyện chủ đề 2">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Luyện chủ đề 2</text>
         </svg>
+              <figcaption>Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Khóa vững phạm vi 20 trước khi sang kg/lít và cộng trừ 100.</p>
       <div class="definition">
@@ -974,10 +992,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"20 − 9 = ?","answer":11,"hint":"Trừ.","explain":"11."},
       {"type":"num","prompt":"7 + 6 + 5 = ?","answer":18,"hint":"Cộng.","explain":"18."},
       {"type":"num","prompt":"Ít hơn 15 là 4?","answer":11,"hint":"15−4.","explain":"11."},
-      {"type":"num","prompt":"16 − 7 = ?","answer":9,"hint":"Trừ.","explain":"9."},
-      {"type":"num","prompt":"8 + 7 = ?","answer":15,"hint":"Cộng.","explain":"15."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 13 kẹo, Hà lấy 7. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"13 − 7 = 6."},
+      {"type":"num","prompt":"Trên kệ có 69 quyển sách, đem đi 30. Còn mấy quyển?","answer":39,"hint":"Trừ.","explain":"69 − 30 = 39."},
     ],
   },
 
@@ -997,6 +1013,7 @@ const G2_LESSONS = [
           <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
           <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
         </svg>
+              <figcaption>Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đo “nặng/nhẹ” cần đơn vị chung — kg rất hay gặp ở chợ và bếp.</p>
       <div class="definition">
@@ -1037,10 +1054,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Thường nặng hơn","choices":["Dưa hấu","Bóng bay","Lá khô","Tờ giấy"],"correct":0,"hint":"Thực tế.","explain":"Dưa hấu."},
       {"type":"num","prompt":"5 kg − 2 kg = ?","answer":3,"hint":"Trừ.","explain":"3."},
       {"type":"num","prompt":"1+1+1 kg = ?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"mc","prompt":"“Nặng hơn” nghĩa là","choices":["Khối lượng lớn hơn","Dài hơn","Nhanh hơn","Cao điểm hơn"],"correct":0,"hint":"kg.","explain":"Khối lượng lớn hơn."},
-      {"type":"num","prompt":"10 kg − 7 kg = ?","answer":3,"hint":"Trừ.","explain":"3."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"3 + 2 = 5."},
+      {"type":"num","prompt":"Bình có 9 l nước, dùng 3 l. Còn mấy lít?","answer":6,"hint":"Trừ lít.","explain":"9 − 3 = 6."},
     ],
   },
 
@@ -1060,6 +1075,7 @@ const G2_LESSONS = [
           <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
           <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
         </svg>
+              <figcaption>Đơn vị dung tích lít (l).</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Sữa, nước, dầu… được đựng theo lít.</p>
       <div class="definition">
@@ -1102,8 +1118,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"1 l + 5 l = ?","answer":6,"hint":"Cộng.","explain":"6."},
       {"type":"num","prompt":"10 l − 2 l = ?","answer":8,"hint":"Trừ.","explain":"8."},
       {"type":"num","prompt":"2 + 2 + 2 l = ?","answer":6,"hint":"6.","explain":"6."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 8 kg gạo và 7 kg đường. Tất cả mấy kg?","answer":15,"hint":"Cộng kg.","explain":"8 + 7 = 15."},
+      {"type":"num","prompt":"Bình có 17 l nước, dùng 8 l. Còn mấy lít?","answer":9,"hint":"Trừ lít.","explain":"17 − 8 = 9."},
     ],
   },
 
@@ -1123,6 +1139,7 @@ const G2_LESSONS = [
           <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
           <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
         </svg>
+              <figcaption>Ước lượng và tính với kg, l.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Toán đo lường phải “sờ” được: cân, đổ nước, đọc nhãn.</p>
       <div class="definition">
@@ -1163,10 +1180,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"3 kg và 3 l","choices":["Khác đại lượng","Luôn nặng bằng","Cộng được thành 6","Trừ ra 0 luôn đúng nghĩa"],"correct":0,"hint":"Khác loại.","explain":"Khác đại lượng."},
       {"type":"num","prompt":"1+1+1 kg=?","answer":3,"hint":"3.","explain":"3."},
       {"type":"num","prompt":"8 l − 5 l = ?","answer":3,"hint":"Trừ.","explain":"3."},
-      {"type":"num","prompt":"4 kg + 5 kg = ?","answer":9,"hint":"Cộng.","explain":"9."},
-      {"type":"num","prompt":"9 l − 9 l = ?","answer":0,"hint":"0.","explain":"0."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 5 kg gạo và 6 kg đường. Tất cả mấy kg?","answer":11,"hint":"Cộng kg.","explain":"5 + 6 = 11."},
+      {"type":"num","prompt":"Bình có 17 l nước, dùng 5 l. Còn mấy lít?","answer":12,"hint":"Trừ lít.","explain":"17 − 5 = 12."},
     ],
   },
 
@@ -1179,13 +1194,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b18-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn đo kg l">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Ôn đo kg l</text>
         </svg>
+              <figcaption>Ôn kg, l và so sánh nặng nhẹ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt chủ đề đo khối lượng và dung tích học kì 1.</p>
       <div class="definition">
@@ -1226,10 +1249,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 l + 7 l = ?","answer":9,"hint":"Cộng.","explain":"9."},
       {"type":"mc","prompt":"kg đo","choices":["Khối lượng","Thời gian","Độ dài","Nhiệt độ"],"correct":0,"hint":"Nặng.","explain":"Khối lượng."},
       {"type":"mc","prompt":"l đo","choices":["Dung tích","Khối lượng","Diện tích","Số đếm"],"correct":0,"hint":"Lỏng.","explain":"Dung tích."},
-      {"type":"num","prompt":"8 kg − 3 kg = ?","answer":5,"hint":"Trừ.","explain":"5."},
-      {"type":"num","prompt":"1 l + 1 l + 1 l = ?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 10 kg gạo và 5 kg đường. Tất cả mấy kg?","answer":15,"hint":"Cộng kg.","explain":"10 + 5 = 15."},
+      {"type":"num","prompt":"Bình có 25 l nước, dùng 10 l. Còn mấy lít?","answer":15,"hint":"Trừ lít.","explain":"25 − 10 = 15."},
     ],
   },
 
@@ -1254,6 +1275,7 @@ const G2_LESSONS = [
           <line x1="210" y1="112" x2="280" y2="112" stroke="#333330" stroke-width="1.5"/>
           <text x="230" y="135" font-size="20" text-anchor="middle">3 3</text>
         </svg>
+              <figcaption>Cộng có nhớ: tổng đơn vị ≥ 10.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đây là cộng có nhớ đầu tiên — nền tảng cả năm học.</p>
       <div class="definition">
@@ -1294,10 +1316,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"35 + 8 = ?","answer":43,"hint":"Có nhớ.","explain":"43."},
       {"type":"num","prompt":"66 + 9 = ?","answer":75,"hint":"Có nhớ.","explain":"75."},
       {"type":"num","prompt":"18 + 5 = ?","answer":23,"hint":"Có nhớ.","explain":"23."},
-      {"type":"num","prompt":"44 + 9 = ?","answer":53,"hint":"Có nhớ.","explain":"53."},
-      {"type":"num","prompt":"99 + 1 = ?","answer":100,"hint":"Nhớ.","explain":"100."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Lan có 15 lá cờ, được thêm 6 lá cờ. Tất cả mấy lá cờ?","answer":21,"hint":"Thêm → cộng.","explain":"15 + 6 = 21."},
+      {"type":"num","prompt":"Trong hộp có 13 tem, bạn cho thêm 7. Tất cả mấy?","answer":20,"hint":"Cộng.","explain":"13 + 7 = 20."},
     ],
   },
 
@@ -1310,17 +1330,22 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b20-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <text x="200" y="40" font-size="11" fill="#888888">chục</text>
-          <text x="250" y="40" font-size="11" fill="#888888">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255">¹</text>
-          <text x="200" y="85" font-size="28" text-anchor="middle">4</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">7</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">2</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">8</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="#333330" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="#83C167">Cộng đơn vị trước</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+          <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">75</text>
+          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
+          <text x="40" y="110" font-size="13">47 + 28</text>
         </svg>
+              <figcaption>Cộng hai số có hai chữ số, có nhớ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Mở rộng nhớ khi cả hai số đều có hai chữ số.</p>
       <div class="definition">
@@ -1361,10 +1386,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"19 + 19 = ?","answer":38,"hint":"Đôi.","explain":"38."},
       {"type":"num","prompt":"45 + 37 = ?","answer":82,"hint":"Có nhớ.","explain":"82."},
       {"type":"num","prompt":"66 + 25 = ?","answer":91,"hint":"Có nhớ.","explain":"91."},
-      {"type":"num","prompt":"29 + 43 = ?","answer":72,"hint":"Có nhớ.","explain":"72."},
-      {"type":"num","prompt":"55 + 46 = ?","answer":101,"hint":"Vượt 100 nhẹ.","explain":"101."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 9 tem, Chi lấy 3. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"9 − 3 = 6."},
+      {"type":"num","prompt":"Trên kệ có 57 quyển sách, đem đi 24. Còn mấy quyển?","answer":33,"hint":"Trừ.","explain":"57 − 24 = 33."},
     ],
   },
 
@@ -1377,13 +1400,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b21-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn cộng có nhớ">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng có nhớ</text>
         </svg>
+              <figcaption>Ôn cộng có nhớ trong phạm vi 100.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Củng cố trước khi sang trừ có nhớ.</p>
       <div class="definition">
@@ -1424,10 +1455,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"56 + 17 = ?","answer":73,"hint":"Nhớ.","explain":"73."},
       {"type":"num","prompt":"□ + 29 = 50","answer":21,"hint":"50−29.","explain":"21."},
       {"type":"num","prompt":"39 + 39 = ?","answer":78,"hint":"Đôi.","explain":"78."},
-      {"type":"num","prompt":"18 + 27 = ?","answer":45,"hint":"Nhớ.","explain":"45."},
-      {"type":"num","prompt":"63 + 8 = ?","answer":71,"hint":"Nhớ.","explain":"71."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Phúc có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
+      {"type":"num","prompt":"Trong hộp có 35 nhãn, bạn cho thêm 5. Tất cả mấy?","answer":40,"hint":"Cộng.","explain":"35 + 5 = 40."},
     ],
   },
 
@@ -1452,6 +1481,7 @@ const G2_LESSONS = [
           <line x1="210" y1="112" x2="280" y2="112" stroke="#333330" stroke-width="1.5"/>
           <text x="230" y="135" font-size="20" text-anchor="middle">2 7</text>
         </svg>
+              <figcaption>Trừ có nhớ khi đơn vị không đủ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Trừ có nhớ là “bạn” của cộng có nhớ — rất hay sai nếu quên mượn.</p>
       <div class="definition">
@@ -1492,10 +1522,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"73 − 9 = ?","answer":64,"hint":"Mượn.","explain":"64."},
       {"type":"num","prompt":"64 − 7 = ?","answer":57,"hint":"Mượn.","explain":"57."},
       {"type":"num","prompt":"90 − 4 = ?","answer":86,"hint":"Mượn.","explain":"86."},
-      {"type":"num","prompt":"31 − 5 = ?","answer":26,"hint":"Mượn.","explain":"26."},
-      {"type":"num","prompt":"80 − 9 = ?","answer":71,"hint":"Mượn.","explain":"71."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 17 nhãn, Minh lấy 5. Còn lại mấy?","answer":12,"hint":"Bớt → trừ.","explain":"17 − 5 = 12."},
+      {"type":"num","prompt":"Trên kệ có 71 quyển sách, đem đi 16. Còn mấy quyển?","answer":55,"hint":"Trừ.","explain":"71 − 16 = 55."},
     ],
   },
 
@@ -1508,15 +1536,20 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b23-col-sub">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính trừ có nhớ">
-          <text x="40" y="36" font-size="12" fill="#FC6255">Mượn 1 chục = 10 đơn vị</text>
-          <text x="200" y="70" font-size="28" text-anchor="middle">8</text>
-          <text x="250" y="70" font-size="28" text-anchor="middle">1</text>
-          <text x="160" y="105" font-size="22">−</text>
-          <text x="200" y="105" font-size="28" text-anchor="middle">3</text>
-          <text x="250" y="105" font-size="28" text-anchor="middle">7</text>
-          <line x1="150" y1="115" x2="280" y2="115" stroke="#333330" stroke-width="2"/>
-          <text x="250" y="55" font-size="11" fill="#FC6255">+10</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="40" y="40" font-size="12" fill="#FC6255">Mượn 1 chục</text>
+          <text x="40" y="60" font-size="12" fill="#888888">= 10 đơn vị</text>
+          <text x="250" y="48" font-size="11" fill="#FC6255" text-anchor="middle">+10</text>
+          <text x="200" y="80" font-size="26" text-anchor="middle">8</text>
+          <text x="250" y="80" font-size="26" text-anchor="middle">1</text>
+          <text x="160" y="110" font-size="22">−</text>
+          <text x="200" y="110" font-size="26" text-anchor="middle">3</text>
+          <text x="250" y="110" font-size="26" text-anchor="middle">7</text>
+          <line x1="155" y1="118" x2="280" y2="118" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="142" font-size="22" text-anchor="middle" fill="#83C167">44</text>
+          <text x="40" y="130" font-size="13">81 − 37</text>
         </svg>
+              <figcaption>Trừ hai số có hai chữ số, có nhớ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Hoàn thiện trừ có nhớ phạm vi 100.</p>
       <div class="definition">
@@ -1557,10 +1590,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"93 − 47 = ?","answer":46,"hint":"Mượn.","explain":"46."},
       {"type":"num","prompt":"64 − 19 = ?","answer":45,"hint":"Mượn.","explain":"45."},
       {"type":"num","prompt":"80 − 26 = ?","answer":54,"hint":"Mượn.","explain":"54."},
-      {"type":"num","prompt":"91 − 58 = ?","answer":33,"hint":"Mượn.","explain":"33."},
-      {"type":"num","prompt":"100 − 37 = ?","answer":63,"hint":"Mượn.","explain":"63."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Dũng có 15 bi, được thêm 10 bi. Tất cả mấy bi?","answer":25,"hint":"Thêm → cộng.","explain":"15 + 10 = 25."},
+      {"type":"num","prompt":"Trong hộp có 27 kẹo, bạn cho thêm 3. Tất cả mấy?","answer":30,"hint":"Cộng.","explain":"27 + 3 = 30."},
     ],
   },
 
@@ -1573,13 +1604,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b24-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn cộng trừ 100">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng trừ 100</text>
         </svg>
+              <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Khóa kỹ năng đặt tính có nhớ trước hình học và đo thời gian.</p>
       <div class="definition">
@@ -1620,10 +1659,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"45 + 18 = ?","answer":63,"hint":"Cộng.","explain":"63."},
       {"type":"num","prompt":"72 − 29 = ?","answer":43,"hint":"Trừ.","explain":"43."},
       {"type":"num","prompt":"100 − 37 = ?","answer":63,"hint":"Trừ.","explain":"63."},
-      {"type":"num","prompt":"56 + 29 = ?","answer":85,"hint":"Nhớ.","explain":"85."},
-      {"type":"num","prompt":"83 − 47 = ?","answer":36,"hint":"Mượn.","explain":"36."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Có 13 kẹo, An lấy 7. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"13 − 7 = 6."},
+      {"type":"num","prompt":"Trên kệ có 25 quyển sách, đem đi 8. Còn mấy quyển?","answer":17,"hint":"Trừ.","explain":"25 − 8 = 17."},
     ],
   },
 
@@ -1647,6 +1684,7 @@ const G2_LESSONS = [
           <path d="M200,40 Q240,80 200,120 Q260,80 280,40" fill="none" stroke="#FC6255" stroke-width="2"/>
           <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
         </svg>
+              <figcaption>Nhận biết các đối tượng hình học phẳng cơ bản.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đây là “chữ cái” của hình học — dùng suốt các lớp sau.</p>
       <div class="definition">
@@ -1687,10 +1725,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Ba điểm thẳng hàng","choices":["Nằm trên một đường thẳng","Tạo tam giác","Cách đều luôn","Trùng nhau"],"correct":0,"hint":"Một đường.","explain":"Một đường thẳng."},
       {"type":"mc","prompt":"Đường cong","choices":["Không thẳng","Luôn là đoạn","Luôn là tứ giác","Là kg"],"correct":0,"hint":"Cong.","explain":"Không thẳng."},
       {"type":"mc","prompt":"Điểm dùng để","choices":["Đánh dấu vị trí","Đo lít","Xem giờ","Cân kg"],"correct":0,"hint":"Vị trí.","explain":"Vị trí."},
-      {"type":"mc","prompt":"Dùng thước để vẽ","choices":["Đoạn/đường thẳng","Chỉ đường cong","Khối cầu","Biểu đồ giờ"],"correct":0,"hint":"Thẳng.","explain":"Đoạn/đường thẳng."},
-      {"type":"mc","prompt":"Tam giác có 3 đỉnh","choices":["Không thẳng hàng (thường)","Luôn thẳng hàng","Chỉ 1 điểm","Là đường cong"],"correct":0,"hint":"Tạo mặt.","explain":"Không thẳng hàng."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà An là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường Bình đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -1708,6 +1744,7 @@ const G2_LESSONS = [
           <circle cx="280" cy="110" r="3" fill="#333330"/>
           <text x="160" y="150" font-size="12" text-anchor="middle">Đường gấp khúc = đoạn nối đoạn</text>
         </svg>
+              <figcaption>Nhận biết đường gấp khúc và hình tứ giác.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Nhiều hình quanh em (khung tranh, cửa sổ) là tứ giác; đường gấp khúc gặp trên bản đồ, hàng rào.</p>
       <div class="definition">
@@ -1748,10 +1785,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Hình chữ nhật là","choices":["Tứ giác","Tam giác","Đường cong","Khối cầu"],"correct":0,"hint":"4 cạnh.","explain":"Tứ giác."},
       {"type":"num","prompt":"Tứ giác có mấy đỉnh?","answer":4,"hint":"4.","explain":"4."},
       {"type":"mc","prompt":"Tam giác có mấy cạnh?","choices":["3","4","5","2"],"correct":0,"hint":"Tam=3.","explain":"3."},
-      {"type":"num","prompt":"Tứ giác có mấy góc?","answer":4,"hint":"4.","explain":"4."},
-      {"type":"mc","prompt":"Vuông là","choices":["Tứ giác đặc biệt","Tam giác","Đường thẳng","Lít"],"correct":0,"hint":"4 cạnh bằng.","explain":"Tứ giác."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà Nam là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường Oanh đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -1774,6 +1809,7 @@ const G2_LESSONS = [
           <text x="250" y="75" font-size="11" text-anchor="middle">chữ nhật</text>
           <text x="250" y="130" font-size="11" text-anchor="middle" fill="#888888">cũng là tứ giác</text>
         </svg>
+              <figcaption>Thực hành tạo hình; vẽ đoạn qua hai điểm.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Học hình bằng tay: gấp, cắt, ghép giúp nhớ lâu hơn chỉ nhìn.</p>
       <div class="definition">
@@ -1814,10 +1850,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Hình vuông mấy cạnh?","answer":4,"hint":"4.","explain":"4."},
       {"type":"mc","prompt":"Cắt giấy theo đường thẳng tạo","choices":["Cạnh thẳng","Chỉ đường cong","Số kg","Giờ"],"correct":0,"hint":"Đường cắt.","explain":"Cạnh thẳng."},
       {"type":"mc","prompt":"Xếp hình giúp","choices":["Nhận dạng hình","Chỉ học đọc","Đo lít","Xem lịch"],"correct":0,"hint":"Hình học.","explain":"Nhận dạng."},
-      {"type":"num","prompt":"Hai điểm xác định mấy đoạn thẳng?","answer":1,"hint":"Một đoạn.","explain":"1."},
-      {"type":"mc","prompt":"Không dùng thước khi cần đoạn thẳng thì","choices":["Dễ bị cong","Vẫn chuẩn hơn","Ra khối trụ","Ra kg"],"correct":0,"hint":"Cong tay.","explain":"Dễ cong."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà Hà là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường Lan đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -1841,6 +1875,7 @@ const G2_LESSONS = [
           <path d="M200,40 Q240,80 200,120 Q260,80 280,40" fill="none" stroke="#FC6255" stroke-width="2"/>
           <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
         </svg>
+              <figcaption>Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt tên gọi hình phẳng học kì 1.</p>
       <div class="definition">
@@ -1881,10 +1916,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Ba điểm thẳng hàng nằm trên","choices":["Một đường thẳng","Ba đường","Hình tròn bắt buộc","Không đâu"],"correct":0,"hint":"Thẳng hàng.","explain":"Đường thẳng."},
       {"type":"mc","prompt":"Đường gấp khúc","choices":["Nhiều đoạn thẳng","0 đoạn","Chỉ tròn","Chỉ kg"],"correct":0,"hint":"Gấp.","explain":"Nhiều đoạn."},
       {"type":"mc","prompt":"Hình vuông là","choices":["Tứ giác","Tam giác","Đường cong","Lít"],"correct":0,"hint":"4 cạnh.","explain":"Tứ giác."},
-      {"type":"num","prompt":"Tam giác mấy đỉnh?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"mc","prompt":"Đường thẳng khác đoạn vì","choices":["Không có hai mút giới hạn","Ngắn hơn luôn","Cong","Có 1 điểm"],"correct":0,"hint":"Kéo dài.","explain":"Không hai mút."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà Bình là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường Chi đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -1907,6 +1940,7 @@ const G2_LESSONS = [
           <text x="110" y="85" font-size="11" text-anchor="middle">9</text>
           <text x="160" y="155" font-size="13" text-anchor="middle">4 giờ</text>
         </svg>
+              <figcaption>Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đến trường, xem phim, uống thuốc… đều cần đọc giờ.</p>
       <div class="definition">
@@ -1947,10 +1981,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"7 giờ 30 phút","choices":["7 giờ rưỡi","7 giờ kém 30","8 giờ","6 giờ rưỡi"],"correct":0,"hint":"30=rưỡi.","explain":"Rưỡi."},
       {"type":"num","prompt":"Từ 5 giờ đến 6 giờ: mấy giờ?","answer":1,"hint":"1.","explain":"1."},
       {"type":"mc","prompt":"1 ngày có bao nhiêu giờ?","choices":["24","12","60","7"],"correct":0,"hint":"Cả ngày đêm.","explain":"24."},
-      {"type":"num","prompt":"30 phút + 30 phút = ? phút","answer":60,"hint":"1 giờ.","explain":"60."},
-      {"type":"mc","prompt":"Kim ngắn là","choices":["Kim giờ","Kim phút","Kim giây","Kim ngày"],"correct":0,"hint":"Giờ.","explain":"Kim giờ."},
-      {"type":"num","prompt":"An học từ 7 giờ đến 9 giờ. An học mấy giờ?","answer":2,"hint":"9 − 7.","explain":"2."},
-      {"type":"num","prompt":"Hôm nay ngày 10. Một tuần sau là ngày bao nhiêu?","answer":17,"hint":"10 + 7.","explain":"17."},
+      {"type":"num","prompt":"Bình học từ 8 giờ đến 10 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"num","prompt":"Hôm nay ngày 15. 3 ngày sau là ngày bao nhiêu?","answer":18,"hint":"Cộng ngày.","explain":"15 + 3 = 18."},
     ],
   },
 
@@ -1974,6 +2006,7 @@ const G2_LESSONS = [
           <text x="150" y="110" font-size="12" text-anchor="middle" fill="#FC6255">15</text>
           <text x="160" y="150" font-size="11" text-anchor="middle">Một tuần có 7 ngày</text>
         </svg>
+              <figcaption>Xem lịch: ngày, tháng; số ngày cơ bản.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Lịch giúp biết hôm nay, ngày mai, thứ trong tuần.</p>
       <div class="definition">
@@ -2014,10 +2047,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Tháng 6 có","choices":["30 ngày","31","28","24"],"correct":0,"hint":"30.","explain":"30."},
       {"type":"mc","prompt":"Ngày trước 15 là","choices":["14","16","1","30"],"correct":0,"hint":"−1.","explain":"14."},
       {"type":"mc","prompt":"Xem ngày tháng bằng","choices":["Lịch","Cân","Thước lít","Chỉ giây"],"correct":0,"hint":"Lịch.","explain":"Lịch."},
-      {"type":"num","prompt":"Hai ngày sau 10 là?","answer":12,"hint":"+2.","explain":"12."},
-      {"type":"mc","prompt":"Tháng 2 thường có","choices":["28 hoặc 29 ngày","31 luôn","30 luôn","7"],"correct":0,"hint":"Đặc biệt.","explain":"28/29."},
-      {"type":"num","prompt":"An học từ 7 giờ đến 9 giờ. An học mấy giờ?","answer":2,"hint":"9 − 7.","explain":"2."},
-      {"type":"num","prompt":"Hôm nay ngày 10. Một tuần sau là ngày bao nhiêu?","answer":17,"hint":"10 + 7.","explain":"17."},
+      {"type":"num","prompt":"Oanh học từ 7 giờ đến 9 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"num","prompt":"Hôm nay ngày 6. 2 ngày sau là ngày bao nhiêu?","answer":8,"hint":"Cộng ngày.","explain":"6 + 2 = 8."},
     ],
   },
 
@@ -2040,6 +2071,7 @@ const G2_LESSONS = [
           <text x="110" y="85" font-size="11" text-anchor="middle">9</text>
           <text x="160" y="155" font-size="13" text-anchor="middle">2 giờ 30 phút</text>
         </svg>
+              <figcaption>Thực hành đọc giờ và lịch.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Thực hành giúp phản xạ: nhìn đồng hồ là đọc được.</p>
       <div class="definition">
@@ -2080,10 +2112,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Thứ 2 đến thứ 6 (cả hai) mấy ngày?","answer":5,"hint":"Đếm.","explain":"5."},
       {"type":"mc","prompt":"Ngày mai của 20","choices":["21","19","30","1"],"correct":0,"hint":"+1.","explain":"21."},
       {"type":"num","prompt":"30+30 phút = ?","answer":60,"hint":"60.","explain":"60."},
-      {"type":"num","prompt":"1 giờ rưỡi = ? phút","answer":90,"hint":"60+30.","explain":"90."},
-      {"type":"mc","prompt":"Số 3 trên đồng hồ (kim phút) ≈","choices":["15 phút","3 phút","30 phút","45 phút"],"correct":0,"hint":"×5.","explain":"15 phút."},
-      {"type":"num","prompt":"An học từ 7 giờ đến 9 giờ. An học mấy giờ?","answer":2,"hint":"9 − 7.","explain":"2."},
-      {"type":"num","prompt":"Hôm nay ngày 10. Một tuần sau là ngày bao nhiêu?","answer":17,"hint":"10 + 7.","explain":"17."},
+      {"type":"num","prompt":"Lan học từ 9 giờ đến 11 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"num","prompt":"Hôm nay ngày 9. 7 ngày sau là ngày bao nhiêu?","answer":16,"hint":"Cộng ngày.","explain":"9 + 7 = 16."},
     ],
   },
 
@@ -2106,6 +2136,7 @@ const G2_LESSONS = [
           <text x="110" y="85" font-size="11" text-anchor="middle">9</text>
           <text x="160" y="155" font-size="13" text-anchor="middle">7 giờ 30 phút</text>
         </svg>
+              <figcaption>Ôn ngày giờ, giờ phút, ngày tháng.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt đọc giờ và lịch học kì 1.</p>
       <div class="definition">
@@ -2146,10 +2177,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Từ 3 giờ đến 7 giờ?","answer":4,"hint":"7−3.","explain":"4."},
       {"type":"mc","prompt":"Kim ngắn","choices":["Kim giờ","Kim phút","Kim giây","Kim ngày"],"correct":0,"hint":"Giờ.","explain":"Kim giờ."},
       {"type":"num","prompt":"Hai ngày sau 10?","answer":12,"hint":"+2.","explain":"12."},
-      {"type":"num","prompt":"1 ngày = ? giờ","answer":24,"hint":"24.","explain":"24."},
-      {"type":"num","prompt":"15 phút + 15 phút = ?","answer":30,"hint":"30.","explain":"30."},
-      {"type":"num","prompt":"An học từ 7 giờ đến 9 giờ. An học mấy giờ?","answer":2,"hint":"9 − 7.","explain":"2."},
-      {"type":"num","prompt":"Hôm nay ngày 10. Một tuần sau là ngày bao nhiêu?","answer":17,"hint":"10 + 7.","explain":"17."},
+      {"type":"num","prompt":"Chi học từ 8 giờ đến 10 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"num","prompt":"Hôm nay ngày 12. 6 ngày sau là ngày bao nhiêu?","answer":18,"hint":"Cộng ngày.","explain":"12 + 6 = 18."},
     ],
   },
 
@@ -2162,17 +2191,22 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b33-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <text x="200" y="40" font-size="11" fill="#888888">chục</text>
-          <text x="250" y="40" font-size="11" fill="#888888">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255">¹</text>
-          <text x="200" y="85" font-size="28" text-anchor="middle">3</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">7</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">2</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">8</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="#333330" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="#83C167">Cộng đơn vị trước</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+          <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">65</text>
+          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
+          <text x="40" y="110" font-size="13">37 + 28</text>
         </svg>
+              <figcaption>Ôn cộng trừ HK1 (qua 10 và có nhớ).</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Ôn phép tính trước kiểm tra HK1.</p>
       <div class="definition">
@@ -2213,10 +2247,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"37 + 28 = ?","answer":65,"hint":"Nhớ.","explain":"65."},
       {"type":"num","prompt":"90 − 47 = ?","answer":43,"hint":"Mượn.","explain":"43."},
       {"type":"num","prompt":"56 + 9 = ?","answer":65,"hint":"Nhớ.","explain":"65."},
-      {"type":"num","prompt":"8 + 7 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
-      {"type":"num","prompt":"63 − 18 = ?","answer":45,"hint":"Mượn.","explain":"45."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Chi có 12 bông hoa, được thêm 9 bông hoa. Tất cả mấy bông hoa?","answer":21,"hint":"Thêm → cộng.","explain":"12 + 9 = 21."},
+      {"type":"num","prompt":"Trong hộp có 14 lá cờ, bạn cho thêm 2. Tất cả mấy?","answer":16,"hint":"Cộng.","explain":"14 + 2 = 16."},
     ],
   },
 
@@ -2240,6 +2272,7 @@ const G2_LESSONS = [
           <path d="M200,40 Q240,80 200,120 Q260,80 280,40" fill="none" stroke="#FC6255" stroke-width="2"/>
           <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
         </svg>
+              <figcaption>Ôn điểm, đoạn, đường, tứ giác.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Ôn hình trước kiểm tra.</p>
       <div class="definition">
@@ -2279,10 +2312,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tam giác mấy đỉnh?","answer":3,"hint":"3.","explain":"3."},
       {"type":"mc","prompt":"Gấp khúc","choices":["Đoạn nối đoạn","Khối cầu","Kg","Lịch"],"correct":0,"hint":"Gấp.","explain":"Đoạn nối."},
       {"type":"mc","prompt":"Thẳng hàng","choices":["Một đường thẳng","Ba đường","Tròn","Không"],"correct":0,"hint":"Một đường.","explain":"Đường thẳng."},
-      {"type":"mc","prompt":"Hai mút","choices":["Đoạn thẳng","Đường thẳng","Kg","Giờ"],"correct":0,"hint":"Đoạn.","explain":"Đoạn."},
-      {"type":"num","prompt":"Tứ giác mấy cạnh?","answer":4,"hint":"4.","explain":"4."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà Phúc là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường An đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -2302,6 +2333,7 @@ const G2_LESSONS = [
           <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
           <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
         </svg>
+              <figcaption>Ôn kg, l.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Ôn kg và l trước kiểm tra — đo lường hay mất điểm vì quên đơn vị.</p>
       <div class="definition">
@@ -2343,10 +2375,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Đo nước","choices":["Lít","Kg","Ngày","Điểm"],"correct":0,"hint":"l.","explain":"Lít."},
       {"type":"mc","prompt":"Đo nặng","choices":["Kg","L","Giờ","Mút"],"correct":0,"hint":"kg.","explain":"Kg."},
       {"type":"num","prompt":"1+1+1 kg=?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"num","prompt":"10 l − 1 l = ?","answer":9,"hint":"9.","explain":"9."},
-      {"type":"num","prompt":"4 kg + 4 kg = ?","answer":8,"hint":"8.","explain":"8."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 6 kg đường. Tất cả mấy kg?","answer":9,"hint":"Cộng kg.","explain":"3 + 6 = 9."},
+      {"type":"num","prompt":"Bình có 9 l nước, dùng 3 l. Còn mấy lít?","answer":6,"hint":"Trừ lít.","explain":"9 − 3 = 6."},
     ],
   },
 
@@ -2359,13 +2389,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b36-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn HK1">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Ôn HK1</text>
         </svg>
+              <figcaption>Tổng ôn học kì I.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Tổng ôn toàn HK1.</p>
       <div class="definition">
@@ -2406,10 +2444,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Liền sau 99?","answer":100,"hint":"+1.","explain":"100."},
       {"type":"mc","prompt":"Tứ giác mấy cạnh?","choices":["4","3","2","5"],"correct":0,"hint":"4.","explain":"4."},
       {"type":"num","prompt":"1 giờ = ? phút","answer":60,"hint":"60.","explain":"60."},
-      {"type":"num","prompt":"9 + 6 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
-      {"type":"num","prompt":"7 + 8 = ?","answer":15,"hint":"15.","explain":"15."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Dũng có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
+      {"type":"num","prompt":"Trong hộp có 17 nhãn, bạn cho thêm 5. Tất cả mấy?","answer":22,"hint":"Cộng.","explain":"17 + 5 = 22."},
     ],
   },
 
@@ -2434,6 +2470,7 @@ const G2_LESSONS = [
           <text x="200" y="75" font-size="14">4 cột</text>
           <text x="200" y="110" font-size="16" fill="#58C4DD">2 × 4 = 8</text>
         </svg>
+              <figcaption>Nhân là cộng các số hạng bằng nhau.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Nhân giúp viết gọn phép cộng lặp — nền bảng cửu chương.</p>
       <div class="definition">
@@ -2474,10 +2511,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"3 × 2 = ?","answer":6,"hint":"3+3.","explain":"6."},
       {"type":"mc","prompt":"Nhân liên quan","choices":["Cộng lặp số bằng nhau","Trừ có nhớ","Đường cong","Lịch"],"correct":0,"hint":"Cộng lặp.","explain":"Cộng lặp."},
       {"type":"num","prompt":"4 × 2 = ?","answer":8,"hint":"4+4.","explain":"8."},
-      {"type":"num","prompt":"2 × 2 = ?","answer":4,"hint":"Đôi.","explain":"4."},
-      {"type":"num","prompt":"1 × 5 = ?","answer":5,"hint":"Chính nó.","explain":"5."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 7 đĩa. Tất cả mấy cái bánh?","answer":14,"hint":"7 × 2.","explain":"14."},
+      {"type":"num","prompt":"Một hàng 2 bạn, có 7 hàng. Tất cả mấy bạn?","answer":14,"hint":"7 × 2.","explain":"14."},
     ],
   },
 
@@ -2509,6 +2544,7 @@ const G2_LESSONS = [
           <text x="200" y="75" font-size="14">5 cột</text>
           <text x="200" y="110" font-size="16" fill="#58C4DD">3 × 5 = 15</text>
         </svg>
+              <figcaption>Gọi tên thành phần phép nhân.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Biết tên thừa số – tích để học bảng nhân và bài toán sau này.</p>
       <div class="definition">
@@ -2549,10 +2585,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 × 6 = ?","answer":12,"hint":"Bảng 2.","explain":"12."},
       {"type":"num","prompt":"5 × 3 = ?","answer":15,"hint":"5+5+5.","explain":"15."},
       {"type":"mc","prompt":"Đổi chỗ thừa số, tích","choices":["Không đổi","Đổi dấu","Luôn tăng","Luôn giảm"],"correct":0,"hint":"Giao hoán.","explain":"Không đổi."},
-      {"type":"num","prompt":"3 × 4 = ?","answer":12,"hint":"12.","explain":"12."},
-      {"type":"num","prompt":"5 × 4 = ?","answer":20,"hint":"20.","explain":"20."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Mỗi đĩa 5 cái bánh, có 8 đĩa. Tất cả mấy cái bánh?","answer":40,"hint":"8 × 5.","explain":"40."},
+      {"type":"num","prompt":"Một hàng 5 bạn, có 8 hàng. Tất cả mấy bạn?","answer":40,"hint":"8 × 5.","explain":"40."},
     ],
   },
 
@@ -2565,18 +2599,34 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b39-times2">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 2">
-          <text x="40" y="42" font-size="13">2 × 1 = 2</text>
-          <text x="180" y="42" font-size="13">2 × 6 = 12</text>
-          <text x="40" y="64" font-size="13">2 × 2 = 4</text>
-          <text x="180" y="64" font-size="13">2 × 7 = 14</text>
-          <text x="40" y="86" font-size="13">2 × 3 = 6</text>
-          <text x="180" y="86" font-size="13">2 × 8 = 16</text>
-          <text x="40" y="108" font-size="13">2 × 4 = 8</text>
-          <text x="180" y="108" font-size="13">2 × 9 = 18</text>
-          <text x="40" y="130" font-size="13">2 × 5 = 10</text>
-          <text x="180" y="130" font-size="13">2 × 10 = 20</text>
-          <text x="160" y="155" font-size="12" text-anchor="middle" fill="#83C167">Thuộc rồi ôn mỗi ngày</text>
+          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="42" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="66" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="78" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="102" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="114" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="150" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 2</text>
+          <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">2 × 4 = 8</text>
+          <rect x="175" y="26" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="40" font-size="12">2×1=2</text>
+          <text x="250" y="40" font-size="12">2×6=12</text>
+          <rect x="175" y="46" width="130" height="18" fill="none" stroke="#9A72AC" stroke-width="1"/>
+          <text x="185" y="60" font-size="12">2×2=4</text>
+          <text x="250" y="60" font-size="12">2×7=14</text>
+          <rect x="175" y="66" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="80" font-size="12">2×3=6</text>
+          <text x="250" y="80" font-size="12">2×8=16</text>
+          <rect x="175" y="86" width="130" height="18" fill="none" stroke="#9A72AC" stroke-width="1"/>
+          <text x="185" y="100" font-size="12">2×4=8</text>
+          <text x="250" y="100" font-size="12">2×9=18</text>
+          <rect x="175" y="106" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="120" font-size="12">2×5=10</text>
+          <text x="250" y="120" font-size="12">2×10=20</text>
+          <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 2 · ôn mỗi ngày</text>
         </svg>
+              <figcaption>Thuộc bảng nhân 2.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Bảng 2 là bảng chẵn — dễ thuộc nhất, dùng mọi ngày.</p>
       <div class="definition">
@@ -2612,15 +2662,13 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Bảng 2 = đếm cách 2.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"2 × 5 = ?","answer":10,"hint":"Đôi 5.","explain":"10."},
-      {"type":"num","prompt":"2 × 8 = ?","answer":16,"hint":"Bảng 2.","explain":"16."},
-      {"type":"num","prompt":"2 × 10 = ?","answer":20,"hint":"2 chục.","explain":"20."},
-      {"type":"num","prompt":"2 × 1 = ?","answer":2,"hint":"Chính nó.","explain":"2."},
-      {"type":"num","prompt":"2 × 6 = ?","answer":12,"hint":"Bảng 2.","explain":"12."},
-      {"type":"num","prompt":"2 × 9 = ?","answer":18,"hint":"Bảng 2.","explain":"18."},
+      {"type":"num","prompt":"2 × 1 = ?","answer":2,"hint":"Bảng 2.","explain":"2."},
+      {"type":"num","prompt":"2 × 3 = ?","answer":6,"hint":"Bảng 2.","explain":"6."},
+      {"type":"num","prompt":"2 × 4 = ?","answer":8,"hint":"Bảng 2.","explain":"8."},
       {"type":"num","prompt":"2 × 7 = ?","answer":14,"hint":"Bảng 2.","explain":"14."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"2 × 9 = ?","answer":18,"hint":"Bảng 2.","explain":"18."},
+      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 9 đĩa. Tất cả mấy cái bánh?","answer":18,"hint":"9 × 2.","explain":"18."},
+      {"type":"num","prompt":"Một hàng 2 bạn, có 9 hàng. Tất cả mấy bạn?","answer":18,"hint":"9 × 2.","explain":"18."},
     ],
   },
 
@@ -2633,18 +2681,46 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b40-times5">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 5">
-          <text x="40" y="42" font-size="13">5 × 1 = 5</text>
-          <text x="180" y="42" font-size="13">5 × 6 = 30</text>
-          <text x="40" y="64" font-size="13">5 × 2 = 10</text>
-          <text x="180" y="64" font-size="13">5 × 7 = 35</text>
-          <text x="40" y="86" font-size="13">5 × 3 = 15</text>
-          <text x="180" y="86" font-size="13">5 × 8 = 40</text>
-          <text x="40" y="108" font-size="13">5 × 4 = 20</text>
-          <text x="180" y="108" font-size="13">5 × 9 = 45</text>
-          <text x="40" y="130" font-size="13">5 × 5 = 25</text>
-          <text x="180" y="130" font-size="13">5 × 10 = 50</text>
-          <text x="160" y="155" font-size="12" text-anchor="middle" fill="#83C167">Thuộc rồi ôn mỗi ngày</text>
+          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="42" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="30" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="42" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="30" cy="60" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="66" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="78" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="66" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="78" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="66" cy="60" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="102" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="114" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="102" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="114" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="102" cy="60" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="150" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="150" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="60" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 5</text>
+          <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">5 × 4 = 20</text>
+          <rect x="175" y="26" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="40" font-size="12">5×1=5</text>
+          <text x="250" y="40" font-size="12">5×6=30</text>
+          <rect x="175" y="46" width="130" height="18" fill="none" stroke="#9A72AC" stroke-width="1"/>
+          <text x="185" y="60" font-size="12">5×2=10</text>
+          <text x="250" y="60" font-size="12">5×7=35</text>
+          <rect x="175" y="66" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="80" font-size="12">5×3=15</text>
+          <text x="250" y="80" font-size="12">5×8=40</text>
+          <rect x="175" y="86" width="130" height="18" fill="none" stroke="#9A72AC" stroke-width="1"/>
+          <text x="185" y="100" font-size="12">5×4=20</text>
+          <text x="250" y="100" font-size="12">5×9=45</text>
+          <rect x="175" y="106" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
+          <text x="185" y="120" font-size="12">5×5=25</text>
+          <text x="250" y="120" font-size="12">5×10=50</text>
+          <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 5 · ôn mỗi ngày</text>
         </svg>
+              <figcaption>Thuộc bảng nhân 5.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Bảng 5 gắn với đồng hồ (5,10,15…) và đếm nhanh.</p>
       <div class="definition">
@@ -2680,15 +2756,13 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Bảng 5 = đếm cách 5 đến 50.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"5 × 3 = ?","answer":15,"hint":"Bảng 5.","explain":"15."},
-      {"type":"num","prompt":"5 × 5 = ?","answer":25,"hint":"Đôi.","explain":"25."},
-      {"type":"num","prompt":"5 × 8 = ?","answer":40,"hint":"Bảng 5.","explain":"40."},
-      {"type":"num","prompt":"5 × 10 = ?","answer":50,"hint":"5 chục.","explain":"50."},
-      {"type":"num","prompt":"5 × 2 = ?","answer":10,"hint":"10.","explain":"10."},
+      {"type":"num","prompt":"5 × 1 = ?","answer":5,"hint":"Bảng 5.","explain":"5."},
+      {"type":"num","prompt":"5 × 4 = ?","answer":20,"hint":"Bảng 5.","explain":"20."},
+      {"type":"num","prompt":"5 × 6 = ?","answer":30,"hint":"Bảng 5.","explain":"30."},
       {"type":"num","prompt":"5 × 7 = ?","answer":35,"hint":"Bảng 5.","explain":"35."},
       {"type":"num","prompt":"5 × 9 = ?","answer":45,"hint":"Bảng 5.","explain":"45."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Mỗi đĩa 5 cái bánh, có 2 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"2 × 5.","explain":"10."},
+      {"type":"num","prompt":"Một hàng 5 bạn, có 2 hàng. Tất cả mấy bạn?","answer":10,"hint":"2 × 5.","explain":"10."},
     ],
   },
 
@@ -2701,12 +2775,23 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b41-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
-          <rect x="30" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="57" y="80" font-size="18" text-anchor="middle">5</text>
-          <rect x="100" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="127" y="80" font-size="18" text-anchor="middle">5</text>
-          <text x="160" y="140" font-size="14" text-anchor="middle">10 : 2 = 5</text>
+          <rect x="20" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="60" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 1</text>
+          <circle cx="34" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="34" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="110" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="150" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 2</text>
+          <circle cx="124" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="152" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="124" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="160" y="150" font-size="14" text-anchor="middle">10 : 2 = 5</text>
         </svg>
+              <figcaption>Chia là chia đều / tách nhóm bằng nhau; ngược nhân.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chia giúp tách đều đồ dùng, kẹo, nhóm bạn…</p>
       <div class="definition">
@@ -2747,10 +2832,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"10 : 2 = ?","answer":5,"hint":"Bảng 2.","explain":"5."},
       {"type":"num","prompt":"20 : 5 = ?","answer":4,"hint":"Bảng 5.","explain":"4."},
       {"type":"mc","prompt":"Chia ngược với","choices":["Nhân","Cộng luôn","Đo giờ","Vẽ đoạn"],"correct":0,"hint":"Ngược nhân.","explain":"Nhân."},
-      {"type":"num","prompt":"6 : 2 = ?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"5.","explain":"5."},
-      {"type":"num","prompt":"12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"12 : 2.","explain":"6."},
-      {"type":"num","prompt":"20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"6 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":3,"hint":"6 : 2.","explain":"3."},
+      {"type":"num","prompt":"6 cái kẹo, mỗi hộp 2 cái. Cần mấy hộp?","answer":3,"hint":"6 : 2.","explain":"3."},
     ],
   },
 
@@ -2763,12 +2846,25 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b42-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
-          <rect x="30" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="57" y="80" font-size="18" text-anchor="middle">6</text>
-          <rect x="100" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="127" y="80" font-size="18" text-anchor="middle">6</text>
-          <text x="160" y="140" font-size="14" text-anchor="middle">12 : 2 = 6</text>
+          <rect x="20" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="60" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 1</text>
+          <circle cx="34" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="34" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="110" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="150" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 2</text>
+          <circle cx="124" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="152" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="124" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="152" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="160" y="150" font-size="14" text-anchor="middle">12 : 2 = 6</text>
         </svg>
+              <figcaption>Gọi tên thành phần phép chia.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đúng tên thành phần để hiểu đề “tìm thương”.</p>
       <div class="definition">
@@ -2809,10 +2905,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Bảng 2.","explain":"9."},
       {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"Bảng 5.","explain":"5."},
       {"type":"num","prompt":"14 : 2 = ?","answer":7,"hint":"Ngược nhân.","explain":"7."},
-      {"type":"num","prompt":"30 : 5 = ?","answer":6,"hint":"Bảng 5.","explain":"6."},
-      {"type":"mc","prompt":"Trong 20:5=4, số chia là","choices":["5","20","4","25"],"correct":0,"hint":"Sau dấu chia.","explain":"5."},
-      {"type":"num","prompt":"12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"12 : 2.","explain":"6."},
-      {"type":"num","prompt":"20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"20 viên bi chia đều 5 bạn. Mỗi bạn mấy viên?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"20 cái kẹo, mỗi hộp 5 cái. Cần mấy hộp?","answer":4,"hint":"20 : 5.","explain":"4."},
     ],
   },
 
@@ -2825,12 +2919,29 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b43-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
-          <rect x="30" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="57" y="80" font-size="18" text-anchor="middle">8</text>
-          <rect x="100" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="127" y="80" font-size="18" text-anchor="middle">8</text>
-          <text x="160" y="140" font-size="14" text-anchor="middle">16 : 2 = 8</text>
+          <rect x="20" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="60" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 1</text>
+          <circle cx="34" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="34" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="34" cy="80" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="80" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="110" y="28" width="80" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="150" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 2</text>
+          <circle cx="124" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="152" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="124" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="152" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="124" cy="80" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="138" cy="80" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="160" y="150" font-size="14" text-anchor="middle">16 : 2 = 8</text>
         </svg>
+              <figcaption>Thuộc bảng chia 2.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Từ bảng nhân 2 suy bảng chia 2.</p>
       <div class="definition">
@@ -2866,15 +2977,13 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Chia 2 = lấy nửa (với số trong bảng).</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"6 : 2 = ?","answer":3,"hint":"Bảng 2.","explain":"3."},
-      {"type":"num","prompt":"14 : 2 = ?","answer":7,"hint":"Bảng 2.","explain":"7."},
-      {"type":"num","prompt":"20 : 2 = ?","answer":10,"hint":"Bảng 2.","explain":"10."},
-      {"type":"num","prompt":"4 : 2 = ?","answer":2,"hint":"Đôi.","explain":"2."},
-      {"type":"num","prompt":"12 : 2 = ?","answer":6,"hint":"Bảng 2.","explain":"6."},
-      {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Bảng 2.","explain":"9."},
-      {"type":"num","prompt":"16 : 2 = ?","answer":8,"hint":"Bảng 2.","explain":"8."},
-      {"type":"num","prompt":"12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"12 : 2.","explain":"6."},
-      {"type":"num","prompt":"20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"2 : 2 = ?","answer":1,"hint":"Bảng chia 2.","explain":"1."},
+      {"type":"num","prompt":"8 : 2 = ?","answer":4,"hint":"Bảng chia 2.","explain":"4."},
+      {"type":"num","prompt":"10 : 2 = ?","answer":5,"hint":"Bảng chia 2.","explain":"5."},
+      {"type":"num","prompt":"12 : 2 = ?","answer":6,"hint":"Bảng chia 2.","explain":"6."},
+      {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Bảng chia 2.","explain":"9."},
+      {"type":"num","prompt":"10 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":5,"hint":"10 : 2.","explain":"5."},
+      {"type":"num","prompt":"10 cái kẹo, mỗi hộp 2 cái. Cần mấy hộp?","answer":5,"hint":"10 : 2.","explain":"5."},
     ],
   },
 
@@ -2887,18 +2996,49 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b44-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
-          <rect x="30" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="57" y="80" font-size="18" text-anchor="middle">6</text>
-          <rect x="100" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="127" y="80" font-size="18" text-anchor="middle">6</text>
-          <rect x="170" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="197" y="80" font-size="18" text-anchor="middle">6</text>
-          <rect x="240" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="267" y="80" font-size="18" text-anchor="middle">6</text>
-          <rect x="310" y="40" width="55" height="70" rx="6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="337" y="80" font-size="18" text-anchor="middle">6</text>
-          <text x="160" y="140" font-size="14" text-anchor="middle">30 : 5 = 6</text>
+          <rect x="20" y="28" width="46" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="43" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 1</text>
+          <circle cx="34" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="34" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="48" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="62" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="76" y="28" width="46" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="99" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 2</text>
+          <circle cx="90" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="104" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="118" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="90" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="104" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="118" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="132" y="28" width="46" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="155" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 3</text>
+          <circle cx="146" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="160" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="174" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="146" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="160" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="174" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="188" y="28" width="46" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="211" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 4</text>
+          <circle cx="202" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="216" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="230" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="202" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="216" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="230" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="244" y="28" width="46" height="95" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="267" y="22" font-size="10" text-anchor="middle" fill="#888888">nhóm 5</text>
+          <circle cx="258" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="272" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="286" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="258" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="272" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="286" cy="64" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="160" y="150" font-size="14" text-anchor="middle">30 : 5 = 6</text>
         </svg>
+              <figcaption>Thuộc bảng chia 5.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đi cùng bảng nhân 5.</p>
       <div class="definition">
@@ -2934,15 +3074,13 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Chia 5 ngược bảng nhân 5.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"10 : 5 = ?","answer":2,"hint":"Bảng 5.","explain":"2."},
-      {"type":"num","prompt":"35 : 5 = ?","answer":7,"hint":"Bảng 5.","explain":"7."},
-      {"type":"num","prompt":"40 : 5 = ?","answer":8,"hint":"Bảng 5.","explain":"8."},
-      {"type":"num","prompt":"50 : 5 = ?","answer":10,"hint":"Bảng 5.","explain":"10."},
-      {"type":"num","prompt":"5 : 5 = ?","answer":1,"hint":"1.","explain":"1."},
-      {"type":"num","prompt":"45 : 5 = ?","answer":9,"hint":"Bảng 5.","explain":"9."},
-      {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"Bảng 5.","explain":"5."},
-      {"type":"num","prompt":"12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"12 : 2.","explain":"6."},
-      {"type":"num","prompt":"20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"15 : 5 = ?","answer":3,"hint":"Bảng chia 5.","explain":"3."},
+      {"type":"num","prompt":"20 : 5 = ?","answer":4,"hint":"Bảng chia 5.","explain":"4."},
+      {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"Bảng chia 5.","explain":"5."},
+      {"type":"num","prompt":"30 : 5 = ?","answer":6,"hint":"Bảng chia 5.","explain":"6."},
+      {"type":"num","prompt":"45 : 5 = ?","answer":9,"hint":"Bảng chia 5.","explain":"9."},
+      {"type":"num","prompt":"30 viên bi chia đều 5 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"30 : 5.","explain":"6."},
+      {"type":"num","prompt":"30 cái kẹo, mỗi hộp 5 cái. Cần mấy hộp?","answer":6,"hint":"30 : 5.","explain":"6."},
     ],
   },
 
@@ -2969,6 +3107,7 @@ const G2_LESSONS = [
           <text x="200" y="75" font-size="14">2 cột</text>
           <text x="200" y="110" font-size="16" fill="#58C4DD">5 × 2 = 10</text>
         </svg>
+              <figcaption>Ôn nhân chia 2 và 5; thừa số, thương.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Khóa bảng 2 và 5 — trọng tâm HK2 đầu.</p>
       <div class="definition">
@@ -3009,10 +3148,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Chia 2.","explain":"9."},
       {"type":"num","prompt":"45 : 5 = ?","answer":9,"hint":"Chia 5.","explain":"9."},
       {"type":"num","prompt":"4 đĩa × 5 bánh = ?","answer":20,"hint":"4×5.","explain":"20."},
-      {"type":"num","prompt":"5 × 6 = ?","answer":30,"hint":"30.","explain":"30."},
-      {"type":"num","prompt":"16 : 2 = ?","answer":8,"hint":"8.","explain":"8."},
-      {"type":"num","prompt":"12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":6,"hint":"12 : 2.","explain":"6."},
-      {"type":"num","prompt":"20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?","answer":4,"hint":"20 : 5.","explain":"4."},
+      {"type":"num","prompt":"14 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":7,"hint":"14 : 2.","explain":"7."},
+      {"type":"num","prompt":"14 cái kẹo, mỗi hộp 2 cái. Cần mấy hộp?","answer":7,"hint":"14 : 2.","explain":"7."},
     ],
   },
 
@@ -3033,6 +3170,7 @@ const G2_LESSONS = [
           <circle cx="230" cy="80" r="45" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="230" y="145" font-size="12" text-anchor="middle" fill="#58C4DD">khối cầu</text>
         </svg>
+              <figcaption>Nhận biết khối trụ và khối cầu trong thực tiễn.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đồ chơi và đồ dùng quanh em là hình khối — học tên đúng.</p>
       <div class="definition">
@@ -3073,10 +3211,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Khối cầu","choices":["Tròn đều mọi phía","Hai đáy vuông","Tứ giác","Kg"],"correct":0,"hint":"Bóng.","explain":"Tròn đều."},
       {"type":"mc","prompt":"Hình phẳng khác khối","choices":["Khối có dạng không gian","Phẳng nặng hơn","Khối chỉ trên lịch","Không khác"],"correct":0,"hint":"3D.","explain":"Không gian."},
       {"type":"mc","prompt":"Viên bi","choices":["Khối cầu","Khối trụ","Đoạn","Lịch"],"correct":0,"hint":"Bi.","explain":"Cầu."},
-      {"type":"mc","prompt":"Lõi giấy vệ sinh","choices":["Khối trụ","Khối cầu","Tam giác","Giờ"],"correct":0,"hint":"Ống.","explain":"Trụ."},
-      {"type":"mc","prompt":"Khối cầu có đáy phẳng như trụ?","choices":["Không","Có hai đáy","Có một đáy","Có bốn đáy"],"correct":0,"hint":"Không đáy phẳng.","explain":"Không."},
-      {"type":"num","prompt":"Một hộp có 2 quả bóng (khối cầu) và 3 lon sữa (khối trụ). Tất cả mấy đồ vật?","answer":5,"hint":"2 + 3.","explain":"5."},
-      {"type":"num","prompt":"Có 4 khối trụ, lấy bớt 1. Còn mấy khối trụ?","answer":3,"hint":"4 − 1.","explain":"3."},
+      {"type":"num","prompt":"Hộp có 8 quả bóng (cầu) và 7 lon (trụ). Tất cả mấy đồ vật?","answer":15,"hint":"Cộng.","explain":"8 + 7 = 15."},
+      {"type":"num","prompt":"Có 17 khối trụ, lấy bớt 8. Còn mấy khối trụ?","answer":9,"hint":"Trừ.","explain":"17 − 8 = 9."},
     ],
   },
 
@@ -3097,6 +3233,7 @@ const G2_LESSONS = [
           <circle cx="230" cy="80" r="45" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="230" y="145" font-size="12" text-anchor="middle" fill="#58C4DD">khối cầu</text>
         </svg>
+              <figcaption>Ôn nhận dạng khối trụ, khối cầu.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Củng cố trước khi sang số đến 1000.</p>
       <div class="definition">
@@ -3137,10 +3274,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Quả cam gần","choices":["Khối cầu","Gấp khúc","Tứ giác","Số trừ"],"correct":0,"hint":"Tròn.","explain":"Cầu."},
       {"type":"mc","prompt":"Cốc dạng ống","choices":["Khối trụ","Khối cầu","Điểm","Phút"],"correct":0,"hint":"Ống.","explain":"Trụ."},
       {"type":"mc","prompt":"Bóng đá","choices":["Khối cầu","Tứ giác","Đoạn","Lít"],"correct":0,"hint":"Cầu.","explain":"Cầu."},
-      {"type":"mc","prompt":"Lon nước ngọt","choices":["Khối trụ","Khối cầu","Điểm","Ngày"],"correct":0,"hint":"Trụ.","explain":"Trụ."},
-      {"type":"mc","prompt":"Phân biệt nhanh","choices":["Cách lăn và dạng đáy","Chỉ màu","Chỉ giá tiền","Chỉ kg"],"correct":0,"hint":"Dạng.","explain":"Lăn/đáy."},
-      {"type":"num","prompt":"Một hộp có 2 quả bóng (khối cầu) và 3 lon sữa (khối trụ). Tất cả mấy đồ vật?","answer":5,"hint":"2 + 3.","explain":"5."},
-      {"type":"num","prompt":"Có 4 khối trụ, lấy bớt 1. Còn mấy khối trụ?","answer":3,"hint":"4 − 1.","explain":"3."},
+      {"type":"num","prompt":"Hộp có 5 quả bóng (cầu) và 6 lon (trụ). Tất cả mấy đồ vật?","answer":11,"hint":"Cộng.","explain":"5 + 6 = 11."},
+      {"type":"num","prompt":"Có 17 khối trụ, lấy bớt 5. Còn mấy khối trụ?","answer":12,"hint":"Trừ.","explain":"17 − 5 = 12."},
     ],
   },
 
@@ -3164,6 +3299,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">0</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">100 = 100 + 00 + 0</text>
         </svg>
+              <figcaption>Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Hiểu “tỷ giá” các hàng để đọc số đến 1000.</p>
       <div class="definition">
@@ -3204,10 +3340,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"10 đơn vị = ?","answer":10,"hint":"1 chục.","explain":"10."},
       {"type":"mc","prompt":"1 nghìn bằng","choices":["10 trăm","10 chục","10 đơn vị","100 đơn vị"],"correct":0,"hint":"10×100.","explain":"10 trăm."},
       {"type":"num","prompt":"5 chục = ?","answer":50,"hint":"5×10.","explain":"50."},
-      {"type":"num","prompt":"7 trăm = ?","answer":700,"hint":"7×100.","explain":"700."},
-      {"type":"num","prompt":"100 chục = ?","answer":1000,"hint":"10 trăm.","explain":"1000."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Minh có 7 trăm, 6 chục, 2 đơn vị. Số nhà là bao nhiêu?","answer":762,"hint":"trăm|chục|đv.","explain":"762."},
+      {"type":"num","prompt":"Trường có 3 trăm 9 chục học sinh (0 đơn vị). Viết số đó.","answer":390,"hint":"Ghép hàng.","explain":"390."},
     ],
   },
 
@@ -3231,6 +3365,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">0</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">300 = 300 + 00 + 0</text>
         </svg>
+              <figcaption>Nhận biết số tròn trăm, tròn chục.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Số tròn giúp ước lượng và tính nhẩm nhanh.</p>
       <div class="definition">
@@ -3271,10 +3406,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"500 là","choices":["Tròn trăm","Không tròn chục","Không tròn","Giờ"],"correct":0,"hint":"500.","explain":"Tròn trăm."},
       {"type":"num","prompt":"3 trăm = ?","answer":300,"hint":"300.","explain":"300."},
       {"type":"mc","prompt":"270 tròn chục?","choices":["Đúng","Sai","Chỉ tròn trăm","Không phải số"],"correct":0,"hint":"Tận 0.","explain":"Đúng."},
-      {"type":"mc","prompt":"990 tròn trăm?","choices":["Sai","Đúng","Không biết","Chỉ khi chẵn"],"correct":0,"hint":"Tận 90.","explain":"Sai."},
-      {"type":"num","prompt":"8 trăm = ?","answer":800,"hint":"800.","explain":"800."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Dũng có 8 trăm, 3 chục, 7 đơn vị. Số nhà là bao nhiêu?","answer":837,"hint":"trăm|chục|đv.","explain":"837."},
+      {"type":"num","prompt":"Trường có 5 trăm 6 chục học sinh (0 đơn vị). Viết số đó.","answer":560,"hint":"Ghép hàng.","explain":"560."},
     ],
   },
 
@@ -3298,6 +3431,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">0</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">600 = 600 + 00 + 0</text>
         </svg>
+              <figcaption>So sánh nhanh số tròn trăm, tròn chục.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> So sánh số lớn bằng cách nhìn hàng cao trước.</p>
       <div class="definition">
@@ -3339,9 +3473,7 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tròn trăm liền sau 500?","answer":600,"hint":"+100.","explain":"600."},
       {"type":"mc","prompt":"990 … 909","choices":[">","<","=","Không"],"correct":0,"hint":"So chục.","explain":">"},
       {"type":"mc","prompt":"200 … 300","choices":["<",">","=","200 hơn"],"correct":0,"hint":"So trăm.","explain":"<"},
-      {"type":"num","prompt":"Tròn chục liền trước 400?","answer":390,"hint":"−10.","explain":"390."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Trường có 2 trăm 3 chục học sinh (0 đơn vị). Viết số đó.","answer":230,"hint":"Ghép hàng.","explain":"230."},
     ],
   },
 
@@ -3365,6 +3497,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">8</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">208 = 200 + 00 + 8</text>
         </svg>
+              <figcaption>Đọc, viết số có ba chữ số.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Bước vào thế giới số đến 999 — nền tảng lớp 2 HK2.</p>
       <div class="definition">
@@ -3400,15 +3533,14 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhìn lại.</strong> Ba hàng: trăm|chục|đv. 0 giữa = “linh”.</p></div>
     `,
     exercises: [
+      {"type":"text","prompt":"Đọc số 208 (gõ không dấu cũng được):","answer":"hai tram linh tam","accept":["hai tram linh tam","hai trăm linh tám","hai tram linh 8","hai tram linh tam"],"hint":"hai trăm linh tám","explain":"hai trăm linh tám."},
       {"type":"mc","prompt":"208 đọc","choices":["Hai trăm linh tám","Hai trăm tám","Hai mươi tám","Hai nghìn tám"],"correct":0,"hint":"0 chục.","explain":"Linh tám."},
       {"type":"num","prompt":"Năm trăm hai mươi mốt","answer":521,"hint":"521.","explain":"521."},
       {"type":"num","prompt":"4 trăm 0 chục 6 đv","answer":406,"hint":"406.","explain":"406."},
       {"type":"mc","prompt":"Hàng trăm của 735","choices":["7","3","5","735"],"correct":0,"hint":"Trái nhất.","explain":"7."},
       {"type":"num","prompt":"Liền sau 999?","answer":1000,"hint":"+1.","explain":"1000."},
-      {"type":"num","prompt":"Ba trăm linh năm","answer":305,"hint":"305.","explain":"305."},
-      {"type":"mc","prompt":"Chữ số hàng đơn vị của 482","choices":["2","4","8","82"],"correct":0,"hint":"Phải nhất.","explain":"2."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Nam có 2 trăm, 7 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":275,"hint":"trăm|chục|đv.","explain":"275."},
+      {"type":"num","prompt":"Trường có 4 trăm 0 chục học sinh (0 đơn vị). Viết số đó.","answer":400,"hint":"Ghép hàng.","explain":"400."},
     ],
   },
 
@@ -3432,6 +3564,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">5</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">365 = 300 + 60 + 5</text>
         </svg>
+              <figcaption>Phân tích: 365 = 300 + 60 + 5.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Phân tích số giúp cộng trừ theo hàng và hiểu giá trị vị trí.</p>
       <div class="definition">
@@ -3472,10 +3605,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"700+5 = ?","answer":705,"hint":"0 chục.","explain":"705."},
       {"type":"mc","prompt":"610 =","choices":["600+10","600+1","61+0","6+10"],"correct":0,"hint":"6 trăm 1 chục.","explain":"600+10."},
       {"type":"num","prompt":"200+200+200 = ?","answer":600,"hint":"3×200.","explain":"600."},
-      {"type":"num","prompt":"400+50+6 = ?","answer":456,"hint":"Ghép.","explain":"456."},
-      {"type":"num","prompt":"900+90+9 = ?","answer":999,"hint":"Ghép.","explain":"999."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Hà có 3 trăm, 4 chục, 4 đơn vị. Số nhà là bao nhiêu?","answer":344,"hint":"trăm|chục|đv.","explain":"344."},
+      {"type":"num","prompt":"Trường có 6 trăm 7 chục học sinh (0 đơn vị). Viết số đó.","answer":670,"hint":"Ghép hàng.","explain":"670."},
     ],
   },
 
@@ -3499,6 +3630,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">8</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">528 = 500 + 20 + 8</text>
         </svg>
+              <figcaption>So sánh số có ba chữ số.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> So sánh số ba chữ số dùng hàng ngày khi đọc giá, số trang, khoảng cách.</p>
       <div class="definition">
@@ -3541,8 +3673,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"707 … 770","choices":["<","=",">","Bằng"],"correct":0,"hint":"So chục.","explain":"<"},
       {"type":"mc","prompt":"999 … 1000","choices":["<",">","=","999 hơn"],"correct":0,"hint":"1000 lớn hơn.","explain":"<"},
       {"type":"mc","prompt":"505 … 550","choices":["<",">","=","505 hơn"],"correct":0,"hint":"So chục.","explain":"<"},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Bình có 4 trăm, 1 chục, 3 đơn vị. Số nhà là bao nhiêu?","answer":413,"hint":"trăm|chục|đv.","explain":"413."},
+      {"type":"num","prompt":"Trường có 3 trăm 4 chục học sinh (0 đơn vị). Viết số đó.","answer":340,"hint":"Ghép hàng.","explain":"340."},
     ],
   },
 
@@ -3566,6 +3698,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">8</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">678 = 600 + 70 + 8</text>
         </svg>
+              <figcaption>Ôn số đến 1000: đọc viết, phân tích, so sánh.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt số đến 1000 trước đo độ dài và cộng trừ 1000.</p>
       <div class="definition">
@@ -3606,10 +3739,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"405 … 450","choices":["<","=",">","Không"],"correct":0,"hint":"So chục.","explain":"<"},
       {"type":"num","prompt":"600+70+8 = ?","answer":678,"hint":"Ghép.","explain":"678."},
       {"type":"mc","prompt":"Tròn trăm","choices":["900","910","901","990"],"correct":0,"hint":"…00","explain":"900."},
-      {"type":"num","prompt":"Liền trước 1000?","answer":999,"hint":"−1.","explain":"999."},
-      {"type":"num","prompt":"704 viết tổng hàng: 700+?=704. ?=","answer":4,"hint":"4.","explain":"4."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Oanh có 5 trăm, 8 chục, 2 đơn vị. Số nhà là bao nhiêu?","answer":582,"hint":"trăm|chục|đv.","explain":"582."},
+      {"type":"num","prompt":"Trường có 5 trăm 1 chục học sinh (0 đơn vị). Viết số đó.","answer":510,"hint":"Ghép hàng.","explain":"510."},
     ],
   },
 
@@ -3631,6 +3762,7 @@ const G2_LESSONS = [
           <rect x="150" y="80" width="120" height="36" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="210" y="103" font-size="12" text-anchor="middle">1 km = 1000 m</text>
         </svg>
+              <figcaption>Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đo chiều dài bàn, sân, đường đi cần đúng đơn vị.</p>
       <div class="definition">
@@ -3671,10 +3803,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"×10.","explain":"30."},
       {"type":"mc","prompt":"Đo chiều dài lớp học","choices":["Mét","Km","Kg","Lít"],"correct":0,"hint":"Mét.","explain":"Mét."},
       {"type":"mc","prompt":"Đo khoảng cách hai tỉnh","choices":["Km","Dm","Kg","Ngày"],"correct":0,"hint":"Xa.","explain":"Km."},
-      {"type":"num","prompt":"10 dm = ? m","answer":1,"hint":"Đổi.","explain":"1."},
-      {"type":"num","prompt":"2 km = ? m","answer":2000,"hint":"×1000.","explain":"2000."},
-      {"type":"num","prompt":"Đoạn dây 8 m, cắt 3 m. Còn mấy mét?","answer":5,"hint":"Trừ m.","explain":"5."},
-      {"type":"num","prompt":"3 m bằng bao nhiêu dm?","answer":30,"hint":"1 m = 10 dm.","explain":"30."},
+      {"type":"num","prompt":"Đoạn dây 9 m, cắt 3 m. Còn mấy mét?","answer":6,"hint":"Trừ mét.","explain":"9 − 3 = 6."},
+      {"type":"num","prompt":"4 m bằng bao nhiêu dm?","answer":40,"hint":"1 m = 10 dm.","explain":"4 × 10 = 40."},
     ],
   },
 
@@ -3697,6 +3827,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="13" text-anchor="middle">Đưa tiền − giá sp = tiền thừa</text>
           <text x="160" y="145" font-size="12" text-anchor="middle" fill="#888888">Kiểm: thừa + giá = tiền đưa</text>
         </svg>
+              <figcaption>Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Tính tiền mua đồ là toán thật mỗi ngày.</p>
       <div class="definition">
@@ -3737,10 +3868,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Đơn vị tiền Việt Nam","choices":["Đồng","Kg","Lít","Độ"],"correct":0,"hint":"Đồng.","explain":"Đồng."},
       {"type":"num","prompt":"Ba tờ 1000 = ?","answer":3000,"hint":"3×1000.","explain":"3000."},
       {"type":"num","prompt":"10000 − 1000 = ?","answer":9000,"hint":"Trừ.","explain":"9000."},
-      {"type":"num","prompt":"2000 + 3000 = ?","answer":5000,"hint":"Cộng.","explain":"5000."},
-      {"type":"num","prompt":"10000 − 4000 = ?","answer":6000,"hint":"Trừ.","explain":"6000."},
-      {"type":"num","prompt":"Mua bút 2000 đồng, tẩy 1000 đồng. Cả hai mấy đồng?","answer":3000,"hint":"Cộng tiền.","explain":"3000."},
-      {"type":"num","prompt":"Đưa 5000 đồng, món đồ 3000 đồng. Tiền thừa mấy đồng?","answer":2000,"hint":"Trừ.","explain":"2000."},
+      {"type":"num","prompt":"Lan mua đồ 5000 đồng, đưa 7000 đồng. Tiền thừa mấy đồng?","answer":2000,"hint":"Đưa − giá.","explain":"7000 − 5000 = 2000."},
+      {"type":"num","prompt":"Mua bút 5000 đồng và tẩy 2000 đồng. Cả hai mấy đồng?","answer":7000,"hint":"Cộng tiền.","explain":"7000."},
     ],
   },
 
@@ -3762,6 +3891,7 @@ const G2_LESSONS = [
           <rect x="150" y="80" width="120" height="36" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="210" y="103" font-size="12" text-anchor="middle">1 km = 1000 m</text>
         </svg>
+              <figcaption>Thực hành đo bằng thước; ước lượng.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Đo thật mới hiểu số đo nghĩa là gì.</p>
       <div class="definition">
@@ -3802,10 +3932,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 km + 3 km = ?","answer":5,"hint":"Cộng.","explain":"5."},
       {"type":"mc","prompt":"Khi đo cần","choices":["Đặt đúng điểm đầu thước","Đo trên không","Không nhìn số","Dùng cân"],"correct":0,"hint":"Điểm 0.","explain":"Đúng điểm đầu."},
       {"type":"num","prompt":"10 dm = ? m","answer":1,"hint":"Đổi.","explain":"1."},
-      {"type":"num","prompt":"7 m + 2 m = ?","answer":9,"hint":"Cộng.","explain":"9."},
-      {"type":"num","prompt":"8 dm − 3 dm = ?","answer":5,"hint":"Trừ.","explain":"5."},
-      {"type":"num","prompt":"Đoạn dây 8 m, cắt 3 m. Còn mấy mét?","answer":5,"hint":"Trừ m.","explain":"5."},
-      {"type":"num","prompt":"3 m bằng bao nhiêu dm?","answer":30,"hint":"1 m = 10 dm.","explain":"30."},
+      {"type":"num","prompt":"Đoạn dây 17 m, cắt 5 m. Còn mấy mét?","answer":12,"hint":"Trừ mét.","explain":"17 − 5 = 12."},
+      {"type":"num","prompt":"2 m bằng bao nhiêu dm?","answer":20,"hint":"1 m = 10 dm.","explain":"2 × 10 = 20."},
     ],
   },
 
@@ -3826,6 +3954,7 @@ const G2_LESSONS = [
           <text x="245" y="65" font-size="12" text-anchor="middle">5000đ</text>
           <text x="160" y="120" font-size="13" text-anchor="middle">1000 + 2000 = 3000 đồng</text>
         </svg>
+              <figcaption>Ôn dm, m, km và tiền Việt Nam.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt đo độ dài và tiền trước cộng trừ 1000.</p>
       <div class="definition">
@@ -3866,10 +3995,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2000 + 5000 = ?","answer":7000,"hint":"Tiền.","explain":"7000."},
       {"type":"num","prompt":"8 dm − 3 dm = ?","answer":5,"hint":"Trừ.","explain":"5."},
       {"type":"num","prompt":"10000 − 4000 = ?","answer":6000,"hint":"Trừ.","explain":"6000."},
-      {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"×10.","explain":"30."},
-      {"type":"num","prompt":"1000 + 2000 + 2000 = ?","answer":5000,"hint":"Cộng.","explain":"5000."},
-      {"type":"num","prompt":"Đoạn dây 8 m, cắt 3 m. Còn mấy mét?","answer":5,"hint":"Trừ m.","explain":"5."},
-      {"type":"num","prompt":"3 m bằng bao nhiêu dm?","answer":30,"hint":"1 m = 10 dm.","explain":"30."},
+      {"type":"num","prompt":"Đoạn dây 25 m, cắt 10 m. Còn mấy mét?","answer":15,"hint":"Trừ mét.","explain":"25 − 10 = 15."},
+      {"type":"num","prompt":"7 m bằng bao nhiêu dm?","answer":70,"hint":"1 m = 10 dm.","explain":"7 × 10 = 70."},
     ],
   },
 
@@ -3893,6 +4020,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">4</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">214 = 200 + 10 + 4</text>
         </svg>
+              <figcaption>Cộng số có ba chữ số không nhớ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Cộng không nhớ 3 chữ số rèn thẳng cột hàng trăm–chục–đv.</p>
       <div class="definition">
@@ -3933,10 +4061,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"120 + 45 = ?","answer":165,"hint":"Cộng.","explain":"165."},
       {"type":"num","prompt":"301 + 406 = ?","answer":707,"hint":"Không nhớ.","explain":"707."},
       {"type":"num","prompt":"250 + 130 = ?","answer":380,"hint":"Không nhớ.","explain":"380."},
-      {"type":"num","prompt":"111 + 222 = ?","answer":333,"hint":"333.","explain":"333."},
-      {"type":"num","prompt":"400 + 50 + 6 = ?","answer":456,"hint":"Ghép cộng.","explain":"456."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Thư viện có 893 sách, thêm 45. Tất cả mấy quyển?","answer":938,"hint":"Cộng phạm vi 1000.","explain":"893 + 45 = 938."},
+      {"type":"num","prompt":"Kho có 947 hộp, xuất 54. Còn mấy hộp?","answer":893,"hint":"Trừ.","explain":"947 − 54 = 893."},
     ],
   },
 
@@ -3949,17 +4075,22 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b60-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <text x="200" y="40" font-size="11" fill="#888888">chục</text>
-          <text x="250" y="40" font-size="11" fill="#888888">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255">¹</text>
-          <text x="200" y="85" font-size="28" text-anchor="middle">5</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">6</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">7</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">8</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="#333330" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="#83C167">Cộng đơn vị trước</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+          <text x="200" y="88" font-size="26" text-anchor="middle">5</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">6</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">7</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">134</text>
+          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
+          <text x="40" y="110" font-size="13">56 + 78</text>
         </svg>
+              <figcaption>Cộng có nhớ trong phạm vi 1000.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Có nhớ trên 3 hàng — kỹ năng trọng tâm cuối năm.</p>
       <div class="definition">
@@ -4000,10 +4131,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"507 + 296 = ?","answer":803,"hint":"Có nhớ.","explain":"803."},
       {"type":"num","prompt":"388 + 125 = ?","answer":513,"hint":"Có nhớ.","explain":"513."},
       {"type":"num","prompt":"999 + 1 = ?","answer":1000,"hint":"Nhớ liên tiếp.","explain":"1000."},
-      {"type":"num","prompt":"346 + 227 = ?","answer":573,"hint":"Có nhớ.","explain":"573."},
-      {"type":"num","prompt":"475 + 268 = ?","answer":743,"hint":"Có nhớ.","explain":"743."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Thư viện có 162 sách, thêm 78. Tất cả mấy quyển?","answer":240,"hint":"Cộng phạm vi 1000.","explain":"162 + 78 = 240."},
+      {"type":"num","prompt":"Kho có 223 hộp, xuất 61. Còn mấy hộp?","answer":162,"hint":"Trừ.","explain":"223 − 61 = 162."},
     ],
   },
 
@@ -4027,6 +4156,7 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">7</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">487 = 400 + 80 + 7</text>
         </svg>
+              <figcaption>Trừ số có ba chữ số không nhớ.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Trừ không nhớ 3 chữ số trước khi mượn phức tạp hơn.</p>
       <div class="definition">
@@ -4067,10 +4197,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"765 − 320 = ?","answer":445,"hint":"Không nhớ.","explain":"445."},
       {"type":"num","prompt":"608 − 302 = ?","answer":306,"hint":"Không nhớ.","explain":"306."},
       {"type":"num","prompt":"555 − 111 = ?","answer":444,"hint":"Không nhớ.","explain":"444."},
-      {"type":"num","prompt":"700 − 200 = ?","answer":500,"hint":"500.","explain":"500."},
-      {"type":"num","prompt":"999 − 111 = ?","answer":888,"hint":"888.","explain":"888."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Thư viện có 237 sách, thêm 111. Tất cả mấy quyển?","answer":348,"hint":"Cộng phạm vi 1000.","explain":"237 + 111 = 348."},
+      {"type":"num","prompt":"Kho có 305 hộp, xuất 68. Còn mấy hộp?","answer":237,"hint":"Trừ.","explain":"305 − 68 = 237."},
     ],
   },
 
@@ -4083,15 +4211,20 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b62-col-sub">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính trừ có nhớ">
-          <text x="40" y="36" font-size="12" fill="#FC6255">Mượn 1 chục = 10 đơn vị</text>
-          <text x="200" y="70" font-size="28" text-anchor="middle">4</text>
-          <text x="250" y="70" font-size="28" text-anchor="middle">0</text>
-          <text x="160" y="105" font-size="22">−</text>
-          <text x="200" y="105" font-size="28" text-anchor="middle">2</text>
-          <text x="250" y="105" font-size="28" text-anchor="middle">8</text>
-          <line x1="150" y1="115" x2="280" y2="115" stroke="#333330" stroke-width="2"/>
-          <text x="250" y="55" font-size="11" fill="#FC6255">+10</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="40" y="40" font-size="12" fill="#FC6255">Mượn 1 chục</text>
+          <text x="40" y="60" font-size="12" fill="#888888">= 10 đơn vị</text>
+          <text x="250" y="48" font-size="11" fill="#FC6255" text-anchor="middle">+10</text>
+          <text x="200" y="80" font-size="26" text-anchor="middle">4</text>
+          <text x="250" y="80" font-size="26" text-anchor="middle">0</text>
+          <text x="160" y="110" font-size="22">−</text>
+          <text x="200" y="110" font-size="26" text-anchor="middle">2</text>
+          <text x="250" y="110" font-size="26" text-anchor="middle">8</text>
+          <line x1="155" y1="118" x2="280" y2="118" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="142" font-size="22" text-anchor="middle" fill="#83C167">12</text>
+          <text x="40" y="130" font-size="13">40 − 28</text>
         </svg>
+              <figcaption>Trừ có nhớ/mượn trong phạm vi 1000.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Trừ có nhớ 3 chữ số hay gặp trong đề cuối năm.</p>
       <div class="definition">
@@ -4132,10 +4265,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"1000 − 1 = ?","answer":999,"hint":"Mượn.","explain":"999."},
       {"type":"num","prompt":"630 − 275 = ?","answer":355,"hint":"Có nhớ.","explain":"355."},
       {"type":"num","prompt":"804 − 369 = ?","answer":435,"hint":"Có nhớ.","explain":"435."},
-      {"type":"num","prompt":"812 − 468 = ?","answer":344,"hint":"Có nhớ.","explain":"344."},
-      {"type":"num","prompt":"600 − 278 = ?","answer":322,"hint":"Có nhớ.","explain":"322."},
-      {"type":"num","prompt":"Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?","answer":13,"hint":"Bớt → trừ.","explain":"18 − 5 = 13."},
-      {"type":"num","prompt":"Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?","answer":12,"hint":"Trừ.","explain":"20 − 8 = 12."},
+      {"type":"num","prompt":"Thư viện có 306 sách, thêm 54. Tất cả mấy quyển?","answer":360,"hint":"Cộng phạm vi 1000.","explain":"306 + 54 = 360."},
+      {"type":"num","prompt":"Kho có 381 hộp, xuất 75. Còn mấy hộp?","answer":306,"hint":"Trừ.","explain":"381 − 75 = 306."},
     ],
   },
 
@@ -4148,13 +4279,21 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b63-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn cộng trừ 1000">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng trừ 1000</text>
         </svg>
+              <figcaption>Ôn cộng trừ trong phạm vi 1000.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Chốt cộng trừ 1000 trước thống kê.</p>
       <div class="definition">
@@ -4195,10 +4334,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"500 + 500 = ?","answer":1000,"hint":"Cộng.","explain":"1000."},
       {"type":"num","prompt":"□ + 150 = 400","answer":250,"hint":"400−150.","explain":"250."},
       {"type":"num","prompt":"670 − 70 = ?","answer":600,"hint":"Trừ.","explain":"600."},
-      {"type":"num","prompt":"410 + 90 = ?","answer":500,"hint":"Cộng.","explain":"500."},
-      {"type":"num","prompt":"1000 − 250 = ?","answer":750,"hint":"Trừ.","explain":"750."},
-      {"type":"num","prompt":"Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?","answer":19,"hint":"Thêm → cộng.","explain":"12 + 7 = 19."},
-      {"type":"num","prompt":"Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?","answer":15,"hint":"Cộng.","explain":"9 + 6 = 15."},
+      {"type":"num","prompt":"Thư viện có 475 sách, thêm 87. Tất cả mấy quyển?","answer":562,"hint":"Cộng phạm vi 1000.","explain":"475 + 87 = 562."},
+      {"type":"num","prompt":"Kho có 557 hộp, xuất 82. Còn mấy hộp?","answer":475,"hint":"Trừ.","explain":"557 − 82 = 475."},
     ],
   },
 
@@ -4226,6 +4363,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
           <text x="160" y="145" font-size="13" text-anchor="middle" fill="#FC6255">Xe máy nhiều hơn 2 xe</text>
         </svg>
+              <figcaption>Thu thập và đếm theo nhóm.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Thống kê bắt đầu từ việc đếm và xếp nhóm — kỹ năng đời sống.</p>
       <div class="definition">
@@ -4266,10 +4404,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Phân loại là","choices":["Chia nhóm theo đặc điểm","Chỉ cộng số","Vẽ đường thẳng","Đổi km"],"correct":0,"hint":"Nhóm.","explain":"Chia nhóm."},
       {"type":"num","prompt":"2+2+2 = ?","answer":6,"hint":"3 nhóm 2.","explain":"6."},
       {"type":"mc","prompt":"Kiểm đếm giúp","choices":["Biết số lượng từng loại","Đổi giờ","Thành khối cầu","Chia 0"],"correct":0,"hint":"Số liệu.","explain":"Số lượng."},
-      {"type":"num","prompt":"9 đỏ, 4 xanh. Đỏ hơn?","answer":5,"hint":"9−4.","explain":"5."},
-      {"type":"num","prompt":"Tổng 9 và 4?","answer":13,"hint":"Cộng.","explain":"13."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":7,"hint":"Hiệu.","explain":"13 − 6 = 7."},
+      {"type":"num","prompt":"Biểu đồ có 15 hình (1 hình = 1 xe). Có mấy xe?","answer":15,"hint":"1 hình = 1.","explain":"15."},
     ],
   },
 
@@ -4297,6 +4433,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
           <text x="160" y="145" font-size="13" text-anchor="middle" fill="#FC6255">Xe máy nhiều hơn 2 xe</text>
         </svg>
+              <figcaption>Đọc và hiểu biểu đồ tranh.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Biểu đồ tranh biến số liệu thành hình — dễ so sánh.</p>
       <div class="definition">
@@ -4339,8 +4476,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Trước khi đọc số cần xem","choices":["Chú thích mỗi tranh","Chỉ màu","Kim giờ","Mệnh giá"],"correct":0,"hint":"Chú thích.","explain":"Chú thích."},
       {"type":"num","prompt":"6 hình (1=1) + 2 hình = ?","answer":8,"hint":"Cộng.","explain":"8."},
       {"type":"num","prompt":"10 hình, 1 hình = 1, bớt 3 hình còn?","answer":7,"hint":"10−3.","explain":"7."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 3 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":6,"hint":"Hiệu.","explain":"9 − 3 = 6."},
+      {"type":"num","prompt":"Biểu đồ có 6 hình (1 hình = 1 xe). Có mấy xe?","answer":6,"hint":"1 hình = 1.","explain":"6."},
     ],
   },
 
@@ -4366,6 +4503,7 @@ const G2_LESSONS = [
           <text x="260" y="80" font-size="10" text-anchor="middle">không có vàng</text>
           <text x="260" y="98" font-size="10" text-anchor="middle">→ bốc vàng</text>
         </svg>
+              <figcaption>Dùng đúng ba từ khả năng.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Ba từ này là cửa vào xác suất — học cách nói đúng về khả năng.</p>
       <div class="definition">
@@ -4406,10 +4544,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Túi đỏ và xanh, bốc đỏ","choices":["Có thể","Chắc chắn","Không thể","Cấm"],"correct":0,"hint":"Hai màu.","explain":"Có thể."},
       {"type":"mc","prompt":"Ngày mai có thể mưa","choices":["Có thể","Chắc chắn luôn","Không thể luôn","Kg"],"correct":0,"hint":"Không chắc.","explain":"Có thể."},
       {"type":"mc","prompt":"1+1=2 (số đã học)","choices":["Chắc chắn","Không thể","Chỉ có thể","Khối trụ"],"correct":0,"hint":"Đúng.","explain":"Chắc chắn."},
-      {"type":"mc","prompt":"Túi không bi xanh, bốc xanh","choices":["Không thể","Chắc chắn","Có thể","Bắt buộc"],"correct":0,"hint":"Không có.","explain":"Không thể."},
-      {"type":"mc","prompt":"Hai khả năng còn mở","choices":["Có thể","Chắc chắn","Không thể","Cấm đoán"],"correct":0,"hint":"Mở.","explain":"Có thể."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 8 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":5,"hint":"Hiệu.","explain":"13 − 8 = 5."},
+      {"type":"num","prompt":"Biểu đồ có 9 hình (1 hình = 1 xe). Có mấy xe?","answer":9,"hint":"1 hình = 1.","explain":"9."},
     ],
   },
 
@@ -4437,6 +4573,7 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
           <text x="160" y="145" font-size="13" text-anchor="middle" fill="#FC6255">Xe máy nhiều hơn 2 xe</text>
         </svg>
+              <figcaption>Thực hành thống kê đơn giản ở lớp.</figcaption>
       </figure>
       <p><strong>Vì sao học bài này?</strong> Làm thống kê thật: đếm bạn, đồ dùng, sở thích.</p>
       <div class="definition">
@@ -4477,10 +4614,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Sau khi đếm ta có thể","choices":["So sánh các nhóm","Đổi km luôn","Xóa số liệu","Trừ giờ"],"correct":0,"hint":"So sánh.","explain":"So sánh."},
       {"type":"num","prompt":"3 nhóm × 5 bạn = ?","answer":15,"hint":"3×5.","explain":"15."},
       {"type":"mc","prompt":"Phân loại trước khi đếm giúp","choices":["Rõ từng loại","Khó hơn","Mất số","Thành đường cong"],"correct":0,"hint":"Rõ.","explain":"Rõ loại."},
-      {"type":"num","prompt":"10 − 3 (hai nhóm) hơn kém?","answer":7,"hint":"Hiệu.","explain":"7."},
-      {"type":"num","prompt":"6 + 6 + 6 = ?","answer":18,"hint":"3×6.","explain":"18."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 5 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":4,"hint":"Hiệu.","explain":"9 − 5 = 4."},
+      {"type":"num","prompt":"Biểu đồ có 12 hình (1 hình = 1 xe). Có mấy xe?","answer":12,"hint":"1 hình = 1.","explain":"12."},
     ],
   },
 
@@ -4504,50 +4639,49 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">2</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">702 = 700 + 00 + 2</text>
         </svg>
+              <figcaption>Ôn đọc viết so sánh số đến 1000.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Số đến 1000 là nền để vào lớp 3 (số lớn hơn, nhân chia rộng hơn).</p>
       <div class="definition">
-        <p>Ôn đọc viết so sánh số đến 1000. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Đọc, viết, phân tích, so sánh số có ba chữ số và 1000. Chú ý chữ số 0 giữ hàng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 702 = 7 trăm 0 chục 2 đơn vị. Đọc “bảy trăm linh hai”. 880 là số tròn chục.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> So 891 và 819: cùng 8 trăm, 9 chục > 1 chục → 891 > 819. Liền trước 1000 là 999.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> 205 ≠ 25. 1000 = 10 trăm, không phải 100 trăm.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Viết thẳng hàng trăm-chục-đv rồi so từ trái sang phải.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Nuốt số 0 giữa.</li>
+          <li>So sánh chỉ nhìn chữ số đầu.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập các số trong phạm vi 1000.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>702 gồm mấy trăm? <em>— 7 trăm.</em></p>
+        <p>Liền trước 1000? <em>— 999.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Viết năm trăm linh năm: 5 trăm, 0 chục, 5 → 505. Kiểm: 500 + 5 = 505.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn đọc viết so sánh số đến 1000.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Ba chữ số + 1000: đọc đúng, so từ hàng trăm.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"Bảy trăm linh hai","answer":702,"hint":"702.","explain":"702."},
+      {"type":"text","prompt":"Đọc số 702 (viết không dấu):","answer":"bay tram linh hai","accept":["bay tram linh hai","bảy trăm linh hai","bay tram linh 2"],"hint":"bảy trăm linh hai","explain":"bảy trăm linh hai."},
+      {"type":"num","prompt":"Viết số bảy trăm linh hai","answer":702,"hint":"702.","explain":"702."},
       {"type":"mc","prompt":"891 … 819","choices":[">","<","=","Không"],"correct":0,"hint":"So chục.","explain":">"},
       {"type":"num","prompt":"Liền trước 1000?","answer":999,"hint":"−1.","explain":"999."},
       {"type":"num","prompt":"400+50+6=?","answer":456,"hint":"Ghép.","explain":"456."},
-      {"type":"mc","prompt":"Tròn chục","choices":["880","808","801","818"],"correct":0,"hint":"Tận 0.","explain":"880."},
-      {"type":"num","prompt":"305 gồm mấy trăm?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"mc","prompt":"1000 gồm mấy trăm?","choices":["10","1","100","0"],"correct":0,"hint":"10.","explain":"10."},
-      {"type":"num","prompt":"Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":305,"hint":"Ghép hàng.","explain":"305."},
-      {"type":"num","prompt":"Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.","answer":420,"hint":"420.","explain":"420."},
+      {"type":"num","prompt":"Số nhà của Oanh có 7 trăm, 8 chục, 6 đơn vị. Số nhà là bao nhiêu?","answer":786,"hint":"trăm|chục|đv.","explain":"786."},
+      {"type":"num","prompt":"Trường có 5 trăm 1 chục học sinh (0 đơn vị). Viết số đó.","answer":510,"hint":"Ghép hàng.","explain":"510."},
     ],
   },
 
@@ -4560,50 +4694,55 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b69-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <text x="200" y="40" font-size="11" fill="#888888">chục</text>
-          <text x="250" y="40" font-size="11" fill="#888888">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255">¹</text>
-          <text x="200" y="85" font-size="28" text-anchor="middle">4</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">7</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">3</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">6</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="#333330" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="#83C167">Cộng đơn vị trước</text>
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+          <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">3</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">6</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">83</text>
+          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
+          <text x="40" y="110" font-size="13">47 + 36</text>
         </svg>
+              <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Cộng trừ có nhớ phạm vi 100 vẫn là chỗ hay mất điểm nếu quên nhớ/mượn.</p>
       <div class="definition">
-        <p>Ôn cộng trừ có nhớ phạm vi 100. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Đặt tính thẳng cột. Cộng: nhớ khi đv ≥ 10. Trừ: mượn khi đv không đủ.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 47 + 36 = 83. 55 + 45 = 100.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> 82 − 29: 12 − 9 = 3; 8 − 1 − 2 = 5 → 53. Kiểm: 53 + 29 = 82.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> 70 − 8 = 62, không phải 78 (quên mượn).</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Đánh dấu nhớ/mượn; luôn kiểm bằng phép ngược.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Quên nhớ 1.</li>
+          <li>Mượn rồi quên giảm chục.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập phép cộng, phép trừ trong phạm vi 100.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>47 + 36? <em>— 83.</em></p>
+        <p>82 − 29? <em>— 53.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> 91 − 47: 11 − 7 = 4; 9 − 1 − 4 = 4 → 44. Cộng lại 44 + 47 = 91.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn cộng trừ có nhớ phạm vi 100.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phạm vi 100: thẳng cột + nhớ/mượn + kiểm.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"47+36=?","answer":83,"hint":"Nhớ.","explain":"83."},
@@ -4611,10 +4750,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"70−8=?","answer":62,"hint":"Mượn.","explain":"62."},
       {"type":"num","prompt":"55+45=?","answer":100,"hint":"Cộng.","explain":"100."},
       {"type":"num","prompt":"100−58=?","answer":42,"hint":"Trừ.","explain":"42."},
-      {"type":"num","prompt":"39+28=?","answer":67,"hint":"Nhớ.","explain":"67."},
-      {"type":"num","prompt":"91−47=?","answer":44,"hint":"Mượn.","explain":"44."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Thư viện có 855 sách, thêm 69. Tất cả mấy quyển?","answer":924,"hint":"Cộng phạm vi 1000.","explain":"855 + 69 = 924."},
+      {"type":"num","prompt":"Kho có 925 hộp, xuất 70. Còn mấy hộp?","answer":855,"hint":"Trừ.","explain":"925 − 70 = 855."},
     ],
   },
 
@@ -4638,39 +4775,40 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">6</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">476 = 400 + 70 + 6</text>
         </svg>
+              <figcaption>Ôn cộng trừ phạm vi 1000.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Cộng trừ 1000 mở rộng kỹ năng đặt tính ba chữ số.</p>
       <div class="definition">
-        <p>Ôn cộng trừ phạm vi 1000. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Cộng/trừ theo hàng trăm-chục-đv, nhớ/mượn có thể lan sang hàng trăm.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 410 + 90 = 500. 1000 − 250 = 750.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> 325 + 148: có nhớ ở đv và chục → 473. 600 − 278 = 322.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> 999 − 100 = 899, không phải 8999. 1000 − 1 = 999.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Làm từng cột; bài khó thì kiểm bằng cộng ngược.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Lệch cột khi số ngắn hơn.</li>
+          <li>Quên nhớ dây chuyền.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập phép cộng, phép trừ trong phạm vi 1000.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>325 + 148? <em>— 473.</em></p>
+        <p>600 − 278? <em>— 322.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> 900 − 456: mượn lần lượt. 900 − 400 = 500; 500 − 56 = 444.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn cộng trừ phạm vi 1000.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phạm vi 1000: ba hàng, nhớ/mượn, kiểm.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"325+148=?","answer":473,"hint":"Nhớ.","explain":"473."},
@@ -4678,10 +4816,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"999−100=?","answer":899,"hint":"Trừ.","explain":"899."},
       {"type":"num","prompt":"410+90=?","answer":500,"hint":"Cộng.","explain":"500."},
       {"type":"num","prompt":"1000−250=?","answer":750,"hint":"Trừ.","explain":"750."},
-      {"type":"num","prompt":"508+277=?","answer":785,"hint":"Nhớ.","explain":"785."},
-      {"type":"num","prompt":"900−456=?","answer":444,"hint":"Mượn.","explain":"444."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Thư viện có 124 sách, thêm 102. Tất cả mấy quyển?","answer":226,"hint":"Cộng phạm vi 1000.","explain":"124 + 102 = 226."},
+      {"type":"num","prompt":"Kho có 201 hộp, xuất 77. Còn mấy hộp?","answer":124,"hint":"Trừ.","explain":"201 − 77 = 124."},
     ],
   },
 
@@ -4708,39 +4844,40 @@ const G2_LESSONS = [
           <text x="200" y="75" font-size="14">5 cột</text>
           <text x="200" y="110" font-size="16" fill="#58C4DD">2 × 5 = 10</text>
         </svg>
+              <figcaption>Ôn bảng 2 và 5.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Bảng 2 và 5 là toàn bộ bảng nhân/chia lớp 2 — phải thuộc và dùng được.</p>
       <div class="definition">
-        <p>Ôn bảng 2 và 5. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Nhân 2, 5 và chia 2, 5. Kiểm chia bằng nhân ngược.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 2 × 7 = 14. 5 × 6 = 30. 16 : 2 = 8. 40 : 5 = 8.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> 5 × 0 = 0. 2 × 10 = 20. 45 : 5 = 9 vì 5 × 9 = 45.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> 5 × 0 = 0, không phải 5. Chia phải khớp bảng (chia hết).</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Thuộc xuôi (nhân) rồi đọc ngược (chia).</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Nhầm bảng 2 với 5.</li>
+          <li>Không kiểm thương bằng nhân.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập phép nhân, phép chia.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>2 × 7? <em>— 14.</em></p>
+        <p>45 : 5? <em>— 9.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Có 5 hộp, mỗi hộp 2 bút: 5 × 2 = 10. Đổi: 10 : 2 = 5 hộp.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn bảng 2 và 5.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Bảng 2 & 5: thuộc + chia ngược + bài nhóm đều.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"2×7=?","answer":14,"hint":"Bảng 2.","explain":"14."},
@@ -4748,10 +4885,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"16:2=?","answer":8,"hint":"Chia 2.","explain":"8."},
       {"type":"num","prompt":"40:5=?","answer":8,"hint":"Chia 5.","explain":"8."},
       {"type":"num","prompt":"5×0=?","answer":0,"hint":"Nhân 0.","explain":"0."},
-      {"type":"num","prompt":"2×10=?","answer":20,"hint":"20.","explain":"20."},
-      {"type":"num","prompt":"45:5=?","answer":9,"hint":"9.","explain":"9."},
-      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?","answer":10,"hint":"5 × 2.","explain":"10."},
-      {"type":"num","prompt":"Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?","answer":20,"hint":"4 × 5.","explain":"20."},
+      {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 3 đĩa. Tất cả mấy cái bánh?","answer":6,"hint":"3 × 2.","explain":"6."},
+      {"type":"num","prompt":"Một hàng 2 bạn, có 3 hàng. Tất cả mấy bạn?","answer":6,"hint":"3 × 2.","explain":"6."},
     ],
   },
 
@@ -4772,39 +4907,40 @@ const G2_LESSONS = [
           <circle cx="230" cy="80" r="45" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="230" y="145" font-size="12" text-anchor="middle" fill="#58C4DD">khối cầu</text>
         </svg>
+              <figcaption>Ôn hình phẳng và hình khối.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Hình phẳng và hình khối giúp nhận đồ vật thật và chuẩn bị lớp 3.</p>
       <div class="definition">
-        <p>Ôn hình phẳng và hình khối. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Đoạn (2 mút), đường thẳng (kéo dài), tứ giác (4 cạnh), khối cầu (bóng), khối trụ (lon/ống).</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> Bóng đá → khối cầu. Lon sữa → khối trụ. Hình chữ nhật là tứ giác.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> Tam giác 3 cạnh. Đoạn thẳng có hai mút; đường thẳng không có mút giới hạn.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> Hình tròn vẽ trên giấy ≠ khối cầu. Tứ giác không chỉ là chữ nhật.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Đếm cạnh/đỉnh; với khối, nghĩ cách lăn và có đáy phẳng không.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Nhầm đoạn với đường thẳng.</li>
+          <li>Nhầm phẳng với khối.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập hình học.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>Lon ống? <em>— Khối trụ.</em></p>
+        <p>Tứ giác mấy cạnh? <em>— 4.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Chỉ 3 đồ vật trong lớp: bảng (tứ giác/chữ nhật), bi (cầu), ống cắm bút (trụ).</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn hình phẳng và hình khối.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Phẳng: điểm–đoạn–đường–tứ giác. Khối: cầu & trụ.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"Bóng đá","choices":["Khối cầu","Tứ giác","Đoạn","Lít"],"correct":0,"hint":"Cầu.","explain":"Cầu."},
@@ -4812,10 +4948,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Lon ống","choices":["Khối trụ","Khối cầu","Điểm","Ngày"],"correct":0,"hint":"Trụ.","explain":"Trụ."},
       {"type":"mc","prompt":"Đoạn thẳng có","choices":["Hai mút","Không mút","Ba mút","Bốn mút"],"correct":0,"hint":"Hai đầu.","explain":"Hai mút."},
       {"type":"num","prompt":"Tam giác mấy cạnh?","answer":3,"hint":"3.","explain":"3."},
-      {"type":"mc","prompt":"Đường thẳng","choices":["Kéo dài hai phía","Hai mút","Cong","4 cạnh"],"correct":0,"hint":"Kéo dài.","explain":"Kéo dài."},
-      {"type":"mc","prompt":"Viên bi","choices":["Khối cầu","Khối trụ","Tứ giác","Kg"],"correct":0,"hint":"Cầu.","explain":"Cầu."},
-      {"type":"num","prompt":"Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?","answer":4,"hint":"Tứ giác: cạnh = đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác có mấy cạnh?","answer":3,"hint":"Tam = 3.","explain":"3."},
+      {"type":"num","prompt":"Khung ảnh nhà Minh là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
+      {"type":"num","prompt":"Biển báo hình tam giác trên đường Nam đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
   },
 
@@ -4837,39 +4971,40 @@ const G2_LESSONS = [
           <rect x="150" y="80" width="120" height="36" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="210" y="103" font-size="12" text-anchor="middle">1 km = 1000 m</text>
         </svg>
+              <figcaption>Ôn kg, l, dm, m, km, tiền, giờ.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Đo lường và tiền gắn đời sống — hay quên đổi đơn vị và ghi đơn vị.</p>
       <div class="definition">
-        <p>Ôn kg, l, dm, m, km, tiền, giờ. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>1 m = 10 dm; 1 km = 1000 m; 1 giờ = 60 phút; kg; l; tiền đồng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 5 kg + 4 kg = 9 kg. 9 l − 2 l = 7 l. 2000 + 3000 = 5000 đồng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> 3 m = 30 dm. 1 km = 1000 m. 1 giờ rưỡi = 90 phút (ôn).</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> Không cộng kg với l. 1 m ≠ 100 dm.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Đổi về cùng đơn vị trước khi cộng trừ; luôn ghi tên đơn vị.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Sai phép đổi.</li>
+          <li>Thiếu đơn vị trong câu trả lời.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập đo lường.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>1 m = ? dm <em>— 10.</em></p>
+        <p>1 km = ? m <em>— 1000.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Dây 2 m = 2 × 10 = 20 dm. Kiểm: 20 dm : 10 = 2 m.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn kg, l, dm, m, km, tiền, giờ.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> dm–m–km; kg; l; giờ–phút; tiền đồng.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"1 m = ? dm","answer":10,"hint":"10.","explain":"10."},
@@ -4877,10 +5012,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"5 kg + 4 kg = ?","answer":9,"hint":"Cộng.","explain":"9."},
       {"type":"num","prompt":"9 l − 2 l = ?","answer":7,"hint":"Trừ.","explain":"7."},
       {"type":"num","prompt":"2000+3000=?","answer":5000,"hint":"Tiền.","explain":"5000."},
-      {"type":"num","prompt":"1 km = ? m","answer":1000,"hint":"1000.","explain":"1000."},
-      {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"30.","explain":"30."},
-      {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"5."},
-      {"type":"num","prompt":"Bình nước 7 l, uống 3 l. Còn mấy lít?","answer":4,"hint":"Trừ lít.","explain":"4."},
+      {"type":"num","prompt":"Mẹ mua 10 kg gạo và 7 kg đường. Tất cả mấy kg?","answer":17,"hint":"Cộng kg.","explain":"10 + 7 = 17."},
+      {"type":"num","prompt":"Bình có 25 l nước, dùng 10 l. Còn mấy lít?","answer":15,"hint":"Trừ lít.","explain":"25 − 10 = 15."},
     ],
   },
 
@@ -4906,39 +5039,40 @@ const G2_LESSONS = [
           <text x="260" y="80" font-size="10" text-anchor="middle">không có vàng</text>
           <text x="260" y="98" font-size="10" text-anchor="middle">→ bốc vàng</text>
         </svg>
+              <figcaption>Ôn biểu đồ tranh và chắc chắn/có thể/không thể.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Thống kê và khả năng là mạch mới của GDPT 2018 — cần đúng ba từ và đọc biểu đồ.</p>
       <div class="definition">
-        <p>Ôn biểu đồ tranh và chắc chắn/có thể/không thể. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Đếm/phân loại; biểu đồ tranh (xem chú thích); chắc chắn / có thể / không thể.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 6 tranh (1=1) → 6. Túi chỉ kẹo nho → bốc nho: chắc chắn.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> Không có kẹo chanh → bốc chanh: không thể. Bi đỏ và xanh → bốc xanh: có thể.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> Quên chú thích 1 hình = ? Đừng nói chắc chắn khi còn hai màu.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Chú thích → đếm → so sánh; khả năng dựa vào dữ kiện trong túi/tình huống.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Bỏ chú thích biểu đồ.</li>
+          <li>Lạm dụng từ chắc chắn.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập kiểm đếm số liệu và lựa chọn khả năng.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>Túi chỉ đỏ, bốc đỏ? <em>— Chắc chắn.</em></p>
+        <p>Cột 4 và 9, hơn? <em>— 5.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Biểu đồ xe đạp 3 hình, xe máy 5 hình (1=1): xe máy hơn 2. Tổng 8 xe.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Ôn biểu đồ tranh và chắc chắn/có thể/không thể.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Biểu đồ: chú thích–đếm–so. Khả năng: chắc/có thể/không thể.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"Biểu đồ 6 tranh (1=1). Số?","answer":6,"hint":"Đếm.","explain":"6."},
@@ -4946,10 +5080,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Không kẹo chanh, bốc chanh","choices":["Không thể","Chắc chắn","Bắt buộc","Luôn có thể"],"correct":0,"hint":"Không có.","explain":"Không thể."},
       {"type":"num","prompt":"Nhóm 8 và 5. Tổng?","answer":13,"hint":"Cộng.","explain":"13."},
       {"type":"mc","prompt":"Bi đỏ và xanh, bốc xanh","choices":["Có thể","Chắc chắn","Không thể","Cấm"],"correct":0,"hint":"Hai màu.","explain":"Có thể."},
-      {"type":"num","prompt":"Cột 4 và 9, hơn kém?","answer":5,"hint":"9−4.","explain":"5."},
-      {"type":"mc","prompt":"Chú thích biểu đồ cần xem","choices":["Trước khi đếm","Sau cùng không cần","Không bao giờ","Chỉ khi màu đẹp"],"correct":0,"hint":"Trước.","explain":"Trước khi đếm."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 7 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":6,"hint":"Hiệu.","explain":"13 − 7 = 6."},
+      {"type":"num","prompt":"Biểu đồ có 6 hình (1 hình = 1 xe). Có mấy xe?","answer":6,"hint":"1 hình = 1.","explain":"6."},
     ],
   },
 
@@ -4962,46 +5094,55 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b75-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cuối năm Toán 2">
-          <rect x="20" y="25" width="130" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>
+          <rect x="20" y="18" width="130" height="48" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="#888888">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="#888888">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">Cuối năm Toán 2</text>
         </svg>
+              <figcaption>Tổng ôn cuối năm Toán 2.</figcaption>
       </figure>
-      <p><strong>Vì sao học bài này?</strong> Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.</p>
+      <p><strong>Vì sao học bài này?</strong> Tổng ôn cuối năm: trộn số, phép tính, hình, đo — như một đề tổng hợp nhẹ.</p>
       <div class="definition">
-        <p>Tổng ôn cuối năm Toán 2. Làm chậm, soát nhớ/mượn và đơn vị.</p>
+        <p>Ôn nhanh các mạch chính Toán 2 KNTT trước khi lên lớp 3.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.</p>
+        <p><strong>Ví dụ dễ.</strong> 2 × 10 = 20. 5 × 9 = 45. 18 : 2 = 9. 35 : 5 = 7.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> Sau mỗi bài, tự đặt 1 câu tương tự.</p>
+        <p><strong>Ví dụ thêm một bước.</strong> 476 + 128 = 604 (có nhớ). 1000 − 340 = 660. 1 km = 1000 m.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.</p>
+        <p><strong>Ví dụ có bẫy.</strong> Làm dồn dễ sai nhớ/mượn — làm từng câu, soát lại 1 lần.</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> Ôn theo mạch: số → phép tính → hình → đo → thống kê.</p>
+        <p><strong>Cách nghĩ.</strong> Thứ tự: phép nhẩm bảng → đặt tính 100/1000 → đo/đơn vị → hình nếu còn giờ.</p>
       </div>
       <div class="warn">
         <p><strong>Lỗi hay gặp.</strong></p>
         <ul>
-          <li>Ôn lan man không trọng tâm.</li>
-          <li>Không kiểm lại.</li>
+          <li>Quên đơn vị.</li>
+          <li>Nhầm bảng 2/5.</li>
+          <li>Không kiểm phép lớn.</li>
         </ul>
       </div>
       <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Em ôn chủ đề nào hôm nay? <em>— Ôn tập chung.</em></p>
-        <p>Cần soát gì? <em>— Nhớ/mượn, đơn vị, chọn đúng phép.</em></p>
+        <p>476 + 128? <em>— 604.</em></p>
+        <p>1 km = ? m <em>— 1000.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.</p>
+        <p><strong>Làm chậm.</strong> Chọn 3 câu: một nhân, một cộng có nhớ, một đo. Làm và giải thích miệng cho người thân.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Tổng ôn cuối năm Toán 2.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Toán 2: số 1000 · cộng trừ có nhớ · nhân chia 2&5 · hình · đo · thống kê.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"2 × 10 = ?","answer":20,"hint":"Bảng 2.","explain":"20."},
@@ -5009,10 +5150,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"476 + 128 = ?","answer":604,"hint":"Có nhớ.","explain":"604."},
       {"type":"num","prompt":"1000 − 340 = ?","answer":660,"hint":"Trừ.","explain":"660."},
       {"type":"mc","prompt":"1 km = ? m","choices":["1000","100","10","10000"],"correct":0,"hint":"1000 m.","explain":"1000."},
-      {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Chia 2.","explain":"9."},
-      {"type":"num","prompt":"35 : 5 = ?","answer":7,"hint":"Chia 5.","explain":"7."},
-      {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":3,"hint":"9 − 6.","explain":"3."},
-      {"type":"num","prompt":"Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?","answer":5,"hint":"Đếm hình.","explain":"5."},
+      {"type":"num","prompt":"Tổ 1 có 4 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":5,"hint":"Hiệu.","explain":"9 − 4 = 5."},
+      {"type":"num","prompt":"Biểu đồ có 9 hình (1 hình = 1 xe). Có mấy xe?","answer":9,"hint":"1 hình = 1.","explain":"9."},
     ],
   }
 ];

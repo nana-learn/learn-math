@@ -56,75 +56,126 @@ function ensureUniqueAnim(figSvg, num) {
 }
 
 function withStories(num, chapter, exercises) {
-  const isNarrative = (e) =>
-    e.type === "num" &&
-    /Lan |An |Minh |Hoa |Nam |Bình |mẹ |Mỗi |chia đều|Tổ |Mua |Đưa |Trên cây |Trong hộp |Bạn |trường |Số nhà |túi có |Bình nước |Đoạn dây |Một hộp có |Có \d+ (cái|quả|bạn|viên|tem|bút|kg|l)/i.test(
-      e.prompt
-    );
-  const narrativeCount = exercises.filter(isNarrative).length;
-  if (narrativeCount >= 2 || exercises.length >= 9) return exercises.slice(0, 9);
+  // Unique stories per lesson (seeded) so prompts are not copy-pasted across the course.
+  const seed = num * 17 + chapter * 3;
+  const names = ["An", "Bình", "Chi", "Dũng", "Hà", "Lan", "Minh", "Nam", "Oanh", "Phúc"];
+  const things = ["tem", "bút", "nhãn", "bi", "kẹo", "quyển vở", "bông hoa", "lá cờ"];
+  const pick = (arr, i) => arr[(seed + i) % arr.length];
+  const a = pick(names, 0);
+  let b = pick(names, 1);
+  if (b === a) b = pick(names, 2);
+  const thing = pick(things, 0);
+  let thing2 = pick(things, 1);
+  if (thing2 === thing) thing2 = pick(things, 2);
 
+  const n1 = 6 + ((seed * 3) % 12); // 6..17
+  const n2 = 3 + ((seed * 5) % 8); // 3..10
+  const n3 = 2 + ((seed * 7) % 6); // 2..7
+  const big = 25 + ((seed * 11) % 60); // 25..84
+  const big2 = 8 + ((seed * 13) % 30); // 8..37
+  const hundreds = 1 + (seed % 8); // 1..8
+  const tens = seed % 10;
+  const h = hundreds * 100 + tens * 10 + n3; // 3-digit-ish
+  const money = [1000, 2000, 5000, 10000];
+  const m1 = pick(money, 0);
+  let m2 = pick(money, 1);
+  if (m2 === m1) m2 = pick(money, 2);
+  const pay = m1 >= m2 ? m1 : m1 + m2;
+
+  const mk = (prompt, answer, hint, explain) => storyEx(prompt, answer, hint, explain);
+
+  const sumAB = n1 + n2;
   const banks = {
     place: [
-      storyEx("Túi có 4 chục que tính và 6 que rời. Tất cả mấy que?", 46, "40 + 6.", "46."),
-      storyEx("Số áo của An ghi 3 chục 5 đơn vị. Đó là số nào?", 35, "Ghép hàng.", "35."),
-    ],
-    add: [
-      storyEx("Lan có 12 tem, mẹ cho thêm 7 tem. Lan có tất cả mấy tem?", 19, "Thêm → cộng.", "12 + 7 = 19."),
-      storyEx("Trong hộp có 9 bút, bạn thêm 6 bút. Tất cả mấy bút?", 15, "Cộng.", "9 + 6 = 15."),
-    ],
-    sub: [
-      storyEx("Có 18 cái kẹo, An ăn 5 cái. Còn lại mấy cái?", 13, "Bớt → trừ.", "18 − 5 = 13."),
-      storyEx("Trên cây 20 quả, hái 8 quả. Còn lại mấy quả?", 12, "Trừ.", "20 − 8 = 12."),
-    ],
-    more: [
-      storyEx("Minh có 15 nhãn. Nam nhiều hơn Minh 4 nhãn. Nam có mấy nhãn?", 19, "Nhiều hơn → cộng.", "15 + 4 = 19."),
-      storyEx("Hoa có 14 tem. Bình ít hơn Hoa 5 tem. Bình có mấy tem?", 9, "Ít hơn → trừ.", "14 − 5 = 9."),
-    ],
-    measure: [
-      storyEx("Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?", 5, "Cộng kg.", "5."),
-      storyEx("Bình nước 7 l, uống 3 l. Còn mấy lít?", 4, "Trừ lít.", "4."),
-    ],
-    time: [
-      storyEx("An học từ 7 giờ đến 9 giờ. An học mấy giờ?", 2, "9 − 7.", "2."),
-      storyEx("Hôm nay ngày 10. Một tuần sau là ngày bao nhiêu?", 17, "10 + 7.", "17."),
-    ],
-    geo: [
-      storyEx("Khung ảnh nhà An có 4 cạnh. Đó là hình có mấy đỉnh?", 4, "Tứ giác: cạnh = đỉnh.", "4."),
-      storyEx("Biển báo hình tam giác có mấy cạnh?", 3, "Tam = 3.", "3."),
-    ],
-    mul: [
-      storyEx("Mỗi đĩa 2 cái bánh, có 5 đĩa. Tất cả mấy cái bánh?", 10, "5 × 2.", "10."),
-      storyEx("Một hàng 5 bạn, có 4 hàng. Tất cả mấy bạn?", 20, "4 × 5.", "20."),
-    ],
-    div: [
-      storyEx("12 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?", 6, "12 : 2.", "6."),
-      storyEx("20 cái kẹo chia 5 hộp đều. Mỗi hộp mấy cái?", 4, "20 : 5.", "4."),
-    ],
-    money: [
-      storyEx("Mua bút 2000 đồng, tẩy 1000 đồng. Cả hai mấy đồng?", 3000, "Cộng tiền.", "3000."),
-      storyEx("Đưa 5000 đồng, món đồ 3000 đồng. Tiền thừa mấy đồng?", 2000, "Trừ.", "2000."),
-    ],
-    length: [
-      storyEx("Đoạn dây 8 m, cắt 3 m. Còn mấy mét?", 5, "Trừ m.", "5."),
-      storyEx("3 m bằng bao nhiêu dm?", 30, "1 m = 10 dm.", "30."),
-    ],
-    solid: [
-      storyEx("Một hộp có 2 quả bóng (khối cầu) và 3 lon sữa (khối trụ). Tất cả mấy đồ vật?", 5, "2 + 3.", "5."),
-      storyEx("Có 4 khối trụ, lấy bớt 1. Còn mấy khối trụ?", 3, "4 − 1.", "3."),
-    ],
-    stats: [
-      storyEx("Tổ 1 có 6 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?", 3, "9 − 6.", "3."),
-      storyEx("Biểu đồ có 5 hình (1 hình = 1 xe). Có mấy xe?", 5, "Đếm hình.", "5."),
+      mk(`${a} có ${n2} chục que và ${n3} que rời. Tất cả mấy que?`, n2 * 10 + n3, "chục × 10 + đơn vị.", `${n2 * 10 + n3}.`),
+      mk(`Viết số gồm ${Math.min(n1, 9)} chục và ${n3} đơn vị.`, Math.min(n1, 9) * 10 + n3, "Ghép hàng.", `${Math.min(n1, 9) * 10 + n3}.`),
     ],
     place3: [
-      storyEx("Số nhà của An có 3 trăm, 0 chục, 5 đơn vị. Số nhà là bao nhiêu?", 305, "Ghép hàng.", "305."),
-      storyEx("Trường có 4 trăm 2 chục 0 học sinh. Viết số đó.", 420, "420.", "420."),
+      mk(
+        `Số nhà của ${a} có ${hundreds} trăm, ${tens} chục, ${n3} đơn vị. Số nhà là bao nhiêu?`,
+        hundreds * 100 + tens * 10 + n3,
+        "trăm|chục|đv.",
+        `${hundreds * 100 + tens * 10 + n3}.`
+      ),
+      mk(
+        `Trường có ${2 + (seed % 5)} trăm ${(seed + 3) % 10} chục học sinh (0 đơn vị). Viết số đó.`,
+        (2 + (seed % 5)) * 100 + ((seed + 3) % 10) * 10,
+        "Ghép hàng.",
+        `${(2 + (seed % 5)) * 100 + ((seed + 3) % 10) * 10}.`
+      ),
+    ],
+    add: [
+      mk(`${a} có ${n1} ${thing}, được thêm ${n2} ${thing}. Tất cả mấy ${thing}?`, sumAB, "Thêm → cộng.", `${n1} + ${n2} = ${sumAB}.`),
+      mk(`Trong hộp có ${big2} ${thing2}, bạn cho thêm ${n3}. Tất cả mấy?`, big2 + n3, "Cộng.", `${big2} + ${n3} = ${big2 + n3}.`),
+    ],
+    sub: [
+      mk(`Có ${sumAB} ${thing}, ${a} lấy ${n2}. Còn lại mấy?`, n1, "Bớt → trừ.", `${sumAB} − ${n2} = ${n1}.`),
+      mk(`Trên kệ có ${big} quyển sách, đem đi ${big2}. Còn mấy quyển?`, big - big2, "Trừ.", `${big} − ${big2} = ${big - big2}.`),
+    ],
+    more: [
+      mk(`${a} có ${n1} ${thing}. ${b} nhiều hơn ${a} ${n2} ${thing}. ${b} có mấy?`, sumAB, "Nhiều hơn → cộng.", `${n1} + ${n2} = ${sumAB}.`),
+      mk(`${a} có ${sumAB} ${thing2}. ${b} ít hơn ${a} ${n2}. ${b} có mấy?`, n1, "Ít hơn → trừ.", `${sumAB} − ${n2} = ${n1}.`),
+    ],
+    measure: [
+      mk(`Mẹ mua ${n2} kg gạo và ${n3} kg đường. Tất cả mấy kg?`, n2 + n3, "Cộng kg.", `${n2} + ${n3} = ${n2 + n3}.`),
+      mk(`Bình có ${sumAB} l nước, dùng ${n2} l. Còn mấy lít?`, n1, "Trừ lít.", `${sumAB} − ${n2} = ${n1}.`),
+    ],
+    time: [
+      mk(`${a} học từ ${7 + (seed % 3)} giờ đến ${9 + (seed % 3)} giờ. Học mấy giờ?`, 2, "Hiệu hai mốc giờ.", "2."),
+      mk(`Hôm nay ngày ${n1}. ${n3} ngày sau là ngày bao nhiêu?`, n1 + n3, "Cộng ngày.", `${n1} + ${n3} = ${n1 + n3}.`),
+    ],
+    geo: [
+      mk(`Khung ảnh nhà ${a} là tứ giác. Khung có mấy đỉnh?`, 4, "Tứ giác: 4 đỉnh.", "4."),
+      mk(`Biển báo hình tam giác trên đường ${b} đi học có mấy cạnh?`, 3, "Tam giác: 3 cạnh.", "3."),
+    ],
+    mul: (() => {
+      // Match bảng 2 / bảng 5 lessons: odd nums → 2, even → 5 (39→2, 40→5).
+      const fA = num % 2 === 0 ? 5 : 2;
+      const fB = 2 + (seed % 8);
+      return [
+        mk(`Mỗi đĩa ${fA} cái bánh, có ${fB} đĩa. Tất cả mấy cái bánh?`, fA * fB, `${fB} × ${fA}.`, `${fA * fB}.`),
+        mk(`Một hàng ${fA} bạn, có ${fB} hàng. Tất cả mấy bạn?`, fA * fB, `${fB} × ${fA}.`, `${fA * fB}.`),
+      ];
+    })(),
+    div: (() => {
+      const g = num % 2 === 0 ? 5 : 2; // 43→2, 44→5
+      const q = 2 + (seed % 8);
+      return [
+        mk(`${g * q} viên bi chia đều ${g} bạn. Mỗi bạn mấy viên?`, q, `${g * q} : ${g}.`, `${q}.`),
+        mk(`${g * q} cái kẹo, mỗi hộp ${g} cái. Cần mấy hộp?`, q, `${g * q} : ${g}.`, `${q}.`),
+      ];
+    })(),
+    money: [
+      mk(`${a} mua đồ ${m2} đồng, đưa ${pay} đồng. Tiền thừa mấy đồng?`, pay - m2, "Đưa − giá.", `${pay} − ${m2} = ${pay - m2}.`),
+      mk(`Mua bút ${m2} đồng và tẩy ${Math.min(m1, 2000)} đồng. Cả hai mấy đồng?`, m2 + Math.min(m1, 2000), "Cộng tiền.", `${m2 + Math.min(m1, 2000)}.`),
+    ],
+    length: [
+      mk(`Đoạn dây ${sumAB} m, cắt ${n2} m. Còn mấy mét?`, n1, "Trừ mét.", `${sumAB} − ${n2} = ${n1}.`),
+      mk(`${n3} m bằng bao nhiêu dm?`, n3 * 10, "1 m = 10 dm.", `${n3} × 10 = ${n3 * 10}.`),
+    ],
+    solid: [
+      mk(`Hộp có ${n2} quả bóng (cầu) và ${n3} lon (trụ). Tất cả mấy đồ vật?`, n2 + n3, "Cộng.", `${n2} + ${n3} = ${n2 + n3}.`),
+      mk(`Có ${sumAB} khối trụ, lấy bớt ${n2}. Còn mấy khối trụ?`, n1, "Trừ.", `${sumAB} − ${n2} = ${n1}.`),
+    ],
+    stats: [
+      mk(`Tổ 1 có ${n2} bạn, tổ 2 có ${n2 + n3} bạn. Tổ 2 hơn tổ 1 mấy bạn?`, n3, "Hiệu.", `${n2 + n3} − ${n2} = ${n3}.`),
+      mk(`Biểu đồ có ${n1} hình (1 hình = 1 xe). Có mấy xe?`, n1, "1 hình = 1.", `${n1}.`),
+    ],
+    add1000: [
+      mk(`Thư viện có ${h} sách, thêm ${big2 * 3}. Tất cả mấy quyển?`, h + big2 * 3, "Cộng phạm vi 1000.", `${h} + ${big2 * 3} = ${h + big2 * 3}.`),
+      mk(`Kho có ${h + big} hộp, xuất ${big}. Còn mấy hộp?`, h, "Trừ.", `${h + big} − ${big} = ${h}.`),
     ],
   };
 
   const byCh = {
-    1: banks.place,
+    1:
+      num <= 2
+        ? banks.place
+        : num === 4
+          ? banks.more
+          : num % 2
+            ? banks.add
+            : banks.sub,
     2: num % 3 === 0 ? banks.more : num % 2 ? banks.add : banks.sub,
     3: banks.measure,
     4: num % 2 ? banks.add : banks.sub,
@@ -135,13 +186,36 @@ function withStories(num, chapter, exercises) {
     9: banks.solid,
     10: banks.place3,
     11: num === 56 ? banks.money : banks.length,
-    12: num % 2 ? banks.add : banks.sub,
+    12: banks.add1000,
     13: banks.stats,
-    14: num <= 68 ? banks.place3 : num <= 71 ? banks.mul : num === 72 ? banks.geo : num === 73 ? banks.measure : banks.stats,
+    14:
+      num <= 68
+        ? banks.place3
+        : num <= 70
+          ? banks.add1000
+          : num === 71
+            ? banks.mul
+            : num === 72
+              ? banks.geo
+              : num === 73
+                ? banks.measure
+                : banks.stats,
   };
 
-  const pick = byCh[chapter] || banks.add;
-  const extra = pick.filter((e) => !exercises.some((x) => x.prompt === e.prompt));
+  const isNarrative = (e) =>
+    e.type === "num" &&
+    /An |Bình |Chi |Dũng |Hà |Lan |Minh |Nam |Oanh |Phúc |mẹ |Mỗi |chia đều|Tổ |Mua |Đưa |Trên |Trong |Số nhà |Trường |Bình có |Đoạn dây |Hộp có |Có \d+|Hôm nay |học từ |Thư viện |Kho có /i.test(
+      e.prompt
+    );
+
+  const narrativeCount = exercises.filter(isNarrative).length;
+  if (narrativeCount >= 2) return exercises.slice(0, 9);
+
+  const bank = byCh[chapter] || banks.add;
+  const extra = bank.filter((e) => !exercises.some((x) => x.prompt === e.prompt));
+  if (narrativeCount === 0 && exercises.length >= 7) {
+    return exercises.slice(0, 5).concat(extra.slice(0, 2)).slice(0, 9);
+  }
   return exercises.concat(extra.slice(0, 2)).slice(0, 9);
 }
 
@@ -244,36 +318,49 @@ function svgCompareBars(a, b) {
 }
 
 function svgColumnAdd(top, bot, showCarry = true) {
-  const t = String(top).padStart(2, " ");
-  const b = String(bot).padStart(2, " ");
+  const sum = top + bot;
+  const t = String(top).padStart(2, "0");
+  const b = String(bot).padStart(2, "0");
+  const s = String(sum);
   return fig(
-    "g2-col-add",
+    "col-add",
     "Đặt tính cộng",
-    `          <text x="200" y="40" font-size="11" fill="${C.muted}">chục</text>
-          <text x="250" y="40" font-size="11" fill="${C.muted}">đv</text>
-          ${showCarry ? `<text x="250" y="58" font-size="12" fill="${C.r}">¹</text>` : ""}
-          <text x="200" y="85" font-size="28" text-anchor="middle">${t[0] || ""}</text>
-          <text x="250" y="85" font-size="28" text-anchor="middle">${t[1] || t}</text>
-          <text x="160" y="120" font-size="22">+</text>
-          <text x="200" y="120" font-size="28" text-anchor="middle">${b[0] || ""}</text>
-          <text x="250" y="120" font-size="28" text-anchor="middle">${b[1] || b}</text>
-          <line x1="150" y1="130" x2="280" y2="130" stroke="${C.d}" stroke-width="2"/>
-          <text x="160" y="28" font-size="12" fill="${C.g}">Cộng đơn vị trước</text>`
+    `          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+          <text x="200" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">chục</text>
+          <text x="250" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">đv</text>
+          ${showCarry ? `<text x="250" y="58" font-size="12" fill="${C.r}" text-anchor="middle">¹</text>` : ""}
+          <text x="200" y="88" font-size="26" text-anchor="middle">${t[0]}</text>
+          <text x="250" y="88" font-size="26" text-anchor="middle">${t[1]}</text>
+          <text x="160" y="118" font-size="22">+</text>
+          <text x="200" y="118" font-size="26" text-anchor="middle">${b[0]}</text>
+          <text x="250" y="118" font-size="26" text-anchor="middle">${b[1]}</text>
+          <line x1="155" y1="126" x2="280" y2="126" stroke="${C.d}" stroke-width="2"/>
+          <text x="225" y="148" font-size="22" text-anchor="middle" fill="${C.g}">${s}</text>
+          <text x="40" y="50" font-size="12" fill="${C.g}">Cộng đv trước</text>
+          <text x="40" y="75" font-size="12" fill="${C.muted}">${showCarry ? "Có nhớ khi ≥10" : "Không nhớ"}</text>
+          <text x="40" y="110" font-size="13">${top} + ${bot}</text>`
   );
 }
 
 function svgColumnSub(top, bot) {
+  const diff = top - bot;
+  const t = String(top).padStart(2, "0");
+  const b = String(bot).padStart(2, "0");
   return fig(
-    "g2-col-sub",
+    "col-sub",
     "Đặt tính trừ có nhớ",
-    `          <text x="40" y="36" font-size="12" fill="${C.r}">Mượn 1 chục = 10 đơn vị</text>
-          <text x="200" y="70" font-size="28" text-anchor="middle">${String(top)[0]}</text>
-          <text x="250" y="70" font-size="28" text-anchor="middle">${String(top)[1]}</text>
-          <text x="160" y="105" font-size="22">−</text>
-          <text x="200" y="105" font-size="28" text-anchor="middle">${String(bot).padStart(2, "0")[0]}</text>
-          <text x="250" y="105" font-size="28" text-anchor="middle">${String(bot).padStart(2, "0")[1]}</text>
-          <line x1="150" y1="115" x2="280" y2="115" stroke="${C.d}" stroke-width="2"/>
-          <text x="250" y="55" font-size="11" fill="${C.r}">+10</text>`
+    `          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+          <text x="40" y="40" font-size="12" fill="${C.r}">Mượn 1 chục</text>
+          <text x="40" y="60" font-size="12" fill="${C.muted}">= 10 đơn vị</text>
+          <text x="250" y="48" font-size="11" fill="${C.r}" text-anchor="middle">+10</text>
+          <text x="200" y="80" font-size="26" text-anchor="middle">${t[0]}</text>
+          <text x="250" y="80" font-size="26" text-anchor="middle">${t[1]}</text>
+          <text x="160" y="110" font-size="22">−</text>
+          <text x="200" y="110" font-size="26" text-anchor="middle">${b[0]}</text>
+          <text x="250" y="110" font-size="26" text-anchor="middle">${b[1]}</text>
+          <line x1="155" y1="118" x2="280" y2="118" stroke="${C.d}" stroke-width="2"/>
+          <text x="225" y="142" font-size="22" text-anchor="middle" fill="${C.g}">${diff}</text>
+          <text x="40" y="130" font-size="13">${top} − ${bot}</text>`
   );
 }
 
@@ -313,15 +400,21 @@ function svgArray(rows, cols, label) {
 
 function svgDivide(total, groups, each) {
   let g = "";
+  const slot = Math.min(90, Math.floor(280 / Math.max(groups, 1)));
   for (let i = 0; i < groups; i++) {
-    const x = 30 + i * 70;
-    g += `          <rect x="${x}" y="40" width="55" height="70" rx="6" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="${x + 27}" y="80" font-size="18" text-anchor="middle">${each}</text>\n`;
+    const x0 = 20 + i * slot;
+    g += `          <rect x="${x0}" y="28" width="${slot - 10}" height="95" rx="8" fill="none" stroke="${C.b}" stroke-width="2"/>\n`;
+    g += `          <text x="${x0 + (slot - 10) / 2}" y="22" font-size="10" text-anchor="middle" fill="${C.muted}">nhóm ${i + 1}</text>\n`;
+    for (let j = 0; j < each && j < 12; j++) {
+      const cx = x0 + 14 + (j % 3) * 14;
+      const cy = 48 + Math.floor(j / 3) * 16;
+      g += `          <circle cx="${cx}" cy="${cy}" r="5" fill="none" stroke="${C.g}" stroke-width="2"/>\n`;
+    }
   }
   return fig(
-    "g2-divide",
+    "divide",
     "Chia đều",
-    `${g}          <text x="160" y="140" font-size="14" text-anchor="middle">${total} : ${groups} = ${each}</text>`
+    `${g}          <text x="160" y="150" font-size="14" text-anchor="middle">${total} : ${groups} = ${each}</text>`
   );
 }
 
@@ -496,16 +589,30 @@ function svgChance() {
 
 
 function svgTimesTable(n, base) {
+  let dots = "";
+  // show one row example: base × 4 as 4 groups of base dots (cap visual size)
+  const groups = 4;
+  const per = Math.min(base, 5);
+  for (let g = 0; g < groups; g++) {
+    for (let j = 0; j < per; j++) {
+      dots += `          <circle cx="${30 + g * 36 + (j % 2) * 12}" cy="${36 + Math.floor(j / 2) * 12}" r="5" fill="none" stroke="${C.g}" stroke-width="2"/>\n`;
+    }
+  }
   const rows = [];
   for (let i = 1; i <= 5; i++) {
-    const y = 20 + i * 22;
-    rows.push(`          <text x="40" y="${y}" font-size="13">${base} × ${i} = ${base * i}</text>`);
-    rows.push(`          <text x="180" y="${y}" font-size="13">${base} × ${i + 5} = ${base * (i + 5)}</text>`);
+    const y = 20 + i * 20;
+    rows.push(`          <rect x="175" y="${y - 14}" width="130" height="18" fill="none" stroke="${i % 2 ? C.b : C.p}" stroke-width="1"/>`);
+    rows.push(`          <text x="185" y="${y}" font-size="12">${base}×${i}=${base * i}</text>`);
+    rows.push(`          <text x="250" y="${y}" font-size="12">${base}×${i + 5}=${base * (i + 5)}</text>`);
   }
   return fig(
     `times${base}`,
     `Bảng nhân ${base}`,
-    rows.join("\n") + `\n          <text x="160" y="155" font-size="12" text-anchor="middle" fill="${C.g}">Thuộc rồi ôn mỗi ngày</text>`
+    `${dots}          <text x="80" y="100" font-size="12" text-anchor="middle" fill="${C.g}">${groups} nhóm × ${per}</text>
+          <text x="80" y="120" font-size="14" text-anchor="middle" fill="${C.r}">${base} × ${groups} = ${base * groups}</text>
+` +
+      rows.join("\n") +
+      `\n          <text x="160" y="155" font-size="11" text-anchor="middle" fill="${C.muted}">Bảng nhân ${base} · ôn mỗi ngày</text>`
   );
 }
 
@@ -592,14 +699,21 @@ function svgBorrowSteps() {
 
 function svgReview(title) {
   return fig(
-    "g2-review",
+    "review",
     title,
-    `          <rect x="20" y="25" width="130" height="50" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="85" y="55" font-size="13" text-anchor="middle">Số &amp; phép tính</text>
-          <rect x="170" y="25" width="130" height="50" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="235" y="55" font-size="13" text-anchor="middle">Hình &amp; đo</text>
-          <rect x="95" y="95" width="130" height="45" fill="none" stroke="${C.p}" stroke-width="2"/>
-          <text x="160" y="123" font-size="13" text-anchor="middle">Ôn chắc tay</text>`
+    `          <rect x="20" y="18" width="130" height="48" fill="none" stroke="${C.g}" stroke-width="2"/>
+          <text x="85" y="38" font-size="12" text-anchor="middle">1. Đọc đề kỹ</text>
+          <text x="85" y="54" font-size="10" text-anchor="middle" fill="${C.muted}">gạch từ khóa</text>
+          <rect x="170" y="18" width="130" height="48" fill="none" stroke="${C.b}" stroke-width="2"/>
+          <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
+          <text x="235" y="54" font-size="10" text-anchor="middle" fill="${C.muted}">+ − × :</text>
+          <rect x="20" y="80" width="130" height="48" fill="none" stroke="${C.r}" stroke-width="2"/>
+          <text x="85" y="100" font-size="12" text-anchor="middle">3. Đặt tính</text>
+          <text x="85" y="116" font-size="10" text-anchor="middle" fill="${C.muted}">nhớ / mượn</text>
+          <rect x="170" y="80" width="130" height="48" fill="none" stroke="${C.p}" stroke-width="2"/>
+          <text x="235" y="100" font-size="12" text-anchor="middle">4. Kiểm tra</text>
+          <text x="235" y="116" font-size="10" text-anchor="middle" fill="${C.muted}">phép ngược</text>
+          <text x="160" y="150" font-size="11" text-anchor="middle">${esc(title)}</text>`
   );
 }
 
@@ -616,6 +730,7 @@ function body(parts) {
     checks,
     slow,
     memory,
+    caption,
   } = parts;
   const warnList = (warns || [])
     .map((w) => `<li>${w}</li>`)
@@ -623,8 +738,15 @@ function body(parts) {
   const checkPs = (checks || [])
     .map((c) => `<p>${c.q} <em>— ${c.a}</em></p>`)
     .join("\n        ");
+  let fig = animFig;
+  if (caption) {
+    fig = animFig.replace(
+      "</figure>",
+      `        <figcaption>${caption}</figcaption>\n      </figure>`
+    );
+  }
   return `    body: String.raw\`
-${animFig}
+${fig}
       <p><strong>Vì sao học bài này?</strong> ${why}</p>
       <div class="definition">
         <p>${def}</p>
@@ -673,6 +795,57 @@ function buildLessons() {
   const L = [];
 
   function add(num, chapter, title, summary, figSvg, content, exercises) {
+    let exs = withStories(num, chapter, exercises);
+    // Reading-number text items (Vietnamese orthography, accept ASCII fold)
+    if (num === 1) {
+      exs = [
+        exText(
+          "Đọc số 70 (gõ không dấu cũng được):",
+          "bay muoi",
+          ["bay muoi", "bảy mươi", "bay mươi"],
+          "bảy mươi",
+          "bảy mươi."
+        ),
+        ...exs,
+      ].slice(0, 9);
+    }
+    if (num === 51) {
+      exs = [
+        exText(
+          "Đọc số 208 (gõ không dấu cũng được):",
+          "hai tram linh tam",
+          ["hai tram linh tam", "hai trăm linh tám", "hai tram linh 8", "hai tram linh tam"],
+          "hai trăm linh tám",
+          "hai trăm linh tám."
+        ),
+        ...exs,
+      ].slice(0, 9);
+    }
+    // Ensure bảng 2 / bảng 5 lessons keep pure table drills (2×1..10 or 5×1..10 style)
+    if (num === 39) {
+      const drills = [1, 3, 4, 7, 9].map((k) =>
+        exNum(`2 × ${k} = ?`, 2 * k, "Bảng 2.", `${2 * k}.`)
+      );
+      exs = [...drills, ...exs.filter((e) => !/^2 ×/.test(e.prompt))].slice(0, 9);
+    }
+    if (num === 40) {
+      const drills = [1, 4, 6, 7, 9].map((k) =>
+        exNum(`5 × ${k} = ?`, 5 * k, "Bảng 5.", `${5 * k}.`)
+      );
+      exs = [...drills, ...exs.filter((e) => !/^5 ×/.test(e.prompt))].slice(0, 9);
+    }
+    if (num === 43) {
+      const drills = [2, 8, 10, 12, 18].map((n) =>
+        exNum(`${n} : 2 = ?`, n / 2, "Bảng chia 2.", `${n / 2}.`)
+      );
+      exs = [...drills, ...exs.filter((e) => !/: 2 =/.test(e.prompt))].slice(0, 9);
+    }
+    if (num === 44) {
+      const drills = [15, 20, 25, 30, 45].map((n) =>
+        exNum(`${n} : 5 = ?`, n / 5, "Bảng chia 5.", `${n / 5}.`)
+      );
+      exs = [...drills, ...exs.filter((e) => !/: 5 =/.test(e.prompt))].slice(0, 9);
+    }
     L.push({
       id: `g2-b${num}`,
       num,
@@ -680,8 +853,8 @@ function buildLessons() {
       title,
       summary,
       figSvg: ensureUniqueAnim(figSvg, num),
-      content,
-      exercises: withStories(num, chapter, exercises),
+      content: { ...content, caption: content.caption || summary },
+      exercises: exs,
     });
   }
 
@@ -819,7 +992,7 @@ function buildLessons() {
     [
       exNum("17 hơn 10 bao nhiêu?", 7, "17 − 10.", "7."),
       exNum("25 kém 30 bao nhiêu?", 5, "30 − 25.", "5."),
-      exNum("An 14, Bình 9. An hơn Bình?", 5, "14 − 9.", "5."),
+      exNum("An có 14 tem, Bình có 9 tem. An hơn Bình mấy tem?", 5, "14 − 9.", "5."),
       exMC("“Kém nhau bao nhiêu” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Hiệu.", "Trừ."),
       exNum("42 hơn 35?", 7, "42 − 35.", "7."),
       exNum("Số lớn hơn 50 là 58. Lớn hơn mấy?", 8, "58 − 50.", "8."),
@@ -2925,22 +3098,156 @@ function buildLessons() {
     ]],
   ];
 
-  for (const [num, title, summary, figSvg, exercises] of yearEnd) {
-    add(num, 14, title, summary, figSvg, {
-      why: "Ôn tập cuối năm để chắc kiến thức Toán 2 trước lớp 3.",
-      def: summary + " Làm chậm, soát nhớ/mượn và đơn vị.",
-      easy: "Chọn vài phép/bài mẫu trong chủ đề và làm đúng 100%.",
-      step: "Sau mỗi bài, tự đặt 1 câu tương tự.",
-      trap: "Làm dồn đề dễ sai vì mệt — chia phiên ôn theo chủ đề.",
-      idea: "Ôn theo mạch: số → phép tính → hình → đo → thống kê.",
-      warns: ["Ôn lan man không trọng tâm.", "Không kiểm lại."],
+  const yearEndBody = {
+    68: {
+      why: "Số đến 1000 là nền để vào lớp 3 (số lớn hơn, nhân chia rộng hơn).",
+      def: "Đọc, viết, phân tích, so sánh số có ba chữ số và 1000. Chú ý chữ số 0 giữ hàng.",
+      easy: "702 = 7 trăm 0 chục 2 đơn vị. Đọc “bảy trăm linh hai”. 880 là số tròn chục.",
+      step: "So 891 và 819: cùng 8 trăm, 9 chục > 1 chục → 891 > 819. Liền trước 1000 là 999.",
+      trap: "205 ≠ 25. 1000 = 10 trăm, không phải 100 trăm.",
+      idea: "Viết thẳng hàng trăm-chục-đv rồi so từ trái sang phải.",
+      warns: ["Nuốt số 0 giữa.", "So sánh chỉ nhìn chữ số đầu."],
       checks: [
-        { q: "Em ôn chủ đề nào hôm nay?", a: title + "." },
-        { q: "Cần soát gì?", a: "Nhớ/mượn, đơn vị, chọn đúng phép." },
+        { q: "702 gồm mấy trăm?", a: "7 trăm." },
+        { q: "Liền trước 1000?", a: "999." },
       ],
-      slow: "Mỗi ngày 10–15 phút: 5 phép tính + 1 bài lời văn + 1 câu hình/đo.",
+      slow: "Viết năm trăm linh năm: 5 trăm, 0 chục, 5 → 505. Kiểm: 500 + 5 = 505.",
+      memory: "Ba chữ số + 1000: đọc đúng, so từ hàng trăm.",
+    },
+    69: {
+      why: "Cộng trừ có nhớ phạm vi 100 vẫn là chỗ hay mất điểm nếu quên nhớ/mượn.",
+      def: "Đặt tính thẳng cột. Cộng: nhớ khi đv ≥ 10. Trừ: mượn khi đv không đủ.",
+      easy: "47 + 36 = 83. 55 + 45 = 100.",
+      step: "82 − 29: 12 − 9 = 3; 8 − 1 − 2 = 5 → 53. Kiểm: 53 + 29 = 82.",
+      trap: "70 − 8 = 62, không phải 78 (quên mượn).",
+      idea: "Đánh dấu nhớ/mượn; luôn kiểm bằng phép ngược.",
+      warns: ["Quên nhớ 1.", "Mượn rồi quên giảm chục."],
+      checks: [
+        { q: "47 + 36?", a: "83." },
+        { q: "82 − 29?", a: "53." },
+      ],
+      slow: "91 − 47: 11 − 7 = 4; 9 − 1 − 4 = 4 → 44. Cộng lại 44 + 47 = 91.",
+      memory: "Phạm vi 100: thẳng cột + nhớ/mượn + kiểm.",
+    },
+    70: {
+      why: "Cộng trừ 1000 mở rộng kỹ năng đặt tính ba chữ số.",
+      def: "Cộng/trừ theo hàng trăm-chục-đv, nhớ/mượn có thể lan sang hàng trăm.",
+      easy: "410 + 90 = 500. 1000 − 250 = 750.",
+      step: "325 + 148: có nhớ ở đv và chục → 473. 600 − 278 = 322.",
+      trap: "999 − 100 = 899, không phải 8999. 1000 − 1 = 999.",
+      idea: "Làm từng cột; bài khó thì kiểm bằng cộng ngược.",
+      warns: ["Lệch cột khi số ngắn hơn.", "Quên nhớ dây chuyền."],
+      checks: [
+        { q: "325 + 148?", a: "473." },
+        { q: "600 − 278?", a: "322." },
+      ],
+      slow: "900 − 456: mượn lần lượt. 900 − 400 = 500; 500 − 56 = 444.",
+      memory: "Phạm vi 1000: ba hàng, nhớ/mượn, kiểm.",
+    },
+    71: {
+      why: "Bảng 2 và 5 là toàn bộ bảng nhân/chia lớp 2 — phải thuộc và dùng được.",
+      def: "Nhân 2, 5 và chia 2, 5. Kiểm chia bằng nhân ngược.",
+      easy: "2 × 7 = 14. 5 × 6 = 30. 16 : 2 = 8. 40 : 5 = 8.",
+      step: "5 × 0 = 0. 2 × 10 = 20. 45 : 5 = 9 vì 5 × 9 = 45.",
+      trap: "5 × 0 = 0, không phải 5. Chia phải khớp bảng (chia hết).",
+      idea: "Thuộc xuôi (nhân) rồi đọc ngược (chia).",
+      warns: ["Nhầm bảng 2 với 5.", "Không kiểm thương bằng nhân."],
+      checks: [
+        { q: "2 × 7?", a: "14." },
+        { q: "45 : 5?", a: "9." },
+      ],
+      slow: "Có 5 hộp, mỗi hộp 2 bút: 5 × 2 = 10. Đổi: 10 : 2 = 5 hộp.",
+      memory: "Bảng 2 & 5: thuộc + chia ngược + bài nhóm đều.",
+    },
+    72: {
+      why: "Hình phẳng và hình khối giúp nhận đồ vật thật và chuẩn bị lớp 3.",
+      def: "Đoạn (2 mút), đường thẳng (kéo dài), tứ giác (4 cạnh), khối cầu (bóng), khối trụ (lon/ống).",
+      easy: "Bóng đá → khối cầu. Lon sữa → khối trụ. Hình chữ nhật là tứ giác.",
+      step: "Tam giác 3 cạnh. Đoạn thẳng có hai mút; đường thẳng không có mút giới hạn.",
+      trap: "Hình tròn vẽ trên giấy ≠ khối cầu. Tứ giác không chỉ là chữ nhật.",
+      idea: "Đếm cạnh/đỉnh; với khối, nghĩ cách lăn và có đáy phẳng không.",
+      warns: ["Nhầm đoạn với đường thẳng.", "Nhầm phẳng với khối."],
+      checks: [
+        { q: "Lon ống?", a: "Khối trụ." },
+        { q: "Tứ giác mấy cạnh?", a: "4." },
+      ],
+      slow: "Chỉ 3 đồ vật trong lớp: bảng (tứ giác/chữ nhật), bi (cầu), ống cắm bút (trụ).",
+      memory: "Phẳng: điểm–đoạn–đường–tứ giác. Khối: cầu & trụ.",
+    },
+    73: {
+      why: "Đo lường và tiền gắn đời sống — hay quên đổi đơn vị và ghi đơn vị.",
+      def: "1 m = 10 dm; 1 km = 1000 m; 1 giờ = 60 phút; kg; l; tiền đồng.",
+      easy: "5 kg + 4 kg = 9 kg. 9 l − 2 l = 7 l. 2000 + 3000 = 5000 đồng.",
+      step: "3 m = 30 dm. 1 km = 1000 m. 1 giờ rưỡi = 90 phút (ôn).",
+      trap: "Không cộng kg với l. 1 m ≠ 100 dm.",
+      idea: "Đổi về cùng đơn vị trước khi cộng trừ; luôn ghi tên đơn vị.",
+      warns: ["Sai phép đổi.", "Thiếu đơn vị trong câu trả lời."],
+      checks: [
+        { q: "1 m = ? dm", a: "10." },
+        { q: "1 km = ? m", a: "1000." },
+      ],
+      slow: "Dây 2 m = 2 × 10 = 20 dm. Kiểm: 20 dm : 10 = 2 m.",
+      memory: "dm–m–km; kg; l; giờ–phút; tiền đồng.",
+    },
+    74: {
+      why: "Thống kê và khả năng là mạch mới của GDPT 2018 — cần đúng ba từ và đọc biểu đồ.",
+      def: "Đếm/phân loại; biểu đồ tranh (xem chú thích); chắc chắn / có thể / không thể.",
+      easy: "6 tranh (1=1) → 6. Túi chỉ kẹo nho → bốc nho: chắc chắn.",
+      step: "Không có kẹo chanh → bốc chanh: không thể. Bi đỏ và xanh → bốc xanh: có thể.",
+      trap: "Quên chú thích 1 hình = ? Đừng nói chắc chắn khi còn hai màu.",
+      idea: "Chú thích → đếm → so sánh; khả năng dựa vào dữ kiện trong túi/tình huống.",
+      warns: ["Bỏ chú thích biểu đồ.", "Lạm dụng từ chắc chắn."],
+      checks: [
+        { q: "Túi chỉ đỏ, bốc đỏ?", a: "Chắc chắn." },
+        { q: "Cột 4 và 9, hơn?", a: "5." },
+      ],
+      slow: "Biểu đồ xe đạp 3 hình, xe máy 5 hình (1=1): xe máy hơn 2. Tổng 8 xe.",
+      memory: "Biểu đồ: chú thích–đếm–so. Khả năng: chắc/có thể/không thể.",
+    },
+    75: {
+      why: "Tổng ôn cuối năm: trộn số, phép tính, hình, đo — như một đề tổng hợp nhẹ.",
+      def: "Ôn nhanh các mạch chính Toán 2 KNTT trước khi lên lớp 3.",
+      easy: "2 × 10 = 20. 5 × 9 = 45. 18 : 2 = 9. 35 : 5 = 7.",
+      step: "476 + 128 = 604 (có nhớ). 1000 − 340 = 660. 1 km = 1000 m.",
+      trap: "Làm dồn dễ sai nhớ/mượn — làm từng câu, soát lại 1 lần.",
+      idea: "Thứ tự: phép nhẩm bảng → đặt tính 100/1000 → đo/đơn vị → hình nếu còn giờ.",
+      warns: ["Quên đơn vị.", "Nhầm bảng 2/5.", "Không kiểm phép lớn."],
+      checks: [
+        { q: "476 + 128?", a: "604." },
+        { q: "1 km = ? m", a: "1000." },
+      ],
+      slow: "Chọn 3 câu: một nhân, một cộng có nhớ, một đo. Làm và giải thích miệng cho người thân.",
+      memory: "Toán 2: số 1000 · cộng trừ có nhớ · nhân chia 2&5 · hình · đo · thống kê.",
+    },
+  };
+
+  for (const [num, title, summary, figSvg, exercises] of yearEnd) {
+    const bodyParts = yearEndBody[num] || {
+      why: "Ôn tập cuối năm Toán 2.",
+      def: summary,
+      easy: "Làm mẫu trong chủ đề.",
+      step: "Tự đặt thêm 1 câu tương tự.",
+      trap: "Làm dồn dễ sai.",
+      idea: "Ôn theo mạch.",
+      warns: ["Không kiểm lại."],
+      checks: [
+        { q: "Chủ đề?", a: title + "." },
+        { q: "Soát gì?", a: "Phép tính và đơn vị." },
+      ],
+      slow: "10–15 phút mỗi ngày.",
       memory: summary,
-    }, exercises);
+    };
+    // Add one text “đọc số” item on number review
+    let exs = exercises.slice();
+    if (num === 68) {
+      exs = [
+        exText("Đọc số 702 (viết không dấu):", "bay tram linh hai", ["bay tram linh hai", "bảy trăm linh hai", "bay tram linh 2"], "bảy trăm linh hai", "bảy trăm linh hai."),
+        ...exs.filter((e) => e.prompt !== "Bảy trăm linh hai"),
+      ];
+      // keep numeric write
+      exs.splice(1, 0, exNum("Viết số bảy trăm linh hai", 702, "702.", "702."));
+    }
+    add(num, 14, title, summary, figSvg, bodyParts, exs);
   }
 
   return L;
