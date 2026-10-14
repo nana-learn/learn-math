@@ -9668,6 +9668,7 @@ const G10_LESSONS = [
 ];
 
 const COURSES = [
+  courseStub(2, "Tiểu học"),
   {
     id: "6",
     grade: 6,
@@ -9728,4 +9729,4 @@ const COURSES = [
     chapters: G11_CHAPTERS,
     lessons: G11_LESSONS,
   },
-  ];
+];

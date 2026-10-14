@@ -138,10 +138,19 @@ const AnimationManager = {
   animations: {},
   
   init() {
-    // Find all SVG figures with data-animation attribute
-    document.querySelectorAll('.figure [data-animation]').forEach(svg => {
-      const id = svg.dataset.animation;
-      const config = this.getAnimationConfig(id);
+    // SPA re-renders lesson HTML; rebuild bindings each time
+    this.animations = {};
+    document.querySelectorAll('.figure-controls').forEach((c) => c.remove());
+
+    // data-animation may be on <figure class="figure"> or on a child (e.g. svg)
+    document.querySelectorAll('.figure[data-animation], .figure [data-animation]').forEach((el, index) => {
+      const baseId = el.dataset.animation;
+      if (!baseId) return;
+      const svg = el.tagName === 'svg' ? el : el.querySelector('svg');
+      if (!svg) return;
+      // unique key so two figures can share a template id without clobbering
+      const id = this.animations[baseId] ? `${baseId}__${index}` : baseId;
+      const config = this.getAnimationConfig(baseId);
       if (config) {
         this.animations[id] = new VisualAnimation(svg, config);
         this.attachControls(svg, id);
@@ -2178,7 +2187,22 @@ const AnimationManager = {
       },
     };
     
-    return configs[id] || null;
+    if (configs[id]) return configs[id];
+    // Generic fade-in for Grade 2 (and any unlisted) diagram animations
+    if (id && String(id).startsWith('g2-')) {
+      return {
+        steps: [
+          { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+          { selector: 'circle', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+          { selector: 'ellipse', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+          { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
+          { selector: 'polygon', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+          { selector: 'path', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
+          { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+        ],
+      };
+    }
+    return null;
   },
   
   attachControls(svg, id) {

@@ -144,8 +144,13 @@ function chapterHeading(ch) {
 }
 
 function homeView() {
+  const th = COURSES.filter((c) => c.level === "Tiểu học");
   const thcs = COURSES.filter((c) => c.level === "THCS");
   const thpt = COURSES.filter((c) => c.level === "THPT");
+  const thSection = th.length
+    ? `<p class="section-label">Tiểu học</p>
+    <div class="grid grades">${th.map(gradeCard).join("")}</div>`
+    : "";
   return `
     <section class="hero">
       <h1>Xin chào, cùng học Toán.</h1>
@@ -156,6 +161,7 @@ function homeView() {
     </section>
     <p class="section-label">Thi vào 10</p>
     <div class="grid">${examCard()}</div>
+    ${thSection}
     <p class="section-label">Trung học cơ sở</p>
     <div class="grid grades">${thcs.map(gradeCard).join("")}</div>
     <p class="section-label">Trung học phổ thông</p>
@@ -414,11 +420,15 @@ function gradeQuiz(courseId, id) {
       const picked = form.querySelector(`input[name="q${i}"]:checked`);
       ok = picked && Number(picked.value) === ex.correct;
     } else if (ex.type === "num") {
-      const val = Number(String(form[`q${i}`].value).replace(",", ".").trim());
+      const raw = String(form[`q${i}`].value).replace(/\s/g, "").replace(",", ".").trim();
+      const val = Number(raw);
       ok = val === ex.answer;
     } else {
-      const val = String(form[`q${i}`].value).trim();
-      ok = (ex.accept || []).includes(val);
+      const val = String(form[`q${i}`].value).trim().toLowerCase().replace(/\s+/g, " ");
+      const accept = (ex.accept || [ex.answer]).map((a) =>
+        String(a).trim().toLowerCase().replace(/\s+/g, " ")
+      );
+      ok = accept.includes(val);
     }
     fb.hidden = false;
     explain.hidden = false;
@@ -483,6 +493,10 @@ function render() {
 
   setChrome(course);
   typeset(app);
+
+  if (typeof AnimationManager !== "undefined" && AnimationManager.init) {
+    AnimationManager.init();
+  }
 
   const quiz = document.getElementById("quiz-form");
   if (quiz && lessonMatch) {
