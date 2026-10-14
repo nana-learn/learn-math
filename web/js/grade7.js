@@ -22,6 +22,22 @@ const G7_LESSONS = [
     summary: "Số hữu tỉ là số viết được thành phân số. Cùng một số có nhiều cách viết.",
     body: String.raw`
       <p><strong>Vì sao cần số hữu tỉ?</strong> Số nguyên đếm được quả cam. Muốn nói “ba phần tư cái bánh” thì phải có số dạng phân số. Mọi số viết được thành \(\dfrac{a}{b}\) với \(a, b\) nguyên, \(b \neq 0\), gọi là số hữu tỉ. Tập hợp ấy kí hiệu \(\mathbb{Q}\).</p>
+            <figure class="figure" data-animation="g7-b1-natural-numbers">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Tập hợp số hữu tỉ">
+          <ellipse cx="140" cy="70" rx="110" ry="55" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="25" font-size="14" text-anchor="middle">Q = {a/b | a,b ∈ Z, b ≠ 0}</text>
+          <circle cx="90" cy="60" r="2" fill="#333330"/>
+          <circle cx="110" cy="50" r="2" fill="#333330"/>
+          <circle cx="130" cy="60" r="2" fill="#333330"/>
+          <circle cx="150" cy="50" r="2" fill="#333330"/>
+          <circle cx="170" cy="60" r="2" fill="#333330"/>
+          <text x="90" y="75" font-size="10" text-anchor="middle">1/2</text>
+          <text x="110" y="65" font-size="10" text-anchor="middle">-3</text>
+          <text x="130" y="75" font-size="10" text-anchor="middle">0</text>
+          <text x="150" y="65" font-size="10" text-anchor="middle">2/3</text>
+          <text x="170" y="75" font-size="10" text-anchor="middle">5</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Số hữu tỉ là số viết được dưới dạng \(\dfrac{a}{b}\), \(a, b \in \mathbb{Z}\), \(b \neq 0\). Số đối của số hữu tỉ \(m\) là \(-m\), cũng hữu tỉ.</p>
       </div>
@@ -81,6 +97,18 @@ const G7_LESSONS = [
     summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.",
     body: String.raw`
       <p>Phép tính trên \(\mathbb{Q}\) không mới. Việc cần làm là viết mỗi số thành phân số, mẫu dương, rồi dùng quy tắc cũ.</p>
+            <figure class="figure" data-animation="g7-b2-operations">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Phép cộng và nhân số hữu tỉ">
+          <path d="M20,20 L120,20 L120,60 L20,60 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="70" y="40" font-size="12" text-anchor="middle">a/b + c/d = (ad+bc)/bd</text>
+          <path d="M160,20 L260,20 L260,60 L160,60 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="210" y="40" font-size="12" text-anchor="middle">a/b × c/d = ac/bd</text>
+          <path d="M45,80 L95,80 L95,100 L45,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="70" y="95" font-size="11" text-anchor="middle">1/3 + 1/6 = 1/2</text>
+          <path d="M160,80 L235,80 L235,100 L160,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="197.5" y="95" font-size="11" text-anchor="middle">2/3 × 3/4 = 1/2</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Số hữu tỉ là số viết được dưới dạng \(\dfrac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \neq 0\). Phép cộng, trừ quy đồng mẫu; nhân: tử nhân tử, mẫu nhân mẫu; chia: nhân với nghịch đảo của số chia. Mẫu của kết quả phải khác 0.</p>
       </div>
@@ -137,6 +165,18 @@ const G7_LESSONS = [
     summary: "a^n là nhân a với chính nó n lần. Mũ 0 bằng 1 khi cơ số khác 0.",
     body: String.raw`
       <p>\(2^5\) không phải \(2 \cdot 5\). Đó là năm thừa số 2 nhân với nhau: \(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32\).</p>
+            <figure class="figure" data-animation="g7-b3-subtraction-division">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Phép trừ và chia số hữu tỉ">
+          <path d="M20,20 L120,20 L120,60 L20,60 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="70" y="40" font-size="12" text-anchor="middle">a/b - c/d = (ad-bc)/bd</text>
+          <path d="M160,20 L260,20 L260,60 L160,60 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="210" y="40" font-size="12" text-anchor="middle">a/b : c/d = ad/bc</text>
+          <path d="M45,80 L95,80 L95,100 L45,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="70" y="95" font-size="11" text-anchor="middle">3/4 - 1/6 = 7/12</text>
+          <path d="M160,80 L235,80 L235,100 L160,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="197.5" y="95" font-size="11" text-anchor="middle">2/3 : 4/5 = 5/6</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Với \(n\) nguyên dương, \(a^n = a \cdot a \cdots a\) (\(n\) thừa số). \(a^1 = a\). Nếu \(a \neq 0\) thì \(a^0 = 1\).</p>
         <p>\(a^m \cdot a^n = a^{m+n}\). \(a^m : a^n = a^{m-n}\) khi \(a \neq 0\) và \(m \geq n\). \((a^m)^n = a^{mn}\). \((ab)^n = a^n b^n\).</p>
@@ -199,7 +239,19 @@ const G7_LESSONS = [
       <div class="example">
         <p><strong>Ví dụ có bẫy.</strong> \(12 : 3 \cdot 2 = 4 \cdot 2 = 8\), không phải \(12 : 6 = 2\). Nhân và chia cùng bậc, làm từ trái sang phải. \(2^{3^2}\) nếu viết chồng thì từ trên xuống, còn \( (2^3)^2 = 64\).</p>
       </div>
-            <div class="definition">
+                  <figure class="figure" data-animation="g7-b4-powers">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Luỹ thừa số hữu tỉ">
+          <rect x="20" y="20" width="240" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="40" font-size="12" text-anchor="middle">(a/b)^n = a^n / b^n</text>
+          <path d="M50,80 L90,80 L90,100 L50,100 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="95" font-size="11" text-anchor="middle">(2/3)^2 = 4/9</text>
+          <path d="M140,80 L180,80 L180,100 L140,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="160" y="95" font-size="11" text-anchor="middle">(3/4)^3 = 27/64</text>
+          <path d="M220,80 L260,80 L260,100 L220,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="95" font-size="11" text-anchor="middle">(5/2)^0 = 1</text>
+        </svg>
+      </figure>
+      <div class="definition">
         <p><strong>Thứ tự thực hiện phép tính</strong> trong một biểu thức: làm trong ngoặc trước, rồi luỹ thừa, rồi nhân và chia từ trái sang phải, cuối cùng cộng và trừ từ trái sang phải.</p>
       </div>
 
@@ -258,6 +310,16 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Đổi \(0,\overline{12}\) thành phân số. Đặt \(x = 0{,}121212\ldots\). Nhân 100 vì cụm lặp 2 chữ số: \(100x = 12{,}1212\ldots\). Trừ: \(99x = 12\), \(x = \dfrac{12}{99} = \dfrac{4}{33}\). Mọi thập phân tuần hoàn đều làm được vậy.</p>
       </div>
+            <figure class="figure" data-animation="g7-b5-priority">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Thứ tự thực hiện phép tính">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">1. Trong ngoặc: ( ) → [ ] → { }</text>
+          <rect x="15" y="55" width="250" height="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="75" font-size="12" text-anchor="middle">2. Luỹ thừa: ^</text>
+          <rect x="15" y="95" width="250" height="30" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="115" font-size="12" text-anchor="middle">3. Nhân/chia → Cộng/trừ (trái sang phải)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Số thập phân vô hạn tuần hoàn</strong> là số thập phân có phần sau dấu phẩy lặp lại một cụm chữ số. Ví dụ \(0{,}333\ldots\) viết gọn là \(0{,}(3)\). Mỗi số như vậy vẫn là số hữu tỉ, vì viết được thành phân số.</p>
       </div>
@@ -299,6 +361,16 @@ const G7_LESSONS = [
     summary: "Cạnh hình vuông diện tích 2 không hữu tỉ. √a là số không âm có bình phương bằng a.",
     body: String.raw`
       <p>Hình vuông diện tích 2. Cạnh \(x > 0\) thỏa \(x^2 = 2\). Không có phân số nào bình phương ra 2. Số ấy viết \(x = \sqrt{2} \approx 1{,}41421\ldots\), thập phân vô hạn không tuần hoàn. Đó là số vô tỉ.</p>
+            <figure class="figure" data-animation="g7-b6-divisibility">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Dấu hiệu chia hết">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">Chia hết cho 2: chữ số cuối chẵn</text>
+          <rect x="15" y="55" width="250" height="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="75" font-size="12" text-anchor="middle">Chia hết cho 5: chữ số cuối là 0 hoặc 5</text>
+          <rect x="15" y="95" width="250" height="30" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="115" font-size="12" text-anchor="middle">Chia hết cho 3: tổng các chữ số chia hết cho 3</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Với \(a \geq 0\), căn bậc hai số học \(\sqrt{a}\) là số không âm \(b\) sao cho \(b^2 = a\). \(\sqrt{a} \geq 0\). \(\sqrt{a^2} = |a|\).</p>
       </div>
@@ -354,6 +426,20 @@ const G7_LESSONS = [
     summary: "Số thực gồm hữu tỉ và vô tỉ. Mỗi điểm trên trục số là một số thực.",
     body: String.raw`
       <p>Gộp \(\mathbb{Q}\) với các số vô tỉ được tập hợp số thực \(\mathbb{R}\). Trên trục số, mỗi điểm ứng đúng một số thực, mỗi số thực ứng đúng một điểm.</p>
+            <figure class="figure" data-animation="g7-b7-prime-composite">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Số nguyên tố và hợp số">
+          <path d="M20,20 L120,20 L120,60 L20,60 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="70" y="35" font-size="12" text-anchor="middle">Số nguyên tố</text>
+          <text x="70" y="55" font-size="10" text-anchor="middle">Chỉ có 2 ước: 1 và chính nó</text>
+          <path d="M160,20 L260,20 L260,60 L160,60 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="210" y="35" font-size="12" text-anchor="middle">Hợp số</text>
+          <text x="210" y="55" font-size="10" text-anchor="middle">Có nhiều hơn 2 ước</text>
+          <circle cx="70" cy="90" r="3" fill="#83C167"/>
+          <text x="70" y="105" font-size="11" text-anchor="middle">2, 3, 5, 7, 11, ...</text>
+          <circle cx="210" cy="90" r="3" fill="#58C4DD"/>
+          <text x="210" y="105" font-size="11" text-anchor="middle">4, 6, 8, 9, 10, ...</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Số thực</strong> là tập hợp gồm số hữu tỉ và số vô tỉ: \(\mathbb{R} = \mathbb{Q} \cup\) số vô tỉ. Trên trục số, mỗi số thực ứng với đúng một điểm và ngược lại.</p>
       </div>
@@ -1399,6 +1485,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Tìm \(x\) để \(\dfrac{x-1}{4} = \dfrac{3}{6}\). Nhân chéo: \(6(x-1) = 12\), \(x-1 = 2\), \(x = 3\). Thế lại: \(\dfrac{2}{4} = \dfrac{3}{6}\), đúng. Quên ngoặc, viết \(6x - 1 = 12\), sẽ ra \(x\) sai.</p>
       </div>
+            <figure class="figure" data-animation="g7-b20-equations">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Phương trình bậc nhất một ẩn">
+          <rect x="20" y="20" width="240" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="40" font-size="12" text-anchor="middle">ax + b = 0 (a ≠ 0)</text>
+          <path d="M50,80 L90,80 L90,100 L50,100 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="95" font-size="11" text-anchor="middle">2x + 5 = 0 → x = -2.5</text>
+          <path d="M140,80 L180,80 L180,100 L140,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="160" y="95" font-size="11" text-anchor="middle">3x - 9 = 0 → x = 3</text>
+          <path d="M220,80 L260,80 L260,100 L220,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="95" font-size="11" text-anchor="middle">-4x + 8 = 0 → x = 2</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Tỉ lệ thức</strong> là đẳng thức của hai tỉ số \(\dfrac{a}{b} = \dfrac{c}{d}\) với \(b, d \neq 0\). Nó đúng khi và chỉ khi \(ad = bc\).</p>
       </div>
@@ -1449,6 +1547,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Chia 12 cái kẹo theo tỉ số 2 : 3 : 7. Tổng phần \(2+3+7 = 12\). Mỗi phần 1 kẹo. Ba nhóm được 2, 3, 7. Tỉ số \(\dfrac{2}{2} = \dfrac{3}{3} = \dfrac{7}{7} = 1\), khớp dãy tỉ số.</p>
       </div>
+            <figure class="figure" data-animation="g7-b21-word-problems">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Giải bài toán bằng cách lập phương trình">
+          <rect x="15" y="15" width="250" height="25" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="30" font-size="11" text-anchor="middle">Bước 1: Chọn ẩn, đặt điều kiện</text>
+          <rect x="15" y="45" width="250" height="25" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="60" font-size="11" text-anchor="middle">Bước 2: Express các đại lượng theo ẩn</text>
+          <rect x="15" y="75" width="250" height="25" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="90" font-size="11" text-anchor="middle">Bước 3: Lập phương trình</text>
+          <rect x="15" y="105" width="250" height="25" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="140" y="120" font-size="11" text-anchor="middle">Bước 4-5: Giải và kiểm tra</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Nếu \(\dfrac{a}{b} = \dfrac{c}{d} = \dfrac{e}{f} = k\) thì \(a = kb\), \(c = kd\), \(e = kf\), và \(\dfrac{a + c + e}{b + d + f} = k\) (dãy tỉ số bằng nhau).</p>
       </div>
@@ -1629,6 +1739,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Biểu thức \(\dfrac{x+1}{x-3}\). Điều kiện \(x \neq 3\). Khi \(x = 5\): \(\dfrac{6}{2} = 3\). Khi \(x = 3\): mẫu 0, gạch bỏ, không ghi “bằng vô cùng”.</p>
       </div>
+            <figure class="figure" data-animation="g7-b24-ratio">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Tỉ lệ thức">
+          <rect x="20" y="20" width="240" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="40" font-size="14" text-anchor="middle">a/b = c/d (b ≠ 0, d ≠ 0)</text>
+          <path d="M50,80 L90,80 L90,100 L50,100 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="95" font-size="11" text-anchor="middle">2/3 = 4/6 (tỉ lệ thức)</text>
+          <path d="M140,80 L180,80 L180,100 L140,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="160" y="95" font-size="11" text-anchor="middle">3/5 ≠ 4/7 (không là tỉ lệ thức)</text>
+          <path d="M220,80 L260,80 L260,100 L220,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="95" font-size="11" text-anchor="middle">a×d = b×c (tích trung = tích ngoại)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Biểu thức đại số</strong> gồm các số, chữ (biểu thị số chưa biết) và phép tính. Thế giá trị của chữ vào thì tính được giá trị của biểu thức, nếu phép tính có nghĩa.</p>
       </div>
@@ -1679,6 +1801,16 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Sắp \(4x - x^3 + 2x^2 - 7\) theo bậc giảm: \(-x^3 + 2x^2 + 4x - 7\). Bậc 3. Hệ số cao nhất \(-1\), không phải 4. Nhìn mũ, không nhìn số đứng đầu lúc chưa sắp.</p>
       </div>
+            <figure class="figure" data-animation="g7-b25-properties">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Tính chất của tỉ lệ thức">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">Tính chất 1: ad = bc</text>
+          <rect x="15" y="55" width="250" height="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="75" font-size="12" text-anchor="middle">Tính chất 2: Hoán vị các tỉ số</text>
+          <rect x="15" y="95" width="250" height="30" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="115" font-size="12" text-anchor="middle">Tính chất 3: Dãy tỉ lệ thức bằng nhau</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Đa thức một biến</strong> là tổng các đơn thức cùng một biến, mỗi hạng tử có bậc là số mũ của biến. <strong>Bậc của đa thức</strong> là bậc của hạng tử có bậc cao nhất; đa thức bậc 0 là số khác 0.</p>
       </div>
@@ -1732,6 +1864,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> \((2x^2 - x + 3) - (x^2 - 4x + 1)\). Đổi dấu ngoặc sau: \(2x^2 - x + 3 - x^2 + 4x - 1 = x^2 + 3x + 2\). Từng cột: \(x^2\), rồi \(x\), rồi số.</p>
       </div>
+            <figure class="figure" data-animation="g7-b26-proportional">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Đại lượng tỉ lệ thuận">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">y = kx (k là hệ số tỉ lệ)</text>
+          <path d="M45,60 L95,60 L95,80 L45,80 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="75" font-size="11" text-anchor="middle">Ví dụ: y = 2x → k = 2</text>
+          <path d="M145,60 L195,60 L195,80 L145,80 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="170" y="75" font-size="11" text-anchor="middle">x1/y1 = x2/y2 = k</text>
+          <path d="M215,60 L265,60 L265,80 L215,80 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="75" font-size="11" text-anchor="middle">Tính chất: Tỉ số hai giá trị bằng tỉ số hai giá trị tương ứng</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Hai đơn thức <strong>đồng dạng</strong> nếu cùng biến và cùng số mũ. Chỉ cộng, trừ được các đơn thức đồng dạng: cộng, trừ hệ số và giữ nguyên phần biến.</p>
       </div>
@@ -1785,6 +1929,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> \((2x - 1)(x + 4) = 2x \cdot x + 2x \cdot 4 + (-1) \cdot x + (-1) \cdot 4 = 2x^2 + 8x - x - 4 = 2x^2 + 7x - 4\). Bốn tích, rồi gộp. Thiếu một tích là sai hệ số giữa.</p>
       </div>
+            <figure class="figure" data-animation="g7-b27-inverse">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Đại lượng tỉ lệ nghịch">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">y = k/x hoặc xy = k (k ≠ 0)</text>
+          <path d="M45,60 L95,60 L95,80 L45,80 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="75" font-size="11" text-anchor="middle">Ví dụ: xy = 12 → y = 12/x</text>
+          <path d="M145,60 L195,60 L195,80 L145,80 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="170" y="75" font-size="11" text-anchor="middle">x1×y1 = x2×y2 = k</text>
+          <path d="M215,60 L265,60 L265,80 L215,80 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="75" font-size="11" text-anchor="middle">Tính chất: Tỉ số hai giá trị này bằng nghịch đảo tỉ số hai giá trị tương ứng</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Nhân hai đơn thức: nhân hệ số với nhau và nhân phần biến theo luỹ thừa (\(x^m \cdot x^n = x^{m+n}\)). Nhân đơn thức với đa thức: phân phối; nhân hai đa thức: nhân từng hạng tử rồi cộng.</p>
       </div>
@@ -1836,6 +1992,18 @@ const G7_LESSONS = [
             <div class="example">
         <p><strong>Làm chậm.</strong> Chia \(x^2 + 7x + 10\) cho \(x + 2\). \(x^2 : x = x\). \(x(x+2) = x^2 + 2x\). Trừ: \(5x + 10\). \(5x : x = 5\). \(5(x+2) = 5x + 10\). Dư 0. Thương \(x + 5\). Nhân lại: \((x+2)(x+5) = x^2 + 7x + 10\).</p>
       </div>
+            <figure class="figure" data-animation="g7-b28-function">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Hàm số">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">y = f(x): Mỗi x có đúng một y</text>
+          <path d="M50,60 L90,60 L90,80 L50,80 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="70" y="75" font-size="11" text-anchor="middle">Ví dụ: y = 2x + 3</text>
+          <path d="M140,60 L180,60 L180,80 L140,80 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="160" y="75" font-size="11" text-anchor="middle">Ví dụ: y = x²</text>
+          <path d="M220,60 L260,60 L260,80 L220,80 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="240" y="75" font-size="11" text-anchor="middle">Ví dụ: y = 5 (hàm hằng)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Chia đơn thức cho đơn thức (khi phần biến của số chia là ước của số bị chia): chia hệ số và chia phần biến (\(x^m : x^n = x^{m-n}\) khi \(x \neq 0\)). Chia đa thức cho đơn thức: chia từng hạng tử.</p>
       </div>

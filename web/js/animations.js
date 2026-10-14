@@ -509,6 +509,156 @@ const AnimationManager = {
         ]
       },
       
+      // g8-b1: Đơn thức
+      'g8-b1-monomial': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b2: Đa thức
+      'g8-b2-polynomial': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line:nth-child(5)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line:nth-child(7)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle:nth-child(8)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b3: Phép cộng và trừ đa thức
+      'g8-b3-polynomial-add-subtract': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b4: Phép nhân đa thức
+      'g8-b4-multiplication': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b5: Phép chia đa thức cho đơn thức
+      'g8-b5-division': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line:nth-child(5)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line:nth-child(7)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'circle:nth-child(8)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b6: Hằng đẳng thức đáng nhớ (bình phương)
+      'g8-b6-identities': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(6) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(7)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(8)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b7: Hằng đẳng thức đáng nhớ (lập phương)
+      'g8-b7-cubic-identities': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(6) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(7)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g8-b8: Phân tích đa thức thành nhân tử
+      'g8-b8-factorization': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(1) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(5) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(6)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(6) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(7)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g8-b9: Tứ giác
       'g8-b9-quadrilateral': {
         steps: [
@@ -1656,6 +1806,29 @@ const AnimationManager = {
         ]
       },
       
+      // g10-b5: Bất đẳng thức
+      'g10-b5-inequality': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#83C167"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g10-b6: Bất phương trình một ẩn
+      'g10-b6-linear-inequality': {
+        steps: [
+          { selector: 'line:not([stroke-dasharray])', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle[r="3"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line[stroke-dasharray]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
       // g10-b27: Số trung bình cộng
       'g10-b27-mean': {
         steps: [
@@ -1697,7 +1870,312 @@ const AnimationManager = {
           { selector: 'text[fill="\#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
           { selector: 'text[fill="\#FC6255"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
         ]
-      }
+      },
+
+      
+      // Grade 11: Chèn animation cho từng bài sau khi bài học được thêm
+      // g11-b1: sin, cos, tan, cot - vòng tròn lượng giác
+      // g11-b2: phương trình lượng giác cơ bản
+      // g11-b3: một số phương trình lượng giác thường gặp
+      // g11-b4: quy tắc đếm
+      // g11-b5: hoán vị, chỉnh hợp, tổ hợp
+      // g11-b6: nhị thức Newton
+      // g11-b7: phép thử và biến cố
+      // g11-b8: xác suất của biến cố
+      // g11-b9: dãy số
+      // g11-b10: cấp số cộng
+      // g11-b11: cấp số nhân
+      // g11-b12: giới hạn của dãy số
+      // g11-b13: giới hạn của hàm số
+      // g11-b14: dạng vô định
+      // g11-b15: hàm số liên tục
+      // g11-b16: định nghĩa đạo hàm
+      // g11-b17: quy tắc tính đạo hàm
+      // g11-b18: vi phân
+      // g11-b19: đạo hàm cấp hai
+      // g11-b20: phép dời hình
+      // g11-b21: phép đồng dạng
+      // g11-b22: đại cương về đường thẳng và mặt phẳng
+      // g11-b23: hai đường thẳng song song
+      // g11-b24: đường thẳng song song với mặt phẳng
+      // g11-b25: hai mặt phẳng song song
+      // g11-b26: vectơ trong không gian
+      // g11-b27: quan hệ vuông góc trong không gian
+      // g6-b1: Tập hợp
+      'g6-b1-sets': {
+        steps: [
+          { selector: 'ellipse:nth-child(1)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'ellipse:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle:first-child', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([font-size="14"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b2: Cách ghi số tự nhiên
+      'g6-b2-place-value': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'rect:nth-child(4)', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text[font-size="12"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="18"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b3: Thứ tự trong tập hợp các số tự nhiên
+      'g6-b3-number-line': {
+        steps: [
+          { selector: 'line', initialState: 'hidden', animate: 'draw', duration: 0.4 },
+          { selector: 'circle:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([fill="#58C4DD"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'draw', duration: 0.3 },
+          { selector: 'text[fill="#58C4DD"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b5: Phép nhân và phép chia số tự nhiên
+      'g6-b5-multiplication-division': {
+        steps: [
+          { selector: 'g:nth-child(1) rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(1) text:first-child', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(1) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(2) rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(2) text:first-child', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(2) text:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(3) path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(3) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(4) path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'g:nth-child(4) text', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b6: Luỹ thừa với số mũ tự nhiên
+      'g6-b6-exponent': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="18"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="11"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="11"][y="140"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b7: Hành động với luỹ thừa
+      'g6-b7-exponent-operations': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="14"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(5)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b8: Thứ tự thực hiện phép tính
+      'g6-b8-order-of-operations': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="12"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b9: Một số hình phẳng
+      'g6-b9-geometry': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'ellipse', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="12"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b10: Hình chữ nhật
+      'g6-b10-rectangle': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([transform])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[transform]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b11: Hình vuông
+      'g6-b11-square': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([transform])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[transform]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g6-b12: Tam giác
+      'g6-b12-triangle': {
+        steps: [
+          { selector: 'polygon', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([font-size="10"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'line', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b1: Tập hợp số tự nhiên
+      'g7-b1-natural-numbers': {
+        steps: [
+          { selector: 'ellipse', initialState: 'hidden', animate: 'draw', duration: 0.5 },
+          { selector: 'text[font-size="14"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([fill="#333330"])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[fill="#333330"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b2: Phép cộng và nhân số tự nhiên
+      'g7-b2-operations': {
+        steps: [
+          { selector: 'path:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text[font-size="12"]', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b3: Phép trừ và chia số tự nhiên
+      'g7-b3-subtraction-division': {
+        steps: [
+          { selector: 'path:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b4: Luỹ thừa
+      'g7-b4-powers': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b5: Thứ tự thực hiện phép tính
+      'g7-b5-priority': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b6: Dấu hiệu chia hết
+      'g7-b6-divisibility': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b7: Số nguyên tố và hợp số
+      'g7-b7-prime-composite': {
+        steps: [
+          { selector: 'path:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'circle:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'text:not([fill])', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b20: Phương trình bậc nhất một ẩn
+      'g7-b20-equations': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b21: Giải bài toán bằng cách lập phương trình
+      'g7-b21-word-problems': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b24: Tỉ lệ thức
+      'g7-b24-ratio': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b25: Tính chất của tỉ lệ thức
+      'g7-b25-properties': {
+        steps: [
+          { selector: 'rect:nth-child(1)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'rect:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b26: Đại lượng tỉ lệ thuận
+      'g7-b26-proportional': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b27: Đại lượng tỉ lệ nghịch
+      'g7-b27-inverse': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
+      
+      // g7-b28: Hàm số
+      'g7-b28-function': {
+        steps: [
+          { selector: 'rect', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(2)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(3)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+          { selector: 'path:nth-child(4)', initialState: 'hidden', animate: 'fade-in', duration: 0.3 },
+        ]
+      },
     };
     
     return configs[id] || null;

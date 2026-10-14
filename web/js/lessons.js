@@ -4244,6 +4244,26 @@ const G8_LESSONS = [
     title: "Đơn thức",
     summary: "Đơn thức là biểu thức chỉ gồm số, biến hoặc tích của chúng. Đơn thức thu gọn có một hệ số và phần biến.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b1-monomial">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đơn thức - hệ số và phần biến">
+          <rect x="20" y="20" width="150" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="42" font-size="13" text-anchor="middle">Đơn thức: tích số × biến^số mũ</text>
+          <text x="55" y="62" font-size="10" fill="#555">Ví dụ: 5, x, -3y, 2xy</text>
+          <rect x="190" y="20" width="150" height="60" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="42" font-size="13" text-anchor="middle">Đơn thức thu gọn</text>
+          <text x="205" y="62" font-size="10" fill="#555">Hệ số ≠ 0 + phần biến</text>
+          <path d="M30,100 L140,100 L140,130 L30,130 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="118" font-size="12" text-anchor="middle">Ví dụ: 5x²y</text>
+          <text x="70" y="135" font-size="10">Hệ số: 5, phần biến: x²y</text>
+          <path d="M190,100 L330,100 L330,130 L190,130 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="260" y="118" font-size="12" text-anchor="middle">Ví dụ: -3x³y²z</text>
+          <text x="225" y="135" font-size="10">Hệ số: -3, bậc: 6</text>
+          <circle cx="85" cy="165" r="3" fill="#83C167"/>
+          <text x="92" y="169" font-size="10">Bậc: tổng số mũ</text>
+          <circle cx="260" cy="165" r="3" fill="#58C4DD"/>
+          <text x="267" y="169" font-size="10">Đơn thức đặc biệt: 0</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Diện tích hình chữ nhật bằng chiều dài nhân chiều rộng. Nếu chiều dài là \(x\), chiều rộng là \(y\) thì diện tích là \(xy\). Nếu chiều dài là \(3x\), chiều rộng là \(2y\) thì diện tích là \(3x \cdot 2y = 6xy\). Các biểu thức này là đơn thức.</p>
       <div class="definition">
         <p><strong>Đơn thức</strong> là biểu thức đại số chỉ gồm một số hoặc một biến, hoặc có dạng tích của những số và biến. Ví dụ: \(5\), \(x\), \(-3y\), \(2xy\), \(-\dfrac{1}{2}x^2y^3\).</p>
@@ -4327,6 +4347,28 @@ const G8_LESSONS = [
     title: "Đa thức",
     summary: "Đa thức là tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một hạng tử của đa thức.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b2-polynomial">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Đa thức - tổng các đơn thức">
+          <rect x="20" y="20" width="150" height="55" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="42" font-size="13" text-anchor="middle">Đa thức = tổng đơn thức</text>
+          <text x="55" y="62" font-size="10" fill="#555">Ví dụ: 3x² + 2x - 5</text>
+          <rect x="190" y="20" width="150" height="55" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="42" font-size="13" text-anchor="middle">Hạng tử đồng dạng</text>
+          <text x="205" y="62" font-size="10" fill="#555">Cùng phần biến</text>
+          <path d="M30,90 L140,90 L140,120 L30,120 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="108" font-size="12" text-anchor="middle">3x² + 2x - 5</text>
+          <text x="60" y="125" font-size="10">Hạng tử: 3x², 2x, -5</text>
+          <path d="M190,90 L330,90 L330,120 L190,120 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="260" y="108" font-size="12" text-anchor="middle">2x²y + (-5x²y)</text>
+          <text x="210" y="125" font-size="10">Đồng dạng: cùng x²y</text>
+          <line x1="85" y1="70" x2="85" y2="90" stroke="#83C167" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="85" cy="65" r="2" fill="#83C167"/>
+          <text x="92" y="68" font-size="10">Thu gọn: cộng đồng dạng</text>
+          <line x1="260" y1="70" x2="260" y2="90" stroke="#58C4DD" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="260" cy="65" r="2" fill="#58C4DD"/>
+          <text x="267" y="68" font-size="10">(-3x²y) + 3xy²</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Chu vi hình chữ nhật bằng 2 × (chiều dài + chiều rộng). Nếu chiều dài là \(x\), chiều rộng là \(y\) thì chu vi là \(2x + 2y\). Biểu thức này gồm hai đơn thức \(2x\) và \(2y\) cộng lại — đó là đa thức.</p>
       <div class="definition">
         <p><strong>Đa thức</strong> là tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một <strong>hạng tử</strong> của đa thức đó.</p>
@@ -4399,6 +4441,27 @@ const G8_LESSONS = [
     title: "Phép cộng và phép trừ đa thức",
     summary: "Cộng/trừ đa thức là cộng/trừ từng hạng tử đồng dạng. Trừ phải đổi dấu trong ngoặc.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b3-polynomial-add-subtract">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Cộng và trừ đa thức">
+          <rect x="15" y="15" width="160" height="55" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="38" font-size="12" text-anchor="middle">Cộng: (3x² + 2x) + (x² - x + 5)</text>
+          <text x="55" y="58" font-size="10" fill="#555">= 4x² + x + 5</text>
+          <rect x="185" y="15" width="160" height="55" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="38" font-size="12" text-anchor="middle">Trừ: (3x² + 2x) - (x² - x + 5)</text>
+          <text x="205" y="58" font-size="10" fill="#555">= 2x² + 3x - 5</text>
+          <path d="M25,85 L145,85 L145,115 L25,115 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="103" font-size="12" text-anchor="middle">Bước 1: Viết các hạng tử</text>
+          <text x="55" y="118" font-size="10">Mở ngoặc nếu cần</text>
+          <path d="M195,85 L315,85 L315,115 L195,115 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="255" y="103" font-size="12" text-anchor="middle">Bước 2: Nhóm đồng dạng</text>
+          <text x="210" y="118" font-size="10">(3x² + x²) + (2x - x) + 5</text>
+          <path d="M25,135 L145,135 L145,165 L25,165 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="85" y="153" font-size="12" text-anchor="middle">Bước 3: Cộng/trừ</text>
+          <text x="55" y="168" font-size="10">4x² + x + 5</text>
+          <circle cx="85" cy="185" r="2" fill="#FC6255"/>
+          <text x="92" y="189" font-size="10">Lưu ý: đổi dấu khi trừ</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Chi phí sản xuất hai loại sản phẩm là \(A = 3x^2 + 2x\) và \(B = x^2 - x + 5\). Tổng chi phí là \(A + B\). Chi phí chênh lệch là \(A - B\).</p>
       <div class="definition">
         <p><strong>Cộng hai đa thức:</strong> viết các hạng tử của cả hai đa thức với dấu thích hợp, rồi thu gọn (nếu có).</p>
@@ -4473,6 +4536,24 @@ const G8_LESSONS = [
     title: "Phép nhân đa thức",
     summary: "Nhân đơn thức với đa thức hoặc nhân đa thức với đa thức. Mỗi hạng tử nhân từng hạng tử.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b4-multiplication">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phép nhân đa thức minh họa phân phối">
+          <rect x="20" y="20" width="150" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="45" font-size="13" text-anchor="middle">A(B + C) = AB + AC</text>
+          <text x="60" y="65" font-size="10" fill="#555">Đơn thức × đa thức</text>
+          <rect x="190" y="20" width="150" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="45" font-size="13" text-anchor="middle">(A + B)(C + D)</text>
+          <text x="215" y="65" font-size="10" fill="#555">Đa thức × đa thức</text>
+          <path d="M30,100 L140,100 L140,130 L30,130 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="118" font-size="12" text-anchor="middle">Ví dụ: 2x(x + 3)</text>
+          <path d="M190,100 L330,100 L330,130 L190,130 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="260" y="118" font-size="12" text-anchor="middle">Ví dụ: (x + 2)(x + 3)</text>
+          <circle cx="85" cy="160" r="3" fill="#83C167"/>
+          <text x="92" y="164" font-size="10">Bước 1: Nhân từng项</text>
+          <circle cx="260" cy="160" r="3" fill="#58C4DD"/>
+          <text x="267" y="164" font-size="10">Bước 2: Cộng kết quả</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Diện tích hình chữ nhật mới với chiều dài tăng \(a\) và chiều rộng tăng \(b\) từ hình cũ \(x \times y\) là: \((x + a)(y + b)\). Muốn tính phải nhân từng项.</p>
       <div class="definition">
         <p><strong>Nhân đơn thức với đa thức:</strong> \(A(B + C) = AB + AC\). Đơn thức nhân từng hạng tử của đa thức.</p>
@@ -4541,6 +4622,26 @@ const G8_LESSONS = [
     title: "Phép chia đa thức cho đơn thức",
     summary: "Chia từng hạng tử của đa thức cho đơn thức rồi cộng kết quả.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b5-division">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phép chia đa thức cho đơn thức">
+          <rect x="20" y="20" width="150" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="45" font-size="13" text-anchor="middle">(A + B) : C</text>
+          <text x="65" y="65" font-size="10" fill="#555">Chia từng项 rồi cộng</text>
+          <rect x="190" y="20" width="150" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="45" font-size="13" text-anchor="middle">= A:C + B:C</text>
+          <text x="205" y="65" font-size="10" fill="#555">Phân phối ngược</text>
+          <path d="M30,100 L140,100 L140,130 L30,130 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="85" y="118" font-size="12" text-anchor="middle">Ví dụ: (6x² + 9x) : 3x</text>
+          <path d="M190,100 L330,100 L330,130 L190,130 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="260" y="118" font-size="12" text-anchor="middle">= 2x + 3</text>
+          <line x1="85" y1="80" x2="85" y2="100" stroke="#83C167" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="85" cy="75" r="2" fill="#83C167"/>
+          <text x="95" y="78" font-size="10">6x²:3x = 2x</text>
+          <line x1="260" y1="80" x2="260" y2="100" stroke="#58C4DD" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="260" cy="75" r="2" fill="#58C4DD"/>
+          <text x="270" y="78" font-size="10">9x:3x = 3</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Diện tích hình chữ nhật là \(6x^2 + 9x\), chiều rộng là \(3x\). Chiều dài bằng diện tích chia chiều rộng: \((6x^2 + 9x) : 3x\).</p>
       <div class="definition">
         <p><strong>Chia đa thức cho đơn thức:</strong> Muốn chia đa thức A cho đơn thức B (trường hợp chia hết), ta chia từng hạng tử của A cho B rồi cộng các kết quả với nhau.</p>
@@ -4609,6 +4710,29 @@ const G8_LESSONS = [
     title: "Hằng đẳng thức đáng nhớ (bình phương của tổng, hiệu, hiệu hai bình phương)",
     summary: "Ba hằng đẳng thức: (A+B)² = A²+2AB+B², (A−B)² = A²−2AB+B², A²−B² = (A−B)(A+B).",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b6-identities">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Ba hằng đẳng thức đáng nhớ">
+          <rect x="15" y="15" width="105" height="55" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="67.5" y="38" font-size="11" text-anchor="middle">(A + B)² = A² + 2AB + B²</text>
+          <text x="35" y="58" font-size="9" fill="#555">Tổng bình phương</text>
+          <rect x="127.5" y="15" width="105" height="55" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="180" y="38" font-size="11" text-anchor="middle">(A - B)² = A² - 2AB + B²</text>
+          <text x="155" y="58" font-size="9" fill="#555">Hiệu bình phương</text>
+          <rect x="240" y="15" width="105" height="55" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="292.5" y="38" font-size="11" text-anchor="middle">A² - B² = (A - B)(A + B)</text>
+          <text x="245" y="58" font-size="9" fill="#555">Hiệu nhân tổng</text>
+          <path d="M25,90 L125,90 L125,115 L25,115 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="75" y="108" font-size="11" text-anchor="middle">(x + 3)² = x² + 6x + 9</text>
+          <path d="M135,90 L235,90 L235,115 L135,115 Z" fill="none" stroke="#333" stroke-width="2"/>
+          <text x="185" y="108" font-size="11" text-anchor="middle">(x - 3)² = x² - 6x + 9</text>
+          <path d="M245,90 L345,90 L345,115 L245,115 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="295" y="108" font-size="11" text-anchor="middle">x² - 9 = (x - 3)(x + 3)</text>
+          <circle cx="75" cy="145" r="2" fill="#83C167"/>
+          <text x="82" y="148" font-size="10">Nhớ: “hai lần tích”</text>
+          <circle cx="185" cy="145" r="2" fill="#58C4DD"/>
+          <text x="192" y="148" font-size="10">Dấu đan xen: +, -, +, -</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Tính nhẩm \(101^2\)? Dùng công thức \((a + b)^2 = a^2 + 2ab + b^2\) với \(a = 100, b = 1\): \(100^2 + 2·100·1 + 1^2 = 10201\). Tính nhẩm \(99^2\)? \((100 - 1)^2 = 10000 - 200 + 1 = 9801\).</p>
       <div class="definition">
         <p><strong>Bình phương của một tổng:</strong> \((A + B)^2 = A^2 + 2AB + B^2\).</p>
@@ -4680,6 +4804,26 @@ const G8_LESSONS = [
     title: "Hằng đẳng thức đáng nhớ (lập phương của tổng, hiệu, tổng/hiệu hai lập phương)",
     summary: "Bốn hằng đẳng thức: (A+B)³=A³+3A²B+3AB²+B³, (A−B)³=A³−3A²B+3AB²−B³, A³+B³=(A+B)(A²−AB+B²), A³−B³=(A−B)(A²+AB+B²).",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b7-cubic-identities">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Bốn hằng đẳng thức lập phương">
+          <rect x="15" y="15" width="160" height="55" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="38" font-size="11" text-anchor="middle">(A + B)³ = A³ + 3A²B + 3AB² + B³</text>
+          <text x="65" y="58" font-size="9" fill="#555">Tam giác Pascal: 1, 3, 3, 1</text>
+          <rect x="185" y="15" width="160" height="55" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="265" y="38" font-size="11" text-anchor="middle">(A - B)³ = A³ - 3A²B + 3AB² - B³</text>
+          <text x="205" y="58" font-size="9" fill="#555">Dấu đan xen: +, -, +, -</text>
+          <path d="M25,90 L165,90 L165,115 L25,115 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="95" y="108" font-size="11" text-anchor="middle">(x + 2)³ = x³ + 6x² + 12x + 8</text>
+          <path d="M175,90 L315,90 L315,115 L175,115 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="245" y="108" font-size="11" text-anchor="middle">(x - 2)³ = x³ - 6x² + 12x - 8</text>
+          <path d="M25,135 L165,135 L165,160 L25,160 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="95" y="153" font-size="11" text-anchor="middle">x³ + 8 = (x + 2)(x² - 2x + 4)</text>
+          <path d="M175,135 L315,135 L315,160 L175,160 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="245" y="153" font-size="11" text-anchor="middle">x³ - 8 = (x - 2)(x² + 2x + 4)</text>
+          <circle cx="95" cy="185" r="2" fill="#FC6255"/>
+          <text x="102" y="188" font-size="10">Nhớ: dấu trong ngoặc thứ hai trái dấu</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Tính nhẩm \(101^3\)? Dùng \((a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\) với \(a = 100, b = 1\): \(1000000 + 30000 + 300 + 1 = 1030301\).</p>
       <div class="definition">
         <p><strong>Lập phương của một tổng:</strong> \((A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\).</p>
@@ -4755,6 +4899,27 @@ const G8_LESSONS = [
     title: "Luyện tập: Phân tích đa thức thành nhân tử bằng hằng đẳng thức",
     summary: "Ứng dụng bảy hằng đẳng thức để phân tích đa thức thành nhân tử. Nhận dạng A²±2AB+B²=(A±B)², A²−B², A³±B³.",
     body: String.raw`
+      <figure class="figure" data-animation="g8-b8-factorization">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Phân tích đa thức thành nhân tử">
+          <rect x="20" y="15" width="320" height="45" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="180" y="40" font-size="12" text-anchor="middle">Phân tích đa thức thành nhân tử bằng hằng đẳng thức</text>
+          <path d="M30,70 L330,70 L330,95 L30,95 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="180" y="90" font-size="10" text-anchor="middle">Bước 1: Nhận dạng dạng hằng đẳng thức</text>
+          <path d="M30,100 L330,100 L330,125 L30,125 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="180" y="120" font-size="10" text-anchor="middle">Bước 2: Ghi lại dạng (A ± B)ⁿ</text>
+          <rect x="25" y="140" width="100" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="75" y="158" font-size="10" text-anchor="middle">A² ± 2AB + B²</text>
+          <text x="75" y="170" font-size="10" text-anchor="middle">= (A ± B)²</text>
+          <rect x="135" y="140" width="100" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="185" y="158" font-size="10" text-anchor="middle">A² - B²</text>
+          <text x="185" y="170" font-size="10" text-anchor="middle">= (A - B)(A + B)</text>
+          <rect x="245" y="140" width="100" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="295" y="158" font-size="10" text-anchor="middle">A³ ± B³</text>
+          <text x="295" y="170" font-size="10" text-anchor="middle">= (A ± B)(A² ∓ AB + B²)</text>
+          <circle cx="180" cy="195" r="2" fill="#9A72AC"/>
+          <text x="187" y="198" font-size="10">Lưu ý: rút gọn hệ số chung trước!</text>
+        </svg>
+      </figure>
       <p><strong>Tình huống.</strong> Cho biểu thức \(x^2 + 6x + 9\). Nhìn vào dạng, ta thấy \(x^2\) và \(9 = 3^2\), giữa là \(6x = 2·x·3\). Đây là \((x + 3)^2\) theo hằng đẳng thức bình phương của một tổng.</p>
       <div class="idea">
         <p><strong>Phương pháp.</strong> Bước 1: Nhận dạng đa thức có dạng hằng đẳng thức nào. Bước 2: Ghi lại biểu thức dạng \((A ± B)^n\).</p>
@@ -9552,5 +9717,15 @@ const COURSES = [
     blurb: "Bài học mới đang được thêm dần.",
     chapters: G10_CHAPTERS,
     lessons: G10_LESSONS,
+  },
+  {
+    id: "11",
+    grade: 11,
+    title: "Toán 11",
+    level: "THPT",
+    subtitle: "Chương I–VIII, Bài 1–30",
+    blurb: "Bài học mới đang được thêm dần.",
+    chapters: G11_CHAPTERS,
+    lessons: G11_LESSONS,
   },
   ];

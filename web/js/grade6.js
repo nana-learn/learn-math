@@ -23,6 +23,21 @@ const G6_LESSONS = [
     title: "Tập hợp",
     summary: "Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ và ∉.",
     body: String.raw`
+      <figure class="figure" data-animation="g6-b1-sets">
+        <svg viewBox="0 0 280 160" role="img" aria-label="Minh họa tập hợp A và B">
+          <ellipse cx="90" cy="80" rx="60" ry="50" fill="none" stroke="#83C167" stroke-width="2"/>
+          <ellipse cx="190" cy="80" rx="60" ry="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="60" y="40" font-size="14" fill="#83C167">A</text>
+          <text x="220" y="40" font-size="14" fill="#58C4DD">B</text>
+          <circle cx="70" cy="70" r="3" fill="#333333"/>
+          <circle cx="110" cy="90" r="3" fill="#333330"/>
+          <circle cx="210" cy="70" r="3" fill="#333330"/>
+          <text x="60" y="65" font-size="11" fill="#333330">1 ∈ A</text>
+          <text x="100" y="100" font-size="11" fill="#333330">2 ∈ A</text>
+          <text x="200" y="65" font-size="11" fill="#333330">2 ∈ B</text>
+          <text x="150" y="80" font-size="11" fill="#333330">3 ∉ A, ∈ B</text>
+        </svg>
+      </figure>
       <p><strong>Tại sao cần tập hợp?</strong> Trong toán học, ta hay làm việc với những nhóm đối tượng có chung đặc điểm. Tập hợp giúp gộp nhóm, đặt tên, rồi dùng kí hiệu để nói rõ.</p>
       <div class="definition">
         <p>Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu \(a \in A\) nghĩa là \(a\) thuộc tập \(A\); \(a \notin A\) nghĩa là \(a\) không thuộc \(A\). Ví dụ: \(2 \in \mathbb{N}\), \(-3 \notin \mathbb{N}\).</p>
@@ -78,6 +93,29 @@ const G6_LESSONS = [
     title: "Cách ghi số tự nhiên",
     summary: "Hệ thập phân: mỗi hàng giá trị bằng 10 lần hàng bên phải.",
     body: String.raw`
+      <figure class="figure" data-animation="g6-b2-place-value">
+        <svg viewBox="0 0 320 120" role="img" aria-label="Hệ thập phân với các hàng">
+          <rect x="20" y="30" width="60" height="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="90" y="30" width="60" height="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="160" y="30" width="60" height="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="230" y="30" width="60" height="70" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="50" y="25" font-size="12" text-anchor="middle">hàng nghìn</text>
+          <text x="120" y="25" font-size="12" text-anchor="middle">hàng trăm</text>
+          <text x="190" y="25" font-size="12" text-anchor="middle">hàng chục</text>
+          <text x="260" y="25" font-size="12" text-anchor="middle">hàng đơn vị</text>
+          <text x="50" y="75" font-size="18" text-anchor="middle">1</text>
+          <text x="120" y="75" font-size="18" text-anchor="middle">0</text>
+          <text x="190" y="75" font-size="18" text-anchor="middle">0</text>
+          <text x="260" y="75" font-size="18" text-anchor="middle">0</text>
+          <text x="170" y="105" font-size="12" text-anchor="middle">1000 = 1 × 1000</text>
+          <line x1="10" y1="10" x2="10" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="30" y1="10" x2="30" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="100" y1="10" x2="100" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="170" y1="10" x2="170" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="240" y1="10" x2="240" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+          <line x1="310" y1="10" x2="310" y2="110" stroke="#BBBBBB" stroke-width="1.5"/>
+        </svg>
+      </figure>
       <p><strong>Vì sao hệ thập phân?</strong> Người ta chọn dùng 10 chữ số (0–9) và mỗi vị trí có giá trị khác nhau. Số 321 không phải là 3+2+1, mà là 300+20+1.</p>
       <div class="definition">
         <p>Hệ thập phân dùng 10 chữ số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Giá trị mỗi chữ số phụ thuộc vào vị trí: hàng đơn vị, hàng chục, hàng trăm… Mỗi hàng bằng 10 lần hàng bên phải.</p>
@@ -132,6 +170,32 @@ const G6_LESSONS = [
     title: "Thứ tự trong tập hợp các số tự nhiên",
     summary: "Trên tia số, số càng bên phải càng lớn. So sánh hai số: xét hàng cao nhất khác nhau.",
     body: String.raw`
+      <figure class="figure" data-animation="g6-b3-number-line">
+        <svg viewBox="0 0 320 100" role="img" aria-label="Tia số biểu thị thứ tự các số tự nhiên">
+          <line x1="20" y1="50" x2="300" y2="50" stroke="#BBBBBB" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <circle cx="50" cy="50" r="3" fill="#333330"/>
+          <circle cx="100" cy="50" r="3" fill="#333330"/>
+          <circle cx="150" cy="50" r="3" fill="#333330"/>
+          <circle cx="200" cy="50" r="3" fill="#333330"/>
+          <circle cx="250" cy="50" r="3" fill="#333330"/>
+          <circle cx="280" cy="50" r="3" fill="#333330"/>
+          <text x="50" y="70" font-size="12" text-anchor="middle">0</text>
+          <text x="100" y="70" font-size="12" text-anchor="middle">2</text>
+          <text x="150" y="70" font-size="12" text-anchor="middle">5</text>
+          <text x="200" y="70" font-size="12" text-anchor="middle">7</text>
+          <text x="250" y="70" font-size="12" text-anchor="middle">10</text>
+          <text x="280" y="70" font-size="12" text-anchor="middle">...</text>
+          <path d="M50,50 Q75,20 100,50" fill="none" stroke="#58C4DD" stroke-width="2" opacity="0"/>
+          <text x="75" y="20" font-size="10" fill="#58C4DD" opacity="0">2 > 0</text>
+          <path d="M150,50 Q175,20 200,50" fill="none" stroke="#58C4DD" stroke-width="2" opacity="0"/>
+          <text x="175" y="20" font-size="10" fill="#58C4DD" opacity="0">7 > 5</text>
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#333330"/>
+            </marker>
+          </defs>
+        </svg>
+      </figure>
       <p><strong>Tại sao thứ tự quan trọng?</strong> Trong đời sống và toán học, ta thường cần so sánh: số nào lớn hơn, số nào nhỏ hơn. Tia số giúp hình dung thứ tự này.</p>
       <div class="definition">
         <p>Trên tia số ( Ox), điểm biểu diễn số nhỏ hơn nằm bên trái điểm biểu diễn số lớn hơn. Hai số tự nhiên khác nhau thì luôn có một số lớn hơn số kia.</p>
@@ -264,6 +328,28 @@ const G6_LESSONS = [
     title: "Phép nhân và phép chia số tự nhiên",
     summary: "Nhân là phép cộng lặp lại. Chia là phép trừ lặp lại. Phép chia có dư khi số bị chia không chia hết cho số chia.",
     body: String.raw`
+      <figure class="figure" data-animation="g6-b5-multiplication-division">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Minh họa phép nhân và phép chia">
+          <g>
+            <rect x="15" y="15" width="115" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="72.5" y="35" font-size="14" text-anchor="middle">a × b = c</text>
+            <text x="45" y="55" font-size="11">Thừa số × Thừa số = Tích</text>
+          </g>
+          <g>
+            <rect x="150" y="15" width="115" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="207.5" y="35" font-size="14" text-anchor="middle">a : b = c</text>
+            <text x="165" y="55" font-size="11">Số bị chia : Số chia = Thương</text>
+          </g>
+          <g>
+            <path d="M65,90 L65,110 L125,110 L125,90 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="95" y="105" font-size="12" text-anchor="middle">Ví dụ: 7 × 6 = 42</text>
+          </g>
+          <g>
+            <path d="M175,90 L175,110 L235,110 L235,90 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+            <text x="205" y="105" font-size="12" text-anchor="middle">Ví dụ: 42 : 6 = 7</text>
+          </g>
+        </svg>
+      </figure>
       <p><strong>Vì sao cần nhân chia?</strong> Nhân giúp gộp nhiều nhóm bằng nhau nhanh chóng. Chia giúp chia đều hoặc chia theo nhóm.</p>
       <div class="definition">
         <p>Phép nhân: \(a \cdot b = c\), \(a, b\) là thừa số, \(c\) là tích. Phép chia: \(a : b = c\), \(a\) là số bị chia, \(b\) là số chia (\(b \neq 0\)), \(c\) là thương. Phép chia có dư: \(a = b \cdot q + r\), \(0 \leq r < b\).</p>
@@ -320,6 +406,21 @@ const G6_LESSONS = [
     summary: "a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0). Quy ước 0^0 không xác định.",
     body: String.raw`
       <p><strong>Vì sao cần luỹ thừa?</strong> Khi nhân nhiều số giống nhau, việc viết lại dưới dạng luỹ thừa giúp ngắn gọn và dễ tính toán.</p>
+            <figure class="figure" data-animation="g6-b6-exponent">
+        <svg viewBox="0 0 300 140" role="img" aria-label="Minh họa luỹ thừa">
+          <rect x="15" y="15" width="270" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="150" y="35" font-size="18" text-anchor="middle">a^n = a × a × ... × a</text>
+          <text x="150" y="55" font-size="11" text-anchor="middle">(n lần a)</text>
+          <path d="M35,80 L65,80 L65,100 L35,100 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="50" y="95" font-size="12" text-anchor="middle">2^3 = 2 × 2 × 2 = 8</text>
+          <path d="M115,80 L145,80 L145,100 L115,100 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="130" y="95" font-size="12" text-anchor="middle">5^2 = 5 × 5 = 25</text>
+          <path d="M195,80 L225,80 L225,100 L195,100 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="210" y="95" font-size="12" text-anchor="middle">10^4 = 10000</text>
+          <circle cx="150" cy="125" r="3" fill="#333330"/>
+          <text x="150" y="140" font-size="11" text-anchor="middle">a^0 = 1 (a ≠ 0)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Luỹ thừa: \(a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ lần}}\), \(a\) là cơ số, \(n\) là số mũ. Qui ước \(a^0 = 1\) (với \(a \neq 0\)).</p>
       </div>
@@ -375,6 +476,20 @@ const G6_LESSONS = [
     summary: "Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia → cộng/trừ. Có dấu ngoặc: trong ngoặc trước.",
     body: String.raw`
       <p><strong>Vì sao cần thứ tự?</strong> Trong biểu thức nhiều phép tính, phải làm theo thứ tự đúng thì mới ra kết quả đúng. Ví dụ: 2 + 3 × 4 ≠ (2 + 3) × 4.</p>
+            <figure class="figure" data-animation="g6-b7-exponent-operations">
+        <svg viewBox="0 0 300 180" role="img" aria-label="Các phép toán với luỹ thừa">
+          <rect x="15" y="15" width="270" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="150" y="35" font-size="14" text-anchor="middle">a^m × a^n = a^(m+n)</text>
+          <path d="M45,60 L105,60 L105,80 L45,80 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="75" y="75" font-size="12" text-anchor="middle">2^3 × 2^2 = 2^5 = 32</text>
+          <path d="M155,60 L215,60 L215,80 L155,80 Z" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="185" y="75" font-size="12" text-anchor="middle">5^4 : 5^2 = 5^2 = 25</text>
+          <rect x="15" y="100" width="270" height="30" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="150" y="120" font-size="14" text-anchor="middle">(a^m)^n = a^(m×n)</text>
+          <path d="M45,140 L105,140 L105,160 L45,160 Z" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="75" y="155" font-size="12" text-anchor="middle">(3^2)^3 = 3^6 = 729</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Thứ tự thực hiện: 1) Biểu thức có dấu ngoặc: làm trong ngoặc trước ((), {}, []). 2) Không có dấu ngoặc: luỹ thừa → nhân/chia (từ trái sang phải) → cộng/trừ (từ trái sang phải).</p>
       </div>
@@ -430,6 +545,16 @@ const G6_LESSONS = [
     summary: "a chia hết b (a \u2223 b) khi tồn tại k sao cho a = b \u22c5 k. Tính chất: nếu a \u2223 b và a \u2223 c thì a \u2223 (b \u00b1 c).",
     body: String.raw`
       <p><strong>Vì sao cần quan hệ chia hết?</strong> Biết một số có chia hết cho số khác hay không giúp ta phân tích số, tìm ước, bội, và giải nhiều bài toán số học.</p>
+            <figure class="figure" data-animation="g6-b8-order-of-operations">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Thứ tự thực hiện phép tính">
+          <rect x="15" y="15" width="250" height="30" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="35" font-size="12" text-anchor="middle">1. Trong ngoặc: ( ) → [ ] → { }</text>
+          <rect x="15" y="55" width="250" height="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="75" font-size="12" text-anchor="middle">2. Luỹ thừa: ^</text>
+          <rect x="15" y="95" width="250" height="30" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="115" font-size="12" text-anchor="middle">3. Nhân/chia → Cộng/trừ (trái sang phải)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Số tự nhiên \(a\) chia hết cho số tự nhiên \(b\) (\(b \neq 0\)) nếu tồn tại số tự nhiên \(k\) sao cho \(a = b \cdot k\). Kí hiệu \(b \mid a\). Khi đó \(a\) là bội của \(b\), \(b\) là ước của \(a\).</p>
       </div>
@@ -484,6 +609,18 @@ const G6_LESSONS = [
     summary: "Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3: tổng các chữ số chia hết cho 3.",
     body: String.raw`
       <p><strong>Vì sao cần dấu hiệu?</strong> Dấu hiệu chia hết giúp ta nhanh chóng biết một số có chia hết cho 2, 3, 5, 9 mà không cần thực hiện phép chia dài.</p>
+            <figure class="figure" data-animation="g6-b9-geometry">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Một số hình phẳng">
+          <rect x="15" y="20" width="60" height="60" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="45" y="15" font-size="12" text-anchor="middle">Hình vuông</text>
+          <circle cx="140" cy="50" r="30" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="15" font-size="12" text-anchor="middle">Đường tròn</text>
+          <ellipse cx="215" cy="50" rx="40" ry="25" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="215" y="15" font-size="12" text-anchor="middle">Elip</text>
+          <path d="M60,100 L120,100 L150,130 L30,130 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <text x="90" y="145" font-size="12" text-anchor="middle">Hình thang</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Dấu hiệu chia hết: 2 - chữ số tận cùng chẵn (0, 2, 4, 6, 8); 5 - chữ số tận cùng 0 hoặc 5; 3 - tổng các chữ số chia hết cho 3; 9 - tổng các chữ số chia hết cho 9.</p>
       </div>
@@ -538,6 +675,19 @@ const G6_LESSONS = [
     summary: "Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số có nhiều hơn hai ước.",
     body: String.raw`
       <p><strong>Vì sao cần số nguyên tố?</strong> Số nguyên tố là "nguyên liệu xây dựng" của mọi số tự nhiên. Mọi số tự nhiên lớn hơn 1 đều phân tích được thành tích các số nguyên tố.</p>
+            <figure class="figure" data-animation="g6-b10-rectangle">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Hình chữ nhật">
+          <rect x="60" y="40" width="160" height="80" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="60" y="35" font-size="11">chiều dài (l)</text>
+          <text x="20" y="80" font-size="11" transform="rotate(-90,20,80)">chiều rộng (w)</text>
+          <circle cx="140" cy="40" r="2" fill="#333330"/>
+          <circle cx="220" cy="40" r="2" fill="#333330"/>
+          <circle cx="220" cy="120" r="2" fill="#333330"/>
+          <circle cx="60" cy="120" r="2" fill="#333330"/>
+          <path d="M120,135 L160,135 L160,125 L120,125 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="148" font-size="10" text-anchor="middle">S = l × w</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Số nguyên tố là số tự nhiên lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số tự nhiên lớn hơn 1 và có nhiều hơn hai ước.</p>
       </div>
@@ -592,6 +742,19 @@ const G6_LESSONS = [
     summary: "Ước chung của hai hay nhiều số là ước của tất cả các số đó. ƯCLN là ước chung lớn nhất.",
     body: String.raw`
       <p><strong>Vì sao cần ước chung?</strong> Ước chung giúp ta tìm các số chia hết đồng thời cho nhiều số. ƯCLN giúp rút gọn phân số và giải nhiều bài toán chia đều.</p>
+            <figure class="figure" data-animation="g6-b11-square">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Hình vuông">
+          <rect x="80" y="40" width="120" height="120" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="80" y="35" font-size="11">cạnh (a)</text>
+          <text x="20" y="100" font-size="11" transform="rotate(-90,20,100)">cạnh (a)</text>
+          <circle cx="80" cy="40" r="2" fill="#333330"/>
+          <circle cx="200" cy="40" r="2" fill="#333330"/>
+          <circle cx="200" cy="160" r="2" fill="#333330"/>
+          <circle cx="80" cy="160" r="2" fill="#333330"/>
+          <path d="M120,175 L160,175 L160,165 L120,165 Z" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="140" y="188" font-size="10" text-anchor="middle">S = a × a = a²</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Ước chung của hai hay nhiều số là ước của tất cả các số đó. Ước chung lớn nhất (ƯCLN) là số lớn nhất trong tập ước chung. Kí hiệu ƯCLN(a, b) hoặc (a, b).</p>
       </div>
@@ -646,6 +809,18 @@ const G6_LESSONS = [
     summary: "Bội chung của hai hay nhiều số là bội của tất cả các số đó. BCNN là bội chung nhỏ nhất.",
     body: String.raw`
       <p><strong>Vì sao cần bội chung?</strong> Bội chung giúp ta tìm các số chia hết đồng thời cho nhiều số. BCNN thường dùng để quy đồng mẫu số và giải bài toán tìm thời điểm đồng bộ.</p>
+            <figure class="figure" data-animation="g6-b12-triangle">
+        <svg viewBox="0 0 280 140" role="img" aria-label="Tam giác">
+          <polygon points="140,20 240,120 40,120" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="140" y="15" font-size="11">đỉnh A</text>
+          <text x="245" y="125" font-size="11">đỉnh B</text>
+          <text x="30" y="125" font-size="11">đỉnh C</text>
+          <line x1="140" y1="120" x2="140" y2="135" stroke="#58C4DD" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <text x="140" y="145" font-size="10" text-anchor="middle">đường cao h</text>
+          <path d="M100,130 L180,130" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="140" y="148" font-size="10" text-anchor="middle">đáy a</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p>Bội chung của hai hay nhiều số là bội của tất cả các số đó. Bội chung nhỏ nhất (BCNN) là số nhỏ nhất khác 0 trong tập bội chung. Kí hiệu BCNN(a, b) hoặc [a, b].</p>
       </div>
