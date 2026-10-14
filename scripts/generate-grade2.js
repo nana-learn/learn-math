@@ -794,58 +794,160 @@ function exText(prompt, answer, accept, hint, explain) {
 function buildLessons() {
   const L = [];
 
-  function add(num, chapter, title, summary, figSvg, content, exercises) {
+  function foldVi(s) {
+    return String(s)
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function readNum(prompt, canonical) {
+    const folded = foldVi(canonical);
+    return exText(
+      prompt,
+      folded,
+      [folded, canonical.toLowerCase(), foldVi(canonical)],
+      canonical,
+      canonical + "."
+    );
+  }
+
+  function enrichExercises(num, chapter, exercises) {
+    // Mini đề: keep full mixed paper, do not trim or inject stories
+    if (num >= 76) return exercises.slice();
+
     let exs = withStories(num, chapter, exercises);
-    // Reading-number text items (Vietnamese orthography, accept ASCII fold)
-    if (num === 1) {
+
+    // --- Đọc / viết số + short text answers ---
+    const readBank = {
+      1: readNum("Đọc số 70 (gõ không dấu cũng được):", "bảy mươi"),
+      2: readNum("Đọc số 100:", "một trăm"),
+      48: readNum("Đọc số 1000:", "một nghìn"),
+      49: readNum("Đọc số 300 (số tròn trăm):", "ba trăm"),
+      51: readNum("Đọc số 208:", "hai trăm linh tám"),
+      52: readNum("Đọc số 365:", "ba trăm sáu mươi lăm"),
+      54: readNum("Đọc số 909:", "chín trăm linh chín"),
+      56: readNum("Đọc mệnh giá 5000 đồng (không cần chữ đồng):", "năm nghìn"),
+      68: readNum("Đọc số 702:", "bảy trăm linh hai"),
+    };
+    if (readBank[num]) {
+      exs = [readBank[num], ...exs].slice(0, 9);
+    }
+    // Short lời văn text (keyword / unit)
+    if (num === 9) {
       exs = [
         exText(
-          "Đọc số 70 (gõ không dấu cũng được):",
-          "bay muoi",
-          ["bay muoi", "bảy mươi", "bay mươi"],
-          "bảy mươi",
-          "bảy mươi."
+          "Có 8 quả, hái thêm 5. Phải làm phép nào? (gõ: cong hoặc tru)",
+          "cong",
+          ["cong", "cộng", "cong them", "+"],
+          "thêm → cộng",
+          "cộng."
         ),
         ...exs,
       ].slice(0, 9);
     }
-    if (num === 51) {
+    if (num === 13) {
       exs = [
         exText(
-          "Đọc số 208 (gõ không dấu cũng được):",
-          "hai tram linh tam",
-          ["hai tram linh tam", "hai trăm linh tám", "hai tram linh 8", "hai tram linh tam"],
-          "hai trăm linh tám",
-          "hai trăm linh tám."
+          "A ít hơn B 4 đơn vị. Lấy B làm mốc thì làm phép nào với 4? (cong/tru)",
+          "tru",
+          ["tru", "trừ", "-"],
+          "ít hơn mốc → trừ",
+          "trừ."
         ),
         ...exs,
       ].slice(0, 9);
     }
-    // Ensure bảng 2 / bảng 5 lessons keep pure table drills (2×1..10 or 5×1..10 style)
+    if (num === 15) {
+      exs = [
+        exText("Đơn vị đo mức nặng/nhẹ (gõ: kg hoặc l):", "kg", ["kg", "ki lo gam", "kilogam"], "kg", "kg."),
+        ...exs,
+      ].slice(0, 9);
+    }
+    if (num === 16) {
+      exs = [
+        exText("Đơn vị đo nước trong bình (gõ: kg hoặc l):", "l", ["l", "lit", "lít"], "l", "l."),
+        ...exs,
+      ].slice(0, 9);
+    }
+
+    // --- Geometry & chance: more numeric / concrete drills ---
+    if (num === 25) {
+      const extra = [
+        exNum("Đoạn thẳng có mấy mút?", 2, "Hai đầu mút.", "2."),
+        exNum("Ba điểm thẳng hàng nằm trên mấy đường thẳng?", 1, "Một đường.", "1."),
+        exMC("Đường cong", ["Không thẳng", "Luôn là đoạn", "Có đúng 2 mút", "Là kg"], 0, "Cong.", "Không thẳng."),
+      ];
+      exs = [...extra, ...exs.filter((e) => e.type === "mc")].slice(0, 9);
+    }
+    if (num === 26) {
+      const extra = [
+        exNum("Tứ giác có mấy cạnh?", 4, "Tứ = 4.", "4."),
+        exNum("Tứ giác có mấy đỉnh?", 4, "4.", "4."),
+        exNum("Tam giác có mấy cạnh?", 3, "Tam = 3.", "3."),
+        exNum("Đường gấp khúc tối thiểu gồm mấy đoạn thẳng?", 2, "Ít nhất 2 đoạn nối.", "2."),
+      ];
+      exs = [...extra, ...exs].slice(0, 9);
+    }
+    if (num === 28) {
+      const extra = [
+        exNum("Hình vuông có mấy cạnh?", 4, "4.", "4."),
+        exNum("Có 2 mút → đó là đoạn. Số mút = ?", 2, "2.", "2."),
+      ];
+      exs = [...extra, ...exs].slice(0, 9);
+    }
+    if (num === 46 || num === 47) {
+      const extra = [
+        exNum("Hộp có 3 bóng (cầu) và 2 lon (trụ). Tất cả mấy đồ vật?", 5, "3+2.", "5."),
+        exNum("Có 6 khối trụ, lấy 2. Còn mấy?", 4, "6−2.", "4."),
+      ];
+      exs = [...extra, ...exs.filter((e) => e.type === "mc" || isNarrativeish(e))].slice(0, 9);
+    }
+    if (num === 66) {
+      const extra = [
+        exNum("Túi 4 bi đỏ. Bốc 1 bi đỏ: chắc chắn? Gõ 1=có, 0=không", 1, "Toàn đỏ.", "1."),
+        exNum("Túi không bi vàng. Bốc vàng được không? 1=có thể, 0=không thể", 0, "Không có vàng.", "0."),
+        exNum("Túi đỏ và xanh. Số màu có thể bốc (tối đa)?", 2, "Hai màu.", "2."),
+      ];
+      exs = [...extra, ...exs].slice(0, 9);
+    }
+    if (num === 65) {
+      const extra = [
+        exNum("Biểu đồ 7 hình, 1 hình = 1. Có mấy?", 7, "Đếm.", "7."),
+        exNum("4 hình, mỗi hình = 2 quả. Tổng quả?", 8, "4×2.", "8."),
+        exNum("Cột A 5, cột B 9 (1=1). B hơn A?", 4, "9−5.", "4."),
+      ];
+      exs = [...extra, ...exs].slice(0, 9);
+    }
+
+    // --- Bảng 2 / 5 pure drills ---
     if (num === 39) {
-      const drills = [1, 3, 4, 7, 9].map((k) =>
-        exNum(`2 × ${k} = ?`, 2 * k, "Bảng 2.", `${2 * k}.`)
-      );
+      const drills = [1, 3, 4, 7, 9].map((k) => exNum(`2 × ${k} = ?`, 2 * k, "Bảng 2.", `${2 * k}.`));
       exs = [...drills, ...exs.filter((e) => !/^2 ×/.test(e.prompt))].slice(0, 9);
     }
     if (num === 40) {
-      const drills = [1, 4, 6, 7, 9].map((k) =>
-        exNum(`5 × ${k} = ?`, 5 * k, "Bảng 5.", `${5 * k}.`)
-      );
+      const drills = [1, 4, 6, 7, 9].map((k) => exNum(`5 × ${k} = ?`, 5 * k, "Bảng 5.", `${5 * k}.`));
       exs = [...drills, ...exs.filter((e) => !/^5 ×/.test(e.prompt))].slice(0, 9);
     }
     if (num === 43) {
-      const drills = [2, 8, 10, 12, 18].map((n) =>
-        exNum(`${n} : 2 = ?`, n / 2, "Bảng chia 2.", `${n / 2}.`)
-      );
+      const drills = [2, 8, 10, 12, 18].map((n) => exNum(`${n} : 2 = ?`, n / 2, "Bảng chia 2.", `${n / 2}.`));
       exs = [...drills, ...exs.filter((e) => !/: 2 =/.test(e.prompt))].slice(0, 9);
     }
     if (num === 44) {
-      const drills = [15, 20, 25, 30, 45].map((n) =>
-        exNum(`${n} : 5 = ?`, n / 5, "Bảng chia 5.", `${n / 5}.`)
-      );
+      const drills = [15, 20, 25, 30, 45].map((n) => exNum(`${n} : 5 = ?`, n / 5, "Bảng chia 5.", `${n / 5}.`));
       exs = [...drills, ...exs.filter((e) => !/: 5 =/.test(e.prompt))].slice(0, 9);
     }
+    return exs.slice(0, 9);
+  }
+
+  function isNarrativeish(e) {
+    return e.type === "num" && /An |Lan |Mỗi |Có \d+|Hộp |chia/i.test(e.prompt);
+  }
+
+  function add(num, chapter, title, summary, figSvg, content, exercises) {
     L.push({
       id: `g2-b${num}`,
       num,
@@ -854,7 +956,7 @@ function buildLessons() {
       summary,
       figSvg: ensureUniqueAnim(figSvg, num),
       content: { ...content, caption: content.caption || summary },
-      exercises: exs,
+      exercises: enrichExercises(num, chapter, exercises),
     });
   }
 
@@ -3237,18 +3339,90 @@ function buildLessons() {
       slow: "10–15 phút mỗi ngày.",
       memory: summary,
     };
-    // Add one text “đọc số” item on number review
     let exs = exercises.slice();
     if (num === 68) {
       exs = [
-        exText("Đọc số 702 (viết không dấu):", "bay tram linh hai", ["bay tram linh hai", "bảy trăm linh hai", "bay tram linh 2"], "bảy trăm linh hai", "bảy trăm linh hai."),
-        ...exs.filter((e) => e.prompt !== "Bảy trăm linh hai"),
+        exNum("Viết số bảy trăm linh hai", 702, "702.", "702."),
+        ...exs.filter((e) => e.prompt !== "Bảy trăm linh hai" && !String(e.prompt).includes("Đọc số 702")),
       ];
-      // keep numeric write
-      exs.splice(1, 0, exNum("Viết số bảy trăm linh hai", 702, "702.", "702."));
     }
     add(num, 14, title, summary, figSvg, bodyParts, exs);
   }
+
+  // ===== Mini đề (special practice tests) =====
+  add(
+    76,
+    7,
+    "Mini đề giữa / cuối HK1",
+    "10 câu trộn: số đến 100, cộng trừ có nhớ, hình, kg/l, giờ.",
+    svgReview("Mini đề HK1"),
+    {
+      why: "Làm một đề ngắn giúp con quen kiểm tra định kỳ HK1, không chỉ làm rời từng bài.",
+      def: "Đề gồm 10 câu: số · cộng trừ (20 và 100) · hơn kém · hình phẳng · kg/l · giờ. Làm lần lượt, không cần tính giờ nghiêm.",
+      easy: "Warm-up: 9 + 8 = 17. 34 + 21 = 55 (không nhớ). Đoạn thẳng có 2 mút.",
+      step: "Câu có nhớ: 47 + 28 → nhớ 1. Câu trừ: 70 − 35 → mượn. Đọc kỹ hơn/kém.",
+      trap: "Làm vội dễ lệch cột hoặc chọn nhầm cộng/trừ trong lời văn.",
+      idea: "Mỗi câu: gạch từ khóa → chọn phép → tính → soát 1 lần.",
+      warns: ["Quên nhớ/mượn.", "Quên đơn vị kg/l.", "Nhầm kim giờ/phút (ôn)."],
+      checks: [
+        { q: "Đề này ôn học kì nào?", a: "HK1." },
+        { q: "Nên soát gì?", a: "Nhớ/mượn và đơn vị." },
+      ],
+      slow: "Ví dụ câu mẫu: Lan 18 tem, cho bạn 9. Còn? 18 − 9 = 9. Viết đủ “9 tem” khi trả lời miệng.",
+      memory: "Mini đề HK1 = số 100 + cộng trừ có nhớ + hình + đo nhẹ.",
+      caption: "Luyện đề ngắn học kì 1",
+    },
+    [
+      exNum("Số liền sau 99?", 100, "+1.", "100."),
+      exNum("8 + 7 = ?", 15, "Qua 10.", "15."),
+      exNum("45 + 38 = ?", 83, "Có nhớ.", "83."),
+      exNum("82 − 27 = ?", 55, "Có nhớ.", "55."),
+      exNum("An 16 tem, Bình 9. An hơn Bình mấy tem?", 7, "16−9.", "7."),
+      exNum("Tứ giác có mấy cạnh?", 4, "4.", "4."),
+      exNum("3 kg + 5 kg = ?", 8, "Cộng kg.", "8."),
+      exNum("9 l − 4 l = ?", 5, "Trừ lít.", "5."),
+      exNum("1 giờ = ? phút", 60, "60.", "60."),
+      exMC("Đoạn thẳng có", ["Hai mút", "Không mút", "Ba mút", "Chỉ đường cong"], 0, "Hai đầu.", "Hai mút."),
+    ]
+  );
+
+  add(
+    77,
+    14,
+    "Mini đề cuối năm",
+    "12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.",
+    svgReview("Mini đề cuối năm"),
+    {
+      why: "Đề tổng hợp cuối năm giúp phụ huynh và con thấy chỗ còn hổng trước lớp 3.",
+      def: "12 câu phủ số đến 1000, cộng trừ có nhớ, bảng 2&5, đo lường, hình khối, biểu đồ/khả năng.",
+      easy: "2 × 8 = 16. 5 × 5 = 25. 400 + 50 + 6 = 456.",
+      step: "Câu 3 chữ số: đặt tính thẳng. Câu chia: kiểm bằng nhân. Câu đo: nhìn đơn vị.",
+      trap: "Nhầm bảng 2/5; quên nhớ; bỏ chú thích biểu đồ.",
+      idea: "Làm 2 vòng: vòng 1 hết đề, vòng 2 chỉ soát câu khoanh/đặt tính.",
+      warns: ["Làm dồn không soát.", "Sai đơn vị km/m/dm."],
+      checks: [
+        { q: "Bảng nhân lớp 2 gồm những bảng nào?", a: "2 và 5." },
+        { q: "1 km = ? m", a: "1000." },
+      ],
+      slow: "Mẫu: 20 kẹo chia 5 hộp đều → 20 : 5 = 4. Kiểm 4 × 5 = 20.",
+      memory: "Cuối năm: 1000 · ± có nhớ · ×÷ 2&5 · hình · đo · thống kê.",
+      caption: "Luyện đề ngắn cuối năm",
+    },
+    [
+      exNum("Viết số gồm 5 trăm 0 chục 7 đơn vị", 507, "507.", "507."),
+      exNum("368 + 157 = ?", 525, "Có nhớ.", "525."),
+      exNum("700 − 258 = ?", 442, "Có nhớ.", "442."),
+      exNum("2 × 9 = ?", 18, "Bảng 2.", "18."),
+      exNum("5 × 8 = ?", 40, "Bảng 5.", "40."),
+      exNum("18 : 2 = ?", 9, "Chia 2.", "9."),
+      exNum("35 : 5 = ?", 7, "Chia 5.", "7."),
+      exNum("3 m = ? dm", 30, "×10.", "30."),
+      exNum("1 km = ? m", 1000, "1000.", "1000."),
+      exNum("2000 + 3000 = ? (đồng)", 5000, "Cộng tiền.", "5000."),
+      exMC("Quả bóng giống", ["Khối cầu", "Khối trụ", "Đoạn thẳng", "Tứ giác"], 0, "Cầu.", "Khối cầu."),
+      exMC("Túi chỉ bi xanh. Bốc ra xanh là", ["Chắc chắn", "Không thể", "Chỉ có thể", "Cấm"], 0, "Toàn xanh.", "Chắc chắn."),
+    ]
+  );
 
   return L;
 }
@@ -3274,24 +3448,47 @@ function emitLesson(L) {
 
 function main() {
   const lessons = buildLessons();
-  if (lessons.length !== 75) {
-    console.error("Expected 75 lessons, got", lessons.length);
+  if (lessons.length !== 77) {
+    console.error("Expected 77 lessons, got", lessons.length);
     process.exit(1);
   }
-  for (let i = 1; i <= 75; i++) {
-    if (lessons[i - 1].num !== i) {
-      console.error("Order broken at", i, lessons[i - 1].num);
+  for (let i = 0; i < lessons.length; i++) {
+    if (lessons[i].num !== i + 1) {
+      console.error("Order broken at", i + 1, lessons[i].num);
       process.exit(1);
     }
   }
 
+  const parentGuide = {
+    intro:
+      "Dành cho phụ huynh: Toán 2 bám SGK Kết nối tri thức (14 chủ đề). Mỗi ngày 10–20 phút, 1 bài + vài câu luyện là đủ. Ưu tiên hiểu (thêm/bớt, nhớ/mượn, bảng 2&5) hơn làm dồn đề.",
+    tips: [
+      "HK1 (chủ đề 1–7): chắc cộng trừ có nhớ phạm vi 100, kg/l, giờ, hình phẳng.",
+      "HK2 (chủ đề 8–14): bảng nhân/chia 2 và 5, số đến 1000, đo độ dài & tiền, thống kê đơn giản.",
+      "Con yếu nhớ/mượn: làm lại Bài 19–24 và Mini đề HK1 (Bài 76).",
+      "Con yếu bảng cửu chương: ôn Bài 39–44 mỗi ngày 5 phút, rồi Mini đề cuối năm (Bài 77).",
+      "Nhìn tiến độ trên máy: chủ đề nào còn ít “Đã làm” thì ôn chủ đề đó trước.",
+    ],
+    chapterFocus: chapters.map((ch) => ({
+      id: ch.id,
+      title: ch.title,
+      focus:
+        ch.id <= 7
+          ? "Trọng tâm HK1"
+          : ch.id === 14
+            ? "Ôn & mini đề cuối năm"
+            : "Trọng tâm HK2",
+    })),
+  };
+
   let out = "";
   out += `// Toán 2 – Kết nối tri thức với cuộc sống.\n`;
-  out += `// 14 chủ đề, Bài 1–75 theo SGK. Ví dụ viết mới, không chép SGK.\n`;
+  out += `// 14 chủ đề, Bài 1–75 + Mini đề 76–77. Ví dụ viết mới, không chép SGK.\n`;
   out += `// Khung: GDPT 2018 + mục lục KNTT (số đến 1000, cộng trừ có nhớ,\n`;
   out += `// nhân chia 2 & 5, hình phẳng/khối, đo lường, tiền, thống kê – xác suất).\n`;
   out += `// Generated by scripts/generate-grade2.js — re-run to regenerate.\n\n`;
   out += `const G2_CHAPTERS = ${JSON.stringify(chapters, null, 2)};\n\n`;
+  out += `const G2_PARENT_GUIDE = ${JSON.stringify(parentGuide, null, 2)};\n\n`;
   out += `const G2_LESSONS = [\n`;
   out += lessons.map(emitLesson).join(",\n\n");
   out += `\n];\n\n`;
@@ -3300,9 +3497,10 @@ function main() {
   out += `  if (!course) return;\n`;
   out += `  course.title = "Toán 2";\n`;
   out += `  course.subtitle = "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống";\n`;
-  out += `  course.blurb = "14 chủ đề, Bài 1–75. Hình minh họa + ví dụ lời văn cho học sinh Việt Nam. Không chép SGK.";\n`;
+  out += `  course.blurb = "14 chủ đề, Bài 1–75 và 2 mini đề (HK1 & cuối năm). Có gợi ý cho phụ huynh.";\n`;
   out += `  course.chapters = G2_CHAPTERS;\n`;
   out += `  course.lessons = G2_LESSONS;\n`;
+  out += `  course.parentGuide = G2_PARENT_GUIDE;\n`;
   out += `  course.level = "Tiểu học";\n`;
   out += `})();\n`;
 

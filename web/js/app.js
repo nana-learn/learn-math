@@ -250,6 +250,57 @@ function papersBlock(course) {
   </section>`;
 }
 
+function parentGuideBlock(course) {
+  const guide = course.parentGuide;
+  if (!guide) return "";
+  const progress = progressFor(course.id);
+  const chapters = course.chapters || [];
+  let focusCh = null;
+  let focusNote = "";
+  for (const ch of chapters) {
+    const items = course.lessons.filter((l) => l.chapter === ch.id);
+    if (!items.length) continue;
+    const done = items.filter((l) => progress[l.id]).length;
+    if (done < items.length) {
+      focusCh = ch;
+      focusNote =
+        done === 0
+          ? `Con chưa làm chủ đề này — nên bắt đầu từ đây nếu đang học đúng tiến độ lớp.`
+          : `Con đã làm ${done}/${items.length} bài trong chủ đề này — nên hoàn thành nốt trước khi sang chủ đề mới.`;
+      break;
+    }
+  }
+  if (!focusCh && chapters.length) {
+    focusCh = chapters[chapters.length - 1];
+    focusNote = "Con đã chạm mọi chủ đề trên máy này. Có thể ôn Mini đề hoặc bài còn điểm thấp.";
+  }
+  const tips = (guide.tips || [])
+    .map((t) => `<li>${escapeHtml(t)}</li>`)
+    .join("");
+  const focusMeta =
+    guide.chapterFocus && focusCh
+      ? guide.chapterFocus.find((c) => c.id === focusCh.id)
+      : null;
+  return `
+    <section class="parent-guide">
+      <h2>Gợi ý cho phụ huynh</h2>
+      <p>${escapeHtml(guide.intro || "")}</p>
+      ${
+        focusCh
+          ? `<p class="note"><strong>Gợi ý hôm nay:</strong> Chủ đề ${focusCh.id}. ${escapeHtml(
+              focusCh.title
+            )}${focusMeta ? ` · ${escapeHtml(focusMeta.focus)}` : ""}. ${escapeHtml(
+              focusNote
+            )} <a href="#/g/${course.id}/ch/${focusCh.id}">Mở chủ đề</a></p>`
+          : ""
+      }
+      <details>
+        <summary>Xem thêm mẹo ôn</summary>
+        <ul>${tips}</ul>
+      </details>
+    </section>`;
+}
+
 function courseView(course) {
   const n = course.lessons.length;
   const done = Object.keys(progressFor(course.id)).length;
@@ -270,6 +321,7 @@ function courseView(course) {
           : `<p class="note">${escapeHtml(course.blurb)}</p>`
       }
     </section>
+    ${parentGuideBlock(course)}
     ${examLessonsBlock(course)}
     ${papersBlock(course)}
     ${
@@ -424,10 +476,16 @@ function gradeQuiz(courseId, id) {
       const val = Number(raw);
       ok = val === ex.answer;
     } else {
-      const val = String(form[`q${i}`].value).trim().toLowerCase().replace(/\s+/g, " ");
-      const accept = (ex.accept || [ex.answer]).map((a) =>
-        String(a).trim().toLowerCase().replace(/\s+/g, " ")
-      );
+      const fold = (s) =>
+        String(s)
+          .trim()
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/đ/g, "d")
+          .replace(/\s+/g, " ");
+      const val = fold(form[`q${i}`].value);
+      const accept = (ex.accept || [ex.answer]).map(fold);
       ok = accept.includes(val);
     }
     fb.hidden = false;

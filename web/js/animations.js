@@ -2188,8 +2188,77 @@ const AnimationManager = {
     };
     
     if (configs[id]) return configs[id];
-    // Generic fade-in for Grade 2 (and any unlisted) diagram animations
+
+    // Grade 2: topic-specific step order by animation id suffix
     if (id && String(id).startsWith('g2-')) {
+      const sid = String(id);
+      if (/make-ten|carry|col-add/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+            { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
+            { selector: 'text[fill="#FC6255"], text[fill="#fc6255"]', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/borrow|col-sub/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+            { selector: 'text[fill="#FC6255"], text[fill="#fc6255"]', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+            { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/clock/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'circle', initialState: 'opacity:0', animate: 'fade-in', duration: 0.4 },
+            { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.5 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/place|place3|place-value/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+            { selector: 'text[font-size="32"], text[font-size="36"]', initialState: 'opacity:0', animate: 'fade-in', duration: 0.4 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/divide|array|times/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+            { selector: 'circle', initialState: 'opacity:0', animate: 'fade-in', duration: 0.25 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/line|number-line/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.5 },
+            { selector: 'polygon', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+            { selector: 'circle', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      if (/chance|chart|review/.test(sid)) {
+        return {
+          steps: [
+            { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+            { selector: 'circle', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+            { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
+          ],
+        };
+      }
+      // Generic fade-in for other Grade 2 diagrams
       return {
         steps: [
           { selector: 'rect', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
@@ -2197,6 +2266,7 @@ const AnimationManager = {
           { selector: 'ellipse', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
           { selector: 'line', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
           { selector: 'polygon', initialState: 'opacity:0', animate: 'fade-in', duration: 0.35 },
+          { selector: 'polyline', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
           { selector: 'path', initialState: 'opacity:0', animate: 'draw', duration: 0.4 },
           { selector: 'text', initialState: 'opacity:0', animate: 'fade-in', duration: 0.3 },
         ],

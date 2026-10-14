@@ -437,6 +437,31 @@ details.check {
 
 .katex-display { overflow-x: auto; overflow-y: hidden; }
 
+.parent-guide {
+  margin: 1rem 0 1.4rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fffdf6;
+  border-left: 4px solid var(--stamp);
+}
+.parent-guide h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+.parent-guide ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+.parent-guide details {
+  margin-top: 0.6rem;
+}
+.parent-guide summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--muted);
+}
+
 @media (max-width: 640px) {
   main { width: calc(100% - 1.2rem); }
   .top { flex-wrap: wrap; }
