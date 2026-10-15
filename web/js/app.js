@@ -402,11 +402,13 @@ function lessonView(course, id) {
   const idx = course.lessons.findIndex((l) => l.id === id);
   const prev = course.lessons[idx - 1];
   const next = course.lessons[idx + 1];
+  const kid = course.id === "2" || course.level === "Tiểu học";
   const exercises = lesson.exercises
     .map((ex, i) => {
       const hint = ex.hint
-        ? `<details class="hint"><summary>Gợi ý</summary>${ex.hint}</details>`
+        ? `<details class="hint"><summary>${kid ? "Cần gợi ý?" : "Gợi ý"}</summary>${ex.hint}</details>`
         : "";
+      const qLabel = kid ? `Câu ${i + 1}` : `Câu ${i + 1}.`;
       if (ex.type === "mc") {
         const choices = ex.choices
           .map(
@@ -415,7 +417,7 @@ function lessonView(course, id) {
           )
           .join("");
         return `<div class="q" data-i="${i}" data-type="mc">
-          <p><strong>Câu ${i + 1}.</strong> ${ex.prompt}</p>
+          <p><strong>${qLabel}.</strong> ${ex.prompt}</p>
           <div class="choices">${choices}</div>
           ${hint}
           <div class="feedback" hidden></div>
@@ -423,8 +425,8 @@ function lessonView(course, id) {
         </div>`;
       }
       return `<div class="q" data-i="${i}" data-type="${ex.type}">
-        <p><strong>Câu ${i + 1}.</strong> ${ex.prompt}</p>
-        <input type="text" name="q${i}" inputmode="${ex.type === "num" ? "decimal" : "text"}" placeholder="Đáp án">
+        <p><strong>${qLabel}.</strong> ${ex.prompt}</p>
+        <input type="text" name="q${i}" inputmode="${ex.type === "num" ? "decimal" : "text"}" placeholder="${kid ? "Viết đáp án ở đây" : "Đáp án"}">
         ${hint}
         <div class="feedback" hidden></div>
         <div class="explain" hidden>${ex.explain}</div>
@@ -432,9 +434,9 @@ function lessonView(course, id) {
     })
     .join("");
   return `
-    <p class="back"><a href="#/g/${course.id}/lessons">← Tất cả bài học</a></p>
-    <article class="article">
-      <span class="stamp">${escapeHtml(course.title)} · Chương ${lesson.chapter}</span>
+    <p class="back"><a href="#/g/${course.id}/lessons">${kid ? "← Các bài học" : "← Tất cả bài học"}</a></p>
+    <article class="article${kid ? " grade-2" : ""}">
+      <span class="stamp">${escapeHtml(kid ? "Toán lớp 2" : course.title)} · ${kid ? "Chủ đề" : "Chương"} ${lesson.chapter}</span>
       <h1>${escapeHtml(lesson.title)}</h1>
       <p class="lede">${escapeHtml(ch ? ch.title : "")}</p>
       ${paperView(lesson)}
@@ -443,16 +445,17 @@ function lessonView(course, id) {
       ${
         lesson.exercises.length
           ? `<section class="quiz">
-        <h2>Luyện tập</h2>
+        <h2>${kid ? "Làm bài nào!" : "Luyện tập"}</h2>
+        ${kid ? `<p class="quiz-lead">Em làm từng câu. Không biết thì bấm “Cần gợi ý?”.</p>` : ""}
         <form id="quiz-form">${exercises}
-          <button class="btn" type="submit">Kiểm tra</button>
+          <button class="btn" type="submit">${kid ? "Xem đúng chưa" : "Kiểm tra"}</button>
         </form>
       </section>`
           : ""
       }
       <p class="actions" style="margin-top:1.2rem">
-        ${prev ? `<a class="btn ghost" href="#/g/${course.id}/lesson/${prev.id}">Bài trước</a>` : ""}
-        ${next ? `<a class="btn" href="#/g/${course.id}/lesson/${next.id}">Bài tiếp</a>` : ""}
+        ${prev ? `<a class="btn ghost" href="#/g/${course.id}/lesson/${prev.id}">${kid ? "← Bài trước" : "Bài trước"}</a>` : ""}
+        ${next ? `<a class="btn" href="#/g/${course.id}/lesson/${next.id}">${kid ? "Bài tiếp →" : "Bài tiếp"}</a>` : ""}
       </p>
     </article>
   `;
@@ -491,7 +494,14 @@ function gradeQuiz(courseId, id) {
     fb.hidden = false;
     explain.hidden = false;
     fb.className = "feedback " + (ok ? "ok" : "bad");
-    fb.textContent = ok ? "Đúng." : "Chưa đúng.";
+    const kid = courseId === "2";
+    fb.textContent = ok
+      ? kid
+        ? "Đúng rồi, giỏi lắm!"
+        : "Đúng."
+      : kid
+        ? "Chưa đúng. Xem gợi ý rồi thử lại nhé."
+        : "Chưa đúng.";
     if (ok) score += 1;
   });
   markLesson(courseId, id, score, lesson.exercises.length);

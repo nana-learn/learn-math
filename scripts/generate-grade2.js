@@ -717,10 +717,30 @@ function svgReview(title) {
   );
 }
 
+function kidText(s) {
+  if (s == null) return s;
+  return String(s)
+    .replace(/≥\s*10/g, "từ 10 trở lên")
+    .replace(/≥/g, "không nhỏ hơn ")
+    .replace(/≠/g, " không bằng ")
+    .replace(/⇒/g, " thì ")
+    .replace(/bước đệm bắt buộc/g, "bài cần học trước")
+    .replace(/nền tảng cả năm học/g, "bài rất quan trọng")
+    .replace(/nền tảng/g, "bài quan trọng")
+    .replace(/cửa vào xác suất/g, "cách nói chuyện sẽ xảy ra hay không")
+    .replace(/Warm-up:/g, "Làm thử:")
+    .replace(/không cần tính giờ nghiêm/g, "làm chậm, không vội")
+    .replace(/chữ cái” của hình học/g, "bài hình đầu tiên")
+    .replace(/viết gọn phép cộng lặp/g, "cộng nhiều lần cho nhanh")
+    .replace(/phụ huynh và con/g, "em")
+    .replace(/\bHK1\b/g, "học kì 1")
+    .replace(/\bHK2\b/g, "học kì 2");
+}
+
 function body(parts) {
   const {
     animFig,
-    why,
+    today,
     def,
     easy,
     step,
@@ -733,50 +753,50 @@ function body(parts) {
     caption,
   } = parts;
   const warnList = (warns || [])
-    .map((w) => `<li>${w}</li>`)
+    .map((w) => `<li>${kidText(w)}</li>`)
     .join("\n          ");
   const checkPs = (checks || [])
-    .map((c) => `<p>${c.q} <em>— ${c.a}</em></p>`)
+    .map((c) => `<p>${kidText(c.q)} <em>— ${kidText(c.a)}</em></p>`)
     .join("\n        ");
   let fig = animFig;
   if (caption) {
     fig = animFig.replace(
       "</figure>",
-      `        <figcaption>${caption}</figcaption>\n      </figure>`
+      `        <figcaption>${kidText(caption)}</figcaption>\n      </figure>`
     );
   }
   return `    body: String.raw\`
 ${fig}
-      <p><strong>Vì sao học bài này?</strong> ${why}</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> ${kidText(today)}</p>
       <div class="definition">
-        <p>${def}</p>
+        <p><strong>Nhớ này.</strong> ${kidText(def)}</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ dễ.</strong> ${easy}</p>
+        <p><strong>Cùng làm.</strong> ${kidText(easy)}</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ thêm một bước.</strong> ${step}</p>
+        <p><strong>Thêm một chút.</strong> ${kidText(step)}</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> ${trap}</p>
+        <p><strong>Cẩn thận.</strong> ${kidText(trap)}</p>
       </div>
       <div class="idea">
-        <p><strong>Cách nghĩ.</strong> ${idea}</p>
+        <p><strong>Mẹo nhỏ.</strong> ${kidText(idea)}</p>
       </div>
       <div class="warn">
-        <p><strong>Lỗi hay gặp.</strong></p>
+        <p><strong>Đừng nhầm.</strong></p>
         <ul>
           ${warnList}
         </ul>
       </div>
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
+      <details class="check" open>
+        <summary>Thử xem em nhớ chưa</summary>
         ${checkPs}
       </details>
       <div class="example">
-        <p><strong>Làm chậm.</strong> ${slow}</p>
+        <p><strong>Làm từng bước.</strong> ${kidText(slow)}</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> ${memory}</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> ${kidText(memory)}</p></div>
     \``;
 }
 
@@ -1174,12 +1194,13 @@ function buildLessons() {
     "Cộng hai số có tổng lớn hơn 10, không quá 20.",
     svgMakeTen(8, 2, 4, 14),
     {
-      why: "Cộng qua 10 là bước đệm bắt buộc trước cộng có nhớ ở phạm vi 100.",
-      def: "Khi tổng đơn vị ≥ 10, tách cách <strong>bù 10</strong>: tách số thứ hai thành phần đủ để số thứ nhất thành 10, rồi cộng phần còn lại.",
-      easy: "8 + 5: 8 cần 2 để thành 10; 5 = 2 + 3 → 10 + 3 = 13.",
-      step: "9 + 7 = 9 + 1 + 6 = 10 + 6 = 16. 6 + 8 = 6 + 4 + 4 = 14.",
-      trap: "Đếm ngón tay từng cái dễ lệch khi mệt. Nên nhớ các cặp bù 10: 1+9, 2+8, 3+7, 4+6, 5+5.",
-      idea: "Hỏi: “Số này cần thêm mấy để được 10?” — đó là chìa khóa.",
+      why: "Cộng hai số nhỏ, khi cộng ra hơn 10.",
+      def: "Cộng <strong>qua 10</strong>: tách số sau cho đủ 10, rồi cộng phần còn. Ví dụ 8 cần thêm 2 nữa là 10.",
+      easy: "8 + 5. 8 thêm 2 được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.",
+      step: "9 + 7. 9 thêm 1 được 10. Còn 6. 10 + 6 = 16.",
+      trap: "Đếm ngón từng cái dễ sai. Nhớ cặp đủ 10: 1+9, 2+8, 3+7, 4+6, 5+5.",
+      idea: "Hỏi: số này cần thêm mấy nữa được 10?",
+
       warns: ["Quên phần còn lại sau khi đã đủ 10.", "Nhầm 8+5=12."],
       checks: [
         { q: "8 + 6 = ?", a: "14." },
@@ -1193,7 +1214,7 @@ function buildLessons() {
       exNum("9 + 5 = ?", 14, "9+1+4.", "14."),
       exNum("7 + 7 = ?", 14, "Đôi.", "14."),
       exNum("4 + 9 = ?", 13, "9+1+3.", "13."),
-      exMC("Tổng lớn nhất", ["9+8", "8+5", "7+6", "9+4"], 0, "17.", "9+8=17."),
+      exMC("Phép nào có tổng lớn nhất?", ["9+8", "8+5", "7+6", "9+4"], 0, "Tính từng phép.", "9 + 8 = 17, lớn nhất."),
       exNum("6 + 8 = ?", 14, "Qua 10.", "14."),
       exNum("5 + 9 = ?", 14, "Qua 10.", "14."),
     ]
@@ -1563,12 +1584,12 @@ function buildLessons() {
     "Cộng có nhớ: tổng đơn vị ≥ 10.",
     svgCarrySteps(),
     {
-      why: "Đây là cộng có nhớ đầu tiên — nền tảng cả năm học.",
-      def: "Cộng đơn vị trước. Nếu tổng ≥ 10: viết chữ số đơn vị, <strong>nhớ 1</strong> sang hàng chục.",
-      easy: "28 + 5: 8+5=13 → viết 3 nhớ 1; 2+1=3 → 33.",
+      why: "Cộng có nhớ: khi hàng đơn vị cộng ra từ 10 trở lên.",
+      def: "Cộng đơn vị trước. Nếu ra từ 10 trở lên: viết chữ số đơn vị, <strong>nhớ 1</strong> sang hàng chục.",
+      easy: "28 + 5. 8 + 5 = 13. Viết 3, nhớ 1. 2 + 1 = 3. Kết quả 33.",
       step: "49 + 7 = 56. 35 + 8 = 43.",
-      trap: "Hay quên cộng số nhớ vào hàng chục — ra 23 thay vì 33 với 28+5.",
-      idea: "Đánh dấu chấm nhỏ ở hàng chục khi có nhớ.",
+      trap: "Quên cộng số nhớ. 28 + 5 sẽ ra 23 — sai. Phải ra 33.",
+      idea: "Khi có nhớ, chấm một chấm nhỏ trên hàng chục.",
       warns: ["Quên nhớ 1.", "Nhớ nhưng cộng sai hàng chục."],
       checks: [
         { q: "27+6=?", a: "33." },
@@ -1756,12 +1777,12 @@ function buildLessons() {
     "Nhận biết các đối tượng hình học phẳng cơ bản.",
     svgGeometry(),
     {
-      why: "Đây là “chữ cái” của hình học — dùng suốt các lớp sau.",
-      def: "<strong>Điểm</strong> đánh dấu vị trí. <strong>Đoạn thẳng</strong> có hai mút. <strong>Đường thẳng</strong> kéo dài hai phía, không có mút. <strong>Đường cong</strong> không thẳng. Ba điểm <strong>thẳng hàng</strong> nếu cùng nằm trên một đường thẳng.",
-      easy: "Đoạn AB có mút A và B. Kéo dài AB hai phía được đường thẳng AB.",
-      step: "Trên một đường thẳng lấy thêm điểm C giữa A và B: A, B, C thẳng hàng.",
-      trap: "Đoạn thẳng ≠ đường thẳng. Đoạn “có đầu có cuối”; đường thẳng không dừng.",
-      idea: "Dùng thước để vẽ đoạn/đường thẳng; đường cong vẽ tự do hoặc theo vật mẫu.",
+      why: "Học tên các hình vẽ: điểm, đoạn, đường thẳng, đường cong.",
+      def: "<strong>Điểm</strong> là một chấm. <strong>Đoạn thẳng</strong> có hai đầu. <strong>Đường thẳng</strong> kéo dài mãi hai phía. <strong>Đường cong</strong> không thẳng. Ba điểm <strong>thẳng hàng</strong> khi nằm trên một đường thẳng.",
+      easy: "Đoạn AB có hai đầu A và B. Kéo dài mãi hai phía thì thành đường thẳng.",
+      step: "Trên một đường thẳng, lấy thêm điểm C. A, B, C thẳng hàng.",
+      trap: "Đoạn thẳng có hai đầu. Đường thẳng không có đầu mút.",
+      idea: "Vẽ đoạn và đường thẳng thì dùng thước.",
       warns: ["Gọi nhầm đoạn là đường thẳng.", "Ba điểm của tam giác không thẳng hàng."],
       checks: [
         { q: "Đoạn thẳng có mấy mút?", a: "2." },
@@ -2132,12 +2153,12 @@ function buildLessons() {
     "Nhân là cộng các số hạng bằng nhau.",
     svgArray(2, 4, "Phép nhân"),
     {
-      why: "Nhân giúp viết gọn phép cộng lặp — nền bảng cửu chương.",
-      def: "Phép nhân là gộp các nhóm bằng nhau. 2 + 2 + 2 + 2 = 2 × 4 = 8. Dấu × đọc “nhân”.",
+      why: "Nhân là cộng nhiều lần cùng một số, cho nhanh.",
+      def: "Cùng một số cộng lặp lại thì viết thành phép nhân. 2 + 2 + 2 + 2 = 2 × 4 = 8. Dấu × đọc “nhân”.",
       easy: "5 + 5 = 5 × 2 = 10. 3 + 3 = 3 × 2 = 6.",
       step: "4 hàng, mỗi hàng 2 cái: 4 × 2 = 8.",
-      trap: "2 × 3 khác 2 + 3. Nhân là cộng lặp, không phải cộng hai số khác nhau một lần.",
-      idea: "Vẽ chấm theo hàng/cột rồi đếm — hiểu rồi mới thuộc.",
+      trap: "2 × 3 không phải 2 + 3. Nhân là cộng các số giống nhau.",
+      idea: "Vẽ chấm theo hàng rồi đếm. Hiểu rồi hãy học thuộc.",
       warns: ["Nhầm nhân với cộng.", "Đếm thiếu nhóm."],
       checks: [
         { q: "2+2+2+2 = 2 × ?", a: "4." },
@@ -2260,12 +2281,12 @@ function buildLessons() {
     "Chia là chia đều / tách nhóm bằng nhau; ngược nhân.",
     svgDivide(10, 2, 5),
     {
-      why: "Chia giúp tách đều đồ dùng, kẹo, nhóm bạn…",
-      def: "a : b = c khi b × c = a. Dấu : đọc “chia”.",
-      easy: "8 : 2 = 4 vì 2 × 4 = 8. 10 quả chia 2 đĩa đều: mỗi đĩa 5.",
-      step: "15 : 5 = 3 vì 5 × 3 = 15. 20 : 5 = 4.",
+      why: "Chia đều kẹo, bút, bạn trong nhóm.",
+      def: "Phép chia ngược với phép nhân. 8 : 2 = 4 vì 2 × 4 = 8. Dấu : đọc “chia”.",
+      easy: "10 quả chia 2 đĩa đều: mỗi đĩa 5 quả. 10 : 2 = 5.",
+      step: "15 : 5 = 3 vì 5 × 3 = 15.",
       trap: "Không chia cho 0. 6 : 2 = 3, không phải 4.",
-      idea: "Hỏi: “b nhân mấy bằng a?”",
+      idea: "Hỏi: số kia nhân mấy thì ra số bị chia?",
       warns: ["Nhầm với trừ.", "Chia không đều mà ghi một thương."],
       checks: [
         { q: "8:2=?", a: "4." },
@@ -3357,9 +3378,9 @@ function buildLessons() {
     "10 câu trộn: số đến 100, cộng trừ có nhớ, hình, kg/l, giờ.",
     svgReview("Mini đề HK1"),
     {
-      why: "Làm một đề ngắn giúp con quen kiểm tra định kỳ HK1, không chỉ làm rời từng bài.",
-      def: "Đề gồm 10 câu: số · cộng trừ (20 và 100) · hơn kém · hình phẳng · kg/l · giờ. Làm lần lượt, không cần tính giờ nghiêm.",
-      easy: "Warm-up: 9 + 8 = 17. 34 + 21 = 55 (không nhớ). Đoạn thẳng có 2 mút.",
+      why: "Làm một đề ngắn gồm những bài đã học ở học kì 1.",
+      def: "Có 10 câu. Làm từng câu, không vội. Có cộng trừ, hình, kg, lít, giờ.",
+      easy: "Làm thử: 9 + 8 = 17. 34 + 21 = 55. Đoạn thẳng có 2 đầu.",
       step: "Câu có nhớ: 47 + 28 → nhớ 1. Câu trừ: 70 − 35 → mượn. Đọc kỹ hơn/kém.",
       trap: "Làm vội dễ lệch cột hoặc chọn nhầm cộng/trừ trong lời văn.",
       idea: "Mỗi câu: gạch từ khóa → chọn phép → tính → soát 1 lần.",
@@ -3393,7 +3414,7 @@ function buildLessons() {
     "12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.",
     svgReview("Mini đề cuối năm"),
     {
-      why: "Đề tổng hợp cuối năm giúp phụ huynh và con thấy chỗ còn hổng trước lớp 3.",
+      why: "Đề cuối năm: ôn lại những gì đã học cả năm.",
       def: "12 câu phủ số đến 1000, cộng trừ có nhớ, bảng 2&5, đo lường, hình khối, biểu đồ/khả năng.",
       easy: "2 × 8 = 16. 5 × 5 = 25. 400 + 50 + 6 = 456.",
       step: "Câu 3 chữ số: đặt tính thẳng. Câu chia: kiểm bằng nhân. Câu đo: nhìn đơn vị.",
@@ -3429,7 +3450,7 @@ function buildLessons() {
 
 function emitLesson(L) {
   const { id, num, chapter, title, summary, figSvg, content, exercises } = L;
-  const bodyStr = body({ animFig: figSvg, ...content });
+  const bodyStr = body({ animFig: figSvg, today: summary, ...content });
   let s = `  {\n`;
   s += `    id: ${JSON.stringify(id)},\n`;
   s += `    num: ${num},\n`;
