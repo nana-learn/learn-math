@@ -174,8 +174,8 @@ const AnimationManager = {
       if (!svg) return;
       // unique key so two figures can share a template id without clobbering
       const id = this.animations[baseId] ? `${baseId}__${index}` : baseId;
-      // Grade 2 step groups already form the finished picture. Show that only.
-      if (svg.querySelector('.g2s1')) {
+      // Grade 2 pictures are the finished figure. No step buttons.
+      if (String(baseId).startsWith('g2-') || svg.querySelector('.g2s1')) {
         svg.querySelectorAll('.g2s1, .g2s2, .g2s3, .g2s4').forEach((g) => {
           g.style.opacity = '1';
         });
@@ -2323,21 +2323,11 @@ const AnimationManager = {
     controls.innerHTML = `
       <button type="button" class="btn play" data-action="play" data-target="${id}" title="Phát hình lần lượt">▶</button>
       <button type="button" class="btn pause" data-action="pause" data-target="${id}" title="Tạm dừng">⏸</button>
-      <button type="button" class="btn step" data-action="step" data-target="${id}" title="Bước tiếp">⏭</button>
       <button type="button" class="btn reset" data-action="reset" data-target="${id}" title="Làm lại từ đầu">↺</button>
-      <span class="figure-controls-hint">Phát · Dừng · Bước · Làm lại</span>
-      <span class="figure-step-label" data-step-for="${id}"></span>
+      <span class="figure-controls-hint">Phát · Dừng · Làm lại</span>
     `;
 
     svg.parentElement.appendChild(controls);
-    const label = controls.querySelector('.figure-step-label');
-    const animation = this.animations[id];
-    if (animation) {
-      animation.onStep = (cur, total, cap) => {
-        const shown = Math.min(cur, total);
-        label.textContent = cap || (shown ? `Bước ${shown}` : '');
-      };
-    }
 
     controls.addEventListener('click', (e) => {
       const btn = e.target.closest('button');
@@ -2352,10 +2342,6 @@ const AnimationManager = {
           break;
         case 'pause':
           animation.stop();
-          break;
-        case 'step':
-          animation.stop();
-          animation.playForward();
           break;
         case 'reset':
           animation.reset();
