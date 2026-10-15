@@ -528,6 +528,28 @@ details.check {
 .article.grade-2 .kid-steps li {
   margin: 0.35rem 0;
 }
+.ch-tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.ch-tips li {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.55rem 0.7rem;
+  font-weight: 700;
+}
+.ch-group {
+  margin: 1rem 0 0.2rem;
+  font-size: 1.15rem;
+}
+@media (max-width: 640px) {
+  .ch-tips { grid-template-columns: 1fr; }
+}
 .article.grade-2 .more-examples {
   background: #f7fff4;
   border-left-color: #83c167;

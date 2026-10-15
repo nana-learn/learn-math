@@ -402,9 +402,24 @@ function chapterView(course, chapterId) {
         <p class="actions" style="margin:0.6rem 0 1rem"><a class="btn" href="#/g/${course.id}/lesson/${nxt.id}">Học tiếp: Bài ${nxt.num}</a></p>`;
       })()}
       ${
-        rows
-          ? `<div class="lesson-list">${rows}</div>`
-          : `<p class="note">Chương này chưa có bài học.</p>`
+        ch.tips && ch.tips.length
+          ? `<ul class="ch-tips">${ch.tips.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`
+          : ""
+      }
+      ${
+        ch.groups && ch.groups.length
+          ? ch.groups
+              .map((g) => {
+                const part = items.filter((l) => l.num >= g.from && l.num <= g.to);
+                if (!part.length) return "";
+                return `<h3 class="ch-group">${escapeHtml(g.title)}</h3>
+                ${g.tip ? `<p class="quiz-lead">${escapeHtml(g.tip)}</p>` : ""}
+                <div class="lesson-list">${part.map((l) => lessonLink(course, l, progress)).join("")}</div>`;
+              })
+              .join("")
+          : rows
+            ? `<div class="lesson-list">${rows}</div>`
+            : `<p class="note">Chương này chưa có bài học.</p>`
       }
     </section>`;
 }

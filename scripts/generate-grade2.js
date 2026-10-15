@@ -24,7 +24,17 @@ const chapters = [
   {
     id: 2,
     title: "Phép cộng, phép trừ trong phạm vi 20",
-    intro: "8 bài. Cộng và trừ đến 20. Thêm thì cộng. Bớt thì trừ. Làm từ Bài 7.",
+    intro: "8 bài, làm từ Bài 7. Trước học cộng. Sau học trừ. Số trong bài không quá 20.",
+    tips: [
+      "Thêm, tất cả → cộng",
+      "Bớt, còn lại → trừ",
+      "Nhiều hơn → cộng",
+      "Ít hơn → trừ",
+    ],
+    groups: [
+      { title: "1. Học cộng", tip: "Đủ 10, rồi cộng phần còn.", from: 7, to: 10 },
+      { title: "2. Học trừ", tip: "Hỏi: số này cộng mấy thì ra số kia?", from: 11, to: 14 },
+    ],
   },
   { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
   { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100", intro: "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục." },

@@ -13,7 +13,27 @@ const G2_CHAPTERS = [
   {
     "id": 2,
     "title": "Phép cộng, phép trừ trong phạm vi 20",
-    "intro": "8 bài. Cộng và trừ đến 20. Thêm thì cộng. Bớt thì trừ. Làm từ Bài 7."
+    "intro": "8 bài, làm từ Bài 7. Trước học cộng. Sau học trừ. Số trong bài không quá 20.",
+    "tips": [
+      "Thêm, tất cả → cộng",
+      "Bớt, còn lại → trừ",
+      "Nhiều hơn → cộng",
+      "Ít hơn → trừ"
+    ],
+    "groups": [
+      {
+        "title": "1. Học cộng",
+        "tip": "Đủ 10, rồi cộng phần còn.",
+        "from": 7,
+        "to": 10
+      },
+      {
+        "title": "2. Học trừ",
+        "tip": "Hỏi: số này cộng mấy thì ra số kia?",
+        "from": 11,
+        "to": 14
+      }
+    ]
   },
   {
     "id": 3,
