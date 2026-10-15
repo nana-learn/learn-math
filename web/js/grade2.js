@@ -123,6 +123,26 @@ const G2_CHAPTERS = [
           "9"
         ],
         "correct": 2
+      },
+      {
+        "prompt": "Có 12 bút, cho bạn 4. Còn mấy bút?",
+        "choices": [
+          "8",
+          "12",
+          "16",
+          "4"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Lan có 11 tem. Mai ít hơn Lan 3 tem. Mai có mấy tem?",
+        "choices": [
+          "8",
+          "11",
+          "14",
+          "3"
+        ],
+        "correct": 0
       }
     ]
   },
@@ -582,17 +602,23 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có số hạng và tổng. Trừ có số bị trừ, số trừ và hiệu.</p>
             <figure class="figure" data-animation="g2-b3-sub-parts">
         <svg viewBox="0 0 320 160" role="img" aria-label="Thành phần phép trừ">
-          <rect x="20" y="40" width="70" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <rect x="120" y="40" width="70" height="50" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="55" y="72" font-size="22" text-anchor="middle">13</text>
-          <text x="155" y="72" font-size="22" text-anchor="middle">5</text>
-          <text x="265" y="72" font-size="22" text-anchor="middle">8</text>
-          <text x="55" y="30" font-size="11" text-anchor="middle" fill="#FC6255">số bị trừ</text>
-          <text x="155" y="30" font-size="11" text-anchor="middle" fill="#9A72AC">số trừ</text>
-          <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">hiệu</text>
-          <text x="100" y="72" font-size="20">−</text>
-          <text x="205" y="72" font-size="20">=</text>
+          <g class="g2s1">
+            <rect x="20" y="40" width="70" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="55" y="72" font-size="22" text-anchor="middle">13</text>
+            <text x="55" y="30" font-size="11" text-anchor="middle" fill="#FC6255">số bị trừ</text>
+          </g>
+          <g class="g2s2">
+            <text x="100" y="72" font-size="20">−</text>
+            <rect x="120" y="40" width="70" height="50" fill="none" stroke="#9A72AC" stroke-width="2"/>
+            <text x="155" y="72" font-size="22" text-anchor="middle">5</text>
+            <text x="155" y="30" font-size="11" text-anchor="middle" fill="#9A72AC">số trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="205" y="72" font-size="20">=</text>
+            <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="265" y="72" font-size="22" text-anchor="middle">8</text>
+            <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">hiệu</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 8 + 7 = 15. Đổi thành trừ: 15 − 7 = 8 và 15 − 8 = 7.</p></div>
       <div class="definition">
@@ -965,7 +991,7 @@ const G2_LESSONS = [
     num: 7,
     chapter: 2,
     title: "Phép cộng (qua 10) trong phạm vi 20",
-    summary: "Cộng hai số, ra hơn 10, chưa quá 20.",
+    summary: "8 + 6: đủ 10, rồi cộng phần còn.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b7-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
@@ -989,9 +1015,9 @@ const G2_LESSONS = [
             <text x="160" y="146" font-size="20" text-anchor="middle" fill="#83C167">8 + 6 = 14</text>
           </g>
         </svg>
-              <figcaption>Cộng hai số, ra hơn 10, chưa quá 20.</figcaption>
+              <figcaption>8 + 6: đủ 10, rồi cộng phần còn.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số, ra hơn 10, chưa quá 20.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 8 + 6: đủ 10, rồi cộng phần còn.</p>
             <figure class="figure" data-animation="g2-b7-tenframe">
         <svg viewBox="0 0 320 160" role="img" aria-label="Khung 10: 8 + 6">
           <g class="g2s1" data-caption="Bước 1: Khung 10 — đã có 8">          <rect x="20" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
@@ -1091,7 +1117,7 @@ const G2_LESSONS = [
     num: 8,
     chapter: 2,
     title: "Bảng cộng (qua 10)",
-    summary: "Học thuộc các phép cộng qua 10.",
+    summary: "Thuộc 9 + 2 đến 9 + 9. Đổi chỗ cũng được.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b8-add-table">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng cộng qua 10">
@@ -1115,9 +1141,9 @@ const G2_LESSONS = [
           <text x="266" y="123" font-size="13" text-anchor="middle">8+8=16</text>
           <text x="160" y="152" font-size="12" text-anchor="middle" fill="#888888">Đổi chỗ: 9+6 = 6+9</text>
         </svg>
-              <figcaption>Học thuộc các phép cộng qua 10.</figcaption>
+              <figcaption>Thuộc 9 + 2 đến 9 + 9. Đổi chỗ cũng được.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Học thuộc các phép cộng qua 10.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc 9 + 2 đến 9 + 9. Đổi chỗ cũng được.</p>
             <figure class="figure" data-animation="g2-b8-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
           <g class="g2s1" data-caption="Bước 1: Có 9">
@@ -1202,7 +1228,7 @@ const G2_LESSONS = [
     num: 9,
     chapter: 2,
     title: "Bài toán về thêm, bớt một số đơn vị",
-    summary: "Thêm thì cộng. Bớt thì trừ.",
+    summary: "Thêm, tất cả thì cộng. Bớt, còn lại thì trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b9-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
@@ -1222,21 +1248,29 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
           </g>
         </svg>
-              <figcaption>Thêm thì cộng. Bớt thì trừ.</figcaption>
+              <figcaption>Thêm, tất cả thì cộng. Bớt, còn lại thì trừ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thêm thì cộng. Bớt thì trừ.</p>
-            <figure class="figure" data-animation="g2-b9-compare">
-        <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
-          <g class="g2s1">
-            <rect x="60" y="103.2" width="60" height="36.8" fill="none" stroke="#83C167" stroke-width="2"/>
-            <text x="90" y="155" font-size="13" text-anchor="middle">14</text>
-          </g>
-          <g class="g2s2">
-            <rect x="180" y="109.2" width="60" height="30.799999999999997" fill="none" stroke="#58C4DD" stroke-width="2"/>
-            <text x="210" y="155" font-size="13" text-anchor="middle">9</text>
-          </g>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thêm, tất cả thì cộng. Bớt, còn lại thì trừ.</p>
+            <figure class="figure" data-animation="g2-b9-takeaway">
+        <svg viewBox="0 0 320 160" role="img" aria-label="10 − 3">
+          <g class="g2s1">          <circle cx="112" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="140" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="168" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="196" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+</g>
+          <g class="g2s2">          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="21" y1="33" x2="35" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="56" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="49" y1="33" x2="63" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="84" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="77" y1="33" x2="91" y2="47" stroke="#FC6255" stroke-width="2"/>
+</g>
           <g class="g2s3">
-            <text x="160" y="28" font-size="16" text-anchor="middle" fill="#FC6255">hơn 5</text>
+            <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 3 cái (màu đỏ), còn 7 cái</text>
+            <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">10 − 3 = 7</text>
           </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> An có 10 tem, dán đi 3 tem. Còn 10 − 3 = 7 tem.</p></div>
@@ -1301,7 +1335,7 @@ const G2_LESSONS = [
     num: 10,
     chapter: 2,
     title: "Luyện tập chung",
-    summary: "Ôn cộng trừ qua 10 và bài toán thêm bớt.",
+    summary: "Ôn cộng qua 10 và bài toán thêm, bớt.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b10-ch2-clues">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bốn câu then chốt">
@@ -1326,9 +1360,9 @@ const G2_LESSONS = [
             <text x="234" y="122" font-size="14" text-anchor="middle" fill="#9A72AC">trừ</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng trừ qua 10 và bài toán thêm bớt.</figcaption>
+              <figcaption>Ôn cộng qua 10 và bài toán thêm, bớt.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và bài toán thêm bớt.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng qua 10 và bài toán thêm, bớt.</p>
             <figure class="figure" data-animation="g2-b10-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
           <g class="g2s1" data-caption="Bước 1: Có 7">
@@ -1359,7 +1393,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> 7 + 9 = 16. Có 11 bóng, thêm 6 → 17.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Tìm số hạng: ? + 7 = 16. Lấy 16 − 7 = 9.</p>
+        <p><strong>Thêm một chút.</strong> Số nào cộng 7 được 16? Lấy 16 − 7 = 9.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> 9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.</p>
@@ -1382,7 +1416,7 @@ const G2_LESSONS = [
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>7 + 9 = ? <em>— 16.</em></p>
-        <p>? + 7 = 16? <em>— 9.</em></p>
+        <p>Số nào cộng 7 được 16? <em>— 9.</em></p>
         <p>18 bớt 9? <em>— 9.</em></p>
       </details>
       <div class="example">
@@ -1412,7 +1446,7 @@ const G2_LESSONS = [
     num: 11,
     chapter: 2,
     title: "Phép trừ (qua 10) trong phạm vi 20",
-    summary: "Trừ khi không đủ, số đến 20.",
+    summary: "15 − 7: hỏi 7 cộng mấy bằng 15?",
     body: String.raw`
       <figure class="figure" data-animation="g2-b11-takeaway">
         <svg viewBox="0 0 320 160" role="img" aria-label="15 − 7">
@@ -1445,9 +1479,9 @@ const G2_LESSONS = [
             <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">15 − 7 = 8</text>
           </g>
         </svg>
-              <figcaption>Trừ khi không đủ, số đến 20.</figcaption>
+              <figcaption>15 − 7: hỏi 7 cộng mấy bằng 15?</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Trừ khi không đủ, số đến 20.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 15 − 7: hỏi 7 cộng mấy bằng 15?</p>
             <figure class="figure" data-animation="g2-b11-takeaway">
         <svg viewBox="0 0 320 160" role="img" aria-label="12 − 9">
           <g class="g2s1">          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -1489,7 +1523,7 @@ const G2_LESSONS = [
         <p><strong>Thêm một chút.</strong> 14 − 6. Trừ 4 cho đủ xuống 10, còn trừ 2: 10 − 2 = 8.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Không đổi chỗ 5 − 9 thành 9 − 5. Số trước là số bị trừ.</p>
+        <p><strong>Cẩn thận.</strong> Không đổi 5 − 9 thành 9 − 5. Số đứng trước dấu trừ là số đang có.</p>
       </div>
       <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
           <li><strong>Bước 1.</strong> Viết phép trừ, ví dụ 15 − 7.</li>
@@ -1513,7 +1547,7 @@ const G2_LESSONS = [
         <p>7 cộng mấy bằng 15? <em>— 8.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 + ? = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
+        <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 cộng mấy bằng 17? 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
       </div>
       <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
           <li><strong>Ví dụ 1.</strong> 13 − 5 = ?<br>Đáp án: <strong>8</strong>. 5 + 8 = 13.</li>
@@ -1540,25 +1574,31 @@ const G2_LESSONS = [
     num: 12,
     chapter: 2,
     title: "Bảng trừ (qua 10)",
-    summary: "Học thuộc các phép trừ qua 10.",
+    summary: "Thuộc trừ bằng cách đọc ngược bảng cộng.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b12-sub-parts">
-        <svg viewBox="0 0 320 160" role="img" aria-label="Thành phần phép trừ">
-          <rect x="20" y="40" width="70" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <rect x="120" y="40" width="70" height="50" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="55" y="72" font-size="22" text-anchor="middle">18</text>
-          <text x="155" y="72" font-size="22" text-anchor="middle">9</text>
-          <text x="265" y="72" font-size="22" text-anchor="middle">9</text>
-          <text x="55" y="30" font-size="11" text-anchor="middle" fill="#FC6255">số bị trừ</text>
-          <text x="155" y="30" font-size="11" text-anchor="middle" fill="#9A72AC">số trừ</text>
-          <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">hiệu</text>
-          <text x="100" y="72" font-size="20">−</text>
-          <text x="205" y="72" font-size="20">=</text>
+        <svg viewBox="0 0 320 160" role="img" aria-label="Bớt đi, còn lại">
+          <g class="g2s1">
+            <rect x="20" y="40" width="70" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="55" y="72" font-size="22" text-anchor="middle">18</text>
+            <text x="55" y="30" font-size="11" text-anchor="middle" fill="#FC6255">số đang có</text>
+          </g>
+          <g class="g2s2">
+            <text x="100" y="72" font-size="20">−</text>
+            <rect x="120" y="40" width="70" height="50" fill="none" stroke="#9A72AC" stroke-width="2"/>
+            <text x="155" y="72" font-size="22" text-anchor="middle">9</text>
+            <text x="155" y="30" font-size="11" text-anchor="middle" fill="#9A72AC">bớt</text>
+          </g>
+          <g class="g2s3">
+            <text x="205" y="72" font-size="20">=</text>
+            <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="265" y="72" font-size="22" text-anchor="middle">9</text>
+            <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">còn</text>
+          </g>
         </svg>
-              <figcaption>Học thuộc các phép trừ qua 10.</figcaption>
+              <figcaption>Thuộc trừ bằng cách đọc ngược bảng cộng.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Học thuộc các phép trừ qua 10.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc trừ bằng cách đọc ngược bảng cộng.</p>
             <figure class="figure" data-animation="g2-b12-takeaway">
         <svg viewBox="0 0 320 160" role="img" aria-label="16 − 7">
           <g class="g2s1">          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -1653,7 +1693,7 @@ const G2_LESSONS = [
     num: 13,
     chapter: 2,
     title: "Bài toán về nhiều hơn, ít hơn một số đơn vị",
-    summary: "Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.",
+    summary: "Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b13-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
@@ -1669,9 +1709,9 @@ const G2_LESSONS = [
             <text x="160" y="28" font-size="16" text-anchor="middle" fill="#FC6255">hơn 4</text>
           </g>
         </svg>
-              <figcaption>Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</figcaption>
+              <figcaption>Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ.</p>
             <figure class="figure" data-animation="g2-b13-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
           <g class="g2s1">
@@ -1752,11 +1792,11 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"An ít hơn Bình 4. Biết số của Bình. Tìm số của An thì làm phép nào?","choices":["Cộng","Chia","Nhân","Trừ"],"correct":3,"hint":"Ít hơn số đã biết thì trừ.","explain":"Trừ.","_chapter":2},
       {"type":"mc","prompt":"Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?","choices":["13","10","12","14"],"correct":0,"hint":"Nhiều hơn → cộng.","explain":"13."},
       {"type":"mc","prompt":"Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?","choices":["10","13","14","12"],"correct":1,"hint":"Ít hơn Lan → trừ.","explain":"13."},
-      {"type":"mc","prompt":"Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?","choices":["16","18","17","10"],"correct":2,"hint":"9+8.","explain":"17."},
+      {"type":"mc","prompt":"Nam có 9 nhãn. Hùng nhiều hơn Nam 8 nhãn. Hùng có mấy nhãn?","choices":["16","18","17","10"],"correct":2,"hint":"Nhiều hơn Nam thì cộng. 9 + 8.","explain":"17."},
       {"type":"mc","prompt":"Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?","choices":["19","18","10","20"],"correct":3,"hint":"Cam ít hơn → quýt = 14+6.","explain":"20."},
-      {"type":"mc","prompt":"“Ít hơn số đã biết” dùng phép","choices":["Trừ","Nhân","Chia","Cộng"],"correct":0,"hint":"Bé hơn mốc.","explain":"Trừ.","_chapter":2},
+      {"type":"mc","prompt":"Ít hơn số đã biết thì dùng phép","choices":["Trừ","Nhân","Chia","Cộng"],"correct":0,"hint":"Ít hơn thì trừ.","explain":"Trừ.","_chapter":2},
       {"type":"mc","prompt":"Hoa có 20 nhãn. Mai ít hơn Hoa 6 nhãn. Mai có mấy nhãn?","choices":["15","10","14","13"],"correct":2,"hint":"Ít hơn Hoa thì trừ. 20 − 6.","explain":"14."},
-      {"type":"mc","prompt":"Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?","choices":["19","20","18","10"],"correct":0,"hint":"12+7.","explain":"19."},
+      {"type":"mc","prompt":"Hùng có 12 bút. Nam nhiều hơn Hùng 7 bút. Nam có mấy bút?","choices":["19","20","18","10"],"correct":0,"hint":"Nhiều hơn Hùng thì cộng. 12 + 7.","explain":"19."},
       {"type":"mc","prompt":"An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?","choices":["18","10","20","19"],"correct":3,"hint":"15+4.","explain":"19."},
     ],
   },
@@ -1766,7 +1806,7 @@ const G2_LESSONS = [
     num: 14,
     chapter: 2,
     title: "Luyện tập chung",
-    summary: "Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.",
+    summary: "Ôn cộng, trừ, nhiều hơn và ít hơn.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b14-ch2-clues">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bốn câu then chốt">
@@ -1791,9 +1831,9 @@ const G2_LESSONS = [
             <text x="234" y="122" font-size="14" text-anchor="middle" fill="#9A72AC">trừ</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</figcaption>
+              <figcaption>Ôn cộng, trừ, nhiều hơn và ít hơn.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng, trừ, nhiều hơn và ít hơn.</p>
             <figure class="figure" data-animation="g2-b14-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
           <g class="g2s1">
@@ -1854,7 +1894,7 @@ const G2_LESSONS = [
           <li><strong>Ví dụ 2.</strong> An có 12 kẹo. Bình nhiều hơn An 5 kẹo. Bình có mấy kẹo?<br>Đáp án: <strong>17</strong>. Nhiều hơn thì cộng. 12 + 5.</li>
           <li><strong>Ví dụ 3.</strong> 20 − 9 = ?<br>Đáp án: <strong>11</strong>. Trừ qua 10.</li>
         </ol></div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 20: bảng cộng/trừ + đọc từ khóa lời văn.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Số không quá 20. Đọc từ thêm, bớt, nhiều hơn, ít hơn.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"9 + 8 − 6 = ?","choices":["11","10","9","12"],"correct":0,"hint":"17 − 6.","explain":"11."},

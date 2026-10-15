@@ -441,7 +441,7 @@ function chapterView(course, chapterId) {
         ch.checks && ch.checks.length
           ? `<form id="ch-check" class="ch-check">
               <h3 class="ch-group">Thử 3 câu</h3>
-              <p class="quiz-lead">Nhìn cặp đủ 10, rồi chọn.</p>
+              <p class="quiz-lead">Nhìn cặp đủ 10. Đọc từ trong câu, rồi chọn.</p>
               ${ch.checks
                 .map((q, i) => {
                   const choices = q.choices

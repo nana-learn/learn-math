@@ -45,6 +45,8 @@ const chapters = [
       { prompt: "8 cần thêm mấy nữa được 10?", choices: ["1", "2", "3", "8"], correct: 1 },
       { prompt: "8 + 6 = ?", choices: ["12", "13", "14", "16"], correct: 2 },
       { prompt: "15 − 7 = ?", choices: ["6", "7", "8", "9"], correct: 2 },
+      { prompt: "Có 12 bút, cho bạn 4. Còn mấy bút?", choices: ["8", "12", "16", "4"], correct: 0 },
+      { prompt: "Lan có 11 tem. Mai ít hơn Lan 3 tem. Mai có mấy tem?", choices: ["8", "11", "14", "3"], correct: 0 },
     ],
   },
   { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
@@ -432,21 +434,30 @@ function svgAddParts(a, b, sum) {
   );
 }
 
-function svgSubParts(a, b, diff) {
+function svgSubParts(a, b, diff, kid) {
+  const left = kid ? "số đang có" : "số bị trừ";
+  const mid = kid ? "bớt" : "số trừ";
+  const right = kid ? "còn" : "hiệu";
   return fig(
     "g2-sub-parts",
-    "Thành phần phép trừ",
-    `          <rect x="20" y="40" width="70" height="50" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <rect x="120" y="40" width="70" height="50" fill="none" stroke="${C.p}" stroke-width="2"/>
-          <rect x="230" y="40" width="70" height="50" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="55" y="72" font-size="22" text-anchor="middle">${a}</text>
-          <text x="155" y="72" font-size="22" text-anchor="middle">${b}</text>
-          <text x="265" y="72" font-size="22" text-anchor="middle">${diff}</text>
-          <text x="55" y="30" font-size="11" text-anchor="middle" fill="${C.r}">số bị trừ</text>
-          <text x="155" y="30" font-size="11" text-anchor="middle" fill="${C.p}">số trừ</text>
-          <text x="265" y="30" font-size="11" text-anchor="middle" fill="${C.b}">hiệu</text>
-          <text x="100" y="72" font-size="20">−</text>
-          <text x="205" y="72" font-size="20">=</text>`
+    kid ? "Bớt đi, còn lại" : "Thành phần phép trừ",
+    `          <g class="g2s1">
+            <rect x="20" y="40" width="70" height="50" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="55" y="72" font-size="22" text-anchor="middle">${a}</text>
+            <text x="55" y="30" font-size="11" text-anchor="middle" fill="${C.r}">${left}</text>
+          </g>
+          <g class="g2s2">
+            <text x="100" y="72" font-size="20">−</text>
+            <rect x="120" y="40" width="70" height="50" fill="none" stroke="${C.p}" stroke-width="2"/>
+            <text x="155" y="72" font-size="22" text-anchor="middle">${b}</text>
+            <text x="155" y="30" font-size="11" text-anchor="middle" fill="${C.p}">${mid}</text>
+          </g>
+          <g class="g2s3">
+            <text x="205" y="72" font-size="20">=</text>
+            <rect x="230" y="40" width="70" height="50" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="265" y="72" font-size="22" text-anchor="middle">${diff}</text>
+            <text x="265" y="30" font-size="11" text-anchor="middle" fill="${C.b}">${right}</text>
+          </g>`
   );
 }
 
@@ -1671,7 +1682,7 @@ function buildLessons() {
     7,
     2,
     "Phép cộng (qua 10) trong phạm vi 20",
-    "Cộng hai số, ra hơn 10, chưa quá 20.",
+    "8 + 6: đủ 10, rồi cộng phần còn.",
     svgMakeTen(8, 2, 4, 14),
     {
       why: "Cộng hai số, khi cộng ra hơn 10 (đến 20).",
@@ -1714,7 +1725,7 @@ function buildLessons() {
     8,
     2,
     "Bảng cộng (qua 10)",
-    "Học thuộc các phép cộng qua 10.",
+    "Thuộc 9 + 2 đến 9 + 9. Đổi chỗ cũng được.",
     svgAddTable(),
     {
       why: "Thuộc bảng cộng để tính nhanh, không phải đếm ngón mỗi lần.",
@@ -1756,7 +1767,7 @@ function buildLessons() {
     9,
     2,
     "Bài toán về thêm, bớt một số đơn vị",
-    "Thêm thì cộng. Bớt thì trừ.",
+    "Thêm, tất cả thì cộng. Bớt, còn lại thì trừ.",
     svgKeywords(),
     {
       why: "Bài toán có chuyện: thêm kẹo, bớt bút, còn lại bao nhiêu.",
@@ -1778,7 +1789,7 @@ function buildLessons() {
       ],
       slow: "Có 11 bóng bay, thêm 6. Từ khóa “thêm” → cộng. 11 + 6 = 17 bóng bay.",
       memory: "Thêm → cộng. Bớt / còn lại → trừ.",
-      extraHtml: svgCompareBars(14, 9) +
+      extraHtml: svgTakeAway(10, 3) +
         `<div class="example"><p><strong>Thêm ví dụ.</strong> An có 10 tem, dán đi 3 tem. Còn 10 − 3 = 7 tem.</p></div>`,
     },
     [
@@ -1797,13 +1808,13 @@ function buildLessons() {
     10,
     2,
     "Luyện tập chung",
-    "Ôn cộng trừ qua 10 và bài toán thêm bớt.",
+    "Ôn cộng qua 10 và bài toán thêm, bớt.",
     svgCh2Review(),
     {
       why: "Ôn cộng qua 10 và bài toán thêm/bớt trước khi học trừ qua 10.",
       def: "Nhẩm cộng qua 10. Đọc từ khóa thêm/bớt. Nhiều phép thì làm từ trái sang phải.",
       easy: "7 + 9 = 16. Có 11 bóng, thêm 6 → 17.",
-      step: "Tìm số hạng: □ + 7 = 16. Lấy 16 − 7 = 9.",
+      step: "Số nào cộng 7 được 16? Lấy 16 − 7 = 9.",
       trap: "9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.",
       idea: "Nhiều dấu thì làm từ trái sang phải.",
       how: [
@@ -1814,7 +1825,7 @@ function buildLessons() {
       warns: ["Sai thứ tự khi có hai dấu.", "Nhầm bảng cộng."],
       checks: [
         { q: "7 + 9 = ?", a: "16." },
-        { q: "□ + 7 = 16?", a: "9." },
+        { q: "Số nào cộng 7 được 16?", a: "9." },
         { q: "18 bớt 9?", a: "9." },
       ],
       slow: "18 bớt 9. 9 + 9 = 18 nên 18 − 9 = 9.",
@@ -1837,7 +1848,7 @@ function buildLessons() {
     11,
     2,
     "Phép trừ (qua 10) trong phạm vi 20",
-    "Trừ khi không đủ, số đến 20.",
+    "15 − 7: hỏi 7 cộng mấy bằng 15?",
     svgTakeAway(15, 7),
     {
       why: "Trừ khi không đủ (qua 10), số trong phạm vi 20.",
@@ -1845,7 +1856,7 @@ function buildLessons() {
 
       easy: "15 − 7. Hỏi: 7 cộng mấy bằng 15? 7 + 8 = 15 nên còn 8.",
       step: "14 − 6. Trừ 4 cho đủ xuống 10, còn trừ 2: 10 − 2 = 8.",
-      trap: "Không đổi chỗ 5 − 9 thành 9 − 5. Số trước là số bị trừ.",
+      trap: "Không đổi 5 − 9 thành 9 − 5. Số đứng trước dấu trừ là số đang có.",
       idea: "Hỏi ngược: 7 cộng mấy thì được 15?",
       how: [
         "Viết phép trừ, ví dụ 15 − 7.",
@@ -1858,7 +1869,7 @@ function buildLessons() {
         { q: "16 − 9 = ?", a: "7." },
         { q: "7 cộng mấy bằng 15?", a: "8." },
       ],
-      slow: "17 − 9. Hỏi 9 + □ = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.",
+      slow: "17 − 9. Hỏi 9 cộng mấy bằng 17? 9 + 8 = 17. Vậy 17 − 9 = 8.",
       memory: "Trừ qua 10: nghĩ phép cộng ngược.",
       extraHtml: svgTakeAway(12, 9) +
         `<div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. Hỏi: 9 cộng mấy bằng 12? 9 + 3 = 12. Còn 3 kẹo.</p></div>`,
@@ -1879,8 +1890,8 @@ function buildLessons() {
     12,
     2,
     "Bảng trừ (qua 10)",
-    "Học thuộc các phép trừ qua 10.",
-    svgSubParts(18, 9, 9),
+    "Thuộc trừ bằng cách đọc ngược bảng cộng.",
+    svgSubParts(18, 9, 9, true),
     {
       why: "Thuộc bảng trừ: từ bảng cộng viết ngược.",
       def: "Nếu 9 + 7 = 16 thì 16 − 9 = 7 và 16 − 7 = 9.",
@@ -1920,7 +1931,7 @@ function buildLessons() {
     13,
     2,
     "Bài toán về nhiều hơn, ít hơn một số đơn vị",
-    "Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.",
+    "Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ.",
     svgCompareBars(15, 11),
     {
       why: "Bài toán nhiều hơn / ít hơn: đọc rõ ai nhiều, ai ít.",
@@ -1949,11 +1960,11 @@ function buildLessons() {
     [
       exNum("Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?", 13, "Nhiều hơn → cộng.", "13."),
       exNum("Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?", 13, "Ít hơn Lan → trừ.", "13."),
-      exNum("Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?", 17, "9+8.", "17."),
+      exNum("Nam có 9 nhãn. Hùng nhiều hơn Nam 8 nhãn. Hùng có mấy nhãn?", 17, "Nhiều hơn Nam thì cộng. 9 + 8.", "17."),
       exNum("Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?", 20, "Cam ít hơn → quýt = 14+6.", "20."),
-      exMC("“Ít hơn mốc” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Bé hơn mốc.", "Trừ."),
+      exMC("Ít hơn số đã biết thì dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Ít hơn thì trừ.", "Trừ."),
       exNum("Hoa có 20 nhãn. Mai ít hơn Hoa 6 nhãn. Mai có mấy nhãn?", 14, "Ít hơn Hoa thì trừ. 20 − 6.", "14."),
-      exNum("Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?", 19, "12+7.", "19."),
+      exNum("Hùng có 12 bút. Nam nhiều hơn Hùng 7 bút. Nam có mấy bút?", 19, "Nhiều hơn Hùng thì cộng. 12 + 7.", "19."),
       exNum("An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?", 19, "15+4.", "19."),
     ]
   );
@@ -1962,7 +1973,7 @@ function buildLessons() {
     14,
     2,
     "Luyện tập chung",
-    "Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.",
+    "Ôn cộng, trừ, nhiều hơn và ít hơn.",
     svgCh2Review(),
     {
       why: "Ôn cả chủ đề 2: cộng trừ qua 10 và lời văn.",
@@ -1983,7 +1994,7 @@ function buildLessons() {
         { q: "8 + 7 = ?", a: "15." },
       ],
       slow: "20 − 9 = 11. Kiểm: 11 + 9 = 20.",
-      memory: "Phạm vi 20: bảng cộng/trừ + đọc từ khóa lời văn.",
+      memory: "Số không quá 20. Đọc từ thêm, bớt, nhiều hơn, ít hơn.",
       extraHtml: svgKeywords(),
     },
     [
