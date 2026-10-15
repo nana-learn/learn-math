@@ -724,13 +724,17 @@ function svgCylinderSphere() {
   return fig(
     "g2-solid",
     "Khối trụ và khối cầu",
-    `          <ellipse cx="90" cy="40" rx="40" ry="12" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <line x1="50" y1="40" x2="50" y2="110" stroke="${C.g}" stroke-width="2"/>
-          <line x1="130" y1="40" x2="130" y2="110" stroke="${C.g}" stroke-width="2"/>
-          <ellipse cx="90" cy="110" rx="40" ry="12" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="90" y="145" font-size="12" text-anchor="middle" fill="${C.g}">khối trụ</text>
-          <circle cx="230" cy="80" r="45" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="230" y="145" font-size="12" text-anchor="middle" fill="${C.b}">khối cầu</text>`
+    `          <g class="g2s1">
+            <ellipse cx="90" cy="40" rx="40" ry="12" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <line x1="50" y1="40" x2="50" y2="110" stroke="${C.g}" stroke-width="2"/>
+            <line x1="130" y1="40" x2="130" y2="110" stroke="${C.g}" stroke-width="2"/>
+            <ellipse cx="90" cy="110" rx="40" ry="12" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="90" y="145" font-size="12" text-anchor="middle" fill="${C.g}">khối trụ</text>
+          </g>
+          <g class="g2s2">
+            <circle cx="230" cy="80" r="45" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="230" y="145" font-size="12" text-anchor="middle" fill="${C.b}">khối cầu</text>
+          </g>`
   );
 }
 
@@ -738,16 +742,24 @@ function svgPlace3(h, t, o) {
   return fig(
     "g2-place3",
     "Số có ba chữ số",
-    `          <rect x="20" y="35" width="85" height="70" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <rect x="115" y="35" width="85" height="70" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <rect x="210" y="35" width="85" height="70" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <text x="62" y="28" font-size="11" text-anchor="middle">Trăm</text>
-          <text x="157" y="28" font-size="11" text-anchor="middle">Chục</text>
-          <text x="252" y="28" font-size="11" text-anchor="middle">Đơn vị</text>
-          <text x="62" y="80" font-size="32" text-anchor="middle">${h}</text>
-          <text x="157" y="80" font-size="32" text-anchor="middle">${t}</text>
-          <text x="252" y="80" font-size="32" text-anchor="middle">${o}</text>
-          <text x="160" y="140" font-size="14" text-anchor="middle">${h}${t}${o} = ${h}00 + ${t}0 + ${o}</text>`
+    `          <g class="g2s1">
+            <rect x="20" y="35" width="85" height="70" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="62" y="28" font-size="11" text-anchor="middle">Trăm</text>
+            <text x="62" y="80" font-size="32" text-anchor="middle">${h}</text>
+          </g>
+          <g class="g2s2">
+            <rect x="115" y="35" width="85" height="70" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="157" y="28" font-size="11" text-anchor="middle">Chục</text>
+            <text x="157" y="80" font-size="32" text-anchor="middle">${t}</text>
+          </g>
+          <g class="g2s3">
+            <rect x="210" y="35" width="85" height="70" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="252" y="28" font-size="11" text-anchor="middle">Đơn vị</text>
+            <text x="252" y="80" font-size="32" text-anchor="middle">${o}</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="140" font-size="14" text-anchor="middle">${h}${t}${o} = ${h}00 + ${t}0 + ${o}</text>
+          </g>`
   );
 }
 
@@ -784,12 +796,16 @@ function svgKgL() {
   return fig(
     "g2-kgl",
     "Ki-lô-gam và lít",
-    `          <rect x="40" y="50" width="90" height="60" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="85" y="85" font-size="18" text-anchor="middle">1 kg</text>
-          <text x="85" y="140" font-size="12" text-anchor="middle" fill="${C.g}">khối lượng</text>
-          <path d="M200,40 L240,40 L255,110 L185,110 Z" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
-          <text x="220" y="140" font-size="12" text-anchor="middle" fill="${C.b}">dung tích</text>`
+    `          <g class="g2s1">
+            <rect x="40" y="50" width="90" height="60" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="85" y="85" font-size="18" text-anchor="middle">1 kg</text>
+            <text x="85" y="140" font-size="12" text-anchor="middle" fill="${C.g}">khối lượng</text>
+          </g>
+          <g class="g2s2">
+            <path d="M200,40 L240,40 L255,110 L185,110 Z" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="220" y="85" font-size="16" text-anchor="middle">1 l</text>
+            <text x="220" y="140" font-size="12" text-anchor="middle" fill="${C.b}">dung tích</text>
+          </g>`
   );
 }
 
@@ -797,20 +813,26 @@ function svgChart() {
   return fig(
     "g2-chart",
     "Biểu đồ tranh",
-    `          <text x="40" y="30" font-size="12">Xe đạp</text>
-          <circle cx="100" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <circle cx="125" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <circle cx="150" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="180" y="30" font-size="12">= 3</text>
-          <text x="40" y="70" font-size="12">Xe máy</text>
-          <circle cx="100" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <circle cx="125" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <circle cx="150" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <circle cx="175" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <circle cx="200" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="230" y="70" font-size="12">= 5</text>
-          <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
-          <text x="160" y="145" font-size="13" text-anchor="middle" fill="${C.r}">Xe máy nhiều hơn 2 xe</text>`
+    `          <g class="g2s1">
+            <text x="40" y="30" font-size="12">Xe đạp</text>
+            <circle cx="100" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <circle cx="125" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <circle cx="150" cy="25" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="180" y="30" font-size="12">= 3</text>
+          </g>
+          <g class="g2s2">
+            <text x="40" y="70" font-size="12">Xe máy</text>
+            <circle cx="100" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <circle cx="125" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <circle cx="150" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <circle cx="175" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <circle cx="200" cy="65" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="230" y="70" font-size="12">= 5</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
+            <text x="160" y="145" font-size="13" text-anchor="middle" fill="${C.r}">Xe máy nhiều hơn 2 xe</text>
+          </g>`
   );
 }
 
@@ -818,18 +840,24 @@ function svgChance() {
   return fig(
     "g2-chance",
     "Chắc chắn – có thể – không thể",
-    `          <rect x="15" y="30" width="90" height="80" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="60" y="55" font-size="11" text-anchor="middle" fill="${C.g}">Chắc chắn</text>
-          <text x="60" y="80" font-size="10" text-anchor="middle">toàn bi đỏ</text>
-          <text x="60" y="98" font-size="10" text-anchor="middle">→ bốc đỏ</text>
-          <rect x="115" y="30" width="90" height="80" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="160" y="55" font-size="11" text-anchor="middle" fill="${C.b}">Có thể</text>
-          <text x="160" y="80" font-size="10" text-anchor="middle">đỏ và xanh</text>
-          <text x="160" y="98" font-size="10" text-anchor="middle">→ bốc đỏ?</text>
-          <rect x="215" y="30" width="90" height="80" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <text x="260" y="55" font-size="11" text-anchor="middle" fill="${C.r}">Không thể</text>
-          <text x="260" y="80" font-size="10" text-anchor="middle">không có vàng</text>
-          <text x="260" y="98" font-size="10" text-anchor="middle">→ bốc vàng</text>`
+    `          <g class="g2s1">
+            <rect x="15" y="30" width="90" height="80" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="60" y="55" font-size="11" text-anchor="middle" fill="${C.g}">Chắc chắn</text>
+            <text x="60" y="80" font-size="10" text-anchor="middle">toàn bi đỏ</text>
+            <text x="60" y="98" font-size="10" text-anchor="middle">→ bốc đỏ</text>
+          </g>
+          <g class="g2s2">
+            <rect x="115" y="30" width="90" height="80" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="160" y="55" font-size="11" text-anchor="middle" fill="${C.b}">Có thể</text>
+            <text x="160" y="80" font-size="10" text-anchor="middle">đỏ và xanh</text>
+            <text x="160" y="98" font-size="10" text-anchor="middle">→ bốc đỏ?</text>
+          </g>
+          <g class="g2s3">
+            <rect x="215" y="30" width="90" height="80" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="260" y="55" font-size="11" text-anchor="middle" fill="${C.r}">Không thể</text>
+            <text x="260" y="80" font-size="10" text-anchor="middle">không có vàng</text>
+            <text x="260" y="98" font-size="10" text-anchor="middle">→ bốc vàng</text>
+          </g>`
   );
 }
 

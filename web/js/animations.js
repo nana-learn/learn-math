@@ -174,13 +174,8 @@ const AnimationManager = {
       if (!svg) return;
       // unique key so two figures can share a template id without clobbering
       const id = this.animations[baseId] ? `${baseId}__${index}` : baseId;
-      // Grade 2 pictures are the finished figure. No step buttons.
-      if (String(baseId).startsWith('g2-') || svg.querySelector('.g2s1')) {
-        svg.querySelectorAll('.g2s1, .g2s2, .g2s3, .g2s4').forEach((g) => {
-          g.style.opacity = '1';
-        });
-        return;
-      }
+      // Grade 2: no step buttons. app.js plays the picture automatically.
+      if (String(baseId).startsWith('g2-')) return;
       const config = this.getAnimationConfig(baseId);
       if (config) {
         this.animations[id] = new VisualAnimation(svg, config);

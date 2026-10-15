@@ -523,6 +523,26 @@ function gradeQuiz(courseId, id) {
   markLesson(courseId, id, score, lesson.exercises.length);
 }
 
+function playGrade2Figures() {
+  document.querySelectorAll(".figure-controls").forEach((el) => {
+    const fig = el.closest(".figure");
+    const id = fig && fig.getAttribute("data-animation");
+    if (id && id.startsWith("g2-")) el.remove();
+  });
+  document.querySelectorAll('.figure[data-animation^="g2-"] svg').forEach((svg) => {
+    const grouped = svg.querySelector(":scope > .g2s1");
+    const parts = grouped
+      ? [...svg.querySelectorAll(":scope > .g2s1, :scope > .g2s2, :scope > .g2s3, :scope > .g2s4")]
+      : [...svg.children];
+    const gap = parts.length > 6 ? 0.16 : 0.42;
+    parts.forEach((el, i) => {
+      el.style.animation = "none";
+      void el.offsetWidth;
+      el.style.animation = `g2in 0.45s ease ${i * gap}s both`;
+    });
+  });
+}
+
 function escapeHtml(s) {
   return String(s)
     .replaceAll("&", "&amp;")
@@ -581,15 +601,7 @@ function render() {
   if (typeof AnimationManager !== "undefined" && AnimationManager.init) {
     AnimationManager.init();
   }
-  // Grade 2: finished pictures only. Drop any step buttons the animator added.
-  document.querySelectorAll(".figure-controls").forEach((el) => {
-    const fig = el.closest(".figure");
-    const id = fig && fig.getAttribute("data-animation");
-    if (id && id.startsWith("g2-")) el.remove();
-  });
-  document.querySelectorAll(".g2s1, .g2s2, .g2s3, .g2s4").forEach((g) => {
-    g.style.opacity = "1";
-  });
+  playGrade2Figures();
 
   const quiz = document.getElementById("quiz-form");
   if (quiz && lessonMatch) {
