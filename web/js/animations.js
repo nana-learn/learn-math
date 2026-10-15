@@ -71,9 +71,19 @@ class VisualAnimation {
   }
 
   playForward() {
-    if (this.currentStep >= this.steps.length) return;
-    this.playStep(this.currentStep);
-    this.currentStep++;
+    while (this.currentStep < this.steps.length) {
+      const idx = this.currentStep;
+      const step = this.steps[idx];
+      const els = this.svg.querySelectorAll(step.selector);
+      this.currentStep++;
+      if (els.length) {
+        this.playStep(idx);
+        if (this.onStep) this.onStep(this.currentStep, this.steps.length);
+        return true;
+      }
+    }
+    if (this.onStep) this.onStep(this.currentStep, this.steps.length);
+    return false;
   }
 
   playBackward() {
@@ -94,14 +104,15 @@ class VisualAnimation {
       this.reset();
     }
     this.isPlaying = true;
-    this.playForward(); // first step immediately (do not wait 1s)
+    this.playForward(); // first step immediately
     this.timer = setInterval(() => {
       if (this.currentStep < this.steps.length) {
-        this.playForward();
+        const moved = this.playForward();
+        if (!moved) this.stop();
       } else {
         this.stop();
       }
-    }, 800);
+    }, 700);
   }
 
   stop() {
@@ -128,6 +139,7 @@ class VisualAnimation {
     });
     // Re-apply hidden / opacity:0 so ▶ can play again
     this.init();
+    if (this.onStep) this.onStep(0, this.steps.length);
   }
 
   goToStep(index) {
@@ -159,7 +171,10 @@ const AnimationManager = {
       if (!svg) return;
       // unique key so two figures can share a template id without clobbering
       const id = this.animations[baseId] ? `${baseId}__${index}` : baseId;
-      const config = this.getAnimationConfig(baseId);
+      let config = this.getAnimationConfig(baseId);
+      if (svg.querySelector('.g2s1')) {
+        config = this.g2ClassSteps();
+      }
       if (config) {
         this.animations[id] = new VisualAnimation(svg, config);
         this.attachControls(svg, id);
@@ -167,6 +182,17 @@ const AnimationManager = {
     });
   },
   
+  g2ClassSteps() {
+    return {
+      steps: [1, 2, 3, 4].map((i) => ({
+        selector: `.g2s${i}`,
+        initialState: 'opacity:0',
+        animate: 'fade-in',
+        duration: 0.45,
+      })),
+    };
+  },
+
   getAnimationConfig(id) {
     const configs = {
       // c4-b11: Tỉ số lượng giác của góc nhọn
@@ -2293,9 +2319,18 @@ const AnimationManager = {
       <button type="button" class="btn step" data-action="step" data-target="${id}" title="Bước tiếp">⏭</button>
       <button type="button" class="btn reset" data-action="reset" data-target="${id}" title="Làm lại từ đầu">↺</button>
       <span class="figure-controls-hint">Phát · Dừng · Bước · Làm lại</span>
+      <span class="figure-step-label" data-step-for="${id}"></span>
     `;
 
     svg.parentElement.appendChild(controls);
+    const label = controls.querySelector('.figure-step-label');
+    const animation = this.animations[id];
+    if (animation) {
+      animation.onStep = (cur, total) => {
+        const shown = Math.min(cur, total);
+        label.textContent = shown ? `Bước ${shown}` : '';
+      };
+    }
 
     controls.addEventListener('click', (e) => {
       const btn = e.target.closest('button');

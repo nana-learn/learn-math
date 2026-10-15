@@ -323,6 +323,13 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
   align-self: center;
   margin-left: 0.35rem;
 }
+.figure-step-label {
+  color: #83c167;
+  font-size: 0.8rem;
+  font-weight: 700;
+  align-self: center;
+  min-width: 3.5rem;
+}
 
 .panels {
   display: flex;

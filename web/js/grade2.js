@@ -158,20 +158,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b1-place">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cấu tạo số 47">
-          <rect x="30" y="30" width="100" height="90" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="160" y="30" width="100" height="90" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="80" y="24" font-size="12" text-anchor="middle" fill="#83C167">Hàng chục</text>
-          <text x="210" y="24" font-size="12" text-anchor="middle" fill="#58C4DD">Hàng đơn vị</text>
-          <text x="80" y="85" font-size="36" text-anchor="middle" fill="#333330">4</text>
-          <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">7</text>
-          <text x="160" y="150" font-size="14" text-anchor="middle">47 = 4 chục + 7 đơn vị</text>
+          <g class="g2s1">
+            <rect x="30" y="30" width="100" height="90" fill="none" stroke="#83C167" stroke-width="2"/>
+            <rect x="160" y="30" width="100" height="90" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="80" y="24" font-size="12" text-anchor="middle" fill="#83C167">Hàng chục</text>
+            <text x="210" y="24" font-size="12" text-anchor="middle" fill="#58C4DD">Hàng đơn vị</text>
+          </g>
+          <g class="g2s2">
+            <text x="80" y="85" font-size="36" text-anchor="middle" fill="#333330">4</text>
+            <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">7</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="150" font-size="14" text-anchor="middle">47 = 4 chục + 7 đơn vị</text>
+          </g>
         </svg>
               <figcaption>Đếm, đọc, viết, so sánh số trong phạm vi 100.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đếm, đọc, viết, so sánh số trong phạm vi 100.</p>
             <figure class="figure" data-animation="g2-b1-bundles">
         <svg viewBox="0 0 320 160" role="img" aria-label="3 chục và 5 đơn vị">
-          <rect x="22" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
+          <g class="g2s1">          <rect x="22" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
           <text x="36" y="68" font-size="11" text-anchor="middle" fill="#83C167">10</text>
           <rect x="64" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
           <text x="78" y="68" font-size="11" text-anchor="middle" fill="#83C167">10</text>
@@ -182,13 +188,21 @@ const G2_LESSONS = [
           <circle cx="196" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <circle cx="214" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <circle cx="232" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="160" y="120" font-size="13" text-anchor="middle">3 bó que (mỗi bó 10) và 5 que rời</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#FC6255">3 chục + 5 = 35</text>
+</g>
+          <g class="g2s2">
+            <text x="160" y="120" font-size="13" text-anchor="middle">3 bó que (mỗi bó 10) và 5 que rời</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="#FC6255">3 chục + 5 = 35</text>
+          </g>
         </svg>
       </figure>      <figure class="figure" data-animation="g2-b1-tens-line">
         <svg viewBox="0 0 320 160" role="img" aria-label="Các số tròn chục đến 100">
-          <line x1="14" y1="78" x2="306" y2="78" stroke="#333330" stroke-width="2"/>
-          <polygon points="306,78 296,72 296,84" fill="#333330"/>
+          <g class="g2s1">
+            <line x1="14" y1="78" x2="306" y2="78" stroke="#333330" stroke-width="2"/>
+            <polygon points="306,78 296,72 296,84" fill="#333330"/>
+          </g>
+          <g class="g2s2">
           <line x1="18" y1="55" x2="18" y2="78" stroke="#333330" stroke-width="2"/>
           <text x="18" y="118" font-size="11" text-anchor="middle">0</text>
           <line x1="46" y1="62" x2="46" y2="78" stroke="#333330" stroke-width="2"/>
@@ -211,19 +225,28 @@ const G2_LESSONS = [
           <text x="270" y="102" font-size="11" text-anchor="middle">90</text>
           <line x1="298" y1="55" x2="298" y2="78" stroke="#333330" stroke-width="2"/>
           <text x="298" y="118" font-size="11" text-anchor="middle">100</text>
-          <text x="160" y="148" font-size="12" text-anchor="middle" fill="#83C167">Mỗi vạch lớn thêm 10 (một chục)</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="148" font-size="12" text-anchor="middle" fill="#83C167">Mỗi vạch lớn thêm 10 (một chục)</text>
+          </g>
         </svg>
       </figure>      <figure class="figure" data-animation="g2-b1-flip16">
         <svg viewBox="0 0 320 160" role="img" aria-label="16 khác 61">
-          <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
-          <text x="80" y="80" font-size="12" text-anchor="middle" fill="#83C167">1 chục 6 đơn vị</text>
-          <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
-          <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
-          <text x="240" y="80" font-size="12" text-anchor="middle" fill="#FC6255">6 chục 1 đơn vị</text>
-          <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
-          <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>
+          <g class="g2s1">
+            <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
+            <text x="80" y="80" font-size="12" text-anchor="middle" fill="#83C167">1 chục 6 đơn vị</text>
+            <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
+            <text x="240" y="80" font-size="12" text-anchor="middle" fill="#FC6255">6 chục 1 đơn vị</text>
+            <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 70 = 7 chục + 0 đơn vị. Chữ 0 giữ chỗ, không được bỏ. 4 chục = 40. 10 chục = 100.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> An có 24 viên bi, Bình có 42 viên. Hàng chục: 2 nhỏ hơn 4 nên An có ít hơn. 24 nhỏ hơn 42.</p></div>
       <div class="definition">
@@ -291,10 +314,13 @@ const G2_LESSONS = [
     title: "Tia số. Số liền trước, số liền sau",
     summary: "Đặt số trên tia số; tìm số liền trước và liền sau.",
     body: String.raw`
-      <figure class="figure" data-animation="g2-b2-b25-line">
+      <figure class="figure" data-animation="g2-b2-num-line">
         <svg viewBox="0 0 320 160" role="img" aria-label="Tia số">
-          <line x1="20" y1="80" x2="300" y2="80" stroke="#333330" stroke-width="2"/>
-          <polygon points="300,80 288,74 288,86" fill="#333330"/>
+          <g class="g2s1">
+            <line x1="20" y1="80" x2="300" y2="80" stroke="#333330" stroke-width="2"/>
+            <polygon points="300,80 288,74 288,86" fill="#333330"/>
+          </g>
+          <g class="g2s2">
           <line x1="40" y1="70" x2="40" y2="90" stroke="#333330" stroke-width="2"/>
           <text x="40" y="112" font-size="13" text-anchor="middle" fill="#333330">23</text>
           <line x1="88" y1="70" x2="88" y2="90" stroke="#333330" stroke-width="2"/>
@@ -305,27 +331,38 @@ const G2_LESSONS = [
           <text x="184" y="112" font-size="13" text-anchor="middle" fill="#333330">26</text>
           <line x1="232" y1="70" x2="232" y2="90" stroke="#333330" stroke-width="2"/>
           <text x="232" y="112" font-size="13" text-anchor="middle" fill="#333330">27</text>
-          <circle cx="136" cy="80" r="5" fill="#FC6255"/>
-          <text x="136" y="50" font-size="12" text-anchor="middle" fill="#FC6255">đang xét</text>
+          </g>
+          <g class="g2s3">
+            <circle cx="136" cy="80" r="5" fill="#FC6255"/>
+            <text x="136" y="50" font-size="12" text-anchor="middle" fill="#FC6255">đang xét</text>
+          </g>
         </svg>
               <figcaption>Đặt số trên tia số; tìm số liền trước và liền sau.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đặt số trên tia số; tìm số liền trước và liền sau.</p>
             <figure class="figure" data-animation="g2-b2-hop-line">
         <svg viewBox="0 0 320 160" role="img" aria-label="Liền trước và liền sau">
-          <line x1="20" y1="70" x2="300" y2="70" stroke="#333330" stroke-width="2"/>
-          <polygon points="300,70 290,64 290,76" fill="#333330"/>
-          <circle cx="80" cy="70" r="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <circle cx="160" cy="70" r="10" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <circle cx="240" cy="70" r="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="80" y="50" font-size="14" text-anchor="middle" fill="#58C4DD">24</text>
-          <text x="160" y="48" font-size="16" text-anchor="middle" fill="#FC6255">25</text>
-          <text x="240" y="50" font-size="14" text-anchor="middle" fill="#83C167">26</text>
-          <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
-          <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
-          <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
-          <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
-          <text x="160" y="150" font-size="12" text-anchor="middle" fill="#888888">Trái nhỏ hơn, phải lớn hơn</text>
+          <g class="g2s1">
+            <line x1="20" y1="70" x2="300" y2="70" stroke="#333330" stroke-width="2"/>
+            <polygon points="300,70 290,64 290,76" fill="#333330"/>
+            <circle cx="160" cy="70" r="10" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="160" y="48" font-size="16" text-anchor="middle" fill="#FC6255">25</text>
+            <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
+          </g>
+          <g class="g2s2">
+            <circle cx="80" cy="70" r="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="80" y="50" font-size="14" text-anchor="middle" fill="#58C4DD">24</text>
+            <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
+          </g>
+          <g class="g2s3">
+            <circle cx="240" cy="70" r="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="240" y="50" font-size="14" text-anchor="middle" fill="#83C167">26</text>
+            <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
+            <text x="160" y="150" font-size="12" text-anchor="middle" fill="#888888">Trái nhỏ hơn, phải lớn hơn</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 39, 40, 41. 40 nằm giữa. 39 liền trước 40. 41 liền sau 40.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> Trên tia số, số bên trái luôn nhỏ hơn số bên phải.</p></div>
       <div class="definition">
@@ -388,18 +425,24 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b3-add-parts">
         <svg viewBox="0 0 320 160" role="img" aria-label="Thành phần phép cộng">
-          <rect x="20" y="40" width="70" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="120" y="40" width="70" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="55" y="72" font-size="22" text-anchor="middle">8</text>
-          <text x="155" y="72" font-size="22" text-anchor="middle">5</text>
-          <text x="265" y="72" font-size="22" text-anchor="middle">13</text>
-          <text x="55" y="30" font-size="11" text-anchor="middle" fill="#83C167">số hạng</text>
-          <text x="155" y="30" font-size="11" text-anchor="middle" fill="#83C167">số hạng</text>
-          <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">tổng</text>
-          <text x="100" y="72" font-size="20">+</text>
-          <text x="205" y="72" font-size="20">=</text>
-          <text x="160" y="130" font-size="13" text-anchor="middle">8 + 5 = 13</text>
+          <g class="g2s1">
+            <rect x="20" y="40" width="70" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="55" y="72" font-size="22" text-anchor="middle">8</text>
+            <text x="55" y="30" font-size="11" text-anchor="middle" fill="#83C167">số hạng</text>
+          </g>
+          <g class="g2s2">
+            <text x="100" y="72" font-size="20">+</text>
+            <rect x="120" y="40" width="70" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="155" y="72" font-size="22" text-anchor="middle">5</text>
+            <text x="155" y="30" font-size="11" text-anchor="middle" fill="#83C167">số hạng</text>
+          </g>
+          <g class="g2s3">
+            <text x="205" y="72" font-size="20">=</text>
+            <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="265" y="72" font-size="22" text-anchor="middle">13</text>
+            <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">tổng</text>
+            <text x="160" y="130" font-size="13" text-anchor="middle">8 + 5 = 13</text>
+          </g>
         </svg>
               <figcaption>Cộng có số hạng và tổng. Trừ có số bị trừ, số trừ và hiệu.</figcaption>
       </figure>
@@ -479,26 +522,38 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b4-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
-          <rect x="60" y="105.6" width="60" height="34.4" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="180" y="110.4" width="60" height="29.6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="90" y="155" font-size="12" text-anchor="middle">A = 12</text>
-          <text x="210" y="155" font-size="12" text-anchor="middle">B = 8</text>
-          <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
+          <g class="g2s1">
+            <rect x="60" y="105.6" width="60" height="34.4" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="90" y="155" font-size="12" text-anchor="middle">A = 12</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="110.4" width="60" height="29.6" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="210" y="155" font-size="12" text-anchor="middle">B = 8</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
+          </g>
         </svg>
               <figcaption>Hơn bao nhiêu? Lấy số lớn trừ số bé.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Hơn bao nhiêu? Lấy số lớn trừ số bé.</p>
             <figure class="figure" data-animation="g2-b4-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
-          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
-          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
-          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
-          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
-          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
-          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
-          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          <g class="g2s1">
+            <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+            <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+            <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+            <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+            <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Có 16 bút và 9 bút. Hơn kém nhau 16 − 9 = 7 bút.</p></div>
       <div class="definition">
@@ -560,20 +615,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b5-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
-          
-          <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">4</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">5</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">2</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">86</text>
-          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="#888888">Không nhớ</text>
-          <text x="40" y="110" font-size="13">34 + 52</text>
+          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">34 + 52</text>
+          </g>
+          <g class="g2s2">
+            
+            <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">4</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">5</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">2</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">86</text>
+            <text x="40" y="75" font-size="12" fill="#888888">Không nhớ</text>
+          </g>
         </svg>
               <figcaption>Cộng trừ hai chữ số. Thẳng cột. Chưa nhớ.</figcaption>
       </figure>
@@ -673,13 +734,19 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</p>
             <figure class="figure" data-animation="g2-b6-place">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cấu tạo số 64">
-          <rect x="30" y="30" width="100" height="90" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="160" y="30" width="100" height="90" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="80" y="24" font-size="12" text-anchor="middle" fill="#83C167">Hàng chục</text>
-          <text x="210" y="24" font-size="12" text-anchor="middle" fill="#58C4DD">Hàng đơn vị</text>
-          <text x="80" y="85" font-size="36" text-anchor="middle" fill="#333330">6</text>
-          <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">4</text>
-          <text x="160" y="150" font-size="14" text-anchor="middle">64 = 6 chục + 4 đơn vị</text>
+          <g class="g2s1">
+            <rect x="30" y="30" width="100" height="90" fill="none" stroke="#83C167" stroke-width="2"/>
+            <rect x="160" y="30" width="100" height="90" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="80" y="24" font-size="12" text-anchor="middle" fill="#83C167">Hàng chục</text>
+            <text x="210" y="24" font-size="12" text-anchor="middle" fill="#58C4DD">Hàng đơn vị</text>
+          </g>
+          <g class="g2s2">
+            <text x="80" y="85" font-size="36" text-anchor="middle" fill="#333330">6</text>
+            <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">4</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="150" font-size="14" text-anchor="middle">64 = 6 chục + 4 đơn vị</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 52 gồm 5 chục 2 đơn vị. Liền sau 52 là 53.</p></div>
       <div class="definition">
@@ -742,24 +809,32 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b7-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
-          <text x="160" y="28" font-size="14" text-anchor="middle">8 + 6</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">8</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">2</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">4</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">8+2=10, còn 4 → 14</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">8 + 6 = 14</text>
+          <g class="g2s1">
+            <text x="160" y="28" font-size="14" text-anchor="middle">8 + 6</text>
+            <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="70" y="76" font-size="16" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s2">
+            <text x="120" y="76" font-size="16">+</text>
+            <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="165" y="76" font-size="16" text-anchor="middle">2</text>
+          </g>
+          <g class="g2s3">
+            <text x="200" y="76" font-size="16">+</text>
+            <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="245" y="76" font-size="16" text-anchor="middle">4</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="120" font-size="13" text-anchor="middle">8+2=10, còn 4 → 14</text>
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">8 + 6 = 14</text>
+          </g>
         </svg>
               <figcaption>Cộng hai số, ra hơn 10, chưa quá 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số, ra hơn 10, chưa quá 20.</p>
             <figure class="figure" data-animation="g2-b7-tenframe">
         <svg viewBox="0 0 320 160" role="img" aria-label="Khung 10: 8 + 6">
-          <rect x="20" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <g class="g2s1">          <rect x="20" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
           <circle cx="32" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
           <rect x="48" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
           <circle cx="60" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -777,17 +852,22 @@ const G2_LESSONS = [
           <circle cx="88" cy="68" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
           <rect x="104" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
           <rect x="132" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
-          <circle cx="180" cy="36" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+</g>
+          <g class="g2s2">          <circle cx="180" cy="36" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <circle cx="208" cy="36" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <circle cx="236" cy="36" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
           <circle cx="264" cy="36" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
           <circle cx="180" cy="64" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
           <circle cx="208" cy="64" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
-
-          <text x="90" y="100" font-size="12" text-anchor="middle">Đã có 8</text>
-          <text x="230" y="100" font-size="12" text-anchor="middle">Thêm 6</text>
-          <text x="160" y="128" font-size="13" text-anchor="middle">Cần 2 nữa đầy khung 10, còn 4</text>
-          <text x="160" y="150" font-size="15" text-anchor="middle" fill="#83C167">8 + 6 = 10 + 4 = 14</text>
+</g>
+          <g class="g2s3">
+            <text x="90" y="100" font-size="12" text-anchor="middle">Đã có 8</text>
+            <text x="230" y="100" font-size="12" text-anchor="middle">Thêm 6</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="128" font-size="13" text-anchor="middle">Cần 2 nữa đầy khung 10, còn 4</text>
+            <text x="160" y="150" font-size="15" text-anchor="middle" fill="#83C167">8 + 6 = 10 + 4 = 14</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 6 + 7. 6 cần 4 nữa được 10. 7 = 4 + 3. 10 + 3 = 13.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> Lan có 9 tem, mẹ cho 5 tem. 9 + 1 = 10, còn 4. Tất cả 14 tem.</p></div>
       <div class="definition">
@@ -875,17 +955,25 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Học thuộc các phép cộng qua 10.</p>
             <figure class="figure" data-animation="g2-b8-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
-          <text x="160" y="28" font-size="14" text-anchor="middle">9 + 9</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">9</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">1</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">8</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">9+1=10, còn 8 → 18</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">9 + 9 = 18</text>
+          <g class="g2s1">
+            <text x="160" y="28" font-size="14" text-anchor="middle">9 + 9</text>
+            <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="70" y="76" font-size="16" text-anchor="middle">9</text>
+          </g>
+          <g class="g2s2">
+            <text x="120" y="76" font-size="16">+</text>
+            <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="165" y="76" font-size="16" text-anchor="middle">1</text>
+          </g>
+          <g class="g2s3">
+            <text x="200" y="76" font-size="16">+</text>
+            <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="245" y="76" font-size="16" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="120" font-size="13" text-anchor="middle">9+1=10, còn 8 → 18</text>
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">9 + 9 = 18</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Họ 9: 9+2=11, 9+3=12, 9+4=13, 9+5=14, 9+6=15, 9+7=16, 9+8=17, 9+9=18.</p></div>
       <div class="definition">
@@ -948,26 +1036,38 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b9-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
-          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
-          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
-          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
-          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
-          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
-          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
-          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          <g class="g2s1">
+            <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+            <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+            <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+            <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+            <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          </g>
         </svg>
               <figcaption>Thêm thì cộng. Bớt thì trừ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thêm thì cộng. Bớt thì trừ.</p>
             <figure class="figure" data-animation="g2-b9-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
-          <rect x="60" y="103.2" width="60" height="36.8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="180" y="109.2" width="60" height="30.799999999999997" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="90" y="155" font-size="12" text-anchor="middle">A = 14</text>
-          <text x="210" y="155" font-size="12" text-anchor="middle">B = 9</text>
-          <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
+          <g class="g2s1">
+            <rect x="60" y="103.2" width="60" height="36.8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="90" y="155" font-size="12" text-anchor="middle">A = 14</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="109.2" width="60" height="30.799999999999997" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="210" y="155" font-size="12" text-anchor="middle">B = 9</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> An có 10 tem, dán đi 3 tem. Còn 10 − 3 = 7 tem.</p></div>
       <div class="definition">
@@ -1049,17 +1149,25 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và bài toán thêm bớt.</p>
             <figure class="figure" data-animation="g2-b10-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
-          <text x="160" y="28" font-size="14" text-anchor="middle">7 + 9</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">7</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">3</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">6</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">7+3=10, còn 6 → 16</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">7 + 9 = 16</text>
+          <g class="g2s1">
+            <text x="160" y="28" font-size="14" text-anchor="middle">7 + 9</text>
+            <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="70" y="76" font-size="16" text-anchor="middle">7</text>
+          </g>
+          <g class="g2s2">
+            <text x="120" y="76" font-size="16">+</text>
+            <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="165" y="76" font-size="16" text-anchor="middle">3</text>
+          </g>
+          <g class="g2s3">
+            <text x="200" y="76" font-size="16">+</text>
+            <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="245" y="76" font-size="16" text-anchor="middle">6</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="120" font-size="13" text-anchor="middle">7+3=10, còn 6 → 16</text>
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">7 + 9 = 16</text>
+          </g>
         </svg>
       </figure>
       <div class="definition">
@@ -1121,7 +1229,16 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b11-takeaway">
         <svg viewBox="0 0 320 160" role="img" aria-label="15 − 7">
-          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <g class="g2s1">          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+</g>
+          <g class="g2s2">          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="21" y1="33" x2="35" y2="47" stroke="#FC6255" stroke-width="2"/>
           <circle cx="56" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="49" y1="33" x2="63" y2="47" stroke="#FC6255" stroke-width="2"/>
@@ -1135,34 +1252,36 @@ const G2_LESSONS = [
           <line x1="161" y1="33" x2="175" y2="47" stroke="#FC6255" stroke-width="2"/>
           <circle cx="196" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="189" y1="33" x2="203" y2="47" stroke="#FC6255" stroke-width="2"/>
-          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-
-          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 8 cái</text>
-          <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">15 − 7 = 8</text>
+</g>
+          <g class="g2s3">
+            <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 8 cái</text>
+            <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">15 − 7 = 8</text>
+          </g>
         </svg>
               <figcaption>Trừ khi không đủ, số đến 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ khi không đủ, số đến 20.</p>
             <figure class="figure" data-animation="g2-b11-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
-          <text x="160" y="28" font-size="14" text-anchor="middle">10 + 8</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">10</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">0</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">8</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">10+0=10, còn 8 → 8</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">10 + 8 = 8</text>
+          <g class="g2s1">
+            <text x="160" y="28" font-size="14" text-anchor="middle">10 + 8</text>
+            <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="70" y="76" font-size="16" text-anchor="middle">10</text>
+          </g>
+          <g class="g2s2">
+            <text x="120" y="76" font-size="16">+</text>
+            <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="165" y="76" font-size="16" text-anchor="middle">0</text>
+          </g>
+          <g class="g2s3">
+            <text x="200" y="76" font-size="16">+</text>
+            <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="245" y="76" font-size="16" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="120" font-size="13" text-anchor="middle">10+0=10, còn 8 → 8</text>
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">10 + 8 = 8</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. 9 + 3 = 12 nên còn 3 kẹo.</p></div>
       <div class="definition">
@@ -1242,7 +1361,17 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Học thuộc các phép trừ qua 10.</p>
             <figure class="figure" data-animation="g2-b12-takeaway">
         <svg viewBox="0 0 320 160" role="img" aria-label="16 − 7">
-          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <g class="g2s1">          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="168" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+</g>
+          <g class="g2s2">          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="21" y1="33" x2="35" y2="47" stroke="#FC6255" stroke-width="2"/>
           <circle cx="56" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="49" y1="33" x2="63" y2="47" stroke="#FC6255" stroke-width="2"/>
@@ -1256,18 +1385,11 @@ const G2_LESSONS = [
           <line x1="161" y1="33" x2="175" y2="47" stroke="#FC6255" stroke-width="2"/>
           <circle cx="196" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
           <line x1="189" y1="33" x2="203" y2="47" stroke="#FC6255" stroke-width="2"/>
-          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-          <circle cx="168" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
-
-          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 9 cái</text>
-          <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">16 − 7 = 9</text>
+</g>
+          <g class="g2s3">
+            <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 9 cái</text>
+            <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">16 − 7 = 9</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Họ trừ 9: 11−9=2, 12−9=3, … 19−9=10.</p></div>
       <div class="definition">
@@ -1330,34 +1452,52 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b13-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
-          <rect x="60" y="102" width="60" height="38" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="180" y="106.8" width="60" height="33.2" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="90" y="155" font-size="12" text-anchor="middle">A = 15</text>
-          <text x="210" y="155" font-size="12" text-anchor="middle">B = 11</text>
-          <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
+          <g class="g2s1">
+            <rect x="60" y="102" width="60" height="38" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="90" y="155" font-size="12" text-anchor="middle">A = 15</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="106.8" width="60" height="33.2" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="210" y="155" font-size="12" text-anchor="middle">B = 11</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">4 (hiệu)</text>
+          </g>
         </svg>
               <figcaption>Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</p>
             <figure class="figure" data-animation="g2-b13-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
-          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
-          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
-          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
-          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
-          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
-          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
-          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          <g class="g2s1">
+            <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+            <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+            <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+            <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+            <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          </g>
         </svg>
       </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra số của An.</p></div>      <figure class="figure" data-animation="g2-b13-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
-          <rect x="60" y="98.4" width="60" height="41.599999999999994" fill="none" stroke="#83C167" stroke-width="2"/>
-          <rect x="180" y="104.4" width="60" height="35.6" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="90" y="155" font-size="12" text-anchor="middle">A = 18</text>
-          <text x="210" y="155" font-size="12" text-anchor="middle">B = 13</text>
-          <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
+          <g class="g2s1">
+            <rect x="60" y="98.4" width="60" height="41.599999999999994" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="90" y="155" font-size="12" text-anchor="middle">A = 18</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="104.4" width="60" height="35.6" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="210" y="155" font-size="12" text-anchor="middle">B = 13</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
+          </g>
         </svg>
       </figure>
       <div class="definition">
@@ -1439,15 +1579,21 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</p>
             <figure class="figure" data-animation="g2-b14-keywords">
         <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
-          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
-          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
-          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
-          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
-          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
-          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
-          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          <g class="g2s1">
+            <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+            <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+            <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+            <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+            <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+            <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+            <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          </g>
         </svg>
       </figure>
       <div class="definition">
@@ -1852,20 +1998,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b20-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
-          <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">75</text>
-          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
-          <text x="40" y="110" font-size="13">47 + 28</text>
+          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">47 + 28</text>
+          </g>
+          <g class="g2s2">
+            <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+            <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">75</text>
+            <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
+          </g>
         </svg>
               <figcaption>Cộng hai số có hai chữ số, có nhớ.</figcaption>
       </figure>
@@ -2765,20 +2917,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b33-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
-          <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">65</text>
-          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
-          <text x="40" y="110" font-size="13">37 + 28</text>
+          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">37 + 28</text>
+          </g>
+          <g class="g2s2">
+            <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+            <text x="200" y="88" font-size="26" text-anchor="middle">3</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">2</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">65</text>
+            <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
+          </g>
         </svg>
               <figcaption>Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</figcaption>
       </figure>
@@ -4746,20 +4904,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b60-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
-          <text x="200" y="88" font-size="26" text-anchor="middle">5</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">6</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">7</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">134</text>
-          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
-          <text x="40" y="110" font-size="13">56 + 78</text>
+          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">56 + 78</text>
+          </g>
+          <g class="g2s2">
+            <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+            <text x="200" y="88" font-size="26" text-anchor="middle">5</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">6</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">7</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">8</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">134</text>
+            <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
+          </g>
         </svg>
               <figcaption>Cộng có nhớ trong phạm vi 1000.</figcaption>
       </figure>
@@ -5399,20 +5563,26 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b69-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
-          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
-          <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
-          <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">3</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">6</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">83</text>
-          <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi ≥10</text>
-          <text x="40" y="110" font-size="13">47 + 36</text>
+          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="#888888" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="#888888" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="#83C167">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">47 + 36</text>
+          </g>
+          <g class="g2s2">
+            <text x="250" y="58" font-size="12" fill="#FC6255" text-anchor="middle">¹</text>
+            <text x="200" y="88" font-size="26" text-anchor="middle">4</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">7</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">3</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">6</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="#333330" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="#83C167">83</text>
+            <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
+          </g>
         </svg>
               <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
       </figure>

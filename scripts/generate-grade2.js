@@ -250,8 +250,13 @@ function svgBundles(tens, ones) {
   return fig(
     "bundles",
     `${tens} chục và ${ones} đơn vị`,
-    `${g}          <text x="160" y="120" font-size="13" text-anchor="middle">${tens} bó que (mỗi bó 10) và ${ones} que rời</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.r}">${tens} chục + ${ones} = ${tens * 10 + ones}</text>`
+    `          <g class="g2s1">${g}</g>
+          <g class="g2s2">
+            <text x="160" y="120" font-size="13" text-anchor="middle">${tens} bó que (mỗi bó 10) và ${ones} que rời</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.r}">${tens} chục + ${ones} = ${tens * 10 + ones}</text>
+          </g>`
   );
 }
 
@@ -259,15 +264,21 @@ function svgFlip16vs61() {
   return fig(
     "flip16",
     "16 khác 61",
-    `          <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
-          <text x="80" y="80" font-size="12" text-anchor="middle" fill="${C.g}">1 chục 6 đơn vị</text>
-          <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
-          <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
-          <text x="240" y="80" font-size="12" text-anchor="middle" fill="${C.r}">6 chục 1 đơn vị</text>
-          <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
-          <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>`
+    `          <g class="g2s1">
+            <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
+            <text x="80" y="80" font-size="12" text-anchor="middle" fill="${C.g}">1 chục 6 đơn vị</text>
+            <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
+            <text x="240" y="80" font-size="12" text-anchor="middle" fill="${C.r}">6 chục 1 đơn vị</text>
+            <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>
+          </g>`
   );
 }
 
@@ -284,10 +295,16 @@ function svgTensLine() {
   return fig(
     "tens-line",
     "Các số tròn chục đến 100",
-    `          <line x1="14" y1="78" x2="306" y2="78" stroke="${C.d}" stroke-width="2"/>
-          <polygon points="306,78 296,72 296,84" fill="${C.d}"/>
+    `          <g class="g2s1">
+            <line x1="14" y1="78" x2="306" y2="78" stroke="${C.d}" stroke-width="2"/>
+            <polygon points="306,78 296,72 296,84" fill="${C.d}"/>
+          </g>
+          <g class="g2s2">
 ${ticks}
-          <text x="160" y="148" font-size="12" text-anchor="middle" fill="${C.g}">Mỗi vạch lớn thêm 10 (một chục)</text>`
+          </g>
+          <g class="g2s3">
+            <text x="160" y="148" font-size="12" text-anchor="middle" fill="${C.g}">Mỗi vạch lớn thêm 10 (một chục)</text>
+          </g>`
   );
 }
 
@@ -295,13 +312,19 @@ function svgPlaceValue2(tens, ones, n) {
   return fig(
     `g2-b${n}-place`,
     `Cấu tạo số ${tens}${ones}`,
-    `          <rect x="30" y="30" width="100" height="90" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <rect x="160" y="30" width="100" height="90" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="80" y="24" font-size="12" text-anchor="middle" fill="${C.g}">Hàng chục</text>
-          <text x="210" y="24" font-size="12" text-anchor="middle" fill="${C.b}">Hàng đơn vị</text>
-          <text x="80" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${tens}</text>
-          <text x="210" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${ones}</text>
-          <text x="160" y="150" font-size="14" text-anchor="middle">${tens}${ones} = ${tens} chục + ${ones} đơn vị</text>`
+    `          <g class="g2s1">
+            <rect x="30" y="30" width="100" height="90" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <rect x="160" y="30" width="100" height="90" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="80" y="24" font-size="12" text-anchor="middle" fill="${C.g}">Hàng chục</text>
+            <text x="210" y="24" font-size="12" text-anchor="middle" fill="${C.b}">Hàng đơn vị</text>
+          </g>
+          <g class="g2s2">
+            <text x="80" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${tens}</text>
+            <text x="210" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${ones}</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="150" font-size="14" text-anchor="middle">${tens}${ones} = ${tens} chục + ${ones} đơn vị</text>
+          </g>`
   );
 }
 
@@ -309,19 +332,27 @@ function svgHopLine() {
   return fig(
     "hop-line",
     "Liền trước và liền sau",
-    `          <line x1="20" y1="70" x2="300" y2="70" stroke="${C.d}" stroke-width="2"/>
-          <polygon points="300,70 290,64 290,76" fill="${C.d}"/>
-          <circle cx="80" cy="70" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <circle cx="160" cy="70" r="10" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <circle cx="240" cy="70" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="80" y="50" font-size="14" text-anchor="middle" fill="${C.b}">24</text>
-          <text x="160" y="48" font-size="16" text-anchor="middle" fill="${C.r}">25</text>
-          <text x="240" y="50" font-size="14" text-anchor="middle" fill="${C.g}">26</text>
-          <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
-          <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
-          <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
-          <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
-          <text x="160" y="150" font-size="12" text-anchor="middle" fill="${C.muted}">Trái nhỏ hơn, phải lớn hơn</text>`
+    `          <g class="g2s1">
+            <line x1="20" y1="70" x2="300" y2="70" stroke="${C.d}" stroke-width="2"/>
+            <polygon points="300,70 290,64 290,76" fill="${C.d}"/>
+            <circle cx="160" cy="70" r="10" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="160" y="48" font-size="16" text-anchor="middle" fill="${C.r}">25</text>
+            <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
+          </g>
+          <g class="g2s2">
+            <circle cx="80" cy="70" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="80" y="50" font-size="14" text-anchor="middle" fill="${C.b}">24</text>
+            <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
+          </g>
+          <g class="g2s3">
+            <circle cx="240" cy="70" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="240" y="50" font-size="14" text-anchor="middle" fill="${C.g}">26</text>
+            <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
+            <text x="160" y="150" font-size="12" text-anchor="middle" fill="${C.muted}">Trái nhỏ hơn, phải lớn hơn</text>
+          </g>`
   );
 }
 
@@ -339,13 +370,19 @@ function svgNumberLine(nums, highlight) {
   const hi = nums.indexOf(highlight);
   const hx = xs[hi];
   return fig(
-    `g2-b${n}-line`,
+    "num-line",
     "Tia số",
-    `          <line x1="20" y1="80" x2="300" y2="80" stroke="${C.d}" stroke-width="2"/>
-          <polygon points="300,80 288,74 288,86" fill="${C.d}"/>
+    `          <g class="g2s1">
+            <line x1="20" y1="80" x2="300" y2="80" stroke="${C.d}" stroke-width="2"/>
+            <polygon points="300,80 288,74 288,86" fill="${C.d}"/>
+          </g>
+          <g class="g2s2">
 ${ticks}
-          <circle cx="${hx}" cy="80" r="5" fill="${C.r}"/>
-          <text x="${hx}" y="50" font-size="12" text-anchor="middle" fill="${C.r}">đang xét</text>`
+          </g>
+          <g class="g2s3">
+            <circle cx="${hx}" cy="80" r="5" fill="${C.r}"/>
+            <text x="${hx}" y="50" font-size="12" text-anchor="middle" fill="${C.r}">đang xét</text>
+          </g>`
   );
 }
 
@@ -353,18 +390,24 @@ function svgAddParts(a, b, sum) {
   return fig(
     "g2-add-parts",
     "Thành phần phép cộng",
-    `          <rect x="20" y="40" width="70" height="50" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <rect x="120" y="40" width="70" height="50" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <rect x="230" y="40" width="70" height="50" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="55" y="72" font-size="22" text-anchor="middle">${a}</text>
-          <text x="155" y="72" font-size="22" text-anchor="middle">${b}</text>
-          <text x="265" y="72" font-size="22" text-anchor="middle">${sum}</text>
-          <text x="55" y="30" font-size="11" text-anchor="middle" fill="${C.g}">số hạng</text>
-          <text x="155" y="30" font-size="11" text-anchor="middle" fill="${C.g}">số hạng</text>
-          <text x="265" y="30" font-size="11" text-anchor="middle" fill="${C.b}">tổng</text>
-          <text x="100" y="72" font-size="20">+</text>
-          <text x="205" y="72" font-size="20">=</text>
-          <text x="160" y="130" font-size="13" text-anchor="middle">${a} + ${b} = ${sum}</text>`
+    `          <g class="g2s1">
+            <rect x="20" y="40" width="70" height="50" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="55" y="72" font-size="22" text-anchor="middle">${a}</text>
+            <text x="55" y="30" font-size="11" text-anchor="middle" fill="${C.g}">số hạng</text>
+          </g>
+          <g class="g2s2">
+            <text x="100" y="72" font-size="20">+</text>
+            <rect x="120" y="40" width="70" height="50" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="155" y="72" font-size="22" text-anchor="middle">${b}</text>
+            <text x="155" y="30" font-size="11" text-anchor="middle" fill="${C.g}">số hạng</text>
+          </g>
+          <g class="g2s3">
+            <text x="205" y="72" font-size="20">=</text>
+            <rect x="230" y="40" width="70" height="50" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="265" y="72" font-size="22" text-anchor="middle">${sum}</text>
+            <text x="265" y="30" font-size="11" text-anchor="middle" fill="${C.b}">tổng</text>
+            <text x="160" y="130" font-size="13" text-anchor="middle">${a} + ${b} = ${sum}</text>
+          </g>`
   );
 }
 
@@ -392,11 +435,17 @@ function svgCompareBars(a, b) {
   return fig(
     "g2-compare",
     "Hơn kém nhau",
-    `          <rect x="60" y="${140 - ha}" width="60" height="${ha}" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <rect x="180" y="${140 - hb}" width="60" height="${hb}" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="90" y="155" font-size="12" text-anchor="middle">A = ${a}</text>
-          <text x="210" y="155" font-size="12" text-anchor="middle">B = ${b}</text>
-          <text x="160" y="24" font-size="13" text-anchor="middle" fill="${C.r}">${Math.abs(a - b)} (hiệu)</text>`
+    `          <g class="g2s1">
+            <rect x="60" y="${140 - ha}" width="60" height="${ha}" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="90" y="155" font-size="12" text-anchor="middle">A = ${a}</text>
+          </g>
+          <g class="g2s2">
+            <rect x="180" y="${140 - hb}" width="60" height="${hb}" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="210" y="155" font-size="12" text-anchor="middle">B = ${b}</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="24" font-size="13" text-anchor="middle" fill="${C.r}">${Math.abs(a - b)} (hiệu)</text>
+          </g>`
   );
 }
 
@@ -408,20 +457,26 @@ function svgColumnAdd(top, bot, showCarry = true) {
   return fig(
     "col-add",
     "Đặt tính cộng",
-    `          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="200" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">chục</text>
-          <text x="250" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">đv</text>
-          ${showCarry ? `<text x="250" y="58" font-size="12" fill="${C.r}" text-anchor="middle">¹</text>` : ""}
-          <text x="200" y="88" font-size="26" text-anchor="middle">${t[0]}</text>
-          <text x="250" y="88" font-size="26" text-anchor="middle">${t[1]}</text>
-          <text x="160" y="118" font-size="22">+</text>
-          <text x="200" y="118" font-size="26" text-anchor="middle">${b[0]}</text>
-          <text x="250" y="118" font-size="26" text-anchor="middle">${b[1]}</text>
-          <line x1="155" y1="126" x2="280" y2="126" stroke="${C.d}" stroke-width="2"/>
-          <text x="225" y="148" font-size="22" text-anchor="middle" fill="${C.g}">${s}</text>
-          <text x="40" y="50" font-size="12" fill="${C.g}">Cộng đv trước</text>
-          <text x="40" y="75" font-size="12" fill="${C.muted}">${showCarry ? "Có nhớ khi ≥10" : "Không nhớ"}</text>
-          <text x="40" y="110" font-size="13">${top} + ${bot}</text>`
+    `          <g class="g2s1">
+            <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="200" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">chục</text>
+            <text x="250" y="42" font-size="11" fill="${C.muted}" text-anchor="middle">đv</text>
+            <text x="40" y="50" font-size="12" fill="${C.g}">Cộng đv trước</text>
+            <text x="40" y="110" font-size="13">${top} + ${bot}</text>
+          </g>
+          <g class="g2s2">
+            ${showCarry ? `<text x="250" y="58" font-size="12" fill="${C.r}" text-anchor="middle">¹</text>` : ""}
+            <text x="200" y="88" font-size="26" text-anchor="middle">${t[0]}</text>
+            <text x="250" y="88" font-size="26" text-anchor="middle">${t[1]}</text>
+            <text x="160" y="118" font-size="22">+</text>
+            <text x="200" y="118" font-size="26" text-anchor="middle">${b[0]}</text>
+            <text x="250" y="118" font-size="26" text-anchor="middle">${b[1]}</text>
+          </g>
+          <g class="g2s3">
+            <line x1="155" y1="126" x2="280" y2="126" stroke="${C.d}" stroke-width="2"/>
+            <text x="225" y="148" font-size="22" text-anchor="middle" fill="${C.g}">${s}</text>
+            <text x="40" y="75" font-size="12" fill="${C.muted}">${showCarry ? "Có nhớ khi từ 10" : "Không nhớ"}</text>
+          </g>`
   );
 }
 
@@ -467,30 +522,43 @@ function svgTenFrame(filled, extra) {
   return fig(
     "tenframe",
     `Khung 10: ${filled} + ${extra}`,
-    `${cells}${extras}
-          <text x="90" y="100" font-size="12" text-anchor="middle">Đã có ${filled}</text>
-          <text x="230" y="100" font-size="12" text-anchor="middle">Thêm ${extra}</text>
-          <text x="160" y="128" font-size="13" text-anchor="middle">Cần ${need} nữa đầy khung 10, còn ${rest}</text>
-          <text x="160" y="150" font-size="15" text-anchor="middle" fill="${C.g}">${filled} + ${extra} = 10 + ${rest} = ${filled + extra}</text>`
+    `          <g class="g2s1">${cells}</g>
+          <g class="g2s2">${extras}</g>
+          <g class="g2s3">
+            <text x="90" y="100" font-size="12" text-anchor="middle">Đã có ${filled}</text>
+            <text x="230" y="100" font-size="12" text-anchor="middle">Thêm ${extra}</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="128" font-size="13" text-anchor="middle">Cần ${need} nữa đầy khung 10, còn ${rest}</text>
+            <text x="160" y="150" font-size="15" text-anchor="middle" fill="${C.g}">${filled} + ${extra} = 10 + ${rest} = ${filled + extra}</text>
+          </g>`
   );
 }
 
 function svgTakeAway(total, take) {
   const left = total - take;
-  let dots = "";
+  let keep = "";
+  let goneG = "";
   for (let i = 0; i < total; i++) {
     const x = 28 + (i % 10) * 28;
     const y = 40 + Math.floor(i / 10) * 32;
     const gone = i < take;
-    dots += `          <circle cx="${x}" cy="${y}" r="9" fill="none" stroke="${gone ? C.r : C.g}" stroke-width="2"/>\n`;
-    if (gone) dots += `          <line x1="${x - 7}" y1="${y - 7}" x2="${x + 7}" y2="${y + 7}" stroke="${C.r}" stroke-width="2"/>\n`;
+    if (gone) {
+      goneG += `          <circle cx="${x}" cy="${y}" r="9" fill="none" stroke="${C.r}" stroke-width="2"/>\n`;
+      goneG += `          <line x1="${x - 7}" y1="${y - 7}" x2="${x + 7}" y2="${y + 7}" stroke="${C.r}" stroke-width="2"/>\n`;
+    } else {
+      keep += `          <circle cx="${x}" cy="${y}" r="9" fill="none" stroke="${C.g}" stroke-width="2"/>\n`;
+    }
   }
   return fig(
     "takeaway",
     `${total} − ${take}`,
-    `${dots}
-          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch ${take} cái (màu đỏ), còn ${left} cái</text>
-          <text x="160" y="152" font-size="16" text-anchor="middle" fill="${C.g}">${total} − ${take} = ${left}</text>`
+    `          <g class="g2s1">${keep}</g>
+          <g class="g2s2">${goneG}</g>
+          <g class="g2s3">
+            <text x="160" y="130" font-size="13" text-anchor="middle">Gạch ${take} cái (màu đỏ), còn ${left} cái</text>
+            <text x="160" y="152" font-size="16" text-anchor="middle" fill="${C.g}">${total} − ${take} = ${left}</text>
+          </g>`
   );
 }
 
@@ -516,15 +584,21 @@ function svgKeywords() {
   return fig(
     "keywords",
     "Từ khóa thêm / bớt",
-    `          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="83" y="50" font-size="14" text-anchor="middle" fill="${C.g}">Thêm</text>
-          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
-          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
-          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <text x="237" y="50" font-size="14" text-anchor="middle" fill="${C.r}">Bớt</text>
-          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
-          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
-          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>`
+    `          <g class="g2s1">
+            <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="83" y="50" font-size="14" text-anchor="middle" fill="${C.g}">Thêm</text>
+            <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+            <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="237" y="50" font-size="14" text-anchor="middle" fill="${C.r}">Bớt</text>
+            <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+            <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          </g>
+          <g class="g2s3">
+            <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+          </g>`
   );
 }
 
@@ -532,17 +606,25 @@ function svgMakeTen(a, need, rest, sum) {
   return fig(
     "g2-make-ten",
     "Cộng qua 10",
-    `          <text x="160" y="28" font-size="14" text-anchor="middle">${a} + ${need + rest}</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="${C.g}" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">${a}</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="${C.b}" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">${need}</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="${C.r}" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">${rest}</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">${a}+${need}=10, còn ${rest} → ${sum}</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.g}">${a} + ${need + rest} = ${sum}</text>`
+    `          <g class="g2s1">
+            <text x="160" y="28" font-size="14" text-anchor="middle">${a} + ${need + rest}</text>
+            <rect x="30" y="50" width="80" height="40" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="70" y="76" font-size="16" text-anchor="middle">${a}</text>
+          </g>
+          <g class="g2s2">
+            <text x="120" y="76" font-size="16">+</text>
+            <rect x="140" y="50" width="50" height="40" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="165" y="76" font-size="16" text-anchor="middle">${need}</text>
+          </g>
+          <g class="g2s3">
+            <text x="200" y="76" font-size="16">+</text>
+            <rect x="220" y="50" width="50" height="40" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="245" y="76" font-size="16" text-anchor="middle">${rest}</text>
+          </g>
+          <g class="g2s4">
+            <text x="160" y="120" font-size="13" text-anchor="middle">${a}+${need}=10, còn ${rest} → ${sum}</text>
+            <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.g}">${a} + ${need + rest} = ${sum}</text>
+          </g>`
   );
 }
 
