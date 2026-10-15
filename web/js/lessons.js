@@ -1975,7 +1975,7 @@ const LESSONS = [
         \]
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình vành khuyên giữa hai đường tròn đồng tâm bán kính 3 m và 5 m có diện tích \(S_v = \pi(5^2 - 3^2) = 16\pi\) (m²).</p>
+        <p><strong>Ví dụ.</strong> Hình vành khuyên giữa hai đường tròn đồng tâm bán kính 3 m và 5 m có diện tích \(S_v = \pi(5^2 - 3^2) = 16\pi\) (m²).</p>
       </div>
       <div class="memory">
         <p><strong>Cách nhớ:</strong> cung n° và quạt n° đều là mảnh \(\dfrac{n}{360}\): <em>cung lấy phần chu vi, quạt lấy phần diện tích</em>. Và \(S_q = \dfrac{lR}{2}\) — "cung nhân bán kính, chia đôi" (như tam giác: đáy × cao ÷ 2).</p>
@@ -2426,7 +2426,7 @@ const LESSONS = [
         <p><strong>Hiểu nhanh.</strong> Vì \((-x)^2 = x^2\) nên hai điểm \((x;\ y)\) và \((-x;\ y)\) luôn cùng nằm trên đồ thị, đối xứng nhau qua trục \(Oy\). Vì vậy chỉ cần tính \(y\) cho \(x \geq 0\), vẽ nửa bên phải rồi <em>gương</em> sang trái. Vẽ nên có ít nhất 5 điểm: gốc \(O\) và hai cặp điểm đối xứng.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Vẽ đồ thị \(y = -2x^2\): lập bảng \(x = -2; -1; 0; 1; 2\) được \(y = -8; -2; 0; -2; -8\). Năm điểm \((-2; -8), (-1; -2), (0; 0), (1; -2), (2; -8)\) nối lại cho parabol hướng xuống. Tìm điểm có tung độ \(-\tfrac{1}{2}\): \(-2x^2 = -\tfrac{1}{2} \Rightarrow x = \pm\tfrac{1}{2}\), hai điểm đối xứng qua \(Oy\).</p>
+        <p><strong>Ví dụ.</strong> Vẽ đồ thị \(y = -2x^2\): lập bảng \(x = -2; -1; 0; 1; 2\) được \(y = -8; -2; 0; -2; -8\). Năm điểm \((-2; -8), (-1; -2), (0; 0), (1; -2), (2; -8)\) nối lại cho parabol hướng xuống. Tìm điểm có tung độ \(-\tfrac{1}{2}\): \(-2x^2 = -\tfrac{1}{2} \Rightarrow x = \pm\tfrac{1}{2}\), hai điểm đối xứng qua \(Oy\).</p>
       </div>
       
       <details class="check">
@@ -2523,7 +2523,7 @@ const LESSONS = [
         <p><strong>Dạng khuyết thì đừng dùng công thức cho nặng.</strong> Thiếu \(c\): đặt \(x\) làm nhân tử chung. Thiếu \(b\): \(x^2 = \dfrac{-c}{a}\), nếu vế phải không âm thì \(x = \pm\) căn ấy.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(2x^2 - 4x = 0 \Leftrightarrow 2x(x-2) = 0 \Rightarrow x = 0\) hoặc \(x = 2\).</p>
+        <p><strong>Ví dụ.</strong> \(2x^2 - 4x = 0 \Leftrightarrow 2x(x-2) = 0 \Rightarrow x = 0\) hoặc \(x = 2\).</p>
         <p>\(x^2 - 9 = 0 \Leftrightarrow x^2 = 9 \Rightarrow x = 3\) hoặc \(x = -3\).</p>
         <p>\((x+1)^2 = 3 \Rightarrow x + 1 = \pm\sqrt{3} \Rightarrow x = -1 \pm \sqrt{3}\).</p>
         <p><strong>Chú ý.</strong> Với \(x^2 - 4x = 1\), cộng hai vế với 4: \((x-2)^2 = 5\), suy ra \(x = 2 \pm \sqrt{5}\).</p>
@@ -2540,7 +2540,7 @@ const LESSONS = [
         <p><strong>Chú ý (công thức thu gọn).</strong> Nếu \(b = 2b'\), đặt \(\Delta' = b'^2 - ac\): \(\Delta' > 0\) cho hai nghiệm \(\displaystyle x = \frac{-b' \pm \sqrt{\Delta'}}{a}\); \(\Delta' = 0\) cho nghiệm kép \(x = -\dfrac{b'}{a}\); \(\Delta' < 0\) vô nghiệm.</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(3x^2 + 7x - 1 = 0\): \(\Delta = 49 + 12 = 61 > 0\), nghiệm \(x = \dfrac{-7 \pm \sqrt{61}}{6}\).</p>
+        <p><strong>Ví dụ.</strong> \(3x^2 + 7x - 1 = 0\): \(\Delta = 49 + 12 = 61 > 0\), nghiệm \(x = \dfrac{-7 \pm \sqrt{61}}{6}\).</p>
         <p>\(x^2 - 6x + 9 = 0\): \(\Delta = 0\), nghiệm kép \(x = 3\). \(\ 2x^2 + 3x + 5 = 0\): \(\Delta = 9 - 40 = -31 < 0\), vô nghiệm.</p>
       </div>
       <div class="memory">
@@ -2652,7 +2652,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(2x^2 + 11x + 7 = 0\): \(\Delta = 121 - 56 = 65 > 0\) nên có hai nghiệm, và \(x_1 + x_2 = -\dfrac{11}{2}\), \(x_1x_2 = \dfrac{7}{2}\) — không cần tính từng nghiệm.</p>
+        <p><strong>Ví dụ.</strong> \(2x^2 + 11x + 7 = 0\): \(\Delta = 121 - 56 = 65 > 0\) nên có hai nghiệm, và \(x_1 + x_2 = -\dfrac{11}{2}\), \(x_1x_2 = \dfrac{7}{2}\) — không cần tính từng nghiệm.</p>
         <p>\(4x^2 - 12x + 9 = 0\): \(\Delta' = 36 - 36 = 0\) nên hai nghiệm trùng nhau; \(x_1 + x_2 = 3\), \(x_1x_2 = \dfrac{9}{4}\).</p>
       </div>
       <div class="definition">
@@ -3124,7 +3124,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Chiều cao 40 học sinh lớp 9C, ghép nhóm [155; 158), [158; 161), [161; 164), [164; 167): tần số \(m_1 = 5,\ m_2 = 12,\ m_3 = 15,\ m_4 = 8\), tổng \(n = 40\).</p>
+        <p><strong>Ví dụ.</strong> Chiều cao 40 học sinh lớp 9C, ghép nhóm [155; 158), [158; 161), [161; 164), [164; 167): tần số \(m_1 = 5,\ m_2 = 12,\ m_3 = 15,\ m_4 = 8\), tổng \(n = 40\).</p>
         <table>
           <tr><th>Chiều cao (cm)</th><td>[155; 158)</td><td>[158; 161)</td><td>[161; 164)</td><td>[164; 167)</td></tr>
           <tr><td>Tần số tương đối</td><td>12,5%</td><td>30%</td><td>37,5%</td><td>20%</td></tr>
@@ -3292,7 +3292,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Bạn Lan gieo một xúc xắc, bạn Hoà gieo một đồng xu. Kết quả là (số chấm; mặt): \(\Omega = \{(1;\ S); (2;\ S); \dots; (6;\ S); (1;\ N); \dots; (6;\ N)\}\). Không gian mẫu có 12 phần tử.</p>
+        <p><strong>Ví dụ.</strong> Bạn Lan gieo một xúc xắc, bạn Hoà gieo một đồng xu. Kết quả là (số chấm; mặt): \(\Omega = \{(1;\ S); (2;\ S); \dots; (6;\ S); (1;\ N); \dots; (6;\ N)\}\). Không gian mẫu có 12 phần tử.</p>
       </div>
       
       <details class="check">
@@ -3558,7 +3558,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Cho \(\widehat{BAC} = 60^\circ\). Hai góc nội tiếp \(\widehat{BDC}\) và \(\widehat{BAC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BDC} = 60^\circ\); góc ở tâm \(\widehat{BOC} = 2\widehat{BAC} = 120^\circ\).</p>
+        <p><strong>Ví dụ.</strong> Cho \(\widehat{BAC} = 60^\circ\). Hai góc nội tiếp \(\widehat{BDC}\) và \(\widehat{BAC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BDC} = 60^\circ\); góc ở tâm \(\widehat{BOC} = 2\widehat{BAC} = 120^\circ\).</p>
       </div>
       
       <details class="check">
@@ -3670,7 +3670,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Tam giác \(ABC\) vuông tại \(A\), \(AB = 2\) cm, \(AC = 4\) cm. Đường tròn ngoại tiếp có tâm là trung điểm \(BC\): \(BC^2 = 4 + 16 = 20\), \(BC = 2\sqrt{5}\), bán kính \(R = \dfrac{BC}{2} = \sqrt{5}\) cm.</p>
+        <p><strong>Ví dụ.</strong> Tam giác \(ABC\) vuông tại \(A\), \(AB = 2\) cm, \(AC = 4\) cm. Đường tròn ngoại tiếp có tâm là trung điểm \(BC\): \(BC^2 = 4 + 16 = 20\), \(BC = 2\sqrt{5}\), bán kính \(R = \dfrac{BC}{2} = \sqrt{5}\) cm.</p>
       </div>
       
       <details class="check">
@@ -3781,7 +3781,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Tứ giác \(ABCD\) nội tiếp \((O)\) với \(\widehat{DAB} = 70^\circ\), \(\widehat{ABC} = 130^\circ\). Suy ra \(\widehat{BCD} = 180^\circ - 70^\circ = 110^\circ\), \(\widehat{CDA} = 180^\circ - 130^\circ = 50^\circ\).</p>
+        <p><strong>Ví dụ.</strong> Tứ giác \(ABCD\) nội tiếp \((O)\) với \(\widehat{DAB} = 70^\circ\), \(\widehat{ABC} = 130^\circ\). Suy ra \(\widehat{BCD} = 180^\circ - 70^\circ = 110^\circ\), \(\widehat{CDA} = 180^\circ - 130^\circ = 50^\circ\).</p>
       </div>
       
       <details class="check">
@@ -4026,7 +4026,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Thùng rác hình trụ \(R = 11\) cm, \(h = 30\) cm, sơn mặt ngoài và một đáy: \(S = S_{xq} + S_{đáy} = 660\pi + 121\pi = 781\pi\) cm²; thể tích \(V = 121\pi \cdot 30 = 3630\pi \approx 11\,404\) cm³.</p>
+        <p><strong>Ví dụ.</strong> Thùng rác hình trụ \(R = 11\) cm, \(h = 30\) cm, sơn mặt ngoài và một đáy: \(S = S_{xq} + S_{đáy} = 660\pi + 121\pi = 781\pi\) cm²; thể tích \(V = 121\pi \cdot 30 = 3630\pi \approx 11\,404\) cm³.</p>
         <p>Hình nón \(l = 10\) cm, \(r = 6\) cm: \(S_{xq} = 60\pi\) cm²; \(h = \sqrt{10^2 - 6^2} = 8\) cm; \(V = \tfrac{1}{3}\pi \cdot 36 \cdot 8 = 96\pi\) cm³.</p>
       </div>
       
@@ -4148,7 +4148,7 @@ const LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình cầu bán kính \(R = 10\) cm: \(S = 4\pi \cdot 100 = 400\pi\) cm²; \(V = \tfrac{4}{3}\pi \cdot 1000 = \tfrac{4000\pi}{3}\) cm³.</p>
+        <p><strong>Ví dụ.</strong> Hình cầu bán kính \(R = 10\) cm: \(S = 4\pi \cdot 100 = 400\pi\) cm²; \(V = \tfrac{4}{3}\pi \cdot 1000 = \tfrac{4000\pi}{3}\) cm³.</p>
         <p>Bể cá dạng một phần hình cầu đường kính 20 cm, đổ nước bằng \(\tfrac{2}{3}\) thể tích hình cầu: \(V_{nước} = \tfrac{2}{3} \cdot \tfrac{4}{3}\pi \cdot 10^3 \approx 932\) cm³.</p>
       </div>
       
@@ -4286,7 +4286,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Những biểu thức sau là đơn thức: \(5\), \(x\), \(-3y\), \(2xy\), \(-\dfrac{1}{2}x^2y^3\). Hệ số lần lượt là \(5\), \(1\), \(-3\), \(2\), \(-\dfrac{1}{2}\).</p>
+        <p><strong>Ví dụ.</strong> Những biểu thức sau là đơn thức: \(5\), \(x\), \(-3y\), \(2xy\), \(-\dfrac{1}{2}x^2y^3\). Hệ số lần lượt là \(5\), \(1\), \(-3\), \(2\), \(-\dfrac{1}{2}\).</p>
         <p>Biểu thức \(3x + 2\) không phải đơn thức vì có phép cộng. Biểu thức \(\dfrac{4}{x}\) không phải đơn thức vì biến ở mẫu.</p>
       </div>
       <div class="example">
@@ -4391,7 +4391,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(P = x^2y + xy + xy^2\) là đa thức ba biến, ba hạng tử. Mỗi hạng tử là một đơn thức.</p>
+        <p><strong>Ví dụ.</strong> \(P = x^2y + xy + xy^2\) là đa thức ba biến, ba hạng tử. Mỗi hạng tử là một đơn thức.</p>
         <p>Đa thức \(Q = 3x^2 - 5x + x^2 + 2\) có hai hạng tử đồng dạng: \(3x^2\) và \(x^2\). Thu gọn: \(Q = 4x^2 - 5x + 2\).</p>
       </div>
       <div class="example">
@@ -4481,7 +4481,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(P = x^2y + xy + xy^2\), \(Q = x^2y - xy + y^2\).</p>
+        <p><strong>Ví dụ.</strong> \(P = x^2y + xy + xy^2\), \(Q = x^2y - xy + y^2\).</p>
         <p>\(P + Q = (x^2y + x^2y) + (xy - xy) + (xy^2 + y^2) = 2x^2y + xy^2 + y^2\).</p>
         <p>\(P - Q = (x^2y - x^2y) + (xy + xy) + (xy^2 - y^2) = 2xy + xy^2 - y^2\).</p>
       </div>
@@ -4549,18 +4549,18 @@ const G8_LESSONS = [
           <path d="M190,100 L330,100 L330,130 L190,130 Z" fill="none" stroke="#9A72AC" stroke-width="2"/>
           <text x="260" y="118" font-size="12" text-anchor="middle">Ví dụ: (x + 2)(x + 3)</text>
           <circle cx="85" cy="160" r="3" fill="#83C167"/>
-          <text x="92" y="164" font-size="10">Bước 1: Nhân từng项</text>
+          <text x="92" y="164" font-size="10">Bước 1: Nhân từng hạng tử</text>
           <circle cx="260" cy="160" r="3" fill="#58C4DD"/>
           <text x="267" y="164" font-size="10">Bước 2: Cộng kết quả</text>
         </svg>
       </figure>
-      <p><strong>Tình huống.</strong> Diện tích hình chữ nhật mới với chiều dài tăng \(a\) và chiều rộng tăng \(b\) từ hình cũ \(x \times y\) là: \((x + a)(y + b)\). Muốn tính phải nhân từng项.</p>
+      <p><strong>Tình huống.</strong> Diện tích hình chữ nhật mới với chiều dài tăng \(a\) và chiều rộng tăng \(b\) từ hình cũ \(x \times y\) là: \((x + a)(y + b)\). Muốn tính phải nhân từng hạng tử.</p>
       <div class="definition">
         <p><strong>Nhân đơn thức với đa thức:</strong> \(A(B + C) = AB + AC\). Đơn thức nhân từng hạng tử của đa thức.</p>
         <p><strong>Nhân đa thức với đa thức:</strong> \((A + B)(C + D) = AC + AD + BC + BD\). Mỗi hạng tử của đa thức này nhân từng hạng tử của đa thức kia.</p>
       </div>
       <div class="idea">
-        <p><strong>Hiểu nhanh.</strong> Nhân đa thức là phép phân phối mở rộng: mỗi项 nhân từng项. Kết quả có số hạng bằng tích số lượng hạng tử của hai đa thức.</p>
+        <p><strong>Hiểu nhanh.</strong> Nhân đa thức là phép phân phối mở rộng: mỗi hạng tử nhân từng hạng tử. Kết quả có số hạng bằng tích số lượng hạng tử của hai đa thức.</p>
         <p>Ví dụ: \((x + 3)(x + 2) = x^2 + 2x + 3x + 6 = x^2 + 5x + 6\). Có 2×2 = 4 hạng tử ban đầu, sau thu gọn còn 3.</p>
       </div>
       <div class="warn">
@@ -4572,8 +4572,8 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(2x(x^2 - 3x + 5) = 2x^3 - 6x^2 + 10x\). Đơn thức 2x nhân từng hạng tử.</p>
-        <p>\((x + 2)(x - 3) = x^2 - 3x + 2x - 6 = x^2 - x - 6\). Mỗi hạng tử nhân từng项 rồi cộng.</p>
+        <p><strong>Ví dụ.</strong> \(2x(x^2 - 3x + 5) = 2x^3 - 6x^2 + 10x\). Đơn thức 2x nhân từng hạng tử.</p>
+        <p>\((x + 2)(x - 3) = x^2 - 3x + 2x - 6 = x^2 - x - 6\). Mỗi hạng tử nhân từng hạng tử rồi cộng.</p>
       </div>
       <div class="example">
         <p><strong>Ví dụ làm chậm.</strong> \(3x^2(2x - 4) = 6x^3 - 12x^2\). \((x + y)(x - y) = x^2 - xy + xy - y^2 = x^2 - y^2\).</p>
@@ -4589,11 +4589,11 @@ const G8_LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ có bẫy.</strong> \(-(x + 2)(x - 3) = -[x^2 - 3x + 2x - 6] = -[x^2 - x - 6] = -x^2 + x + 6\).</p>
-        <p>Đừng nhân dấu trừ vào một项 rồi quên dấu trừ ngoài ngoặc. Phải nhân cả biểu thức trong ngoặc trước.</p>
+        <p>Đừng nhân dấu trừ vào một hạng tử rồi quên dấu trừ ngoài ngoặc. Phải nhân cả biểu thức trong ngoặc trước.</p>
       </div>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân đa thức: mỗi项 nhân từng项. Đơn thức × đa thức: nhân từng hạng tử. Đa thức × đa thức: có số hạng = tích số hạng.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Nhân đa thức: mỗi hạng tử nhân từng hạng tử. Đơn thức × đa thức: nhân từng hạng tử. Đa thức × đa thức: có số hạng = tích số hạng.</p></div>
       <div class="idea">
-        <p><strong>Kĩ năng cần luyện.</strong> Nhân từng項, giữ đúng dấu, cộng hạng tử đồng dạng sau khi nhân. Kiểm tra số lượng hạng tử ban đầu.</p>
+        <p><strong>Kĩ năng cần luyện.</strong> Nhân từng hạng tử, giữ đúng dấu, cộng hạng tử đồng dạng sau khi nhân. Kiểm tra số lượng hạng tử ban đầu.</p>
       </div>
       <div class="check">
         <summary>Tự kiểm tra</summary>
@@ -4607,7 +4607,7 @@ const G8_LESSONS = [
     `,
     exercises: [
       { type: "text", prompt: "Tính 2x(x - 3).", answer: "2x² - 6x", accept: ["2x² - 6x", "2x^2 - 6x"], hint: "2x nhân x và -3.", explain: "2x·x - 2x·3 = 2x² - 6x." },
-      { type: "text", prompt: "Tính (x + 2)(x + 3).", answer: "x² + 5x + 6", accept: ["x² + 5x + 6", "x^2 + 5x + 6"], hint: "Mỗi项 nhân từng项 rồi cộng.", explain: "x² + 3x + 2x + 6 = x² + 5x + 6." },
+      { type: "text", prompt: "Tính (x + 2)(x + 3).", answer: "x² + 5x + 6", accept: ["x² + 5x + 6", "x^2 + 5x + 6"], hint: "Mỗi hạng tử nhân từng hạng tử rồi cộng.", explain: "x² + 3x + 2x + 6 = x² + 5x + 6." },
       { type: "num", prompt: "Giá trị của (x + 1)(x - 1) tại x=5 là bao nhiêu?", answer: 24, hint: "x² - 1 tại x=5.", explain: "25 - 1 = 24." },
       { type: "mc", prompt: "(2x - 1)(x + 4) = ?", choices: ["2x² + 7x - 4", "2x² + 9x - 4", "2x² - 9x - 4", "2x² + 7x + 4"], correct: 1, hint: "2x² + 8x - x - 4.", explain: "2x² + 8x - x - 4 = 2x² + 7x - 4? Đáp án 2x² + 9x - 4." },
       { type: "text", prompt: "Tính (x - 2)².", answer: "x² - 4x + 4", accept: ["x² - 4x + 4", "x^2 - 4x + 4"], hint: "(x - 2)(x - 2).", explain: "x² - 2x - 2x + 4 = x² - 4x + 4." },
@@ -4626,7 +4626,7 @@ const G8_LESSONS = [
         <svg viewBox="0 0 360 210" role="img" aria-label="Phép chia đa thức cho đơn thức">
           <rect x="20" y="20" width="150" height="50" fill="none" stroke="#83C167" stroke-width="2"/>
           <text x="95" y="45" font-size="13" text-anchor="middle">(A + B) : C</text>
-          <text x="65" y="65" font-size="10" fill="#555">Chia từng项 rồi cộng</text>
+          <text x="65" y="65" font-size="10" fill="#555">Chia từng hạng tử rồi cộng</text>
           <rect x="190" y="20" width="150" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
           <text x="265" y="45" font-size="13" text-anchor="middle">= A:C + B:C</text>
           <text x="205" y="65" font-size="10" fill="#555">Phân phối ngược</text>
@@ -4660,7 +4660,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \((8x^4 - 4x^2) : 4x^2 = 8x^4 : 4x^2 - 4x^2 : 4x^2 = 2x^2 - 1\).</p>
+        <p><strong>Ví dụ.</strong> \((8x^4 - 4x^2) : 4x^2 = 8x^4 : 4x^2 - 4x^2 : 4x^2 = 2x^2 - 1\).</p>
         <p>\((12x^3 - 9x^2 + 6x) : 3x = 4x^2 - 3x + 2\). Mỗi hạng tử chia 3x rồi cộng.</p>
       </div>
       <div class="example">
@@ -4676,8 +4676,8 @@ const G8_LESSONS = [
         <p>\((12x^4y^2 - 8x^3y^3 + 4x^2y^4) : 4x^2y^2 = 3x^2 - 2xy + y^2\).</p>
       </div>
       <div class="example">
-        <p><strong>Ví dụ có bẫy.</strong> \((6x^2 + 9x) : 3x = 2x + 3\), nhưng \(6x^2 + 9x : 3x = 6x^2 + 3\) là sai! Phải có ngoặc hoặc chia từng项.</p>
-        <p>\((4x^2 - 9) : (2x - 3)\) không chia từng项 được — đây là chia đa thức cho đa thức, không phải chia cho đơn thức.</p>
+        <p><strong>Ví dụ có bẫy.</strong> \((6x^2 + 9x) : 3x = 2x + 3\), nhưng \(6x^2 + 9x : 3x = 6x^2 + 3\) là sai! Phải có ngoặc hoặc chia từng hạng tử.</p>
+        <p>\((4x^2 - 9) : (2x - 3)\) không chia từng hạng tử được — đây là chia đa thức cho đa thức, không phải chia cho đơn thức.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Chia đa thức cho đơn thức: chia từng hạng tử rồi cộng. Số mũ trừ, hệ số chia.</p></div>
       <div class="idea">
@@ -4752,7 +4752,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \((2x + 3)^2 = (2x)^2 + 2·2x·3 + 3^2 = 4x^2 + 12x + 9\).</p>
+        <p><strong>Ví dụ.</strong> \((2x + 3)^2 = (2x)^2 + 2·2x·3 + 3^2 = 4x^2 + 12x + 9\).</p>
         <p>\((x - 5)^2 = x^2 - 2·x·5 + 5^2 = x^2 - 10x + 25\). \(4x^2 - 9 = (2x - 3)(2x + 3)\).</p>
       </div>
       <div class="example">
@@ -4845,7 +4845,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \((2x + 1)^3 = 8x^3 + 12x^2 + 6x + 1\).</p>
+        <p><strong>Ví dụ.</strong> \((2x + 1)^3 = 8x^3 + 12x^2 + 6x + 1\).</p>
         <p>\((x - 3)^3 = x^3 - 9x^2 + 27x - 27\). \(x^3 + 8 = (x + 2)(x^2 - 2x + 4)\).</p>
       </div>
       <div class="example">
@@ -4939,7 +4939,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(x^2 + 4x + 4 = (x + 2)^2\). \(4x^2 - 9 = (2x - 3)(2x + 3)\).</p>
+        <p><strong>Ví dụ.</strong> \(x^2 + 4x + 4 = (x + 2)^2\). \(4x^2 - 9 = (2x - 3)(2x + 3)\).</p>
         <p>\(x^3 + 3x^2 + 3x + 1 = (x + 1)^3\). \(8x^3 - y^3 = (2x - y)(4x^2 + 2xy + y^2)\).</p>
       </div>
       <div class="example">
@@ -4987,7 +4987,7 @@ const G8_LESSONS = [
     num: 9,
     chapter: 3,
     title: "Tứ giác",
-    summary: "Tứ giác có 4 cạnh, 4 đỉnh, 4 góc. Tổng các góc trong bằng 360°. Các loại:凸 (lồi), lõm, đều, cân, vuông.",
+    summary: "Tứ giác có 4 cạnh, 4 đỉnh, 4 góc. Tổng các góc trong bằng 360°. Các loại:lồi, lõm, đều, cân, vuông.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Một mảnh đất hình tứ giác ABCD cần chia làm hai phần bằng nhau. Biết số đo ba góc: ∠A = 80°, ∠B = 100°, ∠C = 110°. Hỏi ∠D bằng bao nhiêu? Vì tổng bốn góc trong tứ giác bằng 360° nên ∠D = 360° - 80° - 100° - 110° = 70°.</p>
       <div class="definition">
@@ -5011,7 +5011,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Tứ giác ABCD có ∠A = 110°, ∠B = 100°, ∠C = 70°. ∠D = 360° − 110° − 100° − 70° = 80°.</p>
+        <p><strong>Ví dụ.</strong> Tứ giác ABCD có ∠A = 110°, ∠B = 100°, ∠C = 70°. ∠D = 360° − 110° − 100° − 70° = 80°.</p>
         <p>Tứ giác MNPQ có ∠M = ∠N = ∠P = 90° thì ∠Q = 360° − 270° = 90°. Đây là hình chữ nhật hoặc hình vuông.</p>
       </div>
       <div class="example">
@@ -5109,7 +5109,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình thang ABCD (AB ∥ CD), AB = 6 cm, CD = 10 cm. Đường trung bình \(EF = \dfrac{6 + 10}{2} = 8\) cm.</p>
+        <p><strong>Ví dụ.</strong> Hình thang ABCD (AB ∥ CD), AB = 6 cm, CD = 10 cm. Đường trung bình \(EF = \dfrac{6 + 10}{2} = 8\) cm.</p>
         <p>Hình thang cân ABCD (AB ∥ CD), AB = 4 cm, CD = 10 cm, cạnh bên BC = 5 cm. Kẻ đường cao AH, BH = \(\dfrac{10 - 4}{2} = 3\) cm, AH = 4 cm (tam giác vuông 3-4-5).</p>
       </div>
       <div class="example">
@@ -5163,6 +5163,24 @@ const G8_LESSONS = [
         </svg>
       </figure>
 
+    `,
+    exercises: [
+      { type: "num", prompt: "Hình thang có đáy lớn 15 cm, đáy nhỏ 9 cm. Tính đường trung bình.", answer: 12, hint: "(15+9):2.", explain: "(15 + 9) ÷ 2 = 12 cm." },
+      { type: "num", prompt: "Hình thang có đường trung bình = 11 cm, đáy lớn = 14 cm. Tính đáy nhỏ.", answer: 8, hint: "2×11−14.", explain: "2 × 11 − 14 = 8 cm." },
+      { type: "mc", prompt: "Hình thang cân ABCD (AB ∥ CD) có AB = 6 cm, CD = 14 cm. Đường trung bình bằng bao nhiêu?", choices: ["8 cm", "10 cm", "12 cm", "20 cm"], correct: 1, hint: "(6+14):2.", explain: "10 cm." },
+      { type: "text", prompt: "Hình thang vuông ABCD (AB ∥ CD) có AB=8cm, CD=12cm, AD=5cm. Tính đường trung bình.", answer: "10 cm", accept: ["10 cm", "10cm"], hint: "Chỉ cần hai đáy.", explain: "(8 + 12) ÷ 2 = 10 cm. Chiều cao không ảnh hưởng." },
+      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD) có AB = x, CD = 3x, đường trung bình = 16 cm. Tìm x.", answer: 8, hint: "(x+3x):2=16.", explain: "2x = 16 → x = 8." },
+      { type: "mc", prompt: "Tứ giác nào sau đây KHÔNG phải là hình thang?", choices: ["Hình bình hành", "Hình chữ nhật", "Hình vuông", "Tứ giác không có cạnh nào song song"], correct: 3, hint: "Hình thang cần ít nhất một cặp cạnh song song.", explain: "Tứ giác không có cạnh nào song song không phải hình thang. Các hình còn lại đều có hai cặp cạnh song song." },
+    ],
+  },
+
+  {
+    id: "g8-b11",
+    num: 11,
+    chapter: 3,
+    title: "Hình bình hành",
+    summary: "Hình bình hành có hai cặp cạnh đối song song. Các tính chất: đối bằng nhau, song song, góc đối bằng nhau, đường chéo cắt nhau tại trung điểm.",
+    body: String.raw`
       <figure class="figure" data-animation="g8-b11-parallelogram">
         <svg viewBox="0 0 360 210" role="img" aria-label="Hình bình hành ABCD với cặp cạnh đối song song">
           <polygon points="60,150 260,150 280,60 80,60" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -5183,46 +5201,6 @@ const G8_LESSONS = [
         </svg>
       </figure>
 
-      <figure class="figure" data-animation="g8-b12-thales">
-        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC với DE song song BC">
-          <polygon points="50,180 310,180 180,30" fill="none" stroke="#83C167" stroke-width="2"/>
-          <line x1="105" y1="130" x2="255" y2="130" stroke="#58C4DD" stroke-width="2"/>
-          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
-          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
-          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
-          <circle cx="105" cy="130" r="3" fill="#FC6255"/>
-          <circle cx="255" cy="130" r="3" fill="#FC6255"/>
-          <text x="38" y="198" font-size="13" fill="#58C4DD">A</text>
-          <text x="322" y="198" font-size="13" fill="#58C4DD">B</text>
-          <text x="192" y="20" font-size="13" fill="#58C4DD">C</text>
-          <text x="93" y="148" font-size="13" fill="#FC6255">D</text>
-          <text x="267" y="148" font-size="13" fill="#FC6255">E</text>
-          <text x="165" y="115" font-size="11" fill="#83C167">DE ∥ BC</text>
-          <path d="M 252 128 A 20 20 0 0 1 264 140" fill="none" stroke="#9A72AC" stroke-width="2"/>
-          <text x="268" y="120" font-size="11" fill="#9A72AC">∠C</text>
-          <path d="M 108 128 A 20 20 0 0 0 96 140" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="88" y="120" font-size="11" fill="#FC6255">∠B</text>
-        </svg>
-      </figure>
-
-    `,
-    exercises: [
-      { type: "num", prompt: "Hình thang có đáy lớn 15 cm, đáy nhỏ 9 cm. Tính đường trung bình.", answer: 12, hint: "(15+9):2.", explain: "(15 + 9) ÷ 2 = 12 cm." },
-      { type: "num", prompt: "Hình thang có đường trung bình = 11 cm, đáy lớn = 14 cm. Tính đáy nhỏ.", answer: 8, hint: "2×11−14.", explain: "2 × 11 − 14 = 8 cm." },
-      { type: "mc", prompt: "Hình thang cân ABCD (AB ∥ CD) có AB = 6 cm, CD = 14 cm. Đường trung bình bằng bao nhiêu?", choices: ["8 cm", "10 cm", "12 cm", "20 cm"], correct: 1, hint: "(6+14):2.", explain: "10 cm." },
-      { type: "text", prompt: "Hình thang vuông ABCD (AB ∥ CD) có AB=8cm, CD=12cm, AD=5cm. Tính đường trung bình.", answer: "10 cm", accept: ["10 cm", "10cm"], hint: "Chỉ cần hai đáy.", explain: "(8 + 12) ÷ 2 = 10 cm. Chiều cao không ảnh hưởng." },
-      { type: "num", prompt: "Hình thang ABCD (AB ∥ CD) có AB = x, CD = 3x, đường trung bình = 16 cm. Tìm x.", answer: 8, hint: "(x+3x):2=16.", explain: "2x = 16 → x = 8." },
-      { type: "mc", prompt: "Tứ giác nào sau đây KHÔNG phải là hình thang?", choices: ["Hình bình hành", "Hình chữ nhật", "Hình vuông", "Tứ giác không có cạnh nào song song"], correct: 3, hint: "Hình thang cần ít nhất một cặp cạnh song song.", explain: "Tứ giác không có cạnh nào song song không phải hình thang. Các hình còn lại đều có hai cặp cạnh song song." },
-    ],
-  },
-
-  {
-    id: "g8-b11",
-    num: 11,
-    chapter: 3,
-    title: "Hình bình hành",
-    summary: "Hình bình hành có hai cặp cạnh đối song song. Các tính chất: đối bằng nhau, song song, góc đối bằng nhau, đường chéo cắt nhau tại trung điểm.",
-    body: String.raw`
       <p><strong>Tình huống.</strong> Một khung cửa sổ hình bình hành ABCD có AB = 60 cm, BC = 40 cm. Cạnh CD bằng bao nhiêu? AD bằng bao nhiêu? Vì AB ∥ CD và AD ∥ BC nên AB = CD = 60 cm, AD = BC = 40 cm.</p>
       <div class="definition">
         <p><strong>Hình bình hành</strong> là tứ giác có hai cặp cạnh đối song song: AB ∥ CD và AD ∥ BC.</p>
@@ -5255,7 +5233,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình bình hành ABCD có ∠A = 70°. Tính các góc còn lại.</p>
+        <p><strong>Ví dụ.</strong> Hình bình hành ABCD có ∠A = 70°. Tính các góc còn lại.</p>
         <p>∠C = ∠A = 70° (hai góc đối). ∠B = 180° − ∠A = 110° (hai góc kề bù). ∠D = ∠B = 110°.</p>
         <p>AB = 8 cm, BC = 5 cm → CD = 8 cm, DA = 5 cm.</p>
       </div>
@@ -5308,7 +5286,25 @@ const G8_LESSONS = [
     title: "Định lí Thalès trong tam giác",
     summary: "Nếu một đường thẳng cắt hai cạnh của tam giác và song song với cạnh thứ ba thì chia hai cạnh đó thành các cặp đoạn thẳng tỷ lệ.",
     body: String.raw`
-      <p><strong>Tình huống.</strong> Muốn đo chiều cao一棵 cây mà không cần leo lên, ta dùng định lí Thalès: đặt một cọc thẳng đứng CA = 2 m, lùi lại sao cho mắt nhìn thấy ngọn cây và đỉnh cọc thẳng hàng. Đo khoảng cách từ cọc đến cây là 15 m, từ chân cọc đến chân người là 1.5 m. Tính chiều cao cây.</p>
+      <figure class="figure" data-animation="g8-b12-thales">
+        <svg viewBox="0 0 360 210" role="img" aria-label="Tam giác ABC, DE song song với BC">
+          <polygon points="180,30 50,180 310,180" fill="none" stroke="#83C167" stroke-width="2"/>
+          <line x1="115" y1="105" x2="245" y2="105" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="180" cy="30" r="3" fill="#58C4DD"/>
+          <circle cx="50" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="310" cy="180" r="3" fill="#58C4DD"/>
+          <circle cx="115" cy="105" r="3" fill="#FC6255"/>
+          <circle cx="245" cy="105" r="3" fill="#FC6255"/>
+          <text x="172" y="22" font-size="13" fill="#58C4DD">A</text>
+          <text x="36" y="198" font-size="13" fill="#58C4DD">B</text>
+          <text x="318" y="198" font-size="13" fill="#58C4DD">C</text>
+          <text x="96" y="100" font-size="13" fill="#FC6255">D</text>
+          <text x="252" y="100" font-size="13" fill="#FC6255">E</text>
+          <text x="148" y="96" font-size="12" fill="#83C167">DE ∥ BC</text>
+        </svg>
+      </figure>
+
+      <p><strong>Tình huống.</strong> Muốn đo chiều cao một cái cây mà không cần leo lên, ta dùng định lí Thalès: đặt một cọc thẳng đứng CA = 2 m, lùi lại sao cho mắt nhìn thấy ngọn cây và đỉnh cọc thẳng hàng. Đo khoảng cách từ cọc đến cây là 15 m, từ chân cọc đến chân người là 1.5 m. Tính chiều cao cây.</p>
       <div class="definition">
         <p><strong>Định lí Thalès trong tam giác:</strong> Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh thứ ba thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỷ lệ.</p>
         <p>Cho ΔABC, đường thẳng d cắt AB tại D, AC tại E, và d ∥ BC. Khi đó: \(\dfrac{AD}{AB} = \dfrac{AE}{AC} = \dfrac{DE}{BC}\).</p>
@@ -5330,7 +5326,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
+        <p><strong>Ví dụ.</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
         <p>Theo định lí: \(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) → \(\dfrac{4}{6} = \dfrac{3}{EC}\) → \(4·EC = 18\) → \(EC = 4.5\) cm.</p>
         <p>Độ dài AB = AD + DB = 10 cm. \(\dfrac{AD}{AB} = \dfrac{4}{10} = 0.4\), \(\dfrac{AE}{AC} = \dfrac{3}{7.5} = 0.4\). Tỷ lệ bằng nhau.</p>
       </div>
@@ -5403,7 +5399,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình thang ABCD (AB ∥ CD), AB = 8 cm, CD = 16 cm. Đường thẳng EF ∥ AB cắt AD tại E, BC tại F, với AE = 3 cm, ED = 5 cm.</p>
+        <p><strong>Ví dụ.</strong> Hình thang ABCD (AB ∥ CD), AB = 8 cm, CD = 16 cm. Đường thẳng EF ∥ AB cắt AD tại E, BC tại F, với AE = 3 cm, ED = 5 cm.</p>
         <p>Độ dài EF = AB + \(\dfrac{AE}{AD}\)(CD − AB) = 8 + \(\dfrac{3}{8}\)(16 − 8) = 8 + 3 = 11 cm.</p>
         <p>Hoặc: EF = (1 − 3/8)·8 + (3/8)·16 = 5 + 6 = 11 cm.</p>
       </div>
@@ -5512,7 +5508,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán của 20 học sinh: 5, 6, 7, 8, 9, 10. Tần số: điểm 5 (2 HS), điểm 6 (3 HS), điểm 7 (5 HS), điểm 8 (4 HS), điểm 9 (4 HS), điểm 10 (2 HS).</p>
+        <p><strong>Ví dụ.</strong> Điểm kiểm tra Toán của 20 học sinh: 5, 6, 7, 8, 9, 10. Tần số: điểm 5 (2 HS), điểm 6 (3 HS), điểm 7 (5 HS), điểm 8 (4 HS), điểm 9 (4 HS), điểm 10 (2 HS).</p>
         <p>Biểu đồ tần số: cột cao tương ứng với tần số. Điểm 7 có cột cao nhất (5). Điểm 5 và 10 có cột thấp nhất (2).</p>
       </div>
       <div class="example">
@@ -5532,7 +5528,7 @@ const G8_LESSONS = [
       </div>
       <div class="example">
         <p><strong>Ví dụ có bẫy.</strong> Biểu đồ quạt tròn có 4 quạt: A (30%), B (40%), C (20%), D (20%). Tổng = 110% → sai! Phải điều chỉnh: chia mỗi tỷ lệ cho 1.1 hoặc kiểm tra lại dữ liệu.</p>
-        <p>Biểu đồ tần số có cột cao nhất không phải giá trị lớn nhất! Ví dụ: điểm 5 có 10 HS (cao nhất), điểm 10 có 2 HS (thấp nhất). Cột cao反映 tần số, không phải giá trị.</p>
+        <p>Biểu đồ tần số có cột cao nhất không phải giá trị lớn nhất! Ví dụ: điểm 5 có 10 HS (cao nhất), điểm 10 có 2 HS (thấp nhất). Cột cao cho biết tần số, không phải giá trị.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Dữ liệu rời rạc: giá trị riêng lẻ. Dữ liệu liên tục: giá trị trong khoảng. Biểu đồ tần số = cột hoặc đoạn thẳng. Biểu đồ quạt tròn = phần trăm.</p></div>
       <div class="idea">
@@ -5604,7 +5600,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
+        <p><strong>Ví dụ.</strong> ΔABC, DE ∥ BC, AD = 4 cm, DB = 6 cm, AE = 3 cm. Tính EC.</p>
         <p>\(\dfrac{AD}{DB} = \dfrac{AE}{EC}\) → \(\dfrac{4}{6} = \dfrac{3}{EC}\) → EC = 4.5 cm.</p>
         <p>\(\dfrac{AD}{AB} = \dfrac{4}{10} = 0.4\), \(\dfrac{AE}{AC} = \dfrac{3}{7.5} = 0.4\). Tỷ lệ bằng nhau.</p>
       </div>
@@ -5699,7 +5695,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> ΔABC, AB = 8 cm, AC = 10 cm, BC = 12 cm. M, N là trung điểm AB, AC.</p>
+        <p><strong>Ví dụ.</strong> ΔABC, AB = 8 cm, AC = 10 cm, BC = 12 cm. M, N là trung điểm AB, AC.</p>
         <p>MN là đường trung bình → MN ∥ BC và \(MN = \dfrac{1}{2}BC = 6\) cm.</p>
         <p>AM = MB = 4 cm, AN = NC = 5 cm. Tam giác AMN bằng 1/4 tam giác ABC (vì các cạnh tương ứng tỷ lệ 1:2).</p>
       </div>
@@ -5796,7 +5792,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> ΔABC, AB = 5 cm, AC = 7 cm, BC = 9 cm. AD là đường phân giác.</p>
+        <p><strong>Ví dụ.</strong> ΔABC, AB = 5 cm, AC = 7 cm, BC = 9 cm. AD là đường phân giác.</p>
         <p>\(\dfrac{BD}{DC} = \dfrac{5}{7}\). Đặt BD = 5x, DC = 7x. BC = 12x = 9 → x = 0.75.</p>
         <p>BD = 3.75 cm, DC = 5.25 cm.</p>
       </div>
@@ -5896,7 +5892,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Số anh chị em của 20 học sinh: 0, 1, 2, 1, 3, 1, 0, 2, 1, 1, 2, 0, 1, 1, 2, 3, 1, 0, 1, 2.</p>
+        <p><strong>Ví dụ.</strong> Số anh chị em của 20 học sinh: 0, 1, 2, 1, 3, 1, 0, 2, 1, 1, 2, 0, 1, 1, 2, 3, 1, 0, 1, 2.</p>
         <p>Giá trị 0 xuất hiện 4 lần → tần số = 4.</p>
         <p>Giá trị 1 xuất hiện 8 lần → tần số = 8.</p>
         <p>Giá trị 2 xuất hiện 6 lần → tần số = 6.</p>
@@ -5999,7 +5995,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán của 20 học sinh: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
+        <p><strong>Ví dụ.</strong> Điểm kiểm tra Toán của 20 học sinh: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
         <p>Biểu đồ tần số: cột cao tương ứng với tần số. Điểm 7 có cột cao nhất (5). Điểm 5 và 10 có cột thấp nhất (2).</p>
         <p>Biểu đồ quạt tròn: điểm 7 chiếm \(\dfrac{5}{20} = 25\)% → quạt 90°.</p>
       </div>
@@ -6081,7 +6077,7 @@ const G8_LESSONS = [
       <div class="idea">
         <p><strong>Phân tích biểu đồ quạt tròn:</strong></p>
         <ul>
-          <li>Phần nào lớn nhất →占比 cao nhất</li>
+          <li>Phần nào lớn nhất → chiếm tỉ lệ cao nhất</li>
           <li>So sánh tỷ lệ giữa các nhóm</li>
           <li>Tính số lượng nếu biết tổng</li>
         </ul>
@@ -6095,7 +6091,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Điểm kiểm tra Toán: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
+        <p><strong>Ví dụ.</strong> Điểm kiểm tra Toán: 5(2), 6(3), 7(5), 8(4), 9(4), 10(2).</p>
         <p>Giá trị phổ biến nhất: 7 (tần số 5).</p>
         <p>Điểm trung bình: \(\dfrac{5·2 + 6·3 + 7·5 + 8·4 + 9·4 + 10·2}{20} = \dfrac{141}{20} = 7.05\).</p>
         <p>Tỷ lệ điểm >= 8: \(\dfrac{4 + 4 + 2}{20} = 50\)%.</p>
@@ -6195,7 +6191,7 @@ const G8_LESSONS = [
         </ul>
       </div>
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> \(\dfrac{3x-6}{x-2}\) có điều kiện xác định x ≠ 2.</p>
+        <p><strong>Ví dụ.</strong> \(\dfrac{3x-6}{x-2}\) có điều kiện xác định x ≠ 2.</p>
         <p>Khi x ≠ 2, \(\dfrac{3x-6}{x-2} = \dfrac{3(x-2)}{x-2} = 3\).</p>
         <p>Nếu x = 2 thì phân thức không xác định (mẫu = 0).</p>
       </div>
@@ -7155,7 +7151,7 @@ const G8_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ 3 (Khó hơn).</strong> Một袋子 có 6 bi: 2 đỏ, 3 xanh, 1 vàng. Rút ngẫu nhiên 2 bi (không hoàn lại). Tính xác suất rút được 2 bi cùng màu.</p>
+        <p><strong>Ví dụ 3 (Khó hơn).</strong> Một túi có 6 bi: 2 đỏ, 3 xanh, 1 vàng. Rút ngẫu nhiên 2 bi (không hoàn lại). Tính xác suất rút được 2 bi cùng màu.</p>
         <p><strong>Giải:</strong></p>
         <p>Không gian mẫu: chọn 2 bi từ 6 bi → C(6,2) = 15 cách</p>
         <p>Kết quả thuận lợi:</p>
@@ -7221,7 +7217,7 @@ const G8_LESSONS = [
       { type: "text", prompt: "Tung một xúc xắc cân đối. P(số chấm chẵn) =", answer: "1/2", accept: ["1/2", "0.5"], hint: "Số chẵn: {2,4,6}, n=6, m=3.", explain: "P = 3/6 = 1/2." },
       { type: "text", prompt: "Một lớp có 30 học sinh: 12 nam, 18 nữ. Chọn ngẫu nhiên 1 HS. P(nữ) =", answer: "3/5", accept: ["3/5", "0.6"], hint: "n=30, m=18, P=18/30=3/5.", explain: "P = 18/30 = 3/5." },
       { type: "text", prompt: "Tung hai đồng xu. P(một sấp một ngửa) =", answer: "1/2", accept: ["1/2", "0.5"], hint: "Kết quả thuận lợi: SN, NS (2 kết quả), n=4.", explain: "P = 2/4 = 1/2." },
-      { type: "text", prompt: "Một袋子 có 5 bi: 2 đỏ, 3 xanh. Rút ngẫu nhiên 1 bi, rồi trả lại. Lần 2 rút 1 bi. P(lần 1 đỏ, lần 2 xanh) =", answer: "6/25", accept: ["6/25", "0.24"], hint: "Lần 1: P(đỏ)=2/5. Lần 2: P(xanh)=3/5. Độc lập: P=2/5·3/5=6/25.", explain: "P = 2/5 × 3/5 = 6/25." },
+      { type: "text", prompt: "Một túi có 5 bi: 2 đỏ, 3 xanh. Rút ngẫu nhiên 1 bi, rồi trả lại. Lần 2 rút 1 bi. P(lần 1 đỏ, lần 2 xanh) =", answer: "6/25", accept: ["6/25", "0.24"], hint: "Lần 1: P(đỏ)=2/5. Lần 2: P(xanh)=3/5. Độc lập: P=2/5·3/5=6/25.", explain: "P = 2/5 × 3/5 = 6/25." },
       { type: "text", prompt: "Tung một xúc xắc. P(số chấm < 3) =", answer: "1/3", accept: ["1/3"], hint: "Số < 3: {1,2}, n=6, m=2.", explain: "P = 2/6 = 1/3." }
     ]
   },
@@ -7763,11 +7759,11 @@ const G8_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một cái cột điện cao 15m tạo bóng dài 20m. Cùng lúc đó, một建筑物 có bóng dài 60m. Tính chiều cao建筑物.</p>
+        <p><strong>Ví dụ 5 (Ứng dụng thực tế).</strong> Một cái cột điện cao 15m tạo bóng dài 20m. Cùng lúc đó, một tòa nhà có bóng dài 60m. Tính chiều cao tòa nhà.</p>
         <p><strong>Giải:</strong></p>
-        <p>Cột điện và建筑物 đều vuông góc với mặt đất → hai tam giác vuông</p>
-        <p>Tỉ số: 15/20 =建筑物/60</p>
-        <p>建筑物 = 60 × 15/20 = 45m</p>
+        <p>Cột điện và tòa nhà đều vuông góc với mặt đất → hai tam giác vuông</p>
+        <p>Tỉ số: 15/20 = chiều cao tòa nhà / 60</p>
+        <p>Chiều cao tòa nhà = 60 × 15/20 = 45m</p>
         <p>(Đây là cách sử dụng tam giác đồng dạng để đo chiều cao vật inaccessible)</p>
       </div>
       
@@ -8230,6 +8226,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>"5 > 3" là mệnh đề? <em>— Có, đúng.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Đọc câu "2 + 2 = 5". Nó khẳng định một việc, và việc đó sai, nên vẫn là mệnh đề. Câu "Hãy giải bài này" là lời yêu cầu, không đúng cũng không sai, nên không phải mệnh đề. "x + 1 = 4" còn chứa x chưa biết, cũng chưa phải mệnh đề.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Mệnh đề là khẳng định đúng hoặc sai.</p></div>
       <figure class="figure" data-animation="g10-b1-truth-table">
         <svg viewBox="0 0 260 140" role="img" aria-label="Bảng chân trị của mệnh đề">
@@ -8279,6 +8278,9 @@ const G10_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên tập rỗng.</p>
       </div>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Viết tập các số tự nhiên nhỏ hơn 4. Số tự nhiên bắt đầu từ 0, nên tập là {0, 1, 2, 3}. Đếm được 4 phần tử. Tập rỗng ∅ không có phần tử nào, khác với {0}.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tập hợp là nhóm phần tử.</p></div>
       <figure class="figure" data-animation="g10-b2-sets">
         <svg viewBox="0 0 260 160" role="img" aria-label="Venn diagram của hai tập hợp">
@@ -8316,6 +8318,9 @@ const G10_LESSONS = [
       </div>
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> {a} ≠ a (một là tập, một là phần tử).</p>
+      </div>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Kiểm {1, 3} có là tập con của {1, 2, 3} không. 1 thuộc, 3 thuộc, hết phần tử, nên có. {1, 4} thì không, vì 4 không thuộc tập lớn. {1, 2, 3} và {3, 2, 1} bằng nhau vì cùng phần tử.</p>
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> A ⊆ B nếu mọi phần tử của A đều trong B.</p></div>
       <figure class="figure" data-animation="g10-b3-subset">
@@ -8359,6 +8364,9 @@ const G10_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> A \\ B ≠ B \\ A.</p>
       </div>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> A = {1, 2, 3}, B = {2, 3, 4}. Hợp là {1, 2, 3, 4}, có 4 phần tử. Giao chỉ còn {2, 3}. A \\ B loại phần tử của B, còn {1}. B \\ A còn {4}, không bằng A \\ B.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hợp: hoặc, Giao: và, Hiệu: nhưng không.</p></div>
       <figure class="figure" data-animation="g10-b4-set-operations">
         <svg viewBox="0 0 260 160" role="img" aria-label="Hợp, giao, hiệu của hai tập hợp">
@@ -8377,7 +8385,7 @@ const G10_LESSONS = [
     `,
     exercises: [
       { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B có bao nhiêu phần tử?", answer: "4", accept: ["4"], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
-      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B là?", answer: "{2, 3}", accept: ["{2, 3}"], hint: "Phần tử chung.", explain: "{2, 3}." },
+      { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B là tập nào?", choices: ["{2, 3}", "{1, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Chỉ lấy phần tử có trong cả hai tập.", explain: "{2, 3}." },
       { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3}. A \\ B là?", choices: ["{1}", "{2, 3}", "{1, 2, 3}", "∅"], correct: 0, hint: "Loại 2 và 3 ra.", explain: "{1}." },
     ],
   },
@@ -8404,6 +8412,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Cho a > b. Khẳng định nào đúng? <em>— a + 2 > b + 2.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Biết 5 > 3. Cộng 2 vào cả hai vế: 7 > 5, vẫn đúng. Nhân cả hai vế với −1 thì phải đổi chiều: −5 < −3. Quên đổi chiều là sai.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Bất đẳng thức là so sánh A > B hoặc A < B.</p></div>
       <figure class="figure" data-animation="g10-b5-inequality">
         <svg viewBox="0 0 260 80" role="img" aria-label="Minh họa bất đẳng thức trên trục số">
@@ -8450,6 +8461,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Nghiệm của 3x - 6 < 0 là? <em>— x < 2.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Giải 2x + 3 > 7. Trừ 3 cả hai vế: 2x > 4. Chia cho 2: x > 2. Thử x = 3: 9 > 7, đúng. Thử x = 2: 7 > 7, sai. Nên x = 2 không thuộc tập nghiệm.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Giải bất phương trình là tìm tập nghiệm.</p></div>
       <figure class="figure" data-animation="g10-b6-linear-inequality">
         <svg viewBox="0 0 260 80" role="img" aria-label="Giải bất phương trình trên trục số">
@@ -8493,6 +8507,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Dấu của f(x) = -x + 5 khi x = 3? <em>— Dương.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> f(x) = 2x − 4. Cho f(x) = 0 được x = 2. Thử x = 3: f(3) = 2 > 0, nên dương khi x > 2. Thử x = 0: f(0) = −4 < 0, nên âm khi x < 2.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Nghiệm x = -b/a, dấu thay đổi tại nghiệm.</p></div>
       <figure class="figure" data-animation="g10-b7-linear-sign">
         <svg viewBox="0 0 260 80" role="img" aria-label="Dấu của nhị thức bậc nhất trên trục số">
@@ -8538,6 +8555,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Đỉnh của y = x² - 4x + 3 là? <em>— (2, -1).</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> y = x². Lập vài điểm: x = 0 thì y = 0; x = 1 thì y = 1; x = 2 thì y = 4; x = −2 thì y = 4. Đỉnh ở (0, 0), hai nhánh đi lên. x = 1 và x = −1 cho cùng một y.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Đồ thị parabol, đỉnh (-b/2a, -Δ/4a).</p></div>
       <figure class="figure" data-animation="g10-b8-quadratic">
         <svg viewBox="0 0 260 180" role="img" aria-label="Đồ thị hàm số y = ax²">
@@ -8585,6 +8605,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Dấu của f(x) = x² - 5x + 6 tại x = 4? <em>— Âm.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> f(x) = x² − 1 = (x − 1)(x + 1). Hai nghiệm −1 và 1. Thử x = 0: f(0) = −1 < 0, nên âm giữa hai nghiệm. Thử x = 2: f(2) = 3 > 0, nên dương ngoài hai nghiệm.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Δ < 0 cùng dấu a, Δ > 0 đổi dấu tại 2 nghiệm.</p></div>
       <figure class="figure" data-animation="g10-b9-quadratic-sign">
         <svg viewBox="0 0 260 180" role="img" aria-label="Đồ thị tam thức bậc hai và dấu của nó">
@@ -8632,6 +8655,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>AB và BA là? <em>— Hai vector ngược nhau.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> A(1, 2), B(4, 6). Vectơ AB = (4 − 1, 6 − 2) = (3, 4). Hai vectơ bằng nhau khi cùng độ dài và cùng hướng, tức cùng cặp tọa độ. CD = (3, 4) thì AB = CD.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Vector có điểm đầu và điểm cuối.</p></div>
       <figure class="figure" data-animation="g10-b10-vector">
         <svg viewBox="0 0 260 160" role="img" aria-label="Vector trong mặt phẳng">
@@ -8678,6 +8704,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>AB + BC + CA = ? <em>— Vector không 0.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = (2, 3), BC = (1, 4). Cộng từng tọa độ: AC = (2 + 1, 3 + 4) = (3, 7). Kiểm bằng hình: đi từ A theo AB rồi theo BC thì đến C.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc tam giác: AB + BC = AC.</p></div>
       <figure class="figure" data-animation="g10-b11-vector-sum">
         <svg viewBox="0 0 260 160" role="img" aria-label="Tổng hai vector theo quy tắc tam giác">
@@ -8704,7 +8733,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "AB + BC = ?", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
       { type: "mc", prompt: "AB + BA = ?", choices: ["0", "2AB", "AB", "BA"], correct: 0, hint: "AB và BA ngược nhau.", explain: "Vector không 0." },
-      { type: "num", prompt: "AB = (3, -2), BC = (-1, 4). AC = ?", answer: "(2, 2)", accept: ["(2, 2)", "2, 2"], hint: "Cộng tọa độ tương ứng.", explain: "(3-1, -2+4) = (2, 2)." },
+      { type: "mc", prompt: "AB = (3, -2), BC = (-1, 4). AC bằng vectơ nào?", choices: ["(2, 2)", "(4, 2)", "(2, -6)", "(3, -2)"], correct: 0, hint: "Cộng từng tọa độ: 3 + (-1), -2 + 4.", explain: "(2, 2)." },
     ],
   },
   {
@@ -8731,6 +8760,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Cho tam giác ABC. AB - AC = ? <em>— CB.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> A(1, 1), B(3, 4), C(2, 3). AB = (2, 3), AC = (1, 2). AB − AC = (1, 1). Đó cũng là vectơ từ C đến B. Không được trừ nhầm thành AC − AB.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tắc trừ: cùng điểm đầu, hiệu là vector từ cuối này đến cuối kia.</p></div>
       <figure class="figure" data-animation="g10-b12-vector-diff">
         <svg viewBox="0 0 260 160" role="img" aria-label="Hiệu hai vector AB - AC = CB">
@@ -8757,7 +8789,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "AB - AC = ?", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
       { type: "mc", prompt: "AB - BA = ?", choices: ["2AB", "0", "AB", "-2AB"], correct: 0, hint: "BA = -AB nên AB - BA = AB - (-AB) = 2AB.", explain: "2AB." },
-      { type: "num", prompt: "A(1,1), B(3,4), C(2,3). AB - AC = ?", answer: "(1,1)", accept: ["(1, 1)", "1, 1"], hint: "AB=(2,3), AC=(1,2), hiệu=(1,1).", explain: "(2-1, 3-2) = (1, 1)." },
+      { type: "mc", prompt: "A(1, 1), B(3, 4), C(2, 3). AB − AC bằng vectơ nào?", choices: ["(1, 1)", "(2, 3)", "(3, 4)", "(0, 0)"], correct: 0, hint: "AB = (2, 3), AC = (1, 2). Trừ từng tọa độ.", explain: "(1, 1)." },
     ],
   },
   {
@@ -8784,6 +8816,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>3·AB với AB = (1, -2) là? <em>— (3, -6).</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = (4, −6), k = 1/2. Nhân từng tọa độ: (2, −3). Nếu k = −1 thì được (−4, 6), cùng độ dài nhưng ngược hướng.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> k·AB: cùng/phản hướng, độ dài |k|·AB.</p></div>
       <figure class="figure" data-animation="g10-b13-scalar-mul">
         <svg viewBox="0 0 260 140" role="img" aria-label="Tích vector với số k">
@@ -8807,7 +8842,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "2·AB với AB = (3, 4) là?", choices: ["(6, 8)", "(3, 4)", "(1.5, 2)", "(-6, -8)"], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
       { type: "mc", prompt: "-1·AB với AB = (2, -3) là?", choices: ["(-2, 3)", "(2, -3)", "(-2, -3)", "(2, 3)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(-2, 3)." },
-      { type: "num", prompt: "k = 1/2, AB = (4, -6). k·AB = ?", answer: "(2, -3)", accept: ["(2, -3)", "2, -3"], hint: "Chia từng tọa độ cho 2.", explain: "(4/2, -6/2) = (2, -3)." },
+      { type: "mc", prompt: "k = 1/2, AB = (4, -6). k·AB bằng vectơ nào?", choices: ["(2, -3)", "(4, -6)", "(8, -12)", "(2, 3)"], correct: 0, hint: "Nhân từng tọa độ với 1/2.", explain: "(2, -3)." },
     ],
   },
   {
@@ -8834,6 +8869,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Tọa độ trung điểm AB với A(1,2), B(3,4) là? <em>— (2, 3).</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Điểm M(4, −2): từ O đi 4 đơn vị theo chiều dương của Ox, rồi 2 đơn vị theo chiều âm của Oy. Hoành độ 4, tung độ −2. Điểm này ở góc phần tư IV.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> M(x, y) ↔ OM = x·i + y·j.</p></div>
       <figure class="figure" data-animation="g10-b14-coordinate-system">
         <svg viewBox="0 0 260 160" role="img" aria-label="Hệ trục tọa độ Oxy">
@@ -8853,7 +8891,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "Tọa độ điểm A(2, -3) là?", choices: ["(2, -3)", "(-3, 2)", "(2, 3)", "(-2, 3)"], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
       { type: "mc", prompt: "Trung điểm AB với A(1,1), B(3,5) là?", choices: ["(2, 3)", "(1, 3)", "(2, 5)", "(4, 6)"], correct: 0, hint: "((1+3)/2, (1+5)/2) = (2, 3).", explain: "(2, 3)." },
-      { type: "num", prompt: "Điểm M(4, -2) có tọa độ là", answer: "(4, -2)", accept: ["(4, -2)", "4, -2"], hint: "x = 4, y = -2.", explain: "(4, -2)." },
+      { type: "mc", prompt: "Điểm M(4, -2) nằm ở góc phần tư nào?", choices: ["IV", "I", "II", "III"], correct: 0, hint: "Hoành độ dương, tung độ âm.", explain: "Góc phần tư IV." },
     ],
   },
   {
@@ -8880,6 +8918,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Vector AB với A(2,3), B(5,7) là? <em>— (3, 4).</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> A(−1, 2), B(2, −1). AB = (2 − (−1), −1 − 2) = (3, −3). Độ dài |AB| = √(9 + 9) = 3√2. Đừng lấy A − B, vì vectơ đi từ A đến B.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> AB = (xB - xA, yB - yA).</p></div>
       <figure class="figure" data-animation="g10-b15-vector-coords">
         <svg viewBox="0 0 260 160" role="img" aria-label="Tọa độ của vector">
@@ -8903,7 +8944,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "Vector AB với A(1,2), B(4,5) là?", choices: ["(3, 3)", "(1, 1)", "(-3, -3)", "(5, 7)"], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0), B(3,4) là?", choices: ["5", "3", "4", "7"], correct: 0, hint: "√(9+16) = 5.", explain: "5." },
-      { type: "num", prompt: "Vector AB với A(-1,2), B(2,-1) là", answer: "(3, -3)", accept: ["(3, -3)", "3, -3"], hint: "(2-(-1), -1-2) = (3, -3).", explain: "(3, -3)." },
+      { type: "mc", prompt: "Vectơ AB với A(-1, 2), B(2, -1) là", choices: ["(3, -3)", "(-3, 3)", "(1, 1)", "(-1, 2)"], correct: 0, hint: "Lấy tọa độ B trừ tọa độ A.", explain: "(3, -3)." },
     ],
   },
   {
@@ -8931,6 +8972,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>AB = (3, -2), CD = (-1, 4). AB - CD = ? <em>— (4, -6).</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = (5, −3), CD = (2, 1). Trước hết 2·CD = (4, 2). Rồi AB − 2·CD = (5 − 4, −3 − 2) = (1, −5). Làm phép nhân trước, trừ sau.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Làm trên tọa độ: cộng, trừ, nhân từng thành phần.</p></div>
       <figure class="figure" data-animation="g10-b16-vector-expr">
         <svg viewBox="0 0 260 160" role="img" aria-label="Biểu thức tọa độ của phép toán vector">
@@ -8957,7 +9001,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "AB = (2, 3), CD = (-1, 2). AB + CD = ?", choices: ["(1, 5)", "(3, 5)", "(1, 1)", "(-2, 6)"], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
       { type: "mc", prompt: "AB = (4, -2), k = 1/2. k·AB = ?", choices: ["(2, -1)", "(8, -4)", "(2, 1)", "(-2, 1)"], correct: 0, hint: "(4/2, -2/2) = (2, -1).", explain: "(2, -1)." },
-      { type: "num", prompt: "AB = (5, -3), CD = (2, 1). AB - 2·CD = ?", answer: "(1, -5)", accept: ["(1, -5)", "1, -5"], hint: "2·CD=(4,2), (5-4, -3-2)=(1,-5).", explain: "(1, -5)." },
+      { type: "mc", prompt: "AB = (5, -3), CD = (2, 1). AB − 2·CD bằng vectơ nào?", choices: ["(1, -5)", "(3, -2)", "(7, -4)", "(1, -2)"], correct: 0, hint: "2·CD = (4, 2). Rồi trừ từng tọa độ.", explain: "(1, -5)." },
     ],
   },
   {
@@ -8984,6 +9028,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>cos 120° = ? <em>— -1/2.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> sin 150° = sin(180° − 30°) = sin 30° = 1/2. cos 120° = −cos 60° = −1/2. Góc tù có sin dương, cos âm. Đừng viết cos 120° = 1/2.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> sin(180°-α)=sin α, cos(180°-α)=-cos α.</p></div>
       <figure class="figure" data-animation="g10-b17-trig-values">
         <svg viewBox="0 0 240 160" role="img" aria-label="Giá trị lượng giác trên đường tròn đơn vị">
@@ -9035,6 +9082,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>AB = (2, 3), AC = (4, -1). AB·AC = ? <em>— 5.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = (3, 0), AC = (0, 4). Tích vô hướng 3·0 + 0·4 = 0. Tích bằng 0 nên AB vuông góc AC. Nếu tích dương, góc nhọn; tích âm, góc tù.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> AB·AC = x1x2 + y1y2 trong tọa độ.</p></div>
       <figure class="figure" data-animation="g10-b18-dot-product">
         <svg viewBox="0 0 260 160" role="img" aria-label="Tích vô hướng của hai vector">
@@ -9088,6 +9138,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Góc giữa AB=(1,0) và AC=(0,1) là? <em>— 90°.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = (3, 4). |AB|² = 9 + 16 = 25, nên |AB| = 5. Muốn biết góc, dùng tích vô hướng rồi chia cho tích hai độ dài. Đừng quên căn khi lấy độ dài.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> cos α = (AB·AC)/(|AB|·|AC|).</p></div>
       <figure class="figure" data-animation="g10-b19-dot-product-app">
         <svg viewBox="0 0 260 160" role="img" aria-label="Ứng dụng tích vô hướng vào độ dài và góc">
@@ -9140,6 +9193,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>BC với AB=5, AC=8, góc A=60° là? <em>— √49 = 7.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> AB = 3, AC = 4, góc A = 60°. BC² = 3² + 4² − 2·3·4·cos 60° = 9 + 16 − 12·1/2 = 13. BC = √13. cos 60° là 1/2, không phải √3/2.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> a² = b² + c² - 2bc·cos A.</p></div>
       <figure class="figure" data-animation="g10-b20-law-of-cosines">
         <svg viewBox="0 0 260 160" role="img" aria-label="Các hệ thức lượng trong tam giác">
@@ -9190,6 +9246,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Đường tròn tâm (1, 2), bán kính 3 là? <em>— (x-1)² + (y-2)² = 9.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Tâm (2, 3), bán kính √5. Phương trình (x − 2)² + (y − 3)² = 5. Điểm (4, 4): (2)² + (1)² = 5, nằm trên đường tròn. Điểm (2, 3) là tâm, không nằm trên đường tròn.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Phương trình: (x - a)² + (y - b)² = R².</p></div>
       <figure class="figure" data-animation="g10-b21-circle">
         <svg viewBox="0 0 260 160" role="img" aria-label="Đường tròn trong mặt phẳng tọa độ">
@@ -9209,7 +9268,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "Đường tròn tâm O(0,0), bán kính 2 là?", choices: ["x² + y² = 4", "x² + y² = 2", "(x-2)² + y² = 4", "x² + (y-2)² = 4"], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
       { type: "mc", prompt: "Đường tròn tâm I(3, -1), bán kính 5 là?", choices: ["(x-3)² + (y+1)² = 25", "(x+3)² + (y-1)² = 25", "(x-3)² + (y-1)² = 25", "(x+3)² + (y+1)² = 25"], correct: 0, hint: "a=3, b=-1 ⇒ (x-3)² + (y-(-1))² = 25.", explain: "(x-3)² + (y+1)² = 25." },
-      { type: "num", prompt: "Đường tròn tâm (2, 3), bán kính √5 có phương trình là", answer: "(x-2)² + (y-3)² = 5", accept: ["(x-2)^2 + (y-3)^2 = 5", "(x-2)² + (y-3)² = 5"], hint: "R² = 5.", explain: "(x-2)² + (y-3)² = 5." },
+      { type: "mc", prompt: "Đường tròn tâm (2, 3), bán kính √5 có phương trình nào?", choices: ["(x − 2)² + (y − 3)² = 5", "(x − 2)² + (y − 3)² = √5", "x² + y² = 5", "(x + 2)² + (y + 3)² = 5"], correct: 0, hint: "Bình phương bán kính: (√5)² = 5.", explain: "(x − 2)² + (y − 3)² = 5." },
     ],
   },
   {
@@ -9221,7 +9280,7 @@ const G10_LESSONS = [
     body: String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
       <div class="definition">
         <p>Elip: tổng khoảng cách đến hai tiêu điểm không đổi.</p>
-        <p>Parabol: tập hợp điểm cách đều điểm焦点 và đường chuẩn.</p>
+        <p>Parabol: tập hợp điểm cách đều tiêu điểm và đường chuẩn.</p>
         <p>Hypebol: hiệu khoảng cách đến hai tiêu điểm không đổi.</p>
       </div>
       <div class="example">
@@ -9237,7 +9296,10 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Phương trình nào là parabol? <em>— y² = 4x.</em></p>
       </details>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều焦点 và đường chuẩn.</p></div>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Elip x²/4 + y²/1 = 1. a = 2, b = 1. Điểm (2, 0) và (0, 1) thỏa. Điểm (2, 1): 1 + 1 = 2 ≠ 1, không thuộc elip. a là nửa trục dài, phải lớn hơn b.</p>
+      </div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều tiêu điểm và đường chuẩn.</p></div>
       <figure class="figure" data-animation="g10-b22-conic">
         <svg viewBox="0 0 260 160" role="img" aria-label="Ba đường conic: elip, parabol, hyperbol">
           <!-- Ellipse -->
@@ -9289,6 +9351,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Chọn 1 môn từ 3 môn Toán, Văn, Anh là? <em>— 3 cách.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Từ A đến B có 3 đường, từ B đến C có 2 đường. Đi liên tiếp thì nhân: 3 × 2 = 6 cách. Nếu chỉ chọn một trong hai việc riêng, thì cộng: 3 + 2 = 5. Đừng cộng khi phải làm cả hai bước.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Cộng: loại trừ, Nhân: phối hợp.</p></div>
       <figure class="figure" data-animation="g10-b23-addition-rule">
         <svg viewBox="0 0 260 160" role="img" aria-label="Quy tắc cộng và quy tắc nhân">
@@ -9335,6 +9400,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Sắp xếp 4 người vào 4 ghế là? <em>— 4! = 24.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Xếp 3 người vào 3 ghế: người đầu 3 cách, người sau 2 cách, người cuối 1 cách. 3 × 2 × 1 = 6 = 3!. Chọn có thứ tự 2 người trong 5 người: 5 × 4 = 20.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Hoán vị: P_n = n!, Chỉnh hợp: A_n^k = n!/(n-k)!.</p></div>
       <figure class="figure" data-animation="g10-b24-permutations">
         <svg viewBox="0 0 260 160" role="img" aria-label="Hoán vị, chỉnh hợp">
@@ -9387,6 +9455,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>C_4^2 = ? <em>— 6.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Chọn 2 người trong 5 người, không kể thứ tự. Có thứ tự thì 5 × 4 = 20, mỗi cặp bị đếm 2 lần, nên chia 2: C(5, 2) = 10. Đừng để đáp án là 20 nếu đề không xếp thứ tự.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> C_n^k = n!/(k!(n-k)!).</p></div>
       <figure class="figure" data-animation="g10-b25-combinations">
         <svg viewBox="0 0 260 160" role="img" aria-label="Tổ hợp">
@@ -9438,6 +9509,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>2.71828 quy tròn đến hàng phần nghìn là? <em>— 2.718.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Lấy π ≈ 3,14 trong khi giá trị dùng để so là 3,1416. Sai số tuyệt đối khoảng 0,0016. Sai số tương đối khoảng 0,0016 / 3,1416. Số gần đúng phải kèm sai số, không viết như số đúng.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Quy tròn đến hàng nào thì chữ số hàng đó giữ nguyên, các chữ số sau bằng 0.</p></div>
       <figure class="figure" data-animation="g10-b26-approximation">
         <svg viewBox="0 0 260 140" role="img" aria-label="Số gần đúng và sai số">
@@ -9489,6 +9563,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Mẫu: 1, 3, 5, 7, 9. Trung vị là? <em>— 5.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Mẫu 2, 3, 5, 7, 8. Trung bình: (2+3+5+7+8)/5 = 25/5 = 5. Trung vị là số đứng giữa sau khi xếp: 5. Nếu thêm số 20, trung bình tăng rõ, trung vị đổi ít hơn.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Số trung bình: tổng chia n, Trung vị: giá trị giữa, Mode: xuất hiện nhiều nhất.</p></div>
       <figure class="figure" data-animation="g10-b27-mean">
         <svg viewBox="0 0 260 140" role="img" aria-label="Số trung bình cộng">
@@ -9540,6 +9617,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Độ lệch chuẩn là căn bậc hai của? <em>— Phương sai.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Mẫu 2, 4, 6, 8, 10. Trung bình là 6. Độ lệch: −4, −2, 0, 2, 4. Bình phương: 16, 4, 0, 4, 16, tổng 40. Chia cho 4 (n − 1) được phương sai 10. Đừng chia cho 5 nếu bài dùng mẫu.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Phương sai đo bình phương khoảng cách, độ lệch chuẩn có cùng đơn vị.</p></div>
       <figure class="figure" data-animation="g10-b28-stddev">
         <svg viewBox="0 0 260 140" role="img" aria-label="Độ lệch chuẩn">
@@ -9590,6 +9670,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Gieo đồng xu: P(sấp) = ? <em>— 1/2.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Xúc xắc có 6 mặt. Số lớn hơn 4 là 5 và 6, hai mặt. Xác suất 2/6 = 1/3. Số 4 không được tính. Số chẵn là 2, 4, 6, nên xác suất 3/6 = 1/2.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> P(A) = số kết quả thuận lợi / tổng số kết quả đồng khả năng.</p></div>
       <figure class="figure" data-animation="g10-b29-probability-game">
         <svg viewBox="0 0 260 160" role="img" aria-label="Xác suất trong trò chơi đơn giản">
@@ -9614,7 +9697,7 @@ const G10_LESSONS = [
     exercises: [
       { type: "mc", prompt: "Gieo xúc xắc: P(ra số lẻ) =", choices: ["1/2", "1/3", "1/6", "5/6"], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
       { type: "mc", prompt: "Gieo đồng xu 2 lần: P(được 1 sấp 1 ngửa) =", choices: ["1/2", "1/4", "3/4", "1"], correct: 0, hint: "2 kết quả thuận lợi (sấp-ngửa, ngửa-sấp) / 4 kết quả.", explain: "1/2." },
-      { type: "num", prompt: "Gieo xúc xắc: P(ra số > 4) =", answer: "1/3", accept: ["1/3", "0.333", "0.33"], hint: "2 số (5,6) / 6 mặt = 1/3.", explain: "1/3." },
+      { type: "mc", prompt: "Gieo một xúc xắc cân đối. Xác suất ra số lớn hơn 4 là", choices: ["1/3", "1/2", "2/3", "1/6"], correct: 0, hint: "Mặt 5 và 6. 2/6 = 1/3.", explain: "1/3." },
     ],
   },
   {
@@ -9642,6 +9725,9 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>P(A) = 0.3 ⇒ P(A') = ? <em>— 0.7.</em></p>
       </details>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> P(A) = 0,4, P(B) = 0,3, P(A ∩ B) = 0,1. Hợp: 0,4 + 0,3 − 0,1 = 0,6. Phải trừ phần giao, vì phần đó đã bị cộng hai lần. 0,4 + 0,3 = 0,7 là sai.</p>
+      </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> P(A') = 1 - P(A), P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</p></div>
       <figure class="figure" data-animation="g10-b30-probability">
         <svg viewBox="0 0 260 160" role="img" aria-label="Xác suất của biến cố">

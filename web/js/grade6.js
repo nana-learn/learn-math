@@ -3047,4 +3047,12 @@ const G6_LESSONS = [
   },
 ];
 
-module.exports = { G6_CHAPTERS, G6_LESSONS };
+(function attachGrade6() {
+  if (typeof COURSES === "undefined") return;
+  const course = COURSES.find((c) => c.id === "6");
+  if (!course) return;
+  course.subtitle = "Tập 1 & Tập 2 · Kết nối tri thức với cuộc sống";
+  course.blurb = "Chương I–IX, Bài 1–43. Ví dụ viết mới, không chép SGK.";
+  course.chapters = G6_CHAPTERS;
+  course.lessons = G6_LESSONS;
+})();

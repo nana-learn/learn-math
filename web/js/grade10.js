@@ -1031,7 +1031,7 @@ const G10_LESSONS = [
     body: String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
       <div class="definition">
         <p>Elip: tổng khoảng cách đến hai tiêu điểm không đổi.</p>
-        <p>Parabol: tập hợp điểm cách đều điểm焦点 và đường chuẩn.</p>
+        <p>Parabol: tập hợp điểm cách đều tiêu điểm và đường chuẩn.</p>
         <p>Hypebol: hiệu khoảng cách đến hai tiêu điểm không đổi.</p>
       </div>
       <div class="example">
@@ -1047,7 +1047,7 @@ const G10_LESSONS = [
         <summary>Tự kiểm tra</summary>
         <p>Phương trình nào là parabol? <em>— y² = 4x.</em></p>
       </details>
-      <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều焦点 và đường chuẩn.</p></div>
+      <div class="memory"><p><strong>Nhìn lại.</strong> Elip: tổng khoảng cách cố định, Parabol: cách đều tiêu điểm và đường chuẩn.</p></div>
       <figure class="figure" data-animation="g10-b22-conic">
         <svg viewBox="0 0 260 160" role="img" aria-label="Ba đường conic: elip, parabol, hyperbol">
           <!-- Ellipse -->

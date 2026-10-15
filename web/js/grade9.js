@@ -63,7 +63,7 @@ const G9_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Trong đường tròn (O), cung \\(AB = 80^\circ\\). Góc ở tâm \\(AOB = 80^\circ\\), góc nội tiếp \\(ACB = 40^\circ\\).</p>
+        <p><strong>Ví dụ.</strong> Trong đường tròn (O), cung \\(AB = 80^\circ\\). Góc ở tâm \\(AOB = 80^\circ\\), góc nội tiếp \\(ACB = 40^\circ\\).</p>
         <p>Góc \\(ADB = 40^\circ\\) vì cũng chắn cung \\(AB\\). Mọi góc nội tiếp cùng chắn một cung thì bằng nhau.</p>
       </div>
       
@@ -165,7 +165,7 @@ const G9_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Tam giác \\(ABC\\) có ba đường trung trực cắt nhau tại \\(O\\). Khi đó \\(OA = OB = OC\\), nên \\(A, B, C\\) cùng nằm trên đường tròn (O).</p>
+        <p><strong>Ví dụ.</strong> Tam giác \\(ABC\\) có ba đường trung trực cắt nhau tại \\(O\\). Khi đó \\(OA = OB = OC\\), nên \\(A, B, C\\) cùng nằm trên đường tròn (O).</p>
         <p> Tam giác \\(MNP\\) có ba đường phân giác cắt nhau tại \\(I\\). Khi đó \\(I\\) cách đều ba cạnh \\(MN, NP, PM\\), nên đường tròn (I, r) tiếp xúc với cả ba cạnh.</p>
       </div>
       
@@ -260,7 +260,7 @@ const G9_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Hình chữ nhật \\(ABCD\\) luôn nội tiếp được vì \\(\widehat{A} = \widehat{B} = \widehat{C} = \widehat{D} = 90^\circ\\), nên \\(\widehat{A} + \widehat{C} = 180^\circ\\).</p>
+        <p><strong>Ví dụ.</strong> Hình chữ nhật \\(ABCD\\) luôn nội tiếp được vì \\(\widehat{A} = \widehat{B} = \widehat{C} = \widehat{D} = 90^\circ\\), nên \\(\widehat{A} + \widehat{C} = 180^\circ\\).</p>
         <p>Tâm đường tròn ngoại tiếp là giao điểm hai đường chéo (trung điểm mỗi đường chéo).</p>
       </div>
       
@@ -355,7 +355,7 @@ const G9_LESSONS = [
       </div>
       
       <div class="example">
-        <p><strong>Ví dụ (SGK).</strong> Lục giác đều \\(ABCDEF\\) nội tiếp đường tròn (O).</p>
+        <p><strong>Ví dụ.</strong> Lục giác đều \\(ABCDEF\\) nội tiếp đường tròn (O).</p>
         <p>Mỗi góc trong = \\(\dfrac{(6-2) \cdot 180^\circ}{6} = 120^\circ\\). Góc ở tâm \\(AOB = \dfrac{360^\circ}{6} = 60^\circ\\).</p>
       </div>
       
