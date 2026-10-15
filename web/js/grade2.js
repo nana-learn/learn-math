@@ -300,6 +300,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Viết số 6 chục và 4 đơn vị. Bước 1: 6 chục = 60. Bước 2: thêm 4. Ra 64. Đọc: sáu mươi tư.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 70<br>Đáp án: <strong>bảy mươi</strong>. bảy mươi.</li>
+          <li><strong>Ví dụ 2.</strong> Số 47: chữ số bên trái là hàng nào?<br>Đáp án: <strong>Hàng chục</strong>. Bên trái = chục.</li>
+          <li><strong>Ví dụ 3.</strong> Số 48 gồm mấy chục và mấy đơn vị?<br>Đáp án: <strong>4 chục 8 đơn vị</strong>. Trái = chục.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trái là chục, phải là đơn vị. So sánh: chục trước, đơn vị sau.</p></div>
     `,
     exercises: [
@@ -413,6 +418,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Liền sau 99: 99 + 1. 9 đơn vị + 1 = 10, viết 0 nhớ 1 chục. 9 chục + 1 = 10 chục = 100.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 100:<br>Đáp án: <strong>một trăm</strong>. một trăm.</li>
+          <li><strong>Ví dụ 2.</strong> Số liền trước của 56?<br>Đáp án: <strong>55</strong>. Lùi 1.</li>
+          <li><strong>Ví dụ 3.</strong> Số liền sau của 79?<br>Đáp án: <strong>80</strong>. Tiến 1. Đổi chục.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trước = trừ 1. Sau = cộng 1. Trái nhỏ, phải lớn.</p></div>
     `,
     exercises: [
@@ -510,6 +520,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 18 − ? = 10. Tìm số trừ: 18 − 10 = 8. Kiểm: 18 − 8 = 10.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Trong 6 + 9 = 15, số 15 là<br>Đáp án: <strong>Tổng</strong>. Kết quả cộng.</li>
+          <li><strong>Ví dụ 2.</strong> Trong 16 − 5 = 11, số 16 là<br>Đáp án: <strong>Số bị trừ</strong>. Đứng trước dấu trừ.</li>
+          <li><strong>Ví dụ 3.</strong> Tổng của 8 và 7 bằng mấy?<br>Đáp án: <strong>15</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng: số hạng + số hạng = tổng. Trừ: số bị trừ − số trừ = hiệu.</p></div>
     `,
     exercises: [
@@ -604,6 +619,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Nam 18 nhãn, Hoa 11 nhãn. Nam hơn Hoa: 18 − 11 = 7 nhãn.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 17 hơn 10 bao nhiêu?<br>Đáp án: <strong>7</strong>. 17 − 10.</li>
+          <li><strong>Ví dụ 2.</strong> 25 kém 30 bao nhiêu?<br>Đáp án: <strong>5</strong>. 30 − 25.</li>
+          <li><strong>Ví dụ 3.</strong> An có 14 tem, Bình có 9 tem. An hơn Bình mấy tem?<br>Đáp án: <strong>5</strong>. 14 − 9.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Hơn / kém bao nhiêu → trừ (tìm hiệu).</p></div>
     `,
     exercises: [
@@ -703,6 +723,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 48 + 21. Đơn vị 8+1=9. Chục 4+2=6. Ra 69. Kiểm: 69 − 21 = 48.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 23 + 45 = ?<br>Đáp án: <strong>68</strong>. 3+5=8; 2+4=6.</li>
+          <li><strong>Ví dụ 2.</strong> 58 − 17 = ?<br>Đáp án: <strong>41</strong>. 8−7=1; 5−1=4.</li>
+          <li><strong>Ví dụ 3.</strong> 60 + 30 = ?<br>Đáp án: <strong>90</strong>. Số tròn chục.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Thẳng cột, đơn vị trước. Không nhớ khi mỗi hàng nhỏ hơn 10.</p></div>
     `,
     exercises: [
@@ -797,6 +822,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 48 + 21 = 69. Kiểm: 69 − 21 = 48.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Số liền trước của 70 là mấy?<br>Đáp án: <strong>69</strong>. Lùi 1.</li>
+          <li><strong>Ví dụ 2.</strong> 42 + 35 = ?<br>Đáp án: <strong>77</strong>. Không nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 36 hơn 29 mấy?<br>Đáp án: <strong>7</strong>. 36 − 29.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chủ đề 1: số 100, tia số, cộng trừ không nhớ, hơn kém.</p></div>
     `,
     exercises: [
@@ -918,6 +948,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 7 + 8. Bước 1: 7 cần 3 nữa được 10. Bước 2: 8 = 3 + 5. Bước 3: 10 + 5 = 15.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 8 + 6 = ?<br>Đáp án: <strong>14</strong>. 8 cần 2 nữa được 10, còn 4.</li>
+          <li><strong>Ví dụ 2.</strong> 9 + 5 = ?<br>Đáp án: <strong>14</strong>. 9 + 1 + 4.</li>
+          <li><strong>Ví dụ 3.</strong> 7 + 7 = ?<br>Đáp án: <strong>14</strong>. Đôi bảy.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng qua 10: bù đủ 10, rồi cộng phần còn.</p></div>
     `,
     exercises: [
@@ -1024,6 +1059,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Thuộc 8 + 5 = 13. Đổi chỗ: 5 + 8 = 13. Trừ ngược: 13 − 8 = 5.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 9 + 9 = ?<br>Đáp án: <strong>18</strong>. Đôi chín.</li>
+          <li><strong>Ví dụ 2.</strong> 8 + 9 = ?<br>Đáp án: <strong>17</strong>. Bảng 9.</li>
+          <li><strong>Ví dụ 3.</strong> 7 + 8 = ?<br>Đáp án: <strong>15</strong>. Bảng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng cộng qua 10: học thuộc, đổi chỗ được, trừ ngược được.</p></div>
     `,
     exercises: [
@@ -1118,6 +1158,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Có 11 bóng bay, thêm 6. Từ khóa “thêm” → cộng. 11 + 6 = 17 bóng bay.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Có 8 quả, hái thêm 5. Em làm phép nào?<br>Đáp án: <strong>Cộng</strong>. Thêm thì cộng.</li>
+          <li><strong>Ví dụ 2.</strong> Có 8 quả, hái thêm 7. Tất cả mấy quả?<br>Đáp án: <strong>15</strong>. Thêm → cộng.</li>
+          <li><strong>Ví dụ 3.</strong> Có 16 bút, cho bạn 5. Còn mấy bút?<br>Đáp án: <strong>11</strong>. Cho đi → trừ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Thêm → cộng. Bớt / còn lại → trừ.</p></div>
     `,
     exercises: [
@@ -1218,6 +1263,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 18 bớt 9. 9 + 9 = 18 nên 18 − 9 = 9.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 7 + 9 = ?<br>Đáp án: <strong>16</strong>. 7 cần 3 nữa được 10.</li>
+          <li><strong>Ví dụ 2.</strong> 13 − 8 = ?<br>Đáp án: <strong>5</strong>. 8 + 5 = 13.</li>
+          <li><strong>Ví dụ 3.</strong> Có 11 hoa, nở thêm 6. Có mấy hoa?<br>Đáp án: <strong>17</strong>. Thêm → cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Nhẩm qua 10. Đọc từ khóa. Làm trái sang phải.</p></div>
     `,
     exercises: [
@@ -1332,6 +1382,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 + ? = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 13 − 5 = ?<br>Đáp án: <strong>8</strong>. 5 + 8 = 13.</li>
+          <li><strong>Ví dụ 2.</strong> 16 − 9 = ?<br>Đáp án: <strong>7</strong>. 9 + 7 = 16.</li>
+          <li><strong>Ví dụ 3.</strong> 11 − 8 = ?<br>Đáp án: <strong>3</strong>. 8 + 3 = 11.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ qua 10: nghĩ phép cộng ngược.</p></div>
     `,
     exercises: [
@@ -1440,6 +1495,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Cặp 8+7=15. Vậy 15 − 8 = 7 và 15 − 7 = 8.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 18 − 9 = ?<br>Đáp án: <strong>9</strong>. Đôi chín.</li>
+          <li><strong>Ví dụ 2.</strong> 17 − 8 = ?<br>Đáp án: <strong>9</strong>. 8 + 9 = 17.</li>
+          <li><strong>Ví dụ 3.</strong> 14 − 7 = ?<br>Đáp án: <strong>7</strong>. Đôi bảy.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng trừ = bảng cộng đọc ngược.</p></div>
     `,
     exercises: [
@@ -1548,6 +1608,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Hùng 9 nhãn. Nam nhiều hơn Hùng 8. Nam = 9 + 8 = 17 nhãn.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> An ít hơn Bình 4. Biết số của Bình. Tìm số của An thì làm phép nào?<br>Đáp án: <strong>Trừ</strong>. Ít hơn số đã biết thì trừ.</li>
+          <li><strong>Ví dụ 2.</strong> Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?<br>Đáp án: <strong>13</strong>. Nhiều hơn → cộng.</li>
+          <li><strong>Ví dụ 3.</strong> Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?<br>Đáp án: <strong>13</strong>. Ít hơn Lan → trừ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</p></div>
     `,
     exercises: [
@@ -1644,6 +1709,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 20 − 9 = 11. Kiểm: 11 + 9 = 20.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 9 + 8 − 6 = ?<br>Đáp án: <strong>11</strong>. 17 − 6.</li>
+          <li><strong>Ví dụ 2.</strong> Nhiều hơn 12 năm đơn vị là số nào?<br>Đáp án: <strong>17</strong>. 12 + 5.</li>
+          <li><strong>Ví dụ 3.</strong> 20 − 9 = ?<br>Đáp án: <strong>11</strong>. Trừ qua 10.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 20: bảng cộng/trừ + đọc từ khóa lời văn.</p></div>
     `,
     exercises: [
@@ -1714,6 +1784,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mẹ mua 2 kg cam và 1 kg táo. Tất cả 2 + 1 = 3 kg hoa quả.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đơn vị đo mức nặng/nhẹ<br>Đáp án: <strong>kg</strong>. kg.</li>
+          <li><strong>Ví dụ 2.</strong> Đơn vị khối lượng<br>Đáp án: <strong>kg</strong>. Ki-lô-gam.</li>
+          <li><strong>Ví dụ 3.</strong> 3 gói × 1 kg = ?<br>Đáp án: <strong>3</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> kg = khối lượng (nặng/nhẹ).</p></div>
     `,
     exercises: [
@@ -1784,6 +1859,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 1 l + 5 l = 6 l. Viết đủ chữ l sau số.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đơn vị đo nước trong bình<br>Đáp án: <strong>l</strong>. l.</li>
+          <li><strong>Ví dụ 2.</strong> Đơn vị dung tích<br>Đáp án: <strong>l</strong>. Lít.</li>
+          <li><strong>Ví dụ 3.</strong> 4 can 1 l → ?<br>Đáp án: <strong>4</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> l = dung tích chất lỏng.</p></div>
     `,
     exercises: [
@@ -1854,6 +1934,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Bình 8 l, đổ 5 l: 8 − 5 = 3 l còn lại.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2 kg + 6 kg = ?<br>Đáp án: <strong>8</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> 10 l − 4 l = ?<br>Đáp án: <strong>6</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> 3 kg và 3 l<br>Đáp án: <strong>Khác đại lượng</strong>. Khác loại.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cùng đơn vị mới cộng trừ. kg  không bằng  l.</p></div>
     `,
     exercises: [
@@ -1931,6 +2016,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Bài: “can 5 l, thêm 2 l”. Phép 5+2=7 l.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 5 kg + 4 kg = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> 9 l − 6 l = ?<br>Đáp án: <strong>3</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> 2 l + 7 l = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> kg nặng nhẹ; l sức chứa chất lỏng.</p></div>
     `,
     exercises: [
@@ -2006,6 +2096,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 66+9: 6+9=15 viết 5 nhớ 1; 6+1=7 → 75.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 27 + 6 = ?<br>Đáp án: <strong>33</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 49 + 7 = ?<br>Đáp án: <strong>56</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 35 + 8 = ?<br>Đáp án: <strong>43</strong>. Có nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Đơn vị từ 10 trở lên → viết đơn vị, nhớ 1 sang chục.</p></div>
     `,
     exercises: [
@@ -2090,6 +2185,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 66+25: 6+5=11 viết 1 nhớ 1; 6+2+1=9 → 91.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 36 + 27 = ?<br>Đáp án: <strong>63</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 58 + 34 = ?<br>Đáp án: <strong>92</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 19 + 19 = ?<br>Đáp án: <strong>38</strong>. Đôi.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Hai chữ số + hai chữ số: cột đơn vị rồi cột chục + nhớ.</p></div>
     `,
     exercises: [
@@ -2167,6 +2267,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 39+39: 9+9=18 viết 8 nhớ 1; 3+3+1=7 → 78.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 44 + 9 = ?<br>Đáp án: <strong>53</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 27 + 38 = ?<br>Đáp án: <strong>65</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 56 + 17 = ?<br>Đáp án: <strong>73</strong>. Nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng có nhớ + kiểm bằng trừ.</p></div>
     `,
     exercises: [
@@ -2242,6 +2347,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 64 − 7: 14 − 7 = 7; 6 − 1 = 5 → 57.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 41 − 6 = ?<br>Đáp án: <strong>35</strong>. Mượn.</li>
+          <li><strong>Ví dụ 2.</strong> 50 − 8 = ?<br>Đáp án: <strong>42</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 73 − 9 = ?<br>Đáp án: <strong>64</strong>. Mượn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Không đủ trừ → mượn 10, chục giảm 1.</p></div>
     `,
     exercises: [
@@ -2318,6 +2428,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 64 − 19: 14 − 9 = 5; 6 − 1 − 1 = 4 → 45.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 52 − 28 = ?<br>Đáp án: <strong>24</strong>. Mượn.</li>
+          <li><strong>Ví dụ 2.</strong> 70 − 35 = ?<br>Đáp án: <strong>35</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 93 − 47 = ?<br>Đáp án: <strong>46</strong>. Mượn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ có nhớ 2 chữ số: mượn đúng + kiểm bằng cộng.</p></div>
     `,
     exercises: [
@@ -2395,6 +2510,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 100 − 37: mượn lần lượt từ hàng trăm/chục. 100 − 30 = 70; 70 − 7 = 63.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 48 + 27 = ?<br>Đáp án: <strong>75</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 91 − 58 = ?<br>Đáp án: <strong>33</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 45 + 18 = ?<br>Đáp án: <strong>63</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 100 có nhớ: chậm mà đúng hàng.</p></div>
     `,
     exercises: [
@@ -2469,6 +2589,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Chấm 2 điểm, đặt thước nối lại → đoạn. Vuốt dài nét ra ngoài hai điểm → gợi đường thẳng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đoạn thẳng có mấy mút?<br>Đáp án: <strong>2</strong>. Hai đầu mút.</li>
+          <li><strong>Ví dụ 2.</strong> Ba điểm thẳng hàng nằm trên mấy đường thẳng?<br>Đáp án: <strong>1</strong>. Một đường.</li>
+          <li><strong>Ví dụ 3.</strong> Đường cong<br>Đáp án: <strong>Không thẳng</strong>. Cong.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Đoạn: 2 mút. Đường thẳng: kéo dài hai phía. Cong: không thẳng. Thẳng hàng: một đường.</p></div>
     `,
     exercises: [
@@ -2537,6 +2662,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Vẽ 4 điểm, nối lần lượt không cắt → tứ giác. Đếm lại 4 cạnh.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Tứ giác có mấy cạnh?<br>Đáp án: <strong>4</strong>. Tứ = 4.</li>
+          <li><strong>Ví dụ 2.</strong> Tứ giác có mấy đỉnh?<br>Đáp án: <strong>4</strong>. 4.</li>
+          <li><strong>Ví dụ 3.</strong> Tam giác có mấy cạnh?<br>Đáp án: <strong>3</strong>. Tam = 3.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Gấp khúc = đoạn nối đoạn. Tứ giác = 4 cạnh.</p></div>
     `,
     exercises: [
@@ -2610,6 +2740,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Chấm A, chấm B. Đặt thước. Giữ chặt. Kẻ từ A tới B. Nhấc bút.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Vẽ đoạn thẳng nên dùng<br>Đáp án: <strong>Thước</strong>. Thẳng.</li>
+          <li><strong>Ví dụ 2.</strong> Ghép hai tam giác vuông giống nhau có thể được<br>Đáp án: <strong>Chữ nhật hoặc vuông</strong>. Ghép.</li>
+          <li><strong>Ví dụ 3.</strong> Hình vuông mấy cạnh?<br>Đáp án: <strong>4</strong>. 4.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Đoạn thẳng = thước + hai điểm. Ghép hình = khớp cạnh.</p></div>
     `,
     exercises: [
@@ -2684,6 +2819,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Kể 3 đồ vật tứ giác trong lớp: bảng, cửa sổ, quyển sách (mặt).</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Hình vuông có mấy cạnh?<br>Đáp án: <strong>4</strong>. 4.</li>
+          <li><strong>Ví dụ 2.</strong> Có 2 mút → đó là đoạn. Số mút = ?<br>Đáp án: <strong>2</strong>. 2.</li>
+          <li><strong>Ví dụ 3.</strong> Có hai mút<br>Đáp án: <strong>Đoạn thẳng</strong>. Hai đầu.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Hình phẳng lớp 2: điểm–đoạn–đường–cong–gấp khúc–tứ giác.</p></div>
     `,
     exercises: [
@@ -2757,6 +2897,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Từ 5 giờ đến 6 giờ: đúng 1 giờ. Không phải 11 giờ.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 1 giờ = ? phút<br>Đáp án: <strong>60</strong>. 60.</li>
+          <li><strong>Ví dụ 2.</strong> Kim dài thường là<br>Đáp án: <strong>Kim phút</strong>. Phút.</li>
+          <li><strong>Ví dụ 3.</strong> 7 giờ 30 phút<br>Đáp án: <strong>7 giờ rưỡi</strong>. 30=rưỡi.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Kim ngắn = giờ, kim dài = phút. 60 phút = 1 giờ.</p></div>
     `,
     exercises: [
@@ -2831,6 +2976,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Hai ngày sau ngày 10 là ngày 12 (10 + 2).</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Một tuần mấy ngày?<br>Đáp án: <strong>7</strong>. 7.</li>
+          <li><strong>Ví dụ 2.</strong> Tháng 1 có<br>Đáp án: <strong>31 ngày</strong>. 31.</li>
+          <li><strong>Ví dụ 3.</strong> Tháng 6 có<br>Đáp án: <strong>30 ngày</strong>. 30.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Tuần 7 ngày. Xem lịch để biết ngày tháng.</p></div>
     `,
     exercises: [
@@ -2904,6 +3054,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Từ thứ 2 đến thứ 6 (tính cả hai đầu) = 5 ngày.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Kim phút 12, kim giờ 4<br>Đáp án: <strong>4 giờ</strong>. Giờ đúng.</li>
+          <li><strong>Ví dụ 2.</strong> Kim phút 6, giờ giữa 2–3<br>Đáp án: <strong>2 giờ 30</strong>. Rưỡi.</li>
+          <li><strong>Ví dụ 3.</strong> Thứ 2 đến thứ 6 (cả hai) mấy ngày?<br>Đáp án: <strong>5</strong>. Đếm.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> 12 = giờ đúng, 6 = rưỡi. Lịch: ngày mai = +1.</p></div>
     `,
     exercises: [
@@ -2977,6 +3132,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 7 giờ 30: kim phút ở 6, kim giờ giữa 7 và 8.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 1 giờ rưỡi = ? phút<br>Đáp án: <strong>90</strong>. 60+30.</li>
+          <li><strong>Ví dụ 2.</strong> Tháng 2<br>Đáp án: <strong>28 hoặc 29 ngày</strong>. Đặc biệt.</li>
+          <li><strong>Ví dụ 3.</strong> Từ 3 giờ đến 7 giờ?<br>Đáp án: <strong>4</strong>. 7−3.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Đọc kim đúng. Lịch đúng. Đổi đơn vị khi cần.</p></div>
     `,
     exercises: [
@@ -3061,6 +3221,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 82 − 19: đơn vị 12 − 9 = 3; chục 8 − 1 − 1 = 6 → 63.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 9 + 8 = ?<br>Đáp án: <strong>17</strong>. Qua 10.</li>
+          <li><strong>Ví dụ 2.</strong> 14 − 6 = ?<br>Đáp án: <strong>8</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> 37 + 28 = ?<br>Đáp án: <strong>65</strong>. Nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> học kì 1 số: nhẩm 20 + đặt tính 100.</p></div>
     `,
     exercises: [
@@ -3134,6 +3299,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Kể hình trong lớp học.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 4 cạnh<br>Đáp án: <strong>Tứ giác</strong>. 4.</li>
+          <li><strong>Ví dụ 2.</strong> Đường thẳng khác đoạn<br>Đáp án: <strong>Không hai mút</strong>. Kéo dài.</li>
+          <li><strong>Ví dụ 3.</strong> Tam giác mấy đỉnh?<br>Đáp án: <strong>3</strong>. 3.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Hình phẳng học kì 1 nằm lòng tên gọi.</p></div>
     `,
     exercises: [
@@ -3205,6 +3375,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Bài: can 5 l, thêm 2 l. Phép 5 + 2 = 7, trả lời 7 lít.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 6 kg + 3 kg = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> 8 l − 5 l = ?<br>Đáp án: <strong>3</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> Đo nước<br>Đáp án: <strong>Lít</strong>. l.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> kg nặng/nhẹ; l sức chứa chất lỏng; cùng đơn vị mới cộng trừ.</p></div>
     `,
     exercises: [
@@ -3282,6 +3457,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mỗi dạng 1 câu mẫu trước khi làm đề.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 45 + 38 = ?<br>Đáp án: <strong>83</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 100 − 26 = ?<br>Đáp án: <strong>74</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> Liền sau 99?<br>Đáp án: <strong>100</strong>. +1.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> học kì 1 Toán 2: 100, có nhớ, hình, kg/l, giờ.</p></div>
     `,
     exercises: [
@@ -3357,6 +3537,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Có 3 đĩa, mỗi đĩa 2 cái bánh. 2 + 2 + 2 = 6 = 2 × 3.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2+2+2+2 = 2 × ?<br>Đáp án: <strong>4</strong>. 4 số hạng.</li>
+          <li><strong>Ví dụ 2.</strong> 5 × 2 = ?<br>Đáp án: <strong>10</strong>. 5+5.</li>
+          <li><strong>Ví dụ 3.</strong> 3 × 2 = ?<br>Đáp án: <strong>6</strong>. 3+3.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Nhân = cộng các số bằng nhau. a × b = a lặp b lần (hoặc ngược).</p></div>
     `,
     exercises: [
@@ -3439,6 +3624,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 5 × 3 = 5 + 5 + 5 = 15. Tích 15.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 4 × 5 = 20, 20 là<br>Đáp án: <strong>Tích</strong>. Kết quả nhân.</li>
+          <li><strong>Ví dụ 2.</strong> 2 × 7 = 14, 2 là<br>Đáp án: <strong>Thừa số</strong>. Thành phần.</li>
+          <li><strong>Ví dụ 3.</strong> 2 × 6 = ?<br>Đáp án: <strong>12</strong>. Bảng 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Thừa số × thừa số = tích.</p></div>
     `,
     exercises: [
@@ -3529,6 +3719,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Học 2×1 đến 2×10 theo thứ tự, rồi xáo trộn.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2 × 1 = ?<br>Đáp án: <strong>2</strong>. Bảng 2.</li>
+          <li><strong>Ví dụ 2.</strong> 2 × 3 = ?<br>Đáp án: <strong>6</strong>. Bảng 2.</li>
+          <li><strong>Ví dụ 3.</strong> 2 × 4 = ?<br>Đáp án: <strong>8</strong>. Bảng 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng 2 = đếm cách 2.</p></div>
     `,
     exercises: [
@@ -3629,6 +3824,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 5,10,15,20… chỉ tay từng lần nhân.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 5 × 1 = ?<br>Đáp án: <strong>5</strong>. Bảng 5.</li>
+          <li><strong>Ví dụ 2.</strong> 5 × 4 = ?<br>Đáp án: <strong>20</strong>. Bảng 5.</li>
+          <li><strong>Ví dụ 3.</strong> 5 × 6 = ?<br>Đáp án: <strong>30</strong>. Bảng 5.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng 5 = đếm cách 5 đến 50.</p></div>
     `,
     exercises: [
@@ -3706,6 +3906,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 20 cái kẹo, 5 bạn chia đều. 5 × ? = 20 → ? = 4. Mỗi bạn 4.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 8 : 2 = ?<br>Đáp án: <strong>4</strong>. 2×4=8.</li>
+          <li><strong>Ví dụ 2.</strong> 15 : 5 = ?<br>Đáp án: <strong>3</strong>. 5×3=15.</li>
+          <li><strong>Ví dụ 3.</strong> 10 : 2 = ?<br>Đáp án: <strong>5</strong>. Bảng 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chia ngược nhân. Thương × số chia = số bị chia.</p></div>
     `,
     exercises: [
@@ -3787,6 +3992,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 18 : 2. 2 × 9 = 18 → thương 9.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 12 : 2 = 6, 6 là<br>Đáp án: <strong>Thương</strong>. Kết quả chia.</li>
+          <li><strong>Ví dụ 2.</strong> 10 : 5 = 2, 10 là<br>Đáp án: <strong>Số bị chia</strong>. Bị chia.</li>
+          <li><strong>Ví dụ 3.</strong> 18 : 2 = ?<br>Đáp án: <strong>9</strong>. Bảng 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Số bị chia : số chia = thương.</p></div>
     `,
     exercises: [
@@ -3872,6 +4082,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Lấy bảng nhân 2 đọc ngược từng dòng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2 : 2 = ?<br>Đáp án: <strong>1</strong>. Bảng chia 2.</li>
+          <li><strong>Ví dụ 2.</strong> 8 : 2 = ?<br>Đáp án: <strong>4</strong>. Bảng chia 2.</li>
+          <li><strong>Ví dụ 3.</strong> 10 : 2 = ?<br>Đáp án: <strong>5</strong>. Bảng chia 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chia 2 = lấy nửa (với số trong bảng).</p></div>
     `,
     exercises: [
@@ -3975,6 +4190,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 45 : 5: 5,10,15,20,25,30,35,40,45 — đếm 9 bước → 9.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 15 : 5 = ?<br>Đáp án: <strong>3</strong>. Bảng chia 5.</li>
+          <li><strong>Ví dụ 2.</strong> 20 : 5 = ?<br>Đáp án: <strong>4</strong>. Bảng chia 5.</li>
+          <li><strong>Ví dụ 3.</strong> 25 : 5 = ?<br>Đáp án: <strong>5</strong>. Bảng chia 5.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chia 5 ngược bảng nhân 5.</p></div>
     `,
     exercises: [
@@ -4050,6 +4270,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Có 5 hộp, mỗi hộp 2 bút: 5 × 2 = 10.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2 × 9 = ?<br>Đáp án: <strong>18</strong>. Bảng 2.</li>
+          <li><strong>Ví dụ 2.</strong> 5 × 7 = ?<br>Đáp án: <strong>35</strong>. Bảng 5.</li>
+          <li><strong>Ví dụ 3.</strong> 18 : 2 = ?<br>Đáp án: <strong>9</strong>. Chia 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng 2 & 5 thuộc → nhân chia nhanh.</p></div>
     `,
     exercises: [
@@ -4121,6 +4346,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Quan sát: viên bi (cầu), ống cắm bút (trụ), quả cam (gần cầu).</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Hộp có 3 bóng (cầu) và 2 lon (trụ). Tất cả mấy đồ vật?<br>Đáp án: <strong>5</strong>. 3+2.</li>
+          <li><strong>Ví dụ 2.</strong> Có 6 khối trụ, lấy 2. Còn mấy?<br>Đáp án: <strong>4</strong>. 6−2.</li>
+          <li><strong>Ví dụ 3.</strong> Quả bóng<br>Đáp án: <strong>Khối cầu</strong>. Tròn đều.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cầu = bóng. Trụ = ống/lon.</p></div>
     `,
     exercises: [
@@ -4192,6 +4422,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Liệt kê 3 đồ vật trụ và 3 đồ vật cầu trong nhà.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Hộp có 3 bóng (cầu) và 2 lon (trụ). Tất cả mấy đồ vật?<br>Đáp án: <strong>5</strong>. 3+2.</li>
+          <li><strong>Ví dụ 2.</strong> Có 6 khối trụ, lấy 2. Còn mấy?<br>Đáp án: <strong>4</strong>. 6−2.</li>
+          <li><strong>Ví dụ 3.</strong> Viên bi<br>Đáp án: <strong>Khối cầu</strong>. Tròn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trụ – ống; cầu – bóng/bi.</p></div>
     `,
     exercises: [
@@ -4266,6 +4501,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Bó que tính: 10 que = 1 chục; 10 bó chục = 1 trăm.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 1000:<br>Đáp án: <strong>một nghìn</strong>. một nghìn.</li>
+          <li><strong>Ví dụ 2.</strong> 10 chục = ?<br>Đáp án: <strong>100</strong>. 1 trăm.</li>
+          <li><strong>Ví dụ 3.</strong> 10 trăm = ?<br>Đáp án: <strong>1000</strong>. 1 nghìn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> 10–10–10: đơn vị→chục→trăm→nghìn.</p></div>
     `,
     exercises: [
@@ -4340,6 +4580,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Liệt kê tròn trăm: 100,200,…,1000. Tròn chục: 10,20,30,…</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 300 (số tròn trăm):<br>Đáp án: <strong>ba trăm</strong>. ba trăm.</li>
+          <li><strong>Ví dụ 2.</strong> Tròn trăm<br>Đáp án: <strong>400</strong>. …00.</li>
+          <li><strong>Ví dụ 3.</strong> Tròn chục<br>Đáp án: <strong>360</strong>. …0.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Tròn chục: …0. Tròn trăm: …00.</p></div>
     `,
     exercises: [
@@ -4414,6 +4659,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 450 và 540: hàng trăm 4 < 5 → 450 < 540.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Lớn hơn<br>Đáp án: <strong>700</strong>. Hàng trăm.</li>
+          <li><strong>Ví dụ 2.</strong> 300 … 300<br>Đáp án: <strong>=</strong>. Bằng.</li>
+          <li><strong>Ví dụ 3.</strong> 450 … 540<br>Đáp án: <strong>&lt;</strong>. So trăm.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> So từ trái (hàng cao) sang phải.</p></div>
     `,
     exercises: [
@@ -4488,6 +4738,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Viết năm trăm linh hai: 5 trăm, 0 chục, 2 → 502.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 208:<br>Đáp án: <strong>hai trăm linh tám</strong>. hai trăm linh tám.</li>
+          <li><strong>Ví dụ 2.</strong> 208 đọc<br>Đáp án: <strong>Hai trăm linh tám</strong>. 0 chục.</li>
+          <li><strong>Ví dụ 3.</strong> Năm trăm hai mươi mốt<br>Đáp án: <strong>521</strong>. 521.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Ba hàng: trăm|chục|đv. 0 giữa = “linh”.</p></div>
     `,
     exercises: [
@@ -4562,6 +4817,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 653: 6 trăm=600, 5 chục=50, 3=3 → 600+50+3.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 365:<br>Đáp án: <strong>ba trăm sáu mươi lăm</strong>. ba trăm sáu mươi lăm.</li>
+          <li><strong>Ví dụ 2.</strong> 348 =<br>Đáp án: <strong>300+40+8</strong>. Hàng.</li>
+          <li><strong>Ví dụ 3.</strong> 500+20+3 = ?<br>Đáp án: <strong>523</strong>. Ghép.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> abc = a00 + b0 + c.</p></div>
     `,
     exercises: [
@@ -4636,6 +4896,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 405 và 450: trăm bằng 4; chục 0 < 5 → 405 < 450.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 256 … 265<br>Đáp án: <strong>&lt;</strong>. So chục.</li>
+          <li><strong>Ví dụ 2.</strong> 900 … 899<br>Đáp án: <strong>&gt;</strong>. Hàng trăm.</li>
+          <li><strong>Ví dụ 3.</strong> Lớn nhất<br>Đáp án: <strong>875</strong>. So lần lượt.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> So từ hàng trăm trở xuống.</p></div>
     `,
     exercises: [
@@ -4710,6 +4975,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Sắp 308, 380, 803 tăng dần: 308, 380, 803.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 909:<br>Đáp án: <strong>chín trăm linh chín</strong>. chín trăm linh chín.</li>
+          <li><strong>Ví dụ 2.</strong> 3 trăm 2 chục 5 = ?<br>Đáp án: <strong>325</strong>. Ghép.</li>
+          <li><strong>Ví dụ 3.</strong> 1000 gồm mấy trăm?<br>Đáp án: <strong>10</strong>. 10 trăm.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Ba chữ số + giá trị hàng + so từ trái.</p></div>
     `,
     exercises: [
@@ -4782,6 +5052,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Băng ghế 2 m = 2 × 10 = 20 dm.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 1 m = ? dm<br>Đáp án: <strong>10</strong>. 10.</li>
+          <li><strong>Ví dụ 2.</strong> 1 km = ? m<br>Đáp án: <strong>1000</strong>. 1000.</li>
+          <li><strong>Ví dụ 3.</strong> 3 m = ? dm<br>Đáp án: <strong>30</strong>. ×10.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> m ↔ dm: ×10 / :10. km = 1000 m.</p></div>
     `,
     exercises: [
@@ -4855,6 +5130,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mua đồ 2000, đưa 5000: tiền thừa 5000 − 2000 = 3000 đồng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc mệnh giá 5000 đồng (không cần chữ đồng):<br>Đáp án: <strong>năm nghìn</strong>. năm nghìn.</li>
+          <li><strong>Ví dụ 2.</strong> 1000 + 1000 = ?<br>Đáp án: <strong>2000</strong>. Cộng.</li>
+          <li><strong>Ví dụ 3.</strong> 5000 − 2000 = ?<br>Đáp án: <strong>3000</strong>. Trừ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Tiền VN: đồng. Cộng trừ như số tự nhiên.</p></div>
     `,
     exercises: [
@@ -4927,6 +5207,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Đo cạnh bàn: điểm 0 sát mép, đọc số ở mép kia.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 4 dm + 5 dm = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> 12 m − 3 m = ?<br>Đáp án: <strong>9</strong>. Trừ.</li>
+          <li><strong>Ví dụ 3.</strong> 2 km + 3 km = ?<br>Đáp án: <strong>5</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Đo: điểm 0 đúng chỗ. Tính: cùng đơn vị.</p></div>
     `,
     exercises: [
@@ -4998,6 +5283,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mua 2 món 2000 và 3000: tổng 5000 đồng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 7 m + 2 m = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> 1 km = ? m<br>Đáp án: <strong>1000</strong>. 1000.</li>
+          <li><strong>Ví dụ 3.</strong> 2000 + 5000 = ?<br>Đáp án: <strong>7000</strong>. Tiền.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> dm–m–km; tiền đồng; cùng đơn vị.</p></div>
     `,
     exercises: [
@@ -5072,6 +5362,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 250+130: 0+0=0; 5+3=8; 2+1=3 → 380.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 214 + 333 = ?<br>Đáp án: <strong>547</strong>. Không nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 500 + 200 = ?<br>Đáp án: <strong>700</strong>. Trăm.</li>
+          <li><strong>Ví dụ 3.</strong> 120 + 45 = ?<br>Đáp án: <strong>165</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> 3 hàng thẳng cột, không nhớ = mỗi hàng &lt; 10.</p></div>
     `,
     exercises: [
@@ -5156,6 +5451,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 388+125: 8+5=13 viết 3 nhớ 1; 8+2+1=11 viết 1 nhớ 1; 3+1+1=5 → 513.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 156 + 178 = ?<br>Đáp án: <strong>334</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 269 + 148 = ?<br>Đáp án: <strong>417</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 507 + 296 = ?<br>Đáp án: <strong>803</strong>. Có nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Có nhớ 1000: xử lý từng cột, mang 1 sang trái.</p></div>
     `,
     exercises: [
@@ -5230,6 +5530,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 608 − 302: 8−2=6; 0−0=0; 6−3=3 → 306.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 487 − 251 = ?<br>Đáp án: <strong>236</strong>. Không nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 900 − 400 = ?<br>Đáp án: <strong>500</strong>. Trăm.</li>
+          <li><strong>Ví dụ 3.</strong> 765 − 320 = ?<br>Đáp án: <strong>445</strong>. Không nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ 1000 không nhớ: từng hàng đủ trừ.</p></div>
     `,
     exercises: [
@@ -5306,6 +5611,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 804 − 369: đơn vị 14−9=5 mượn; chục 0−1−6 không đủ mượn trăm… làm cột cẩn thận → 435.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 523 − 178 = ?<br>Đáp án: <strong>345</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 700 − 256 = ?<br>Đáp án: <strong>444</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 1000 − 1 = ?<br>Đáp án: <strong>999</strong>. Mượn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ có nhớ 1000: mượn đúng + cộng ngược kiểm.</p></div>
     `,
     exercises: [
@@ -5383,6 +5693,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 670 − 70 = 600. 410 + 90 = 500.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 346 + 227 = ?<br>Đáp án: <strong>573</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 812 − 468 = ?<br>Đáp án: <strong>344</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 500 + 500 = ?<br>Đáp án: <strong>1000</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 1000: thẳng cột, nhớ/mượn, kiểm.</p></div>
     `,
     exercises: [
@@ -5461,6 +5776,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Đếm bút trong hộp: chia màu, đếm từng màu, cộng tổng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 4 bi đỏ + 6 bi xanh = ?<br>Đáp án: <strong>10</strong>. Cộng.</li>
+          <li><strong>Ví dụ 2.</strong> Nhóm A 7, B 5. A hơn B?<br>Đáp án: <strong>2</strong>. 7−5.</li>
+          <li><strong>Ví dụ 3.</strong> Phân loại là<br>Đáp án: <strong>Chia nhóm theo đặc điểm</strong>. Nhóm.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phân loại → đếm → so sánh.</p></div>
     `,
     exercises: [
@@ -5539,6 +5859,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Xe đạp 3 hình, xe máy 5 hình (1=1): xe máy nhiều hơn 2.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Biểu đồ 7 hình, 1 hình = 1. Có mấy?<br>Đáp án: <strong>7</strong>. Đếm.</li>
+          <li><strong>Ví dụ 2.</strong> 4 hình, mỗi hình = 2 quả. Tổng quả?<br>Đáp án: <strong>8</strong>. 4×2.</li>
+          <li><strong>Ví dụ 3.</strong> Cột A 5, cột B 9 (1=1). B hơn A?<br>Đáp án: <strong>4</strong>. 9−5.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Biểu đồ tranh: chú thích → đếm → so sánh.</p></div>
     `,
     exercises: [
@@ -5615,6 +5940,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Túi 3 đỏ 2 xanh. Bốc xanh? Có thể. Bốc vàng? Không thể.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Túi 4 bi đỏ. Bốc 1 bi đỏ: chắc chắn? Gõ 1=có, 0=không<br>Đáp án: <strong>1</strong>. Toàn đỏ.</li>
+          <li><strong>Ví dụ 2.</strong> Túi không bi vàng. Bốc vàng được không? 1=có thể, 0=không thể<br>Đáp án: <strong>0</strong>. Không có vàng.</li>
+          <li><strong>Ví dụ 3.</strong> Túi đỏ và xanh. Số màu có thể bốc (tối đa)?<br>Đáp án: <strong>2</strong>. Hai màu.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chắc chắn / có thể / không thể — dựa vào dữ kiện.</p></div>
     `,
     exercises: [
@@ -5693,6 +6023,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Đếm màu áo trong tổ: lập 3 nhóm, đếm, so sánh.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đỏ 9, xanh 4. Đỏ hơn?<br>Đáp án: <strong>5</strong>. 9−4.</li>
+          <li><strong>Ví dụ 2.</strong> Tổng 9 và 4?<br>Đáp án: <strong>13</strong>. Cộng.</li>
+          <li><strong>Ví dụ 3.</strong> Sau khi đếm ta có thể<br>Đáp án: <strong>So sánh các nhóm</strong>. So sánh.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Thống kê lớp 2: đếm–nhóm–nhận xét.</p></div>
     `,
     exercises: [
@@ -5767,6 +6102,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Viết năm trăm linh năm: 5 trăm, 0 chục, 5 → 505. Kiểm: 500 + 5 = 505.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Đọc số 702:<br>Đáp án: <strong>bảy trăm linh hai</strong>. bảy trăm linh hai.</li>
+          <li><strong>Ví dụ 2.</strong> Viết số bảy trăm linh hai<br>Đáp án: <strong>702</strong>. 702.</li>
+          <li><strong>Ví dụ 3.</strong> 891 … 819<br>Đáp án: <strong>&gt;</strong>. So chục.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Ba chữ số + 1000: đọc đúng, so từ hàng trăm.</p></div>
     `,
     exercises: [
@@ -5851,6 +6191,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 91 − 47: 11 − 7 = 4; 9 − 1 − 4 = 4 → 44. Cộng lại 44 + 47 = 91.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 47+36=?<br>Đáp án: <strong>83</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 82−29=?<br>Đáp án: <strong>53</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 70−8=?<br>Đáp án: <strong>62</strong>. Mượn.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 100: thẳng cột + nhớ/mượn + kiểm.</p></div>
     `,
     exercises: [
@@ -5925,6 +6270,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> 900 − 456: mượn lần lượt. 900 − 400 = 500; 500 − 56 = 444.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 325+148=?<br>Đáp án: <strong>473</strong>. Nhớ.</li>
+          <li><strong>Ví dụ 2.</strong> 600−278=?<br>Đáp án: <strong>322</strong>. Mượn.</li>
+          <li><strong>Ví dụ 3.</strong> 999−100=?<br>Đáp án: <strong>899</strong>. Trừ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 1000: ba hàng, nhớ/mượn, kiểm.</p></div>
     `,
     exercises: [
@@ -6002,6 +6352,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Có 5 hộp, mỗi hộp 2 bút: 5 × 2 = 10. Đổi: 10 : 2 = 5 hộp.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2×7=?<br>Đáp án: <strong>14</strong>. Bảng 2.</li>
+          <li><strong>Ví dụ 2.</strong> 5×6=?<br>Đáp án: <strong>30</strong>. Bảng 5.</li>
+          <li><strong>Ví dụ 3.</strong> 16:2=?<br>Đáp án: <strong>8</strong>. Chia 2.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng 2 & 5: thuộc + chia ngược + bài nhóm đều.</p></div>
     `,
     exercises: [
@@ -6073,6 +6428,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Chỉ 3 đồ vật trong lớp: bảng (tứ giác/chữ nhật), bi (cầu), ống cắm bút (trụ).</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Bóng đá<br>Đáp án: <strong>Khối cầu</strong>. Cầu.</li>
+          <li><strong>Ví dụ 2.</strong> 4 cạnh<br>Đáp án: <strong>Tứ giác</strong>. 4.</li>
+          <li><strong>Ví dụ 3.</strong> Lon ống<br>Đáp án: <strong>Khối trụ</strong>. Trụ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Phẳng: điểm–đoạn–đường–tứ giác. Khối: cầu & trụ.</p></div>
     `,
     exercises: [
@@ -6145,6 +6505,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Dây 2 m = 2 × 10 = 20 dm. Kiểm: 20 dm : 10 = 2 m.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 1 m = ? dm<br>Đáp án: <strong>10</strong>. 10.</li>
+          <li><strong>Ví dụ 2.</strong> 1 giờ = ? phút<br>Đáp án: <strong>60</strong>. 60.</li>
+          <li><strong>Ví dụ 3.</strong> 5 kg + 4 kg = ?<br>Đáp án: <strong>9</strong>. Cộng.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> dm–m–km; kg; l; giờ–phút; tiền đồng.</p></div>
     `,
     exercises: [
@@ -6221,6 +6586,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Biểu đồ xe đạp 3 hình, xe máy 5 hình (1=1): xe máy hơn 2. Tổng 8 xe.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Biểu đồ 6 tranh (1=1). Số?<br>Đáp án: <strong>6</strong>. Đếm.</li>
+          <li><strong>Ví dụ 2.</strong> Túi chỉ kẹo nho, bốc nho<br>Đáp án: <strong>Chắc chắn</strong>. Một loại.</li>
+          <li><strong>Ví dụ 3.</strong> Không kẹo chanh, bốc chanh<br>Đáp án: <strong>Không thể</strong>. Không có.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Biểu đồ: chú thích–đếm–so. Khả năng: chắc/có thể/không thể.</p></div>
     `,
     exercises: [
@@ -6299,6 +6669,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Chọn 3 câu: một nhân, một cộng có nhớ, một đo. Làm và giải thích miệng cho người thân.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> 2 × 10 = ?<br>Đáp án: <strong>20</strong>. Bảng 2.</li>
+          <li><strong>Ví dụ 2.</strong> 5 × 9 = ?<br>Đáp án: <strong>45</strong>. Bảng 5.</li>
+          <li><strong>Ví dụ 3.</strong> 476 + 128 = ?<br>Đáp án: <strong>604</strong>. Có nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Toán 2: số 1000 · cộng trừ có nhớ · nhân chia 2&5 · hình · đo · đếm và phân loại.</p></div>
     `,
     exercises: [
@@ -6377,6 +6752,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Ví dụ câu mẫu: Lan 18 tem, cho bạn 9. Còn? 18 − 9 = 9. Viết đủ “9 tem” khi trả lời miệng.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Số liền sau 99?<br>Đáp án: <strong>100</strong>. +1.</li>
+          <li><strong>Ví dụ 2.</strong> 8 + 7 = ?<br>Đáp án: <strong>15</strong>. Qua 10.</li>
+          <li><strong>Ví dụ 3.</strong> 45 + 38 = ?<br>Đáp án: <strong>83</strong>. Có nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Mini đề học kì 1 = số 100 + cộng trừ có nhớ + hình + đo nhẹ.</p></div>
     `,
     exercises: [
@@ -6455,6 +6835,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mẫu: 20 kẹo chia 5 hộp đều → 20 : 5 = 4. Kiểm 4 × 5 = 20.</p>
       </div>
+      <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
+          <li><strong>Ví dụ 1.</strong> Viết số gồm 5 trăm 0 chục 7 đơn vị<br>Đáp án: <strong>507</strong>. 507.</li>
+          <li><strong>Ví dụ 2.</strong> 368 + 157 = ?<br>Đáp án: <strong>525</strong>. Có nhớ.</li>
+          <li><strong>Ví dụ 3.</strong> 700 − 258 = ?<br>Đáp án: <strong>442</strong>. Có nhớ.</li>
+        </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cuối năm: 1000 · ± có nhớ · ×÷ 2&5 · hình · đo · đếm và phân loại.</p></div>
     `,
     exercises: [

@@ -1006,6 +1006,7 @@ function body(parts) {
     caption,
     extraHtml,
     how,
+    moreExamples,
   } = parts;
   const warnList = (warns || [])
     .map((w) => `<li>${kidText(w)}</li>`)
@@ -1058,6 +1059,7 @@ ${fig}
       <div class="example">
         <p><strong>Làm từng bước.</strong> ${kidText(slow)}</p>
       </div>
+      ${moreExamples || ""}
       <div class="memory"><p><strong>Nhớ một câu.</strong> ${kidText(memory)}</p></div>
     \``;
 }
@@ -3972,10 +3974,50 @@ const DEFAULT_HOW = {
   14: ["Đọc đề.", "Làm từng câu, không vội.", "Soát nhớ, mượn và đơn vị."],
 };
 
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/`/g, "’")
+    .replace(/\$\{/g, "$");
+}
+
+function shownAnswer(ex) {
+  if (ex.type === "num") return String(ex.answer);
+  if (ex.type === "mc" && ex.choices) return String(ex.choices[ex.correct]);
+  return String(ex.hint || ex.explain || "").replace(/\.$/, "");
+}
+
+function moreExamplesHtml(exercises) {
+  const picked = [];
+  for (const ex of exercises) {
+    if (picked.length >= 3) break;
+    if (!ex || !ex.prompt || !ex.explain) continue;
+    picked.push(ex);
+  }
+  if (!picked.length) return "";
+  const items = picked
+    .map((ex, i) => {
+      const q = escHtml(kidPrompt(ex.prompt));
+      const a = escHtml(shownAnswer(ex));
+      const why = escHtml(String(ex.hint || "").replace(/\.$/, ""));
+      return `<li><strong>Ví dụ ${i + 1}.</strong> ${q}<br>Đáp án: <strong>${a}</strong>.${why ? " " + why + "." : ""}</li>`;
+    })
+    .join("\n          ");
+  return `<div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">\n          ${items}\n        </ol></div>`;
+}
+
 function emitLesson(L) {
   const { id, num, chapter, title, summary, figSvg, content, exercises } = L;
   const how = content.how || DEFAULT_HOW[chapter] || ["Đọc đề.", "Chọn cách làm.", "Tính rồi kiểm lại."];
-  const bodyStr = body({ animFig: figSvg, today: summary, ...content, how });
+  const bodyStr = body({
+    animFig: figSvg,
+    today: summary,
+    ...content,
+    how,
+    moreExamples: moreExamplesHtml(exercises),
+  });
   let s = `  {\n`;
   s += `    id: ${JSON.stringify(id)},\n`;
   s += `    num: ${num},\n`;

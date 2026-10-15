@@ -528,6 +528,13 @@ details.check {
 .article.grade-2 .kid-steps li {
   margin: 0.35rem 0;
 }
+.article.grade-2 .more-examples {
+  background: #f7fff4;
+  border-left-color: #83c167;
+}
+.article.grade-2 .more-examples li {
+  margin: 0.7rem 0;
+}
 
 @media (max-width: 640px) {
   main { width: calc(100% - 1.2rem); }
