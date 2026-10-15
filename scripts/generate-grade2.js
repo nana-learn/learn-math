@@ -3845,13 +3845,116 @@ function buildLessons() {
 
 function kidPrompt(p) {
   return kidText(String(p))
+    .replace(/\(gõ không dấu cũng được\):?/gi, "")
+    .replace(/\(gõ: kg hoặc l\):?/gi, "")
     .replace(/□/g, "?")
     .replace(/Số 48 gồm$/g, "Số 48 gồm mấy chục và mấy đơn vị?")
     .replace(/Số liền sau 99 là$/g, "Số liền sau 99 là mấy?")
     .replace(/Liền sau của 99\?$/g, "Số liền sau của 99 là mấy?")
     .replace(/Liền trước của 70\?$/g, "Số liền trước của 70 là mấy?")
     .replace(/Tổng của 8 và 7\?$/g, "Tổng của 8 và 7 bằng mấy?")
-    .replace(/Hiệu 19 − 6\?$/g, "19 trừ 6 bằng mấy?");
+    .replace(/Hiệu 19 − 6\?$/g, "19 trừ 6 bằng mấy?")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function shuffleSeed(arr, seed) {
+  const a = arr.slice();
+  let s = seed >>> 0;
+  for (let i = a.length - 1; i > 0; i--) {
+    s = (Math.imul(s, 1103515245) + 12345) >>> 0;
+    const j = s % (i + 1);
+    const t = a[i];
+    a[i] = a[j];
+    a[j] = t;
+  }
+  return a;
+}
+
+function numChoices(answer) {
+  const a = Number(answer);
+  const bag = [];
+  const add = (x) => {
+    if (!Number.isInteger(x) || x < 0 || x === a || bag.includes(x)) return;
+    bag.push(x);
+  };
+  add(a + 1);
+  add(Math.max(0, a - 1));
+  add(a + 10);
+  add(a - 10);
+  add(a + 2);
+  if (a >= 10 && a <= 99) {
+    const s = String(a);
+    add(Number(s[1] + s[0]));
+  }
+  if (a >= 100) {
+    add(a + 100);
+    add(a - 100);
+  }
+  if (a >= 1000) {
+    add(a + 1000);
+    add(a - 1000);
+  }
+  let k = 3;
+  while (bag.length < 3) {
+    add(a + k);
+    k += 1;
+  }
+  return [String(a), ...bag.slice(0, 3).map(String)];
+}
+
+function textChoices(ex) {
+  const right = String(ex.hint || ex.explain || ex.answer)
+    .replace(/\.$/, "")
+    .trim();
+  const num = (String(ex.prompt).match(/\d+/) || [])[0];
+  const wrong = [];
+  if (num) {
+    const n = Number(num);
+    if (n === 70) wrong.push("bảy", "mười bảy", "bảy mươi bảy");
+    else if (n === 100) wrong.push("mười", "một nghìn", "một trăm linh");
+    else if (n === 1000) wrong.push("một trăm", "mười nghìn", "một trăm linh");
+    else if (n === 208) wrong.push("hai trăm tám", "hai mươi tám", "hai trăm linh năm");
+    else if (n === 300) wrong.push("ba mươi", "ba nghìn", "ba trăm linh");
+    else if (n === 365) wrong.push("ba trăm sáu lăm", "ba mươi sáu lăm", "ba trăm linh năm");
+    else if (n === 702) wrong.push("bảy trăm hai", "bảy mươi hai", "bảy trăm linh");
+    else if (n === 909) wrong.push("chín trăm chín", "chín mươi chín", "chín trăm linh");
+    else wrong.push(String(n), String(n + 1), String(Math.max(0, n - 1)));
+  }
+  if (/kg/i.test(ex.prompt) || right === "kg") wrong.push("l", "m", "giờ");
+  if (right === "l" || /lít|dung tích|nước/i.test(ex.prompt)) wrong.push("kg", "m", "đồng");
+  const uniq = [];
+  for (const w of wrong) {
+    if (w && w !== right && !uniq.includes(w)) uniq.push(w);
+  }
+  while (uniq.length < 3) uniq.push("đáp án " + (uniq.length + 1));
+  return [right, ...uniq.slice(0, 3)];
+}
+
+function toChoiceQuestion(ex, seed) {
+  if (ex.type === "mc") {
+    const labels = ex.choices.slice();
+    const right = labels[ex.correct];
+    const mixed = shuffleSeed(labels, seed);
+    return {
+      ...ex,
+      prompt: kidPrompt(ex.prompt),
+      choices: mixed,
+      correct: mixed.indexOf(right),
+    };
+  }
+  const labels = ex.type === "num" ? numChoices(ex.answer) : textChoices(ex);
+  const mixed = shuffleSeed(labels, seed);
+  const right = ex.type === "num" ? String(ex.answer) : labels[0];
+  const correct = mixed.indexOf(right);
+  return {
+    type: "mc",
+    prompt: kidPrompt(ex.prompt),
+    choices: mixed,
+    correct: correct < 0 ? 0 : correct,
+    hint: ex.hint,
+    explain: ex.explain,
+  };
 }
 
 const DEFAULT_HOW = {
@@ -3881,10 +3984,10 @@ function emitLesson(L) {
   s += `    summary: ${JSON.stringify(summary)},\n`;
   s += bodyStr + `,\n`;
   s += `    exercises: [\n`;
-  for (const ex of exercises) {
-    const e = { ...ex, prompt: kidPrompt(ex.prompt) };
+  exercises.forEach((ex, i) => {
+    const e = toChoiceQuestion(ex, num * 97 + i * 13 + chapter);
     s += `      ${JSON.stringify(e)},\n`;
-  }
+  });
   s += `    ],\n`;
   s += `  }`;
   return s;
