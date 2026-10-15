@@ -17,51 +17,63 @@ const G2_CHAPTERS = [
   },
   {
     "id": 3,
-    "title": "Làm quen với khối lượng, dung tích"
+    "title": "Làm quen với khối lượng, dung tích",
+    "intro": "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ."
   },
   {
     "id": 4,
-    "title": "Phép cộng, phép trừ có nhớ trong phạm vi 100"
+    "title": "Phép cộng, phép trừ có nhớ trong phạm vi 100",
+    "intro": "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục."
   },
   {
     "id": 5,
-    "title": "Làm quen với hình phẳng"
+    "title": "Làm quen với hình phẳng",
+    "intro": "4 bài. Điểm, đoạn, đường thẳng, đường cong, tứ giác. Đếm cạnh và đỉnh."
   },
   {
     "id": 6,
-    "title": "Ngày – giờ, giờ – phút, ngày – tháng"
+    "title": "Ngày – giờ, giờ – phút, ngày – tháng",
+    "intro": "4 bài. Kim ngắn là giờ. Kim dài là phút. 1 giờ = 60 phút. Xem lịch để biết ngày."
   },
   {
     "id": 7,
-    "title": "Ôn tập học kì I"
+    "title": "Ôn tập học kì I",
+    "intro": "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề."
   },
   {
     "id": 8,
-    "title": "Phép nhân, phép chia"
+    "title": "Phép nhân, phép chia",
+    "intro": "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5."
   },
   {
     "id": 9,
-    "title": "Làm quen với hình khối"
+    "title": "Làm quen với hình khối",
+    "intro": "2 bài. Bóng là khối cầu. Lon, ống là khối trụ."
   },
   {
     "id": 10,
-    "title": "Các số trong phạm vi 1000"
+    "title": "Các số trong phạm vi 1000",
+    "intro": "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải."
   },
   {
     "id": 11,
-    "title": "Độ dài và đơn vị đo độ dài. Tiền Việt Nam"
+    "title": "Độ dài và đơn vị đo độ dài. Tiền Việt Nam",
+    "intro": "4 bài. dm, m, km. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng."
   },
   {
     "id": 12,
-    "title": "Phép cộng, phép trừ trong phạm vi 1000"
+    "title": "Phép cộng, phép trừ trong phạm vi 1000",
+    "intro": "5 bài. Cộng trừ số có ba chữ số. Thẳng cột. Nhớ và mượn từng hàng."
   },
   {
     "id": 13,
-    "title": "Làm quen với yếu tố thống kê, xác suất"
+    "title": "Làm quen với yếu tố thống kê, xác suất",
+    "intro": "4 bài. Đếm, phân loại, đọc biểu đồ tranh. Nói chắc chắn, có thể, không thể."
   },
   {
     "id": 14,
-    "title": "Ôn tập cuối năm"
+    "title": "Ôn tập cuối năm",
+    "intro": "Ôn cả năm. Cuối có mini đề. Làm chậm, soát nhớ/mượn và đơn vị."
   }
 ];
 
@@ -172,9 +184,9 @@ const G2_LESSONS = [
             <text x="160" y="148" font-size="16" text-anchor="middle" fill="#FC6255">47 = 4 chục + 7 đơn vị</text>
           </g>
         </svg>
-              <figcaption>Đếm, đọc, viết, so sánh số trong phạm vi 100.</figcaption>
+              <figcaption>Đếm, đọc, viết, so sánh số trong trong khoảng 100.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Đếm, đọc, viết, so sánh số trong phạm vi 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Đếm, đọc, viết, so sánh số trong trong khoảng 100.</p>
             <figure class="figure" data-animation="g2-b1-bundles">
         <svg viewBox="0 0 320 160" role="img" aria-label="3 chục và 5 đơn vị">
           <g class="g2s1">          <rect x="22" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -1679,7 +1691,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> kg đo nặng nhẹ, không đo nước (nước dùng lít) — dù chai nước cũng có khối lượng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị: kg hay lít.</li>
+          <li><strong>Bước 2.</strong> Cộng hoặc trừ các số cùng đơn vị.</li>
+          <li><strong>Bước 3.</strong> Viết đơn vị sau kết quả.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Cảm nhận: túi 1 kg đường trên tay nặng hơn quả bóng bay.</p>
       </div>
@@ -1745,7 +1761,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không cộng 2 kg với 3 l thành 5 — khác đại lượng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị: kg hay lít.</li>
+          <li><strong>Bước 2.</strong> Cộng hoặc trừ các số cùng đơn vị.</li>
+          <li><strong>Bước 3.</strong> Viết đơn vị sau kết quả.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Nhìn nhãn chai: 1 l, 0,5 l (làm quen), 2 l.</p>
       </div>
@@ -1811,7 +1831,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 3 kg và 3 l không kết luận “nặng bằng nhau” chỉ vì cùng số 3.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị: kg hay lít.</li>
+          <li><strong>Bước 2.</strong> Cộng hoặc trừ các số cùng đơn vị.</li>
+          <li><strong>Bước 3.</strong> Viết đơn vị sau kết quả.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Luôn viết đơn vị cạnh kết quả.</p>
       </div>
@@ -1884,7 +1908,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Ghi đáp án 9 mà không biết 9 kg hay 9 l — mất điểm do thiếu đơn vị trong lời giải.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị: kg hay lít.</li>
+          <li><strong>Bước 2.</strong> Cộng hoặc trừ các số cùng đơn vị.</li>
+          <li><strong>Bước 3.</strong> Viết đơn vị sau kết quả.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc lại đề: đang hỏi kg hay l?</p>
       </div>
@@ -1955,7 +1983,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Quên cộng số nhớ. 28 + 5 sẽ ra 23 — sai. Phải ra 33.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Khi có nhớ, chấm một chấm nhỏ trên hàng chục.</p>
       </div>
@@ -2035,7 +2067,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Lệch cột khi một số “ngắn” hơn — luôn thẳng bên phải.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Nói thầm: “năm mười lăm, viết năm nhớ một…”.</p>
       </div>
@@ -2092,9 +2128,9 @@ const G2_LESSONS = [
           <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng có nhớ</text>
         </svg>
-              <figcaption>Ôn cộng có nhớ trong phạm vi 100.</figcaption>
+              <figcaption>Ôn cộng có nhớ trong trong khoảng 100.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng có nhớ trong phạm vi 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng có nhớ trong trong khoảng 100.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn dạng 2 chữ số + 1 chữ số và 2 + 2 chữ số; tìm số hạng.</p>
@@ -2108,7 +2144,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Tìm số hạng phải trừ, không cộng tiếp.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Kiểm bằng trừ: tổng − số hạng = số hạng kia.</p>
       </div>
@@ -2179,7 +2219,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Mượn rồi quên trừ 1 ở hàng chục → 32 − 5 ra 37 (sai).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đánh dấu gạch nhẹ trên chữ số chục khi đã mượn.</p>
       </div>
@@ -2251,7 +2295,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 70 − 35: đơn vị 0 mượn thành 10; chục 7 thành 6; 6 − 3 = 3 → 35. Đừng ra 45.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi bài trừ khó hãy kiểm bằng cộng ngược.</p>
       </div>
@@ -2308,9 +2356,9 @@ const G2_LESSONS = [
           <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng trừ 100</text>
         </svg>
-              <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
+              <figcaption>Ôn cộng trừ có nhớ trong khoảng 100.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ phạm vi 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ trong khoảng 100.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chọn cộng/trừ theo đề; có nhớ khi cần.</p>
@@ -2324,7 +2372,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 100 − 37 = 63, không phải 73 (quên mượn).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng cột, đơn vị bên phải.</li>
+          <li><strong>Bước 2.</strong> Làm hàng đơn vị trước.</li>
+          <li><strong>Bước 3.</strong> Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc đề → đặt tính → nhớ/mượn → kiểm.</p>
       </div>
@@ -2394,7 +2446,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đoạn thẳng có hai đầu. Đường thẳng không có đầu mút.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhìn hình.</li>
+          <li><strong>Bước 2.</strong> Đếm cạnh, đỉnh, hoặc hai đầu đoạn.</li>
+          <li><strong>Bước 3.</strong> Gọi đúng tên.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Vẽ đoạn và đường thẳng thì dùng thước.</p>
       </div>
@@ -2458,7 +2514,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không phải tứ giác nào cũng là hình chữ nhật. Tứ giác “lệch” vẫn là tứ giác.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhìn hình.</li>
+          <li><strong>Bước 2.</strong> Đếm cạnh, đỉnh, hoặc hai đầu đoạn.</li>
+          <li><strong>Bước 3.</strong> Gọi đúng tên.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm cạnh/đỉnh: 3 → tam giác, 4 → tứ giác.</p>
       </div>
@@ -2527,7 +2587,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Vẽ đoạn “cong tay” không dùng thước — không còn là đoạn thẳng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhìn hình.</li>
+          <li><strong>Bước 2.</strong> Đếm cạnh, đỉnh, hoặc hai đầu đoạn.</li>
+          <li><strong>Bước 3.</strong> Gọi đúng tên.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Làm chậm: điểm đầu → điểm cuối → trượt bút theo thước.</p>
       </div>
@@ -2597,7 +2661,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đường thẳng không có “hai đầu” như đoạn.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhìn hình.</li>
+          <li><strong>Bước 2.</strong> Đếm cạnh, đỉnh, hoặc hai đầu đoạn.</li>
+          <li><strong>Bước 3.</strong> Gọi đúng tên.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Nhìn đặc điểm: mút, số cạnh, thẳng hay cong.</p>
       </div>
@@ -2666,7 +2734,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhầm kim giờ với kim phút. Kim dài là phút!</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Kim ngắn là giờ, kim dài là phút.</li>
+          <li><strong>Bước 2.</strong> Kim dài ở 12: giờ đúng. Ở 6: giờ rưỡi.</li>
+          <li><strong>Bước 3.</strong> Xem lịch: ngày mai là cộng 1.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc phút trước (kim dài) rồi đọc giờ (kim ngắn).</p>
       </div>
@@ -2736,7 +2808,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không phải tháng nào cũng 31 ngày.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Kim ngắn là giờ, kim dài là phút.</li>
+          <li><strong>Bước 2.</strong> Kim dài ở 12: giờ đúng. Ở 6: giờ rưỡi.</li>
+          <li><strong>Bước 3.</strong> Xem lịch: ngày mai là cộng 1.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc lịch: thứ — ngày — tháng — năm.</p>
       </div>
@@ -2805,7 +2881,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhìn nhầm 3 (15 phút) với 2.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Kim ngắn là giờ, kim dài là phút.</li>
+          <li><strong>Bước 2.</strong> Kim dài ở 12: giờ đúng. Ở 6: giờ rưỡi.</li>
+          <li><strong>Bước 3.</strong> Xem lịch: ngày mai là cộng 1.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi số trên đồng hồ phút: nhân 5 (2 → 10 phút, 3 → 15 phút…).</p>
       </div>
@@ -2874,7 +2954,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không cộng 3 giờ + 30 phút thành 33.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Kim ngắn là giờ, kim dài là phút.</li>
+          <li><strong>Bước 2.</strong> Kim dài ở 12: giờ đúng. Ở 6: giờ rưỡi.</li>
+          <li><strong>Bước 3.</strong> Xem lịch: ngày mai là cộng 1.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đổi về cùng đơn vị khi cần so sánh.</p>
       </div>
@@ -2943,7 +3027,7 @@ const G2_LESSONS = [
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</p>
       
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Cộng trừ phạm vi 20 và 100, có và không nhớ.</p>
+        <p><strong>Nhớ này.</strong> Cộng trừ trong khoảng 20 và 100, có và không nhớ.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> 9+8=17. 14−6=8. 37+28=65.</p>
@@ -2954,7 +3038,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Xem lại nhớ/mượn từng cột.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Chọn cộng hoặc trừ.</li>
+          <li><strong>Bước 3.</strong> Tính rồi kiểm lại.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi bài: đặt tính → tính → kiểm.</p>
       </div>
@@ -3024,7 +3112,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đoạn  không bằng  đường thẳng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Chọn cộng hoặc trừ.</li>
+          <li><strong>Bước 3.</strong> Tính rồi kiểm lại.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm cạnh, nhìn mút.</p>
       </div>
@@ -3089,7 +3181,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không cộng 2 kg với 3 l. Kết quả phải kèm đơn vị đúng loại đề hỏi.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Chọn cộng hoặc trừ.</li>
+          <li><strong>Bước 3.</strong> Tính rồi kiểm lại.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Gạch chân đơn vị trong đề trước khi tính.</p>
       </div>
@@ -3163,7 +3259,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Làm tràn lan không soát.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Chọn cộng hoặc trừ.</li>
+          <li><strong>Bước 3.</strong> Tính rồi kiểm lại.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Chia thời gian: phép tính / hình / đo.</p>
       </div>
@@ -3234,7 +3334,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 2 × 3 không phải 2 + 3. Nhân là cộng các số giống nhau.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Vẽ chấm theo hàng rồi đếm. Hiểu rồi hãy học thuộc.</p>
       </div>
@@ -3312,7 +3416,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không gọi tích là “tổng”. Tổng là của phép cộng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Tích = kết quả phép nhân.</p>
       </div>
@@ -3398,7 +3506,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 2 × 6 = 12, không phải 10.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm cách 2: 2,4,6… gắn với từng số đã biết nhân.</p>
       </div>
@@ -3494,7 +3606,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 5 × 7 = 35, không phải 30.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm cách 5; hoặc 5 × n = nửa của 10 × n.</p>
       </div>
@@ -3567,7 +3683,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không chia cho 0. 6 : 2 = 3, không phải 4.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Hỏi: số kia nhân mấy thì ra số bị chia?</p>
       </div>
@@ -3644,7 +3764,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Thương không phải thừa số (dù đôi khi số trùng).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Thương × số chia = số bị chia (kiểm).</p>
       </div>
@@ -3725,7 +3849,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Chỉ các tích trong bảng 2 mới chia hết cho 2 theo bài học thuộc lòng này.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Nửa của số chẵn (trong bảng) chính là thương chia 2.</p>
       </div>
@@ -3824,7 +3952,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 35 : 5 = 7, không phải 6.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm ngược dãy 5,10,15… đến số bị chia.</p>
       </div>
@@ -3895,7 +4027,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Chọn nhầm × hay : — “mỗi” thường gợi nhân; “chia đều” gợi chia.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Nhân là cộng nhiều lần cùng một số.</li>
+          <li><strong>Bước 2.</strong> Chia là chia đều, hỏi nhân mấy thì ra.</li>
+          <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Vẽ nhóm nhỏ nếu chưa thuộc.</p>
       </div>
@@ -3962,7 +4098,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Hình tròn phẳng (vẽ trên giấy) khác khối cầu (có khối).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Sờ hoặc nhìn đồ vật.</li>
+          <li><strong>Bước 2.</strong> Tròn đều là khối cầu.</li>
+          <li><strong>Bước 3.</strong> Có hai đáy tròn, dạng ống là khối trụ.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Sờ đồ thật: bóng, bi, lon, ống.</p>
       </div>
@@ -4029,7 +4169,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Quả trứng gần cầu nhưng không tròn đều như bi — lớp 2 nhận dạng mức “gần giống”.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Sờ hoặc nhìn đồ vật.</li>
+          <li><strong>Bước 2.</strong> Tròn đều là khối cầu.</li>
+          <li><strong>Bước 3.</strong> Có hai đáy tròn, dạng ống là khối trụ.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Hỏi: lăn mọi phía hay lăn theo một chiều?</p>
       </div>
@@ -4099,7 +4243,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhầm 10 chục = 10 (sai) — phải là 100.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi lần đủ 10 thì “đổi” lên hàng bên trái.</p>
       </div>
@@ -4169,7 +4317,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 990 tròn chục, không tròn trăm.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Nhìn chữ số tận cùng: một số 0 / hai số 0.</p>
       </div>
@@ -4239,7 +4391,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 800 > 80 — khác hàng, đừng chỉ đếm chữ số 8.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Viết hai số thẳng cột hàng rồi so từng hàng.</p>
       </div>
@@ -4309,7 +4465,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 205  không bằng  25. Chữ 0 giữ chỗ hàng chục.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc từ trái: trăm → chục → đơn vị. Viết cũng vậy.</p>
       </div>
@@ -4379,7 +4539,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 348  không bằng  300 + 4 + 8 (sai giá trị hàng chục).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Viết ba “mảnh” trăm, chục, đơn vị rồi cộng lại.</p>
       </div>
@@ -4449,7 +4613,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 707 < 770 vì chục 0 < 7, dù cùng 7 trăm.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Thẳng cột hàng rồi so lần lượt.</p>
       </div>
@@ -4519,7 +4687,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Số có 0: đọc và viết đủ hàng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Tách ba hàng: trăm, chục, đơn vị.</li>
+          <li><strong>Bước 2.</strong> Số 0 ở giữa phải đọc linh.</li>
+          <li><strong>Bước 3.</strong> So sánh từ hàng trăm sang phải.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi số hỏi: hàng nào? so với ai?</p>
       </div>
@@ -4587,7 +4759,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đổi sai 1 m = 100 dm (sai). Đúng 10 dm.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị dm, m, km hoặc đồng.</li>
+          <li><strong>Bước 2.</strong> Đổi đơn vị nếu cần: 1 m = 10 dm.</li>
+          <li><strong>Bước 3.</strong> Cộng trừ rồi viết đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Chọn đơn vị phù hợp kích thước vật.</p>
       </div>
@@ -4656,7 +4832,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Cộng đúng số, nhớ đơn vị “đồng”.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị dm, m, km hoặc đồng.</li>
+          <li><strong>Bước 2.</strong> Đổi đơn vị nếu cần: 1 m = 10 dm.</li>
+          <li><strong>Bước 3.</strong> Cộng trừ rồi viết đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đổi nhiều tờ nhỏ thành mệnh giá lớn khi đủ.</p>
       </div>
@@ -4724,7 +4904,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đặt thước lệch điểm đầu → sai số đo.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị dm, m, km hoặc đồng.</li>
+          <li><strong>Bước 2.</strong> Đổi đơn vị nếu cần: 1 m = 10 dm.</li>
+          <li><strong>Bước 3.</strong> Cộng trừ rồi viết đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Ước lượng trước (dài khoảng bao nhiêu), đo sau.</p>
       </div>
@@ -4791,7 +4975,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Kiểm đơn vị trước khi cộng.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đơn vị dm, m, km hoặc đồng.</li>
+          <li><strong>Bước 2.</strong> Đổi đơn vị nếu cần: 1 m = 10 dm.</li>
+          <li><strong>Bước 3.</strong> Cộng trừ rồi viết đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Tách bài đo / bài tiền.</p>
       </div>
@@ -4861,7 +5049,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Lệch cột khi cộng số 2 chữ với 3 chữ.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng ba cột.</li>
+          <li><strong>Bước 2.</strong> Làm từ đơn vị sang trăm.</li>
+          <li><strong>Bước 3.</strong> Nhớ hoặc mượn rồi kiểm bằng phép ngược.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Viết thẳng từ phải sang trái.</p>
       </div>
@@ -4925,9 +5117,9 @@ const G2_LESSONS = [
             <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
           </g>
         </svg>
-              <figcaption>Cộng có nhớ trong phạm vi 1000.</figcaption>
+              <figcaption>Cộng có nhớ trong trong khoảng 1000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có nhớ trong phạm vi 1000.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có nhớ trong trong khoảng 1000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nhớ từ đơn vị sang chục, từ chục sang trăm khi tổng hàng từ 10 trở lên.</p>
@@ -4941,7 +5133,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhớ 1 nhưng quên cộng vào hàng sau.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng ba cột.</li>
+          <li><strong>Bước 2.</strong> Làm từ đơn vị sang trăm.</li>
+          <li><strong>Bước 3.</strong> Nhớ hoặc mượn rồi kiểm bằng phép ngược.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đánh dấu nhớ từng hàng; làm chậm.</p>
       </div>
@@ -5011,7 +5207,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Vẫn phải thẳng cột — 608 − 302 = 306.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng ba cột.</li>
+          <li><strong>Bước 2.</strong> Làm từ đơn vị sang trăm.</li>
+          <li><strong>Bước 3.</strong> Nhớ hoặc mượn rồi kiểm bằng phép ngược.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Kiểm bằng cộng.</p>
       </div>
@@ -5067,9 +5267,9 @@ const G2_LESSONS = [
           <text x="225" y="142" font-size="22" text-anchor="middle" fill="#83C167">12</text>
           <text x="40" y="130" font-size="13">40 − 28</text>
         </svg>
-              <figcaption>Trừ có nhớ/mượn trong phạm vi 1000.</figcaption>
+              <figcaption>Trừ có nhớ/mượn trong trong khoảng 1000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Trừ có nhớ/mượn trong phạm vi 1000.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Trừ có nhớ/mượn trong trong khoảng 1000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Mượn hàng khi cần; nhớ đã mượn thì hàng bên trái giảm 1.</p>
@@ -5083,7 +5283,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 400 − 128: mượn liên tiếp — làm từng bước hoặc đổi 400 − 100 = 300 rồi 300 − 28 = 272.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng ba cột.</li>
+          <li><strong>Bước 2.</strong> Làm từ đơn vị sang trăm.</li>
+          <li><strong>Bước 3.</strong> Nhớ hoặc mượn rồi kiểm bằng phép ngược.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Kiểm: hiệu + số trừ = số bị trừ.</p>
       </div>
@@ -5140,9 +5344,9 @@ const G2_LESSONS = [
           <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           <text x="160" y="150" font-size="11" text-anchor="middle">Ôn cộng trừ 1000</text>
         </svg>
-              <figcaption>Ôn cộng trừ trong phạm vi 1000.</figcaption>
+              <figcaption>Ôn cộng trừ trong trong khoảng 1000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ trong phạm vi 1000.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ trong trong khoảng 1000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn có nhớ / không nhớ; tìm số hạng.</p>
@@ -5156,7 +5360,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đặt tính rõ ràng, không nhẩm ẩu với 3 chữ số.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Viết thẳng ba cột.</li>
+          <li><strong>Bước 2.</strong> Làm từ đơn vị sang trăm.</li>
+          <li><strong>Bước 3.</strong> Nhớ hoặc mượn rồi kiểm bằng phép ngược.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Có nhớ thì đánh dấu; xong phải kiểm.</p>
       </div>
@@ -5230,7 +5438,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Phân loại xong mới đếm; đếm lẫn nhóm sẽ sai.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đếm từng nhóm, không sót.</li>
+          <li><strong>Bước 2.</strong> Xem chú thích biểu đồ: 1 hình = mấy.</li>
+          <li><strong>Bước 3.</strong> Nói chắc chắn, có thể, hoặc không thể.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Tạo bảng đơn: loại | số lượng.</p>
       </div>
@@ -5304,7 +5516,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Quên chú thích “1 hình = ?”.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đếm từng nhóm, không sót.</li>
+          <li><strong>Bước 2.</strong> Xem chú thích biểu đồ: 1 hình = mấy.</li>
+          <li><strong>Bước 3.</strong> Nói chắc chắn, có thể, hoặc không thể.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đọc chú thích trước, đếm sau, so sánh cuối.</p>
       </div>
@@ -5376,7 +5592,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không nói “chắc chắn” khi còn hai màu.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đếm từng nhóm, không sót.</li>
+          <li><strong>Bước 2.</strong> Xem chú thích biểu đồ: 1 hình = mấy.</li>
+          <li><strong>Bước 3.</strong> Nói chắc chắn, có thể, hoặc không thể.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Hỏi: còn lựa chọn khác không? Có → có thể; không còn → chắc chắn/không thể.</p>
       </div>
@@ -5434,9 +5654,9 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="12" text-anchor="middle">1 hình = 1 xe</text>
           <text x="160" y="145" font-size="13" text-anchor="middle" fill="#FC6255">Xe máy nhiều hơn 2 xe</text>
         </svg>
-              <figcaption>Thực hành thống kê đơn giản ở lớp.</figcaption>
+              <figcaption>Thực hành đếm và phân loại đơn giản ở lớp.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành thống kê đơn giản ở lớp.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành đếm và phân loại đơn giản ở lớp.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Thu thập → phân loại → đếm → nhận xét hơn/kém/tổng.</p>
@@ -5450,7 +5670,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhận xét phải dựa trên số đã đếm, không đoán.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đếm từng nhóm, không sót.</li>
+          <li><strong>Bước 2.</strong> Xem chú thích biểu đồ: 1 hình = mấy.</li>
+          <li><strong>Bước 3.</strong> Nói chắc chắn, có thể, hoặc không thể.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Ghi bảng rõ, rồi viết 1 câu nhận xét.</p>
       </div>
@@ -5520,7 +5744,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 205  không bằng  25. 1000 = 10 trăm, không phải 100 trăm.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Viết thẳng hàng trăm-chục-đv rồi so từ trái sang phải.</p>
       </div>
@@ -5584,9 +5812,9 @@ const G2_LESSONS = [
             <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
+              <figcaption>Ôn cộng trừ có nhớ trong khoảng 100.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ phạm vi 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ trong khoảng 100.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính thẳng cột. Cộng: nhớ khi đv từ 10 trở lên. Trừ: mượn khi đv không đủ.</p>
@@ -5600,7 +5828,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 70 − 8 = 62, không phải 78 (quên mượn).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đánh dấu nhớ/mượn; luôn kiểm bằng phép ngược.</p>
       </div>
@@ -5654,9 +5886,9 @@ const G2_LESSONS = [
           <text x="252" y="80" font-size="32" text-anchor="middle">6</text>
           <text x="160" y="140" font-size="14" text-anchor="middle">476 = 400 + 70 + 6</text>
         </svg>
-              <figcaption>Ôn cộng trừ phạm vi 1000.</figcaption>
+              <figcaption>Ôn cộng trừ trong khoảng 1000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ phạm vi 1000.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ trong khoảng 1000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng/trừ theo hàng trăm-chục-đv, nhớ/mượn có thể lan sang hàng trăm.</p>
@@ -5670,7 +5902,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 999 − 100 = 899, không phải 8999. 1000 − 1 = 999.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Làm từng cột; bài khó thì kiểm bằng cộng ngược.</p>
       </div>
@@ -5743,7 +5979,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> 5 × 0 = 0, không phải 5. Chia phải khớp bảng (chia hết).</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Thuộc xuôi (nhân) rồi đọc ngược (chia).</p>
       </div>
@@ -5810,7 +6050,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Hình tròn vẽ trên giấy  không bằng  khối cầu. Tứ giác không chỉ là chữ nhật.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đếm cạnh/đỉnh; với khối, nghĩ cách lăn và có đáy phẳng không.</p>
       </div>
@@ -5878,7 +6122,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Không cộng kg với l. 1 m  không bằng  100 dm.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Đổi về cùng đơn vị trước khi cộng trừ; luôn ghi tên đơn vị.</p>
       </div>
@@ -5950,7 +6198,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Quên chú thích 1 hình = ? Đừng nói chắc chắn khi còn hai màu.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Chú thích → đếm → so sánh; khả năng dựa vào dữ kiện trong túi/tình huống.</p>
       </div>
@@ -6023,7 +6275,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Làm dồn dễ sai nhớ/mượn — làm từng câu, soát lại 1 lần.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Thứ tự: phép nhẩm bảng → đặt tính 100/1000 → đo/đơn vị → hình nếu còn giờ.</p>
       </div>
@@ -6043,7 +6299,7 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Chọn 3 câu: một nhân, một cộng có nhớ, một đo. Làm và giải thích miệng cho người thân.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Toán 2: số 1000 · cộng trừ có nhớ · nhân chia 2&5 · hình · đo · thống kê.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Toán 2: số 1000 · cộng trừ có nhớ · nhân chia 2&5 · hình · đo · đếm và phân loại.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"2 × 10 = ?","answer":20,"hint":"Bảng 2.","explain":"20."},
@@ -6097,7 +6353,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Làm vội dễ lệch cột hoặc chọn nhầm cộng/trừ trong lời văn.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Chọn cộng hoặc trừ.</li>
+          <li><strong>Bước 3.</strong> Tính rồi kiểm lại.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Mỗi câu: gạch từ khóa → chọn phép → tính → soát 1 lần.</p>
       </div>
@@ -6158,7 +6418,7 @@ const G2_LESSONS = [
         </svg>
               <figcaption>Luyện đề ngắn cuối năm</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> 12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, đếm và phân loại.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 12 câu phủ số đến 1000, cộng trừ có nhớ, bảng 2&5, đo lường, hình khối, biểu đồ/khả năng.</p>
@@ -6172,7 +6432,11 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Cẩn thận.</strong> Nhầm bảng 2/5; quên nhớ; bỏ chú thích biểu đồ.</p>
       </div>
-      
+      <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          <li><strong>Bước 1.</strong> Đọc đề.</li>
+          <li><strong>Bước 2.</strong> Làm từng câu, không vội.</li>
+          <li><strong>Bước 3.</strong> Soát nhớ, mượn và đơn vị.</li>
+        </ol></div>
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> Làm 2 vòng: vòng 1 hết đề, vòng 2 chỉ soát câu khoanh/đặt tính.</p>
       </div>
@@ -6191,7 +6455,7 @@ const G2_LESSONS = [
       <div class="example">
         <p><strong>Làm từng bước.</strong> Mẫu: 20 kẹo chia 5 hộp đều → 20 : 5 = 4. Kiểm 4 × 5 = 20.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Cuối năm: 1000 · ± có nhớ · ×÷ 2&5 · hình · đo · thống kê.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Cuối năm: 1000 · ± có nhớ · ×÷ 2&5 · hình · đo · đếm và phân loại.</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"Viết số gồm 5 trăm 0 chục 7 đơn vị","answer":507,"hint":"507.","explain":"507."},

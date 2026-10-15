@@ -26,18 +26,18 @@ const chapters = [
     title: "Phép cộng, phép trừ trong phạm vi 20",
     intro: "8 bài. Cộng và trừ đến 20. Thêm thì cộng. Bớt thì trừ. Làm từ Bài 7.",
   },
-  { id: 3, title: "Làm quen với khối lượng, dung tích" },
-  { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100" },
-  { id: 5, title: "Làm quen với hình phẳng" },
-  { id: 6, title: "Ngày – giờ, giờ – phút, ngày – tháng" },
-  { id: 7, title: "Ôn tập học kì I" },
-  { id: 8, title: "Phép nhân, phép chia" },
-  { id: 9, title: "Làm quen với hình khối" },
-  { id: 10, title: "Các số trong phạm vi 1000" },
-  { id: 11, title: "Độ dài và đơn vị đo độ dài. Tiền Việt Nam" },
-  { id: 12, title: "Phép cộng, phép trừ trong phạm vi 1000" },
-  { id: 13, title: "Làm quen với yếu tố thống kê, xác suất" },
-  { id: 14, title: "Ôn tập cuối năm" },
+  { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
+  { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100", intro: "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục." },
+  { id: 5, title: "Làm quen với hình phẳng", intro: "4 bài. Điểm, đoạn, đường thẳng, đường cong, tứ giác. Đếm cạnh và đỉnh." },
+  { id: 6, title: "Ngày – giờ, giờ – phút, ngày – tháng", intro: "4 bài. Kim ngắn là giờ. Kim dài là phút. 1 giờ = 60 phút. Xem lịch để biết ngày." },
+  { id: 7, title: "Ôn tập học kì I", intro: "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề." },
+  { id: 8, title: "Phép nhân, phép chia", intro: "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5." },
+  { id: 9, title: "Làm quen với hình khối", intro: "2 bài. Bóng là khối cầu. Lon, ống là khối trụ." },
+  { id: 10, title: "Các số trong phạm vi 1000", intro: "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải." },
+  { id: 11, title: "Độ dài và đơn vị đo độ dài. Tiền Việt Nam", intro: "4 bài. dm, m, km. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng." },
+  { id: 12, title: "Phép cộng, phép trừ trong phạm vi 1000", intro: "5 bài. Cộng trừ số có ba chữ số. Thẳng cột. Nhớ và mượn từng hàng." },
+  { id: 13, title: "Làm quen với yếu tố thống kê, xác suất", intro: "4 bài. Đếm, phân loại, đọc biểu đồ tranh. Nói chắc chắn, có thể, không thể." },
+  { id: 14, title: "Ôn tập cuối năm", intro: "Ôn cả năm. Cuối có mini đề. Làm chậm, soát nhớ/mượn và đơn vị." },
 ];
 
 function esc(s) {
@@ -982,7 +982,12 @@ function kidText(s) {
     .replace(/\bHK1\b/g, "học kì 1")
     .replace(/\bHK2\b/g, "học kì 2")
     .replace(/□/g, "?")
-    .replace(/mốc/g, "số đã biết");
+    .replace(/mốc/g, "số đã biết")
+    .replace(/phạm vi/g, "trong khoảng")
+    .replace(/nền tảng/g, "bài quan trọng")
+    .replace(/xác suất/g, "chuyện có thể xảy ra")
+    .replace(/thống kê/g, "đếm và phân loại")
+    .replace(/giao hoán/g, "đổi chỗ hai số");
 }
 
 function body(parts) {
@@ -3849,9 +3854,25 @@ function kidPrompt(p) {
     .replace(/Hiệu 19 − 6\?$/g, "19 trừ 6 bằng mấy?");
 }
 
+const DEFAULT_HOW = {
+  3: ["Đọc đơn vị: kg hay lít.", "Cộng hoặc trừ các số cùng đơn vị.", "Viết đơn vị sau kết quả."],
+  4: ["Viết thẳng cột, đơn vị bên phải.", "Làm hàng đơn vị trước.", "Từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục."],
+  5: ["Nhìn hình.", "Đếm cạnh, đỉnh, hoặc hai đầu đoạn.", "Gọi đúng tên."],
+  6: ["Kim ngắn là giờ, kim dài là phút.", "Kim dài ở 12: giờ đúng. Ở 6: giờ rưỡi.", "Xem lịch: ngày mai là cộng 1."],
+  7: ["Đọc đề.", "Chọn cộng hoặc trừ.", "Tính rồi kiểm lại."],
+  8: ["Nhân là cộng nhiều lần cùng một số.", "Chia là chia đều, hỏi nhân mấy thì ra.", "Chỉ dùng bảng 2 và bảng 5."],
+  9: ["Sờ hoặc nhìn đồ vật.", "Tròn đều là khối cầu.", "Có hai đáy tròn, dạng ống là khối trụ."],
+  10: ["Tách ba hàng: trăm, chục, đơn vị.", "Số 0 ở giữa phải đọc linh.", "So sánh từ hàng trăm sang phải."],
+  11: ["Đọc đơn vị dm, m, km hoặc đồng.", "Đổi đơn vị nếu cần: 1 m = 10 dm.", "Cộng trừ rồi viết đơn vị."],
+  12: ["Viết thẳng ba cột.", "Làm từ đơn vị sang trăm.", "Nhớ hoặc mượn rồi kiểm bằng phép ngược."],
+  13: ["Đếm từng nhóm, không sót.", "Xem chú thích biểu đồ: 1 hình = mấy.", "Nói chắc chắn, có thể, hoặc không thể."],
+  14: ["Đọc đề.", "Làm từng câu, không vội.", "Soát nhớ, mượn và đơn vị."],
+};
+
 function emitLesson(L) {
   const { id, num, chapter, title, summary, figSvg, content, exercises } = L;
-  const bodyStr = body({ animFig: figSvg, today: summary, ...content });
+  const how = content.how || DEFAULT_HOW[chapter] || ["Đọc đề.", "Chọn cách làm.", "Tính rồi kiểm lại."];
+  const bodyStr = body({ animFig: figSvg, today: summary, ...content, how });
   let s = `  {\n`;
   s += `    id: ${JSON.stringify(id)},\n`;
   s += `    num: ${num},\n`;
