@@ -357,7 +357,7 @@ function lessonLink(course, lesson, progress) {
     <a class="lesson-row" href="#/g/${course.id}/lesson/${lesson.id}">
       <div class="meta"><span>Bài ${lesson.num}</span>${mark}</div>
       <strong>${escapeHtml(heading)}</strong>
-      <p>${escapeHtml(sub)}</p>
+      ${kid ? "" : `<p>${escapeHtml(sub)}</p>`}
     </a>`;
 }
 
@@ -401,6 +401,20 @@ function chapterView(course, chapterId) {
         return `<p class="quiz-lead">${done}/${items.length} bài đã làm.</p>
         <p class="actions" style="margin:0.6rem 0 1rem"><a class="btn" href="#/g/${course.id}/lesson/${nxt.id}">Học tiếp: Bài ${nxt.num}</a></p>`;
       })()}
+      ${
+        ch.samples && ch.samples.length
+          ? `<div class="ch-samples">${ch.samples
+              .map(
+                (s) => `<article class="ch-sample">
+                  <p class="stamp">${escapeHtml(s.title)}</p>
+                  <p class="ch-sample-q">${escapeHtml(s.q)}</p>
+                  <p>${escapeHtml(s.how)}</p>
+                  <p class="ch-sample-a">Đáp: ${escapeHtml(s.a)}</p>
+                </article>`
+              )
+              .join("")}</div>`
+          : ""
+      }
       ${
         ch.tips && ch.tips.length
           ? `<ul class="ch-tips">${ch.tips.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`

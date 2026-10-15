@@ -547,6 +547,30 @@ details.check {
   margin: 1rem 0 0.2rem;
   font-size: 1.15rem;
 }
+.ch-samples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin: 0 0 1rem;
+}
+.ch-sample {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+}
+.ch-sample-q {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0.2rem 0;
+}
+.ch-sample-a {
+  font-weight: 800;
+  color: #3f6b32;
+}
+@media (max-width: 640px) {
+  .ch-samples { grid-template-columns: 1fr; }
+}
 @media (max-width: 640px) {
   .ch-tips { grid-template-columns: 1fr; }
 }

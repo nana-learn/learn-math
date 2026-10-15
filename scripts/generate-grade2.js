@@ -35,6 +35,10 @@ const chapters = [
       { title: "1. Học cộng", tip: "Đủ 10, rồi cộng phần còn.", from: 7, to: 10 },
       { title: "2. Học trừ", tip: "Hỏi: số này cộng mấy thì ra số kia?", from: 11, to: 14 },
     ],
+    samples: [
+      { title: "Cộng", q: "8 + 6", how: "8 cần 2 nữa được 10. Còn 4. 10 + 4 = 14.", a: "14" },
+      { title: "Trừ", q: "15 − 7", how: "7 cộng mấy bằng 15? 7 + 8 = 15. Còn 8.", a: "8" },
+    ],
   },
   { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
   { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100", intro: "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục." },
@@ -4016,17 +4020,23 @@ function shuffleSeed(arr, seed) {
   return a;
 }
 
-function numChoices(answer) {
+function numChoices(answer, chapter) {
   const a = Number(answer);
   const bag = [];
+  const cap = chapter === 2 ? 20 : 20000;
   const add = (x) => {
-    if (!Number.isInteger(x) || x < 0 || x === a || bag.includes(x)) return;
+    if (!Number.isInteger(x) || x < 0 || x > cap || x === a || bag.includes(x)) return;
     bag.push(x);
   };
   add(a + 1);
   add(Math.max(0, a - 1));
-  add(a + 10);
-  add(a - 10);
+  if (chapter !== 2) {
+    add(a + 10);
+    add(a - 10);
+  } else if (a > 10) {
+    add(10);
+    add(a - 2);
+  }
   add(a + 2);
   if (a >= 10 && a <= 99) {
     const s = String(a);
@@ -4041,8 +4051,9 @@ function numChoices(answer) {
     add(a - 1000);
   }
   let k = 3;
-  while (bag.length < 3) {
+  while (bag.length < 3 && k < 40) {
     add(a + k);
+    add(a - k);
     k += 1;
   }
   return [String(a), ...bag.slice(0, 3).map(String)];
@@ -4088,7 +4099,7 @@ function toChoiceQuestion(ex, seed) {
       correct: mixed.indexOf(right),
     };
   }
-  const labels = ex.type === "num" ? numChoices(ex.answer) : textChoices(ex);
+  const labels = ex.type === "num" ? numChoices(ex.answer, ex._chapter) : textChoices(ex);
   const mixed = shuffleSeed(labels, seed);
   const right = ex.type === "num" ? String(ex.answer) : labels[0];
   const correct = mixed.indexOf(right);
@@ -4170,7 +4181,7 @@ function emitLesson(L) {
   s += bodyStr + `,\n`;
   s += `    exercises: [\n`;
   exercises.forEach((ex, i) => {
-    const e = toChoiceQuestion(ex, num * 97 + i * 13 + chapter);
+    const e = toChoiceQuestion({ ...ex, _chapter: chapter }, num * 97 + i * 13 + chapter);
     s += `      ${JSON.stringify(e)},\n`;
   });
   s += `    ],\n`;
