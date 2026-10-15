@@ -324,11 +324,12 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
   margin-left: 0.35rem;
 }
 .figure-step-label {
-  color: #83c167;
-  font-size: 0.8rem;
+  color: #c8f0c0;
+  font-size: 0.92rem;
   font-weight: 700;
   align-self: center;
-  min-width: 3.5rem;
+  flex: 1 1 12rem;
+  text-align: left;
 }
 
 .panels {

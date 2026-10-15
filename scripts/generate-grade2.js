@@ -312,18 +312,18 @@ function svgPlaceValue2(tens, ones, n) {
   return fig(
     `g2-b${n}-place`,
     `Cấu tạo số ${tens}${ones}`,
-    `          <g class="g2s1">
-            <rect x="30" y="30" width="100" height="90" fill="none" stroke="${C.g}" stroke-width="2"/>
-            <rect x="160" y="30" width="100" height="90" fill="none" stroke="${C.b}" stroke-width="2"/>
-            <text x="80" y="24" font-size="12" text-anchor="middle" fill="${C.g}">Hàng chục</text>
-            <text x="210" y="24" font-size="12" text-anchor="middle" fill="${C.b}">Hàng đơn vị</text>
+    `          <g class="g2s1" data-caption="Bước 1: Hai hộp — chục bên trái, đơn vị bên phải">
+            <rect x="30" y="30" width="100" height="90" rx="8" fill="${C.g}" fill-opacity="0.12" stroke="${C.g}" stroke-width="2"/>
+            <rect x="160" y="30" width="100" height="90" rx="8" fill="${C.b}" fill-opacity="0.12" stroke="${C.b}" stroke-width="2"/>
+            <text x="80" y="24" font-size="13" text-anchor="middle" fill="${C.g}">Hàng chục</text>
+            <text x="210" y="24" font-size="13" text-anchor="middle" fill="${C.b}">Hàng đơn vị</text>
           </g>
-          <g class="g2s2">
-            <text x="80" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${tens}</text>
-            <text x="210" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${ones}</text>
+          <g class="g2s2" data-caption="Bước 2: Viết ${tens} vào hộp chục, ${ones} vào hộp đơn vị">
+            <text x="80" y="88" font-size="40" text-anchor="middle" fill="${C.d}">${tens}</text>
+            <text x="210" y="88" font-size="40" text-anchor="middle" fill="${C.d}">${ones}</text>
           </g>
-          <g class="g2s3">
-            <text x="160" y="150" font-size="14" text-anchor="middle">${tens}${ones} = ${tens} chục + ${ones} đơn vị</text>
+          <g class="g2s3" data-caption="Bước 3: Đọc ${tens}${ones} = ${tens} chục + ${ones} đơn vị">
+            <text x="160" y="148" font-size="16" text-anchor="middle" fill="${C.r}">${tens}${ones} = ${tens} chục + ${ones} đơn vị</text>
           </g>`
   );
 }
@@ -522,13 +522,13 @@ function svgTenFrame(filled, extra) {
   return fig(
     "tenframe",
     `Khung 10: ${filled} + ${extra}`,
-    `          <g class="g2s1">${cells}</g>
-          <g class="g2s2">${extras}</g>
-          <g class="g2s3">
+    `          <g class="g2s1" data-caption="Bước 1: Khung 10 — đã có ${filled}">${cells}</g>
+          <g class="g2s2" data-caption="Bước 2: Thêm ${extra} (xanh vào khung, đỏ là phần còn)">${extras}</g>
+          <g class="g2s3" data-caption="Bước 3: Cần ${need} nữa đầy 10, còn ${rest}">
             <text x="90" y="100" font-size="12" text-anchor="middle">Đã có ${filled}</text>
             <text x="230" y="100" font-size="12" text-anchor="middle">Thêm ${extra}</text>
           </g>
-          <g class="g2s4">
+          <g class="g2s4" data-caption="Bước 4: ${filled} + ${extra} = 10 + ${rest} = ${filled + extra}">
             <text x="160" y="128" font-size="13" text-anchor="middle">Cần ${need} nữa đầy khung 10, còn ${rest}</text>
             <text x="160" y="150" font-size="15" text-anchor="middle" fill="${C.g}">${filled} + ${extra} = 10 + ${rest} = ${filled + extra}</text>
           </g>`
@@ -606,24 +606,24 @@ function svgMakeTen(a, need, rest, sum) {
   return fig(
     "g2-make-ten",
     "Cộng qua 10",
-    `          <g class="g2s1">
-            <text x="160" y="28" font-size="14" text-anchor="middle">${a} + ${need + rest}</text>
-            <rect x="30" y="50" width="80" height="40" fill="none" stroke="${C.g}" stroke-width="2"/>
-            <text x="70" y="76" font-size="16" text-anchor="middle">${a}</text>
+    `          <g class="g2s1" data-caption="Bước 1: Có ${a}">
+            <text x="160" y="22" font-size="15" text-anchor="middle">${a} + ${need + rest}</text>
+            <rect x="24" y="42" width="84" height="48" rx="8" fill="${C.g}" fill-opacity="0.15" stroke="${C.g}" stroke-width="2"/>
+            <text x="66" y="74" font-size="22" text-anchor="middle">${a}</text>
           </g>
-          <g class="g2s2">
-            <text x="120" y="76" font-size="16">+</text>
-            <rect x="140" y="50" width="50" height="40" fill="none" stroke="${C.b}" stroke-width="2"/>
-            <text x="165" y="76" font-size="16" text-anchor="middle">${need}</text>
+          <g class="g2s2" data-caption="Bước 2: Thêm ${need} cho đủ 10">
+            <text x="118" y="74" font-size="18">+</text>
+            <rect x="136" y="42" width="50" height="48" rx="8" fill="${C.b}" fill-opacity="0.18" stroke="${C.b}" stroke-width="2"/>
+            <text x="161" y="74" font-size="22" text-anchor="middle">${need}</text>
           </g>
-          <g class="g2s3">
-            <text x="200" y="76" font-size="16">+</text>
-            <rect x="220" y="50" width="50" height="40" fill="none" stroke="${C.r}" stroke-width="2"/>
-            <text x="245" y="76" font-size="16" text-anchor="middle">${rest}</text>
+          <g class="g2s3" data-caption="Bước 3: Còn ${rest}">
+            <text x="198" y="74" font-size="18">+</text>
+            <rect x="216" y="42" width="50" height="48" rx="8" fill="${C.r}" fill-opacity="0.15" stroke="${C.r}" stroke-width="2"/>
+            <text x="241" y="74" font-size="22" text-anchor="middle">${rest}</text>
           </g>
-          <g class="g2s4">
-            <text x="160" y="120" font-size="13" text-anchor="middle">${a}+${need}=10, còn ${rest} → ${sum}</text>
-            <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.g}">${a} + ${need + rest} = ${sum}</text>
+          <g class="g2s4" data-caption="Bước 4: ${a} + ${need} = 10, thêm ${rest} thành ${sum}">
+            <text x="160" y="118" font-size="14" text-anchor="middle">${a} + ${need} = 10, còn ${rest}</text>
+            <text x="160" y="146" font-size="20" text-anchor="middle" fill="${C.g}">${a} + ${need + rest} = ${sum}</text>
           </g>`
   );
 }

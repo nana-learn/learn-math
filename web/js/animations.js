@@ -78,7 +78,10 @@ class VisualAnimation {
       this.currentStep++;
       if (els.length) {
         this.playStep(idx);
-        if (this.onStep) this.onStep(this.currentStep, this.steps.length);
+        const capEl = els[0];
+        const cap =
+          (capEl && capEl.getAttribute && capEl.getAttribute('data-caption')) || '';
+        if (this.onStep) this.onStep(this.currentStep, this.steps.length, cap);
         return true;
       }
     }
@@ -178,6 +181,10 @@ const AnimationManager = {
       if (config) {
         this.animations[id] = new VisualAnimation(svg, config);
         this.attachControls(svg, id);
+        if (/g2-b1-place$|g2-b7-make-ten$/.test(id)) {
+          const anim = this.animations[id];
+          setTimeout(() => anim.play(), 400);
+        }
       }
     });
   },
@@ -2326,9 +2333,9 @@ const AnimationManager = {
     const label = controls.querySelector('.figure-step-label');
     const animation = this.animations[id];
     if (animation) {
-      animation.onStep = (cur, total) => {
+      animation.onStep = (cur, total, cap) => {
         const shown = Math.min(cur, total);
-        label.textContent = shown ? `Bước ${shown}` : '';
+        label.textContent = cap || (shown ? `Bước ${shown}` : '');
       };
     }
 
