@@ -41,6 +41,11 @@ const chapters = [
     ],
     pairs: [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => ({ a: n, b: 10 - n })),
     line: [0, 5, 10, 15, 20],
+    checks: [
+      { prompt: "8 cần thêm mấy nữa được 10?", choices: ["1", "2", "3", "8"], correct: 1 },
+      { prompt: "8 + 6 = ?", choices: ["12", "13", "14", "16"], correct: 2 },
+      { prompt: "15 − 7 = ?", choices: ["6", "7", "8", "9"], correct: 2 },
+    ],
   },
   { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
   { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100", intro: "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục." },

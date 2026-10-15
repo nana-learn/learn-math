@@ -92,6 +92,38 @@ const G2_CHAPTERS = [
       10,
       15,
       20
+    ],
+    "checks": [
+      {
+        "prompt": "8 cần thêm mấy nữa được 10?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "8"
+        ],
+        "correct": 1
+      },
+      {
+        "prompt": "8 + 6 = ?",
+        "choices": [
+          "12",
+          "13",
+          "14",
+          "16"
+        ],
+        "correct": 2
+      },
+      {
+        "prompt": "15 − 7 = ?",
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct": 2
+      }
     ]
   },
   {

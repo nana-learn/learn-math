@@ -600,6 +600,9 @@ details.check {
 .pair-chip.line {
   background: #eef7fa;
 }
+.ch-check {
+  margin: 0 0 1.2rem;
+}
 @media (max-width: 640px) {
   .ch-samples { grid-template-columns: 1fr; }
 }

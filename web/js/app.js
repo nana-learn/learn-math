@@ -438,6 +438,26 @@ function chapterView(course, chapterId) {
           : ""
       }
       ${
+        ch.checks && ch.checks.length
+          ? `<form id="ch-check" class="ch-check">
+              <h3 class="ch-group">Thử 3 câu</h3>
+              <p class="quiz-lead">Nhìn cặp đủ 10, rồi chọn.</p>
+              ${ch.checks
+                .map((q, i) => {
+                  const choices = q.choices
+                    .map(
+                      (c, j) =>
+                        `<label><input type="radio" name="c${i}" value="${j}"> <span>${escapeHtml(c)}</span></label>`
+                    )
+                    .join("");
+                  return `<div class="q" data-i="${i}"><p><strong>Câu ${i + 1}.</strong> ${escapeHtml(q.prompt)}</p><div class="choices">${choices}</div><div class="feedback" hidden></div></div>`;
+                })
+                .join("")}
+              <button class="btn" type="submit">Xem đúng chưa</button>
+            </form>`
+          : ""
+      }
+      ${
         ch.groups && ch.groups.length
           ? ch.groups
               .map((g) => {
@@ -649,6 +669,36 @@ function render() {
     AnimationManager.init();
   }
   playGrade2Figures();
+
+  const checkForm = document.getElementById("ch-check");
+  if (checkForm && course && chapterMatch) {
+    const ch = course.chapters.find((c) => String(c.id) === String(chapterMatch[2]));
+    checkForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!ch || !ch.checks) return;
+      let ok = 0;
+      ch.checks.forEach((q, i) => {
+        const picked = checkForm.querySelector(`input[name="c${i}"]:checked`);
+        const box = checkForm.querySelector(`.q[data-i="${i}"] .feedback`);
+        const good = picked && Number(picked.value) === q.correct;
+        if (good) ok += 1;
+        box.hidden = false;
+        box.className = good ? "feedback ok" : "feedback bad";
+        box.textContent = !picked
+          ? "Em chọn một đáp án đã."
+          : good
+            ? "Đúng rồi."
+            : `Chưa đúng. Đáp án là ${q.choices[q.correct]}.`;
+      });
+      let sum = checkForm.querySelector(".ch-check-sum");
+      if (!sum) {
+        sum = document.createElement("p");
+        sum.className = "ch-check-sum quiz-lead";
+        checkForm.appendChild(sum);
+      }
+      sum.textContent = ok === ch.checks.length ? "Giỏi lắm. Em làm tiếp bài học." : `Đúng ${ok}/${ch.checks.length}. Xem lại cặp đủ 10 rồi thử lại.`;
+    });
+  }
 
   const quiz = document.getElementById("quiz-form");
   if (quiz && lessonMatch) {
