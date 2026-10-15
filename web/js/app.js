@@ -536,9 +536,10 @@ function playGrade2Figures() {
       : [...svg.children];
     const gap = parts.length > 6 ? 0.16 : 0.42;
     parts.forEach((el, i) => {
+      if (el.classList && el.classList.contains("g2-hand")) return;
       el.style.animation = "none";
       void el.offsetWidth;
-      el.style.animation = `g2in 0.45s ease ${i * gap}s both`;
+      el.style.animation = `g2in 0.5s ease ${i * gap}s both`;
     });
   });
 }
