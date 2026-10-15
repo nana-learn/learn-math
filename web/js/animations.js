@@ -174,17 +174,17 @@ const AnimationManager = {
       if (!svg) return;
       // unique key so two figures can share a template id without clobbering
       const id = this.animations[baseId] ? `${baseId}__${index}` : baseId;
-      let config = this.getAnimationConfig(baseId);
+      // Grade 2 step groups already form the finished picture. Show that only.
       if (svg.querySelector('.g2s1')) {
-        config = this.g2ClassSteps();
+        svg.querySelectorAll('.g2s1, .g2s2, .g2s3, .g2s4').forEach((g) => {
+          g.style.opacity = '1';
+        });
+        return;
       }
+      const config = this.getAnimationConfig(baseId);
       if (config) {
         this.animations[id] = new VisualAnimation(svg, config);
         this.attachControls(svg, id);
-        if (/g2-b1-place$|g2-b7-make-ten$/.test(id)) {
-          const anim = this.animations[id];
-          setTimeout(() => anim.play(), 400);
-        }
       }
     });
   },
