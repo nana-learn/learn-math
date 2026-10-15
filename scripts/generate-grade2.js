@@ -447,14 +447,14 @@ function svgCompareBars(a, b) {
     "Hơn kém nhau",
     `          <g class="g2s1">
             <rect x="60" y="${140 - ha}" width="60" height="${ha}" fill="none" stroke="${C.g}" stroke-width="2"/>
-            <text x="90" y="155" font-size="12" text-anchor="middle">A = ${a}</text>
+            <text x="90" y="155" font-size="13" text-anchor="middle">${a}</text>
           </g>
           <g class="g2s2">
             <rect x="180" y="${140 - hb}" width="60" height="${hb}" fill="none" stroke="${C.b}" stroke-width="2"/>
-            <text x="210" y="155" font-size="12" text-anchor="middle">B = ${b}</text>
+            <text x="210" y="155" font-size="13" text-anchor="middle">${b}</text>
           </g>
           <g class="g2s3">
-            <text x="160" y="24" font-size="13" text-anchor="middle" fill="${C.r}">${Math.abs(a - b)} (hiệu)</text>
+            <text x="160" y="28" font-size="16" text-anchor="middle" fill="${C.r}">hơn ${Math.abs(a - b)}</text>
           </g>`
   );
 }
@@ -1051,6 +1051,33 @@ function svgBorrowSteps() {
   );
 }
 
+
+function svgCh2Review() {
+  return fig(
+    "ch2-clues",
+    "Bốn câu then chốt",
+    `          <g class="g2s1">
+            <rect x="16" y="18" width="140" height="52" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+            <text x="86" y="40" font-size="13" text-anchor="middle">Thêm, tất cả</text>
+            <text x="86" y="58" font-size="14" text-anchor="middle" fill="${C.g}">cộng</text>
+          </g>
+          <g class="g2s2">
+            <rect x="164" y="18" width="140" height="52" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+            <text x="234" y="40" font-size="13" text-anchor="middle">Bớt, còn lại</text>
+            <text x="234" y="58" font-size="14" text-anchor="middle" fill="${C.r}">trừ</text>
+          </g>
+          <g class="g2s3">
+            <rect x="16" y="82" width="140" height="52" rx="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+            <text x="86" y="104" font-size="13" text-anchor="middle">Nhiều hơn</text>
+            <text x="86" y="122" font-size="14" text-anchor="middle" fill="${C.b}">cộng</text>
+          </g>
+          <g class="g2s4">
+            <rect x="164" y="82" width="140" height="52" rx="8" fill="none" stroke="${C.p}" stroke-width="2"/>
+            <text x="234" y="104" font-size="13" text-anchor="middle">Ít hơn</text>
+            <text x="234" y="122" font-size="14" text-anchor="middle" fill="${C.p}">trừ</text>
+          </g>`
+  );
+}
 
 function svgReview(title) {
   return fig(
@@ -1760,7 +1787,7 @@ function buildLessons() {
     2,
     "Luyện tập chung",
     "Ôn cộng trừ qua 10 và bài toán thêm bớt.",
-    svgReview("Luyện cộng trừ 20"),
+    svgCh2Review(),
     {
       why: "Ôn cộng qua 10 và bài toán thêm/bớt trước khi học trừ qua 10.",
       def: "Nhẩm cộng qua 10. Đọc từ khóa thêm/bớt. Nhiều phép thì làm từ trái sang phải.",
@@ -1822,8 +1849,8 @@ function buildLessons() {
       ],
       slow: "17 − 9. Hỏi 9 + □ = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.",
       memory: "Trừ qua 10: nghĩ phép cộng ngược.",
-      extraHtml: svgMakeTen(10, 0, 8, 8) +
-        `<div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. 9 + 3 = 12 nên còn 3 kẹo.</p></div>`,
+      extraHtml: svgTakeAway(12, 9) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. Hỏi: 9 cộng mấy bằng 12? 9 + 3 = 12. Còn 3 kẹo.</p></div>`,
     },
     [
       exNum("13 − 5 = ?", 8, "5 + 8 = 13.", "8."),
@@ -1914,7 +1941,7 @@ function buildLessons() {
       exNum("Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?", 17, "9+8.", "17."),
       exNum("Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?", 20, "Cam ít hơn → quýt = 14+6.", "20."),
       exMC("“Ít hơn mốc” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Bé hơn mốc.", "Trừ."),
-      exNum("Hoa có 20 nhãn, ít hơn 6 nhãn so với số đó là?", 14, "20−6.", "14."),
+      exNum("Hoa có 20 nhãn. Mai ít hơn Hoa 6 nhãn. Mai có mấy nhãn?", 14, "Ít hơn Hoa thì trừ. 20 − 6.", "14."),
       exNum("Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?", 19, "12+7.", "19."),
       exNum("An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?", 19, "15+4.", "19."),
     ]
@@ -1925,13 +1952,13 @@ function buildLessons() {
     2,
     "Luyện tập chung",
     "Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.",
-    svgReview("Luyện chủ đề 2"),
+    svgCh2Review(),
     {
       why: "Ôn cả chủ đề 2: cộng trừ qua 10 và lời văn.",
       def: "Nhẩm cộng/trừ qua 10. Thêm/bớt. Nhiều hơn/ít hơn. Làm trái sang phải.",
-      easy: "9 + 8 − 6 = 11. Số nhiều hơn 15 bốn đơn vị là 19. Số ít hơn 15 bốn đơn vị là 11.",
+      easy: "9 + 8 − 6 = 11. An có 15 kẹo, Bình nhiều hơn 4 kẹo thì Bình có 19. Mai ít hơn An 4 kẹo thì Mai có 11.",
       step: "7 + 6 + 5 = 18. Từng bước: 7+6=13, 13+5=18.",
-      trap: "Ít hơn 15 là 4 đơn vị nghĩa là 15 − 4 = 11, không phải 4.",
+      trap: "Mai ít hơn An 4 kẹo, An có 15. Mai có 15 − 4 = 11, không phải 4.",
       idea: "Gạch từ thêm, bớt, nhiều hơn, ít hơn.",
       how: [
         "Đọc đề chậm.",
@@ -1941,7 +1968,7 @@ function buildLessons() {
       warns: ["Sai từ khóa nhiều/ít.", "Sai thứ tự khi có hai dấu."],
       checks: [
         { q: "9+8−6=?", a: "11." },
-        { q: "Ít hơn 15 bốn đơn vị?", a: "11." },
+        { q: "An 15 kẹo, Mai ít hơn 4. Mai có mấy?", a: "11." },
         { q: "8 + 7 = ?", a: "15." },
       ],
       slow: "20 − 9 = 11. Kiểm: 11 + 9 = 20.",
@@ -1950,10 +1977,10 @@ function buildLessons() {
     },
     [
       exNum("9 + 8 − 6 = ?", 11, "17 − 6.", "11."),
-      exNum("Nhiều hơn 12 năm đơn vị là số nào?", 17, "12 + 5.", "17."),
+      exNum("An có 12 kẹo. Bình nhiều hơn An 5 kẹo. Bình có mấy kẹo?", 17, "Nhiều hơn thì cộng. 12 + 5.", "17."),
       exNum("20 − 9 = ?", 11, "Trừ qua 10.", "11."),
       exNum("7 + 6 + 5 = ?", 18, "13 + 5.", "18."),
-      exNum("Ít hơn 15 bốn đơn vị là số nào?", 11, "15 − 4.", "11."),
+      exNum("Lan có 15 tem. Mai ít hơn Lan 4 tem. Mai có mấy tem?", 11, "Ít hơn thì trừ. 15 − 4.", "11."),
       exNum("16 − 7 = ?", 9, "7 + 9 = 16.", "9."),
       exNum("8 + 7 = ?", 15, "Qua 10.", "15."),
       exNum("Có 9 hoa, nở thêm 8, héo 6. Còn mấy hoa?", 11, "9+8−6.", "11."),
