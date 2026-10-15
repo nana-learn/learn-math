@@ -177,13 +177,15 @@ function withStories(num, chapter, exercises) {
 
   const byCh = {
     1:
-      num <= 2
+      num === 1
         ? banks.place
-        : num === 4
-          ? banks.more
-          : num % 2
-            ? banks.add
-            : banks.sub,
+        : num === 2
+          ? banks.add
+          : num === 4
+            ? banks.more
+            : num % 2
+              ? banks.add
+              : banks.sub,
     2: num === 11 || num === 12 ? banks.sub : num === 13 || num === 14 ? banks.more : banks.add,
     3: banks.measure,
     4: num % 2 ? banks.add : banks.sub,
@@ -217,14 +219,12 @@ function withStories(num, chapter, exercises) {
     );
 
   const narrativeCount = exercises.filter(isNarrative).length;
-  if (narrativeCount >= 2) return exercises.slice(0, 9);
+  if (narrativeCount >= 2) return exercises.slice(0, 12);
 
   const bank = byCh[chapter] || banks.add;
   const extra = bank.filter((e) => !exercises.some((x) => x.prompt === e.prompt));
-  if (narrativeCount === 0 && exercises.length >= 7) {
-    return exercises.slice(0, 5).concat(extra.slice(0, 2)).slice(0, 9);
-  }
-  return exercises.concat(extra.slice(0, 2)).slice(0, 9);
+  // Only append — never drop the lesson’s own questions
+  return exercises.concat(extra.slice(0, 2)).slice(0, 12);
 }
 
 function fig(anim, label, inner, vb = "0 0 320 160") {
@@ -899,7 +899,7 @@ function kidText(s) {
     .replace(/phụ huynh và con/g, "em")
     .replace(/\bHK1\b/g, "học kì 1")
     .replace(/\bHK2\b/g, "học kì 2")
-    .replace(/□/g, "số cần tìm")
+    .replace(/□/g, "?")
     .replace(/mốc/g, "số đã biết");
 }
 
@@ -1039,27 +1039,27 @@ function buildLessons() {
     // Short lời văn text (keyword / unit)
     if (num === 9) {
       exs = [
-        exText(
-          "Có 8 quả, hái thêm 5. Phải làm phép nào? (gõ: cong hoặc tru)",
-          "cong",
-          ["cong", "cộng", "cong them", "+"],
-          "thêm → cộng",
-          "cộng."
+        exMC(
+          "Có 8 quả, hái thêm 5. Em làm phép nào?",
+          ["Cộng", "Trừ", "Nhân", "Chia"],
+          0,
+          "Thêm thì cộng.",
+          "Cộng."
         ),
-        ...exs,
-      ].slice(0, 9);
+        ...exs.filter((e) => e.type !== "text"),
+      ].slice(0, 10);
     }
     if (num === 13) {
       exs = [
-        exText(
-          "A ít hơn B 4 đơn vị. Lấy B làm mốc thì làm phép nào với 4? (cong/tru)",
-          "tru",
-          ["tru", "trừ", "-"],
-          "ít hơn mốc → trừ",
-          "trừ."
+        exMC(
+          "An ít hơn Bình 4. Biết số của Bình. Tìm số của An thì làm phép nào?",
+          ["Trừ", "Cộng", "Nhân", "Chia"],
+          0,
+          "Ít hơn số đã biết thì trừ.",
+          "Trừ."
         ),
-        ...exs,
-      ].slice(0, 9);
+        ...exs.filter((e) => e.type !== "text"),
+      ].slice(0, 10);
     }
     if (num === 15) {
       exs = [
@@ -3756,6 +3756,17 @@ function buildLessons() {
   return L;
 }
 
+function kidPrompt(p) {
+  return kidText(String(p))
+    .replace(/□/g, "?")
+    .replace(/Số 48 gồm$/g, "Số 48 gồm mấy chục và mấy đơn vị?")
+    .replace(/Số liền sau 99 là$/g, "Số liền sau 99 là mấy?")
+    .replace(/Liền sau của 99\?$/g, "Số liền sau của 99 là mấy?")
+    .replace(/Liền trước của 70\?$/g, "Số liền trước của 70 là mấy?")
+    .replace(/Tổng của 8 và 7\?$/g, "Tổng của 8 và 7 bằng mấy?")
+    .replace(/Hiệu 19 − 6\?$/g, "19 trừ 6 bằng mấy?");
+}
+
 function emitLesson(L) {
   const { id, num, chapter, title, summary, figSvg, content, exercises } = L;
   const bodyStr = body({ animFig: figSvg, today: summary, ...content });
@@ -3768,7 +3779,8 @@ function emitLesson(L) {
   s += bodyStr + `,\n`;
   s += `    exercises: [\n`;
   for (const ex of exercises) {
-    s += `      ${JSON.stringify(ex)},\n`;
+    const e = { ...ex, prompt: kidPrompt(ex.prompt) };
+    s += `      ${JSON.stringify(e)},\n`;
   }
   s += `    ],\n`;
   s += `  }`;

@@ -270,12 +270,12 @@ const G2_LESSONS = [
     exercises: [
       {"type":"text","prompt":"Đọc số 70 (gõ không dấu cũng được):","answer":"bay muoi","accept":["bay muoi","bảy mươi","bay muoi"],"hint":"bảy mươi","explain":"bảy mươi."},
       {"type":"mc","prompt":"Số 47: chữ số bên trái là hàng nào?","choices":["Hàng chục","Hàng đơn vị","Hàng trăm","Không biết"],"correct":0,"hint":"Bên trái = chục.","explain":"Hàng chục."},
-      {"type":"mc","prompt":"Số 48 gồm","choices":["4 chục 8 đơn vị","8 chục 4 đơn vị","48 chục","12 đơn vị"],"correct":0,"hint":"Trái = chục.","explain":"4 chục 8 đơn vị."},
+      {"type":"mc","prompt":"Số 48 gồm mấy chục và mấy đơn vị?","choices":["4 chục 8 đơn vị","8 chục 4 đơn vị","48 chục","12 đơn vị"],"correct":0,"hint":"Trái = chục.","explain":"4 chục 8 đơn vị."},
       {"type":"num","prompt":"Viết số gồm 9 chục và 0 đơn vị.","answer":90,"hint":"9 chục = 90.","explain":"90."},
       {"type":"num","prompt":"3 bó que (mỗi bó 10) và 5 que rời. Tất cả mấy que?","answer":35,"hint":"30 + 5.","explain":"35."},
       {"type":"mc","prompt":"Số lớn nhất trong 27, 72, 17, 71 là","choices":["72","27","71","17"],"correct":0,"hint":"So hàng chục trước.","explain":"72."},
       {"type":"mc","prompt":"16 và 61, số nào lớn hơn?","choices":["61","16","Bằng nhau","Không so được"],"correct":0,"hint":"6 chục > 1 chục.","explain":"61."},
-      {"type":"num","prompt":"Số liền sau 99 là","answer":100,"hint":"Thêm 1.","explain":"100."},
+      {"type":"num","prompt":"Số liền sau 99 là mấy?","answer":100,"hint":"Thêm 1.","explain":"100."},
       {"type":"mc","prompt":"Số nhỏ nhất: 45, 54, 40, 50","choices":["40","45","50","54"],"correct":0,"hint":"So chục rồi đơn vị.","explain":"40."},
       {"type":"mc","prompt":"Đọc số 70","choices":["Bảy mươi","Bảy không","Bảy đơn vị","Mười bảy"],"correct":0,"hint":"7 chục.","explain":"Bảy mươi."},
       {"type":"num","prompt":"Viết số gồm 6 chục và 4 đơn vị.","answer":64,"hint":"60 + 4.","explain":"64."},
@@ -371,10 +371,11 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Số liền trước của 56?","answer":55,"hint":"Lùi 1.","explain":"55."},
       {"type":"num","prompt":"Số liền sau của 79?","answer":80,"hint":"Tiến 1. Đổi chục.","explain":"80."},
       {"type":"mc","prompt":"Số đứng giữa 44 và 46 là","choices":["45","43","47","40"],"correct":0,"hint":"Giữa hai số cách 2.","explain":"45."},
-      {"type":"num","prompt":"Liền sau của 99?","answer":100,"hint":"99 + 1.","explain":"100."},
+      {"type":"num","prompt":"Số liền sau của 99 là mấy?","answer":100,"hint":"99 + 1.","explain":"100."},
       {"type":"mc","prompt":"Số bên trái 30 trên tia số là số","choices":["bé hơn 30","lớn hơn 30","bằng 30","không so được"],"correct":0,"hint":"Trái nhỏ hơn.","explain":"Bé hơn 30."},
-      {"type":"num","prompt":"Nam có 4 chục que và 3 que rời. Tất cả mấy que?","answer":43,"hint":"chục × 10 + đơn vị.","explain":"43."},
-      {"type":"num","prompt":"Viết số gồm 9 chục và 3 đơn vị.","answer":93,"hint":"Ghép hàng.","explain":"93."},
+      {"type":"num","prompt":"Liền trước của 1?","answer":0,"hint":"1 − 1.","explain":"0."},
+      {"type":"num","prompt":"Hai số liền sau 10 là 11 và …?","answer":12,"hint":"10, 11, 12.","explain":"12."},
+      {"type":"num","prompt":"Liền trước của 40?","answer":39,"hint":"40 − 1.","explain":"39."},
     ],
   },
 
@@ -425,7 +426,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> 9 + 4 = 13. 9 và 4 là số hạng. 13 là tổng.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> 13 − 4 = 9. 13 số bị trừ, 4 số trừ, 9 hiệu. Tìm số hạng: số cần tìm + 6 = 15 thì số cần tìm = 15 − 6 = 9.</p>
+        <p><strong>Thêm một chút.</strong> 13 − 4 = 9. 13 số bị trừ, 4 số trừ, 9 hiệu. Tìm số hạng: ? + 6 = 15 thì ? = 15 − 6 = 9.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> Tổng là kết quả cộng. Hiệu là kết quả trừ. Đừng gọi nhầm.</p>
@@ -452,17 +453,17 @@ const G2_LESSONS = [
         <p>Muốn tìm số hạng thì làm phép nào? <em>— Tổng trừ số hạng kia.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 18 − số cần tìm = 10. Tìm số trừ: 18 − 10 = 8. Kiểm: 18 − 8 = 10.</p>
+        <p><strong>Làm từng bước.</strong> 18 − ? = 10. Tìm số trừ: 18 − 10 = 8. Kiểm: 18 − 8 = 10.</p>
       </div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng: số hạng + số hạng = tổng. Trừ: số bị trừ − số trừ = hiệu.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"Trong 6 + 9 = 15, số 15 là","choices":["Tổng","Hiệu","Số trừ","Số bị trừ"],"correct":0,"hint":"Kết quả cộng.","explain":"Tổng."},
       {"type":"mc","prompt":"Trong 16 − 5 = 11, số 16 là","choices":["Số bị trừ","Số trừ","Hiệu","Số hạng"],"correct":0,"hint":"Đứng trước dấu trừ.","explain":"Số bị trừ."},
-      {"type":"num","prompt":"Tổng của 8 và 7?","answer":15,"hint":"Cộng.","explain":"15."},
-      {"type":"num","prompt":"Hiệu 19 − 6?","answer":13,"hint":"Trừ.","explain":"13."},
-      {"type":"num","prompt":"□ + 5 = 14. □ = ?","answer":9,"hint":"14 − 5.","explain":"9."},
-      {"type":"num","prompt":"12 − □ = 7. □ = ?","answer":5,"hint":"12 − 7.","explain":"5."},
+      {"type":"num","prompt":"Tổng của 8 và 7 bằng mấy?","answer":15,"hint":"Cộng.","explain":"15."},
+      {"type":"num","prompt":"19 trừ 6 bằng mấy?","answer":13,"hint":"Trừ.","explain":"13."},
+      {"type":"num","prompt":"? + 5 = 14. ? = ?","answer":9,"hint":"14 − 5.","explain":"9."},
+      {"type":"num","prompt":"12 − ? = 7. ? = ?","answer":5,"hint":"12 − 7.","explain":"5."},
       {"type":"mc","prompt":"Muốn tìm số hạng, lấy","choices":["Tổng trừ số hạng kia","Hai số hạng cộng","Hiệu trừ tổng","Không làm được"],"correct":0,"hint":"Phép ngược.","explain":"Tổng − số hạng kia."},
       {"type":"num","prompt":"Lan có 9 kẹo, mẹ cho 6 kẹo. Tổng mấy kẹo?","answer":15,"hint":"Số hạng + số hạng.","explain":"15."},
       {"type":"num","prompt":"Hà có 12 bông hoa, được thêm 9 bông hoa. Tất cả mấy bông hoa?","answer":21,"hint":"Thêm → cộng.","explain":"12 + 9 = 21."},
@@ -688,7 +689,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> Liền trước 70 là 69. 42 + 35 = 77.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Tìm số hạng: số cần tìm + 12 = 45 thì số cần tìm = 45 − 12 = 33. 36 hơn 29 là 7.</p>
+        <p><strong>Thêm một chút.</strong> Tìm số hạng: ? + 12 = 45 thì ? = 45 − 12 = 33. 36 hơn 29 là 7.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> Hỏi hiệu khác hỏi số hạng. Đọc hết câu.</p>
@@ -720,13 +721,15 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chủ đề 1: số 100, tia số, cộng trừ không nhớ, hơn kém.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"Liền trước của 70?","answer":69,"hint":"Lùi 1.","explain":"69."},
+      {"type":"num","prompt":"Số liền trước của 70 là mấy?","answer":69,"hint":"Lùi 1.","explain":"69."},
       {"type":"num","prompt":"42 + 35 = ?","answer":77,"hint":"Không nhớ.","explain":"77."},
       {"type":"num","prompt":"36 hơn 29 mấy?","answer":7,"hint":"36 − 29.","explain":"7."},
       {"type":"mc","prompt":"Trong 50 − 18 = 32, 32 là","choices":["Hiệu","Tổng","Số trừ","Số hạng"],"correct":0,"hint":"Kết quả trừ.","explain":"Hiệu."},
       {"type":"num","prompt":"Số nào cộng 12 được 45?","answer":33,"hint":"45 − 12.","explain":"33."},
+      {"type":"num","prompt":"90 − 40 = ?","answer":50,"hint":"Trừ 4 chục.","explain":"50."},
+      {"type":"num","prompt":"Liền sau 99?","answer":100,"hint":"99 + 1.","explain":"100."},
+      {"type":"num","prompt":"Viết số 6 chục 4 đơn vị.","answer":64,"hint":"60 + 4.","explain":"64."},
       {"type":"num","prompt":"Có 17 bút, Lan lấy 8. Còn lại mấy?","answer":9,"hint":"Bớt → trừ.","explain":"17 − 8 = 9."},
-      {"type":"num","prompt":"Trên kệ có 40 quyển sách, đem đi 23. Còn mấy quyển?","answer":17,"hint":"Trừ.","explain":"40 − 23 = 17."},
     ],
   },
 
@@ -1006,7 +1009,7 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhớ một câu.</strong> Thêm → cộng. Bớt / còn lại → trừ.</p></div>
     `,
     exercises: [
-      {"type":"text","prompt":"Có 8 quả, hái thêm 5. Phải làm phép nào? (gõ: cong hoặc tru)","answer":"cong","accept":["cong","cộng","cong them","+"],"hint":"thêm → cộng","explain":"cộng."},
+      {"type":"mc","prompt":"Có 8 quả, hái thêm 5. Em làm phép nào?","choices":["Cộng","Trừ","Nhân","Chia"],"correct":0,"hint":"Thêm thì cộng.","explain":"Cộng."},
       {"type":"num","prompt":"Có 8 quả, hái thêm 7. Tất cả mấy quả?","answer":15,"hint":"Thêm → cộng.","explain":"15."},
       {"type":"num","prompt":"Có 16 bút, cho bạn 5. Còn mấy bút?","answer":11,"hint":"Cho đi → trừ.","explain":"11."},
       {"type":"num","prompt":"12 hoa, nở thêm 6. Có mấy hoa?","answer":18,"hint":"Cộng.","explain":"18."},
@@ -1066,7 +1069,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> 7 + 9 = 16. Có 11 bóng, thêm 6 → 17.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Tìm số hạng: số cần tìm + 7 = 16. Lấy 16 − 7 = 9.</p>
+        <p><strong>Thêm một chút.</strong> Tìm số hạng: ? + 7 = 16. Lấy 16 − 7 = 9.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> 9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.</p>
@@ -1089,7 +1092,7 @@ const G2_LESSONS = [
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>7 + 9 = ? <em>— 16.</em></p>
-        <p>số cần tìm + 7 = 16? <em>— 9.</em></p>
+        <p>? + 7 = 16? <em>— 9.</em></p>
         <p>18 bớt 9? <em>— 9.</em></p>
       </details>
       <div class="example">
@@ -1196,7 +1199,7 @@ const G2_LESSONS = [
         <p>7 cộng mấy bằng 15? <em>— 8.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 + số cần tìm = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
+        <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 + ? = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
       </div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ qua 10: nghĩ phép cộng ngược.</p></div>
     `,
@@ -1396,12 +1399,12 @@ const G2_LESSONS = [
       <div class="memory"><p><strong>Nhớ một câu.</strong> Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.</p></div>
     `,
     exercises: [
-      {"type":"text","prompt":"A ít hơn B 4 đơn vị. Lấy B làm mốc thì làm phép nào với 4? (cong/tru)","answer":"tru","accept":["tru","trừ","-"],"hint":"ít hơn mốc → trừ","explain":"trừ."},
+      {"type":"mc","prompt":"An ít hơn Bình 4. Biết số của Bình. Tìm số của An thì làm phép nào?","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Ít hơn số đã biết thì trừ.","explain":"Trừ."},
       {"type":"num","prompt":"Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?","answer":13,"hint":"Nhiều hơn → cộng.","explain":"13."},
       {"type":"num","prompt":"Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?","answer":13,"hint":"Ít hơn Lan → trừ.","explain":"13."},
       {"type":"num","prompt":"Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?","answer":17,"hint":"9+8.","explain":"17."},
       {"type":"num","prompt":"Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?","answer":20,"hint":"Cam ít hơn → quýt = 14+6.","explain":"20."},
-      {"type":"mc","prompt":"“Ít hơn mốc” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Bé hơn mốc.","explain":"Trừ."},
+      {"type":"mc","prompt":"“Ít hơn số đã biết” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Bé hơn mốc.","explain":"Trừ."},
       {"type":"num","prompt":"Hoa có 20 nhãn, ít hơn 6 nhãn so với số đó là?","answer":14,"hint":"20−6.","explain":"14."},
       {"type":"num","prompt":"Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?","answer":19,"hint":"12+7.","explain":"19."},
       {"type":"num","prompt":"An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?","answer":19,"hint":"15+4.","explain":"19."},
@@ -1558,8 +1561,9 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Thường nặng hơn","choices":["Dưa hấu","Bóng bay","Lá khô","Tờ giấy"],"correct":0,"hint":"Thực tế.","explain":"Dưa hấu."},
       {"type":"num","prompt":"5 kg − 2 kg = ?","answer":3,"hint":"Trừ.","explain":"3."},
       {"type":"num","prompt":"1+1+1 kg = ?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"mc","prompt":"“Nặng hơn” nghĩa là","choices":["Khối lượng lớn hơn","Dài hơn","Nhanh hơn","Cao điểm hơn"],"correct":0,"hint":"kg.","explain":"Khối lượng lớn hơn."},
+      {"type":"num","prompt":"10 kg − 7 kg = ?","answer":3,"hint":"Trừ.","explain":"3."},
       {"type":"num","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","answer":5,"hint":"Cộng kg.","explain":"3 + 2 = 5."},
-      {"type":"num","prompt":"Bình có 9 l nước, dùng 3 l. Còn mấy lít?","answer":6,"hint":"Trừ lít.","explain":"9 − 3 = 6."},
     ],
   },
 
@@ -1688,6 +1692,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"3 kg và 3 l","choices":["Khác đại lượng","Luôn nặng bằng","Cộng được thành 6","Trừ ra 0 luôn đúng nghĩa"],"correct":0,"hint":"Khác loại.","explain":"Khác đại lượng."},
       {"type":"num","prompt":"1+1+1 kg=?","answer":3,"hint":"3.","explain":"3."},
       {"type":"num","prompt":"8 l − 5 l = ?","answer":3,"hint":"Trừ.","explain":"3."},
+      {"type":"num","prompt":"4 kg + 5 kg = ?","answer":9,"hint":"Cộng.","explain":"9."},
+      {"type":"num","prompt":"9 l − 9 l = ?","answer":0,"hint":"0.","explain":"0."},
       {"type":"num","prompt":"Mẹ mua 5 kg gạo và 6 kg đường. Tất cả mấy kg?","answer":11,"hint":"Cộng kg.","explain":"5 + 6 = 11."},
       {"type":"num","prompt":"Bình có 17 l nước, dùng 5 l. Còn mấy lít?","answer":12,"hint":"Trừ lít.","explain":"17 − 5 = 12."},
     ],
@@ -1759,6 +1765,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 l + 7 l = ?","answer":9,"hint":"Cộng.","explain":"9."},
       {"type":"mc","prompt":"kg đo","choices":["Khối lượng","Thời gian","Độ dài","Nhiệt độ"],"correct":0,"hint":"Nặng.","explain":"Khối lượng."},
       {"type":"mc","prompt":"l đo","choices":["Dung tích","Khối lượng","Diện tích","Số đếm"],"correct":0,"hint":"Lỏng.","explain":"Dung tích."},
+      {"type":"num","prompt":"8 kg − 3 kg = ?","answer":5,"hint":"Trừ.","explain":"5."},
+      {"type":"num","prompt":"1 l + 1 l + 1 l = ?","answer":3,"hint":"3.","explain":"3."},
       {"type":"num","prompt":"Mẹ mua 10 kg gạo và 5 kg đường. Tất cả mấy kg?","answer":15,"hint":"Cộng kg.","explain":"10 + 5 = 15."},
       {"type":"num","prompt":"Bình có 25 l nước, dùng 10 l. Còn mấy lít?","answer":15,"hint":"Trừ lít.","explain":"25 − 10 = 15."},
     ],
@@ -1828,6 +1836,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"35 + 8 = ?","answer":43,"hint":"Có nhớ.","explain":"43."},
       {"type":"num","prompt":"66 + 9 = ?","answer":75,"hint":"Có nhớ.","explain":"75."},
       {"type":"num","prompt":"18 + 5 = ?","answer":23,"hint":"Có nhớ.","explain":"23."},
+      {"type":"num","prompt":"44 + 9 = ?","answer":53,"hint":"Có nhớ.","explain":"53."},
+      {"type":"num","prompt":"99 + 1 = ?","answer":100,"hint":"Nhớ.","explain":"100."},
       {"type":"num","prompt":"Lan có 15 lá cờ, được thêm 6 lá cờ. Tất cả mấy lá cờ?","answer":21,"hint":"Thêm → cộng.","explain":"15 + 6 = 21."},
       {"type":"num","prompt":"Trong hộp có 13 tem, bạn cho thêm 7. Tất cả mấy?","answer":20,"hint":"Cộng.","explain":"13 + 7 = 20."},
     ],
@@ -1900,6 +1910,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"19 + 19 = ?","answer":38,"hint":"Đôi.","explain":"38."},
       {"type":"num","prompt":"45 + 37 = ?","answer":82,"hint":"Có nhớ.","explain":"82."},
       {"type":"num","prompt":"66 + 25 = ?","answer":91,"hint":"Có nhớ.","explain":"91."},
+      {"type":"num","prompt":"29 + 43 = ?","answer":72,"hint":"Có nhớ.","explain":"72."},
+      {"type":"num","prompt":"55 + 46 = ?","answer":101,"hint":"Vượt 100 nhẹ.","explain":"101."},
       {"type":"num","prompt":"Có 9 tem, Chi lấy 3. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"9 − 3 = 6."},
       {"type":"num","prompt":"Trên kệ có 57 quyển sách, đem đi 24. Còn mấy quyển?","answer":33,"hint":"Trừ.","explain":"57 − 24 = 33."},
     ],
@@ -1939,7 +1951,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> 44 + 9 = 53. 27 + 38 = 65.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> số cần tìm + 29 = 50 → số cần tìm = 21.</p>
+        <p><strong>Thêm một chút.</strong> ? + 29 = 50 → ? = 21.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> Tìm số hạng phải trừ, không cộng tiếp.</p>
@@ -1958,7 +1970,7 @@ const G2_LESSONS = [
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>56+17=? <em>— 73.</em></p>
-        <p>số cần tìm+29=50? <em>— 21.</em></p>
+        <p>?+29=50? <em>— 21.</em></p>
       </details>
       <div class="example">
         <p><strong>Làm từng bước.</strong> 39+39: 9+9=18 viết 8 nhớ 1; 3+3+1=7 → 78.</p>
@@ -1969,8 +1981,10 @@ const G2_LESSONS = [
       {"type":"num","prompt":"44 + 9 = ?","answer":53,"hint":"Nhớ.","explain":"53."},
       {"type":"num","prompt":"27 + 38 = ?","answer":65,"hint":"Nhớ.","explain":"65."},
       {"type":"num","prompt":"56 + 17 = ?","answer":73,"hint":"Nhớ.","explain":"73."},
-      {"type":"num","prompt":"□ + 29 = 50","answer":21,"hint":"50−29.","explain":"21."},
+      {"type":"num","prompt":"? + 29 = 50","answer":21,"hint":"50−29.","explain":"21."},
       {"type":"num","prompt":"39 + 39 = ?","answer":78,"hint":"Đôi.","explain":"78."},
+      {"type":"num","prompt":"18 + 27 = ?","answer":45,"hint":"Nhớ.","explain":"45."},
+      {"type":"num","prompt":"63 + 8 = ?","answer":71,"hint":"Nhớ.","explain":"71."},
       {"type":"num","prompt":"Phúc có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
       {"type":"num","prompt":"Trong hộp có 35 nhãn, bạn cho thêm 5. Tất cả mấy?","answer":40,"hint":"Cộng.","explain":"35 + 5 = 40."},
     ],
@@ -2040,6 +2054,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"73 − 9 = ?","answer":64,"hint":"Mượn.","explain":"64."},
       {"type":"num","prompt":"64 − 7 = ?","answer":57,"hint":"Mượn.","explain":"57."},
       {"type":"num","prompt":"90 − 4 = ?","answer":86,"hint":"Mượn.","explain":"86."},
+      {"type":"num","prompt":"31 − 5 = ?","answer":26,"hint":"Mượn.","explain":"26."},
+      {"type":"num","prompt":"80 − 9 = ?","answer":71,"hint":"Mượn.","explain":"71."},
       {"type":"num","prompt":"Có 17 nhãn, Minh lấy 5. Còn lại mấy?","answer":12,"hint":"Bớt → trừ.","explain":"17 − 5 = 12."},
       {"type":"num","prompt":"Trên kệ có 71 quyển sách, đem đi 16. Còn mấy quyển?","answer":55,"hint":"Trừ.","explain":"71 − 16 = 55."},
     ],
@@ -2110,6 +2126,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"93 − 47 = ?","answer":46,"hint":"Mượn.","explain":"46."},
       {"type":"num","prompt":"64 − 19 = ?","answer":45,"hint":"Mượn.","explain":"45."},
       {"type":"num","prompt":"80 − 26 = ?","answer":54,"hint":"Mượn.","explain":"54."},
+      {"type":"num","prompt":"91 − 58 = ?","answer":33,"hint":"Mượn.","explain":"33."},
+      {"type":"num","prompt":"100 − 37 = ?","answer":63,"hint":"Mượn.","explain":"63."},
       {"type":"num","prompt":"Dũng có 15 bi, được thêm 10 bi. Tất cả mấy bi?","answer":25,"hint":"Thêm → cộng.","explain":"15 + 10 = 25."},
       {"type":"num","prompt":"Trong hộp có 27 kẹo, bạn cho thêm 3. Tất cả mấy?","answer":30,"hint":"Cộng.","explain":"27 + 3 = 30."},
     ],
@@ -2181,6 +2199,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"45 + 18 = ?","answer":63,"hint":"Cộng.","explain":"63."},
       {"type":"num","prompt":"72 − 29 = ?","answer":43,"hint":"Trừ.","explain":"43."},
       {"type":"num","prompt":"100 − 37 = ?","answer":63,"hint":"Trừ.","explain":"63."},
+      {"type":"num","prompt":"56 + 29 = ?","answer":85,"hint":"Nhớ.","explain":"85."},
+      {"type":"num","prompt":"83 − 47 = ?","answer":36,"hint":"Mượn.","explain":"36."},
       {"type":"num","prompt":"Có 13 kẹo, An lấy 7. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"13 − 7 = 6."},
       {"type":"num","prompt":"Trên kệ có 25 quyển sách, đem đi 8. Còn mấy quyển?","answer":17,"hint":"Trừ.","explain":"25 − 8 = 17."},
     ],
@@ -2252,6 +2272,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Ba điểm thẳng hàng","choices":["Nằm trên một đường thẳng","Tạo tam giác","Cách đều luôn","Trùng nhau"],"correct":0,"hint":"Một đường.","explain":"Một đường thẳng."},
       {"type":"mc","prompt":"Đường cong","choices":["Không thẳng","Luôn là đoạn","Luôn là tứ giác","Là kg"],"correct":0,"hint":"Cong.","explain":"Không thẳng."},
       {"type":"mc","prompt":"Điểm dùng để","choices":["Đánh dấu vị trí","Đo lít","Xem giờ","Cân kg"],"correct":0,"hint":"Vị trí.","explain":"Vị trí."},
+      {"type":"mc","prompt":"Dùng thước để vẽ","choices":["Đoạn/đường thẳng","Chỉ đường cong","Khối cầu","Biểu đồ giờ"],"correct":0,"hint":"Thẳng.","explain":"Đoạn/đường thẳng."},
     ],
   },
 
@@ -2381,6 +2402,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Hình vuông mấy cạnh?","answer":4,"hint":"4.","explain":"4."},
       {"type":"mc","prompt":"Cắt giấy theo đường thẳng tạo","choices":["Cạnh thẳng","Chỉ đường cong","Số kg","Giờ"],"correct":0,"hint":"Đường cắt.","explain":"Cạnh thẳng."},
       {"type":"mc","prompt":"Xếp hình giúp","choices":["Nhận dạng hình","Chỉ học đọc","Đo lít","Xem lịch"],"correct":0,"hint":"Hình học.","explain":"Nhận dạng."},
+      {"type":"num","prompt":"Hai điểm xác định mấy đoạn thẳng?","answer":1,"hint":"Một đoạn.","explain":"1."},
+      {"type":"mc","prompt":"Không dùng thước khi cần đoạn thẳng thì","choices":["Dễ bị cong","Vẫn chuẩn hơn","Ra khối trụ","Ra kg"],"correct":0,"hint":"Cong tay.","explain":"Dễ cong."},
       {"type":"num","prompt":"Khung ảnh nhà Hà là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
       {"type":"num","prompt":"Biển báo hình tam giác trên đường Lan đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
@@ -2451,8 +2474,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Ba điểm thẳng hàng nằm trên","choices":["Một đường thẳng","Ba đường","Hình tròn bắt buộc","Không đâu"],"correct":0,"hint":"Thẳng hàng.","explain":"Đường thẳng."},
       {"type":"mc","prompt":"Đường gấp khúc","choices":["Nhiều đoạn thẳng","0 đoạn","Chỉ tròn","Chỉ kg"],"correct":0,"hint":"Gấp.","explain":"Nhiều đoạn."},
       {"type":"mc","prompt":"Hình vuông là","choices":["Tứ giác","Tam giác","Đường cong","Lít"],"correct":0,"hint":"4 cạnh.","explain":"Tứ giác."},
-      {"type":"num","prompt":"Khung ảnh nhà Bình là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
-      {"type":"num","prompt":"Biển báo hình tam giác trên đường Chi đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
+      {"type":"num","prompt":"Tam giác mấy đỉnh?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"mc","prompt":"Đường thẳng khác đoạn vì","choices":["Không có hai mút giới hạn","Ngắn hơn luôn","Cong","Có 1 điểm"],"correct":0,"hint":"Kéo dài.","explain":"Không hai mút."},
     ],
   },
 
@@ -2518,6 +2541,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"7 giờ 30 phút","choices":["7 giờ rưỡi","7 giờ kém 30","8 giờ","6 giờ rưỡi"],"correct":0,"hint":"30=rưỡi.","explain":"Rưỡi."},
       {"type":"num","prompt":"Từ 5 giờ đến 6 giờ: mấy giờ?","answer":1,"hint":"1.","explain":"1."},
       {"type":"mc","prompt":"1 ngày có bao nhiêu giờ?","choices":["24","12","60","7"],"correct":0,"hint":"Cả ngày đêm.","explain":"24."},
+      {"type":"num","prompt":"30 phút + 30 phút = ? phút","answer":60,"hint":"1 giờ.","explain":"60."},
+      {"type":"mc","prompt":"Kim ngắn là","choices":["Kim giờ","Kim phút","Kim giây","Kim ngày"],"correct":0,"hint":"Giờ.","explain":"Kim giờ."},
       {"type":"num","prompt":"Bình học từ 8 giờ đến 10 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
       {"type":"num","prompt":"Hôm nay ngày 15. 3 ngày sau là ngày bao nhiêu?","answer":18,"hint":"Cộng ngày.","explain":"15 + 3 = 18."},
     ],
@@ -2586,6 +2611,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Tháng 6 có","choices":["30 ngày","31","28","24"],"correct":0,"hint":"30.","explain":"30."},
       {"type":"mc","prompt":"Ngày trước 15 là","choices":["14","16","1","30"],"correct":0,"hint":"−1.","explain":"14."},
       {"type":"mc","prompt":"Xem ngày tháng bằng","choices":["Lịch","Cân","Thước lít","Chỉ giây"],"correct":0,"hint":"Lịch.","explain":"Lịch."},
+      {"type":"num","prompt":"Hai ngày sau 10 là?","answer":12,"hint":"+2.","explain":"12."},
+      {"type":"mc","prompt":"Tháng 2 thường có","choices":["28 hoặc 29 ngày","31 luôn","30 luôn","7"],"correct":0,"hint":"Đặc biệt.","explain":"28/29."},
       {"type":"num","prompt":"Oanh học từ 7 giờ đến 9 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
       {"type":"num","prompt":"Hôm nay ngày 6. 2 ngày sau là ngày bao nhiêu?","answer":8,"hint":"Cộng ngày.","explain":"6 + 2 = 8."},
     ],
@@ -2653,6 +2680,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Thứ 2 đến thứ 6 (cả hai) mấy ngày?","answer":5,"hint":"Đếm.","explain":"5."},
       {"type":"mc","prompt":"Ngày mai của 20","choices":["21","19","30","1"],"correct":0,"hint":"+1.","explain":"21."},
       {"type":"num","prompt":"30+30 phút = ?","answer":60,"hint":"60.","explain":"60."},
+      {"type":"num","prompt":"1 giờ rưỡi = ? phút","answer":90,"hint":"60+30.","explain":"90."},
+      {"type":"mc","prompt":"Số 3 trên đồng hồ (kim phút) ≈","choices":["15 phút","3 phút","30 phút","45 phút"],"correct":0,"hint":"×5.","explain":"15 phút."},
       {"type":"num","prompt":"Lan học từ 9 giờ đến 11 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
       {"type":"num","prompt":"Hôm nay ngày 9. 7 ngày sau là ngày bao nhiêu?","answer":16,"hint":"Cộng ngày.","explain":"9 + 7 = 16."},
     ],
@@ -2720,6 +2749,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Từ 3 giờ đến 7 giờ?","answer":4,"hint":"7−3.","explain":"4."},
       {"type":"mc","prompt":"Kim ngắn","choices":["Kim giờ","Kim phút","Kim giây","Kim ngày"],"correct":0,"hint":"Giờ.","explain":"Kim giờ."},
       {"type":"num","prompt":"Hai ngày sau 10?","answer":12,"hint":"+2.","explain":"12."},
+      {"type":"num","prompt":"1 ngày = ? giờ","answer":24,"hint":"24.","explain":"24."},
+      {"type":"num","prompt":"15 phút + 15 phút = ?","answer":30,"hint":"30.","explain":"30."},
       {"type":"num","prompt":"Chi học từ 8 giờ đến 10 giờ. Học mấy giờ?","answer":2,"hint":"Hiệu hai mốc giờ.","explain":"2."},
       {"type":"num","prompt":"Hôm nay ngày 12. 6 ngày sau là ngày bao nhiêu?","answer":18,"hint":"Cộng ngày.","explain":"12 + 6 = 18."},
     ],
@@ -2792,6 +2823,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"37 + 28 = ?","answer":65,"hint":"Nhớ.","explain":"65."},
       {"type":"num","prompt":"90 − 47 = ?","answer":43,"hint":"Mượn.","explain":"43."},
       {"type":"num","prompt":"56 + 9 = ?","answer":65,"hint":"Nhớ.","explain":"65."},
+      {"type":"num","prompt":"8 + 7 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
+      {"type":"num","prompt":"63 − 18 = ?","answer":45,"hint":"Mượn.","explain":"45."},
       {"type":"num","prompt":"Chi có 12 bông hoa, được thêm 9 bông hoa. Tất cả mấy bông hoa?","answer":21,"hint":"Thêm → cộng.","explain":"12 + 9 = 21."},
       {"type":"num","prompt":"Trong hộp có 14 lá cờ, bạn cho thêm 2. Tất cả mấy?","answer":16,"hint":"Cộng.","explain":"14 + 2 = 16."},
     ],
@@ -2859,6 +2892,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tam giác mấy đỉnh?","answer":3,"hint":"3.","explain":"3."},
       {"type":"mc","prompt":"Gấp khúc","choices":["Đoạn nối đoạn","Khối cầu","Kg","Lịch"],"correct":0,"hint":"Gấp.","explain":"Đoạn nối."},
       {"type":"mc","prompt":"Thẳng hàng","choices":["Một đường thẳng","Ba đường","Tròn","Không"],"correct":0,"hint":"Một đường.","explain":"Đường thẳng."},
+      {"type":"mc","prompt":"Hai mút","choices":["Đoạn thẳng","Đường thẳng","Kg","Giờ"],"correct":0,"hint":"Đoạn.","explain":"Đoạn."},
+      {"type":"num","prompt":"Tứ giác mấy cạnh?","answer":4,"hint":"4.","explain":"4."},
       {"type":"num","prompt":"Khung ảnh nhà Phúc là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
       {"type":"num","prompt":"Biển báo hình tam giác trên đường An đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
@@ -2924,6 +2959,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Đo nước","choices":["Lít","Kg","Ngày","Điểm"],"correct":0,"hint":"l.","explain":"Lít."},
       {"type":"mc","prompt":"Đo nặng","choices":["Kg","L","Giờ","Mút"],"correct":0,"hint":"kg.","explain":"Kg."},
       {"type":"num","prompt":"1+1+1 kg=?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"num","prompt":"10 l − 1 l = ?","answer":9,"hint":"9.","explain":"9."},
+      {"type":"num","prompt":"4 kg + 4 kg = ?","answer":8,"hint":"8.","explain":"8."},
       {"type":"num","prompt":"Mẹ mua 3 kg gạo và 6 kg đường. Tất cả mấy kg?","answer":9,"hint":"Cộng kg.","explain":"3 + 6 = 9."},
       {"type":"num","prompt":"Bình có 9 l nước, dùng 3 l. Còn mấy lít?","answer":6,"hint":"Trừ lít.","explain":"9 − 3 = 6."},
     ],
@@ -2995,6 +3032,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Liền sau 99?","answer":100,"hint":"+1.","explain":"100."},
       {"type":"mc","prompt":"Tứ giác mấy cạnh?","choices":["4","3","2","5"],"correct":0,"hint":"4.","explain":"4."},
       {"type":"num","prompt":"1 giờ = ? phút","answer":60,"hint":"60.","explain":"60."},
+      {"type":"num","prompt":"9 + 6 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
+      {"type":"num","prompt":"7 + 8 = ?","answer":15,"hint":"15.","explain":"15."},
       {"type":"num","prompt":"Dũng có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
       {"type":"num","prompt":"Trong hộp có 17 nhãn, bạn cho thêm 5. Tất cả mấy?","answer":22,"hint":"Cộng.","explain":"17 + 5 = 22."},
     ],
@@ -3064,6 +3103,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"3 × 2 = ?","answer":6,"hint":"3+3.","explain":"6."},
       {"type":"mc","prompt":"Nhân liên quan","choices":["Cộng lặp số bằng nhau","Trừ có nhớ","Đường cong","Lịch"],"correct":0,"hint":"Cộng lặp.","explain":"Cộng lặp."},
       {"type":"num","prompt":"4 × 2 = ?","answer":8,"hint":"4+4.","explain":"8."},
+      {"type":"num","prompt":"2 × 2 = ?","answer":4,"hint":"Đôi.","explain":"4."},
+      {"type":"num","prompt":"1 × 5 = ?","answer":5,"hint":"Chính nó.","explain":"5."},
       {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 7 đĩa. Tất cả mấy cái bánh?","answer":14,"hint":"7 × 2.","explain":"14."},
       {"type":"num","prompt":"Một hàng 2 bạn, có 7 hàng. Tất cả mấy bạn?","answer":14,"hint":"7 × 2.","explain":"14."},
     ],
@@ -3140,6 +3181,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 × 6 = ?","answer":12,"hint":"Bảng 2.","explain":"12."},
       {"type":"num","prompt":"5 × 3 = ?","answer":15,"hint":"5+5+5.","explain":"15."},
       {"type":"mc","prompt":"Đổi chỗ thừa số, tích","choices":["Không đổi","Đổi dấu","Luôn tăng","Luôn giảm"],"correct":0,"hint":"Giao hoán.","explain":"Không đổi."},
+      {"type":"num","prompt":"3 × 4 = ?","answer":12,"hint":"12.","explain":"12."},
+      {"type":"num","prompt":"5 × 4 = ?","answer":20,"hint":"20.","explain":"20."},
       {"type":"num","prompt":"Mỗi đĩa 5 cái bánh, có 8 đĩa. Tất cả mấy cái bánh?","answer":40,"hint":"8 × 5.","explain":"40."},
       {"type":"num","prompt":"Một hàng 5 bạn, có 8 hàng. Tất cả mấy bạn?","answer":40,"hint":"8 × 5.","explain":"40."},
     ],
@@ -3383,7 +3426,7 @@ const G2_LESSONS = [
         <p>15:5=? <em>— 3.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 20 cái kẹo, 5 bạn chia đều. 5 × số cần tìm = 20 → số cần tìm = 4. Mỗi bạn 4.</p>
+        <p><strong>Làm từng bước.</strong> 20 cái kẹo, 5 bạn chia đều. 5 × ? = 20 → ? = 4. Mỗi bạn 4.</p>
       </div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Chia ngược nhân. Thương × số chia = số bị chia.</p></div>
     `,
@@ -3393,6 +3436,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"10 : 2 = ?","answer":5,"hint":"Bảng 2.","explain":"5."},
       {"type":"num","prompt":"20 : 5 = ?","answer":4,"hint":"Bảng 5.","explain":"4."},
       {"type":"mc","prompt":"Chia ngược với","choices":["Nhân","Cộng luôn","Đo giờ","Vẽ đoạn"],"correct":0,"hint":"Ngược nhân.","explain":"Nhân."},
+      {"type":"num","prompt":"6 : 2 = ?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"5.","explain":"5."},
       {"type":"num","prompt":"6 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":3,"hint":"6 : 2.","explain":"3."},
       {"type":"num","prompt":"6 cái kẹo, mỗi hộp 2 cái. Cần mấy hộp?","answer":3,"hint":"6 : 2.","explain":"3."},
     ],
@@ -3468,6 +3513,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Bảng 2.","explain":"9."},
       {"type":"num","prompt":"25 : 5 = ?","answer":5,"hint":"Bảng 5.","explain":"5."},
       {"type":"num","prompt":"14 : 2 = ?","answer":7,"hint":"Ngược nhân.","explain":"7."},
+      {"type":"num","prompt":"30 : 5 = ?","answer":6,"hint":"Bảng 5.","explain":"6."},
+      {"type":"mc","prompt":"Trong 20:5=4, số chia là","choices":["5","20","4","25"],"correct":0,"hint":"Sau dấu chia.","explain":"5."},
       {"type":"num","prompt":"20 viên bi chia đều 5 bạn. Mỗi bạn mấy viên?","answer":4,"hint":"20 : 5.","explain":"4."},
       {"type":"num","prompt":"20 cái kẹo, mỗi hộp 5 cái. Cần mấy hộp?","answer":4,"hint":"20 : 5.","explain":"4."},
     ],
@@ -3717,6 +3764,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Chia 2.","explain":"9."},
       {"type":"num","prompt":"45 : 5 = ?","answer":9,"hint":"Chia 5.","explain":"9."},
       {"type":"num","prompt":"4 đĩa × 5 bánh = ?","answer":20,"hint":"4×5.","explain":"20."},
+      {"type":"num","prompt":"5 × 6 = ?","answer":30,"hint":"30.","explain":"30."},
+      {"type":"num","prompt":"16 : 2 = ?","answer":8,"hint":"8.","explain":"8."},
       {"type":"num","prompt":"14 viên bi chia đều 2 bạn. Mỗi bạn mấy viên?","answer":7,"hint":"14 : 2.","explain":"7."},
       {"type":"num","prompt":"14 cái kẹo, mỗi hộp 2 cái. Cần mấy hộp?","answer":7,"hint":"14 : 2.","explain":"7."},
     ],
@@ -3784,8 +3833,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Khối cầu","choices":["Tròn đều mọi phía","Hai đáy vuông","Tứ giác","Kg"],"correct":0,"hint":"Bóng.","explain":"Tròn đều."},
       {"type":"mc","prompt":"Hình phẳng khác khối","choices":["Khối có dạng không gian","Phẳng nặng hơn","Khối chỉ trên lịch","Không khác"],"correct":0,"hint":"3D.","explain":"Không gian."},
       {"type":"mc","prompt":"Viên bi","choices":["Khối cầu","Khối trụ","Đoạn","Lịch"],"correct":0,"hint":"Bi.","explain":"Cầu."},
-      {"type":"num","prompt":"Hộp có 8 quả bóng (cầu) và 7 lon (trụ). Tất cả mấy đồ vật?","answer":15,"hint":"Cộng.","explain":"8 + 7 = 15."},
-      {"type":"num","prompt":"Có 17 khối trụ, lấy bớt 8. Còn mấy khối trụ?","answer":9,"hint":"Trừ.","explain":"17 − 8 = 9."},
+      {"type":"mc","prompt":"Lõi giấy vệ sinh","choices":["Khối trụ","Khối cầu","Tam giác","Giờ"],"correct":0,"hint":"Ống.","explain":"Trụ."},
+      {"type":"mc","prompt":"Khối cầu có đáy phẳng như trụ?","choices":["Không","Có hai đáy","Có một đáy","Có bốn đáy"],"correct":0,"hint":"Không đáy phẳng.","explain":"Không."},
     ],
   },
 
@@ -3851,8 +3900,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Quả cam gần","choices":["Khối cầu","Gấp khúc","Tứ giác","Số trừ"],"correct":0,"hint":"Tròn.","explain":"Cầu."},
       {"type":"mc","prompt":"Cốc dạng ống","choices":["Khối trụ","Khối cầu","Điểm","Phút"],"correct":0,"hint":"Ống.","explain":"Trụ."},
       {"type":"mc","prompt":"Bóng đá","choices":["Khối cầu","Tứ giác","Đoạn","Lít"],"correct":0,"hint":"Cầu.","explain":"Cầu."},
-      {"type":"num","prompt":"Hộp có 5 quả bóng (cầu) và 6 lon (trụ). Tất cả mấy đồ vật?","answer":11,"hint":"Cộng.","explain":"5 + 6 = 11."},
-      {"type":"num","prompt":"Có 17 khối trụ, lấy bớt 5. Còn mấy khối trụ?","answer":12,"hint":"Trừ.","explain":"17 − 5 = 12."},
+      {"type":"mc","prompt":"Lon nước ngọt","choices":["Khối trụ","Khối cầu","Điểm","Ngày"],"correct":0,"hint":"Trụ.","explain":"Trụ."},
+      {"type":"mc","prompt":"Phân biệt nhanh","choices":["Cách lăn và dạng đáy","Chỉ màu","Chỉ giá tiền","Chỉ kg"],"correct":0,"hint":"Dạng.","explain":"Lăn/đáy."},
     ],
   },
 
@@ -3920,8 +3969,9 @@ const G2_LESSONS = [
       {"type":"num","prompt":"10 đơn vị = ?","answer":10,"hint":"1 chục.","explain":"10."},
       {"type":"mc","prompt":"1 nghìn bằng","choices":["10 trăm","10 chục","10 đơn vị","100 đơn vị"],"correct":0,"hint":"10×100.","explain":"10 trăm."},
       {"type":"num","prompt":"5 chục = ?","answer":50,"hint":"5×10.","explain":"50."},
+      {"type":"num","prompt":"7 trăm = ?","answer":700,"hint":"7×100.","explain":"700."},
+      {"type":"num","prompt":"100 chục = ?","answer":1000,"hint":"10 trăm.","explain":"1000."},
       {"type":"num","prompt":"Số nhà của Minh có 7 trăm, 6 chục, 2 đơn vị. Số nhà là bao nhiêu?","answer":762,"hint":"trăm|chục|đv.","explain":"762."},
-      {"type":"num","prompt":"Trường có 3 trăm 9 chục học sinh (0 đơn vị). Viết số đó.","answer":390,"hint":"Ghép hàng.","explain":"390."},
     ],
   },
 
@@ -3989,8 +4039,9 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"500 là","choices":["Tròn trăm","Không tròn chục","Không tròn","Giờ"],"correct":0,"hint":"500.","explain":"Tròn trăm."},
       {"type":"num","prompt":"3 trăm = ?","answer":300,"hint":"300.","explain":"300."},
       {"type":"mc","prompt":"270 tròn chục?","choices":["Đúng","Sai","Chỉ tròn trăm","Không phải số"],"correct":0,"hint":"Tận 0.","explain":"Đúng."},
+      {"type":"mc","prompt":"990 tròn trăm?","choices":["Sai","Đúng","Không biết","Chỉ khi chẵn"],"correct":0,"hint":"Tận 90.","explain":"Sai."},
+      {"type":"num","prompt":"8 trăm = ?","answer":800,"hint":"800.","explain":"800."},
       {"type":"num","prompt":"Số nhà của Dũng có 8 trăm, 3 chục, 7 đơn vị. Số nhà là bao nhiêu?","answer":837,"hint":"trăm|chục|đv.","explain":"837."},
-      {"type":"num","prompt":"Trường có 5 trăm 6 chục học sinh (0 đơn vị). Viết số đó.","answer":560,"hint":"Ghép hàng.","explain":"560."},
     ],
   },
 
@@ -4058,6 +4109,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tròn trăm liền sau 500?","answer":600,"hint":"+100.","explain":"600."},
       {"type":"mc","prompt":"990 … 909","choices":[">","<","=","Không"],"correct":0,"hint":"So chục.","explain":">"},
       {"type":"mc","prompt":"200 … 300","choices":["<",">","=","200 hơn"],"correct":0,"hint":"So trăm.","explain":"<"},
+      {"type":"num","prompt":"Tròn chục liền trước 400?","answer":390,"hint":"−10.","explain":"390."},
+      {"type":"num","prompt":"Số nhà của An có 1 trăm, 0 chục, 6 đơn vị. Số nhà là bao nhiêu?","answer":106,"hint":"trăm|chục|đv.","explain":"106."},
       {"type":"num","prompt":"Trường có 2 trăm 3 chục học sinh (0 đơn vị). Viết số đó.","answer":230,"hint":"Ghép hàng.","explain":"230."},
     ],
   },
@@ -4126,8 +4179,9 @@ const G2_LESSONS = [
       {"type":"num","prompt":"4 trăm 0 chục 6 đv","answer":406,"hint":"406.","explain":"406."},
       {"type":"mc","prompt":"Hàng trăm của 735","choices":["7","3","5","735"],"correct":0,"hint":"Trái nhất.","explain":"7."},
       {"type":"num","prompt":"Liền sau 999?","answer":1000,"hint":"+1.","explain":"1000."},
+      {"type":"num","prompt":"Ba trăm linh năm","answer":305,"hint":"305.","explain":"305."},
+      {"type":"mc","prompt":"Chữ số hàng đơn vị của 482","choices":["2","4","8","82"],"correct":0,"hint":"Phải nhất.","explain":"2."},
       {"type":"num","prompt":"Số nhà của Nam có 2 trăm, 7 chục, 5 đơn vị. Số nhà là bao nhiêu?","answer":275,"hint":"trăm|chục|đv.","explain":"275."},
-      {"type":"num","prompt":"Trường có 4 trăm 0 chục học sinh (0 đơn vị). Viết số đó.","answer":400,"hint":"Ghép hàng.","explain":"400."},
     ],
   },
 
@@ -4195,8 +4249,9 @@ const G2_LESSONS = [
       {"type":"num","prompt":"700+5 = ?","answer":705,"hint":"0 chục.","explain":"705."},
       {"type":"mc","prompt":"610 =","choices":["600+10","600+1","61+0","6+10"],"correct":0,"hint":"6 trăm 1 chục.","explain":"600+10."},
       {"type":"num","prompt":"200+200+200 = ?","answer":600,"hint":"3×200.","explain":"600."},
+      {"type":"num","prompt":"400+50+6 = ?","answer":456,"hint":"Ghép.","explain":"456."},
+      {"type":"num","prompt":"900+90+9 = ?","answer":999,"hint":"Ghép.","explain":"999."},
       {"type":"num","prompt":"Số nhà của Hà có 3 trăm, 4 chục, 4 đơn vị. Số nhà là bao nhiêu?","answer":344,"hint":"trăm|chục|đv.","explain":"344."},
-      {"type":"num","prompt":"Trường có 6 trăm 7 chục học sinh (0 đơn vị). Viết số đó.","answer":670,"hint":"Ghép hàng.","explain":"670."},
     ],
   },
 
@@ -4334,8 +4389,9 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"405 … 450","choices":["<","=",">","Không"],"correct":0,"hint":"So chục.","explain":"<"},
       {"type":"num","prompt":"600+70+8 = ?","answer":678,"hint":"Ghép.","explain":"678."},
       {"type":"mc","prompt":"Tròn trăm","choices":["900","910","901","990"],"correct":0,"hint":"…00","explain":"900."},
+      {"type":"num","prompt":"Liền trước 1000?","answer":999,"hint":"−1.","explain":"999."},
+      {"type":"num","prompt":"704 viết tổng hàng: 700+?=704. ?=","answer":4,"hint":"4.","explain":"4."},
       {"type":"num","prompt":"Số nhà của Oanh có 5 trăm, 8 chục, 2 đơn vị. Số nhà là bao nhiêu?","answer":582,"hint":"trăm|chục|đv.","explain":"582."},
-      {"type":"num","prompt":"Trường có 5 trăm 1 chục học sinh (0 đơn vị). Viết số đó.","answer":510,"hint":"Ghép hàng.","explain":"510."},
     ],
   },
 
@@ -4400,6 +4456,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"×10.","explain":"30."},
       {"type":"mc","prompt":"Đo chiều dài lớp học","choices":["Mét","Km","Kg","Lít"],"correct":0,"hint":"Mét.","explain":"Mét."},
       {"type":"mc","prompt":"Đo khoảng cách hai tỉnh","choices":["Km","Dm","Kg","Ngày"],"correct":0,"hint":"Xa.","explain":"Km."},
+      {"type":"num","prompt":"10 dm = ? m","answer":1,"hint":"Đổi.","explain":"1."},
+      {"type":"num","prompt":"2 km = ? m","answer":2000,"hint":"×1000.","explain":"2000."},
       {"type":"num","prompt":"Đoạn dây 9 m, cắt 3 m. Còn mấy mét?","answer":6,"hint":"Trừ mét.","explain":"9 − 3 = 6."},
       {"type":"num","prompt":"4 m bằng bao nhiêu dm?","answer":40,"hint":"1 m = 10 dm.","explain":"4 × 10 = 40."},
     ],
@@ -4468,8 +4526,9 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Đơn vị tiền Việt Nam","choices":["Đồng","Kg","Lít","Độ"],"correct":0,"hint":"Đồng.","explain":"Đồng."},
       {"type":"num","prompt":"Ba tờ 1000 = ?","answer":3000,"hint":"3×1000.","explain":"3000."},
       {"type":"num","prompt":"10000 − 1000 = ?","answer":9000,"hint":"Trừ.","explain":"9000."},
+      {"type":"num","prompt":"2000 + 3000 = ?","answer":5000,"hint":"Cộng.","explain":"5000."},
+      {"type":"num","prompt":"10000 − 4000 = ?","answer":6000,"hint":"Trừ.","explain":"6000."},
       {"type":"num","prompt":"Lan mua đồ 5000 đồng, đưa 7000 đồng. Tiền thừa mấy đồng?","answer":2000,"hint":"Đưa − giá.","explain":"7000 − 5000 = 2000."},
-      {"type":"num","prompt":"Mua bút 5000 đồng và tẩy 2000 đồng. Cả hai mấy đồng?","answer":7000,"hint":"Cộng tiền.","explain":"7000."},
     ],
   },
 
@@ -4534,6 +4593,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2 km + 3 km = ?","answer":5,"hint":"Cộng.","explain":"5."},
       {"type":"mc","prompt":"Khi đo cần","choices":["Đặt đúng điểm đầu thước","Đo trên không","Không nhìn số","Dùng cân"],"correct":0,"hint":"Điểm 0.","explain":"Đúng điểm đầu."},
       {"type":"num","prompt":"10 dm = ? m","answer":1,"hint":"Đổi.","explain":"1."},
+      {"type":"num","prompt":"7 m + 2 m = ?","answer":9,"hint":"Cộng.","explain":"9."},
+      {"type":"num","prompt":"8 dm − 3 dm = ?","answer":5,"hint":"Trừ.","explain":"5."},
       {"type":"num","prompt":"Đoạn dây 17 m, cắt 5 m. Còn mấy mét?","answer":12,"hint":"Trừ mét.","explain":"17 − 5 = 12."},
       {"type":"num","prompt":"2 m bằng bao nhiêu dm?","answer":20,"hint":"1 m = 10 dm.","explain":"2 × 10 = 20."},
     ],
@@ -4599,6 +4660,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"2000 + 5000 = ?","answer":7000,"hint":"Tiền.","explain":"7000."},
       {"type":"num","prompt":"8 dm − 3 dm = ?","answer":5,"hint":"Trừ.","explain":"5."},
       {"type":"num","prompt":"10000 − 4000 = ?","answer":6000,"hint":"Trừ.","explain":"6000."},
+      {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"×10.","explain":"30."},
+      {"type":"num","prompt":"1000 + 2000 + 2000 = ?","answer":5000,"hint":"Cộng.","explain":"5000."},
       {"type":"num","prompt":"Đoạn dây 25 m, cắt 10 m. Còn mấy mét?","answer":15,"hint":"Trừ mét.","explain":"25 − 10 = 15."},
       {"type":"num","prompt":"7 m bằng bao nhiêu dm?","answer":70,"hint":"1 m = 10 dm.","explain":"7 × 10 = 70."},
     ],
@@ -4667,6 +4730,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"120 + 45 = ?","answer":165,"hint":"Cộng.","explain":"165."},
       {"type":"num","prompt":"301 + 406 = ?","answer":707,"hint":"Không nhớ.","explain":"707."},
       {"type":"num","prompt":"250 + 130 = ?","answer":380,"hint":"Không nhớ.","explain":"380."},
+      {"type":"num","prompt":"111 + 222 = ?","answer":333,"hint":"333.","explain":"333."},
+      {"type":"num","prompt":"400 + 50 + 6 = ?","answer":456,"hint":"Ghép cộng.","explain":"456."},
       {"type":"num","prompt":"Thư viện có 893 sách, thêm 45. Tất cả mấy quyển?","answer":938,"hint":"Cộng phạm vi 1000.","explain":"893 + 45 = 938."},
       {"type":"num","prompt":"Kho có 947 hộp, xuất 54. Còn mấy hộp?","answer":893,"hint":"Trừ.","explain":"947 − 54 = 893."},
     ],
@@ -4739,6 +4804,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"507 + 296 = ?","answer":803,"hint":"Có nhớ.","explain":"803."},
       {"type":"num","prompt":"388 + 125 = ?","answer":513,"hint":"Có nhớ.","explain":"513."},
       {"type":"num","prompt":"999 + 1 = ?","answer":1000,"hint":"Nhớ liên tiếp.","explain":"1000."},
+      {"type":"num","prompt":"346 + 227 = ?","answer":573,"hint":"Có nhớ.","explain":"573."},
+      {"type":"num","prompt":"475 + 268 = ?","answer":743,"hint":"Có nhớ.","explain":"743."},
       {"type":"num","prompt":"Thư viện có 162 sách, thêm 78. Tất cả mấy quyển?","answer":240,"hint":"Cộng phạm vi 1000.","explain":"162 + 78 = 240."},
       {"type":"num","prompt":"Kho có 223 hộp, xuất 61. Còn mấy hộp?","answer":162,"hint":"Trừ.","explain":"223 − 61 = 162."},
     ],
@@ -4807,6 +4874,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"765 − 320 = ?","answer":445,"hint":"Không nhớ.","explain":"445."},
       {"type":"num","prompt":"608 − 302 = ?","answer":306,"hint":"Không nhớ.","explain":"306."},
       {"type":"num","prompt":"555 − 111 = ?","answer":444,"hint":"Không nhớ.","explain":"444."},
+      {"type":"num","prompt":"700 − 200 = ?","answer":500,"hint":"500.","explain":"500."},
+      {"type":"num","prompt":"999 − 111 = ?","answer":888,"hint":"888.","explain":"888."},
       {"type":"num","prompt":"Thư viện có 237 sách, thêm 111. Tất cả mấy quyển?","answer":348,"hint":"Cộng phạm vi 1000.","explain":"237 + 111 = 348."},
       {"type":"num","prompt":"Kho có 305 hộp, xuất 68. Còn mấy hộp?","answer":237,"hint":"Trừ.","explain":"305 − 68 = 237."},
     ],
@@ -4877,6 +4946,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"1000 − 1 = ?","answer":999,"hint":"Mượn.","explain":"999."},
       {"type":"num","prompt":"630 − 275 = ?","answer":355,"hint":"Có nhớ.","explain":"355."},
       {"type":"num","prompt":"804 − 369 = ?","answer":435,"hint":"Có nhớ.","explain":"435."},
+      {"type":"num","prompt":"812 − 468 = ?","answer":344,"hint":"Có nhớ.","explain":"344."},
+      {"type":"num","prompt":"600 − 278 = ?","answer":322,"hint":"Có nhớ.","explain":"322."},
       {"type":"num","prompt":"Thư viện có 306 sách, thêm 54. Tất cả mấy quyển?","answer":360,"hint":"Cộng phạm vi 1000.","explain":"306 + 54 = 360."},
       {"type":"num","prompt":"Kho có 381 hộp, xuất 75. Còn mấy hộp?","answer":306,"hint":"Trừ.","explain":"381 − 75 = 306."},
     ],
@@ -4916,7 +4987,7 @@ const G2_LESSONS = [
         <p><strong>Cùng làm.</strong> 346 + 227 = 573. 812 − 468 = 344.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> số cần tìm + 150 = 400 → số cần tìm = 250. 500 + 500 = 1000.</p>
+        <p><strong>Thêm một chút.</strong> ? + 150 = 400 → ? = 250. 500 + 500 = 1000.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đặt tính rõ ràng, không nhẩm ẩu với 3 chữ số.</p>
@@ -4935,7 +5006,7 @@ const G2_LESSONS = [
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>346+227? <em>— 573.</em></p>
-        <p>số cần tìm+150=400? <em>— 250.</em></p>
+        <p>?+150=400? <em>— 250.</em></p>
       </details>
       <div class="example">
         <p><strong>Làm từng bước.</strong> 670 − 70 = 600. 410 + 90 = 500.</p>
@@ -4946,8 +5017,10 @@ const G2_LESSONS = [
       {"type":"num","prompt":"346 + 227 = ?","answer":573,"hint":"Có nhớ.","explain":"573."},
       {"type":"num","prompt":"812 − 468 = ?","answer":344,"hint":"Có nhớ.","explain":"344."},
       {"type":"num","prompt":"500 + 500 = ?","answer":1000,"hint":"Cộng.","explain":"1000."},
-      {"type":"num","prompt":"□ + 150 = 400","answer":250,"hint":"400−150.","explain":"250."},
+      {"type":"num","prompt":"? + 150 = 400","answer":250,"hint":"400−150.","explain":"250."},
       {"type":"num","prompt":"670 − 70 = ?","answer":600,"hint":"Trừ.","explain":"600."},
+      {"type":"num","prompt":"410 + 90 = ?","answer":500,"hint":"Cộng.","explain":"500."},
+      {"type":"num","prompt":"1000 − 250 = ?","answer":750,"hint":"Trừ.","explain":"750."},
       {"type":"num","prompt":"Thư viện có 475 sách, thêm 87. Tất cả mấy quyển?","answer":562,"hint":"Cộng phạm vi 1000.","explain":"475 + 87 = 562."},
       {"type":"num","prompt":"Kho có 557 hộp, xuất 82. Còn mấy hộp?","answer":475,"hint":"Trừ.","explain":"557 − 82 = 475."},
     ],
@@ -5020,6 +5093,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Phân loại là","choices":["Chia nhóm theo đặc điểm","Chỉ cộng số","Vẽ đường thẳng","Đổi km"],"correct":0,"hint":"Nhóm.","explain":"Chia nhóm."},
       {"type":"num","prompt":"2+2+2 = ?","answer":6,"hint":"3 nhóm 2.","explain":"6."},
       {"type":"mc","prompt":"Kiểm đếm giúp","choices":["Biết số lượng từng loại","Đổi giờ","Thành khối cầu","Chia 0"],"correct":0,"hint":"Số liệu.","explain":"Số lượng."},
+      {"type":"num","prompt":"9 đỏ, 4 xanh. Đỏ hơn?","answer":5,"hint":"9−4.","explain":"5."},
+      {"type":"num","prompt":"Tổng 9 và 4?","answer":13,"hint":"Cộng.","explain":"13."},
       {"type":"num","prompt":"Tổ 1 có 6 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":7,"hint":"Hiệu.","explain":"13 − 6 = 7."},
       {"type":"num","prompt":"Biểu đồ có 15 hình (1 hình = 1 xe). Có mấy xe?","answer":15,"hint":"1 hình = 1.","explain":"15."},
     ],
@@ -5167,7 +5242,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Túi đỏ và xanh, bốc đỏ","choices":["Có thể","Chắc chắn","Không thể","Cấm"],"correct":0,"hint":"Hai màu.","explain":"Có thể."},
       {"type":"mc","prompt":"Ngày mai có thể mưa","choices":["Có thể","Chắc chắn luôn","Không thể luôn","Kg"],"correct":0,"hint":"Không chắc.","explain":"Có thể."},
       {"type":"mc","prompt":"1+1=2 (số đã học)","choices":["Chắc chắn","Không thể","Chỉ có thể","Khối trụ"],"correct":0,"hint":"Đúng.","explain":"Chắc chắn."},
-      {"type":"num","prompt":"Tổ 1 có 8 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":5,"hint":"Hiệu.","explain":"13 − 8 = 5."},
+      {"type":"mc","prompt":"Túi không bi xanh, bốc xanh","choices":["Không thể","Chắc chắn","Có thể","Bắt buộc"],"correct":0,"hint":"Không có.","explain":"Không thể."},
     ],
   },
 
@@ -5238,6 +5313,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Sau khi đếm ta có thể","choices":["So sánh các nhóm","Đổi km luôn","Xóa số liệu","Trừ giờ"],"correct":0,"hint":"So sánh.","explain":"So sánh."},
       {"type":"num","prompt":"3 nhóm × 5 bạn = ?","answer":15,"hint":"3×5.","explain":"15."},
       {"type":"mc","prompt":"Phân loại trước khi đếm giúp","choices":["Rõ từng loại","Khó hơn","Mất số","Thành đường cong"],"correct":0,"hint":"Rõ.","explain":"Rõ loại."},
+      {"type":"num","prompt":"10 − 3 (hai nhóm) hơn kém?","answer":7,"hint":"Hiệu.","explain":"7."},
+      {"type":"num","prompt":"6 + 6 + 6 = ?","answer":18,"hint":"3×6.","explain":"18."},
       {"type":"num","prompt":"Tổ 1 có 5 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":4,"hint":"Hiệu.","explain":"9 − 5 = 4."},
       {"type":"num","prompt":"Biểu đồ có 12 hình (1 hình = 1 xe). Có mấy xe?","answer":12,"hint":"1 hình = 1.","explain":"12."},
     ],
@@ -5307,8 +5384,9 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Liền trước 1000?","answer":999,"hint":"−1.","explain":"999."},
       {"type":"num","prompt":"400+50+6=?","answer":456,"hint":"Ghép.","explain":"456."},
       {"type":"mc","prompt":"Tròn chục","choices":["880","808","801","818"],"correct":0,"hint":"Tận 0.","explain":"880."},
+      {"type":"num","prompt":"305 gồm mấy trăm?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"mc","prompt":"1000 gồm mấy trăm?","choices":["10","1","100","0"],"correct":0,"hint":"10.","explain":"10."},
       {"type":"num","prompt":"Số nhà của Oanh có 7 trăm, 8 chục, 6 đơn vị. Số nhà là bao nhiêu?","answer":786,"hint":"trăm|chục|đv.","explain":"786."},
-      {"type":"num","prompt":"Trường có 5 trăm 1 chục học sinh (0 đơn vị). Viết số đó.","answer":510,"hint":"Ghép hàng.","explain":"510."},
     ],
   },
 
@@ -5379,6 +5457,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"70−8=?","answer":62,"hint":"Mượn.","explain":"62."},
       {"type":"num","prompt":"55+45=?","answer":100,"hint":"Cộng.","explain":"100."},
       {"type":"num","prompt":"100−58=?","answer":42,"hint":"Trừ.","explain":"42."},
+      {"type":"num","prompt":"39+28=?","answer":67,"hint":"Nhớ.","explain":"67."},
+      {"type":"num","prompt":"91−47=?","answer":44,"hint":"Mượn.","explain":"44."},
       {"type":"num","prompt":"Thư viện có 855 sách, thêm 69. Tất cả mấy quyển?","answer":924,"hint":"Cộng phạm vi 1000.","explain":"855 + 69 = 924."},
       {"type":"num","prompt":"Kho có 925 hộp, xuất 70. Còn mấy hộp?","answer":855,"hint":"Trừ.","explain":"925 − 70 = 855."},
     ],
@@ -5447,6 +5527,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"999−100=?","answer":899,"hint":"Trừ.","explain":"899."},
       {"type":"num","prompt":"410+90=?","answer":500,"hint":"Cộng.","explain":"500."},
       {"type":"num","prompt":"1000−250=?","answer":750,"hint":"Trừ.","explain":"750."},
+      {"type":"num","prompt":"508+277=?","answer":785,"hint":"Nhớ.","explain":"785."},
+      {"type":"num","prompt":"900−456=?","answer":444,"hint":"Mượn.","explain":"444."},
       {"type":"num","prompt":"Thư viện có 124 sách, thêm 102. Tất cả mấy quyển?","answer":226,"hint":"Cộng phạm vi 1000.","explain":"124 + 102 = 226."},
       {"type":"num","prompt":"Kho có 201 hộp, xuất 77. Còn mấy hộp?","answer":124,"hint":"Trừ.","explain":"201 − 77 = 124."},
     ],
@@ -5518,6 +5600,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"16:2=?","answer":8,"hint":"Chia 2.","explain":"8."},
       {"type":"num","prompt":"40:5=?","answer":8,"hint":"Chia 5.","explain":"8."},
       {"type":"num","prompt":"5×0=?","answer":0,"hint":"Nhân 0.","explain":"0."},
+      {"type":"num","prompt":"2×10=?","answer":20,"hint":"20.","explain":"20."},
+      {"type":"num","prompt":"45:5=?","answer":9,"hint":"9.","explain":"9."},
       {"type":"num","prompt":"Mỗi đĩa 2 cái bánh, có 3 đĩa. Tất cả mấy cái bánh?","answer":6,"hint":"3 × 2.","explain":"6."},
       {"type":"num","prompt":"Một hàng 2 bạn, có 3 hàng. Tất cả mấy bạn?","answer":6,"hint":"3 × 2.","explain":"6."},
     ],
@@ -5583,6 +5667,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Lon ống","choices":["Khối trụ","Khối cầu","Điểm","Ngày"],"correct":0,"hint":"Trụ.","explain":"Trụ."},
       {"type":"mc","prompt":"Đoạn thẳng có","choices":["Hai mút","Không mút","Ba mút","Bốn mút"],"correct":0,"hint":"Hai đầu.","explain":"Hai mút."},
       {"type":"num","prompt":"Tam giác mấy cạnh?","answer":3,"hint":"3.","explain":"3."},
+      {"type":"mc","prompt":"Đường thẳng","choices":["Kéo dài hai phía","Hai mút","Cong","4 cạnh"],"correct":0,"hint":"Kéo dài.","explain":"Kéo dài."},
+      {"type":"mc","prompt":"Viên bi","choices":["Khối cầu","Khối trụ","Tứ giác","Kg"],"correct":0,"hint":"Cầu.","explain":"Cầu."},
       {"type":"num","prompt":"Khung ảnh nhà Minh là tứ giác. Khung có mấy đỉnh?","answer":4,"hint":"Tứ giác: 4 đỉnh.","explain":"4."},
       {"type":"num","prompt":"Biển báo hình tam giác trên đường Nam đi học có mấy cạnh?","answer":3,"hint":"Tam giác: 3 cạnh.","explain":"3."},
     ],
@@ -5649,6 +5735,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"5 kg + 4 kg = ?","answer":9,"hint":"Cộng.","explain":"9."},
       {"type":"num","prompt":"9 l − 2 l = ?","answer":7,"hint":"Trừ.","explain":"7."},
       {"type":"num","prompt":"2000+3000=?","answer":5000,"hint":"Tiền.","explain":"5000."},
+      {"type":"num","prompt":"1 km = ? m","answer":1000,"hint":"1000.","explain":"1000."},
+      {"type":"num","prompt":"3 m = ? dm","answer":30,"hint":"30.","explain":"30."},
       {"type":"num","prompt":"Mẹ mua 10 kg gạo và 7 kg đường. Tất cả mấy kg?","answer":17,"hint":"Cộng kg.","explain":"10 + 7 = 17."},
       {"type":"num","prompt":"Bình có 25 l nước, dùng 10 l. Còn mấy lít?","answer":15,"hint":"Trừ lít.","explain":"25 − 10 = 15."},
     ],
@@ -5719,6 +5807,8 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Không kẹo chanh, bốc chanh","choices":["Không thể","Chắc chắn","Bắt buộc","Luôn có thể"],"correct":0,"hint":"Không có.","explain":"Không thể."},
       {"type":"num","prompt":"Nhóm 8 và 5. Tổng?","answer":13,"hint":"Cộng.","explain":"13."},
       {"type":"mc","prompt":"Bi đỏ và xanh, bốc xanh","choices":["Có thể","Chắc chắn","Không thể","Cấm"],"correct":0,"hint":"Hai màu.","explain":"Có thể."},
+      {"type":"num","prompt":"Cột 4 và 9, hơn kém?","answer":5,"hint":"9−4.","explain":"5."},
+      {"type":"mc","prompt":"Chú thích biểu đồ cần xem","choices":["Trước khi đếm","Sau cùng không cần","Không bao giờ","Chỉ khi màu đẹp"],"correct":0,"hint":"Trước.","explain":"Trước khi đếm."},
       {"type":"num","prompt":"Tổ 1 có 7 bạn, tổ 2 có 13 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":6,"hint":"Hiệu.","explain":"13 − 7 = 6."},
       {"type":"num","prompt":"Biểu đồ có 6 hình (1 hình = 1 xe). Có mấy xe?","answer":6,"hint":"1 hình = 1.","explain":"6."},
     ],
@@ -5791,6 +5881,8 @@ const G2_LESSONS = [
       {"type":"num","prompt":"476 + 128 = ?","answer":604,"hint":"Có nhớ.","explain":"604."},
       {"type":"num","prompt":"1000 − 340 = ?","answer":660,"hint":"Trừ.","explain":"660."},
       {"type":"mc","prompt":"1 km = ? m","choices":["1000","100","10","10000"],"correct":0,"hint":"1000 m.","explain":"1000."},
+      {"type":"num","prompt":"18 : 2 = ?","answer":9,"hint":"Chia 2.","explain":"9."},
+      {"type":"num","prompt":"35 : 5 = ?","answer":7,"hint":"Chia 5.","explain":"7."},
       {"type":"num","prompt":"Tổ 1 có 4 bạn, tổ 2 có 9 bạn. Tổ 2 hơn tổ 1 mấy bạn?","answer":5,"hint":"Hiệu.","explain":"9 − 4 = 5."},
       {"type":"num","prompt":"Biểu đồ có 9 hình (1 hình = 1 xe). Có mấy xe?","answer":9,"hint":"1 hình = 1.","explain":"9."},
     ],

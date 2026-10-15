@@ -345,12 +345,19 @@ function courseView(course) {
 
 function lessonLink(course, lesson, progress) {
   const p = progress[lesson.id];
-  const mark = p ? `<span class="done">Đã làm ${p.score}/${p.total}</span>` : "";
+  const kid = course.id === "2" || course.level === "Tiểu học";
+  const mark = p
+    ? `<span class="done">${kid ? "Xong " : "Đã làm "}${p.score}/${p.total}</span>`
+    : kid
+      ? `<span class="todo">Chưa làm</span>`
+      : "";
+  const heading = kid ? lesson.summary || lesson.title : lesson.title;
+  const sub = kid ? lesson.title : lesson.summary;
   return `
     <a class="lesson-row" href="#/g/${course.id}/lesson/${lesson.id}">
       <div class="meta"><span>Bài ${lesson.num}</span>${mark}</div>
-      <strong>${escapeHtml(lesson.title)}</strong>
-      <p>${escapeHtml(lesson.summary)}</p>
+      <strong>${escapeHtml(heading)}</strong>
+      <p>${escapeHtml(sub)}</p>
     </a>`;
 }
 
@@ -388,7 +395,12 @@ function chapterView(course, chapterId) {
       <span class="stamp">${escapeHtml(kid ? "Toán lớp 2" : chapterStamp(ch))}</span>
       <h2>${escapeHtml(ch.title)}</h2>
       ${ch.intro ? `<p class="lede kid-today">${escapeHtml(ch.intro)}</p>` : ""}
-      ${kid && items.length ? `<p class="quiz-lead">${done}/${items.length} bài đã làm. Bấm vào bài để học.</p>` : ""}
+      ${(() => {
+        if (!kid || !items.length) return "";
+        const nxt = items.find((l) => !progress[l.id]) || items[0];
+        return `<p class="quiz-lead">${done}/${items.length} bài đã làm.</p>
+        <p class="actions" style="margin:0.6rem 0 1rem"><a class="btn" href="#/g/${course.id}/lesson/${nxt.id}">Học tiếp: Bài ${nxt.num}</a></p>`;
+      })()}
       ${
         rows
           ? `<div class="lesson-list">${rows}</div>`

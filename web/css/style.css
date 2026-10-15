@@ -178,6 +178,7 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
 }
 
 .done { color: var(--leaf); font-weight: 700; font-size: 0.85rem; }
+.todo { color: var(--muted); font-weight: 650; font-size: 0.85rem; }
 
 .lesson-list { display: grid; gap: 0.7rem; margin-top: 1rem; }
 
