@@ -316,6 +316,12 @@ a.card:hover { text-decoration: none; border-color: #cbbba4; }
 }
 .figure .btn:hover { background: #555; }
 .figure .btn:active { background: #333; }
+.figure-controls-hint {
+  color: #bbb;
+  font-size: 0.75rem;
+  align-self: center;
+  margin-left: 0.35rem;
+}
 
 .panels {
   display: flex;

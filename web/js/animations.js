@@ -44,17 +44,24 @@ class VisualAnimation {
           el.style.display = '';
         }
       } else if (step.animate === 'draw') {
-        // Draw line/curve effect
-        const length = el.getTotalLength();
+        let length = 0;
+        try {
+          if (typeof el.getTotalLength === 'function') length = el.getTotalLength();
+        } catch {
+          length = 0;
+        }
         if (length > 0) {
           el.style.transition = 'none';
-          el.style.strokeDasharray = length;
-          el.style.strokeDashoffset = length;
-          
+          el.style.strokeDasharray = String(length);
+          el.style.strokeDashoffset = String(length);
           requestAnimationFrame(() => {
             el.style.transition = `stroke-dashoffset ${step.duration || 0.5}s ease`;
             el.style.strokeDashoffset = '0';
           });
+        } else {
+          el.style.transition = `opacity ${step.duration || 0.4}s ease`;
+          el.style.opacity = '1';
+          el.style.display = '';
         }
       } else if (step.animate === 'transform') {
         el.style.transition = `transform ${step.duration || 0.5}s ease`;
@@ -82,14 +89,19 @@ class VisualAnimation {
 
   play() {
     if (this.isPlaying) return;
+    // Finished (or never reset) → hide again, then play from the start
+    if (this.currentStep >= this.steps.length) {
+      this.reset();
+    }
     this.isPlaying = true;
+    this.playForward(); // first step immediately (do not wait 1s)
     this.timer = setInterval(() => {
       if (this.currentStep < this.steps.length) {
         this.playForward();
       } else {
         this.stop();
       }
-    }, 1000);
+    }, 800);
   }
 
   stop() {
@@ -106,19 +118,16 @@ class VisualAnimation {
     this.steps.forEach(step => {
       const elements = this.svg.querySelectorAll(step.selector);
       elements.forEach(el => {
-        // Clear inline styles to revert to initial state
         el.style.transition = 'none';
         el.style.opacity = '';
         el.style.display = '';
         el.style.transform = '';
-        
-        // Reset stroke dash for drawing animations
-        if (el.tagName === 'line' || el.tagName === 'path') {
-          el.style.strokeDasharray = '';
-          el.style.strokeDashoffset = '';
-        }
+        el.style.strokeDasharray = '';
+        el.style.strokeDashoffset = '';
       });
     });
+    // Re-apply hidden / opacity:0 so ▶ can play again
+    this.init();
   }
 
   goToStep(index) {
@@ -2279,40 +2288,36 @@ const AnimationManager = {
     const controls = document.createElement('div');
     controls.className = 'figure-controls';
     controls.innerHTML = `
-      <button class="btn play" data-target="${id}">▶</button>
-      <button class="btn pause" data-target="${id}">⏸</button>
-      <button class="btn step" data-target="${id}" data-dir="1">⏭</button>
-      <button class="btn reset" data-target="${id}">↺</button>
+      <button type="button" class="btn play" data-action="play" data-target="${id}" title="Phát hình lần lượt">▶</button>
+      <button type="button" class="btn pause" data-action="pause" data-target="${id}" title="Tạm dừng">⏸</button>
+      <button type="button" class="btn step" data-action="step" data-target="${id}" title="Bước tiếp">⏭</button>
+      <button type="button" class="btn reset" data-action="reset" data-target="${id}" title="Làm lại từ đầu">↺</button>
+      <span class="figure-controls-hint">Phát · Dừng · Bước · Làm lại</span>
     `;
-    
+
     svg.parentElement.appendChild(controls);
-    
-    // Add event listeners
+
     controls.addEventListener('click', (e) => {
-      if (e.target.dataset.target !== id) return;
-      
+      const btn = e.target.closest('button');
+      if (!btn || btn.dataset.target !== id) return;
+
       const animation = this.animations[id];
       if (!animation) return;
-      
-      switch (e.target.dataset.dir) {
-        case '1':
+
+      switch (btn.dataset.action) {
+        case 'play':
+          animation.play();
+          break;
+        case 'pause':
+          animation.stop();
+          break;
+        case 'step':
+          animation.stop();
           animation.playForward();
           break;
-        case '-1':
-          animation.playBackward();
+        case 'reset':
+          animation.reset();
           break;
-        default:
-          switch (e.target.className) {
-            case 'btn play':
-              animation.play();
-              break;
-            case 'btn pause':
-              animation.stop();
-              break;
-            case 'btn reset':
-              animation.reset();
-              break;
-          }
       }
     });
   }
