@@ -7,7 +7,8 @@
 const G2_CHAPTERS = [
   {
     "id": 1,
-    "title": "Ôn tập và bổ sung"
+    "title": "Ôn tập và bổ sung",
+    "intro": "Có 6 bài. Em ôn số đến 100, tia số, tên gọi trong phép cộng/trừ, hơn kém, rồi cộng trừ không nhớ. Làm từ Bài 1 nhé."
   },
   {
     "id": 2,
@@ -305,46 +306,63 @@ const G2_LESSONS = [
               <figcaption>Đặt số trên tia số; tìm số liền trước và liền sau.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đặt số trên tia số; tìm số liền trước và liền sau.</p>
-      
+            <figure class="figure" data-animation="g2-b2-hop-line">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Liền trước và liền sau">
+          <line x1="20" y1="70" x2="300" y2="70" stroke="#333330" stroke-width="2"/>
+          <polygon points="300,70 290,64 290,76" fill="#333330"/>
+          <circle cx="80" cy="70" r="8" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="160" cy="70" r="10" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="240" cy="70" r="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="80" y="50" font-size="14" text-anchor="middle" fill="#58C4DD">24</text>
+          <text x="160" y="48" font-size="16" text-anchor="middle" fill="#FC6255">25</text>
+          <text x="240" y="50" font-size="14" text-anchor="middle" fill="#83C167">26</text>
+          <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
+          <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
+          <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
+          <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
+          <text x="160" y="150" font-size="12" text-anchor="middle" fill="#888888">Trái nhỏ hơn, phải lớn hơn</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 39, 40, 41. 40 nằm giữa. 39 liền trước 40. 41 liền sau 40.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> Trên tia số, số bên trái luôn nhỏ hơn số bên phải.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Trên tia số, các số tăng từ trái sang phải. <strong>Số liền trước</strong> của n là n - 1. <strong>Số liền sau</strong> là n + 1.</p>
+        <p><strong>Nhớ này.</strong> Trên tia số, số to dần sang phải. <strong>Liền trước</strong> = lùi 1. <strong>Liền sau</strong> = tiến 1.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> Số liền trước của 25 là 24. Số liền sau của 25 là 26.</p>
+        <p><strong>Cùng làm.</strong> Số 25. Liền trước là 24. Liền sau là 26.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Số đứng giữa 18 và 20 trên tia số là 19. Từ 18 sang 20 phải bước đúng 2 đơn vị.</p>
+        <p><strong>Thêm một chút.</strong> Số đứng giữa 18 và 20 là 19. Từ 18 sang 20 bước đúng 2 vạch.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Số liền sau của 29 là 30, không phải 20. Khi sang hàng chục mới, nhớ “đổi chục”.</p>
+        <p><strong>Cẩn thận.</strong> Liền sau 29 là 30, không phải 20. Sang hàng chục mới thì nhớ đổi chục.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Liền trước = lùi 1 vạch; liền sau = tiến 1 vạch. Không nhảy cóc.</p>
+        <p><strong>Mẹo nhỏ.</strong> Lùi 1 vạch → trước. Tiến 1 vạch → sau. Không nhảy cóc.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm liền trước với liền sau.</li>
-          <li>Quên đổi hàng khi 39 → 40, 99 → 100.</li>
+          <li>Nhầm trước với sau.</li>
+          <li>Quên 39 → 40, 99 → 100.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>Liền trước của 40? <em>— 39.</em></p>
         <p>Liền sau của 89? <em>— 90.</em></p>
+        <p>Giữa 14 và 16? <em>— 15.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Tìm số liền sau 99: 99 + 1. Đơn vị 9 + 1 = 10 → viết 0 nhớ 1 chục; 9 chục + 1 = 10 chục = 1 trăm → 100.</p>
+        <p><strong>Làm từng bước.</strong> Liền sau 99: 99 + 1. 9 đơn vị + 1 = 10, viết 0 nhớ 1 chục. 9 chục + 1 = 10 chục = 100.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Liền trước −1, liền sau +1. Trái nhỏ, phải lớn trên tia số.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Trước = trừ 1. Sau = cộng 1. Trái nhỏ, phải lớn.</p></div>
     `,
     exercises: [
       {"type":"text","prompt":"Đọc số 100:","answer":"mot tram","accept":["mot tram","một trăm","mot tram"],"hint":"một trăm","explain":"một trăm."},
-      {"type":"num","prompt":"Số liền trước của 56?","answer":55,"hint":"Trừ 1.","explain":"55."},
-      {"type":"num","prompt":"Số liền sau của 79?","answer":80,"hint":"Cộng 1.","explain":"80."},
+      {"type":"num","prompt":"Số liền trước của 56?","answer":55,"hint":"Lùi 1.","explain":"55."},
+      {"type":"num","prompt":"Số liền sau của 79?","answer":80,"hint":"Tiến 1. Đổi chục.","explain":"80."},
       {"type":"mc","prompt":"Số đứng giữa 44 và 46 là","choices":["45","43","47","40"],"correct":0,"hint":"Giữa hai số cách 2.","explain":"45."},
-      {"type":"num","prompt":"Liền sau của 99?","answer":100,"hint":"+1.","explain":"100."},
-      {"type":"mc","prompt":"Trên tia số, số bên trái 30 là số","choices":["bé hơn 30","lớn hơn 30","bằng 30","không so được"],"correct":0,"hint":"Trái → nhỏ.","explain":"Bé hơn 30."},
+      {"type":"num","prompt":"Liền sau của 99?","answer":100,"hint":"99 + 1.","explain":"100."},
+      {"type":"mc","prompt":"Số bên trái 30 trên tia số là số","choices":["bé hơn 30","lớn hơn 30","bằng 30","không so được"],"correct":0,"hint":"Trái nhỏ hơn.","explain":"Bé hơn 30."},
       {"type":"num","prompt":"Nam có 4 chục que và 3 que rời. Tất cả mấy que?","answer":43,"hint":"chục × 10 + đơn vị.","explain":"43."},
       {"type":"num","prompt":"Viết số gồm 9 chục và 3 đơn vị.","answer":93,"hint":"Ghép hàng.","explain":"93."},
     ],
@@ -375,36 +393,51 @@ const G2_LESSONS = [
               <figcaption>Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.</p>
-      
+            <figure class="figure" data-animation="g2-b3-sub-parts">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Thành phần phép trừ">
+          <rect x="20" y="40" width="70" height="50" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <rect x="120" y="40" width="70" height="50" fill="none" stroke="#9A72AC" stroke-width="2"/>
+          <rect x="230" y="40" width="70" height="50" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="55" y="72" font-size="22" text-anchor="middle">13</text>
+          <text x="155" y="72" font-size="22" text-anchor="middle">5</text>
+          <text x="265" y="72" font-size="22" text-anchor="middle">8</text>
+          <text x="55" y="30" font-size="11" text-anchor="middle" fill="#FC6255">số bị trừ</text>
+          <text x="155" y="30" font-size="11" text-anchor="middle" fill="#9A72AC">số trừ</text>
+          <text x="265" y="30" font-size="11" text-anchor="middle" fill="#58C4DD">hiệu</text>
+          <text x="100" y="72" font-size="20">−</text>
+          <text x="205" y="72" font-size="20">=</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 8 + 7 = 15. Đổi thành trừ: 15 − 7 = 8 và 15 − 8 = 7.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Phép cộng a + b = c: a, b là <strong>số hạng</strong>, c là <strong>tổng</strong>. Phép trừ a - b = c: a <strong>số bị trừ</strong>, b <strong>số trừ</strong>, c <strong>hiệu</strong>.</p>
+        <p><strong>Nhớ này.</strong> Cộng: hai <strong>số hạng</strong>, kết quả là <strong>tổng</strong>. Trừ: <strong>số bị trừ</strong> − <strong>số trừ</strong> = <strong>hiệu</strong>.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 9 + 4 = 13: số hạng 9 và 4, tổng 13. 13 − 4 = 9: số bị trừ 13, số trừ 4, hiệu 9.</p>
+        <p><strong>Cùng làm.</strong> 9 + 4 = 13. 9 và 4 là số hạng. 13 là tổng.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Muốn tìm một số hạng khi biết tổng và số hạng kia: lấy tổng trừ đi số hạng đã biết. Ví dụ □ + 6 = 15 → □ = 15 − 6 = 9.</p>
+        <p><strong>Thêm một chút.</strong> 13 − 4 = 9. 13 số bị trừ, 4 số trừ, 9 hiệu. Tìm số hạng: □ + 6 = 15 thì □ = 15 − 6 = 9.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Không gọi nhầm “tổng” thành “hiệu”. Dấu + → tổng; dấu − → hiệu.</p>
+        <p><strong>Cẩn thận.</strong> Tổng là kết quả cộng. Hiệu là kết quả trừ. Đừng gọi nhầm.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Cộng và trừ là hai phép “ngược nhau”. Biết hai thành phần thì tìm được thành phần còn lại.</p>
+        <p><strong>Mẹo nhỏ.</strong> Cộng và trừ ngược nhau. Biết hai số thì tìm được số còn lại.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm tên thành phần.</li>
-          <li>Tìm số hạng bằng cách cộng thay vì trừ.</li>
+          <li>Gọi nhầm tổng thành hiệu.</li>
+          <li>Tìm số hạng mà cộng tiếp.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
-        <p>Trong 7 + 8 = 15, 15 gọi là gì? <em>— Tổng.</em></p>
-        <p>Trong 20 − 6 = 14, 6 gọi là gì? <em>— Số trừ.</em></p>
+        <p>7 + 8 = 15. 15 gọi là gì? <em>— Tổng.</em></p>
+        <p>20 − 6 = 14. 6 gọi là gì? <em>— Số trừ.</em></p>
+        <p>Muốn tìm số hạng thì làm phép nào? <em>— Tổng trừ số hạng kia.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Tìm số trừ: 18 − □ = 10. Muốn tìm số trừ: lấy số bị trừ trừ hiệu: 18 − 10 = 8. Kiểm: 18 − 8 = 10.</p>
+        <p><strong>Làm từng bước.</strong> 18 − □ = 10. Tìm số trừ: 18 − 10 = 8. Kiểm: 18 − 8 = 10.</p>
       </div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng: số hạng + số hạng = tổng. Trừ: số bị trừ − số trừ = hiệu.</p></div>
     `,
@@ -414,8 +447,10 @@ const G2_LESSONS = [
       {"type":"num","prompt":"Tổng của 8 và 7?","answer":15,"hint":"Cộng.","explain":"15."},
       {"type":"num","prompt":"Hiệu 19 − 6?","answer":13,"hint":"Trừ.","explain":"13."},
       {"type":"num","prompt":"□ + 5 = 14. □ = ?","answer":9,"hint":"14 − 5.","explain":"9."},
+      {"type":"num","prompt":"12 − □ = 7. □ = ?","answer":5,"hint":"12 − 7.","explain":"5."},
+      {"type":"mc","prompt":"Muốn tìm số hạng, lấy","choices":["Tổng trừ số hạng kia","Hai số hạng cộng","Hiệu trừ tổng","Không làm được"],"correct":0,"hint":"Phép ngược.","explain":"Tổng − số hạng kia."},
+      {"type":"num","prompt":"Lan có 9 kẹo, mẹ cho 6 kẹo. Tổng mấy kẹo?","answer":15,"hint":"Số hạng + số hạng.","explain":"15."},
       {"type":"num","prompt":"Hà có 12 bông hoa, được thêm 9 bông hoa. Tất cả mấy bông hoa?","answer":21,"hint":"Thêm → cộng.","explain":"12 + 9 = 21."},
-      {"type":"num","prompt":"Trong hộp có 20 lá cờ, bạn cho thêm 2. Tất cả mấy?","answer":22,"hint":"Cộng.","explain":"20 + 2 = 22."},
     ],
   },
 
@@ -437,49 +472,61 @@ const G2_LESSONS = [
               <figcaption>Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.</p>
-      
+            <figure class="figure" data-animation="g2-b4-keywords">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
+          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Có 16 bút và 9 bút. Hơn kém nhau 16 − 9 = 7 bút.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> A <strong>hơn</strong> B một số đơn vị nghĩa là A - B bằng số đó. A <strong>kém</strong> B nghĩa là B hơn A, tức B - A.</p>
+        <p><strong>Nhớ này.</strong> A <strong>hơn</strong> B nghĩa là A − B. A <strong>kém</strong> B nghĩa là B − A. Cùng một hiệu.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> Lan 12 viên bi, Minh 8. Lan hơn Minh 12 - 8 = 4 viên. Minh kém Lan 4 viên.</p>
+        <p><strong>Cùng làm.</strong> Lan 12 bi, Minh 8 bi. Lan hơn Minh 12 − 8 = 4 bi. Minh kém Lan cũng 4 bi.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Sách An 25 trang, sách Bình 31 trang. Bình hơn An 31 - 25 = 6 trang.</p>
+        <p><strong>Thêm một chút.</strong> Sách An 25 trang, sách Bình 31 trang. Bình hơn An 31 − 25 = 6 trang.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Câu “A hơn B bao nhiêu?” luôn lấy số lớn hơn trong hai số A, B trừ số bé hơn — không cộng A với B.</p>
+        <p><strong>Cẩn thận.</strong> Hỏi “hơn bao nhiêu” thì trừ, không cộng hai số.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Vẽ hai đoạn (hoặc hai cột): đoạn dài hơn — đoạn ngắn = phần hơn.</p>
+        <p><strong>Mẹo nhỏ.</strong> Vẽ hai cột: cột cao trừ cột thấp = phần hơn.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Cộng thay vì trừ khi hỏi “hơn bao nhiêu”.</li>
-          <li>Trừ nhầm chiều (số bé trừ số lớn).</li>
+          <li>Cộng khi hỏi hơn bao nhiêu.</li>
+          <li>Số bé trừ số lớn.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>15 hơn 9 bao nhiêu? <em>— 6.</em></p>
         <p>20 kém 28 bao nhiêu? <em>— 8.</em></p>
+        <p>Lan 12, Minh 8. Minh kém Lan? <em>— 4.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Nam 18 nhãn, Hoa 11 nhãn. Hỏi Nam hơn Hoa? 18 − 11: 8 − 1 = 7. Đáp án 7 nhãn.</p>
+        <p><strong>Làm từng bước.</strong> Nam 18 nhãn, Hoa 11 nhãn. Nam hơn Hoa: 18 − 11 = 7 nhãn.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Hơn/kém bao nhiêu → phép trừ (tìm hiệu).</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Hơn / kém bao nhiêu → trừ (tìm hiệu).</p></div>
     `,
     exercises: [
       {"type":"num","prompt":"17 hơn 10 bao nhiêu?","answer":7,"hint":"17 − 10.","explain":"7."},
       {"type":"num","prompt":"25 kém 30 bao nhiêu?","answer":5,"hint":"30 − 25.","explain":"5."},
       {"type":"num","prompt":"An có 14 tem, Bình có 9 tem. An hơn Bình mấy tem?","answer":5,"hint":"14 − 9.","explain":"5."},
       {"type":"mc","prompt":"“Kém nhau bao nhiêu” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Hiệu.","explain":"Trừ."},
-      {"type":"num","prompt":"42 hơn 35?","answer":7,"hint":"42 − 35.","explain":"7."},
-      {"type":"num","prompt":"Số lớn hơn 50 là 58. Lớn hơn mấy?","answer":8,"hint":"58 − 50.","explain":"8."},
-      {"type":"num","prompt":"100 kém 100 bao nhiêu?","answer":0,"hint":"Bằng nhau.","explain":"0."},
-      {"type":"num","prompt":"Bình có 15 lá cờ. Chi nhiều hơn Bình 6 lá cờ. Chi có mấy?","answer":21,"hint":"Nhiều hơn → cộng.","explain":"15 + 6 = 21."},
-      {"type":"num","prompt":"Bình có 21 tem. Chi ít hơn Bình 6. Chi có mấy?","answer":15,"hint":"Ít hơn → trừ.","explain":"21 − 6 = 15."},
+      {"type":"num","prompt":"42 hơn 35 mấy?","answer":7,"hint":"42 − 35.","explain":"7."},
+      {"type":"num","prompt":"58 lớn hơn 50 mấy?","answer":8,"hint":"58 − 50.","explain":"8."},
+      {"type":"num","prompt":"Lan 12 bi, Minh 8 bi. Minh kém Lan mấy bi?","answer":4,"hint":"Cùng hiệu.","explain":"4."},
+      {"type":"num","prompt":"Có 16 bút và 9 bút. Hơn kém mấy bút?","answer":7,"hint":"16 − 9.","explain":"7."},
     ],
   },
 
@@ -510,47 +557,65 @@ const G2_LESSONS = [
               <figcaption>Cộng trừ không nhớ với số có hai chữ số.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng trừ không nhớ với số có hai chữ số.</p>
-      
+            <figure class="figure" data-animation="g2-b5-col-sub">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính trừ có nhớ">
+          <rect x="140" y="20" width="150" height="130" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="40" y="40" font-size="12" fill="#FC6255">Mượn 1 chục</text>
+          <text x="40" y="60" font-size="12" fill="#888888">= 10 đơn vị</text>
+          <text x="250" y="48" font-size="11" fill="#FC6255" text-anchor="middle">+10</text>
+          <text x="200" y="80" font-size="26" text-anchor="middle">6</text>
+          <text x="250" y="80" font-size="26" text-anchor="middle">7</text>
+          <text x="160" y="110" font-size="22">−</text>
+          <text x="200" y="110" font-size="26" text-anchor="middle">2</text>
+          <text x="250" y="110" font-size="26" text-anchor="middle">3</text>
+          <line x1="155" y1="118" x2="280" y2="118" stroke="#333330" stroke-width="2"/>
+          <text x="225" y="142" font-size="22" text-anchor="middle" fill="#83C167">44</text>
+          <text x="40" y="130" font-size="13">67 − 23</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 45 + 23. 5+3=8, 4+2=6. Ra 68.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Đặt tính: <strong>đơn vị thẳng đơn vị, chục thẳng chục</strong>. Cộng/trừ đơn vị trước, rồi đến chục. <em>Không nhớ</em> khi tổng đơn vị &lt; 10 và đơn vị đủ trừ.</p>
+        <p><strong>Nhớ này.</strong> Đặt tính: <strong>đơn vị thẳng đơn vị, chục thẳng chục</strong>. Cộng/trừ đơn vị trước, rồi đến chục. Không nhớ khi đơn vị cộng ra nhỏ hơn 10.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 34 + 52: 4+2=6, 3+5=8 → 86. 67 − 23: 7−3=4, 6−2=4 → 44.</p>
+        <p><strong>Cùng làm.</strong> 34 + 52. 4+2=6, 3+5=8. Ra 86. 67 − 23. 7−3=4, 6−2=4. Ra 44.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> 60 + 30 = 90 (số tròn chục). 99 − 40 = 59.</p>
+        <p><strong>Thêm một chút.</strong> 60 + 30 = 90. 99 − 40 = 59.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Viết 8 + 21 thành lệch cột (8 thẳng với 2) sẽ ra sai. Luôn thẳng từ bên phải.</p>
+        <p><strong>Cẩn thận.</strong> Viết 8 + 21 mà 8 thẳng với chữ 2 thì sai. Thẳng từ bên phải.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Nhẩm từng hàng. Kiểm bằng phép ngược: tổng − một số hạng = số hạng kia.</p>
+        <p><strong>Mẹo nhỏ.</strong> Làm từng hàng. Kiểm: tổng trừ một số hạng ra số hạng kia.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Lệch cột khi đặt tính.</li>
-          <li>Cộng chục với đơn vị.</li>
+          <li>Lệch cột.</li>
+          <li>Cộng nhầm chục với đơn vị.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>23 + 45 = ? <em>— 68.</em></p>
         <p>58 − 17 = ? <em>— 41.</em></p>
+        <p>Phải thẳng hàng nào trước? <em>— Hàng đơn vị (bên phải).</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 48 + 21. Đặt: 48. Dưới +21. 8+1=9; 4+2=6 → 69. Kiểm: 69 − 21 = 48.</p>
+        <p><strong>Làm từng bước.</strong> 48 + 21. Đơn vị 8+1=9. Chục 4+2=6. Ra 69. Kiểm: 69 − 21 = 48.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Thẳng cột, đơn vị trước. Không nhớ = mỗi hàng &lt; 10 khi cộng.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Thẳng cột, đơn vị trước. Không nhớ khi mỗi hàng nhỏ hơn 10.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"23 + 45 = ?","answer":68,"hint":"Không nhớ.","explain":"68."},
-      {"type":"num","prompt":"58 − 17 = ?","answer":41,"hint":"Không nhớ.","explain":"41."},
-      {"type":"num","prompt":"60 + 30 = ?","answer":90,"hint":"Tròn chục.","explain":"90."},
-      {"type":"num","prompt":"99 − 40 = ?","answer":59,"hint":"Trừ chục.","explain":"59."},
+      {"type":"num","prompt":"23 + 45 = ?","answer":68,"hint":"3+5=8; 2+4=6.","explain":"68."},
+      {"type":"num","prompt":"58 − 17 = ?","answer":41,"hint":"8−7=1; 5−1=4.","explain":"41."},
+      {"type":"num","prompt":"60 + 30 = ?","answer":90,"hint":"Số tròn chục.","explain":"90."},
+      {"type":"num","prompt":"99 − 40 = ?","answer":59,"hint":"9 chục trừ 4 chục.","explain":"59."},
       {"type":"mc","prompt":"Phép nào không nhớ?","choices":["34 + 21","28 + 15","19 + 6","47 + 8"],"correct":0,"hint":"Đơn vị 4+1=5.","explain":"34+21."},
+      {"type":"num","prompt":"11 + 22 + 33 = ?","answer":66,"hint":"Cộng lần lượt.","explain":"66."},
+      {"type":"num","prompt":"85 − 30 = ?","answer":55,"hint":"Trừ 3 chục.","explain":"55."},
+      {"type":"num","prompt":"Có 34 tem, thêm 52 tem. Tất cả mấy tem?","answer":86,"hint":"34+52.","explain":"86."},
       {"type":"num","prompt":"Oanh có 6 tem, được thêm 3 tem. Tất cả mấy tem?","answer":9,"hint":"Thêm → cộng.","explain":"6 + 3 = 9."},
-      {"type":"num","prompt":"Trong hộp có 12 bút, bạn cho thêm 6. Tất cả mấy?","answer":18,"hint":"Cộng.","explain":"12 + 6 = 18."},
     ],
   },
 
@@ -580,45 +645,56 @@ const G2_LESSONS = [
               <figcaption>Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</p>
-      
+            <figure class="figure" data-animation="g2-b6-place">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Cấu tạo số 64">
+          <rect x="30" y="30" width="100" height="90" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="160" y="30" width="100" height="90" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="80" y="24" font-size="12" text-anchor="middle" fill="#83C167">Hàng chục</text>
+          <text x="210" y="24" font-size="12" text-anchor="middle" fill="#58C4DD">Hàng đơn vị</text>
+          <text x="80" y="85" font-size="36" text-anchor="middle" fill="#333330">6</text>
+          <text x="210" y="85" font-size="36" text-anchor="middle" fill="#333330">4</text>
+          <text x="160" y="150" font-size="14" text-anchor="middle">64 = 6 chục + 4 đơn vị</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 52 gồm 5 chục 2 đơn vị. Liền sau 52 là 53.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Cùng lúc dùng: đọc viết số, liền trước/sau, tên thành phần phép tính, cộng trừ không nhớ, hơn kém.</p>
+        <p><strong>Nhớ này.</strong> Số đến 100, tia số, tên phép tính, cộng trừ không nhớ, hơn kém.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> Liền trước 70 là 69. 42 + 35 = 77.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Tìm số hạng: □ + 12 = 45 → □ = 33. 36 hơn 29 là 7.</p>
+        <p><strong>Thêm một chút.</strong> Tìm số hạng: □ + 12 = 45 thì □ = 45 − 12 = 33. 36 hơn 29 là 7.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Đề “tìm hiệu” khác “tìm số hạng”. Đọc kỹ dấu và câu hỏi.</p>
+        <p><strong>Cẩn thận.</strong> Hỏi hiệu khác hỏi số hạng. Đọc hết câu.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Gạch chân đề: đang hỏi tổng, hiệu, hay hơn bao nhiêu?</p>
+        <p><strong>Mẹo nhỏ.</strong> Gạch chân: đang hỏi tổng, hiệu, hay hơn bao nhiêu?</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Làm vội không đọc hết câu.</li>
-          <li>Nhầm cộng/trừ.</li>
+          <li>Không đọc hết đề.</li>
+          <li>Nhầm cộng với trừ.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>42 + 35 = ? <em>— 77.</em></p>
         <p>36 hơn 29? <em>— 7.</em></p>
+        <p>Liền sau 99? <em>— 100.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 80 − 26: đơn vị 0 không trừ 6 → đây đã là có nhớ (mượn). 80 − 20 = 60, 60 − 6 = 54.</p>
+        <p><strong>Làm từng bước.</strong> 48 + 21 = 69. Kiểm: 69 − 21 = 48.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Chủ đề 1: số đến 100 + cộng trừ không nhớ + hơn kém.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Chủ đề 1: số 100, tia số, cộng trừ không nhớ, hơn kém.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"Liền trước của 70?","answer":69,"hint":"−1.","explain":"69."},
-      {"type":"num","prompt":"42 + 35 = ?","answer":77,"hint":"Cộng.","explain":"77."},
-      {"type":"num","prompt":"36 hơn 29?","answer":7,"hint":"Hiệu.","explain":"7."},
+      {"type":"num","prompt":"Liền trước của 70?","answer":69,"hint":"Lùi 1.","explain":"69."},
+      {"type":"num","prompt":"42 + 35 = ?","answer":77,"hint":"Không nhớ.","explain":"77."},
+      {"type":"num","prompt":"36 hơn 29 mấy?","answer":7,"hint":"36 − 29.","explain":"7."},
       {"type":"mc","prompt":"Trong 50 − 18 = 32, 32 là","choices":["Hiệu","Tổng","Số trừ","Số hạng"],"correct":0,"hint":"Kết quả trừ.","explain":"Hiệu."},
-      {"type":"num","prompt":"□ + 12 = 45. □=?","answer":33,"hint":"45−12.","explain":"33."},
+      {"type":"num","prompt":"Số nào cộng 12 được 45?","answer":33,"hint":"45 − 12.","explain":"33."},
       {"type":"num","prompt":"Có 17 bút, Lan lấy 8. Còn lại mấy?","answer":9,"hint":"Bớt → trừ.","explain":"17 − 8 = 9."},
       {"type":"num","prompt":"Trên kệ có 40 quyển sách, đem đi 23. Còn mấy quyển?","answer":17,"hint":"Trừ.","explain":"40 − 23 = 17."},
     ],
@@ -1200,7 +1276,27 @@ const G2_LESSONS = [
               <figcaption>Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</p>
-      <div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra An.</p></div>
+            <figure class="figure" data-animation="g2-b13-keywords">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
+          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra số của An.</p></div>      <figure class="figure" data-animation="g2-b13-compare">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
+          <rect x="60" y="98.4" width="60" height="41.599999999999994" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="180" y="104.4" width="60" height="35.6" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="90" y="155" font-size="12" text-anchor="middle">A = 18</text>
+          <text x="210" y="155" font-size="12" text-anchor="middle">B = 13</text>
+          <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
+        </svg>
+      </figure>
       <div class="definition">
         <p><strong>Nhớ này.</strong> A nhiều hơn B thì A = B + số hơn. A ít hơn B thì A = B − số ít.</p>
       </div>

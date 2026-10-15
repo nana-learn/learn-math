@@ -16,7 +16,11 @@ const C = {
 };
 
 const chapters = [
-  { id: 1, title: "Ôn tập và bổ sung" },
+  {
+    id: 1,
+    title: "Ôn tập và bổ sung",
+    intro: "Có 6 bài. Em ôn số đến 100, tia số, tên gọi trong phép cộng/trừ, hơn kém, rồi cộng trừ không nhớ. Làm từ Bài 1 nhé.",
+  },
   {
     id: 2,
     title: "Phép cộng, phép trừ trong phạm vi 20",
@@ -298,6 +302,26 @@ function svgPlaceValue2(tens, ones, n) {
           <text x="80" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${tens}</text>
           <text x="210" y="85" font-size="36" text-anchor="middle" fill="${C.d}">${ones}</text>
           <text x="160" y="150" font-size="14" text-anchor="middle">${tens}${ones} = ${tens} chục + ${ones} đơn vị</text>`
+  );
+}
+
+function svgHopLine() {
+  return fig(
+    "hop-line",
+    "Liền trước và liền sau",
+    `          <line x1="20" y1="70" x2="300" y2="70" stroke="${C.d}" stroke-width="2"/>
+          <polygon points="300,70 290,64 290,76" fill="${C.d}"/>
+          <circle cx="80" cy="70" r="8" fill="none" stroke="${C.b}" stroke-width="2"/>
+          <circle cx="160" cy="70" r="10" fill="none" stroke="${C.r}" stroke-width="2"/>
+          <circle cx="240" cy="70" r="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+          <text x="80" y="50" font-size="14" text-anchor="middle" fill="${C.b}">24</text>
+          <text x="160" y="48" font-size="16" text-anchor="middle" fill="${C.r}">25</text>
+          <text x="240" y="50" font-size="14" text-anchor="middle" fill="${C.g}">26</text>
+          <text x="80" y="100" font-size="11" text-anchor="middle">liền trước</text>
+          <text x="160" y="100" font-size="11" text-anchor="middle">số đang xét</text>
+          <text x="240" y="100" font-size="11" text-anchor="middle">liền sau</text>
+          <text x="160" y="130" font-size="13" text-anchor="middle">Lùi 1 → trước. Tiến 1 → sau</text>
+          <text x="160" y="150" font-size="12" text-anchor="middle" fill="${C.muted}">Trái nhỏ hơn, phải lớn hơn</text>`
   );
 }
 
@@ -1186,31 +1210,33 @@ function buildLessons() {
     "Đặt số trên tia số; tìm số liền trước và liền sau.",
     svgNumberLine([23, 24, 25, 26, 27], 25),
     {
-      why: "Tia số giúp “nhìn thấy” thứ tự các số. Số liền trước/sau dùng rất nhiều khi đếm và so sánh.",
-      def: "Trên tia số, các số tăng từ trái sang phải. <strong>Số liền trước</strong> của n là n - 1. <strong>Số liền sau</strong> là n + 1.",
-      easy: "Số liền trước của 25 là 24. Số liền sau của 25 là 26.",
-      step: "Số đứng giữa 18 và 20 trên tia số là 19. Từ 18 sang 20 phải bước đúng 2 đơn vị.",
-      trap: "Số liền sau của 29 là 30, không phải 20. Khi sang hàng chục mới, nhớ “đổi chục”.",
-      idea: "Liền trước = lùi 1 vạch; liền sau = tiến 1 vạch. Không nhảy cóc.",
-      warns: [
-        "Nhầm liền trước với liền sau.",
-        "Quên đổi hàng khi 39 → 40, 99 → 100.",
-      ],
+      why: "Đặt số lên tia số. Tìm số liền trước và liền sau.",
+      def: "Trên tia số, số to dần sang phải. <strong>Liền trước</strong> = lùi 1. <strong>Liền sau</strong> = tiến 1.",
+      easy: "Số 25. Liền trước là 24. Liền sau là 26.",
+      step: "Số đứng giữa 18 và 20 là 19. Từ 18 sang 20 bước đúng 2 vạch.",
+      trap: "Liền sau 29 là 30, không phải 20. Sang hàng chục mới thì nhớ đổi chục.",
+      idea: "Lùi 1 vạch → trước. Tiến 1 vạch → sau. Không nhảy cóc.",
+      warns: ["Nhầm trước với sau.", "Quên 39 → 40, 99 → 100."],
       checks: [
         { q: "Liền trước của 40?", a: "39." },
         { q: "Liền sau của 89?", a: "90." },
+        { q: "Giữa 14 và 16?", a: "15." },
       ],
-      slow: "Tìm số liền sau 99: 99 + 1. Đơn vị 9 + 1 = 10 → viết 0 nhớ 1 chục; 9 chục + 1 = 10 chục = 1 trăm → 100.",
-      memory: "Liền trước −1, liền sau +1. Trái nhỏ, phải lớn trên tia số.",
+      slow: "Liền sau 99: 99 + 1. 9 đơn vị + 1 = 10, viết 0 nhớ 1 chục. 9 chục + 1 = 10 chục = 100.",
+      memory: "Trước = trừ 1. Sau = cộng 1. Trái nhỏ, phải lớn.",
+      extraHtml: svgHopLine() +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 39, 40, 41. 40 nằm giữa. 39 liền trước 40. 41 liền sau 40.</p></div>` +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Trên tia số, số bên trái luôn nhỏ hơn số bên phải.</p></div>`,
     },
     [
-      exNum("Số liền trước của 56?", 55, "Trừ 1.", "55."),
-      exNum("Số liền sau của 79?", 80, "Cộng 1.", "80."),
+      exNum("Số liền trước của 56?", 55, "Lùi 1.", "55."),
+      exNum("Số liền sau của 79?", 80, "Tiến 1. Đổi chục.", "80."),
       exMC("Số đứng giữa 44 và 46 là", ["45", "43", "47", "40"], 0, "Giữa hai số cách 2.", "45."),
-      exNum("Liền sau của 99?", 100, "+1.", "100."),
-      exMC("Trên tia số, số bên trái 30 là số", ["bé hơn 30", "lớn hơn 30", "bằng 30", "không so được"], 0, "Trái → nhỏ.", "Bé hơn 30."),
-      exNum("Liền trước của 1?", 0, "0.", "0."),
-      exNum("Hai số liền sau liên tiếp của 10 là 11 và …?", 12, "+2.", "12."),
+      exNum("Liền sau của 99?", 100, "99 + 1.", "100."),
+      exMC("Số bên trái 30 trên tia số là số", ["bé hơn 30", "lớn hơn 30", "bằng 30", "không so được"], 0, "Trái nhỏ hơn.", "Bé hơn 30."),
+      exNum("Liền trước của 1?", 0, "1 − 1.", "0."),
+      exNum("Hai số liền sau 10 là 11 và …?", 12, "10, 11, 12.", "12."),
+      exNum("Liền trước của 40?", 39, "40 − 1.", "39."),
     ]
   );
 
@@ -1221,22 +1247,22 @@ function buildLessons() {
     "Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.",
     svgAddParts(8, 5, 13),
     {
-      why: "Biết tên từng “người trong phép tính” giúp giải bài tìm x và nói toán đúng.",
-      def: "Phép cộng a + b = c: a, b là <strong>số hạng</strong>, c là <strong>tổng</strong>. Phép trừ a - b = c: a <strong>số bị trừ</strong>, b <strong>số trừ</strong>, c <strong>hiệu</strong>.",
-      easy: "9 + 4 = 13: số hạng 9 và 4, tổng 13. 13 − 4 = 9: số bị trừ 13, số trừ 4, hiệu 9.",
-      step: "Muốn tìm một số hạng khi biết tổng và số hạng kia: lấy tổng trừ đi số hạng đã biết. Ví dụ □ + 6 = 15 → □ = 15 − 6 = 9.",
-      trap: "Không gọi nhầm “tổng” thành “hiệu”. Dấu + → tổng; dấu − → hiệu.",
-      idea: "Cộng và trừ là hai phép “ngược nhau”. Biết hai thành phần thì tìm được thành phần còn lại.",
-      warns: [
-        "Nhầm tên thành phần.",
-        "Tìm số hạng bằng cách cộng thay vì trừ.",
-      ],
+      why: "Gọi đúng tên trong phép cộng và phép trừ.",
+      def: "Cộng: hai <strong>số hạng</strong>, kết quả là <strong>tổng</strong>. Trừ: <strong>số bị trừ</strong> − <strong>số trừ</strong> = <strong>hiệu</strong>.",
+      easy: "9 + 4 = 13. 9 và 4 là số hạng. 13 là tổng.",
+      step: "13 − 4 = 9. 13 số bị trừ, 4 số trừ, 9 hiệu. Tìm số hạng: □ + 6 = 15 thì □ = 15 − 6 = 9.",
+      trap: "Tổng là kết quả cộng. Hiệu là kết quả trừ. Đừng gọi nhầm.",
+      idea: "Cộng và trừ ngược nhau. Biết hai số thì tìm được số còn lại.",
+      warns: ["Gọi nhầm tổng thành hiệu.", "Tìm số hạng mà cộng tiếp."],
       checks: [
-        { q: "Trong 7 + 8 = 15, 15 gọi là gì?", a: "Tổng." },
-        { q: "Trong 20 − 6 = 14, 6 gọi là gì?", a: "Số trừ." },
+        { q: "7 + 8 = 15. 15 gọi là gì?", a: "Tổng." },
+        { q: "20 − 6 = 14. 6 gọi là gì?", a: "Số trừ." },
+        { q: "Muốn tìm số hạng thì làm phép nào?", a: "Tổng trừ số hạng kia." },
       ],
-      slow: "Tìm số trừ: 18 − □ = 10. Muốn tìm số trừ: lấy số bị trừ trừ hiệu: 18 − 10 = 8. Kiểm: 18 − 8 = 10.",
+      slow: "18 − □ = 10. Tìm số trừ: 18 − 10 = 8. Kiểm: 18 − 8 = 10.",
       memory: "Cộng: số hạng + số hạng = tổng. Trừ: số bị trừ − số trừ = hiệu.",
+      extraHtml: svgSubParts(13, 5, 8) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 8 + 7 = 15. Đổi thành trừ: 15 − 7 = 8 và 15 − 8 = 7.</p></div>`,
     },
     [
       exMC("Trong 6 + 9 = 15, số 15 là", ["Tổng", "Hiệu", "Số trừ", "Số bị trừ"], 0, "Kết quả cộng.", "Tổng."),
@@ -1246,6 +1272,7 @@ function buildLessons() {
       exNum("□ + 5 = 14. □ = ?", 9, "14 − 5.", "9."),
       exNum("12 − □ = 7. □ = ?", 5, "12 − 7.", "5."),
       exMC("Muốn tìm số hạng, lấy", ["Tổng trừ số hạng kia", "Hai số hạng cộng", "Hiệu trừ tổng", "Không làm được"], 0, "Phép ngược.", "Tổng − số hạng kia."),
+      exNum("Lan có 9 kẹo, mẹ cho 6 kẹo. Tổng mấy kẹo?", 15, "Số hạng + số hạng.", "15."),
     ]
   );
 
@@ -1256,31 +1283,32 @@ function buildLessons() {
     "Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.",
     svgCompareBars(12, 8),
     {
-      why: "Trong đời sống ta hay hỏi “nhiều hơn bao nhiêu?” — đó chính là tìm hiệu.",
-      def: "A <strong>hơn</strong> B một số đơn vị nghĩa là A - B bằng số đó. A <strong>kém</strong> B nghĩa là B hơn A, tức B - A.",
-      easy: "Lan 12 viên bi, Minh 8. Lan hơn Minh 12 - 8 = 4 viên. Minh kém Lan 4 viên.",
-      step: "Sách An 25 trang, sách Bình 31 trang. Bình hơn An 31 - 25 = 6 trang.",
-      trap: "Câu “A hơn B bao nhiêu?” luôn lấy số lớn hơn trong hai số A, B trừ số bé hơn — không cộng A với B.",
-      idea: "Vẽ hai đoạn (hoặc hai cột): đoạn dài hơn — đoạn ngắn = phần hơn.",
-      warns: [
-        "Cộng thay vì trừ khi hỏi “hơn bao nhiêu”.",
-        "Trừ nhầm chiều (số bé trừ số lớn).",
-      ],
+      why: "Hỏi hơn kém bao nhiêu: lấy số lớn trừ số bé.",
+      def: "A <strong>hơn</strong> B nghĩa là A − B. A <strong>kém</strong> B nghĩa là B − A. Cùng một hiệu.",
+      easy: "Lan 12 bi, Minh 8 bi. Lan hơn Minh 12 − 8 = 4 bi. Minh kém Lan cũng 4 bi.",
+      step: "Sách An 25 trang, sách Bình 31 trang. Bình hơn An 31 − 25 = 6 trang.",
+      trap: "Hỏi “hơn bao nhiêu” thì trừ, không cộng hai số.",
+      idea: "Vẽ hai cột: cột cao trừ cột thấp = phần hơn.",
+      warns: ["Cộng khi hỏi hơn bao nhiêu.", "Số bé trừ số lớn."],
       checks: [
         { q: "15 hơn 9 bao nhiêu?", a: "6." },
         { q: "20 kém 28 bao nhiêu?", a: "8." },
+        { q: "Lan 12, Minh 8. Minh kém Lan?", a: "4." },
       ],
-      slow: "Nam 18 nhãn, Hoa 11 nhãn. Hỏi Nam hơn Hoa? 18 − 11: 8 − 1 = 7. Đáp án 7 nhãn.",
-      memory: "Hơn/kém bao nhiêu → phép trừ (tìm hiệu).",
+      slow: "Nam 18 nhãn, Hoa 11 nhãn. Nam hơn Hoa: 18 − 11 = 7 nhãn.",
+      memory: "Hơn / kém bao nhiêu → trừ (tìm hiệu).",
+      extraHtml: svgKeywords() +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Có 16 bút và 9 bút. Hơn kém nhau 16 − 9 = 7 bút.</p></div>`,
     },
     [
       exNum("17 hơn 10 bao nhiêu?", 7, "17 − 10.", "7."),
       exNum("25 kém 30 bao nhiêu?", 5, "30 − 25.", "5."),
       exNum("An có 14 tem, Bình có 9 tem. An hơn Bình mấy tem?", 5, "14 − 9.", "5."),
       exMC("“Kém nhau bao nhiêu” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Hiệu.", "Trừ."),
-      exNum("42 hơn 35?", 7, "42 − 35.", "7."),
-      exNum("Số lớn hơn 50 là 58. Lớn hơn mấy?", 8, "58 − 50.", "8."),
-      exNum("100 kém 100 bao nhiêu?", 0, "Bằng nhau.", "0."),
+      exNum("42 hơn 35 mấy?", 7, "42 − 35.", "7."),
+      exNum("58 lớn hơn 50 mấy?", 8, "58 − 50.", "8."),
+      exNum("Lan 12 bi, Minh 8 bi. Minh kém Lan mấy bi?", 4, "Cùng hiệu.", "4."),
+      exNum("Có 16 bút và 9 bút. Hơn kém mấy bút?", 7, "16 − 9.", "7."),
     ]
   );
 
@@ -1291,28 +1319,32 @@ function buildLessons() {
     "Cộng trừ không nhớ với số có hai chữ số.",
     svgColumnAdd(34, 52, false),
     {
-      why: "Đặt tính thẳng cột là nền để sau này cộng trừ có nhớ không bị lệch hàng.",
-      def: "Đặt tính: <strong>đơn vị thẳng đơn vị, chục thẳng chục</strong>. Cộng/trừ đơn vị trước, rồi đến chục. <em>Không nhớ</em> khi tổng đơn vị &lt; 10 và đơn vị đủ trừ.",
-      easy: "34 + 52: 4+2=6, 3+5=8 → 86. 67 − 23: 7−3=4, 6−2=4 → 44.",
-      step: "60 + 30 = 90 (số tròn chục). 99 − 40 = 59.",
-      trap: "Viết 8 + 21 thành lệch cột (8 thẳng với 2) sẽ ra sai. Luôn thẳng từ bên phải.",
-      idea: "Nhẩm từng hàng. Kiểm bằng phép ngược: tổng − một số hạng = số hạng kia.",
-      warns: ["Lệch cột khi đặt tính.", "Cộng chục với đơn vị."],
+      why: "Cộng trừ hai chữ số, không nhớ: thẳng cột cho đều.",
+      def: "Đặt tính: <strong>đơn vị thẳng đơn vị, chục thẳng chục</strong>. Cộng/trừ đơn vị trước, rồi đến chục. Không nhớ khi đơn vị cộng ra nhỏ hơn 10.",
+      easy: "34 + 52. 4+2=6, 3+5=8. Ra 86. 67 − 23. 7−3=4, 6−2=4. Ra 44.",
+      step: "60 + 30 = 90. 99 − 40 = 59.",
+      trap: "Viết 8 + 21 mà 8 thẳng với chữ 2 thì sai. Thẳng từ bên phải.",
+      idea: "Làm từng hàng. Kiểm: tổng trừ một số hạng ra số hạng kia.",
+      warns: ["Lệch cột.", "Cộng nhầm chục với đơn vị."],
       checks: [
         { q: "23 + 45 = ?", a: "68." },
         { q: "58 − 17 = ?", a: "41." },
+        { q: "Phải thẳng hàng nào trước?", a: "Hàng đơn vị (bên phải)." },
       ],
-      slow: "48 + 21. Đặt: 48. Dưới +21. 8+1=9; 4+2=6 → 69. Kiểm: 69 − 21 = 48.",
-      memory: "Thẳng cột, đơn vị trước. Không nhớ = mỗi hàng &lt; 10 khi cộng.",
+      slow: "48 + 21. Đơn vị 8+1=9. Chục 4+2=6. Ra 69. Kiểm: 69 − 21 = 48.",
+      memory: "Thẳng cột, đơn vị trước. Không nhớ khi mỗi hàng nhỏ hơn 10.",
+      extraHtml: svgColumnSub(67, 23) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 45 + 23. 5+3=8, 4+2=6. Ra 68.</p></div>`,
     },
     [
-      exNum("23 + 45 = ?", 68, "Không nhớ.", "68."),
-      exNum("58 − 17 = ?", 41, "Không nhớ.", "41."),
-      exNum("60 + 30 = ?", 90, "Tròn chục.", "90."),
-      exNum("99 − 40 = ?", 59, "Trừ chục.", "59."),
+      exNum("23 + 45 = ?", 68, "3+5=8; 2+4=6.", "68."),
+      exNum("58 − 17 = ?", 41, "8−7=1; 5−1=4.", "41."),
+      exNum("60 + 30 = ?", 90, "Số tròn chục.", "90."),
+      exNum("99 − 40 = ?", 59, "9 chục trừ 4 chục.", "59."),
       exMC("Phép nào không nhớ?", ["34 + 21", "28 + 15", "19 + 6", "47 + 8"], 0, "Đơn vị 4+1=5.", "34+21."),
-      exNum("11 + 22 + 33 = ?", 66, "66.", "66."),
-      exNum("85 − 30 = ?", 55, "Trừ.", "55."),
+      exNum("11 + 22 + 33 = ?", 66, "Cộng lần lượt.", "66."),
+      exNum("85 − 30 = ?", 55, "Trừ 3 chục.", "55."),
+      exNum("Có 34 tem, thêm 52 tem. Tất cả mấy tem?", 86, "34+52.", "86."),
     ]
   );
 
@@ -1323,28 +1355,32 @@ function buildLessons() {
     "Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.",
     svgReview("Luyện chủ đề 1"),
     {
-      why: "Gộp các ý vừa học để xem chỗ nào còn lung lay trước khi sang cộng qua 10.",
-      def: "Cùng lúc dùng: đọc viết số, liền trước/sau, tên thành phần phép tính, cộng trừ không nhớ, hơn kém.",
+      why: "Ôn cả chủ đề 1 trước khi sang cộng qua 10.",
+      def: "Số đến 100, tia số, tên phép tính, cộng trừ không nhớ, hơn kém.",
       easy: "Liền trước 70 là 69. 42 + 35 = 77.",
-      step: "Tìm số hạng: □ + 12 = 45 → □ = 33. 36 hơn 29 là 7.",
-      trap: "Đề “tìm hiệu” khác “tìm số hạng”. Đọc kỹ dấu và câu hỏi.",
-      idea: "Gạch chân đề: đang hỏi tổng, hiệu, hay hơn bao nhiêu?",
-      warns: ["Làm vội không đọc hết câu.", "Nhầm cộng/trừ."],
+      step: "Tìm số hạng: □ + 12 = 45 thì □ = 45 − 12 = 33. 36 hơn 29 là 7.",
+      trap: "Hỏi hiệu khác hỏi số hạng. Đọc hết câu.",
+      idea: "Gạch chân: đang hỏi tổng, hiệu, hay hơn bao nhiêu?",
+      warns: ["Không đọc hết đề.", "Nhầm cộng với trừ."],
       checks: [
         { q: "42 + 35 = ?", a: "77." },
         { q: "36 hơn 29?", a: "7." },
+        { q: "Liền sau 99?", a: "100." },
       ],
-      slow: "80 − 26: đơn vị 0 không trừ 6 → đây đã là có nhớ (mượn). 80 − 20 = 60, 60 − 6 = 54.",
-      memory: "Chủ đề 1: số đến 100 + cộng trừ không nhớ + hơn kém.",
+      slow: "48 + 21 = 69. Kiểm: 69 − 21 = 48.",
+      memory: "Chủ đề 1: số 100, tia số, cộng trừ không nhớ, hơn kém.",
+      extraHtml: svgPlaceValue2(6, 4, 6) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 52 gồm 5 chục 2 đơn vị. Liền sau 52 là 53.</p></div>`,
     },
     [
-      exNum("Liền trước của 70?", 69, "−1.", "69."),
-      exNum("42 + 35 = ?", 77, "Cộng.", "77."),
-      exNum("36 hơn 29?", 7, "Hiệu.", "7."),
+      exNum("Liền trước của 70?", 69, "Lùi 1.", "69."),
+      exNum("42 + 35 = ?", 77, "Không nhớ.", "77."),
+      exNum("36 hơn 29 mấy?", 7, "36 − 29.", "7."),
       exMC("Trong 50 − 18 = 32, 32 là", ["Hiệu", "Tổng", "Số trừ", "Số hạng"], 0, "Kết quả trừ.", "Hiệu."),
-      exNum("□ + 12 = 45. □=?", 33, "45−12.", "33."),
-      exNum("90 − 40 = ?", 50, "Trừ.", "50."),
-      exNum("Liền sau 99?", 100, "+1.", "100."),
+      exNum("Số nào cộng 12 được 45?", 33, "45 − 12.", "33."),
+      exNum("90 − 40 = ?", 50, "Trừ 4 chục.", "50."),
+      exNum("Liền sau 99?", 100, "99 + 1.", "100."),
+      exNum("Viết số 6 chục 4 đơn vị.", 64, "60 + 4.", "64."),
     ]
   );
 
@@ -1588,8 +1624,9 @@ function buildLessons() {
       ],
       slow: "Hùng 9 nhãn. Nam nhiều hơn Hùng 8. Nam = 9 + 8 = 17 nhãn.",
       memory: "Nhiều hơn mốc → cộng. Ít hơn mốc → trừ. Đọc rõ ai là mốc.",
-      extraHtml:
-        `<div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra An.</p></div>`,
+      extraHtml: svgKeywords() +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra số của An.</p></div>` +
+        svgCompareBars(18, 13),
     },
     [
       exNum("Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?", 13, "Nhiều hơn → cộng.", "13."),
