@@ -167,48 +167,113 @@ const G2_LESSONS = [
               <figcaption>Đếm, đọc, viết, so sánh số trong phạm vi 100.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đếm, đọc, viết, so sánh số trong phạm vi 100.</p>
+            <figure class="figure" data-animation="g2-b1-bundles">
+        <svg viewBox="0 0 320 160" role="img" aria-label="3 chục và 5 đơn vị">
+          <rect x="22" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="36" y="68" font-size="11" text-anchor="middle" fill="#83C167">10</text>
+          <rect x="64" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="78" y="68" font-size="11" text-anchor="middle" fill="#83C167">10</text>
+          <rect x="106" y="28" width="28" height="70" rx="3" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="120" y="68" font-size="11" text-anchor="middle" fill="#83C167">10</text>
+          <circle cx="160" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="178" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="196" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="214" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="232" cy="62" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="160" y="120" font-size="13" text-anchor="middle">3 bó que (mỗi bó 10) và 5 que rời</text>
+          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#FC6255">3 chục + 5 = 35</text>
+        </svg>
+      </figure>      <figure class="figure" data-animation="g2-b1-tens-line">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Các số tròn chục đến 100">
+          <line x1="14" y1="78" x2="306" y2="78" stroke="#333330" stroke-width="2"/>
+          <polygon points="306,78 296,72 296,84" fill="#333330"/>
+          <line x1="18" y1="55" x2="18" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="18" y="118" font-size="11" text-anchor="middle">0</text>
+          <line x1="46" y1="62" x2="46" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="46" y="102" font-size="11" text-anchor="middle">10</text>
+          <line x1="74" y1="62" x2="74" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="74" y="118" font-size="11" text-anchor="middle">20</text>
+          <line x1="102" y1="62" x2="102" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="102" y="102" font-size="11" text-anchor="middle">30</text>
+          <line x1="130" y1="62" x2="130" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="130" y="118" font-size="11" text-anchor="middle">40</text>
+          <line x1="158" y1="55" x2="158" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="158" y="102" font-size="11" text-anchor="middle">50</text>
+          <line x1="186" y1="62" x2="186" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="186" y="118" font-size="11" text-anchor="middle">60</text>
+          <line x1="214" y1="62" x2="214" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="214" y="102" font-size="11" text-anchor="middle">70</text>
+          <line x1="242" y1="62" x2="242" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="242" y="118" font-size="11" text-anchor="middle">80</text>
+          <line x1="270" y1="62" x2="270" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="270" y="102" font-size="11" text-anchor="middle">90</text>
+          <line x1="298" y1="55" x2="298" y2="78" stroke="#333330" stroke-width="2"/>
+          <text x="298" y="118" font-size="11" text-anchor="middle">100</text>
+          <text x="160" y="148" font-size="12" text-anchor="middle" fill="#83C167">Mỗi vạch lớn thêm 10 (một chục)</text>
+        </svg>
+      </figure>      <figure class="figure" data-animation="g2-b1-flip16">
+        <svg viewBox="0 0 320 160" role="img" aria-label="16 khác 61">
+          <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
+          <text x="80" y="80" font-size="12" text-anchor="middle" fill="#83C167">1 chục 6 đơn vị</text>
+          <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
+          <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
+          <text x="240" y="80" font-size="12" text-anchor="middle" fill="#FC6255">6 chục 1 đơn vị</text>
+          <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
+          <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 70 = 7 chục + 0 đơn vị. Chữ 0 giữ chỗ, không được bỏ. 4 chục = 40. 10 chục = 100.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> An có 24 viên bi, Bình có 42 viên. Hàng chục: 2 nhỏ hơn 4 nên An có ít hơn. 24 nhỏ hơn 42.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Mỗi số có hai chữ số gồm <strong>hàng chục</strong> (bên trái) và <strong>hàng đơn vị</strong> (bên phải). Ví dụ 47 = 4 chục + 7 đơn vị.</p>
+        <p><strong>Nhớ này.</strong> Số có hai chữ số: <strong>hàng chục</strong> bên trái, <strong>hàng đơn vị</strong> bên phải. 47 = 4 chục + 7 que rời.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> Số 35: 3 chục và 5 đơn vị. Đọc “ba mươi lăm”. Số 70: 7 chục 0 đơn vị — đọc “bảy mươi”.</p>
+        <p><strong>Cùng làm.</strong> Lan có 3 bó que (mỗi bó 10 que) và 5 que rời. 3 chục + 5 = 35. Đọc: ba mươi lăm.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> So sánh 58 và 85. Hàng chục: 5 < 8 nên 58 < 85. So 72 và 78: cùng 7 chục, nhìn đơn vị 2 < 8 nên 72 < 78.</p>
+        <p><strong>Thêm một chút.</strong> So 58 và 85. Nhìn hàng chục trước: 5 nhỏ hơn 8 nên 58 nhỏ hơn 85. So 72 và 78: cùng 7 chục, nhìn đơn vị 2 nhỏ hơn 8 nên 72 nhỏ hơn 78.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> 16 và 61 trông giống chữ số nhưng khác nhau. 16 = 1 chục 6 đơn vị; 61 = 6 chục 1 đơn vị. Đọc và viết đúng chiều trái → phải.</p>
+        <p><strong>Cẩn thận.</strong> 16 và 61 dùng cùng chữ số 1 và 6 nhưng chỗ đứng khác. 16 là mười sáu. 61 là sáu mươi mốt. Đọc từ trái sang phải.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Muốn đọc/viết đúng: chỉ hàng chục trước, rồi hàng đơn vị. Muốn so sánh: so hàng chục trước; nếu bằng nhau mới so đơn vị.</p>
+        <p><strong>Mẹo nhỏ.</strong> Đọc và viết: chục trước, đơn vị sau. So sánh: chục trước; chục bằng nhau thì so đơn vị.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Đảo chữ số (16 ↔ 61).</li>
-          <li>Quên số 0 ở đơn vị (70  không bằng  7).</li>
-          <li>So sánh chỉ nhìn chữ số đầu tiên mà không hiểu là hàng chục.</li>
+          <li>Đảo chữ số: 16 không phải 61.</li>
+          <li>Số 0 cũng là một chữ số: 70 không phải 7. Đọc bảy mươi.</li>
+          <li>So sánh đừng chỉ nhìn chữ số to. 9 trong 19 nhỏ hơn 2 trong 20, vì 19 chỉ có 1 chục.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>52 gồm mấy chục, mấy đơn vị? <em>— 5 chục, 2 đơn vị.</em></p>
-        <p>Số nào lớn hơn: 39 hay 93? <em>— 93.</em></p>
+        <p>39 và 93, số nào lớn hơn? <em>— 93.</em></p>
+        <p>70 đọc thế nào? <em>— Bảy mươi.</em></p>
+        <p>8 chục 0 đơn vị viết số nào? <em>— 80.</em></p>
+        <p>40 và 39, số nào lớn hơn? <em>— 40.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Viết số gồm 6 chục và 4 đơn vị. Bước 1: 6 chục = 60. Bước 2: thêm 4 đơn vị → 64. Đọc: sáu mươi tư.</p>
+        <p><strong>Làm từng bước.</strong> Viết số 6 chục và 4 đơn vị. Bước 1: 6 chục = 60. Bước 2: thêm 4. Ra 64. Đọc: sáu mươi tư.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Hai chữ số: chục | đơn vị. So sánh: chục trước, đơn vị sau.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Trái là chục, phải là đơn vị. So sánh: chục trước, đơn vị sau.</p></div>
     `,
     exercises: [
       {"type":"text","prompt":"Đọc số 70 (gõ không dấu cũng được):","answer":"bay muoi","accept":["bay muoi","bảy mươi","bay muoi"],"hint":"bảy mươi","explain":"bảy mươi."},
+      {"type":"mc","prompt":"Số 47: chữ số bên trái là hàng nào?","choices":["Hàng chục","Hàng đơn vị","Hàng trăm","Không biết"],"correct":0,"hint":"Bên trái = chục.","explain":"Hàng chục."},
       {"type":"mc","prompt":"Số 48 gồm","choices":["4 chục 8 đơn vị","8 chục 4 đơn vị","48 chục","12 đơn vị"],"correct":0,"hint":"Trái = chục.","explain":"4 chục 8 đơn vị."},
       {"type":"num","prompt":"Viết số gồm 9 chục và 0 đơn vị.","answer":90,"hint":"9 chục = 90.","explain":"90."},
-      {"type":"mc","prompt":"Số lớn nhất trong các số 27, 72, 17, 71 là","choices":["72","27","71","17"],"correct":0,"hint":"So hàng chục.","explain":"72."},
-      {"type":"num","prompt":"Số liền sau 99 là","answer":100,"hint":"+1.","explain":"100."},
+      {"type":"num","prompt":"3 bó que (mỗi bó 10) và 5 que rời. Tất cả mấy que?","answer":35,"hint":"30 + 5.","explain":"35."},
+      {"type":"mc","prompt":"Số lớn nhất trong 27, 72, 17, 71 là","choices":["72","27","71","17"],"correct":0,"hint":"So hàng chục trước.","explain":"72."},
+      {"type":"mc","prompt":"16 và 61, số nào lớn hơn?","choices":["61","16","Bằng nhau","Không so được"],"correct":0,"hint":"6 chục > 1 chục.","explain":"61."},
+      {"type":"num","prompt":"Số liền sau 99 là","answer":100,"hint":"Thêm 1.","explain":"100."},
       {"type":"mc","prompt":"Số nhỏ nhất: 45, 54, 40, 50","choices":["40","45","50","54"],"correct":0,"hint":"So chục rồi đơn vị.","explain":"40."},
-      {"type":"num","prompt":"An có 7 chục que và 4 que rời. Tất cả mấy que?","answer":74,"hint":"chục × 10 + đơn vị.","explain":"74."},
-      {"type":"num","prompt":"Viết số gồm 6 chục và 4 đơn vị.","answer":64,"hint":"Ghép hàng.","explain":"64."},
+      {"type":"mc","prompt":"Đọc số 70","choices":["Bảy mươi","Bảy không","Bảy đơn vị","Mười bảy"],"correct":0,"hint":"7 chục.","explain":"Bảy mươi."},
+      {"type":"num","prompt":"Viết số gồm 6 chục và 4 đơn vị.","answer":64,"hint":"60 + 4.","explain":"64."},
+      {"type":"num","prompt":"An có 2 chục bi, Bình có 5 chục bi. Bình hơn An mấy chục?","answer":3,"hint":"5 − 2.","explain":"3."},
+      {"type":"mc","prompt":"40 so với 39","choices":["40 lớn hơn","40 nhỏ hơn","Bằng nhau","Không so được"],"correct":0,"hint":"4 chục > 3 chục.","explain":"40 lớn hơn."},
     ],
   },
 
@@ -239,6 +304,7 @@ const G2_LESSONS = [
               <figcaption>Đặt số trên tia số; tìm số liền trước và liền sau.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đặt số trên tia số; tìm số liền trước và liền sau.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trên tia số, các số tăng từ trái sang phải. <strong>Số liền trước</strong> của n là n - 1. <strong>Số liền sau</strong> là n + 1.</p>
       </div>
@@ -308,6 +374,7 @@ const G2_LESSONS = [
               <figcaption>Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phép cộng a + b = c: a, b là <strong>số hạng</strong>, c là <strong>tổng</strong>. Phép trừ a - b = c: a <strong>số bị trừ</strong>, b <strong>số trừ</strong>, c <strong>hiệu</strong>.</p>
       </div>
@@ -369,6 +436,7 @@ const G2_LESSONS = [
               <figcaption>Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> A <strong>hơn</strong> B một số đơn vị nghĩa là A - B bằng số đó. A <strong>kém</strong> B nghĩa là B hơn A, tức B - A.</p>
       </div>
@@ -441,6 +509,7 @@ const G2_LESSONS = [
               <figcaption>Cộng trừ không nhớ với số có hai chữ số.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng trừ không nhớ với số có hai chữ số.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính: <strong>đơn vị thẳng đơn vị, chục thẳng chục</strong>. Cộng/trừ đơn vị trước, rồi đến chục. <em>Không nhớ</em> khi tổng đơn vị &lt; 10 và đơn vị đủ trừ.</p>
       </div>
@@ -510,6 +579,7 @@ const G2_LESSONS = [
               <figcaption>Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cùng lúc dùng: đọc viết số, liền trước/sau, tên thành phần phép tính, cộng trừ không nhớ, hơn kém.</p>
       </div>
@@ -577,6 +647,7 @@ const G2_LESSONS = [
               <figcaption>Cộng hai số có tổng lớn hơn 10, không quá 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số có tổng lớn hơn 10, không quá 20.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng <strong>qua 10</strong>: tách số sau cho đủ 10, rồi cộng phần còn. Ví dụ 8 cần thêm 2 nữa là 10.</p>
       </div>
@@ -644,6 +715,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc các công thức cộng qua 10 trong phạm vi 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc các công thức cộng qua 10 trong phạm vi 20.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Bảng cộng qua 10 gồm các công thức như 9+2,ldots,9+9; 8+3,ldots,8+9; … có tổng từ 11 đến 18.</p>
       </div>
@@ -705,6 +777,7 @@ const G2_LESSONS = [
               <figcaption>Lời văn: thêm → cộng; bớt → trừ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Lời văn: thêm → cộng; bớt → trừ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Thêm / cho thêm / lớn lên</strong> → cộng. <strong>Bớt / lấy đi / còn lại</strong> → trừ.</p>
       </div>
@@ -775,6 +848,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ qua 10 và bài toán thêm bớt.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và bài toán thêm bớt.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Kết hợp bảng cộng và lời văn thêm/bớt trong phạm vi 20.</p>
       </div>
@@ -842,6 +916,7 @@ const G2_LESSONS = [
               <figcaption>Trừ khi không đủ đơn vị, phạm vi 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ khi không đủ đơn vị, phạm vi 20.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Có thể trừ bằng cách tách, hoặc nghĩ ngược: a - b = □ nghĩa là b + □ = a.</p>
       </div>
@@ -909,6 +984,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc các phép trừ qua 10 trong phạm vi 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc các phép trừ qua 10 trong phạm vi 20.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nếu a + b = c thì c - a = b và c - b = a.</p>
       </div>
@@ -970,6 +1046,7 @@ const G2_LESSONS = [
               <figcaption>Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> A nhiều hơn B k đơn vị  thì  A = B + k. A ít hơn B k  thì  A = B - k.</p>
       </div>
@@ -1040,6 +1117,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn nhẩm + lời văn nhiều hơn/ít hơn/thêm/bớt.</p>
       </div>
@@ -1102,6 +1180,7 @@ const G2_LESSONS = [
               <figcaption>Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Ki-lô-gam</strong> viết tắt <strong>kg</strong>, dùng đo khối lượng. So sánh: nặng hơn, nhẹ hơn.</p>
       </div>
@@ -1165,6 +1244,7 @@ const G2_LESSONS = [
               <figcaption>Đơn vị dung tích lít (l).</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị dung tích lít (l).</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Lít</strong> viết tắt <strong>l</strong>, đo dung tích (sức chứa chất lỏng).</p>
       </div>
@@ -1229,6 +1309,7 @@ const G2_LESSONS = [
               <figcaption>Ước lượng và tính với kg, l.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ước lượng và tính với kg, l.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chỉ cộng/trừ khi <strong>cùng đơn vị</strong>. Ước lượng trước, đo/kiểm sau.</p>
       </div>
@@ -1298,6 +1379,7 @@ const G2_LESSONS = [
               <figcaption>Ôn kg, l và so sánh nặng nhẹ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg, l và so sánh nặng nhẹ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> kg khối lượng; l dung tích; cộng trừ cùng loại.</p>
       </div>
@@ -1365,6 +1447,7 @@ const G2_LESSONS = [
               <figcaption>Cộng có nhớ: tổng đơn vị từ 10 trở lên.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có nhớ: tổng đơn vị từ 10 trở lên.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng đơn vị trước. Nếu ra từ 10 trở lên: viết chữ số đơn vị, <strong>nhớ 1</strong> sang hàng chục.</p>
       </div>
@@ -1435,6 +1518,7 @@ const G2_LESSONS = [
               <figcaption>Cộng hai số có hai chữ số, có nhớ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số có hai chữ số, có nhớ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính thẳng cột. Cộng đơn vị (nhớ nếu cần), rồi cộng chục kèm nhớ.</p>
       </div>
@@ -1504,6 +1588,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng có nhớ trong phạm vi 100.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng có nhớ trong phạm vi 100.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn dạng 2 chữ số + 1 chữ số và 2 + 2 chữ số; tìm số hạng.</p>
       </div>
@@ -1571,6 +1656,7 @@ const G2_LESSONS = [
               <figcaption>Trừ có nhớ khi đơn vị không đủ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ có nhớ khi đơn vị không đủ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Khi đơn vị số bị trừ &lt; đơn vị số trừ: <strong>mượn 1 chục</strong> (thêm 10 đơn vị), trừ đơn vị, rồi giảm 1 ở hàng chục.</p>
       </div>
@@ -1639,6 +1725,7 @@ const G2_LESSONS = [
               <figcaption>Trừ hai số có hai chữ số, có nhớ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ hai số có hai chữ số, có nhớ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính. Mượn khi cần ở đơn vị; trừ chục (đã trừ 1 nếu mượn).</p>
       </div>
@@ -1708,6 +1795,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ phạm vi 100.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chọn cộng/trừ theo đề; có nhớ khi cần.</p>
       </div>
@@ -1774,6 +1862,7 @@ const G2_LESSONS = [
               <figcaption>Nhận biết các đối tượng hình học phẳng cơ bản.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết các đối tượng hình học phẳng cơ bản.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Điểm</strong> là một chấm. <strong>Đoạn thẳng</strong> có hai đầu. <strong>Đường thẳng</strong> kéo dài mãi hai phía. <strong>Đường cong</strong> không thẳng. Ba điểm <strong>thẳng hàng</strong> khi nằm trên một đường thẳng.</p>
       </div>
@@ -1835,6 +1924,7 @@ const G2_LESSONS = [
               <figcaption>Nhận biết đường gấp khúc và hình tứ giác.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết đường gấp khúc và hình tứ giác.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Đường gấp khúc</strong> gồm nhiều đoạn thẳng nối tiếp. <strong>Tứ giác</strong> có 4 cạnh, 4 đỉnh, 4 góc.</p>
       </div>
@@ -1902,6 +1992,7 @@ const G2_LESSONS = [
               <figcaption>Thực hành tạo hình; vẽ đoạn qua hai điểm.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành tạo hình; vẽ đoạn qua hai điểm.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Vẽ đoạn thẳng: chấm hai điểm, dùng thước nối. Ghép hình: cạnh khớp cạnh.</p>
       </div>
@@ -1968,6 +2059,7 @@ const G2_LESSONS = [
               <figcaption>Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phân biệt nhanh đoạn / đường thẳng / cong / tứ giác / tam giác.</p>
       </div>
@@ -2035,6 +2127,7 @@ const G2_LESSONS = [
               <figcaption>Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 ngày = 24 giờ. 1 giờ = 60 phút. <strong>Kim giờ</strong> ngắn, <strong>kim phút</strong> dài. Kim phút ở 12: giờ đúng; ở 6: giờ rưỡi (30 phút).</p>
       </div>
@@ -2101,6 +2194,7 @@ const G2_LESSONS = [
               <figcaption>Xem lịch: ngày, tháng; số ngày cơ bản.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Xem lịch: ngày, tháng; số ngày cơ bản.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 tuần = 7 ngày. Tháng có 30 hoặc 31 ngày; tháng 2 có 28 hoặc 29 ngày.</p>
       </div>
@@ -2166,6 +2260,7 @@ const G2_LESSONS = [
               <figcaption>Thực hành đọc giờ và lịch.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành đọc giờ và lịch.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nối hoạt động với mốc giờ: đến trường, ăn cơm, đi ngủ. Đọc thứ-ngày trên lịch.</p>
       </div>
@@ -2231,6 +2326,7 @@ const G2_LESSONS = [
               <figcaption>Ôn ngày giờ, giờ phút, ngày tháng.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn ngày giờ, giờ phút, ngày tháng.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Giờ–phút–ngày–tháng; đổi 1 giờ rưỡi = 90 phút.</p>
       </div>
@@ -2301,6 +2397,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng trừ phạm vi 20 và 100, có và không nhớ.</p>
       </div>
@@ -2367,6 +2464,7 @@ const G2_LESSONS = [
               <figcaption>Ôn điểm, đoạn, đường, tứ giác.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn điểm, đoạn, đường, tứ giác.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Điểm, đoạn, đường, cong, tứ giác, gấp khúc.</p>
       </div>
@@ -2428,6 +2526,7 @@ const G2_LESSONS = [
               <figcaption>Ôn kg, l.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg, l.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng trừ chỉ khi cùng đơn vị. kg = khối lượng; l = dung tích.</p>
       </div>
@@ -2498,6 +2597,7 @@ const G2_LESSONS = [
               <figcaption>Tổng ôn học kì I.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Tổng ôn học kì I.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số, phép tính, hình, đo, thời gian.</p>
       </div>
@@ -2565,6 +2665,7 @@ const G2_LESSONS = [
               <figcaption>Nhân là cộng các số hạng bằng nhau.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhân là cộng các số hạng bằng nhau.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cùng một số cộng lặp lại thì viết thành phép nhân. 2 + 2 + 2 + 2 = 2 × 4 = 8. Dấu × đọc “nhân”.</p>
       </div>
@@ -2639,6 +2740,7 @@ const G2_LESSONS = [
               <figcaption>Gọi tên thành phần phép nhân.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Gọi tên thành phần phép nhân.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trong a × b = c: a, b là <strong>thừa số</strong>; c là <strong>tích</strong>. Đổi chỗ thừa số, tích không đổi.</p>
       </div>
@@ -2721,6 +2823,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc bảng nhân 2.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng nhân 2.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 2 × n = n + n. Dãy tích: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.</p>
       </div>
@@ -2815,6 +2918,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc bảng nhân 5.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng nhân 5.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Dãy tích bảng 5: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50.</p>
       </div>
@@ -2886,6 +2990,7 @@ const G2_LESSONS = [
               <figcaption>Chia là chia đều / tách nhóm bằng nhau; ngược nhân.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Chia là chia đều / tách nhóm bằng nhau; ngược nhân.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phép chia ngược với phép nhân. 8 : 2 = 4 vì 2 × 4 = 8. Dấu : đọc “chia”.</p>
       </div>
@@ -2959,6 +3064,7 @@ const G2_LESSONS = [
               <figcaption>Gọi tên thành phần phép chia.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Gọi tên thành phần phép chia.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> a : b = c — a <strong>số bị chia</strong>, b <strong>số chia</strong>, c <strong>thương</strong>.</p>
       </div>
@@ -3036,6 +3142,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc bảng chia 2.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng chia 2.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nếu 2 × k = n thì n : 2 = k. Các số chẵn: 2,4,…,20.</p>
       </div>
@@ -3133,6 +3240,7 @@ const G2_LESSONS = [
               <figcaption>Thuộc bảng chia 5.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng chia 5.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nếu 5 × k = n thì n : 5 = k.</p>
       </div>
@@ -3202,6 +3310,7 @@ const G2_LESSONS = [
               <figcaption>Ôn nhân chia 2 và 5; thừa số, thương.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn nhân chia 2 và 5; thừa số, thương.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nhân/chia 2, 5; bài toán nhóm đều.</p>
       </div>
@@ -3265,6 +3374,7 @@ const G2_LESSONS = [
               <figcaption>Nhận biết khối trụ và khối cầu trong thực tiễn.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết khối trụ và khối cầu trong thực tiễn.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Khối cầu</strong> tròn đều như bóng. <strong>Khối trụ</strong> như lon/ống, có hai đáy tròn và mặt cong bên.</p>
       </div>
@@ -3330,6 +3440,7 @@ const G2_LESSONS = [
               <figcaption>Ôn nhận dạng khối trụ, khối cầu.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn nhận dạng khối trụ, khối cầu.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chọn đồ vật thật ứng với khối trụ/cầu.</p>
       </div>
@@ -3398,6 +3509,7 @@ const G2_LESSONS = [
               <figcaption>Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 10 đơn vị = 1 chục; 10 chục = 1 trăm = 100; 10 trăm = 1 nghìn = 1000.</p>
       </div>
@@ -3465,6 +3577,7 @@ const G2_LESSONS = [
               <figcaption>Nhận biết số tròn trăm, tròn chục.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết số tròn trăm, tròn chục.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số <strong>tròn chục</strong> tận cùng bằng 0. Số <strong>tròn trăm</strong> tận cùng bằng 00.</p>
       </div>
@@ -3532,6 +3645,7 @@ const G2_LESSONS = [
               <figcaption>So sánh nhanh số tròn trăm, tròn chục.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> So sánh nhanh số tròn trăm, tròn chục.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> So hàng trăm trước, rồi hàng chục, rồi đơn vị.</p>
       </div>
@@ -3598,6 +3712,7 @@ const G2_LESSONS = [
               <figcaption>Đọc, viết số có ba chữ số.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đọc, viết số có ba chữ số.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số có ba chữ số: hàng trăm, chục, đơn vị. 0 ở giữa đọc “linh” (208 = hai trăm linh tám).</p>
       </div>
@@ -3665,6 +3780,7 @@ const G2_LESSONS = [
               <figcaption>Phân tích: 365 = 300 + 60 + 5.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Phân tích: 365 = 300 + 60 + 5.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Mỗi chữ số nhân giá trị hàng: 472 = 400 + 70 + 2.</p>
       </div>
@@ -3732,6 +3848,7 @@ const G2_LESSONS = [
               <figcaption>So sánh số có ba chữ số.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> So sánh số có ba chữ số.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> So hàng trăm → chục → đơn vị.</p>
       </div>
@@ -3800,6 +3917,7 @@ const G2_LESSONS = [
               <figcaption>Ôn số đến 1000: đọc viết, phân tích, so sánh.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số đến 1000: đọc viết, phân tích, so sánh.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đọc viết, tròn trăm/chục, phân tích, so sánh.</p>
       </div>
@@ -3865,6 +3983,7 @@ const G2_LESSONS = [
               <figcaption>Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 m = 10 dm; 1 km = 1000 m. (Ôn: 1 dm = 10 cm.)</p>
       </div>
@@ -3930,6 +4049,7 @@ const G2_LESSONS = [
               <figcaption>Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đơn vị tiền: <strong>đồng</strong>. Làm quen mệnh giá 1000, 2000, 5000, 10000 đồng…</p>
       </div>
@@ -3995,6 +4115,7 @@ const G2_LESSONS = [
               <figcaption>Thực hành đo bằng thước; ước lượng.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành đo bằng thước; ước lượng.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt điểm 0 của thước khớp điểm đầu. Cộng trừ số đo cùng đơn vị.</p>
       </div>
@@ -4058,6 +4179,7 @@ const G2_LESSONS = [
               <figcaption>Ôn dm, m, km và tiền Việt Nam.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn dm, m, km và tiền Việt Nam.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đổi đơn vị đơn giản; cộng trừ tiền và độ dài.</p>
       </div>
@@ -4124,6 +4246,7 @@ const G2_LESSONS = [
               <figcaption>Cộng số có ba chữ số không nhớ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng số có ba chữ số không nhớ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng từng hàng: đơn vị, chục, trăm. Không nhớ khi mỗi hàng &lt; 10.</p>
       </div>
@@ -4194,6 +4317,7 @@ const G2_LESSONS = [
               <figcaption>Cộng có nhớ trong phạm vi 1000.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có nhớ trong phạm vi 1000.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nhớ từ đơn vị sang chục, từ chục sang trăm khi tổng hàng từ 10 trở lên.</p>
       </div>
@@ -4260,6 +4384,7 @@ const G2_LESSONS = [
               <figcaption>Trừ số có ba chữ số không nhớ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ số có ba chữ số không nhớ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trừ từng hàng khi mỗi hàng đủ trừ.</p>
       </div>
@@ -4328,6 +4453,7 @@ const G2_LESSONS = [
               <figcaption>Trừ có nhớ/mượn trong phạm vi 1000.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ có nhớ/mượn trong phạm vi 1000.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Mượn hàng khi cần; nhớ đã mượn thì hàng bên trái giảm 1.</p>
       </div>
@@ -4397,6 +4523,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ trong phạm vi 1000.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ trong phạm vi 1000.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn có nhớ / không nhớ; tìm số hạng.</p>
       </div>
@@ -4467,6 +4594,7 @@ const G2_LESSONS = [
               <figcaption>Thu thập và đếm theo nhóm.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thu thập và đếm theo nhóm.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phân loại theo đặc điểm (màu, loại…), rồi kiểm đếm số lượng mỗi nhóm.</p>
       </div>
@@ -4537,6 +4665,7 @@ const G2_LESSONS = [
               <figcaption>Đọc và hiểu biểu đồ tranh.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Đọc và hiểu biểu đồ tranh.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Mỗi tranh/hình biểu diễn một số đơn vị (xem chú thích: thường 1 hình = 1). Đếm hình → số liệu.</p>
       </div>
@@ -4607,6 +4736,7 @@ const G2_LESSONS = [
               <figcaption>Dùng đúng ba từ khả năng.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Dùng đúng ba từ khả năng.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Chắc chắn</strong>: luôn xảy ra. <strong>Không thể</strong>: không bao giờ. <strong>Có thể</strong>: không chắc, còn khả năng khác.</p>
       </div>
@@ -4679,6 +4809,7 @@ const G2_LESSONS = [
               <figcaption>Thực hành thống kê đơn giản ở lớp.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành thống kê đơn giản ở lớp.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Thu thập → phân loại → đếm → nhận xét hơn/kém/tổng.</p>
       </div>
@@ -4745,6 +4876,7 @@ const G2_LESSONS = [
               <figcaption>Ôn đọc viết so sánh số đến 1000.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn đọc viết so sánh số đến 1000.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đọc, viết, phân tích, so sánh số có ba chữ số và 1000. Chú ý chữ số 0 giữ hàng.</p>
       </div>
@@ -4816,6 +4948,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ có nhớ phạm vi 100.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ phạm vi 100.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính thẳng cột. Cộng: nhớ khi đv từ 10 trở lên. Trừ: mượn khi đv không đủ.</p>
       </div>
@@ -4882,6 +5015,7 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ phạm vi 1000.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ phạm vi 1000.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng/trừ theo hàng trăm-chục-đv, nhớ/mượn có thể lan sang hàng trăm.</p>
       </div>
@@ -4951,6 +5085,7 @@ const G2_LESSONS = [
               <figcaption>Ôn bảng 2 và 5.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn bảng 2 và 5.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nhân 2, 5 và chia 2, 5. Kiểm chia bằng nhân ngược.</p>
       </div>
@@ -5014,6 +5149,7 @@ const G2_LESSONS = [
               <figcaption>Ôn hình phẳng và hình khối.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn hình phẳng và hình khối.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đoạn (2 mút), đường thẳng (kéo dài), tứ giác (4 cạnh), khối cầu (bóng), khối trụ (lon/ống).</p>
       </div>
@@ -5078,6 +5214,7 @@ const G2_LESSONS = [
               <figcaption>Ôn kg, l, dm, m, km, tiền, giờ.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg, l, dm, m, km, tiền, giờ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 m = 10 dm; 1 km = 1000 m; 1 giờ = 60 phút; kg; l; tiền đồng.</p>
       </div>
@@ -5146,6 +5283,7 @@ const G2_LESSONS = [
               <figcaption>Ôn biểu đồ tranh và chắc chắn/có thể/không thể.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn biểu đồ tranh và chắc chắn/có thể/không thể.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đếm/phân loại; biểu đồ tranh (xem chú thích); chắc chắn / có thể / không thể.</p>
       </div>
@@ -5215,6 +5353,7 @@ const G2_LESSONS = [
               <figcaption>Tổng ôn cuối năm Toán 2.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Tổng ôn cuối năm Toán 2.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Ôn nhanh các mạch chính Toán 2 KNTT trước khi lên lớp 3.</p>
       </div>
@@ -5285,6 +5424,7 @@ const G2_LESSONS = [
               <figcaption>Luyện đề ngắn học kì 1</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> 10 câu trộn: số đến 100, cộng trừ có nhớ, hình, kg/l, giờ.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> Có 10 câu. Làm từng câu, không vội. Có cộng trừ, hình, kg, lít, giờ.</p>
       </div>
@@ -5358,6 +5498,7 @@ const G2_LESSONS = [
               <figcaption>Luyện đề ngắn cuối năm</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> 12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.</p>
+      
       <div class="definition">
         <p><strong>Nhớ này.</strong> 12 câu phủ số đến 1000, cộng trừ có nhớ, bảng 2&5, đo lường, hình khối, biểu đồ/khả năng.</p>
       </div>

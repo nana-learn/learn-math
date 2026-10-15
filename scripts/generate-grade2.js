@@ -228,6 +228,61 @@ ${inner}
 }
 
 // --- SVG builders ---
+function svgBundles(tens, ones) {
+  let g = "";
+  for (let i = 0; i < tens; i++) {
+    const x = 22 + i * 42;
+    g += `          <rect x="${x}" y="28" width="28" height="70" rx="3" fill="none" stroke="${C.g}" stroke-width="2"/>\n`;
+    g += `          <text x="${x + 14}" y="68" font-size="11" text-anchor="middle" fill="${C.g}">10</text>\n`;
+  }
+  for (let j = 0; j < ones; j++) {
+    const x = 22 + tens * 42 + 12 + j * 18;
+    g += `          <circle cx="${x}" cy="62" r="7" fill="none" stroke="${C.b}" stroke-width="2"/>\n`;
+  }
+  return fig(
+    "bundles",
+    `${tens} chục và ${ones} đơn vị`,
+    `${g}          <text x="160" y="120" font-size="13" text-anchor="middle">${tens} bó que (mỗi bó 10) và ${ones} que rời</text>
+          <text x="160" y="145" font-size="16" text-anchor="middle" fill="${C.r}">${tens} chục + ${ones} = ${tens * 10 + ones}</text>`
+  );
+}
+
+function svgFlip16vs61() {
+  return fig(
+    "flip16",
+    "16 khác 61",
+    `          <rect x="20" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+          <text x="80" y="55" font-size="28" text-anchor="middle">1 6</text>
+          <text x="80" y="80" font-size="12" text-anchor="middle" fill="${C.g}">1 chục 6 đơn vị</text>
+          <text x="80" y="100" font-size="14" text-anchor="middle">mười sáu</text>
+          <rect x="180" y="25" width="120" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+          <text x="240" y="55" font-size="28" text-anchor="middle">6 1</text>
+          <text x="240" y="80" font-size="12" text-anchor="middle" fill="${C.r}">6 chục 1 đơn vị</text>
+          <text x="240" y="100" font-size="14" text-anchor="middle">sáu mươi mốt</text>
+          <text x="160" y="145" font-size="13" text-anchor="middle">Cùng chữ số 1 và 6 nhưng chỗ đứng khác nhau</text>`
+  );
+}
+
+function svgTensLine() {
+  const nums = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+  const ticks = nums
+    .map((v, i) => {
+      const x = 18 + i * 28;
+      const big = v % 50 === 0;
+      return `          <line x1="${x}" y1="${big ? 55 : 62}" x2="${x}" y2="78" stroke="${C.d}" stroke-width="2"/>
+          <text x="${x}" y="${i % 2 ? 102 : 118}" font-size="11" text-anchor="middle">${v}</text>`;
+    })
+    .join("\n");
+  return fig(
+    "tens-line",
+    "Các số tròn chục đến 100",
+    `          <line x1="14" y1="78" x2="306" y2="78" stroke="${C.d}" stroke-width="2"/>
+          <polygon points="306,78 296,72 296,84" fill="${C.d}"/>
+${ticks}
+          <text x="160" y="148" font-size="12" text-anchor="middle" fill="${C.g}">Mỗi vạch lớn thêm 10 (một chục)</text>`
+  );
+}
+
 function svgPlaceValue2(tens, ones, n) {
   return fig(
     `g2-b${n}-place`,
@@ -751,6 +806,7 @@ function body(parts) {
     slow,
     memory,
     caption,
+    extraHtml,
   } = parts;
   const warnList = (warns || [])
     .map((w) => `<li>${kidText(w)}</li>`)
@@ -768,6 +824,7 @@ function body(parts) {
   return `    body: String.raw\`
 ${fig}
       <p class="kid-today"><strong>Hôm nay học:</strong> ${kidText(today)}</p>
+      ${extraHtml || ""}
       <div class="definition">
         <p><strong>Nhớ này.</strong> ${kidText(def)}</p>
       </div>
@@ -838,6 +895,11 @@ function buildLessons() {
   function enrichExercises(num, chapter, exercises) {
     // Mini đề: keep full mixed paper, do not trim or inject stories
     if (num >= 76) return exercises.slice();
+    // Bài 1: keep a longer practice set for young readers
+    if (num === 1) {
+      const read = readNum("Đọc số 70 (gõ không dấu cũng được):", "bảy mươi");
+      return [read, ...exercises].slice(0, 14);
+    }
 
     let exs = withStories(num, chapter, exercises);
 
@@ -975,7 +1037,11 @@ function buildLessons() {
       title,
       summary,
       figSvg: ensureUniqueAnim(figSvg, num),
-      content: { ...content, caption: content.caption || summary },
+      content: {
+        ...content,
+        caption: content.caption || summary,
+        extraHtml: content.extraHtml ? ensureUniqueAnim(content.extraHtml, num) : content.extraHtml,
+      },
       exercises: enrichExercises(num, chapter, exercises),
     });
   }
@@ -988,32 +1054,43 @@ function buildLessons() {
     "Đếm, đọc, viết, so sánh số trong phạm vi 100.",
     svgPlaceValue2(4, 7, 1),
     {
-      why: "Lớp 1 đã học số đến 100. Lớp 2 ôn lại cho chắc trước khi cộng trừ có nhớ và số đến 1000.",
-      def: "Mỗi số có hai chữ số gồm <strong>hàng chục</strong> (bên trái) và <strong>hàng đơn vị</strong> (bên phải). Ví dụ 47 = 4 chục + 7 đơn vị.",
-      easy: "Số 35: 3 chục và 5 đơn vị. Đọc “ba mươi lăm”. Số 70: 7 chục 0 đơn vị — đọc “bảy mươi”.",
-      step: "So sánh 58 và 85. Hàng chục: 5 < 8 nên 58 < 85. So 72 và 78: cùng 7 chục, nhìn đơn vị 2 < 8 nên 72 < 78.",
-      trap: "16 và 61 trông giống chữ số nhưng khác nhau. 16 = 1 chục 6 đơn vị; 61 = 6 chục 1 đơn vị. Đọc và viết đúng chiều trái → phải.",
-      idea: "Muốn đọc/viết đúng: chỉ hàng chục trước, rồi hàng đơn vị. Muốn so sánh: so hàng chục trước; nếu bằng nhau mới so đơn vị.",
+      why: "Ôn số đến 100: hàng chục, hàng đơn vị, đọc viết và so sánh.",
+      def: "Số có hai chữ số: <strong>hàng chục</strong> bên trái, <strong>hàng đơn vị</strong> bên phải. 47 = 4 chục + 7 que rời.",
+      easy: "Lan có 3 bó que (mỗi bó 10 que) và 5 que rời. 3 chục + 5 = 35. Đọc: ba mươi lăm.",
+      step: "So 58 và 85. Nhìn hàng chục trước: 5 nhỏ hơn 8 nên 58 nhỏ hơn 85. So 72 và 78: cùng 7 chục, nhìn đơn vị 2 nhỏ hơn 8 nên 72 nhỏ hơn 78.",
+      trap: "16 và 61 dùng cùng chữ số 1 và 6 nhưng chỗ đứng khác. 16 là mười sáu. 61 là sáu mươi mốt. Đọc từ trái sang phải.",
+      idea: "Đọc và viết: chục trước, đơn vị sau. So sánh: chục trước; chục bằng nhau thì so đơn vị.",
       warns: [
-        "Đảo chữ số (16 ↔ 61).",
-        "Quên số 0 ở đơn vị (70 ≠ 7).",
-        "So sánh chỉ nhìn chữ số đầu tiên mà không hiểu là hàng chục.",
+        "Đảo chữ số: 16 không phải 61.",
+        "Số 0 cũng là một chữ số: 70 không phải 7. Đọc bảy mươi.",
+        "So sánh đừng chỉ nhìn chữ số to. 9 trong 19 nhỏ hơn 2 trong 20, vì 19 chỉ có 1 chục.",
       ],
       checks: [
         { q: "52 gồm mấy chục, mấy đơn vị?", a: "5 chục, 2 đơn vị." },
-        { q: "Số nào lớn hơn: 39 hay 93?", a: "93." },
+        { q: "39 và 93, số nào lớn hơn?", a: "93." },
+        { q: "70 đọc thế nào?", a: "Bảy mươi." },
+        { q: "8 chục 0 đơn vị viết số nào?", a: "80." },
+        { q: "40 và 39, số nào lớn hơn?", a: "40." },
       ],
-      slow: "Viết số gồm 6 chục và 4 đơn vị. Bước 1: 6 chục = 60. Bước 2: thêm 4 đơn vị → 64. Đọc: sáu mươi tư.",
-      memory: "Hai chữ số: chục | đơn vị. So sánh: chục trước, đơn vị sau.",
+      slow: "Viết số 6 chục và 4 đơn vị. Bước 1: 6 chục = 60. Bước 2: thêm 4. Ra 64. Đọc: sáu mươi tư.",
+      memory: "Trái là chục, phải là đơn vị. So sánh: chục trước, đơn vị sau.",
+      extraHtml: svgBundles(3, 5) + svgTensLine() + svgFlip16vs61() +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 70 = 7 chục + 0 đơn vị. Chữ 0 giữ chỗ, không được bỏ. 4 chục = 40. 10 chục = 100.</p></div>` +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> An có 24 viên bi, Bình có 42 viên. Hàng chục: 2 nhỏ hơn 4 nên An có ít hơn. 24 nhỏ hơn 42.</p></div>`,
     },
     [
+      exMC("Số 47: chữ số bên trái là hàng nào?", ["Hàng chục", "Hàng đơn vị", "Hàng trăm", "Không biết"], 0, "Bên trái = chục.", "Hàng chục."),
       exMC("Số 48 gồm", ["4 chục 8 đơn vị", "8 chục 4 đơn vị", "48 chục", "12 đơn vị"], 0, "Trái = chục.", "4 chục 8 đơn vị."),
       exNum("Viết số gồm 9 chục và 0 đơn vị.", 90, "9 chục = 90.", "90."),
-      exMC("Số lớn nhất trong các số 27, 72, 17, 71 là", ["72", "27", "71", "17"], 0, "So hàng chục.", "72."),
-      exNum("Số liền sau 99 là", 100, "+1.", "100."),
+      exNum("3 bó que (mỗi bó 10) và 5 que rời. Tất cả mấy que?", 35, "30 + 5.", "35."),
+      exMC("Số lớn nhất trong 27, 72, 17, 71 là", ["72", "27", "71", "17"], 0, "So hàng chục trước.", "72."),
+      exMC("16 và 61, số nào lớn hơn?", ["61", "16", "Bằng nhau", "Không so được"], 0, "6 chục > 1 chục.", "61."),
+      exNum("Số liền sau 99 là", 100, "Thêm 1.", "100."),
       exMC("Số nhỏ nhất: 45, 54, 40, 50", ["40", "45", "50", "54"], 0, "So chục rồi đơn vị.", "40."),
-      exNum("3 chục + 5 đơn vị = ?", 35, "Ghép hàng.", "35."),
-      exMC("Đọc số 70", ["Bảy mươi", "Bảy không", "Bảy đơn vị", "Mười bảy"], 0, "Tròn chục.", "Bảy mươi."),
+      exMC("Đọc số 70", ["Bảy mươi", "Bảy không", "Bảy đơn vị", "Mười bảy"], 0, "7 chục.", "Bảy mươi."),
+      exNum("Viết số gồm 6 chục và 4 đơn vị.", 64, "60 + 4.", "64."),
+      exNum("An có 2 chục bi, Bình có 5 chục bi. Bình hơn An mấy chục?", 3, "5 − 2.", "3."),
+      exMC("40 so với 39", ["40 lớn hơn", "40 nhỏ hơn", "Bằng nhau", "Không so được"], 0, "4 chục > 3 chục.", "40 lớn hơn."),
     ]
   );
 
