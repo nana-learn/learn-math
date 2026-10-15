@@ -3796,7 +3796,7 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b39-times2">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 2">
-          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <g class="g2s1">          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="42" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="66" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="78" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -3804,8 +3804,12 @@ const G2_LESSONS = [
           <circle cx="114" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="138" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="150" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 2</text>
-          <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">2 × 4 = 8</text>
+</g>
+          <g class="g2s2">
+            <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 2</text>
+            <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">2 × 4 = 8</text>
+          </g>
+          <g class="g2s3">
           <rect x="175" y="26" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
           <text x="185" y="40" font-size="12">2×1=2</text>
           <text x="250" y="40" font-size="12">2×6=12</text>
@@ -3821,7 +3825,8 @@ const G2_LESSONS = [
           <rect x="175" y="106" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
           <text x="185" y="120" font-size="12">2×5=10</text>
           <text x="250" y="120" font-size="12">2×10=20</text>
-          <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 2 · ôn mỗi ngày</text>
+            <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 2</text>
+          </g>
         </svg>
               <figcaption>Thuộc bảng nhân 2.</figcaption>
       </figure>
@@ -3889,7 +3894,7 @@ const G2_LESSONS = [
     body: String.raw`
       <figure class="figure" data-animation="g2-b40-times5">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 5">
-          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
+          <g class="g2s1">          <circle cx="30" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="42" cy="36" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="30" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="42" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -3909,8 +3914,12 @@ const G2_LESSONS = [
           <circle cx="138" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="150" cy="48" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
           <circle cx="138" cy="60" r="5" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 5</text>
-          <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">5 × 4 = 20</text>
+</g>
+          <g class="g2s2">
+            <text x="80" y="100" font-size="12" text-anchor="middle" fill="#83C167">4 nhóm × 5</text>
+            <text x="80" y="120" font-size="14" text-anchor="middle" fill="#FC6255">5 × 4 = 20</text>
+          </g>
+          <g class="g2s3">
           <rect x="175" y="26" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
           <text x="185" y="40" font-size="12">5×1=5</text>
           <text x="250" y="40" font-size="12">5×6=30</text>
@@ -3926,7 +3935,8 @@ const G2_LESSONS = [
           <rect x="175" y="106" width="130" height="18" fill="none" stroke="#58C4DD" stroke-width="1"/>
           <text x="185" y="120" font-size="12">5×5=25</text>
           <text x="250" y="120" font-size="12">5×10=50</text>
-          <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 5 · ôn mỗi ngày</text>
+            <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 5</text>
+          </g>
         </svg>
               <figcaption>Thuộc bảng nhân 5.</figcaption>
       </figure>

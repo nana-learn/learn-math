@@ -920,11 +920,17 @@ function svgTimesTable(n, base) {
   return fig(
     `times${base}`,
     `Bảng nhân ${base}`,
-    `${dots}          <text x="80" y="100" font-size="12" text-anchor="middle" fill="${C.g}">${groups} nhóm × ${per}</text>
-          <text x="80" y="120" font-size="14" text-anchor="middle" fill="${C.r}">${base} × ${groups} = ${base * groups}</text>
+    `          <g class="g2s1">${dots}</g>
+          <g class="g2s2">
+            <text x="80" y="100" font-size="12" text-anchor="middle" fill="${C.g}">${groups} nhóm × ${per}</text>
+            <text x="80" y="120" font-size="14" text-anchor="middle" fill="${C.r}">${base} × ${groups} = ${base * groups}</text>
+          </g>
+          <g class="g2s3">
 ` +
       rows.join("\n") +
-      `\n          <text x="160" y="155" font-size="11" text-anchor="middle" fill="${C.muted}">Bảng nhân ${base} · ôn mỗi ngày</text>`
+      `
+            <text x="160" y="155" font-size="11" text-anchor="middle" fill="${C.muted}">Bảng nhân ${base}</text>
+          </g>`
   );
 }
 
