@@ -17,7 +17,11 @@ const C = {
 
 const chapters = [
   { id: 1, title: "Ôn tập và bổ sung" },
-  { id: 2, title: "Phép cộng, phép trừ trong phạm vi 20" },
+  {
+    id: 2,
+    title: "Phép cộng, phép trừ trong phạm vi 20",
+    intro: "Có 8 bài. Em học cộng và trừ khi ra số lớn hơn 10, đến 20. Có bảng cộng, bảng trừ, bài toán thêm/bớt và nhiều hơn/ít hơn. Làm lần lượt từ Bài 7 nhé.",
+  },
   { id: 3, title: "Làm quen với khối lượng, dung tích" },
   { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100" },
   { id: 5, title: "Làm quen với hình phẳng" },
@@ -176,7 +180,7 @@ function withStories(num, chapter, exercises) {
           : num % 2
             ? banks.add
             : banks.sub,
-    2: num % 3 === 0 ? banks.more : num % 2 ? banks.add : banks.sub,
+    2: num === 11 || num === 12 ? banks.sub : num === 13 || num === 14 ? banks.more : banks.add,
     3: banks.measure,
     4: num % 2 ? banks.add : banks.sub,
     5: banks.geo,
@@ -416,6 +420,87 @@ function svgColumnSub(top, bot) {
           <line x1="155" y1="118" x2="280" y2="118" stroke="${C.d}" stroke-width="2"/>
           <text x="225" y="142" font-size="22" text-anchor="middle" fill="${C.g}">${diff}</text>
           <text x="40" y="130" font-size="13">${top} − ${bot}</text>`
+  );
+}
+
+function svgTenFrame(filled, extra) {
+  const need = Math.max(0, 10 - filled);
+  const rest = extra - need;
+  let cells = "";
+  for (let i = 0; i < 10; i++) {
+    const x = 20 + (i % 5) * 28;
+    const y = 28 + Math.floor(i / 5) * 28;
+    const on = i < filled;
+    cells += `          <rect x="${x}" y="${y}" width="24" height="24" fill="none" stroke="${C.d}" stroke-width="1.5"/>\n`;
+    if (on) cells += `          <circle cx="${x + 12}" cy="${y + 12}" r="7" fill="none" stroke="${C.g}" stroke-width="2"/>\n`;
+  }
+  let extras = "";
+  for (let j = 0; j < extra; j++) {
+    const x = 180 + (j % 4) * 28;
+    const y = 36 + Math.floor(j / 4) * 28;
+    extras += `          <circle cx="${x}" cy="${y}" r="7" fill="none" stroke="${j < need ? C.b : C.r}" stroke-width="2"/>\n`;
+  }
+  return fig(
+    "tenframe",
+    `Khung 10: ${filled} + ${extra}`,
+    `${cells}${extras}
+          <text x="90" y="100" font-size="12" text-anchor="middle">Đã có ${filled}</text>
+          <text x="230" y="100" font-size="12" text-anchor="middle">Thêm ${extra}</text>
+          <text x="160" y="128" font-size="13" text-anchor="middle">Cần ${need} nữa đầy khung 10, còn ${rest}</text>
+          <text x="160" y="150" font-size="15" text-anchor="middle" fill="${C.g}">${filled} + ${extra} = 10 + ${rest} = ${filled + extra}</text>`
+  );
+}
+
+function svgTakeAway(total, take) {
+  const left = total - take;
+  let dots = "";
+  for (let i = 0; i < total; i++) {
+    const x = 28 + (i % 10) * 28;
+    const y = 40 + Math.floor(i / 10) * 32;
+    const gone = i < take;
+    dots += `          <circle cx="${x}" cy="${y}" r="9" fill="none" stroke="${gone ? C.r : C.g}" stroke-width="2"/>\n`;
+    if (gone) dots += `          <line x1="${x - 7}" y1="${y - 7}" x2="${x + 7}" y2="${y + 7}" stroke="${C.r}" stroke-width="2"/>\n`;
+  }
+  return fig(
+    "takeaway",
+    `${total} − ${take}`,
+    `${dots}
+          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch ${take} cái (màu đỏ), còn ${left} cái</text>
+          <text x="160" y="152" font-size="16" text-anchor="middle" fill="${C.g}">${total} − ${take} = ${left}</text>`
+  );
+}
+
+function svgAddTable() {
+  const pairs = [
+    ["9+2=11", "9+3=12", "9+4=13"],
+    ["9+5=14", "9+6=15", "9+7=16"],
+    ["9+8=17", "9+9=18", "8+8=16"],
+  ];
+  let rows = "";
+  pairs.forEach((row, r) => {
+    row.forEach((t, c) => {
+      const x = 20 + c * 100;
+      const y = 22 + r * 40;
+      rows += `          <rect x="${x}" y="${y}" width="92" height="32" rx="4" fill="none" stroke="${c === 2 ? C.p : r ? C.b : C.g}" stroke-width="1.5"/>\n`;
+      rows += `          <text x="${x + 46}" y="${y + 21}" font-size="13" text-anchor="middle">${t}</text>\n`;
+    });
+  });
+  return fig("add-table", "Bảng cộng qua 10", rows + `          <text x="160" y="152" font-size="12" text-anchor="middle" fill="${C.muted}">Đổi chỗ: 9+6 = 6+9</text>`);
+}
+
+function svgKeywords() {
+  return fig(
+    "keywords",
+    "Từ khóa thêm / bớt",
+    `          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.g}" stroke-width="2"/>
+          <text x="83" y="50" font-size="14" text-anchor="middle" fill="${C.g}">Thêm</text>
+          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="${C.r}" stroke-width="2"/>
+          <text x="237" y="50" font-size="14" text-anchor="middle" fill="${C.r}">Bớt</text>
+          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>`
   );
 }
 
@@ -1271,29 +1356,34 @@ function buildLessons() {
     "Cộng hai số có tổng lớn hơn 10, không quá 20.",
     svgMakeTen(8, 2, 4, 14),
     {
-      why: "Cộng hai số nhỏ, khi cộng ra hơn 10.",
-      def: "Cộng <strong>qua 10</strong>: tách số sau cho đủ 10, rồi cộng phần còn. Ví dụ 8 cần thêm 2 nữa là 10.",
-      easy: "8 + 5. 8 thêm 2 được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.",
-      step: "9 + 7. 9 thêm 1 được 10. Còn 6. 10 + 6 = 16.",
+      why: "Cộng hai số, khi cộng ra hơn 10 (đến 20).",
+      def: "Cộng <strong>qua 10</strong>: hỏi số trước cần thêm mấy nữa được 10, tách số sau thành hai phần, rồi cộng.",
+      easy: "8 + 5. 8 cần 2 nữa được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.",
+      step: "9 + 7. 9 cần 1 nữa được 10. Còn 6. 10 + 6 = 16.",
       trap: "Đếm ngón từng cái dễ sai. Nhớ cặp đủ 10: 1+9, 2+8, 3+7, 4+6, 5+5.",
-      idea: "Hỏi: số này cần thêm mấy nữa được 10?",
-
-      warns: ["Quên phần còn lại sau khi đã đủ 10.", "Nhầm 8+5=12."],
+      idea: "Hỏi nhỏ: số này cần thêm mấy nữa được 10?",
+      warns: ["Đủ 10 rồi quên cộng phần còn.", "8 + 5 không phải 12."],
       checks: [
         { q: "8 + 6 = ?", a: "14." },
-        { q: "9 + 5 = ?", a: "14." },
+        { q: "9 cần thêm mấy nữa được 10?", a: "1." },
+        { q: "7 + 8 = ?", a: "15." },
       ],
-      slow: "7 + 8. 7 cần 3 để thành 10. 8 = 3 + 5. Vậy 10 + 5 = 15.",
-      memory: "Cộng qua 10 = bù đủ 10 rồi cộng phần còn.",
+      slow: "7 + 8. Bước 1: 7 cần 3 nữa được 10. Bước 2: 8 = 3 + 5. Bước 3: 10 + 5 = 15.",
+      memory: "Cộng qua 10: bù đủ 10, rồi cộng phần còn.",
+      extraHtml: svgTenFrame(8, 6) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> 6 + 7. 6 cần 4 nữa được 10. 7 = 4 + 3. 10 + 3 = 13.</p></div>` +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Lan có 9 tem, mẹ cho 5 tem. 9 + 1 = 10, còn 4. Tất cả 14 tem.</p></div>`,
     },
     [
-      exNum("8 + 6 = ?", 14, "Bù 10.", "14."),
-      exNum("9 + 5 = ?", 14, "9+1+4.", "14."),
-      exNum("7 + 7 = ?", 14, "Đôi.", "14."),
-      exNum("4 + 9 = ?", 13, "9+1+3.", "13."),
-      exMC("Phép nào có tổng lớn nhất?", ["9+8", "8+5", "7+6", "9+4"], 0, "Tính từng phép.", "9 + 8 = 17, lớn nhất."),
+      exNum("8 + 6 = ?", 14, "8 cần 2 nữa được 10, còn 4.", "14."),
+      exNum("9 + 5 = ?", 14, "9 + 1 + 4.", "14."),
+      exNum("7 + 7 = ?", 14, "Đôi bảy.", "14."),
+      exNum("4 + 9 = ?", 13, "9 + 1 + 3.", "13."),
+      exMC("Phép nào có tổng lớn nhất?", ["9+8", "8+5", "7+6", "9+4"], 0, "Tính từng phép.", "9 + 8 = 17."),
       exNum("6 + 8 = ?", 14, "Qua 10.", "14."),
-      exNum("5 + 9 = ?", 14, "Qua 10.", "14."),
+      exNum("5 + 9 = ?", 14, "5 cần 5 nữa được 10.", "14."),
+      exNum("8 cần thêm mấy nữa được 10?", 2, "8 + 2 = 10.", "2."),
+      exNum("Lan có 8 kẹo, mẹ cho 6 kẹo. Lan có mấy kẹo?", 14, "8 + 6.", "14."),
     ]
   );
 
@@ -1302,30 +1392,35 @@ function buildLessons() {
     2,
     "Bảng cộng (qua 10)",
     "Thuộc các công thức cộng qua 10 trong phạm vi 20.",
-    svgMakeTen(9, 1, 8, 18),
+    svgAddTable(),
     {
-      why: "Thuộc bảng giúp tính nhẩm nhanh, không phụ thuộc đếm mỗi lần.",
-      def: "Bảng cộng qua 10 gồm các công thức như 9+2,\ldots,9+9; 8+3,\ldots,8+9; … có tổng từ 11 đến 18.",
+      why: "Thuộc bảng cộng để tính nhanh, không phải đếm ngón mỗi lần.",
+      def: "Bảng cộng qua 10: các phép như 9+2 đến 9+9, 8+3 đến 8+9… Tổng từ 11 đến 18.",
       easy: "9 + 8 = 17. 8 + 7 = 15. 7 + 6 = 13.",
-      step: "Từ 9 + 6 = 15 suy ra 6 + 9 = 15 (đổi chỗ số hạng).",
-      trap: "9 + 7 = 16 chứ không phải 15. Kiểm bằng: 9 + 7 = 9 + 1 + 6 = 16.",
-      idea: "Học theo “họ” 9+, 8+, 7+ … Mỗi ngày ôn vài công thức.",
-      warns: ["Nhầm lẫn các tổng gần nhau (15/16/17).", "Không dùng giao hoán để giảm bài học."],
+      step: "Đã thuộc 9 + 6 = 15 thì 6 + 9 cũng = 15. Đổi chỗ hai số, tổng không đổi.",
+      trap: "9 + 7 = 16, không phải 15. Kiểm: 9 + 1 = 10, còn 6, ra 16.",
+      idea: "Học theo họ 9+, rồi 8+, rồi 7+. Mỗi ngày ôn vài phép.",
+      warns: ["Nhầm 15 với 16 với 17.", "Quên đổi chỗ: 8+5 = 5+8."],
       checks: [
         { q: "9 + 9 = ?", a: "18." },
         { q: "8 + 9 = ?", a: "17." },
+        { q: "5 + 8 = ?", a: "13." },
       ],
-      slow: "Thuộc 8 + 5 = 13. Đổi chỗ: 5 + 8 = 13. Liên hệ trừ: 13 − 8 = 5.",
-      memory: "Bảng cộng qua 10 = “cơm hàng ngày” của lớp 2.",
+      slow: "Thuộc 8 + 5 = 13. Đổi chỗ: 5 + 8 = 13. Trừ ngược: 13 − 8 = 5.",
+      memory: "Bảng cộng qua 10: học thuộc, đổi chỗ được, trừ ngược được.",
+      extraHtml: svgMakeTen(9, 1, 8, 18) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Họ 9: 9+2=11, 9+3=12, 9+4=13, 9+5=14, 9+6=15, 9+7=16, 9+8=17, 9+9=18.</p></div>`,
     },
     [
-      exNum("9 + 9 = ?", 18, "Đôi 9.", "18."),
-      exNum("8 + 9 = ?", 17, "Bảng.", "17."),
+      exNum("9 + 9 = ?", 18, "Đôi chín.", "18."),
+      exNum("8 + 9 = ?", 17, "Bảng 9.", "17."),
       exNum("7 + 8 = ?", 15, "Bảng.", "15."),
-      exNum("6 + 9 = ?", 15, "Bảng.", "15."),
+      exNum("6 + 9 = ?", 15, "Đổi chỗ 9+6.", "15."),
       exNum("5 + 8 = ?", 13, "Bảng.", "13."),
-      exNum("9 + 6 = ?", 15, "Bảng.", "15."),
-      exNum("8 + 8 = ?", 16, "Đôi.", "16."),
+      exNum("9 + 6 = ?", 15, "Bảng 9.", "15."),
+      exNum("8 + 8 = ?", 16, "Đôi tám.", "16."),
+      exNum("9 + 7 = ?", 16, "9+1+6.", "16."),
+      exNum("Có 9 bút, thêm 8 bút. Tất cả mấy bút?", 17, "9+8.", "17."),
     ]
   );
 
@@ -1334,30 +1429,34 @@ function buildLessons() {
     2,
     "Bài toán về thêm, bớt một số đơn vị",
     "Lời văn: thêm → cộng; bớt → trừ.",
-    svgCompareBars(14, 9),
+    svgKeywords(),
     {
-      why: "Toán lời văn gắn với chuyện thật: thêm kẹo, bớt bút, mua thêm…",
-      def: "<strong>Thêm / cho thêm / lớn lên</strong> → cộng. <strong>Bớt / lấy đi / còn lại</strong> → trừ.",
-      easy: "Có 9 kẹo, mẹ cho thêm 5: 9 + 5 = 14. Có 14, ăn bớt 3: 14 - 3 = 11.",
-      step: "Trong hộp 12 viên phấn, cô lấy ra 4. Còn 12 - 4 = 8. Rồi thêm 5 viên mới: 8 + 5 = 13.",
-      trap: "Từ “còn lại” gần như luôn là trừ. Từ “tất cả / cả thảy” thường là cộng.",
-      idea: "Gạch chân từ khóa → chọn phép → tính → đọc lại câu trả lời đủ đơn vị.",
-      warns: ["Chọn nhầm cộng/trừ.", "Quên đơn vị (quả, bạn, quyển…)."],
+      why: "Bài toán có chuyện: thêm kẹo, bớt bút, còn lại bao nhiêu.",
+      def: "Từ <strong>thêm / cho thêm / tất cả</strong> → cộng. Từ <strong>bớt / lấy đi / còn lại</strong> → trừ.",
+      easy: "Có 9 kẹo, mẹ cho thêm 5. 9 + 5 = 14 kẹo. Có 14, ăn 3. 14 − 3 = 11 kẹo.",
+      step: "Hộp 12 viên phấn, cô lấy 4. Còn 12 − 4 = 8. Rồi thêm 5 viên. 8 + 5 = 13.",
+      trap: "Thấy “còn lại” thì trừ. Thấy “tất cả” thì cộng. Đọc hết câu đã.",
+      idea: "Gạch chân từ khóa → chọn + hoặc − → tính → nói đủ đơn vị (quả, bút…).",
+      warns: ["Chọn nhầm cộng/trừ.", "Quên viết quả, bút, tem."],
       checks: [
-        { q: "8 quả, hái thêm 7. Tất cả?", a: "15." },
-        { q: "16 bút, cho bạn 5. Còn?", a: "11." },
+        { q: "8 quả, hái thêm 7. Tất cả?", a: "15 quả." },
+        { q: "16 bút, cho bạn 5. Còn?", a: "11 bút." },
+        { q: "Từ “bớt” dùng phép nào?", a: "Trừ." },
       ],
-      slow: "Có 11 bóng bay, thêm 6. Hỏi tất cả? Từ khóa “thêm” → 11 + 6. 11 + 6 = 17.",
-      memory: "Thêm → cộng. Bớt / còn → trừ.",
+      slow: "Có 11 bóng bay, thêm 6. Từ khóa “thêm” → cộng. 11 + 6 = 17 bóng bay.",
+      memory: "Thêm → cộng. Bớt / còn lại → trừ.",
+      extraHtml: svgCompareBars(14, 9) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> An có 10 tem, dán đi 3 tem. Còn 10 − 3 = 7 tem.</p></div>`,
     },
     [
-      exNum("Có 8, thêm 7. Tất cả?", 15, "Cộng.", "15."),
-      exNum("Có 16, cho đi 5. Còn?", 11, "Trừ.", "11."),
-      exNum("12 hoa, nở thêm 6?", 18, "Cộng.", "18."),
-      exNum("20 tem, dán 9. Còn?", 11, "Trừ.", "11."),
-      exMC("“Bớt đi” →", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Lấy đi.", "Trừ."),
-      exNum("15 + 4 − 3 = ?", 16, "Từng bước.", "16."),
-      exNum("Có 10, bớt 2, thêm 5. Còn?", 13, "10−2+5.", "13."),
+      exNum("Có 8 quả, hái thêm 7. Tất cả mấy quả?", 15, "Thêm → cộng.", "15."),
+      exNum("Có 16 bút, cho bạn 5. Còn mấy bút?", 11, "Cho đi → trừ.", "11."),
+      exNum("12 hoa, nở thêm 6. Có mấy hoa?", 18, "Cộng.", "18."),
+      exNum("Có 20 tem, dán 9 tem. Còn mấy tem?", 11, "Trừ.", "11."),
+      exMC("Từ “bớt đi” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Lấy đi.", "Trừ."),
+      exNum("Có 10 kẹo, ăn 2, mẹ cho thêm 5. Còn mấy kẹo?", 13, "10 − 2 + 5.", "13."),
+      exMC("Từ “tất cả” thường dùng phép", ["Cộng", "Trừ", "Nhân", "Chia"], 0, "Gộp lại.", "Cộng."),
+      exNum("Có 9 bút, cô cho thêm 8. Tất cả mấy bút?", 17, "9+8 qua 10.", "17."),
     ]
   );
 
@@ -1368,28 +1467,31 @@ function buildLessons() {
     "Ôn cộng trừ qua 10 và bài toán thêm bớt.",
     svgReview("Luyện cộng trừ 20"),
     {
-      why: "Củng cố nhẩm qua 10 trước khi sang trừ qua 10.",
-      def: "Kết hợp bảng cộng và lời văn thêm/bớt trong phạm vi 20.",
-      easy: "7 + 9 = 16. 13 − 8 = 5 (sắp học trừ; có thể nhẩm 8 + □ = 13).",
-      step: "□ + 7 = 16 → □ = 9. Có 11, thêm 6 → 17.",
-      trap: "Làm dãy 9 + 8 − 6: phải trái sang phải, 17 − 6 = 11, không trừ 8 − 6 trước.",
-      idea: "Một phép một bước; nhiều dấu thì làm lần lượt.",
-      warns: ["Sai thứ tự phép tính.", "Nhầm bảng cộng."],
+      why: "Ôn cộng qua 10 và bài toán thêm/bớt trước khi học trừ qua 10.",
+      def: "Nhẩm cộng qua 10. Đọc từ khóa thêm/bớt. Nhiều phép thì làm từ trái sang phải.",
+      easy: "7 + 9 = 16. Có 11 bóng, thêm 6 → 17.",
+      step: "Tìm số hạng: □ + 7 = 16. Lấy 16 − 7 = 9.",
+      trap: "9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.",
+      idea: "Một dấu một bước. Nhiều dấu: trái → phải.",
+      warns: ["Sai thứ tự khi có hai dấu.", "Nhầm bảng cộng."],
       checks: [
         { q: "7 + 9 = ?", a: "16." },
         { q: "□ + 7 = 16?", a: "9." },
+        { q: "18 bớt 9?", a: "9." },
       ],
-      slow: "18 bớt 9: 9 + 9 = 18 nên 18 − 9 = 9.",
-      memory: "Nhẩm qua 10 + đọc từ khóa lời văn.",
+      slow: "18 bớt 9. 9 + 9 = 18 nên 18 − 9 = 9.",
+      memory: "Nhẩm qua 10. Đọc từ khóa. Làm trái sang phải.",
+      extraHtml: svgMakeTen(7, 3, 6, 16),
     },
     [
-      exNum("7 + 9 = ?", 16, "Qua 10.", "16."),
-      exNum("13 − 8 = ?", 5, "8+5=13.", "5."),
-      exNum("11 thêm 6?", 17, "Cộng.", "17."),
-      exNum("18 bớt 9?", 9, "Trừ.", "9."),
-      exNum("□ + 7 = 16", 9, "16−7.", "9."),
-      exNum("9 + 8 − 6 = ?", 11, "Trái→phải.", "11."),
-      exNum("5 + 7 + 4 = ?", 16, "12+4.", "16."),
+      exNum("7 + 9 = ?", 16, "7 cần 3 nữa được 10.", "16."),
+      exNum("13 − 8 = ?", 5, "8 + 5 = 13.", "5."),
+      exNum("Có 11 hoa, nở thêm 6. Có mấy hoa?", 17, "Thêm → cộng.", "17."),
+      exNum("Có 18 kẹo, ăn 9. Còn mấy kẹo?", 9, "Trừ.", "9."),
+      exNum("Số nào cộng 7 được 16?", 9, "16 − 7.", "9."),
+      exNum("9 + 8 − 6 = ?", 11, "17 − 6.", "11."),
+      exNum("5 + 7 + 4 = ?", 16, "12 + 4.", "16."),
+      exNum("8 + 7 = ?", 15, "Qua 10.", "15."),
     ]
   );
 
@@ -1398,30 +1500,34 @@ function buildLessons() {
     2,
     "Phép trừ (qua 10) trong phạm vi 20",
     "Trừ khi không đủ đơn vị, phạm vi 20.",
-    svgMakeTen(15, 5, 2, 8), // reuse visual metaphor
+    svgTakeAway(15, 7),
     {
-      why: "Trừ qua 10 đi cùng cộng qua 10 — hai mặt của một bảng.",
-      def: "Có thể trừ bằng cách tách, hoặc nghĩ ngược: a - b = □ nghĩa là b + □ = a.",
-      easy: "15 − 7: 7 + 8 = 15 nên hiệu là 8. 12 − 9 = 3.",
-      step: "14 − 6: 14 − 4 = 10, 10 − 2 = 8.",
-      trap: "Không được “đảo” 5 − 9 thành 9 − 5 khi trừ cột — phải mượn (ở phạm vi 20 ta dùng nhẩm).",
-      idea: "Hỏi: “b cộng mấy bằng a?” — ra hiệu ngay.",
-      warns: ["Lấy số bé trừ số lớn rồi ghi số dương sai nghĩa.", "Nhầm với cộng."],
+      why: "Trừ khi không đủ (qua 10), số trong phạm vi 20.",
+      def: "Trừ qua 10: nghĩ ngược cộng. 15 − 7 = □ nghĩa là 7 + □ = 15.",
+      easy: "15 − 7. Hỏi: 7 cộng mấy bằng 15? 7 + 8 = 15 nên còn 8.",
+      step: "14 − 6. Trừ 4 cho đủ xuống 10, còn trừ 2: 10 − 2 = 8.",
+      trap: "Không đổi chỗ 5 − 9 thành 9 − 5. Số trước là số bị trừ.",
+      idea: "Hỏi: số trừ cộng mấy thì ra số bị trừ?",
+      warns: ["Đảo hai số rồi trừ.", "Nhầm trừ thành cộng."],
       checks: [
         { q: "13 − 5 = ?", a: "8." },
         { q: "16 − 9 = ?", a: "7." },
+        { q: "7 cộng mấy bằng 15?", a: "8." },
       ],
-      slow: "17 − 9. Tìm □: 9 + □ = 17. 9 + 8 = 17 → □ = 8.",
-      memory: "Trừ qua 10: nghĩ phép cộng ngược hoặc tách qua 10.",
+      slow: "17 − 9. Hỏi 9 + □ = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.",
+      memory: "Trừ qua 10: nghĩ phép cộng ngược.",
+      extraHtml: svgMakeTen(10, 0, 8, 8) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. 9 + 3 = 12 nên còn 3 kẹo.</p></div>`,
     },
     [
-      exNum("13 − 5 = ?", 8, "Ngược cộng.", "8."),
-      exNum("16 − 9 = ?", 7, "9+7=16.", "7."),
-      exNum("11 − 8 = ?", 3, "8+3=11.", "3."),
-      exNum("17 − 9 = ?", 8, "9+8=17.", "8."),
-      exNum("15 − 6 = ?", 9, "6+9=15.", "9."),
-      exNum("14 − 8 = ?", 6, "8+6=14.", "6."),
-      exNum("12 − 7 = ?", 5, "7+5=12.", "5."),
+      exNum("13 − 5 = ?", 8, "5 + 8 = 13.", "8."),
+      exNum("16 − 9 = ?", 7, "9 + 7 = 16.", "7."),
+      exNum("11 − 8 = ?", 3, "8 + 3 = 11.", "3."),
+      exNum("17 − 9 = ?", 8, "9 + 8 = 17.", "8."),
+      exNum("15 − 6 = ?", 9, "6 + 9 = 15.", "9."),
+      exNum("14 − 8 = ?", 6, "8 + 6 = 14.", "6."),
+      exNum("12 − 7 = ?", 5, "7 + 5 = 12.", "5."),
+      exNum("Có 15 kẹo, ăn 7. Còn mấy kẹo?", 8, "15 − 7.", "8."),
     ]
   );
 
@@ -1432,28 +1538,32 @@ function buildLessons() {
     "Thuộc các phép trừ qua 10 trong phạm vi 20.",
     svgSubParts(18, 9, 9),
     {
-      why: "Từ bảng cộng suy bảng trừ — học một được hai.",
-      def: "Nếu a + b = c thì c - a = b và c - b = a.",
-      easy: "9 + 7 = 16 ⇒ 16 − 9 = 7, 16 − 7 = 9. 18 − 9 = 9.",
+      why: "Thuộc bảng trừ: từ bảng cộng viết ngược.",
+      def: "Nếu 9 + 7 = 16 thì 16 − 9 = 7 và 16 − 7 = 9.",
+      easy: "18 − 9 = 9. 17 − 8 = 9. 14 − 7 = 7.",
       step: "14 − 8 = 6 vì 8 + 6 = 14.",
-      trap: "19 − 9 = 10, không phải 9. Trừ đúng một lần số trừ.",
-      idea: "Mỗi công thức cộng “đẻ” hai công thức trừ.",
-      warns: ["Nhầm 14 − 7 = 6.", "Quên 10 khi trừ 9 cho 19."],
+      trap: "19 − 9 = 10, không phải 9.",
+      idea: "Một phép cộng cho hai phép trừ. Ôn theo cặp.",
+      warns: ["14 − 7 = 7, không phải 6.", "19 − 9 = 10."],
       checks: [
         { q: "18 − 9 = ?", a: "9." },
         { q: "17 − 8 = ?", a: "9." },
+        { q: "15 − 8 = ?", a: "7." },
       ],
-      slow: "Ghi cặp: 8+7=15; 15−8=7; 15−7=8. Ôn theo cặp nhanh hơn học rời.",
-      memory: "Bảng trừ = bảng cộng viết ngược.",
+      slow: "Cặp 8+7=15. Vậy 15 − 8 = 7 và 15 − 7 = 8.",
+      memory: "Bảng trừ = bảng cộng đọc ngược.",
+      extraHtml: svgTakeAway(16, 7) +
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Họ trừ 9: 11−9=2, 12−9=3, … 19−9=10.</p></div>`,
     },
     [
-      exNum("18 − 9 = ?", 9, "Đôi.", "9."),
-      exNum("17 − 8 = ?", 9, "Bảng.", "9."),
-      exNum("14 − 7 = ?", 7, "Đôi 7.", "7."),
-      exNum("12 − 5 = ?", 7, "5+7=12.", "7."),
-      exNum("19 − 9 = ?", 10, "Trừ 9.", "10."),
-      exNum("16 − 8 = ?", 8, "Đôi.", "8."),
-      exNum("15 − 9 = ?", 6, "9+6=15.", "6."),
+      exNum("18 − 9 = ?", 9, "Đôi chín.", "9."),
+      exNum("17 − 8 = ?", 9, "8 + 9 = 17.", "9."),
+      exNum("14 − 7 = ?", 7, "Đôi bảy.", "7."),
+      exNum("12 − 5 = ?", 7, "5 + 7 = 12.", "7."),
+      exNum("19 − 9 = ?", 10, "9 + 10 = 19.", "10."),
+      exNum("16 − 8 = ?", 8, "Đôi tám.", "8."),
+      exNum("15 − 9 = ?", 6, "9 + 6 = 15.", "6."),
+      exNum("Có 16 tem, dán 7 tem. Còn mấy tem?", 9, "16 − 7.", "9."),
     ]
   );
 
@@ -1464,31 +1574,32 @@ function buildLessons() {
     "Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).",
     svgCompareBars(15, 11),
     {
-      why: "“Nhiều hơn / ít hơn” là dạng lời văn rất hay gặp ở lớp 2–3.",
-      def: "A nhiều hơn B k đơn vị ⇒ A = B + k. A ít hơn B k ⇒ A = B - k.",
-      easy: "Bình 10 bi. An nhiều hơn Bình 3 ⇒ An = 10 + 3 = 13.",
-      step: "Lan 18 tem. Mai ít hơn Lan 5 ⇒ Mai = 18 − 5 = 13.",
-      trap: "“Cam ít hơn quýt 6, cam có 14” → quýt = 14 + 6 = 20, không phải 14 − 6.",
-      idea: "Xác định ai là mốc, ai nhiều/ít, rồi mới chọn cộng hay trừ.",
-      warns: [
-        "Thấy “ít hơn” là trừ vào số mốc sai người.",
-        "Không vẽ sơ đồ đoạn thẳng.",
-      ],
+      why: "Bài toán nhiều hơn / ít hơn: đọc rõ ai nhiều, ai ít.",
+      def: "A nhiều hơn B thì A = B + số hơn. A ít hơn B thì A = B − số ít.",
+      easy: "Bình có 10 bi. An nhiều hơn Bình 3 bi. An = 10 + 3 = 13 bi.",
+      step: "Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai = 18 − 5 = 13 tem.",
+      trap: "Cam ít hơn quýt 6 quả, cam có 14. Quýt nhiều hơn cam nên quýt = 14 + 6 = 20, không phải 14 − 6.",
+      idea: "Tìm mốc (số đã biết). Nhiều hơn mốc → cộng. Ít hơn mốc → trừ.",
+      warns: ["Thấy “ít hơn” là trừ nhầm người.", "Nên vẽ đoạn ngắn–dài."],
       checks: [
         { q: "Bình 10, An nhiều hơn 3. An?", a: "13." },
         { q: "Lan 18, Mai ít hơn 5. Mai?", a: "13." },
+        { q: "Cam 14, ít hơn quýt 6. Quýt?", a: "20." },
       ],
-      slow: "Hùng có 9 nhãn. Bố nhiều hơn Hùng 8 nhãn (bài minh họa số nhỏ). Bố = 9 + 8 = 17.",
+      slow: "Hùng 9 nhãn. Nam nhiều hơn Hùng 8. Nam = 9 + 8 = 17 nhãn.",
       memory: "Nhiều hơn mốc → cộng. Ít hơn mốc → trừ. Đọc rõ ai là mốc.",
+      extraHtml:
+        `<div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra An.</p></div>`,
     },
     [
-      exNum("Bình 10, An nhiều hơn 3. An?", 13, "Cộng.", "13."),
-      exNum("Lan 18, Mai ít hơn 5. Mai?", 13, "Trừ.", "13."),
-      exNum("Mốc 9, nhiều hơn 8?", 17, "Cộng.", "17."),
-      exNum("Cam 14, ít hơn quýt 6. Quýt?", 20, "14+6.", "20."),
-      exMC("“Ít hơn” (so với mốc) →", ["Trừ khỏi mốc", "Luôn cộng", "Nhân 2", "Chia 2"], 0, "Bé hơn mốc.", "Trừ."),
-      exNum("20, ít hơn 6?", 14, "20−6.", "14."),
-      exNum("12, nhiều hơn 7?", 19, "12+7.", "19."),
+      exNum("Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?", 13, "Nhiều hơn → cộng.", "13."),
+      exNum("Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?", 13, "Ít hơn Lan → trừ.", "13."),
+      exNum("Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?", 17, "9+8.", "17."),
+      exNum("Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?", 20, "Cam ít hơn → quýt = 14+6.", "20."),
+      exMC("“Ít hơn mốc” dùng phép", ["Trừ", "Cộng", "Nhân", "Chia"], 0, "Bé hơn mốc.", "Trừ."),
+      exNum("Hoa có 20 nhãn, ít hơn 6 nhãn so với số đó là?", 14, "20−6.", "14."),
+      exNum("Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?", 19, "12+7.", "19."),
+      exNum("An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?", 19, "15+4.", "19."),
     ]
   );
 
@@ -1499,28 +1610,31 @@ function buildLessons() {
     "Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.",
     svgReview("Luyện chủ đề 2"),
     {
-      why: "Khóa vững phạm vi 20 trước khi sang kg/lít và cộng trừ 100.",
-      def: "Trộn nhẩm + lời văn nhiều hơn/ít hơn/thêm/bớt.",
+      why: "Ôn cả chủ đề 2: cộng trừ qua 10 và lời văn.",
+      def: "Nhẩm cộng/trừ qua 10. Thêm/bớt. Nhiều hơn/ít hơn. Làm trái sang phải.",
       easy: "9 + 8 − 6 = 11. Số nhiều hơn 15 bốn đơn vị là 19. Số ít hơn 15 bốn đơn vị là 11.",
-      step: "7 + 6 + 5 = 18.",
-      trap: "“Ít hơn 15 là 4 đơn vị” = 15 − 4 = 11, không phải 4.",
-      idea: "Làm nháp từng phép; viết câu trả lời đủ nghĩa.",
-      warns: ["Sai từ khóa nhiều/ít.", "Sai thứ tự dãy tính."],
+      step: "7 + 6 + 5 = 18. Từng bước: 7+6=13, 13+5=18.",
+      trap: "Ít hơn 15 là 4 đơn vị nghĩa là 15 − 4 = 11, không phải 4.",
+      idea: "Gạch từ khóa. Một phép một dòng nháp.",
+      warns: ["Sai từ khóa nhiều/ít.", "Sai thứ tự khi có hai dấu."],
       checks: [
         { q: "9+8−6=?", a: "11." },
         { q: "Ít hơn 15 bốn đơn vị?", a: "11." },
+        { q: "8 + 7 = ?", a: "15." },
       ],
-      slow: "20 − 9 = 11. Kiểm 11 + 9 = 20.",
-      memory: "Phạm vi 20: bảng cộng/trừ + lời văn.",
+      slow: "20 − 9 = 11. Kiểm: 11 + 9 = 20.",
+      memory: "Phạm vi 20: bảng cộng/trừ + đọc từ khóa lời văn.",
+      extraHtml: svgKeywords(),
     },
     [
-      exNum("9 + 8 − 6 = ?", 11, "17−6.", "11."),
-      exNum("Nhiều hơn 12 năm đơn vị?", 17, "12+5.", "17."),
-      exNum("20 − 9 = ?", 11, "Trừ.", "11."),
-      exNum("7 + 6 + 5 = ?", 18, "Cộng.", "18."),
-      exNum("Ít hơn 15 là 4?", 11, "15−4.", "11."),
-      exNum("16 − 7 = ?", 9, "Trừ.", "9."),
-      exNum("8 + 7 = ?", 15, "Cộng.", "15."),
+      exNum("9 + 8 − 6 = ?", 11, "17 − 6.", "11."),
+      exNum("Nhiều hơn 12 năm đơn vị là số nào?", 17, "12 + 5.", "17."),
+      exNum("20 − 9 = ?", 11, "Trừ qua 10.", "11."),
+      exNum("7 + 6 + 5 = ?", 18, "13 + 5.", "18."),
+      exNum("Ít hơn 15 bốn đơn vị là số nào?", 11, "15 − 4.", "11."),
+      exNum("16 − 7 = ?", 9, "7 + 9 = 16.", "9."),
+      exNum("8 + 7 = ?", 15, "Qua 10.", "15."),
+      exNum("Có 9 hoa, nở thêm 8, héo 6. Còn mấy hoa?", 11, "9+8−6.", "11."),
     ]
   );
 

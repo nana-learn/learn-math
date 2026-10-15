@@ -380,11 +380,15 @@ function chapterView(course, chapterId) {
   const items = course.lessons.filter((l) => String(l.chapter) === String(ch.id));
   const progress = progressFor(course.id);
   const rows = items.map((l) => lessonLink(course, l, progress)).join("");
+  const kid = course.id === "2" || course.level === "Tiểu học";
+  const done = items.filter((l) => progress[l.id]).length;
   return `
     <p class="back"><a href="#/g/${course.id}">← ${escapeHtml(course.title)}</a></p>
-    <section>
-      <span class="stamp">${escapeHtml(chapterStamp(ch))}</span>
+    <section class="${kid ? "grade-2" : ""}">
+      <span class="stamp">${escapeHtml(kid ? "Toán lớp 2" : chapterStamp(ch))}</span>
       <h2>${escapeHtml(ch.title)}</h2>
+      ${ch.intro ? `<p class="lede kid-today">${escapeHtml(ch.intro)}</p>` : ""}
+      ${kid && items.length ? `<p class="quiz-lead">${done}/${items.length} bài đã làm. Bấm vào bài để học.</p>` : ""}
       ${
         rows
           ? `<div class="lesson-list">${rows}</div>`

@@ -11,7 +11,8 @@ const G2_CHAPTERS = [
   },
   {
     "id": 2,
-    "title": "Phép cộng, phép trừ trong phạm vi 20"
+    "title": "Phép cộng, phép trừ trong phạm vi 20",
+    "intro": "Có 8 bài. Em học cộng và trừ khi ra số lớn hơn 10, đến 20. Có bảng cộng, bảng trừ, bài toán thêm/bớt và nhiều hơn/ít hơn. Làm lần lượt từ Bài 7 nhé."
   },
   {
     "id": 3,
@@ -647,47 +648,82 @@ const G2_LESSONS = [
               <figcaption>Cộng hai số có tổng lớn hơn 10, không quá 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số có tổng lớn hơn 10, không quá 20.</p>
-      
+            <figure class="figure" data-animation="g2-b7-tenframe">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Khung 10: 8 + 6">
+          <rect x="20" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="32" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="48" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="60" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="76" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="88" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="104" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="116" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="132" y="28" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="144" cy="40" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="20" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="32" cy="68" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="48" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="60" cy="68" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="76" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="88" cy="68" r="7" fill="none" stroke="#83C167" stroke-width="2"/>
+          <rect x="104" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <rect x="132" y="56" width="24" height="24" fill="none" stroke="#333330" stroke-width="1.5"/>
+          <circle cx="180" cy="36" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="208" cy="36" r="7" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <circle cx="236" cy="36" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="264" cy="36" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="180" cy="64" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="208" cy="64" r="7" fill="none" stroke="#FC6255" stroke-width="2"/>
+
+          <text x="90" y="100" font-size="12" text-anchor="middle">Đã có 8</text>
+          <text x="230" y="100" font-size="12" text-anchor="middle">Thêm 6</text>
+          <text x="160" y="128" font-size="13" text-anchor="middle">Cần 2 nữa đầy khung 10, còn 4</text>
+          <text x="160" y="150" font-size="15" text-anchor="middle" fill="#83C167">8 + 6 = 10 + 4 = 14</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> 6 + 7. 6 cần 4 nữa được 10. 7 = 4 + 3. 10 + 3 = 13.</p></div><div class="example"><p><strong>Thêm ví dụ.</strong> Lan có 9 tem, mẹ cho 5 tem. 9 + 1 = 10, còn 4. Tất cả 14 tem.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Cộng <strong>qua 10</strong>: tách số sau cho đủ 10, rồi cộng phần còn. Ví dụ 8 cần thêm 2 nữa là 10.</p>
+        <p><strong>Nhớ này.</strong> Cộng <strong>qua 10</strong>: hỏi số trước cần thêm mấy nữa được 10, tách số sau thành hai phần, rồi cộng.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 8 + 5. 8 thêm 2 được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.</p>
+        <p><strong>Cùng làm.</strong> 8 + 5. 8 cần 2 nữa được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> 9 + 7. 9 thêm 1 được 10. Còn 6. 10 + 6 = 16.</p>
+        <p><strong>Thêm một chút.</strong> 9 + 7. 9 cần 1 nữa được 10. Còn 6. 10 + 6 = 16.</p>
       </div>
       <div class="example">
         <p><strong>Cẩn thận.</strong> Đếm ngón từng cái dễ sai. Nhớ cặp đủ 10: 1+9, 2+8, 3+7, 4+6, 5+5.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Hỏi: số này cần thêm mấy nữa được 10?</p>
+        <p><strong>Mẹo nhỏ.</strong> Hỏi nhỏ: số này cần thêm mấy nữa được 10?</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Quên phần còn lại sau khi đã đủ 10.</li>
-          <li>Nhầm 8+5=12.</li>
+          <li>Đủ 10 rồi quên cộng phần còn.</li>
+          <li>8 + 5 không phải 12.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>8 + 6 = ? <em>— 14.</em></p>
-        <p>9 + 5 = ? <em>— 14.</em></p>
+        <p>9 cần thêm mấy nữa được 10? <em>— 1.</em></p>
+        <p>7 + 8 = ? <em>— 15.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 7 + 8. 7 cần 3 để thành 10. 8 = 3 + 5. Vậy 10 + 5 = 15.</p>
+        <p><strong>Làm từng bước.</strong> 7 + 8. Bước 1: 7 cần 3 nữa được 10. Bước 2: 8 = 3 + 5. Bước 3: 10 + 5 = 15.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng qua 10 = bù đủ 10 rồi cộng phần còn.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Cộng qua 10: bù đủ 10, rồi cộng phần còn.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"8 + 6 = ?","answer":14,"hint":"Bù 10.","explain":"14."},
-      {"type":"num","prompt":"9 + 5 = ?","answer":14,"hint":"9+1+4.","explain":"14."},
-      {"type":"num","prompt":"7 + 7 = ?","answer":14,"hint":"Đôi.","explain":"14."},
-      {"type":"num","prompt":"4 + 9 = ?","answer":13,"hint":"9+1+3.","explain":"13."},
-      {"type":"mc","prompt":"Phép nào có tổng lớn nhất?","choices":["9+8","8+5","7+6","9+4"],"correct":0,"hint":"Tính từng phép.","explain":"9 + 8 = 17, lớn nhất."},
-      {"type":"num","prompt":"Lan có 9 quyển vở, được thêm 4 quyển vở. Tất cả mấy quyển vở?","answer":13,"hint":"Thêm → cộng.","explain":"9 + 4 = 13."},
-      {"type":"num","prompt":"Trong hộp có 13 bông hoa, bạn cho thêm 7. Tất cả mấy?","answer":20,"hint":"Cộng.","explain":"13 + 7 = 20."},
+      {"type":"num","prompt":"8 + 6 = ?","answer":14,"hint":"8 cần 2 nữa được 10, còn 4.","explain":"14."},
+      {"type":"num","prompt":"9 + 5 = ?","answer":14,"hint":"9 + 1 + 4.","explain":"14."},
+      {"type":"num","prompt":"7 + 7 = ?","answer":14,"hint":"Đôi bảy.","explain":"14."},
+      {"type":"num","prompt":"4 + 9 = ?","answer":13,"hint":"9 + 1 + 3.","explain":"13."},
+      {"type":"mc","prompt":"Phép nào có tổng lớn nhất?","choices":["9+8","8+5","7+6","9+4"],"correct":0,"hint":"Tính từng phép.","explain":"9 + 8 = 17."},
+      {"type":"num","prompt":"6 + 8 = ?","answer":14,"hint":"Qua 10.","explain":"14."},
+      {"type":"num","prompt":"5 + 9 = ?","answer":14,"hint":"5 cần 5 nữa được 10.","explain":"14."},
+      {"type":"num","prompt":"8 cần thêm mấy nữa được 10?","answer":2,"hint":"8 + 2 = 10.","explain":"2."},
+      {"type":"num","prompt":"Lan có 8 kẹo, mẹ cho 6 kẹo. Lan có mấy kẹo?","answer":14,"hint":"8 + 6.","explain":"14."},
     ],
   },
 
@@ -698,7 +734,32 @@ const G2_LESSONS = [
     title: "Bảng cộng (qua 10)",
     summary: "Thuộc các công thức cộng qua 10 trong phạm vi 20.",
     body: String.raw`
-      <figure class="figure" data-animation="g2-b8-make-ten">
+      <figure class="figure" data-animation="g2-b8-add-table">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Bảng cộng qua 10">
+          <rect x="20" y="22" width="92" height="32" rx="4" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <text x="66" y="43" font-size="13" text-anchor="middle">9+2=11</text>
+          <rect x="120" y="22" width="92" height="32" rx="4" fill="none" stroke="#83C167" stroke-width="1.5"/>
+          <text x="166" y="43" font-size="13" text-anchor="middle">9+3=12</text>
+          <rect x="220" y="22" width="92" height="32" rx="4" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="266" y="43" font-size="13" text-anchor="middle">9+4=13</text>
+          <rect x="20" y="62" width="92" height="32" rx="4" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="66" y="83" font-size="13" text-anchor="middle">9+5=14</text>
+          <rect x="120" y="62" width="92" height="32" rx="4" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="166" y="83" font-size="13" text-anchor="middle">9+6=15</text>
+          <rect x="220" y="62" width="92" height="32" rx="4" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="266" y="83" font-size="13" text-anchor="middle">9+7=16</text>
+          <rect x="20" y="102" width="92" height="32" rx="4" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="66" y="123" font-size="13" text-anchor="middle">9+8=17</text>
+          <rect x="120" y="102" width="92" height="32" rx="4" fill="none" stroke="#58C4DD" stroke-width="1.5"/>
+          <text x="166" y="123" font-size="13" text-anchor="middle">9+9=18</text>
+          <rect x="220" y="102" width="92" height="32" rx="4" fill="none" stroke="#9A72AC" stroke-width="1.5"/>
+          <text x="266" y="123" font-size="13" text-anchor="middle">8+8=16</text>
+          <text x="160" y="152" font-size="12" text-anchor="middle" fill="#888888">Đổi chỗ: 9+6 = 6+9</text>
+        </svg>
+              <figcaption>Thuộc các công thức cộng qua 10 trong phạm vi 20.</figcaption>
+      </figure>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc các công thức cộng qua 10 trong phạm vi 20.</p>
+            <figure class="figure" data-animation="g2-b8-make-ten">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
           <text x="160" y="28" font-size="14" text-anchor="middle">9 + 9</text>
           <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
@@ -712,50 +773,50 @@ const G2_LESSONS = [
           <text x="160" y="120" font-size="13" text-anchor="middle">9+1=10, còn 8 → 18</text>
           <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">9 + 9 = 18</text>
         </svg>
-              <figcaption>Thuộc các công thức cộng qua 10 trong phạm vi 20.</figcaption>
-      </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc các công thức cộng qua 10 trong phạm vi 20.</p>
-      
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Họ 9: 9+2=11, 9+3=12, 9+4=13, 9+5=14, 9+6=15, 9+7=16, 9+8=17, 9+9=18.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Bảng cộng qua 10 gồm các công thức như 9+2,ldots,9+9; 8+3,ldots,8+9; … có tổng từ 11 đến 18.</p>
+        <p><strong>Nhớ này.</strong> Bảng cộng qua 10: các phép như 9+2 đến 9+9, 8+3 đến 8+9… Tổng từ 11 đến 18.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> 9 + 8 = 17. 8 + 7 = 15. 7 + 6 = 13.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Từ 9 + 6 = 15 suy ra 6 + 9 = 15 (đổi chỗ số hạng).</p>
+        <p><strong>Thêm một chút.</strong> Đã thuộc 9 + 6 = 15 thì 6 + 9 cũng = 15. Đổi chỗ hai số, tổng không đổi.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> 9 + 7 = 16 chứ không phải 15. Kiểm bằng: 9 + 7 = 9 + 1 + 6 = 16.</p>
+        <p><strong>Cẩn thận.</strong> 9 + 7 = 16, không phải 15. Kiểm: 9 + 1 = 10, còn 6, ra 16.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Học theo “họ” 9+, 8+, 7+ … Mỗi ngày ôn vài công thức.</p>
+        <p><strong>Mẹo nhỏ.</strong> Học theo họ 9+, rồi 8+, rồi 7+. Mỗi ngày ôn vài phép.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm lẫn các tổng gần nhau (15/16/17).</li>
-          <li>Không dùng giao hoán để giảm bài học.</li>
+          <li>Nhầm 15 với 16 với 17.</li>
+          <li>Quên đổi chỗ: 8+5 = 5+8.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>9 + 9 = ? <em>— 18.</em></p>
         <p>8 + 9 = ? <em>— 17.</em></p>
+        <p>5 + 8 = ? <em>— 13.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Thuộc 8 + 5 = 13. Đổi chỗ: 5 + 8 = 13. Liên hệ trừ: 13 − 8 = 5.</p>
+        <p><strong>Làm từng bước.</strong> Thuộc 8 + 5 = 13. Đổi chỗ: 5 + 8 = 13. Trừ ngược: 13 − 8 = 5.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng cộng qua 10 = “cơm hàng ngày” của lớp 2.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng cộng qua 10: học thuộc, đổi chỗ được, trừ ngược được.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"9 + 9 = ?","answer":18,"hint":"Đôi 9.","explain":"18."},
-      {"type":"num","prompt":"8 + 9 = ?","answer":17,"hint":"Bảng.","explain":"17."},
+      {"type":"num","prompt":"9 + 9 = ?","answer":18,"hint":"Đôi chín.","explain":"18."},
+      {"type":"num","prompt":"8 + 9 = ?","answer":17,"hint":"Bảng 9.","explain":"17."},
       {"type":"num","prompt":"7 + 8 = ?","answer":15,"hint":"Bảng.","explain":"15."},
-      {"type":"num","prompt":"6 + 9 = ?","answer":15,"hint":"Bảng.","explain":"15."},
+      {"type":"num","prompt":"6 + 9 = ?","answer":15,"hint":"Đổi chỗ 9+6.","explain":"15."},
       {"type":"num","prompt":"5 + 8 = ?","answer":13,"hint":"Bảng.","explain":"13."},
-      {"type":"num","prompt":"Có 21 bông hoa, Chi lấy 9. Còn lại mấy?","answer":12,"hint":"Bớt → trừ.","explain":"21 − 9 = 12."},
-      {"type":"num","prompt":"Trên kệ có 27 quyển sách, đem đi 24. Còn mấy quyển?","answer":3,"hint":"Trừ.","explain":"27 − 24 = 3."},
+      {"type":"num","prompt":"9 + 6 = ?","answer":15,"hint":"Bảng 9.","explain":"15."},
+      {"type":"num","prompt":"8 + 8 = ?","answer":16,"hint":"Đôi tám.","explain":"16."},
+      {"type":"num","prompt":"9 + 7 = ?","answer":16,"hint":"9+1+6.","explain":"16."},
+      {"type":"num","prompt":"Có 9 bút, thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"9+8.","explain":"17."},
     ],
   },
 
@@ -766,7 +827,22 @@ const G2_LESSONS = [
     title: "Bài toán về thêm, bớt một số đơn vị",
     summary: "Lời văn: thêm → cộng; bớt → trừ.",
     body: String.raw`
-      <figure class="figure" data-animation="g2-b9-compare">
+      <figure class="figure" data-animation="g2-b9-keywords">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
+          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+        </svg>
+              <figcaption>Lời văn: thêm → cộng; bớt → trừ.</figcaption>
+      </figure>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Lời văn: thêm → cộng; bớt → trừ.</p>
+            <figure class="figure" data-animation="g2-b9-compare">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hơn kém nhau">
           <rect x="60" y="103.2" width="60" height="36.8" fill="none" stroke="#83C167" stroke-width="2"/>
           <rect x="180" y="109.2" width="60" height="30.799999999999997" fill="none" stroke="#58C4DD" stroke-width="2"/>
@@ -774,51 +850,50 @@ const G2_LESSONS = [
           <text x="210" y="155" font-size="12" text-anchor="middle">B = 9</text>
           <text x="160" y="24" font-size="13" text-anchor="middle" fill="#FC6255">5 (hiệu)</text>
         </svg>
-              <figcaption>Lời văn: thêm → cộng; bớt → trừ.</figcaption>
-      </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Lời văn: thêm → cộng; bớt → trừ.</p>
-      
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> An có 10 tem, dán đi 3 tem. Còn 10 − 3 = 7 tem.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> <strong>Thêm / cho thêm / lớn lên</strong> → cộng. <strong>Bớt / lấy đi / còn lại</strong> → trừ.</p>
+        <p><strong>Nhớ này.</strong> Từ <strong>thêm / cho thêm / tất cả</strong> → cộng. Từ <strong>bớt / lấy đi / còn lại</strong> → trừ.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> Có 9 kẹo, mẹ cho thêm 5: 9 + 5 = 14. Có 14, ăn bớt 3: 14 - 3 = 11.</p>
+        <p><strong>Cùng làm.</strong> Có 9 kẹo, mẹ cho thêm 5. 9 + 5 = 14 kẹo. Có 14, ăn 3. 14 − 3 = 11 kẹo.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Trong hộp 12 viên phấn, cô lấy ra 4. Còn 12 - 4 = 8. Rồi thêm 5 viên mới: 8 + 5 = 13.</p>
+        <p><strong>Thêm một chút.</strong> Hộp 12 viên phấn, cô lấy 4. Còn 12 − 4 = 8. Rồi thêm 5 viên. 8 + 5 = 13.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Từ “còn lại” gần như luôn là trừ. Từ “tất cả / cả thảy” thường là cộng.</p>
+        <p><strong>Cẩn thận.</strong> Thấy “còn lại” thì trừ. Thấy “tất cả” thì cộng. Đọc hết câu đã.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Gạch chân từ khóa → chọn phép → tính → đọc lại câu trả lời đủ đơn vị.</p>
+        <p><strong>Mẹo nhỏ.</strong> Gạch chân từ khóa → chọn + hoặc − → tính → nói đủ đơn vị (quả, bút…).</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
           <li>Chọn nhầm cộng/trừ.</li>
-          <li>Quên đơn vị (quả, bạn, quyển…).</li>
+          <li>Quên viết quả, bút, tem.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
-        <p>8 quả, hái thêm 7. Tất cả? <em>— 15.</em></p>
-        <p>16 bút, cho bạn 5. Còn? <em>— 11.</em></p>
+        <p>8 quả, hái thêm 7. Tất cả? <em>— 15 quả.</em></p>
+        <p>16 bút, cho bạn 5. Còn? <em>— 11 bút.</em></p>
+        <p>Từ “bớt” dùng phép nào? <em>— Trừ.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Có 11 bóng bay, thêm 6. Hỏi tất cả? Từ khóa “thêm” → 11 + 6. 11 + 6 = 17.</p>
+        <p><strong>Làm từng bước.</strong> Có 11 bóng bay, thêm 6. Từ khóa “thêm” → cộng. 11 + 6 = 17 bóng bay.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Thêm → cộng. Bớt / còn → trừ.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Thêm → cộng. Bớt / còn lại → trừ.</p></div>
     `,
     exercises: [
       {"type":"text","prompt":"Có 8 quả, hái thêm 5. Phải làm phép nào? (gõ: cong hoặc tru)","answer":"cong","accept":["cong","cộng","cong them","+"],"hint":"thêm → cộng","explain":"cộng."},
-      {"type":"num","prompt":"Có 8, thêm 7. Tất cả?","answer":15,"hint":"Cộng.","explain":"15."},
-      {"type":"num","prompt":"Có 16, cho đi 5. Còn?","answer":11,"hint":"Trừ.","explain":"11."},
-      {"type":"num","prompt":"12 hoa, nở thêm 6?","answer":18,"hint":"Cộng.","explain":"18."},
-      {"type":"num","prompt":"20 tem, dán 9. Còn?","answer":11,"hint":"Trừ.","explain":"11."},
-      {"type":"mc","prompt":"“Bớt đi” →","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Lấy đi.","explain":"Trừ."},
-      {"type":"num","prompt":"15 + 4 − 3 = ?","answer":16,"hint":"Từng bước.","explain":"16."},
-      {"type":"num","prompt":"Có 10, bớt 2, thêm 5. Còn?","answer":13,"hint":"10−2+5.","explain":"13."},
+      {"type":"num","prompt":"Có 8 quả, hái thêm 7. Tất cả mấy quả?","answer":15,"hint":"Thêm → cộng.","explain":"15."},
+      {"type":"num","prompt":"Có 16 bút, cho bạn 5. Còn mấy bút?","answer":11,"hint":"Cho đi → trừ.","explain":"11."},
+      {"type":"num","prompt":"12 hoa, nở thêm 6. Có mấy hoa?","answer":18,"hint":"Cộng.","explain":"18."},
+      {"type":"num","prompt":"Có 20 tem, dán 9 tem. Còn mấy tem?","answer":11,"hint":"Trừ.","explain":"11."},
+      {"type":"mc","prompt":"Từ “bớt đi” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Lấy đi.","explain":"Trừ."},
+      {"type":"num","prompt":"Có 10 kẹo, ăn 2, mẹ cho thêm 5. Còn mấy kẹo?","answer":13,"hint":"10 − 2 + 5.","explain":"13."},
+      {"type":"mc","prompt":"Từ “tất cả” thường dùng phép","choices":["Cộng","Trừ","Nhân","Chia"],"correct":0,"hint":"Gộp lại.","explain":"Cộng."},
+      {"type":"num","prompt":"Có 9 bút, cô cho thêm 8. Tất cả mấy bút?","answer":17,"hint":"9+8 qua 10.","explain":"17."},
     ],
   },
 
@@ -848,26 +923,40 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ qua 10 và bài toán thêm bớt.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và bài toán thêm bớt.</p>
-      
+            <figure class="figure" data-animation="g2-b10-make-ten">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
+          <text x="160" y="28" font-size="14" text-anchor="middle">7 + 9</text>
+          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="70" y="76" font-size="16" text-anchor="middle">7</text>
+          <text x="120" y="76" font-size="16">+</text>
+          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="165" y="76" font-size="16" text-anchor="middle">3</text>
+          <text x="200" y="76" font-size="16">+</text>
+          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="245" y="76" font-size="16" text-anchor="middle">6</text>
+          <text x="160" y="120" font-size="13" text-anchor="middle">7+3=10, còn 6 → 16</text>
+          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">7 + 9 = 16</text>
+        </svg>
+      </figure>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Kết hợp bảng cộng và lời văn thêm/bớt trong phạm vi 20.</p>
+        <p><strong>Nhớ này.</strong> Nhẩm cộng qua 10. Đọc từ khóa thêm/bớt. Nhiều phép thì làm từ trái sang phải.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 7 + 9 = 16. 13 − 8 = 5 (sắp học trừ; có thể nhẩm 8 + □ = 13).</p>
+        <p><strong>Cùng làm.</strong> 7 + 9 = 16. Có 11 bóng, thêm 6 → 17.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> □ + 7 = 16 → □ = 9. Có 11, thêm 6 → 17.</p>
+        <p><strong>Thêm một chút.</strong> Tìm số hạng: □ + 7 = 16. Lấy 16 − 7 = 9.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Làm dãy 9 + 8 − 6: phải trái sang phải, 17 − 6 = 11, không trừ 8 − 6 trước.</p>
+        <p><strong>Cẩn thận.</strong> 9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Một phép một bước; nhiều dấu thì làm lần lượt.</p>
+        <p><strong>Mẹo nhỏ.</strong> Một dấu một bước. Nhiều dấu: trái → phải.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Sai thứ tự phép tính.</li>
+          <li>Sai thứ tự khi có hai dấu.</li>
           <li>Nhầm bảng cộng.</li>
         </ul>
       </div>
@@ -875,20 +964,22 @@ const G2_LESSONS = [
         <summary>Thử xem em nhớ chưa</summary>
         <p>7 + 9 = ? <em>— 16.</em></p>
         <p>□ + 7 = 16? <em>— 9.</em></p>
+        <p>18 bớt 9? <em>— 9.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 18 bớt 9: 9 + 9 = 18 nên 18 − 9 = 9.</p>
+        <p><strong>Làm từng bước.</strong> 18 bớt 9. 9 + 9 = 18 nên 18 − 9 = 9.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Nhẩm qua 10 + đọc từ khóa lời văn.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Nhẩm qua 10. Đọc từ khóa. Làm trái sang phải.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"7 + 9 = ?","answer":16,"hint":"Qua 10.","explain":"16."},
-      {"type":"num","prompt":"13 − 8 = ?","answer":5,"hint":"8+5=13.","explain":"5."},
-      {"type":"num","prompt":"11 thêm 6?","answer":17,"hint":"Cộng.","explain":"17."},
-      {"type":"num","prompt":"18 bớt 9?","answer":9,"hint":"Trừ.","explain":"9."},
-      {"type":"num","prompt":"□ + 7 = 16","answer":9,"hint":"16−7.","explain":"9."},
-      {"type":"num","prompt":"Có 9 tem, Minh lấy 3. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"9 − 3 = 6."},
-      {"type":"num","prompt":"Trên kệ có 41 quyển sách, đem đi 16. Còn mấy quyển?","answer":25,"hint":"Trừ.","explain":"41 − 16 = 25."},
+      {"type":"num","prompt":"7 + 9 = ?","answer":16,"hint":"7 cần 3 nữa được 10.","explain":"16."},
+      {"type":"num","prompt":"13 − 8 = ?","answer":5,"hint":"8 + 5 = 13.","explain":"5."},
+      {"type":"num","prompt":"Có 11 hoa, nở thêm 6. Có mấy hoa?","answer":17,"hint":"Thêm → cộng.","explain":"17."},
+      {"type":"num","prompt":"Có 18 kẹo, ăn 9. Còn mấy kẹo?","answer":9,"hint":"Trừ.","explain":"9."},
+      {"type":"num","prompt":"Số nào cộng 7 được 16?","answer":9,"hint":"16 − 7.","explain":"9."},
+      {"type":"num","prompt":"9 + 8 − 6 = ?","answer":11,"hint":"17 − 6.","explain":"11."},
+      {"type":"num","prompt":"5 + 7 + 4 = ?","answer":16,"hint":"12 + 4.","explain":"16."},
+      {"type":"num","prompt":"8 + 7 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
     ],
   },
 
@@ -899,64 +990,95 @@ const G2_LESSONS = [
     title: "Phép trừ (qua 10) trong phạm vi 20",
     summary: "Trừ khi không đủ đơn vị, phạm vi 20.",
     body: String.raw`
-      <figure class="figure" data-animation="g2-b11-make-ten">
-        <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
-          <text x="160" y="28" font-size="14" text-anchor="middle">15 + 7</text>
-          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
-          <text x="70" y="76" font-size="16" text-anchor="middle">15</text>
-          <text x="120" y="76" font-size="16">+</text>
-          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
-          <text x="165" y="76" font-size="16" text-anchor="middle">5</text>
-          <text x="200" y="76" font-size="16">+</text>
-          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
-          <text x="245" y="76" font-size="16" text-anchor="middle">2</text>
-          <text x="160" y="120" font-size="13" text-anchor="middle">15+5=10, còn 2 → 8</text>
-          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">15 + 7 = 8</text>
+      <figure class="figure" data-animation="g2-b11-takeaway">
+        <svg viewBox="0 0 320 160" role="img" aria-label="15 − 7">
+          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="21" y1="33" x2="35" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="56" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="49" y1="33" x2="63" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="84" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="77" y1="33" x2="91" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="112" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="105" y1="33" x2="119" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="140" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="133" y1="33" x2="147" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="168" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="161" y1="33" x2="175" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="196" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="189" y1="33" x2="203" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+
+          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 8 cái</text>
+          <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">15 − 7 = 8</text>
         </svg>
               <figcaption>Trừ khi không đủ đơn vị, phạm vi 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Trừ khi không đủ đơn vị, phạm vi 20.</p>
-      
+            <figure class="figure" data-animation="g2-b11-make-ten">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Cộng qua 10">
+          <text x="160" y="28" font-size="14" text-anchor="middle">10 + 8</text>
+          <rect x="30" y="50" width="80" height="40" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="70" y="76" font-size="16" text-anchor="middle">10</text>
+          <text x="120" y="76" font-size="16">+</text>
+          <rect x="140" y="50" width="50" height="40" fill="none" stroke="#58C4DD" stroke-width="2"/>
+          <text x="165" y="76" font-size="16" text-anchor="middle">0</text>
+          <text x="200" y="76" font-size="16">+</text>
+          <rect x="220" y="50" width="50" height="40" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="245" y="76" font-size="16" text-anchor="middle">8</text>
+          <text x="160" y="120" font-size="13" text-anchor="middle">10+0=10, còn 8 → 8</text>
+          <text x="160" y="145" font-size="16" text-anchor="middle" fill="#83C167">10 + 8 = 8</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Có 12 kẹo, ăn 9. 9 + 3 = 12 nên còn 3 kẹo.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Có thể trừ bằng cách tách, hoặc nghĩ ngược: a - b = □ nghĩa là b + □ = a.</p>
+        <p><strong>Nhớ này.</strong> Trừ qua 10: nghĩ ngược cộng. 15 − 7 = □ nghĩa là 7 + □ = 15.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 15 − 7: 7 + 8 = 15 nên hiệu là 8. 12 − 9 = 3.</p>
+        <p><strong>Cùng làm.</strong> 15 − 7. Hỏi: 7 cộng mấy bằng 15? 7 + 8 = 15 nên còn 8.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> 14 − 6: 14 − 4 = 10, 10 − 2 = 8.</p>
+        <p><strong>Thêm một chút.</strong> 14 − 6. Trừ 4 cho đủ xuống 10, còn trừ 2: 10 − 2 = 8.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Không được “đảo” 5 − 9 thành 9 − 5 khi trừ cột — phải mượn (ở phạm vi 20 ta dùng nhẩm).</p>
+        <p><strong>Cẩn thận.</strong> Không đổi chỗ 5 − 9 thành 9 − 5. Số trước là số bị trừ.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Hỏi: “b cộng mấy bằng a?” — ra hiệu ngay.</p>
+        <p><strong>Mẹo nhỏ.</strong> Hỏi: số trừ cộng mấy thì ra số bị trừ?</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Lấy số bé trừ số lớn rồi ghi số dương sai nghĩa.</li>
-          <li>Nhầm với cộng.</li>
+          <li>Đảo hai số rồi trừ.</li>
+          <li>Nhầm trừ thành cộng.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>13 − 5 = ? <em>— 8.</em></p>
         <p>16 − 9 = ? <em>— 7.</em></p>
+        <p>7 cộng mấy bằng 15? <em>— 8.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 17 − 9. Tìm □: 9 + □ = 17. 9 + 8 = 17 → □ = 8.</p>
+        <p><strong>Làm từng bước.</strong> 17 − 9. Hỏi 9 + □ = 17. 9 + 8 = 17. Vậy 17 − 9 = 8.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ qua 10: nghĩ phép cộng ngược hoặc tách qua 10.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Trừ qua 10: nghĩ phép cộng ngược.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"13 − 5 = ?","answer":8,"hint":"Ngược cộng.","explain":"8."},
-      {"type":"num","prompt":"16 − 9 = ?","answer":7,"hint":"9+7=16.","explain":"7."},
-      {"type":"num","prompt":"11 − 8 = ?","answer":3,"hint":"8+3=11.","explain":"3."},
-      {"type":"num","prompt":"17 − 9 = ?","answer":8,"hint":"9+8=17.","explain":"8."},
-      {"type":"num","prompt":"15 − 6 = ?","answer":9,"hint":"6+9=15.","explain":"9."},
-      {"type":"num","prompt":"Dũng có 9 bút, được thêm 8 bút. Tất cả mấy bút?","answer":17,"hint":"Thêm → cộng.","explain":"9 + 8 = 17."},
-      {"type":"num","prompt":"Trong hộp có 27 nhãn, bạn cho thêm 3. Tất cả mấy?","answer":30,"hint":"Cộng.","explain":"27 + 3 = 30."},
+      {"type":"num","prompt":"13 − 5 = ?","answer":8,"hint":"5 + 8 = 13.","explain":"8."},
+      {"type":"num","prompt":"16 − 9 = ?","answer":7,"hint":"9 + 7 = 16.","explain":"7."},
+      {"type":"num","prompt":"11 − 8 = ?","answer":3,"hint":"8 + 3 = 11.","explain":"3."},
+      {"type":"num","prompt":"17 − 9 = ?","answer":8,"hint":"9 + 8 = 17.","explain":"8."},
+      {"type":"num","prompt":"15 − 6 = ?","answer":9,"hint":"6 + 9 = 15.","explain":"9."},
+      {"type":"num","prompt":"14 − 8 = ?","answer":6,"hint":"8 + 6 = 14.","explain":"6."},
+      {"type":"num","prompt":"12 − 7 = ?","answer":5,"hint":"7 + 5 = 12.","explain":"5."},
+      {"type":"num","prompt":"Có 15 kẹo, ăn 7. Còn mấy kẹo?","answer":8,"hint":"15 − 7.","explain":"8."},
+      {"type":"num","prompt":"Có 17 bút, Dũng lấy 8. Còn lại mấy?","answer":9,"hint":"Bớt → trừ.","explain":"17 − 8 = 9."},
     ],
   },
 
@@ -984,47 +1106,79 @@ const G2_LESSONS = [
               <figcaption>Thuộc các phép trừ qua 10 trong phạm vi 20.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc các phép trừ qua 10 trong phạm vi 20.</p>
-      
+            <figure class="figure" data-animation="g2-b12-takeaway">
+        <svg viewBox="0 0 320 160" role="img" aria-label="16 − 7">
+          <circle cx="28" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="21" y1="33" x2="35" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="56" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="49" y1="33" x2="63" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="84" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="77" y1="33" x2="91" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="112" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="105" y1="33" x2="119" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="140" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="133" y1="33" x2="147" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="168" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="161" y1="33" x2="175" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="196" cy="40" r="9" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <line x1="189" y1="33" x2="203" y2="47" stroke="#FC6255" stroke-width="2"/>
+          <circle cx="224" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="252" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="280" cy="40" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="28" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="56" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="84" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="112" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="140" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+          <circle cx="168" cy="72" r="9" fill="none" stroke="#83C167" stroke-width="2"/>
+
+          <text x="160" y="130" font-size="13" text-anchor="middle">Gạch 7 cái (màu đỏ), còn 9 cái</text>
+          <text x="160" y="152" font-size="16" text-anchor="middle" fill="#83C167">16 − 7 = 9</text>
+        </svg>
+      </figure><div class="example"><p><strong>Thêm ví dụ.</strong> Họ trừ 9: 11−9=2, 12−9=3, … 19−9=10.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Nếu a + b = c thì c - a = b và c - b = a.</p>
+        <p><strong>Nhớ này.</strong> Nếu 9 + 7 = 16 thì 16 − 9 = 7 và 16 − 7 = 9.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> 9 + 7 = 16  thì  16 − 9 = 7, 16 − 7 = 9. 18 − 9 = 9.</p>
+        <p><strong>Cùng làm.</strong> 18 − 9 = 9. 17 − 8 = 9. 14 − 7 = 7.</p>
       </div>
       <div class="example">
         <p><strong>Thêm một chút.</strong> 14 − 8 = 6 vì 8 + 6 = 14.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> 19 − 9 = 10, không phải 9. Trừ đúng một lần số trừ.</p>
+        <p><strong>Cẩn thận.</strong> 19 − 9 = 10, không phải 9.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Mỗi công thức cộng “đẻ” hai công thức trừ.</p>
+        <p><strong>Mẹo nhỏ.</strong> Một phép cộng cho hai phép trừ. Ôn theo cặp.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm 14 − 7 = 6.</li>
-          <li>Quên 10 khi trừ 9 cho 19.</li>
+          <li>14 − 7 = 7, không phải 6.</li>
+          <li>19 − 9 = 10.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>18 − 9 = ? <em>— 9.</em></p>
         <p>17 − 8 = ? <em>— 9.</em></p>
+        <p>15 − 8 = ? <em>— 7.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Ghi cặp: 8+7=15; 15−8=7; 15−7=8. Ôn theo cặp nhanh hơn học rời.</p>
+        <p><strong>Làm từng bước.</strong> Cặp 8+7=15. Vậy 15 − 8 = 7 và 15 − 7 = 8.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng trừ = bảng cộng viết ngược.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Bảng trừ = bảng cộng đọc ngược.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"18 − 9 = ?","answer":9,"hint":"Đôi.","explain":"9."},
-      {"type":"num","prompt":"17 − 8 = ?","answer":9,"hint":"Bảng.","explain":"9."},
-      {"type":"num","prompt":"14 − 7 = ?","answer":7,"hint":"Đôi 7.","explain":"7."},
-      {"type":"num","prompt":"12 − 5 = ?","answer":7,"hint":"5+7=12.","explain":"7."},
-      {"type":"num","prompt":"19 − 9 = ?","answer":10,"hint":"Trừ 9.","explain":"10."},
-      {"type":"num","prompt":"An có 12 nhãn. Bình nhiều hơn An 5 nhãn. Bình có mấy?","answer":17,"hint":"Nhiều hơn → cộng.","explain":"12 + 5 = 17."},
-      {"type":"num","prompt":"An có 17 bi. Bình ít hơn An 5. Bình có mấy?","answer":12,"hint":"Ít hơn → trừ.","explain":"17 − 5 = 12."},
+      {"type":"num","prompt":"18 − 9 = ?","answer":9,"hint":"Đôi chín.","explain":"9."},
+      {"type":"num","prompt":"17 − 8 = ?","answer":9,"hint":"8 + 9 = 17.","explain":"9."},
+      {"type":"num","prompt":"14 − 7 = ?","answer":7,"hint":"Đôi bảy.","explain":"7."},
+      {"type":"num","prompt":"12 − 5 = ?","answer":7,"hint":"5 + 7 = 12.","explain":"7."},
+      {"type":"num","prompt":"19 − 9 = ?","answer":10,"hint":"9 + 10 = 19.","explain":"10."},
+      {"type":"num","prompt":"16 − 8 = ?","answer":8,"hint":"Đôi tám.","explain":"8."},
+      {"type":"num","prompt":"15 − 9 = ?","answer":6,"hint":"9 + 6 = 15.","explain":"6."},
+      {"type":"num","prompt":"Có 16 tem, dán 7 tem. Còn mấy tem?","answer":9,"hint":"16 − 7.","explain":"9."},
+      {"type":"num","prompt":"Có 17 nhãn, An lấy 5. Còn lại mấy?","answer":12,"hint":"Bớt → trừ.","explain":"17 − 5 = 12."},
     ],
   },
 
@@ -1046,48 +1200,50 @@ const G2_LESSONS = [
               <figcaption>Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).</p>
-      
+      <div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra An.</p></div>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> A nhiều hơn B k đơn vị  thì  A = B + k. A ít hơn B k  thì  A = B - k.</p>
+        <p><strong>Nhớ này.</strong> A nhiều hơn B thì A = B + số hơn. A ít hơn B thì A = B − số ít.</p>
       </div>
       <div class="example">
-        <p><strong>Cùng làm.</strong> Bình 10 bi. An nhiều hơn Bình 3  thì  An = 10 + 3 = 13.</p>
+        <p><strong>Cùng làm.</strong> Bình có 10 bi. An nhiều hơn Bình 3 bi. An = 10 + 3 = 13 bi.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> Lan 18 tem. Mai ít hơn Lan 5  thì  Mai = 18 − 5 = 13.</p>
+        <p><strong>Thêm một chút.</strong> Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai = 18 − 5 = 13 tem.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> “Cam ít hơn quýt 6, cam có 14” → quýt = 14 + 6 = 20, không phải 14 − 6.</p>
+        <p><strong>Cẩn thận.</strong> Cam ít hơn quýt 6 quả, cam có 14. Quýt nhiều hơn cam nên quýt = 14 + 6 = 20, không phải 14 − 6.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Xác định ai là mốc, ai nhiều/ít, rồi mới chọn cộng hay trừ.</p>
+        <p><strong>Mẹo nhỏ.</strong> Tìm mốc (số đã biết). Nhiều hơn mốc → cộng. Ít hơn mốc → trừ.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Thấy “ít hơn” là trừ vào số mốc sai người.</li>
-          <li>Không vẽ sơ đồ đoạn thẳng.</li>
+          <li>Thấy “ít hơn” là trừ nhầm người.</li>
+          <li>Nên vẽ đoạn ngắn–dài.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>Bình 10, An nhiều hơn 3. An? <em>— 13.</em></p>
         <p>Lan 18, Mai ít hơn 5. Mai? <em>— 13.</em></p>
+        <p>Cam 14, ít hơn quýt 6. Quýt? <em>— 20.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> Hùng có 9 nhãn. Bố nhiều hơn Hùng 8 nhãn (bài minh họa số nhỏ). Bố = 9 + 8 = 17.</p>
+        <p><strong>Làm từng bước.</strong> Hùng 9 nhãn. Nam nhiều hơn Hùng 8. Nam = 9 + 8 = 17 nhãn.</p>
       </div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Nhiều hơn mốc → cộng. Ít hơn mốc → trừ. Đọc rõ ai là mốc.</p></div>
     `,
     exercises: [
       {"type":"text","prompt":"A ít hơn B 4 đơn vị. Lấy B làm mốc thì làm phép nào với 4? (cong/tru)","answer":"tru","accept":["tru","trừ","-"],"hint":"ít hơn mốc → trừ","explain":"trừ."},
-      {"type":"num","prompt":"Bình 10, An nhiều hơn 3. An?","answer":13,"hint":"Cộng.","explain":"13."},
-      {"type":"num","prompt":"Lan 18, Mai ít hơn 5. Mai?","answer":13,"hint":"Trừ.","explain":"13."},
-      {"type":"num","prompt":"Mốc 9, nhiều hơn 8?","answer":17,"hint":"Cộng.","explain":"17."},
-      {"type":"num","prompt":"Cam 14, ít hơn quýt 6. Quýt?","answer":20,"hint":"14+6.","explain":"20."},
-      {"type":"mc","prompt":"“Ít hơn” (so với mốc) →","choices":["Trừ khỏi mốc","Luôn cộng","Nhân 2","Chia 2"],"correct":0,"hint":"Bé hơn mốc.","explain":"Trừ."},
-      {"type":"num","prompt":"20, ít hơn 6?","answer":14,"hint":"20−6.","explain":"14."},
-      {"type":"num","prompt":"12, nhiều hơn 7?","answer":19,"hint":"12+7.","explain":"19."},
+      {"type":"num","prompt":"Bình có 10 bi. An nhiều hơn Bình 3 bi. An có mấy bi?","answer":13,"hint":"Nhiều hơn → cộng.","explain":"13."},
+      {"type":"num","prompt":"Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai có mấy tem?","answer":13,"hint":"Ít hơn Lan → trừ.","explain":"13."},
+      {"type":"num","prompt":"Nam 9 tuổi. Bố nhiều hơn Nam 8 tuổi (số minh họa). Bố bao nhiêu tuổi?","answer":17,"hint":"9+8.","explain":"17."},
+      {"type":"num","prompt":"Cam 14 quả, ít hơn quýt 6 quả. Quýt mấy quả?","answer":20,"hint":"Cam ít hơn → quýt = 14+6.","explain":"20."},
+      {"type":"mc","prompt":"“Ít hơn mốc” dùng phép","choices":["Trừ","Cộng","Nhân","Chia"],"correct":0,"hint":"Bé hơn mốc.","explain":"Trừ."},
+      {"type":"num","prompt":"Hoa có 20 nhãn, ít hơn 6 nhãn so với số đó là?","answer":14,"hint":"20−6.","explain":"14."},
+      {"type":"num","prompt":"Có 12 bút, nhiều hơn 7 bút nữa thì có mấy bút?","answer":19,"hint":"12+7.","explain":"19."},
+      {"type":"num","prompt":"An 15 tem, Bình nhiều hơn An 4. Bình có mấy tem?","answer":19,"hint":"15+4.","explain":"19."},
     ],
   },
 
@@ -1117,47 +1273,62 @@ const G2_LESSONS = [
               <figcaption>Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</figcaption>
       </figure>
       <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ qua 10 và nhiều hơn, ít hơn.</p>
-      
+            <figure class="figure" data-animation="g2-b14-keywords">
+        <svg viewBox="0 0 320 160" role="img" aria-label="Từ khóa thêm / bớt">
+          <rect x="18" y="24" width="130" height="90" rx="8" fill="none" stroke="#83C167" stroke-width="2"/>
+          <text x="83" y="50" font-size="14" text-anchor="middle" fill="#83C167">Thêm</text>
+          <text x="83" y="72" font-size="12" text-anchor="middle">cho thêm, tất cả</text>
+          <text x="83" y="94" font-size="14" text-anchor="middle">→ cộng</text>
+          <rect x="172" y="24" width="130" height="90" rx="8" fill="none" stroke="#FC6255" stroke-width="2"/>
+          <text x="237" y="50" font-size="14" text-anchor="middle" fill="#FC6255">Bớt</text>
+          <text x="237" y="72" font-size="12" text-anchor="middle">lấy đi, còn lại</text>
+          <text x="237" y="94" font-size="14" text-anchor="middle">→ trừ</text>
+          <text x="160" y="140" font-size="12" text-anchor="middle">Gạch chân từ trong đề rồi chọn phép</text>
+        </svg>
+      </figure>
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Trộn nhẩm + lời văn nhiều hơn/ít hơn/thêm/bớt.</p>
+        <p><strong>Nhớ này.</strong> Nhẩm cộng/trừ qua 10. Thêm/bớt. Nhiều hơn/ít hơn. Làm trái sang phải.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> 9 + 8 − 6 = 11. Số nhiều hơn 15 bốn đơn vị là 19. Số ít hơn 15 bốn đơn vị là 11.</p>
       </div>
       <div class="example">
-        <p><strong>Thêm một chút.</strong> 7 + 6 + 5 = 18.</p>
+        <p><strong>Thêm một chút.</strong> 7 + 6 + 5 = 18. Từng bước: 7+6=13, 13+5=18.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> “Ít hơn 15 là 4 đơn vị” = 15 − 4 = 11, không phải 4.</p>
+        <p><strong>Cẩn thận.</strong> Ít hơn 15 là 4 đơn vị nghĩa là 15 − 4 = 11, không phải 4.</p>
       </div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Làm nháp từng phép; viết câu trả lời đủ nghĩa.</p>
+        <p><strong>Mẹo nhỏ.</strong> Gạch từ khóa. Một phép một dòng nháp.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
           <li>Sai từ khóa nhiều/ít.</li>
-          <li>Sai thứ tự dãy tính.</li>
+          <li>Sai thứ tự khi có hai dấu.</li>
         </ul>
       </div>
       <details class="check" open>
         <summary>Thử xem em nhớ chưa</summary>
         <p>9+8−6=? <em>— 11.</em></p>
         <p>Ít hơn 15 bốn đơn vị? <em>— 11.</em></p>
+        <p>8 + 7 = ? <em>— 15.</em></p>
       </details>
       <div class="example">
-        <p><strong>Làm từng bước.</strong> 20 − 9 = 11. Kiểm 11 + 9 = 20.</p>
+        <p><strong>Làm từng bước.</strong> 20 − 9 = 11. Kiểm: 11 + 9 = 20.</p>
       </div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 20: bảng cộng/trừ + lời văn.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Phạm vi 20: bảng cộng/trừ + đọc từ khóa lời văn.</p></div>
     `,
     exercises: [
-      {"type":"num","prompt":"9 + 8 − 6 = ?","answer":11,"hint":"17−6.","explain":"11."},
-      {"type":"num","prompt":"Nhiều hơn 12 năm đơn vị?","answer":17,"hint":"12+5.","explain":"17."},
-      {"type":"num","prompt":"20 − 9 = ?","answer":11,"hint":"Trừ.","explain":"11."},
-      {"type":"num","prompt":"7 + 6 + 5 = ?","answer":18,"hint":"Cộng.","explain":"18."},
-      {"type":"num","prompt":"Ít hơn 15 là 4?","answer":11,"hint":"15−4.","explain":"11."},
-      {"type":"num","prompt":"Có 13 kẹo, Hà lấy 7. Còn lại mấy?","answer":6,"hint":"Bớt → trừ.","explain":"13 − 7 = 6."},
-      {"type":"num","prompt":"Trên kệ có 69 quyển sách, đem đi 30. Còn mấy quyển?","answer":39,"hint":"Trừ.","explain":"69 − 30 = 39."},
+      {"type":"num","prompt":"9 + 8 − 6 = ?","answer":11,"hint":"17 − 6.","explain":"11."},
+      {"type":"num","prompt":"Nhiều hơn 12 năm đơn vị là số nào?","answer":17,"hint":"12 + 5.","explain":"17."},
+      {"type":"num","prompt":"20 − 9 = ?","answer":11,"hint":"Trừ qua 10.","explain":"11."},
+      {"type":"num","prompt":"7 + 6 + 5 = ?","answer":18,"hint":"13 + 5.","explain":"18."},
+      {"type":"num","prompt":"Ít hơn 15 bốn đơn vị là số nào?","answer":11,"hint":"15 − 4.","explain":"11."},
+      {"type":"num","prompt":"16 − 7 = ?","answer":9,"hint":"7 + 9 = 16.","explain":"9."},
+      {"type":"num","prompt":"8 + 7 = ?","answer":15,"hint":"Qua 10.","explain":"15."},
+      {"type":"num","prompt":"Có 9 hoa, nở thêm 8, héo 6. Còn mấy hoa?","answer":11,"hint":"9+8−6.","explain":"11."},
+      {"type":"num","prompt":"Hà có 6 kẹo. Lan nhiều hơn Hà 7 kẹo. Lan có mấy?","answer":13,"hint":"Nhiều hơn → cộng.","explain":"6 + 7 = 13."},
     ],
   },
 
