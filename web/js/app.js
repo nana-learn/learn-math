@@ -581,6 +581,15 @@ function render() {
   if (typeof AnimationManager !== "undefined" && AnimationManager.init) {
     AnimationManager.init();
   }
+  // Grade 2: finished pictures only. Drop any step buttons the animator added.
+  document.querySelectorAll(".figure-controls").forEach((el) => {
+    const fig = el.closest(".figure");
+    const id = fig && fig.getAttribute("data-animation");
+    if (id && id.startsWith("g2-")) el.remove();
+  });
+  document.querySelectorAll(".g2s1, .g2s2, .g2s3, .g2s4").forEach((g) => {
+    g.style.opacity = "1";
+  });
 
   const quiz = document.getElementById("quiz-form");
   if (quiz && lessonMatch) {
