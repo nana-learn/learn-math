@@ -382,22 +382,230 @@ const G2_CHAPTERS = [
   {
     "id": 8,
     "title": "Phép nhân, phép chia",
-    "intro": "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5."
+    "intro": "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5.",
+    "tips": [
+      "Nhân là cộng nhiều lần",
+      "2 × 4 nghĩa là 4 lần số 2",
+      "Chia là chia đều",
+      "Hỏi: nhân mấy thì ra"
+    ],
+    "samples": [
+      {
+        "title": "Nhân",
+        "q": "2 + 2 + 2 + 2",
+        "how": "Bốn lần số 2. Viết 2 × 4.",
+        "a": "8"
+      },
+      {
+        "title": "Chia",
+        "q": "10 : 2",
+        "how": "2 nhân mấy bằng 10? 2 × 5 = 10.",
+        "a": "5"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "2 + 2 + 2 + 2 = 2 × ?",
+        "choices": [
+          "4",
+          "2",
+          "8",
+          "6"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "2 × 5 = ?",
+        "choices": [
+          "10",
+          "7",
+          "25",
+          "3"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "10 : 2 = ?",
+        "choices": [
+          "5",
+          "8",
+          "12",
+          "2"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 9,
     "title": "Làm quen với hình khối",
-    "intro": "2 bài. Bóng là khối cầu. Lon, ống là khối trụ."
+    "intro": "2 bài. Bóng là khối cầu. Lon, ống là khối trụ.",
+    "tips": [
+      "Bóng là khối cầu",
+      "Lon, ống là khối trụ",
+      "Cầu lăn mọi phía",
+      "Trụ lăn theo một chiều"
+    ],
+    "samples": [
+      {
+        "title": "Cầu",
+        "q": "Quả bóng",
+        "how": "Tròn đều, lăn mọi phía.",
+        "a": "khối cầu"
+      },
+      {
+        "title": "Trụ",
+        "q": "Lon sữa",
+        "how": "Hai đáy tròn, lăn theo thân.",
+        "a": "khối trụ"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "Quả bóng là khối nào?",
+        "choices": [
+          "Khối cầu",
+          "Khối trụ",
+          "Tứ giác",
+          "Đoạn thẳng"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Lon sữa là khối nào?",
+        "choices": [
+          "Khối trụ",
+          "Khối cầu",
+          "Tam giác",
+          "Điểm"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Khối cầu lăn thế nào?",
+        "choices": [
+          "Mọi phía",
+          "Chỉ một chiều",
+          "Không lăn",
+          "Chỉ trên giấy"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 10,
     "title": "Các số trong phạm vi 1000",
-    "intro": "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải."
+    "intro": "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải.",
+    "tips": [
+      "10 đơn vị = 1 chục",
+      "10 chục = 1 trăm",
+      "Số 0 giữ chỗ",
+      "So từ hàng trăm"
+    ],
+    "samples": [
+      {
+        "title": "Đọc",
+        "q": "208",
+        "how": "2 trăm, 0 chục, 8 đơn vị. Đọc: hai trăm linh tám.",
+        "a": "208"
+      },
+      {
+        "title": "So",
+        "q": "450 và 540",
+        "how": "Hàng trăm 4 nhỏ hơn 5.",
+        "a": "450 < 540"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "10 chục bằng mấy trăm?",
+        "choices": [
+          "1",
+          "10",
+          "100",
+          "0"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "208 đọc là",
+        "choices": [
+          "Hai trăm linh tám",
+          "Hai mươi tám",
+          "Tám trăm linh hai",
+          "Hai trăm tám mươi"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "450 … 540",
+        "choices": [
+          "<",
+          ">",
+          "=",
+          "Không so được"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 11,
     "title": "Độ dài và đơn vị đo độ dài. Tiền Việt Nam",
-    "intro": "4 bài. dm, m, km. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng."
+    "intro": "4 bài. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng.",
+    "tips": [
+      "1 m = 10 dm",
+      "1 km = 1000 m",
+      "Lớp học đo bằng mét",
+      "Tiền tính bằng đồng"
+    ],
+    "samples": [
+      {
+        "title": "Đổi",
+        "q": "3 m = ? dm",
+        "how": "1 m = 10 dm. 3 × 10 = 30.",
+        "a": "30 dm"
+      },
+      {
+        "title": "Tiền",
+        "q": "5000 − 2000",
+        "how": "Cùng đồng thì trừ.",
+        "a": "3000 đồng"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "1 m = ? dm",
+        "choices": [
+          "10",
+          "100",
+          "1000",
+          "1"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Đo khoảng cách hai tỉnh dùng",
+        "choices": [
+          "km",
+          "dm",
+          "kg",
+          "lít"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "5000 đồng bớt 2000 đồng còn",
+        "choices": [
+          "3000 đồng",
+          "7000 đồng",
+          "3000 kg",
+          "3 đồng"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 12,
@@ -3645,7 +3853,7 @@ const G2_LESSONS = [
     num: 33,
     chapter: 7,
     title: "Ôn tập phép cộng, phép trừ trong phạm vi 20, 100",
-    summary: "Ôn cộng trừ HK1 (qua 10 và có nhớ).",
+    summary: "Ôn cộng trừ. 9 + 8 = 17. 37 + 28 = 65.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b33-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
@@ -3670,9 +3878,9 @@ const G2_LESSONS = [
             <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</figcaption>
+              <figcaption>Ôn cộng trừ. 9 + 8 = 17. 37 + 28 = 65.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ học kì 1 (qua 10 và có nhớ).</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ. 9 + 8 = 17. 37 + 28 = 65.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng trừ trong khoảng 20 và 100, có và không nhớ.</p>
@@ -3734,7 +3942,7 @@ const G2_LESSONS = [
     num: 34,
     chapter: 7,
     title: "Ôn tập hình phẳng",
-    summary: "Ôn điểm, đoạn, đường, tứ giác.",
+    summary: "Hai đầu là đoạn. 4 cạnh là tứ giác.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b34-geo">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đoạn thẳng và đường thẳng">
@@ -3755,9 +3963,9 @@ const G2_LESSONS = [
             <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
           </g>
         </svg>
-              <figcaption>Ôn điểm, đoạn, đường, tứ giác.</figcaption>
+              <figcaption>Hai đầu là đoạn. 4 cạnh là tứ giác.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn điểm, đoạn, đường, tứ giác.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Hai đầu là đoạn. 4 cạnh là tứ giác.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Điểm, đoạn, đường, cong, tứ giác, gấp khúc.</p>
@@ -3818,7 +4026,7 @@ const G2_LESSONS = [
     num: 35,
     chapter: 7,
     title: "Ôn tập đo lường",
-    summary: "Ôn kg, l.",
+    summary: "kg đo nặng. Lít đo nước.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b35-kgl">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ki-lô-gam và lít">
@@ -3833,9 +4041,9 @@ const G2_LESSONS = [
             <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
           </g>
         </svg>
-              <figcaption>Ôn kg, l.</figcaption>
+              <figcaption>kg đo nặng. Lít đo nước.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg, l.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> kg đo nặng. Lít đo nước.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng trừ chỉ khi cùng đơn vị. kg = khối lượng; l = dung tích.</p>
@@ -3898,7 +4106,7 @@ const G2_LESSONS = [
     num: 36,
     chapter: 7,
     title: "Ôn tập chung",
-    summary: "Tổng ôn học kì I.",
+    summary: "Ôn số, hình, kg, lít và giờ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b36-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn HK1">
@@ -3923,9 +4131,9 @@ const G2_LESSONS = [
             <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           </g>
         </svg>
-              <figcaption>Tổng ôn học kì I.</figcaption>
+              <figcaption>Ôn số, hình, kg, lít và giờ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Tổng ôn học kì I.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số, hình, kg, lít và giờ.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số, phép tính, hình, đo, thời gian.</p>
@@ -3987,7 +4195,7 @@ const G2_LESSONS = [
     num: 37,
     chapter: 8,
     title: "Phép nhân",
-    summary: "Nhân là cộng các số hạng bằng nhau.",
+    summary: "Nhân là cộng nhiều lần. 2 + 2 + 2 + 2 = 2 × 4.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b37-array">
         <svg viewBox="0 0 320 160" role="img" aria-label="Phép nhân">
@@ -4008,9 +4216,9 @@ const G2_LESSONS = [
             <text x="200" y="110" font-size="16" fill="#58C4DD">2 × 4 = 8</text>
           </g>
         </svg>
-              <figcaption>Nhân là cộng các số hạng bằng nhau.</figcaption>
+              <figcaption>Nhân là cộng nhiều lần. 2 + 2 + 2 + 2 = 2 × 4.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhân là cộng các số hạng bằng nhau.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Nhân là cộng nhiều lần. 2 + 2 + 2 + 2 = 2 × 4.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cùng một số cộng lặp lại thì viết thành phép nhân. 2 + 2 + 2 + 2 = 2 × 4 = 8. Dấu × đọc “nhân”.</p>
@@ -4072,7 +4280,7 @@ const G2_LESSONS = [
     num: 38,
     chapter: 8,
     title: "Thừa số, tích",
-    summary: "Gọi tên thành phần phép nhân.",
+    summary: "3 × 5 = 15. 3 và 5 là thừa số. 15 là tích.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b38-array">
         <svg viewBox="0 0 320 160" role="img" aria-label="Thừa số và tích">
@@ -4100,9 +4308,9 @@ const G2_LESSONS = [
             <text x="200" y="110" font-size="16" fill="#58C4DD">3 × 5 = 15</text>
           </g>
         </svg>
-              <figcaption>Gọi tên thành phần phép nhân.</figcaption>
+              <figcaption>3 × 5 = 15. 3 và 5 là thừa số. 15 là tích.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Gọi tên thành phần phép nhân.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 3 × 5 = 15. 3 và 5 là thừa số. 15 là tích.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trong a × b = c: a, b là <strong>thừa số</strong>; c là <strong>tích</strong>. Đổi chỗ thừa số, tích không đổi.</p>
@@ -4164,7 +4372,7 @@ const G2_LESSONS = [
     num: 39,
     chapter: 8,
     title: "Bảng nhân 2",
-    summary: "Thuộc bảng nhân 2.",
+    summary: "Thuộc 2 × 1 đến 2 × 10. Đếm 2, 4, 6.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b39-times2">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 2">
@@ -4200,9 +4408,9 @@ const G2_LESSONS = [
             <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 2</text>
           </g>
         </svg>
-              <figcaption>Thuộc bảng nhân 2.</figcaption>
+              <figcaption>Thuộc 2 × 1 đến 2 × 10. Đếm 2, 4, 6.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng nhân 2.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc 2 × 1 đến 2 × 10. Đếm 2, 4, 6.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 2 × n = n + n. Dãy tích: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20.</p>
@@ -4262,7 +4470,7 @@ const G2_LESSONS = [
     num: 40,
     chapter: 8,
     title: "Bảng nhân 5",
-    summary: "Thuộc bảng nhân 5.",
+    summary: "Thuộc 5 × 1 đến 5 × 10. Đếm 5, 10, 15.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b40-times5">
         <svg viewBox="0 0 320 160" role="img" aria-label="Bảng nhân 5">
@@ -4310,9 +4518,9 @@ const G2_LESSONS = [
             <text x="160" y="155" font-size="11" text-anchor="middle" fill="#888888">Bảng nhân 5</text>
           </g>
         </svg>
-              <figcaption>Thuộc bảng nhân 5.</figcaption>
+              <figcaption>Thuộc 5 × 1 đến 5 × 10. Đếm 5, 10, 15.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng nhân 5.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc 5 × 1 đến 5 × 10. Đếm 5, 10, 15.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Dãy tích bảng 5: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50.</p>
@@ -4372,7 +4580,7 @@ const G2_LESSONS = [
     num: 41,
     chapter: 8,
     title: "Phép chia",
-    summary: "Chia là chia đều / tách nhóm bằng nhau; ngược nhân.",
+    summary: "Chia đều. 10 : 2 hỏi 2 nhân mấy bằng 10.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b41-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
@@ -4395,9 +4603,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="14" text-anchor="middle">10 : 2 = 5</text>
           </g>
         </svg>
-              <figcaption>Chia là chia đều / tách nhóm bằng nhau; ngược nhân.</figcaption>
+              <figcaption>Chia đều. 10 : 2 hỏi 2 nhân mấy bằng 10.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Chia là chia đều / tách nhóm bằng nhau; ngược nhân.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Chia đều. 10 : 2 hỏi 2 nhân mấy bằng 10.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phép chia ngược với phép nhân. 8 : 2 = 4 vì 2 × 4 = 8. Dấu : đọc “chia”.</p>
@@ -4459,7 +4667,7 @@ const G2_LESSONS = [
     num: 42,
     chapter: 8,
     title: "Số bị chia, số chia, thương",
-    summary: "Gọi tên thành phần phép chia.",
+    summary: "12 : 2 = 6. 12 là số bị chia. 6 là thương.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b42-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
@@ -4484,9 +4692,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="14" text-anchor="middle">12 : 2 = 6</text>
           </g>
         </svg>
-              <figcaption>Gọi tên thành phần phép chia.</figcaption>
+              <figcaption>12 : 2 = 6. 12 là số bị chia. 6 là thương.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Gọi tên thành phần phép chia.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 12 : 2 = 6. 12 là số bị chia. 6 là thương.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> a : b = c — a <strong>số bị chia</strong>, b <strong>số chia</strong>, c <strong>thương</strong>.</p>
@@ -4548,7 +4756,7 @@ const G2_LESSONS = [
     num: 43,
     chapter: 8,
     title: "Bảng chia 2",
-    summary: "Thuộc bảng chia 2.",
+    summary: "Thuộc chia 2 bằng cách đọc ngược bảng nhân 2.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b43-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
@@ -4577,9 +4785,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="14" text-anchor="middle">16 : 2 = 8</text>
           </g>
         </svg>
-              <figcaption>Thuộc bảng chia 2.</figcaption>
+              <figcaption>Thuộc chia 2 bằng cách đọc ngược bảng nhân 2.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng chia 2.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc chia 2 bằng cách đọc ngược bảng nhân 2.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nếu 2 × k = n thì n : 2 = k. Các số chẵn: 2,4,…,20.</p>
@@ -4639,7 +4847,7 @@ const G2_LESSONS = [
     num: 44,
     chapter: 8,
     title: "Bảng chia 5",
-    summary: "Thuộc bảng chia 5.",
+    summary: "Thuộc chia 5 bằng cách đọc ngược bảng nhân 5.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b44-divide">
         <svg viewBox="0 0 320 160" role="img" aria-label="Chia đều">
@@ -4688,9 +4896,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="14" text-anchor="middle">30 : 5 = 6</text>
           </g>
         </svg>
-              <figcaption>Thuộc bảng chia 5.</figcaption>
+              <figcaption>Thuộc chia 5 bằng cách đọc ngược bảng nhân 5.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc bảng chia 5.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Thuộc chia 5 bằng cách đọc ngược bảng nhân 5.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nếu 5 × k = n thì n : 5 = k.</p>
@@ -4750,7 +4958,7 @@ const G2_LESSONS = [
     num: 45,
     chapter: 8,
     title: "Luyện tập chung",
-    summary: "Ôn nhân chia 2 và 5; thừa số, thương.",
+    summary: "Ôn nhân và chia bảng 2, bảng 5.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b45-array">
         <svg viewBox="0 0 320 160" role="img" aria-label="Luyện nhân chia">
@@ -4773,9 +4981,9 @@ const G2_LESSONS = [
             <text x="200" y="110" font-size="16" fill="#58C4DD">5 × 2 = 10</text>
           </g>
         </svg>
-              <figcaption>Ôn nhân chia 2 và 5; thừa số, thương.</figcaption>
+              <figcaption>Ôn nhân và chia bảng 2, bảng 5.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn nhân chia 2 và 5; thừa số, thương.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn nhân và chia bảng 2, bảng 5.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Nhân/chia 2, 5; bài toán nhóm đều.</p>
@@ -4837,7 +5045,7 @@ const G2_LESSONS = [
     num: 46,
     chapter: 9,
     title: "Khối trụ, khối cầu",
-    summary: "Nhận biết khối trụ và khối cầu trong thực tiễn.",
+    summary: "Bóng là khối cầu. Lon, ống là khối trụ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b46-solid">
         <svg viewBox="0 0 320 160" role="img" aria-label="Khối trụ và khối cầu">
@@ -4853,9 +5061,9 @@ const G2_LESSONS = [
             <text x="230" y="145" font-size="12" text-anchor="middle" fill="#58C4DD">khối cầu</text>
           </g>
         </svg>
-              <figcaption>Nhận biết khối trụ và khối cầu trong thực tiễn.</figcaption>
+              <figcaption>Bóng là khối cầu. Lon, ống là khối trụ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết khối trụ và khối cầu trong thực tiễn.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Bóng là khối cầu. Lon, ống là khối trụ.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Khối cầu</strong> tròn đều như bóng. <strong>Khối trụ</strong> như lon/ống, có hai đáy tròn và mặt cong bên.</p>
@@ -4905,7 +5113,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Quả bóng","choices":["Tứ giác","Khối cầu","Khối trụ","Đoạn thẳng"],"correct":1,"hint":"Tròn đều.","explain":"Cầu.","_chapter":9},
       {"type":"mc","prompt":"Lon sữa dạng ống","choices":["Điểm","Khối cầu","Khối trụ","Ngày"],"correct":2,"hint":"Hai đáy tròn.","explain":"Trụ.","_chapter":9},
       {"type":"mc","prompt":"Khối cầu","choices":["Hai đáy vuông","Kg","Tứ giác","Tròn đều mọi phía"],"correct":3,"hint":"Bóng.","explain":"Tròn đều.","_chapter":9},
-      {"type":"mc","prompt":"Hình phẳng khác khối","choices":["Khối có dạng không gian","Khối chỉ trên lịch","Không khác","Phẳng nặng hơn"],"correct":0,"hint":"3D.","explain":"Không gian.","_chapter":9},
+      {"type":"mc","prompt":"Hình vẽ trên giấy khác khối vì","choices":["Khối cầm được","Khối chỉ trên lịch","Không khác","Giấy nặng hơn"],"correct":0,"hint":"Khối có thể cầm.","explain":"Cầm được.","_chapter":9},
       {"type":"mc","prompt":"Viên bi","choices":["Khối trụ","Lịch","Khối cầu","Đoạn"],"correct":2,"hint":"Bi.","explain":"Cầu.","_chapter":9},
       {"type":"mc","prompt":"Lõi giấy vệ sinh","choices":["Khối trụ","Khối cầu","Tam giác","Giờ"],"correct":0,"hint":"Ống.","explain":"Trụ.","_chapter":9},
       {"type":"mc","prompt":"Khối cầu có đáy phẳng như trụ?","choices":["Có một đáy","Có bốn đáy","Có hai đáy","Không"],"correct":3,"hint":"Không đáy phẳng.","explain":"Không.","_chapter":9},
@@ -4917,7 +5125,7 @@ const G2_LESSONS = [
     num: 47,
     chapter: 9,
     title: "Luyện tập chung",
-    summary: "Ôn nhận dạng khối trụ, khối cầu.",
+    summary: "Cầu lăn mọi phía. Trụ lăn một chiều.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b47-solid">
         <svg viewBox="0 0 320 160" role="img" aria-label="Khối trụ và khối cầu">
@@ -4933,9 +5141,9 @@ const G2_LESSONS = [
             <text x="230" y="145" font-size="12" text-anchor="middle" fill="#58C4DD">khối cầu</text>
           </g>
         </svg>
-              <figcaption>Ôn nhận dạng khối trụ, khối cầu.</figcaption>
+              <figcaption>Cầu lăn mọi phía. Trụ lăn một chiều.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn nhận dạng khối trụ, khối cầu.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Cầu lăn mọi phía. Trụ lăn một chiều.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chọn đồ vật thật ứng với khối trụ/cầu.</p>
@@ -4997,7 +5205,7 @@ const G2_LESSONS = [
     num: 48,
     chapter: 10,
     title: "Đơn vị, chục, trăm, nghìn",
-    summary: "Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.",
+    summary: "10 đơn vị = 1 chục. 10 chục = 1 trăm.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b48-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5020,9 +5228,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">100 = 100 + 00 + 0</text>
           </g>
         </svg>
-              <figcaption>Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.</figcaption>
+              <figcaption>10 đơn vị = 1 chục. 10 chục = 1 trăm.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 10 đơn vị = 1 chục. 10 chục = 1 trăm.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 10 đơn vị = 1 chục; 10 chục = 1 trăm = 100; 10 trăm = 1 nghìn = 1000.</p>
@@ -5084,7 +5292,7 @@ const G2_LESSONS = [
     num: 49,
     chapter: 10,
     title: "Các số tròn trăm, tròn chục",
-    summary: "Nhận biết số tròn trăm, tròn chục.",
+    summary: "100, 200, 300 là tròn trăm. 10, 20, 30 là tròn chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b49-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5107,9 +5315,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">300 = 300 + 00 + 0</text>
           </g>
         </svg>
-              <figcaption>Nhận biết số tròn trăm, tròn chục.</figcaption>
+              <figcaption>100, 200, 300 là tròn trăm. 10, 20, 30 là tròn chục.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết số tròn trăm, tròn chục.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 100, 200, 300 là tròn trăm. 10, 20, 30 là tròn chục.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số <strong>tròn chục</strong> tận cùng bằng 0. Số <strong>tròn trăm</strong> tận cùng bằng 00.</p>
@@ -5171,7 +5379,7 @@ const G2_LESSONS = [
     num: 50,
     chapter: 10,
     title: "So sánh các số tròn trăm, tròn chục",
-    summary: "So sánh nhanh số tròn trăm, tròn chục.",
+    summary: "So hàng trăm trước. 700 lớn hơn 70.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b50-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5194,9 +5402,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">600 = 600 + 00 + 0</text>
           </g>
         </svg>
-              <figcaption>So sánh nhanh số tròn trăm, tròn chục.</figcaption>
+              <figcaption>So hàng trăm trước. 700 lớn hơn 70.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> So sánh nhanh số tròn trăm, tròn chục.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> So hàng trăm trước. 700 lớn hơn 70.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> So hàng trăm trước, rồi hàng chục, rồi đơn vị.</p>
@@ -5246,7 +5454,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"450 … 540","choices":["<","=",">","450 hơn"],"correct":0,"hint":"So trăm.","explain":"<","_chapter":10},
       {"type":"mc","prompt":"Tròn trăm liền sau 500?","choices":["599","610","601","600"],"correct":3,"hint":"+100.","explain":"600."},
       {"type":"mc","prompt":"990 … 909","choices":["=","Không",">","<"],"correct":2,"hint":"So chục.","explain":">","_chapter":10},
-      {"type":"mc","prompt":"200 … 300","choices":[">","<","200 hơn","="],"correct":1,"hint":"So trăm.","explain":"<","_chapter":10},
+      {"type":"mc","prompt":"200 … 300","choices":[">","<","200 hơn","="],"correct":1,"hint":"So trăm.","explain":"<.","_chapter":10},
       {"type":"mc","prompt":"Tròn chục liền trước 400?","choices":["390","389","391","400"],"correct":0,"hint":"−10.","explain":"390."},
       {"type":"mc","prompt":"Số nhà của An có 1 trăm, 0 chục, 6 đơn vị. Số nhà là bao nhiêu?","choices":["107","105","116","106"],"correct":3,"hint":"trăm|chục|đv.","explain":"106."},
       {"type":"mc","prompt":"Trường có 2 trăm 3 chục học sinh (0 đơn vị). Viết số đó.","choices":["229","240","230","231"],"correct":2,"hint":"Ghép hàng.","explain":"230."},
@@ -5258,7 +5466,7 @@ const G2_LESSONS = [
     num: 51,
     chapter: 10,
     title: "Số có ba chữ số",
-    summary: "Đọc, viết số có ba chữ số.",
+    summary: "208 đọc hai trăm linh tám. Số 0 giữ chỗ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b51-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5281,9 +5489,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">208 = 200 + 00 + 8</text>
           </g>
         </svg>
-              <figcaption>Đọc, viết số có ba chữ số.</figcaption>
+              <figcaption>208 đọc hai trăm linh tám. Số 0 giữ chỗ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Đọc, viết số có ba chữ số.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 208 đọc hai trăm linh tám. Số 0 giữ chỗ.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Số có ba chữ số: hàng trăm, chục, đơn vị. 0 ở giữa đọc “linh” (208 = hai trăm linh tám).</p>
@@ -5345,7 +5553,7 @@ const G2_LESSONS = [
     num: 52,
     chapter: 10,
     title: "Viết số thành tổng các trăm, chục, đơn vị",
-    summary: "Phân tích: 365 = 300 + 60 + 5.",
+    summary: "365 = 3 trăm + 6 chục + 5 đơn vị.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b52-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5368,9 +5576,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">365 = 300 + 60 + 5</text>
           </g>
         </svg>
-              <figcaption>Phân tích: 365 = 300 + 60 + 5.</figcaption>
+              <figcaption>365 = 3 trăm + 6 chục + 5 đơn vị.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Phân tích: 365 = 300 + 60 + 5.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 365 = 3 trăm + 6 chục + 5 đơn vị.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Mỗi chữ số nhân giá trị hàng: 472 = 400 + 70 + 2.</p>
@@ -5432,7 +5640,7 @@ const G2_LESSONS = [
     num: 53,
     chapter: 10,
     title: "So sánh các số có ba chữ số",
-    summary: "So sánh số có ba chữ số.",
+    summary: "So từ hàng trăm. 450 nhỏ hơn 540.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b53-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5455,9 +5663,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">528 = 500 + 20 + 8</text>
           </g>
         </svg>
-              <figcaption>So sánh số có ba chữ số.</figcaption>
+              <figcaption>So từ hàng trăm. 450 nhỏ hơn 540.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> So sánh số có ba chữ số.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> So từ hàng trăm. 450 nhỏ hơn 540.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> So hàng trăm → chục → đơn vị.</p>
@@ -5519,7 +5727,7 @@ const G2_LESSONS = [
     num: 54,
     chapter: 10,
     title: "Luyện tập chung",
-    summary: "Ôn số đến 1000: đọc viết, phân tích, so sánh.",
+    summary: "Ôn đọc, tách hàng và so sánh số đến 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b54-place3">
         <svg viewBox="0 0 320 160" role="img" aria-label="Số có ba chữ số">
@@ -5542,9 +5750,9 @@ const G2_LESSONS = [
             <text x="160" y="140" font-size="14" text-anchor="middle">678 = 600 + 70 + 8</text>
           </g>
         </svg>
-              <figcaption>Ôn số đến 1000: đọc viết, phân tích, so sánh.</figcaption>
+              <figcaption>Ôn đọc, tách hàng và so sánh số đến 1000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn số đến 1000: đọc viết, phân tích, so sánh.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn đọc, tách hàng và so sánh số đến 1000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đọc viết, tròn trăm/chục, phân tích, so sánh.</p>
@@ -5606,7 +5814,7 @@ const G2_LESSONS = [
     num: 55,
     chapter: 11,
     title: "Đề-xi-mét. Mét. Ki-lô-mét",
-    summary: "Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.",
+    summary: "1 m = 10 dm. 1 km = 1000 m.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b55-length">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đơn vị độ dài">
@@ -5625,9 +5833,9 @@ const G2_LESSONS = [
             <text x="210" y="103" font-size="12" text-anchor="middle">1 km = 1000 m</text>
           </g>
         </svg>
-              <figcaption>Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.</figcaption>
+              <figcaption>1 m = 10 dm. 1 km = 1000 m.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 1 m = 10 dm. 1 km = 1000 m.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 m = 10 dm; 1 km = 1000 m. (Ôn: 1 dm = 10 cm.)</p>
@@ -5689,7 +5897,7 @@ const G2_LESSONS = [
     num: 56,
     chapter: 11,
     title: "Giới thiệu Tiền Việt Nam",
-    summary: "Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.",
+    summary: "Tiền tính bằng đồng. 5000 bớt 2000 còn 3000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b56-shop">
         <svg viewBox="0 0 320 160" role="img" aria-label="Tiền và mua bán">
@@ -5708,9 +5916,9 @@ const G2_LESSONS = [
             <text x="160" y="120" font-size="13" text-anchor="middle">Đưa tiền − giá = tiền thừa</text>
           </g>
         </svg>
-              <figcaption>Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.</figcaption>
+              <figcaption>Tiền tính bằng đồng. 5000 bớt 2000 còn 3000.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Tiền tính bằng đồng. 5000 bớt 2000 còn 3000.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đơn vị tiền: <strong>đồng</strong>. Làm quen mệnh giá 1000, 2000, 5000, 10000 đồng…</p>
@@ -5772,7 +5980,7 @@ const G2_LESSONS = [
     num: 57,
     chapter: 11,
     title: "Thực hành và trải nghiệm đo độ dài",
-    summary: "Thực hành đo bằng thước; ước lượng.",
+    summary: "Đo bằng thước. Lớp học đo bằng mét.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b57-length">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đơn vị độ dài">
@@ -5791,9 +5999,9 @@ const G2_LESSONS = [
             <text x="210" y="103" font-size="12" text-anchor="middle">1 km = 1000 m</text>
           </g>
         </svg>
-              <figcaption>Thực hành đo bằng thước; ước lượng.</figcaption>
+              <figcaption>Đo bằng thước. Lớp học đo bằng mét.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành đo bằng thước; ước lượng.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Đo bằng thước. Lớp học đo bằng mét.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt điểm 0 của thước khớp điểm đầu. Cộng trừ số đo cùng đơn vị.</p>
@@ -5855,7 +6063,7 @@ const G2_LESSONS = [
     num: 58,
     chapter: 11,
     title: "Luyện tập chung",
-    summary: "Ôn dm, m, km và tiền Việt Nam.",
+    summary: "Ôn đổi dm, m, km và tính tiền.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b58-money">
         <svg viewBox="0 0 320 160" role="img" aria-label="Tiền Việt Nam">
@@ -5873,9 +6081,9 @@ const G2_LESSONS = [
             <text x="160" y="120" font-size="13" text-anchor="middle">1000 + 2000 = 3000 đồng</text>
           </g>
         </svg>
-              <figcaption>Ôn dm, m, km và tiền Việt Nam.</figcaption>
+              <figcaption>Ôn đổi dm, m, km và tính tiền.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn dm, m, km và tiền Việt Nam.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn đổi dm, m, km và tính tiền.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đổi đơn vị đơn giản; cộng trừ tiền và độ dài.</p>

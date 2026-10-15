@@ -110,10 +110,66 @@ const chapters = [
     ],
   },
   { id: 7, title: "Ôn tập học kì I", intro: "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề." },
-  { id: 8, title: "Phép nhân, phép chia", intro: "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5." },
-  { id: 9, title: "Làm quen với hình khối", intro: "2 bài. Bóng là khối cầu. Lon, ống là khối trụ." },
-  { id: 10, title: "Các số trong phạm vi 1000", intro: "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải." },
-  { id: 11, title: "Độ dài và đơn vị đo độ dài. Tiền Việt Nam", intro: "4 bài. dm, m, km. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng." },
+  {
+    id: 8,
+    title: "Phép nhân, phép chia",
+    intro: "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5.",
+    tips: ["Nhân là cộng nhiều lần", "2 × 4 nghĩa là 4 lần số 2", "Chia là chia đều", "Hỏi: nhân mấy thì ra"],
+    samples: [
+      { title: "Nhân", q: "2 + 2 + 2 + 2", how: "Bốn lần số 2. Viết 2 × 4.", a: "8" },
+      { title: "Chia", q: "10 : 2", how: "2 nhân mấy bằng 10? 2 × 5 = 10.", a: "5" },
+    ],
+    checks: [
+      { prompt: "2 + 2 + 2 + 2 = 2 × ?", choices: ["4", "2", "8", "6"], correct: 0 },
+      { prompt: "2 × 5 = ?", choices: ["10", "7", "25", "3"], correct: 0 },
+      { prompt: "10 : 2 = ?", choices: ["5", "8", "12", "2"], correct: 0 },
+    ],
+  },
+  {
+    id: 9,
+    title: "Làm quen với hình khối",
+    intro: "2 bài. Bóng là khối cầu. Lon, ống là khối trụ.",
+    tips: ["Bóng là khối cầu", "Lon, ống là khối trụ", "Cầu lăn mọi phía", "Trụ lăn theo một chiều"],
+    samples: [
+      { title: "Cầu", q: "Quả bóng", how: "Tròn đều, lăn mọi phía.", a: "khối cầu" },
+      { title: "Trụ", q: "Lon sữa", how: "Hai đáy tròn, lăn theo thân.", a: "khối trụ" },
+    ],
+    checks: [
+      { prompt: "Quả bóng là khối nào?", choices: ["Khối cầu", "Khối trụ", "Tứ giác", "Đoạn thẳng"], correct: 0 },
+      { prompt: "Lon sữa là khối nào?", choices: ["Khối trụ", "Khối cầu", "Tam giác", "Điểm"], correct: 0 },
+      { prompt: "Khối cầu lăn thế nào?", choices: ["Mọi phía", "Chỉ một chiều", "Không lăn", "Chỉ trên giấy"], correct: 0 },
+    ],
+  },
+  {
+    id: 10,
+    title: "Các số trong phạm vi 1000",
+    intro: "7 bài. Ba hàng: trăm, chục, đơn vị. Số 0 giữ chỗ. Đọc từ trái sang phải.",
+    tips: ["10 đơn vị = 1 chục", "10 chục = 1 trăm", "Số 0 giữ chỗ", "So từ hàng trăm"],
+    samples: [
+      { title: "Đọc", q: "208", how: "2 trăm, 0 chục, 8 đơn vị. Đọc: hai trăm linh tám.", a: "208" },
+      { title: "So", q: "450 và 540", how: "Hàng trăm 4 nhỏ hơn 5.", a: "450 < 540" },
+    ],
+    checks: [
+      { prompt: "10 chục bằng mấy trăm?", choices: ["1", "10", "100", "0"], correct: 0 },
+      { prompt: "208 đọc là", choices: ["Hai trăm linh tám", "Hai mươi tám", "Tám trăm linh hai", "Hai trăm tám mươi"], correct: 0 },
+      { prompt: "450 … 540", choices: ["<", ">", "=", "Không so được"], correct: 0 },
+    ],
+  },
+  {
+    id: 11,
+    title: "Độ dài và đơn vị đo độ dài. Tiền Việt Nam",
+    intro: "4 bài. 1 m = 10 dm. 1 km = 1000 m. Tiền tính bằng đồng.",
+    tips: ["1 m = 10 dm", "1 km = 1000 m", "Lớp học đo bằng mét", "Tiền tính bằng đồng"],
+    samples: [
+      { title: "Đổi", q: "3 m = ? dm", how: "1 m = 10 dm. 3 × 10 = 30.", a: "30 dm" },
+      { title: "Tiền", q: "5000 − 2000", how: "Cùng đồng thì trừ.", a: "3000 đồng" },
+    ],
+    checks: [
+      { prompt: "1 m = ? dm", choices: ["10", "100", "1000", "1"], correct: 0 },
+      { prompt: "Đo khoảng cách hai tỉnh dùng", choices: ["km", "dm", "kg", "lít"], correct: 0 },
+      { prompt: "5000 đồng bớt 2000 đồng còn", choices: ["3000 đồng", "7000 đồng", "3000 kg", "3 đồng"], correct: 0 },
+    ],
+  },
   { id: 12, title: "Phép cộng, phép trừ trong phạm vi 1000", intro: "5 bài. Cộng trừ số có ba chữ số. Thẳng cột. Nhớ và mượn từng hàng." },
   { id: 13, title: "Làm quen với yếu tố thống kê, xác suất", intro: "4 bài. Đếm, phân loại, đọc biểu đồ tranh. Nói chắc chắn, có thể, không thể." },
   { id: 14, title: "Ôn tập cuối năm", intro: "Ôn cả năm. Cuối có mini đề. Làm chậm, soát nhớ/mượn và đơn vị." },
@@ -2650,10 +2706,10 @@ function buildLessons() {
 
   // Ch 7 review HK1
   for (const [num, title, summary, extraEx] of [
-    [33, "Ôn tập phép cộng, phép trừ trong phạm vi 20, 100", "Ôn cộng trừ HK1 (qua 10 và có nhớ).", null],
-    [34, "Ôn tập hình phẳng", "Ôn điểm, đoạn, đường, tứ giác.", null],
-    [35, "Ôn tập đo lường", "Ôn kg, l.", null],
-    [36, "Ôn tập chung", "Tổng ôn học kì I.", null],
+    [33, "Ôn tập phép cộng, phép trừ trong phạm vi 20, 100", "Ôn cộng trừ. 9 + 8 = 17. 37 + 28 = 65.", null],
+    [34, "Ôn tập hình phẳng", "Hai đầu là đoạn. 4 cạnh là tứ giác.", null],
+    [35, "Ôn tập đo lường", "kg đo nặng. Lít đo nước.", null],
+    [36, "Ôn tập chung", "Ôn số, hình, kg, lít và giờ.", null],
   ]) {
     const figs = {
       33: svgColumnAdd(37, 28, true),
@@ -2771,7 +2827,7 @@ function buildLessons() {
     37,
     8,
     "Phép nhân",
-    "Nhân là cộng các số hạng bằng nhau.",
+    "Nhân là cộng nhiều lần. 2 + 2 + 2 + 2 = 2 × 4.",
     svgArray(2, 4, "Phép nhân"),
     {
       why: "Nhân là cộng nhiều lần cùng một số, cho nhanh.",
@@ -2803,7 +2859,7 @@ function buildLessons() {
     38,
     8,
     "Thừa số, tích",
-    "Gọi tên thành phần phép nhân.",
+    "3 × 5 = 15. 3 và 5 là thừa số. 15 là tích.",
     svgArray(3, 5, "Thừa số và tích"),
     {
       why: "Biết tên thừa số – tích để học bảng nhân và bài toán sau này.",
@@ -2835,7 +2891,7 @@ function buildLessons() {
     39,
     8,
     "Bảng nhân 2",
-    "Thuộc bảng nhân 2.",
+    "Thuộc 2 × 1 đến 2 × 10. Đếm 2, 4, 6.",
     svgTimesTable(39, 2),
     {
       why: "Bảng 2 là bảng chẵn — dễ thuộc nhất, dùng mọi ngày.",
@@ -2867,7 +2923,7 @@ function buildLessons() {
     40,
     8,
     "Bảng nhân 5",
-    "Thuộc bảng nhân 5.",
+    "Thuộc 5 × 1 đến 5 × 10. Đếm 5, 10, 15.",
     svgTimesTable(40, 5),
     {
       why: "Bảng 5 gắn với đồng hồ (5,10,15…) và đếm nhanh.",
@@ -2899,7 +2955,7 @@ function buildLessons() {
     41,
     8,
     "Phép chia",
-    "Chia là chia đều / tách nhóm bằng nhau; ngược nhân.",
+    "Chia đều. 10 : 2 hỏi 2 nhân mấy bằng 10.",
     svgDivide(10, 2, 5),
     {
       why: "Chia đều kẹo, bút, bạn trong nhóm.",
@@ -2931,7 +2987,7 @@ function buildLessons() {
     42,
     8,
     "Số bị chia, số chia, thương",
-    "Gọi tên thành phần phép chia.",
+    "12 : 2 = 6. 12 là số bị chia. 6 là thương.",
     svgDivide(12, 2, 6),
     {
       why: "Đúng tên thành phần để hiểu đề “tìm thương”.",
@@ -2963,7 +3019,7 @@ function buildLessons() {
     43,
     8,
     "Bảng chia 2",
-    "Thuộc bảng chia 2.",
+    "Thuộc chia 2 bằng cách đọc ngược bảng nhân 2.",
     svgDivide(16, 2, 8),
     {
       why: "Từ bảng nhân 2 suy bảng chia 2.",
@@ -2995,7 +3051,7 @@ function buildLessons() {
     44,
     8,
     "Bảng chia 5",
-    "Thuộc bảng chia 5.",
+    "Thuộc chia 5 bằng cách đọc ngược bảng nhân 5.",
     svgDivide(30, 5, 6),
     {
       why: "Đi cùng bảng nhân 5.",
@@ -3027,7 +3083,7 @@ function buildLessons() {
     45,
     8,
     "Luyện tập chung",
-    "Ôn nhân chia 2 và 5; thừa số, thương.",
+    "Ôn nhân và chia bảng 2, bảng 5.",
     svgArray(5, 2, "Luyện nhân chia"),
     {
       why: "Khóa bảng 2 và 5 — trọng tâm HK2 đầu.",
@@ -3060,7 +3116,7 @@ function buildLessons() {
     46,
     9,
     "Khối trụ, khối cầu",
-    "Nhận biết khối trụ và khối cầu trong thực tiễn.",
+    "Bóng là khối cầu. Lon, ống là khối trụ.",
     svgCylinderSphere(),
     {
       why: "Đồ chơi và đồ dùng quanh em là hình khối — học tên đúng.",
@@ -3081,7 +3137,7 @@ function buildLessons() {
       exMC("Quả bóng", ["Khối cầu", "Khối trụ", "Đoạn thẳng", "Tứ giác"], 0, "Tròn đều.", "Cầu."),
       exMC("Lon sữa dạng ống", ["Khối trụ", "Khối cầu", "Điểm", "Ngày"], 0, "Hai đáy tròn.", "Trụ."),
       exMC("Khối cầu", ["Tròn đều mọi phía", "Hai đáy vuông", "Tứ giác", "Kg"], 0, "Bóng.", "Tròn đều."),
-      exMC("Hình phẳng khác khối", ["Khối có dạng không gian", "Phẳng nặng hơn", "Khối chỉ trên lịch", "Không khác"], 0, "3D.", "Không gian."),
+      exMC("Hình vẽ trên giấy khác khối vì", ["Khối cầm được", "Giấy nặng hơn", "Khối chỉ trên lịch", "Không khác"], 0, "Khối có thể cầm.", "Cầm được."),
       exMC("Viên bi", ["Khối cầu", "Khối trụ", "Đoạn", "Lịch"], 0, "Bi.", "Cầu."),
       exMC("Lõi giấy vệ sinh", ["Khối trụ", "Khối cầu", "Tam giác", "Giờ"], 0, "Ống.", "Trụ."),
       exMC("Khối cầu có đáy phẳng như trụ?", ["Không", "Có hai đáy", "Có một đáy", "Có bốn đáy"], 0, "Không đáy phẳng.", "Không."),
@@ -3092,7 +3148,7 @@ function buildLessons() {
     47,
     9,
     "Luyện tập chung",
-    "Ôn nhận dạng khối trụ, khối cầu.",
+    "Cầu lăn mọi phía. Trụ lăn một chiều.",
     svgCylinderSphere(),
     {
       why: "Củng cố trước khi sang số đến 1000.",
@@ -3125,7 +3181,7 @@ function buildLessons() {
     48,
     10,
     "Đơn vị, chục, trăm, nghìn",
-    "Quan hệ 10 đơn vị = 1 chục; 10 chục = 1 trăm; 10 trăm = 1 nghìn.",
+    "10 đơn vị = 1 chục. 10 chục = 1 trăm.",
     svgPlace3(1, 0, 0),
     {
       why: "Hiểu “tỷ giá” các hàng để đọc số đến 1000.",
@@ -3157,7 +3213,7 @@ function buildLessons() {
     49,
     10,
     "Các số tròn trăm, tròn chục",
-    "Nhận biết số tròn trăm, tròn chục.",
+    "100, 200, 300 là tròn trăm. 10, 20, 30 là tròn chục.",
     svgPlace3(3, 0, 0),
     {
       why: "Số tròn giúp ước lượng và tính nhẩm nhanh.",
@@ -3189,7 +3245,7 @@ function buildLessons() {
     50,
     10,
     "So sánh các số tròn trăm, tròn chục",
-    "So sánh nhanh số tròn trăm, tròn chục.",
+    "So hàng trăm trước. 700 lớn hơn 70.",
     svgPlace3(6, 0, 0),
     {
       why: "So sánh số lớn bằng cách nhìn hàng cao trước.",
@@ -3212,18 +3268,15 @@ function buildLessons() {
       exMC("450 … 540", ["<", "=", ">", "450 hơn"], 0, "So trăm.", "<"),
       exNum("Tròn trăm liền sau 500?", 600, "+100.", "600."),
       exMC("990 … 909", [">", "<", "=", "Không"], 0, "So chục.", ">"),
-      exMC("200 … 2000 (nếu biết)", ["<", ">", "=", "200 hơn"], 0, "2000 lớn hơn phạm vi? 2000 ngoài 1000 — skip: use 200…300", "<"),
+      exMC("200 … 300", ["<", ">", "=", "200 hơn"], 0, "So trăm.", "<."),
       exNum("Tròn chục liền trước 400?", 390, "−10.", "390."),
     ]
   );
-  // Fix bad exercise on lesson 50 - 200 vs 2000 is confusing for grade 2 scope
-  L[L.length - 1].exercises[5] = exMC("200 … 300", ["<", ">", "=", "200 hơn"], 0, "So trăm.", "<");
-
   add(
     51,
     10,
     "Số có ba chữ số",
-    "Đọc, viết số có ba chữ số.",
+    "208 đọc hai trăm linh tám. Số 0 giữ chỗ.",
     svgPlace3(2, 0, 8),
     {
       why: "Bước vào thế giới số đến 999 — nền tảng lớp 2 HK2.",
@@ -3255,7 +3308,7 @@ function buildLessons() {
     52,
     10,
     "Viết số thành tổng các trăm, chục, đơn vị",
-    "Phân tích: 365 = 300 + 60 + 5.",
+    "365 = 3 trăm + 6 chục + 5 đơn vị.",
     svgPlace3(3, 6, 5),
     {
       why: "Phân tích số giúp cộng trừ theo hàng và hiểu giá trị vị trí.",
@@ -3287,7 +3340,7 @@ function buildLessons() {
     53,
     10,
     "So sánh các số có ba chữ số",
-    "So sánh số có ba chữ số.",
+    "So từ hàng trăm. 450 nhỏ hơn 540.",
     svgPlace3(5, 2, 8),
     {
       why: "So sánh số ba chữ số dùng hàng ngày khi đọc giá, số trang, khoảng cách.",
@@ -3319,7 +3372,7 @@ function buildLessons() {
     54,
     10,
     "Luyện tập chung",
-    "Ôn số đến 1000: đọc viết, phân tích, so sánh.",
+    "Ôn đọc, tách hàng và so sánh số đến 1000.",
     svgPlace3(6, 7, 8),
     {
       why: "Chốt số đến 1000 trước đo độ dài và cộng trừ 1000.",
@@ -3352,7 +3405,7 @@ function buildLessons() {
     55,
     11,
     "Đề-xi-mét. Mét. Ki-lô-mét",
-    "Đơn vị đo độ dài dm, m, km và đổi đơn vị cơ bản.",
+    "1 m = 10 dm. 1 km = 1000 m.",
     svgLength(),
     {
       why: "Đo chiều dài bàn, sân, đường đi cần đúng đơn vị.",
@@ -3384,7 +3437,7 @@ function buildLessons() {
     56,
     11,
     "Giới thiệu Tiền Việt Nam",
-    "Nhận biết mệnh giá tiền Việt Nam; cộng trừ tiền đơn giản.",
+    "Tiền tính bằng đồng. 5000 bớt 2000 còn 3000.",
     svgShopping(),
     {
       why: "Tính tiền mua đồ là toán thật mỗi ngày.",
@@ -3416,7 +3469,7 @@ function buildLessons() {
     57,
     11,
     "Thực hành và trải nghiệm đo độ dài",
-    "Thực hành đo bằng thước; ước lượng.",
+    "Đo bằng thước. Lớp học đo bằng mét.",
     svgLength(),
     {
       why: "Đo thật mới hiểu số đo nghĩa là gì.",
@@ -3448,7 +3501,7 @@ function buildLessons() {
     58,
     11,
     "Luyện tập chung",
-    "Ôn dm, m, km và tiền Việt Nam.",
+    "Ôn đổi dm, m, km và tính tiền.",
     svgMoney(),
     {
       why: "Chốt đo độ dài và tiền trước cộng trừ 1000.",
