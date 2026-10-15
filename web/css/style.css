@@ -568,6 +568,38 @@ details.check {
   font-weight: 800;
   color: #3f6b32;
 }
+.pair-board {
+  background: #fffdf6;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--stamp);
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  margin: 0 0 1rem;
+}
+.pair-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.pair-chip {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-weight: 800;
+  animation: g2in 0.4s ease both;
+}
+.pair-chip:nth-child(2) { animation-delay: 0.08s; }
+.pair-chip:nth-child(3) { animation-delay: 0.16s; }
+.pair-chip:nth-child(4) { animation-delay: 0.24s; }
+.pair-chip:nth-child(5) { animation-delay: 0.32s; }
+.pair-chip:nth-child(6) { animation-delay: 0.4s; }
+.pair-chip:nth-child(7) { animation-delay: 0.48s; }
+.pair-chip:nth-child(8) { animation-delay: 0.56s; }
+.pair-chip:nth-child(9) { animation-delay: 0.64s; }
+.pair-chip.line {
+  background: #eef7fa;
+}
 @media (max-width: 640px) {
   .ch-samples { grid-template-columns: 1fr; }
 }

@@ -402,6 +402,23 @@ function chapterView(course, chapterId) {
         <p class="actions" style="margin:0.6rem 0 1rem"><a class="btn" href="#/g/${course.id}/lesson/${nxt.id}">Học tiếp: Bài ${nxt.num}</a></p>`;
       })()}
       ${
+        ch.pairs && ch.pairs.length
+          ? `<div class="pair-board">
+              <p><strong>Cặp đủ 10.</strong> Thuộc các cặp này rồi hãy làm bài.</p>
+              <div class="pair-row">${ch.pairs
+                .map((p) => `<span class="pair-chip">${p.a} + ${p.b}</span>`)
+                .join("")}</div>
+              ${
+                ch.line
+                  ? `<p class="quiz-lead">Đếm đến 20</p><div class="pair-row">${ch.line
+                      .map((n) => `<span class="pair-chip line">${n}</span>`)
+                      .join("")}</div>`
+                  : ""
+              }
+            </div>`
+          : ""
+      }
+      ${
         ch.samples && ch.samples.length
           ? `<div class="ch-samples">${ch.samples
               .map(
