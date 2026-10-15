@@ -512,6 +512,13 @@ details.check {
   font-size: 1.05rem;
   padding: 0.55rem 1rem;
 }
+.article.grade-2 .kid-steps {
+  margin: 0.4rem 0 0;
+  padding-left: 1.4rem;
+}
+.article.grade-2 .kid-steps li {
+  margin: 0.35rem 0;
+}
 
 @media (max-width: 640px) {
   main { width: calc(100% - 1.2rem); }

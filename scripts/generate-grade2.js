@@ -19,12 +19,12 @@ const chapters = [
   {
     id: 1,
     title: "Ôn tập và bổ sung",
-    intro: "Có 6 bài. Em ôn số đến 100, tia số, tên gọi trong phép cộng/trừ, hơn kém, rồi cộng trừ không nhớ. Làm từ Bài 1 nhé.",
+    intro: "6 bài ôn. Đếm số đến 100. Tia số. Cộng và trừ. Hơn kém. Làm từ Bài 1.",
   },
   {
     id: 2,
     title: "Phép cộng, phép trừ trong phạm vi 20",
-    intro: "Có 8 bài. Em học cộng và trừ khi ra số lớn hơn 10, đến 20. Có bảng cộng, bảng trừ, bài toán thêm/bớt và nhiều hơn/ít hơn. Làm lần lượt từ Bài 7 nhé.",
+    intro: "8 bài. Cộng và trừ đến 20. Thêm thì cộng. Bớt thì trừ. Làm từ Bài 7.",
   },
   { id: 3, title: "Làm quen với khối lượng, dung tích" },
   { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100" },
@@ -898,7 +898,9 @@ function kidText(s) {
     .replace(/viết gọn phép cộng lặp/g, "cộng nhiều lần cho nhanh")
     .replace(/phụ huynh và con/g, "em")
     .replace(/\bHK1\b/g, "học kì 1")
-    .replace(/\bHK2\b/g, "học kì 2");
+    .replace(/\bHK2\b/g, "học kì 2")
+    .replace(/□/g, "số cần tìm")
+    .replace(/mốc/g, "số đã biết");
 }
 
 function body(parts) {
@@ -916,6 +918,7 @@ function body(parts) {
     memory,
     caption,
     extraHtml,
+    how,
   } = parts;
   const warnList = (warns || [])
     .map((w) => `<li>${kidText(w)}</li>`)
@@ -923,6 +926,9 @@ function body(parts) {
   const checkPs = (checks || [])
     .map((c) => `<p>${kidText(c.q)} <em>— ${kidText(c.a)}</em></p>`)
     .join("\n        ");
+  const howList = (how || [])
+    .map((h, i) => `<li><strong>Bước ${i + 1}.</strong> ${kidText(h)}</li>`)
+    .join("\n          ");
   let fig = animFig;
   if (caption) {
     fig = animFig.replace(
@@ -946,6 +952,9 @@ ${fig}
       <div class="example">
         <p><strong>Cẩn thận.</strong> ${kidText(trap)}</p>
       </div>
+      ${howList ? `<div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
+          ${howList}
+        </ol></div>` : ""}
       <div class="idea">
         <p><strong>Mẹo nhỏ.</strong> ${kidText(idea)}</p>
       </div>
@@ -1168,7 +1177,12 @@ function buildLessons() {
       easy: "Lan có 3 bó que (mỗi bó 10 que) và 5 que rời. 3 chục + 5 = 35. Đọc: ba mươi lăm.",
       step: "So 58 và 85. Nhìn hàng chục trước: 5 nhỏ hơn 8 nên 58 nhỏ hơn 85. So 72 và 78: cùng 7 chục, nhìn đơn vị 2 nhỏ hơn 8 nên 72 nhỏ hơn 78.",
       trap: "16 và 61 dùng cùng chữ số 1 và 6 nhưng chỗ đứng khác. 16 là mười sáu. 61 là sáu mươi mốt. Đọc từ trái sang phải.",
-      idea: "Đọc và viết: chục trước, đơn vị sau. So sánh: chục trước; chục bằng nhau thì so đơn vị.",
+      idea: "Nhìn trái trước (chục), rồi mới nhìn phải (đơn vị).",
+      how: [
+        "Chỉ chữ số bên trái: đó là chục.",
+        "Chỉ chữ số bên phải: đó là đơn vị.",
+        "So sánh hai số: chục trước. Chục bằng nhau thì so đơn vị.",
+      ],
       warns: [
         "Đảo chữ số: 16 không phải 61.",
         "Số 0 cũng là một chữ số: 70 không phải 7. Đọc bảy mươi.",
@@ -1215,7 +1229,12 @@ function buildLessons() {
       easy: "Số 25. Liền trước là 24. Liền sau là 26.",
       step: "Số đứng giữa 18 và 20 là 19. Từ 18 sang 20 bước đúng 2 vạch.",
       trap: "Liền sau 29 là 30, không phải 20. Sang hàng chục mới thì nhớ đổi chục.",
-      idea: "Lùi 1 vạch → trước. Tiến 1 vạch → sau. Không nhảy cóc.",
+      idea: "Lùi 1 là trước. Tiến 1 là sau.",
+      how: [
+        "Tìm số trên tia số.",
+        "Lùi 1 vạch: số liền trước.",
+        "Tiến 1 vạch: số liền sau.",
+      ],
       warns: ["Nhầm trước với sau.", "Quên 39 → 40, 99 → 100."],
       checks: [
         { q: "Liền trước của 40?", a: "39." },
@@ -1244,7 +1263,7 @@ function buildLessons() {
     3,
     1,
     "Các thành phần của phép cộng, phép trừ",
-    "Gọi đúng số hạng, tổng; số bị trừ, số trừ, hiệu.",
+    "Cộng có số hạng và tổng. Trừ có số bị trừ, số trừ và hiệu.",
     svgAddParts(8, 5, 13),
     {
       why: "Gọi đúng tên trong phép cộng và phép trừ.",
@@ -1252,7 +1271,12 @@ function buildLessons() {
       easy: "9 + 4 = 13. 9 và 4 là số hạng. 13 là tổng.",
       step: "13 − 4 = 9. 13 số bị trừ, 4 số trừ, 9 hiệu. Tìm số hạng: □ + 6 = 15 thì □ = 15 − 6 = 9.",
       trap: "Tổng là kết quả cộng. Hiệu là kết quả trừ. Đừng gọi nhầm.",
-      idea: "Cộng và trừ ngược nhau. Biết hai số thì tìm được số còn lại.",
+      idea: "Cộng xong có tổng. Trừ xong có hiệu.",
+      how: [
+        "Nhìn dấu + hay dấu −.",
+        "Dấu + : hai số hạng, ra tổng.",
+        "Dấu − : số bị trừ, số trừ, ra hiệu.",
+      ],
       warns: ["Gọi nhầm tổng thành hiệu.", "Tìm số hạng mà cộng tiếp."],
       checks: [
         { q: "7 + 8 = 15. 15 gọi là gì?", a: "Tổng." },
@@ -1280,7 +1304,7 @@ function buildLessons() {
     4,
     1,
     "Hơn, kém nhau bao nhiêu",
-    "Dùng phép trừ để biết hơn/kém bao nhiêu đơn vị.",
+    "Hơn bao nhiêu? Lấy số lớn trừ số bé.",
     svgCompareBars(12, 8),
     {
       why: "Hỏi hơn kém bao nhiêu: lấy số lớn trừ số bé.",
@@ -1288,7 +1312,12 @@ function buildLessons() {
       easy: "Lan 12 bi, Minh 8 bi. Lan hơn Minh 12 − 8 = 4 bi. Minh kém Lan cũng 4 bi.",
       step: "Sách An 25 trang, sách Bình 31 trang. Bình hơn An 31 − 25 = 6 trang.",
       trap: "Hỏi “hơn bao nhiêu” thì trừ, không cộng hai số.",
-      idea: "Vẽ hai cột: cột cao trừ cột thấp = phần hơn.",
+      idea: "Hơn bao nhiêu? Lấy số lớn trừ số bé.",
+      how: [
+        "Tìm hai số trong đề.",
+        "Số lớn đứng trước, số bé đứng sau.",
+        "Trừ. Kết quả là hơn (hoặc kém) bao nhiêu.",
+      ],
       warns: ["Cộng khi hỏi hơn bao nhiêu.", "Số bé trừ số lớn."],
       checks: [
         { q: "15 hơn 9 bao nhiêu?", a: "6." },
@@ -1316,7 +1345,7 @@ function buildLessons() {
     5,
     1,
     "Ôn tập phép cộng, phép trừ (không nhớ) trong phạm vi 100",
-    "Cộng trừ không nhớ với số có hai chữ số.",
+    "Cộng trừ hai chữ số. Thẳng cột. Chưa nhớ.",
     svgColumnAdd(34, 52, false),
     {
       why: "Cộng trừ hai chữ số, không nhớ: thẳng cột cho đều.",
@@ -1324,7 +1353,12 @@ function buildLessons() {
       easy: "34 + 52. 4+2=6, 3+5=8. Ra 86. 67 − 23. 7−3=4, 6−2=4. Ra 44.",
       step: "60 + 30 = 90. 99 − 40 = 59.",
       trap: "Viết 8 + 21 mà 8 thẳng với chữ 2 thì sai. Thẳng từ bên phải.",
-      idea: "Làm từng hàng. Kiểm: tổng trừ một số hạng ra số hạng kia.",
+      idea: "Thẳng cột. Cộng đơn vị trước, rồi cộng chục.",
+      how: [
+        "Viết số dưới số, đơn vị thẳng đơn vị.",
+        "Cộng hoặc trừ hàng đơn vị.",
+        "Rồi làm hàng chục. Kiểm bằng phép ngược.",
+      ],
       warns: ["Lệch cột.", "Cộng nhầm chục với đơn vị."],
       checks: [
         { q: "23 + 45 = ?", a: "68." },
@@ -1360,7 +1394,12 @@ function buildLessons() {
       easy: "Liền trước 70 là 69. 42 + 35 = 77.",
       step: "Tìm số hạng: □ + 12 = 45 thì □ = 45 − 12 = 33. 36 hơn 29 là 7.",
       trap: "Hỏi hiệu khác hỏi số hạng. Đọc hết câu.",
-      idea: "Gạch chân: đang hỏi tổng, hiệu, hay hơn bao nhiêu?",
+      idea: "Đọc hết câu. Hỏi gì thì làm nấy.",
+      how: [
+        "Đọc đề, gạch từ cần tìm.",
+        "Chọn cộng hay trừ.",
+        "Tính rồi đọc lại kết quả.",
+      ],
       warns: ["Không đọc hết đề.", "Nhầm cộng với trừ."],
       checks: [
         { q: "42 + 35 = ?", a: "77." },
@@ -1389,7 +1428,7 @@ function buildLessons() {
     7,
     2,
     "Phép cộng (qua 10) trong phạm vi 20",
-    "Cộng hai số có tổng lớn hơn 10, không quá 20.",
+    "Cộng hai số, ra hơn 10, chưa quá 20.",
     svgMakeTen(8, 2, 4, 14),
     {
       why: "Cộng hai số, khi cộng ra hơn 10 (đến 20).",
@@ -1397,7 +1436,12 @@ function buildLessons() {
       easy: "8 + 5. 8 cần 2 nữa được 10. 5 = 2 + 3. Vậy 10 + 3 = 13.",
       step: "9 + 7. 9 cần 1 nữa được 10. Còn 6. 10 + 6 = 16.",
       trap: "Đếm ngón từng cái dễ sai. Nhớ cặp đủ 10: 1+9, 2+8, 3+7, 4+6, 5+5.",
-      idea: "Hỏi nhỏ: số này cần thêm mấy nữa được 10?",
+      idea: "Hỏi: cần thêm mấy nữa được 10?",
+      how: [
+        "Nhìn số thứ nhất. Cần mấy nữa được 10?",
+        "Tách số thứ hai thành hai phần.",
+        "10 cộng phần còn lại.",
+      ],
       warns: ["Đủ 10 rồi quên cộng phần còn.", "8 + 5 không phải 12."],
       checks: [
         { q: "8 + 6 = ?", a: "14." },
@@ -1427,7 +1471,7 @@ function buildLessons() {
     8,
     2,
     "Bảng cộng (qua 10)",
-    "Thuộc các công thức cộng qua 10 trong phạm vi 20.",
+    "Học thuộc các phép cộng qua 10.",
     svgAddTable(),
     {
       why: "Thuộc bảng cộng để tính nhanh, không phải đếm ngón mỗi lần.",
@@ -1435,7 +1479,12 @@ function buildLessons() {
       easy: "9 + 8 = 17. 8 + 7 = 15. 7 + 6 = 13.",
       step: "Đã thuộc 9 + 6 = 15 thì 6 + 9 cũng = 15. Đổi chỗ hai số, tổng không đổi.",
       trap: "9 + 7 = 16, không phải 15. Kiểm: 9 + 1 = 10, còn 6, ra 16.",
-      idea: "Học theo họ 9+, rồi 8+, rồi 7+. Mỗi ngày ôn vài phép.",
+      idea: "Học thuộc từng họ: 9 cộng, rồi 8 cộng.",
+      how: [
+        "Đọc 9+2, 9+3, … 9+9.",
+        "Đổi chỗ: 9+6 cũng là 6+9.",
+        "Mỗi ngày ôn 5 phép.",
+      ],
       warns: ["Nhầm 15 với 16 với 17.", "Quên đổi chỗ: 8+5 = 5+8."],
       checks: [
         { q: "9 + 9 = ?", a: "18." },
@@ -1464,7 +1513,7 @@ function buildLessons() {
     9,
     2,
     "Bài toán về thêm, bớt một số đơn vị",
-    "Lời văn: thêm → cộng; bớt → trừ.",
+    "Thêm thì cộng. Bớt thì trừ.",
     svgKeywords(),
     {
       why: "Bài toán có chuyện: thêm kẹo, bớt bút, còn lại bao nhiêu.",
@@ -1472,7 +1521,12 @@ function buildLessons() {
       easy: "Có 9 kẹo, mẹ cho thêm 5. 9 + 5 = 14 kẹo. Có 14, ăn 3. 14 − 3 = 11 kẹo.",
       step: "Hộp 12 viên phấn, cô lấy 4. Còn 12 − 4 = 8. Rồi thêm 5 viên. 8 + 5 = 13.",
       trap: "Thấy “còn lại” thì trừ. Thấy “tất cả” thì cộng. Đọc hết câu đã.",
-      idea: "Gạch chân từ khóa → chọn + hoặc − → tính → nói đủ đơn vị (quả, bút…).",
+      idea: "Thấy “thêm” thì cộng. Thấy “còn” thì trừ.",
+      how: [
+        "Gạch từ thêm / bớt / còn lại / tất cả.",
+        "Thêm, tất cả → cộng. Bớt, còn → trừ.",
+        "Tính xong nói đủ: quả, bút, tem…",
+      ],
       warns: ["Chọn nhầm cộng/trừ.", "Quên viết quả, bút, tem."],
       checks: [
         { q: "8 quả, hái thêm 7. Tất cả?", a: "15 quả." },
@@ -1508,7 +1562,12 @@ function buildLessons() {
       easy: "7 + 9 = 16. Có 11 bóng, thêm 6 → 17.",
       step: "Tìm số hạng: □ + 7 = 16. Lấy 16 − 7 = 9.",
       trap: "9 + 8 − 6: làm 9+8=17 rồi 17−6=11. Không trừ 8−6 trước.",
-      idea: "Một dấu một bước. Nhiều dấu: trái → phải.",
+      idea: "Nhiều dấu thì làm từ trái sang phải.",
+      how: [
+        "Làm phép đầu tiên.",
+        "Lấy kết quả làm phép tiếp.",
+        "Đọc lại đề xem đúng chưa.",
+      ],
       warns: ["Sai thứ tự khi có hai dấu.", "Nhầm bảng cộng."],
       checks: [
         { q: "7 + 9 = ?", a: "16." },
@@ -1535,15 +1594,21 @@ function buildLessons() {
     11,
     2,
     "Phép trừ (qua 10) trong phạm vi 20",
-    "Trừ khi không đủ đơn vị, phạm vi 20.",
+    "Trừ khi không đủ, số đến 20.",
     svgTakeAway(15, 7),
     {
       why: "Trừ khi không đủ (qua 10), số trong phạm vi 20.",
-      def: "Trừ qua 10: nghĩ ngược cộng. 15 − 7 = □ nghĩa là 7 + □ = 15.",
+      def: "Trừ qua 10: nghĩ ngược cộng. 15 − 7: hỏi 7 cộng mấy bằng 15?",
+
       easy: "15 − 7. Hỏi: 7 cộng mấy bằng 15? 7 + 8 = 15 nên còn 8.",
       step: "14 − 6. Trừ 4 cho đủ xuống 10, còn trừ 2: 10 − 2 = 8.",
       trap: "Không đổi chỗ 5 − 9 thành 9 − 5. Số trước là số bị trừ.",
-      idea: "Hỏi: số trừ cộng mấy thì ra số bị trừ?",
+      idea: "Hỏi ngược: 7 cộng mấy thì được 15?",
+      how: [
+        "Viết phép trừ, ví dụ 15 − 7.",
+        "Hỏi: 7 cộng mấy bằng 15?",
+        "Số đó chính là kết quả trừ.",
+      ],
       warns: ["Đảo hai số rồi trừ.", "Nhầm trừ thành cộng."],
       checks: [
         { q: "13 − 5 = ?", a: "8." },
@@ -1571,7 +1636,7 @@ function buildLessons() {
     12,
     2,
     "Bảng trừ (qua 10)",
-    "Thuộc các phép trừ qua 10 trong phạm vi 20.",
+    "Học thuộc các phép trừ qua 10.",
     svgSubParts(18, 9, 9),
     {
       why: "Thuộc bảng trừ: từ bảng cộng viết ngược.",
@@ -1579,7 +1644,12 @@ function buildLessons() {
       easy: "18 − 9 = 9. 17 − 8 = 9. 14 − 7 = 7.",
       step: "14 − 8 = 6 vì 8 + 6 = 14.",
       trap: "19 − 9 = 10, không phải 9.",
-      idea: "Một phép cộng cho hai phép trừ. Ôn theo cặp.",
+      idea: "Thuộc cộng thì thuộc trừ. 9+7=16 thì 16−9=7.",
+      how: [
+        "Nhớ một phép cộng.",
+        "Viết hai phép trừ ngược lại.",
+        "Ôn theo cặp mỗi ngày.",
+      ],
       warns: ["14 − 7 = 7, không phải 6.", "19 − 9 = 10."],
       checks: [
         { q: "18 − 9 = ?", a: "9." },
@@ -1607,15 +1677,20 @@ function buildLessons() {
     13,
     2,
     "Bài toán về nhiều hơn, ít hơn một số đơn vị",
-    "Nhiều hơn → cộng; ít hơn → trừ (khi biết số chuẩn).",
+    "Nhiều hơn thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.",
     svgCompareBars(15, 11),
     {
       why: "Bài toán nhiều hơn / ít hơn: đọc rõ ai nhiều, ai ít.",
-      def: "A nhiều hơn B thì A = B + số hơn. A ít hơn B thì A = B − số ít.",
+      def: "An nhiều hơn Bình thì lấy số của Bình cộng thêm. An ít hơn Bình thì lấy số của Bình trừ đi.",
       easy: "Bình có 10 bi. An nhiều hơn Bình 3 bi. An = 10 + 3 = 13 bi.",
       step: "Lan có 18 tem. Mai ít hơn Lan 5 tem. Mai = 18 − 5 = 13 tem.",
       trap: "Cam ít hơn quýt 6 quả, cam có 14. Quýt nhiều hơn cam nên quýt = 14 + 6 = 20, không phải 14 − 6.",
-      idea: "Tìm mốc (số đã biết). Nhiều hơn mốc → cộng. Ít hơn mốc → trừ.",
+      idea: "Tìm số đã biết. Nhiều hơn thì cộng. Ít hơn thì trừ.",
+      how: [
+        "Tìm ai đã có số.",
+        "Nhiều hơn người đó → cộng. Ít hơn người đó → trừ.",
+        "Đọc lại tên người trong câu trả lời.",
+      ],
       warns: ["Thấy “ít hơn” là trừ nhầm người.", "Nên vẽ đoạn ngắn–dài."],
       checks: [
         { q: "Bình 10, An nhiều hơn 3. An?", a: "13." },
@@ -1623,7 +1698,7 @@ function buildLessons() {
         { q: "Cam 14, ít hơn quýt 6. Quýt?", a: "20." },
       ],
       slow: "Hùng 9 nhãn. Nam nhiều hơn Hùng 8. Nam = 9 + 8 = 17 nhãn.",
-      memory: "Nhiều hơn mốc → cộng. Ít hơn mốc → trừ. Đọc rõ ai là mốc.",
+      memory: "Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ. Đọc rõ tên ai.",
       extraHtml: svgKeywords() +
         `<div class="example"><p><strong>Thêm ví dụ.</strong> Vẽ hai đoạn: đoạn An dài hơn đoạn Bình 3 ô. Đếm ô trên đoạn Bình, cộng 3 ra số của An.</p></div>` +
         svgCompareBars(18, 13),
@@ -1652,7 +1727,12 @@ function buildLessons() {
       easy: "9 + 8 − 6 = 11. Số nhiều hơn 15 bốn đơn vị là 19. Số ít hơn 15 bốn đơn vị là 11.",
       step: "7 + 6 + 5 = 18. Từng bước: 7+6=13, 13+5=18.",
       trap: "Ít hơn 15 là 4 đơn vị nghĩa là 15 − 4 = 11, không phải 4.",
-      idea: "Gạch từ khóa. Một phép một dòng nháp.",
+      idea: "Gạch từ thêm, bớt, nhiều hơn, ít hơn.",
+      how: [
+        "Đọc đề chậm.",
+        "Chọn cộng hoặc trừ.",
+        "Tính một phép một dòng.",
+      ],
       warns: ["Sai từ khóa nhiều/ít.", "Sai thứ tự khi có hai dấu."],
       checks: [
         { q: "9+8−6=?", a: "11." },
