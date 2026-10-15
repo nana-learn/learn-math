@@ -49,10 +49,66 @@ const chapters = [
       { prompt: "Lan có 11 tem. Mai ít hơn Lan 3 tem. Mai có mấy tem?", choices: ["8", "11", "14", "3"], correct: 0 },
     ],
   },
-  { id: 3, title: "Làm quen với khối lượng, dung tích", intro: "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ." },
-  { id: 4, title: "Phép cộng, phép trừ có nhớ trong phạm vi 100", intro: "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục." },
-  { id: 5, title: "Làm quen với hình phẳng", intro: "4 bài. Điểm, đoạn, đường thẳng, đường cong, tứ giác. Đếm cạnh và đỉnh." },
-  { id: 6, title: "Ngày – giờ, giờ – phút, ngày – tháng", intro: "4 bài. Kim ngắn là giờ. Kim dài là phút. 1 giờ = 60 phút. Xem lịch để biết ngày." },
+  {
+    id: 3,
+    title: "Làm quen với khối lượng, dung tích",
+    intro: "4 bài. kg đo nặng nhẹ. Lít đo nước. Cùng chữ mới cộng trừ.",
+    tips: ["kg đo nặng nhẹ", "lít đo nước", "Cùng chữ mới cộng trừ", "Viết đủ kg hoặc lít"],
+    samples: [
+      { title: "Nặng", q: "5 kg − 2 kg", how: "Cùng kg thì trừ. 5 − 2 = 3.", a: "3 kg" },
+      { title: "Nước", q: "1 l + 5 l", how: "Cùng lít thì cộng. 1 + 5 = 6.", a: "6 l" },
+    ],
+    checks: [
+      { prompt: "kg đo gì?", choices: ["Nặng nhẹ", "Nước", "Giờ", "Ngày"], correct: 0 },
+      { prompt: "5 kg − 2 kg = ?", choices: ["3 kg", "7 kg", "3 l", "2 kg"], correct: 0 },
+      { prompt: "2 kg và 3 l có cộng được không?", choices: ["Không", "Được, ra 5", "Được, ra 6 kg", "Ra giờ"], correct: 0 },
+    ],
+  },
+  {
+    id: 4,
+    title: "Phép cộng, phép trừ có nhớ trong phạm vi 100",
+    intro: "6 bài. Đặt thẳng cột. Đơn vị từ 10 thì nhớ 1. Không đủ trừ thì mượn 1 chục.",
+    tips: ["Thẳng cột", "Đơn vị từ 10 thì nhớ 1", "Không đủ trừ thì mượn", "Kiểm bằng cộng lại"],
+    samples: [
+      { title: "Cộng", q: "28 + 5", how: "8 + 5 = 13. Viết 3, nhớ 1. 2 + 1 = 3.", a: "33" },
+      { title: "Trừ", q: "52 − 28", how: "2 không đủ trừ 8. Mượn 1 chục. 12 − 8 = 4.", a: "24" },
+    ],
+    checks: [
+      { prompt: "8 + 5 = 13. Viết mấy, nhớ mấy?", choices: ["Viết 3 nhớ 1", "Viết 13 nhớ 0", "Viết 1 nhớ 3", "Viết 5"], correct: 0 },
+      { prompt: "28 + 5 = ?", choices: ["33", "23", "13", "35"], correct: 0 },
+      { prompt: "52 − 28 = ?", choices: ["24", "34", "36", "20"], correct: 0 },
+    ],
+  },
+  {
+    id: 5,
+    title: "Làm quen với hình phẳng",
+    intro: "4 bài. Đoạn có hai đầu. Đường thẳng kéo dài mãi. 4 cạnh là tứ giác.",
+    tips: ["Đoạn có hai đầu", "Đường thẳng kéo dài mãi", "3 cạnh là tam giác", "4 cạnh là tứ giác"],
+    samples: [
+      { title: "Đoạn", q: "Hai chấm, nối bằng thước", how: "Có hai đầu thì là đoạn thẳng.", a: "đoạn" },
+      { title: "Tứ giác", q: "Khung ảnh", how: "Đếm 4 cạnh, 4 đỉnh.", a: "4 cạnh" },
+    ],
+    checks: [
+      { prompt: "Đoạn thẳng có mấy đầu?", choices: ["2", "0", "1", "4"], correct: 0 },
+      { prompt: "Tứ giác có mấy cạnh?", choices: ["4", "3", "5", "2"], correct: 0 },
+      { prompt: "Vẽ đoạn thẳng nên dùng gì?", choices: ["Thước", "Chỉ tay", "Cân", "Đồng hồ"], correct: 0 },
+    ],
+  },
+  {
+    id: 6,
+    title: "Ngày – giờ, giờ – phút, ngày – tháng",
+    intro: "4 bài. Kim ngắn là giờ. Kim dài là phút. Kim dài ở 6 là rưỡi.",
+    tips: ["Kim ngắn là giờ", "Kim dài là phút", "Kim dài ở 6 là rưỡi", "1 giờ = 60 phút"],
+    samples: [
+      { title: "Giờ đúng", q: "Kim ngắn ở 4, kim dài ở 12", how: "Kim dài ở 12 là giờ đúng.", a: "4 giờ" },
+      { title: "Rưỡi", q: "Kim dài ở 6", how: "Kim dài ở 6 là 30 phút.", a: "giờ rưỡi" },
+    ],
+    checks: [
+      { prompt: "Kim dài là kim gì?", choices: ["Kim phút", "Kim giờ", "Kim ngày", "Kim lịch"], correct: 0 },
+      { prompt: "1 giờ = ? phút", choices: ["60", "30", "24", "12"], correct: 0 },
+      { prompt: "7 giờ 30 phút còn gọi là", choices: ["7 giờ rưỡi", "7 giờ kém 30", "8 giờ", "6 giờ"], correct: 0 },
+    ],
+  },
   { id: 7, title: "Ôn tập học kì I", intro: "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề." },
   { id: 8, title: "Phép nhân, phép chia", intro: "9 bài. Nhân là cộng nhiều lần. Chia là chia đều. Học bảng 2 và bảng 5." },
   { id: 9, title: "Làm quen với hình khối", intro: "2 bài. Bóng là khối cầu. Lon, ống là khối trụ." },
@@ -152,7 +208,7 @@ function withStories(num, chapter, exercises) {
       mk(`Bình có ${sumAB} l nước, dùng ${n2} l. Còn mấy lít?`, n1, "Trừ lít.", `${sumAB} − ${n2} = ${n1}.`),
     ],
     time: [
-      mk(`${a} học từ ${7 + (seed % 3)} giờ đến ${9 + (seed % 3)} giờ. Học mấy giờ?`, 2, "Hiệu hai mốc giờ.", "2."),
+      mk(`${a} học từ ${7 + (seed % 3)} giờ đến ${8 + (seed % 3) + (seed % 2)} giờ. Học mấy giờ?`, 1 + (seed % 2), "Lấy giờ sau trừ giờ trước.", `${1 + (seed % 2)}.`),
       mk(`Hôm nay ngày ${n1}. ${n3} ngày sau là ngày bao nhiêu?`, n1 + n3, "Cộng ngày.", `${n1} + ${n3} = ${n1 + n3}.`),
     ],
     geo: [
@@ -731,6 +787,8 @@ function svgClock(h, m) {
           </g>
           <g class="g2s4">
             <text x="160" y="155" font-size="13" text-anchor="middle">${h} giờ${m ? " " + m + " phút" : ""}</text>
+            <text x="40" y="20" font-size="11" fill="${C.r}">kim ngắn = giờ</text>
+            <text x="190" y="20" font-size="11" fill="${C.b}">kim dài = phút</text>
           </g>`
   );
 }
@@ -1101,7 +1159,7 @@ function svgCh2Review() {
   );
 }
 
-function svgReview(title) {
+function svgReview(title, ops = "+ hoặc −") {
   return fig(
     "review",
     title,
@@ -1113,7 +1171,7 @@ function svgReview(title) {
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="${C.b}" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="${C.muted}">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="${C.muted}">${ops}</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="${C.r}" stroke-width="2"/>
@@ -1147,8 +1205,9 @@ function kidText(s) {
     .replace(/\bHK1\b/g, "học kì 1")
     .replace(/\bHK2\b/g, "học kì 2")
     .replace(/□/g, "?")
-    .replace(/mốc/g, "số đã biết")
     .replace(/phạm vi/g, "trong khoảng")
+    .replace(/khác đại lượng/g, "không cùng loại")
+    .replace(/thuật ngữ/g, "tên gọi")
     .replace(/nền tảng/g, "bài quan trọng")
     .replace(/xác suất/g, "chuyện có thể xảy ra")
     .replace(/thống kê/g, "đếm và phân loại")
@@ -2014,7 +2073,7 @@ function buildLessons() {
     15,
     3,
     "Ki-lô-gam",
-    "Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.",
+    "kg đo nặng nhẹ. 5 kg bớt 2 kg còn 3 kg.",
     svgKgL(),
     {
       why: "Đo “nặng/nhẹ” cần đơn vị chung — kg rất hay gặp ở chợ và bếp.",
@@ -2029,7 +2088,7 @@ function buildLessons() {
         { q: "kg đo gì?", a: "Khối lượng." },
       ],
       slow: "Mẹ mua 2 kg cam và 1 kg táo. Tất cả 2 + 1 = 3 kg hoa quả.",
-      memory: "kg = khối lượng (nặng/nhẹ).",
+      memory: "kg đo nặng nhẹ. Viết kg sau số.",
     },
     [
       exMC("Đơn vị khối lượng", ["kg", "l", "m", "giờ"], 0, "Ki-lô-gam.", "kg."),
@@ -2037,7 +2096,7 @@ function buildLessons() {
       exMC("Thường nặng hơn", ["Dưa hấu", "Bóng bay", "Lá khô", "Tờ giấy"], 0, "Thực tế.", "Dưa hấu."),
       exNum("5 kg − 2 kg = ?", 3, "Trừ.", "3."),
       exNum("1+1+1 kg = ?", 3, "3.", "3."),
-      exMC("“Nặng hơn” nghĩa là", ["Khối lượng lớn hơn", "Dài hơn", "Nhanh hơn", "Cao điểm hơn"], 0, "kg.", "Khối lượng lớn hơn."),
+      exMC("Nặng hơn nghĩa là", ["Nặng hơn", "Dài hơn", "Nhanh hơn", "Cao hơn"], 0, "kg đo nặng nhẹ.", "Nặng hơn."),
       exNum("10 kg − 7 kg = ?", 3, "Trừ.", "3."),
     ]
   );
@@ -2046,22 +2105,22 @@ function buildLessons() {
     16,
     3,
     "Lít",
-    "Đơn vị dung tích lít (l).",
+    "Lít đo nước. 1 l cộng 5 l là 6 l.",
     svgKgL(),
     {
       why: "Sữa, nước, dầu… được đựng theo lít.",
       def: "<strong>Lít</strong> viết tắt <strong>l</strong>, đo dung tích (sức chứa chất lỏng).",
       easy: "Hai chai 1 l đầy → 2 l nước.",
       step: "Bình 7 l, dùng 3 l → còn 4 l.",
-      trap: "Không cộng 2 kg với 3 l thành 5 — khác đại lượng.",
-      idea: "Nhìn nhãn chai: 1 l, 0,5 l (làm quen), 2 l.",
+      trap: "Không cộng 2 kg với 3 l. Hai thứ không cùng loại.",
+      idea: "Nhìn nhãn chai: 1 l hoặc 2 l.",
       warns: ["Nhầm l với kg.", "Quên đơn vị l."],
       checks: [
         { q: "4 can 1 l → ?", a: "4 l." },
         { q: "l đo gì?", a: "Dung tích." },
       ],
       slow: "1 l + 5 l = 6 l. Viết đủ chữ l sau số.",
-      memory: "l = dung tích chất lỏng.",
+      memory: "Lít đo nước, sữa, dầu. Viết l sau số.",
     },
     [
       exMC("Đơn vị dung tích", ["l", "kg", "cm", "ngày"], 0, "Lít.", "l."),
@@ -2078,11 +2137,11 @@ function buildLessons() {
     17,
     3,
     "Thực hành và trải nghiệm với các đơn vị ki-lô-gam, lít",
-    "Ước lượng và tính với kg, l.",
+    "Cùng chữ mới cộng trừ. 2 kg cộng 3 kg là 5 kg.",
     svgKgL(),
     {
       why: "Toán đo lường phải “sờ” được: cân, đổ nước, đọc nhãn.",
-      def: "Chỉ cộng/trừ khi <strong>cùng đơn vị</strong>. Ước lượng trước, đo/kiểm sau.",
+      def: "Chỉ cộng trừ khi <strong>cùng chữ</strong>: kg với kg, lít với lít.",
       easy: "2 kg + 3 kg = 5 kg. 5 l − 2 l = 3 l.",
       step: "Mua 1 kg + 1 kg + 1 kg = 3 kg.",
       trap: "3 kg và 3 l không kết luận “nặng bằng nhau” chỉ vì cùng số 3.",
@@ -2098,7 +2157,7 @@ function buildLessons() {
     [
       exNum("2 kg + 6 kg = ?", 8, "Cộng.", "8."),
       exNum("10 l − 4 l = ?", 6, "Trừ.", "6."),
-      exMC("3 kg và 3 l", ["Khác đại lượng", "Luôn nặng bằng", "Cộng được thành 6", "Trừ ra 0 luôn đúng nghĩa"], 0, "Khác loại.", "Khác đại lượng."),
+      exMC("3 kg và 3 l", ["Không cùng loại", "Luôn nặng bằng", "Cộng được thành 6", "Trừ ra 0"], 0, "kg và lít khác nhau.", "Không cùng loại."),
       exNum("1+1+1 kg=?", 3, "3.", "3."),
       exNum("8 l − 5 l = ?", 3, "Trừ.", "3."),
       exNum("4 kg + 5 kg = ?", 9, "Cộng.", "9."),
@@ -2110,7 +2169,7 @@ function buildLessons() {
     18,
     3,
     "Luyện tập chung",
-    "Ôn kg, l và so sánh nặng nhẹ.",
+    "Ôn kg và lít. Cùng chữ mới tính.",
     svgReview("Ôn đo kg l"),
     {
       why: "Chốt chủ đề đo khối lượng và dung tích học kì 1.",
@@ -2143,7 +2202,7 @@ function buildLessons() {
     19,
     4,
     "Phép cộng (có nhớ) số có hai chữ số với số có một chữ số",
-    "Cộng có nhớ: tổng đơn vị ≥ 10.",
+    "28 + 5: 8 + 5 = 13, viết 3 nhớ 1.",
     svgCarrySteps(),
     {
       why: "Cộng có nhớ: khi hàng đơn vị cộng ra từ 10 trở lên.",
@@ -2175,7 +2234,7 @@ function buildLessons() {
     20,
     4,
     "Phép cộng (có nhớ) số có hai chữ số với số có hai chữ số",
-    "Cộng hai số có hai chữ số, có nhớ.",
+    "Cộng hai số. Đơn vị từ 10 thì nhớ 1 sang chục.",
     svgColumnAdd(47, 28, true),
     {
       why: "Mở rộng nhớ khi cả hai số đều có hai chữ số.",
@@ -2207,7 +2266,7 @@ function buildLessons() {
     21,
     4,
     "Luyện tập chung",
-    "Ôn cộng có nhớ trong phạm vi 100.",
+    "Ôn cộng có nhớ. Quên nhớ 1 là sai.",
     svgReview("Ôn cộng có nhớ"),
     {
       why: "Củng cố trước khi sang trừ có nhớ.",
@@ -2239,7 +2298,7 @@ function buildLessons() {
     22,
     4,
     "Phép trừ (có nhớ) số có hai chữ số với số có một chữ số",
-    "Trừ có nhớ khi đơn vị không đủ.",
+    "Không đủ trừ thì mượn 1 chục.",
     svgBorrowSteps(),
     {
       why: "Trừ có nhớ là “bạn” của cộng có nhớ — rất hay sai nếu quên mượn.",
@@ -2271,7 +2330,7 @@ function buildLessons() {
     23,
     4,
     "Phép trừ (có nhớ) số có hai chữ số với số có hai chữ số",
-    "Trừ hai số có hai chữ số, có nhớ.",
+    "52 − 28: mượn 1 chục, rồi trừ.",
     svgColumnSub(81, 37),
     {
       why: "Hoàn thiện trừ có nhớ phạm vi 100.",
@@ -2303,7 +2362,7 @@ function buildLessons() {
     24,
     4,
     "Luyện tập chung",
-    "Ôn cộng trừ có nhớ phạm vi 100.",
+    "Ôn cộng và trừ có nhớ. Kiểm bằng cộng lại.",
     svgReview("Ôn cộng trừ 100"),
     {
       why: "Khóa kỹ năng đặt tính có nhớ trước hình học và đo thời gian.",
@@ -2336,7 +2395,7 @@ function buildLessons() {
     25,
     5,
     "Điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng",
-    "Nhận biết các đối tượng hình học phẳng cơ bản.",
+    "Đoạn có hai đầu. Đường thẳng kéo dài mãi.",
     svgGeometry(),
     {
       why: "Học tên các hình vẽ: điểm, đoạn, đường thẳng, đường cong.",
@@ -2368,7 +2427,7 @@ function buildLessons() {
     26,
     5,
     "Đường gấp khúc. Hình tứ giác",
-    "Nhận biết đường gấp khúc và hình tứ giác.",
+    "Tứ giác có 4 cạnh. Tam giác có 3 cạnh.",
     svgZigzag(),
     {
       why: "Nhiều hình quanh em (khung tranh, cửa sổ) là tứ giác; đường gấp khúc gặp trên bản đồ, hàng rào.",
@@ -2400,7 +2459,7 @@ function buildLessons() {
     27,
     5,
     "Thực hành gấp, cắt, ghép, xếp hình. Vẽ đoạn thẳng",
-    "Thực hành tạo hình; vẽ đoạn qua hai điểm.",
+    "Vẽ đoạn: chấm hai điểm, kẻ bằng thước.",
     svgQuad(),
     {
       why: "Học hình bằng tay: gấp, cắt, ghép giúp nhớ lâu hơn chỉ nhìn.",
@@ -2432,7 +2491,7 @@ function buildLessons() {
     28,
     5,
     "Luyện tập chung",
-    "Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.",
+    "Hai đầu là đoạn. 4 cạnh là tứ giác.",
     svgGeometry(),
     {
       why: "Chốt tên gọi hình phẳng học kì 1.",
@@ -2465,7 +2524,7 @@ function buildLessons() {
     29,
     6,
     "Ngày – giờ, giờ – phút",
-    "Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.",
+    "Kim ngắn là giờ. Kim dài là phút. Ở 6 là rưỡi.",
     svgClock(4, 0),
     {
       why: "Đến trường, xem phim, uống thuốc… đều cần đọc giờ.",
@@ -2497,7 +2556,7 @@ function buildLessons() {
     30,
     6,
     "Ngày – tháng",
-    "Xem lịch: ngày, tháng; số ngày cơ bản.",
+    "1 tuần có 7 ngày. Ngày mai là cộng 1.",
     svgCalendar(),
     {
       why: "Lịch giúp biết hôm nay, ngày mai, thứ trong tuần.",
@@ -2529,11 +2588,11 @@ function buildLessons() {
     31,
     6,
     "Thực hành và trải nghiệm xem đồng hồ, xem lịch",
-    "Thực hành đọc giờ và lịch.",
+    "Kim dài ở 12 là giờ đúng. Ở 6 là rưỡi.",
     svgClock(2, 30),
     {
       why: "Thực hành giúp phản xạ: nhìn đồng hồ là đọc được.",
-      def: "Nối hoạt động với mốc giờ: đến trường, ăn cơm, đi ngủ. Đọc thứ-ngày trên lịch.",
+      def: "Nhìn kim dài trước. Ở 12 là giờ đúng. Ở 6 là rưỡi. Ngày mai là cộng 1.",
       easy: "Kim phút ở 12, kim giờ ở 4 → 4 giờ đúng.",
       step: "Kim phút ở 6 → thêm 30 phút (rưỡi).",
       trap: "Nhìn nhầm 3 (15 phút) với 2.",
@@ -2561,7 +2620,7 @@ function buildLessons() {
     32,
     6,
     "Luyện tập chung",
-    "Ôn ngày giờ, giờ phút, ngày tháng.",
+    "1 giờ = 60 phút. Ngày mai là cộng 1.",
     svgClock(7, 30),
     {
       why: "Chốt đọc giờ và lịch học kì 1.",
@@ -2784,7 +2843,7 @@ function buildLessons() {
       easy: "2 × 5 = 10. 2 × 7 = 14. 2 × 10 = 20.",
       step: "2 × 8 = 16. Kiểm: 16 : 2 = 8 (sắp học chia).",
       trap: "2 × 6 = 12, không phải 10.",
-      idea: "Đếm cách 2: 2,4,6… gắn với từng mốc nhân.",
+      idea: "Đếm cách 2: 2, 4, 6, 8. Mỗi lần đếm là một phép nhân.",
       warns: ["Nhầm 2×9=16.", "Không ôn thành tiếng."],
       checks: [
         { q: "2×5?", a: "10." },
@@ -2817,7 +2876,7 @@ function buildLessons() {
       step: "5 × 5 = 25. 5 × 8 = 40.",
       trap: "5 × 7 = 35, không phải 30.",
       idea: "Đếm cách 5; hoặc 5 × n = nửa của 10 × n.",
-      warns: ["Nhầm mốc 30/35/40.", "Không luyện xáo."],
+      warns: ["Nhầm 30, 35, 40.", "Không đọc bảng mỗi ngày."],
       checks: [
         { q: "5×3?", a: "15." },
         { q: "5×8?", a: "40." },
@@ -3772,7 +3831,7 @@ function buildLessons() {
       exNum("Cột 4 và 9, hơn kém?", 5, "9−4.", "5."),
       exMC("Chú thích biểu đồ cần xem", ["Trước khi đếm", "Sau cùng không cần", "Không bao giờ", "Chỉ khi màu đẹp"], 0, "Trước.", "Trước khi đếm."),
     ]],
-    [75, "Ôn tập chung", "Tổng ôn cuối năm Toán 2.", svgReview("Cuối năm Toán 2"), [
+    [75, "Ôn tập chung", "Tổng ôn cuối năm Toán 2.", svgReview("Cuối năm Toán 2", "+ − × :"), [
       exNum("2 × 10 = ?", 20, "Bảng 2.", "20."),
       exNum("5 × 9 = ?", 45, "Bảng 5.", "45."),
       exNum("476 + 128 = ?", 604, "Có nhớ.", "604."),
@@ -3974,7 +4033,7 @@ function buildLessons() {
     14,
     "Mini đề cuối năm",
     "12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.",
-    svgReview("Mini đề cuối năm"),
+    svgReview("Mini đề cuối năm", "+ − × :"),
     {
       why: "Đề cuối năm: ôn lại những gì đã học cả năm.",
       def: "12 câu phủ số đến 1000, cộng trừ có nhớ, bảng 2&5, đo lường, hình khối, biểu đồ/khả năng.",

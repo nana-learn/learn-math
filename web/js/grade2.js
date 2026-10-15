@@ -149,22 +149,230 @@ const G2_CHAPTERS = [
   {
     "id": 3,
     "title": "Làm quen với khối lượng, dung tích",
-    "intro": "4 bài. kg đo nặng nhẹ. lít đo nước. Cùng đơn vị mới cộng trừ."
+    "intro": "4 bài. kg đo nặng nhẹ. Lít đo nước. Cùng chữ mới cộng trừ.",
+    "tips": [
+      "kg đo nặng nhẹ",
+      "lít đo nước",
+      "Cùng chữ mới cộng trừ",
+      "Viết đủ kg hoặc lít"
+    ],
+    "samples": [
+      {
+        "title": "Nặng",
+        "q": "5 kg − 2 kg",
+        "how": "Cùng kg thì trừ. 5 − 2 = 3.",
+        "a": "3 kg"
+      },
+      {
+        "title": "Nước",
+        "q": "1 l + 5 l",
+        "how": "Cùng lít thì cộng. 1 + 5 = 6.",
+        "a": "6 l"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "kg đo gì?",
+        "choices": [
+          "Nặng nhẹ",
+          "Nước",
+          "Giờ",
+          "Ngày"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "5 kg − 2 kg = ?",
+        "choices": [
+          "3 kg",
+          "7 kg",
+          "3 l",
+          "2 kg"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "2 kg và 3 l có cộng được không?",
+        "choices": [
+          "Không",
+          "Được, ra 5",
+          "Được, ra 6 kg",
+          "Ra giờ"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 4,
     "title": "Phép cộng, phép trừ có nhớ trong phạm vi 100",
-    "intro": "6 bài. Cộng trừ số có hai chữ số. Đơn vị từ 10 trở lên thì nhớ 1. Không đủ trừ thì mượn 1 chục."
+    "intro": "6 bài. Đặt thẳng cột. Đơn vị từ 10 thì nhớ 1. Không đủ trừ thì mượn 1 chục.",
+    "tips": [
+      "Thẳng cột",
+      "Đơn vị từ 10 thì nhớ 1",
+      "Không đủ trừ thì mượn",
+      "Kiểm bằng cộng lại"
+    ],
+    "samples": [
+      {
+        "title": "Cộng",
+        "q": "28 + 5",
+        "how": "8 + 5 = 13. Viết 3, nhớ 1. 2 + 1 = 3.",
+        "a": "33"
+      },
+      {
+        "title": "Trừ",
+        "q": "52 − 28",
+        "how": "2 không đủ trừ 8. Mượn 1 chục. 12 − 8 = 4.",
+        "a": "24"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "8 + 5 = 13. Viết mấy, nhớ mấy?",
+        "choices": [
+          "Viết 3 nhớ 1",
+          "Viết 13 nhớ 0",
+          "Viết 1 nhớ 3",
+          "Viết 5"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "28 + 5 = ?",
+        "choices": [
+          "33",
+          "23",
+          "13",
+          "35"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "52 − 28 = ?",
+        "choices": [
+          "24",
+          "34",
+          "36",
+          "20"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 5,
     "title": "Làm quen với hình phẳng",
-    "intro": "4 bài. Điểm, đoạn, đường thẳng, đường cong, tứ giác. Đếm cạnh và đỉnh."
+    "intro": "4 bài. Đoạn có hai đầu. Đường thẳng kéo dài mãi. 4 cạnh là tứ giác.",
+    "tips": [
+      "Đoạn có hai đầu",
+      "Đường thẳng kéo dài mãi",
+      "3 cạnh là tam giác",
+      "4 cạnh là tứ giác"
+    ],
+    "samples": [
+      {
+        "title": "Đoạn",
+        "q": "Hai chấm, nối bằng thước",
+        "how": "Có hai đầu thì là đoạn thẳng.",
+        "a": "đoạn"
+      },
+      {
+        "title": "Tứ giác",
+        "q": "Khung ảnh",
+        "how": "Đếm 4 cạnh, 4 đỉnh.",
+        "a": "4 cạnh"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "Đoạn thẳng có mấy đầu?",
+        "choices": [
+          "2",
+          "0",
+          "1",
+          "4"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Tứ giác có mấy cạnh?",
+        "choices": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "Vẽ đoạn thẳng nên dùng gì?",
+        "choices": [
+          "Thước",
+          "Chỉ tay",
+          "Cân",
+          "Đồng hồ"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 6,
     "title": "Ngày – giờ, giờ – phút, ngày – tháng",
-    "intro": "4 bài. Kim ngắn là giờ. Kim dài là phút. 1 giờ = 60 phút. Xem lịch để biết ngày."
+    "intro": "4 bài. Kim ngắn là giờ. Kim dài là phút. Kim dài ở 6 là rưỡi.",
+    "tips": [
+      "Kim ngắn là giờ",
+      "Kim dài là phút",
+      "Kim dài ở 6 là rưỡi",
+      "1 giờ = 60 phút"
+    ],
+    "samples": [
+      {
+        "title": "Giờ đúng",
+        "q": "Kim ngắn ở 4, kim dài ở 12",
+        "how": "Kim dài ở 12 là giờ đúng.",
+        "a": "4 giờ"
+      },
+      {
+        "title": "Rưỡi",
+        "q": "Kim dài ở 6",
+        "how": "Kim dài ở 6 là 30 phút.",
+        "a": "giờ rưỡi"
+      }
+    ],
+    "checks": [
+      {
+        "prompt": "Kim dài là kim gì?",
+        "choices": [
+          "Kim phút",
+          "Kim giờ",
+          "Kim ngày",
+          "Kim lịch"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "1 giờ = ? phút",
+        "choices": [
+          "60",
+          "30",
+          "24",
+          "12"
+        ],
+        "correct": 0
+      },
+      {
+        "prompt": "7 giờ 30 phút còn gọi là",
+        "choices": [
+          "7 giờ rưỡi",
+          "7 giờ kém 30",
+          "8 giờ",
+          "6 giờ"
+        ],
+        "correct": 0
+      }
+    ]
   },
   {
     "id": 7,
@@ -897,7 +1105,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -1913,7 +2121,7 @@ const G2_LESSONS = [
     num: 15,
     chapter: 3,
     title: "Ki-lô-gam",
-    summary: "Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.",
+    summary: "kg đo nặng nhẹ. 5 kg bớt 2 kg còn 3 kg.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b15-kgl">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ki-lô-gam và lít">
@@ -1928,9 +2136,9 @@ const G2_LESSONS = [
             <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
           </g>
         </svg>
-              <figcaption>Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.</figcaption>
+              <figcaption>kg đo nặng nhẹ. 5 kg bớt 2 kg còn 3 kg.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị khối lượng kg; nặng hơn, nhẹ hơn.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> kg đo nặng nhẹ. 5 kg bớt 2 kg còn 3 kg.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Ki-lô-gam</strong> viết tắt <strong>kg</strong>, dùng đo khối lượng. So sánh: nặng hơn, nhẹ hơn.</p>
@@ -1972,7 +2180,7 @@ const G2_LESSONS = [
           <li><strong>Ví dụ 2.</strong> Đơn vị khối lượng<br>Đáp án: <strong>kg</strong>. Ki-lô-gam.</li>
           <li><strong>Ví dụ 3.</strong> 3 gói × 1 kg = ?<br>Đáp án: <strong>3</strong>. Cộng.</li>
         </ol></div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> kg = khối lượng (nặng/nhẹ).</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> kg đo nặng nhẹ. Viết kg sau số.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"Đơn vị đo mức nặng/nhẹ","choices":["kg","m","l","giờ"],"correct":0,"hint":"kg","explain":"kg."},
@@ -1981,7 +2189,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Thường nặng hơn","choices":["Bóng bay","Dưa hấu","Tờ giấy","Lá khô"],"correct":1,"hint":"Thực tế.","explain":"Dưa hấu.","_chapter":3},
       {"type":"mc","prompt":"5 kg − 2 kg = ?","choices":["3","2","4","13"],"correct":0,"hint":"Trừ.","explain":"3."},
       {"type":"mc","prompt":"1+1+1 kg = ?","choices":["4","2","13","3"],"correct":3,"hint":"3.","explain":"3."},
-      {"type":"mc","prompt":"“Nặng hơn” nghĩa là","choices":["Khối lượng lớn hơn","Cao điểm hơn","Nhanh hơn","Dài hơn"],"correct":0,"hint":"kg.","explain":"Khối lượng lớn hơn.","_chapter":3},
+      {"type":"mc","prompt":"Nặng hơn nghĩa là","choices":["Nặng hơn","Cao hơn","Nhanh hơn","Dài hơn"],"correct":0,"hint":"kg đo nặng nhẹ.","explain":"Nặng hơn.","_chapter":3},
       {"type":"mc","prompt":"10 kg − 7 kg = ?","choices":["13","3","4","2"],"correct":1,"hint":"Trừ.","explain":"3."},
       {"type":"mc","prompt":"Mẹ mua 3 kg gạo và 2 kg đường. Tất cả mấy kg?","choices":["4","6","5","15"],"correct":2,"hint":"Cộng kg.","explain":"3 + 2 = 5."},
     ],
@@ -1992,7 +2200,7 @@ const G2_LESSONS = [
     num: 16,
     chapter: 3,
     title: "Lít",
-    summary: "Đơn vị dung tích lít (l).",
+    summary: "Lít đo nước. 1 l cộng 5 l là 6 l.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b16-kgl">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ki-lô-gam và lít">
@@ -2007,9 +2215,9 @@ const G2_LESSONS = [
             <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
           </g>
         </svg>
-              <figcaption>Đơn vị dung tích lít (l).</figcaption>
+              <figcaption>Lít đo nước. 1 l cộng 5 l là 6 l.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Đơn vị dung tích lít (l).</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Lít đo nước. 1 l cộng 5 l là 6 l.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Lít</strong> viết tắt <strong>l</strong>, đo dung tích (sức chứa chất lỏng).</p>
@@ -2021,7 +2229,7 @@ const G2_LESSONS = [
         <p><strong>Thêm một chút.</strong> Bình 7 l, dùng 3 l → còn 4 l.</p>
       </div>
       <div class="example">
-        <p><strong>Cẩn thận.</strong> Không cộng 2 kg với 3 l thành 5 — khác đại lượng.</p>
+        <p><strong>Cẩn thận.</strong> Không cộng 2 kg với 3 l. Hai thứ không cùng loại.</p>
       </div>
       <div class="idea"><p><strong>Làm thế nào?</strong></p><ol class="kid-steps">
           <li><strong>Bước 1.</strong> Đọc đơn vị: kg hay lít.</li>
@@ -2029,7 +2237,7 @@ const G2_LESSONS = [
           <li><strong>Bước 3.</strong> Viết đơn vị sau kết quả.</li>
         </ol></div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Nhìn nhãn chai: 1 l, 0,5 l (làm quen), 2 l.</p>
+        <p><strong>Mẹo nhỏ.</strong> Nhìn nhãn chai: 1 l hoặc 2 l.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
@@ -2051,7 +2259,7 @@ const G2_LESSONS = [
           <li><strong>Ví dụ 2.</strong> Đơn vị dung tích<br>Đáp án: <strong>l</strong>. Lít.</li>
           <li><strong>Ví dụ 3.</strong> 4 can 1 l → ?<br>Đáp án: <strong>4</strong>. Cộng.</li>
         </ol></div>
-      <div class="memory"><p><strong>Nhớ một câu.</strong> l = dung tích chất lỏng.</p></div>
+      <div class="memory"><p><strong>Nhớ một câu.</strong> Lít đo nước, sữa, dầu. Viết l sau số.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"Đơn vị đo nước trong bình","choices":["m","kg","giờ","l"],"correct":3,"hint":"l","explain":"l."},
@@ -2071,7 +2279,7 @@ const G2_LESSONS = [
     num: 17,
     chapter: 3,
     title: "Thực hành và trải nghiệm với các đơn vị ki-lô-gam, lít",
-    summary: "Ước lượng và tính với kg, l.",
+    summary: "Cùng chữ mới cộng trừ. 2 kg cộng 3 kg là 5 kg.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b17-kgl">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ki-lô-gam và lít">
@@ -2086,12 +2294,12 @@ const G2_LESSONS = [
             <text x="220" y="140" font-size="12" text-anchor="middle" fill="#58C4DD">dung tích</text>
           </g>
         </svg>
-              <figcaption>Ước lượng và tính với kg, l.</figcaption>
+              <figcaption>Cùng chữ mới cộng trừ. 2 kg cộng 3 kg là 5 kg.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ước lượng và tính với kg, l.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Cùng chữ mới cộng trừ. 2 kg cộng 3 kg là 5 kg.</p>
       
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Chỉ cộng/trừ khi <strong>cùng đơn vị</strong>. Ước lượng trước, đo/kiểm sau.</p>
+        <p><strong>Nhớ này.</strong> Chỉ cộng trừ khi <strong>cùng chữ</strong>: kg với kg, lít với lít.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> 2 kg + 3 kg = 5 kg. 5 l − 2 l = 3 l.</p>
@@ -2128,14 +2336,14 @@ const G2_LESSONS = [
       <div class="example more-examples"><p><strong>Xem thêm 3 ví dụ.</strong> Đọc chậm, rồi xem đáp án.</p><ol class="kid-steps">
           <li><strong>Ví dụ 1.</strong> 2 kg + 6 kg = ?<br>Đáp án: <strong>8</strong>. Cộng.</li>
           <li><strong>Ví dụ 2.</strong> 10 l − 4 l = ?<br>Đáp án: <strong>6</strong>. Trừ.</li>
-          <li><strong>Ví dụ 3.</strong> 3 kg và 3 l<br>Đáp án: <strong>Khác đại lượng</strong>. Khác loại.</li>
+          <li><strong>Ví dụ 3.</strong> 3 kg và 3 l<br>Đáp án: <strong>Không cùng loại</strong>. kg và lít khác nhau.</li>
         </ol></div>
       <div class="memory"><p><strong>Nhớ một câu.</strong> Cùng đơn vị mới cộng trừ. kg  không bằng  l.</p></div>
     `,
     exercises: [
       {"type":"mc","prompt":"2 kg + 6 kg = ?","choices":["8","7","18","9"],"correct":0,"hint":"Cộng.","explain":"8."},
       {"type":"mc","prompt":"10 l − 4 l = ?","choices":["7","16","6","5"],"correct":2,"hint":"Trừ.","explain":"6."},
-      {"type":"mc","prompt":"3 kg và 3 l","choices":["Khác đại lượng","Luôn nặng bằng","Cộng được thành 6","Trừ ra 0 luôn đúng nghĩa"],"correct":0,"hint":"Khác loại.","explain":"Khác đại lượng.","_chapter":3},
+      {"type":"mc","prompt":"3 kg và 3 l","choices":["Không cùng loại","Luôn nặng bằng","Cộng được thành 6","Trừ ra 0"],"correct":0,"hint":"kg và lít khác nhau.","explain":"Không cùng loại.","_chapter":3},
       {"type":"mc","prompt":"1+1+1 kg=?","choices":["2","13","4","3"],"correct":3,"hint":"3.","explain":"3."},
       {"type":"mc","prompt":"8 l − 5 l = ?","choices":["2","13","3","4"],"correct":2,"hint":"Trừ.","explain":"3."},
       {"type":"mc","prompt":"4 kg + 5 kg = ?","choices":["10","9","19","8"],"correct":1,"hint":"Cộng.","explain":"9."},
@@ -2150,7 +2358,7 @@ const G2_LESSONS = [
     num: 18,
     chapter: 3,
     title: "Luyện tập chung",
-    summary: "Ôn kg, l và so sánh nặng nhẹ.",
+    summary: "Ôn kg và lít. Cùng chữ mới tính.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b18-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn đo kg l">
@@ -2162,7 +2370,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -2175,9 +2383,9 @@ const G2_LESSONS = [
             <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           </g>
         </svg>
-              <figcaption>Ôn kg, l và so sánh nặng nhẹ.</figcaption>
+              <figcaption>Ôn kg và lít. Cùng chữ mới tính.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg, l và so sánh nặng nhẹ.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn kg và lít. Cùng chữ mới tính.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> kg khối lượng; l dung tích; cộng trừ cùng loại.</p>
@@ -2239,7 +2447,7 @@ const G2_LESSONS = [
     num: 19,
     chapter: 4,
     title: "Phép cộng (có nhớ) số có hai chữ số với số có một chữ số",
-    summary: "Cộng có nhớ: tổng đơn vị ≥ 10.",
+    summary: "28 + 5: 8 + 5 = 13, viết 3 nhớ 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b19-carry-steps">
         <svg viewBox="0 0 320 160" role="img" aria-label="Cộng có nhớ từng bước">
@@ -2261,9 +2469,9 @@ const G2_LESSONS = [
             <text x="30" y="135" font-size="14" fill="#FC6255">28 + 5 = 33</text>
           </g>
         </svg>
-              <figcaption>Cộng có nhớ: tổng đơn vị từ 10 trở lên.</figcaption>
+              <figcaption>28 + 5: 8 + 5 = 13, viết 3 nhớ 1.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng có nhớ: tổng đơn vị từ 10 trở lên.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 28 + 5: 8 + 5 = 13, viết 3 nhớ 1.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Cộng đơn vị trước. Nếu ra từ 10 trở lên: viết chữ số đơn vị, <strong>nhớ 1</strong> sang hàng chục.</p>
@@ -2325,7 +2533,7 @@ const G2_LESSONS = [
     num: 20,
     chapter: 4,
     title: "Phép cộng (có nhớ) số có hai chữ số với số có hai chữ số",
-    summary: "Cộng hai số có hai chữ số, có nhớ.",
+    summary: "Cộng hai số. Đơn vị từ 10 thì nhớ 1 sang chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b20-col-add">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính cộng">
@@ -2350,9 +2558,9 @@ const G2_LESSONS = [
             <text x="40" y="75" font-size="12" fill="#888888">Có nhớ khi từ 10</text>
           </g>
         </svg>
-              <figcaption>Cộng hai số có hai chữ số, có nhớ.</figcaption>
+              <figcaption>Cộng hai số. Đơn vị từ 10 thì nhớ 1 sang chục.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số có hai chữ số, có nhớ.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Cộng hai số. Đơn vị từ 10 thì nhớ 1 sang chục.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính thẳng cột. Cộng đơn vị (nhớ nếu cần), rồi cộng chục kèm nhớ.</p>
@@ -2414,7 +2622,7 @@ const G2_LESSONS = [
     num: 21,
     chapter: 4,
     title: "Luyện tập chung",
-    summary: "Ôn cộng có nhớ trong phạm vi 100.",
+    summary: "Ôn cộng có nhớ. Quên nhớ 1 là sai.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b21-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn cộng có nhớ">
@@ -2426,7 +2634,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -2439,9 +2647,9 @@ const G2_LESSONS = [
             <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng có nhớ trong trong khoảng 100.</figcaption>
+              <figcaption>Ôn cộng có nhớ. Quên nhớ 1 là sai.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng có nhớ trong trong khoảng 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng có nhớ. Quên nhớ 1 là sai.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Trộn dạng 2 chữ số + 1 chữ số và 2 + 2 chữ số; tìm số hạng.</p>
@@ -2503,7 +2711,7 @@ const G2_LESSONS = [
     num: 22,
     chapter: 4,
     title: "Phép trừ (có nhớ) số có hai chữ số với số có một chữ số",
-    summary: "Trừ có nhớ khi đơn vị không đủ.",
+    summary: "Không đủ trừ thì mượn 1 chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b22-borrow-steps">
         <svg viewBox="0 0 320 160" role="img" aria-label="Trừ có nhớ từng bước">
@@ -2525,9 +2733,9 @@ const G2_LESSONS = [
             <text x="30" y="135" font-size="14" fill="#83C167">32 − 5 = 27</text>
           </g>
         </svg>
-              <figcaption>Trừ có nhớ khi đơn vị không đủ.</figcaption>
+              <figcaption>Không đủ trừ thì mượn 1 chục.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Trừ có nhớ khi đơn vị không đủ.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Không đủ trừ thì mượn 1 chục.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Khi đơn vị số bị trừ &lt; đơn vị số trừ: <strong>mượn 1 chục</strong> (thêm 10 đơn vị), trừ đơn vị, rồi giảm 1 ở hàng chục.</p>
@@ -2589,7 +2797,7 @@ const G2_LESSONS = [
     num: 23,
     chapter: 4,
     title: "Phép trừ (có nhớ) số có hai chữ số với số có hai chữ số",
-    summary: "Trừ hai số có hai chữ số, có nhớ.",
+    summary: "52 − 28: mượn 1 chục, rồi trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b23-col-sub">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đặt tính trừ có nhớ">
@@ -2606,9 +2814,9 @@ const G2_LESSONS = [
           <text x="225" y="142" font-size="22" text-anchor="middle" fill="#83C167">44</text>
           <text x="40" y="130" font-size="13">81 − 37</text>
         </svg>
-              <figcaption>Trừ hai số có hai chữ số, có nhớ.</figcaption>
+              <figcaption>52 − 28: mượn 1 chục, rồi trừ.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Trừ hai số có hai chữ số, có nhớ.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 52 − 28: mượn 1 chục, rồi trừ.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Đặt tính. Mượn khi cần ở đơn vị; trừ chục (đã trừ 1 nếu mượn).</p>
@@ -2670,7 +2878,7 @@ const G2_LESSONS = [
     num: 24,
     chapter: 4,
     title: "Luyện tập chung",
-    summary: "Ôn cộng trừ có nhớ phạm vi 100.",
+    summary: "Ôn cộng và trừ có nhớ. Kiểm bằng cộng lại.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b24-review">
         <svg viewBox="0 0 320 160" role="img" aria-label="Ôn cộng trừ 100">
@@ -2682,7 +2890,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -2695,9 +2903,9 @@ const G2_LESSONS = [
             <text x="235" y="116" font-size="10" text-anchor="middle" fill="#888888">phép ngược</text>
           </g>
         </svg>
-              <figcaption>Ôn cộng trừ có nhớ trong khoảng 100.</figcaption>
+              <figcaption>Ôn cộng và trừ có nhớ. Kiểm bằng cộng lại.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng trừ có nhớ trong khoảng 100.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn cộng và trừ có nhớ. Kiểm bằng cộng lại.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Chọn cộng/trừ theo đề; có nhớ khi cần.</p>
@@ -2759,7 +2967,7 @@ const G2_LESSONS = [
     num: 25,
     chapter: 5,
     title: "Điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng",
-    summary: "Nhận biết các đối tượng hình học phẳng cơ bản.",
+    summary: "Đoạn có hai đầu. Đường thẳng kéo dài mãi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b25-geo">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đoạn thẳng và đường thẳng">
@@ -2780,9 +2988,9 @@ const G2_LESSONS = [
             <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
           </g>
         </svg>
-              <figcaption>Nhận biết các đối tượng hình học phẳng cơ bản.</figcaption>
+              <figcaption>Đoạn có hai đầu. Đường thẳng kéo dài mãi.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết các đối tượng hình học phẳng cơ bản.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Đoạn có hai đầu. Đường thẳng kéo dài mãi.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Điểm</strong> là một chấm. <strong>Đoạn thẳng</strong> có hai đầu. <strong>Đường thẳng</strong> kéo dài mãi hai phía. <strong>Đường cong</strong> không thẳng. Ba điểm <strong>thẳng hàng</strong> khi nằm trên một đường thẳng.</p>
@@ -2844,7 +3052,7 @@ const G2_LESSONS = [
     num: 26,
     chapter: 5,
     title: "Đường gấp khúc. Hình tứ giác",
-    summary: "Nhận biết đường gấp khúc và hình tứ giác.",
+    summary: "Tứ giác có 4 cạnh. Tam giác có 3 cạnh.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b26-zigzag">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đường gấp khúc">
@@ -2857,9 +3065,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="12" text-anchor="middle">Đường gấp khúc = đoạn nối đoạn</text>
           </g>
         </svg>
-              <figcaption>Nhận biết đường gấp khúc và hình tứ giác.</figcaption>
+              <figcaption>Tứ giác có 4 cạnh. Tam giác có 3 cạnh.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Nhận biết đường gấp khúc và hình tứ giác.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Tứ giác có 4 cạnh. Tam giác có 3 cạnh.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> <strong>Đường gấp khúc</strong> gồm nhiều đoạn thẳng nối tiếp. <strong>Tứ giác</strong> có 4 cạnh, 4 đỉnh, 4 góc.</p>
@@ -2921,7 +3129,7 @@ const G2_LESSONS = [
     num: 27,
     chapter: 5,
     title: "Thực hành gấp, cắt, ghép, xếp hình. Vẽ đoạn thẳng",
-    summary: "Thực hành tạo hình; vẽ đoạn qua hai điểm.",
+    summary: "Vẽ đoạn: chấm hai điểm, kẻ bằng thước.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b27-quad">
         <svg viewBox="0 0 320 160" role="img" aria-label="Hình tứ giác">
@@ -2939,9 +3147,9 @@ const G2_LESSONS = [
             <text x="250" y="130" font-size="11" text-anchor="middle" fill="#888888">cũng là tứ giác</text>
           </g>
         </svg>
-              <figcaption>Thực hành tạo hình; vẽ đoạn qua hai điểm.</figcaption>
+              <figcaption>Vẽ đoạn: chấm hai điểm, kẻ bằng thước.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành tạo hình; vẽ đoạn qua hai điểm.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Vẽ đoạn: chấm hai điểm, kẻ bằng thước.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Vẽ đoạn thẳng: chấm hai điểm, dùng thước nối. Ghép hình: cạnh khớp cạnh.</p>
@@ -3003,7 +3211,7 @@ const G2_LESSONS = [
     num: 28,
     chapter: 5,
     title: "Luyện tập chung",
-    summary: "Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.",
+    summary: "Hai đầu là đoạn. 4 cạnh là tứ giác.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b28-geo">
         <svg viewBox="0 0 320 160" role="img" aria-label="Đoạn thẳng và đường thẳng">
@@ -3024,9 +3232,9 @@ const G2_LESSONS = [
             <text x="250" y="140" font-size="12" text-anchor="middle" fill="#FC6255">đường cong</text>
           </g>
         </svg>
-              <figcaption>Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.</figcaption>
+              <figcaption>Hai đầu là đoạn. 4 cạnh là tứ giác.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn điểm, đoạn, đường, tứ giác, gấp ghép hình.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Hai đầu là đoạn. 4 cạnh là tứ giác.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Phân biệt nhanh đoạn / đường thẳng / cong / tứ giác / tam giác.</p>
@@ -3051,7 +3259,7 @@ const G2_LESSONS = [
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm thuật ngữ.</li>
+          <li>Nhầm tên gọi.</li>
           <li>Đếm cạnh sai.</li>
         </ul>
       </div>
@@ -3088,7 +3296,7 @@ const G2_LESSONS = [
     num: 29,
     chapter: 6,
     title: "Ngày – giờ, giờ – phút",
-    summary: "Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.",
+    summary: "Kim ngắn là giờ. Kim dài là phút. Ở 6 là rưỡi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b29-clock">
         <svg viewBox="0 0 320 160" role="img" aria-label="4 giờ 0 phút">
@@ -3108,11 +3316,13 @@ const G2_LESSONS = [
           </g>
           <g class="g2s4">
             <text x="160" y="155" font-size="13" text-anchor="middle">4 giờ</text>
+            <text x="40" y="20" font-size="11" fill="#FC6255">kim ngắn = giờ</text>
+            <text x="190" y="20" font-size="11" fill="#58C4DD">kim dài = phút</text>
           </g>
         </svg>
-              <figcaption>Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.</figcaption>
+              <figcaption>Kim ngắn là giờ. Kim dài là phút. Ở 6 là rưỡi.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Xem giờ đúng, giờ rưỡi; quan hệ ngày – giờ.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Kim ngắn là giờ. Kim dài là phút. Ở 6 là rưỡi.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 ngày = 24 giờ. 1 giờ = 60 phút. <strong>Kim giờ</strong> ngắn, <strong>kim phút</strong> dài. Kim phút ở 12: giờ đúng; ở 6: giờ rưỡi (30 phút).</p>
@@ -3164,7 +3374,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"1 ngày có bao nhiêu giờ?","choices":["60","7","12","24"],"correct":3,"hint":"Cả ngày đêm.","explain":"24.","_chapter":6},
       {"type":"mc","prompt":"30 phút + 30 phút = ? phút","choices":["59","70","60","61"],"correct":2,"hint":"1 giờ.","explain":"60."},
       {"type":"mc","prompt":"Kim ngắn là","choices":["Kim phút","Kim giờ","Kim ngày","Kim giây"],"correct":1,"hint":"Giờ.","explain":"Kim giờ.","_chapter":6},
-      {"type":"mc","prompt":"Bình học từ 8 giờ đến 10 giờ. Học mấy giờ?","choices":["2","1","3","12"],"correct":0,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"mc","prompt":"Bình học từ 8 giờ đến 10 giờ. Học mấy giờ?","choices":["2","1","3","12"],"correct":0,"hint":"Lấy giờ sau trừ giờ trước.","explain":"2."},
       {"type":"mc","prompt":"Hôm nay ngày 15. 3 ngày sau là ngày bao nhiêu?","choices":["19","17","28","18"],"correct":3,"hint":"Cộng ngày.","explain":"15 + 3 = 18."},
     ],
   },
@@ -3174,7 +3384,7 @@ const G2_LESSONS = [
     num: 30,
     chapter: 6,
     title: "Ngày – tháng",
-    summary: "Xem lịch: ngày, tháng; số ngày cơ bản.",
+    summary: "1 tuần có 7 ngày. Ngày mai là cộng 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b30-calendar">
         <svg viewBox="0 0 320 160" role="img" aria-label="Lịch ngày tháng">
@@ -3195,9 +3405,9 @@ const G2_LESSONS = [
             <text x="160" y="150" font-size="11" text-anchor="middle">Một tuần có 7 ngày</text>
           </g>
         </svg>
-              <figcaption>Xem lịch: ngày, tháng; số ngày cơ bản.</figcaption>
+              <figcaption>1 tuần có 7 ngày. Ngày mai là cộng 1.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Xem lịch: ngày, tháng; số ngày cơ bản.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 1 tuần có 7 ngày. Ngày mai là cộng 1.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> 1 tuần = 7 ngày. Tháng có 30 hoặc 31 ngày; tháng 2 có 28 hoặc 29 ngày.</p>
@@ -3249,7 +3459,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Xem ngày tháng bằng","choices":["Lịch","Chỉ giây","Thước lít","Cân"],"correct":0,"hint":"Lịch.","explain":"Lịch.","_chapter":6},
       {"type":"mc","prompt":"Hai ngày sau 10 là?","choices":["22","12","13","11"],"correct":1,"hint":"+2.","explain":"12."},
       {"type":"mc","prompt":"Tháng 2 thường có","choices":["30 luôn","31 luôn","28 hoặc 29 ngày","7"],"correct":2,"hint":"Đặc biệt.","explain":"28/29.","_chapter":6},
-      {"type":"mc","prompt":"Oanh học từ 7 giờ đến 9 giờ. Học mấy giờ?","choices":["3","12","1","2"],"correct":3,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"mc","prompt":"Oanh học từ 7 giờ đến 8 giờ. Học mấy giờ?","choices":["2","11","0","1"],"correct":3,"hint":"Lấy giờ sau trừ giờ trước.","explain":"1."},
       {"type":"mc","prompt":"Hôm nay ngày 6. 2 ngày sau là ngày bao nhiêu?","choices":["8","18","7","9"],"correct":0,"hint":"Cộng ngày.","explain":"6 + 2 = 8."},
     ],
   },
@@ -3259,7 +3469,7 @@ const G2_LESSONS = [
     num: 31,
     chapter: 6,
     title: "Thực hành và trải nghiệm xem đồng hồ, xem lịch",
-    summary: "Thực hành đọc giờ và lịch.",
+    summary: "Kim dài ở 12 là giờ đúng. Ở 6 là rưỡi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b31-clock">
         <svg viewBox="0 0 320 160" role="img" aria-label="2 giờ 30 phút">
@@ -3279,14 +3489,16 @@ const G2_LESSONS = [
           </g>
           <g class="g2s4">
             <text x="160" y="155" font-size="13" text-anchor="middle">2 giờ 30 phút</text>
+            <text x="40" y="20" font-size="11" fill="#FC6255">kim ngắn = giờ</text>
+            <text x="190" y="20" font-size="11" fill="#58C4DD">kim dài = phút</text>
           </g>
         </svg>
-              <figcaption>Thực hành đọc giờ và lịch.</figcaption>
+              <figcaption>Kim dài ở 12 là giờ đúng. Ở 6 là rưỡi.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Thực hành đọc giờ và lịch.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> Kim dài ở 12 là giờ đúng. Ở 6 là rưỡi.</p>
       
       <div class="definition">
-        <p><strong>Nhớ này.</strong> Nối hoạt động với số đã biết giờ: đến trường, ăn cơm, đi ngủ. Đọc thứ-ngày trên lịch.</p>
+        <p><strong>Nhớ này.</strong> Nhìn kim dài trước. Ở 12 là giờ đúng. Ở 6 là rưỡi. Ngày mai là cộng 1.</p>
       </div>
       <div class="example">
         <p><strong>Cùng làm.</strong> Kim phút ở 12, kim giờ ở 4 → 4 giờ đúng.</p>
@@ -3335,7 +3547,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"30+30 phút = ?","choices":["61","70","60","59"],"correct":2,"hint":"60.","explain":"60."},
       {"type":"mc","prompt":"1 giờ rưỡi = ? phút","choices":["90","91","89","100"],"correct":0,"hint":"60+30.","explain":"90."},
       {"type":"mc","prompt":"Số 3 trên đồng hồ (kim phút) ≈","choices":["3 phút","45 phút","30 phút","15 phút"],"correct":3,"hint":"×5.","explain":"15 phút.","_chapter":6},
-      {"type":"mc","prompt":"Lan học từ 9 giờ đến 11 giờ. Học mấy giờ?","choices":["2","1","12","3"],"correct":0,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"mc","prompt":"Lan học từ 9 giờ đến 11 giờ. Học mấy giờ?","choices":["2","1","12","3"],"correct":0,"hint":"Lấy giờ sau trừ giờ trước.","explain":"2."},
       {"type":"mc","prompt":"Hôm nay ngày 9. 7 ngày sau là ngày bao nhiêu?","choices":["17","26","16","15"],"correct":2,"hint":"Cộng ngày.","explain":"9 + 7 = 16."},
     ],
   },
@@ -3345,7 +3557,7 @@ const G2_LESSONS = [
     num: 32,
     chapter: 6,
     title: "Luyện tập chung",
-    summary: "Ôn ngày giờ, giờ phút, ngày tháng.",
+    summary: "1 giờ = 60 phút. Ngày mai là cộng 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b32-clock">
         <svg viewBox="0 0 320 160" role="img" aria-label="7 giờ 30 phút">
@@ -3365,11 +3577,13 @@ const G2_LESSONS = [
           </g>
           <g class="g2s4">
             <text x="160" y="155" font-size="13" text-anchor="middle">7 giờ 30 phút</text>
+            <text x="40" y="20" font-size="11" fill="#FC6255">kim ngắn = giờ</text>
+            <text x="190" y="20" font-size="11" fill="#58C4DD">kim dài = phút</text>
           </g>
         </svg>
-              <figcaption>Ôn ngày giờ, giờ phút, ngày tháng.</figcaption>
+              <figcaption>1 giờ = 60 phút. Ngày mai là cộng 1.</figcaption>
       </figure>
-      <p class="kid-today"><strong>Hôm nay học:</strong> Ôn ngày giờ, giờ phút, ngày tháng.</p>
+      <p class="kid-today"><strong>Hôm nay học:</strong> 1 giờ = 60 phút. Ngày mai là cộng 1.</p>
       
       <div class="definition">
         <p><strong>Nhớ này.</strong> Giờ–phút–ngày–tháng; đổi 1 giờ rưỡi = 90 phút.</p>
@@ -3421,7 +3635,7 @@ const G2_LESSONS = [
       {"type":"mc","prompt":"Hai ngày sau 10?","choices":["12","13","11","22"],"correct":0,"hint":"+2.","explain":"12."},
       {"type":"mc","prompt":"1 ngày = ? giờ","choices":["23","34","25","24"],"correct":3,"hint":"24.","explain":"24."},
       {"type":"mc","prompt":"15 phút + 15 phút = ?","choices":["29","40","30","31"],"correct":2,"hint":"30.","explain":"30."},
-      {"type":"mc","prompt":"Chi học từ 8 giờ đến 10 giờ. Học mấy giờ?","choices":["3","2","12","1"],"correct":1,"hint":"Hiệu hai mốc giờ.","explain":"2."},
+      {"type":"mc","prompt":"Chi học từ 8 giờ đến 9 giờ. Học mấy giờ?","choices":["2","1","11","0"],"correct":1,"hint":"Lấy giờ sau trừ giờ trước.","explain":"1."},
       {"type":"mc","prompt":"Hôm nay ngày 12. 6 ngày sau là ngày bao nhiêu?","choices":["18","17","19","28"],"correct":0,"hint":"Cộng ngày.","explain":"12 + 6 = 18."},
     ],
   },
@@ -3696,7 +3910,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -4008,7 +4222,7 @@ const G2_LESSONS = [
           <li><strong>Bước 3.</strong> Chỉ dùng bảng 2 và bảng 5.</li>
         </ol></div>
       <div class="idea">
-        <p><strong>Mẹo nhỏ.</strong> Đếm cách 2: 2,4,6… gắn với từng số đã biết nhân.</p>
+        <p><strong>Mẹo nhỏ.</strong> Đếm cách 2: 2, 4, 6, 8. Mỗi lần đếm là một phép nhân.</p>
       </div>
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
@@ -4123,8 +4337,8 @@ const G2_LESSONS = [
       <div class="warn">
         <p><strong>Đừng nhầm.</strong></p>
         <ul>
-          <li>Nhầm số đã biết 30/35/40.</li>
-          <li>Không luyện xáo.</li>
+          <li>Nhầm 30, 35, 40.</li>
+          <li>Không đọc bảng mỗi ngày.</li>
         </ul>
       </div>
       <details class="check" open>
@@ -6079,7 +6293,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
@@ -7212,7 +7426,7 @@ const G2_LESSONS = [
           <g class="g2s2">
             <rect x="170" y="18" width="130" height="48" fill="none" stroke="#58C4DD" stroke-width="2"/>
             <text x="235" y="38" font-size="12" text-anchor="middle">2. Chọn phép</text>
-            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ − × :</text>
+            <text x="235" y="54" font-size="10" text-anchor="middle" fill="#888888">+ hoặc −</text>
           </g>
           <g class="g2s3">
             <rect x="20" y="80" width="130" height="48" fill="none" stroke="#FC6255" stroke-width="2"/>
