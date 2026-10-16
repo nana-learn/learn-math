@@ -652,6 +652,11 @@ String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặ
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Số giao điểm của y = x² và y = 2x là?", choices: ["0", "1", "2", "3"], correct: 2, hint: "x² = 2x ↔ x(x-2) = 0.", explain: "2 giao điểm." },
       { type: "mc", prompt: "x³ - 3x + 1 = m có 3 nghiệm khi?", choices: ["m < -1", "m > 1", "-1 < m < 1", "m = ±1"], correct: 2, hint: "y(1) = -1, y(-1) = 3.", explain: "-1 < m < 3." },
