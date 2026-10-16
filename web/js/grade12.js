@@ -880,6 +880,43 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Câu 8: Đường sinh hình nón bán kính 3, chiều cao 4 là?", choices: ["3", "4", "5", "6"], correct: 2, hint: "l=√(r²+h²)=√(9+16).", explain: "5." },
     ],
   },
+
+  {
+    id: "g12-ch7-quiz",
+    num: 105,
+    chapter: 7,
+    title: "Chương 7: Mặt nón, mặt trụ, mặt cầu - Trắc nghiệm",
+    summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón bán kính r, đường sinh l là?", choices: ["πrl", "2πrl", "πr²l", "2πr²l"], correct: 0, hint: "Sₓq = πrl.", explain: "πrl." },
+      { type: "mc", prompt: "Câu 2: Thể tích hình trụ bán kính r, chiều cao h là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = πr²h.", explain: "πr²h." },
+      { type: "mc", prompt: "Câu 3: Diện tích mặt cầu bán kính R là?", choices: ["4πR²", "2πR²", "πR²", "(4/3)πR³"], correct: 0, hint: "S = 4πR².", explain: "4πR²." },
+      { type: "mc", prompt: "Câu 4: Thể tích hình nón bán kính r, chiều cao h là?", choices: ["πr²h", "(1/3)πr²h", "2πr²h", "(1/2)πr²h"], correct: 1, hint: "V = (1/3)πr²h.", explain: "(1/3)πr²h." },
+      { type: "mc", prompt: "Câu 5: Mặt cầu có tâm O và bán kính R thì điểm M thuộc mặt cầu khi?", choices: ["OM = R", "OM < R", "OM > R", "OM² = R"], correct: 0, hint: "Định nghĩa mặt cầu.", explain: "OM = R." },
+      { type: "mc", prompt: "Câu 6: Thiết diện mặt phẳng cắt mặt cầu là?", choices: ["Hình tròn", "Hình ellipsis", "Hình chữ nhật", "Tam giác"], correct: 0, hint: "Mặt phẳng cắt mặt cầu tạo hình tròn.", explain: "Hình tròn." },
+      { type: "mc", prompt: "Câu 7: Diện tích xung quanh hình trụ bán kính r, chiều cao h là?", choices: ["2πrh", "πrh", "2πr²h", "πr²h"], correct: 0, hint: "Sₓq = 2πrh.", explain: "2πrh." },
+      { type: "mc", prompt: "Câu 8: Đường sinh hình nón bán kính 5, chiều cao 12 là?", choices: ["10", "12", "13", "15"], correct: 2, hint: "l=√(r²+h²)=√(25+144).", explain: "13." },
+    ],
+  },
+  {
+    id: "g12-ch8-quiz",
+    num: 106,
+    chapter: 8,
+    title: "Chương 8: Phương pháp tọa độ trong không gian (tiếp) - Trắc nghiệm",
+    summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Khoảng cách từ M(x₀,y₀,z₀) đến mặt phẳng Ax+By+Cz+D=0 là?", choices: ["|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)", "|Ax₀+By₀+Cz₀|/√(A²+B²+C²)", "|Ax₀+By₀+Cz₀+D|/(A²+B²+C²)", "|Ax₀+By₀+Cz₀|/(A²+B²+C²)"], correct: 0, hint: "Công thức khoảng cách điểm-mặt phẳng.", explain: "|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)." },
+      { type: "mc", prompt: "Câu 2: Hai mặt phẳng song song khi?", choices: ["VTPT tỷ lệ", "VTCP tỷ lệ", "VTPT vuông góc", "VTCP vuông góc"], correct: 0, hint: "VTPT cùng phương.", explain: "VTPT tỷ lệ." },
+      { type: "mc", prompt: "Câu 3: Hai đường thẳng chéo nhau khi?", choices: ["Không cùng mặt phẳng", "Cắt nhau", "Song song", "Cùng phương"], correct: 0, hint: "Chéo nhau = không cùng mặt phẳng, không song song.", explain: "Không cùng mặt phẳng." },
+      { type: "mc", prompt: "Câu 4: Góc giữa hai vectơ u và v là?", choices: ["cosθ = (u·v)/(|u||v|)", "cosθ = |u·v|/(|u||v|)", "cosθ = (u+v)/(|u||v|)", "cosθ = (u-v)/(|u||v|)"], correct: 0, hint: "Công thức góc giữa hai vectơ.", explain: "cosθ = (u·v)/(|u||v|)." },
+      { type: "mc", prompt: "Câu 5: Khoảng cách giữa hai điểm A(x₁,y₁,z₁) và B(x₂,y₂,z₂) là?", choices: ["√[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]", "√[(x₂+x₁)²+(y₂+y₁)²+(z₂+z₁)²]", "[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]", "√[|x₂-x₁|+|y₂-y₁|+|z₂-z₁|]"], correct: 0, hint: "Công thức khoảng cách hai điểm.", explain: "√[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]." },
+      { type: "mc", prompt: "Câu 6: Đường thẳng vuông góc mặt phẳng khi?", choices: ["VTCP song song VTPT", "VTCP vuông góc VTPT", "VTCP cùng phương VTCP", "VTCP song song mặt phẳng"], correct: 0, hint: "VTCP // VTPT thì đường thẳng ⊥ mặt phẳng.", explain: "VTCP song song VTPT." },
+      { type: "mc", prompt: "Câu 7: Hai mặt phẳng vuông góc khi?", choices: ["VTPT vuông góc", "VTPT song song", "VTCP vuông góc", "VTCP song song"], correct: 0, hint: "VTPT vuông góc thì mặt phẳng vuông góc.", explain: "VTPT vuông góc." },
+      { type: "mc", prompt: "Câu 8: Giao tuyến của hai mặt phẳng cắt nhau là?", choices: ["Đường thẳng", "Đoạn thẳng", "Tia", "Điểm"], correct: 0, hint: "Hai mặt phẳng cắt nhau tạo giao tuyến là đường thẳng.", explain: "Đường thẳng." },
+    ],
+  },
 ];
 
 (function attachGrade12() {
