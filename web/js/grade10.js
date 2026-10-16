@@ -20,6 +20,8 @@ const G10_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -43,6 +45,8 @@ const G10_CHAPTERS = [
     num: 100,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -66,6 +70,8 @@ const G10_CHAPTERS = [
     num: 101,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -89,6 +95,8 @@ const G10_CHAPTERS = [
     num: 102,
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -113,6 +121,8 @@ const G10_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -133,6 +143,8 @@ const G10_CHAPTERS = [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -154,6 +166,8 @@ const G10_CHAPTERS = [
     num: 103,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -178,6 +192,8 @@ const G10_CHAPTERS = [
     num: 104,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1931,6 +1947,8 @@ exercises: [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1954,6 +1972,8 @@ exercises: [
     num: 100,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1977,6 +1997,8 @@ exercises: [
     num: 101,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2000,6 +2022,8 @@ exercises: [
     num: 102,
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2024,6 +2048,8 @@ exercises: [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2044,6 +2070,8 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2065,6 +2093,8 @@ exercises: [
     num: 103,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2089,6 +2119,8 @@ exercises: [
     num: 104,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2113,6 +2145,8 @@ exercises: [
     num: 105,
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">

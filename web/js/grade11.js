@@ -18,6 +18,8 @@ const G11_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Tổ hợp và xác suất - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -41,6 +43,8 @@ const G11_CHAPTERS = [
     num: 100,
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -64,6 +68,8 @@ const G11_CHAPTERS = [
     num: 101,
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập giới hạn dãy số, hàm số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -87,6 +93,8 @@ const G11_CHAPTERS = [
     num: 102,
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -110,6 +118,8 @@ const G11_CHAPTERS = [
     num: 103,
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -133,6 +143,8 @@ const G11_CHAPTERS = [
     num: 104,
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vị trí tương đối trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -156,6 +168,8 @@ const G11_CHAPTERS = [
     num: 105,
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -180,6 +194,8 @@ const G11_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Trigonometry",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -200,6 +216,8 @@ const G11_CHAPTERS = [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -221,6 +239,8 @@ const G11_CHAPTERS = [
     num: 106,
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -245,6 +265,8 @@ const G11_CHAPTERS = [
     num: 107,
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập giới hạn dãy số, hàm số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -269,6 +291,8 @@ const G11_CHAPTERS = [
     num: 108,
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -293,6 +317,8 @@ const G11_CHAPTERS = [
     num: 109,
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -317,6 +343,8 @@ const G11_CHAPTERS = [
     num: 110,
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vị trí tương đối trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1176,6 +1204,8 @@ exercises: [
     num: 99,
     chapter: 2,
     title: "Chương 2: Tổ hợp và xác suất - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1199,6 +1229,8 @@ exercises: [
     num: 100,
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1222,6 +1254,8 @@ exercises: [
     num: 101,
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập giới hạn dãy số, hàm số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1245,6 +1279,8 @@ exercises: [
     num: 102,
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1268,6 +1304,8 @@ exercises: [
     num: 103,
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1291,6 +1329,8 @@ exercises: [
     num: 104,
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vị trí tương đối trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1314,6 +1354,8 @@ exercises: [
     num: 105,
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1338,6 +1380,8 @@ exercises: [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Trigonometry",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1358,6 +1402,8 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1379,6 +1425,8 @@ exercises: [
     num: 106,
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1403,6 +1451,8 @@ exercises: [
     num: 107,
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập giới hạn dãy số, hàm số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1427,6 +1477,8 @@ exercises: [
     num: 108,
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1451,6 +1503,8 @@ exercises: [
     num: 109,
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1475,6 +1529,8 @@ exercises: [
     num: 110,
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vị trí tương đối trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1499,6 +1555,8 @@ exercises: [
     num: 111,
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">

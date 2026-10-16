@@ -18,6 +18,8 @@ const G12_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập lũy thừa, mũ, logarit.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -41,6 +43,8 @@ const G12_CHAPTERS = [
     num: 100,
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập nguyên hàm, tích phân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -64,6 +68,8 @@ const G12_CHAPTERS = [
     num: 101,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -87,6 +93,8 @@ const G12_CHAPTERS = [
     num: 102,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -110,6 +118,8 @@ const G12_CHAPTERS = [
     num: 103,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -133,6 +143,8 @@ const G12_CHAPTERS = [
     num: 104,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -156,6 +168,8 @@ const G12_CHAPTERS = [
     num: 105,
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tổng hợp các chương.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -180,6 +194,8 @@ const G12_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -200,6 +216,8 @@ const G12_CHAPTERS = [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -220,6 +238,8 @@ const G12_CHAPTERS = [
     num: 103,
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Integrals.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -241,6 +261,8 @@ const G12_CHAPTERS = [
     num: 106,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -265,6 +287,8 @@ const G12_CHAPTERS = [
     num: 107,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -289,6 +313,8 @@ const G12_CHAPTERS = [
     num: 108,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1218,6 +1244,8 @@ exercises: [
     num: 99,
     chapter: 1,
     title: "Chương 1: Ứng dụng đạo hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
     body: String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
       <div class="example">
@@ -1245,6 +1273,8 @@ exercises: [
     num: 100,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số phức và phép toán.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1269,6 +1299,8 @@ exercises: [
     num: 101,
     chapter: 2,
     title: "Chương 2: Lũy thừa, mũ, logarit - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập lũy thừa, mũ, logarit và phương trình.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1292,6 +1324,8 @@ exercises: [
     num: 102,
     chapter: 3,
     title: "Chương 3: Nguyên hàm, tích phân - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập nguyên hàm, tích phân và ứng dụng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1315,6 +1349,8 @@ exercises: [
     num: 103,
     chapter: 5,
     title: "Chương 5: Tọa độ trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vectơ, mặt phẳng, đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1338,6 +1374,8 @@ exercises: [
     num: 104,
     chapter: 6,
     title: "Chương 6: Khối đa diện - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập khối đa diện, diện tích, thể tích.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1362,6 +1400,8 @@ exercises: [
     num: 105,
     chapter: 7,
     title: "Chương 7: Mặt nón, mặt trụ, mặt cầu - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1385,6 +1425,8 @@ exercises: [
     num: 106,
     chapter: 8,
     title: "Chương 8: Phương pháp tọa độ trong không gian (tiếp) - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1409,6 +1451,8 @@ exercises: [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập lũy thừa, mũ, logarit.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1432,6 +1476,8 @@ exercises: [
     num: 100,
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập nguyên hàm, tích phân.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1455,6 +1501,8 @@ exercises: [
     num: 101,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1478,6 +1526,8 @@ exercises: [
     num: 102,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1501,6 +1551,8 @@ exercises: [
     num: 103,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1524,6 +1576,8 @@ exercises: [
     num: 104,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1547,6 +1601,8 @@ exercises: [
     num: 105,
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tổng hợp các chương.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1571,6 +1627,8 @@ exercises: [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1591,6 +1649,8 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1611,6 +1671,8 @@ exercises: [
     num: 103,
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Integrals.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1632,6 +1694,8 @@ exercises: [
     num: 106,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1656,6 +1720,8 @@ exercises: [
     num: 107,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1680,6 +1746,8 @@ exercises: [
     num: 108,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -1704,6 +1772,8 @@ exercises: [
     num: 109,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
