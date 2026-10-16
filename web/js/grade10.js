@@ -68,10 +68,8 @@ const G10_LESSONS = [
           exercises: [
       { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
       { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
-      { type: "mc", prompt: "Phủ định của mệnh đề "2 là số chẵn" là", choices: ["2 không là số chẵn", "2 là số lẻ", "2 không phải số chẵn", "Tất cả đều đúng"], correct: 3, hint: "Các đáp án đều đúng: phủ định của "A" là "không A".", explain: "Tất cả đều đúng." },
-      { type: "text", prompt: "Viết phủ định của mệnh đề P: "3² > 2³" và xét tính đúng sai.", answer: "3² ≤ 2³ (sai, vì 9 > 8)", accept: ["3² ≤ 2³ (sai)", "3^2 ≤ 2^3 (sai)", "3² ≤ 2³, sai"], hint: "P: 9 > 8 đúng, phủ định là 9 ≤ 8 sai.", explain: "3² ≤ 2³ (sai)." },
-    ], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
-      { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
+      { type: "mc", prompt: "Phủ định của mệnh đề &quot;2 là số chẵn&quot; là", choices: ["2 không là số chẵn", "2 là số lẻ", "2 không phải số chẵn", "Tất cả đều đúng"], correct: 3, hint: "Các đáp án đều đúng: phủ định của A là không A.", explain: "Tất cả đều đúng." },
+      { type: "text", prompt: "Viết phủ định của mệnh đề P: &quot;3² > 2³&quot; và xét tính đúng sai.", answer: "3² ≤ 2³ (sai, vì 9 > 8)", accept: ["3² ≤ 2³ (sai)", "3^2 ≤ 2^3 (sai)", "3² ≤ 2³, sai"], hint: "P: 9 > 8 đúng, phủ định là 9 ≤ 8 sai.", explain: "3² ≤ 2³ (sai)." },
     ],
   },
   {
@@ -111,8 +109,6 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Tập hợp A = {x ∈ ℤ | -1 ≤ x ≤ 1} có bao nhiêu phần tử?", choices: ["3", "2", "4", "1"], correct: 0, hint: "-1, 0, 1.", explain: "3." },
       { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
       { type: "text", prompt: "Viết tập hợp các số tự nhiên chia hết cho 3 và nhỏ hơn 10.", answer: "{0, 3, 6, 9}", accept: ["{0, 3, 6, 9}", "{3, 6, 9}", "{0,3,6,9}"], hint: "0, 3, 6, 9.", explain: "{0, 3, 6, 9}." },
-    ], hint: "Đếm các phần tử.", explain: "5 phần tử." },
-      { type: "mc", prompt: "Tập nào có 0 phần tử?", choices: ["{0}", "{1}", "∅", "{x}"], correct: 2, hint: "∅ là tập rỗng.", explain: "∅ là tập rỗng." },
     ],
   },
   {
@@ -150,10 +146,10 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Tập nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{4, 5}", "{1, 2, 3, 4}"], correct: 0, hint: "1 và 2 đều trong tập.", explain: "{1, 2} là tập con." },
-      { type: "mc", prompt: "Tập nào bằng {a, b}?", choices: ["{b, a}", "{a, b, c}", "{a}", "{b}"], correct: 0, hint: "Thứ tự không quan trọng.", explain: "{b, a} = {a, b}." },
-      { type: "mc", prompt: "Tập rỗng có phải tập con của {1, 2} không?", choices: ["Có", "Không", "Tùy trường hợp", "Không xác định"], correct: 0, hint: "∅ là tập con của mọi tập.", explain: "Có." },
+          exercises: [
+      { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
+      { type: "mc", prompt: "Hai tập hợp A và B bằng nhau khi", choices: ["Có cùng phần tử", "Có cùng số phần tử", "A là tập con của B", "B là tập con của A"], correct: 0, hint: "Định nghĩa hai tập hợp bằng nhau.", explain: "Có cùng phần tử." },
+      { type: "text", prompt: "A = {1, 2, 3}, B = {3, 2, 1}. A và B có bằng nhau không?", answer: "Có", accept: ["Có", "Có, A = B", "A = B"], hint: "Thứ tự phần tử không quan trọng.", explain: "Có." },
     ],
   },
   {
@@ -193,10 +189,10 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B có bao nhiêu phần tử?", answer: "4", accept: ["4"], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
-      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B là?", answer: "{2, 3}", accept: ["{2, 3}"], hint: "Phần tử chung.", explain: "{2, 3}." },
-      { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3}. A \\ B là?", choices: ["{1}", "{2, 3}", "{1, 2, 3}", "∅"], correct: 0, hint: "Loại 2 và 3 ra.", explain: "{1}." },
+          exercises: [
+      { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B =", choices: ["{2, 3}", "{1, 2, 3, 4}", "{1, 4}", "{1, 2}"], correct: 0, hint: "Giao: phần tử chung.", explain: "{2, 3}." },
+      { type: "mc", prompt: "A = {1, 2, 3, 4}, B = {2, 4}. A \ B =", choices: ["{1, 3}", "{2, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Hiệu: loại phần tử của B ra khỏi A.", explain: "{1, 3}." },
+      { type: "text", prompt: "A = {1, 3, 5}, B = {2, 4, 6}. A ∪ B =", answer: "{1, 2, 3, 4, 5, 6}", accept: ["{1, 2, 3, 4, 5, 6}", "{1,2,3,4,5,6}"], hint: "Hợp: tất cả phần tử của A và B.", explain: "{1, 2, 3, 4, 5, 6}." },
     ],
   },
   {

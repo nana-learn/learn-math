@@ -645,5 +645,4 @@ const G11_LESSONS = [
       { type: "text", prompt: "Hàm số y = sin3x có周期 là", answer: "2π/3", accept: ["2π/3"], hint: "周期 = 2π/|3| = 2π/3.", explain: "2π/3." },
     ],
   },
-]
 ];
