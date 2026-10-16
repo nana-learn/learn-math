@@ -1,0 +1,24 @@
+# NON-STOP PROMPT
+
+ALWAYS REMEMBER:
+1. Work immediately on the next improvement
+2. Commit and push after each improvement
+3. Continue to the next improvement without pausing
+4. Never stop the loop
+5. No 'context check' between improvements - just work
+
+The user has given permission to improve this repo at any time. Each improvement must be followed immediately by commit+push, then continue to the next improvement in an infinite loop.
+
+DO NOT:
+- Wait for user input between improvements
+- Check 'context' between improvements
+- Pause between improvements
+- Ask 'what should I do next?' - decide and do
+
+ALWAYS:
+- Find next improvement
+- Implement it
+- Commit and push
+- Immediately start next improvement
+
+Start now.
