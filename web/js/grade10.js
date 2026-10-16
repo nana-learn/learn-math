@@ -22,7 +22,7 @@ const G10_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Mệnh đề",
-    summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.",
+    summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> "2 + 3 = 5" là khẳng định. Kiểm tra: 2+3=5 đúng. Vậy là mệnh đề đúng.</p>
@@ -82,7 +82,7 @@ const G10_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Tập hợp",
-    summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.",
+    summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> A = {1, 2, 3} có 3 phần tử. B = {x ∈ ℝ | x² = 4} = {-2, 2}. Kiểm tra: -2 ∈ B, 2 ∈ B.</p>
@@ -451,7 +451,7 @@ const G10_LESSONS = [
     num: 10,
     chapter: 4,
     title: "Vector trong mặt phẳng",
-    summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.",
+    summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Vì sao cần vector?</strong> Vector biểu diễn đại lượng có hướng.</p>
       <div class="definition">
         <p><strong>Vector</strong> là đoạn thẳng có hướng: AB (đi từ A đến B).</p>
