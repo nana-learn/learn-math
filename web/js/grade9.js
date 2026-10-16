@@ -67,6 +67,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -99,6 +101,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",

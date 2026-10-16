@@ -423,6 +423,8 @@ const G12_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Sự đồng biến, nghịch biến của hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -480,6 +482,8 @@ exercises: [
     num: 2,
     chapter: 1,
     title: "Cực trị của hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -535,6 +539,8 @@ exercises: [
     num: 3,
     chapter: 1,
     title: "Giá trị lớn nhất, giá trị nhỏ nhất của hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -578,6 +584,8 @@ exercises: [
     num: 4,
     chapter: 1,
     title: "Đường tiệm cận của đồ thị hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
@@ -623,6 +631,8 @@ exercises: [
     num: 5,
     chapter: 1,
     title: "Khảo sát sự biến thiên và vẽ đồ thị hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
@@ -682,6 +692,8 @@ exercises: [
     num: 6,
     chapter: 1,
     title: "Tương giao của các đồ thị",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
@@ -727,6 +739,8 @@ exercises: [
     num: 7,
     chapter: 2,
     title: "Lũy thừa",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -774,6 +788,8 @@ exercises: [
     num: 8,
     chapter: 2,
     title: "Logarit",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -821,6 +837,8 @@ exercises: [
     num: 9,
     chapter: 2,
     title: "Hàm số mũ, hàm số logarit",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -881,6 +899,8 @@ exercises: [
     num: 10,
     chapter: 2,
     title: "Phương trình mũ, phương trình logarit",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -928,6 +948,8 @@ exercises: [
     num: 11,
     chapter: 2,
     title: "Bất phương trình mũ, bất phương trình logarit",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -975,6 +997,8 @@ exercises: [
     num: 12,
     chapter: 3,
     title: "Nguyên hàm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1022,6 +1046,8 @@ exercises: [
     num: 13,
     chapter: 3,
     title: "Tích phân",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1084,6 +1110,8 @@ exercises: [
     num: 14,
     chapter: 3,
     title: "Ứng dụng tích phân tính diện tích, thể tích",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1144,6 +1172,8 @@ exercises: [
     num: 15,
     chapter: 4,
     title: "Số phức và biểu diễn hình học",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1207,6 +1237,8 @@ exercises: [
     num: 16,
     chapter: 4,
     title: "Phép cộng và phép nhân các số phức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1254,6 +1286,8 @@ exercises: [
     num: 17,
     chapter: 4,
     title: "Phép chia các số phức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1301,6 +1335,8 @@ exercises: [
     num: 18,
     chapter: 4,
     title: "Phương trình bậc hai với hệ số thực",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1348,6 +1384,8 @@ exercises: [
     num: 19,
     chapter: 5,
     title: "Tọa độ trong không gian",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1413,6 +1451,8 @@ exercises: [
     num: 20,
     chapter: 5,
     title: "Phương trình mặt phẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1470,6 +1510,8 @@ exercises: [
     num: 21,
     chapter: 5,
     title: "Phương trình đường thẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1526,6 +1568,8 @@ exercises: [
     num: 22,
     chapter: 5,
     title: "Tích vô hướng và ứng dụng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1573,6 +1617,8 @@ exercises: [
     num: 23,
     chapter: 6,
     title: "Khối đa diện",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",

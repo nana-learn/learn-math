@@ -961,6 +961,8 @@ const G2_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Ôn tập các số đến 100",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đếm, đọc, viết, so sánh số trong phạm vi 100.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b1-place">
@@ -1124,6 +1126,8 @@ const G2_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Tia số. Số liền trước, số liền sau",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đặt số trên tia số; tìm số liền trước và liền sau.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b2-num-line">
@@ -1238,6 +1242,8 @@ const G2_LESSONS = [
     num: 3,
     chapter: 1,
     title: "Các thành phần của phép cộng, phép trừ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cộng có số hạng và tổng. Trừ có số bị trừ, số trừ và hiệu.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b3-add-parts">
@@ -1346,6 +1352,8 @@ const G2_LESSONS = [
     num: 4,
     chapter: 1,
     title: "Hơn, kém nhau bao nhiêu",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Hơn bao nhiêu? Lấy số lớn trừ số bé.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b4-compare">
@@ -1444,6 +1452,8 @@ const G2_LESSONS = [
     num: 5,
     chapter: 1,
     title: "Ôn tập phép cộng, phép trừ (không nhớ) trong phạm vi 100",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cộng trừ hai chữ số. Thẳng cột. Chưa nhớ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b5-col-add">
@@ -1549,6 +1559,8 @@ const G2_LESSONS = [
     num: 6,
     chapter: 1,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn số đến 100, tia số, cộng trừ không nhớ, hơn kém.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b6-review">
@@ -1655,6 +1667,8 @@ const G2_LESSONS = [
     num: 7,
     chapter: 2,
     title: "Phép cộng (qua 10) trong phạm vi 20",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "8 + 6: đủ 10, rồi cộng phần còn.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b7-make-ten">
@@ -1781,6 +1795,8 @@ const G2_LESSONS = [
     num: 8,
     chapter: 2,
     title: "Bảng cộng (qua 10)",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc 9 + 2 đến 9 + 9. Đổi chỗ cũng được.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b8-add-table">
@@ -1892,6 +1908,8 @@ const G2_LESSONS = [
     num: 9,
     chapter: 2,
     title: "Bài toán về thêm, bớt một số đơn vị",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thêm, tất cả thì cộng. Bớt, còn lại thì trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b9-keywords">
@@ -1999,6 +2017,8 @@ const G2_LESSONS = [
     num: 10,
     chapter: 2,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng qua 10 và bài toán thêm, bớt.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b10-ch2-clues">
@@ -2110,6 +2130,8 @@ const G2_LESSONS = [
     num: 11,
     chapter: 2,
     title: "Phép trừ (qua 10) trong phạm vi 20",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "15 − 7: hỏi 7 cộng mấy bằng 15?",
     body: String.raw`
       <figure class="figure" data-animation="g2-b11-takeaway">
@@ -2238,6 +2260,8 @@ const G2_LESSONS = [
     num: 12,
     chapter: 2,
     title: "Bảng trừ (qua 10)",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc trừ bằng cách đọc ngược bảng cộng.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b12-sub-parts">
@@ -2357,6 +2381,8 @@ const G2_LESSONS = [
     num: 13,
     chapter: 2,
     title: "Bài toán về nhiều hơn, ít hơn một số đơn vị",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Nhiều hơn số đã biết thì cộng. Ít hơn thì trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b13-compare">
@@ -2470,6 +2496,8 @@ const G2_LESSONS = [
     num: 14,
     chapter: 2,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng, trừ, nhiều hơn và ít hơn.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b14-ch2-clues">
@@ -2577,6 +2605,8 @@ const G2_LESSONS = [
     num: 15,
     chapter: 3,
     title: "Ki-lô-gam",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "kg đo nặng nhẹ. 5 kg bớt 2 kg còn 3 kg.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b15-kgl">
@@ -2656,6 +2686,8 @@ const G2_LESSONS = [
     num: 16,
     chapter: 3,
     title: "Lít",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Lít đo nước. 1 l cộng 5 l là 6 l.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b16-kgl">
@@ -2735,6 +2767,8 @@ const G2_LESSONS = [
     num: 17,
     chapter: 3,
     title: "Thực hành và trải nghiệm với các đơn vị ki-lô-gam, lít",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cùng chữ mới cộng trừ. 2 kg cộng 3 kg là 5 kg.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b17-kgl">
@@ -2814,6 +2848,8 @@ const G2_LESSONS = [
     num: 18,
     chapter: 3,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn kg và lít. Cùng chữ mới tính.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b18-review">
@@ -2903,6 +2939,8 @@ const G2_LESSONS = [
     num: 19,
     chapter: 4,
     title: "Phép cộng (có nhớ) số có hai chữ số với số có một chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "28 + 5: 8 + 5 = 13, viết 3 nhớ 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b19-carry-steps">
@@ -2989,6 +3027,8 @@ const G2_LESSONS = [
     num: 20,
     chapter: 4,
     title: "Phép cộng (có nhớ) số có hai chữ số với số có hai chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cộng hai số. Đơn vị từ 10 thì nhớ 1 sang chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b20-col-add">
@@ -3078,6 +3118,8 @@ const G2_LESSONS = [
     num: 21,
     chapter: 4,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng có nhớ. Quên nhớ 1 là sai.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b21-review">
@@ -3167,6 +3209,8 @@ const G2_LESSONS = [
     num: 22,
     chapter: 4,
     title: "Phép trừ (có nhớ) số có hai chữ số với số có một chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Không đủ trừ thì mượn 1 chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b22-borrow-steps">
@@ -3253,6 +3297,8 @@ const G2_LESSONS = [
     num: 23,
     chapter: 4,
     title: "Phép trừ (có nhớ) số có hai chữ số với số có hai chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "52 − 28: mượn 1 chục, rồi trừ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b23-col-sub">
@@ -3334,6 +3380,8 @@ const G2_LESSONS = [
     num: 24,
     chapter: 4,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng và trừ có nhớ. Kiểm bằng cộng lại.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b24-review">
@@ -3423,6 +3471,8 @@ const G2_LESSONS = [
     num: 25,
     chapter: 5,
     title: "Điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đoạn có hai đầu. Đường thẳng kéo dài mãi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b25-geo">
@@ -3508,6 +3558,8 @@ const G2_LESSONS = [
     num: 26,
     chapter: 5,
     title: "Đường gấp khúc. Hình tứ giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Tứ giác có 4 cạnh. Tam giác có 3 cạnh.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b26-zigzag">
@@ -3585,6 +3637,8 @@ const G2_LESSONS = [
     num: 27,
     chapter: 5,
     title: "Thực hành gấp, cắt, ghép, xếp hình. Vẽ đoạn thẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Vẽ đoạn: chấm hai điểm, kẻ bằng thước.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b27-quad">
@@ -3667,6 +3721,8 @@ const G2_LESSONS = [
     num: 28,
     chapter: 5,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Hai đầu là đoạn. 4 cạnh là tứ giác.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b28-geo">
@@ -3752,6 +3808,8 @@ const G2_LESSONS = [
     num: 29,
     chapter: 6,
     title: "Ngày – giờ, giờ – phút",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Kim ngắn là giờ. Kim dài là phút. Ở 6 là rưỡi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b29-clock">
@@ -3840,6 +3898,8 @@ const G2_LESSONS = [
     num: 30,
     chapter: 6,
     title: "Ngày – tháng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "1 tuần có 7 ngày. Ngày mai là cộng 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b30-calendar">
@@ -3925,6 +3985,8 @@ const G2_LESSONS = [
     num: 31,
     chapter: 6,
     title: "Thực hành và trải nghiệm xem đồng hồ, xem lịch",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Kim dài ở 12 là giờ đúng. Ở 6 là rưỡi.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b31-clock">
@@ -4013,6 +4075,8 @@ const G2_LESSONS = [
     num: 32,
     chapter: 6,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "1 giờ = 60 phút. Ngày mai là cộng 1.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b32-clock">
@@ -4101,6 +4165,8 @@ const G2_LESSONS = [
     num: 33,
     chapter: 7,
     title: "Ôn tập phép cộng, phép trừ trong phạm vi 20, 100",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng trừ. 9 + 8 = 17. 37 + 28 = 65.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b33-col-add">
@@ -4190,6 +4256,8 @@ const G2_LESSONS = [
     num: 34,
     chapter: 7,
     title: "Ôn tập hình phẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Hai đầu là đoạn. 4 cạnh là tứ giác.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b34-geo">
@@ -4274,6 +4342,8 @@ const G2_LESSONS = [
     num: 35,
     chapter: 7,
     title: "Ôn tập đo lường",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "kg đo nặng. Lít đo nước.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b35-kgl">
@@ -4354,6 +4424,8 @@ const G2_LESSONS = [
     num: 36,
     chapter: 7,
     title: "Ôn tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn số, hình, kg, lít và giờ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b36-review">
@@ -4443,6 +4515,8 @@ const G2_LESSONS = [
     num: 37,
     chapter: 8,
     title: "Phép nhân",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Nhân là cộng nhiều lần. 2 + 2 + 2 + 2 = 2 × 4.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b37-array">
@@ -4528,6 +4602,8 @@ const G2_LESSONS = [
     num: 38,
     chapter: 8,
     title: "Thừa số, tích",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "3 × 5 = 15. 3 và 5 là thừa số. 15 là tích.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b38-array">
@@ -4620,6 +4696,8 @@ const G2_LESSONS = [
     num: 39,
     chapter: 8,
     title: "Bảng nhân 2",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc 2 × 1 đến 2 × 10. Đếm 2, 4, 6.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b39-times2">
@@ -4718,6 +4796,8 @@ const G2_LESSONS = [
     num: 40,
     chapter: 8,
     title: "Bảng nhân 5",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc 5 × 1 đến 5 × 10. Đếm 5, 10, 15.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b40-times5">
@@ -4828,6 +4908,8 @@ const G2_LESSONS = [
     num: 41,
     chapter: 8,
     title: "Phép chia",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Chia đều. 10 : 2 hỏi 2 nhân mấy bằng 10.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b41-divide">
@@ -4915,6 +4997,8 @@ const G2_LESSONS = [
     num: 42,
     chapter: 8,
     title: "Số bị chia, số chia, thương",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "12 : 2 = 6. 12 là số bị chia. 6 là thương.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b42-divide">
@@ -5004,6 +5088,8 @@ const G2_LESSONS = [
     num: 43,
     chapter: 8,
     title: "Bảng chia 2",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc chia 2 bằng cách đọc ngược bảng nhân 2.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b43-divide">
@@ -5095,6 +5181,8 @@ const G2_LESSONS = [
     num: 44,
     chapter: 8,
     title: "Bảng chia 5",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thuộc chia 5 bằng cách đọc ngược bảng nhân 5.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b44-divide">
@@ -5206,6 +5294,8 @@ const G2_LESSONS = [
     num: 45,
     chapter: 8,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn nhân và chia bảng 2, bảng 5.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b45-array">
@@ -5293,6 +5383,8 @@ const G2_LESSONS = [
     num: 46,
     chapter: 9,
     title: "Khối trụ, khối cầu",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Bóng là khối cầu. Lon, ống là khối trụ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b46-solid">
@@ -5373,6 +5465,8 @@ const G2_LESSONS = [
     num: 47,
     chapter: 9,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cầu lăn mọi phía. Trụ lăn một chiều.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b47-solid">
@@ -5453,6 +5547,8 @@ const G2_LESSONS = [
     num: 48,
     chapter: 10,
     title: "Đơn vị, chục, trăm, nghìn",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "10 đơn vị = 1 chục. 10 chục = 1 trăm.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b48-place3">
@@ -5540,6 +5636,8 @@ const G2_LESSONS = [
     num: 49,
     chapter: 10,
     title: "Các số tròn trăm, tròn chục",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "100, 200, 300 là tròn trăm. 10, 20, 30 là tròn chục.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b49-place3">
@@ -5627,6 +5725,8 @@ const G2_LESSONS = [
     num: 50,
     chapter: 10,
     title: "So sánh các số tròn trăm, tròn chục",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "So hàng trăm trước. 700 lớn hơn 70.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b50-place3">
@@ -5714,6 +5814,8 @@ const G2_LESSONS = [
     num: 51,
     chapter: 10,
     title: "Số có ba chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "208 đọc hai trăm linh tám. Số 0 giữ chỗ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b51-place3">
@@ -5801,6 +5903,8 @@ const G2_LESSONS = [
     num: 52,
     chapter: 10,
     title: "Viết số thành tổng các trăm, chục, đơn vị",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "365 = 3 trăm + 6 chục + 5 đơn vị.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b52-place3">
@@ -5888,6 +5992,8 @@ const G2_LESSONS = [
     num: 53,
     chapter: 10,
     title: "So sánh các số có ba chữ số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "So từ hàng trăm. 450 nhỏ hơn 540.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b53-place3">
@@ -5975,6 +6081,8 @@ const G2_LESSONS = [
     num: 54,
     chapter: 10,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn đọc, tách hàng và so sánh số đến 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b54-place3">
@@ -6062,6 +6170,8 @@ const G2_LESSONS = [
     num: 55,
     chapter: 11,
     title: "Đề-xi-mét. Mét. Ki-lô-mét",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "1 m = 10 dm. 1 km = 1000 m.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b55-length">
@@ -6145,6 +6255,8 @@ const G2_LESSONS = [
     num: 56,
     chapter: 11,
     title: "Giới thiệu Tiền Việt Nam",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Tiền tính bằng đồng. 5000 bớt 2000 còn 3000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b56-shop">
@@ -6228,6 +6340,8 @@ const G2_LESSONS = [
     num: 57,
     chapter: 11,
     title: "Thực hành và trải nghiệm đo độ dài",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đo bằng thước. Lớp học đo bằng mét.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b57-length">
@@ -6311,6 +6425,8 @@ const G2_LESSONS = [
     num: 58,
     chapter: 11,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn đổi dm, m, km và tính tiền.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b58-money">
@@ -6393,6 +6509,8 @@ const G2_LESSONS = [
     num: 59,
     chapter: 12,
     title: "Phép cộng (không nhớ) trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cộng số có ba chữ số không nhớ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b59-place3">
@@ -6480,6 +6598,8 @@ const G2_LESSONS = [
     num: 60,
     chapter: 12,
     title: "Phép cộng (có nhớ) trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Cộng có nhớ trong phạm vi 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b60-col-add">
@@ -6569,6 +6689,8 @@ const G2_LESSONS = [
     num: 61,
     chapter: 12,
     title: "Phép trừ (không nhớ) trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Trừ số có ba chữ số không nhớ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b61-place3">
@@ -6656,6 +6778,8 @@ const G2_LESSONS = [
     num: 62,
     chapter: 12,
     title: "Phép trừ (có nhớ) trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Trừ có nhớ/mượn trong phạm vi 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b62-col-sub">
@@ -6737,6 +6861,8 @@ const G2_LESSONS = [
     num: 63,
     chapter: 12,
     title: "Luyện tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng trừ trong phạm vi 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b63-review">
@@ -6826,6 +6952,8 @@ const G2_LESSONS = [
     num: 64,
     chapter: 13,
     title: "Thu thập, phân loại, kiểm đếm số liệu",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thu thập và đếm theo nhóm.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b64-chart">
@@ -6915,6 +7043,8 @@ const G2_LESSONS = [
     num: 65,
     chapter: 13,
     title: "Biểu đồ tranh",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đọc và hiểu biểu đồ tranh.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b65-chart">
@@ -7004,6 +7134,8 @@ const G2_LESSONS = [
     num: 66,
     chapter: 13,
     title: "Chắc chắn, có thể, không thể",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Dùng đúng ba từ khả năng.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b66-chance">
@@ -7091,6 +7223,8 @@ const G2_LESSONS = [
     num: 67,
     chapter: 13,
     title: "Thực hành và trải nghiệm thu thập, phân loại, kiểm đếm số liệu",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Thực hành thống kê đơn giản ở lớp.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b67-chart">
@@ -7180,6 +7314,8 @@ const G2_LESSONS = [
     num: 68,
     chapter: 14,
     title: "Ôn tập các số trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn đọc viết so sánh số đến 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b68-place3">
@@ -7267,6 +7403,8 @@ const G2_LESSONS = [
     num: 69,
     chapter: 14,
     title: "Ôn tập phép cộng, phép trừ trong phạm vi 100",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng trừ có nhớ phạm vi 100.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b69-col-add">
@@ -7356,6 +7494,8 @@ const G2_LESSONS = [
     num: 70,
     chapter: 14,
     title: "Ôn tập phép cộng, phép trừ trong phạm vi 1000",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn cộng trừ phạm vi 1000.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b70-place3">
@@ -7443,6 +7583,8 @@ const G2_LESSONS = [
     num: 71,
     chapter: 14,
     title: "Ôn tập phép nhân, phép chia",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn bảng 2 và 5.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b71-array">
@@ -7530,6 +7672,8 @@ const G2_LESSONS = [
     num: 72,
     chapter: 14,
     title: "Ôn tập hình học",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn hình phẳng và hình khối.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b72-solid">
@@ -7610,6 +7754,8 @@ const G2_LESSONS = [
     num: 73,
     chapter: 14,
     title: "Ôn tập đo lường",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn kg, l, dm, m, km, tiền, giờ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b73-length">
@@ -7693,6 +7839,8 @@ const G2_LESSONS = [
     num: 74,
     chapter: 14,
     title: "Ôn tập kiểm đếm số liệu và lựa chọn khả năng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Ôn biểu đồ tranh và chắc chắn/có thể/không thể.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b74-chance">
@@ -7780,6 +7928,8 @@ const G2_LESSONS = [
     num: 75,
     chapter: 14,
     title: "Ôn tập chung",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Tổng ôn cuối năm Toán 2.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b75-review">
@@ -7870,6 +8020,8 @@ const G2_LESSONS = [
     num: 76,
     chapter: 7,
     title: "Mini đề giữa / cuối HK1",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "10 câu trộn: số đến 100, cộng trừ có nhớ, hình, kg/l, giờ.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b76-review">
@@ -7961,6 +8113,8 @@ const G2_LESSONS = [
     num: 77,
     chapter: 14,
     title: "Mini đề cuối năm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "12 câu trộn cả năm: 1000, cộng trừ, nhân chia 2&5, đo, hình, thống kê.",
     body: String.raw`
       <figure class="figure" data-animation="g2-b77-review">

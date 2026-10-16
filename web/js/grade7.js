@@ -17,6 +17,8 @@ const G7_CHAPTERS = [
     num: 101,
     chapter: 3,
     title: "Chương 3: Số thập phân - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -52,6 +54,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 102,
     chapter: 4,
     title: "Chương 4: Số thực - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -87,6 +91,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 103,
     chapter: 5,
     title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -122,6 +128,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
     num: 104,
     chapter: 6,
     title: "Chương 6: Thống kê - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -158,6 +166,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Số hữu tỉ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -190,6 +200,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Số thực",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -223,6 +235,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 105,
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -261,6 +275,8 @@ const G7_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Tập hợp các số hữu tỉ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Số hữu tỉ là số viết được thành phân số. Cùng một số có nhiều cách viết.", spoken: "Số hữu tỉ là số viết được dưới dạng a/b với a,b nguyên, b≠0.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -346,6 +362,8 @@ String.raw`
     num: 2,
     chapter: 1,
     title: "Cộng, trừ, nhân, chia số hữu tỉ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.", spoken: "Cộng trừ nhân chia số hữu tỉ: viết chung mẫu, rồi tính như phân số.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -424,6 +442,8 @@ String.raw`
     num: 3,
     chapter: 1,
     title: "Luỹ thừa với số mũ tự nhiên",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "a^n là nhân a với chính nó n lần. Mũ 0 bằng 1 khi cơ số khác 0.", spoken: "Lũy thừa: a^n = a·a·...·a (n lần). a^0 = 1 (a≠0).", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -497,6 +517,8 @@ String.raw`
     num: 4,
     chapter: 1,
     title: "Thứ tự phép tính và chuyển vế",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -577,6 +599,8 @@ String.raw`
     num: 5,
     chapter: 2,
     title: "Số thập phân vô hạn tuần hoàn",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -654,6 +678,8 @@ String.raw`
     num: 6,
     chapter: 2,
     title: "Số vô tỉ và căn bậc hai số học",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -732,6 +758,8 @@ String.raw`
     num: 7,
     chapter: 2,
     title: "Tập hợp các số thực",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -813,6 +841,8 @@ String.raw`
     num: 8,
     chapter: 3,
     title: "Góc kề bù, đối đỉnh và tia phân giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -907,6 +937,8 @@ String.raw`
     num: 9,
     chapter: 3,
     title: "Hai đường thẳng song song",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1004,6 +1036,8 @@ String.raw`
     num: 10,
     chapter: 3,
     title: "Tiên đề Euclid và tính chất đường song song",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1098,6 +1132,8 @@ String.raw`
     num: 11,
     chapter: 3,
     title: "Định lí và chứng minh định lí",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1173,6 +1209,8 @@ String.raw`
     num: 12,
     chapter: 4,
     title: "Tổng các góc trong một tam giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1266,6 +1304,8 @@ String.raw`
     num: 13,
     chapter: 4,
     title: "Hai tam giác bằng nhau. Trường hợp cạnh–góc–cạnh",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1369,6 +1409,8 @@ String.raw`
     num: 14,
     chapter: 4,
     title: "Trường hợp góc–cạnh–góc và cạnh–cạnh–cạnh",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1470,6 +1512,8 @@ String.raw`
     num: 15,
     chapter: 4,
     title: "Trường hợp bằng nhau của tam giác vuông",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1566,6 +1610,8 @@ String.raw`
     num: 16,
     chapter: 4,
     title: "Tam giác cân và đường trung trực",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1657,6 +1703,8 @@ String.raw`
     num: 17,
     chapter: 5,
     title: "Thu thập và phân loại dữ liệu",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1745,6 +1793,8 @@ String.raw`
     num: 18,
     chapter: 5,
     title: "Biểu đồ hình quạt tròn",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1835,6 +1885,8 @@ String.raw`
     num: 19,
     chapter: 5,
     title: "Biểu đồ đoạn thẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1947,6 +1999,8 @@ String.raw`
     num: 20,
     chapter: 6,
     title: "Tỉ lệ thức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2024,6 +2078,8 @@ String.raw`
     num: 21,
     chapter: 6,
     title: "Dãy tỉ số bằng nhau",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2098,6 +2154,8 @@ String.raw`
     num: 22,
     chapter: 6,
     title: "Đại lượng tỉ lệ thuận",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2175,6 +2233,8 @@ String.raw`
     num: 23,
     chapter: 6,
     title: "Đại lượng tỉ lệ nghịch",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2252,6 +2312,8 @@ String.raw`
     num: 24,
     chapter: 7,
     title: "Biểu thức đại số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2326,6 +2388,8 @@ String.raw`
     num: 25,
     chapter: 7,
     title: "Đa thức một biến",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2398,6 +2462,8 @@ String.raw`
     num: 26,
     chapter: 7,
     title: "Cộng và trừ đa thức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2475,6 +2541,8 @@ String.raw`
     num: 27,
     chapter: 7,
     title: "Nhân đa thức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2550,6 +2618,8 @@ String.raw`
     num: 28,
     chapter: 7,
     title: "Chia đa thức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2627,6 +2697,8 @@ String.raw`
     num: 29,
     chapter: 8,
     title: "Làm quen với biến cố",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2711,6 +2783,8 @@ String.raw`
     num: 30,
     chapter: 8,
     title: "Xác suất của biến cố",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2794,6 +2868,8 @@ String.raw`
     num: 31,
     chapter: 9,
     title: "Góc và cạnh đối diện trong tam giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2886,6 +2962,8 @@ String.raw`
     num: 32,
     chapter: 9,
     title: "Đường vuông góc và đường xiên",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2984,6 +3062,8 @@ String.raw`
     num: 33,
     chapter: 9,
     title: "Ba cạnh của một tam giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3072,6 +3152,8 @@ String.raw`
     num: 34,
     chapter: 9,
     title: "Đồng quy trung tuyến và phân giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3149,6 +3231,8 @@ String.raw`
     num: 35,
     chapter: 9,
     title: "Đồng quy trung trực và đường cao",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3246,6 +3330,8 @@ String.raw`
     num: 36,
     chapter: 10,
     title: "Hình hộp chữ nhật và hình lập phương",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3337,6 +3423,8 @@ String.raw`
     num: 37,
     chapter: 10,
     title: "Hình lăng trụ đứng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3427,6 +3515,8 @@ String.raw`
     num: 99,
     chapter: 1,
     title: "Chương 1: Số hữu tỉ. Số thực - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -3462,6 +3552,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 105,
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",

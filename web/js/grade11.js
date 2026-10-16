@@ -457,6 +457,8 @@ const G11_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Hàm số lượng giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -506,6 +508,8 @@ exercises: [
     num: 2,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -553,6 +557,8 @@ exercises: [
     num: 3,
     chapter: 2,
     title: "Hoán vị, chỉnh hợp, tổ hợp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -602,6 +608,8 @@ exercises: [
     num: 4,
     chapter: 2,
     title: "Nhị thức Newton",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -652,6 +660,8 @@ exercises: [
     num: 5,
     chapter: 3,
     title: "Dãy số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -702,6 +712,8 @@ exercises: [
     num: 6,
     chapter: 3,
     title: "Cấp số cộng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -752,6 +764,8 @@ exercises: [
     num: 7,
     chapter: 4,
     title: "Giới hạn của dãy số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -802,6 +816,8 @@ exercises: [
     num: 8,
     chapter: 4,
     title: "Giới hạn của hàm số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -852,6 +868,8 @@ exercises: [
     num: 9,
     chapter: 5,
     title: "Đạo hàm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -902,6 +920,8 @@ exercises: [
     num: 10,
     chapter: 6,
     title: "Phép dời hình",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -952,6 +972,8 @@ exercises: [
     num: 11,
     chapter: 6,
     title: "Phép đồng dạng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1002,6 +1024,8 @@ exercises: [
     num: 12,
     chapter: 7,
     title: "Đại cương về đường thẳng và mặt phẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1052,6 +1076,8 @@ exercises: [
     num: 13,
     chapter: 7,
     title: "Hai đường thẳng song song",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1102,6 +1128,8 @@ exercises: [
     num: 14,
     chapter: 8,
     title: "Vectơ trong không gian",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1152,6 +1180,8 @@ exercises: [
     num: 15,
     chapter: 8,
     title: "Hai đường thẳng vuông góc",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1203,6 +1233,8 @@ exercises: [
     num: 16,
     chapter: 7,
     title: "Hai mặt phẳng song song",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1253,6 +1285,8 @@ exercises: [
     num: 17,
     chapter: 7,
     title: "Phép chiếu song song",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1303,6 +1337,8 @@ exercises: [
     num: 18,
     chapter: 8,
     title: " Vectơ trong không gian (tiếp)",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1353,6 +1389,8 @@ exercises: [
     num: 19,
     chapter: 8,
     title: "Hai mặt phẳng vuông góc",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1403,6 +1441,8 @@ exercises: [
     num: 20,
     chapter: 8,
     title: "Khoảng cách",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1454,6 +1494,8 @@ exercises: [
     num: 21,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản (tiếp)",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1504,6 +1546,8 @@ exercises: [
     num: 22,
     chapter: 1,
     title: "Phương trình lượng giác thường gặp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1554,6 +1598,8 @@ exercises: [
     num: 23,
     chapter: 1,
     title: "Hàm số lượng giác (tiếp)",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",

@@ -282,6 +282,8 @@ const G10_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Mệnh đề",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -354,6 +356,8 @@ exercises: [
     num: 2,
     chapter: 1,
     title: "Tập hợp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -415,6 +419,8 @@ exercises: [
     num: 3,
     chapter: 1,
     title: "Tập con và tập bằng nhau",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -479,6 +485,8 @@ exercises: [
     num: 4,
     chapter: 1,
     title: "Các phép toán tập hợp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -545,6 +553,8 @@ exercises: [
     num: 5,
     chapter: 2,
     title: "Bất đẳng thức",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -608,6 +618,8 @@ exercises: [
     num: 6,
     chapter: 2,
     title: "Bất phương trình một ẩn",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -669,6 +681,8 @@ exercises: [
     num: 7,
     chapter: 2,
     title: "Dấu của nhị thức bậc nhất",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -732,6 +746,8 @@ exercises: [
     num: 8,
     chapter: 3,
     title: "Hàm số bậc hai",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -797,6 +813,8 @@ exercises: [
     num: 9,
     chapter: 3,
     title: "Dấu của tam thức bậc hai",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -862,6 +880,8 @@ exercises: [
     num: 10,
     chapter: 4,
     title: "Vector trong mặt phẳng",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="trap">
@@ -922,6 +942,8 @@ exercises: [
     num: 11,
     chapter: 4,
     title: "Tổng và hiệu của hai vector",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -993,6 +1015,8 @@ exercises: [
     num: 12,
     chapter: 4,
     title: "Hiệu của hai vector",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1064,6 +1088,8 @@ exercises: [
     num: 13,
     chapter: 4,
     title: "Tích của vector với một số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1132,6 +1158,8 @@ exercises: [
     num: 14,
     chapter: 4,
     title: "Hệ trục tọa độ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1196,6 +1224,8 @@ exercises: [
     num: 15,
     chapter: 4,
     title: "Tọa độ của vector",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1264,6 +1294,8 @@ exercises: [
     num: 16,
     chapter: 4,
     title: "Biểu thức tọa độ của phép toán vector",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1336,6 +1368,8 @@ exercises: [
     num: 17,
     chapter: 5,
     title: "Giá trị lượng giác của một góc từ 0° đến 180°",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1404,6 +1438,8 @@ exercises: [
     num: 18,
     chapter: 5,
     title: "Tích vô hướng của hai vector",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1476,6 +1512,8 @@ exercises: [
     num: 19,
     chapter: 5,
     title: "Ứng dụng tích vô hướng vào tính độ dài và góc",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1546,6 +1584,8 @@ exercises: [
     num: 20,
     chapter: 5,
     title: "Các hệ thức lượng trong tam giác",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1614,6 +1654,8 @@ exercises: [
     num: 21,
     chapter: 7,
     title: "Đường tròn trong mặt phẳng tọa độ",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1678,6 +1720,8 @@ exercises: [
     num: 22,
     chapter: 7,
     title: "Ba đường conic",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1749,6 +1793,8 @@ exercises: [
     num: 23,
     chapter: 8,
     title: "Quy tắc cộng và quy tắc nhân",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1813,6 +1859,8 @@ exercises: [
     num: 24,
     chapter: 8,
     title: "Hoán vị, chỉnh hợp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1883,6 +1931,8 @@ exercises: [
     num: 25,
     chapter: 8,
     title: "Tổ hợp",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -1951,6 +2001,8 @@ exercises: [
     num: 26,
     chapter: 9,
     title: "Số gần đúng và sai số",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2020,6 +2072,8 @@ exercises: [
     num: 27,
     chapter: 9,
     title: "Các số đặc trưng đo xu thế trung tâm",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2090,6 +2144,8 @@ exercises: [
     num: 28,
     chapter: 9,
     title: "Các số đặc trưng đo độ phân tán",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2158,6 +2214,8 @@ exercises: [
     num: 29,
     chapter: 10,
     title: "Xác suất của biến cố trong một số trò chơi đơn giản",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
@@ -2227,6 +2285,8 @@ exercises: [
     num: 30,
     chapter: 10,
     title: "Xác suất của biến cố",
+    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
     youtube: "dQw4w9WgXcQ",
