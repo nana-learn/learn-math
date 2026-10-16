@@ -810,6 +810,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Đạo hàm của f(x) = x^4 là", choices: ["4x^3", "x^3", "4x^4", "4"], correct: 0, hint: "(x^n)' = nx^{n−1}.", explain: "4x^3." },
       { type: "mc", prompt: "f(x) = sin(2x). f'(x) =", choices: ["2cos(2x)", "cos(2x)", "2sin(2x)", "−2cos(2x)"], correct: 0, hint: "chuỗi: cos(2x)·2.", explain: "2cos(2x)." },
