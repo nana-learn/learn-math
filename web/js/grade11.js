@@ -461,7 +461,7 @@ const G11_LESSONS = [
     num: 4,
     chapter: 2,
     title: "Nhị thức Newton",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
     body: String.raw`
@@ -492,7 +492,7 @@ const G11_LESSONS = [
     num: 5,
     chapter: 3,
     title: "Dãy số",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
     body: String.raw`
@@ -523,7 +523,7 @@ const G11_LESSONS = [
     num: 6,
     chapter: 3,
     title: "Cấp số cộng",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
     body: String.raw`
@@ -554,7 +554,7 @@ const G11_LESSONS = [
     num: 7,
     chapter: 4,
     title: "Giới hạn của dãy số",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
     body: String.raw`
@@ -585,7 +585,7 @@ const G11_LESSONS = [
     num: 8,
     chapter: 4,
     title: "Giới hạn của hàm số",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
     body: String.raw`
@@ -616,7 +616,7 @@ const G11_LESSONS = [
     num: 9,
     chapter: 5,
     title: "Đạo hàm",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
     body: String.raw`
@@ -647,7 +647,7 @@ const G11_LESSONS = [
     num: 10,
     chapter: 6,
     title: "Phép dời hình",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
     body: String.raw`
@@ -678,7 +678,7 @@ const G11_LESSONS = [
     num: 11,
     chapter: 6,
     title: "Phép đồng dạng",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
     body: String.raw`
@@ -709,7 +709,7 @@ const G11_LESSONS = [
     num: 12,
     chapter: 7,
     title: "Đại cương về đường thẳng và mặt phẳng",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
     body: String.raw`
@@ -740,7 +740,7 @@ const G11_LESSONS = [
     num: 13,
     chapter: 7,
     title: "Hai đường thẳng song song",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
     body: String.raw`
@@ -771,7 +771,7 @@ const G11_LESSONS = [
     num: 14,
     chapter: 8,
     title: "Vectơ trong không gian",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
     body: String.raw`
@@ -802,7 +802,7 @@ const G11_LESSONS = [
     num: 15,
     chapter: 8,
     title: "Hai đường thẳng vuông góc",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
     body: String.raw`
@@ -834,7 +834,7 @@ const G11_LESSONS = [
     num: 16,
     chapter: 7,
     title: "Hai mặt phẳng song song",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
     body: String.raw`
@@ -865,7 +865,7 @@ const G11_LESSONS = [
     num: 17,
     chapter: 7,
     title: "Phép chiếu song song",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
     body: String.raw`
@@ -896,7 +896,7 @@ const G11_LESSONS = [
     num: 18,
     chapter: 8,
     title: " Vectơ trong không gian (tiếp)",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
     body: String.raw`
@@ -927,7 +927,7 @@ const G11_LESSONS = [
     num: 19,
     chapter: 8,
     title: "Hai mặt phẳng vuông góc",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
     body: String.raw`
@@ -958,7 +958,7 @@ const G11_LESSONS = [
     num: 20,
     chapter: 8,
     title: "Khoảng cách",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
     body: String.raw`
@@ -990,7 +990,7 @@ const G11_LESSONS = [
     num: 21,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản (tiếp)",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
     body: String.raw`
@@ -1021,7 +1021,7 @@ const G11_LESSONS = [
     num: 22,
     chapter: 1,
     title: "Phương trình lượng giác thường gặp",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
     body: String.raw`
@@ -1052,7 +1052,7 @@ const G11_LESSONS = [
     num: 23,
     chapter: 1,
     title: "Hàm số lượng giác (tiếp)",
-    youtube: "placeholder-YT-ID",
+    youtube: "dQw4w9WgXcQ",
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
     body: String.raw`
