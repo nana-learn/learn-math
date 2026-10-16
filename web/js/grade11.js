@@ -1243,6 +1243,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Ba vectơ không đồng phẳng thì", choices: ["Mỗi vectơ trong không gian biểu thị được duy nhất qua chúng", "Chỉ biểu thị được vectơ trong mặt phẳng", "Không biểu thị được vectơ nào", "Tất cả đều đồng phẳng"], correct: 0, hint: "Định nghĩa hệ cơ sở.", explain: "Mỗi vectơ biểu thị được duy nhất." },
       { type: "mc", prompt: "OM = x·OA + y·OB + z·OC. Nếu OA, OB, OC không đồng phẳng thì", choices: ["x, y, z xác định duy nhất", "x, y, z không xác định", "Có vô số bộ (x, y, z)", "x = y = z"], correct: 0, hint: "Biểu thị duy nhất.", explain: "x, y, z xác định duy nhất." },
