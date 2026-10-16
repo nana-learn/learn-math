@@ -563,6 +563,87 @@ const G11_LESSONS = [
       { type: "text", prompt: "Khoảng cách giữa hai mặt phẳng song song (P): x + y − z + 1 = 0 và (Q): x + y − z − 3 = 0 là", answer: "2/√3", accept: ["2/√3", "2/sqrt(3)"], hint: "Chọn điểm M trên (P), tính d(M, (Q)).", explain: "2/√3." },
     ],
   },
-];
 
+  {
+    id: "g11-b6",
+    num: 6,
+    chapter: 1,
+    title: "Phương trình lượng giác cơ bản (tiếp)",
+    summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Giải phương trình 2sin²x − 3sinx + 1 = 0. Ta đặt ẩn phụ như thế nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Đặt t = sinx (điều kiện |t| ≤ 1). Phương trình trở thành 2t² − 3t + 1 = 0. Giải phương trình bậc hai: t = 1 hoặc t = 1/2. Với t = 1: sinx = 1 → x = π/2 + k2π. Với t = 1/2: sinx = 1/2 → x = π/6 + k2π hoặc x = 5π/6 + k2π.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phương trình bậc hai đối với sinx hoặc cosx: đặt ẩn phụ t = sinx hoặc t = cosx, giải phương trình bậc hai, đối chiếu điều kiện |t| ≤ 1 rồi giải phương trình lượng giác cơ bản.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Giải 2cos²x + 3cosx − 2 = 0. Đặt t = cosx: 2t² + 3t − 2 = 0 → t = 1/2 hoặc t = −2 (loại). cosx = 1/2 → x = ±π/3 + k2π.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Khi đặt ẩn phụ, luôn nhớ điều kiện |t| ≤ 1. Nghiệm t = −2 hoặc t = 2 phải loại.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phương trình 2sin²x − 5sinx + 2 = 0 có nghiệm là", choices: ["x = π/6 + k2π, x = 5π/6 + k2π", "x = π/3 + k2π, x = 2π/3 + k2π", "x = π/2 + k2π", "Vô nghiệm"], correct: 0, hint: "t = 1/2 hoặc t = 2 (loại).", explain: "x = π/6 + k2π, x = 5π/6 + k2π." },
+      { type: "mc", prompt: "Phương trình cos²x + 2cosx − 3 = 0 có nghiệm là", choices: ["x = k2π", "x = π + k2π", "x = π/2 + k2π", "Vô nghiệm"], correct: 0, hint: "t = 1 hoặc t = −3 (loại). cosx = 1 → x = k2π.", explain: "x = k2π." },
+      { type: "text", prompt: "Giải phương trình 3tan²x − 4tanx + 1 = 0.", answer: "x = π/4 + kπ, x = arctan(1/3) + kπ", accept: ["x = π/4 + kπ, x = arctan(1/3) + kπ", "x = π/4 + kπ, x = arctan(1/3)+kπ"], hint: "t = 1 hoặc t = 1/3.", explain: "x = π/4 + kπ, x = arctan(1/3) + kπ." },
+    ],
+  },
+  {
+    id: "g11-b7",
+    num: 7,
+    chapter: 1,
+    title: "Phương trình lượng giác thường gặp",
+    summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Giải phương trình sinx + cosx = 1. Ta dùng công thức nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Chia cả hai vế cho √2: (1/√2)sinx + (1/√2)cosx = 1/√2. Đặt sinπ/4 = cosπ/4 = 1/√2: sinx·cosπ/4 + cosx·sinπ/4 = 1/√2. Sử dụng công thức sin(a + b): sin(x + π/4) = 1/√2. Giải phương trình lượng giác cơ bản: x + π/4 = π/4 + k2π hoặc x + π/4 = 3π/4 + k2π. Vậy x = k2π hoặc x = π/2 + k2π.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phương trình bậc nhất a·sinx + b·cosx = c: chia cả hai vế cho √(a² + b²), đặt cosφ = a/√(a² + b²), sinφ = b/√(a² + b²), dùng công thức cộng: sin(x + φ) = c/√(a² + b²). Điều kiện có nghiệm: |c| ≤ √(a² + b²).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> √3 sinx − cosx = 1. √(3 + 1) = 2. (√3/2)sinx − (1/2)cosx = 1/2. sin(x − π/6) = 1/2. x − π/6 = π/6 + k2π hoặc x − π/6 = 5π/6 + k2π. x = π/3 + k2π hoặc x = π + k2π.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Phương trình a·sinx + b·cosx = c có nghiệm khi và chỉ khi c² ≤ a² + b². Kiểm tra điều kiện trước khi giải.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phương trình sinx + cosx = √2 có nghiệm là", choices: ["x = π/4 + k2π", "x = 3π/4 + k2π", "x = π/2 + k2π", "x = k2π"], correct: 0, hint: "Chia √2: sin(x + π/4) = 1.", explain: "x = π/4 + k2π." },
+      { type: "mc", prompt: "Phương trình √3 sinx + cosx = 1 có nghiệm là", choices: ["x = −π/6 + k2π, x = 5π/6 + k2π", "x = π/6 + k2π, x = 7π/6 + k2π", "x = π/3 + k2π, x = 4π/3 + k2π", "x = 0 + k2π, x = π + k2π"], correct: 0, hint: "2sin(x + π/6) = 1.", explain: "x = −π/6 + k2π, x = 5π/6 + k2π." },
+      { type: "text", prompt: "Giải phương trình sin2x + cos2x = 0.", answer: "x = 3π/8 + kπ/2", accept: ["x = 3π/8 + kπ/2"], hint: "tan2x = −1.", explain: "x = 3π/8 + kπ/2." },
+    ],
+  },
+  {
+    id: "g11-b8",
+    num: 8,
+    chapter: 1,
+    title: "Hàm số lượng giác (tiếp)",
+    summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hàm số y = tanx có tập xác định là gì? Hàm số y = cotx呢?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> tanx = sinx/cosx, xác định khi cosx ≠ 0 → x ≠ π/2 + kπ. cotx = cosx/sinx, xác định khi sinx ≠ 0 → x ≠ kπ. Tập giá trị của tanx và cotx là ℝ. Hàm số y = sinx, cosx là chẵn/lẻ? sin(−x) = −sinx (lẻ), cos(−x) = cosx (chẵn). tan(−x) = −tanx (lẻ), cot(−x) = −cotx (lẻ).</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> y = sinx: TXĐ ℝ, TXN [−1, 1], lẻ,周期 2π. y = cosx: TXĐ ℝ, TXN [−1, 1], chẵn,周期 2π. y = tanx: TXĐ ℝ \\ {π/2 + kπ}, TXN ℝ, lẻ,周期 π. y = cotx: TXĐ ℝ \\ {kπ}, TXN ℝ, lẻ,周期 π.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> y = √sinx xác định khi sinx ≥ 0 → x ∈ [k2π, π + k2π]. y = 1/(1 − cosx) xác định khi cosx ≠ 1 → x ≠ k2π.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Tanx và cotx không xác định tại vô số điểm. Đừng bỏ qua điều kiện xác định khi tìm TXĐ.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Hàm số y = tan2x xác định khi", choices: ["x ≠ π/4 + kπ/2", "x ≠ π/2 + kπ", "x ≠ kπ/2", "x ≠ π/4 + kπ"], correct: 0, hint: "cos2x ≠ 0 → 2x ≠ π/2 + kπ → x ≠ π/4 + kπ/2.", explain: "x ≠ π/4 + kπ/2." },
+      { type: "mc", prompt: "Hàm số y = √(1 − cosx) xác định khi", choices: ["x ≠ k2π", "x = k2π", "x ≠ π + k2π", "x ∈ ℝ"], correct: 1, hint: "1 − cosx ≥ 0 luôn đúng, nhưng = 0 khi cosx = 1 → x = k2π.", explain: "x = k2π." },
+      { type: "text", prompt: "Hàm số y = sin3x có周期 là", answer: "2π/3", accept: ["2π/3"], hint: "周期 = 2π/|3| = 2π/3.", explain: "2π/3." },
+    ],
+  },
+]
 ];
