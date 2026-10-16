@@ -137,6 +137,25 @@ const G10_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Phương trình x² + 1 = 0 có nghiệm thực không?", choices: ["Không có", "Có một nghiệm", "Có hai nghiệm", "Vô số nghiệm"], correct: 0, hint: "x² = -1 vô nghiệm thực.", explain: "Không có." },
     ],
   },
+
+  {
+    id: "g10-ch4-quiz",
+    num: 104,
+    chapter: 4,
+    title: "Chương 4: Vectơ - Trắc nghiệm",
+    summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là?", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
+      { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
+      { type: "mc", prompt: "Câu 3: 2·Vector AB =", choices: ["Vector cùng hướng AB, độ dài gấp đôi", "Vector ngược hướng AB, độ dài gấp đôi", "Vector cùng hướng AB, độ dài bằng AB", "Vector 0"], correct: 0, hint: "k·AB: cùng hướng nếu k>0, |k| lần độ dài.", explain: "Vector cùng hướng AB, độ dài gấp đôi." },
+      { type: "mc", prompt: "Câu 4: Vector AB - Vector AC =", choices: ["Vector CB", "Vector BC", "Vector AC", "Vector BA"], correct: 0, hint: "AB - AC = AB + CA = CB.", explain: "Vector CB." },
+      { type: "mc", prompt: "Câu 5: Trung điểm I của AB thì:", choices: ["Vector IA + Vector IB = 0", "Vector IA = Vector IB", "Vector AB = 2·Vector AI", "Cả A và C"], correct: 0, hint: "IA = -IB → IA + IB = 0.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Ba điểm A, B, C thẳng hàng khi:", choices: ["Vector AB và Vector AC cùng phương", "Vector AB = Vector AC", "AB = AC", "Góc BAC = 90°"], correct: 0, hint: "Cùng phương ↔ cùng đường thẳng.", explain: "Vector AB và Vector AC cùng phương." },
+      { type: "mc", prompt: "Câu 7: Tam giác ABC, G là trọng tâm thì:", choices: ["Vector GA + Vector GB + Vector GC = 0", "Vector GA = Vector GB = Vector GC", "G là trung điểm AB", "G là trực tâm"], correct: 0, hint: "GA + GB + GC = 0 với G trọng tâm.", explain: "Vector GA + Vector GB + Vector GC = 0." },
+      { type: "mc", prompt: "Câu 8: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0 có độ dài 0.", explain: "Độ dài bằng 0." },
+    ],
+  },
 ];
 
 const G10_LESSONS = [
@@ -1789,6 +1808,25 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Câu 6: Tổng hai nghiệm của phương trình x² - 7x + 12 = 0 là?", choices: ["7", "-7", "12", "-12"], correct: 0, hint: "Tổng = -b/a = 7.", explain: "7." },
       { type: "mc", prompt: "Câu 7: Hệ phương trình x + 2y = 5, 2x + 4y = 10 có:", choices: ["Vô số nghiệm", "Vô nghiệm", "Nghiệm duy nhất", "Không xác định"], correct: 0, hint: "Hai phương trình tương đương.", explain: "Vô số nghiệm." },
       { type: "mc", prompt: "Câu 8: Phương trình x² + 1 = 0 có nghiệm thực không?", choices: ["Không có", "Có một nghiệm", "Có hai nghiệm", "Vô số nghiệm"], correct: 0, hint: "x² = -1 vô nghiệm thực.", explain: "Không có." },
+    ],
+  },
+
+  {
+    id: "g10-ch4-quiz",
+    num: 104,
+    chapter: 4,
+    title: "Chương 4: Vectơ - Trắc nghiệm",
+    summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là?", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
+      { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
+      { type: "mc", prompt: "Câu 3: 2·Vector AB =", choices: ["Vector cùng hướng AB, độ dài gấp đôi", "Vector ngược hướng AB, độ dài gấp đôi", "Vector cùng hướng AB, độ dài bằng AB", "Vector 0"], correct: 0, hint: "k·AB: cùng hướng nếu k>0, |k| lần độ dài.", explain: "Vector cùng hướng AB, độ dài gấp đôi." },
+      { type: "mc", prompt: "Câu 4: Vector AB - Vector AC =", choices: ["Vector CB", "Vector BC", "Vector AC", "Vector BA"], correct: 0, hint: "AB - AC = AB + CA = CB.", explain: "Vector CB." },
+      { type: "mc", prompt: "Câu 5: Trung điểm I của AB thì:", choices: ["Vector IA + Vector IB = 0", "Vector IA = Vector IB", "Vector AB = 2·Vector AI", "Cả A và C"], correct: 0, hint: "IA = -IB → IA + IB = 0.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Ba điểm A, B, C thẳng hàng khi:", choices: ["Vector AB và Vector AC cùng phương", "Vector AB = Vector AC", "AB = AC", "Góc BAC = 90°"], correct: 0, hint: "Cùng phương ↔ cùng đường thẳng.", explain: "Vector AB và Vector AC cùng phương." },
+      { type: "mc", prompt: "Câu 7: Tam giác ABC, G là trọng tâm thì:", choices: ["Vector GA + Vector GB + Vector GC = 0", "Vector GA = Vector GB = Vector GC", "G là trung điểm AB", "G là trực tâm"], correct: 0, hint: "GA + GB + GC = 0 với G trọng tâm.", explain: "Vector GA + Vector GB + Vector GC = 0." },
+      { type: "mc", prompt: "Câu 8: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0 có độ dài 0.", explain: "Độ dài bằng 0." },
     ],
   },
 ];
