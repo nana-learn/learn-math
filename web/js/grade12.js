@@ -1159,6 +1159,11 @@ String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tư�
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "(3+2i)+(1-5i) =", choices: ["4-3i", "4+3i", "2-3i", "2+3i"], correct: 0, hint: "3+1=4, 2-5=-3.", explain: "4-3i." },
       { type: "mc", prompt: "(2+i)(3-i) =", choices: ["5+i", "6-2i", "7+i", "5-i"], correct: 0, hint: "6+i+1=5+i.", explain: "5+i." },
