@@ -19,7 +19,7 @@ const G7_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Tập hợp các số hữu tỉ",
-    summary: "Số hữu tỉ là số viết được thành phân số. Cùng một số có nhiều cách viết.",
+    summary: "Số hữu tỉ là số viết được thành phân số. Cùng một số có nhiều cách viết.", spoken: "Số hữu tỉ là số viết được dưới dạng a/b với a,b nguyên, b≠0.",
     body: String.raw`
       <p><strong>Vì sao cần số hữu tỉ?</strong> Số nguyên đếm được quả cam. Muốn nói “ba phần tư cái bánh” thì phải có số dạng phân số. Mọi số viết được thành \(\dfrac{a}{b}\) với \(a, b\) nguyên, \(b \neq 0\), gọi là số hữu tỉ. Tập hợp ấy kí hiệu \(\mathbb{Q}\).</p>
             <figure class="figure" data-animation="g7-b1-natural-numbers">
@@ -96,7 +96,7 @@ const G7_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Cộng, trừ, nhân, chia số hữu tỉ",
-    summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.",
+    summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.", spoken: "Cộng trừ nhân chia số hữu tỉ: viết chung mẫu, rồi tính như phân số.",
     body: String.raw`
       <p>Phép tính trên \(\mathbb{Q}\) không mới. Việc cần làm là viết mỗi số thành phân số, mẫu dương, rồi dùng quy tắc cũ.</p>
             <figure class="figure" data-animation="g7-b2-operations">
@@ -166,7 +166,7 @@ const G7_LESSONS = [
     num: 3,
     chapter: 1,
     title: "Luỹ thừa với số mũ tự nhiên",
-    summary: "a^n là nhân a với chính nó n lần. Mũ 0 bằng 1 khi cơ số khác 0.",
+    summary: "a^n là nhân a với chính nó n lần. Mũ 0 bằng 1 khi cơ số khác 0.", spoken: "Lũy thừa: a^n = a·a·...·a (n lần). a^0 = 1 (a≠0).",
     body: String.raw`
       <p>\(2^5\) không phải \(2 \cdot 5\). Đó là năm thừa số 2 nhân với nhau: \(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32\).</p>
             <figure class="figure" data-animation="g7-b3-subtraction-division">
