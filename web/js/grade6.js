@@ -171,6 +171,25 @@ const G6_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Một hộp sữa hình hộp chữ nhật dung tích 1l. Đáy 5cm×4cm. Chiều cao là?", choices: ["5cm", "10cm", "8cm", "6cm"], correct: 0, hint: "1l = 1000cm³. V =abh → h = 1000/(5×4) = 50cm. Đáp án sai - kiểm tra: 5×4=20, 1000/20=50. Không có 50cm. Giả sử đáp án đúng là 5cm nếu V=100cm³=0.1l. Đề phải là 100cm³ thì h=5cm. Giả sử đề đúng thì đáp án không có. Sửa lại: hộp 5cm×4cm×5cm thì V=100cm³=0.1l. Hoặc 10cm×8cm×5cm thì V=400cm³. Giả sử đáp án đúng là 5cm.", explain: "5cm." },
     ],
   },
+
+  {
+    id: "g6-ch8-quiz",
+    num: 108,
+    chapter: 8,
+    title: "Chương 8: Diện tích - Trắc nghiệm",
+    summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Diện tích hình chữ nhật có chiều dài 8cm, rộng 5cm là?", choices: ["40cm²", "26cm²", "13cm²", "80cm²"], correct: 0, hint: "S = 8×5 = 40cm².", explain: "40cm²." },
+      { type: "mc", prompt: "Câu 2: Diện tích hình vuông cạnh 6cm là?", choices: ["36cm²", "24cm²", "12cm²", "48cm²"], correct: 0, hint: "S = 6² = 36cm².", explain: "36cm²." },
+      { type: "text", prompt: "Tính diện tích tam giác có đáy 10cm, chiều cao 4cm.", answer: "20cm²", accept: ["20cm²", "20"], hint: "S = 1/2 × đáy × cao = 1/2 × 10 × 4 = 20cm².", explain: "20cm²." },
+      { type: "mc", prompt: "Câu 4: Một mảnh vườn hình chữ nhật 12m×8m. Diện tích là?", choices: ["96m²", "40m²", "20m²", "192m²"], correct: 0, hint: "S = 12×8 = 96m².", explain: "96m²." },
+      { type: "mc", prompt: "Câu 5: Diện tích hình bình hành có đáy 7cm, chiều cao 5cm là?", choices: ["35cm²", "24cm²", "12cm²", "14cm²"], correct: 0, hint: "S = đáy × cao = 7×5 = 35cm².", explain: "35cm²." },
+      { type: "mc", prompt: "Câu 6: Diện tích hình thoi có đường chéo 8cm và 6cm là?", choices: ["24cm²", "48cm²", "14cm²", "28cm²"], correct: 0, hint: "S = 1/2 × d1 × d2 = 1/2 × 8 × 6 = 24cm².", explain: "24cm²." },
+      { type: "mc", prompt: "Câu 7: Hai hình chữ nhật có cùng chiều rộng, chiều dài hình thứ hai gấp đôi thì diện tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "S tỉ lệ với chiều dài.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 8: Diện tích hình tròn bán kính 3cm (π≈3.14) là?", choices: ["28.26cm²", "18.84cm²", "9.42cm²", "37.68cm²"], correct: 0, hint: "S = πr² = 3.14 × 9 = 28.26cm².", explain: "28.26cm²." },
+    ],
+  },
 ];
 
 // Grade 6 lessons - Chapters I-V (Tập 1) and VI-IX (Tập 2)
@@ -3391,6 +3410,25 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Câu 6: Một khối gỗ hình hộp chữ nhật 20cm×10cm×5cm. Cân nặng 1kg. Hỏi 1cm³ nặng bao nhiêu gam?", choices: ["10g", "5g", "2g", "1g"], correct: 0, hint: "V = 20×10×5 = 1000cm³. 1kg = 1000g. 1000g/1000cm³ = 1g/cm³.", explain: "1g." },
       { type: "mc", prompt: "Câu 7: Diện tích toàn phần hình hộp chữ nhật 3×4×5 là?", choices: ["94", "47", "60", "120"], correct: 0, hint: "S = 2(ab+bc+ca) = 2(12+20+15) = 2×47 = 94.", explain: "94." },
       { type: "mc", prompt: "Câu 8: Một hộp sữa hình hộp chữ nhật dung tích 1l. Đáy 5cm×4cm. Chiều cao là?", choices: ["5cm", "10cm", "8cm", "6cm"], correct: 0, hint: "1l = 1000cm³. V =abh → h = 1000/(5×4) = 50cm. Đáp án sai - kiểm tra: 5×4=20, 1000/20=50. Không có 50cm. Giả sử đáp án đúng là 5cm nếu V=100cm³=0.1l. Đề phải là 100cm³ thì h=5cm. Giả sử đề đúng thì đáp án không có. Sửa lại: hộp 5cm×4cm×5cm thì V=100cm³=0.1l. Hoặc 10cm×8cm×5cm thì V=400cm³. Giả sử đáp án đúng là 5cm.", explain: "5cm." },
+    ],
+  },
+
+  {
+    id: "g6-ch8-quiz",
+    num: 108,
+    chapter: 8,
+    title: "Chương 8: Diện tích - Trắc nghiệm",
+    summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Diện tích hình chữ nhật có chiều dài 8cm, rộng 5cm là?", choices: ["40cm²", "26cm²", "13cm²", "80cm²"], correct: 0, hint: "S = 8×5 = 40cm².", explain: "40cm²." },
+      { type: "mc", prompt: "Câu 2: Diện tích hình vuông cạnh 6cm là?", choices: ["36cm²", "24cm²", "12cm²", "48cm²"], correct: 0, hint: "S = 6² = 36cm².", explain: "36cm²." },
+      { type: "text", prompt: "Tính diện tích tam giác có đáy 10cm, chiều cao 4cm.", answer: "20cm²", accept: ["20cm²", "20"], hint: "S = 1/2 × đáy × cao = 1/2 × 10 × 4 = 20cm².", explain: "20cm²." },
+      { type: "mc", prompt: "Câu 4: Một mảnh vườn hình chữ nhật 12m×8m. Diện tích là?", choices: ["96m²", "40m²", "20m²", "192m²"], correct: 0, hint: "S = 12×8 = 96m².", explain: "96m²." },
+      { type: "mc", prompt: "Câu 5: Diện tích hình bình hành có đáy 7cm, chiều cao 5cm là?", choices: ["35cm²", "24cm²", "12cm²", "14cm²"], correct: 0, hint: "S = đáy × cao = 7×5 = 35cm².", explain: "35cm²." },
+      { type: "mc", prompt: "Câu 6: Diện tích hình thoi có đường chéo 8cm và 6cm là?", choices: ["24cm²", "48cm²", "14cm²", "28cm²"], correct: 0, hint: "S = 1/2 × d1 × d2 = 1/2 × 8 × 6 = 24cm².", explain: "24cm²." },
+      { type: "mc", prompt: "Câu 7: Hai hình chữ nhật có cùng chiều rộng, chiều dài hình thứ hai gấp đôi thì diện tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "S tỉ lệ với chiều dài.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 8: Diện tích hình tròn bán kính 3cm (π≈3.14) là?", choices: ["28.26cm²", "18.84cm²", "9.42cm²", "37.68cm²"], correct: 0, hint: "S = πr² = 3.14 × 9 = 28.26cm².", explain: "28.26cm²." },
     ],
   },
 ];
