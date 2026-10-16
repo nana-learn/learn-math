@@ -9778,8 +9778,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Gieo xúc xắc: P(ra số lẻ) =", choices: ["1/2", "1/3", "1/6", "5/6"], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình tham số của đường thẳng đi qua M(x₀, y₀) có VTCP (a, b) là", choices: ["x = x₀ + at, y = y₀ + bt", "x = x₀ − at, y = y₀ − bt", "x = at, y = bt", "x = x₀ + b t, y = y₀ + a t"], correct: 0, hint: "Định nghĩa phương trình tham số.", explain: "x = x₀ + at, y = y₀ + bt." },
+        { type: "mc", prompt: "Đường thẳng x = 1 + 2t, y = 3 − t có VTCP là", choices: ["(2, -1)", "(-2, 1)", "(1, 3)", "(2, 1)"], correct: 0, hint: "Hệ số của t là VTCP.", explain: "(2, -1)." },
+        { type: "text", prompt: "Viết phương trình tham số của đường thẳng qua A(2, 1) và có VTCP (3, 4).", answer: "x = 2 + 3t, y = 1 + 4t", accept: ["x = 2 + 3t, y = 1 + 4t", "x=2+3t, y=1+4t"], hint: "Thế vào công thức.", explain: "x = 2 + 3t, y = 1 + 4t." },
+      ], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
       { type: "mc", prompt: "Gieo đồng xu 2 lần: P(được 1 sấp 1 ngửa) =", choices: ["1/2", "1/4", "3/4", "1"], correct: 0, hint: "2 kết quả thuận lợi (sấp-ngửa, ngửa-sấp) / 4 kết quả.", explain: "1/2." },
       { type: "mc", prompt: "Gieo một xúc xắc cân đối. Xác suất ra số lớn hơn 4 là", choices: ["1/3", "1/2", "2/3", "1/6"], correct: 0, hint: "Mặt 5 và 6. 2/6 = 1/3.", explain: "1/3." },
     ],
