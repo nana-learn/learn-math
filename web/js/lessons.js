@@ -8875,8 +8875,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "2·AB với AB = (3, 4) là?", choices: ["(6, 8)", "(3, 4)", "(1.5, 2)", "(-6, -8)"], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình x² − 5x + 6 = 0 có tổng nghiệm bằng", choices: ["5", "-5", "6", "-6"], correct: 0, hint: "Tổng nghiệm = -b/a = 5.", explain: "5." },
+        { type: "mc", prompt: "Phương trình x² + 3x − 4 = 0 có tích nghiệm bằng", choices: ["-4", "4", "-3", "3"], correct: 0, hint: "Tích nghiệm = c/a = -4.", explain: "-4." },
+        { type: "text", prompt: "Không giải phương trình, tìm tổng và tích nghiệm của x² − 2x − 3 = 0.", answer: "Tổng = 2, tích = -3", accept: ["Tổng = 2, tích = -3", "Tổng 2, tích -3"], hint: "Tổng = -b/a = 2, tích = c/a = -3.", explain: "Tổng = 2, tích = -3." },
+      ], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
       { type: "mc", prompt: "-1·AB với AB = (2, -3) là?", choices: ["(-2, 3)", "(2, -3)", "(-2, -3)", "(2, 3)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(-2, 3)." },
       { type: "mc", prompt: "k = 1/2, AB = (4, -6). k·AB bằng vectơ nào?", choices: ["(2, -3)", "(4, -6)", "(8, -12)", "(2, 3)"], correct: 0, hint: "Nhân từng tọa độ với 1/2.", explain: "(2, -3)." },
     ],
