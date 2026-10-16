@@ -488,8 +488,11 @@ const G7_LESSONS = [
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Hữu tỉ: phân số. Vô tỉ: không phải phân số. Thực: cả hai.</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Tập nào chứa √2?", choices: ["N", "Z", "Q", "R"], correct: 3, hint: "√2 không hữu tỉ.", explain: "√2 ∈ R, không thuộc Q." },
+          exercises: [
+        { type: "mc", prompt: "Làm tròn 3.76 đến hàng phần mười được", choices: ["3.8", "3.7", "4", "3"], correct: 0, hint: "Hàng phần trăm là 6 ≥ 5, nên làm tròn lên.", explain: "3.8." },
+        { type: "mc", prompt: "Làm tròn 125 đến hàng chục được", choices: ["130", "120", "100", "125"], correct: 0, hint: "Hàng đơn vị là 5 ≥ 5, làm tròn lên.", explain: "130." },
+        { type: "text", prompt: "Làm tròn 0.837 đến hàng phần trăm.", answer: "0.84", accept: ["0.84", "0,84"], hint: "Hàng phần nghìn là 7 ≥ 5, làm tròn lên.", explain: "0.84." },
+      ], correct: 3, hint: "√2 không hữu tỉ.", explain: "√2 ∈ R, không thuộc Q." },
       { type: "mc", prompt: "0 có thuộc N không? (theo SGK, N gồm 0, 1, 2, …)", choices: ["Có", "Không", "Chỉ khi viết 0/1", "Tùy năm"], correct: 0, hint: "Số tự nhiên bắt đầu từ 0 trong chương trình này.", explain: "0 ∈ N ⊂ Z ⊂ Q ⊂ R." },
       { type: "num", prompt: "Có bao nhiêu số nguyên nằm giữa −1,5 và 2,5?", answer: 4, hint: "−1, 0, 1, 2.", explain: "Bốn số: −1, 0, 1, 2." },
       { type: "mc", prompt: "−8 thuộc tập nào nhỏ nhất trong các tập đã học?", choices: ["N","Z","Q","Chỉ R"], correct: 1, hint: "Số nguyên âm.", explain: "Z, rồi Q, R. Không thuộc N." },
