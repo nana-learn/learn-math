@@ -8701,8 +8701,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "AB và BA là hai vector?", choices: ["Bằng nhau", "Đối nhau", "Cùng hướng", "Cùng độ dài"], correct: 1, hint: "AB và BA ngược hướng.", explain: "Đối nhau (ngược hướng, cùng độ dài)." },
+          exercises: [
+        { type: "mc", prompt: "Hai phương trình tương đương khi", choices: ["Có cùng tập nghiệm", "Cùng bậc", "Cùng hệ số", "Cùng dạng"], correct: 0, hint: "Định nghĩa phương trình tương đương.", explain: "Có cùng tập nghiệm." },
+        { type: "mc", prompt: "Phương trình nào tương đương với x − 2 = 0?", choices: ["2x − 4 = 0", "x² − 4 = 0", "x + 2 = 4", "1/x = 1/2"], correct: 0, hint: "2x − 4 = 0 → x = 2.", explain: "2x − 4 = 0." },
+        { type: "text", prompt: "Điều kiện xác định của phương trình (x + 1)/(x − 2) = 3 là", answer: "x ≠ 2", accept: ["x ≠ 2", "x != 2"], hint: "Mẫu khác 0: x − 2 ≠ 0.", explain: "x ≠ 2." },
+      ], correct: 1, hint: "AB và BA ngược hướng.", explain: "Đối nhau (ngược hướng, cùng độ dài)." },
       { type: "mc", prompt: "Vector không có điểm đầu và điểm cuối?", choices: ["Khác nhau", "Giống nhau", "Tùy trường hợp", "Không xác định"], correct: 1, hint: "Zero vector: điểm đầu = điểm cuối.", explain: "Giống nhau." },
       { type: "num", prompt: "Số vector tạo thành từ 3 điểm phân biệt A, B, C là", answer: "6", accept: ["6"], hint: "Mỗi cặp tạo 2 vector: AB, BA, AC, CA, BC, CB.", explain: "6 vector." },
     ],
