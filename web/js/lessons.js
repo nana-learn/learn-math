@@ -9384,8 +9384,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Phương trình nào là elip?", choices: ["x²/4 + y²/9 = 1", "y² = 4x", "x²/4 - y²/9 = 1", "x² + y² = 4"], correct: 0, hint: "Elip có dạng x²/a² + y²/b² = 1.", explain: "x²/4 + y²/9 = 1." },
+          exercises: [
+        { type: "mc", prompt: "Điểm M(3, -2) có hoành độ là", choices: ["3", "-2", "3 và -2", "0"], correct: 0, hint: "Hoành độ là tọa độ x.", explain: "3." },
+        { type: "mc", prompt: "Điểm N(-1, 5) nằm ở góc phần tư", choices: ["II", "I", "III", "IV"], correct: 0, hint: "Hoành độ âm, tung độ dương.", explain: "Góc phần tư II." },
+        { type: "text", prompt: "Tìm tọa độ trung điểm I của đoạn AB với A(1, 3), B(5, 7).", answer: "(3, 5)", accept: ["(3, 5)"], hint: "x = (1+5)/2 = 3, y = (3+7)/2 = 5.", explain: "(3, 5)." },
+      ], correct: 0, hint: "Elip có dạng x²/a² + y²/b² = 1.", explain: "x²/4 + y²/9 = 1." },
       { type: "mc", prompt: "Phương trình nào là hypebol?", choices: ["x²/4 - y²/9 = 1", "x²/4 + y²/9 = 1", "y² = 4x", "x² + y² = 4"], correct: 0, hint: "Hypebol có dấu trừ giữa hai phân số.", explain: "x²/4 - y²/9 = 1." },
       { type: "num", prompt: "Parabol y² = 8x có tham số p =", answer: "4", accept: ["4"], hint: "2p = 8 ⇒ p = 4.", explain: "4." },
     ],
