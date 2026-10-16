@@ -21,7 +21,12 @@ const G10_CHAPTERS = [
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
@@ -39,7 +44,12 @@ const G10_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phương trình 2x + 3 = 7 có nghiệm là?", choices: ["2", "3", "4", "5"], correct: 0, hint: "2x = 4 → x = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: Phương trình x² - 5x + 6 = 0 có nghiệm là?", choices: ["2 và 3", "1 và 6", "-2 và -3", "4 và 1"], correct: 0, hint: "(x-2)(x-3)=0 → x=2,3.", explain: "2 và 3." },
@@ -57,7 +67,12 @@ const G10_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là:", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
       { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
@@ -75,7 +90,12 @@ const G10_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Tích vô hướng AB·AC =", choices: ["|AB|·|AC|·cos(angle BAC)", "|AB|·|AC|·sin(angle BAC)", "|AB| + |AC|", "|AB| - |AC|"], correct: 0, hint: "a·b = |a||b|cos(a,b).", explain: "|AB|·|AC|·cos(angle BAC)." },
       { type: "mc", prompt: "Câu 2: Hai vector vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Độ dài bằng nhau", "Cùng hướng"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
@@ -94,7 +114,12 @@ const G10_CHAPTERS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Mệnh đề nào đúng?", choices: ["2+3=5", "2+3=6", "x²≥0 với mọi x", "Cả A và C"], correct: 3, hint: "2+3=5 đúng, x²≥0 luôn đúng.", explain: "Cả A và C." },
@@ -109,7 +134,12 @@ const G10_CHAPTERS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = -2x + 3 là?", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -2 < 0 nên nghịch biến.", explain: "Nghịch biến." },
@@ -125,7 +155,12 @@ const G10_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phương trình 3x - 7 = 8 có nghiệm là?", choices: ["5", "4", "6", "3"], correct: 0, hint: "3x = 15 → x = 5.", explain: "5." },
       { type: "mc", prompt: "Câu 2: Phương trình x² - 6x + 9 = 0 có nghiệm kép là?", choices: ["3", "-3", "9", "-9"], correct: 0, hint: "(x-3)²=0 → x=3.", explain: "3." },
@@ -144,7 +179,12 @@ const G10_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là?", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
       { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
@@ -163,7 +203,12 @@ const G10_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2), B(4,6) là?", choices: ["(3,4)", "(5,8)", "(-3,-4)", "(4,6)"], correct: 0, hint: "AB = (4-1, 6-2) = (3,4).", explain: "(3,4)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0) và B(3,4) là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "AB = √(9+16) = 5.", explain: "5." },
@@ -1713,7 +1758,12 @@ const G10_LESSONS = [
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
@@ -1731,7 +1781,12 @@ const G10_LESSONS = [
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phương trình 2x + 3 = 7 có nghiệm là?", choices: ["2", "3", "4", "5"], correct: 0, hint: "2x = 4 → x = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: Phương trình x² - 5x + 6 = 0 có nghiệm là?", choices: ["2 và 3", "1 và 6", "-2 và -3", "4 và 1"], correct: 0, hint: "(x-2)(x-3)=0 → x=2,3.", explain: "2 và 3." },
@@ -1749,7 +1804,12 @@ const G10_LESSONS = [
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là:", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
       { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
@@ -1767,7 +1827,12 @@ const G10_LESSONS = [
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Tích vô hướng AB·AC =", choices: ["|AB|·|AC|·cos(angle BAC)", "|AB|·|AC|·sin(angle BAC)", "|AB| + |AC|", "|AB| - |AC|"], correct: 0, hint: "a·b = |a||b|cos(a,b).", explain: "|AB|·|AC|·cos(angle BAC)." },
       { type: "mc", prompt: "Câu 2: Hai vector vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Độ dài bằng nhau", "Cùng hướng"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
@@ -1786,7 +1851,12 @@ const G10_LESSONS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Mệnh đề nào đúng?", choices: ["2+3=5", "2+3=6", "x²≥0 với mọi x", "Cả A và C"], correct: 3, hint: "2+3=5 đúng, x²≥0 luôn đúng.", explain: "Cả A và C." },
@@ -1801,7 +1871,12 @@ const G10_LESSONS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = -2x + 3 là?", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -2 < 0 nên nghịch biến.", explain: "Nghịch biến." },
@@ -1817,7 +1892,12 @@ const G10_LESSONS = [
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phương trình 3x - 7 = 8 có nghiệm là?", choices: ["5", "4", "6", "3"], correct: 0, hint: "3x = 15 → x = 5.", explain: "5." },
       { type: "mc", prompt: "Câu 2: Phương trình x² - 6x + 9 = 0 có nghiệm kép là?", choices: ["3", "-3", "9", "-9"], correct: 0, hint: "(x-3)²=0 → x=3.", explain: "3." },
@@ -1836,7 +1916,12 @@ const G10_LESSONS = [
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là?", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
       { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
@@ -1855,7 +1940,12 @@ const G10_LESSONS = [
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2), B(4,6) là?", choices: ["(3,4)", "(5,8)", "(-3,-4)", "(4,6)"], correct: 0, hint: "AB = (4-1, 6-2) = (3,4).", explain: "(3,4)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0) và B(3,4) là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "AB = √(9+16) = 5.", explain: "5." },
