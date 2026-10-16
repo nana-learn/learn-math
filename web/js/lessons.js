@@ -9217,8 +9217,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "|AB| với AB = (5, 12) là?", choices: ["13", "12", "5", "17"], correct: 0, hint: "√(25+144) = 13.", explain: "13." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình chính tắc của elip là", choices: ["x²/a² + y²/b² = 1", "x²/a² − y²/b² = 1", "y² = 2px", "x² + y² = R²"], correct: 0, hint: "Định nghĩa elip.", explain: "x²/a² + y²/b² = 1." },
+        { type: "mc", prompt: "Elip x²/25 + y²/9 = 1 có tiêu cự bằng", choices: ["8", "6", "10", "4"], correct: 0, hint: "c² = a² − b² = 25 − 9 = 16 → c = 4, tiêu cự = 2c = 8.", explain: "8." },
+        { type: "text", prompt: "Elip x²/16 + y²/4 = 1 có trục lớn bằng", answer: "8", accept: ["8"], hint: "a = 4, trục lớn = 2a = 8.", explain: "8." },
+      ], correct: 0, hint: "√(25+144) = 13.", explain: "13." },
       { type: "mc", prompt: "Góc giữa AB=(1,1) và AC=(1,-1) là?", choices: ["90°", "45°", "60°", "30°"], correct: 0, hint: "AB·AC = 0 ⇒ vuông góc.", explain: "90°." },
       { type: "num", prompt: "Độ dài AB với A(1,2), B(4,6) là", answer: "5", accept: ["5"], hint: "AB=(3,4), √(9+16)=5.", explain: "5." },
     ],
