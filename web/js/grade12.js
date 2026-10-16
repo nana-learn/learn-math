@@ -1114,6 +1114,11 @@ String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. 
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phần ảo của z = 5 - 3i là?", choices: ["5", "-3", "3", "-5"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-3." },
       { type: "mc", prompt: "|3 + 4i| bằng?", choices: ["5", "6", "7", "25"], correct: 0, hint: "|z| = √(a²+b²).", explain: "5." },
