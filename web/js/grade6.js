@@ -1184,8 +1184,11 @@ const G6_LESSONS = [
       </figure>
 </div>
     `,
-    exercises: [
-      { type: "num", prompt: "(-3) + 5 và 5 + (-3) có bằng nhau không?", answer: "Có", accept: ["Có", "có"], hint: "Phép cộng có tính chất giao hoán.", explain: "Có, bằng nhau đều là 2." },
+          exercises: [
+        { type: "mc", prompt: "Góc vuông có số đo bằng", choices: ["90°", "180°", "45°", "360°"], correct: 0, hint: "Góc vuông là góc đặc biệt.", explain: "90°." },
+        { type: "mc", prompt: "Góc nhọn có số đo", choices: ["Nhỏ hơn 90°", "Lớn hơn 90°", "Bằng 180°", "Bằng 360°"], correct: 0, hint: "Góc nhọn nhỏ hơn góc vuông.", explain: "Nhỏ hơn 90°." },
+        { type: "text", prompt: "Góc bẹt có số đo là", answer: "180°", accept: ["180°", "180"], hint: "Hai tia đối nhau tạo góc bẹt.", explain: "180°." },
+      ], hint: "Phép cộng có tính chất giao hoán.", explain: "Có, bằng nhau đều là 2." },
       { type: "num", prompt: "((-2) + 3) + 4 bằng bao nhiêu?", answer: 5, hint: "(-2+3)=1, 1+4=5.", explain: "5." },
       { type: "num", prompt: "(-2) + (3 + 4) bằng bao nhiêu?", answer: 5, hint: "(3+4)=7, -2+7=5.", explain: "5." },
       { type: "num", prompt: "Tính 25 + (-17) + (-25) theo cách thuận tiện.", answer: -17, hint: "(25+(-25)) + (-17) = 0 + (-17) = -17.", explain: "-17." },
