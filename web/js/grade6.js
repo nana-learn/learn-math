@@ -75,8 +75,11 @@ const G6_LESSONS = [
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ thuộc, ∉ không thuộc. Không quan trọng thứ tự liệt kê.</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Kí hiệu nào dùng để nói một phần tử thuộc tập hợp?", choices: ["∈", "∉", "⊂", "∩"], correct: 0, hint: "∈ nghĩa là thuộc.", explain: "a ∈ A nghĩa là a thuộc A." },
+          exercises: [
+        { type: "mc", prompt: "Tập hợp A = {1, 2, 3}. Số phần tử của A là", choices: ["3", "2", "4", "0"], correct: 0, hint: "Đếm các phần tử: 1, 2, 3.", explain: "3 phần tử." },
+        { type: "mc", prompt: "A = {a, b, c}. Khẳng định nào đúng?", choices: ["a ∈ A", "d ∈ A", "e ∈ A", "f ∈ A"], correct: 0, hint: "a là phần tử của A.", explain: "a ∈ A." },
+        { type: "text", prompt: "Viết tập hợp các số tự nhiên chẵn nhỏ hơn 6.", answer: "{0, 2, 4}", accept: ["{0, 2, 4}", "{2, 4, 0}", "{4, 2, 0}", "{4, 0, 2}", "{2, 0, 4}", "{0, 4, 2}"], hint: "0, 2, 4 là các số chẵn < 6.", explain: "{0, 2, 4}." },
+      ] correct: 0, hint: "∈ nghĩa là thuộc.", explain: "a ∈ A nghĩa là a thuộc A." },
       { type: "num", prompt: "Tập A = {2, 4, 6, 8}. Số nào không thuộc A?", answer: 5, hint: "5 không có trong danh sách.", explain: "5 không trong A." },
       { type: "mc", prompt: "Tập B = {1, 2, 3} và C = {3, 2, 1}. Hai tập này", choices: ["Khác nhau", "Giống nhau", "B là con C", "Không so được"], correct: 1, hint: "Thứ tự liệt kê không quan trọng.", explain: "Hai tập có cùng phần tử nên giống nhau." },
       { type: "text", prompt: "Viết tập hợp các số tự nhiên lớn hơn 0 và nhỏ hơn 4.", answer: "{1, 2, 3}", accept: ["{1, 2, 3}", "{1,2,3}"], hint: "Lớn hơn 0: bắt đầu từ 1. Nhỏ hơn 4: dừng trước 4.", explain: "{1, 2, 3}." },
