@@ -21,7 +21,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -46,7 +50,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -71,7 +79,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -96,7 +108,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -121,7 +137,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -146,7 +166,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -171,7 +195,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -197,7 +225,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -219,7 +251,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -242,7 +278,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -268,7 +308,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -294,7 +338,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -320,7 +368,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -346,7 +398,11 @@ const G11_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1543,7 +1599,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1568,7 +1628,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1593,7 +1657,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1618,7 +1686,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1643,7 +1715,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1668,7 +1744,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1693,7 +1773,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1719,7 +1803,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1741,7 +1829,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1764,7 +1856,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1790,7 +1886,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1816,7 +1916,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1842,7 +1946,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1868,7 +1976,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1894,7 +2006,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>

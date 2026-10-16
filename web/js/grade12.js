@@ -21,7 +21,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -46,7 +50,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -71,7 +79,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -96,7 +108,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -121,7 +137,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -146,7 +166,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -171,7 +195,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tổng hợp các chương.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -197,7 +225,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -219,7 +251,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -241,7 +277,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -264,7 +304,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -290,7 +334,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -316,7 +364,11 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1577,7 +1629,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
       <div class="example">
         <p><strong>Câu 1.</strong> Hàm số y = x³ - 3x đồng biến trên khoảng nào?</p>
         <p>A. (-∞, -1) và (1, +∞)</p>
@@ -1611,7 +1667,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức và phép toán.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1637,7 +1697,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit và phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1662,7 +1726,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân và ứng dụng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1687,7 +1755,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vectơ, mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1712,7 +1784,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập khối đa diện, diện tích, thể tích.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1738,7 +1814,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1763,7 +1843,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1789,7 +1873,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1814,7 +1902,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1839,7 +1931,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1864,7 +1960,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1889,7 +1989,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1914,7 +2018,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1939,7 +2047,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tổng hợp các chương.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1965,7 +2077,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1987,7 +2103,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2009,7 +2129,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2032,7 +2156,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2058,7 +2186,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2084,7 +2216,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2110,7 +2246,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>

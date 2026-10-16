@@ -23,7 +23,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -48,7 +52,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -73,7 +81,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -98,7 +110,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -124,7 +140,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -146,7 +166,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -169,7 +193,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -195,7 +223,11 @@ const G10_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2261,7 +2293,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2286,7 +2322,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2311,7 +2351,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2336,7 +2380,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2362,7 +2410,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2384,7 +2436,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2407,7 +2463,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2433,7 +2493,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -2459,7 +2523,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>

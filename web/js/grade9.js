@@ -13,7 +13,11 @@ const G9_CHAPTERS = [
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -36,7 +40,11 @@ const G9_CHAPTERS = [
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -127,7 +135,11 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
