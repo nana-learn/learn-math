@@ -8543,8 +8543,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Nghiệm của f(x) = 3x - 6 là?", choices: ["x = 2", "x = -2", "x = 3", "x = -3"], correct: 0, hint: "3x = 6 ⇒ x = 2.", explain: "x = 2." },
+          exercises: [
+        { type: "mc", prompt: "Nhị thức f(x) = 2x − 6 có nghiệm là", choices: ["x = 3", "x = -3", "x = 2", "x = 6"], correct: 0, hint: "2x − 6 = 0 → x = 3.", explain: "x = 3." },
+        { type: "mc", prompt: "f(x) = −x + 4 > 0 khi", choices: ["x < 4", "x > 4", "x < -4", "x > -4"], correct: 0, hint: "-x > -4 → x < 4.", explain: "x < 4." },
+        { type: "text", prompt: "Tìm tập xác định của biểu thức √(x − 3).", answer: "x ≥ 3", accept: ["x ≥ 3", "x >= 3"], hint: "Biểu thức dưới根 ≥ 0.", explain: "x ≥ 3." },
+      ], correct: 0, hint: "3x = 6 ⇒ x = 2.", explain: "x = 2." },
       { type: "mc", prompt: "f(x) = -2x + 4 dương khi?", choices: ["x < 2", "x > 2", "x < -2", "x > -2"], correct: 0, hint: "a = -2 < 0 nên dương khi x < 2.", explain: "x < 2." },
       { type: "num", prompt: "Giá trị của f(x) = 5x - 10 tại x = 3 là", answer: "5", accept: ["5"], hint: "5·3 - 10 = 5.", explain: "5." },
     ],
