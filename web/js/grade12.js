@@ -715,6 +715,8 @@ String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo 
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = -x²", "y = x³", "y = 1/x", "y = |x|"], correct: 1, hint: "y = x³ có đạo hàm ≥ 0.", explain: "y = x³ đồng biến trên ℝ." },
       { type: "mc", prompt: "Hàm số y = x² nghịch biến trên khoảng nào?", choices: ["(-∞, 0)", "(0, +∞)", "(-∞, +∞)", "không nghịch biến"], correct: 0, hint: "y' = 2x < 0 khi x < 0.", explain: "Nghịch biến trên (-∞, 0)." },
