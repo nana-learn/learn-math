@@ -1388,6 +1388,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phương trình 2sin²x − 5sinx + 2 = 0 có nghiệm là", choices: ["x = π/6 + k2π, x = 5π/6 + k2π", "x = π/3 + k2π, x = 2π/3 + k2π", "x = π/2 + k2π", "Vô nghiệm"], correct: 0, hint: "t = 1/2 hoặc t = 2 (loại).", explain: "x = π/6 + k2π, x = 5π/6 + k2π." },
       { type: "mc", prompt: "Phương trình cos²x + 2cosx − 3 = 0 có nghiệm là", choices: ["x = k2π", "x = π + k2π", "x = π/2 + k2π", "Vô nghiệm"], correct: 0, hint: "t = 1 hoặc t = −3 (loại). cosx = 1 → x = k2π.", explain: "x = k2π." },
