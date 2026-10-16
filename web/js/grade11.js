@@ -396,7 +396,11 @@ const G11_LESSONS = [
     chapter: 1,
     title: "Hàm số lượng giác",
     summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Một con lắc đơn dao động theo hàm số \(y = \sin(t)\). Khi nào con lắc ở vị trí cao nhất, thấp nhất? Sau bao lâu nó lặp lại chuyển động?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> \(y = \sin(t)\): khi \(t = \frac{\pi}{2}\) thì \(y = 1\) (cao nhất), khi \(t = \frac{3\pi}{2}\) thì \(y = -1\) (thấp nhất). Chu kỳ là \(2\pi\): sau mỗi \(2\pi\) giây, con lắc lặp lại trạng thái.</p>
@@ -432,7 +436,11 @@ exercises: [
     chapter: 1,
     title: "Phương trình lượng giác cơ bản",
     summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Một điểm chuyển động tròn đều, góc quay thỏa mãn sin(α) = 1/2. Hỏi α có thể bằng bao nhiêu?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> sin(α) = 1/2 khi α = 30° hoặc α = 150° (trong khoảng 0° đến 180°). Vì sin tuần hoàn chu kỳ 360°, nên α = 30° + k·360° hoặc α = 150° + k·360°, với k nguyên.</p>
@@ -466,7 +474,11 @@ exercises: [
     chapter: 2,
     title: "Hoán vị, chỉnh hợp, tổ hợp",
     summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].", youtube: "dQw4w9WgXcQ",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Lớp 11A có 5 bạn muốn竞选班长. Có bao nhiêu cách chọn 1 lớp trưởng và 1 lớp phó nếu không ai kiêm nhiệm?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Chọn lớp trưởng: 5 cách. Sau khi chọn lớp trưởng, còn 4 bạn để chọn lớp phó. Tổng số cách: 5 × 4 = 20. Đây là chỉnh hợp: A(5,2) = 5 × 4 = 20.</p>
@@ -504,7 +516,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Mở biểu thức (x + 2)^3. Hệ số của x^2 bằng bao nhiêu?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> (x + 2)^3 = C(3,0)x^3·2^0 + C(3,1)x^2·2^1 + C(3,2)x^1·2^2 + C(3,3)x^0·2^3. = 1·x^3 + 3·x^2·2 + 3·x·4 + 1·8. = x^3 + 6x^2 + 12x + 8. Hệ số của x^2 là 6.</p>
@@ -539,7 +555,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Dãy số (u_n) với u_n = 2n + 1. Dãy này tăng hay giảm? Có bị chặn không?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> u_1 = 3, u_2 = 5, u_3 = 7, u_4 = 9. Mỗi số hạng lớn hơn số hạng trước, nên dãy tăng. u_n = 2n + 1 ≥ 3 với mọi n, nên bị chặn dưới bởi 3. Không bị chặn trên vì n có thể rất lớn.</p>
@@ -574,7 +594,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Một dãy số bắt đầu từ 3 và mỗi số hạng sau lớn hơn 4 đơn vị: 3, 7, 11, 15,... Số hạng thứ 10 bằng bao nhiêu?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> u_1 = 3, d = 4. u_10 = u_1 + (10−1)d = 3 + 9·4 = 39. Kiểm tra: u_2 = 7, u_3 = 11, u_4 = 15,... cộng 4 mỗi lần đến u_10 = 39.</p>
@@ -609,7 +633,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Dãy số u_n = 1/n. Khi n rất lớn, u_n tiến về giá trị nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> u_1 = 1, u_10 = 0.1, u_100 = 0.01, u_1000 = 0.001. Khi n tăng, u_n càng gần 0. Vậy lim(1/n) = 0.</p>
@@ -644,7 +672,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hàm số f(x) = (x^2 − 4)/(x − 2). Khi x tiến đến 2, f(x) tiến đến giá trị nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> f(x) = (x−2)(x+2)/(x−2) = x + 2 khi x ≠ 2. Khi x → 2, x + 2 → 4. Vậy lim_{x→2} f(x) = 4. Tại x = 2, hàm không xác định, nhưng giới hạn vẫn tồn tại.</p>
@@ -679,7 +711,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hàm số f(x) = x^2. Tính đạo hàm tại x = 3.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> f'(3) = lim_{Δx→0} [(3+Δx)^2 − 3^2]/Δx = lim[9 + 6Δx + (Δx)^2 − 9]/Δx = lim[6 + Δx] = 6. Vậy f'(3) = 6.</p>
@@ -714,7 +750,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Tam giác ABC có A(1,2), B(3,5), C(4,1). Phép tịnh tiến theo vector v(2,−1) biến A thành điểm nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Phép tịnh tiến T_v: M(x,y) → M'(x+2, y−1). A(1,2) → A'(1+2, 2−1) = (3,1). Tương tự B'(5,4), C'(6,0).</p>
@@ -749,7 +789,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Tam giác ABC có diện tích 12 cm². Phép vị tự tâm O tỉ số k = 2 biến ABC thành A'B'C'. Diện tích A'B'C' bằng bao nhiêu?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Phép vị tự tỉ số k biến diện tích thành k² lần. k = 2 nên diện tích mới = 2² × 12 = 48 cm².</p>
@@ -784,7 +828,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) cắt nhau. Giao tuyến của chúng là gì?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Giao tuyến của hai mặt phẳng là đường thẳng chung của cả hai mặt phẳng. Nếu hai mặt phẳng cắt nhau, chúng có một giao tuyến duy nhất.</p>
@@ -819,7 +867,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Trong không gian, hai đường thẳng cùng song song với đường thẳng thứ ba thì vị trí tương đối của chúng là gì?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu a ∥ b và b ∥ c thì a ∥ c. Đây là tính chất bắc cầu của quan hệ song song. Hai đường thẳng a và c cũng song song với nhau.</p>
@@ -854,7 +906,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Ba vectơ OA, OB, OC không đồng phẳng. Vectơ OM = OA + OB − OC nằm trong không gian nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> OM là tổ hợp tuyến tính của OA, OB, OC. Vì OA, OB, OC không đồng phẳng, nên OM cũng nằm trong không gian 3 chiều do chúng tạo thành.</p>
@@ -889,7 +945,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hai đường thẳng a và b vuông góc với nhau. Nếu c song song với a thì c và b có vuông góc không?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu a ∥ c và a ⊥ b thì c ⊥ b. Vì góc giữa c và b bằng góc giữa a và b (do song song), nên c cũng vuông góc với b.</p>
@@ -925,7 +985,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) không có điểm chung. Hỏi chúng có song song với nhau không?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu hai mặt phẳng phân biệt không có điểm chung thì chúng song song với nhau. Đây là định nghĩa mặt phẳng song song.</p>
@@ -960,7 +1024,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Chiếu song song tam giác ABC lên mặt phẳng (P) theo phương l. Hình chiếu có tính chất gì?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu phương chiếu l không song song với (P) thì tam giác ABC được chiếu thành tam giác A'B'C' trên (P). Các điểm A, B, C chiếu thành A', B', C'. Nếu M nằm trên AB thì M' nằm trên A'B' và A'M'/M'B' = AM/MB.</p>
@@ -995,7 +1063,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Trong không gian, cho ba vectơ OA, OB, OC không đồng phẳng. Hỏi mọi vectơ OM có thể biểu thị qua OA, OB, OC không?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu OA, OB, OC không đồng phẳng thì chúng lập thành một hệ cơ sở của không gian. Mỗi vectơ OM trong không gian đều biểu thị duy nhất dưới dạng OM = x·OA + y·OB + z·OC với x, y, z xác định.</p>
@@ -1030,7 +1102,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) vuông góc với nhau. Đường thẳng a nằm trong (P) có vuông góc với (Q) không?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Nếu a vuông góc với giao tuyến của (P) và (Q) thì a vuông góc với (Q). Đây là định lí: nếu một đường thẳng trong một mặt phẳng vuông góc với giao tuyến thì đường thẳng đó vuông góc với mặt phẳng kia.</p>
@@ -1065,7 +1141,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Tính khoảng cách từ điểm M đến mặt phẳng (P). Làm thế nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Kẻ MH vuông góc với (P). Khoảng cách từ M đến (P) là độ dài MH. Nếu biết phương trình mặt phẳng và tọa độ điểm, dùng công thức: d(M, (P)) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²).</p>
@@ -1101,7 +1181,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Giải phương trình 2sin²x − 3sinx + 1 = 0. Ta đặt ẩn phụ như thế nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Đặt t = sinx (điều kiện |t| ≤ 1). Phương trình trở thành 2t² − 3t + 1 = 0. Giải phương trình bậc hai: t = 1 hoặc t = 1/2. Với t = 1: sinx = 1 → x = π/2 + k2π. Với t = 1/2: sinx = 1/2 → x = π/6 + k2π hoặc x = 5π/6 + k2π.</p>
@@ -1136,7 +1220,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Giải phương trình sinx + cosx = 1. Ta dùng công thức nào?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> Chia cả hai vế cho √2: (1/√2)sinx + (1/√2)cosx = 1/√2. Đặt sinπ/4 = cosπ/4 = 1/√2: sinx·cosπ/4 + cosx·sinπ/4 = 1/√2. Sử dụng công thức sin(a + b): sin(x + π/4) = 1/√2. Giải phương trình lượng giác cơ bản: x + π/4 = π/4 + k2π hoặc x + π/4 = 3π/4 + k2π. Vậy x = k2π hoặc x = π/2 + k2π.</p>
@@ -1171,7 +1259,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
-    body: String.raw`
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`
       <p><strong>Tình huống.</strong> Hàm số y = tanx có tập xác định là gì? Hàm số y = cotx呢?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> tanx = sinx/cosx, xác định khi cosx ≠ 0 → x ≠ π/2 + kπ. cotx = cosx/sinx, xác định khi sinx ≠ 0 → x ≠ kπ. Tập giá trị của tanx và cotx là ℝ. Hàm số y = sinx, cosx là chẵn/lẻ? sin(−x) = −sinx (lẻ), cos(−x) = cosx (chẵn). tan(−x) = −tanx (lẻ), cot(−x) = −cotx (lẻ).</p>

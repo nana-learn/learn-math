@@ -366,7 +366,11 @@ const G12_LESSONS = [
     chapter: 1,
     title: "Sự đồng biến, nghịch biến của hàm số",
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -410,7 +414,11 @@ exercises: [
     chapter: 1,
     title: "Cực trị của hàm số",
     summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -452,7 +460,11 @@ exercises: [
     chapter: 1,
     title: "Giá trị lớn nhất, giá trị nhỏ nhất của hàm số",
     summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> S(x) = x(50 - x). S'(x) = 50 - 2x = 0 ↔ x = 25. S(25) = 625m².</p>
       </div>
@@ -484,7 +496,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
-    body: String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = 1/x: limₓ→0⁺ y = +∞ → tiệm cận đứng x = 0. limₓ→±∞ y = 0 → tiệm cận ngang y = 0.</p>
       </div>
@@ -516,7 +532,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
-    body: String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -562,7 +582,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = x² và y = x + 2. x² = x + 2 ↔ x = -1 hoặc x = 2. 2 giao điểm.</p>
       </div>
@@ -594,7 +618,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân số P(t) = P₀(1 + r)ᵗ.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân số P(t) = P₀(1 + r)ᵗ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᵐ·aⁿ = aᵐ⁺ⁿ. (aᵐ)ⁿ = aᵐⁿ. a⁻ⁿ = 1/aⁿ. a⁰ = 1 (a ≠ 0).</p>
       </div>
@@ -626,7 +654,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của logarit.",
-    body: String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> logₐb = x ↔ aˣ = b. logₐa = 1. logₐ1 = 0. logₐ(ab) = logₐa + logₐb.</p>
       </div>
@@ -658,7 +690,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
-    body: String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -703,7 +739,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp đôi: 2 = (1 + r)ᵗ.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp đôi: 2 = (1 + r)ᵗ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᶠ⁽ˣ⁾ = aᶢ⁽ˣ⁾ ↔ f(x) = g(x). logₐf(x) = logₐg(x) ↔ f(x) = g(x) > 0.</p>
       </div>
@@ -735,7 +775,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải bất phương trình mũ và logarit.",
-    body: String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất phóng xạ giảm dưới ngưỡng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất phóng xạ giảm dưới ngưỡng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᶠ⁽ˣ⁾ > aᶢ⁽ˣ⁾: a > 1 thì f(x) > g(x); 0 < a < 1 thì f(x) < g(x).</p>
       </div>
@@ -767,7 +811,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
-    body: String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm của quãng đường s(t).</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm của quãng đường s(t).</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> F(x) là nguyên hàm của f(x) nếu F'(x) = f(x). ∫xⁿdx = xⁿ⁺¹/(n+1) + C.</p>
       </div>
@@ -799,7 +847,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
-    body: String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -846,7 +898,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
           <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
@@ -891,7 +947,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
-    body: String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
       <div class="figure">
         <svg viewBox="0 0 300 250" style="width:100%;max-width:300px;">
           <line x1="150" y1="20" x2="150" y2="230" stroke="#333" stroke-width="2"/>
@@ -939,7 +999,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Cộng, trừ, nhân số phức.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tương tự đa thức, với i² = -1.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tương tự đa thức, với i² = -1.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> (a+bi)+(c+di) = (a+c)+(b+d)i. (a+bi)(c+di) = (ac-bd)+(ad+bc)i.</p>
       </div>
@@ -971,7 +1035,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Chia số phức, số phức nghịch đảo.",
-    body: String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|². Nhân tử và mẫu với liên hợp mẫu.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|². Nhân tử và mẫu với liên hợp mẫu.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> (a+bi)/(c+di) = [(a+bi)(c-di)]/(c²+d²) = [(ac+bd)+(bc-ad)i]/(c²+d²).</p>
       </div>
@@ -1003,7 +1071,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
-    body: String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức khi delta<0.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức khi delta<0.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> x = [-b±√Δ]/(2a). Nếu Δ<0: √Δ = i√|Δ|.</p>
       </div>
@@ -1035,7 +1107,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
-    body: String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
           <line x1="200" y1="150" x2="200" y2="50" stroke="#333" stroke-width="2"/>
@@ -1085,7 +1161,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tổng quát của mặt phẳng.",
-    body: String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
           <polygon points="100,50 300,80 350,200 150,170" fill="rgba(100,200,100,0.4)" stroke="#333" stroke-width="2"/>
@@ -1127,7 +1207,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tham số và phương trình chính tắc.",
-    body: String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
           <line x1="50" y1="250" x2="350" y2="50" stroke="blue" stroke-width="2"/>
@@ -1168,7 +1252,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
-    body: String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔ u ⊥ v.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔ u ⊥ v.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> u·v = xᵤxᵥ+yᵤyᵥ+zᵤzᵥ. |u| = √(xᵤ²+yᵤ²+zᵤ²). cos(θ) = (u·v)/(|u||v|).</p>
       </div>
@@ -1200,7 +1288,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
-    body: String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
       <div class="figure">
         <svg viewBox="0 0 400 250" style="width:100%;max-width:400px;">
           <!-- Hình hộp chữ nhật -->

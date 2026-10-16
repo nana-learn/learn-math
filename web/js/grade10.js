@@ -245,7 +245,11 @@ const G10_LESSONS = [
     chapter: 1,
     title: "Mệnh đề",
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> "2 + 3 = 5" là khẳng định. Kiểm tra: 2+3=5 đúng. Vậy là mệnh đề đúng.</p>
       </div>
@@ -309,7 +313,11 @@ exercises: [
     chapter: 1,
     title: "Tập hợp",
     summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> A = {1, 2, 3} có 3 phần tử. B = {x ∈ ℝ | x² = 4} = {-2, 2}. Kiểm tra: -2 ∈ B, 2 ∈ B.</p>
       </div>
@@ -359,7 +367,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
-    body: String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả mối quan hệ giữa các tập hợp.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả mối quan hệ giữa các tập hợp.</p>
       <div class="definition">
         <p>Tập A là <strong>tập con</strong> của B (viết A ⊆ B) nếu mọi phần tử của A đều thuộc B.</p>
         <p>Hai tập bằng nhau nếu A ⊆ B và B ⊆ A.</p>
@@ -408,7 +420,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hợp, giao, hiệu của hai tập hợp.",
-    body: String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toán giúp phân tích mối quan hệ.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toán giúp phân tích mối quan hệ.</p>
       <div class="definition">
         <p><strong>Hợp</strong> A ∪ B: các phần tử thuộc A hoặc B.</p>
         <p><strong>Giao</strong> A ∩ B: các phần tử thuộc cả A và B.</p>
@@ -459,7 +475,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
-    body: String.raw`<p><strong>Vì sao cần bất đẳng thức?</strong> Bất đẳng thức giúp so sánh các đại lượng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần bất đẳng thức?</strong> Bất đẳng thức giúp so sánh các đại lượng.</p>
       <div class="definition">
         <p><strong>Bất đẳng thức</strong> là mệnh đề so sánh hai biểu thức: A > B, A < B, A ≥ B, A ≤ B.</p>
       </div>
@@ -512,7 +532,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
-    body: String.raw`<p><strong>Vì sao cần bất phương trình?</strong> Bất phương trình mô tả điều kiện.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần bất phương trình?</strong> Bất phương trình mô tả điều kiện.</p>
       <div class="definition">
         <p><strong>Bất phương trình một ẩn</strong> là mệnh đề chứa biến: f(x) > g(x).</p>
         <p>Nghiệm là giá trị của x làm bất đẳng thức đúng.</p>
@@ -563,7 +587,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
-    body: String.raw`<p><strong>Vì sao cần dấu nhị thức?</strong> Dấu nhị thức giúp giải bất phương trình.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần dấu nhị thức?</strong> Dấu nhị thức giúp giải bất phương trình.</p>
       <div class="definition">
         <p>Nhị thức bậc nhất: f(x) = ax + b (a ≠ 0).</p>
         <p>Dấu: cùng dấu a khi x > -b/a, trái dấu a khi x < -b/a.</p>
@@ -616,7 +644,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
-    body: String.raw`<p><strong>Vì sao cần hàm số bậc hai?</strong> Hàm số bậc hai mô tả quỹ đạo parabol.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần hàm số bậc hai?</strong> Hàm số bậc hai mô tả quỹ đạo parabol.</p>
       <div class="definition">
         <p>Hàm số bậc hai: y = ax² + bx + c (a ≠ 0).</p>
         <p>Đồ thị là parabol, đỉnh tại (-b/2a, -Δ/4a).</p>
@@ -671,7 +703,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
-    body: String.raw`<p><strong>Vì sao cần dấu tam thức?</strong> Dấu tam thức giúp giải bất phương trình bậc hai.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần dấu tam thức?</strong> Dấu tam thức giúp giải bất phương trình bậc hai.</p>
       <div class="definition">
         <p>Tam thức bậc hai: f(x) = ax² + bx + c (a ≠ 0).</p>
         <p>Δ = b² - 4ac: Δ < 0 cùng dấu a, Δ = 0 cùng dấu a (trừ nghiệm), Δ > 0 đổi dấu tại 2 nghiệm.</p>
@@ -724,7 +760,11 @@ exercises: [
     chapter: 4,
     title: "Vector trong mặt phẳng",
     summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Vì sao cần vector?</strong> Vector biểu diễn đại lượng có hướng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần vector?</strong> Vector biểu diễn đại lượng có hướng.</p>
       <div class="definition">
         <p><strong>Vector</strong> là đoạn thẳng có hướng: AB (đi từ A đến B).</p>
         <p>Hai vector bằng nhau nếu cùng hướng và cùng độ dài.</p>
@@ -778,7 +818,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
-    body: String.raw`<p><strong>Vì sao cần tổng vector?</strong> Nhiều đại lượng vector cần cộng lại.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tổng vector?</strong> Nhiều đại lượng vector cần cộng lại.</p>
       <div class="definition">
         <p>Tổng của hai vector: AB + BC = AC (quy tắc tam giác).</p>
         <p>Quy tắc hình bình hành: nếu ABCD là hình bình hành thì AB + AD = AC.</p>
@@ -839,7 +883,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hiệu AB - AC = CB (quy tắc trừ).",
-    body: String.raw`<p><strong>Vì sao cần hiệu vector?</strong> Hiệu vector giúp tính khoảng cách.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần hiệu vector?</strong> Hiệu vector giúp tính khoảng cách.</p>
       <div class="definition">
         <p>Hiệu AB - AC = CB (quy tắc trừ: cùng điểm đầu B, hiệu là vector từ cuối này đến cuối kia).</p>
         <p>AB = -BA (hai vector đối nhau).</p>
@@ -900,7 +948,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
-    body: String.raw`<p><strong>Vì sao cần tích vector với số?</strong> scaling vector thay đổi độ dài.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tích vector với số?</strong> scaling vector thay đổi độ dài.</p>
       <div class="definition">
         <p>Tích k·AB: cùng hướng AB nếu k > 0, ngược hướng nếu k < 0, độ dài |k|·AB.</p>
         <p>k = 0: vector không. k = 1: AB. k = -1: -AB.</p>
@@ -958,7 +1010,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
-    body: String.raw`<p><strong>Vì sao cần hệ tọa độ?</strong> Hệ tọa độ liên kết hình học với đại số.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần hệ tọa độ?</strong> Hệ tọa độ liên kết hình học với đại số.</p>
       <div class="definition">
         <p>Hệ trục tọa độ Oxy: Ox (hoành), Oy (tung), gốc O, đơn vị bằng nhau.</p>
         <p>Điểm M(x, y): OM = x·i + y·j.</p>
@@ -1012,7 +1068,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Vector AB = (xB - xA, yB - yA).",
-    body: String.raw`<p><strong>Vì sao cần tọa độ vector?</strong> Vector biểu diễn bằng cặp số.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tọa độ vector?</strong> Vector biểu diễn bằng cặp số.</p>
       <div class="definition">
         <p>Vector AB = (xB - xA, yB - yA).</p>
         <p>Độ dài AB = √[(xB-xA)² + (yB-yA)²].</p>
@@ -1070,7 +1130,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
-    body: String.raw`<p><strong>Vì sao cần biểu thức tọa độ?</strong> Tính toán vector qua số học.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần biểu thức tọa độ?</strong> Tính toán vector qua số học.</p>
       <div class="definition">
         <p>AB + CD = (xA+xC, yA+yC).</p>
         <p>k·AB = (k·xA, k·yA).</p>
@@ -1132,7 +1196,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Sin, cos, tan của góc trong tam giác.",
-    body: String.raw`<p><strong>Vì sao cần giá trị lượng giác?</strong> Mở rộng khái niệm lượng giác cho góc tù.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần giá trị lượng giác?</strong> Mở rộng khái niệm lượng giác cho góc tù.</p>
       <div class="definition">
         <p>Với góc α (0° ≤ α ≤ 180°): sin α, cos α, tan α được định nghĩa qua đường tròn đơn vị.</p>
         <p>sin(180° - α) = sin α, cos(180° - α) = -cos α, tan(180° - α) = -tan α.</p>
@@ -1190,7 +1258,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
-    body: String.raw`<p><strong>Vì sao cần tích vô hướng?</strong> Tích vô hướng liên hệ độ dài và góc.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tích vô hướng?</strong> Tích vô hướng liên hệ độ dài và góc.</p>
       <div class="definition">
         <p>Tích vô hướng: AB·AC = |AB|·|AC|·cos(angle BAC).</p>
         <p>AB·AC = 0 khi và chỉ khi AB ⊥ AC.</p>
@@ -1252,7 +1324,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
-    body: String.raw`<p><strong>Vì sao cần ứng dụng tích vô hướng?</strong> Từ tích vô hướng suy ra độ dài và góc.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần ứng dụng tích vô hướng?</strong> Từ tích vô hướng suy ra độ dài và góc.</p>
       <div class="definition">
         <p>|AB| = √(AB·AB).</p>
         <p>cos(angle BAC) = (AB·AC)/(|AB|·|AC|).</p>
@@ -1312,7 +1388,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định lí cosin và định lí sin trong tam giác.",
-    body: String.raw`<p><strong>Vì sao cần hệ thức lượng?</strong> Tính cạnh, góc khi biết một số yếu tố.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần hệ thức lượng?</strong> Tính cạnh, góc khi biết một số yếu tố.</p>
       <div class="definition">
         <p>Định lí cosin: a² = b² + c² - 2bc·cos A.</p>
         <p>Định lí sin: a/sin A = b/sin B = c/sin C = 2R.</p>
@@ -1370,7 +1450,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đường tròn được xác định bởi tâm và bán kính.",
-    body: String.raw`<p><strong>Vì sao cần đường tròn?</strong> Đường tròn xuất hiện nhiều trong hình học và thực tế.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần đường tròn?</strong> Đường tròn xuất hiện nhiều trong hình học và thực tế.</p>
       <div class="definition">
         <p>Đường tròn tâm I(a, b), bán kính R: (x - a)² + (y - b)² = R².</p>
         <p>Điểm M(x, y) thuộc đường tròn khi IM = R.</p>
@@ -1424,7 +1508,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Elip, parabol, hypebol là ba đường conic.",
-    body: String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
       <div class="definition">
         <p>Elip: tổng khoảng cách đến hai tiêu điểm không đổi.</p>
         <p>Parabol: tập hợp điểm cách đều tiêu điểm và đường chuẩn.</p>
@@ -1485,7 +1573,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
-    body: String.raw`<p><strong>Vì sao cần quy tắc cộng và nhân?</strong> Giải bài toán đếm số cách thực hiện hành động.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần quy tắc cộng và nhân?</strong> Giải bài toán đếm số cách thực hiện hành động.</p>
       <div class="definition">
         <p>Quy tắc cộng: Nếu có m cách cho công việc A, n cách cho công việc B, và A, B loại trừ nhau, thì có m + n cách.</p>
         <p>Quy tắc nhân: Nếu có m cách cho công việc A, n cách cho công việc B sau A, thì có m × n cách.</p>
@@ -1539,7 +1631,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
-    body: String.raw`<p><strong>Vì sao cần hoán vị và chỉnh hợp?</strong> Đếm số cách sắp xếp và chọn phần tử.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần hoán vị và chỉnh hợp?</strong> Đếm số cách sắp xếp và chọn phần tử.</p>
       <div class="definition">
         <p>Hoán vị n phần tử: P_n = n!.</p>
         <p>Chỉnh hợp chập k của n phần tử: A_n^k = n!/(n-k)!.</p>
@@ -1599,7 +1695,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
-    body: String.raw`<p><strong>Vì sao cần tổ hợp?</strong> Khi chọn phần tử mà thứ tự không quan trọng.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần tổ hợp?</strong> Khi chọn phần tử mà thứ tự không quan trọng.</p>
       <div class="definition">
         <p>Tổ hợp chập k của n phần tử: C_n^k = n!/(k!(n-k)!).</p>
         <p>C_n^k = C_n^{n-k}, C_n^k + C_n^{k-1} = C_{n+1}^k.</p>
@@ -1657,7 +1757,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
-    body: String.raw`<p><strong>Vì sao cần số gần đúng?</strong> Đo đạc thực tế luôn có sai số.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần số gần đúng?</strong> Đo đạc thực tế luôn có sai số.</p>
       <div class="definition">
         <p>Số gần đúng là số gần giá trị đúng.</p>
         <p>Sai số tuyệt đối: |a - ā|, trong đó a là giá trị đúng, ā là giá trị gần đúng.</p>
@@ -1716,7 +1820,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
-    body: String.raw`<p><strong>Vì sao cần số đặc trưng?</strong> Mô tả mẫu số liệu bằng một giá trị đại diện.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần số đặc trưng?</strong> Mô tả mẫu số liệu bằng một giá trị đại diện.</p>
       <div class="definition">
         <p>Số trung bình: x̄ = (x₁ + x₂ + ... + x_n)/n.</p>
         <p>Trung vị: giá trị ở giữa khi sắp xếp thứ tự.</p>
@@ -1776,7 +1884,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
-    body: String.raw`<p><strong>Vì sao cần số đặc trưng đo độ phân tán?</strong> Đánh giá mức độ phân tán quanh giá trị trung bình.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần số đặc trưng đo độ phân tán?</strong> Đánh giá mức độ phân tán quanh giá trị trung bình.</p>
       <div class="definition">
         <p>Phương sai: s² = Σ(x_i - x̄)²/(n-1).</p>
         <p>Độ lệch chuẩn: s = √s².</p>
@@ -1834,7 +1946,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
-    body: String.raw`<p><strong>Vì sao cần xác suất?</strong> Đánh giá khả năng xảy ra của biến cố.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần xác suất?</strong> Đánh giá khả năng xảy ra của biến cố.</p>
       <div class="definition">
         <p>Xác suất của biến cố A: P(A) = số kết quả thuận lợi / tổng số kết quả.</p>
         <p>0 ≤ P(A) ≤ 1. P(∅) = 0, P(Ω) = 1.</p>
@@ -1893,7 +2009,11 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Xác suất của hợp, giao, và biến cố đối.",
-    body: String.raw`<p><strong>Vì sao cần xác suất của biến cố?</strong> Tính xác suất khi có nhiều biến cố kết hợp.</p>
+    body: 
+    <div class="tips">
+      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
+    </div>
+String.raw`<p><strong>Vì sao cần xác suất của biến cố?</strong> Tính xác suất khi có nhiều biến cố kết hợp.</p>
       <div class="definition">
         <p>P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</p>
         <p>P(A') = 1 - P(A) (biến cố đối).</p>
