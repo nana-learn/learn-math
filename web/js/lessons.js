@@ -9043,8 +9043,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "AB = (2, 3), CD = (-1, 2). AB + CD = ?", choices: ["(1, 5)", "(3, 5)", "(1, 1)", "(-2, 6)"], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
+          exercises: [
+        { type: "mc", prompt: "Giải hệ: x + y = 5, x − y = 1.", choices: ["x = 3, y = 2", "x = 2, y = 3", "x = 4, y = 1", "x = 1, y = 4"], correct: 0, hint: "Cộng hai phương trình: 2x = 6 → x = 3, y = 2.", explain: "x = 3, y = 2." },
+        { type: "mc", prompt: "Hệ phương trình có vô số nghiệm khi", choices: ["Hai phương trình tương đương", "Hai phương trình độc lập", "Hệ vô nghĩa", "Hệ vô nghiệm"], correct: 0, hint: "Hai phương trình cùng biểu diễn một đường thẳng.", explain: "Hai phương trình tương đương." },
+        { type: "text", prompt: "Giải hệ: 2x + y = 7, x − y = 2.", answer: "x = 3, y = 1", accept: ["x = 3, y = 1", "x=3, y=1"], hint: "Cộng: 3x = 9 → x = 3, y = 1.", explain: "x = 3, y = 1." },
+      ], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
       { type: "mc", prompt: "AB = (4, -2), k = 1/2. k·AB = ?", choices: ["(2, -1)", "(8, -4)", "(2, 1)", "(-2, 1)"], correct: 0, hint: "(4/2, -2/2) = (2, -1).", explain: "(2, -1)." },
       { type: "mc", prompt: "AB = (5, -3), CD = (2, 1). AB − 2·CD bằng vectơ nào?", choices: ["(1, -5)", "(3, -2)", "(7, -4)", "(1, -2)"], correct: 0, hint: "2·CD = (4, 2). Rồi trừ từng tọa độ.", explain: "(1, -5)." },
     ],
