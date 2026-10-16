@@ -25,6 +25,8 @@ const G7_CHAPTERS = [
 
     summary: "Luyện tập số thập phân, phép toán.",
     body: 
+    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
+
     <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">

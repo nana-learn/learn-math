@@ -495,6 +495,8 @@ const G11_LESSONS = [
 
     summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>

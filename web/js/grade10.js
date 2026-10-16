@@ -384,6 +384,8 @@ exercises: [
 
     summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>

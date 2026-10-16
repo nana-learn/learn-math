@@ -32,6 +32,8 @@ const G6_CHAPTERS = [
 
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
     body: 
+    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
+
     <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="tips">
