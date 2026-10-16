@@ -548,6 +548,11 @@ String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x khôn
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Tiệm cận đứng của y = 1/(x - 2) là?", choices: ["x = 0", "x = 2", "y = 0", "y = 2"], correct: 1, hint: "Mẫu = 0 khi x = 2.", explain: "x = 2." },
       { type: "mc", prompt: "Tiệm cận ngang của y = (3x-1)/(x+2) là?", choices: ["y = 3", "y = -3", "y = 1/2", "y = -1/2"], correct: 0, hint: "Hệ số cao nhất: 3x/x = 3.", explain: "y = 3." },
