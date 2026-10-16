@@ -697,6 +697,11 @@ String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân s
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "2³·2⁴ bằng?", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "aᵐ·aⁿ = aᵐ⁺ⁿ.", explain: "2⁷." },
       { type: "mc", prompt: "(3²)³ bằng?", choices: ["3⁵", "3⁶", "9³", "27²"], correct: 1, hint: "(aᵐ)ⁿ = aᵐⁿ.", explain: "3⁶." },
