@@ -20,7 +20,7 @@ const G12_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Sự đồng biến, nghịch biến của hàm số",
-    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.",
+    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.",
     body: String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -60,7 +60,7 @@ const G12_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Cực trị của hàm số",
-    summary: "Điều kiện cần và đủ để hàm số có cực trị.",
+    summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.",
     body: String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -98,7 +98,7 @@ const G12_LESSONS = [
     num: 3,
     chapter: 1,
     title: "Giá trị lớn nhất, giá trị nhỏ nhất của hàm số",
-    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.",
+    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.",
     body: String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> S(x) = x(50 - x). S'(x) = 50 - 2x = 0 ↔ x = 25. S(25) = 625m².</p>
@@ -124,7 +124,7 @@ const G12_LESSONS = [
     num: 4,
     chapter: 1,
     title: "Đường tiệm cận của đồ thị hàm số",
-    summary: "Tiệm cận đứng và tiệm cận ngang.",
+    summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
     body: String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = 1/x: limₓ→0⁺ y = +∞ → tiệm cận đứng x = 0. limₓ→±∞ y = 0 → tiệm cận ngang y = 0.</p>
@@ -150,7 +150,7 @@ const G12_LESSONS = [
     num: 5,
     chapter: 1,
     title: "Khảo sát sự biến thiên và vẽ đồ thị hàm số",
-    summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.",
+    summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
     body: String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -190,7 +190,7 @@ const G12_LESSONS = [
     num: 6,
     chapter: 1,
     title: "Tương giao của các đồ thị",
-    summary: "Tìm số giao điểm của hai đồ thị.",
+    summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
     body: String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = x² và y = x + 2. x² = x + 2 ↔ x = -1 hoặc x = 2. 2 giao điểm.</p>
