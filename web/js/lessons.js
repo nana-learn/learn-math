@@ -8392,8 +8392,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "num", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B có bao nhiêu phần tử?", answer: "4", accept: ["4"], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
+          exercises: [
+        { type: "mc", prompt: "Số 3.14 là số gần đúng của π. Sai số tuyệt đối không vượt quá", choices: ["0.01", "0.1", "0.001", "1"], correct: 0, hint: "π ≈ 3.1416, |3.14 − 3.1416| = 0.0016 < 0.01.", explain: "0.01." },
+        { type: "mc", prompt: "Chiều dài đo được 10 m ± 0.1 m. Giá trị gần đúng là", choices: ["10 m", "10.1 m", "9.9 m", "0.1 m"], correct: 0, hint: "Giá trị gần đúng là số trước dấu ±.", explain: "10 m." },
+        { type: "text", prompt: "Số gần đúng a = 24.75, độ chính xác d = 0.01. Viết chuẩn số gần đúng.", answer: "24.75", accept: ["24.75"], hint: "Viết đến hàng nhỏ hơn hoặc bằng độ chính xác.", explain: "24.75." },
+      ], hint: "{1, 2, 3, 4} có 4 phần tử.", explain: "4 phần tử." },
       { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B là tập nào?", choices: ["{2, 3}", "{1, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Chỉ lấy phần tử có trong cả hai tập.", explain: "{2, 3}." },
       { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3}. A \\ B là?", choices: ["{1}", "{2, 3}", "{1, 2, 3}", "∅"], correct: 0, hint: "Loại 2 và 3 ra.", explain: "{1}." },
     ],
