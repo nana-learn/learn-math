@@ -118,6 +118,25 @@ const G10_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: Hai đường thẳng y = 3x + 1 và y = -1/3x + 2:", choices: ["Vuông góc", "Song song", "Cắt nhau không vuông", "Trùng nhau"], correct: 0, hint: "3 × (-1/3) = -1 → vuông góc.", explain: "Vuông góc." },
     ],
   },
+
+  {
+    id: "g10-ch3-quiz",
+    num: 103,
+    chapter: 3,
+    title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phương trình 3x - 7 = 8 có nghiệm là?", choices: ["5", "4", "6", "3"], correct: 0, hint: "3x = 15 → x = 5.", explain: "5." },
+      { type: "mc", prompt: "Câu 2: Phương trình x² - 6x + 9 = 0 có nghiệm kép là?", choices: ["3", "-3", "9", "-9"], correct: 0, hint: "(x-3)²=0 → x=3.", explain: "3." },
+      { type: "text", prompt: "Giải hệ phương trình: x + y = 7, x - y = 3.", answer: "(5,2)", accept: ["(5,2)", "x=5,y=2"], hint: "Cộng hai phương trình: 2x = 10 → x=5, y=2.", explain: "(5,2)." },
+      { type: "mc", prompt: "Câu 4: Phương trình x² + 5x + 6 = 0 có nghiệm là?", choices: ["-2 và -3", "2 và 3", "-2 và 3", "2 và -3"], correct: 0, hint: "(x+2)(x+3)=0 → x=-2,-3.", explain: "-2 và -3." },
+      { type: "mc", prompt: "Câu 5: Phương trình x² - 4x + 4 = 0 có delta (Δ) là?", choices: ["0", "4", "-4", "16"], correct: 0, hint: "Δ = b²-4ac = 16-16=0.", explain: "0." },
+      { type: "mc", prompt: "Câu 6: Tổng hai nghiệm của phương trình x² - 7x + 12 = 0 là?", choices: ["7", "-7", "12", "-12"], correct: 0, hint: "Tổng = -b/a = 7.", explain: "7." },
+      { type: "mc", prompt: "Câu 7: Hệ phương trình x + 2y = 5, 2x + 4y = 10 có:", choices: ["Vô số nghiệm", "Vô nghiệm", "Nghiệm duy nhất", "Không xác định"], correct: 0, hint: "Hai phương trình tương đương.", explain: "Vô số nghiệm." },
+      { type: "mc", prompt: "Câu 8: Phương trình x² + 1 = 0 có nghiệm thực không?", choices: ["Không có", "Có một nghiệm", "Có hai nghiệm", "Vô số nghiệm"], correct: 0, hint: "x² = -1 vô nghiệm thực.", explain: "Không có." },
+    ],
+  },
 ];
 
 const G10_LESSONS = [
@@ -1751,6 +1770,25 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Câu 2: Đỉnh của parabol y = x² - 4x + 3 là?", choices: ["(2,-1)", "(2,1)", "(-2,-1)", "(-2,1)"], correct: 0, hint: "x = -b/(2a) = 2, y = 4 - 8 + 3 = -1.", explain: "(2,-1)." },
       { type: "text", prompt: "Tìm nghiệm của phương trình x² - 5x + 6 = 0.", answer: "2 và 3", accept: ["2 và 3", "x=2,x=3"], hint: "(x-2)(x-3)=0 → x=2,3.", explain: "2 và 3." },
       { type: "mc", prompt: "Câu 4: Hai đường thẳng y = 3x + 1 và y = -1/3x + 2:", choices: ["Vuông góc", "Song song", "Cắt nhau không vuông", "Trùng nhau"], correct: 0, hint: "3 × (-1/3) = -1 → vuông góc.", explain: "Vuông góc." },
+    ],
+  },
+
+  {
+    id: "g10-ch3-quiz",
+    num: 103,
+    chapter: 3,
+    title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phương trình 3x - 7 = 8 có nghiệm là?", choices: ["5", "4", "6", "3"], correct: 0, hint: "3x = 15 → x = 5.", explain: "5." },
+      { type: "mc", prompt: "Câu 2: Phương trình x² - 6x + 9 = 0 có nghiệm kép là?", choices: ["3", "-3", "9", "-9"], correct: 0, hint: "(x-3)²=0 → x=3.", explain: "3." },
+      { type: "text", prompt: "Giải hệ phương trình: x + y = 7, x - y = 3.", answer: "(5,2)", accept: ["(5,2)", "x=5,y=2"], hint: "Cộng hai phương trình: 2x = 10 → x=5, y=2.", explain: "(5,2)." },
+      { type: "mc", prompt: "Câu 4: Phương trình x² + 5x + 6 = 0 có nghiệm là?", choices: ["-2 và -3", "2 và 3", "-2 và 3", "2 và -3"], correct: 0, hint: "(x+2)(x+3)=0 → x=-2,-3.", explain: "-2 và -3." },
+      { type: "mc", prompt: "Câu 5: Phương trình x² - 4x + 4 = 0 có delta (Δ) là?", choices: ["0", "4", "-4", "16"], correct: 0, hint: "Δ = b²-4ac = 16-16=0.", explain: "0." },
+      { type: "mc", prompt: "Câu 6: Tổng hai nghiệm của phương trình x² - 7x + 12 = 0 là?", choices: ["7", "-7", "12", "-12"], correct: 0, hint: "Tổng = -b/a = 7.", explain: "7." },
+      { type: "mc", prompt: "Câu 7: Hệ phương trình x + 2y = 5, 2x + 4y = 10 có:", choices: ["Vô số nghiệm", "Vô nghiệm", "Nghiệm duy nhất", "Không xác định"], correct: 0, hint: "Hai phương trình tương đương.", explain: "Vô số nghiệm." },
+      { type: "mc", prompt: "Câu 8: Phương trình x² + 1 = 0 có nghiệm thực không?", choices: ["Không có", "Có một nghiệm", "Có hai nghiệm", "Vô số nghiệm"], correct: 0, hint: "x² = -1 vô nghiệm thực.", explain: "Không có." },
     ],
   },
 ];
