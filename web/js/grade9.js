@@ -12,6 +12,8 @@ const G9_CHAPTERS = [
     num: 99,
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -39,6 +41,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn
     num: 100,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
     body: 
     <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -140,6 +144,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 101,
     chapter: 3,
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",

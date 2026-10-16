@@ -20,6 +20,8 @@ const G10_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
@@ -49,6 +51,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     num: 100,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
@@ -78,6 +82,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     num: 101,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
@@ -107,6 +113,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     num: 102,
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
@@ -137,6 +145,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tíc
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
@@ -163,6 +173,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
@@ -190,6 +202,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 103,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
@@ -220,6 +234,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     num: 104,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
@@ -250,6 +266,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     num: 105,
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
@@ -2354,6 +2372,8 @@ exercises: [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
@@ -2383,6 +2403,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     num: 100,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
@@ -2412,6 +2434,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     num: 101,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
@@ -2441,6 +2465,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     num: 102,
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
@@ -2471,6 +2497,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tíc
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
@@ -2497,6 +2525,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
@@ -2524,6 +2554,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 103,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
@@ -2554,6 +2586,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     num: 104,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
@@ -2584,6 +2618,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     num: 105,
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",

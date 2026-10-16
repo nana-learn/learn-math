@@ -18,6 +18,8 @@ const G12_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
@@ -47,6 +49,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     num: 100,
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
@@ -76,6 +80,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     num: 101,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
@@ -105,6 +111,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 102,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
@@ -134,6 +142,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 103,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
@@ -163,6 +173,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 104,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
@@ -192,6 +204,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     num: 105,
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tổng hợp các chương.",
@@ -222,6 +236,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
@@ -248,6 +264,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
@@ -274,6 +292,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 103,
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
@@ -301,6 +321,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 106,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
@@ -331,6 +353,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 107,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
@@ -361,6 +385,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 108,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
@@ -391,6 +417,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 109,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
@@ -1727,6 +1755,8 @@ exercises: [
     num: 99,
     chapter: 1,
     title: "Chương 1: Ứng dụng đạo hàm - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
@@ -1767,6 +1797,8 @@ exercises: [
     num: 100,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức và phép toán.",
@@ -1797,6 +1829,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 101,
     chapter: 2,
     title: "Chương 2: Lũy thừa, mũ, logarit - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit và phương trình.",
@@ -1826,6 +1860,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     num: 102,
     chapter: 3,
     title: "Chương 3: Nguyên hàm, tích phân - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân và ứng dụng.",
@@ -1855,6 +1891,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     num: 103,
     chapter: 5,
     title: "Chương 5: Tọa độ trong không gian - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vectơ, mặt phẳng, đường thẳng.",
@@ -1884,6 +1922,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     num: 104,
     chapter: 6,
     title: "Chương 6: Khối đa diện - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập khối đa diện, diện tích, thể tích.",
@@ -1914,6 +1954,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về kh�
     num: 105,
     chapter: 7,
     title: "Chương 7: Mặt nón, mặt trụ, mặt cầu - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
@@ -1943,6 +1985,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 106,
     chapter: 8,
     title: "Chương 8: Phương pháp tọa độ trong không gian (tiếp) - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
@@ -1973,6 +2017,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
@@ -2002,6 +2048,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     num: 100,
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
@@ -2031,6 +2079,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     num: 101,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
@@ -2060,6 +2110,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 102,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
@@ -2089,6 +2141,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 103,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
@@ -2118,6 +2172,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 104,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
@@ -2147,6 +2203,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     num: 105,
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tổng hợp các chương.",
@@ -2177,6 +2235,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
@@ -2203,6 +2263,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
@@ -2229,6 +2291,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 103,
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
@@ -2256,6 +2320,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 106,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
@@ -2286,6 +2352,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 107,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
@@ -2316,6 +2384,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 108,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
@@ -2346,6 +2416,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 109,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
