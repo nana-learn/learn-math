@@ -636,6 +636,8 @@ String.raw`
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em</p>
       </details>
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Số cách xếp 4 người vào 4 ghế là", choices: ["24", "12", "6", "4"], correct: 0, hint: "P4 = 4! = 24.", explain: "24." },
       { type: "mc", prompt: "C(6,2) bằng", choices: ["15", "30", "12", "6"], correct: 0, hint: "6×5/2 = 15.", explain: "15." },

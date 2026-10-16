@@ -239,6 +239,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     pages: ["page1"],
     
       { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
       { type: "mc", prompt: "Câu 2: |−3| =", choices: ["3", "-3", "0", "1/3"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "3." },

@@ -615,6 +615,8 @@ String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật 
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em</p>
       </details>
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "GTLN của y = -x² + 4x trên [0;3] là?", choices: ["0", "4", "3", "5"], correct: 1, hint: "f(0)=0, f(2)=4, f(3)=3.", explain: "GTLN = 4." },
       { type: "mc", prompt: "GTNN của y = x² + 1 trên [-1;2] là?", choices: ["0", "1", "2", "5"], correct: 1, hint: "x² ≥ 0 nên y ≥ 1.", explain: "GTNN = 1." },

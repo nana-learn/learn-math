@@ -427,6 +427,8 @@ String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhó
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em</p>
       </details>
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Tập hợp các nghiệm của phương trình x² − 4 = 0 là", choices: ["{-2, 2}", "{2}", "{-2}", "∅"], correct: 0, hint: "x = ±2.", explain: "{-2, 2}." },
       { type: "mc", prompt: "Tập hợp A = {x ∈ ℤ | -1 ≤ x ≤ 1} có bao nhiêu phần tử?", choices: ["3", "2", "4", "1"], correct: 0, hint: "-1, 0, 1.", explain: "3." },
