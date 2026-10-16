@@ -207,8 +207,11 @@ const G9_LESSONS = [
         <p> Tam giác đều \\(ABC\\) cạnh \\(8\\). \\(r = \dfrac{4\sqrt{3}}{3} \approx 2.309\\), \\(R = \dfrac{8}{\sqrt{3}} \approx 4.619\\).</p>
       </div>
     `,
-    exercises: [
-      { type: "num", prompt: "Tam giác vuông có cạnh huyền 10. Bán kính đường tròn ngoại tiếp bằng bao nhiêu?", answer: 5, accept: ["5", "5.0"], hint: "R = cạnh huyền / 2.", explain: "R = 10 / 2 = 5." },
+          exercises: [
+        { type: "mc", prompt: "Góc tạo bởi tia tiếp tuyến và dây cung bằng", choices: ["Nửa số đo cung bị chắn", "Số đo cung bị chắn", "Góc nội tiếp", "Nửa góc ở tâm"], correct: 0, hint: "Định lí góc giữa tiếp tuyến và dây.", explain: "Nửa số đo cung bị chắn." },
+        { type: "mc", prompt: "Góc tạo bởi tiếp tuyến và dây cung chắn cung 100° thì bằng", choices: ["50°", "100°", "80°", "20°"], correct: 0, hint: "100°/2 = 50°.", explain: "50°." },
+        { type: "text", prompt: "Đường tròn (O), tiếp tuyến At, dây AB. Góc tAB = 35°. Số đo cung AB =", answer: "70°", accept: ["70°", "70"], hint: "2×35° = 70°.", explain: "70°." },
+      ], hint: "R = cạnh huyền / 2.", explain: "R = 10 / 2 = 5." },
       { type: "mc", prompt: "Tam giác đều cạnh a. Bán kính đường tròn nội tiếp là:", choices: ["a/2", "a/√3", "(√3/6)a", "(√3/3)a"], correct: 2, hint: "r = (√3/6)a.", explain: "r = (√3/6)a." },
       { type: "num", prompt: "Tam giác ABC vuông tại A, AB=3, AC=4. Bán kính đường tròn ngoại tiếp bằng bao nhiêu?", answer: 2.5, accept: ["2.5", "5/2"], hint: "BC = 5 (3-4-5), R = BC/2.", explain: "BC = √(9+16) = 5, R = 5/2 = 2.5." },
       { type: "text", prompt: "Tâm đường tròn nội tiếp tam giác là giao điểm của ba đường gì?", answer: "phân giác", accept: ["phân giác", "phân giác trong"], hint: "Cách đều hai cạnh.", explain: "Tâm nội tiếp là giao ba đường phân giác trong." },
