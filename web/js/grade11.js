@@ -565,8 +565,8 @@ const G11_LESSONS = [
   },
 
   {
-    id: "g11-b6",
-    num: 6,
+    id: "g11-b21",
+    num: 21,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản (tiếp)",
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
@@ -592,8 +592,8 @@ const G11_LESSONS = [
     ],
   },
   {
-    id: "g11-b7",
-    num: 7,
+    id: "g11-b22",
+    num: 22,
     chapter: 1,
     title: "Phương trình lượng giác thường gặp",
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
@@ -619,8 +619,8 @@ const G11_LESSONS = [
     ],
   },
   {
-    id: "g11-b8",
-    num: 8,
+    id: "g11-b23",
+    num: 23,
     chapter: 1,
     title: "Hàm số lượng giác (tiếp)",
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
