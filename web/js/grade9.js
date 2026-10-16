@@ -12,7 +12,7 @@ const G9_CHAPTERS = [
     num: 99,
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
-    summary: "Luyện tập căn bậc hai và căn bậc ba.",
+    summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
@@ -30,7 +30,7 @@ const G9_CHAPTERS = [
     num: 100,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
-    summary: "Luyện tập hàm số bậc nhất y = ax + b.",
+    summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
@@ -452,7 +452,7 @@ const G9_LESSONS = [
     num: 99,
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
-    summary: "Luyện tập căn bậc hai và căn bậc ba.",
+    summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
@@ -470,7 +470,7 @@ const G9_LESSONS = [
     num: 100,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
-    summary: "Luyện tập hàm số bậc nhất y = ax + b.",
+    summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
