@@ -205,6 +205,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     
       { type: "mc", prompt: "Bài tập nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
       { type: "mc", prompt: "Bài tập nâng cao 2", choices: ["A", "B", "C", "D"], correct: "D" },
+
+      { type: "mc", prompt: "Bài tập luyện tập thêm", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
       { type: "mc", prompt: "Câu 2: (-2) + 5 =", choices: ["3", "-3", "7", "-7"], correct: 0, hint: "-2 + 5 = 3.", explain: "3." },
