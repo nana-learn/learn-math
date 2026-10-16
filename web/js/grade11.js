@@ -618,6 +618,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Dãy (u_n) với u_n = 5 − 2n là", choices: ["Dãy giảm", "Dãy tăng", "Không tăng không giảm", "Hằng số"], correct: 0, hint: "u_{n+1} − u_n = −2 < 0.", explain: "Dãy giảm." },
       { type: "mc", prompt: "Dãy (w_n) với w_n = n^2 là", choices: ["Dãy tăng", "Dãy giảm", "Không tăng không giảm", "Hằng số"], correct: 0, hint: "w_{n+1} − w_n = 2n + 1 > 0.", explain: "Dãy tăng." },
