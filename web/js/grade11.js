@@ -1050,6 +1050,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "AB = (2,−1,3), BC = (1,4,−2). AC =", choices: ["(3,3,1)", "(1,−5,5)", "(−1,5,−5)", "(3,−5,1)"], correct: 0, hint: "AB + BC = AC: (2+1, −1+4, 3+(−2)) = (3,3,1).", explain: "(3,3,1)." },
       { type: "mc", prompt: "AB · AC = 0 thì", choices: ["AB vuông góc AC", "AB song song AC", "AB = AC", "AB và AC cùng hướng"], correct: 0, hint: "Định nghĩa tích vô hướng.", explain: "AB vuông góc AC." },
