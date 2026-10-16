@@ -139,6 +139,37 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Tích vô hướng a·a =", choices: ["|a|²", "0", "1", "|a|"], correct: 0, hint: "a·a = |a||a|cos0 = |a|².", explain: "|a|²." },
     ],
   },
+
+  {
+    id: "g11-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Trigonometry",
+    summary: "Đề kiểm tra 45 phút chương Trigonometry.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: sin(π/6) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "sin 30° = 1/2.", explain: "1/2." },
+      { type: "mc", prompt: "Câu 2: cos(π/3) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "cos 60° = 1/2.", explain: "1/2." },
+      { type: "text", prompt: "Giải phương trình sin x = 1/2.", answer: "π/6 + k2π hoặc 5π/6 + k2π", accept: ["π/6 + k2π hoặc 5π/6 + k2π", "π/6 + k2pi hoặc 5π/6 + k2pi"], hint: "sin x = 1/2 → x = π/6 hoặc 5π/6 (+ k2π).", explain: "π/6 + k2π hoặc 5π/6 + k2π." },
+      { type: "mc", prompt: "Câu 4: Chu kỳ của y = sin(2x) là?", choices: ["π", "2π", "π/2", "4π"], correct: 0, hint: "Chu kỳ = 2π/2 = π.", explain: "π." },
+    ],
+  },
+  {
+    id: "g11-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
+    summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: P4 =", choices: ["24", "12", "6", "4"], correct: 0, hint: "4! = 24.", explain: "24." },
+      { type: "mc", prompt: "Câu 2: C(5,2) =", choices: ["10", "20", "5", "15"], correct: 0, hint: "C(5,2) = 10.", explain: "10." },
+      { type: "text", prompt: "Từ 5 HS chọn 2 làm lớp trưởng và phó (khác nhau). Có bao nhiêu cách?", answer: "20", accept: ["20"], hint: "Chọn 2 người và sắp xếp: A(5,2) = 20.", explain: "20." },
+      { type: "mc", prompt: "Câu 4: Gieo 2 con súc sắc. Xác suất tổng bằng 7 là?", choices: ["1/6", "1/9", "1/12", "1/18"], correct: 0, hint: "6 cặp: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1). 6/36 = 1/6.", explain: "1/6." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -943,6 +974,37 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0: độ dài 0.", explain: "Độ dài bằng 0." },
       { type: "mc", prompt: "Câu 7: Nếu a·b = 0 thì hai vector a và b:", choices: ["Vuông góc", "Cùng phương", "Bằng nhau", "Đối nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Vuông góc." },
       { type: "mc", prompt: "Câu 8: Tích vô hướng a·a =", choices: ["|a|²", "0", "1", "|a|"], correct: 0, hint: "a·a = |a||a|cos0 = |a|².", explain: "|a|²." },
+    ],
+  },
+
+  {
+    id: "g11-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Trigonometry",
+    summary: "Đề kiểm tra 45 phút chương Trigonometry.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: sin(π/6) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "sin 30° = 1/2.", explain: "1/2." },
+      { type: "mc", prompt: "Câu 2: cos(π/3) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "cos 60° = 1/2.", explain: "1/2." },
+      { type: "text", prompt: "Giải phương trình sin x = 1/2.", answer: "π/6 + k2π hoặc 5π/6 + k2π", accept: ["π/6 + k2π hoặc 5π/6 + k2π", "π/6 + k2pi hoặc 5π/6 + k2pi"], hint: "sin x = 1/2 → x = π/6 hoặc 5π/6 (+ k2π).", explain: "π/6 + k2π hoặc 5π/6 + k2π." },
+      { type: "mc", prompt: "Câu 4: Chu kỳ của y = sin(2x) là?", choices: ["π", "2π", "π/2", "4π"], correct: 0, hint: "Chu kỳ = 2π/2 = π.", explain: "π." },
+    ],
+  },
+  {
+    id: "g11-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
+    summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: P4 =", choices: ["24", "12", "6", "4"], correct: 0, hint: "4! = 24.", explain: "24." },
+      { type: "mc", prompt: "Câu 2: C(5,2) =", choices: ["10", "20", "5", "15"], correct: 0, hint: "C(5,2) = 10.", explain: "10." },
+      { type: "text", prompt: "Từ 5 HS chọn 2 làm lớp trưởng và phó (khác nhau). Có bao nhiêu cách?", answer: "20", accept: ["20"], hint: "Chọn 2 người và sắp xếp: A(5,2) = 20.", explain: "20." },
+      { type: "mc", prompt: "Câu 4: Gieo 2 con súc sắc. Xác suất tổng bằng 7 là?", choices: ["1/6", "1/9", "1/12", "1/18"], correct: 0, hint: "6 cặp: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1). 6/36 = 1/6.", explain: "1/6." },
     ],
   },
 ];
