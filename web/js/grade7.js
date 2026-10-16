@@ -198,7 +198,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       </details>
 `,
     pages: ["page1"],
-    exercises: [
+    
+      { type: "mc", prompt: "Bài tập nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+      { type: "mc", prompt: "Bài tập nâng cao 2", choices: ["A", "B", "C", "D"], correct: "D" },
+exercises: [
       { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
       { type: "mc", prompt: "Câu 2: (-2) + 5 =", choices: ["3", "-3", "7", "-7"], correct: 0, hint: "-2 + 5 = 3.", explain: "3." },
       { type: "text", prompt: "Tính 2/3 × 3/4.", answer: "1/2", accept: ["1/2"], hint: "2×3 / 3×4 = 6/12 = 1/2.", explain: "1/2." },
