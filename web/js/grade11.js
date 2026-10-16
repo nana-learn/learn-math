@@ -1147,6 +1147,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hai mặt phẳng song song thì", choices: ["Không có điểm chung", "Có một điểm chung", "Có hai điểm chung", "Có vô số điểm chung"], correct: 0, hint: "Định nghĩa mặt phẳng song song.", explain: "Không có điểm chung." },
       { type: "mc", prompt: "Nếu (P) ∥ (Q) và đường thẳng a ⊂ (P) thì", choices: ["a ∥ (Q)", "a cắt (Q)", "a ⊂ (Q)", "Không xác định"], correct: 0, hint: "Định lí: nếu một đường thẳng nằm trong một mặt phẳng song song với mặt phẳng khác thì đường thẳng đó song song với mặt phẳng kia.", explain: "a ∥ (Q)." },
