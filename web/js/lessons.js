@@ -8254,8 +8254,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
+          exercises: [
+        { type: "mc", prompt: "Khẳng định nào là mệnh đề?", choices: ["2 + 2 = 4", "Hãy giải bài này", "x + 1 = 3", "Trời hôm nay đẹp"], correct: 0, hint: "Mệnh đề là khẳng định đúng hoặc sai.", explain: "2 + 2 = 4." },
+        { type: "mc", prompt: "Mệnh đề "5 là số nguyên tố" là", choices: ["Đúng", "Sai", "Không xác định", "Không phải mệnh đề"], correct: 0, hint: "5 chỉ chia hết cho 1 và chính nó.", explain: "Đúng." },
+        { type: "text", prompt: "Viết phủ định của mệnh đề P: "4 là số chẵn".", answer: "4 không là số chẵn", accept: ["4 không là số chẵn", "4 không phải số chẵn", "4 là số lẻ"], hint: "Đổi đúng thành sai.", explain: "4 không là số chẵn." },
+      ], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
       { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
     ],
   },
