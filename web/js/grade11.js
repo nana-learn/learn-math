@@ -858,6 +858,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phép tịnh tiến theo vector (−2,3) biến điểm (5,1) thành", choices: ["(3,4)", "(7,−2)", "(3,−2)", "(7,4)"], correct: 0, hint: "5−2=3, 1+3=4.", explain: "(3,4)." },
       { type: "mc", prompt: "Phép đối xứng tâm O(0,0) biến điểm (a,b) thành", choices: ["(−a,−b)", "(a,−b)", "(−a,b)", "(b,a)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(−a,−b)." },
