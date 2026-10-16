@@ -460,6 +460,11 @@ String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có th�
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số y = x³ có cực trị nào?", choices: ["Cực đại tại x=0", "Cực tiểu tại x=0", "Không có cực trị", "Cực đại và cực tiểu"], correct: 2, hint: "y' = 3x² ≥ 0, không đổi dấu.", explain: "Không có cực trị." },
       { type: "mc", prompt: "Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' có 3 nghiệm và đổi dấu.", explain: "3 cực trị." },
