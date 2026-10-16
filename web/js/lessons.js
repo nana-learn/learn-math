@@ -9832,8 +9832,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "P(A) = 0.25 ⇒ P(A') =", choices: ["0.75", "0.25", "0.5", "1"], correct: 0, hint: "1 - 0.25 = 0.75.", explain: "0.75." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình đường tròn tâm I(a, b), bán kính R là", choices: ["(x − a)² + (y − b)² = R²", "(x + a)² + (y + b)² = R²", "x² + y² = R²", "(x − a)² + (y − b)² = R"], correct: 0, hint: "Định nghĩa đường tròn.", explain: "(x − a)² + (y − b)² = R²." },
+        { type: "mc", prompt: "Đường tròn (x − 3)² + (y + 2)² = 25 có bán kính là", choices: ["5", "25", "3", "2"], correct: 0, hint: "R² = 25 → R = 5.", explain: "5." },
+        { type: "text", prompt: "Đường tròn x² + y² + 4x − 6y = 0 có tâm là", answer: "(-2, 3)", accept: ["(-2, 3)"], hint: "x² + 4x + y² − 6y = 0 → (x+2)² + (y−3)² = 13.", explain: "(-2, 3)." },
+      ], correct: 0, hint: "1 - 0.25 = 0.75.", explain: "0.75." },
       { type: "mc", prompt: "P(A) = 0.4, P(B) = 0.3, P(A ∩ B) = 0.1. P(A ∪ B) =", choices: ["0.6", "0.7", "0.5", "0.8"], correct: 0, hint: "0.4 + 0.3 - 0.1 = 0.6.", explain: "0.6." },
       { type: "num", prompt: "P(A) = 0.6 ⇒ P(A') =", answer: "0.4", accept: ["0.4", ".4"], hint: "1 - 0.6 = 0.4.", explain: "0.4." },
     ],
