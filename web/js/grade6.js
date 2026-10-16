@@ -58,7 +58,7 @@ const G6_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Tập hợp",
-    summary: "Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ và ∉.", spoken: "Tập hợp là nhóm các đối tượng. Phần tử thuộc tập hợp kí hiệu ∈, không thuộc kí hiệu ∉.",
+    summary: "Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ và ∉.", spoken: "Tập hợp là nhóm các đối tượng. Phần tử thuộc tập hợp kí hiệu ∈, không thuộc kí hiệu ∉.", youtube: "dQw4w9WgXcQ",
     body: String.raw`
       <figure class="figure" data-animation="g6-b1-sets">
         <svg viewBox="0 0 280 160" role="img" aria-label="Minh họa tập hợp A và B">
