@@ -6,6 +6,43 @@
 const G9_CHAPTERS = [
   { id: 9, title: "Đường tròn" },
   { id: 10, title: "Góc với đường tròn" },
+
+  {
+    id: "c9-ch1-quiz",
+    num: 99,
+    chapter: 1,
+    title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
+    summary: "Luyện tập căn bậc hai và căn bậc ba.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
+      { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(a/b) = √a/√b.", explain: "√(25/9) = 5/3." },
+      { type: "mc", prompt: "Câu 3: √(16·9) =", choices: ["12", "24", "36", "48"], correct: 0, hint: "√(ab) = √a·√b = 4·3 = 12.", explain: "12." },
+      { type: "mc", prompt: "Câu 4: √(25-16) =", choices: ["3", "9", "√9", "√41"], correct: 0, hint: "25-16=9, √9=3.", explain: "3." },
+      { type: "mc", prompt: "Câu 5: 2√3 + √3 =", choices: ["3√3", "2√6", "3√6", "√9"], correct: 0, hint: "2√3 + 1√3 = 3√3.", explain: "3√3." },
+      { type: "mc", prompt: "Câu 6: ∛8 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "2³ = 8.", explain: "∛8 = 2." },
+      { type: "mc", prompt: "Câu 7: Rút gọn √(12) =", choices: ["2√3", "3√2", "4√3", "6"], correct: 0, hint: "12 = 4·3, √(4·3) = 2√3.", explain: "2√3." },
+      { type: "mc", prompt: "Câu 8: Điều kiện xác định của √(x-3) là?", choices: ["x ≥ 3", "x > 3", "x ≤ 3", "x < 3"], correct: 0, hint: "Biểu thức dưới dấu căn ≥ 0.", explain: "x ≥ 3." },
+    ],
+  },
+  {
+    id: "c9-ch2-quiz",
+    num: 100,
+    chapter: 2,
+    title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
+    summary: "Luyện tập hàm số bậc nhất y = ax + b.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
+      { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
+      { type: "mc", prompt: "Câu 3: Hai đường thẳng y = 2x + 1 và y = 2x - 3:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
+      { type: "mc", prompt: "Câu 4: Hàm số y = -x + 5 là:", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -1 < 0 nên nghịch biến.", explain: "Nghịch biến." },
+      { type: "mc", prompt: "Câu 5: Đường thẳng y = ax + 3 đi qua (1,5) thì a =", choices: ["2", "3", "4", "5"], correct: 0, hint: "5 = a·1 + 3 → a = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 6: Đồ thị hàm số y = 4 là:", choices: ["Đường thẳng ngang", "Đường thẳng dọc", "Đường xiên", "Parabol"], correct: 0, hint: "y = 4 là đường thẳng y = 0x + 4.", explain: "Đường thẳng ngang." },
+      { type: "mc", prompt: "Câu 7: Hệ số góc của đường thẳng qua (0,2) và (2,6) là?", choices: ["2", "3", "4", "1"], correct: 0, hint: "k = (6-2)/(2-0) = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 8: Hai đường thẳng vuông góc khi:", choices: ["k₁·k₂ = -1", "k₁·k₂ = 1", "k₁ = k₂", "k₁ + k₂ = 0"], correct: 0, hint: "Tích hệ số góc = -1.", explain: "k₁·k₂ = -1." },
+    ],
+  },
 ];
 
 const G9_LESSONS = [
@@ -407,6 +444,43 @@ const G9_LESSONS = [
       { type: "mc", prompt: "Đa giác đều có góc ở tâm bằng 30°. Nó có bao nhiêu cạnh?", choices: ["10", "12", "15", "18"], correct: 2, hint: "360 / 30 = 12.", explain: "n = 360° / 30° = 12." },
       { type: "num", prompt: "Ngũ giác đều có mỗi góc trong bằng bao nhiêu độ?", answer: 108, accept: ["108", "108°"], hint: "(5-2)·180 / 5 = 108.", explain: "Mỗi góc trong = 108°." },
       { type: "mc", prompt: "Tứ giác có bốn cạnh bằng nhau nhưng không vuông là:", choices: ["Đa giác đều", "Hình thoi", "Hình vuông", "Cả B và C"], correct: 1, hint: "Hình thoi có cạnh đều nhưng không đều góc.", explain: "Hình thoi không phải đa giác đều vì góc không bằng nhau." },
+    ],
+  },
+
+  {
+    id: "c9-ch1-quiz",
+    num: 99,
+    chapter: 1,
+    title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
+    summary: "Luyện tập căn bậc hai và căn bậc ba.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
+      { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(a/b) = √a/√b.", explain: "√(25/9) = 5/3." },
+      { type: "mc", prompt: "Câu 3: √(16·9) =", choices: ["12", "24", "36", "48"], correct: 0, hint: "√(ab) = √a·√b = 4·3 = 12.", explain: "12." },
+      { type: "mc", prompt: "Câu 4: √(25-16) =", choices: ["3", "9", "√9", "√41"], correct: 0, hint: "25-16=9, √9=3.", explain: "3." },
+      { type: "mc", prompt: "Câu 5: 2√3 + √3 =", choices: ["3√3", "2√6", "3√6", "√9"], correct: 0, hint: "2√3 + 1√3 = 3√3.", explain: "3√3." },
+      { type: "mc", prompt: "Câu 6: ∛8 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "2³ = 8.", explain: "∛8 = 2." },
+      { type: "mc", prompt: "Câu 7: Rút gọn √(12) =", choices: ["2√3", "3√2", "4√3", "6"], correct: 0, hint: "12 = 4·3, √(4·3) = 2√3.", explain: "2√3." },
+      { type: "mc", prompt: "Câu 8: Điều kiện xác định của √(x-3) là?", choices: ["x ≥ 3", "x > 3", "x ≤ 3", "x < 3"], correct: 0, hint: "Biểu thức dưới dấu căn ≥ 0.", explain: "x ≥ 3." },
+    ],
+  },
+  {
+    id: "c9-ch2-quiz",
+    num: 100,
+    chapter: 2,
+    title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
+    summary: "Luyện tập hàm số bậc nhất y = ax + b.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
+      { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
+      { type: "mc", prompt: "Câu 3: Hai đường thẳng y = 2x + 1 và y = 2x - 3:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
+      { type: "mc", prompt: "Câu 4: Hàm số y = -x + 5 là:", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -1 < 0 nên nghịch biến.", explain: "Nghịch biến." },
+      { type: "mc", prompt: "Câu 5: Đường thẳng y = ax + 3 đi qua (1,5) thì a =", choices: ["2", "3", "4", "5"], correct: 0, hint: "5 = a·1 + 3 → a = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 6: Đồ thị hàm số y = 4 là:", choices: ["Đường thẳng ngang", "Đường thẳng dọc", "Đường xiên", "Parabol"], correct: 0, hint: "y = 4 là đường thẳng y = 0x + 4.", explain: "Đường thẳng ngang." },
+      { type: "mc", prompt: "Câu 7: Hệ số góc của đường thẳng qua (0,2) và (2,6) là?", choices: ["2", "3", "4", "1"], correct: 0, hint: "k = (6-2)/(2-0) = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 8: Hai đường thẳng vuông góc khi:", choices: ["k₁·k₂ = -1", "k₁·k₂ = 1", "k₁ = k₂", "k₁ + k₂ = 0"], correct: 0, hint: "Tích hệ số góc = -1.", explain: "k₁·k₂ = -1." },
     ],
   },
 ];
