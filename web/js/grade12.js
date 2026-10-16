@@ -845,6 +845,11 @@ String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ = 27 là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "27 = 3³.", explain: "x = 3." },
       { type: "mc", prompt: "Nghiệm của log₅x = 2 là?", choices: ["5", "10", "25", "125"], correct: 2, hint: "x = 5².", explain: "x = 25." },
