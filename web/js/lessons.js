@@ -9159,8 +9159,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "AB = (1, 2), AC = (3, -1). AB·AC = ?", choices: ["1", "-1", "5", "-5"], correct: 0, hint: "1·3 + 2·(-1) = 1.", explain: "1." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình đường tròn tâm (a, b), bán kính R là", choices: ["(x − a)² + (y − b)² = R²", "(x + a)² + (y + b)² = R²", "x² + y² = R²", "(x − a)² + (y − b)² = R"], correct: 0, hint: "Định nghĩa đường tròn.", explain: "(x − a)² + (y − b)² = R²." },
+        { type: "mc", prompt: "Đường tròn (x − 2)² + (y + 3)² = 16 có tâm là", choices: ["(2, -3)", "(-2, 3)", "(2, 3)", "(-2, -3)"], correct: 0, hint: "x − 2 = 0 → x = 2, y + 3 = 0 → y = -3.", explain: "(2, -3)." },
+        { type: "text", prompt: "Đường tròn x² + y² − 4x + 6y = 0 có tâm là", answer: "(2, -3)", accept: ["(2, -3)"], hint: "x² − 4x + y² + 6y = 0 → (x−2)² + (y+3)² = 13.", explain: "(2, -3)." },
+      ], correct: 0, hint: "1·3 + 2·(-1) = 1.", explain: "1." },
       { type: "mc", prompt: "AB = (2, 3), AC = (-3, 2). AB·AC = ?", choices: ["0", "12", "-12", "6"], correct: 0, hint: "2·(-3) + 3·2 = 0 ⇒ vuông góc.", explain: "0." },
       { type: "num", prompt: "AB = (4, -1), AC = (2, 3). AB·AC =", answer: "5", accept: ["5"], hint: "4·2 + (-1)·3 = 8 - 3 = 5.", explain: "5." },
     ],
