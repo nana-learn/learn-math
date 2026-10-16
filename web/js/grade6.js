@@ -16,6 +16,11 @@ const G6_CHAPTERS = [
     id: "g6-ch1-quiz",
     num: 101,
     chapter: 1,
+    review: [
+      { type: "mc", prompt: "Câu hỏi ôn tập 1", choices: ["A", "B", "C", "D"], correct: "A" },
+      { type: "mc", prompt: "Câu hỏi ôn tập 2", choices: ["A", "B", "C", "D"], correct: "B" },
+    ],
+
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
     video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
 
