@@ -427,6 +427,142 @@ const G11_LESSONS = [
       { type: "text", prompt: "Hai đường thẳng chéo nhau có bao nhiêu đường vuông góc chung?", answer: "Một", accept: ["1", "một"], hint: "Đường vuông góc chung duy nhất nối hai đường chéo nhau.", explain: "Một." },
     ],
   },
+
+  {
+    id: "g11-b16",
+    num: 16,
+    chapter: 7,
+    title: "Hai mặt phẳng song song",
+    summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) không có điểm chung. Hỏi chúng có song song với nhau không?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu hai mặt phẳng phân biệt không có điểm chung thì chúng song song với nhau. Đây là định nghĩa mặt phẳng song song.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Điều kiện để (P) ∥ (Q): (P) chứa hai đường thẳng cắt nhau cùng song song với (Q). Nếu (P) ∥ (Q) và (P) cắt a thì (Q) cũng cắt a.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Trong hình hộp chữ nhật ABCD.A'B'C'D', mặt phẳng (ABCD) ∥ (A'B'C'D'). Hai mặt đáy song song với nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Hai mặt phẳng cùng song song với mặt phẳng thứ ba thì song song với nhau hoặc trùng nhau. Đừng quên trường hợp trùng.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Hai mặt phẳng song song thì", choices: ["Không có điểm chung", "Có một điểm chung", "Có hai điểm chung", "Có vô số điểm chung"], correct: 0, hint: "Định nghĩa mặt phẳng song song.", explain: "Không có điểm chung." },
+      { type: "mc", prompt: "Nếu (P) ∥ (Q) và đường thẳng a ⊂ (P) thì", choices: ["a ∥ (Q)", "a cắt (Q)", "a ⊂ (Q)", "Không xác định"], correct: 0, hint: "Định lí: nếu một đường thẳng nằm trong một mặt phẳng song song với mặt phẳng khác thì đường thẳng đó song song với mặt phẳng kia.", explain: "a ∥ (Q)." },
+      { type: "text", prompt: "Trong hình lăng trụ tam giác ABC.A'B'C', mặt phẳng nào song song với (ABC)?", answer: "(A'B'C')", accept: ["(A'B'C')", "A'B'C'"], hint: "Hai mặt đáy song song.", explain: "(A'B'C')." },
+    ],
+  },
+  {
+    id: "g11-b17",
+    num: 17,
+    chapter: 7,
+    title: "Phép chiếu song song",
+    summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Chiếu song song tam giác ABC lên mặt phẳng (P) theo phương l. Hình chiếu có tính chất gì?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu phương chiếu l không song song với (P) thì tam giác ABC được chiếu thành tam giác A'B'C' trên (P). Các điểm A, B, C chiếu thành A', B', C'. Nếu M nằm trên AB thì M' nằm trên A'B' và A'M'/M'B' = AM/MB.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phép chiếu song song bảo toàn: tính thẳng hàng, thứ tự, tỉ số đoạn thẳng trên đường thẳng song song phương chiếu. Hình chiếu của đoạn thẳng là đoạn thẳng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Cho đoạn thẳng AB, M là trung điểm AB. Chiếu song song theo phương l lên (P). M' là trung điểm A'B'. Phép chiếu giữ nguyên trung điểm.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Phép chiếu song song không bảo toàn độ dài, góc, vuông góc. Chỉ bảo toàn tính chất liên quan đến đường thẳng song song phương chiếu.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phép chiếu song song bảo toàn", choices: ["Tính thẳng hàng", "Độ dài đoạn thẳng", "Góc giữa hai đường thẳng", "Tất cả các đáp án trên"], correct: 0, hint: "Định lí về phép chiếu song song.", explain: "Tính thẳng hàng." },
+      { type: "mc", prompt: "Nếu M là trung điểm AB và M' là ảnh của M qua phép chiếu song song thì", choices: ["M' là trung điểm A'B'", "M' không phải trung điểm", "M' trùng A' hoặc B'", "Không xác định"], correct: 0, hint: "Phép chiếu giữ nguyên tỉ lệ.", explain: "M' là trung điểm A'B'." },
+      { type: "text", prompt: "Phép chiếu song song bảo toàn tỉ số nào?", answer: "Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu", accept: ["Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu", "tỉ số đoạn thẳng song song phương chiếu"], hint: "Định lí.", explain: "Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu." },
+    ],
+  },
+  {
+    id: "g11-b18",
+    num: 18,
+    chapter: 8,
+    title: " Vectơ trong không gian (tiếp)",
+    summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Trong không gian, cho ba vectơ OA, OB, OC không đồng phẳng. Hỏi mọi vectơ OM có thể biểu thị qua OA, OB, OC không?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu OA, OB, OC không đồng phẳng thì chúng lập thành một hệ cơ sở của không gian. Mỗi vectơ OM trong không gian đều biểu thị duy nhất dưới dạng OM = x·OA + y·OB + z·OC với x, y, z xác định.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Ba vectơ không đồng phẳng ⇔ không cùng nằm trong một mặt phẳng song song với nhau. Biểu thị một vectơ qua ba vectơ không đồng phẳng là duy nhất.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> OM = 2OA − 3OB + OC. Hệ số của OA là 2, OB là −3, OC là 1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Nếu ba vectơ đồng phẳng thì không biểu thị được mọi vectơ trong không gian. Cần ba vectơ không đồng phẳng.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Ba vectơ không đồng phẳng thì", choices: ["Mỗi vectơ trong không gian biểu thị được duy nhất qua chúng", "Chỉ biểu thị được vectơ trong mặt phẳng", "Không biểu thị được vectơ nào", "Tất cả đều đồng phẳng"], correct: 0, hint: "Định nghĩa hệ cơ sở.", explain: "Mỗi vectơ biểu thị được duy nhất." },
+      { type: "mc", prompt: "OM = x·OA + y·OB + z·OC. Nếu OA, OB, OC không đồng phẳng thì", choices: ["x, y, z xác định duy nhất", "x, y, z không xác định", "Có vô số bộ (x, y, z)", "x = y = z"], correct: 0, hint: "Biểu thị duy nhất.", explain: "x, y, z xác định duy nhất." },
+      { type: "text", prompt: "Cho OA, OB, OC không đồng phẳng và OM = 2OA + 3OB − OC. Hệ số của OB là", answer: "3", accept: ["3"], hint: "Hệ số của OB là 3.", explain: "3." },
+    ],
+  },
+  {
+    id: "g11-b19",
+    num: 19,
+    chapter: 8,
+    title: "Hai mặt phẳng vuông góc",
+    summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) vuông góc với nhau. Đường thẳng a nằm trong (P) có vuông góc với (Q) không?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu a vuông góc với giao tuyến của (P) và (Q) thì a vuông góc với (Q). Đây là định lí: nếu một đường thẳng trong một mặt phẳng vuông góc với giao tuyến thì đường thẳng đó vuông góc với mặt phẳng kia.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> (P) ⊥ (Q) khi và chỉ khi (P) chứa một đường thẳng vuông góc với (Q). Nếu (P) ⊥ (Q) và a ⊂ (P) thì a có thể vuông góc hoặc không vuông góc với (Q).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Trong hình hộp chữ nhật, (ABCD) ⊥ (ABB'A'). AB là giao tuyến. AD ⊥ AB nên AD ⊥ (ABB'A').</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Hai mặt phẳng cùng vuông góc với mặt phẳng thứ ba thì không nhất thiết song song. Chúng có thể cắt nhau theo đường thẳng vuông góc với mặt phẳng đó.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Hai mặt phẳng vuông góc nếu", choices: ["Một mặt phẳng chứa đường thẳng vuông góc với mặt phẳng kia", "Hai mặt phẳng cắt nhau", "Hai mặt phẳng không có điểm chung", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa mặt phẳng vuông góc.", explain: "Một mặt phẳng chứa đường thẳng vuông góc với mặt phẳng kia." },
+      { type: "mc", prompt: "Nếu (P) ⊥ (Q) và a ⊂ (P), a ⊥ giao tuyến của (P) và (Q) thì", choices: ["a ⊥ (Q)", "a ∥ (Q)", "a cắt (Q) nhưng không vuông góc", "Không xác định"], correct: 0, hint: "Định lí về đường thẳng vuông góc với mặt phẳng.", explain: "a ⊥ (Q)." },
+      { type: "text", prompt: "Hình chiếu vuông góc của một tam giác lên mặt phẳng có diện tích bằng 1/2 diện tích tam giác. Góc giữa mặt phẳng tam giác và mặt phẳng chiếu là", answer: "60°", accept: ["60°"], hint: "S' = S·cos(α) → 1/2 = cos(α) → α = 60°.", explain: "60°." },
+    ],
+  },
+  {
+    id: "g11-b20",
+    num: 20,
+    chapter: 8,
+    title: "Khoảng cách",
+    summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tính khoảng cách từ điểm M đến mặt phẳng (P). Làm thế nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Kẻ MH vuông góc với (P). Khoảng cách từ M đến (P) là độ dài MH. Nếu biết phương trình mặt phẳng và tọa độ điểm, dùng công thức: d(M, (P)) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²).</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Khoảng cách từ điểm M đến đường thẳng a: kẻ MH vuông góc với a, khoảng cách là MH. Khoảng cách giữa hai đường thẳng chéo nhau: độ dài đoạn vuông góc chung.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Khoảng cách từ M(1, 2, 3) đến mặt phẳng x + 2y − 2z + 6 = 0 là |1 + 4 − 6 + 6| / √(1 + 4 + 4) = 5/3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Khoảng cách từ điểm đến mặt phẳng luôn dương. Đừng quên giá trị tuyệt đối trong công thức.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Khoảng cách từ điểm M đến mặt phẳng (P) là", choices: ["Độ dài đoạn vuông góc từ M đến (P)", "Độ dài đoạnxiên từ M đến (P)", "Khoảng cách từ M đến một điểm bất kỳ trên (P)", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa khoảng cách từ điểm đến mặt phẳng.", explain: "Độ dài đoạn vuông góc từ M đến (P)." },
+      { type: "mc", prompt: "Hai đường thẳng chéo nhau có", choices: ["Một đoạn vuông góc chung duy nhất", "Vô số đoạn vuông góc chung", "Không có đoạn vuông góc chung", "Hai đoạn vuông góc chung"], correct: 0, hint: "Tính chất của hai đường thẳng chéo nhau.", explain: "Một đoạn vuông góc chung duy nhất." },
+      { type: "text", prompt: "Khoảng cách giữa hai mặt phẳng song song (P): x + y − z + 1 = 0 và (Q): x + y − z − 3 = 0 là", answer: "2/√3", accept: ["2/√3", "2/sqrt(3)"], hint: "Chọn điểm M trên (P), tính d(M, (Q)).", explain: "2/√3." },
+    ],
+  },
 ];
 
 ];
