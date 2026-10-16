@@ -2747,6 +2747,43 @@ const G7_LESSONS = [
       { type: "mc", prompt: "Chu vi đáy 10 cm, cao 4 cm. Sxq lăng trụ đứng bằng", choices: ["40 cm²","14 cm²","80 cm²","20 cm²"], correct: 0, hint: "Chu vi × cao.", explain: "40 cm²." },
     ],
   },
+
+  {
+    id: "g7-ch1-quiz",
+    num: 99,
+    chapter: 1,
+    title: "Chương 1: Số hữu tỉ. Số thực - Trắc nghiệm",
+    summary: "Luyện tập số hữu tỉ, số thực, giá trị tuyệt đối.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số hữu tỉ và số thực.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Số nào là số hữu tỉ?", choices: ["√2", "π", "1/3", "e"], correct: 2, hint: "Số hữu tỉ là số viết được dưới dạng a/b.", explain: "1/3 là số hữu tỉ." },
+      { type: "mc", prompt: "Câu 2: |-5| =", choices: ["5", "-5", "0", "1/5"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "|-5| = 5." },
+      { type: "mc", prompt: "Câu 3: Kết quả của (-3)² là?", choices: ["-9", "9", "6", "-6"], correct: 1, hint: "Số âm bình phương thành dương.", explain: "(-3)² = 9." },
+      { type: "mc", prompt: "Câu 4: Số nào là số vô tỉ?", choices: ["0.333...", "√4", "√3", "2/5"], correct: 2, hint: "√3 không biểu diễn được dưới dạng a/b.", explain: "√3 là số vô tỉ." },
+      { type: "mc", prompt: "Câu 5: Làm tròn 3.14159 đến hàng phần trăm là?", choices: ["3.14", "3.15", "3.141", "3.142"], correct: 0, hint: "Hàng phần trăm là chữ số thứ 2 sau dấu phẩy.", explain: "3.14159 ≈ 3.14." },
+      { type: "mc", prompt: "Câu 6: Tỷ lệ thức a/b = c/d thì:", choices: ["ad = bc", "ac = bd", "a+d = b+c", "a-c = b-d"], correct: 0, hint: "Tích ngoại = tích nội.", explain: "ad = bc." },
+      { type: "mc", prompt: "Câu 7: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
+      { type: "mc", prompt: "Câu 8: Số thực bao gồm:", choices: ["Số hữu tỉ và số vô tỉ", "Số nguyên và số thập phân", "Số dương và số âm", "Số chẵn và số lẻ"], correct: 0, hint: "R = Q ∪ I.", explain: "Số hữu tỉ và số vô tỉ." },
+    ],
+  },
+  {
+    id: "g7-ch2-quiz",
+    num: 100,
+    chapter: 2,
+    title: "Chương 2: Hàm số và đồ thị - Trắc nghiệm",
+    summary: "Luyện tập hàm số, tỉ lệ thuận, tỉ lệ nghịch.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số và đồ thị.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = 2x là:", choices: ["Tỉ lệ thuận", "Tỉ lệ nghịch", "Bậc hai", "Bậc nhất"], correct: 0, hint: "y = kx với k=2 là tỉ lệ thuận.", explain: "Tỉ lệ thuận." },
+      { type: "mc", prompt: "Câu 2: Nếu x và y tỉ lệ nghịch với nhau thì:", choices: ["xy = k (k≠0)", "x/y = k", "x+y = k", "x-y = k"], correct: 0, hint: "Tỉ lệ nghịch: tích không đổi.", explain: "xy = k (k≠0)." },
+      { type: "mc", prompt: "Câu 3: Đồ thị hàm số y = ax (a≠0) là:", choices: ["Đường thẳng qua gốc", "Parabol", "Hyperbol", "Đường tròn"], correct: 0, hint: "y = ax là đường thẳng đi qua O(0,0).", explain: "Đường thẳng qua gốc." },
+      { type: "mc", prompt: "Câu 4: Điểm A(2, 4) thuộc đồ thị hàm số nào?", choices: ["y = x", "y = 2x", "y = x²", "y = 1/x"], correct: 1, hint: "Thử x=2: y=2·2=4.", explain: "y = 2x." },
+      { type: "mc", prompt: "Câu 5: Tọa độ điểm M cách O 3 đơn vị trên Ox, 4 đơn vị trên Oy là?", choices: ["(3,4)", "(4,3)", "(-3,4)", "(3,-4)"], correct: 0, hint: "Ox là hoành độ, Oy là tung độ.", explain: "(3,4)." },
+      { type: "mc", prompt: "Câu 6: Hai đại lượng tỉ lệ thuận thì:", choices: ["Tăng thì tăng", "Tăng thì giảm", "Không đổi", "Không xác định"], correct: 0, hint: "Tỉ lệ thuận: đại lượng này tăng thì đại lượng kia tăng.", explain: "Tăng thì tăng." },
+      { type: "mc", prompt: "Câu 7: Hàm số y = -2x + 3 đi qua điểm nào?", choices: ["(0,3)", "(3,0)", "(1,1)", "(2,1)"], correct: 0, hint: "x=0 → y=3.", explain: "(0,3)." },
+      { type: "mc", prompt: "Câu 8: Nếu x và y tỉ lệ nghịch, x=2 thì y=6. Khi x=3 thì y=?", choices: ["2", "3", "4", "6"], correct: 2, hint: "xy = k → 2·6 = 12, khi x=3 thì y=12/3=4.", explain: "4." },
+    ],
+  },
 ];
 
 (function attachGrade7() {
