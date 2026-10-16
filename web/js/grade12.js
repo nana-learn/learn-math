@@ -443,6 +443,8 @@ const G12_LESSONS = [
     num: 4,
     chapter: 1,
     title: "Đường tiệm cận của đồ thị hàm số",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
     body: String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
       <div class="example">
@@ -469,6 +471,8 @@ const G12_LESSONS = [
     num: 5,
     chapter: 1,
     title: "Khảo sát sự biến thiên và vẽ đồ thị hàm số",
+    youtube: "placeholder-YT-ID",
+
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
     body: String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
       <div class="figure">
@@ -509,6 +513,8 @@ const G12_LESSONS = [
     num: 6,
     chapter: 1,
     title: "Tương giao của các đồ thị",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
     body: String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
       <div class="example">
@@ -535,6 +541,8 @@ const G12_LESSONS = [
     num: 7,
     chapter: 2,
     title: "Lũy thừa",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, tính chất của lũy thừa.",
     body: String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân số P(t) = P₀(1 + r)ᵗ.</p>
       <div class="example">
@@ -561,6 +569,8 @@ const G12_LESSONS = [
     num: 8,
     chapter: 2,
     title: "Logarit",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, tính chất của logarit.",
     body: String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p>
       <div class="example">
@@ -587,6 +597,8 @@ const G12_LESSONS = [
     num: 9,
     chapter: 2,
     title: "Hàm số mũ, hàm số logarit",
+    youtube: "placeholder-YT-ID",
+
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
     body: String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
       <div class="figure">
@@ -626,6 +638,8 @@ const G12_LESSONS = [
     num: 10,
     chapter: 2,
     title: "Phương trình mũ, phương trình logarit",
+    youtube: "placeholder-YT-ID",
+
     summary: "Các phương pháp giải phương trình mũ và logarit.",
     body: String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp đôi: 2 = (1 + r)ᵗ.</p>
       <div class="example">
@@ -652,6 +666,8 @@ const G12_LESSONS = [
     num: 11,
     chapter: 2,
     title: "Bất phương trình mũ, bất phương trình logarit",
+    youtube: "placeholder-YT-ID",
+
     summary: "Giải bất phương trình mũ và logarit.",
     body: String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất phóng xạ giảm dưới ngưỡng.</p>
       <div class="example">
@@ -678,6 +694,8 @@ const G12_LESSONS = [
     num: 12,
     chapter: 3,
     title: "Nguyên hàm",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
     body: String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm của quãng đường s(t).</p>
       <div class="example">
@@ -704,6 +722,8 @@ const G12_LESSONS = [
     num: 13,
     chapter: 3,
     title: "Tích phân",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
     body: String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
       <div class="figure">
@@ -745,6 +765,8 @@ const G12_LESSONS = [
     num: 14,
     chapter: 3,
     title: "Ứng dụng tích phân tính diện tích, thể tích",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
     body: String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
       <div class="figure">
@@ -784,6 +806,8 @@ const G12_LESSONS = [
     num: 15,
     chapter: 4,
     title: "Số phức và biểu diễn hình học",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, số phức liên hợp, môđun.",
     body: String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
       <div class="figure">
@@ -826,6 +850,8 @@ const G12_LESSONS = [
     num: 16,
     chapter: 4,
     title: "Phép cộng và phép nhân các số phức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Cộng, trừ, nhân số phức.",
     body: String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tương tự đa thức, với i² = -1.</p>
       <div class="example">
@@ -852,6 +878,8 @@ const G12_LESSONS = [
     num: 17,
     chapter: 4,
     title: "Phép chia các số phức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Chia số phức, số phức nghịch đảo.",
     body: String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|². Nhân tử và mẫu với liên hợp mẫu.</p>
       <div class="example">
@@ -878,6 +906,8 @@ const G12_LESSONS = [
     num: 18,
     chapter: 4,
     title: "Phương trình bậc hai với hệ số thực",
+    youtube: "placeholder-YT-ID",
+
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
     body: String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức khi delta<0.</p>
       <div class="example">
@@ -904,6 +934,8 @@ const G12_LESSONS = [
     num: 19,
     chapter: 5,
     title: "Tọa độ trong không gian",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
     body: String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
       <div class="figure">
@@ -948,6 +980,8 @@ const G12_LESSONS = [
     num: 20,
     chapter: 5,
     title: "Phương trình mặt phẳng",
+    youtube: "placeholder-YT-ID",
+
     summary: "Phương trình tổng quát của mặt phẳng.",
     body: String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
       <div class="figure">
@@ -984,6 +1018,8 @@ const G12_LESSONS = [
     num: 21,
     chapter: 5,
     title: "Phương trình đường thẳng",
+    youtube: "placeholder-YT-ID",
+
     summary: "Phương trình tham số và phương trình chính tắc.",
     body: String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
       <div class="figure">
@@ -1019,6 +1055,8 @@ const G12_LESSONS = [
     num: 22,
     chapter: 5,
     title: "Tích vô hướng và ứng dụng",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
     body: String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔ u ⊥ v.</p>
       <div class="example">
@@ -1045,6 +1083,8 @@ const G12_LESSONS = [
     num: 23,
     chapter: 6,
     title: "Khối đa diện",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
     body: String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
       <div class="figure">

@@ -332,6 +332,8 @@ const G10_LESSONS = [
     num: 3,
     chapter: 1,
     title: "Tập con và tập bằng nhau",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
     body: String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả mối quan hệ giữa các tập hợp.</p>
       <div class="definition">
@@ -375,6 +377,8 @@ const G10_LESSONS = [
     num: 4,
     chapter: 1,
     title: "Các phép toán tập hợp",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hợp, giao, hiệu của hai tập hợp.",
     body: String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toán giúp phân tích mối quan hệ.</p>
       <div class="definition">
@@ -420,6 +424,8 @@ const G10_LESSONS = [
     num: 5,
     chapter: 2,
     title: "Bất đẳng thức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
     body: String.raw`<p><strong>Vì sao cần bất đẳng thức?</strong> Bất đẳng thức giúp so sánh các đại lượng.</p>
       <div class="definition">
@@ -467,6 +473,8 @@ const G10_LESSONS = [
     num: 6,
     chapter: 2,
     title: "Bất phương trình một ẩn",
+    youtube: "placeholder-YT-ID",
+
     summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
     body: String.raw`<p><strong>Vì sao cần bất phương trình?</strong> Bất phương trình mô tả điều kiện.</p>
       <div class="definition">
@@ -512,6 +520,8 @@ const G10_LESSONS = [
     num: 7,
     chapter: 2,
     title: "Dấu của nhị thức bậc nhất",
+    youtube: "placeholder-YT-ID",
+
     summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
     body: String.raw`<p><strong>Vì sao cần dấu nhị thức?</strong> Dấu nhị thức giúp giải bất phương trình.</p>
       <div class="definition">
@@ -559,6 +569,8 @@ const G10_LESSONS = [
     num: 8,
     chapter: 3,
     title: "Hàm số bậc hai",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
     body: String.raw`<p><strong>Vì sao cần hàm số bậc hai?</strong> Hàm số bậc hai mô tả quỹ đạo parabol.</p>
       <div class="definition">
@@ -608,6 +620,8 @@ const G10_LESSONS = [
     num: 9,
     chapter: 3,
     title: "Dấu của tam thức bậc hai",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
     body: String.raw`<p><strong>Vì sao cần dấu tam thức?</strong> Dấu tam thức giúp giải bất phương trình bậc hai.</p>
       <div class="definition">
@@ -705,6 +719,8 @@ const G10_LESSONS = [
     num: 11,
     chapter: 4,
     title: "Tổng và hiệu của hai vector",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
     body: String.raw`<p><strong>Vì sao cần tổng vector?</strong> Nhiều đại lượng vector cần cộng lại.</p>
       <div class="definition">
@@ -760,6 +776,8 @@ const G10_LESSONS = [
     num: 12,
     chapter: 4,
     title: "Hiệu của hai vector",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hiệu AB - AC = CB (quy tắc trừ).",
     body: String.raw`<p><strong>Vì sao cần hiệu vector?</strong> Hiệu vector giúp tính khoảng cách.</p>
       <div class="definition">
@@ -815,6 +833,8 @@ const G10_LESSONS = [
     num: 13,
     chapter: 4,
     title: "Tích của vector với một số",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
     body: String.raw`<p><strong>Vì sao cần tích vector với số?</strong> scaling vector thay đổi độ dài.</p>
       <div class="definition">
@@ -867,6 +887,8 @@ const G10_LESSONS = [
     num: 14,
     chapter: 4,
     title: "Hệ trục tọa độ",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
     body: String.raw`<p><strong>Vì sao cần hệ tọa độ?</strong> Hệ tọa độ liên kết hình học với đại số.</p>
       <div class="definition">
@@ -915,6 +937,8 @@ const G10_LESSONS = [
     num: 15,
     chapter: 4,
     title: "Tọa độ của vector",
+    youtube: "placeholder-YT-ID",
+
     summary: "Vector AB = (xB - xA, yB - yA).",
     body: String.raw`<p><strong>Vì sao cần tọa độ vector?</strong> Vector biểu diễn bằng cặp số.</p>
       <div class="definition">
@@ -967,6 +991,8 @@ const G10_LESSONS = [
     num: 16,
     chapter: 4,
     title: "Biểu thức tọa độ của phép toán vector",
+    youtube: "placeholder-YT-ID",
+
     summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
     body: String.raw`<p><strong>Vì sao cần biểu thức tọa độ?</strong> Tính toán vector qua số học.</p>
       <div class="definition">
@@ -1023,6 +1049,8 @@ const G10_LESSONS = [
     num: 17,
     chapter: 5,
     title: "Giá trị lượng giác của một góc từ 0° đến 180°",
+    youtube: "placeholder-YT-ID",
+
     summary: "Sin, cos, tan của góc trong tam giác.",
     body: String.raw`<p><strong>Vì sao cần giá trị lượng giác?</strong> Mở rộng khái niệm lượng giác cho góc tù.</p>
       <div class="definition">
@@ -1075,6 +1103,8 @@ const G10_LESSONS = [
     num: 18,
     chapter: 5,
     title: "Tích vô hướng của hai vector",
+    youtube: "placeholder-YT-ID",
+
     summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
     body: String.raw`<p><strong>Vì sao cần tích vô hướng?</strong> Tích vô hướng liên hệ độ dài và góc.</p>
       <div class="definition">
@@ -1131,6 +1161,8 @@ const G10_LESSONS = [
     num: 19,
     chapter: 5,
     title: "Ứng dụng tích vô hướng vào tính độ dài và góc",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
     body: String.raw`<p><strong>Vì sao cần ứng dụng tích vô hướng?</strong> Từ tích vô hướng suy ra độ dài và góc.</p>
       <div class="definition">
@@ -1185,6 +1217,8 @@ const G10_LESSONS = [
     num: 20,
     chapter: 5,
     title: "Các hệ thức lượng trong tam giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định lí cosin và định lí sin trong tam giác.",
     body: String.raw`<p><strong>Vì sao cần hệ thức lượng?</strong> Tính cạnh, góc khi biết một số yếu tố.</p>
       <div class="definition">
@@ -1237,6 +1271,8 @@ const G10_LESSONS = [
     num: 21,
     chapter: 7,
     title: "Đường tròn trong mặt phẳng tọa độ",
+    youtube: "placeholder-YT-ID",
+
     summary: "Đường tròn được xác định bởi tâm và bán kính.",
     body: String.raw`<p><strong>Vì sao cần đường tròn?</strong> Đường tròn xuất hiện nhiều trong hình học và thực tế.</p>
       <div class="definition">
@@ -1285,6 +1321,8 @@ const G10_LESSONS = [
     num: 22,
     chapter: 7,
     title: "Ba đường conic",
+    youtube: "placeholder-YT-ID",
+
     summary: "Elip, parabol, hypebol là ba đường conic.",
     body: String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
       <div class="definition">
@@ -1340,6 +1378,8 @@ const G10_LESSONS = [
     num: 23,
     chapter: 8,
     title: "Quy tắc cộng và quy tắc nhân",
+    youtube: "placeholder-YT-ID",
+
     summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
     body: String.raw`<p><strong>Vì sao cần quy tắc cộng và nhân?</strong> Giải bài toán đếm số cách thực hiện hành động.</p>
       <div class="definition">
@@ -1388,6 +1428,8 @@ const G10_LESSONS = [
     num: 24,
     chapter: 8,
     title: "Hoán vị, chỉnh hợp",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
     body: String.raw`<p><strong>Vì sao cần hoán vị và chỉnh hợp?</strong> Đếm số cách sắp xếp và chọn phần tử.</p>
       <div class="definition">
@@ -1442,6 +1484,8 @@ const G10_LESSONS = [
     num: 25,
     chapter: 8,
     title: "Tổ hợp",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
     body: String.raw`<p><strong>Vì sao cần tổ hợp?</strong> Khi chọn phần tử mà thứ tự không quan trọng.</p>
       <div class="definition">
@@ -1494,6 +1538,8 @@ const G10_LESSONS = [
     num: 26,
     chapter: 9,
     title: "Số gần đúng và sai số",
+    youtube: "placeholder-YT-ID",
+
     summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
     body: String.raw`<p><strong>Vì sao cần số gần đúng?</strong> Đo đạc thực tế luôn có sai số.</p>
       <div class="definition">
@@ -1547,6 +1593,8 @@ const G10_LESSONS = [
     num: 27,
     chapter: 9,
     title: "Các số đặc trưng đo xu thế trung tâm",
+    youtube: "placeholder-YT-ID",
+
     summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
     body: String.raw`<p><strong>Vì sao cần số đặc trưng?</strong> Mô tả mẫu số liệu bằng một giá trị đại diện.</p>
       <div class="definition">
@@ -1601,6 +1649,8 @@ const G10_LESSONS = [
     num: 28,
     chapter: 9,
     title: "Các số đặc trưng đo độ phân tán",
+    youtube: "placeholder-YT-ID",
+
     summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
     body: String.raw`<p><strong>Vì sao cần số đặc trưng đo độ phân tán?</strong> Đánh giá mức độ phân tán quanh giá trị trung bình.</p>
       <div class="definition">
@@ -1653,6 +1703,8 @@ const G10_LESSONS = [
     num: 29,
     chapter: 10,
     title: "Xác suất của biến cố trong một số trò chơi đơn giản",
+    youtube: "placeholder-YT-ID",
+
     summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
     body: String.raw`<p><strong>Vì sao cần xác suất?</strong> Đánh giá khả năng xảy ra của biến cố.</p>
       <div class="definition">
@@ -1706,6 +1758,8 @@ const G10_LESSONS = [
     num: 30,
     chapter: 10,
     title: "Xác suất của biến cố",
+    youtube: "placeholder-YT-ID",
+
     summary: "Xác suất của hợp, giao, và biến cố đối.",
     body: String.raw`<p><strong>Vì sao cần xác suất của biến cố?</strong> Tính xác suất khi có nhiều biến cố kết hợp.</p>
       <div class="definition">
