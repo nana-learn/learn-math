@@ -1195,6 +1195,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phép chiếu song song bảo toàn", choices: ["Tính thẳng hàng", "Độ dài đoạn thẳng", "Góc giữa hai đường thẳng", "Tất cả các đáp án trên"], correct: 0, hint: "Định lí về phép chiếu song song.", explain: "Tính thẳng hàng." },
       { type: "mc", prompt: "Nếu M là trung điểm AB và M' là ảnh của M qua phép chiếu song song thì", choices: ["M' là trung điểm A'B'", "M' không phải trung điểm", "M' trùng A' hoặc B'", "Không xác định"], correct: 0, hint: "Phép chiếu giữ nguyên tỉ lệ.", explain: "M' là trung điểm A'B'." },
