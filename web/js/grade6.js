@@ -17,6 +17,8 @@ const G6_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
+    <div class="trap"><p><strong>Cảnh báo:</strong> Ghi nhớ cảnh báo quan trọng.</p></div>
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
