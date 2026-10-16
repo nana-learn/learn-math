@@ -8983,8 +8983,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Vector AB với A(1,2), B(4,5) là?", choices: ["(3, 3)", "(1, 1)", "(-3, -3)", "(5, 7)"], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
+          exercises: [
+        { type: "mc", prompt: "Giải phương trình |x| = 5.", choices: ["x = ±5", "x = 5", "x = -5", "x = 25"], correct: 0, hint: "x = 5 hoặc x = -5.", explain: "x = ±5." },
+        { type: "mc", prompt: "Phương trình |x − 3| = 0 có nghiệm là", choices: ["x = 3", "x = 0", "x = 6", "vô nghiệm"], correct: 0, hint: "x − 3 = 0 → x = 3.", explain: "x = 3." },
+        { type: "text", prompt: "Giải phương trình |2x − 1| = 3.", answer: "x = 2 hoặc x = -1", accept: ["x = 2 hoặc x = -1", "x = 2 hoặc x = -1"], hint: "2x − 1 = 3 hoặc 2x − 1 = -3.", explain: "x = 2 hoặc x = -1." },
+      ], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0), B(3,4) là?", choices: ["5", "3", "4", "7"], correct: 0, hint: "√(9+16) = 5.", explain: "5." },
       { type: "mc", prompt: "Vectơ AB với A(-1, 2), B(2, -1) là", choices: ["(3, -3)", "(-3, 3)", "(1, 1)", "(-1, 2)"], correct: 0, hint: "Lấy tọa độ B trừ tọa độ A.", explain: "(3, -3)." },
     ],
