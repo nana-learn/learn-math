@@ -6551,7 +6551,11 @@ const G8_LESSONS = [
           <text x="265" y="55" font-size="9" fill="#58C4DD">B(-b/a, 0)</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phương trình bậc nhất một ẩn có dạng ax + b = 0 (a ≠ 0). Nghiệm là x = -b/a. Hai quy tắc: chuyển vế đổi dấu, chia hai vế cho cùng một số khác 0.</p>
+      </div>
+`,
     exercises: [
       { type: "text", prompt: "Phương trình 5x - 15 = 0 có nghiệm là:", answer: "3", accept: ["3"], hint: "Chuyển -15 sang vế phải và đổi dấu.", explain: "5x = 15 → x = 3." },
       { type: "text", prompt: "Giải phương trình: 2x + 8 = 0", answer: "-4", accept: ["-4"], hint: "Chuyển 8 sang vế phải và đổi dấu, rồi chia cho 2.", explain: "2x = -8 → x = -4." },
@@ -6660,7 +6664,10 @@ const G8_LESSONS = [
           <text x="150" y="80" font-size="11" fill="#FC6255">Phương trình: 40/x - 40/(x+20) = 1</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Giải toán bằng cách lập phương trình: đọc đề, đặt ẩn và điều kiện, lập phương trình, giải, đối chiếu điều kiện và kết luận.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Một số có hai chữ số, chữ số hàng đơn vị gấp đôi chữ số hàng chục. Nếu đổi chỗ hai chữ số thì được số mới lớn hơn số cũ 36 đơn vị. Tìm số đó.", answer: "48", accept: ["48"], hint: "Gọi chữ số hàng chục là x, hàng đơn vị là 2x. Số cũ 10x+2x=12x, số mới 10·2x+x=21x, hiệu 9x=36.", explain: "x=4, số cũ 48, số mới 84, hiệu 36." },
       { type: "text", prompt: "Mẹ hơn con 24 tuổi. Sau 2 năm nữa, tổng số tuổi là 56 tuổi. Tính tuổi hiện nay của mỗi người.", answer: "Con 15, mẹ 39", accept: ["Con 15, mẹ 39", "15 và 39"], hint: "Gọi tuổi con hiện nay là x, mẹ là x+24. Sau 2 năm: (x+2)+(x+24+2)=56.", explain: "2x+28=56 → x=14, con 14, mẹ 38. Kiểm tra: sau 2 năm con 16, mẹ 40, tổng 56." },
@@ -6775,7 +6782,10 @@ const G8_LESSONS = [
           <text x="170" y="90" font-size="10" fill="#9A72AC">O</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hàm số y = ax + b là hàm bậc nhất. Đồ thị là đường thẳng. a là hệ số góc, b là tung độ gốc.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Cho hàm số y = 2x - 5. Tính y khi x = 3.", answer: "1", accept: ["1"], hint: "Thay x = 3 vào biểu thức: y = 2·3 - 5.", explain: "y = 6 - 5 = 1." },
       { type: "text", prompt: "Cho hàm số y = x² + 1. Tính y khi x = -2.", answer: "5", accept: ["5"], hint: "Thay x = -2: y = (-2)² + 1.", explain: "y = 4 + 1 = 5." },
@@ -6889,7 +6899,10 @@ const G8_LESSONS = [
           <text x="150" y="140" font-size="9" fill="#FC6255">a &gt; 0 (đồng biến)</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Đồ thị y = ax đi qua gốc tọa độ. a > 0: góc nhọn với trục Ox. a < 0: góc tù với trục Ox.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Hàm số y = 5x - 3 có hệ số góc là:", answer: "5", accept: ["5"], hint: "Hệ số góc là hệ số của x.", explain: "a = 5." },
       { type: "text", prompt: "Tung độ gốc của hàm số y = 2x + 7 là:", answer: "7", accept: ["7"], hint: "Tung độ gốc là hệ số tự do b.", explain: "b = 7." },
@@ -7006,7 +7019,10 @@ const G8_LESSONS = [
         </svg>
       </figure>
 
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hệ số góc a = tan(α) với α là góc giữa đường thẳng và trục Ox. a > 0: hàm đồng biến, a < 0: hàm nghịch biến.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Hệ số góc của đường thẳng y = 3x + 2 là:", answer: "3", accept: ["3"], hint: "Hệ số góc là hệ số của x.", explain: "a = 3." },
       { type: "text", prompt: "Hệ số góc của đường thẳng y = -4x + 1 là:", answer: "-4", accept: ["-4"], hint: "Hệ số góc là hệ số của x.", explain: "a = -4." },
@@ -7122,7 +7138,10 @@ const G8_LESSONS = [
           <text x="180" y="75" font-size="10" fill="#83C167" text-anchor="middle">Kết quả thuận lợi: {Sáp}</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Xác suất của biến cố = số kết quả thuận lợi / tổng số kết quả equally likely. P(A) ∈ [0; 1].</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Tung một đồng xu. Không gian mẫu có bao nhiêu kết quả?", answer: "2", accept: ["2"], hint: "Đồng xu có hai mặt: sấp hoặc ngửa.", explain: "Ω = {S, N} → 2 kết quả." },
       { type: "text", prompt: "Tung một con xúc xắc 6 mặt. Kết quả có thể là:", answer: "1,2,3,4,5,6", accept: ["1,2,3,4,5,6", "1 2 3 4 5 6", "1;2;3;4;5;6"], hint: "Xúc xắc có 6 mặt, mỗi mặt có số chấm từ 1 đến 6.", explain: "Ω = {1, 2, 3, 4, 5, 6}." },
@@ -7227,7 +7246,10 @@ const G8_LESSONS = [
           <text x="180" y="80" font-size="10" fill="#FC6255" text-anchor="middle">P(∅) = 0, P(Ω) = 1</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Nếu A, B xung khắc thì P(A ∪ B) = P(A) + P(B).</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Một hộp có 6 bi: 2 đỏ, 4 xanh. Rút ngẫu nhiên 1 bi. P(đỏ) =", answer: "1/3", accept: ["1/3", "0.333"], hint: "n=6, m=2, P=2/6=1/3.", explain: "P = 2/6 = 1/3." },
       { type: "text", prompt: "Tung một xúc xắc cân đối. P(số chấm chẵn) =", answer: "1/2", accept: ["1/2", "0.5"], hint: "Số chẵn: {2,4,6}, n=6, m=3.", explain: "P = 3/6 = 1/2." },
@@ -7346,7 +7368,10 @@ const G8_LESSONS = [
           <text x="180" y="70" font-size="10" fill="#83C167" text-anchor="middle">Xác suất lý thuyết</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Xác suất thực nghiệm = số lần xảy ra / số lần thử. Càng nhiều lần thử, xác suất thực nghiệm càng gần với xác suất lý thuyết.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Tung đồng xu 50 lần, có 28 lần ngửa. P_n(ngửa) =", answer: "0.56", accept: ["0.56", "14/25"], hint: "P_n = 28/50 = 0.56.", explain: "P_n = 28/50 = 0.56." },
       { type: "text", prompt: "Một người bắn súng 100 phát, trúng 85 phát. P_n(trúng) =", answer: "0.85", accept: ["0.85", "17/20"], hint: "P_n = 85/100 = 0.85.", explain: "P_n = 85/100 = 0.85." },
@@ -7463,7 +7488,10 @@ const G8_LESSONS = [
           <text x="160" y="110" font-size="11" fill="#9A72AC">AB/A'B' = BC/B'C' = CA/C'A' = k</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hai tam giác đồng dạng: ba góc bằng nhau, ba cạnh tỷ lệ. Tỷ số đồng dạng k thì tỷ số chu vi = k, tỷ số diện tích = k².</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Hai tam giác được gọi là đồng dạng khi nào?", answer: "Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", accept: ["Có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ", "góc bằng nhau và cạnh tỉ lệ"], hint: "Định nghĩa hai tam giác đồng dạng.", explain: "Hai tam giác đồng dạng khi góc bằng nhau và cạnh tỉ lệ." },
       { type: "num", prompt: "Tam giác ABC có AB = 6cm, BC = 8cm, CA = 10cm. Tam giác A'B'C' có A'B' = 3cm, B'C' = 4cm, C'A' = 5cm. Tỉ số đồng dạng của ABC so với A'B'C' là bao nhiêu?", answer: 2, hint: "Tính AB/A'B'.", explain: "AB/A'B' = 6/3 = 2 → tam giác ABC lớn gấp 2 lần A'B'C'." },
@@ -7589,7 +7617,10 @@ const G8_LESSONS = [
           <text x="290" y="185" font-size="10" fill="#58C4DD">SAS</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Tam giác đồng dạng nếu: (1) ba cạnh tỷ lệ, (2) hai cạnh tỷ lệ và góc bằng nhau, (3) hai góc bằng nhau.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Nêu ba trường hợp đồng dạng của hai tam giác.", answer: "Góc-góc (GG), cạnh-cạnh-cạnh (CCC), cạnh-góc-cạnh (CGC)", accept: ["GG, CCC, CGC", "Góc-góc, cạnh-cạnh-cạnh, cạnh-góc-cạnh"], hint: "Định nghĩa ba trường hợp.", explain: "GG: 2 góc bằng nhau; CCC: 3 cạnh tỉ lệ; CGC: 2 cạnh tỉ lệ + góc xen giữa bằng nhau." },
       { type: "text", prompt: "Tam giác ABC có ∠A = 50°, ∠B = 60°. Tam giác A'B'C' có ∠A' = 50°, ∠B' = 60°. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra hai góc.", explain: "∠A = ∠A', ∠B = ∠B' → GG → đồng dạng." },
@@ -7705,7 +7736,10 @@ const G8_LESSONS = [
           <text x="140" y="75" font-size="11" fill="#9A72AC">(Định lí Pythagore)</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Định lí Pythagoras: a² + b² = c² (trong tam giác vuông, c là cạnh huyền). Đảo: nếu a² + b² = c² thì tam giác vuông.</p>
+      </div>`,
     exercises: [
       { type: "num", prompt: "Tam giác vuông có hai cạnh góc vuông 5cm và 12cm. Cạnh huyền bằng bao nhiêu?", answer: 13, accept: ["13", "13cm"], hint: "Áp dụng định lí Pythagore.", explain: "√(5² + 12²) = √(25 + 144) = √169 = 13cm." },
       { type: "num", prompt: "Tam giác vuông có cạnh huyền 25cm, một cạnh góc vuông 7cm. Cạnh còn lại bằng bao nhiêu?", answer: 24, accept: ["24", "24cm"], hint: "Tính từ BC² - AB² = AC².", explain: "AC² = 25² - 7² = 625 - 49 = 576 → AC = 24cm." },
@@ -7831,7 +7865,10 @@ const G8_LESSONS = [
           <text x="280" y="190" font-size="10" fill="#58C4DD">Case 2: có góc nhọn bằng nhau</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Tam giác vuông đồng dạng nếu: (1) một góc nhọn bằng nhau, (2) hai cạnh góc vuông tỷ lệ. Tỷ số đường cao = k, tỷ số diện tích = k².</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Hai tam giác vuông đồng dạng khi nào?", answer: "Hai cạnh góc vuông tỉ lệ, hoặc cạnh huyền và một cạnh góc vuông tỉ lệ, hoặc một góc nhọn bằng nhau", accept: ["2 cạnh góc vuông tỉ lệ", "cạnh huyền và 1 cạnh góc vuông tỉ lệ", "1 góc nhọn bằng nhau"], hint: "Ba trường hợp đặc biệt cho tam giác vuông.", explain: "Với tam giác vuông, chỉ cần 1 trong 3 điều kiện." },
       { type: "text", prompt: "Tam giác vuông ABC (vuông tại A) có AB = 6cm, AC = 8cm. Tam giác vuông A'B'C' (vuông tại A') có A'B' = 9cm, A'C' = 12cm. Hai tam giác có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Kiểm tra hai cạnh góc vuông.", explain: "6/9 = 8/12 = 2/3 → đồng dạng." },
@@ -7947,7 +7984,10 @@ const G8_LESSONS = [
           <text x="150" y="50" font-size="12" fill="#9A72AC">Hình đồng dạng với tỷ số k</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hai hình đồng dạng: khoảng cách tỷ lệ với cùng hệ số k. Chu vi tỷ lệ k, diện tích tỷ lệ k². Thể tích tỷ lệ k³.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Thế nào là hai hình đồng dạng?", answer: "Tồn tại phép vị tự biến hình này thành hình kia", accept: ["Có phép vị tự biến hình này thành hình kia", "biến hình này thành hình kia bằng phép vị tự"], hint: "Định nghĩa hình đồng dạng.", explain: "Hai hình đồng dạng nếu tồn tại phép vị tự biến hình này thành hình kia." },
       { type: "text", prompt: "Hai hình vuông bất kỳ có đồng dạng không?", answer: "Có", accept: ["Có", "yes"], hint: "Tất cả hình vuông có góc bằng nhau và cạnh tỉ lệ.", explain: "Tất cả góc = 90°, tất cả cạnh bằng nhau trong mỗi hình → cạnh tỉ lệ." },
@@ -8071,7 +8111,10 @@ const G8_LESSONS = [
           <text x="165" y="100" font-size="10" fill="#83C167">Trung đoạn</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hình chóp tam giác: đáy là tam giác, 4 mặt, 6 cạnh, 4 đỉnh. Thể tích V = (1/3) × Sđáy × h.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Thế nào là hình chóp tam giác đều?", answer: "Có đáy là tam giác đều, các cạnh bên bằng nhau, chân đường cao trùng trọng tâm", accept: ["đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trọng tâm"], hint: "Định nghĩa hình chóp tam giác đều.", explain: "Ba điều kiện: đáy tam giác đều, cạnh bên bằng nhau, chân đường cao trùng trọng tâm." },
       { type: "text", prompt: "Công thức tính thể tích hình chóp tam giác đều?", answer: "V = 1/3·Sđáy·h", accept: ["V = 1/3·Sđáy·h", "V = 1/3 * Sđáy * h"], hint: "Tương tự thể tích hình chóp nói chung.", explain: "V = 1/3·diện tích đáy·chiều cao." },
@@ -8192,7 +8235,10 @@ const G8_LESSONS = [
           <text x="165" y="95" font-size="10" fill="#83C167">Trung đoạn</text>
         </svg>
       </figure>
-    `,
+    
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hình chóp tứ giác: đáy là tứ giác, 5 mặt, 8 cạnh, 5 đỉnh. Thể tích V = (1/3) × Sđáy × h.</p>
+      </div>`,
     exercises: [
       { type: "text", prompt: "Thế nào là hình chóp tứ giác đều?", answer: "Có đáy là hình vuông, các cạnh bên bằng nhau, chân đường cao trùng tâm", accept: ["đáy hình vuông, cạnh bên bằng nhau, chân đường cao tâm"], hint: "Định nghĩa hình chóp tứ giác đều.", explain: "Ba điều kiện: đáy hình vuông, cạnh bên bằng nhau, chân đường cao trùng tâm." },
       { type: "num", prompt: "Hình chóp tứ giác đều có cạnh đáy 4cm, chiều cao 6cm. Tính thể tích.", answer: 32, accept: ["32", "32cm³"], hint: "Sđáy = 4² = 16, V = 1/3·Sđáy·h.", explain: "V = 1/3·16·6 = 32 cm³." },
