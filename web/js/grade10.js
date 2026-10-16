@@ -561,6 +561,8 @@ String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toá
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em</p>
       </details>
+
+      { type: "mc", prompt: "Bài tập luyện tập", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B =", choices: ["{2, 3}", "{1, 2, 3, 4}", "{1, 4}", "{1, 2}"], correct: 0, hint: "Giao: phần tử chung.", explain: "{2, 3}." },
       { type: "mc", prompt: "A = {1, 2, 3, 4}, B = {2, 4}. A \ B =", choices: ["{1, 3}", "{2, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Hiệu: loại phần tử của B ra khỏi A.", explain: "{1, 3}." },

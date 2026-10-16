@@ -578,6 +578,8 @@ String.raw`
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em</p>
       </details>
+
+      { type: "mc", prompt: "Bài tập luyện tập", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Nghiệm của phương trình sin(x) = 0 là", choices: ["x = kπ", "x = kπ/2", "x = π/2 + kπ", "x = 2kπ"], correct: 0, hint: "sin(x) = 0 khi x = 0, π, 2π,...", explain: "x = kπ." },
       { type: "mc", prompt: "Phương trình cos(x) = −1 có nghiệm", choices: ["x = π + k2π", "x = kπ", "x = 2kπ", "x = π/2 + kπ"], correct: 0, hint: "cos(x) = −1 khi x = π, 3π,...", explain: "x = π + k2π." },
