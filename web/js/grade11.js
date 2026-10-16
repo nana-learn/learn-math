@@ -666,6 +666,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Cấp số cộng u_1 = 2, d = 3. u_5 =", choices: ["14", "11", "8", "17"], correct: 0, hint: "u_5 = 2 + 4·3 = 14.", explain: "14." },
       { type: "mc", prompt: "Tổng 5 số hạng đầu của cấp số cộng 1, 3, 5, 7, 9 là", choices: ["25", "20", "30", "15"], correct: 0, hint: "S_5 = 5(1+9)/2 = 25.", explain: "25." },
