@@ -1421,6 +1421,11 @@ String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Đường thẳng song song Ox qua (1,2,3) có phương trình?", choices: ["y=2,z=3", "x=1,z=3", "x=1,y=2", "x+y+z=6"], correct: 0, hint: "y,z không đổi.", explain: "y=2,z=3." },
       { type: "mc", prompt: "VTCP của (x-1)/2=(y+3)/(-1)=z/4 là?", choices: ["(2,-1,4)", "(-2,1,-4)", "(1/2,-1,4)", "(2,1,4)"], correct: 0, hint: "Mẫu số là VTCP.", explain: "(2,-1,4)." },
