@@ -1466,6 +1466,11 @@ String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0). u·v =", choices: ["0", "2", "4", "6"], correct: 0, hint: "1·2+2·(-1)+2·0.", explain: "0." },
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0) thì?", choices: ["song song", "vuông góc", "cùng phương", "không vuông góc"], correct: 1, hint: "u·v=0.", explain: "Vuông góc." },
