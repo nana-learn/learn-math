@@ -303,8 +303,11 @@ const G9_LESSONS = [
         <p> Hình bình hành \\(MNPQ\\) có \\(\widehat{M} = 70^\circ\\). \\(\widehat{Q} = 70^\circ\\), \\(\widehat{N} = \widehat{P} = 110^\circ\\). \\(70^\circ + 110^\circ = 180^\circ\\) → nội tiếp khi và chỉ khi là hình chữ nhật (tức \\(\widehat{M} = 90^\circ\\)).</p>
       </div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Tứ giác có hai góc đối bằng 100° và 80°. Nó có nội tiếp được không?", choices: ["Có", "Không", "Tùy trường hợp", "Chưa đủ thông tin"], correct: 0, hint: "100° + 80° = 180°.", explain: "Có, vì tổng hai góc đối = 180°." },
+          exercises: [
+        { type: "mc", prompt: "Góc có đỉnh ở bên trong đường tròn bằng", choices: ["Trung bình cộng số đo hai cung bị chắn", "Trung bình hiệu hai cung bị chắn", "Số đo cung lớn", "Nửa số đo cung nhỏ"], correct: 0, hint: "Định lí góc trong đường tròn.", explain: "Trung bình cộng hai cung." },
+        { type: "mc", prompt: "Góc có đỉnh ở bên ngoài đường tròn bằng", choices: ["Trung bình hiệu hai cung bị chắn", "Trung bình cộng hai cung", "Số đo cung lớn", "Nửa số đo cung nhỏ"], correct: 0, hint: "Định lí góc ngoài đường tròn.", explain: "Trung bình hiệu hai cung." },
+        { type: "text", prompt: "Hai cung bị chắn có số đo 120° và 60°. Góc có đỉnh trong đường tròn bằng", answer: "90°", accept: ["90°", "90"], hint: "(120°+60°)/2 = 90°.", explain: "90°." },
+      ], correct: 0, hint: "100° + 80° = 180°.", explain: "Có, vì tổng hai góc đối = 180°." },
       { type: "num", prompt: "Tứ giác nội tiếp có \\(\widehat{A} = 110^\circ\\). Góc đối \\(\widehat{C} = ?\\)", answer: 70, accept: ["70", "70°"], hint: "180° - 110° = 70°.", explain: "\\(\widehat{C} = 180^\circ - 110^\circ = 70^\circ\\)." },
       { type: "text", prompt: "Hình thang cân có đáy lớn bằng 120°. Góc kề đáy lớn bằng bao nhiêu?", answer: 60, accept: ["60", "60°"], hint: "Hai góc kề cạnh bên bù nhau.", explain: "Góc kề = 180° - 120° = 60°." },
       { type: "mc", prompt: "Hình bình hành nội tiếp được khi nào?", choices: ["Luôn luôn", "Không bao giờ", "Khi là hình chữ nhật", "Khi có một góc vuông"], correct: 2, hint: "Tổng hai góc kề = 180°, cần cả hai góc đối = 90°.", explain: "Hình bình hành nội tiếp ⇔ là hình chữ nhật." },
