@@ -9607,8 +9607,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "3.14159 quy tròn đến hàng phần trăm là?", choices: ["3.14", "3.15", "3.142", "3.1"], correct: 0, hint: "Hàng phần trăm là số 4, chữ số sau là 1 < 5 nên giữ nguyên.", explain: "3.14." },
+          exercises: [
+        { type: "mc", prompt: "Tọa độ vectơ AB với A(x_A, y_A), B(x_B, y_B) là", choices: ["(x_B − x_A, y_B − y_A)", "(x_A − x_B, y_A − y_B)", "(x_B + x_A, y_B + y_A)", "(x_B, y_B)"], correct: 0, hint: "Định nghĩa tọa độ vectơ.", explain: "(x_B − x_A, y_B − y_A)." },
+        { type: "mc", prompt: "AB = (3, 4). Độ dài AB =", choices: ["5", "4", "3", "7"], correct: 0, hint: "|AB| = √(9 + 16) = 5.", explain: "5." },
+        { type: "text", prompt: "A(1, 2), B(4, 6). Tọa độ trung điểm I của AB là", answer: "(2.5, 4)", accept: ["(2.5, 4)", "(5/2, 4)", "(2.5,4)", "(5/2,4)"], hint: "x = (1+4)/2 = 2.5, y = (2+6)/2 = 4.", explain: "(2.5, 4)." },
+      ], correct: 0, hint: "Hàng phần trăm là số 4, chữ số sau là 1 < 5 nên giữ nguyên.", explain: "3.14." },
       { type: "mc", prompt: "5.678 quy tròn đến hàng đơn vị là?", choices: ["6", "5", "5.7", "5.68"], correct: 0, hint: "Chữ số hàng đơn vị là 5, chữ số sau là 6 ≥ 5 nên cộng thêm 1.", explain: "6." },
       { type: "num", prompt: "12.3456 quy tròn đến hàng phần trăm là", answer: "12.35", accept: ["12.35"], hint: "Hàng phần trăm là 4, chữ số sau là 5 nên cộng thêm 1.", explain: "12.35." },
     ],
