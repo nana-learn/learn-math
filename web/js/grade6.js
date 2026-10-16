@@ -608,6 +608,24 @@ const G6_LESSONS = [
     title: "Dấu hiệu chia hết",
     summary: "Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3: tổng các chữ số chia hết cho 3.",
     body: String.raw`
+      <figure class="figure" data-animation="g6-b9-numberline">
+        <svg viewBox="0 0 420 80" role="img" aria-label="Trục số với điểm 3/4">
+          <line x1="20" y1="40" x2="400" y2="40" stroke="#333" stroke-width="2"/>
+          <polygon points="395,35 405,40 395,45" fill="#333"/>
+          <text x="15" y="35" font-size="12" fill="#333">0</text>
+          <text x="105" y="35" font-size="12" fill="#333">1</text>
+          <text x="195" y="35" font-size="12" fill="#333">2</text>
+          <text x="285" y="35" font-size="12" fill="#333">3</text>
+          <circle cx="155" cy="40" r="3" fill="#FC6255"/>
+          <text x="150" y="60" font-size="12" fill="#58C4DD">3/4</text>
+          <line x1="55" y1="38" x2="55" y2="42" stroke="#333" stroke-width="1"/>
+          <line x1="105" y1="38" x2="105" y2="42" stroke="#333" stroke-width="1"/>
+          <line x1="155" y1="38" x2="155" y2="42" stroke="#333" stroke-width="1"/>
+          <line x1="205" y1="38" x2="205" y2="42" stroke="#333" stroke-width="1"/>
+          <line x1="255" y1="38" x2="255" y2="42" stroke="#333" stroke-width="1"/>
+        </svg>
+      </figure>
+
       <p><strong>Vì sao cần dấu hiệu?</strong> Dấu hiệu chia hết giúp ta nhanh chóng biết một số có chia hết cho 2, 3, 5, 9 mà không cần thực hiện phép chia dài.</p>
             <figure class="figure" data-animation="g6-b9-geometry">
         <svg viewBox="0 0 280 140" role="img" aria-label="Một số hình phẳng">
