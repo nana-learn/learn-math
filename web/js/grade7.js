@@ -2628,7 +2628,9 @@ String.raw`
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cộng mũ khi nhân cùng cơ số. Bình phương tổng có hạng 2ab.</p></div>
     `,
-    exercises: [
+    
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+exercises: [
       { type: "text", prompt: "2x(x − 5). Viết đa thức gọn, không cách.", answer: "2x^2-10x", accept: ["2x^2-10x", "2x²-10x"], hint: "Phân phối.", explain: "2x² − 10x." },
       { type: "num", prompt: "Hệ số của x trong (x+2)(x+3) bằng bao nhiêu?", answer: 5, hint: "2x + 3x.", explain: "x² + 5x + 6." },
       { type: "mc", prompt: "(x+1)² bằng", choices: ["x² + 1", "x² + 2x + 1", "x² + x + 1", "2x + 1"], correct: 1, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 2x + 1." },
