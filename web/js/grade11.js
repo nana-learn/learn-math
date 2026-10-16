@@ -170,6 +170,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: Gieo 2 con súc sắc. Xác suất tổng bằng 7 là?", choices: ["1/6", "1/9", "1/12", "1/18"], correct: 0, hint: "6 cặp: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1). 6/36 = 1/6.", explain: "1/6." },
     ],
   },
+
+  {
+    id: "g11-ch3-quiz",
+    num: 106,
+    chapter: 3,
+    title: "Chương 3: Dãy số - Trắc nghiệm",
+    summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
+      { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
+      { type: "mc", prompt: "Câu 3: Cấp số cộng u_1 = 2, d = 3 thì u_4 =", choices: ["11", "8", "14", "5"], correct: 0, hint: "u_4 = 2 + 3×3 = 11.", explain: "11." },
+      { type: "mc", prompt: "Câu 4: Cấp số nhân u_1 = 2, q = 3 thì u_3 =", choices: ["18", "6", "12", "24"], correct: 0, hint: "u_3 = 2×3² = 18.", explain: "18." },
+      { type: "mc", prompt: "Câu 5: Tổng 3 số hạng đầu của cấp số cộng u_1=1, d=2 là?", choices: ["9", "6", "3", "12"], correct: 0, hint: "1,3,5 → 1+3+5=9.", explain: "9." },
+      { type: "mc", prompt: "Câu 6: Tổng n số hạng đầu cấp số cộng: S_n =", choices: ["n(u_1 + u_n)/2", "n·u_1·u_n", "n(u_1 - u_n)/2", "u_1 + (n-1)d"], correct: 0, hint: "Công thức tổng cấp số cộng.", explain: "n(u_1 + u_n)/2." },
+      { type: "mc", prompt: "Câu 7: Dãy số u_n = 1/n là:", choices: ["Giảm", "Tăng", "Không đổi", "Biến thiên"], correct: 0, hint: "1 > 1/2 > 1/3 > ...", explain: "Giảm." },
+      { type: "mc", prompt: "Câu 8: lim(1/n) khi n→∞ =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n → 0 khi n→∞.", explain: "0." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1005,6 +1024,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 2: C(5,2) =", choices: ["10", "20", "5", "15"], correct: 0, hint: "C(5,2) = 10.", explain: "10." },
       { type: "text", prompt: "Từ 5 HS chọn 2 làm lớp trưởng và phó (khác nhau). Có bao nhiêu cách?", answer: "20", accept: ["20"], hint: "Chọn 2 người và sắp xếp: A(5,2) = 20.", explain: "20." },
       { type: "mc", prompt: "Câu 4: Gieo 2 con súc sắc. Xác suất tổng bằng 7 là?", choices: ["1/6", "1/9", "1/12", "1/18"], correct: 0, hint: "6 cặp: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1). 6/36 = 1/6.", explain: "1/6." },
+    ],
+  },
+
+  {
+    id: "g11-ch3-quiz",
+    num: 106,
+    chapter: 3,
+    title: "Chương 3: Dãy số - Trắc nghiệm",
+    summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
+      { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
+      { type: "mc", prompt: "Câu 3: Cấp số cộng u_1 = 2, d = 3 thì u_4 =", choices: ["11", "8", "14", "5"], correct: 0, hint: "u_4 = 2 + 3×3 = 11.", explain: "11." },
+      { type: "mc", prompt: "Câu 4: Cấp số nhân u_1 = 2, q = 3 thì u_3 =", choices: ["18", "6", "12", "24"], correct: 0, hint: "u_3 = 2×3² = 18.", explain: "18." },
+      { type: "mc", prompt: "Câu 5: Tổng 3 số hạng đầu của cấp số cộng u_1=1, d=2 là?", choices: ["9", "6", "3", "12"], correct: 0, hint: "1,3,5 → 1+3+5=9.", explain: "9." },
+      { type: "mc", prompt: "Câu 6: Tổng n số hạng đầu cấp số cộng: S_n =", choices: ["n(u_1 + u_n)/2", "n·u_1·u_n", "n(u_1 - u_n)/2", "u_1 + (n-1)d"], correct: 0, hint: "Công thức tổng cấp số cộng.", explain: "n(u_1 + u_n)/2." },
+      { type: "mc", prompt: "Câu 7: Dãy số u_n = 1/n là:", choices: ["Giảm", "Tăng", "Không đổi", "Biến thiên"], correct: 0, hint: "1 > 1/2 > 1/3 > ...", explain: "Giảm." },
+      { type: "mc", prompt: "Câu 8: lim(1/n) khi n→∞ =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n → 0 khi n→∞.", explain: "0." },
     ],
   },
 ];
