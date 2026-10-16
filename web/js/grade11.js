@@ -1098,6 +1098,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Nếu a ⊥ b và b ∥ c thì", choices: ["a ⊥ c", "a ∥ c", "a và c cắt nhau", "Không xác định"], correct: 0, hint: "Nếu một đường vuông góc với một đường thẳng thì cũng vuông góc với mọi đường song song với nó.", explain: "a ⊥ c." },
       { type: "mc", prompt: "Trong không gian, hai đường thẳng cùng vuông góc với đường thẳng thứ ba thì", choices: ["Có thể song song, cắt nhau hoặc chéo nhau", "Song song với nhau", "Cắt nhau", "Chéo nhau"], correct: 0, hint: "Ví dụ: trục Oy và O z cùng vuông góc với Ox nhưng chéo nhau.", explain: "Có thể song song, cắt nhau hoặc chéo nhau." },
