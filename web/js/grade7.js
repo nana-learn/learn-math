@@ -804,8 +804,11 @@ const G7_LESSONS = [
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Viết rõ giả thiết. Mỗi câu có vì sao. Đừng dùng điều chưa chứng minh.</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Chứng minh một góc vuông thì không được", choices: ["Dùng định nghĩa hai cạnh vuông góc", "Đo bằng thước đo độ trên hình vẽ rồi kết luận", "Dùng tổng hai góc kề bù bằng 180° nếu một góc đã 90°", "Dùng định lí đã học"], correct: 1, hint: "Hình minh họa, không phải chứng cứ.", explain: "Đo hình không phải chứng minh." },
+          exercises: [
+        { type: "mc", prompt: "Nếu a/b = c/d thì", choices: ["(a+c)/(b+d) = a/b", "(a-c)/(b-d) = a/b", "a+d = b+c", "ac = bd"], correct: 0, hint: "Tính chất dãy tỉ số bằng nhau.", explain: "(a+c)/(b+d) = a/b." },
+        { type: "mc", prompt: "x/2 = y/3 và x + y = 10. x =", choices: ["4", "6", "5", "3"], correct: 0, hint: "x/2 = y/3 = (x+y)/(2+3) = 10/5 = 2. x = 2×2 = 4.", explain: "4." },
+        { type: "text", prompt: "x/3 = y/4 và x - y = 2. y =", answer: "8", accept: ["8"], hint: "x/3 = y/4 = (x-y)/(3-4) = 2/(-1) = -2. y = 4×(-2) = -8? Đếm lại: x-y=2, x=3k, y=4k → 3k-4k=2 → -k=2 → k=-2 → y=-8.", explain: "-8." },
+      ], correct: 1, hint: "Hình minh họa, không phải chứng cứ.", explain: "Đo hình không phải chứng minh." },
       { type: "mc", prompt: "Giả thiết của định lí góc đối đỉnh là", choices: ["Hai góc bằng nhau", "Hai góc đối đỉnh", "Hai góc kề bù", "Hai góc nhọn"], correct: 1, hint: "Giả thiết là cái đề cho.", explain: "Cho hai góc đối đỉnh, kết luận chúng bằng nhau." },
       { type: "num", prompt: "Một chứng minh đúng có 3 bước, mỗi bước một lý do. Cần ít nhất bao nhiêu lý do?", answer: 3, hint: "Mỗi bước một vì sao.", explain: "Ba bước, ba lý do." },
       { type: "mc", prompt: "Kết luận của định lí nằm ở", choices: ["Cái đề cho sẵn","Cái phải chứng ra","Hình vẽ","Số đo trên thước"], correct: 1, hint: "Giả thiết cho, kết luận phải ra.", explain: "Kết luận là điều cần chứng." },
