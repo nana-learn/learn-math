@@ -13,7 +13,12 @@ const G9_CHAPTERS = [
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
       { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(a/b) = √a/√b.", explain: "√(25/9) = 5/3." },
@@ -31,7 +36,12 @@ const G9_CHAPTERS = [
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
@@ -50,7 +60,12 @@ const G9_CHAPTERS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "4." },
@@ -65,7 +80,12 @@ const G9_CHAPTERS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 4x - 1 có hệ số góc là?", choices: ["4", "-1", "1", "-4"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "4." },
@@ -81,7 +101,12 @@ const G9_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Góc nội tiếp chắn cung 60° có số đo là?", choices: ["30°", "60°", "120°", "90°"], correct: 0, hint: "Góc nội tiếp = 1/2 số đo cung bị chắn.", explain: "30°." },
       { type: "mc", prompt: "Câu 2: Góc tạo bởi tia tiếp tuyến và dây cung chắn cung 80° có số đo là?", choices: ["40°", "80°", "160°", "50°"], correct: 0, hint: "Góc này = 1/2 số đo cung bị chắn.", explain: "40°." },
@@ -503,7 +528,12 @@ const G9_LESSONS = [
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "√16 = 4." },
       { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(a/b) = √a/√b.", explain: "√(25/9) = 5/3." },
@@ -521,7 +551,12 @@ const G9_LESSONS = [
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 3x - 2 có hệ số góc là?", choices: ["3", "-2", "2", "-3"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -2x + 1 cắt trục Oy tại điểm?", choices: ["(0,1)", "(1,0)", "(0,-1)", "(-1,0)"], correct: 0, hint: "x=0 → y=1.", explain: "(0,1)." },
@@ -540,7 +575,12 @@ const G9_LESSONS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "4." },
@@ -555,7 +595,12 @@ const G9_LESSONS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 4x - 1 có hệ số góc là?", choices: ["4", "-1", "1", "-4"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "4." },
@@ -571,7 +616,12 @@ const G9_LESSONS = [
     chapter: 3,
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Góc nội tiếp chắn cung 60° có số đo là?", choices: ["30°", "60°", "120°", "90°"], correct: 0, hint: "Góc nội tiếp = 1/2 số đo cung bị chắn.", explain: "30°." },
       { type: "mc", prompt: "Câu 2: Góc tạo bởi tia tiếp tuyến và dây cung chắn cung 80° có số đo là?", choices: ["40°", "80°", "160°", "50°"], correct: 0, hint: "Góc này = 1/2 số đo cung bị chắn.", explain: "40°." },
