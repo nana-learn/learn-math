@@ -218,6 +218,8 @@ const G10_CHAPTERS = [
     num: 105,
     chapter: 5,
     title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">

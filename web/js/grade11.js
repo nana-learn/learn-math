@@ -369,6 +369,8 @@ const G11_CHAPTERS = [
     num: 111,
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
