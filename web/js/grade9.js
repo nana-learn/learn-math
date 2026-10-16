@@ -74,6 +74,25 @@ const G9_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: Hai đường thẳng y=2x+3 và y=2x-1:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
     ],
   },
+
+  {
+    id: "c9-ch3-quiz",
+    num: 101,
+    chapter: 3,
+    title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
+    summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Góc nội tiếp chắn cung 60° có số đo là?", choices: ["30°", "60°", "120°", "90°"], correct: 0, hint: "Góc nội tiếp = 1/2 số đo cung bị chắn.", explain: "30°." },
+      { type: "mc", prompt: "Câu 2: Góc tạo bởi tia tiếp tuyến và dây cung chắn cung 80° có số đo là?", choices: ["40°", "80°", "160°", "50°"], correct: 0, hint: "Góc này = 1/2 số đo cung bị chắn.", explain: "40°." },
+      { type: "mc", prompt: "Câu 3: Tứ giác ABCD nội tiếp đường tròn. ∠A = 100°. ∠C =", choices: ["80°", "100°", "90°", "120°"], correct: 0, hint: "Tứ giác nội tiếp: ∠A + ∠C = 180°.", explain: "80°." },
+      { type: "mc", prompt: "Câu 4: Góc ở tâm chắn cung AB bằng 120°. Góc nội tiếp chắn cung AB là?", choices: ["60°", "120°", "240°", "30°"], correct: 0, hint: "Góc nội tiếp = 1/2 góc ở tâm.", explain: "60°." },
+      { type: "mc", prompt: "Câu 5: Đường tròn có bán kính 5. Cung AB = 60°. Độ dài cung AB là?", choices: ["(5π)/3", "(10π)/3", "(5π)/6", "5π"], correct: 0, hint: "Độ dài cung = 2πR × (góc/360) = 2π×5×60/360 = 10π/6 = 5π/3.", explain: "(5π)/3." },
+      { type: "mc", prompt: "Câu 6: Góc nội tiếp và góc ở tâm cùng chắn cung AB. Góc nội tiếp = 40°. Góc ở tâm =", choices: ["80°", "40°", "20°", "160°"], correct: 0, hint: "Góc ở tâm = 2 × góc nội tiếp.", explain: "80°." },
+      { type: "mc", prompt: "Câu 7: Góc tạo bởi hai cát tuyến cắt nhau bên ngoài đường tròn bằng:", choices: ["1/2 hiệu số đo hai cung", "1/2 tổng số đo hai cung", "1/2 số đo cung lớn", "1/2 số đo cung nhỏ"], correct: 0, hint: "Góc ngoài = 1/2 hiệu số đo hai cung bị chắn.", explain: "1/2 hiệu số đo hai cung." },
+      { type: "mc", prompt: "Câu 8: Góc nội tiếp chắn nửa đường tròn là góc:", choices: ["Vuông (90°)", "Nhọn", "Tù", "Bẹt (180°)"], correct: 0, hint: "Nửa đường tròn = 180°, góc nội tiếp = 90°.", explain: "Vuông (90°)." },
+    ],
+  },
 ];
 
 const G9_LESSONS = [
@@ -543,6 +562,25 @@ const G9_LESSONS = [
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -3x + 2 cắt trục Oy tại điểm?", choices: ["(0,2)", "(2,0)", "(0,-2)", "(-2,0)"], correct: 0, hint: "x=0 → y=2.", explain: "(0,2)." },
       { type: "text", prompt: "Tìm giao điểm của y=2x+1 và y=-x+4.", answer: "(1,3)", accept: ["(1,3)", "x=1,y=3"], hint: "2x+1=-x+4 → 3x=3 → x=1, y=3.", explain: "(1,3)." },
       { type: "mc", prompt: "Câu 4: Hai đường thẳng y=2x+3 và y=2x-1:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
+    ],
+  },
+
+  {
+    id: "c9-ch3-quiz",
+    num: 101,
+    chapter: 3,
+    title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
+    summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Góc nội tiếp chắn cung 60° có số đo là?", choices: ["30°", "60°", "120°", "90°"], correct: 0, hint: "Góc nội tiếp = 1/2 số đo cung bị chắn.", explain: "30°." },
+      { type: "mc", prompt: "Câu 2: Góc tạo bởi tia tiếp tuyến và dây cung chắn cung 80° có số đo là?", choices: ["40°", "80°", "160°", "50°"], correct: 0, hint: "Góc này = 1/2 số đo cung bị chắn.", explain: "40°." },
+      { type: "mc", prompt: "Câu 3: Tứ giác ABCD nội tiếp đường tròn. ∠A = 100°. ∠C =", choices: ["80°", "100°", "90°", "120°"], correct: 0, hint: "Tứ giác nội tiếp: ∠A + ∠C = 180°.", explain: "80°." },
+      { type: "mc", prompt: "Câu 4: Góc ở tâm chắn cung AB bằng 120°. Góc nội tiếp chắn cung AB là?", choices: ["60°", "120°", "240°", "30°"], correct: 0, hint: "Góc nội tiếp = 1/2 góc ở tâm.", explain: "60°." },
+      { type: "mc", prompt: "Câu 5: Đường tròn có bán kính 5. Cung AB = 60°. Độ dài cung AB là?", choices: ["(5π)/3", "(10π)/3", "(5π)/6", "5π"], correct: 0, hint: "Độ dài cung = 2πR × (góc/360) = 2π×5×60/360 = 10π/6 = 5π/3.", explain: "(5π)/3." },
+      { type: "mc", prompt: "Câu 6: Góc nội tiếp và góc ở tâm cùng chắn cung AB. Góc nội tiếp = 40°. Góc ở tâm =", choices: ["80°", "40°", "20°", "160°"], correct: 0, hint: "Góc ở tâm = 2 × góc nội tiếp.", explain: "80°." },
+      { type: "mc", prompt: "Câu 7: Góc tạo bởi hai cát tuyến cắt nhau bên ngoài đường tròn bằng:", choices: ["1/2 hiệu số đo hai cung", "1/2 tổng số đo hai cung", "1/2 số đo cung lớn", "1/2 số đo cung nhỏ"], correct: 0, hint: "Góc ngoài = 1/2 hiệu số đo hai cung bị chắn.", explain: "1/2 hiệu số đo hai cung." },
+      { type: "mc", prompt: "Câu 8: Góc nội tiếp chắn nửa đường tròn là góc:", choices: ["Vuông (90°)", "Nhọn", "Tù", "Bẹt (180°)"], correct: 0, hint: "Nửa đường tròn = 180°, góc nội tiếp = 90°.", explain: "Vuông (90°)." },
     ],
   },
 ];
