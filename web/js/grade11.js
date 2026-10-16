@@ -954,6 +954,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hai mặt phẳng phân biệt không có điểm chung thì", choices: ["Song song với nhau", "Cắt nhau", "Trùng nhau", "Không xác định"], correct: 0, hint: "Định nghĩa mặt phẳng song song.", explain: "Song song với nhau." },
       { type: "mc", prompt: "Ba điểm A, B, C không thẳng hàng xác định", choices: ["Một mặt phẳng duy nhất", "Hai mặt phẳng", "Vô số mặt phẳng", "Không xác định mặt phẳng"], correct: 0, hint: "Tiên đề hình học không gian.", explain: "Một mặt phẳng duy nhất." },
