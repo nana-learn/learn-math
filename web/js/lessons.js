@@ -9550,8 +9550,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "C_5^2 =", choices: ["10", "20", "25", "5"], correct: 0, hint: "5 × 4 / 2 = 10.", explain: "10." },
+          exercises: [
+        { type: "mc", prompt: "k·AB với k > 0 là vectơ", choices: ["Cùng hướng AB", "Ngược hướng AB", "Vuông góc AB", "Bằng 0"], correct: 0, hint: "k > 0 thì cùng hướng.", explain: "Cùng hướng AB." },
+        { type: "mc", prompt: "k = -2, AB = (3, 4). k·AB =", choices: ["(-6, -8)", "(6, 8)", "(-3, -4)", "(3, 4)"], correct: 0, hint: "Nhân từng tọa độ với -2.", explain: "(-6, -8)." },
+        { type: "text", prompt: "AB = (4, -6). Tìm k để k·AB = (2, -3).", answer: "1/2", accept: ["1/2", "0.5"], hint: "4k = 2 → k = 1/2.", explain: "1/2." },
+      ], correct: 0, hint: "5 × 4 / 2 = 10.", explain: "10." },
       { type: "mc", prompt: "C_6^3 =", choices: ["20", "30", "60", "15"], correct: 0, hint: "6 × 5 × 4 / 6 = 20.", explain: "20." },
       { type: "num", prompt: "Chọn 2 người từ 8 người là", answer: "28", accept: ["28"], hint: "C_8^2 = 8 × 7 / 2 = 28.", explain: "28." },
     ],
