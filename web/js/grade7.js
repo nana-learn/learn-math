@@ -218,10 +218,11 @@ const G7_LESSONS = [
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Cùng cơ số thì cộng trừ mũ khi nhân chia. Nhân cơ số thì mũ phân phối. Không đổi \(a^n + b^n\) thành \((a+b)^n\).</p></div>
     `,
-    exercises: [
-      { type: "num", prompt: "(−2)^4 bằng bao nhiêu?", answer: 16, hint: "Bốn thừa số −2. Mũ chẵn.", explain: "(−2)(−2)(−2)(−2) = 16." },
-      { type: "num", prompt: "5^0 bằng bao nhiêu?", answer: 1, hint: "Cơ số khác 0 thì mũ 0 bằng 1.", explain: "5 ≠ 0 nên 5^0 = 1." },
-      { type: "mc", prompt: "2^3 · 2^2 bằng", choices: ["2^5", "4^5", "2^6", "4^6"], correct: 0, hint: "Cùng cơ số, cộng mũ.", explain: "2^{3+2} = 2^5 = 32." },
+          exercises: [
+        { type: "mc", prompt: "Giá trị tuyệt đối của -7 là", choices: ["7", "-7", "0", "1/7"], correct: 0, hint: "|-7| = 7.", explain: "7." },
+        { type: "mc", prompt: "Số nào có giá trị tuyệt đối bằng 5?", choices: ["5 và -5", "5", "-5", "Không có"], correct: 0, hint: "|5| = 5, |-5| = 5.", explain: "5 và -5." },
+        { type: "text", prompt: "Tính (-3) + |−5|.", answer: "2", accept: ["2"], hint: "|−5| = 5, (-3) + 5 = 2.", explain: "2." },
+      ], correct: 0, hint: "Cùng cơ số, cộng mũ.", explain: "2^{3+2} = 2^5 = 32." },
       { type: "num", prompt: "2^3 · 2^4 = 2^k. k bằng bao nhiêu?", answer: 7, hint: "Cộng mũ.", explain: "7." },
       { type: "mc", prompt: "(−3)^2 và −3^2", choices: ["Bằng nhau, đều 9","Bằng nhau, đều −9","Khác nhau: 9 và −9","Không tính được"], correct: 2, hint: "Ngoặc đổi thứ tự mũ và dấu.", explain: "(−3)^2 = 9, −3^2 = −9." },
       { type: "num", prompt: "(−1)^8 bằng bao nhiêu?", answer: 1, hint: "Mũ chẵn.", explain: "1." },
