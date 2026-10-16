@@ -1436,6 +1436,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phương trình sinx + cosx = √2 có nghiệm là", choices: ["x = π/4 + k2π", "x = 3π/4 + k2π", "x = π/2 + k2π", "x = k2π"], correct: 0, hint: "Chia √2: sin(x + π/4) = 1.", explain: "x = π/4 + k2π." },
       { type: "mc", prompt: "Phương trình √3 sinx + cosx = 1 có nghiệm là", choices: ["x = −π/6 + k2π, x = 5π/6 + k2π", "x = π/6 + k2π, x = 7π/6 + k2π", "x = π/3 + k2π, x = 4π/3 + k2π", "x = 0 + k2π, x = π + k2π"], correct: 0, hint: "2sin(x + π/6) = 1.", explain: "x = −π/6 + k2π, x = 5π/6 + k2π." },
