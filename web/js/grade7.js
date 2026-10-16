@@ -389,6 +389,8 @@ const G7_LESSONS = [
     num: 4,
     chapter: 1,
     title: "Thứ tự phép tính và chuyển vế",
+    youtube: "placeholder-YT-ID",
+
     summary: "Ngoặc trước, rồi mũ, rồi nhân chia, rồi cộng trừ. Chuyển vế thì đổi dấu.",
     body: String.raw`
       <p>Không tính từ trái sang phải một mạch. Có ngoặc thì làm trong ngoặc trước. Rồi luỹ thừa. Rồi nhân chia. Cuối cùng cộng trừ.</p>
@@ -457,6 +459,8 @@ const G7_LESSONS = [
     num: 5,
     chapter: 2,
     title: "Số thập phân vô hạn tuần hoàn",
+    youtube: "placeholder-YT-ID",
+
     summary: "Phân số thành thập phân: hoặc dừng, hoặc lặp một cụm chữ số.",
     body: String.raw`
       <p>Chia tử cho mẫu. Có lúc hết dư, được thập phân hữu hạn. Có lúc dư lặp lại, chữ số sau dấu phẩy lặp một cụm. Đó là thập phân vô hạn tuần hoàn, vẫn là số hữu tỉ.</p>
@@ -522,6 +526,8 @@ const G7_LESSONS = [
     num: 6,
     chapter: 2,
     title: "Số vô tỉ và căn bậc hai số học",
+    youtube: "placeholder-YT-ID",
+
     summary: "Cạnh hình vuông diện tích 2 không hữu tỉ. √a là số không âm có bình phương bằng a.",
     body: String.raw`
       <p>Hình vuông diện tích 2. Cạnh \(x > 0\) thỏa \(x^2 = 2\). Không có phân số nào bình phương ra 2. Số ấy viết \(x = \sqrt{2} \approx 1{,}41421\ldots\), thập phân vô hạn không tuần hoàn. Đó là số vô tỉ.</p>
@@ -588,6 +594,8 @@ const G7_LESSONS = [
     num: 7,
     chapter: 2,
     title: "Tập hợp các số thực",
+    youtube: "placeholder-YT-ID",
+
     summary: "Số thực gồm hữu tỉ và vô tỉ. Mỗi điểm trên trục số là một số thực.",
     body: String.raw`
       <p>Gộp \(\mathbb{Q}\) với các số vô tỉ được tập hợp số thực \(\mathbb{R}\). Trên trục số, mỗi điểm ứng đúng một số thực, mỗi số thực ứng đúng một điểm.</p>
@@ -657,6 +665,8 @@ const G7_LESSONS = [
     num: 8,
     chapter: 3,
     title: "Góc kề bù, đối đỉnh và tia phân giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Kề bù cộng 180°. Đối đỉnh bằng nhau. Phân giác cắt góc thành hai góc bằng nhau.",
     body: String.raw`
       <p>Hai góc kề bù: chung một cạnh, hai cạnh còn lại là hai tia đối nhau. Tổng \(180^\circ\). Hai góc đối đỉnh: hai cặp tia đối nhau, hai góc bằng nhau.</p>
@@ -739,6 +749,8 @@ const G7_LESSONS = [
     num: 9,
     chapter: 3,
     title: "Hai đường thẳng song song",
+    youtube: "placeholder-YT-ID",
+
     summary: "Song song thì không gặp nhau. Cắt bởi một cát tuyến: so le trong bằng nhau, đồng vị bằng nhau.",
     body: String.raw`
       <p>Hai đường thẳng song song không có điểm chung. Khi một cát tuyến cắt hai đường song song, góc so le trong bằng nhau, góc đồng vị bằng nhau, hai góc trong cùng phía kề bù.</p>
@@ -824,6 +836,8 @@ const G7_LESSONS = [
     num: 10,
     chapter: 3,
     title: "Tiên đề Euclid và tính chất đường song song",
+    youtube: "placeholder-YT-ID",
+
     summary: "Qua một điểm ngoài một đường, có đúng một đường song song với đường ấy.",
     body: String.raw`
       <p>Tiên đề Euclid (dạng dùng ở lớp 7): qua một điểm không nằm trên đường thẳng \(d\), có một và chỉ một đường thẳng song song với \(d\).</p>
@@ -906,6 +920,8 @@ const G7_LESSONS = [
     num: 11,
     chapter: 3,
     title: "Định lí và chứng minh định lí",
+    youtube: "placeholder-YT-ID",
+
     summary: "Định lí có giả thiết và kết luận. Chứng minh là chuỗi lý do, không phải đo hình.",
     body: String.raw`
       <p>Định lí gồm giả thiết (cái đã cho) và kết luận (cái phải ra). Chứng minh là viết các bước, mỗi bước dựa vào định nghĩa, tiên đề, hoặc định lí đã có.</p>
@@ -969,6 +985,8 @@ const G7_LESSONS = [
     num: 12,
     chapter: 4,
     title: "Tổng các góc trong một tam giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Ba góc cộng 180°. Góc ngoài bằng tổng hai góc trong không kề với nó.",
     body: String.raw`
       <p>Kẻ đường thẳng qua một đỉnh, song song cạnh đối. Hai góc ở đáy so le trong với hai góc vừa tạo, cộng với góc ở đỉnh được góc bẹt. Vậy tổng ba góc là \(180^\circ\).</p>
@@ -1050,6 +1068,8 @@ const G7_LESSONS = [
     num: 13,
     chapter: 4,
     title: "Hai tam giác bằng nhau. Trường hợp cạnh–góc–cạnh",
+    youtube: "placeholder-YT-ID",
+
     summary: "Bằng nhau nghĩa là trùng khít. cgc: hai cạnh và góc xen giữa.",
     body: String.raw`
       <p>Hai tam giác bằng nhau khi có phép đặt trùng khít đỉnh với đỉnh, cạnh với cạnh, góc với góc. Không cần đối từng cặp nếu đã có một trường hợp đủ.</p>
@@ -1141,6 +1161,8 @@ const G7_LESSONS = [
     num: 14,
     chapter: 4,
     title: "Trường hợp góc–cạnh–góc và cạnh–cạnh–cạnh",
+    youtube: "placeholder-YT-ID",
+
     summary: "gcg: hai góc và cạnh xen giữa. ccc: ba cạnh.",
     body: String.raw`
       <p>Ngoài cgc còn hai trường hợp dùng nhiều: gcg và ccc.</p>
@@ -1230,6 +1252,8 @@ const G7_LESSONS = [
     num: 15,
     chapter: 4,
     title: "Trường hợp bằng nhau của tam giác vuông",
+    youtube: "placeholder-YT-ID",
+
     summary: "Vuông rồi thì cạnh huyền và một cạnh góc vuông, hoặc cạnh huyền và một góc nhọn, cũng đủ.",
     body: String.raw`
       <p>Tam giác vuông đã có một góc \(90^\circ\). Ngoài cgc, gcg, ccc còn dùng: cạnh huyền và một cạnh góc vuông; cạnh huyền và một góc nhọn.</p>
@@ -1314,6 +1338,8 @@ const G7_LESSONS = [
     num: 16,
     chapter: 4,
     title: "Tam giác cân và đường trung trực",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hai cạnh bên bằng nhau thì hai góc đáy bằng nhau. Trung trực là tập điểm cách đều hai đầu đoạn.",
     body: String.raw`
       <p>Tam giác cân: hai cạnh bằng nhau. Hai góc đáy bằng nhau. Đường trung tuyến, phân giác, đường cao kẻ từ đỉnh cân trùng nhau.</p>
@@ -1393,6 +1419,8 @@ const G7_LESSONS = [
     num: 17,
     chapter: 5,
     title: "Thu thập và phân loại dữ liệu",
+    youtube: "placeholder-YT-ID",
+
     summary: "Dữ liệu rời rạc đếm được từng giá trị. Dữ liệu liên tục thì ghép nhóm.",
     body: String.raw`
       <p>Thu thập xong phải xếp. Số anh chị em là rời rạc: 0, 1, 2, 3. Chiều cao là liên tục: ghép [140; 145), [145; 150), …</p>
@@ -1469,6 +1497,8 @@ const G7_LESSONS = [
     num: 18,
     chapter: 5,
     title: "Biểu đồ hình quạt tròn",
+    youtube: "placeholder-YT-ID",
+
     summary: "Cả vòng 360°. Mỗi phần lấy đúng tỉ lệ của nhóm ấy.",
     body: String.raw`
       <p>Quạt tròn cho thấy cơ cấu. Nhóm chiếm \(p\%\) thì góc ở tâm là \(\dfrac{p}{100} \cdot 360^\circ\).</p>
@@ -1547,6 +1577,8 @@ const G7_LESSONS = [
     num: 19,
     chapter: 5,
     title: "Biểu đồ đoạn thẳng",
+    youtube: "placeholder-YT-ID",
+
     summary: "Dùng khi dữ liệu theo thời gian. Đọc dốc để biết tăng hay giảm.",
     body: String.raw`
       <p>Trục ngang thường là thời gian, trục đứng là đại lượng. Gãy khúc nối các điểm. Dốc lên là tăng, dốc xuống là giảm, nằm ngang là không đổi.</p>
@@ -1647,6 +1679,8 @@ const G7_LESSONS = [
     num: 20,
     chapter: 6,
     title: "Tỉ lệ thức",
+    youtube: "placeholder-YT-ID",
+
     summary: "a/b = c/d khi ad = bc. Nhân chéo để kiểm tra hoặc tìm số chưa biết.",
     body: String.raw`
       <p>Hai tỉ số bằng nhau tạo thành tỉ lệ thức. \(\dfrac{a}{b} = \dfrac{c}{d}\) (với \(b, d \neq 0\)) khi và chỉ khi \(ad = bc\).</p>
@@ -1712,6 +1746,8 @@ const G7_LESSONS = [
     num: 21,
     chapter: 6,
     title: "Dãy tỉ số bằng nhau",
+    youtube: "placeholder-YT-ID",
+
     summary: "a/b = c/d = e/f thì mỗi tỉ số bằng tổng tử trên tổng mẫu.",
     body: String.raw`
       <p>Nếu \(\dfrac{a}{b} = \dfrac{c}{d} = \dfrac{e}{f} = k\) thì \(a = kb\), \(c = kd\), \(e = kf\). Cộng tử và cộng mẫu: \(\dfrac{a + c + e}{b + d + f} = k\).</p>
@@ -1774,6 +1810,8 @@ const G7_LESSONS = [
     num: 22,
     chapter: 6,
     title: "Đại lượng tỉ lệ thuận",
+    youtube: "placeholder-YT-ID",
+
     summary: "y tỉ lệ thuận với x khi y = kx, k không đổi. Tăng x thì y tăng cùng tỉ số.",
     body: String.raw`
       <p>Tiền mua kẹo tỉ lệ thuận với số gói nếu đơn giá không đổi. \(y = kx\). Đồ thị là đường thẳng qua gốc.</p>
@@ -1839,6 +1877,8 @@ const G7_LESSONS = [
     num: 23,
     chapter: 6,
     title: "Đại lượng tỉ lệ nghịch",
+    youtube: "placeholder-YT-ID",
+
     summary: "y tỉ lệ nghịch với x khi xy = k, k không đổi. Gấp x thì y giảm còn một nửa.",
     body: String.raw`
       <p>Cùng một quãng đường, vận tốc gấp đôi thì thời gian còn một nửa. \(xy = k\).</p>
@@ -1904,6 +1944,8 @@ const G7_LESSONS = [
     num: 24,
     chapter: 7,
     title: "Biểu thức đại số",
+    youtube: "placeholder-YT-ID",
+
     summary: "Chữ thay số. Điều kiện là mẫu khác 0 và căn không âm.",
     body: String.raw`
       <p>Biểu thức đại số gồm số, chữ và phép tính. Chữ là số chưa biết. Thế số vào chữ thì ra giá trị, nếu phép tính có nghĩa.</p>
@@ -1966,6 +2008,8 @@ const G7_LESSONS = [
     num: 25,
     chapter: 7,
     title: "Đa thức một biến",
+    youtube: "placeholder-YT-ID",
+
     summary: "Đa thức là tổng các hạng tử ax^n. Bậc là số mũ lớn nhất có hệ số khác 0.",
     body: String.raw`
       <p>\(3x^2 - 5x + 1\) là đa thức bậc 2, một biến \(x\). Hạng tử \(3x^2\) bậc 2, \(-5x\) bậc 1, \(1\) bậc 0.</p>
@@ -2026,6 +2070,8 @@ const G7_LESSONS = [
     num: 26,
     chapter: 7,
     title: "Cộng và trừ đa thức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Cộng trừ hạng tử đồng dạng. x² chỉ cộng với x², không cộng với x.",
     body: String.raw`
       <p>Đồng dạng nghĩa là cùng biến, cùng mũ. \(3x^2\) và \(-5x^2\) cộng được. \(3x^2\) và \(3x\) không cộng thành \(6x^2\).</p>
@@ -2091,6 +2137,8 @@ const G7_LESSONS = [
     num: 27,
     chapter: 7,
     title: "Nhân đa thức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Nhân từng hạng tử. (a+b)(c+d) = ac + ad + bc + bd.",
     body: String.raw`
       <p>\(x^m \cdot x^n = x^{m+n}\). Nhân đơn thức với đa thức: phân phối. Nhân hai nhị thức: bốn tích.</p>
@@ -2154,6 +2202,8 @@ const G7_LESSONS = [
     num: 28,
     chapter: 7,
     title: "Chia đa thức",
+    youtube: "placeholder-YT-ID",
+
     summary: "Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp lại.",
     body: String.raw`
       <p>\(x^5 : x^2 = x^3\) khi \(x \neq 0\). Chia đa thức cho nhị thức làm giống chia số: chia hạng tử bậc cao nhất, nhân, trừ, kéo xuống.</p>
@@ -2219,6 +2269,8 @@ const G7_LESSONS = [
     num: 29,
     chapter: 8,
     title: "Làm quen với biến cố",
+    youtube: "placeholder-YT-ID",
+
     summary: "Phép thử có nhiều kết quả. Biến cố là tập một số kết quả ấy.",
     body: String.raw`
       <p>Gieo xúc xắc: sáu mặt có thể xảy ra. “Ra số chẵn” gồm 2, 4, 6. Đó là một biến cố.</p>
@@ -2291,6 +2343,8 @@ const G7_LESSONS = [
     num: 30,
     chapter: 8,
     title: "Xác suất của biến cố",
+    youtube: "placeholder-YT-ID",
+
     summary: "P = số kết quả thuận lợi chia cho số kết quả đồng khả năng.",
     body: String.raw`
       <p>Khi mỗi kết quả một cơ hội như nhau, \(P(A) = \dfrac{n(A)}{n(\Omega)}\). Xác suất từ 0 đến 1.</p>
@@ -2362,6 +2416,8 @@ const G7_LESSONS = [
     num: 31,
     chapter: 9,
     title: "Góc và cạnh đối diện trong tam giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Góc lớn hơn thì cạnh đối diện dài hơn. Hai góc bằng nhau thì hai cạnh đối diện bằng nhau.",
     body: String.raw`
       <p>Trong một tam giác, cạnh lớn kề góc lớn. Đối diện góc vuông là cạnh dài nhất.</p>
@@ -2442,6 +2498,8 @@ const G7_LESSONS = [
     num: 32,
     chapter: 9,
     title: "Đường vuông góc và đường xiên",
+    youtube: "placeholder-YT-ID",
+
     summary: "Vuông góc là đoạn ngắn nhất từ một điểm đến đường thẳng. Xiên dài hơn, xiên xa chân hơn thì dài hơn.",
     body: String.raw`
       <p>Từ điểm \(M\) ngoài đường thẳng \(d\), hạ vuông góc được chân \(H\). \(MH\) ngắn hơn mọi đường xiên \(MA\) với \(A\) khác \(H\) trên \(d\).</p>
@@ -2528,6 +2586,8 @@ const G7_LESSONS = [
     num: 33,
     chapter: 9,
     title: "Ba cạnh của một tam giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Tổng hai cạnh lớn hơn cạnh còn lại. Hiệu hai cạnh nhỏ hơn cạnh còn lại.",
     body: String.raw`
       <p>Không có tam giác cạnh 2, 3, 6 vì 2 + 3 = 5 < 6. Ba điểm không khép kín.</p>
@@ -2604,6 +2664,8 @@ const G7_LESSONS = [
     num: 34,
     chapter: 9,
     title: "Đồng quy trung tuyến và phân giác",
+    youtube: "placeholder-YT-ID",
+
     summary: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
     body: String.raw`
       <p>Trung tuyến nối đỉnh với trung điểm cạnh đối. Ba trung tuyến đồng quy tại trọng tâm G. AG : GM = 2 : 1, M trung điểm.</p>
@@ -2669,6 +2731,8 @@ const G7_LESSONS = [
     num: 35,
     chapter: 9,
     title: "Đồng quy trung trực và đường cao",
+    youtube: "placeholder-YT-ID",
+
     summary: "Ba trung trực gặp nhau tại tâm đường tròn ngoại tiếp. Ba đường cao gặp nhau tại trực tâm.",
     body: String.raw`
       <p>Trung trực: vuông góc tại trung điểm cạnh. Giao ba trung trực là tâm đường tròn đi qua ba đỉnh.</p>
@@ -2754,6 +2818,8 @@ const G7_LESSONS = [
     num: 36,
     chapter: 10,
     title: "Hình hộp chữ nhật và hình lập phương",
+    youtube: "placeholder-YT-ID",
+
     summary: "Thể tích = dài × rộng × cao. Lập phương là hộp có mọi cạnh bằng nhau.",
     body: String.raw`
       <p>Hình hộp chữ nhật có 6 mặt là hình chữ nhật. Diện tích toàn phần \(S = 2(ab + bh + ha)\). Thể tích \(V = abh\).</p>
@@ -2833,6 +2899,8 @@ const G7_LESSONS = [
     num: 37,
     chapter: 10,
     title: "Hình lăng trụ đứng",
+    youtube: "placeholder-YT-ID",
+
     summary: "Hai đáy đa giác bằng nhau, mặt bên là hình chữ nhật. V = diện tích đáy × cao.",
     body: String.raw`
       <p>Lăng trụ đứng tam giác: đáy tam giác, ba mặt bên chữ nhật. Lăng trụ đứng tứ giác: đáy tứ giác. Chiều cao vuông góc với đáy, bằng cạnh bên.</p>
