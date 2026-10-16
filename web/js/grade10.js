@@ -379,6 +379,8 @@ exercises: [
     num: 3,
     chapter: 1,
     title: "Tập con và tập bằng nhau",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
@@ -441,6 +443,8 @@ exercises: [
     num: 4,
     chapter: 1,
     title: "Các phép toán tập hợp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hợp, giao, hiệu của hai tập hợp.",
@@ -505,6 +509,8 @@ exercises: [
     num: 5,
     chapter: 2,
     title: "Bất đẳng thức",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
@@ -566,6 +572,8 @@ exercises: [
     num: 6,
     chapter: 2,
     title: "Bất phương trình một ẩn",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
@@ -625,6 +633,8 @@ exercises: [
     num: 7,
     chapter: 2,
     title: "Dấu của nhị thức bậc nhất",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
@@ -686,6 +696,8 @@ exercises: [
     num: 8,
     chapter: 3,
     title: "Hàm số bậc hai",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
@@ -749,6 +761,8 @@ exercises: [
     num: 9,
     chapter: 3,
     title: "Dấu của tam thức bậc hai",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
@@ -872,6 +886,8 @@ exercises: [
     num: 11,
     chapter: 4,
     title: "Tổng và hiệu của hai vector",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
@@ -941,6 +957,8 @@ exercises: [
     num: 12,
     chapter: 4,
     title: "Hiệu của hai vector",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hiệu AB - AC = CB (quy tắc trừ).",
@@ -1010,6 +1028,8 @@ exercises: [
     num: 13,
     chapter: 4,
     title: "Tích của vector với một số",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
@@ -1076,6 +1096,8 @@ exercises: [
     num: 14,
     chapter: 4,
     title: "Hệ trục tọa độ",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
@@ -1138,6 +1160,8 @@ exercises: [
     num: 15,
     chapter: 4,
     title: "Tọa độ của vector",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Vector AB = (xB - xA, yB - yA).",
@@ -1204,6 +1228,8 @@ exercises: [
     num: 16,
     chapter: 4,
     title: "Biểu thức tọa độ của phép toán vector",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
@@ -1274,6 +1300,8 @@ exercises: [
     num: 17,
     chapter: 5,
     title: "Giá trị lượng giác của một góc từ 0° đến 180°",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Sin, cos, tan của góc trong tam giác.",
@@ -1340,6 +1368,8 @@ exercises: [
     num: 18,
     chapter: 5,
     title: "Tích vô hướng của hai vector",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
@@ -1410,6 +1440,8 @@ exercises: [
     num: 19,
     chapter: 5,
     title: "Ứng dụng tích vô hướng vào tính độ dài và góc",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
@@ -1478,6 +1510,8 @@ exercises: [
     num: 20,
     chapter: 5,
     title: "Các hệ thức lượng trong tam giác",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định lí cosin và định lí sin trong tam giác.",
@@ -1544,6 +1578,8 @@ exercises: [
     num: 21,
     chapter: 7,
     title: "Đường tròn trong mặt phẳng tọa độ",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đường tròn được xác định bởi tâm và bán kính.",
@@ -1606,6 +1642,8 @@ exercises: [
     num: 22,
     chapter: 7,
     title: "Ba đường conic",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Elip, parabol, hypebol là ba đường conic.",
@@ -1675,6 +1713,8 @@ exercises: [
     num: 23,
     chapter: 8,
     title: "Quy tắc cộng và quy tắc nhân",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
@@ -1737,6 +1777,8 @@ exercises: [
     num: 24,
     chapter: 8,
     title: "Hoán vị, chỉnh hợp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
@@ -1805,6 +1847,8 @@ exercises: [
     num: 25,
     chapter: 8,
     title: "Tổ hợp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
@@ -1871,6 +1915,8 @@ exercises: [
     num: 26,
     chapter: 9,
     title: "Số gần đúng và sai số",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
@@ -1938,6 +1984,8 @@ exercises: [
     num: 27,
     chapter: 9,
     title: "Các số đặc trưng đo xu thế trung tâm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
@@ -2006,6 +2054,8 @@ exercises: [
     num: 28,
     chapter: 9,
     title: "Các số đặc trưng đo độ phân tán",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
@@ -2072,6 +2122,8 @@ exercises: [
     num: 29,
     chapter: 10,
     title: "Xác suất của biến cố trong một số trò chơi đơn giản",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
@@ -2139,6 +2191,8 @@ exercises: [
     num: 30,
     chapter: 10,
     title: "Xác suất của biến cố",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Xác suất của hợp, giao, và biến cố đối.",

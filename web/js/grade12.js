@@ -671,6 +671,8 @@ exercises: [
     num: 7,
     chapter: 2,
     title: "Lũy thừa",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
@@ -716,6 +718,8 @@ exercises: [
     num: 8,
     chapter: 2,
     title: "Logarit",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của logarit.",
@@ -761,6 +765,8 @@ exercises: [
     num: 9,
     chapter: 2,
     title: "Hàm số mũ, hàm số logarit",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
@@ -819,6 +825,8 @@ exercises: [
     num: 10,
     chapter: 2,
     title: "Phương trình mũ, phương trình logarit",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
@@ -864,6 +872,8 @@ exercises: [
     num: 11,
     chapter: 2,
     title: "Bất phương trình mũ, bất phương trình logarit",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải bất phương trình mũ và logarit.",
@@ -909,6 +919,8 @@ exercises: [
     num: 12,
     chapter: 3,
     title: "Nguyên hàm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
@@ -954,6 +966,8 @@ exercises: [
     num: 13,
     chapter: 3,
     title: "Tích phân",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
@@ -1014,6 +1028,8 @@ exercises: [
     num: 14,
     chapter: 3,
     title: "Ứng dụng tích phân tính diện tích, thể tích",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
@@ -1072,6 +1088,8 @@ exercises: [
     num: 15,
     chapter: 4,
     title: "Số phức và biểu diễn hình học",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
@@ -1133,6 +1151,8 @@ exercises: [
     num: 16,
     chapter: 4,
     title: "Phép cộng và phép nhân các số phức",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Cộng, trừ, nhân số phức.",
@@ -1178,6 +1198,8 @@ exercises: [
     num: 17,
     chapter: 4,
     title: "Phép chia các số phức",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Chia số phức, số phức nghịch đảo.",
@@ -1223,6 +1245,8 @@ exercises: [
     num: 18,
     chapter: 4,
     title: "Phương trình bậc hai với hệ số thực",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
@@ -1268,6 +1292,8 @@ exercises: [
     num: 19,
     chapter: 5,
     title: "Tọa độ trong không gian",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
@@ -1331,6 +1357,8 @@ exercises: [
     num: 20,
     chapter: 5,
     title: "Phương trình mặt phẳng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tổng quát của mặt phẳng.",
@@ -1386,6 +1414,8 @@ exercises: [
     num: 21,
     chapter: 5,
     title: "Phương trình đường thẳng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tham số và phương trình chính tắc.",
@@ -1440,6 +1470,8 @@ exercises: [
     num: 22,
     chapter: 5,
     title: "Tích vô hướng và ứng dụng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
@@ -1485,6 +1517,8 @@ exercises: [
     num: 23,
     chapter: 6,
     title: "Khối đa diện",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",

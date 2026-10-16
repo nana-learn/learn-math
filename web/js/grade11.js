@@ -542,6 +542,8 @@ exercises: [
     num: 4,
     chapter: 2,
     title: "Nhị thức Newton",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
@@ -590,6 +592,8 @@ exercises: [
     num: 5,
     chapter: 3,
     title: "Dãy số",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
@@ -638,6 +642,8 @@ exercises: [
     num: 6,
     chapter: 3,
     title: "Cấp số cộng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
@@ -686,6 +692,8 @@ exercises: [
     num: 7,
     chapter: 4,
     title: "Giới hạn của dãy số",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
@@ -734,6 +742,8 @@ exercises: [
     num: 8,
     chapter: 4,
     title: "Giới hạn của hàm số",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
@@ -782,6 +792,8 @@ exercises: [
     num: 9,
     chapter: 5,
     title: "Đạo hàm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
@@ -830,6 +842,8 @@ exercises: [
     num: 10,
     chapter: 6,
     title: "Phép dời hình",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
@@ -878,6 +892,8 @@ exercises: [
     num: 11,
     chapter: 6,
     title: "Phép đồng dạng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
@@ -926,6 +942,8 @@ exercises: [
     num: 12,
     chapter: 7,
     title: "Đại cương về đường thẳng và mặt phẳng",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
@@ -974,6 +992,8 @@ exercises: [
     num: 13,
     chapter: 7,
     title: "Hai đường thẳng song song",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
@@ -1022,6 +1042,8 @@ exercises: [
     num: 14,
     chapter: 8,
     title: "Vectơ trong không gian",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
@@ -1070,6 +1092,8 @@ exercises: [
     num: 15,
     chapter: 8,
     title: "Hai đường thẳng vuông góc",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
@@ -1119,6 +1143,8 @@ exercises: [
     num: 16,
     chapter: 7,
     title: "Hai mặt phẳng song song",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
@@ -1167,6 +1193,8 @@ exercises: [
     num: 17,
     chapter: 7,
     title: "Phép chiếu song song",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
@@ -1215,6 +1243,8 @@ exercises: [
     num: 18,
     chapter: 8,
     title: " Vectơ trong không gian (tiếp)",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
@@ -1263,6 +1293,8 @@ exercises: [
     num: 19,
     chapter: 8,
     title: "Hai mặt phẳng vuông góc",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
@@ -1311,6 +1343,8 @@ exercises: [
     num: 20,
     chapter: 8,
     title: "Khoảng cách",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
@@ -1360,6 +1394,8 @@ exercises: [
     num: 21,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản (tiếp)",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
@@ -1408,6 +1444,8 @@ exercises: [
     num: 22,
     chapter: 1,
     title: "Phương trình lượng giác thường gặp",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
@@ -1456,6 +1494,8 @@ exercises: [
     num: 23,
     chapter: 1,
     title: "Hàm số lượng giác (tiếp)",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",

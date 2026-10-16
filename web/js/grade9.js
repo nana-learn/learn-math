@@ -59,6 +59,8 @@ const G9_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
@@ -89,6 +91,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",

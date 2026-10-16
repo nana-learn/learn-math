@@ -17,6 +17,8 @@ const G6_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     <div class="trap"><p><strong>Cảnh báo:</strong> Ghi nhớ cảnh báo quan trọng.</p></div>
 
     youtube: "dQw4w9WgXcQ",
@@ -49,6 +51,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tậ
     num: 103,
     chapter: 3,
     title: "Chương 3: Phép chia - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
@@ -83,6 +87,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
     num: 104,
     chapter: 4,
     title: "Chương 4: Hình học - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
@@ -117,6 +123,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
     num: 105,
     chapter: 5,
     title: "Chương 5: Phân số - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phân số, phép toán phân số.",
@@ -151,6 +159,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
     num: 106,
     chapter: 6,
     title: "Chương 6: Số đo góc - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
@@ -185,6 +195,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 107,
     chapter: 7,
     title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
@@ -219,6 +231,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 108,
     chapter: 8,
     title: "Chương 8: Diện tích - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
@@ -3789,6 +3803,8 @@ String.raw`
     num: 102,
     chapter: 2,
     title: "Chương 2: Tính chia hết - Trắc nghiệm",
+    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
