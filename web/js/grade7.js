@@ -1068,8 +1068,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "mc", prompt: "Ba góc bằng nhau thì hai tam giác", choices: ["Luôn bằng nhau", "Đồng dạng, chưa chắc bằng nhau", "Vuông", "Cân"], correct: 1, hint: "Thiếu cạnh.", explain: "Cùng hình dạng, khác kích thước được." },
+          exercises: [
+        { type: "mc", prompt: "Hai đại lượng tỉ lệ thuận nếu", choices: ["Tỉ số của chúng không đổi", "Tích của chúng không đổi", "Tổng của chúng không đổi", "Hiệu của chúng không đổi"], correct: 0, hint: "Định nghĩa tỉ lệ thuận.", explain: "Tỉ số không đổi." },
+        { type: "mc", prompt: "y tỉ lệ thuận với x theo hệ số k = 3. Khi x = 2 thì y =", choices: ["6", "2/3", "3/2", "5"], correct: 0, hint: "y = kx = 3×2 = 6.", explain: "6." },
+        { type: "text", prompt: "x và y tỉ lệ thuận. Khi x = 4 thì y = 12. Hệ số tỉ lệ là", answer: "3", accept: ["3"], hint: "k = y/x = 12/4 = 3.", explain: "3." },
+      ], correct: 1, hint: "Thiếu cạnh.", explain: "Cùng hình dạng, khác kích thước được." },
       { type: "mc", prompt: "ccc là", choices: ["Hai cạnh một góc", "Ba cạnh", "Ba góc", "Hai góc một cạnh"], correct: 1, hint: "Ba chữ c.", explain: "Ba cạnh tương ứng bằng nhau." },
       { type: "num", prompt: "ΔABC = ΔMNP theo ccc. Nếu AB = 7 cm thì MN bằng bao nhiêu cm?", answer: 7, hint: "A↔M, B↔N.", explain: "7 cm." },
       { type: "mc", prompt: "gcg cần cạnh", choices: ["Bất kì","Xen giữa hai góc","Lớn nhất","Nhỏ nhất"], correct: 1, hint: "Xen giữa.", explain: "Cạnh giữa hai góc." },
