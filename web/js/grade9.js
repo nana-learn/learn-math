@@ -102,8 +102,11 @@ const G9_LESSONS = [
         <p>Đường tròn (O), \\(\widehat{XYZ} = 35^\circ\\). Cung \\(XZ = 70^\circ\\). Góc ở tâm \\(XOZ = 70^\circ\\).</p>
       </div>
     `,
-    exercises: [
-      { type: "num", prompt: "Cung AB = 120°. Góc nội tiếp chắn cung AB bằng bao nhiêu?", answer: 60, accept: ["60", "60°"], hint: "120° : 2 = 60°.", explain: "Góc nội tiếp = 1/2 cung bị chắn = 60°." },
+          exercises: [
+        { type: "mc", prompt: "Góc nội tiếp bằng", choices: ["Nửa số đo cung bị chắn", "Số đo cung bị chắn", "Góc ở tâm", "Nửa góc ở tâm"], correct: 0, hint: "Định lí góc nội tiếp.", explain: "Nửa số đo cung bị chắn." },
+        { type: "mc", prompt: "Hai góc nội tiếp bằng nhau thì", choices: ["Cùng chắn một cung", "Chắn hai cung bằng nhau", "Đều là góc vuông", "Không có mối quan hệ"], correct: 0, hint: "Định lí đảo.", explain: "Cùng chắn một cung hoặc chắn hai cung bằng nhau." },
+        { type: "text", prompt: "Cung AB có số đo 80°. Góc nội tiếp chắn cung AB bằng", answer: "40°", accept: ["40°", "40"], hint: "Góc nội tiếp = 1/2 số đo cung.", explain: "40°." },
+      ], hint: "120° : 2 = 60°.", explain: "Góc nội tiếp = 1/2 cung bị chắn = 60°." },
       { type: "mc", prompt: "Góc nội tiếp = 40°. Cung bị chắn bằng bao nhiêu?", choices: ["40°", "80°", "120°", "160°"], correct: 1, hint: "40° × 2 = 80°.", explain: "Cung bị chắn = 2 × góc nội tiếp = 80°." },
       { type: "num", prompt: "Đường tròn (O), góc ở tâm AOB = 100°. Góc nội tiếp ACB (cùng chắn cung AB) bằng bao nhiêu?", answer: 50, accept: ["50", "50°"], hint: "100° : 2 = 50°.", explain: "Góc nội tiếp = 1/2 góc ở tâm = 50°." },
       { type: "text", prompt: "Góc nội tiếp chắn nửa đường tròn là góc gì?", answer: "vuông", accept: ["vuông", "90°", "90"], hint: "Nửa đường tròn = 180°.", explain: "Góc nội tiếp = 1/2 × 180° = 90° (góc vuông)." },
