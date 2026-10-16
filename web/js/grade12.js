@@ -367,7 +367,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> f(x) = 1/x không nghịch biến trên ℝ \ {0}.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = -x²", "y = x³", "y = 1/x", "y = |x|"], correct: 1, hint: "y = x³ có đạo hàm ≥ 0.", explain: "y = x³ đồng biến trên ℝ." },
       { type: "mc", prompt: "Hàm số y = x² nghịch biến trên khoảng nào?", choices: ["(-∞, 0)", "(0, +∞)", "(-∞, +∞)", "không nghịch biến"], correct: 0, hint: "y' = 2x < 0 khi x < 0.", explain: "Nghịch biến trên (-∞, 0)." },
       { type: "text", prompt: "Tìm khoảng đồng biến của y = x³ - 3x.", answer: "(-∞, -1) và (1, +∞)", accept: ["(-∞, -1) và (1, +∞)"], hint: "y' = 3x² - 3 > 0 khi x < -1 hoặc x > 1.", explain: "y' > 0 khi x < -1 hoặc x > 1." },
@@ -405,7 +409,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> f'(x₀) = 0 nhưng không đổi dấu → không phải cực trị.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Hàm số y = x³ có cực trị nào?", choices: ["Cực đại tại x=0", "Cực tiểu tại x=0", "Không có cực trị", "Cực đại và cực tiểu"], correct: 2, hint: "y' = 3x² ≥ 0, không đổi dấu.", explain: "Không có cực trị." },
       { type: "mc", prompt: "Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' có 3 nghiệm và đổi dấu.", explain: "3 cực trị." },
       { type: "text", prompt: "Tìm cực tiểu của y = x² + 4/x (x > 0).", answer: "3", accept: ["3"], hint: "y' = 2x - 4/x² = 0 ↔ x³ = 2.", explain: "x = ∛2." },
@@ -431,7 +439,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Không áp dụng trên khoảng không đóng.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "GTLN của y = -x² + 4x trên [0;3] là?", choices: ["0", "4", "3", "5"], correct: 1, hint: "f(0)=0, f(2)=4, f(3)=3.", explain: "GTLN = 4." },
       { type: "mc", prompt: "GTNN của y = x² + 1 trên [-1;2] là?", choices: ["0", "1", "2", "5"], correct: 1, hint: "x² ≥ 0 nên y ≥ 1.", explain: "GTNN = 1." },
       { type: "text", prompt: "Tìm GTLN của y = sinx + cosx.", answer: "√2", accept: ["√2"], hint: "sinx + cosx = √2 sin(x + π/4).", explain: "GTLN = √2." },
@@ -459,7 +471,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Hàm phải không xác định tại x₀ mới là tiệm cận.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Tiệm cận đứng của y = 1/(x - 2) là?", choices: ["x = 0", "x = 2", "y = 0", "y = 2"], correct: 1, hint: "Mẫu = 0 khi x = 2.", explain: "x = 2." },
       { type: "mc", prompt: "Tiệm cận ngang của y = (3x-1)/(x+2) là?", choices: ["y = 3", "y = -3", "y = 1/2", "y = -1/2"], correct: 0, hint: "Hệ số cao nhất: 3x/x = 3.", explain: "y = 3." },
       { type: "text", prompt: "Tìm tất cả tiệm cận của y = (x+1)/(x²-4).", answer: "x = 2, x = -2, y = 0", accept: ["x=2,x=-2,y=0"], hint: "Mẫu = 0 khi x = ±2.", explain: "x = 2, x = -2 (đứng), y = 0 (ngang)." },
@@ -501,7 +517,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Bỏ qua giới hạn ở vô cực.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Đồ thị y = x³ - 3x có bao nhiêu điểm cực trị?", choices: ["0", "1", "2", "3"], correct: 2, hint: "y' = 3x² - 3 có 2 nghiệm.", explain: "2 cực trị." },
       { type: "mc", prompt: "Đồ thị y = x⁴ có dạng gì?", choices: ["Hình chữ V", "Parabol", "Hình chữ W", "Đường thẳng"], correct: 1, hint: "Hàm bậc 4 dương.", explain: "Parabol dạng U." },
       { type: "text", prompt: "Giao điểm của y = x² - 4 với trục Oy là?", answer: "(0; -4)", accept: ["(0,-4)"], hint: "Cho x = 0.", explain: "(0, -4)." },
@@ -529,7 +549,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên điều kiện nghiệm.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Số giao điểm của y = x² và y = 2x là?", choices: ["0", "1", "2", "3"], correct: 2, hint: "x² = 2x ↔ x(x-2) = 0.", explain: "2 giao điểm." },
       { type: "mc", prompt: "x³ - 3x + 1 = m có 3 nghiệm khi?", choices: ["m < -1", "m > 1", "-1 < m < 1", "m = ±1"], correct: 2, hint: "y(1) = -1, y(-1) = 3.", explain: "-1 < m < 3." },
       { type: "text", prompt: "Tìm m để y = x² và y = x + m tiếp xúc nhau.", answer: "-1/4", accept: ["-1/4"], hint: "delta = 0.", explain: "m = -1/4." },
@@ -557,7 +581,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> 0⁰ không xác định.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "2³·2⁴ bằng?", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "aᵐ·aⁿ = aᵐ⁺ⁿ.", explain: "2⁷." },
       { type: "mc", prompt: "(3²)³ bằng?", choices: ["3⁵", "3⁶", "9³", "27²"], correct: 1, hint: "(aᵐ)ⁿ = aᵐⁿ.", explain: "3⁶." },
       { type: "text", prompt: "8·4² dưới dạng lũy thừa:", answer: "2⁷", accept: ["2^7", "2⁷"], hint: "8=2³, 4=2².", explain: "2⁷." },
@@ -585,7 +613,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> logₐ(b+c) ≠ logₐb + logₐc.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "log₃27 bằng?", choices: ["3", "9", "27", "1/3"], correct: 0, hint: "3³ = 27.", explain: "3." },
       { type: "mc", prompt: "log₁₀1000 bằng?", choices: ["2", "3", "4", "10"], correct: 1, hint: "10³ = 1000.", explain: "3." },
       { type: "text", prompt: "log₂16 + log₂2 bằng?", answer: "5", accept: ["5"], hint: "log₂16=4, log₂2=1.", explain: "5." },
@@ -626,7 +658,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong] Đồ thị y = aˣ không cắt trục Ox.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = (1/2)ˣ", "y = 2ˣ", "y = log₀.₅x", "y = log₂(1-x)"], correct: 1, hint: "a > 1 thì đồng biến.", explain: "y = 2ˣ." },
       { type: "mc", prompt: "Đồ thị y = log₃x đi qua điểm nào?", choices: ["(0, 1)", "(1, 0)", "(3, 0)", "(1, 3)"], correct: 1, hint: "logₐ1 = 0.", explain: "(1, 0)." },
       { type: "text", prompt: "Tiệm cận ngang của y = 3⁻ˣ là?", answer: "y = 0", accept: ["y=0"], hint: "limₓ→+∞ 3⁻ˣ = 0.", explain: "y = 0." },
@@ -654,7 +690,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên điều kiện x > 1.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ = 27 là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "27 = 3³.", explain: "x = 3." },
       { type: "mc", prompt: "Nghiệm của log₅x = 2 là?", choices: ["5", "10", "25", "125"], correct: 2, hint: "x = 5².", explain: "x = 25." },
       { type: "text", prompt: "Giải 2ˣ⁺² = 32.", answer: "3", accept: ["3"], hint: "32 = 2⁵.", explain: "x = 3." },
@@ -682,7 +722,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Đổi chiều sai khi 0 < a < 1.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ > 27 là?", choices: ["x > 2", "x > 3", "x < 3", "x < 2"], correct: 1, hint: "27 = 3³, a > 1.", explain: "x > 3." },
       { type: "mc", prompt: "Nghiệm của (1/3)ˣ < 9 là?", choices: ["x > -2", "x < -2", "x > 2", "x < 2"], correct: 0, hint: "9 = (1/3)⁻², đổi chiều.", explain: "x > -2." },
       { type: "text", prompt: "Giải log₂(x + 1) > 2.", answer: "x > 3", accept: ["x>3"], hint: "x + 1 > 4.", explain: "x > 3." },
@@ -710,7 +754,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên hằng số C. ∫x⁻¹dx = ln|x| + C.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "∫2x dx bằng?", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
       { type: "mc", prompt: "∫e³ˣ dx bằng?", choices: ["e³ˣ + C", "3e³ˣ + C", "(1/3)e³ˣ + C", "eˣ + C"], correct: 2, hint: "∫eᵃˣdx = (1/a)eᵃˣ.", explain: "(1/3)e³ˣ + C." },
       { type: "text", prompt: "∫cos3x dx =", answer: "(1/3)sin3x + C", accept: ["(1/3)sin3x+C"], hint: "∫cosax dx = (1/a)sinax.", explain: "(1/3)sin3x + C." },
@@ -753,7 +801,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Thay giới hạn sai.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "∫₀¹2x dx bằng?", choices: ["0", "1", "2", "4"], correct: 1, hint: "[x²]₀¹ = 1.", explain: "1." },
       { type: "mc", prompt: "∫₀^πcosx dx bằng?", choices: ["0", "1", "2", "-2"], correct: 0, hint: "[sinx]₀^π = 0.", explain: "0." },
       { type: "text", prompt: "∫₁²x² dx =", answer: "7/3", accept: ["7/3"], hint: "[x³/3]₁² = 8/3 - 1/3.", explain: "7/3." },
@@ -794,7 +846,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên dấu giá trị tuyệt đối.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Diện tích dưới y = x từ 0 đến 2 là?", choices: ["1", "2", "4", "8"], correct: 1, hint: "∫₀²x dx = [x²/2]₀².", explain: "2." },
       { type: "mc", prompt: "Thể tích khối tròn xoay quanh Ox của y = x từ 0 đến 1 là?", choices: ["π/3", "π/2", "π", "2π"], correct: 0, hint: "V = π∫₀¹x²dx.", explain: "π/3." },
       { type: "text", prompt: "Diện tích hình phẳng giới hạn y = x² và y = x là?", answer: "1/6", accept: ["1/6"], hint: "∫₀¹(x-x²)dx.", explain: "1/6." },
@@ -838,7 +894,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> i² = -1, không phải 1.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Phần ảo của z = 5 - 3i là?", choices: ["5", "-3", "3", "-5"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-3." },
       { type: "mc", prompt: "|3 + 4i| bằng?", choices: ["5", "6", "7", "25"], correct: 0, hint: "|z| = √(a²+b²).", explain: "5." },
       { type: "text", prompt: "(2 + 3i) + (1 - 2i) =", answer: "3 + i", accept: ["3+i"], hint: "Cộng phần thực và phần ảo.", explain: "3 + i." },
@@ -866,7 +926,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên i² = -1 khi nhân.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "(3+2i)+(1-5i) =", choices: ["4-3i", "4+3i", "2-3i", "2+3i"], correct: 0, hint: "3+1=4, 2-5=-3.", explain: "4-3i." },
       { type: "mc", prompt: "(2+i)(3-i) =", choices: ["5+i", "6-2i", "7+i", "5-i"], correct: 0, hint: "6+i+1=5+i.", explain: "5+i." },
       { type: "text", prompt: "(1+i)² =", answer: "2i", accept: ["2i"], hint: "1+2i+i².", explain: "2i." },
@@ -894,7 +958,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Quên nhân cả tử và mẫu.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "(3+i)/(1-i) =", choices: ["1+2i", "1-2i", "2+i", "2-i"], correct: 0, hint: "Nhân với 1+i.", explain: "1+2i." },
       { type: "mc", prompt: "1/i bằng?", choices: ["i", "-i", "1", "-1"], correct: 1, hint: "1/i = i/i².", explain: "-i." },
       { type: "text", prompt: "(2+3i)/i =", answer: "3-2i", accept: ["3-2i"], hint: "Nhân với -i.", explain: "3-2i." },
@@ -922,7 +990,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Tính delta sai. Quên i khi viết nghiệm.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Nghiệm của x²+9=0 là?", choices: ["x=±3", "x=±3i", "x=±9", "x=±9i"], correct: 1, hint: "x²=-9.", explain: "x=±3i." },
       { type: "mc", prompt: "Nghiệm của x²-2x+2=0 là?", choices: ["x=1±i", "x=1±2i", "x=2±i", "x=-1±i"], correct: 0, hint: "Δ=-4.", explain: "x=1±i." },
       { type: "text", prompt: "Giải x²+4x+5=0.", answer: "x=-2±i", accept: ["x=-2±i"], hint: "Δ=-4.", explain: "x=-2±i." },
@@ -968,7 +1040,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Hoán vị tọa độ. Quên bình phương.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Vectơ AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(3,5,7)"], correct: 0, hint: "4-1=3, 5-2=3, 6-3=3.", explain: "(3,3,3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0,0), B(3,4,12) là?", choices: ["13", "14", "15", "16"], correct: 0, hint: "√(9+16+144)=√169.", explain: "13." },
       { type: "text", prompt: "Trung điểm của A(1,3,5) và B(3,7,9) là?", answer: "(2,5,7)", accept: ["(2,5,7)"], hint: "Trung bình mỗi tọa độ.", explain: "(2,5,7)." },
@@ -1006,7 +1082,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Thay dấu sai khi khai triển.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Mặt phẳng (Oxy) có phương trình?", choices: ["x=0", "y=0", "z=0", "x+y=0"], correct: 2, hint: "Tất cả điểm có z=0.", explain: "z=0." },
       { type: "mc", prompt: "VTPT của 2x-3y+z-5=0 là?", choices: ["(2,-3,1)", "(-2,3,-1)", "(2,3,1)", "(1,-3,2)"], correct: 0, hint: "Hệ số của x,y,z.", explain: "(2,-3,1)." },
       { type: "text", prompt: "Mặt phẳng qua (1,0,0), (0,2,0), (0,0,3) là?", answer: "x+y/2+z/3=1", accept: ["x+y/2+z/3=1"], hint: "Dạng x/a+y/b+z/c=1.", explain: "x+y/2+z/3=1." },
@@ -1043,7 +1123,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong] Chia cho 0 khi a,b hoặc c = 0.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Đường thẳng song song Ox qua (1,2,3) có phương trình?", choices: ["y=2,z=3", "x=1,z=3", "x=1,y=2", "x+y+z=6"], correct: 0, hint: "y,z không đổi.", explain: "y=2,z=3." },
       { type: "mc", prompt: "VTCP của (x-1)/2=(y+3)/(-1)=z/4 là?", choices: ["(2,-1,4)", "(-2,1,-4)", "(1/2,-1,4)", "(2,1,4)"], correct: 0, hint: "Mẫu số là VTCP.", explain: "(2,-1,4)." },
       { type: "text", prompt: "Phương trình đường thẳng qua (0,0,0) và (1,2,3) là?", answer: "x/1=y/2=z/3", accept: ["x/1=y/2=z/3"], hint: "VTCP=(1,2,3).", explain: "x/1=y/2=z/3." },
@@ -1071,7 +1155,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong> Tính tích vô hướng sai dấu.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0). u·v =", choices: ["0", "2", "4", "6"], correct: 0, hint: "1·2+2·(-1)+2·0.", explain: "0." },
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0) thì?", choices: ["song song", "vuông góc", "cùng phương", "không vuông góc"], correct: 1, hint: "u·v=0.", explain: "Vuông góc." },
       { type: "text", prompt: "Khoảng cách từ (1,2,3) đến 2x-y+2z-6=0 là?", answer: "0", accept: ["0"], hint: "|2-2+6-6|/3=0.", explain: "0." },
@@ -1114,7 +1202,11 @@ const G12_LESSONS = [
       <div class="warn">
         <p><strong>Lỗi thường gặp.</strong] Quên hệ số 1/3 với hình chóp.</p>
       </div>`,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Thể tích hình hộp chữ nhật 2×3×4 là?", choices: ["12", "24", "36", "48"], correct: 1, hint: "V=abc.", explain: "24." },
       { type: "mc", prompt: "Thể tích hình chóp có đáy diện tích 9, chiều cao 6 là?", choices: ["9", "18", "27", "54"], correct: 1, hint: "V=(1/3)×9×6.", explain: "18." },
       { type: "text", prompt: "Thể tích hình lập phương cạnh 5 là?", answer: "125", accept: ["125"], hint: "V=a³.", explain: "125." },
