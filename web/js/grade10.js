@@ -87,6 +87,37 @@ const G10_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Nếu |a| = 3, |b| = 4, góc(a,b) = 90° thì a·b =", choices: ["0", "12", "6", "24"], correct: 0, hint: "a·b = 3·4·cos90° = 12·0 = 0.", explain: "0." },
     ],
   },
+
+  {
+    id: "g10-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Mệnh đề nào đúng?", choices: ["2+3=5", "2+3=6", "x²≥0 với mọi x", "Cả A và C"], correct: 3, hint: "2+3=5 đúng, x²≥0 luôn đúng.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 2: Tập hợp A = {x∈Z | -2<x≤2} có bao nhiêu phần tử?", choices: ["4", "5", "3", "6"], correct: 0, hint: "A = {-1,0,1,2} → 4 phần tử.", explain: "4." },
+      { type: "text", prompt: "Cho A = {1,2,3}, B = {2,3,4}. A∩B =", answer: "{2,3}", accept: ["{2,3}", "2,3"], hint: "Giao: phần tử chung.", explain: "{2,3}." },
+      { type: "mc", prompt: "Câu 4: Mệnh đề phủ định của '∀x∈R, x²≥0' là?", choices: ["∃x∈R, x²<0", "∀x∈R, x²<0", "∃x∈R, x²≤0", "∀x∈R, x²≤0"], correct: 0, hint: "Phủ định ∀ là ∃, đổi dấu.", explain: "∃x∈R, x²<0." },
+    ],
+  },
+  {
+    id: "g10-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = -2x + 3 là?", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -2 < 0 nên nghịch biến.", explain: "Nghịch biến." },
+      { type: "mc", prompt: "Câu 2: Đỉnh của parabol y = x² - 4x + 3 là?", choices: ["(2,-1)", "(2,1)", "(-2,-1)", "(-2,1)"], correct: 0, hint: "x = -b/(2a) = 2, y = 4 - 8 + 3 = -1.", explain: "(2,-1)." },
+      { type: "text", prompt: "Tìm nghiệm của phương trình x² - 5x + 6 = 0.", answer: "2 và 3", accept: ["2 và 3", "x=2,x=3"], hint: "(x-2)(x-3)=0 → x=2,3.", explain: "2 và 3." },
+      { type: "mc", prompt: "Câu 4: Hai đường thẳng y = 3x + 1 và y = -1/3x + 2:", choices: ["Vuông góc", "Song song", "Cắt nhau không vuông", "Trùng nhau"], correct: 0, hint: "3 × (-1/3) = -1 → vuông góc.", explain: "Vuông góc." },
+    ],
+  },
 ];
 
 const G10_LESSONS = [
@@ -1689,6 +1720,37 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Câu 6: Trong mặt phẳng tọa độ, Vector AB = (xB-xA, yB-yA). AB·AC =", choices: ["(xB-xA)(xC-xA) + (yB-yA)(yC-yA)", "(xB-xA)(xC-xA) - (yB-yA)(yC-yA)", "(xB-xA) + (xC-xA)", "(yB-yA) + (yC-yA)"], correct: 0, hint: "Tích vô hướng = tổng tích các thành phần.", explain: "(xB-xA)(xC-xA) + (yB-yA)(yC-yA)." },
       { type: "mc", prompt: "Câu 7: Khoảng cách giữa A(xA,yA) và B(xB,yB) là?", choices: ["√[(xB-xA)² + (yB-yA)²]", "√[(xB-xA) + (yB-yA)]", "(xB-xA)² + (yB-yA)²", "xB-xA + yB-yA"], correct: 0, hint: "AB = √[(xB-xA)² + (yB-yA)²].", explain: "√[(xB-xA)² + (yB-yA)²]." },
       { type: "mc", prompt: "Câu 8: Nếu |a| = 3, |b| = 4, góc(a,b) = 90° thì a·b =", choices: ["0", "12", "6", "24"], correct: 0, hint: "a·b = 3·4·cos90° = 12·0 = 0.", explain: "0." },
+    ],
+  },
+
+  {
+    id: "g10-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
+    summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Mệnh đề nào đúng?", choices: ["2+3=5", "2+3=6", "x²≥0 với mọi x", "Cả A và C"], correct: 3, hint: "2+3=5 đúng, x²≥0 luôn đúng.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 2: Tập hợp A = {x∈Z | -2<x≤2} có bao nhiêu phần tử?", choices: ["4", "5", "3", "6"], correct: 0, hint: "A = {-1,0,1,2} → 4 phần tử.", explain: "4." },
+      { type: "text", prompt: "Cho A = {1,2,3}, B = {2,3,4}. A∩B =", answer: "{2,3}", accept: ["{2,3}", "2,3"], hint: "Giao: phần tử chung.", explain: "{2,3}." },
+      { type: "mc", prompt: "Câu 4: Mệnh đề phủ định của '∀x∈R, x²≥0' là?", choices: ["∃x∈R, x²<0", "∀x∈R, x²<0", "∃x∈R, x²≤0", "∀x∈R, x²≤0"], correct: 0, hint: "Phủ định ∀ là ∃, đổi dấu.", explain: "∃x∈R, x²<0." },
+    ],
+  },
+  {
+    id: "g10-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
+    summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = -2x + 3 là?", choices: ["Nghịch biến", "Đồng biến", "Không đổi", "Không xác định"], correct: 0, hint: "a = -2 < 0 nên nghịch biến.", explain: "Nghịch biến." },
+      { type: "mc", prompt: "Câu 2: Đỉnh của parabol y = x² - 4x + 3 là?", choices: ["(2,-1)", "(2,1)", "(-2,-1)", "(-2,1)"], correct: 0, hint: "x = -b/(2a) = 2, y = 4 - 8 + 3 = -1.", explain: "(2,-1)." },
+      { type: "text", prompt: "Tìm nghiệm của phương trình x² - 5x + 6 = 0.", answer: "2 và 3", accept: ["2 và 3", "x=2,x=3"], hint: "(x-2)(x-3)=0 → x=2,3.", explain: "2 và 3." },
+      { type: "mc", prompt: "Câu 4: Hai đường thẳng y = 3x + 1 và y = -1/3x + 2:", choices: ["Vuông góc", "Song song", "Cắt nhau không vuông", "Trùng nhau"], correct: 0, hint: "3 × (-1/3) = -1 → vuông góc.", explain: "Vuông góc." },
     ],
   },
 ];
