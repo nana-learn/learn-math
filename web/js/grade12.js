@@ -405,6 +405,11 @@ String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo 
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = -x²", "y = x³", "y = 1/x", "y = |x|"], correct: 1, hint: "y = x³ có đạo hàm ≥ 0.", explain: "y = x³ đồng biến trên ℝ." },
       { type: "mc", prompt: "Hàm số y = x² nghịch biến trên khoảng nào?", choices: ["(-∞, 0)", "(0, +∞)", "(-∞, +∞)", "không nghịch biến"], correct: 0, hint: "y' = 2x < 0 khi x < 0.", explain: "Nghịch biến trên (-∞, 0)." },
