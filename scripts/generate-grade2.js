@@ -109,7 +109,24 @@ const chapters = [
       { prompt: "7 giờ 30 phút còn gọi là", choices: ["7 giờ rưỡi", "7 giờ kém 30", "8 giờ", "6 giờ"], correct: 0 },
     ],
   },
-  { id: 7, title: "Ôn tập học kì I", intro: "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề." },
+  {
+    id: 7,
+    title: "Ôn tập học kì I",
+    intro: "Ôn lại số, cộng trừ, hình, đo và giờ. Cuối chủ đề có mini đề.",
+    tips: ["Đếm số đến 100", "Cộng trừ trong phạm vi 100", "Nhận dạng hình phẳng", "Đọc giờ trên đồng hồ"],
+    samples: [
+      { title: "Số", q: "95 đọc là", how: "9 chục, 5 đơn vị. Đọc: chín mươi lăm.", a: "chín mươi lăm" },
+      { title: "Cộng", q: "35 + 24", how: "5 + 4 = 9, 3 + 2 = 5. Viết 9, 5.", a: "59" },
+      { title: "Hình", q: "Có 4 cạnh, 4 đỉnh là", how: "Tứ giác có 4 cạnh, 4 đỉnh.", a: "tứ giác" },
+      { title: "Giờ", q: "Kim ngắn ở 3, kim dài ở 12", how: "Kim dài ở 12 là giờ đúng.", a: "3 giờ" },
+    ],
+    checks: [
+      { prompt: "95 đọc là", choices: ["Chín mươi lăm", "Chín mươi năm", "Chín mươi", "Mười lăm"], correct: 0 },
+      { prompt: "35 + 24 =", choices: ["59", "49", "69", "55"], correct: 0 },
+      { prompt: "Có 4 cạnh, 4 đỉnh là", choices: ["Tứ giác", "Tam giác", "Đoạn", "Đường"], correct: 0 },
+      { prompt: "Kim ngắn ở 3, kim dài ở 12 là", choices: ["3 giờ", "3 giờ rưỡi", "12 giờ", "4 giờ"], correct: 0 },
+    ],
+  },
   {
     id: 8,
     title: "Phép nhân, phép chia",
@@ -170,9 +187,54 @@ const chapters = [
       { prompt: "5000 đồng bớt 2000 đồng còn", choices: ["3000 đồng", "7000 đồng", "3000 kg", "3 đồng"], correct: 0 },
     ],
   },
-  { id: 12, title: "Phép cộng, phép trừ trong phạm vi 1000", intro: "5 bài. Cộng trừ số có ba chữ số. Thẳng cột. Nhớ và mượn từng hàng." },
-  { id: 13, title: "Làm quen với yếu tố thống kê, xác suất", intro: "4 bài. Đếm, phân loại, đọc biểu đồ tranh. Nói chắc chắn, có thể, không thể." },
-  { id: 14, title: "Ôn tập cuối năm", intro: "Ôn cả năm. Cuối có mini đề. Làm chậm, soát nhớ/mượn và đơn vị." },
+  {
+    id: 12,
+    title: "Phép cộng, phép trừ trong phạm vi 1000",
+    intro: "5 bài. Cộng trừ số có ba chữ số. Thẳng cột. Nhớ và mượn từng hàng.",
+    tips: ["Thẳng cột", "Hàng đơn vị nhớ 1", "Hàng chục mượn 1", "Kiểm bằng phép trừ/cộng lại"],
+    samples: [
+      { title: "Cộng", q: "235 + 142", how: "5+2=7, 3+4=7, 2+1=3. Viết 7, 7, 3.", a: "377" },
+      { title: "Trừ", q: "486 − 234", how: "6−4=2, 8−3=5, 4−2=2. Viết 2, 5, 2.", a: "252" },
+      { title: "Nhớ", q: "358 + 247", how: "8+7=15, viết 5 nhớ 1. 5+4+1=10, viết 0 nhớ 1. 3+2+1=6.", a: "605" },
+    ],
+    checks: [
+      { prompt: "235 + 142 =", choices: ["377", "367", "477", "387"], correct: 0 },
+      { prompt: "486 − 234 =", choices: ["252", "242", "352", "262"], correct: 0 },
+      { prompt: "8 + 7 = 15. Viết mấy, nhớ mấy?", choices: ["Viết 5 nhớ 1", "Viết 15 nhớ 0", "Viết 5 nhớ 5", "Viết 7 nhớ 8"], correct: 0 },
+    ],
+  },
+  {
+    id: 13,
+    title: "Làm quen với yếu tố thống kê, xác suất",
+    intro: "4 bài. Đếm, phân loại, đọc biểu đồ tranh. Nói chắc chắn, có thể, không thể.",
+    tips: ["Đếm từng đối tượng", "Phân loại theo dấu hiệu", "Đọc biểu đồ tranh", "Nói chắc chắn/có thể/không thể"],
+    samples: [
+      { title: "Đếm", q: "5 quả cam, 3 quả táo", how: "Đếm từng loại: cam 5, táo 3.", a: "cam: 5, táo: 3" },
+      { title: "Biểu đồ", q: "Biểu đồ có 4 ô con mèo, 2 ô con chó", how: "Con mèo nhiều nhất, con chó ít nhất.", a: "mèo nhiều nhất" },
+      { title: "Xác suất", q: "Trong hộp chỉ có bi đỏ", how: "Lấy bi thì chắc chắn ra bi đỏ.", a: "chắc chắn" },
+    ],
+    checks: [
+      { prompt: "Biểu đồ tranh mỗi hình đại diện", choices: ["1 đơn vị", "10 đơn vị", "100 đơn vị", "Tùy ý"], correct: 0 },
+      { prompt: "Trong hộp chỉ có bi đỏ. Lấy 1 viên. Kết quả", choices: ["Chắc chắn đỏ", "Có thể đỏ", "Không thể đỏ", "Không biết"], correct: 0 },
+      { prompt: "Gieo xúc xắc. Xác suất ra số 7", choices: ["Không thể", "Có thể", "Chắc chắn", "Tất yếu"], correct: 0 },
+    ],
+  },
+  {
+    id: 14,
+    title: "Ôn tập cuối năm",
+    intro: "Ôn cả năm. Cuối có mini đề. Làm chậm, soát nhớ/mượn và đơn vị.",
+    tips: ["Ôn số đến 1000", "Ôn cộng trừ nhớ/mượn", "Ôn đơn vị đo", "Ôn đọc giờ, làm toán"],
+    samples: [
+      { title: "Số", q: "Số liền sau 999", how: "999 + 1 = 1000.", a: "1000" },
+      { title: "Cộng", q: "456 + 234", how: "6+4=10, 5+3+1=9, 4+2=6. Viết 0, 9, 6.", a: "690" },
+      { title: "Đổi", q: "3 m = ? dm", how: "1 m = 10 dm. 3 × 10 = 30.", a: "30 dm" },
+    ],
+    checks: [
+      { prompt: "Số liền sau 999 là", choices: ["1000", "998", "1001", "900"], correct: 0 },
+      { prompt: "456 + 234 =", choices: ["690", "680", "790", "686"], correct: 0 },
+      { prompt: "3 m = ? dm", choices: ["30", "300", "3000", "3"], correct: 0 },
+    ],
+  },
 ];
 
 function esc(s) {
