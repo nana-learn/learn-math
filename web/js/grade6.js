@@ -959,8 +959,11 @@ const G6_LESSONS = [
       </figure>
 </div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Số nào là số nguyên?", choices: ["-5", "0", "7", "Cả ba số trên"], correct: 3, hint: "Tất cả số nguyên dương, 0, và số âm đều là số nguyên.", explain: "Cả ba số đều là số nguyên." },
+          exercises: [
+        { type: "mc", prompt: "Số nào là số nguyên âm?", choices: ["-5", "0", "7", "12"], correct: 0, hint: "Số nguyên âm có dấu minus.", explain: "-5." },
+        { type: "mc", prompt: "Số đối của 4 là", choices: ["-4", "4", "0", "1/4"], correct: 0, hint: "Số đối đổi dấu.", explain: "-4." },
+        { type: "text", prompt: "Viết số nguyên gồm 3 số hạng: -2, 0, 5 theo thứ tự tăng dần.", answer: "-2, 0, 5", accept: ["-2, 0, 5", "-2,0,5"], hint: "-2 < 0 < 5.", explain: "-2, 0, 5." },
+      ], correct: 3, hint: "Tất cả số nguyên dương, 0, và số âm đều là số nguyên.", explain: "Cả ba số đều là số nguyên." },
       { type: "num", prompt: "Số đối của 8 là bao nhiêu?", answer: -8, hint: "8 + (-8) = 0.", explain: "-8." },
       { type: "num", prompt: "Số đối của -3 là bao nhiêu?", answer: 3, hint: "-3 + 3 = 0.", explain: "3." },
       { type: "num", prompt: "| -7 | bằng bao nhiêu?", answer: 7, hint: "Giá trị tuyệt đối luôn dương hoặc bằng 0.", explain: "7." },
