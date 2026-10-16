@@ -426,6 +426,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số nào sau đây là hàm chẵn?", choices: ["cos(x)", "sin(x)", "tan(x)", "cot(x)"], correct: 0, hint: "cos(−x) = cos(x).", explain: "cos(x) là hàm chẵn." },
       { type: "mc", prompt: "Chu kỳ của hàm số y = sin(3x) là", choices: ["2π/3", "2π", "π/3", "π"], correct: 0, hint: "Chu kỳ = 2π / hệ số x.", explain: "2π/3." },
