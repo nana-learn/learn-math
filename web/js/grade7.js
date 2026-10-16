@@ -17,6 +17,8 @@ const G7_CHAPTERS = [
     num: 101,
     chapter: 3,
     title: "Chương 3: Số thập phân - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số thập phân, phép toán.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thập phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -40,6 +42,8 @@ const G7_CHAPTERS = [
     num: 102,
     chapter: 4,
     title: "Chương 4: Số thực - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số thực, căn bậc hai.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thực.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -63,6 +67,8 @@ const G7_CHAPTERS = [
     num: 103,
     chapter: 5,
     title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đại lượng tỉ lệ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -86,6 +92,8 @@ const G7_CHAPTERS = [
     num: 104,
     chapter: 6,
     title: "Chương 6: Thống kê - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thống kê, bảng, biểu đồ.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thống kê.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -110,6 +118,8 @@ const G7_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Số hữu tỉ",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -130,6 +140,8 @@ const G7_CHAPTERS = [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Số thực",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Số thực.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -151,6 +163,8 @@ const G7_CHAPTERS = [
     num: 105,
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -2979,6 +2993,8 @@ const G7_LESSONS = [
     num: 99,
     chapter: 1,
     title: "Chương 1: Số hữu tỉ. Số thực - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập số hữu tỉ, số thực, giá trị tuyệt đối.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số hữu tỉ và số thực.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -3002,6 +3018,8 @@ const G7_LESSONS = [
     num: 105,
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">

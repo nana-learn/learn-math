@@ -17,6 +17,8 @@ const G6_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tập hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -41,6 +43,8 @@ const G6_CHAPTERS = [
     num: 103,
     chapter: 3,
     title: "Chương 3: Phép chia - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép chia.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -65,6 +69,8 @@ const G6_CHAPTERS = [
     num: 104,
     chapter: 4,
     title: "Chương 4: Hình học - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hình học cơ bản.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -89,6 +95,8 @@ const G6_CHAPTERS = [
     num: 105,
     chapter: 5,
     title: "Chương 5: Phân số - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập phân số, phép toán phân số.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phân số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -113,6 +121,8 @@ const G6_CHAPTERS = [
     num: 106,
     chapter: 6,
     title: "Chương 6: Số đo góc - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số đo góc.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -137,6 +147,8 @@ const G6_CHAPTERS = [
     num: 107,
     chapter: 7,
     title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -161,6 +173,8 @@ const G6_CHAPTERS = [
     num: 108,
     chapter: 8,
     title: "Chương 8: Diện tích - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -3377,6 +3391,8 @@ const G6_LESSONS = [
     num: 102,
     chapter: 2,
     title: "Chương 2: Tính chia hết - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về chia hết.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
