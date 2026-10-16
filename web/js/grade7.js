@@ -44,7 +44,9 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
-    exercises: [
+    
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+exercises: [
       { type: "mc", prompt: "Câu 1: 0,5 = ?", choices: ["1/2", "1/5", "5/100", "5/1000"], correct: 0, hint: "0,5 = 5/10 = 1/2.", explain: "1/2." },
       { type: "mc", prompt: "Câu 2: 0,25 + 0,75 =", choices: ["1", "0,5", "0,1", "10"], correct: 0, hint: "0,25 + 0,75 = 1.", explain: "1." },
       { type: "mc", prompt: "Câu 3: 1,2 × 5 =", choices: ["6", "5,4", "7", "8"], correct: 0, hint: "1,2 × 5 = 6.", explain: "6." },
