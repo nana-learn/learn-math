@@ -20,7 +20,7 @@ const G12_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Sự đồng biến, nghịch biến của hàm số",
-    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.",
+    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -60,7 +60,7 @@ const G12_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Cực trị của hàm số",
-    summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.",
+    summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -98,7 +98,7 @@ const G12_LESSONS = [
     num: 3,
     chapter: 1,
     title: "Giá trị lớn nhất, giá trị nhỏ nhất của hàm số",
-    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.",
+    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
     body: String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> S(x) = x(50 - x). S'(x) = 50 - 2x = 0 ↔ x = 25. S(25) = 625m².</p>
