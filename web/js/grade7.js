@@ -740,8 +740,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "mc", prompt: "Qua một điểm ngoài đường d, số đường thẳng song song với d là", choices: ["0", "1", "2", "Vô số"], correct: 1, hint: "Tiên đề Euclid.", explain: "Đúng một đường." },
+          exercises: [
+        { type: "mc", prompt: "Tỉ lệ thức a/b = c/d suy ra", choices: ["ad = bc", "ac = bd", "a + d = b + c", "a - d = b - c"], correct: 0, hint: "Tích trung bằng tích ngoại.", explain: "ad = bc." },
+        { type: "mc", prompt: "Từ tỉ lệ thức 3/4 = 6/8, ta suy ra", choices: ["3×8 = 4×6", "3×6 = 4×8", "3+8 = 4+6", "3-8 = 4-6"], correct: 0, hint: "3×8 = 24, 4×6 = 24.", explain: "3×8 = 4×6." },
+        { type: "text", prompt: "Tìm x trong tỉ lệ thức x/4 = 3/6.", answer: "2", accept: ["2"], hint: "x×6 = 4×3 → 6x = 12 → x = 2.", explain: "2." },
+      ], correct: 1, hint: "Tiên đề Euclid.", explain: "Đúng một đường." },
       { type: "mc", prompt: "a ∥ b và b ∥ c. Kết luận đúng là", choices: ["a cắt c", "a ∥ c", "a vuông góc c", "Không nói được"], correct: 1, hint: "Song song truyền được.", explain: "a ∥ c." },
       { type: "mc", prompt: "Hai đường cùng vuông góc với một đường thứ ba. Hai đường ấy", choices: ["Cắt nhau", "Song song", "Trùng nhau", "Vuông góc với nhau"], correct: 1, hint: "Cùng vuông góc một đường thì song song.", explain: "Đó là tính chất vừa học." },
       { type: "mc", prompt: "Qua M ngoài d có thể kẻ bao nhiêu đường vuông góc với d?", choices: ["0","1","2","Vô số"], correct: 1, hint: "Đúng một chân H, đúng một MH.", explain: "Một đường vuông góc." },
