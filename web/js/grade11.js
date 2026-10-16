@@ -265,6 +265,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Trong không gian, qua một điểm ngoài đường thẳng vẽ được bao nhiêu đường thẳng song song?", choices: ["Đúng một", "Vô số", "Không có", "Hai"], correct: 0, hint: "Tiên đề Euclid: đúng một.", explain: "Đúng một." },
     ],
   },
+
+  {
+    id: "g11-ch8-quiz",
+    num: 111,
+    chapter: 8,
+    title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    summary: "Luyện tập vector, tích vô hướng trong không gian.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
+      { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
+      { type: "text", prompt: "Hai vector cùng phương khi:", answer: "Có đường thẳng song song hoặc trùng nhau", accept: ["Có đường thẳng song song hoặc trùng nhau", "cùng phương"], hint: "Cùng phương: đường thẳng song song/trùng.", explain: "Có đường thẳng song song hoặc trùng nhau." },
+      { type: "mc", prompt: "Câu 4: Ba vector đồng phẳng khi:", choices: ["Nằm trong một mặt phẳng hoặc song song với nó", "Có cùng độ dài", "Cùng hướng", "Cùng gốc"], correct: 0, hint: "Đồng phẳng: nằm trong một mặt phẳng.", explain: "Nằm trong một mặt phẳng hoặc song song với nó." },
+      { type: "mc", prompt: "Câu 5: Trong không gian, hai vector bằng nhau khi:", choices: ["Cùng độ dài và cùng hướng", "Cùng độ dài", "Cùng hướng", "Cùng gốc"], correct: 0, hint: "Vector bằng nhau: độ dài và hướng giống nhau.", explain: "Cùng độ dài và cùng hướng." },
+      { type: "mc", prompt: "Câu 6: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0: độ dài 0.", explain: "Độ dài bằng 0." },
+      { type: "mc", prompt: "Câu 7: Nếu a·b = 0 thì hai vector a và b:", choices: ["Vuông góc", "Cùng phương", "Bằng nhau", "Đối nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Vuông góc." },
+      { type: "mc", prompt: "Câu 8: Tích vô hướng a·a =", choices: ["|a|²", "0", "1", "|a|"], correct: 0, hint: "a·a = |a||a|cos0 = |a|².", explain: "|a|²." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1195,6 +1214,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: Nếu hai mặt phẳng cùng song song với đường thẳng thì:", choices: ["Chúng song song hoặc giao nhau", "Chúng song song", "Chúng trùng nhau", "Không xác định"], correct: 0, hint: "Có thể song song hoặc cắt nhau.", explain: "Chúng song song hoặc giao nhau." },
       { type: "mc", prompt: "Câu 7: Ba điểm phân biệt thẳng hàng khi:", choices: ["Thuộc cùng một đường thẳng", "Thuộc cùng một mặt phẳng", "Có cùng khoảng cách", "Tạo thành tam giác"], correct: 0, hint: "Thẳng hàng: cùng đường thẳng.", explain: "Thuộc cùng một đường thẳng." },
       { type: "mc", prompt: "Câu 8: Trong không gian, qua một điểm ngoài đường thẳng vẽ được bao nhiêu đường thẳng song song?", choices: ["Đúng một", "Vô số", "Không có", "Hai"], correct: 0, hint: "Tiên đề Euclid: đúng một.", explain: "Đúng một." },
+    ],
+  },
+
+  {
+    id: "g11-ch8-quiz",
+    num: 111,
+    chapter: 8,
+    title: "Chương 8: Vector trong không gian - Trắc nghiệm",
+    summary: "Luyện tập vector, tích vô hướng trong không gian.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
+      { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
+      { type: "text", prompt: "Hai vector cùng phương khi:", answer: "Có đường thẳng song song hoặc trùng nhau", accept: ["Có đường thẳng song song hoặc trùng nhau", "cùng phương"], hint: "Cùng phương: đường thẳng song song/trùng.", explain: "Có đường thẳng song song hoặc trùng nhau." },
+      { type: "mc", prompt: "Câu 4: Ba vector đồng phẳng khi:", choices: ["Nằm trong một mặt phẳng hoặc song song với nó", "Có cùng độ dài", "Cùng hướng", "Cùng gốc"], correct: 0, hint: "Đồng phẳng: nằm trong một mặt phẳng.", explain: "Nằm trong một mặt phẳng hoặc song song với nó." },
+      { type: "mc", prompt: "Câu 5: Trong không gian, hai vector bằng nhau khi:", choices: ["Cùng độ dài và cùng hướng", "Cùng độ dài", "Cùng hướng", "Cùng gốc"], correct: 0, hint: "Vector bằng nhau: độ dài và hướng giống nhau.", explain: "Cùng độ dài và cùng hướng." },
+      { type: "mc", prompt: "Câu 6: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0: độ dài 0.", explain: "Độ dài bằng 0." },
+      { type: "mc", prompt: "Câu 7: Nếu a·b = 0 thì hai vector a và b:", choices: ["Vuông góc", "Cùng phương", "Bằng nhau", "Đối nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Vuông góc." },
+      { type: "mc", prompt: "Câu 8: Tích vô hướng a·a =", choices: ["|a|²", "0", "1", "|a|"], correct: 0, hint: "a·a = |a||a|cos0 = |a|².", explain: "|a|²." },
     ],
   },
 ];
