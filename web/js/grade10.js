@@ -153,50 +153,8 @@ const G10_CHAPTERS = [
   },
 
   {
-    id: "g10-ch4-quiz",
-    num: 104,
-    chapter: 4,
-    title: "Chương 4: Vectơ - Trắc nghiệm",
-    summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Vector AB có điểm đầu là?", choices: ["A", "B", "Trung điểm AB", "Không xác định"], correct: 0, hint: "AB: A đầu, B cuối.", explain: "A." },
-      { type: "mc", prompt: "Câu 2: Vector AB + Vector BA =", choices: ["Vector 0", "Vector AA", "Vector BB", "2·Vector AB"], correct: 0, hint: "AB + BA = AB - AB = 0.", explain: "Vector 0." },
-      { type: "mc", prompt: "Câu 3: 2·Vector AB =", choices: ["Vector cùng hướng AB, độ dài gấp đôi", "Vector ngược hướng AB, độ dài gấp đôi", "Vector cùng hướng AB, độ dài bằng AB", "Vector 0"], correct: 0, hint: "k·AB: cùng hướng nếu k>0, |k| lần độ dài.", explain: "Vector cùng hướng AB, độ dài gấp đôi." },
-      { type: "mc", prompt: "Câu 4: Vector AB - Vector AC =", choices: ["Vector CB", "Vector BC", "Vector AC", "Vector BA"], correct: 0, hint: "AB - AC = AB + CA = CB.", explain: "Vector CB." },
-      { type: "mc", prompt: "Câu 5: Trung điểm I của AB thì:", choices: ["Vector IA + Vector IB = 0", "Vector IA = Vector IB", "Vector AB = 2·Vector AI", "Cả A và C"], correct: 0, hint: "IA = -IB → IA + IB = 0.", explain: "Cả A và C." },
-      { type: "mc", prompt: "Câu 6: Ba điểm A, B, C thẳng hàng khi:", choices: ["Vector AB và Vector AC cùng phương", "Vector AB = Vector AC", "AB = AC", "Góc BAC = 90°"], correct: 0, hint: "Cùng phương ↔ cùng đường thẳng.", explain: "Vector AB và Vector AC cùng phương." },
-      { type: "mc", prompt: "Câu 7: Tam giác ABC, G là trọng tâm thì:", choices: ["Vector GA + Vector GB + Vector GC = 0", "Vector GA = Vector GB = Vector GC", "G là trung điểm AB", "G là trực tâm"], correct: 0, hint: "GA + GB + GC = 0 với G trọng tâm.", explain: "Vector GA + Vector GB + Vector GC = 0." },
-      { type: "mc", prompt: "Câu 8: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0 có độ dài 0.", explain: "Độ dài bằng 0." },
-    ],
-  },
+    
 
   {
-    id: "g10-ch5-quiz",
-    num: 105,
-    chapter: 5,
-    title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
-    summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2), B(4,6) là?", choices: ["(3,4)", "(5,8)", "(-3,-4)", "(4,6)"], correct: 0, hint: "AB = (4-1, 6-2) = (3,4).", explain: "(3,4)." },
-      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0) và B(3,4) là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "AB = √(9+16) = 5.", explain: "5." },
-      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0), B(2,3), C(4,1).", answer: "11", accept: ["11"], hint: "AB=(2,3), AC=(4,1). AB·AC = 8+3 = 11.", explain: "11." },
-      { type: "mc", prompt: "Câu 4: Phương trình đường thẳng đi qua A(1,2) và có vector pháp tuyến (3,-4) là?", choices: ["3(x-1)-4(y-2)=0", "3(x+1)-4(y+2)=0", "3x-4y+5=0", "3x+4y-11=0"], correct: 0, hint: "3(x-1)-4(y-2)=0 → 3x-4y+5=0.", explain: "3(x-1)-4(y-2)=0." },
-      { type: "mc", prompt: "Câu 5: Phương trình tham số đường thẳng qua A(1,2) và có vector chỉ phương (3,4) là?", choices: ["x=1+3t, y=2+4t", "x=1-3t, y=2-4t", "x=3t, y=4t", "x=1+4t, y=2+3t"], correct: 0, hint: "x=x₀+at, y=y₀+bt.", explain: "x=1+3t, y=2+4t." },
-      { type: "mc", prompt: "Câu 6: Hai vector (2,3) và (4,-8/3) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "2×4 + 3×(-8/3) = 8-8 = 0.", explain: "Tích vô hướng bằng 0." },
-      { type: "mc", prompt: "Câu 7: Khoảng cách từ điểm A(1,2) đến đường thẳng 3x-4y+5=0 là?", choices: ["0", "1", "2", "3"], correct: 0, hint: "d = |3-8+5|/5 = 0/5 = 0.", explain: "0." },
-      { type: "mc", prompt: "Câu 8: Phương trình đường tròn tâm I(2,-3) bán kính 4 là?", choices: ["(x-2)²+(y+3)²=16", "(x+2)²+(y-3)²=16", "(x-2)²+(y-3)²=16", "(x-2)²+(y+3)²=4"], correct: 0, hint: "R² = 16.", explain: "(x-2)²+(y+3)²=16." },
-    ],
-  },
+    
 ];
