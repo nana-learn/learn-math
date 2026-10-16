@@ -287,10 +287,11 @@ const G7_LESSONS = [
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Chuyển hạng tử sang vế kia thì đổi dấu. Chuyển thừa số thì nhân hoặc chia hai vế cùng một số khác 0.</p></div>
     `,
-    exercises: [
-      { type: "num", prompt: "3 + 4 · 5 bằng bao nhiêu?", answer: 23, hint: "Nhân trước.", explain: "3 + 20 = 23." },
-      { type: "num", prompt: "x − 1/2 = 5/2. Giá trị x bằng bao nhiêu?", answer: 3, hint: "Chuyển −1/2 thành cộng 1/2.", explain: "x = 5/2 + 1/2 = 3." },
-      { type: "mc", prompt: "12 − 4 + 2 bằng", choices: ["6", "10", "18", "8"], correct: 1, hint: "Cộng trừ cùng bậc, trái sang phải.", explain: "8 + 2 = 10. Không phải 12 − 6." },
+          exercises: [
+        { type: "mc", prompt: "Phép nhân số hữu tỉ có tính chất nào?", choices: ["Giao hoán, kết hợp, phân phối", "Chỉ giao hoán", "Chỉ kết hợp", "Không có tính chất"], correct: 0, hint: "Tương tự số nguyên.", explain: "Giao hoán, kết hợp, phân phối." },
+        { type: "mc", prompt: "Nghịch đảo của 2/3 là", choices: ["3/2", "2/3", "-3/2", "-2/3"], correct: 0, hint: "Hoán đổi tử và mẫu.", explain: "3/2." },
+        { type: "text", prompt: "Tính (3/4) × (2/3).", answer: "1/2", accept: ["1/2", "0.5"], hint: "(3×2)/(4×3) = 6/12 = 1/2.", explain: "1/2." },
+      ], correct: 1, hint: "Cộng trừ cùng bậc, trái sang phải.", explain: "8 + 2 = 10. Không phải 12 − 6." },
       { type: "num", prompt: "2 + 3^2 bằng bao nhiêu?", answer: 11, hint: "Mũ trước.", explain: "2 + 9 = 11." },
       { type: "num", prompt: "2x = 10. x bằng bao nhiêu?", answer: 5, hint: "Chia hai vế cho 2.", explain: "5." },
       { type: "num", prompt: "20 − 3 · 4 bằng bao nhiêu?", answer: 8, hint: "Nhân trước.", explain: "20 − 12 = 8." },
