@@ -274,7 +274,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-          exercises: [
+          
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
       { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
       { type: "mc", prompt: "Phủ định của mệnh đề &quot;2 là số chẵn&quot; là", choices: ["2 không là số chẵn", "2 là số lẻ", "2 không phải số chẵn", "Tất cả đều đúng"], correct: 3, hint: "Các đáp án đều đúng: phủ định của A là không A.", explain: "Tất cả đều đúng." },
@@ -318,7 +322,11 @@ const G10_LESSONS = [
         <figcaption>Venn diagram của hai tập hợp A và B.</figcaption>
       </figure>
     `,
-          exercises: [
+          
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Tập hợp các nghiệm của phương trình x² − 4 = 0 là", choices: ["{-2, 2}", "{2}", "{-2}", "∅"], correct: 0, hint: "x = ±2.", explain: "{-2, 2}." },
       { type: "mc", prompt: "Tập hợp A = {x ∈ ℤ | -1 ≤ x ≤ 1} có bao nhiêu phần tử?", choices: ["3", "2", "4", "1"], correct: 0, hint: "-1, 0, 1.", explain: "3." },
       { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
@@ -364,7 +372,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-          exercises: [
+          
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
       { type: "mc", prompt: "Hai tập hợp A và B bằng nhau khi", choices: ["Có cùng phần tử", "Có cùng số phần tử", "A là tập con của B", "B là tập con của A"], correct: 0, hint: "Định nghĩa hai tập hợp bằng nhau.", explain: "Có cùng phần tử." },
       { type: "text", prompt: "A = {1, 2, 3}, B = {3, 2, 1}. A và B có bằng nhau không?", answer: "Có", accept: ["Có", "Có, A = B", "A = B"], hint: "Thứ tự phần tử không quan trọng.", explain: "Có." },
@@ -411,7 +423,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-          exercises: [
+          
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∩ B =", choices: ["{2, 3}", "{1, 2, 3, 4}", "{1, 4}", "{1, 2}"], correct: 0, hint: "Giao: phần tử chung.", explain: "{2, 3}." },
       { type: "mc", prompt: "A = {1, 2, 3, 4}, B = {2, 4}. A \ B =", choices: ["{1, 3}", "{2, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Hiệu: loại phần tử của B ra khỏi A.", explain: "{1, 3}." },
       { type: "text", prompt: "A = {1, 3, 5}, B = {2, 4, 6}. A ∪ B =", answer: "{1, 2, 3, 4, 5, 6}", accept: ["{1, 2, 3, 4, 5, 6}", "{1,2,3,4,5,6}"], hint: "Hợp: tất cả phần tử của A và B.", explain: "{1, 2, 3, 4, 5, 6}." },
@@ -460,7 +476,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Bất đẳng thức nào đúng?", choices: ["3 > 5", "2 < 1", "4 ≥ 4", "-1 > 0"], correct: 2, hint: "4 = 4 nên 4 ≥ 4 đúng.", explain: "4 ≥ 4 là đúng." },
       { type: "mc", prompt: "Nếu a > b thì bất đẳng thức nào đúng?", choices: ["a - 3 > b - 3", "a + 3 < b + 3", "-a > -b", "2a < 2b"], correct: 0, hint: "Cộng cùng số vào cả hai vế.", explain: "a - 3 > b - 3 đúng." },
       { type: "num", prompt: "Giá trị nhỏ nhất của x² + 1 với x thực là", answer: "1", accept: ["1"], hint: "x² ≥ 0 với mọi x.", explain: "x² ≥ 0 nên x² + 1 ≥ 1." },
@@ -507,7 +527,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Nghiệm của 2x - 4 > 0 là?", choices: ["x > 2", "x < 2", "x > 4", "x < 4"], correct: 0, hint: "2x > 4 ⇒ x > 2.", explain: "x > 2." },
       { type: "mc", prompt: "Nghiệm của -x + 3 ≥ 0 là?", choices: ["x ≤ 3", "x ≥ 3", "x ≤ -3", "x ≥ -3"], correct: 0, hint: "-x ≥ -3 ⇒ x ≤ 3.", explain: "x ≤ 3." },
       { type: "num", prompt: "Số nguyên dương nhỏ nhất thỏa 3x - 5 > 4 là", answer: "4", accept: ["4"], hint: "3x > 9 ⇒ x > 3.", explain: "x > 3 nên x = 4." },
@@ -556,7 +580,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Nghiệm của f(x) = 3x - 6 là?", choices: ["x = 2", "x = -2", "x = 3", "x = -3"], correct: 0, hint: "3x = 6 ⇒ x = 2.", explain: "x = 2." },
       { type: "mc", prompt: "f(x) = -2x + 4 dương khi?", choices: ["x < 2", "x > 2", "x < -2", "x > -2"], correct: 0, hint: "a = -2 < 0 nên dương khi x < 2.", explain: "x < 2." },
       { type: "num", prompt: "Giá trị của f(x) = 5x - 10 tại x = 3 là", answer: "5", accept: ["5"], hint: "5·3 - 10 = 5.", explain: "5." },
@@ -607,7 +635,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Đồ thị y = 2x² có hướng?", choices: ["Lên", "Xuống", "Trái", "Phải"], correct: 0, hint: "a = 2 > 0 nên hướng lên.", explain: "Hướng lên." },
       { type: "mc", prompt: "Đỉnh của y = x² - 2x là?", choices: ["(1, -1)", "(-1, 1)", "(1, 1)", "(-1, -1)"], correct: 0, hint: "-b/2a = 1, y(1) = -1.", explain: "(1, -1)." },
       { type: "num", prompt: "Giá trị nhỏ nhất của y = x² + 2 là", answer: "2", accept: ["2"], hint: "x² ≥ 0 nên y ≥ 2.", explain: "2." },
@@ -658,7 +690,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "f(x) = x² + 1 có bao nhiêu nghiệm?", choices: ["0", "1", "2", "Vô số"], correct: 0, hint: "Δ = -4 < 0 nên vô nghiệm.", explain: "0 nghiệm." },
       { type: "mc", prompt: "f(x) = -x² + 4 dương khi?", choices: ["-2 < x < 2", "x < -2", "x > 2", "x ≠ ±2"], correct: 0, hint: "a = -1 < 0, nghiệm ±2.", explain: "-2 < x < 2." },
       { type: "num", prompt: "Số nguyên thỏa x² - 4x + 3 ≤ 0 là", answer: "3", accept: ["3"], hint: "(x-1)(x-3) ≤ 0 ⇒ 1 ≤ x ≤ 3.", explain: "x = 1, 2, 3." },
@@ -706,7 +742,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "AB và BA là hai vector?", choices: ["Bằng nhau", "Đối nhau", "Cùng hướng", "Cùng độ dài"], correct: 1, hint: "AB và BA ngược hướng.", explain: "Đối nhau (ngược hướng, cùng độ dài)." },
       { type: "mc", prompt: "Vector không có điểm đầu và điểm cuối?", choices: ["Khác nhau", "Giống nhau", "Tùy trường hợp", "Không xác định"], correct: 1, hint: "Zero vector: điểm đầu = điểm cuối.", explain: "Giống nhau." },
       { type: "num", prompt: "Số vector tạo thành từ 3 điểm phân biệt A, B, C là", answer: "6", accept: ["6"], hint: "Mỗi cặp tạo 2 vector: AB, BA, AC, CA, BC, CB.", explain: "6 vector." },
@@ -763,7 +803,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "AB + BC = ?", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
       { type: "mc", prompt: "AB + BA = ?", choices: ["0", "2AB", "AB", "BA"], correct: 0, hint: "AB và BA ngược nhau.", explain: "Vector không 0." },
       { type: "num", prompt: "AB = (3, -2), BC = (-1, 4). AC = ?", answer: "(2, 2)", accept: ["(2, 2)", "2, 2"], hint: "Cộng tọa độ tương ứng.", explain: "(3-1, -2+4) = (2, 2)." },
@@ -820,7 +864,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "AB - AC = ?", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
       { type: "mc", prompt: "AB - BA = ?", choices: ["2AB", "0", "AB", "-2AB"], correct: 0, hint: "BA = -AB nên AB - BA = AB - (-AB) = 2AB.", explain: "2AB." },
       { type: "num", prompt: "A(1,1), B(3,4), C(2,3). AB - AC = ?", answer: "(1,1)", accept: ["(1, 1)", "1, 1"], hint: "AB=(2,3), AC=(1,2), hiệu=(1,1).", explain: "(2-1, 3-2) = (1, 1)." },
@@ -874,7 +922,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "2·AB với AB = (3, 4) là?", choices: ["(6, 8)", "(3, 4)", "(1.5, 2)", "(-6, -8)"], correct: 0, hint: "Nhân từng tọa độ với 2.", explain: "(6, 8)." },
       { type: "mc", prompt: "-1·AB với AB = (2, -3) là?", choices: ["(-2, 3)", "(2, -3)", "(-2, -3)", "(2, 3)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(-2, 3)." },
       { type: "num", prompt: "k = 1/2, AB = (4, -6). k·AB = ?", answer: "(2, -3)", accept: ["(2, -3)", "2, -3"], hint: "Chia từng tọa độ cho 2.", explain: "(4/2, -6/2) = (2, -3)." },
@@ -924,7 +976,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Tọa độ điểm A(2, -3) là?", choices: ["(2, -3)", "(-3, 2)", "(2, 3)", "(-2, 3)"], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
       { type: "mc", prompt: "Trung điểm AB với A(1,1), B(3,5) là?", choices: ["(2, 3)", "(1, 3)", "(2, 5)", "(4, 6)"], correct: 0, hint: "((1+3)/2, (1+5)/2) = (2, 3).", explain: "(2, 3)." },
       { type: "num", prompt: "Điểm M(4, -2) có tọa độ là", answer: "(4, -2)", accept: ["(4, -2)", "4, -2"], hint: "x = 4, y = -2.", explain: "(4, -2)." },
@@ -978,7 +1034,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Vector AB với A(1,2), B(4,5) là?", choices: ["(3, 3)", "(1, 1)", "(-3, -3)", "(5, 7)"], correct: 0, hint: "AB = (4-1, 5-2) = (3, 3).", explain: "(3, 3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0), B(3,4) là?", choices: ["5", "3", "4", "7"], correct: 0, hint: "√(9+16) = 5.", explain: "5." },
       { type: "num", prompt: "Vector AB với A(-1,2), B(2,-1) là", answer: "(3, -3)", accept: ["(3, -3)", "3, -3"], hint: "(2-(-1), -1-2) = (3, -3).", explain: "(3, -3)." },
@@ -1036,7 +1096,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "AB = (2, 3), CD = (-1, 2). AB + CD = ?", choices: ["(1, 5)", "(3, 5)", "(1, 1)", "(-2, 6)"], correct: 0, hint: "(2-1, 3+2) = (1, 5).", explain: "(1, 5)." },
       { type: "mc", prompt: "AB = (4, -2), k = 1/2. k·AB = ?", choices: ["(2, -1)", "(8, -4)", "(2, 1)", "(-2, 1)"], correct: 0, hint: "(4/2, -2/2) = (2, -1).", explain: "(2, -1)." },
       { type: "num", prompt: "AB = (5, -3), CD = (2, 1). AB - 2·CD = ?", answer: "(1, -5)", accept: ["(1, -5)", "1, -5"], hint: "2·CD=(4,2), (5-4, -3-2)=(1,-5).", explain: "(1, -5)." },
@@ -1090,7 +1154,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "sin 150° = ?", choices: ["1/2", "-1/2", "√3/2", "-√3/2"], correct: 0, hint: "sin(180°-30°)=sin 30°=1/2.", explain: "1/2." },
       { type: "mc", prompt: "cos 120° = ?", choices: ["-1/2", "1/2", "-√3/2", "√3/2"], correct: 0, hint: "cos(180°-60°)=-cos 60°=-1/2.", explain: "-1/2." },
       { type: "num", prompt: "sin²30° + cos²30° =", answer: "1", accept: ["1"], hint: "sin²α + cos²α = 1 với mọi α.", explain: "1." },
@@ -1148,7 +1216,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "AB = (1, 2), AC = (3, -1). AB·AC = ?", choices: ["1", "-1", "5", "-5"], correct: 0, hint: "1·3 + 2·(-1) = 1.", explain: "1." },
       { type: "mc", prompt: "AB = (2, 3), AC = (-3, 2). AB·AC = ?", choices: ["0", "12", "-12", "6"], correct: 0, hint: "2·(-3) + 3·2 = 0 ⇒ vuông góc.", explain: "0." },
       { type: "num", prompt: "AB = (4, -1), AC = (2, 3). AB·AC =", answer: "5", accept: ["5"], hint: "4·2 + (-1)·3 = 8 - 3 = 5.", explain: "5." },
@@ -1204,7 +1276,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "|AB| với AB = (5, 12) là?", choices: ["13", "12", "5", "17"], correct: 0, hint: "√(25+144) = 13.", explain: "13." },
       { type: "mc", prompt: "Góc giữa AB=(1,1) và AC=(1,-1) là?", choices: ["90°", "45°", "60°", "30°"], correct: 0, hint: "AB·AC = 0 ⇒ vuông góc.", explain: "90°." },
       { type: "num", prompt: "Độ dài AB với A(1,2), B(4,6) là", answer: "5", accept: ["5"], hint: "AB=(3,4), √(9+16)=5.", explain: "5." },
@@ -1258,7 +1334,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Tam giác ABC: AB=3, AC=4, góc A=90°. BC = ?", choices: ["5", "4", "3", "7"], correct: 0, hint: "BC² = 9 + 16 = 25 ⇒ BC = 5.", explain: "5." },
       { type: "mc", prompt: "Tam giác ABC: a=6, b=8, góc C=60°. c² = ?", choices: ["52", "28", "100", "16"], correct: 0, hint: "c² = 36 + 64 - 2·6·8·0.5 = 52.", explain: "52." },
       { type: "num", prompt: "Tam giác ABC: AB=5, AC=7, góc A=60°. BC² =", answer: "39", accept: ["39"], hint: "BC² = 25 + 49 - 2·5·7·0.5 = 39.", explain: "39." },
@@ -1308,7 +1388,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Đường tròn tâm O(0,0), bán kính 2 là?", choices: ["x² + y² = 4", "x² + y² = 2", "(x-2)² + y² = 4", "x² + (y-2)² = 4"], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
       { type: "mc", prompt: "Đường tròn tâm I(3, -1), bán kính 5 là?", choices: ["(x-3)² + (y+1)² = 25", "(x+3)² + (y-1)² = 25", "(x-3)² + (y-1)² = 25", "(x+3)² + (y+1)² = 25"], correct: 0, hint: "a=3, b=-1 ⇒ (x-3)² + (y-(-1))² = 25.", explain: "(x-3)² + (y+1)² = 25." },
       { type: "num", prompt: "Đường tròn tâm (2, 3), bán kính √5 có phương trình là", answer: "(x-2)² + (y-3)² = 5", accept: ["(x-2)^2 + (y-3)^2 = 5", "(x-2)² + (y-3)² = 5"], hint: "R² = 5.", explain: "(x-2)² + (y-3)² = 5." },
@@ -1365,7 +1449,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Phương trình nào là elip?", choices: ["x²/4 + y²/9 = 1", "y² = 4x", "x²/4 - y²/9 = 1", "x² + y² = 4"], correct: 0, hint: "Elip có dạng x²/a² + y²/b² = 1.", explain: "x²/4 + y²/9 = 1." },
       { type: "mc", prompt: "Phương trình nào là hypebol?", choices: ["x²/4 - y²/9 = 1", "x²/4 + y²/9 = 1", "y² = 4x", "x² + y² = 4"], correct: 0, hint: "Hypebol có dấu trừ giữa hai phân số.", explain: "x²/4 - y²/9 = 1." },
       { type: "num", prompt: "Parabol y² = 8x có tham số p =", answer: "4", accept: ["4"], hint: "2p = 8 ⇒ p = 4.", explain: "4." },
@@ -1415,7 +1503,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Từ nhà đến bến xe có 4 đường, bến xe đến trường có 3 đường. Số cách đi từ nhà đến trường là?", choices: ["12", "7", "4", "3"], correct: 0, hint: "4 × 3 = 12.", explain: "12." },
       { type: "mc", prompt: "Có 5 cuốn sách Toán, 4 cuốn Văn. Chọn 1 cuốn là?", choices: ["9", "20", "5", "4"], correct: 0, hint: "5 + 4 = 9.", explain: "9." },
       { type: "num", prompt: "Từ A đến B có 3 đường, B đến C có 2 đường, C đến D có 2 đường. Số cách từ A đến D là", answer: "12", accept: ["12"], hint: "3 × 2 × 2 = 12.", explain: "12." },
@@ -1471,7 +1563,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Sắp xếp 5 người vào 5 ghế là?", choices: ["120", "25", "5", "10"], correct: 0, hint: "5! = 120.", explain: "120." },
       { type: "mc", prompt: "Chọn 2 người từ 6 người và sắp xếp là?", choices: ["30", "15", "12", "6"], correct: 0, hint: "A_6^2 = 6 × 5 = 30.", explain: "30." },
       { type: "num", prompt: "A_5^3 =", answer: "60", accept: ["60"], hint: "5 × 4 × 3 = 60.", explain: "60." },
@@ -1525,7 +1621,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "C_5^2 =", choices: ["10", "20", "25", "5"], correct: 0, hint: "5 × 4 / 2 = 10.", explain: "10." },
       { type: "mc", prompt: "C_6^3 =", choices: ["20", "30", "60", "15"], correct: 0, hint: "6 × 5 × 4 / 6 = 20.", explain: "20." },
       { type: "num", prompt: "Chọn 2 người từ 8 người là", answer: "28", accept: ["28"], hint: "C_8^2 = 8 × 7 / 2 = 28.", explain: "28." },
@@ -1580,7 +1680,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "3.14159 quy tròn đến hàng phần trăm là?", choices: ["3.14", "3.15", "3.142", "3.1"], correct: 0, hint: "Hàng phần trăm là số 4, chữ số sau là 1 < 5 nên giữ nguyên.", explain: "3.14." },
       { type: "mc", prompt: "5.678 quy tròn đến hàng đơn vị là?", choices: ["6", "5", "5.7", "5.68"], correct: 0, hint: "Chữ số hàng đơn vị là 5, chữ số sau là 6 ≥ 5 nên cộng thêm 1.", explain: "6." },
       { type: "num", prompt: "12.3456 quy tròn đến hàng phần trăm là", answer: "12.35", accept: ["12.35"], hint: "Hàng phần trăm là 4, chữ số sau là 5 nên cộng thêm 1.", explain: "12.35." },
@@ -1636,7 +1740,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Mẫu: 2, 4, 6, 8, 10. Số trung bình là?", choices: ["6", "5", "4", "7"], correct: 0, hint: "(2+4+6+8+10)/5 = 30/5 = 6.", explain: "6." },
       { type: "mc", prompt: "Mẫu: 1, 2, 2, 3, 4, 5. Trung vị là?", choices: ["2.5", "2", "3", "2.25"], correct: 0, hint: "6 số, trung vị = (2+3)/2 = 2.5.", explain: "2.5." },
       { type: "num", prompt: "Mẫu: 3, 5, 7, 9, 11, 13. Số trung bình là", answer: "8", accept: ["8"], hint: "(3+5+7+9+11+13)/6 = 48/6 = 8.", explain: "8." },
@@ -1690,7 +1798,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Độ lệch chuẩn là căn bậc hai của?", choices: ["Phương sai", "Số trung bình", "Trung vị", "Mode"], correct: 0, hint: "s = √s².", explain: "Phương sai." },
       { type: "mc", prompt: "Phương sai càng lớn thì dữ liệu?", choices: ["Phân tán nhiều", "Phân tán ít", "Đều nhau", "Không thay đổi"], correct: 0, hint: "Phương sai đo độ phân tán.", explain: "Phân tán nhiều." },
       { type: "num", prompt: "Mẫu: 2, 4, 6. Phương sai ≈", answer: "4", accept: ["4"], hint: "x̄=4, (4+0+4)/2 = 4.", explain: "4." },
@@ -1745,7 +1857,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "Gieo xúc xắc: P(ra số lẻ) =", choices: ["1/2", "1/3", "1/6", "5/6"], correct: 0, hint: "3 số lẻ (1,3,5) / 6 mặt.", explain: "1/2." },
       { type: "mc", prompt: "Gieo đồng xu 2 lần: P(được 1 sấp 1 ngửa) =", choices: ["1/2", "1/4", "3/4", "1"], correct: 0, hint: "2 kết quả thuận lợi (sấp-ngửa, ngửa-sấp) / 4 kết quả.", explain: "1/2." },
       { type: "num", prompt: "Gieo xúc xắc: P(ra số > 4) =", answer: "1/3", accept: ["1/3", "0.333", "0.33"], hint: "2 số (5,6) / 6 mặt = 1/3.", explain: "1/3." },
@@ -1797,7 +1913,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+    
+      <div class="example">
+        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
+      </div>
+exercises: [
       { type: "mc", prompt: "P(A) = 0.25 ⇒ P(A') =", choices: ["0.75", "0.25", "0.5", "1"], correct: 0, hint: "1 - 0.25 = 0.75.", explain: "0.75." },
       { type: "mc", prompt: "P(A) = 0.4, P(B) = 0.3, P(A ∩ B) = 0.1. P(A ∪ B) =", choices: ["0.6", "0.7", "0.5", "0.8"], correct: 0, hint: "0.4 + 0.3 - 0.1 = 0.6.", explain: "0.6." },
       { type: "num", prompt: "P(A) = 0.6 ⇒ P(A') =", answer: "0.4", accept: ["0.4", ".4"], hint: "1 - 0.6 = 0.4.", explain: "0.4." },
