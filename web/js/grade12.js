@@ -1249,6 +1249,11 @@ String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức kh
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của x²+9=0 là?", choices: ["x=±3", "x=±3i", "x=±9", "x=±9i"], correct: 1, hint: "x²=-9.", explain: "x=±3i." },
       { type: "mc", prompt: "Nghiệm của x²-2x+2=0 là?", choices: ["x=1±i", "x=1±2i", "x=2±i", "x=-1±i"], correct: 0, hint: "Δ=-4.", explain: "x=1±i." },
