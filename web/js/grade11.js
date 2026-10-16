@@ -19,7 +19,12 @@ const G11_CHAPTERS = [
     chapter: 2,
     title: "Chương 2: Tổ hợp và xác suất - Trắc nghiệm",
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: P4 = ?", choices: ["24", "12", "6", "4"], correct: 0, hint: "P4 = 4! = 4×3×2×1 = 24.", explain: "24." },
       { type: "mc", prompt: "Câu 2: A(5,2) =", choices: ["20", "10", "25", "5"], correct: 0, hint: "A(5,2) = 5×4 = 20.", explain: "20." },
@@ -37,7 +42,12 @@ const G11_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
       { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
@@ -55,7 +65,12 @@ const G11_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
@@ -73,7 +88,12 @@ const G11_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
       { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
@@ -91,7 +111,12 @@ const G11_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
@@ -109,7 +134,12 @@ const G11_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
       { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
@@ -127,7 +157,12 @@ const G11_CHAPTERS = [
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
       { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
@@ -146,7 +181,12 @@ const G11_CHAPTERS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Trigonometry",
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: sin(π/6) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "sin 30° = 1/2.", explain: "1/2." },
@@ -161,7 +201,12 @@ const G11_CHAPTERS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: P4 =", choices: ["24", "12", "6", "4"], correct: 0, hint: "4! = 24.", explain: "24." },
@@ -177,7 +222,12 @@ const G11_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
       { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
@@ -196,7 +246,12 @@ const G11_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
@@ -215,7 +270,12 @@ const G11_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
       { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
@@ -234,7 +294,12 @@ const G11_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
@@ -253,7 +318,12 @@ const G11_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
       { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
@@ -272,7 +342,12 @@ const G11_CHAPTERS = [
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
       { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
@@ -970,7 +1045,12 @@ const G11_LESSONS = [
     chapter: 2,
     title: "Chương 2: Tổ hợp và xác suất - Trắc nghiệm",
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: P4 = ?", choices: ["24", "12", "6", "4"], correct: 0, hint: "P4 = 4! = 4×3×2×1 = 24.", explain: "24." },
       { type: "mc", prompt: "Câu 2: A(5,2) =", choices: ["20", "10", "25", "5"], correct: 0, hint: "A(5,2) = 5×4 = 20.", explain: "20." },
@@ -988,7 +1068,12 @@ const G11_LESSONS = [
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
       { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
@@ -1006,7 +1091,12 @@ const G11_LESSONS = [
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
@@ -1024,7 +1114,12 @@ const G11_LESSONS = [
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
       { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
@@ -1042,7 +1137,12 @@ const G11_LESSONS = [
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
@@ -1060,7 +1160,12 @@ const G11_LESSONS = [
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
       { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
@@ -1078,7 +1183,12 @@ const G11_LESSONS = [
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
       { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
@@ -1097,7 +1207,12 @@ const G11_LESSONS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Trigonometry",
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: sin(π/6) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "sin 30° = 1/2.", explain: "1/2." },
@@ -1112,7 +1227,12 @@ const G11_LESSONS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: P4 =", choices: ["24", "12", "6", "4"], correct: 0, hint: "4! = 24.", explain: "24." },
@@ -1128,7 +1248,12 @@ const G11_LESSONS = [
     chapter: 3,
     title: "Chương 3: Dãy số - Trắc nghiệm",
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dãy số u_n = 2n + 1 có u_3 =", choices: ["7", "5", "9", "11"], correct: 0, hint: "u_3 = 2×3 + 1 = 7.", explain: "7." },
       { type: "mc", prompt: "Câu 2: Dãy số u_n = 3^n có u_2 =", choices: ["9", "6", "3", "27"], correct: 0, hint: "u_2 = 3² = 9.", explain: "9." },
@@ -1147,7 +1272,12 @@ const G11_LESSONS = [
     chapter: 4,
     title: "Chương 4: Giới hạn - Trắc nghiệm",
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
@@ -1166,7 +1296,12 @@ const G11_LESSONS = [
     chapter: 5,
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
       { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
@@ -1185,7 +1320,12 @@ const G11_LESSONS = [
     chapter: 6,
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
@@ -1204,7 +1344,12 @@ const G11_LESSONS = [
     chapter: 7,
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
       { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
@@ -1223,7 +1368,12 @@ const G11_LESSONS = [
     chapter: 8,
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector trong không gian có:", choices: ["Độ dài và hướng", "Chỉ độ dài", "Chỉ hướng", "Không xác định"], correct: 0, hint: "Vector: đoạn thẳng có hướng.", explain: "Độ dài và hướng." },
       { type: "mc", prompt: "Câu 2: Tích vô hướng của hai vector a và b là:", choices: ["Số thực", "Vector", "Góc", "Không xác định"], correct: 0, hint: "a·b = |a||b|cosθ ∈ ℝ.", explain: "Số thực." },
