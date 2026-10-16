@@ -421,6 +421,11 @@ String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
       { type: "mc", prompt: "Hai tập hợp A và B bằng nhau khi", choices: ["Có cùng phần tử", "Có cùng số phần tử", "A là tập con của B", "B là tập con của A"], correct: 0, hint: "Định nghĩa hai tập hợp bằng nhau.", explain: "Có cùng phần tử." },
