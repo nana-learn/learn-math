@@ -681,8 +681,11 @@ const G6_LESSONS = [
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> 2: tận cùng chẵn. 5: tận cùng 0 hoặc 5. 3: tổng chữ số chia hết cho 3. 9: tổng chữ số chia hết cho 9.</p></div>
     `,
-    exercises: [
-      { type: "num", prompt: "Số nào chia hết cho 2 trong các số: 24, 35, 46?", answer: "24, 46", accept: ["24, 46", "24,46"], hint: "Tận cùng chẵn: 0, 2, 4, 6, 8.", explain: "24 và 46." },
+          exercises: [
+        { type: "mc", prompt: "Số nào chia hết cho 5?", choices: ["35", "36", "37", "38"], correct: 0, hint: "Tận cùng là 0 hoặc 5.", explain: "35." },
+        { type: "mc", prompt: "Số nào chia hết cho 2?", choices: ["47", "48", "49", "51"], correct: 1, hint: "Tận cùng chẵn (0,2,4,6,8).", explain: "48." },
+        { type: "text", prompt: "Số 123 có chia hết cho 3 không?", answer: "Có", accept: ["Có", "có"], hint: "1+2+3 = 6 chia hết cho 3.", explain: "Có, vì tổng các chữ số chia hết cho 3." },
+      ], hint: "Tận cùng chẵn: 0, 2, 4, 6, 8.", explain: "24 và 46." },
       { type: "num", prompt: "Số nào chia hết cho 5 trong các số: 15, 23, 40?", answer: "15, 40", accept: ["15, 40", "15,40"], hint: "Tận cùng 0 hoặc 5.", explain: "15 và 40." },
       { type: "num", prompt: "Số nào chia hết cho 3 trong các số: 123, 124, 125?", answer: "123", accept: ["123"], hint: "1+2+3=6 chia hết cho 3.", explain: "123." },
       { type: "num", prompt: "Tìm chữ số * để 4*5 chia hết cho 3.", answer: "2, 5, 8", accept: ["2, 5, 8", "2,5,8"], hint: "4+*+5=9+* chia hết cho 3 khi *=0,3,6,9.", explain: "* = 0, 3, 6, 9." },
