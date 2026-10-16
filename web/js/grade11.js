@@ -1339,6 +1339,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Khoảng cách từ điểm M đến mặt phẳng (P) là", choices: ["Độ dài đoạn vuông góc từ M đến (P)", "Độ dài đoạnxiên từ M đến (P)", "Khoảng cách từ M đến một điểm bất kỳ trên (P)", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa khoảng cách từ điểm đến mặt phẳng.", explain: "Độ dài đoạn vuông góc từ M đến (P)." },
       { type: "mc", prompt: "Hai đường thẳng chéo nhau có", choices: ["Một đoạn vuông góc chung duy nhất", "Vô số đoạn vuông góc chung", "Không có đoạn vuông góc chung", "Hai đoạn vuông góc chung"], correct: 0, hint: "Tính chất của hai đường thẳng chéo nhau.", explain: "Một đoạn vuông góc chung duy nhất." },
