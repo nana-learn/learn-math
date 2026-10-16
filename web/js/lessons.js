@@ -3811,11 +3811,32 @@ const LESSONS = [
       </div>
       
     `,
-    exercises: [
-      {
-        type: "mc",
-        prompt: "Trong một tứ giác nội tiếp, tổng số đo hai góc đối nhau bằng:",
-        choices: ["90°", "180°", "270°", "360°"],
+          exercises: [
+        {
+          type: "mc",
+          prompt: String.raw`Góc có đỉnh nằm trong đường tròn chắn hai cung có số đo lần lượt là 60^\circ và 40^\circ. Góc đó có số đo bằng bao nhiêu?`,
+          choices: ["50^\circ", "100^\circ", "20^\circ", "30^\circ"],
+          correct: 0,
+          hint: "Góc trong đường tròn bằng một nửa tổng hai cung bị chắn.",
+          explain: "(60° + 40°) : 2 = 50°.",
+        },
+        {
+          type: "mc",
+          prompt: String.raw`Góc có đỉnh nằm ngoài đường tròn chắn hai cung có số đo lần lượt là 100^\circ và 40^\circ. Góc đó có số đo bằng bao nhiêu?`,
+          choices: ["30^\circ", "70^\circ", "140^\circ", "60^\circ"],
+          correct: 0,
+          hint: "Góc ngoài đường tròn bằng một nửa hiệu hai cung bị chắn.",
+          explain: "(100° - 40°) : 2 = 30°.",
+        },
+        {
+          type: "text",
+          prompt: String.raw`Hai cung bị chắn bởi góc trong đường tròn có số đo 80^\circ và 60^\circ. Số đo góc đó là bao nhiêu?`,
+          answer: "70^\circ",
+          accept: ["70^\circ", "70 độ", "70°"],
+          hint: "Một nửa tổng hai cung bị chắn.",
+          explain: "(80° + 60°) : 2 = 70°.",
+        },
+      ],
         correct: 1,
         hint: "Định lí của Bài 29.",
         explain: "Tổng số đo hai góc đối nhau bằng 180°.",
