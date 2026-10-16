@@ -8649,8 +8649,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "f(x) = x² + 1 có bao nhiêu nghiệm?", choices: ["0", "1", "2", "Vô số"], correct: 0, hint: "Δ = -4 < 0 nên vô nghiệm.", explain: "0 nghiệm." },
+          exercises: [
+        { type: "mc", prompt: "Parabol y = −x² + 2x + 3 hướng", choices: ["Xuống", "Lên", "Sang phải", "Sang trái"], correct: 0, hint: "a = −1 < 0 nên hướng xuống.", explain: "Xuống." },
+        { type: "mc", prompt: "Đỉnh của parabol y = x² − 2x − 3 là", choices: ["(1, −4)", "(-1, −4)", "(1, 4)", "(-1, 4)"], correct: 0, hint: "x = 1, y = 1 − 2 − 3 = −4.", explain: "(1, −4)." },
+        { type: "text", prompt: "Tìm giao điểm của parabol y = x² − 4 với trục hoành.", answer: "(-2, 0) và (2, 0)", accept: ["(-2, 0) và (2, 0)", "(-2,0) và (2,0)", "(-2, 0), (2, 0)"], hint: "x² − 4 = 0 → x = ±2.", explain: "(-2, 0) và (2, 0)." },
+      ], correct: 0, hint: "Δ = -4 < 0 nên vô nghiệm.", explain: "0 nghiệm." },
       { type: "mc", prompt: "f(x) = -x² + 4 dương khi?", choices: ["-2 < x < 2", "x < -2", "x > 2", "x ≠ ±2"], correct: 0, hint: "a = -1 < 0, nghiệm ±2.", explain: "-2 < x < 2." },
       { type: "num", prompt: "Số nguyên thỏa x² - 4x + 3 ≤ 0 là", answer: "3", accept: ["3"], hint: "(x-1)(x-3) ≤ 0 ⇒ 1 ≤ x ≤ 3.", explain: "x = 1, 2, 3." },
     ],
