@@ -9436,8 +9436,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Từ nhà đến bến xe có 4 đường, bến xe đến trường có 3 đường. Số cách đi từ nhà đến trường là?", choices: ["12", "7", "4", "3"], correct: 0, hint: "4 × 3 = 12.", explain: "12." },
+          exercises: [
+        { type: "mc", prompt: "Hai vectơ bằng nhau khi", choices: ["Cùng hướng và cùng độ dài", "Cùng phương", "Cùng độ dài", "Cùng hướng"], correct: 0, hint: "Định nghĩa vectơ bằng nhau.", explain: "Cùng hướng và cùng độ dài." },
+        { type: "mc", prompt: "Vectơ AB với A(2, 3), B(5, 7) là", choices: ["(3, 4)", "(7, 10)", "(-3, -4)", "(2, 3)"], correct: 0, hint: "B − A = (3, 4).", explain: "(3, 4)." },
+        { type: "text", prompt: "Vectơ 0 là vectơ có", answer: "độ dài bằng 0", accept: ["độ dài bằng 0", "độ dài 0", " độ dài bằng 0"], hint: "Định nghĩa vectơ 0.", explain: "độ dài bằng 0." },
+      ], correct: 0, hint: "4 × 3 = 12.", explain: "12." },
       { type: "mc", prompt: "Có 5 cuốn sách Toán, 4 cuốn Văn. Chọn 1 cuốn là?", choices: ["9", "20", "5", "4"], correct: 0, hint: "5 + 4 = 9.", explain: "9." },
       { type: "num", prompt: "Từ A đến B có 3 đường, B đến C có 2 đường, C đến D có 2 đường. Số cách từ A đến D là", answer: "12", accept: ["12"], hint: "3 × 2 × 2 = 12.", explain: "12." },
     ],
