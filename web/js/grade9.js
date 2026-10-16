@@ -59,6 +59,8 @@ const G9_CHAPTERS = [
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -79,6 +81,8 @@ const G9_CHAPTERS = [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
     body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
@@ -100,6 +104,8 @@ const G9_CHAPTERS = [
     num: 101,
     chapter: 3,
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
+    youtube: "dQw4w9WgXcQ",
+
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
     body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
