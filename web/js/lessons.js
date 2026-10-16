@@ -9325,8 +9325,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Đường tròn tâm O(0,0), bán kính 2 là?", choices: ["x² + y² = 4", "x² + y² = 2", "(x-2)² + y² = 4", "x² + (y-2)² = 4"], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình chính tắc của parabol là", choices: ["y² = 2px", "x² = 2py", "y = ax² + bx + c", "x² + y² = R²"], correct: 0, hint: "Định nghĩa parabol.", explain: "y² = 2px." },
+        { type: "mc", prompt: "Parabol y² = 8x có tiêu điểm là", choices: ["(2, 0)", "(-2, 0)", "(4, 0)", "(-4, 0)"], correct: 0, hint: "2p = 8 → p = 4, tiêu điểm (p/2, 0) = (2, 0).", explain: "(2, 0)." },
+        { type: "text", prompt: "Parabol y = x² − 4x + 3 có đỉnh là", answer: "(2, -1)", accept: ["(2, -1)"], hint: "x = 2, y = 4 − 8 + 3 = -1.", explain: "(2, -1)." },
+      ], correct: 0, hint: "a=0, b=0, R=2 ⇒ x²+y²=4.", explain: "x² + y² = 4." },
       { type: "mc", prompt: "Đường tròn tâm I(3, -1), bán kính 5 là?", choices: ["(x-3)² + (y+1)² = 25", "(x+3)² + (y-1)² = 25", "(x-3)² + (y-1)² = 25", "(x+3)² + (y+1)² = 25"], correct: 0, hint: "a=3, b=-1 ⇒ (x-3)² + (y-(-1))² = 25.", explain: "(x-3)² + (y+1)² = 25." },
       { type: "mc", prompt: "Đường tròn tâm (2, 3), bán kính √5 có phương trình nào?", choices: ["(x − 2)² + (y − 3)² = 5", "(x − 2)² + (y − 3)² = √5", "x² + y² = 5", "(x + 2)² + (y + 3)² = 5"], correct: 0, hint: "Bình phương bán kính: (√5)² = 5.", explain: "(x − 2)² + (y − 3)² = 5." },
     ],
