@@ -9273,8 +9273,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Tam giác ABC: AB=3, AC=4, góc A=90°. BC = ?", choices: ["5", "4", "3", "7"], correct: 0, hint: "BC² = 9 + 16 = 25 ⇒ BC = 5.", explain: "5." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình chính tắc của hypebol là", choices: ["x²/a² − y²/b² = 1", "x²/a² + y²/b² = 1", "y² = 2px", "x² + y² = R²"], correct: 0, hint: "Định nghĩa hypebol.", explain: "x²/a² − y²/b² = 1." },
+        { type: "mc", prompt: "Hypebol x²/9 − y²/16 = 1 có tiêu cự bằng", choices: ["10", "8", "6", "5"], correct: 0, hint: "c² = a² + b² = 9 + 16 = 25 → c = 5, tiêu cự = 2c = 10.", explain: "10." },
+        { type: "text", prompt: "Hypebol x²/4 − y²/5 = 1 có tiệm cận là", answer: "y = ±(√5/2)x", accept: ["y = ±(√5/2)x", "y = ±(sqrt(5)/2)x"], hint: "Tiệm cận y = ±(b/a)x.", explain: "y = ±(√5/2)x." },
+      ], correct: 0, hint: "BC² = 9 + 16 = 25 ⇒ BC = 5.", explain: "5." },
       { type: "mc", prompt: "Tam giác ABC: a=6, b=8, góc C=60°. c² = ?", choices: ["52", "28", "100", "16"], correct: 0, hint: "c² = 36 + 64 - 2·6·8·0.5 = 52.", explain: "52." },
       { type: "num", prompt: "Tam giác ABC: AB=5, AC=7, góc A=60°. BC² =", answer: "39", accept: ["39"], hint: "BC² = 25 + 49 - 2·5·7·0.5 = 39.", explain: "39." },
     ],
