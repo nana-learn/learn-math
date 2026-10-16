@@ -156,6 +156,25 @@ const G10_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0 có độ dài 0.", explain: "Độ dài bằng 0." },
     ],
   },
+
+  {
+    id: "g10-ch5-quiz",
+    num: 105,
+    chapter: 5,
+    title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2), B(4,6) là?", choices: ["(3,4)", "(5,8)", "(-3,-4)", "(4,6)"], correct: 0, hint: "AB = (4-1, 6-2) = (3,4).", explain: "(3,4)." },
+      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0) và B(3,4) là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "AB = √(9+16) = 5.", explain: "5." },
+      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0), B(2,3), C(4,1).", answer: "11", accept: ["11"], hint: "AB=(2,3), AC=(4,1). AB·AC = 8+3 = 11.", explain: "11." },
+      { type: "mc", prompt: "Câu 4: Phương trình đường thẳng đi qua A(1,2) và có vector pháp tuyến (3,-4) là?", choices: ["3(x-1)-4(y-2)=0", "3(x+1)-4(y+2)=0", "3x-4y+5=0", "3x+4y-11=0"], correct: 0, hint: "3(x-1)-4(y-2)=0 → 3x-4y+5=0.", explain: "3(x-1)-4(y-2)=0." },
+      { type: "mc", prompt: "Câu 5: Phương trình tham số đường thẳng qua A(1,2) và có vector chỉ phương (3,4) là?", choices: ["x=1+3t, y=2+4t", "x=1-3t, y=2-4t", "x=3t, y=4t", "x=1+4t, y=2+3t"], correct: 0, hint: "x=x₀+at, y=y₀+bt.", explain: "x=1+3t, y=2+4t." },
+      { type: "mc", prompt: "Câu 6: Hai vector (2,3) và (4,-8/3) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "2×4 + 3×(-8/3) = 8-8 = 0.", explain: "Tích vô hướng bằng 0." },
+      { type: "mc", prompt: "Câu 7: Khoảng cách từ điểm A(1,2) đến đường thẳng 3x-4y+5=0 là?", choices: ["0", "1", "2", "3"], correct: 0, hint: "d = |3-8+5|/5 = 0/5 = 0.", explain: "0." },
+      { type: "mc", prompt: "Câu 8: Phương trình đường tròn tâm I(2,-3) bán kính 4 là?", choices: ["(x-2)²+(y+3)²=16", "(x+2)²+(y-3)²=16", "(x-2)²+(y-3)²=16", "(x-2)²+(y+3)²=4"], correct: 0, hint: "R² = 16.", explain: "(x-2)²+(y+3)²=16." },
+    ],
+  },
 ];
 
 const G10_LESSONS = [
@@ -1827,6 +1846,25 @@ const G10_LESSONS = [
       { type: "mc", prompt: "Câu 6: Ba điểm A, B, C thẳng hàng khi:", choices: ["Vector AB và Vector AC cùng phương", "Vector AB = Vector AC", "AB = AC", "Góc BAC = 90°"], correct: 0, hint: "Cùng phương ↔ cùng đường thẳng.", explain: "Vector AB và Vector AC cùng phương." },
       { type: "mc", prompt: "Câu 7: Tam giác ABC, G là trọng tâm thì:", choices: ["Vector GA + Vector GB + Vector GC = 0", "Vector GA = Vector GB = Vector GC", "G là trung điểm AB", "G là trực tâm"], correct: 0, hint: "GA + GB + GC = 0 với G trọng tâm.", explain: "Vector GA + Vector GB + Vector GC = 0." },
       { type: "mc", prompt: "Câu 8: Vector 0 là vector có:", choices: ["Độ dài bằng 0", "Độ dài bằng 1", "Hướng tùy ý", "Không xác định"], correct: 0, hint: "Vector 0 có độ dài 0.", explain: "Độ dài bằng 0." },
+    ],
+  },
+
+  {
+    id: "g10-ch5-quiz",
+    num: 105,
+    chapter: 5,
+    title: "Chương 5: Phương pháp tọa độ trong mặt phẳng - Trắc nghiệm",
+    summary: "Luyện tập tọa độ điểm, vector, phương trình đường thẳng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong mặt phẳng.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2), B(4,6) là?", choices: ["(3,4)", "(5,8)", "(-3,-4)", "(4,6)"], correct: 0, hint: "AB = (4-1, 6-2) = (3,4).", explain: "(3,4)." },
+      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0) và B(3,4) là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "AB = √(9+16) = 5.", explain: "5." },
+      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0), B(2,3), C(4,1).", answer: "11", accept: ["11"], hint: "AB=(2,3), AC=(4,1). AB·AC = 8+3 = 11.", explain: "11." },
+      { type: "mc", prompt: "Câu 4: Phương trình đường thẳng đi qua A(1,2) và có vector pháp tuyến (3,-4) là?", choices: ["3(x-1)-4(y-2)=0", "3(x+1)-4(y+2)=0", "3x-4y+5=0", "3x+4y-11=0"], correct: 0, hint: "3(x-1)-4(y-2)=0 → 3x-4y+5=0.", explain: "3(x-1)-4(y-2)=0." },
+      { type: "mc", prompt: "Câu 5: Phương trình tham số đường thẳng qua A(1,2) và có vector chỉ phương (3,4) là?", choices: ["x=1+3t, y=2+4t", "x=1-3t, y=2-4t", "x=3t, y=4t", "x=1+4t, y=2+3t"], correct: 0, hint: "x=x₀+at, y=y₀+bt.", explain: "x=1+3t, y=2+4t." },
+      { type: "mc", prompt: "Câu 6: Hai vector (2,3) và (4,-8/3) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "2×4 + 3×(-8/3) = 8-8 = 0.", explain: "Tích vô hướng bằng 0." },
+      { type: "mc", prompt: "Câu 7: Khoảng cách từ điểm A(1,2) đến đường thẳng 3x-4y+5=0 là?", choices: ["0", "1", "2", "3"], correct: 0, hint: "d = |3-8+5|/5 = 0/5 = 0.", explain: "0." },
+      { type: "mc", prompt: "Câu 8: Phương trình đường tròn tâm I(2,-3) bán kính 4 là?", choices: ["(x-2)²+(y+3)²=16", "(x+2)²+(y-3)²=16", "(x-2)²+(y-3)²=16", "(x-2)²+(y+3)²=4"], correct: 0, hint: "R² = 16.", explain: "(x-2)²+(y+3)²=16." },
     ],
   },
 ];
