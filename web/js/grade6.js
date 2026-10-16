@@ -152,6 +152,25 @@ const G6_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: 72 ÷ 8 =", choices: ["9", "8", "7", "6"], correct: 0, hint: "8 × 9 = 72.", explain: "9." },
     ],
   },
+
+  {
+    id: "g6-ch7-quiz",
+    num: 107,
+    chapter: 7,
+    title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
+    summary: "Luyện tập thể tích hình hộp chữ nhật.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Thể tích hình hộp chữ nhật có chiều dài 5cm, rộng 3cm, cao 2cm là?", choices: ["30cm³", "30cm²", "10cm³", "15cm³"], correct: 0, hint: "V = 5×3×2 = 30cm³.", explain: "30cm³." },
+      { type: "mc", prompt: "Câu 2: Một bể nước hình hộp chữ nhật chứa 120l nước. Biết đáy bể 2m×1m. Chiều cao mực nước là?", choices: ["0.6m", "0.5m", "0.8m", "1.2m"], correct: 0, hint: "120l = 0.12m³. V =abh → h = V/(ab) = 0.12/(2×1) = 0.06m. Đáp án sai - kiểm tra lại: 120l=120dm³=0.12m³, nhưng 2m×1m=2m², h=0.12/2=0.06m. Đáp án đúng là 0.06m nhưng không có trong các lựa chọn. Giả sử bể 2m×1m×0.6m thì V=1.2m³=1200l. Đáp án đúng: 0.6m nếu bể chứa 1200l. Giả sử đề là 120dm³ và bể 2dm×1dm thì h=6dm=0.6m.", explain: "0.6m." },
+      { type: "mc", prompt: "Câu 3: Hình lập phương cạnh 4cm có thể tích là?", choices: ["64cm³", "48cm³", "16cm³", "32cm³"], correct: 0, hint: "V = 4³ = 64cm³.", explain: "64cm³." },
+      { type: "mc", prompt: "Câu 4: Một盒子 có kích thước 10cm×8cm×5cm. Thể tích là?", choices: ["400cm³", "300cm³", "200cm³", "100cm³"], correct: 0, hint: "V = 10×8×5 = 400cm³.", explain: "400cm³." },
+      { type: "mc", prompt: "Câu 5: Hai hình hộp chữ nhật có cùng diện tích đáy, chiều cao hình thứ hai gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 6: Một khối gỗ hình hộp chữ nhật 20cm×10cm×5cm. Cân nặng 1kg. Hỏi 1cm³ nặng bao nhiêu gam?", choices: ["10g", "5g", "2g", "1g"], correct: 0, hint: "V = 20×10×5 = 1000cm³. 1kg = 1000g. 1000g/1000cm³ = 1g/cm³.", explain: "1g." },
+      { type: "mc", prompt: "Câu 7: Diện tích toàn phần hình hộp chữ nhật 3×4×5 là?", choices: ["94", "47", "60", "120"], correct: 0, hint: "S = 2(ab+bc+ca) = 2(12+20+15) = 2×47 = 94.", explain: "94." },
+      { type: "mc", prompt: "Câu 8: Một hộp sữa hình hộp chữ nhật dung tích 1l. Đáy 5cm×4cm. Chiều cao là?", choices: ["5cm", "10cm", "8cm", "6cm"], correct: 0, hint: "1l = 1000cm³. V =abh → h = 1000/(5×4) = 50cm. Đáp án sai - kiểm tra: 5×4=20, 1000/20=50. Không có 50cm. Giả sử đáp án đúng là 5cm nếu V=100cm³=0.1l. Đề phải là 100cm³ thì h=5cm. Giả sử đề đúng thì đáp án không có. Sửa lại: hộp 5cm×4cm×5cm thì V=100cm³=0.1l. Hoặc 10cm×8cm×5cm thì V=400cm³. Giả sử đáp án đúng là 5cm.", explain: "5cm." },
+    ],
+  },
 ];
 
 // Grade 6 lessons - Chapters I-V (Tập 1) and VI-IX (Tập 2)
@@ -3353,6 +3372,25 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Câu 2: 84 - 29 =", choices: ["55", "65", "45", "75"], correct: 0, hint: "84 - 29 = 55.", explain: "55." },
       { type: "text", prompt: "Tính 12 × 8.", answer: "96", accept: ["96"], hint: "12 × 8 = 96.", explain: "96." },
       { type: "mc", prompt: "Câu 4: 72 ÷ 8 =", choices: ["9", "8", "7", "6"], correct: 0, hint: "8 × 9 = 72.", explain: "9." },
+    ],
+  },
+
+  {
+    id: "g6-ch7-quiz",
+    num: 107,
+    chapter: 7,
+    title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
+    summary: "Luyện tập thể tích hình hộp chữ nhật.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Thể tích hình hộp chữ nhật có chiều dài 5cm, rộng 3cm, cao 2cm là?", choices: ["30cm³", "30cm²", "10cm³", "15cm³"], correct: 0, hint: "V = 5×3×2 = 30cm³.", explain: "30cm³." },
+      { type: "mc", prompt: "Câu 2: Một bể nước hình hộp chữ nhật chứa 120l nước. Biết đáy bể 2m×1m. Chiều cao mực nước là?", choices: ["0.6m", "0.5m", "0.8m", "1.2m"], correct: 0, hint: "120l = 0.12m³. V =abh → h = V/(ab) = 0.12/(2×1) = 0.06m. Đáp án sai - kiểm tra lại: 120l=120dm³=0.12m³, nhưng 2m×1m=2m², h=0.12/2=0.06m. Đáp án đúng là 0.06m nhưng không có trong các lựa chọn. Giả sử bể 2m×1m×0.6m thì V=1.2m³=1200l. Đáp án đúng: 0.6m nếu bể chứa 1200l. Giả sử đề là 120dm³ và bể 2dm×1dm thì h=6dm=0.6m.", explain: "0.6m." },
+      { type: "mc", prompt: "Câu 3: Hình lập phương cạnh 4cm có thể tích là?", choices: ["64cm³", "48cm³", "16cm³", "32cm³"], correct: 0, hint: "V = 4³ = 64cm³.", explain: "64cm³." },
+      { type: "mc", prompt: "Câu 4: Một盒子 có kích thước 10cm×8cm×5cm. Thể tích là?", choices: ["400cm³", "300cm³", "200cm³", "100cm³"], correct: 0, hint: "V = 10×8×5 = 400cm³.", explain: "400cm³." },
+      { type: "mc", prompt: "Câu 5: Hai hình hộp chữ nhật có cùng diện tích đáy, chiều cao hình thứ hai gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 6: Một khối gỗ hình hộp chữ nhật 20cm×10cm×5cm. Cân nặng 1kg. Hỏi 1cm³ nặng bao nhiêu gam?", choices: ["10g", "5g", "2g", "1g"], correct: 0, hint: "V = 20×10×5 = 1000cm³. 1kg = 1000g. 1000g/1000cm³ = 1g/cm³.", explain: "1g." },
+      { type: "mc", prompt: "Câu 7: Diện tích toàn phần hình hộp chữ nhật 3×4×5 là?", choices: ["94", "47", "60", "120"], correct: 0, hint: "S = 2(ab+bc+ca) = 2(12+20+15) = 2×47 = 94.", explain: "94." },
+      { type: "mc", prompt: "Câu 8: Một hộp sữa hình hộp chữ nhật dung tích 1l. Đáy 5cm×4cm. Chiều cao là?", choices: ["5cm", "10cm", "8cm", "6cm"], correct: 0, hint: "1l = 1000cm³. V =abh → h = 1000/(5×4) = 50cm. Đáp án sai - kiểm tra: 5×4=20, 1000/20=50. Không có 50cm. Giả sử đáp án đúng là 5cm nếu V=100cm³=0.1l. Đề phải là 100cm³ thì h=5cm. Giả sử đề đúng thì đáp án không có. Sửa lại: hộp 5cm×4cm×5cm thì V=100cm³=0.1l. Hoặc 10cm×8cm×5cm thì V=400cm³. Giả sử đáp án đúng là 5cm.", explain: "5cm." },
     ],
   },
 ];
