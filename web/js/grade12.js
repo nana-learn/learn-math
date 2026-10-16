@@ -566,6 +566,8 @@ String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có th�
       </details>
 
       { type: "mc", prompt: "Bài tập luyện tập", choices: ["A", "B", "C", "D"], correct: "A" },
+
+      { type: "text", prompt: "Giải thích rõ ràng cách giải." },
 exercises: [
       { type: "mc", prompt: "Hàm số y = x³ có cực trị nào?", choices: ["Cực đại tại x=0", "Cực tiểu tại x=0", "Không có cực trị", "Cực đại và cực tiểu"], correct: 2, hint: "y' = 3x² ≥ 0, không đổi dấu.", explain: "Không có cực trị." },
       { type: "mc", prompt: "Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' có 3 nghiệm và đổi dấu.", explain: "3 cực trị." },
