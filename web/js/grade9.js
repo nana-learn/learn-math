@@ -43,6 +43,37 @@ const G9_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Hai đường thẳng vuông góc khi:", choices: ["k₁·k₂ = -1", "k₁·k₂ = 1", "k₁ = k₂", "k₁ + k₂ = 0"], correct: 0, hint: "Tích hệ số góc = -1.", explain: "k₁·k₂ = -1." },
     ],
   },
+
+  {
+    id: "g9-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Căn bậc hai",
+    summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "4." },
+      { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(25/9) = 5/3.", explain: "5/3." },
+      { type: "text", prompt: "Rút gọn biểu thức √12.", answer: "2√3", accept: ["2√3", "2*sqrt(3)"], hint: "√12 = √(4·3) = 2√3.", explain: "2√3." },
+      { type: "mc", prompt: "Câu 4: Điều kiện xác định của √(x-5) là?", choices: ["x ≥ 5", "x > 5", "x ≤ 5", "x < 5"], correct: 0, hint: "Biểu thức dưới dấu căn ≥ 0.", explain: "x ≥ 5." },
+    ],
+  },
+  {
+    id: "g9-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
+    summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = 4x - 1 có hệ số góc là?", choices: ["4", "-1", "1", "-4"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "4." },
+      { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -3x + 2 cắt trục Oy tại điểm?", choices: ["(0,2)", "(2,0)", "(0,-2)", "(-2,0)"], correct: 0, hint: "x=0 → y=2.", explain: "(0,2)." },
+      { type: "text", prompt: "Tìm giao điểm của y=2x+1 và y=-x+4.", answer: "(1,3)", accept: ["(1,3)", "x=1,y=3"], hint: "2x+1=-x+4 → 3x=3 → x=1, y=3.", explain: "(1,3)." },
+      { type: "mc", prompt: "Câu 4: Hai đường thẳng y=2x+3 và y=2x-1:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
+    ],
+  },
 ];
 
 const G9_LESSONS = [
@@ -481,6 +512,37 @@ const G9_LESSONS = [
       { type: "mc", prompt: "Câu 6: Đồ thị hàm số y = 4 là:", choices: ["Đường thẳng ngang", "Đường thẳng dọc", "Đường xiên", "Parabol"], correct: 0, hint: "y = 4 là đường thẳng y = 0x + 4.", explain: "Đường thẳng ngang." },
       { type: "mc", prompt: "Câu 7: Hệ số góc của đường thẳng qua (0,2) và (2,6) là?", choices: ["2", "3", "4", "1"], correct: 0, hint: "k = (6-2)/(2-0) = 2.", explain: "2." },
       { type: "mc", prompt: "Câu 8: Hai đường thẳng vuông góc khi:", choices: ["k₁·k₂ = -1", "k₁·k₂ = 1", "k₁ = k₂", "k₁ + k₂ = 0"], correct: 0, hint: "Tích hệ số góc = -1.", explain: "k₁·k₂ = -1." },
+    ],
+  },
+
+  {
+    id: "g9-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Căn bậc hai",
+    summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √16 =", choices: ["4", "-4", "±4", "8"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "4." },
+      { type: "mc", prompt: "Câu 2: √(25/9) =", choices: ["5/3", "-5/3", "±5/3", "25/3"], correct: 0, hint: "√(25/9) = 5/3.", explain: "5/3." },
+      { type: "text", prompt: "Rút gọn biểu thức √12.", answer: "2√3", accept: ["2√3", "2*sqrt(3)"], hint: "√12 = √(4·3) = 2√3.", explain: "2√3." },
+      { type: "mc", prompt: "Câu 4: Điều kiện xác định của √(x-5) là?", choices: ["x ≥ 5", "x > 5", "x ≤ 5", "x < 5"], correct: 0, hint: "Biểu thức dưới dấu căn ≥ 0.", explain: "x ≥ 5." },
+    ],
+  },
+  {
+    id: "g9-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
+    summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = 4x - 1 có hệ số góc là?", choices: ["4", "-1", "1", "-4"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "4." },
+      { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -3x + 2 cắt trục Oy tại điểm?", choices: ["(0,2)", "(2,0)", "(0,-2)", "(-2,0)"], correct: 0, hint: "x=0 → y=2.", explain: "(0,2)." },
+      { type: "text", prompt: "Tìm giao điểm của y=2x+1 và y=-x+4.", answer: "(1,3)", accept: ["(1,3)", "x=1,y=3"], hint: "2x+1=-x+4 → 3x=3 → x=1, y=3.", explain: "(1,3)." },
+      { type: "mc", prompt: "Câu 4: Hai đường thẳng y=2x+3 và y=2x-1:", choices: ["Song song", "Cắt nhau", "Vuông góc", "Trùng nhau"], correct: 0, hint: "Cùng hệ số góc k=2.", explain: "Song song." },
     ],
   },
 ];
