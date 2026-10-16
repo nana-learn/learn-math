@@ -8596,8 +8596,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Đồ thị y = 2x² có hướng?", choices: ["Lên", "Xuống", "Trái", "Phải"], correct: 0, hint: "a = 2 > 0 nên hướng lên.", explain: "Hướng lên." },
+          exercises: [
+        { type: "mc", prompt: "Hàm số y = x² đồng biến trên", choices: "[0; +∞)", "(-∞; 0]", "(-∞; +∞)", "∅"], correct: 0, hint: "Parabol hướng lên, đỉnh tại O.", explain: "[0; +∞)." },
+        { type: "mc", prompt: "Đỉnh của parabol y = (x − 2)² + 3 là", choices: ["(2, 3)", "(-2, 3)", "(2, -3)", "(-2, -3)"], correct: 0, hint: "y = (x − h)² + k có đỉnh (h, k).", explain: "(2, 3)." },
+        { type: "text", prompt: "Viết phương trình trục đối xứng của parabol y = x² − 4x + 1.", answer: "x = 2", accept: ["x = 2"], hint: "x = -b/(2a) = 4/2 = 2.", explain: "x = 2." },
+      ], correct: 0, hint: "a = 2 > 0 nên hướng lên.", explain: "Hướng lên." },
       { type: "mc", prompt: "Đỉnh của y = x² - 2x là?", choices: ["(1, -1)", "(-1, 1)", "(1, 1)", "(-1, -1)"], correct: 0, hint: "-b/2a = 1, y(1) = -1.", explain: "(1, -1)." },
       { type: "num", prompt: "Giá trị nhỏ nhất của y = x² + 2 là", answer: "2", accept: ["2"], hint: "x² ≥ 0 nên y ≥ 2.", explain: "2." },
     ],
