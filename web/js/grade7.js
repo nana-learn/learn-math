@@ -1709,7 +1709,9 @@ String.raw`
         </svg>
       </figure>
     `,
-          exercises: [
+          
+      { type: "mc", prompt: "Bài tập thực hành", choices: ["A", "B", "C", "D"], correct: "A" },
+exercises: [
         { type: "mc", prompt: "Hàm số là quy tắc", choices: ["Mỗi giá trị của x tương ứng với một giá trị duy nhất của y", "Mỗi giá trị của x tương ứng với nhiều giá trị của y", "Không có quy tắc cụ thể", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa hàm số.", explain: "Mỗi x có một y duy nhất." },
         { type: "mc", prompt: "Cho hàm số y = 2x + 1. Khi x = 3 thì y =", choices: ["7", "5", "6", "4"], correct: 0, hint: "y = 2×3 + 1 = 7.", explain: "7." },
         { type: "text", prompt: "Hàm số y = x^2. Khi x = -3 thì y =", answer: "9", accept: ["9"], hint: "y = (-3)^2 = 9.", explain: "9." },
