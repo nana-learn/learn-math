@@ -84,6 +84,37 @@ const G7_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Số đơn vị điều tra là?", choices: ["Số lượng đơn vị được điều tra", "Số lượng giá trị", "Số lượng dấu hiệu", "Số lượng tần số"], correct: 0, hint: "N = tổng số đơn vị.", explain: "Số lượng đơn vị được điều tra." },
     ],
   },
+
+  {
+    id: "g7-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Số hữu tỉ",
+    summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
+      { type: "mc", prompt: "Câu 2: (-2) + 5 =", choices: ["3", "-3", "7", "-7"], correct: 0, hint: "-2 + 5 = 3.", explain: "3." },
+      { type: "text", prompt: "Tính 2/3 × 3/4.", answer: "1/2", accept: ["1/2"], hint: "2×3 / 3×4 = 6/12 = 1/2.", explain: "1/2." },
+      { type: "mc", prompt: "Câu 4: Số đối của -5/7 là?", choices: ["5/7", "-5/7", "7/5", "-7/5"], correct: 0, hint: "Đổi dấu.", explain: "5/7." },
+    ],
+  },
+  {
+    id: "g7-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Số thực",
+    summary: "Đề kiểm tra 45 phút chương Số thực.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
+      { type: "mc", prompt: "Câu 2: |−3| =", choices: ["3", "-3", "0", "1/3"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "3." },
+      { type: "text", prompt: "Tính √2 × √8.", answer: "4", accept: ["4"], hint: "√2 × √8 = √16 = 4.", explain: "4." },
+      { type: "mc", prompt: "Câu 4: Số vô tỉ là?", choices: ["Không viết được thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không viết được thành phân số." },
+    ],
+  },
 ];
 
 const G7_LESSONS = [
@@ -2928,6 +2959,37 @@ const G7_LESSONS = [
       { type: "mc", prompt: "Câu 6: Biểu đồ hình quạt dùng để biểu diễn:", choices: ["Cơ cấu phần trăm", "Sự thay đổi theo thời gian", "So sánh giá trị", "Phân bố tần số"], correct: 0, hint: "Hình quạt biểu diễn tỷ lệ phần trăm.", explain: "Cơ cấu phần trăm." },
       { type: "mc", prompt: "Câu 7: Số trung bình cộng được kí hiệu là?", choices: ["X-bar", "M", "Mo", "R"], correct: 0, hint: "X-bar = (x1 + x2 + ... + xn)/n.", explain: "X-bar." },
       { type: "mc", prompt: "Câu 8: Số đơn vị điều tra là?", choices: ["Số lượng đơn vị được điều tra", "Số lượng giá trị", "Số lượng dấu hiệu", "Số lượng tần số"], correct: 0, hint: "N = tổng số đơn vị.", explain: "Số lượng đơn vị được điều tra." },
+    ],
+  },
+
+  {
+    id: "g7-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Số hữu tỉ",
+    summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
+      { type: "mc", prompt: "Câu 2: (-2) + 5 =", choices: ["3", "-3", "7", "-7"], correct: 0, hint: "-2 + 5 = 3.", explain: "3." },
+      { type: "text", prompt: "Tính 2/3 × 3/4.", answer: "1/2", accept: ["1/2"], hint: "2×3 / 3×4 = 6/12 = 1/2.", explain: "1/2." },
+      { type: "mc", prompt: "Câu 4: Số đối của -5/7 là?", choices: ["5/7", "-5/7", "7/5", "-7/5"], correct: 0, hint: "Đổi dấu.", explain: "5/7." },
+    ],
+  },
+  {
+    id: "g7-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Số thực",
+    summary: "Đề kiểm tra 45 phút chương Số thực.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
+      { type: "mc", prompt: "Câu 2: |−3| =", choices: ["3", "-3", "0", "1/3"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "3." },
+      { type: "text", prompt: "Tính √2 × √8.", answer: "4", accept: ["4"], hint: "√2 × √8 = √16 = 4.", explain: "4." },
+      { type: "mc", prompt: "Câu 4: Số vô tỉ là?", choices: ["Không viết được thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không viết được thành phân số." },
     ],
   },
 ];
