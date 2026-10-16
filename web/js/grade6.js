@@ -121,6 +121,37 @@ const G6_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: 1/2 góc bẹt là:", choices: ["90°", "45°", "180°", "360°"], correct: 0, hint: "1/2 × 180° = 90°.", explain: "90°." },
     ],
   },
+
+  {
+    id: "g6-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Tập hợp",
+    summary: "Đề kiểm tra 45 phút chương Tập hợp.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Tập hợp A = {1,2,3} có bao nhiêu phần tử?", choices: ["3", "2", "4", "1"], correct: 0, hint: "1,2,3 → 3 phần tử.", explain: "3." },
+      { type: "mc", prompt: "Câu 2: 5 ∈ A với A = {3,4,5,6} là:", choices: ["Đúng", "Sai", "Không xác định", "Không đúng"], correct: 0, hint: "5 có trong tập hợp.", explain: "Đúng." },
+      { type: "text", prompt: "Viết tập hợp B = {x∈N | 2≤x≤5}.", answer: "{2,3,4,5}", accept: ["{2,3,4,5}", "2,3,4,5"], hint: "x từ 2 đến 5 bao gồm cả 2 và 5.", explain: "{2,3,4,5}." },
+      { type: "mc", prompt: "Câu 4: Tập hợp con của {1,2,3} là?", choices: ["{1,2}", "{1,4}", "{4,5}", "{1,2,3,4}"], correct: 0, hint: "Tất cả phần tử của {1,2} đều trong {1,2,3}.", explain: "{1,2}." },
+    ],
+  },
+  {
+    id: "g6-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phép cộng, trừ, nhân, chia",
+    summary: "Đề kiểm tra 45 phút chương Phép cộng, trừ, nhân, chia.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: 25 + 37 =", choices: ["62", "52", "72", "42"], correct: 0, hint: "25 + 37 = 62.", explain: "62." },
+      { type: "mc", prompt: "Câu 2: 84 - 29 =", choices: ["55", "65", "45", "75"], correct: 0, hint: "84 - 29 = 55.", explain: "55." },
+      { type: "text", prompt: "Tính 12 × 8.", answer: "96", accept: ["96"], hint: "12 × 8 = 96.", explain: "96." },
+      { type: "mc", prompt: "Câu 4: 72 ÷ 8 =", choices: ["9", "8", "7", "6"], correct: 0, hint: "8 × 9 = 72.", explain: "9." },
+    ],
+  },
 ];
 
 // Grade 6 lessons - Chapters I-V (Tập 1) and VI-IX (Tập 2)
@@ -3291,6 +3322,37 @@ const G6_LESSONS = [
       { type: "mc", prompt: "Câu 6: Tia phân giác của góc xOy là tia Oz sao cho:", choices: ["∠xOz = ∠zOy và Oz nằm giữa Ox, Oy", "∠xOz = ∠zOy", "Oz nằm giữa Ox, Oy", "∠xOz + ∠zOy = 180°"], correct: 0, hint: "Tia phân giác có 2 điều kiện.", explain: "∠xOz = ∠zOy và Oz nằm giữa Ox, Oy." },
       { type: "mc", prompt: "Câu 7: Góc lớn hơn 0° và nhỏ hơn 90° là:", choices: ["Góc nhọn", "Góc vuông", "Góc tù", "Góc bẹt"], correct: 0, hint: "Nhọn < vuông < 90°.", explain: "Góc nhọn." },
       { type: "mc", prompt: "Câu 8: 1/2 góc bẹt là:", choices: ["90°", "45°", "180°", "360°"], correct: 0, hint: "1/2 × 180° = 90°.", explain: "90°." },
+    ],
+  },
+
+  {
+    id: "g6-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Tập hợp",
+    summary: "Đề kiểm tra 45 phút chương Tập hợp.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Tập hợp A = {1,2,3} có bao nhiêu phần tử?", choices: ["3", "2", "4", "1"], correct: 0, hint: "1,2,3 → 3 phần tử.", explain: "3." },
+      { type: "mc", prompt: "Câu 2: 5 ∈ A với A = {3,4,5,6} là:", choices: ["Đúng", "Sai", "Không xác định", "Không đúng"], correct: 0, hint: "5 có trong tập hợp.", explain: "Đúng." },
+      { type: "text", prompt: "Viết tập hợp B = {x∈N | 2≤x≤5}.", answer: "{2,3,4,5}", accept: ["{2,3,4,5}", "2,3,4,5"], hint: "x từ 2 đến 5 bao gồm cả 2 và 5.", explain: "{2,3,4,5}." },
+      { type: "mc", prompt: "Câu 4: Tập hợp con của {1,2,3} là?", choices: ["{1,2}", "{1,4}", "{4,5}", "{1,2,3,4}"], correct: 0, hint: "Tất cả phần tử của {1,2} đều trong {1,2,3}.", explain: "{1,2}." },
+    ],
+  },
+  {
+    id: "g6-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phép cộng, trừ, nhân, chia",
+    summary: "Đề kiểm tra 45 phút chương Phép cộng, trừ, nhân, chia.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: 25 + 37 =", choices: ["62", "52", "72", "42"], correct: 0, hint: "25 + 37 = 62.", explain: "62." },
+      { type: "mc", prompt: "Câu 2: 84 - 29 =", choices: ["55", "65", "45", "75"], correct: 0, hint: "84 - 29 = 55.", explain: "55." },
+      { type: "text", prompt: "Tính 12 × 8.", answer: "96", accept: ["96"], hint: "12 × 8 = 96.", explain: "96." },
+      { type: "mc", prompt: "Câu 4: 72 ÷ 8 =", choices: ["9", "8", "7", "6"], correct: 0, hint: "8 × 9 = 72.", explain: "9." },
     ],
   },
 ];
