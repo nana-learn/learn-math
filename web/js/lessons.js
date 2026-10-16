@@ -8297,8 +8297,11 @@ const G10_LESSONS = [
         <figcaption>Venn diagram của hai tập hợp A và B.</figcaption>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Số phần tử của tập {1, 3, 5, 7, 9} là", answer: "5", accept: ["5"], hint: "Đếm các phần tử.", explain: "5 phần tử." },
+          exercises: [
+        { type: "mc", prompt: "Tập hợp A = {x ∈ ℤ | -2 ≤ x ≤ 2} có bao nhiêu phần tử?", choices: ["5", "4", "6", "3"], correct: 0, hint: "-2, -1, 0, 1, 2.", explain: "5." },
+        { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
+        { type: "text", prompt: "Viết tập hợp các nghiệm của phương trình (x − 1)(x + 2) = 0.", answer: "{-2, 1}", accept: ["{-2, 1}", "{1, -2}", "{-2,1}", "{1,-2}"], hint: "x = 1 hoặc x = -2.", explain: "{-2, 1}." },
+      ], hint: "Đếm các phần tử.", explain: "5 phần tử." },
       { type: "mc", prompt: "Tập nào có 0 phần tử?", choices: ["{0}", "{1}", "∅", "{x}"], correct: 2, hint: "∅ là tập rỗng.", explain: "∅ là tập rỗng." },
     ],
   },
