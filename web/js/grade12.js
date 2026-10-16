@@ -890,6 +890,11 @@ String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất 
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ > 27 là?", choices: ["x > 2", "x > 3", "x < 3", "x < 2"], correct: 1, hint: "27 = 3³, a > 1.", explain: "x > 3." },
       { type: "mc", prompt: "Nghiệm của (1/3)ˣ < 9 là?", choices: ["x > -2", "x < -2", "x > 2", "x < 2"], correct: 0, hint: "9 = (1/3)⁻², đổi chiều.", explain: "x > -2." },
