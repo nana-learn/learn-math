@@ -18,7 +18,12 @@ const G6_CHAPTERS = [
     chapter: 1,
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tập hợp.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tập hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Tập hợp N* gồm:", choices: ["0,1,2,3,...", "1,2,3,4,...", "0,2,4,6,...", "1,3,5,7,..."], correct: 1, hint: "N* là tập hợp số tự nhiên khác 0.", explain: "1,2,3,4,..." },
       { type: "mc", prompt: "Câu 2: Số 12 thuộc tập hợp nào?", choices: ["N", "N*", "Z", "Cả N và N*"], correct: 3, hint: "12 là số tự nhiên khác 0.", explain: "Cả N và N*." },
@@ -37,7 +42,12 @@ const G6_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Phép chia - Trắc nghiệm",
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép chia.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép chia.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 24 ÷ 6 =", choices: ["4", "5", "6", "3"], correct: 0, hint: "6×4 = 24.", explain: "4." },
       { type: "mc", prompt: "Câu 2: 35 chia hết cho:", choices: ["5", "3", "4", "6"], correct: 0, hint: "35 = 5×7.", explain: "5." },
@@ -56,7 +66,12 @@ const G6_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Hình học - Trắc nghiệm",
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hình học cơ bản.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hình học cơ bản.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Qua hai điểm phân biệt vẽ được:", choices: ["Một đường thẳng", "Hai đường thẳng", "Vô số đường thẳng", "Không đường thẳng"], correct: 0, hint: "Qua hai điểm vẽ được một và chỉ một đường thẳng.", explain: "Một đường thẳng." },
       { type: "mc", prompt: "Câu 2: Điểm M nằm giữa A và B thì:", choices: ["AM + MB = AB", "AM + AB = MB", "MB + AB = AM", "AM = MB"], correct: 0, hint: "Nếu M giữa A, B thì AM + MB = AB.", explain: "AM + MB = AB." },
@@ -75,7 +90,12 @@ const G6_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Phân số - Trắc nghiệm",
     summary: "Luyện tập phân số, phép toán phân số.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phân số.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phân số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
       { type: "mc", prompt: "Câu 2: 2/3 × 3/4 =", choices: ["1/2", "1", "3/2", "2/4"], correct: 0, hint: "2×3 / 3×4 = 6/12 = 1/2.", explain: "1/2." },
@@ -94,7 +114,12 @@ const G6_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Số đo góc - Trắc nghiệm",
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số đo góc.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số đo góc.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Góc vuông là góc có số đo:", choices: ["90°", "180°", "0°", "360°"], correct: 0, hint: "Góc vuông = 90°.", explain: "90°." },
       { type: "mc", prompt: "Câu 2: Góc nhọn là góc có số đo:", choices: ["Nhỏ hơn 90°", "Lớn hơn 90°", "Bằng 90°", "Bằng 180°"], correct: 0, hint: "Nhọn < vuông < 90°.", explain: "Nhỏ hơn 90°." },
@@ -113,7 +138,12 @@ const G6_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hình hộp chữ nhật có chiều dài 5cm, rộng 3cm, cao 2cm là?", choices: ["30cm³", "30cm²", "10cm³", "15cm³"], correct: 0, hint: "V = 5×3×2 = 30cm³.", explain: "30cm³." },
       { type: "mc", prompt: "Câu 2: Một bể nước hình hộp chữ nhật chứa 120l nước. Biết đáy bể 2m×1m. Chiều cao mực nước là?", choices: ["0.6m", "0.5m", "0.8m", "1.2m"], correct: 0, hint: "120l = 0.12m³. V =abh → h = V/(ab) = 0.12/(2×1) = 0.06m. Đáp án sai - kiểm tra lại: 120l=120dm³=0.12m³, nhưng 2m×1m=2m², h=0.12/2=0.06m. Đáp án đúng là 0.06m nhưng không có trong các lựa chọn. Giả sử bể 2m×1m×0.6m thì V=1.2m³=1200l. Đáp án đúng: 0.6m nếu bể chứa 1200l. Giả sử đề là 120dm³ và bể 2dm×1dm thì h=6dm=0.6m.", explain: "0.6m." },
@@ -132,7 +162,12 @@ const G6_CHAPTERS = [
     chapter: 8,
     title: "Chương 8: Diện tích - Trắc nghiệm",
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích hình chữ nhật có chiều dài 8cm, rộng 5cm là?", choices: ["40cm²", "26cm²", "13cm²", "80cm²"], correct: 0, hint: "S = 8×5 = 40cm².", explain: "40cm²." },
       { type: "mc", prompt: "Câu 2: Diện tích hình vuông cạnh 6cm là?", choices: ["36cm²", "24cm²", "12cm²", "48cm²"], correct: 0, hint: "S = 6² = 36cm².", explain: "36cm²." },
@@ -3255,7 +3290,12 @@ const G6_LESSONS = [
     chapter: 2,
     title: "Chương 2: Tính chia hết - Trắc nghiệm",
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về chia hết.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về chia hết.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Số nào chia hết cho 3?", choices: ["12", "13", "14", "16"], correct: 0, hint: "1+2=3 chia hết cho 3.", explain: "12." },
       { type: "mc", prompt: "Câu 2: BCNN(4,6) =", choices: ["12", "18", "24", "36"], correct: 0, hint: "4=2², 6=2·3 → BCNN=2²·3=12.", explain: "12." },
