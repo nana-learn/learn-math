@@ -227,6 +227,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Đạo hàm của y = √x là?", choices: ["1/(2√x)", "2√x", "√x", "1/√x"], correct: 0, hint: "(x^{1/2})' = (1/2)x^{-1/2} = 1/(2√x).", explain: "1/(2√x)." },
     ],
   },
+
+  {
+    id: "g11-ch6-quiz",
+    num: 109,
+    chapter: 6,
+    title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
+      { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
+      { type: "text", prompt: "Phép đối xứng trục d biến điểm M thành M'. M' thỏa mãn:", answer: "d là trung trực của MM'", accept: ["d là trung trực của MM'", "d trung trực MM'"], hint: "Đối xứng trục: d là trung trực MM'.", explain: "d là trung trực của MM'." },
+      { type: "mc", prompt: "Câu 4: Phép vị tự tâm O, tỉ số k biến điểm M thành M' thì:", choices: ["Vector OM' = k·vector OM", "Vector OM' = (1/k)·vector OM", "OM' = k + OM", "OM' = |k|·OM"], correct: 0, hint: "OM' = k·OM (cùng phương).", explain: "Vector OM' = k·vector OM." },
+      { type: "mc", prompt: "Câu 5: Phép dời hình bảo toàn:", choices: ["Khoảng cách giữa hai điểm", "Góc giữa hai đường thẳng", "Độ dài đoạn thẳng", "Cả A và C"], correct: 0, hint: "Dời hình bảo toàn khoảng cách và độ dài.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Phép đồng dạng tỉ số k biến đoạn thẳng AB thành A'B' thì:", choices: ["A'B' = |k|·AB", "A'B' = k·AB", "A'B' = AB/k", "A'B' = AB"], correct: 0, hint: "Độ dài nhân với |k|.", explain: "A'B' = |k|·AB." },
+      { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
+      { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1119,6 +1138,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: Đạo hàm của y = e^x là?", choices: ["e^x", "xe^{x-1}", "ln(x)", "1"], correct: 0, hint: "(e^x)' = e^x.", explain: "e^x." },
       { type: "mc", prompt: "Câu 7: Đạo hàm của y = ln(x) là?", choices: ["1/x", "ln|x|", "e^x", "x"], correct: 0, hint: "(ln x)' = 1/x.", explain: "1/x." },
       { type: "mc", prompt: "Câu 8: Đạo hàm của y = √x là?", choices: ["1/(2√x)", "2√x", "√x", "1/√x"], correct: 0, hint: "(x^{1/2})' = (1/2)x^{-1/2} = 1/(2√x).", explain: "1/(2√x)." },
+    ],
+  },
+
+  {
+    id: "g11-ch6-quiz",
+    num: 109,
+    chapter: 6,
+    title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
+    summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
+      { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
+      { type: "text", prompt: "Phép đối xứng trục d biến điểm M thành M'. M' thỏa mãn:", answer: "d là trung trực của MM'", accept: ["d là trung trực của MM'", "d trung trực MM'"], hint: "Đối xứng trục: d là trung trực MM'.", explain: "d là trung trực của MM'." },
+      { type: "mc", prompt: "Câu 4: Phép vị tự tâm O, tỉ số k biến điểm M thành M' thì:", choices: ["Vector OM' = k·vector OM", "Vector OM' = (1/k)·vector OM", "OM' = k + OM", "OM' = |k|·OM"], correct: 0, hint: "OM' = k·OM (cùng phương).", explain: "Vector OM' = k·vector OM." },
+      { type: "mc", prompt: "Câu 5: Phép dời hình bảo toàn:", choices: ["Khoảng cách giữa hai điểm", "Góc giữa hai đường thẳng", "Độ dài đoạn thẳng", "Cả A và C"], correct: 0, hint: "Dời hình bảo toàn khoảng cách và độ dài.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Phép đồng dạng tỉ số k biến đoạn thẳng AB thành A'B' thì:", choices: ["A'B' = |k|·AB", "A'B' = k·AB", "A'B' = AB/k", "A'B' = AB"], correct: 0, hint: "Độ dài nhân với |k|.", explain: "A'B' = |k|·AB." },
+      { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
+      { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
   },
 ];
