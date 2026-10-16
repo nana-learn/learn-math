@@ -8343,8 +8343,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Tập nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{4, 5}", "{1, 2, 3, 4}"], correct: 0, hint: "1 và 2 đều trong tập.", explain: "{1, 2} là tập con." },
+          exercises: [
+        { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B =", choices: ["{1, 2, 3, 4}", "{2, 3}", "{1, 4}", "{1, 2, 3}"], correct: 0, hint: "Hợp: tất cả phần tử của A và B.", explain: "{1, 2, 3, 4}." },
+        { type: "mc", prompt: "A = {1, 2, 3, 4}, B = {2, 4}. A \ B =", choices: ["{1, 3}", "{2, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Loại phần tử của B ra khỏi A.", explain: "{1, 3}." },
+        { type: "text", prompt: "A = {1, 3, 5}, B = {2, 4, 6}. A ∩ B =", answer: "∅", accept: ["∅", "empty set", "rỗng"], hint: "Không có phần tử chung.", explain: "∅." },
+      ], correct: 0, hint: "1 và 2 đều trong tập.", explain: "{1, 2} là tập con." },
       { type: "mc", prompt: "Tập nào bằng {a, b}?", choices: ["{b, a}", "{a, b, c}", "{a}", "{b}"], correct: 0, hint: "Thứ tự không quan trọng.", explain: "{b, a} = {a, b}." },
       { type: "mc", prompt: "Tập rỗng có phải tập con của {1, 2} không?", choices: ["Có", "Không", "Tùy trường hợp", "Không xác định"], correct: 0, hint: "∅ là tập con của mọi tập.", explain: "Có." },
     ],
