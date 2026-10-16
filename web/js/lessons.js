@@ -8311,7 +8311,13 @@ const G10_LESSONS = [
         </svg>
         <figcaption>Venn diagram của hai tập hợp A và B.</figcaption>
       </figure>
-    `,
+    
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>1. Tập hợp là gì? <em>— Nhóm các phần tử.</em></p>
+        <p>2. Tập rỗng có phần tử nào không? <em>— Không.</em></p>
+      </details>
+`,
           exercises: [
         { type: "mc", prompt: "Tập hợp A = {x ∈ ℤ | -2 ≤ x ≤ 2} có bao nhiêu phần tử?", choices: ["5", "4", "6", "3"], correct: 0, hint: "-2, -1, 0, 1, 2.", explain: "5." },
         { type: "mc", prompt: "Tập hợp nào là tập con của {1, 2, 3}?", choices: ["{1, 2}", "{1, 4}", "{2, 3, 4}", "{4}"], correct: 0, hint: "Tất cả phần tử thuộc tập lớn.", explain: "{1, 2}." },
@@ -8356,7 +8362,13 @@ const G10_LESSONS = [
         <figcaption>Tập A là tập con của tập B (A ⊆ B).</figcaption>
       </figure>
 
-    `,
+    
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>1. Khi nào hai phương trình tương đương? <em>— Cùng tập nghiệm.</em></p>
+        <p>2. Phép biến đổi nào giữ nguyên nghiệm? <em>— Cộng/trừ, nhân/chia với số khác 0.</em></p>
+      </details>
+`,
           exercises: [
         { type: "mc", prompt: "A = {1, 2, 3}, B = {2, 3, 4}. A ∪ B =", choices: ["{1, 2, 3, 4}", "{2, 3}", "{1, 4}", "{1, 2, 3}"], correct: 0, hint: "Hợp: tất cả phần tử của A và B.", explain: "{1, 2, 3, 4}." },
         { type: "mc", prompt: "A = {1, 2, 3, 4}, B = {2, 4}. A \ B =", choices: ["{1, 3}", "{2, 4}", "{1, 2, 3, 4}", "∅"], correct: 0, hint: "Loại phần tử của B ra khỏi A.", explain: "{1, 3}." },
@@ -8404,7 +8416,13 @@ const G10_LESSONS = [
         <figcaption>Venn diagram của hợp (A ∪ B), giao (A ∩ B), hiệu (A \ B).</figcaption>
       </figure>
 
-    `,
+    
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>1. Khi nào hệ phương trình vô nghiệm? <em>— Hai đường song song.</em></p>
+        <p>2. Khi nào hệ có vô số nghiệm? <em>— Hai đường trùng nhau.</em></p>
+      </details>
+`,
           exercises: [
         { type: "mc", prompt: "Số 3.14 là số gần đúng của π. Sai số tuyệt đối không vượt quá", choices: ["0.01", "0.1", "0.001", "1"], correct: 0, hint: "π ≈ 3.1416, |3.14 − 3.1416| = 0.0016 < 0.01.", explain: "0.01." },
         { type: "mc", prompt: "Chiều dài đo được 10 m ± 0.1 m. Giá trị gần đúng là", choices: ["10 m", "10.1 m", "9.9 m", "0.1 m"], correct: 0, hint: "Giá trị gần đúng là số trước dấu ±.", explain: "10 m." },
