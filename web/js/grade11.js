@@ -1002,6 +1002,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hai đường thẳng chéo nhau thì", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng", "Cắt nhau", "Song song"], correct: 0, hint: "Định nghĩa đường thẳng chéo nhau.", explain: "Không cùng mặt phẳng." },
       { type: "mc", prompt: "Nếu a ∥ b và b cắt c thì", choices: ["a cắt c", "a ∥ c", "a chéo c", "Không xác định"], correct: 0, hint: "Nếu a ∥ b và b cắt c thì a phải cắt c (cùng mặt phẳng với b).", explain: "a cắt c." },
