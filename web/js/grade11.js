@@ -1291,6 +1291,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hai mặt phẳng vuông góc nếu", choices: ["Một mặt phẳng chứa đường thẳng vuông góc với mặt phẳng kia", "Hai mặt phẳng cắt nhau", "Hai mặt phẳng không có điểm chung", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa mặt phẳng vuông góc.", explain: "Một mặt phẳng chứa đường thẳng vuông góc với mặt phẳng kia." },
       { type: "mc", prompt: "Nếu (P) ⊥ (Q) và a ⊂ (P), a ⊥ giao tuyến của (P) và (Q) thì", choices: ["a ⊥ (Q)", "a ∥ (Q)", "a cắt (Q) nhưng không vuông góc", "Không xác định"], correct: 0, hint: "Định lí về đường thẳng vuông góc với mặt phẳng.", explain: "a ⊥ (Q)." },
