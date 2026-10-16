@@ -8927,8 +8927,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Tọa độ điểm A(2, -3) là?", choices: ["(2, -3)", "(-3, 2)", "(2, 3)", "(-2, 3)"], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
+          exercises: [
+        { type: "mc", prompt: "Giải phương trình √x = 3.", choices: ["x = 9", "x = 3", "x = 6", "x = 1"], correct: 0, hint: "x = 3² = 9.", explain: "x = 9." },
+        { type: "mc", prompt: "Phương trình √(x − 2) = 0 có nghiệm là", choices: ["x = 2", "x = 0", "x = 4", "vô nghiệm"], correct: 0, hint: "x − 2 = 0 → x = 2.", explain: "x = 2." },
+        { type: "text", prompt: "Giải phương trình √(2x + 1) = 3.", answer: "x = 4", accept: ["x = 4"], hint: "2x + 1 = 9 → 2x = 8 → x = 4.", explain: "x = 4." },
+      ], correct: 0, hint: "x trước, y sau.", explain: "(2, -3)." },
       { type: "mc", prompt: "Trung điểm AB với A(1,1), B(3,5) là?", choices: ["(2, 3)", "(1, 3)", "(2, 5)", "(4, 6)"], correct: 0, hint: "((1+3)/2, (1+5)/2) = (2, 3).", explain: "(2, 3)." },
       { type: "mc", prompt: "Điểm M(4, -2) nằm ở góc phần tư nào?", choices: ["IV", "I", "II", "III"], correct: 0, hint: "Hoành độ dương, tung độ âm.", explain: "Góc phần tư IV." },
     ],
