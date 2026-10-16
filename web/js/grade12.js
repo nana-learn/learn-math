@@ -995,6 +995,11 @@ String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ 
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "∫₀¹2x dx bằng?", choices: ["0", "1", "2", "4"], correct: 1, hint: "[x²]₀¹ = 1.", explain: "1." },
       { type: "mc", prompt: "∫₀^πcosx dx bằng?", choices: ["0", "1", "2", "-2"], correct: 0, hint: "[sinx]₀^π = 0.", explain: "0." },
