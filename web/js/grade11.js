@@ -906,6 +906,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Phép vị tự tâm O tỉ số k = −2 biến đoạn AB = 5 cm thành", choices: ["10 cm", "5 cm", "2.5 cm", "20 cm"], correct: 0, hint: "|k| = 2, nên 2×5 = 10 cm.", explain: "10 cm." },
       { type: "mc", prompt: "Hai hình đồng dạng thì", choices: ["Có tỉ số các cạnh tương ứng bằng nhau", "Bằng nhau", "Có diện tích bằng nhau", "Có chu vi bằng nhau"], correct: 0, hint: "Định nghĩa: tỉ số các cạnh bằng nhau.", explain: "Có tỉ số các cạnh tương ứng bằng nhau." },
