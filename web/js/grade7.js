@@ -1311,9 +1311,11 @@ const G7_LESSONS = [
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Rời rạc: từng giá trị. Liên tục: nhóm [a; b). Tổng tần số bằng cỡ mẫu.</p></div>
     `,
-    exercises: [
-      { type: "num", prompt: "Sáu số 3, 1, 3, 2, 3, 1. Tần số của 3 là bao nhiêu?", answer: 3, hint: "Đếm lần xuất hiện.", explain: "Ba lần." },
-      { type: "mc", prompt: "Chiều cao học sinh nên xếp kiểu", choices: ["Từng cm một cột, không ghép", "Ghép nhóm", "Chỉ lấy số nguyên tố", "Không thống kê được"], correct: 1, hint: "Liên tục thì ghép.", explain: "Ghép [140; 145) chẳng hạn." },
+          exercises: [
+        { type: "mc", prompt: "Điểm A(3, -2) nằm ở góc phần tư", choices: ["IV", "I", "II", "III"], correct: 0, hint: "Hoành độ dương, tung độ âm.", explain: "Góc phần tư IV." },
+        { type: "mc", prompt: "Điểm B(-1, 5) nằm ở góc phần tư", choices: ["II", "I", "III", "IV"], correct: 0, hint: "Hoành độ âm, tung độ dương.", explain: "Góc phần tư II." },
+        { type: "text", prompt: "Tọa độ điểm gốc O là", answer: "(0, 0)", accept: ["(0, 0)", "(0,0)", "0, 0", "0,0"], hint: "Gốc tọa độ có cả hoành độ và tung độ bằng 0.", explain: "(0, 0)." },
+      ], correct: 1, hint: "Liên tục thì ghép.", explain: "Ghép [140; 145) chẳng hạn." },
       { type: "num", prompt: "Hỏi 20 bạn, các tần số cộng được 20. Bảng ấy khớp cỡ mẫu chưa? Trả 1 nếu khớp, 0 nếu không.", answer: 1, hint: "Tổng tần số bằng 20.", explain: "Khớp." },
       { type: "num", prompt: "Tần số 2, 5, 3. Cỡ mẫu bằng bao nhiêu?", answer: 10, hint: "Cộng tần số.", explain: "10." },
       { type: "mc", prompt: "Số giày là dữ liệu", choices: ["Liên tục, phải ghép nhóm","Rời rạc, đếm từng cỡ","Không thống kê được","Chỉ vẽ quạt"], correct: 1, hint: "Cỡ 38, 39, 40…", explain: "Rời rạc." },
