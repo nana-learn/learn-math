@@ -1585,7 +1585,12 @@ exercises: [
         <p>C. (-∞, +∞)</p>
         <p>D. (0, +∞)</p>
       </div>`,
-    exercises: [
+    
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
+exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên?", choices: ["(-∞, -1) và (1, +∞)", "(-1, 1)", "(-∞, +∞)", "(0, +∞)"], correct: 0, hint: "y' = 3x² - 3 > 0 khi x < -1 hoặc x > 1.", explain: "Đồng biến trên (-∞, -1) và (1, +∞)." },
       { type: "mc", prompt: "Câu 2: Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' = 4x(x² - 1) có 3 nghiệm.", explain: "3 cực trị." },
       { type: "mc", prompt: "Câu 3: GTLN của y = -x² + 4x trên [0;3] là?", choices: ["0", "4", "3", "5"], correct: 1, hint: "f(0)=0, f(2)=4, f(3)=3.", explain: "GTLN = 4." },
