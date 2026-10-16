@@ -1053,6 +1053,11 @@ String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đườ
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Diện tích dưới y = x từ 0 đến 2 là?", choices: ["1", "2", "4", "8"], correct: 1, hint: "∫₀²x dx = [x²/2]₀².", explain: "2." },
       { type: "mc", prompt: "Thể tích khối tròn xoay quanh Ox của y = x từ 0 đến 1 là?", choices: ["π/3", "π/2", "π", "2π"], correct: 0, hint: "V = π∫₀¹x²dx.", explain: "π/3." },
