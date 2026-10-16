@@ -1391,10 +1391,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Nhóm 20% trên biểu đồ quạt. Góc ở tâm bằng bao nhiêu độ?", answer: 72, hint: "0,2 · 360.", explain: "72°." },
-      { type: "num", prompt: "Góc 90° chiếm bao nhiêu phần trăm?", answer: 25, hint: "90/360.", explain: "25%." },
-      { type: "mc", prompt: "Hai nhóm 30% và 70%. Tổng góc là", choices: ["100°", "360°", "180°", "70°"], correct: 1, hint: "Cả vòng.", explain: "108° + 252° = 360°." },
+          exercises: [
+        { type: "mc", prompt: "Đồ thị của hàm số y = ax (a ≠ 0) là", choices: ["Đường thẳng đi qua gốc tọa độ", "Đường cong", "Hai đường thẳng song song", "Đường tròn"], correct: 0, hint: "Định nghĩa đồ thị hàm số bậc nhất.", explain: "Đường thẳng qua O." },
+        { type: "mc", prompt: "Điểm nào thuộc đồ thị y = 2x?", choices: ["(1, 2)", "(2, 1)", "(0, 1)", "(1, 0)"], correct: 0, hint: "y = 2×1 = 2.", explain: "(1, 2)." },
+        { type: "text", prompt: "Đồ thị y = -3x đi qua điểm (2, y). y =", answer: "-6", accept: ["-6"], hint: "y = -3×2 = -6.", explain: "-6." },
+      ], correct: 1, hint: "Cả vòng.", explain: "108° + 252° = 360°." },
       { type: "num", prompt: "10% trên quạt. Góc bao nhiêu độ?", answer: 36, hint: "0,1 · 360.", explain: "36°." },
       { type: "num", prompt: "Góc 180° chiếm bao nhiêu phần trăm?", answer: 50, hint: "Nửa vòng.", explain: "50%." },
       { type: "num", prompt: "40% trên quạt. Góc bằng bao nhiêu độ?", answer: 144, hint: "0,4 · 360.", explain: "144°." },
