@@ -246,6 +246,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
   },
+
+  {
+    id: "g11-ch7-quiz",
+    num: 110,
+    chapter: 7,
+    title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    summary: "Luyện tập vị trí tương đối trong không gian.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
+      { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
+      { type: "text", prompt: "Hai mặt phẳng song song khi:", answer: "Không có điểm chung", accept: ["Không có điểm chung", "không có điểm chung"], hint: "Song song: không giao.", explain: "Không có điểm chung." },
+      { type: "mc", prompt: "Câu 4: Đường thẳng song song mặt phẳng khi:", choices: ["Không có điểm chung với mặt phẳng", "Có một điểm chung", "Có hai điểm chung", "Nằm trong mặt phẳng"], correct: 0, hint: "Song song: không giao.", explain: "Không có điểm chung với mặt phẳng." },
+      { type: "mc", prompt: "Câu 5: Giao tuyến của hai mặt phẳng là:", choices: ["Đường thẳng chung của cả hai mặt", "Điểm chung của cả hai mặt", "Đoạn thẳng chung", "Không xác định"], correct: 0, hint: "Hai mặt phẳng cắt nhau → giao tuyến là đường thẳng.", explain: "Đường thẳng chung của cả hai mặt." },
+      { type: "mc", prompt: "Câu 6: Nếu hai mặt phẳng cùng song song với đường thẳng thì:", choices: ["Chúng song song hoặc giao nhau", "Chúng song song", "Chúng trùng nhau", "Không xác định"], correct: 0, hint: "Có thể song song hoặc cắt nhau.", explain: "Chúng song song hoặc giao nhau." },
+      { type: "mc", prompt: "Câu 7: Ba điểm phân biệt thẳng hàng khi:", choices: ["Thuộc cùng một đường thẳng", "Thuộc cùng một mặt phẳng", "Có cùng khoảng cách", "Tạo thành tam giác"], correct: 0, hint: "Thẳng hàng: cùng đường thẳng.", explain: "Thuộc cùng một đường thẳng." },
+      { type: "mc", prompt: "Câu 8: Trong không gian, qua một điểm ngoài đường thẳng vẽ được bao nhiêu đường thẳng song song?", choices: ["Đúng một", "Vô số", "Không có", "Hai"], correct: 0, hint: "Tiên đề Euclid: đúng một.", explain: "Đúng một." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1157,6 +1176,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: Phép đồng dạng tỉ số k biến đoạn thẳng AB thành A'B' thì:", choices: ["A'B' = |k|·AB", "A'B' = k·AB", "A'B' = AB/k", "A'B' = AB"], correct: 0, hint: "Độ dài nhân với |k|.", explain: "A'B' = |k|·AB." },
       { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
       { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
+    ],
+  },
+
+  {
+    id: "g11-ch7-quiz",
+    num: 110,
+    chapter: 7,
+    title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
+    summary: "Luyện tập vị trí tương đối trong không gian.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hai đường thẳng song song trong không gian thì:", choices: ["Không có điểm chung và cùng mặt phẳng", "Không có điểm chung", "Có điểm chung", "Cùng phương"], correct: 0, hint: "Song song: cùng mặt phẳng, không giao.", explain: "Không có điểm chung và cùng mặt phẳng." },
+      { type: "mc", prompt: "Câu 2: Hai đường thẳng chéo nhau là:", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng không giao", "Có điểm chung", "Song song"], correct: 0, hint: "Chéo nhau: không cùng mặt phẳng.", explain: "Không cùng mặt phẳng." },
+      { type: "text", prompt: "Hai mặt phẳng song song khi:", answer: "Không có điểm chung", accept: ["Không có điểm chung", "không có điểm chung"], hint: "Song song: không giao.", explain: "Không có điểm chung." },
+      { type: "mc", prompt: "Câu 4: Đường thẳng song song mặt phẳng khi:", choices: ["Không có điểm chung với mặt phẳng", "Có một điểm chung", "Có hai điểm chung", "Nằm trong mặt phẳng"], correct: 0, hint: "Song song: không giao.", explain: "Không có điểm chung với mặt phẳng." },
+      { type: "mc", prompt: "Câu 5: Giao tuyến của hai mặt phẳng là:", choices: ["Đường thẳng chung của cả hai mặt", "Điểm chung của cả hai mặt", "Đoạn thẳng chung", "Không xác định"], correct: 0, hint: "Hai mặt phẳng cắt nhau → giao tuyến là đường thẳng.", explain: "Đường thẳng chung của cả hai mặt." },
+      { type: "mc", prompt: "Câu 6: Nếu hai mặt phẳng cùng song song với đường thẳng thì:", choices: ["Chúng song song hoặc giao nhau", "Chúng song song", "Chúng trùng nhau", "Không xác định"], correct: 0, hint: "Có thể song song hoặc cắt nhau.", explain: "Chúng song song hoặc giao nhau." },
+      { type: "mc", prompt: "Câu 7: Ba điểm phân biệt thẳng hàng khi:", choices: ["Thuộc cùng một đường thẳng", "Thuộc cùng một mặt phẳng", "Có cùng khoảng cách", "Tạo thành tam giác"], correct: 0, hint: "Thẳng hàng: cùng đường thẳng.", explain: "Thuộc cùng một đường thẳng." },
+      { type: "mc", prompt: "Câu 8: Trong không gian, qua một điểm ngoài đường thẳng vẽ được bao nhiêu đường thẳng song song?", choices: ["Đúng một", "Vô số", "Không có", "Hai"], correct: 0, hint: "Tiên đề Euclid: đúng một.", explain: "Đúng một." },
     ],
   },
 ];
