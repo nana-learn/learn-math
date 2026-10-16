@@ -51,7 +51,7 @@ const G9_LESSONS = [
     num: 27,
     chapter: 9,
     title: "Góc nội tiếp",
-    summary: "Góc nội tiếp nhìn cung từ rìa đường tròn, nên bằng nửa góc ở tâm nhìn cùng cung ấy.",
+    summary: "Góc nội tiếp nhìn cung từ rìa đường tròn, nên bằng nửa góc ở tâm nhìn cùng cung ấy.", spoken: "Góc nội tiếp bằng nửa góc ở tâm cùng chắn một cung. ∠nội tiếp = 1/2 ∠ở tâm.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Ta biết góc ở tâm \\(BOC\\) bằng số đo cung \\(BC\\). Còn góc \\(BAC\\) — đỉnh nằm trên đường tròn — liên hệ với cung ấy thế nào?</p>
       <div class="definition">
@@ -153,7 +153,7 @@ const G9_LESSONS = [
     num: 28,
     chapter: 9,
     title: "Đường tròn ngoại tiếp và đường tròn nội tiếp của một tam giác",
-    summary: "Trung trực cách đều hai đỉnh, nên giao ba trung trực là tâm đường tròn qua ba đỉnh. Phân giác cách đều hai cạnh.",
+    summary: "Trung trực cách đều hai đỉnh, nên giao ba trung trực là tâm đường tròn qua ba đỉnh. Phân giác cách đều hai cạnh.", spoken: "Giao ba trung trực là tâm đường tròn ngoại tiếp tam giác. Giao ba phân giác là tâm đường tròn nội tiếp.",
     body: String.raw`
       <div class="definition">
         <p><strong>Đường tròn ngoại tiếp</strong> một tam giác là đường tròn đi qua ba đỉnh của tam giác đó; khi đó ta nói tam giác nội tiếp đường tròn. Tâm của nó là giao điểm của ba đường trung trực của tam giác.</p>
