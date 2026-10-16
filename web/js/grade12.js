@@ -223,6 +223,25 @@ const G12_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
     ],
   },
+
+  {
+    id: "g12-ch6-quiz",
+    num: 108,
+    chapter: 6,
+    title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
+      { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
+      { type: "text", prompt: "Tính diện tích xung quanh hình trụ bán kính 3cm, chiều cao 5cm.", answer: "30πcm²", accept: ["30πcm²", "30π"], hint: "S_xq = 2πrh = 2π×3×5 = 30πcm².", explain: "30πcm²." },
+      { type: "mc", prompt: "Câu 4: Thể tích hình trụ (bán kính r, chiều cao h) là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = π × r² × h.", explain: "πr²h." },
+      { type: "mc", prompt: "Câu 5: Diện tích mặt cầu bán kính R là?", choices: ["4πR²", "2πR²", "πR²", "(4/3)πR³"], correct: 0, hint: "S = 4 × π × R².", explain: "4πR²." },
+      { type: "mc", prompt: "Câu 6: Thể tích hình cầu bán kính R là?", choices: ["(4/3)πR³", "4πR³", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
+      { type: "mc", prompt: "Câu 7: Hình nón có bán kính 4, đường sinh 5. Diện tích xung quanh là?", choices: ["20π", "16π", "25π", "40π"], correct: 0, hint: "S_xq = π × 4 × 5 = 20π.", explain: "20π." },
+      { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
+    ],
+  },
 ];
 
 const G12_LESSONS = [
@@ -1337,6 +1356,25 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Câu 6: Hai khối chóp có cùng diện tích đáy, chiều cao gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
       { type: "mc", prompt: "Câu 7: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
       { type: "mc", prompt: "Câu 8: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
+    ],
+  },
+
+  {
+    id: "g12-ch6-quiz",
+    num: 108,
+    chapter: 6,
+    title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
+      { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
+      { type: "text", prompt: "Tính diện tích xung quanh hình trụ bán kính 3cm, chiều cao 5cm.", answer: "30πcm²", accept: ["30πcm²", "30π"], hint: "S_xq = 2πrh = 2π×3×5 = 30πcm².", explain: "30πcm²." },
+      { type: "mc", prompt: "Câu 4: Thể tích hình trụ (bán kính r, chiều cao h) là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = π × r² × h.", explain: "πr²h." },
+      { type: "mc", prompt: "Câu 5: Diện tích mặt cầu bán kính R là?", choices: ["4πR²", "2πR²", "πR²", "(4/3)πR³"], correct: 0, hint: "S = 4 × π × R².", explain: "4πR²." },
+      { type: "mc", prompt: "Câu 6: Thể tích hình cầu bán kính R là?", choices: ["(4/3)πR³", "4πR³", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
+      { type: "mc", prompt: "Câu 7: Hình nón có bán kính 4, đường sinh 5. Diện tích xung quanh là?", choices: ["20π", "16π", "25π", "40π"], correct: 0, hint: "S_xq = π × 4 × 5 = 20π.", explain: "20π." },
+      { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
     ],
   },
 ];
