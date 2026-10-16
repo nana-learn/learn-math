@@ -800,6 +800,11 @@ String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = (1/2)ˣ", "y = 2ˣ", "y = log₀.₅x", "y = log₂(1-x)"], correct: 1, hint: "a > 1 thì đồng biến.", explain: "y = 2ˣ." },
       { type: "mc", prompt: "Đồ thị y = log₃x đi qua điểm nào?", choices: ["(0, 1)", "(1, 0)", "(3, 0)", "(1, 3)"], correct: 1, hint: "logₐ1 = 0.", explain: "(1, 0)." },
