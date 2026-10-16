@@ -566,6 +566,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: 0,5 = ?", choices: ["1/2", "1/5", "5/100", "5/1000"], correct: 0, hint: "0,5 = 5/10 = 1/2.", explain: "1/2." },
       { type: "mc", prompt: "Câu 2: 0,25 + 0,75 =", choices: ["1", "0,5", "0,1", "10"], correct: 0, hint: "0,25 + 0,75 = 1.", explain: "1." },
