@@ -935,6 +935,11 @@ String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm c
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "∫2x dx bằng?", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
       { type: "mc", prompt: "∫e³ˣ dx bằng?", choices: ["e³ˣ + C", "3e³ˣ + C", "(1/3)e³ˣ + C", "eˣ + C"], correct: 2, hint: "∫eᵃˣdx = (1/a)eᵃˣ.", explain: "(1/3)e³ˣ + C." },
