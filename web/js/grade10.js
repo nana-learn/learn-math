@@ -65,8 +65,12 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
+          exercises: [
       { type: "mc", prompt: "Câu nào là mệnh đề?", choices: ["2 + 3 = 5", "Hãy làm bài", "x + 1 > 3"], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
+      { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
+      { type: "mc", prompt: "Phủ định của mệnh đề "2 là số chẵn" là", choices: ["2 không là số chẵn", "2 là số lẻ", "2 không phải số chẵn", "Tất cả đều đúng"], correct: 3, hint: "Các đáp án đều đúng: phủ định của "A" là "không A".", explain: "Tất cả đều đúng." },
+      { type: "text", prompt: "Viết phủ định của mệnh đề P: "3² > 2³" và xét tính đúng sai.", answer: "3² ≤ 2³ (sai, vì 9 > 8)", accept: ["3² ≤ 2³ (sai)", "3^2 ≤ 2^3 (sai)", "3² ≤ 2³, sai"], hint: "P: 9 > 8 đúng, phủ định là 9 ≤ 8 sai.", explain: "3² ≤ 2³ (sai)." },
+    ], correct: 0, hint: "Chỉ câu khẳng định.", explain: "2 + 3 = 5 là mệnh đề." },
       { type: "mc", prompt: "Mệnh đề nào sai?", choices: ["3 < 5", "4 chia hết cho 2", "1 + 1 = 3"], correct: 2, hint: "1 + 1 = 2.", explain: "1 + 1 = 3 là sai." },
     ],
   },
