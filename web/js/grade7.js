@@ -1237,10 +1237,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Tam giác cân có góc đỉnh 50°. Mỗi góc đáy bằng bao nhiêu độ?", answer: 65, hint: "(180 − 50) : 2.", explain: "65°." },
-      { type: "num", prompt: "Tam giác đều, mỗi góc bằng bao nhiêu độ?", answer: 60, hint: "180 : 3.", explain: "60°." },
-      { type: "mc", prompt: "Điểm trên đường trung trực của AB thì", choices: ["Gần A hơn B", "Cách đều A và B", "Trung điểm AB", "Nằm trên AB"], correct: 1, hint: "Định nghĩa trung trực.", explain: "Khoảng cách đến A bằng đến B." },
+          exercises: [
+        { type: "mc", prompt: "Hàm số là quy tắc", choices: ["Mỗi giá trị của x tương ứng với một giá trị duy nhất của y", "Mỗi giá trị của x tương ứng với nhiều giá trị của y", "Không có quy tắc cụ thể", "Tất cả các đáp án trên"], correct: 0, hint: "Định nghĩa hàm số.", explain: "Mỗi x có một y duy nhất." },
+        { type: "mc", prompt: "Cho hàm số y = 2x + 1. Khi x = 3 thì y =", choices: ["7", "5", "6", "4"], correct: 0, hint: "y = 2×3 + 1 = 7.", explain: "7." },
+        { type: "text", prompt: "Hàm số y = x^2. Khi x = -3 thì y =", answer: "9", accept: ["9"], hint: "y = (-3)^2 = 9.", explain: "9." },
+      ], correct: 1, hint: "Định nghĩa trung trực.", explain: "Khoảng cách đến A bằng đến B." },
       { type: "num", prompt: "Tam giác cân góc đáy 40°. Góc đỉnh bằng bao nhiêu độ?", answer: 100, hint: "180 − 40 − 40.", explain: "100°." },
       { type: "mc", prompt: "Mọi điểm trên trung trực của AB đều", choices: ["Nằm trên AB","Cách đều A và B","Gần A","Là trung điểm"], correct: 1, hint: "Định nghĩa.", explain: "MA = MB." },
     ],
