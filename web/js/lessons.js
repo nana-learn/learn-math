@@ -8443,8 +8443,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Bất đẳng thức nào đúng?", choices: ["3 > 5", "2 < 1", "4 ≥ 4", "-1 > 0"], correct: 2, hint: "4 = 4 nên 4 ≥ 4 đúng.", explain: "4 ≥ 4 là đúng." },
+          exercises: [
+        { type: "mc", prompt: "Cho a > b. Khẳng định nào đúng?", choices: ["a + c > b + c", "ac > bc", "a² > b²", "1/a > 1/b"], correct: 0, hint: "Cộng cùng một số vào hai vế.", explain: "a + c > b + c." },
+        { type: "mc", prompt: "Cho a > b > 0. Khẳng định nào đúng?", choices: ["a² > b²", "a + b < 2a", "1/a > 1/b", "a/b < 1"], correct: 0, hint: "Nhân hai số dương: a > b → a² > b².", explain: "a² > b²." },
+        { type: "text", prompt: "Chứng minh: nếu a > b thì −2a < −2b.", answer: "Nhân cả hai vế với −2 (số âm), đổi chiều bất đẳng thức.", accept: ["Nhân cả hai vế với −2, đổi chiều", "Nhân -2, đổi chiều"], hint: "Nhân với số âm thì đổi chiều.", explain: "Nhân cả hai vế với −2 (số âm), đổi chiều bất đẳng thức." },
+      ], correct: 2, hint: "4 = 4 nên 4 ≥ 4 đúng.", explain: "4 ≥ 4 là đúng." },
       { type: "mc", prompt: "Nếu a > b thì bất đẳng thức nào đúng?", choices: ["a - 3 > b - 3", "a + 3 < b + 3", "-a > -b", "2a < 2b"], correct: 0, hint: "Cộng cùng số vào cả hai vế.", explain: "a - 3 > b - 3 đúng." },
       { type: "num", prompt: "Giá trị nhỏ nhất của x² + 1 với x thực là", answer: "1", accept: ["1"], hint: "x² ≥ 0 với mọi x.", explain: "x² ≥ 0 nên x² + 1 ≥ 1." },
     ],
