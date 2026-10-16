@@ -8492,8 +8492,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Nghiệm của 2x - 4 > 0 là?", choices: ["x > 2", "x < 2", "x > 4", "x < 4"], correct: 0, hint: "2x > 4 ⇒ x > 2.", explain: "x > 2." },
+          exercises: [
+        { type: "mc", prompt: "Bất phương trình 2x − 3 > 5 có nghiệm là", choices: ["x > 4", "x < 4", "x > 1", "x < 1"], correct: 0, hint: "2x > 8 → x > 4.", explain: "x > 4." },
+        { type: "mc", prompt: "x = 3 có phải nghiệm của bất phương trình x² − 4 > 0 không?", choices: ["Có", "Không", "Tùy giá trị", "Không xác định"], correct: 0, hint: "3² − 4 = 5 > 0.", explain: "Có." },
+        { type: "text", prompt: "Giải bất phương trình 3x + 6 ≤ 0.", answer: "x ≤ −2", accept: ["x ≤ -2", "x ≤ -2", "x <= -2"], hint: "3x ≤ -6 → x ≤ -2.", explain: "x ≤ −2." },
+      ], correct: 0, hint: "2x > 4 ⇒ x > 2.", explain: "x > 2." },
       { type: "mc", prompt: "Nghiệm của -x + 3 ≥ 0 là?", choices: ["x ≤ 3", "x ≥ 3", "x ≤ -3", "x ≥ -3"], correct: 0, hint: "-x ≥ -3 ⇒ x ≤ 3.", explain: "x ≤ 3." },
       { type: "num", prompt: "Số nguyên dương nhỏ nhất thỏa 3x - 5 > 4 là", answer: "4", accept: ["4"], hint: "3x > 9 ⇒ x > 3.", explain: "x > 3 nên x = 4." },
     ],
