@@ -573,10 +573,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Góc kề bù với 55° bằng bao nhiêu độ?", answer: 125, hint: "180 − 55.", explain: "125°." },
-      { type: "num", prompt: "Tia phân giác của góc 96° tạo với mỗi cạnh một góc bao nhiêu độ?", answer: 48, hint: "Chia đôi.", explain: "96 : 2 = 48." },
-      { type: "mc", prompt: "Góc đối đỉnh với góc 90° là", choices: ["Góc 90°", "Góc 180°", "Góc 0°", "Góc 45°"], correct: 0, hint: "Đối đỉnh thì bằng nhau.", explain: "Vẫn 90°." },
+          exercises: [
+        { type: "mc", prompt: "Số nào là số vô tỉ?", choices: ["√2", "1/3", "0.5", "2"], correct: 0, hint: "√2 không viết được thành phân số.", explain: "√2." },
+        { type: "mc", prompt: "Số π là", choices: ["Số vô tỉ", "Số hữu tỉ", "Số nguyên", "Số tự nhiên"], correct: 0, hint: "π có vô số chữ số thập phân không tuần hoàn.", explain: "Số vô tỉ." },
+        { type: "text", prompt: "Viết √9 dưới dạng số nguyên.", answer: "3", accept: ["3"], hint: "√9 = 3 vì 3² = 9.", explain: "3." },
+      ], correct: 0, hint: "Đối đỉnh thì bằng nhau.", explain: "Vẫn 90°." },
       { type: "num", prompt: "Hai góc đối đỉnh, một góc 18°. Góc kia bao nhiêu độ?", answer: 18, hint: "Đối đỉnh bằng nhau.", explain: "18°." },
       { type: "num", prompt: "Góc 160°, tia phân giác tạo mỗi phần bao nhiêu độ?", answer: 80, hint: "Chia đôi.", explain: "80°." },
       { type: "num", prompt: "Góc kề bù với 1° bằng bao nhiêu độ?", answer: 179, hint: "180 − 1.", explain: "179°." },
