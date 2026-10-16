@@ -72,5 +72,361 @@ const G11_LESSONS = [
       { type: "text", prompt: "Giải phương trình tan(x) = √3.", answer: "x = π/3 + kπ", accept: ["x = π/3 + kπ", "x = pi/3 + k*pi"], hint: "tan(π/3) = √3.", explain: "x = π/3 + kπ." },
     ],
   },
+
+  {
+    id: "g11-b3",
+    num: 3,
+    chapter: 2,
+    title: "Hoán vị, chỉnh hợp, tổ hợp",
+    summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Lớp 11A có 5 bạn muốn竞选班长. Có bao nhiêu cách chọn 1 lớp trưởng và 1 lớp phó nếu không ai kiêm nhiệm?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Chọn lớp trưởng: 5 cách. Sau khi chọn lớp trưởng, còn 4 bạn để chọn lớp phó. Tổng số cách: 5 × 4 = 20. Đây là chỉnh hợp: A(5,2) = 5 × 4 = 20.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hoán vị n phần tử: Pn = n!. Chỉnh hợp chập k của n: A(n,k) = n!/(n−k)!. Tổ hợp chập k của n: C(n,k) = n!/[k!(n−k)!].</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Sắp xếp 6 người vào 6 ghế. Số cách: 6! = 720. Đây là hoán vị: P6 = 6!.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Chọn 2 người trong 8 người đi trực nhật. Số cách: C(8,2) = 8×7/2 = 28. Không kể thứ tự nên chia 2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> A(n,k) và C(n,k) khác nhau: A tính thứ tự, C không tính. A(5,2) = 20, C(5,2) = 10. Đừng nhầm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Số cách xếp 4 người vào 4 ghế là", choices: ["24", "12", "6", "4"], correct: 0, hint: "P4 = 4! = 24.", explain: "24." },
+      { type: "mc", prompt: "C(6,2) bằng", choices: ["15", "30", "12", "6"], correct: 0, hint: "6×5/2 = 15.", explain: "15." },
+      { type: "text", prompt: "Có bao nhiêu cách chọn 1 thủ khoa và 1 thủ quân từ 7 người?", answer: "42", accept: ["42"], hint: "Chọn thủ khoa (7), rồi thủ quân (6).", explain: "7 × 6 = 42." },
+    ],
+  },
+  {
+    id: "g11-b4",
+    num: 4,
+    chapter: 2,
+    title: "Nhị thức Newton",
+    summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Mở biểu thức (x + 2)^3. Hệ số của x^2 bằng bao nhiêu?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> (x + 2)^3 = C(3,0)x^3·2^0 + C(3,1)x^2·2^1 + C(3,2)x^1·2^2 + C(3,3)x^0·2^3. = 1·x^3 + 3·x^2·2 + 3·x·4 + 1·8. = x^3 + 6x^2 + 12x + 8. Hệ số của x^2 là 6.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Số hạng thứ k+1: T_{k+1} = C(n,k)a^{n−k}b^k. Tổng số các số hạng là n+1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> (a − b)^4 = a^4 − 4a^3b + 6a^2b^2 − 4ab^3 + b^4. Dấu xen kẽ: +, −, +, −, +.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> C(5,2) = 10, không phải 5×2 = 10 nhầm tưởng. C(5,2) = 5×4/2 = 10. Công thức tổ hợp không phải nhân đơn giản.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Số hạng thứ 2 trong khai triển (x + 1)^5 là", choices: ["5x^4", "10x^4", "x^4", "15x^4"], correct: 0, hint: "T_2 = C(5,1)x^4·1 = 5x^4.", explain: "5x^4." },
+      { type: "mc", prompt: "Hệ số của x^2 trong (x + 2)^3 là", choices: ["12", "6", "4", "2"], correct: 0, hint: "C(3,1)·2^1 = 3·2 = 6 cho x^2, nhưng x^2 là T_2: C(3,2)·2^2 = 3·4 = 12.", explain: "12." },
+      { type: "text", prompt: "Mở (a + b)^2.", answer: "a^2 + 2ab + b^2", accept: ["a^2 + 2ab + b^2", "a² + 2ab + b²"], hint: "C(2,0)=1, C(2,1)=2, C(2,2)=1.", explain: "a^2 + 2ab + b^2." },
+    ],
+  },
+  {
+    id: "g11-b5",
+    num: 5,
+    chapter: 3,
+    title: "Dãy số",
+    summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Dãy số (u_n) với u_n = 2n + 1. Dãy này tăng hay giảm? Có bị chặn không?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> u_1 = 3, u_2 = 5, u_3 = 7, u_4 = 9. Mỗi số hạng lớn hơn số hạng trước, nên dãy tăng. u_n = 2n + 1 ≥ 3 với mọi n, nên bị chặn dưới bởi 3. Không bị chặn trên vì n có thể rất lớn.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Dãy tăng: u_{n+1} > u_n với mọi n. Dãy giảm: u_{n+1} < u_n. Bị chặn dưới: tồn tại M sao cho u_n ≥ M. Bị chặn trên: tồn tại M sao cho u_n ≤ M.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Dãy (v_n) với v_n = 1/n. v_1 = 1, v_2 = 1/2, v_3 = 1/3,... giảm dần về 0. Bị chặn dưới bởi 0, bị chặn trên bởi 1.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Dãy (-1)^n không tăng, không giảm. Các số đan nhau: −1, 1, −1, 1,... Đừng nghĩ dãy đan dấu là giảm.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Dãy (u_n) với u_n = 5 − 2n là", choices: ["Dãy giảm", "Dãy tăng", "Không tăng không giảm", "Hằng số"], correct: 0, hint: "u_{n+1} − u_n = −2 < 0.", explain: "Dãy giảm." },
+      { type: "mc", prompt: "Dãy (w_n) với w_n = n^2 là", choices: ["Dãy tăng", "Dãy giảm", "Không tăng không giảm", "Hằng số"], correct: 0, hint: "w_{n+1} − w_n = 2n + 1 > 0.", explain: "Dãy tăng." },
+      { type: "text", prompt: "Dãy (z_n) với z_n = 3 + 1/n. Z_n có bị chặn không?", answer: "Có", accept: ["Có", "có"], hint: "3 < z_n ≤ 4.", explain: "Bị chặn giữa 3 và 4." },
+    ],
+  },
+  {
+    id: "g11-b6",
+    num: 6,
+    chapter: 3,
+    title: "Cấp số cộng",
+    summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Một dãy số bắt đầu từ 3 và mỗi số hạng sau lớn hơn 4 đơn vị: 3, 7, 11, 15,... Số hạng thứ 10 bằng bao nhiêu?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> u_1 = 3, d = 4. u_10 = u_1 + (10−1)d = 3 + 9·4 = 39. Kiểm tra: u_2 = 7, u_3 = 11, u_4 = 15,... cộng 4 mỗi lần đến u_10 = 39.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Số hạng tổng quát: u_n = u_1 + (n−1)d. Tổng n số hạng đầu: S_n = n(u_1 + u_n)/2 = n[2u_1 + (n−1)d]/2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Cấp số cộng với u_1 = 5, d = −2: 5, 3, 1, −1, −3,... u_6 = 5 + 5·(−2) = −5.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> S_n = n(u_1 + u_n)/2, không phải n(u_1 + u_{n−1})/2. Phải cộng u_n, số hạng cuối cùng.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Cấp số cộng u_1 = 2, d = 3. u_5 =", choices: ["14", "11", "8", "17"], correct: 0, hint: "u_5 = 2 + 4·3 = 14.", explain: "14." },
+      { type: "mc", prompt: "Tổng 5 số hạng đầu của cấp số cộng 1, 3, 5, 7, 9 là", choices: ["25", "20", "30", "15"], correct: 0, hint: "S_5 = 5(1+9)/2 = 25.", explain: "25." },
+      { type: "text", prompt: "Cấp số cộng có u_3 = 8, u_5 = 14. Công sai d =", answer: "3", accept: ["3"], hint: "u_5 − u_3 = 2d.", explain: "d = (14 − 8)/2 = 3." },
+    ],
+  },
+  {
+    id: "g11-b7",
+    num: 7,
+    chapter: 4,
+    title: "Giới hạn của dãy số",
+    summary: "lim u_n = L khi u_n gần L khi n → ∞.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Dãy số u_n = 1/n. Khi n rất lớn, u_n tiến về giá trị nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> u_1 = 1, u_10 = 0.1, u_100 = 0.01, u_1000 = 0.001. Khi n tăng, u_n càng gần 0. Vậy lim(1/n) = 0.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> lim(1/n^k) = 0 với k > 0. lim(q^n) = 0 nếu |q| < 1. lim(c) = c với c hằng số.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> lim(2n + 1)/(3n − 1) = 2/3. Chia tử và mẫu cho n: (2 + 1/n)/(3 − 1/n) → 2/3.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> lim(n^2 + n) ≠ lim(n^2) + lim(n) nếu cả hai đều vô cực. Phải biến đổi (phan số, nhân liên hợp) trước.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "lim(1/n^2) =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n^2 → 0 khi n → ∞.", explain: "0." },
+      { type: "mc", prompt: "lim(3^n / 2^n) =", choices: ["∞", "0", "3/2", "1"], correct: 0, hint: "3/2 > 1 nên (3/2)^n → ∞.", explain: "∞." },
+      { type: "text", prompt: "lim(2n + 5)/(n + 1) =", answer: "2", accept: ["2"], hint: "Chia tử và mẫu cho n: (2 + 5/n)/(1 + 1/n) → 2/1.", explain: "2." },
+    ],
+  },
+  {
+    id: "g11-b8",
+    num: 8,
+    chapter: 4,
+    title: "Giới hạn của hàm số",
+    summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hàm số f(x) = (x^2 − 4)/(x − 2). Khi x tiến đến 2, f(x) tiến đến giá trị nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> f(x) = (x−2)(x+2)/(x−2) = x + 2 khi x ≠ 2. Khi x → 2, x + 2 → 4. Vậy lim_{x→2} f(x) = 4. Tại x = 2, hàm không xác định, nhưng giới hạn vẫn tồn tại.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> lim_{x→x0} P(x) = P(x0) với P đa thức. lim_{x→x0} (f(x)/g(x)) = L/M nếu lim f = L, lim g = M ≠ 0.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> lim_{x→3} (x^2 − 9)/(x − 3) = lim(x + 3) = 6. Phân tích (x−3)(x+3)/(x−3).</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> lim_{x→0} (1/x) không tồn tại: khi x → 0^+ thì → +∞, x → 0^− thì → −∞. Hai giới hạn một bên khác nhau.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "lim_{x→2} (x^2 − 4)/(x − 2) =", choices: ["4", "2", "0", "không tồn tại"], correct: 0, hint: "(x−2)(x+2)/(x−2) = x + 2 → 4.", explain: "4." },
+      { type: "mc", prompt: "lim_{x→1} (2x + 3) =", choices: ["5", "2", "3", "1"], correct: 0, hint: "Thế x = 1 vào: 2·1 + 3 = 5.", explain: "5." },
+      { type: "text", prompt: "lim_{x→−1} (x^2 − 1)/(x + 1) =", answer: "-2", accept: ["-2"], hint: "(x−1)(x+1)/(x+1) = x − 1 → −2.", explain: "-2." },
+    ],
+  },
+  {
+    id: "g11-b9",
+    num: 9,
+    chapter: 5,
+    title: "Đạo hàm",
+    summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hàm số f(x) = x^2. Tính đạo hàm tại x = 3.</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> f'(3) = lim_{Δx→0} [(3+Δx)^2 − 3^2]/Δx = lim[9 + 6Δx + (Δx)^2 − 9]/Δx = lim[6 + Δx] = 6. Vậy f'(3) = 6.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> (x^n)' = nx^{n−1}. (sin x)' = cos x. (cos x)' = −sin x. (uv)' = u'v + uv'. (u/v)' = (u'v − uv')/v^2.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> f(x) = x^3 − 2x + 1. f'(x) = 3x^2 − 2. f'(2) = 3·4 − 2 = 10.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Đạo hàm của hằng số bằng 0. Đừng quên điều này khi đạo hàm biểu thức chứa số thuần.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Đạo hàm của f(x) = x^4 là", choices: ["4x^3", "x^3", "4x^4", "4"], correct: 0, hint: "(x^n)' = nx^{n−1}.", explain: "4x^3." },
+      { type: "mc", prompt: "f(x) = sin(2x). f'(x) =", choices: ["2cos(2x)", "cos(2x)", "2sin(2x)", "−2cos(2x)"], correct: 0, hint: "chuỗi: cos(2x)·2.", explain: "2cos(2x)." },
+      { type: "text", prompt: "f(x) = x^2 + 3x. f'(1) =", answer: "5", accept: ["5"], hint: "f'(x) = 2x + 3, f'(1) = 5.", explain: "5." },
+    ],
+  },
+  {
+    id: "g11-b10",
+    num: 10,
+    chapter: 6,
+    title: "Phép dời hình",
+    summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tam giác ABC có A(1,2), B(3,5), C(4,1). Phép tịnh tiến theo vector v(2,−1) biến A thành điểm nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Phép tịnh tiến T_v: M(x,y) → M'(x+2, y−1). A(1,2) → A'(1+2, 2−1) = (3,1). Tương tự B'(5,4), C'(6,0).</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phép tịnh tiến bảo toàn khoảng cách, góc, diện tích. Phép quay tâm O góc α: M(x,y) → M'(x',y') với công thức lượng giác.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Phép đối xứng trục Oy biến điểm (3,4) thành (−3,4). Hoành độ đổi dấu, tung độ giữ nguyên.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Phép quay góc âm là quay ngược chiều kim đồng hồ. Đừng nhầm chiều quay.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phép tịnh tiến theo vector (−2,3) biến điểm (5,1) thành", choices: ["(3,4)", "(7,−2)", "(3,−2)", "(7,4)"], correct: 0, hint: "5−2=3, 1+3=4.", explain: "(3,4)." },
+      { type: "mc", prompt: "Phép đối xứng tâm O(0,0) biến điểm (a,b) thành", choices: ["(−a,−b)", "(a,−b)", "(−a,b)", "(b,a)"], correct: 0, hint: "Đổi dấu cả hai tọa độ.", explain: "(−a,−b)." },
+      { type: "text", prompt: "Phép quay tâm O góc 90° biến điểm (1,0) thành", answer: "(0,1)", accept: ["(0,1)", "0,1"], hint: "Quay 90° ngược chiều kim đồng hồ: (x,y) → (−y,x).", explain: "(0,1)." },
+    ],
+  },
+  {
+    id: "g11-b11",
+    num: 11,
+    chapter: 6,
+    title: "Phép đồng dạng",
+    summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Tam giác ABC có diện tích 12 cm². Phép vị tự tâm O tỉ số k = 2 biến ABC thành A'B'C'. Diện tích A'B'C' bằng bao nhiêu?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Phép vị tự tỉ số k biến diện tích thành k² lần. k = 2 nên diện tích mới = 2² × 12 = 48 cm².</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Phép vị tự tỉ số k: đoạn thẳng MN → M'N' với M'N' = |k|·MN. Diện tích biến thành k² lần. Hai hình đồng dạng khi tồn tại phép vị tự biến hình này thành hình kia.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Hình vuông cạnh 3 cm. Phép vị tự tỉ số 1/3 biến thành hình vuông cạnh 1 cm. Diện tích 9 cm² → 1 cm².</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> k âm: phép vị tự với k âm là phép vị tự + đối xứng tâm. |k| vẫn là tỉ số độ dài.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Phép vị tự tâm O tỉ số k = −2 biến đoạn AB = 5 cm thành", choices: ["10 cm", "5 cm", "2.5 cm", "20 cm"], correct: 0, hint: "|k| = 2, nên 2×5 = 10 cm.", explain: "10 cm." },
+      { type: "mc", prompt: "Hai hình đồng dạng thì", choices: ["Có tỉ số các cạnh tương ứng bằng nhau", "Bằng nhau", "Có diện tích bằng nhau", "Có chu vi bằng nhau"], correct: 0, hint: "Định nghĩa: tỉ số các cạnh bằng nhau.", explain: "Có tỉ số các cạnh tương ứng bằng nhau." },
+      { type: "text", prompt: "Hình chữ nhật ABCD có AB = 8 cm, AD = 6 cm. Phép vị tự tâm O tỉ số k = 3/2 biến thành A'B'C'D'. Chu vi A'B'C'D' =", answer: "42", accept: ["42"], hint: "Chu vi ban đầu = 2(8+6) = 28. Nhân 3/2: 42.", explain: "42." },
+    ],
+  },
+  {
+    id: "g11-b12",
+    num: 12,
+    chapter: 7,
+    title: "Đại cương về đường thẳng và mặt phẳng",
+    summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) cắt nhau. Giao tuyến của chúng là gì?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Giao tuyến của hai mặt phẳng là đường thẳng chung của cả hai mặt phẳng. Nếu hai mặt phẳng cắt nhau, chúng có một giao tuyến duy nhất.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Nếu hai mặt phẳng phân biệt có một điểm chung thì chúng có một đường thẳng chung đi qua điểm đó. Ba điểm không thẳng hàng xác định một mặt phẳng duy nhất.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Trong tứ diện ABCD, mặt phẳng (ABC) và mặt phẳng (ABD) cắt nhau theo đường thẳng AB.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Ba điểm phân biệt trên một đường thẳng không xác định một mặt phẳng duy nhất. Phải không thẳng hàng.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Hai mặt phẳng phân biệt không có điểm chung thì", choices: ["Song song với nhau", "Cắt nhau", "Trùng nhau", "Không xác định"], correct: 0, hint: "Định nghĩa mặt phẳng song song.", explain: "Song song với nhau." },
+      { type: "mc", prompt: "Ba điểm A, B, C không thẳng hàng xác định", choices: ["Một mặt phẳng duy nhất", "Hai mặt phẳng", "Vô số mặt phẳng", "Không xác định mặt phẳng"], correct: 0, hint: "Tiên đề hình học không gian.", explain: "Một mặt phẳng duy nhất." },
+      { type: "text", prompt: "Trong không gian, nếu hai đường thẳng không có điểm chung thì", answer: "song song hoặc chéo nhau", accept: ["song song hoặc chéo nhau", "song song hoặc chéo"], hint: "Hai trường hợp: cùng mặt phẳng hoặc khác mặt phẳng.", explain: "Song song (cùng mặt phẳng) hoặc chéo nhau (khác mặt phẳng)." },
+    ],
+  },
+  {
+    id: "g11-b13",
+    num: 13,
+    chapter: 7,
+    title: "Hai đường thẳng song song",
+    summary: "Điều kiện hai đường thẳng song song trong không gian.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Trong không gian, hai đường thẳng cùng song song với đường thẳng thứ ba thì vị trí tương đối của chúng là gì?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu a ∥ b và b ∥ c thì a ∥ c. Đây là tính chất bắc cầu của quan hệ song song. Hai đường thẳng a và c cũng song song với nhau.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hai đường thẳng song song: cùng nằm trong một mặt phẳng và không có điểm chung. Hai đường thẳng chéo nhau: không cùng mặt phẳng.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Trong hộp chữ nhật ABCD.A'B'C'D', AB ∥ A'B' ∥ CD ∥ C'D'. Tất cả đều song song với nhau.</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Hai đường thẳng không có điểm chung chưa chắc song song: chúng có thể chéo nhau (không cùng mặt phẳng).</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Hai đường thẳng chéo nhau thì", choices: ["Không cùng mặt phẳng", "Cùng mặt phẳng", "Cắt nhau", "Song song"], correct: 0, hint: "Định nghĩa đường thẳng chéo nhau.", explain: "Không cùng mặt phẳng." },
+      { type: "mc", prompt: "Nếu a ∥ b và b cắt c thì", choices: ["a cắt c", "a ∥ c", "a chéo c", "Không xác định"], correct: 0, hint: "Nếu a ∥ b và b cắt c thì a phải cắt c (cùng mặt phẳng với b).", explain: "a cắt c." },
+      { type: "text", prompt: "Trong không gian, điều kiện đủ để hai đường thẳng song song là", answer: "chúng cùng nằm trong một mặt phẳng và không có điểm chung", accept: ["chúng cùng nằm trong một mặt phẳng và không có điểm chung", "cùng mặt phẳng và không có điểm chung"], hint: "Định nghĩa song song.", explain: "Cùng mặt phẳng và không có điểm chung." },
+    ],
+  },
+  {
+    id: "g11-b14",
+    num: 14,
+    chapter: 8,
+    title: "Vectơ trong không gian",
+    summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Ba vectơ OA, OB, OC không đồng phẳng. Vectơ OM = OA + OB − OC nằm trong không gian nào?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> OM là tổ hợp tuyến tính của OA, OB, OC. Vì OA, OB, OC không đồng phẳng, nên OM cũng nằm trong không gian 3 chiều do chúng tạo thành.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Ba vectơ không đồng phẳng thì mọi vectơ trong không gian đều biểu thị được dưới dạng tổ hợp tuyến tính của chúng. Tích vô hướng: a·b = |a||b|cos(a,b).</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> AB = (1,2,3), AC = (4,5,6). AB + AC = (5,7,9). AB − AC = (−3,−3,−3).</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Tích vô hướng bằng 0 thì hai vectơ vuông góc. Nhưng nếu một vectơ là vectơ 0, tích vô hướng cũng bằng 0 — vectơ 0 vuông góc với mọi vectơ.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "AB = (2,−1,3), BC = (1,4,−2). AC =", choices: ["(3,3,1)", "(1,−5,5)", "(−1,5,−5)", "(3,−5,1)"], correct: 0, hint: "AB + BC = AC: (2+1, −1+4, 3+(−2)) = (3,3,1).", explain: "(3,3,1)." },
+      { type: "mc", prompt: "AB · AC = 0 thì", choices: ["AB vuông góc AC", "AB song song AC", "AB = AC", "AB và AC cùng hướng"], correct: 0, hint: "Định nghĩa tích vô hướng.", explain: "AB vuông góc AC." },
+      { type: "text", prompt: "k = 2, AB = (3,−4,5). k·AB =", answer: "(6,−8,10)", accept: ["(6,−8,10)", "(6, -8, 10)"], hint: "Nhân mỗi tọa độ với k.", explain: "(6, −8, 10)." },
+    ],
+  },
+  {
+    id: "g11-b15",
+    num: 15,
+    chapter: 8,
+    title: "Hai đường thẳng vuông góc",
+    summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
+    body: String.raw`
+      <p><strong>Tình huống.</strong> Hai đường thẳng a và b vuông góc với nhau. Nếu c song song với a thì c và b có vuông góc không?</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> Nếu a ∥ c và a ⊥ b thì c ⊥ b. Vì góc giữa c và b bằng góc giữa a và b (do song song), nên c cũng vuông góc với b.</p>
+      </div>
+      <div class="memory">
+        <p><strong>Nhìn lại.</strong> Hai đường thẳng vuông góc: góc giữa chúng bằng 90°. Nếu một đường thẳng vuông góc với hai đường thẳng cắt nhau trong một mặt phẳng thì nó vuông góc với mọi đường thẳng trong mặt phẳng đó.</p>
+      </div>
+      <div class="example">
+        <p><strong>Ví dụ.</strong> Trong hình lập phương ABCD.A'B'C'D', AB ⊥ AD, AB ⊥ AA'. AB vuông góc với cả AD và AA' (hai cạnh cắt nhau tại A).</p>
+      </div>
+      <div class="example">
+        <p><strong>Bẫy.</strong> Hai đường thẳng chéo nhau có thể vuông góc. Độ dài đoạn vuông góc chung là khoảng cách giữa chúng. Đừng nghĩ vuông góc chỉ xảy ra khi cắt nhau.</p>
+      </div>
+    `,
+    exercises: [
+      { type: "mc", prompt: "Nếu a ⊥ b và b ∥ c thì", choices: ["a ⊥ c", "a ∥ c", "a và c cắt nhau", "Không xác định"], correct: 0, hint: "Nếu một đường vuông góc với một đường thẳng thì cũng vuông góc với mọi đường song song với nó.", explain: "a ⊥ c." },
+      { type: "mc", prompt: "Trong không gian, hai đường thẳng cùng vuông góc với đường thẳng thứ ba thì", choices: ["Có thể song song, cắt nhau hoặc chéo nhau", "Song song với nhau", "Cắt nhau", "Chéo nhau"], correct: 0, hint: "Ví dụ: trục Oy và O z cùng vuông góc với Ox nhưng chéo nhau.", explain: "Có thể song song, cắt nhau hoặc chéo nhau." },
+      { type: "text", prompt: "Hai đường thẳng chéo nhau có bao nhiêu đường vuông góc chung?", answer: "Một", accept: ["1", "một"], hint: "Đường vuông góc chung duy nhất nối hai đường chéo nhau.", explain: "Một." },
+    ],
+  },
 ];
 
+];
