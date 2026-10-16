@@ -594,8 +594,11 @@ const G6_LESSONS = [
       </div>
       <div class="memory"><p><strong>Nhìn lại.</strong> \(b \mid a\) khi \(a = b \cdot k\) với \(k\) nguyên. \(1 \mid a\) với mọi \(a\). \(a \mid 0\) với mọi \(a \neq 0\).</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Số nào là ước của mọi số tự nhiên?", choices: ["0", "1", "2", "Mọi số"], correct: 1, hint: "1 chia hết cho mọi số.", explain: "1." },
+          exercises: [
+        { type: "mc", prompt: "2^4 bằng bao nhiêu?", choices: ["16", "8", "4", "2"], correct: 0, hint: "2×2×2×2 = 16.", explain: "16." },
+        { type: "mc", prompt: "10^2 bằng bao nhiêu?", choices: ["100", "20", "10", "1000"], correct: 0, hint: "10×10 = 100.", explain: "100." },
+        { type: "text", prompt: "Viết 81 dưới dạng lũy thừa của 3.", answer: "3^4", accept: ["3^4", "3⁴", "3**4"], hint: "3×3×3×3 = 81.", explain: "3^4." },
+      ], correct: 1, hint: "1 chia hết cho mọi số.", explain: "1." },
       { type: "mc", prompt: "Số nào chia hết cho mọi số tự nhiên?", choices: ["0", "1", "2", "Không có"], correct: 0, hint: "0 chia hết cho mọi số khác 0.", explain: "0." },
       { type: "num", prompt: "Viết tất cả ước của 15.", answer: "1, 3, 5, 15", accept: ["1, 3, 5, 15", "1,3,5,15"], hint: "1×15=15, 3×5=15.", explain: "1, 3, 5, 15." },
       { type: "num", prompt: "Viết 4 bội đầu tiên của 9.", answer: "0, 9, 18, 27", accept: ["0, 9, 18, 27", "0,9,18,27"], hint: "9×0=0, 9×1=9, 9×2=18, 9×3=27.", explain: "0, 9, 18, 27." },
