@@ -888,10 +888,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Tam giác có hai góc 45° và 70°. Góc thứ ba bằng bao nhiêu độ?", answer: 65, hint: "180 − 45 − 70.", explain: "65°." },
-      { type: "num", prompt: "Tam giác vuông có một góc nhọn 20°. Góc nhọn kia bằng bao nhiêu độ?", answer: 70, hint: "90 − 20.", explain: "70°." },
-      { type: "mc", prompt: "Ba góc 50°, 60°, 80° có tạo thành tam giác không?", choices: ["Có", "Không, vì tổng 190°", "Chỉ khi tam giác tù", "Chỉ khi cân"], correct: 1, hint: "Cộng ba số.", explain: "50+60+80 = 190 ≠ 180." },
+          exercises: [
+        { type: "mc", prompt: "Số nào là số thập phân vô hạn tuần hoàn?", choices: ["0.333...", "0.25", "1.5", "0.75"], correct: 0, hint: "0.333... = 1/3 có chu kỳ 3.", explain: "0.333..." },
+        { type: "mc", prompt: "1/6 viết dưới dạng số thập phân là", choices: ["0.1(6)", "0.16", "0.1666", "0.(16)"], correct: 0, hint: "1 ÷ 6 = 0.1666..., chu kỳ 6.", explain: "0.1(6)." },
+        { type: "text", prompt: "Viết số 0.(4) dưới dạng phân số tối giản.", answer: "4/9", accept: ["4/9"], hint: "Gọi x = 0.444..., 10x = 4.444..., 10x - x = 4 → 9x = 4 → x = 4/9.", explain: "4/9." },
+      ], correct: 1, hint: "Cộng ba số.", explain: "50+60+80 = 190 ≠ 180." },
       { type: "num", prompt: "Tam giác đều, mỗi góc bao nhiêu độ?", answer: 60, hint: "180 : 3.", explain: "60°." },
       { type: "num", prompt: "Góc ngoài 100°, một góc trong không kề bằng 35°. Góc trong không kề còn lại bao nhiêu độ?", answer: 65, hint: "Góc ngoài = tổng hai góc trong không kề.", explain: "65°." },
       { type: "num", prompt: "Hai góc 20° và 80°. Góc thứ ba bằng bao nhiêu độ?", answer: 80, hint: "180 − 100.", explain: "80°. Tam giác cân." },
