@@ -20,7 +20,7 @@ const G11_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Hàm số lượng giác",
-    summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.",
+    summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Một con lắc đơn dao động theo hàm số \(y = \sin(t)\). Khi nào con lắc ở vị trí cao nhất, thấp nhất? Sau bao lâu nó lặp lại chuyển động?</p>
       <div class="example">
@@ -52,7 +52,7 @@ const G11_LESSONS = [
     num: 2,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản",
-    summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.",
+    summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.",
     body: String.raw`
       <p><strong>Tình huống.</strong> Một điểm chuyển động tròn đều, góc quay thỏa mãn sin(α) = 1/2. Hỏi α có thể bằng bao nhiêu?</p>
       <div class="example">
@@ -82,7 +82,7 @@ const G11_LESSONS = [
     num: 3,
     chapter: 2,
     title: "Hoán vị, chỉnh hợp, tổ hợp",
-    summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.",
+    summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].",
     body: String.raw`
       <p><strong>Tình huống.</strong> Lớp 11A có 5 bạn muốn竞选班长. Có bao nhiêu cách chọn 1 lớp trưởng và 1 lớp phó nếu không ai kiêm nhiệm?</p>
       <div class="example">
