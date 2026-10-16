@@ -9099,8 +9099,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "sin 150° = ?", choices: ["1/2", "-1/2", "√3/2", "-√3/2"], correct: 0, hint: "sin(180°-30°)=sin 30°=1/2.", explain: "1/2." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình tổng quát của đường thẳng là", choices: ["ax + by + c = 0", "y = ax + b", "x² + y² = r²", "y = a(x − h)² + k"], correct: 0, hint: "Dạng tổng quát ax + by + c = 0.", explain: "ax + by + c = 0." },
+        { type: "mc", prompt: "Đường thẳng đi qua gốc tọa độ có phương trình dạng", choices: ["ax + by = 0", "ax + by + c = 0 (c ≠ 0)", "x = a", "y = b"], correct: 0, hint: "Thế (0,0): c = 0.", explain: "ax + by = 0." },
+        { type: "text", prompt: "Viết phương trình đường thẳng đi qua A(1, 2) và B(3, 4).", answer: "x − y + 1 = 0", accept: ["x − y + 1 = 0", "x-y+1=0", "x - y + 1 = 0"], hint: "Vectơ chỉ phương (2,2), pháp tuyến (1,-1).", explain: "x − y + 1 = 0." },
+      ], correct: 0, hint: "sin(180°-30°)=sin 30°=1/2.", explain: "1/2." },
       { type: "mc", prompt: "cos 120° = ?", choices: ["-1/2", "1/2", "-√3/2", "√3/2"], correct: 0, hint: "cos(180°-60°)=-cos 60°=-1/2.", explain: "-1/2." },
       { type: "num", prompt: "sin²30° + cos²30° =", answer: "1", accept: ["1"], hint: "sin²α + cos²α = 1 với mọi α.", explain: "1." },
     ],
