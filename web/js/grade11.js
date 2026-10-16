@@ -570,6 +570,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Số hạng thứ 2 trong khai triển (x + 1)^5 là", choices: ["5x^4", "10x^4", "x^4", "15x^4"], correct: 0, hint: "T_2 = C(5,1)x^4·1 = 5x^4.", explain: "5x^4." },
       { type: "mc", prompt: "Hệ số của x^2 trong (x + 2)^3 là", choices: ["12", "6", "4", "2"], correct: 0, hint: "C(3,1)·2^1 = 3·2 = 6 cho x^2, nhưng x^2 là T_2: C(3,2)·2^2 = 3·4 = 12.", explain: "12." },
