@@ -150,8 +150,11 @@ const G7_LESSONS = [
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Mẫu dương trước khi tính. Chia cho 0 thì phép tính không có nghĩa.</p></div>
     `,
-    exercises: [
-      { type: "text", prompt: "Tính 1/4 + 1/12. Viết phân số tối giản.", answer: "1/3", accept: ["1/3"], hint: "Quy đồng mẫu 12.", explain: "3/12 + 1/12 = 4/12 = 1/3." },
+          exercises: [
+        { type: "mc", prompt: "Hai phân số bằng nhau khi", choices: ["Tử và mẫu của phân số này gấp k lần tử và mẫu của phân số kia", "Tử bằng nhau", "Mẫu bằng nhau", "Cả A và B"], correct: 0, hint: "Định nghĩa hai phân số bằng nhau.", explain: "Tử và mẫu gấp k lần." },
+        { type: "mc", prompt: "Số đối của 3/5 là", choices: ["-3/5", "5/3", "-5/3", "3/5"], correct: 0, hint: "Đổi dấu tử số.", explain: "-3/5." },
+        { type: "text", prompt: "Tính (-2/3) + (5/3).", answer: "1", accept: ["1", "3/3"], hint: "Cùng mẫu: (-2+5)/3 = 3/3 = 1.", explain: "1." },
+      ], hint: "Quy đồng mẫu 12.", explain: "3/12 + 1/12 = 4/12 = 1/3." },
       { type: "text", prompt: "Tính (−3/4) : (1/8). Viết số nguyên hoặc phân số.", answer: "-6", accept: ["-6", "−6"], hint: "Chia là nhân nghịch đảo 8/1.", explain: "(−3/4)·8 = −6." },
       { type: "mc", prompt: "Phép tính nào không thực hiện được trong Q?", choices: ["0 : 5", "5 : 0", "0 · 5", "−5 + 0"], correct: 1, hint: "Không chia cho 0.", explain: "Mẫu bằng 0 thì không có thương." },
       { type: "text", prompt: "Tính 2/3 − 1/2. Phân số tối giản.", answer: "1/6", accept: ["1/6"], hint: "Mẫu 6.", explain: "4/6 − 3/6 = 1/6." },
