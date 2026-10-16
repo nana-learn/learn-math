@@ -351,8 +351,11 @@ const G7_LESSONS = [
       </details>
 <div class="memory"><p><strong>Nhìn lại.</strong> Hữu hạn hay tuần hoàn thì hữu tỉ. Thập phân vô hạn không tuần hoàn thì không hữu tỉ.</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "1/3 viết thập phân là", choices: ["0,3", "0,33", "0,333… tuần hoàn", "Không viết được"], correct: 2, hint: "Chia 1 cho 3, dư luôn là 1.", explain: "0,333… = 0,overline{3}." },
+          exercises: [
+        { type: "mc", prompt: "Phép chia số hữu tỉ", choices: ["Nhân với số nghịch đảo", "Chia tử cho tử, mẫu cho mẫu", "Giữ nguyên và đổi dấu", "Cả A và B"], correct: 0, hint: "a/b : c/d = a/b × d/c.", explain: "Nhân với số nghịch đảo." },
+        { type: "mc", prompt: "(-3/4) : (2/5) =", choices: ["-15/8", "8/15", "-8/15", "15/8"], correct: 0, hint: "(-3/4) × (5/2) = -15/8.", explain: "-15/8." },
+        { type: "text", prompt: "Tính (5/6) : (-1/3).", answer: "-5/2", accept: ["-5/2", "-2.5"], hint: "(5/6) × (-3/1) = -15/6 = -5/2.", explain: "-5/2." },
+      ], correct: 2, hint: "Chia 1 cho 3, dư luôn là 1.", explain: "0,333… = 0,overline{3}." },
       { type: "num", prompt: "0,25 bằng phân số tối giản a/4. Tử a bằng bao nhiêu?", answer: 1, hint: "0,25 = 25/100 rồi rút.", explain: "1/4." },
       { type: "mc", prompt: "Số nào là thập phân tuần hoàn?", choices: ["0,5", "0,125", "0,142857142857…", "2"], correct: 2, hint: "Nhìn cụm chữ số lặp.", explain: "Đó là 1/7." },
       { type: "mc", prompt: "1/2 viết thập phân là", choices: ["0,5 hữu hạn","0,555… tuần hoàn","Vô tỉ","Không viết được"], correct: 0, hint: "Chia 1 cho 2 hết dư.", explain: "0,5." },
