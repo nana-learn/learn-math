@@ -18,7 +18,12 @@ const G7_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Số thập phân - Trắc nghiệm",
     summary: "Luyện tập số thập phân, phép toán.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thập phân.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thập phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 0,5 = ?", choices: ["1/2", "1/5", "5/100", "5/1000"], correct: 0, hint: "0,5 = 5/10 = 1/2.", explain: "1/2." },
       { type: "mc", prompt: "Câu 2: 0,25 + 0,75 =", choices: ["1", "0,5", "0,1", "10"], correct: 0, hint: "0,25 + 0,75 = 1.", explain: "1." },
@@ -36,7 +41,12 @@ const G7_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Số thực - Trắc nghiệm",
     summary: "Luyện tập số thực, căn bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thực.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thực.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
       { type: "mc", prompt: "Câu 2: Số vô tỉ là:", choices: ["Không thể viết thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không thể viết thành phân số." },
@@ -54,7 +64,12 @@ const G7_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
     summary: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đại lượng tỉ lệ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đại lượng tỉ lệ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Nếu y tỉ lệ thuận với x và y = 6 khi x = 2 thì hệ số tỉ lệ là?", choices: ["3", "2", "1/3", "1/2"], correct: 0, hint: "y = kx → 6 = k·2 → k = 3.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Nếu y tỉ lệ nghịch với x và y = 4 khi x = 2 thì y = ? khi x = 8?", choices: ["1", "2", "4", "8"], correct: 0, hint: "y = k/x → 4 = k/2 → k = 8 → y = 8/8 = 1.", explain: "1." },
@@ -72,7 +87,12 @@ const G7_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Thống kê - Trắc nghiệm",
     summary: "Luyện tập thống kê, bảng, biểu đồ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thống kê.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thống kê.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dấu hiệu điều tra là?", choices: ["Đặc điểm cần tìm hiểu", "Số liệu thống kê", "Bảng số liệu", "Biểu đồ"], correct: 0, hint: "Dấu hiệu là đặc điểm cần nghiên cứu.", explain: "Đặc điểm cần tìm hiểu." },
       { type: "mc", prompt: "Câu 2: Tần số của một giá trị là?", choices: ["Số lần xuất hiện của giá trị", "Giá trị đó", "Tổng các giá trị", "Trung bình các giá trị"], correct: 0, hint: "Tần số = số lần xuất hiện.", explain: "Số lần xuất hiện của giá trị." },
@@ -91,7 +111,12 @@ const G7_CHAPTERS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Số hữu tỉ",
     summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
@@ -106,7 +131,12 @@ const G7_CHAPTERS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Số thực",
     summary: "Đề kiểm tra 45 phút chương Số thực.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
@@ -122,7 +152,12 @@ const G7_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
@@ -2877,7 +2912,12 @@ const G7_LESSONS = [
     chapter: 1,
     title: "Chương 1: Số hữu tỉ. Số thực - Trắc nghiệm",
     summary: "Luyện tập số hữu tỉ, số thực, giá trị tuyệt đối.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số hữu tỉ và số thực.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số hữu tỉ và số thực.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Số nào là số hữu tỉ?", choices: ["√2", "π", "1/3", "e"], correct: 2, hint: "Số hữu tỉ là số viết được dưới dạng a/b.", explain: "1/3 là số hữu tỉ." },
       { type: "mc", prompt: "Câu 2: |-5| =", choices: ["5", "-5", "0", "1/5"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "|-5| = 5." },
@@ -2895,7 +2935,12 @@ const G7_LESSONS = [
     chapter: 2,
     title: "Chương 2: Hàm số và đồ thị - Trắc nghiệm",
     summary: "Luyện tập hàm số, tỉ lệ thuận, tỉ lệ nghịch.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số và đồ thị.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số và đồ thị.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 2x là:", choices: ["Tỉ lệ thuận", "Tỉ lệ nghịch", "Bậc hai", "Bậc nhất"], correct: 0, hint: "y = kx với k=2 là tỉ lệ thuận.", explain: "Tỉ lệ thuận." },
       { type: "mc", prompt: "Câu 2: Nếu x và y tỉ lệ nghịch với nhau thì:", choices: ["xy = k (k≠0)", "x/y = k", "x+y = k", "x-y = k"], correct: 0, hint: "Tỉ lệ nghịch: tích không đổi.", explain: "xy = k (k≠0)." },
@@ -2914,7 +2959,12 @@ const G7_LESSONS = [
     chapter: 3,
     title: "Chương 3: Số thập phân - Trắc nghiệm",
     summary: "Luyện tập số thập phân, phép toán.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thập phân.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thập phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 0,5 = ?", choices: ["1/2", "1/5", "5/100", "5/1000"], correct: 0, hint: "0,5 = 5/10 = 1/2.", explain: "1/2." },
       { type: "mc", prompt: "Câu 2: 0,25 + 0,75 =", choices: ["1", "0,5", "0,1", "10"], correct: 0, hint: "0,25 + 0,75 = 1.", explain: "1." },
@@ -2932,7 +2982,12 @@ const G7_LESSONS = [
     chapter: 4,
     title: "Chương 4: Số thực - Trắc nghiệm",
     summary: "Luyện tập số thực, căn bậc hai.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thực.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số thực.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
       { type: "mc", prompt: "Câu 2: Số vô tỉ là:", choices: ["Không thể viết thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không thể viết thành phân số." },
@@ -2950,7 +3005,12 @@ const G7_LESSONS = [
     chapter: 5,
     title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
     summary: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đại lượng tỉ lệ.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đại lượng tỉ lệ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Nếu y tỉ lệ thuận với x và y = 6 khi x = 2 thì hệ số tỉ lệ là?", choices: ["3", "2", "1/3", "1/2"], correct: 0, hint: "y = kx → 6 = k·2 → k = 3.", explain: "3." },
       { type: "mc", prompt: "Câu 2: Nếu y tỉ lệ nghịch với x và y = 4 khi x = 2 thì y = ? khi x = 8?", choices: ["1", "2", "4", "8"], correct: 0, hint: "y = k/x → 4 = k/2 → k = 8 → y = 8/8 = 1.", explain: "1." },
@@ -2968,7 +3028,12 @@ const G7_LESSONS = [
     chapter: 6,
     title: "Chương 6: Thống kê - Trắc nghiệm",
     summary: "Luyện tập thống kê, bảng, biểu đồ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thống kê.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thống kê.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Dấu hiệu điều tra là?", choices: ["Đặc điểm cần tìm hiểu", "Số liệu thống kê", "Bảng số liệu", "Biểu đồ"], correct: 0, hint: "Dấu hiệu là đặc điểm cần nghiên cứu.", explain: "Đặc điểm cần tìm hiểu." },
       { type: "mc", prompt: "Câu 2: Tần số của một giá trị là?", choices: ["Số lần xuất hiện của giá trị", "Giá trị đó", "Tổng các giá trị", "Trung bình các giá trị"], correct: 0, hint: "Tần số = số lần xuất hiện.", explain: "Số lần xuất hiện của giá trị." },
@@ -2987,7 +3052,12 @@ const G7_LESSONS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Số hữu tỉ",
     summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: 3/4 + 1/4 =", choices: ["1", "1/2", "3/2", "4/8"], correct: 0, hint: "3/4 + 1/4 = 4/4 = 1.", explain: "1." },
@@ -3002,7 +3072,12 @@ const G7_LESSONS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Số thực",
     summary: "Đề kiểm tra 45 phút chương Số thực.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
@@ -3018,7 +3093,12 @@ const G7_LESSONS = [
     chapter: 7,
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
       { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
