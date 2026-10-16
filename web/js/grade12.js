@@ -19,7 +19,12 @@ const G12_CHAPTERS = [
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 2³ × 2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "a^m × a^n = a^{m+n} = 2⁷.", explain: "2⁷." },
       { type: "mc", prompt: "Câu 2: (3²)⁴ =", choices: ["3⁸", "3⁶", "9⁴", "6⁴"], correct: 0, hint: "(a^m)^n = a^{m·n} = 3⁸.", explain: "3⁸." },
@@ -37,7 +42,12 @@ const G12_CHAPTERS = [
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "(x²)' = 2x.", explain: "x² + C." },
       { type: "mc", prompt: "Câu 2: ∫sin(x) dx =", choices: ["-cos(x) + C", "cos(x) + C", "sin(x) + C", "-sin(x) + C"], correct: 0, hint: "(-cos x)' = sin x.", explain: "-cos(x) + C." },
@@ -55,7 +65,12 @@ const G12_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
       { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
@@ -73,7 +88,12 @@ const G12_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
       { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
@@ -91,7 +111,12 @@ const G12_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
       { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
@@ -109,7 +134,12 @@ const G12_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
@@ -127,7 +157,12 @@ const G12_CHAPTERS = [
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
     summary: "Luyện tập tổng hợp các chương.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x³ - 3x² + 2 là?", choices: ["3x² - 6x", "3x² - 3x", "x⁴ - 3x³ + 2x", "3x² - 6x + 2"], correct: 0, hint: "(x³)'=3x², (3x²)'=6x.", explain: "3x² - 6x." },
       { type: "mc", prompt: "Câu 2: Nguyên hàm của y = 2x + 3 là?", choices: ["x² + 3x + C", "2x² + 3x + C", "x² + 3x", "2x² + 3"], correct: 0, hint: "∫2x dx = x², ∫3 dx = 3x.", explain: "x² + 3x + C." },
@@ -146,7 +181,12 @@ const G12_CHAPTERS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên khoảng nào?", choices: ["(-∞,-1) và (1,∞)", "(-1,1)", "(-∞,∞)", "không khoảng nào"], correct: 0, hint: "y' = 3x² - 3 = 3(x²-1). y'>0 khi |x|>1.", explain: "(-∞,-1) và (1,∞)." },
@@ -161,7 +201,12 @@ const G12_CHAPTERS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: 2³ × 2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "a^m × a^n = a^{m+n} = 2⁷.", explain: "2⁷." },
@@ -176,7 +221,12 @@ const G12_CHAPTERS = [
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "(x²)' = 2x.", explain: "x² + C." },
@@ -192,7 +242,12 @@ const G12_CHAPTERS = [
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
       { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
@@ -211,7 +266,12 @@ const G12_CHAPTERS = [
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
       { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
@@ -230,7 +290,12 @@ const G12_CHAPTERS = [
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
       { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
@@ -249,7 +314,12 @@ const G12_CHAPTERS = [
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
@@ -1044,7 +1114,12 @@ const G12_LESSONS = [
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
     summary: "Luyện tập số phức và phép toán.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Phần ảo của z = 3 - 4i là?", choices: ["3", "-4", "4", "-3"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-4." },
       { type: "mc", prompt: "Câu 2: |2 + i| bằng?", choices: ["√3", "√5", "√4", "√6"], correct: 1, hint: "|z| = √(a²+b²).", explain: "√5." },
@@ -1063,7 +1138,12 @@ const G12_LESSONS = [
     chapter: 2,
     title: "Chương 2: Lũy thừa, mũ, logarit - Trắc nghiệm",
     summary: "Luyện tập lũy thừa, mũ, logarit và phương trình.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 2³·2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "aᵐ·aⁿ = aᵐ⁺ⁿ.", explain: "2⁷." },
       { type: "mc", prompt: "Câu 2: (3²)³ =", choices: ["3⁵", "3⁶", "9³", "27²"], correct: 1, hint: "(aᵐ)ⁿ = aᵐⁿ.", explain: "3⁶." },
@@ -1081,7 +1161,12 @@ const G12_LESSONS = [
     chapter: 3,
     title: "Chương 3: Nguyên hàm, tích phân - Trắc nghiệm",
     summary: "Luyện tập nguyên hàm, tích phân và ứng dụng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
       { type: "mc", prompt: "Câu 2: ∫cosx dx =", choices: ["sinx + C", "-sinx + C", "cosx + C", "-cosx + C"], correct: 0, hint: "Đạo hàm của sinx là cosx.", explain: "sinx + C." },
@@ -1099,7 +1184,12 @@ const G12_LESSONS = [
     chapter: 5,
     title: "Chương 5: Tọa độ trong không gian - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vectơ, mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vectơ AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(3,5,7)"], correct: 0, hint: "4-1=3, 5-2=3, 6-3=3.", explain: "(3,3,3)." },
       { type: "mc", prompt: "Câu 2: Độ dài AB với A(0,0,0), B(3,4,12) là?", choices: ["13", "14", "15", "16"], correct: 0, hint: "√(9+16+144)=√169.", explain: "13." },
@@ -1117,7 +1207,12 @@ const G12_LESSONS = [
     chapter: 6,
     title: "Chương 6: Khối đa diện - Trắc nghiệm",
     summary: "Luyện tập khối đa diện, diện tích, thể tích.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hình hộp chữ nhật 2×3×4 là?", choices: ["12", "24", "36", "48"], correct: 1, hint: "V=abc.", explain: "24." },
       { type: "mc", prompt: "Câu 2: Thể tích hình lập phương cạnh 5 là?", choices: ["25", "100", "125", "625"], correct: 2, hint: "V=a³.", explain: "125." },
@@ -1136,7 +1231,12 @@ const G12_LESSONS = [
     chapter: 7,
     title: "Chương 7: Mặt nón, mặt trụ, mặt cầu - Trắc nghiệm",
     summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón bán kính r, đường sinh l là?", choices: ["πrl", "2πrl", "πr²l", "2πr²l"], correct: 0, hint: "Sₓq = πrl.", explain: "πrl." },
       { type: "mc", prompt: "Câu 2: Thể tích hình trụ bán kính r, chiều cao h là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = πr²h.", explain: "πr²h." },
@@ -1154,7 +1254,12 @@ const G12_LESSONS = [
     chapter: 8,
     title: "Chương 8: Phương pháp tọa độ trong không gian (tiếp) - Trắc nghiệm",
     summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Khoảng cách từ M(x₀,y₀,z₀) đến mặt phẳng Ax+By+Cz+D=0 là?", choices: ["|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)", "|Ax₀+By₀+Cz₀|/√(A²+B²+C²)", "|Ax₀+By₀+Cz₀+D|/(A²+B²+C²)", "|Ax₀+By₀+Cz₀|/(A²+B²+C²)"], correct: 0, hint: "Công thức khoảng cách điểm-mặt phẳng.", explain: "|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)." },
       { type: "mc", prompt: "Câu 2: Hai mặt phẳng song song khi?", choices: ["VTPT tỷ lệ", "VTCP tỷ lệ", "VTPT vuông góc", "VTCP vuông góc"], correct: 0, hint: "VTPT cùng phương.", explain: "VTPT tỷ lệ." },
@@ -1173,7 +1278,12 @@ const G12_LESSONS = [
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: 2³ × 2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "a^m × a^n = a^{m+n} = 2⁷.", explain: "2⁷." },
       { type: "mc", prompt: "Câu 2: (3²)⁴ =", choices: ["3⁸", "3⁶", "9⁴", "6⁴"], correct: 0, hint: "(a^m)^n = a^{m·n} = 3⁸.", explain: "3⁸." },
@@ -1191,7 +1301,12 @@ const G12_LESSONS = [
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "(x²)' = 2x.", explain: "x² + C." },
       { type: "mc", prompt: "Câu 2: ∫sin(x) dx =", choices: ["-cos(x) + C", "cos(x) + C", "sin(x) + C", "-sin(x) + C"], correct: 0, hint: "(-cos x)' = sin x.", explain: "-cos(x) + C." },
@@ -1209,7 +1324,12 @@ const G12_LESSONS = [
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
       { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
@@ -1227,7 +1347,12 @@ const G12_LESSONS = [
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
       { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
@@ -1245,7 +1370,12 @@ const G12_LESSONS = [
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
       { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
@@ -1263,7 +1393,12 @@ const G12_LESSONS = [
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
@@ -1281,7 +1416,12 @@ const G12_LESSONS = [
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
     summary: "Luyện tập tổng hợp các chương.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Đạo hàm của y = x³ - 3x² + 2 là?", choices: ["3x² - 6x", "3x² - 3x", "x⁴ - 3x³ + 2x", "3x² - 6x + 2"], correct: 0, hint: "(x³)'=3x², (3x²)'=6x.", explain: "3x² - 6x." },
       { type: "mc", prompt: "Câu 2: Nguyên hàm của y = 2x + 3 là?", choices: ["x² + 3x + C", "2x² + 3x + C", "x² + 3x", "2x² + 3"], correct: 0, hint: "∫2x dx = x², ∫3 dx = 3x.", explain: "x² + 3x + C." },
@@ -1300,7 +1440,12 @@ const G12_LESSONS = [
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên khoảng nào?", choices: ["(-∞,-1) và (1,∞)", "(-1,1)", "(-∞,∞)", "không khoảng nào"], correct: 0, hint: "y' = 3x² - 3 = 3(x²-1). y'>0 khi |x|>1.", explain: "(-∞,-1) và (1,∞)." },
@@ -1315,7 +1460,12 @@ const G12_LESSONS = [
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: 2³ × 2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "a^m × a^n = a^{m+n} = 2⁷.", explain: "2⁷." },
@@ -1330,7 +1480,12 @@ const G12_LESSONS = [
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     pages: ["page1"],
     exercises: [
       { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "(x²)' = 2x.", explain: "x² + C." },
@@ -1346,7 +1501,12 @@ const G12_LESSONS = [
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
       { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
@@ -1365,7 +1525,12 @@ const G12_LESSONS = [
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
       { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
@@ -1384,7 +1549,12 @@ const G12_LESSONS = [
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
       { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
@@ -1403,7 +1573,12 @@ const G12_LESSONS = [
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+<details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
+      </details>
+`,
     exercises: [
       { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
       { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
