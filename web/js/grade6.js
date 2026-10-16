@@ -89,6 +89,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
 `,
     
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: 24 ÷ 6 =", choices: ["4", "5", "6", "3"], correct: 0, hint: "6×4 = 24.", explain: "4." },
       { type: "mc", prompt: "Câu 2: 35 chia hết cho:", choices: ["5", "3", "4", "6"], correct: 0, hint: "35 = 5×7.", explain: "5." },
