@@ -742,6 +742,11 @@ String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "log₃27 bằng?", choices: ["3", "9", "27", "1/3"], correct: 0, hint: "3³ = 27.", explain: "3." },
       { type: "mc", prompt: "log₁₀1000 bằng?", choices: ["2", "3", "4", "10"], correct: 1, hint: "10³ = 1000.", explain: "3." },
