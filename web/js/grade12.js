@@ -1204,6 +1204,11 @@ String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|².
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "(3+i)/(1-i) =", choices: ["1+2i", "1-2i", "2+i", "2-i"], correct: 0, hint: "Nhân với 1+i.", explain: "1+2i." },
       { type: "mc", prompt: "1/i bằng?", choices: ["i", "-i", "1", "-1"], correct: 1, hint: "1/i = i/i².", explain: "-i." },
