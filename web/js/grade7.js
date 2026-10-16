@@ -419,9 +419,11 @@ const G7_LESSONS = [
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Dấu √ không cho số âm. \(\sqrt{a}\) chỉ có khi \(a \geq 0\).</p></div>
     `,
-    exercises: [
-      { type: "num", prompt: "√16 bằng bao nhiêu?", answer: 4, hint: "Số không âm có bình phương 16.", explain: "4² = 16. Không lấy −4." },
-      { type: "mc", prompt: "√(9+16) bằng", choices: ["7", "5", "√9 + √16", "25"], correct: 1, hint: "Cộng trong căn trước.", explain: "√25 = 5. Không tách dấu cộng." },
+          exercises: [
+        { type: "mc", prompt: "Số thập phân hữu hạn là", choices: ["Có thể viết hết các chữ số sau dấu phẩy", "Có vô số chữ số sau dấu phẩy", "Chỉ có một chữ số sau dấu phẩy", "Không có dấu phẩy"], correct: 0, hint: "Ví dụ: 0.25, 1.5.", explain: "Có thể viết hết các chữ số." },
+        { type: "mc", prompt: "Số 0,75 bằng phân số nào?", choices: ["3/4", "7/5", "75/10", "1/4"], correct: 0, hint: "0.75 = 75/100 = 3/4.", explain: "3/4." },
+        { type: "text", prompt: "Viết phân số 2/5 dưới dạng số thập phân.", answer: "0.4", accept: ["0.4", "0,4"], hint: "2 ÷ 5 = 0.4.", explain: "0.4." },
+      ], correct: 1, hint: "Cộng trong căn trước.", explain: "√25 = 5. Không tách dấu cộng." },
       { type: "mc", prompt: "Số nào vô tỉ?", choices: ["√9", "0,5", "√2", "−4/7"], correct: 2, hint: "Không viết được thành a/b.", explain: "√2 không phải số hữu tỉ." },
       { type: "num", prompt: "√0 bằng bao nhiêu?", answer: 0, hint: "0² = 0.", explain: "0." },
       { type: "mc", prompt: "√(−4) trong số thực", choices: ["Bằng −2","Bằng 2","Không có","Bằng 4"], correct: 2, hint: "Trong căn phải ≥ 0.", explain: "Không có căn bậc hai thực của số âm." },
