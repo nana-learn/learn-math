@@ -1312,6 +1312,11 @@ String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gia
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Vectơ AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(3,5,7)"], correct: 0, hint: "4-1=3, 5-2=3, 6-3=3.", explain: "(3,3,3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0,0), B(3,4,12) là?", choices: ["13", "14", "15", "16"], correct: 0, hint: "√(9+16+144)=√169.", explain: "13." },
