@@ -79,8 +79,11 @@ const G7_LESSONS = [
       </div>
 <div class="memory"><p><strong>Nhìn lại.</strong> Muốn biết một số có hữu tỉ không: tìm một phân số nguyên bằng nó. Số nguyên, thập phân hữu hạn, hỗn số đều được.</p></div>
     `,
-    exercises: [
-      { type: "mc", prompt: "Số nào không viết được thành phân số với tử, mẫu nguyên?", choices: ["−7", "0,25", "2,5", "Không chọn được trong ba số trên"], correct: 3, hint: "Cả −7, 0,25 và 2,5 đều viết được thành a/b.", explain: "−7 = −7/1, 0,25 = 1/4, 2,5 = 5/2. Cả ba đều hữu tỉ." },
+          exercises: [
+        { type: "mc", prompt: "Số nào là số hữu tỉ?", choices: ["3/4", "√2", "π", "e"], correct: 0, hint: "3/4 viết được thành phân số.", explain: "3/4." },
+        { type: "mc", prompt: "Số -5 có là số hữu tỉ không?", choices: ["Có", "Không", "Tùy trường hợp", "Không xác định"], correct: 0, hint: "-5 = -5/1.", explain: "Có, vì -5 = -5/1." },
+        { type: "text", prompt: "Viết số 0,25 dưới dạng phân số.", answer: "1/4", accept: ["1/4", "0.25"], hint: "0,25 = 25/100 = 1/4.", explain: "1/4." },
+      ], correct: 3, hint: "Cả −7, 0,25 và 2,5 đều viết được thành a/b.", explain: "−7 = −7/1, 0,25 = 1/4, 2,5 = 5/2. Cả ba đều hữu tỉ." },
       { type: "num", prompt: "Hỗn số 3 1/5 bằng phân số a/5. Tử a bằng bao nhiêu?", answer: 16, hint: "3 lần 5 cộng 1.", explain: "3 + 1/5 = 16/5." },
       { type: "mc", prompt: "Trên trục số, điểm biểu diễn −3/2 nằm ở đâu so với gốc?", choices: ["Bên phải, cách gốc 1,5 đơn vị", "Bên trái, cách gốc 1,5 đơn vị", "Trùng gốc", "Bên trái, cách gốc 3 đơn vị"], correct: 1, hint: "Số âm đứng bên trái. 3/2 = 1,5.", explain: "−3/2 = −1,5, bên trái gốc, khoảng cách 1,5." },
       { type: "text", prompt: "Viết 0,2 thành phân số tối giản.", answer: "1/5", accept: ["1/5"], hint: "0,2 = 2/10.", explain: "2/10 = 1/5." },
