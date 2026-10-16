@@ -1156,9 +1156,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Hai tam giác vuông bằng nhau. Cạnh huyền của tam giác này 13 cm. Cạnh huyền kia bằng bao nhiêu cm?", answer: 13, hint: "Cạnh tương ứng bằng nhau.", explain: "13 cm." },
-      { type: "mc", prompt: "Hai tam giác vuông bằng nhau nếu", choices: ["Bằng một góc nhọn", "Bằng cạnh huyền và một cạnh góc vuông", "Bằng một cạnh bất kì", "Bằng hai góc nhọn"], correct: 1, hint: "Cạnh huyền kèm một cạnh góc vuông.", explain: "Đó là trường hợp vừa học." },
+          exercises: [
+        { type: "mc", prompt: "Hai đại lượng tỉ lệ nghịch nếu", choices: ["Tích của chúng không đổi", "Tỉ số của chúng không đổi", "Tổng của chúng không đổi", "Hiệu của chúng không đổi"], correct: 0, hint: "Định nghĩa tỉ lệ nghịch.", explain: "Tích không đổi." },
+        { type: "mc", prompt: "y tỉ lệ nghịch với x theo hệ số a = 12. Khi x = 3 thì y =", choices: ["4", "36", "1/4", "9"], correct: 0, hint: "y = a/x = 12/3 = 4.", explain: "4." },
+        { type: "text", prompt: "x và y tỉ lệ nghịch. Khi x = 6 thì y = 4. Khi x = 8 thì y =", answer: "3", accept: ["3"], hint: "a = xy = 24. y = 24/8 = 3.", explain: "3." },
+      ], correct: 1, hint: "Cạnh huyền kèm một cạnh góc vuông.", explain: "Đó là trường hợp vừa học." },
       { type: "mc", prompt: "Cạnh huyền đối diện", choices: ["Góc nhọn nhỏ hơn", "Góc vuông", "Góc tù", "Góc nào cũng được"], correct: 1, hint: "Cạnh lớn đối diện góc lớn.", explain: "Đối diện 90°." },
       { type: "mc", prompt: "Cạnh huyền là", choices: ["Cạnh góc vuông ngắn","Cạnh đối diện góc vuông","Trung tuyến","Cạnh bên của tam giác cân"], correct: 1, hint: "Đối diện 90°.", explain: "Cạnh lớn nhất." },
       { type: "num", prompt: "Hai tam giác vuông bằng nhau, một cạnh góc vuông 9 cm. Cạnh tương ứng kia bằng bao nhiêu cm?", answer: 9, hint: "Cạnh tương ứng bằng nhau.", explain: "9 cm." },
