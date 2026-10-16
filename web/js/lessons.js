@@ -8819,8 +8819,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "AB - AC = ?", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
+          exercises: [
+        { type: "mc", prompt: "Phương trình x² − 5x + 6 = 0 có nghiệm là", choices: ["x = 2, x = 3", "x = 1, x = 6", "x = -2, x = -3", "x = -1, x = -6"], correct: 0, hint: "(x − 2)(x − 3) = 0.", explain: "x = 2, x = 3." },
+        { type: "mc", prompt: "Phương trình x² − 4 = 0 có nghiệm là", choices: ["x = ±2", "x = 2", "x = -2", "x = 4"], correct: 0, hint: "x² = 4 → x = ±2.", explain: "x = ±2." },
+        { type: "text", prompt: "Giải phương trình x² + 6x + 9 = 0.", answer: "x = -3", accept: ["x = -3"], hint: "(x + 3)² = 0 → x = -3.", explain: "x = -3." },
+      ], correct: 0, hint: "Cùng điểm đầu A, hiệu là CB.", explain: "CB." },
       { type: "mc", prompt: "AB - BA = ?", choices: ["2AB", "0", "AB", "-2AB"], correct: 0, hint: "BA = -AB nên AB - BA = AB - (-AB) = 2AB.", explain: "2AB." },
       { type: "mc", prompt: "A(1, 1), B(3, 4), C(2, 3). AB − AC bằng vectơ nào?", choices: ["(1, 1)", "(2, 3)", "(3, 4)", "(0, 0)"], correct: 0, hint: "AB = (2, 3), AC = (1, 2). Trừ từng tọa độ.", explain: "(1, 1)." },
     ],
