@@ -9494,8 +9494,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Sắp xếp 5 người vào 5 ghế là?", choices: ["120", "25", "5", "10"], correct: 0, hint: "5! = 120.", explain: "120." },
+          exercises: [
+        { type: "mc", prompt: "AB + BC =", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
+        { type: "mc", prompt: "AB − AC =", choices: ["CB", "BC", "AB", "AC"], correct: 0, hint: "Quy tắc trừ: cùng điểm đầu, hiệu là từ cuối này đến cuối kia.", explain: "CB." },
+        { type: "text", prompt: "AB = (2, 3), BC = (1, 4). AC =", answer: "(3, 7)", accept: ["(3, 7)"], hint: "AB + BC = (3, 7).", explain: "(3, 7)." },
+      ], correct: 0, hint: "5! = 120.", explain: "120." },
       { type: "mc", prompt: "Chọn 2 người từ 6 người và sắp xếp là?", choices: ["30", "15", "12", "6"], correct: 0, hint: "A_6^2 = 6 × 5 = 30.", explain: "30." },
       { type: "num", prompt: "A_5^3 =", answer: "60", accept: ["60"], hint: "5 × 4 × 3 = 60.", explain: "60." },
     ],
