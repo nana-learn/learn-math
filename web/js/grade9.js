@@ -403,8 +403,11 @@ const G9_LESSONS = [
         <p> Đa giác đều có góc trong 144°. \\(\dfrac{(n-2) \cdot 180}{n} = 144\\) → \\(n = 10\\) (mười giác đều).</p>
       </div>
     `,
-    exercises: [
-      { type: "num", prompt: "Lục giác đều có mỗi góc trong bằng bao nhiêu độ?", answer: 120, accept: ["120", "120°"], hint: "(6-2)·180 / 6 = 120.", explain: "Mỗi góc trong = 120°." },
+          exercises: [
+        { type: "mc", prompt: "Tứ giác nội tiếp đường tròn là", choices: ["Có bốn đỉnh nằm trên một đường tròn", "Có bốn cạnh bằng nhau", "Có hai cặp cạnh song song", "Có tất cả góc bằng 90°"], correct: 0, hint: "Định nghĩa tứ giác nội tiếp.", explain: "Bốn đỉnh trên một đường tròn." },
+        { type: "mc", prompt: "Tứ giác nào sau đây luôn nội tiếp?", choices: ["Hình chữ nhật", "Hình bình hành", "Hình thang", "Tứ giác thường"], correct: 0, hint: "Hình chữ nhật có 4 góc vuông.", explain: "Hình chữ nhật." },
+        { type: "text", prompt: "Tứ giác ABCD nội tiếp (O). ∠A = 110°. ∠C =", answer: "70°", accept: ["70°", "70"], hint: "∠A + ∠C = 180°.", explain: "70°." },
+      ], hint: "(6-2)·180 / 6 = 120.", explain: "Mỗi góc trong = 120°." },
       { type: "mc", prompt: "Đa giác đều có góc ở tâm bằng 30°. Nó có bao nhiêu cạnh?", choices: ["10", "12", "15", "18"], correct: 2, hint: "360 / 30 = 12.", explain: "n = 360° / 30° = 12." },
       { type: "num", prompt: "Ngũ giác đều có mỗi góc trong bằng bao nhiêu độ?", answer: 108, accept: ["108", "108°"], hint: "(5-2)·180 / 5 = 108.", explain: "Mỗi góc trong = 108°." },
       { type: "mc", prompt: "Tứ giác có bốn cạnh bằng nhau nhưng không vuông là:", choices: ["Đa giác đều", "Hình thoi", "Hình vuông", "Cả B và C"], correct: 1, hint: "Hình thoi có cạnh đều nhưng không đều góc.", explain: "Hình thoi không phải đa giác đều vì góc không bằng nhau." },
