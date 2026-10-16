@@ -9721,8 +9721,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Độ lệch chuẩn là căn bậc hai của?", choices: ["Phương sai", "Số trung bình", "Trung vị", "Mode"], correct: 0, hint: "s = √s².", explain: "Phương sai." },
+          exercises: [
+        { type: "mc", prompt: "Định lý cosin trong tam giác ABC: a² =", choices: ["b² + c² − 2bc·cos A", "b² + c² + 2bc·cos A", "b² − c² + 2bc·cos A", "2bc·cos A"], correct: 0, hint: "Định lý cosin: cạnh bình phương = tổng hai cạnh kia bình phương trừ 2 tích hai cạnh kia cos góc xen giữa.", explain: "b² + c² − 2bc·cos A." },
+        { type: "mc", prompt: "Tam giác ABC có AB = 3, AC = 4, góc A = 90°. BC =", choices: ["5", "7", "25", "12"], correct: 0, hint: "Pythagoras: BC² = 9 + 16 = 25 → BC = 5.", explain: "5." },
+        { type: "text", prompt: "Tam giác ABC có AB = 5, AC = 8, góc A = 60°. BC² =", answer: "49", accept: ["49"], hint: "BC² = 25 + 64 − 2·5·8·cos 60° = 89 − 40 = 49.", explain: "49." },
+      ], correct: 0, hint: "s = √s².", explain: "Phương sai." },
       { type: "mc", prompt: "Phương sai càng lớn thì dữ liệu?", choices: ["Phân tán nhiều", "Phân tán ít", "Đều nhau", "Không thay đổi"], correct: 0, hint: "Phương sai đo độ phân tán.", explain: "Phân tán nhiều." },
       { type: "num", prompt: "Mẫu: 2, 4, 6. Phương sai ≈", answer: "4", accept: ["4"], hint: "x̄=4, (4+0+4)/2 = 4.", explain: "4." },
     ],
