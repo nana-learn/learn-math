@@ -345,6 +345,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tậ
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
       { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
+
+      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: Tập hợp N* gồm:", choices: ["0,1,2,3,...", "1,2,3,4,...", "0,2,4,6,...", "1,3,5,7,..."], correct: 1, hint: "N* là tập hợp số tự nhiên khác 0.", explain: "1,2,3,4,..." },
       { type: "mc", prompt: "Câu 2: Số 12 thuộc tập hợp nào?", choices: ["N", "N*", "Z", "Cả N và N*"], correct: 3, hint: "12 là số tự nhiên khác 0.", explain: "Cả N và N*." },
