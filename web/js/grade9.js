@@ -134,7 +134,9 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       </details>
 `,
     pages: ["page1"],
-    exercises: [
+    
+      { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = 4x - 1 có hệ số góc là?", choices: ["4", "-1", "1", "-4"], correct: 0, hint: "Hệ số góc là hệ số của x.", explain: "4." },
       { type: "mc", prompt: "Câu 2: Đồ thị hàm số y = -3x + 2 cắt trục Oy tại điểm?", choices: ["(0,2)", "(2,0)", "(0,-2)", "(-2,0)"], correct: 0, hint: "x=0 → y=2.", explain: "(0,2)." },
       { type: "text", prompt: "Tìm giao điểm của y=2x+1 và y=-x+4.", answer: "(1,3)", accept: ["(1,3)", "x=1,y=3"], hint: "2x+1=-x+4 → 3x=3 → x=1, y=3.", explain: "(1,3)." },

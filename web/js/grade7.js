@@ -237,7 +237,9 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       </details>
 `,
     pages: ["page1"],
-    exercises: [
+    
+      { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+exercises: [
       { type: "mc", prompt: "Câu 1: √4 =", choices: ["2", "-2", "±2", "4"], correct: 0, hint: "Căn bậc hai số học ≥ 0.", explain: "2." },
       { type: "mc", prompt: "Câu 2: |−3| =", choices: ["3", "-3", "0", "1/3"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "3." },
       { type: "text", prompt: "Tính √2 × √8.", answer: "4", accept: ["4"], hint: "√2 × √8 = √16 = 4.", explain: "4." },

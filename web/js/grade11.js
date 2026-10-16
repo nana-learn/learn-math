@@ -252,7 +252,9 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       </details>
 `,
     pages: ["page1"],
-    exercises: [
+    
+      { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+exercises: [
       { type: "mc", prompt: "Câu 1: sin(π/6) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "sin 30° = 1/2.", explain: "1/2." },
       { type: "mc", prompt: "Câu 2: cos(π/3) =", choices: ["1/2", "√3/2", "√2/2", "1"], correct: 0, hint: "cos 60° = 1/2.", explain: "1/2." },
       { type: "text", prompt: "Giải phương trình sin x = 1/2.", answer: "π/6 + k2π hoặc 5π/6 + k2π", accept: ["π/6 + k2π hoặc 5π/6 + k2π", "π/6 + k2pi hoặc 5π/6 + k2pi"], hint: "sin x = 1/2 → x = π/6 hoặc 5π/6 (+ k2π).", explain: "π/6 + k2π hoặc 5π/6 + k2π." },

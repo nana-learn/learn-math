@@ -252,7 +252,9 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       </details>
 `,
     pages: ["page1"],
-    exercises: [
+    
+      { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên khoảng nào?", choices: ["(-∞,-1) và (1,∞)", "(-1,1)", "(-∞,∞)", "không khoảng nào"], correct: 0, hint: "y' = 3x² - 3 = 3(x²-1). y'>0 khi |x|>1.", explain: "(-∞,-1) và (1,∞)." },
       { type: "mc", prompt: "Câu 2: Số cực trị của y = x⁴ - 2x² là?", choices: ["2", "1", "3", "0"], correct: 0, hint: "y' = 4x³ - 4x = 4x(x²-1). 3 nghiệm → 3 cực trị.", explain: "2." },
       { type: "text", prompt: "Tìm GTNN của y = x² + 4/x trên (0,∞).", answer: "6", accept: ["6"], hint: "y' = 2x - 4/x² = 0 → x=√2. y(√2) = 2 + 4/√2 = 6.", explain: "6." },
