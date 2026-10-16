@@ -607,6 +607,11 @@ String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị đ
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Đồ thị y = x³ - 3x có bao nhiêu điểm cực trị?", choices: ["0", "1", "2", "3"], correct: 2, hint: "y' = 3x² - 3 có 2 nghiệm.", explain: "2 cực trị." },
       { type: "mc", prompt: "Đồ thị y = x⁴ có dạng gì?", choices: ["Hình chữ V", "Parabol", "Hình chữ W", "Đường thẳng"], correct: 1, hint: "Hàm bậc 4 dương.", explain: "Parabol dạng U." },
