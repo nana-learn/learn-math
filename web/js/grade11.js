@@ -512,6 +512,8 @@ exercises: [
 
     summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -616,6 +618,8 @@ exercises: [
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -668,6 +672,8 @@ exercises: [
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -720,6 +726,8 @@ exercises: [
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -772,6 +780,8 @@ exercises: [
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -824,6 +834,8 @@ exercises: [
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -876,6 +888,8 @@ exercises: [
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -928,6 +942,8 @@ exercises: [
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -980,6 +996,8 @@ exercises: [
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1032,6 +1050,8 @@ exercises: [
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1084,6 +1104,8 @@ exercises: [
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1136,6 +1158,8 @@ exercises: [
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1188,6 +1212,8 @@ exercises: [
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1241,6 +1267,8 @@ exercises: [
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1293,6 +1321,8 @@ exercises: [
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1345,6 +1375,8 @@ exercises: [
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1397,6 +1429,8 @@ exercises: [
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1449,6 +1483,8 @@ exercises: [
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1502,6 +1538,8 @@ exercises: [
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1554,6 +1592,8 @@ exercises: [
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1606,6 +1646,8 @@ exercises: [
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>

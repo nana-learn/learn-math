@@ -75,6 +75,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -109,6 +111,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>

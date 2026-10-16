@@ -427,6 +427,8 @@ const G12_LESSONS = [
 
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -486,6 +488,8 @@ exercises: [
 
     summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -543,6 +547,8 @@ exercises: [
 
     summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -590,6 +596,8 @@ exercises: [
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -637,6 +645,8 @@ exercises: [
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -698,6 +708,8 @@ exercises: [
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -747,6 +759,8 @@ exercises: [
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -796,6 +810,8 @@ exercises: [
 
     summary: "Định nghĩa, tính chất của logarit.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -845,6 +861,8 @@ exercises: [
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -907,6 +925,8 @@ exercises: [
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -956,6 +976,8 @@ exercises: [
 
     summary: "Giải bất phương trình mũ và logarit.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1005,6 +1027,8 @@ exercises: [
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1054,6 +1078,8 @@ exercises: [
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1118,6 +1144,8 @@ exercises: [
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1180,6 +1208,8 @@ exercises: [
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1245,6 +1275,8 @@ exercises: [
 
     summary: "Cộng, trừ, nhân số phức.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1294,6 +1326,8 @@ exercises: [
 
     summary: "Chia số phức, số phức nghịch đảo.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1343,6 +1377,8 @@ exercises: [
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1392,6 +1428,8 @@ exercises: [
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1459,6 +1497,8 @@ exercises: [
 
     summary: "Phương trình tổng quát của mặt phẳng.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1518,6 +1558,8 @@ exercises: [
 
     summary: "Phương trình tham số và phương trình chính tắc.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1576,6 +1618,8 @@ exercises: [
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -1625,6 +1669,8 @@ exercises: [
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
     body: 
+    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
