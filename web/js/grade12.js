@@ -22,6 +22,20 @@ const G12_LESSONS = [
     title: "Sự đồng biến, nghịch biến của hàm số",
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.",
     body: String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="20" x2="200" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="205" y="25" font-size="12">y</text>
+          <path d="M 50 150 Q 100 100 150 50 T 300 100" stroke="blue" fill="none" stroke-width="3"/>
+          <circle cx="150" cy="50" r="4" fill="red"/>
+          <text x="160" y="45" font-size="12">CĐ</text>
+          <circle cx="300" cy="100" r="4" fill="green"/>
+          <text x="310" y="95" font-size="12">CT</text>
+          <text x="20" y="20" font-size="14">y = x³ - 3x (đồng biến, nghịch biến)</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> Vận tốc v(t) = s'(t) = 2t - 4. Khi t < 2, v < 0; khi t > 2, v > 0.</p>
       </div>
@@ -48,6 +62,18 @@ const G12_LESSONS = [
     title: "Cực trị của hàm số",
     summary: "Điều kiện cần và đủ để hàm số có cực trị.",
     body: String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="20" x2="200" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="205" y="25" font-size="12">y</text>
+          <path d="M 50 50 Q 100 80 150 130 T 300 50" stroke="purple" fill="none" stroke-width="3"/>
+          <circle cx="150" cy="130" r="4" fill="blue"/>
+          <text x="160" y="125" font-size="12">Cực đại</text>
+          <text x="20" y="20" font-size="14">y = -x⁴ + 4x² (3 cực trị)</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = x³ - 3x. y' = 3x² - 3, y' = 0 ↔ x = ±1. Dấu y' đổi → cực trị.</p>
       </div>
@@ -334,6 +360,21 @@ const G12_LESSONS = [
     title: "Tích phân",
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
     body: String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="20" y1="20" x2="20" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="25" y="25" font-size="12">y</text>
+          <path d="M 50 150 Q 100 100 150 80 Q 200 60 250 80 Q 300 100 350 150" stroke="green" fill="none" stroke-width="2"/>
+          <path d="M 100 180 L 100 130 Q 150 100 200 85 L 200 180 Z" fill="rgba(0,255,0,0.3)" stroke="none"/>
+          <line x1="100" y1="180" x2="100" y2="20" stroke="gray" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="200" y1="180" x2="200" y2="20" stroke="gray" stroke-width="1" stroke-dasharray="4,4"/>
+          <text x="145" y="170" font-size="12">a</text>
+          <text x="240" y="170" font-size="12">b</text>
+          <text x="20" y="20" font-size="14">∫ₐᵇf(x)dx = diện tích màu xanh</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> ∫ₐᵇf(x)dx = F(b) - F(a). ∫ₐᵇxⁿdx = [xⁿ⁺¹/(n+1)]ₐᵇ.</p>
       </div>
@@ -386,6 +427,22 @@ const G12_LESSONS = [
     title: "Số phức và biểu diễn hình học",
     summary: "Định nghĩa, số phức liên hợp, môđun.",
     body: String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
+      <div class="figure">
+        <svg viewBox="0 0 300 250" style="width:100%;max-width:300px;">
+          <line x1="150" y1="20" x2="150" y2="230" stroke="#333" stroke-width="2"/>
+          <line x1="20" y1="125" x2="280" y2="125" stroke="#333" stroke-width="2"/>
+          <text x="270" y="120" font-size="12">Re</text>
+          <text x="155" y="25" font-size="12">Im</text>
+          <circle cx="200" cy="80" r="4" fill="red"/>
+          <line x1="150" y1="125" x2="200" y2="80" stroke="red" stroke-width="2"/>
+          <text x="210" y="75" font-size="12">z = a + bi</text>
+          <text x="185" y="120" font-size="12">a</text>
+          <text x="155" y="95" font-size="12">b</text>
+          <path d="M 170 125 Q 150 110 150 105" stroke="gray" fill="none" stroke-width="1"/>
+          <text x="140" y="110" font-size="10">r</text>
+          <text x="20" y="20" font-size="14">Biểu diễn số phức trên mặt phẳng</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> z = a + bi: a là phần thực, b là phần ảo. |z| = √(a²+b²). z̄ = a - bi.</p>
       </div>
@@ -490,6 +547,24 @@ const G12_LESSONS = [
     title: "Tọa độ trong không gian",
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
     body: String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
+          <line x1="200" y1="150" x2="200" y2="50" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="150" x2="350" y2="200" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="150" x2="50" y2="250" stroke="#333" stroke-width="2"/>
+          <text x="205" y="45" font-size="12">z</text>
+          <text x="355" y="205" font-size="12">x</text>
+          <text x="40" y="255" font-size="12">y</text>
+          <circle cx="280" cy="120" r="5" fill="red"/>
+          <text x="290" y="115" font-size="12">M(x,y,z)</text>
+          <line x1="280" y1="120" x2="280" y2="200" stroke="blue" stroke-width="1" stroke-dasharray="3,3"/>
+          <line x1="280" y1="200" x2="200" y2="200" stroke="green" stroke-width="1" stroke-dasharray="3,3"/>
+          <text x="120" y="210" font-size="10">x</text>
+          <text x="290" y="180" font-size="10">y</text>
+          <text x="285" y="160" font-size="10">z</text>
+          <text x="20" y="20" font-size="14">Hệ tọa độ Oxyz trong không gian</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> A(xₐ,yₐ,zₐ), B(xᵦ,yᵦ,zᵦ). AB = (xᵦ-xₐ, yᵦ-yₐ, zᵦ-zₐ). |AB| = √[(xᵦ-xₐ)²+(yᵦ-yₐ)²+(zᵦ-zₐ)²].</p>
       </div>
@@ -593,7 +668,22 @@ const G12_LESSONS = [
     chapter: 6,
     title: "Khối đa diện",
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
-    body: String.raw`<p><strong>Tình huống.</strong] Tính thể tích hộp giấy, lăng trụ, chóp.</p>
+    body: String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 250" style="width:100%;max-width:400px;">
+          <!-- Hình hộp chữ nhật -->
+          <polygon points="50,150 150,120 200,150 100,180" fill="rgba(100,150,200,0.5)" stroke="#333" stroke-width="2"/>
+          <polygon points="50,150 50,80 100,50 100,120" fill="rgba(150,200,100,0.5)" stroke="#333" stroke-width="2"/>
+          <polygon points="100,50 200,80 200,150 100,120" fill="rgba(200,100,150,0.5)" stroke="#333" stroke-width="2"/>
+          <line x1="50" y1="150" x2="50" y2="80" stroke="#333" stroke-width="2"/>
+          <line x1="150" y1="120" x2="150" y2="50" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="150" x2="200" y2="80" stroke="#333" stroke-width="2"/>
+          <line x1="100" y1="180" x2="100" y2="110" stroke="#333" stroke-width="2"/>
+          <line x1="150" y1="120" x2="200" y2="150" stroke="#333" stroke-width="2"/>
+          <text x="180" y="230" font-size="14">Hình hộp chữ nhật (V = abc)</text>
+          <text x="20" y="20" font-size="14">Khối đa diện: lăng trụ, chóp, hộp</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong] Sₓq = chu vi đáy × chiều cao. V = Sđáy × h (lăng trụ). V = (1/3)Sđáy × h (chóp).</p>
       </div>
