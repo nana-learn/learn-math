@@ -1367,6 +1367,11 @@ String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VT
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Mặt phẳng (Oxy) có phương trình?", choices: ["x=0", "y=0", "z=0", "x+y=0"], correct: 2, hint: "Tất cả điểm có z=0.", explain: "z=0." },
       { type: "mc", prompt: "VTPT của 2x-3y+z-5=0 là?", choices: ["(2,-3,1)", "(-2,3,-1)", "(2,3,1)", "(1,-3,2)"], correct: 0, hint: "Hệ số của x,y,z.", explain: "(2,-3,1)." },
