@@ -978,8 +978,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "mc", prompt: "Trường hợp cgc cần", choices: ["Hai cạnh và góc xen giữa", "Hai góc và cạnh xen giữa", "Ba cạnh", "Ba góc"], correct: 0, hint: "Chữ cgc là cạnh–góc–cạnh.", explain: "Góc phải nằm giữa hai cạnh." },
+          exercises: [
+        { type: "mc", prompt: "2^3 × 2^2 =", choices: ["2^5", "2^6", "4^5", "4^6"], correct: 0, hint: "a^m × a^n = a^{m+n}.", explain: "2^5." },
+        { type: "mc", prompt: "(3^2)^4 =", choices: ["3^8", "3^6", "9^4", "3^16"], correct: 0, hint: "(a^m)^n = a^{m×n}.", explain: "3^8." },
+        { type: "text", prompt: "Tính (2/3)^3.", answer: "8/27", accept: ["8/27"], hint: "2^3/3^3 = 8/27.", explain: "8/27." },
+      ], correct: 0, hint: "Chữ cgc là cạnh–góc–cạnh.", explain: "Góc phải nằm giữa hai cạnh." },
       { type: "mc", prompt: "ΔABC = ΔDEF theo cgc. Cạnh BC bằng cạnh nào?", choices: ["DE", "DF", "EF", "Không biết"], correct: 2, hint: "Thứ tự đỉnh A↔D, B↔E, C↔F.", explain: "BC ứng EF." },
       { type: "num", prompt: "Hai tam giác bằng nhau. Một góc 47°. Góc tương ứng bằng bao nhiêu độ?", answer: 47, hint: "Góc tương ứng bằng nhau.", explain: "47°." },
       { type: "mc", prompt: "Góc trong cgc phải", choices: ["Nhỏ hơn 90°","Xen giữa hai cạnh đã cho","Đối diện cạnh lớn","Ở đỉnh bất kì"], correct: 1, hint: "Xen giữa.", explain: "Nằm giữa hai cạnh." },
