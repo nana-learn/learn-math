@@ -308,6 +308,8 @@ const G10_LESSONS = [
 
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "dQw4w9WgXcQ",
     body: 
+    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
+
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>

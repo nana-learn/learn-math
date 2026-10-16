@@ -79,6 +79,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
     body: 
+    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
+
     <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
 
     <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
