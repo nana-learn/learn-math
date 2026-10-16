@@ -208,6 +208,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Hàm số f(x) có lim(x→x0) f(x) = L nghĩa là:", choices: ["Khi x gần x0 thì f(x) gần L", "f(x0) = L", "f(x) = L với mọi x", "Không có nghĩa"], correct: 0, hint: "Định nghĩa giới hạn hàm số.", explain: "Khi x gần x0 thì f(x) gần L." },
     ],
   },
+
+  {
+    id: "g11-ch5-quiz",
+    num: 108,
+    chapter: 5,
+    title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
+      { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
+      { type: "text", prompt: "Tính đạo hàm của y = x³ + 2x².", answer: "3x² + 4x", accept: ["3x² + 4x", "3x^2 + 4x"], hint: "(x³)' = 3x², (2x²)' = 4x.", explain: "3x² + 4x." },
+      { type: "mc", prompt: "Câu 4: Đạo hàm của y = cos(x) là?", choices: ["-sin(x)", "sin(x)", "cos(x)", "-cos(x)"], correct: 0, hint: "(cos x)' = -sin x.", explain: "-sin(x)." },
+      { type: "mc", prompt: "Câu 5: Đạo hàm của y = 1/x là?", choices: ["-1/x²", "1/x²", "ln|x|", "x"], correct: 0, hint: "(x^{-1})' = -x^{-2} = -1/x².", explain: "-1/x²." },
+      { type: "mc", prompt: "Câu 6: Đạo hàm của y = e^x là?", choices: ["e^x", "xe^{x-1}", "ln(x)", "1"], correct: 0, hint: "(e^x)' = e^x.", explain: "e^x." },
+      { type: "mc", prompt: "Câu 7: Đạo hàm của y = ln(x) là?", choices: ["1/x", "ln|x|", "e^x", "x"], correct: 0, hint: "(ln x)' = 1/x.", explain: "1/x." },
+      { type: "mc", prompt: "Câu 8: Đạo hàm của y = √x là?", choices: ["1/(2√x)", "2√x", "√x", "1/√x"], correct: 0, hint: "(x^{1/2})' = (1/2)x^{-1/2} = 1/(2√x).", explain: "1/(2√x)." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1081,6 +1100,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: lim(x→3) (x² - 9)/(x - 3) =", choices: ["6", "3", "0", "không tồn tại"], correct: 0, hint: "(x²-9)/(x-3) = x+3 → 6 khi x→3.", explain: "6." },
       { type: "mc", prompt: "Câu 7: lim(3^n/2^n) khi n→∞ =", choices: ["∞", "0", "1", "3/2"], correct: 0, hint: "3/2 > 1 nên (3/2)^n → ∞.", explain: "∞." },
       { type: "mc", prompt: "Câu 8: Hàm số f(x) có lim(x→x0) f(x) = L nghĩa là:", choices: ["Khi x gần x0 thì f(x) gần L", "f(x0) = L", "f(x) = L với mọi x", "Không có nghĩa"], correct: 0, hint: "Định nghĩa giới hạn hàm số.", explain: "Khi x gần x0 thì f(x) gần L." },
+    ],
+  },
+
+  {
+    id: "g11-ch5-quiz",
+    num: 108,
+    chapter: 5,
+    title: "Chương 5: Đạo hàm - Trắc nghiệm",
+    summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Đạo hàm của y = x² là?", choices: ["2x", "x", "2", "x²"], correct: 0, hint: "(x²)' = 2x.", explain: "2x." },
+      { type: "mc", prompt: "Câu 2: Đạo hàm của y = sin(x) là?", choices: ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"], correct: 0, hint: "(sin x)' = cos x.", explain: "cos(x)." },
+      { type: "text", prompt: "Tính đạo hàm của y = x³ + 2x².", answer: "3x² + 4x", accept: ["3x² + 4x", "3x^2 + 4x"], hint: "(x³)' = 3x², (2x²)' = 4x.", explain: "3x² + 4x." },
+      { type: "mc", prompt: "Câu 4: Đạo hàm của y = cos(x) là?", choices: ["-sin(x)", "sin(x)", "cos(x)", "-cos(x)"], correct: 0, hint: "(cos x)' = -sin x.", explain: "-sin(x)." },
+      { type: "mc", prompt: "Câu 5: Đạo hàm của y = 1/x là?", choices: ["-1/x²", "1/x²", "ln|x|", "x"], correct: 0, hint: "(x^{-1})' = -x^{-2} = -1/x².", explain: "-1/x²." },
+      { type: "mc", prompt: "Câu 6: Đạo hàm của y = e^x là?", choices: ["e^x", "xe^{x-1}", "ln(x)", "1"], correct: 0, hint: "(e^x)' = e^x.", explain: "e^x." },
+      { type: "mc", prompt: "Câu 7: Đạo hàm của y = ln(x) là?", choices: ["1/x", "ln|x|", "e^x", "x"], correct: 0, hint: "(ln x)' = 1/x.", explain: "1/x." },
+      { type: "mc", prompt: "Câu 8: Đạo hàm của y = √x là?", choices: ["1/(2√x)", "2√x", "√x", "1/√x"], correct: 0, hint: "(x^{1/2})' = (1/2)x^{-1/2} = 1/(2√x).", explain: "1/(2√x)." },
     ],
   },
 ];
