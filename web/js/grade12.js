@@ -242,6 +242,25 @@ const G12_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
     ],
   },
+
+  {
+    id: "g12-ch7-quiz",
+    num: 109,
+    chapter: 7,
+    title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
+      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
+      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0,0), B(1,2,3), C(4,5,6).", answer: "32", accept: ["32"], hint: "AB=(1,2,3), AC=(4,5,6). AB·AC = 4+10+18 = 32.", explain: "32." },
+      { type: "mc", prompt: "Câu 4: Phương trình mặt cầu tâm I(1,2,3), bán kính 5 là?", choices: ["(x-1)²+(y-2)²+(z-3)²=25", "(x+1)²+(y+2)²+(z+3)²=25", "(x-1)²+(y-2)²+(z-3)²=5", "(x-1)²+(y-2)²+(z-3)²=10"], correct: 0, hint: "(x-x₀)²+(y-y₀)²+(z-z₀)²=R².", explain: "(x-1)²+(y-2)²+(z-3)²=25." },
+      { type: "mc", prompt: "Câu 5: Mặt phẳng (P): 2x - 3y + 6z - 14 = 0 có vector pháp tuyến là?", choices: ["(2,-3,6)", "(2,3,6)", "(-2,3,-6)", "(1,-3/2,3)"], correct: 0, hint: "n = (A,B,C) từ Ax+By+Cz+D=0.", explain: "(2,-3,6)." },
+      { type: "mc", prompt: "Câu 6: Đường thẳng qua A(1,2,3) và có vector chỉ phương u=(4,5,6) có phương trình là?", choices: ["(x-1)/4 = (y-2)/5 = (z-3)/6", "(x+1)/4 = (y+2)/5 = (z+3)/6", "(x-4)/1 = (y-5)/2 = (z-6)/3", "4x+5y+6z=0"], correct: 0, hint: "(x-x₀)/a = (y-y₀)/b = (z-z₀)/c.", explain: "(x-1)/4 = (y-2)/5 = (z-3)/6." },
+      { type: "mc", prompt: "Câu 7: Hai vector (1,2,3) và (4,5,6) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
+      { type: "mc", prompt: "Câu 8: Khoảng cách từ điểm A(1,2,3) đến mặt phẳng x + y + z - 6 = 0 là?", choices: ["0", "√3", "3", "6"], correct: 0, hint: "d = |1+2+3-6|/√(1+1+1) = 0/√3 = 0.", explain: "0." },
+    ],
+  },
 ];
 
 const G12_LESSONS = [
@@ -1375,6 +1394,25 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Câu 6: Thể tích hình cầu bán kính R là?", choices: ["(4/3)πR³", "4πR³", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
       { type: "mc", prompt: "Câu 7: Hình nón có bán kính 4, đường sinh 5. Diện tích xung quanh là?", choices: ["20π", "16π", "25π", "40π"], correct: 0, hint: "S_xq = π × 4 × 5 = 20π.", explain: "20π." },
       { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
+    ],
+  },
+
+  {
+    id: "g12-ch7-quiz",
+    num: 109,
+    chapter: 7,
+    title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
+      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
+      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0,0), B(1,2,3), C(4,5,6).", answer: "32", accept: ["32"], hint: "AB=(1,2,3), AC=(4,5,6). AB·AC = 4+10+18 = 32.", explain: "32." },
+      { type: "mc", prompt: "Câu 4: Phương trình mặt cầu tâm I(1,2,3), bán kính 5 là?", choices: ["(x-1)²+(y-2)²+(z-3)²=25", "(x+1)²+(y+2)²+(z+3)²=25", "(x-1)²+(y-2)²+(z-3)²=5", "(x-1)²+(y-2)²+(z-3)²=10"], correct: 0, hint: "(x-x₀)²+(y-y₀)²+(z-z₀)²=R².", explain: "(x-1)²+(y-2)²+(z-3)²=25." },
+      { type: "mc", prompt: "Câu 5: Mặt phẳng (P): 2x - 3y + 6z - 14 = 0 có vector pháp tuyến là?", choices: ["(2,-3,6)", "(2,3,6)", "(-2,3,-6)", "(1,-3/2,3)"], correct: 0, hint: "n = (A,B,C) từ Ax+By+Cz+D=0.", explain: "(2,-3,6)." },
+      { type: "mc", prompt: "Câu 6: Đường thẳng qua A(1,2,3) và có vector chỉ phương u=(4,5,6) có phương trình là?", choices: ["(x-1)/4 = (y-2)/5 = (z-3)/6", "(x+1)/4 = (y+2)/5 = (z+3)/6", "(x-4)/1 = (y-5)/2 = (z-6)/3", "4x+5y+6z=0"], correct: 0, hint: "(x-x₀)/a = (y-y₀)/b = (z-z₀)/c.", explain: "(x-1)/4 = (y-2)/5 = (z-3)/6." },
+      { type: "mc", prompt: "Câu 7: Hai vector (1,2,3) và (4,5,6) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
+      { type: "mc", prompt: "Câu 8: Khoảng cách từ điểm A(1,2,3) đến mặt phẳng x + y + z - 6 = 0 là?", choices: ["0", "√3", "3", "6"], correct: 0, hint: "d = |1+2+3-6|/√(1+1+1) = 0/√3 = 0.", explain: "0." },
     ],
   },
 ];
