@@ -428,7 +428,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khô
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1582,6 +1586,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số y = tan2x xác định khi", choices: ["x ≠ π/4 + kπ/2", "x ≠ π/2 + kπ", "x ≠ kπ/2", "x ≠ π/4 + kπ"], correct: 0, hint: "cos2x ≠ 0 → 2x ≠ π/2 + kπ → x ≠ π/4 + kπ/2.", explain: "x ≠ π/4 + kπ/2." },
       { type: "mc", prompt: "Hàm số y = √(1 − cosx) xác định khi", choices: ["x ≠ k2π", "x = k2π", "x ≠ π + k2π", "x ∈ ℝ"], correct: 1, hint: "1 − cosx ≥ 0 luôn đúng, nhưng = 0 khi cosx = 1 → x = k2π.", explain: "x = k2π." },

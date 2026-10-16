@@ -394,7 +394,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
+    body: 
+    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+
+    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
         <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
@@ -1614,6 +1618,11 @@ String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, l�
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "Thể tích hình hộp chữ nhật 2×3×4 là?", choices: ["12", "24", "36", "48"], correct: 1, hint: "V=abc.", explain: "24." },
       { type: "mc", prompt: "Thể tích hình chóp có đáy diện tích 9, chiều cao 6 là?", choices: ["9", "18", "27", "54"], correct: 1, hint: "V=(1/3)×9×6.", explain: "18." },
@@ -1630,6 +1639,8 @@ exercises: [
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
     body: 
+    <div class="memory"><p><strong>Key point:</strong> Ghi nhớ điều quan trọng.</p></div>
+
     <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
