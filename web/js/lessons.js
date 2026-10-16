@@ -13,6 +13,37 @@ const CHAPTERS = [
   { id: 8, title: "Xác suất của biến cố trong một số mô hình xác suất đơn giản" },
   { id: 9, title: "Đường tròn ngoại tiếp và đường tròn nội tiếp" },
   { id: 10, title: "Một số hình khối trong thực tiễn" },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 const LESSONS = [
@@ -4223,6 +4254,37 @@ const LESSONS = [
       { type: "num", prompt: "Đường kính 6. R bằng bao nhiêu?", answer: 3, hint: "Chia đôi.", explain: "3. Đừng thế 6 vào R." },
     ],
   },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 function courseStub(grade, level) {
@@ -4249,6 +4311,37 @@ const G8_CHAPTERS = [
   { id: 8, title: "Mở đầu về tính xác suất của biến cố" },
   { id: 9, title: "Tam giác đồng dạng" },
   { id: 10, title: "Một số hình khối trong thực tiễn" },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 const G8_LESSONS = [
@@ -8249,6 +8342,37 @@ const G8_LESSONS = [
     ]
   },
 
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 const G10_CHAPTERS = [
@@ -8262,6 +8386,37 @@ const G10_CHAPTERS = [
   { id: 8, title: "Cung và góc lượng giác" },
   { id: 9, title: "Hệ tọa độ" },
   { id: 10, title: "Đường thẳng" },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 const G10_LESSONS = [
@@ -9891,6 +10046,37 @@ const G10_LESSONS = [
       { type: "num", prompt: "P(A) = 0.6 ⇒ P(A') =", answer: "0.4", accept: ["0.4", ".4"], hint: "1 - 0.6 = 0.4.", explain: "0.4." },
     ],
   },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
+  },
 ];
 
 const COURSES = [
@@ -9954,5 +10140,36 @@ const COURSES = [
     blurb: "Bài học mới đang được thêm dần.",
     chapters: G11_CHAPTERS,
     lessons: G11_LESSONS,
+  },
+
+  {
+    id: "g8-exam-ch1",
+    num: 101,
+    chapter: 1,
+    title: "Đề kiểm tra Chương 1: Phép nhân và chia đa thức",
+    summary: "Đề kiểm tra 45 phút chương Phép nhân và chia đa thức.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: (x + 2)² =", choices: ["x² + 4x + 4", "x² + 2x + 4", "x² + 4", "x² + 4x + 2"], correct: 0, hint: "(a+b)² = a² + 2ab + b².", explain: "x² + 4x + 4." },
+      { type: "mc", prompt: "Câu 2: (x - 3)(x + 3) =", choices: ["x² - 9", "x² + 9", "x² - 6x + 9", "x² + 6x + 9"], correct: 0, hint: "(a-b)(a+b) = a² - b².", explain: "x² - 9." },
+      { type: "text", prompt: "Rút gọn biểu thức 2x(x - 3) + 3(x - 3).", answer: "(2x + 3)(x - 3)", accept: ["(2x + 3)(x - 3)", "2x² - 3x - 9"], hint: "2x(x-3) + 3(x-3) = (2x+3)(x-3) = 2x² - 6x + 3x - 9 = 2x² - 3x - 9.", explain: "2x² - 3x - 9." },
+      { type: "mc", prompt: "Câu 4: Chia đa thức (4x² + 2x) cho 2x được kết quả là?", choices: ["2x + 1", "2x + 2", "4x + 1", "x + 1"], correct: 0, hint: "(4x²)/2x = 2x, (2x)/2x = 1.", explain: "2x + 1." },
+    ],
+  },
+  {
+    id: "g8-exam-ch2",
+    num: 102,
+    chapter: 2,
+    title: "Đề kiểm tra Chương 2: Phân thức đại số",
+    summary: "Đề kiểm tra 45 phút chương Phân thức đại số.",
+    body: String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p>`,
+    pages: ["page1"],
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phân thức 3x/(6x²) rút gọn là?", choices: ["1/(2x)", "x/2", "1/2", "x"], correct: 0, hint: "3x/6x² = 1/(2x).", explain: "1/(2x)." },
+      { type: "mc", prompt: "Câu 2: (2/x) + (3/x) =", choices: ["5/x", "5/(2x)", "6/x²", "5x"], correct: 0, hint: "Cùng mẫu: (2+3)/x = 5/x.", explain: "5/x." },
+      { type: "text", prompt: "Tính (x+1)/(x-1) - (x-1)/(x-1).", answer: "2/(x-1)", accept: ["2/(x-1)", "2/(x-1)"], hint: "(x+1 - (x-1))/(x-1) = 2/(x-1).", explain: "2/(x-1)." },
+      { type: "mc", prompt: "Câu 4: ĐKXĐ của phân thức (x+2)/(x²-4) là?", choices: ["x ≠ ±2", "x ≠ 2", "x ≠ -2", "x ≠ 0"], correct: 0, hint: "x²-4 = (x-2)(x+2) ≠ 0 → x ≠ ±2.", explain: "x ≠ ±2." },
+    ],
   },
 ];
