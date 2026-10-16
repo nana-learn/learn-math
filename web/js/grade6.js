@@ -3168,6 +3168,8 @@ const G6_LESSONS = [
     num: 41,
     chapter: 7,
     title: "Nhân số thập phân",
+    spoken: "Bài học Nhân số thập phân... (đọc để nắm vững kiến thức)",
+
     youtube: "dQw4w9WgXcQ",
 
     summary: "Nhân số thập phân: nhân như số tự nhiên, đếm số chữ số sau dấu phẩy.",
