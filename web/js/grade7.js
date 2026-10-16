@@ -115,6 +115,25 @@ const G7_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: Số vô tỉ là?", choices: ["Không viết được thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không viết được thành phân số." },
     ],
   },
+
+  {
+    id: "g7-ch7-quiz",
+    num: 105,
+    chapter: 7,
+    title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
+      { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
+      { type: "mc", prompt: "Câu 3: Phép đối xứng trục d biến điểm M thành M' thì:", choices: ["d là trung trực của MM'", "d đi qua trung điểm MM'", "MM' song song d", "MM' vuông góc d tại một điểm"], correct: 0, hint: "Đối xứng trục: d là trung trực MM'.", explain: "d là trung trực của MM'." },
+      { type: "mc", prompt: "Câu 4: Phép vị tự tâm O, tỉ số k biến điểm M thành M' thì:", choices: ["Vector OM' = k·vector OM", "Vector OM' = (1/k)·vector OM", "OM' = k + OM", "OM' = |k|·OM"], correct: 0, hint: "OM' = k·OM (cùng phương).", explain: "Vector OM' = k·vector OM." },
+      { type: "mc", prompt: "Câu 5: Phép dời hình bảo toàn:", choices: ["Khoảng cách giữa hai điểm", "Góc giữa hai đường thẳng", "Độ dài đoạn thẳng", "Cả A và C"], correct: 0, hint: "Dời hình bảo toàn khoảng cách và độ dài.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Phép đồng dạng tỉ số k biến đoạn thẳng AB thành A'B' thì:", choices: ["A'B' = |k|·AB", "A'B' = k·AB", "A'B' = AB/k", "A'B' = AB"], correct: 0, hint: "Độ dài nhân với |k|.", explain: "A'B' = |k|·AB." },
+      { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
+      { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
+    ],
+  },
 ];
 
 const G7_LESSONS = [
@@ -2990,6 +3009,25 @@ const G7_LESSONS = [
       { type: "mc", prompt: "Câu 2: |−3| =", choices: ["3", "-3", "0", "1/3"], correct: 0, hint: "Giá trị tuyệt đối luôn ≥ 0.", explain: "3." },
       { type: "text", prompt: "Tính √2 × √8.", answer: "4", accept: ["4"], hint: "√2 × √8 = √16 = 4.", explain: "4." },
       { type: "mc", prompt: "Câu 4: Số vô tỉ là?", choices: ["Không viết được thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không viết được thành phân số." },
+    ],
+  },
+
+  {
+    id: "g7-ch7-quiz",
+    num: 105,
+    chapter: 7,
+    title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phép tịnh tiến theo vector v biến điểm M thành M' thì:", choices: ["Vector MM' = vector v", "Vector M'M = vector v", "MM' = |v|", "MM' vuông góc v"], correct: 0, hint: "MM' = v.", explain: "Vector MM' = vector v." },
+      { type: "mc", prompt: "Câu 2: Phép quay tâm O, góc 90° biến điểm M thành M' thì:", choices: ["OM = OM' và góc MOM' = 90°", "OM = OM' và góc MOM' = 180°", "MM' vuông góc OM", "OM = 2·OM'"], correct: 0, hint: "Quay 90°: OM = OM', góc = 90°.", explain: "OM = OM' và góc MOM' = 90°." },
+      { type: "mc", prompt: "Câu 3: Phép đối xứng trục d biến điểm M thành M' thì:", choices: ["d là trung trực của MM'", "d đi qua trung điểm MM'", "MM' song song d", "MM' vuông góc d tại một điểm"], correct: 0, hint: "Đối xứng trục: d là trung trực MM'.", explain: "d là trung trực của MM'." },
+      { type: "mc", prompt: "Câu 4: Phép vị tự tâm O, tỉ số k biến điểm M thành M' thì:", choices: ["Vector OM' = k·vector OM", "Vector OM' = (1/k)·vector OM", "OM' = k + OM", "OM' = |k|·OM"], correct: 0, hint: "OM' = k·OM (cùng phương).", explain: "Vector OM' = k·vector OM." },
+      { type: "mc", prompt: "Câu 5: Phép dời hình bảo toàn:", choices: ["Khoảng cách giữa hai điểm", "Góc giữa hai đường thẳng", "Độ dài đoạn thẳng", "Cả A và C"], correct: 0, hint: "Dời hình bảo toàn khoảng cách và độ dài.", explain: "Cả A và C." },
+      { type: "mc", prompt: "Câu 6: Phép đồng dạng tỉ số k biến đoạn thẳng AB thành A'B' thì:", choices: ["A'B' = |k|·AB", "A'B' = k·AB", "A'B' = AB/k", "A'B' = AB"], correct: 0, hint: "Độ dài nhân với |k|.", explain: "A'B' = |k|·AB." },
+      { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
+      { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
   },
 ];
