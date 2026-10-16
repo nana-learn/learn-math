@@ -185,6 +185,25 @@ const G12_CHAPTERS = [
       { type: "mc", prompt: "Câu 4: ∫sin(2x) dx =", choices: ["-(1/2)cos(2x) + C", "(1/2)cos(2x) + C", "-cos(2x) + C", "cos(2x) + C"], correct: 0, hint: "(-1/2 cos(2x))' = sin(2x).", explain: "-(1/2)cos(2x) + C." },
     ],
   },
+
+  {
+    id: "g12-ch4-quiz",
+    num: 106,
+    chapter: 4,
+    title: "Chương 4: Số phức - Trắc nghiệm",
+    summary: "Luyện tập số phức, phép toán, biểu diễn.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
+      { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
+      { type: "text", prompt: "Tính (3 + 2i)(3 - 2i).", answer: "13", accept: ["13"], hint: "(a+bi)(a-bi) = a² + b² = 9 + 4 = 13.", explain: "13." },
+      { type: "mc", prompt: "Câu 4: |2 + 3i| =", choices: ["√13", "√5", "13", "5"], correct: 0, hint: "|a+bi| = √(a²+b²) = √(4+9) = √13.", explain: "√13." },
+      { type: "mc", prompt: "Câu 5: Số phức liên hợp của 1 - 2i là?", choices: ["1 + 2i", "-1 + 2i", "1 - 2i", "-1 - 2i"], correct: 0, hint: "Đổi dấu phần ảo.", explain: "1 + 2i." },
+      { type: "mc", prompt: "Câu 6: (1 + i)² =", choices: ["2i", "1 + 2i", "2", "1 - 2i"], correct: 0, hint: "1 + 2i + i² = 1 + 2i - 1 = 2i.", explain: "2i." },
+      { type: "mc", prompt: "Câu 7: z = 3 - 4i có tọa độ trên mặt phẳng phức là?", choices: ["(3,-4)", "(3,4)", "(-3,4)", "(-3,-4)"], correct: 0, hint: "Trục hoành: phần thực, trục tung: phần ảo.", explain: "(3,-4)." },
+      { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
+    ],
+  },
 ];
 
 const G12_LESSONS = [
@@ -1261,6 +1280,25 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Câu 2: ∫₁² x dx =", choices: ["3/2", "2", "1", "5/2"], correct: 0, hint: "[x²/2]₁² = 2 - 1/2 = 3/2.", explain: "3/2." },
       { type: "text", prompt: "Tính diện tích hình phẳng giới hạn y=x², x=0, x=1.", answer: "1/3", accept: ["1/3", "0.333"], hint: "∫₀¹ x² dx = [x³/3]₀¹ = 1/3.", explain: "1/3." },
       { type: "mc", prompt: "Câu 4: ∫sin(2x) dx =", choices: ["-(1/2)cos(2x) + C", "(1/2)cos(2x) + C", "-cos(2x) + C", "cos(2x) + C"], correct: 0, hint: "(-1/2 cos(2x))' = sin(2x).", explain: "-(1/2)cos(2x) + C." },
+    ],
+  },
+
+  {
+    id: "g12-ch4-quiz",
+    num: 106,
+    chapter: 4,
+    title: "Chương 4: Số phức - Trắc nghiệm",
+    summary: "Luyện tập số phức, phép toán, biểu diễn.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
+      { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
+      { type: "text", prompt: "Tính (3 + 2i)(3 - 2i).", answer: "13", accept: ["13"], hint: "(a+bi)(a-bi) = a² + b² = 9 + 4 = 13.", explain: "13." },
+      { type: "mc", prompt: "Câu 4: |2 + 3i| =", choices: ["√13", "√5", "13", "5"], correct: 0, hint: "|a+bi| = √(a²+b²) = √(4+9) = √13.", explain: "√13." },
+      { type: "mc", prompt: "Câu 5: Số phức liên hợp của 1 - 2i là?", choices: ["1 + 2i", "-1 + 2i", "1 - 2i", "-1 - 2i"], correct: 0, hint: "Đổi dấu phần ảo.", explain: "1 + 2i." },
+      { type: "mc", prompt: "Câu 6: (1 + i)² =", choices: ["2i", "1 + 2i", "2", "1 - 2i"], correct: 0, hint: "1 + 2i + i² = 1 + 2i - 1 = 2i.", explain: "2i." },
+      { type: "mc", prompt: "Câu 7: z = 3 - 4i có tọa độ trên mặt phẳng phức là?", choices: ["(3,-4)", "(3,4)", "(-3,4)", "(-3,-4)"], correct: 0, hint: "Trục hoành: phần thực, trục tung: phần ảo.", explain: "(3,-4)." },
+      { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
     ],
   },
 ];
