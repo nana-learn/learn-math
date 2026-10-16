@@ -204,6 +204,25 @@ const G12_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
     ],
   },
+
+  {
+    id: "g12-ch5-quiz",
+    num: 107,
+    chapter: 5,
+    title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
+      { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
+      { type: "text", prompt: "Tính thể tích hình lập phương cạnh 3cm.", answer: "27cm³", accept: ["27cm³", "27"], hint: "V = 3³ = 27cm³.", explain: "27cm³." },
+      { type: "mc", prompt: "Câu 4: Thể tích lăng trụ có diện tích đáy S, chiều cao h là?", choices: ["Sh", "(1/3)Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = S × h.", explain: "Sh." },
+      { type: "mc", prompt: "Câu 5: Hình chóp đều có đáy là hình vuông cạnh a, chiều cao h. Thể tích là?", choices: ["(1/3)a²h", "(1/3)ah²", "a²h", "ah"], correct: 0, hint: "S đáy = a², V = 1/3 × a² × h.", explain: "(1/3)a²h." },
+      { type: "mc", prompt: "Câu 6: Hai khối chóp có cùng diện tích đáy, chiều cao gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 7: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
+      { type: "mc", prompt: "Câu 8: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
+    ],
+  },
 ];
 
 const G12_LESSONS = [
@@ -1299,6 +1318,25 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Câu 6: (1 + i)² =", choices: ["2i", "1 + 2i", "2", "1 - 2i"], correct: 0, hint: "1 + 2i + i² = 1 + 2i - 1 = 2i.", explain: "2i." },
       { type: "mc", prompt: "Câu 7: z = 3 - 4i có tọa độ trên mặt phẳng phức là?", choices: ["(3,-4)", "(3,4)", "(-3,4)", "(-3,-4)"], correct: 0, hint: "Trục hoành: phần thực, trục tung: phần ảo.", explain: "(3,-4)." },
       { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
+    ],
+  },
+
+  {
+    id: "g12-ch5-quiz",
+    num: 107,
+    chapter: 5,
+    title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
+      { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
+      { type: "text", prompt: "Tính thể tích hình lập phương cạnh 3cm.", answer: "27cm³", accept: ["27cm³", "27"], hint: "V = 3³ = 27cm³.", explain: "27cm³." },
+      { type: "mc", prompt: "Câu 4: Thể tích lăng trụ có diện tích đáy S, chiều cao h là?", choices: ["Sh", "(1/3)Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = S × h.", explain: "Sh." },
+      { type: "mc", prompt: "Câu 5: Hình chóp đều có đáy là hình vuông cạnh a, chiều cao h. Thể tích là?", choices: ["(1/3)a²h", "(1/3)ah²", "a²h", "ah"], correct: 0, hint: "S đáy = a², V = 1/3 × a² × h.", explain: "(1/3)a²h." },
+      { type: "mc", prompt: "Câu 6: Hai khối chóp có cùng diện tích đáy, chiều cao gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
+      { type: "mc", prompt: "Câu 7: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
+      { type: "mc", prompt: "Câu 8: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
     ],
   },
 ];
