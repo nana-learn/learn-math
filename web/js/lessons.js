@@ -8760,8 +8760,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "AB + BC = ?", choices: ["AC", "CA", "AB", "BC"], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
+          exercises: [
+        { type: "mc", prompt: "Giải phương trình 2(x − 1) + 3 = 5.", choices: ["x = 2", "x = 1", "x = 3", "x = 0"], correct: 0, hint: "2x − 2 + 3 = 5 → 2x = 4 → x = 2.", explain: "x = 2." },
+        { type: "mc", prompt: "Phương trình 0x = 5 có nghiệm là", choices: ["Vô nghiệm", "x = 5", "x = 0", "Vô số nghiệm"], correct: 0, hint: "0 × x luôn bằng 0, không thể bằng 5.", explain: "Vô nghiệm." },
+        { type: "text", prompt: "Giải phương trình (x + 2)/3 = 4.", answer: "x = 10", accept: ["x = 10"], hint: "x + 2 = 12 → x = 10.", explain: "x = 10." },
+      ], correct: 0, hint: "Quy tắc tam giác.", explain: "AC." },
       { type: "mc", prompt: "AB + BA = ?", choices: ["0", "2AB", "AB", "BA"], correct: 0, hint: "AB và BA ngược nhau.", explain: "Vector không 0." },
       { type: "mc", prompt: "AB = (3, -2), BC = (-1, 4). AC bằng vectơ nào?", choices: ["(2, 2)", "(4, 2)", "(2, -6)", "(3, -2)"], correct: 0, hint: "Cộng từng tọa độ: 3 + (-1), -2 + 4.", explain: "(2, 2)." },
     ],
