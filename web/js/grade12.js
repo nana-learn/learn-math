@@ -152,6 +152,20 @@ const G12_LESSONS = [
     title: "Khảo sát sự biến thiên và vẽ đồ thị hàm số",
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.",
     body: String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="200" y1="20" x2="200" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="205" y="25" font-size="12">y</text>
+          <path d="M 50 150 Q 100 100 150 50 T 300 100" stroke="blue" fill="none" stroke-width="2"/>
+          <circle cx="150" cy="50" r="4" fill="red"/>
+          <line x1="80" y1="130" x2="250" y2="-20" stroke="green" stroke-width="2" stroke-dasharray="4,4"/>
+          <text x="255" y="-15" font-size="12">Tiếp tuyến</text>
+          <text x="160" y="45" font-size="12">M(x₀,f(x₀))</text>
+          <text x="20" y="20" font-size="14">Đường tiếp tuyến tại điểm M</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = x³ - 3x. Bước 1: MXĐ = ℝ. Bước 2: y' = 3x² - 3, y' = 0 ↔ x = ±1.</p>
       </div>
@@ -256,6 +270,19 @@ const G12_LESSONS = [
     title: "Hàm số mũ, hàm số logarit",
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
     body: String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="20" y1="20" x2="20" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="25" y="25" font-size="12">y</text>
+          <path d="M 30 170 Q 100 150 200 50 T 350 20" stroke="red" fill="none" stroke-width="2"/>
+          <path d="M 30 170 Q 100 160 200 130 T 350 100" stroke="blue" fill="none" stroke-width="2"/>
+          <text x="280" y="35" font-size="12">y = aˣ (a > 1)</text>
+          <text x="280" y="115" font-size="12">y = aˣ (0 < a < 1)</text>
+          <text x="20" y="20" font-size="14">Đồ thị hàm số mũ: tăng và giảm</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = aˣ: MXĐ ℝ, y > 0. a > 1: đồng biến. 0 < a < 1: nghịch biến. TCN y = 0.</p>
       </div>
@@ -401,6 +428,19 @@ const G12_LESSONS = [
     title: "Ứng dụng tích phân tính diện tích, thể tích",
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
     body: String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
+          <line x1="20" y1="180" x2="380" y2="180" stroke="#333" stroke-width="2"/>
+          <line x1="20" y1="20" x2="20" y2="180" stroke="#333" stroke-width="2"/>
+          <text x="370" y="175" font-size="12">x</text>
+          <text x="25" y="25" font-size="12">y</text>
+          <path d="M 50 150 Q 100 100 150 60 T 300 100" stroke="blue" fill="none" stroke-width="2"/>
+          <ellipse cx="100" cy="100" rx="20" ry="5" stroke="blue" fill="rgba(0,0,255,0.3)" stroke-width="2"/>
+          <ellipse cx="150" cy="60" rx="15" ry="4" stroke="blue" fill="rgba(0,0,255,0.3)" stroke-width="2"/>
+          <ellipse cx="250" cy="100" rx="25" ry="6" stroke="blue" fill="rgba(0,0,255,0.3)" stroke-width="2"/>
+          <text x="20" y="20" font-size="14">Khối tròn xoay: quanh trục Ox</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> Diện tích S = ∫ₐᵇ|f(x)|dx. Thể tích: V = π∫ₐᵇ[f(x)]²dx.</p>
       </div>
@@ -591,6 +631,16 @@ const G12_LESSONS = [
     title: "Phương trình mặt phẳng",
     summary: "Phương trình tổng quát của mặt phẳng.",
     body: String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
+          <polygon points="100,50 300,80 350,200 150,170" fill="rgba(100,200,100,0.4)" stroke="#333" stroke-width="2"/>
+          <line x1="250" y1="50" x2="250" y2="100" stroke="red" stroke-width="2"/>
+          <text x="260" y="75" font-size="12">n = (A,B,C)</text>
+          <circle cx="200" cy="100" r="4" fill="blue"/>
+          <text x="210" y="95" font-size="12">M(x₀,y₀,z₀)</text>
+          <text x="20" y="20" font-size="14">Phương trình mặt phẳng Ax+By+Cz+D=0</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> A(x-x₀)+B(y-y₀)+C(z-z₀)=0. Phương trình tổng quát: Ax+By+Cz+D=0.</p>
       </div>
@@ -617,6 +667,15 @@ const G12_LESSONS = [
     title: "Phương trình đường thẳng",
     summary: "Phương trình tham số và phương trình chính tắc.",
     body: String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
+          <line x1="50" y1="250" x2="350" y2="50" stroke="blue" stroke-width="2"/>
+          <circle cx="150" cy="150" r="4" fill="red"/>
+          <text x="160" y="145" font-size="12">M(x₀,y₀,z₀)</text>
+          <text x="280" y="45" font-size="12">Δ</text>
+          <text x="20" y="20" font-size="14">Đường thẳng trong không gian Oxyz</text>
+        </svg>
+      </div>
       <div class="example">
         <p><strong>Làm chậm.</strong> Phương trình tham số: x=x₀+at, y=y₀+bt, z=z₀+ct. Chính tắc: (x-x₀)/a=(y-y₀)/b=(z-z₀)/c.</p>
       </div>
