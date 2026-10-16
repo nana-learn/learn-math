@@ -659,10 +659,11 @@ const G7_LESSONS = [
         </svg>
       </figure>
     `,
-    exercises: [
-      { type: "num", prompt: "Hai đường song song, góc đồng vị 40°. Góc so le trong với góc ấy bằng bao nhiêu độ?", answer: 40, hint: "So le trong bằng đồng vị khi hai đường song song.", explain: "40°." },
-      { type: "num", prompt: "Hai góc trong cùng phía kề bù. Một góc 110°. Góc kia bao nhiêu độ?", answer: 70, hint: "180 − 110.", explain: "70°." },
-      { type: "mc", prompt: "Dấu hiệu nào kết luận hai đường thẳng song song?", choices: ["Một cặp góc đồng vị bằng nhau", "Hai góc nhọn", "Hai đường cùng cắt một đường thứ ba", "Có một góc vuông"], correct: 0, hint: "Đồng vị bằng nhau, hoặc so le trong bằng nhau.", explain: "Đó là dấu hiệu vừa học." },
+          exercises: [
+        { type: "mc", prompt: "Số thực bao gồm", choices: ["Số hữu tỉ và số vô tỉ", "Chỉ số hữu tỉ", "Chỉ số vô tỉ", "Số nguyên và số thập phân"], correct: 0, hint: "Tập R = Q ∪ I.", explain: "Số hữu tỉ và số vô tỉ." },
+        { type: "mc", prompt: "Số 0 là", choices: ["Số thực", "Số vô tỉ", "Số nguyên dương", "Không phải số thực"], correct: 0, hint: "0 là số hữu tỉ (0/1), nên là số thực.", explain: "Số thực." },
+        { type: "text", prompt: "Tìm số đối của √5.", answer: "-√5", accept: ["-√5"], hint: "Đổi dấu.", explain: "-√5." },
+      ], correct: 0, hint: "Đồng vị bằng nhau, hoặc so le trong bằng nhau.", explain: "Đó là dấu hiệu vừa học." },
       { type: "num", prompt: "Góc đồng vị 100°. Góc đồng vị khác bằng bao nhiêu độ?", answer: 100, hint: "Song song thì đồng vị bằng nhau.", explain: "100°." },
       { type: "mc", prompt: "Hai góc so le trong bằng 50° và 50°. Hai đường bị cắt", choices: ["Song song","Vuông góc","Trùng","Không nói được"], correct: 0, hint: "Dấu hiệu so le trong.", explain: "Song song." },
       { type: "num", prompt: "a ∥ b, góc so le trong 62°. Góc so le trong kia bằng bao nhiêu độ?", answer: 62, hint: "Bằng nhau.", explain: "62°." },
