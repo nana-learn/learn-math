@@ -221,6 +221,10 @@ const G7_LESSONS = [
     title: "Tập hợp các số hữu tỉ",
     summary: "Số hữu tỉ là số viết được thành phân số. Cùng một số có nhiều cách viết.", spoken: "Số hữu tỉ là số viết được dưới dạng a/b với a,b nguyên, b≠0.", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -302,6 +306,10 @@ String.raw`
     title: "Cộng, trừ, nhân, chia số hữu tỉ",
     summary: "Đưa về phân số có mẫu dương, rồi cộng trừ nhân chia như phân số đã học.", spoken: "Cộng trừ nhân chia số hữu tỉ: viết chung mẫu, rồi tính như phân số.", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -376,6 +384,10 @@ String.raw`
     title: "Luỹ thừa với số mũ tự nhiên",
     summary: "a^n là nhân a với chính nó n lần. Mũ 0 bằng 1 khi cơ số khác 0.", spoken: "Lũy thừa: a^n = a·a·...·a (n lần). a^0 = 1 (a≠0).", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -447,6 +459,10 @@ String.raw`
 
     summary: "Ngoặc trước, rồi mũ, rồi nhân chia, rồi cộng trừ. Chuyển vế thì đổi dấu.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -521,6 +537,10 @@ String.raw`
 
     summary: "Phân số thành thập phân: hoặc dừng, hoặc lặp một cụm chữ số.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -592,6 +612,10 @@ String.raw`
 
     summary: "Cạnh hình vuông diện tích 2 không hữu tỉ. √a là số không âm có bình phương bằng a.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -664,6 +688,10 @@ String.raw`
 
     summary: "Số thực gồm hữu tỉ và vô tỉ. Mỗi điểm trên trục số là một số thực.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -739,6 +767,10 @@ String.raw`
 
     summary: "Kề bù cộng 180°. Đối đỉnh bằng nhau. Phân giác cắt góc thành hai góc bằng nhau.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -827,6 +859,10 @@ String.raw`
 
     summary: "Song song thì không gặp nhau. Cắt bởi một cát tuyến: so le trong bằng nhau, đồng vị bằng nhau.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -918,6 +954,10 @@ String.raw`
 
     summary: "Qua một điểm ngoài một đường, có đúng một đường song song với đường ấy.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1006,6 +1046,10 @@ String.raw`
 
     summary: "Định lí có giả thiết và kết luận. Chứng minh là chuỗi lý do, không phải đo hình.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1075,6 +1119,10 @@ String.raw`
 
     summary: "Ba góc cộng 180°. Góc ngoài bằng tổng hai góc trong không kề với nó.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1162,6 +1210,10 @@ String.raw`
 
     summary: "Bằng nhau nghĩa là trùng khít. cgc: hai cạnh và góc xen giữa.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1259,6 +1311,10 @@ String.raw`
 
     summary: "gcg: hai góc và cạnh xen giữa. ccc: ba cạnh.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1354,6 +1410,10 @@ String.raw`
 
     summary: "Vuông rồi thì cạnh huyền và một cạnh góc vuông, hoặc cạnh huyền và một góc nhọn, cũng đủ.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1444,6 +1504,10 @@ String.raw`
 
     summary: "Hai cạnh bên bằng nhau thì hai góc đáy bằng nhau. Trung trực là tập điểm cách đều hai đầu đoạn.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1529,6 +1593,10 @@ String.raw`
 
     summary: "Dữ liệu rời rạc đếm được từng giá trị. Dữ liệu liên tục thì ghép nhóm.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1611,6 +1679,10 @@ String.raw`
 
     summary: "Cả vòng 360°. Mỗi phần lấy đúng tỉ lệ của nhóm ấy.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1695,6 +1767,10 @@ String.raw`
 
     summary: "Dùng khi dữ liệu theo thời gian. Đọc dốc để biết tăng hay giảm.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1801,6 +1877,10 @@ String.raw`
 
     summary: "a/b = c/d khi ad = bc. Nhân chéo để kiểm tra hoặc tìm số chưa biết.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1872,6 +1952,10 @@ String.raw`
 
     summary: "a/b = c/d = e/f thì mỗi tỉ số bằng tổng tử trên tổng mẫu.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1940,6 +2024,10 @@ String.raw`
 
     summary: "y tỉ lệ thuận với x khi y = kx, k không đổi. Tăng x thì y tăng cùng tỉ số.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2011,6 +2099,10 @@ String.raw`
 
     summary: "y tỉ lệ nghịch với x khi xy = k, k không đổi. Gấp x thì y giảm còn một nửa.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2082,6 +2174,10 @@ String.raw`
 
     summary: "Chữ thay số. Điều kiện là mẫu khác 0 và căn không âm.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2150,6 +2246,10 @@ String.raw`
 
     summary: "Đa thức là tổng các hạng tử ax^n. Bậc là số mũ lớn nhất có hệ số khác 0.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2216,6 +2316,10 @@ String.raw`
 
     summary: "Cộng trừ hạng tử đồng dạng. x² chỉ cộng với x², không cộng với x.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2287,6 +2391,10 @@ String.raw`
 
     summary: "Nhân từng hạng tử. (a+b)(c+d) = ac + ad + bc + bd.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2356,6 +2464,10 @@ String.raw`
 
     summary: "Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp lại.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2427,6 +2539,10 @@ String.raw`
 
     summary: "Phép thử có nhiều kết quả. Biến cố là tập một số kết quả ấy.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2505,6 +2621,10 @@ String.raw`
 
     summary: "P = số kết quả thuận lợi chia cho số kết quả đồng khả năng.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2582,6 +2702,10 @@ String.raw`
 
     summary: "Góc lớn hơn thì cạnh đối diện dài hơn. Hai góc bằng nhau thì hai cạnh đối diện bằng nhau.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2668,6 +2792,10 @@ String.raw`
 
     summary: "Vuông góc là đoạn ngắn nhất từ một điểm đến đường thẳng. Xiên dài hơn, xiên xa chân hơn thì dài hơn.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2760,6 +2888,10 @@ String.raw`
 
     summary: "Tổng hai cạnh lớn hơn cạnh còn lại. Hiệu hai cạnh nhỏ hơn cạnh còn lại.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2842,6 +2974,10 @@ String.raw`
 
     summary: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2913,6 +3049,10 @@ String.raw`
 
     summary: "Ba trung trực gặp nhau tại tâm đường tròn ngoại tiếp. Ba đường cao gặp nhau tại trực tâm.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -3004,6 +3144,10 @@ String.raw`
 
     summary: "Thể tích = dài × rộng × cao. Lập phương là hộp có mọi cạnh bằng nhau.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -3089,6 +3233,10 @@ String.raw`
 
     summary: "Hai đáy đa giác bằng nhau, mặt bên là hình chữ nhật. V = diện tích đáy × cao.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
