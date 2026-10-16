@@ -8273,6 +8273,8 @@ const G10_LESSONS = [
           exercises: [
         { type: "mc", prompt: "Khẳng định nào là mệnh đề?", choices: ["2 + 2 = 4", "Hãy giải bài này", "x + 1 = 3", "Trời hôm nay đẹp"], correct: 0, hint: "Mệnh đề là khẳng định đúng hoặc sai.", explain: "2 + 2 = 4." },
         { type: "mc", prompt: "Mệnh đề &quot;5 là số nguyên tố&quot; là", choices: ["Đúng", "Sai", "Không xác định", "Không phải mệnh đề"], correct: 0, hint: "5 chỉ chia hết cho 1 và chính nó.", explain: "Đúng." },
+        { type: "mc", prompt: "Kết quả của 2 + 2 là", choices: ["4", "5", "3", "6"], correct: 0, hint: "Cộng hai số.", explain: "2 + 2 = 4." },
+        { type: "text", prompt: "Viết phủ định của mệnh đề P: 2 + 2 = 4.", answer: "2 + 2 ≠ 4", accept: ["2 + 2 ≠ 4", "2 + 2 không bằng 4"], hint: "Dùng dấu ≠.", explain: "2 + 2 ≠ 4." },
     ],
   },
   {
