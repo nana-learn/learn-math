@@ -24,6 +24,9 @@ const G10_LESSONS = [
     title: "Mệnh đề",
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.",
     body: String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> "2 + 3 = 5" là khẳng định. Kiểm tra: 2+3=5 đúng. Vậy là mệnh đề đúng.</p>
+      </div>
       <div class="definition">
         <p><strong>Mệnh đề</strong> là một câu khẳng định có tính đúng hoặc sai.</p>
       </div>
@@ -81,6 +84,9 @@ const G10_LESSONS = [
     title: "Tập hợp",
     summary: "Tập hợp là nhóm các phần tử.",
     body: String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
+      <div class="example">
+        <p><strong>Làm chậm.</strong> A = {1, 2, 3} có 3 phần tử. B = {x ∈ ℝ | x² = 4} = {-2, 2}. Kiểm tra: -2 ∈ B, 2 ∈ B.</p>
+      </div>
       <div class="definition">
         <p><strong>Tập hợp</strong> gồm các phần tử.</p>
       </div>
