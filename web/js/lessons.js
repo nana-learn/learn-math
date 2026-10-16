@@ -9665,8 +9665,11 @@ const G10_LESSONS = [
       </figure>
 
     `,
-    exercises: [
-      { type: "mc", prompt: "Mẫu: 2, 4, 6, 8, 10. Số trung bình là?", choices: ["6", "5", "4", "7"], correct: 0, hint: "(2+4+6+8+10)/5 = 30/5 = 6.", explain: "6." },
+          exercises: [
+        { type: "mc", prompt: "AB · AC = 0 thì", choices: ["AB vuông góc AC", "AB song song AC", "AB = AC", "AB và AC cùng hướng"], correct: 0, hint: "Tích vô hướng bằng 0 khi vuông góc.", explain: "AB vuông góc AC." },
+        { type: "mc", prompt: "AB = (3, 0), AC = (0, 4). AB · AC =", choices: ["0", "12", "7", "25"], correct: 0, hint: "3·0 + 0·4 = 0.", explain: "0." },
+        { type: "text", prompt: "AB = (5, 12). |AB| =", answer: "13", accept: ["13"], hint: "|AB| = √(25 + 144) = 13.", explain: "13." },
+      ], correct: 0, hint: "(2+4+6+8+10)/5 = 30/5 = 6.", explain: "6." },
       { type: "mc", prompt: "Mẫu: 1, 2, 2, 3, 4, 5. Trung vị là?", choices: ["2.5", "2", "3", "2.25"], correct: 0, hint: "6 số, trung vị = (2+3)/2 = 2.5.", explain: "2.5." },
       { type: "num", prompt: "Mẫu: 3, 5, 7, 9, 11, 13. Số trung bình là", answer: "8", accept: ["8"], hint: "(3+5+7+9+11+13)/6 = 48/6 = 8.", explain: "8." },
     ],
