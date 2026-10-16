@@ -714,6 +714,11 @@ String.raw`
       <div class="example">
         <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
       </div>
+
+      <details class="check">
+        <summary>Tự kiểm tra</summary>
+        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
+      </details>
 exercises: [
       { type: "mc", prompt: "lim(1/n^2) =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n^2 → 0 khi n → ∞.", explain: "0." },
       { type: "mc", prompt: "lim(3^n / 2^n) =", choices: ["∞", "0", "3/2", "1"], correct: 0, hint: "3/2 > 1 nên (3/2)^n → ∞.", explain: "∞." },
