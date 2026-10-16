@@ -163,6 +163,8 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     pages: ["page1"],
     
       { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
+
+      { type: "mc", prompt: "Câu hỏi nâng cao", choices: ["A", "B", "C", "D"], correct: "C" },
 exercises: [
       { type: "mc", prompt: "Câu 1: Mệnh đề nào đúng?", choices: ["2+3=5", "2+3=6", "x²≥0 với mọi x", "Cả A và C"], correct: 3, hint: "2+3=5 đúng, x²≥0 luôn đúng.", explain: "Cả A và C." },
       { type: "mc", prompt: "Câu 2: Tập hợp A = {x∈Z | -2<x≤2} có bao nhiêu phần tử?", choices: ["4", "5", "3", "6"], correct: 0, hint: "A = {-1,0,1,2} → 4 phần tử.", explain: "4." },
