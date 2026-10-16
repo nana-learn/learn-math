@@ -189,6 +189,25 @@ const G11_CHAPTERS = [
       { type: "mc", prompt: "Câu 8: lim(1/n) khi n→∞ =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n → 0 khi n→∞.", explain: "0." },
     ],
   },
+
+  {
+    id: "g11-ch4-quiz",
+    num: 107,
+    chapter: 4,
+    title: "Chương 4: Giới hạn - Trắc nghiệm",
+    summary: "Luyện tập giới hạn dãy số, hàm số.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
+      { type: "text", prompt: "Tính lim(x→2) (x² - 4)/(x - 2).", answer: "4", accept: ["4"], hint: "(x²-4)/(x-2) = x+2 → 4 khi x→2.", explain: "4." },
+      { type: "mc", prompt: "Câu 4: lim(x→0) sin(x)/x =", choices: ["1", "0", "∞", "không tồn tại"], correct: 0, hint: "Giới hạn đặc biệt: sin(x)/x → 1.", explain: "1." },
+      { type: "mc", prompt: "Câu 5: lim(x→∞) 1/x =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/x → 0 khi x→∞.", explain: "0." },
+      { type: "mc", prompt: "Câu 6: lim(x→3) (x² - 9)/(x - 3) =", choices: ["6", "3", "0", "không tồn tại"], correct: 0, hint: "(x²-9)/(x-3) = x+3 → 6 khi x→3.", explain: "6." },
+      { type: "mc", prompt: "Câu 7: lim(3^n/2^n) khi n→∞ =", choices: ["∞", "0", "1", "3/2"], correct: 0, hint: "3/2 > 1 nên (3/2)^n → ∞.", explain: "∞." },
+      { type: "mc", prompt: "Câu 8: Hàm số f(x) có lim(x→x0) f(x) = L nghĩa là:", choices: ["Khi x gần x0 thì f(x) gần L", "f(x0) = L", "f(x) = L với mọi x", "Không có nghĩa"], correct: 0, hint: "Định nghĩa giới hạn hàm số.", explain: "Khi x gần x0 thì f(x) gần L." },
+    ],
+  },
 ];
 
 const G11_LESSONS = [
@@ -1043,6 +1062,25 @@ const G11_LESSONS = [
       { type: "mc", prompt: "Câu 6: Tổng n số hạng đầu cấp số cộng: S_n =", choices: ["n(u_1 + u_n)/2", "n·u_1·u_n", "n(u_1 - u_n)/2", "u_1 + (n-1)d"], correct: 0, hint: "Công thức tổng cấp số cộng.", explain: "n(u_1 + u_n)/2." },
       { type: "mc", prompt: "Câu 7: Dãy số u_n = 1/n là:", choices: ["Giảm", "Tăng", "Không đổi", "Biến thiên"], correct: 0, hint: "1 > 1/2 > 1/3 > ...", explain: "Giảm." },
       { type: "mc", prompt: "Câu 8: lim(1/n) khi n→∞ =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n → 0 khi n→∞.", explain: "0." },
+    ],
+  },
+
+  {
+    id: "g11-ch4-quiz",
+    num: 107,
+    chapter: 4,
+    title: "Chương 4: Giới hạn - Trắc nghiệm",
+    summary: "Luyện tập giới hạn dãy số, hàm số.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: lim(2n + 1)/(n + 3) khi n→∞ =", choices: ["2", "1", "3", "0"], correct: 0, hint: "Chia tử mẫu cho n: (2 + 1/n)/(1 + 3/n) → 2/1 = 2.", explain: "2." },
+      { type: "mc", prompt: "Câu 2: lim(1/2^n) khi n→∞ =", choices: ["0", "1", "1/2", "∞"], correct: 0, hint: "2^n → ∞ nên 1/2^n → 0.", explain: "0." },
+      { type: "text", prompt: "Tính lim(x→2) (x² - 4)/(x - 2).", answer: "4", accept: ["4"], hint: "(x²-4)/(x-2) = x+2 → 4 khi x→2.", explain: "4." },
+      { type: "mc", prompt: "Câu 4: lim(x→0) sin(x)/x =", choices: ["1", "0", "∞", "không tồn tại"], correct: 0, hint: "Giới hạn đặc biệt: sin(x)/x → 1.", explain: "1." },
+      { type: "mc", prompt: "Câu 5: lim(x→∞) 1/x =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/x → 0 khi x→∞.", explain: "0." },
+      { type: "mc", prompt: "Câu 6: lim(x→3) (x² - 9)/(x - 3) =", choices: ["6", "3", "0", "không tồn tại"], correct: 0, hint: "(x²-9)/(x-3) = x+3 → 6 khi x→3.", explain: "6." },
+      { type: "mc", prompt: "Câu 7: lim(3^n/2^n) khi n→∞ =", choices: ["∞", "0", "1", "3/2"], correct: 0, hint: "3/2 > 1 nên (3/2)^n → ∞.", explain: "∞." },
+      { type: "mc", prompt: "Câu 8: Hàm số f(x) có lim(x→x0) f(x) = L nghĩa là:", choices: ["Khi x gần x0 thì f(x) gần L", "f(x0) = L", "f(x) = L với mọi x", "Không có nghĩa"], correct: 0, hint: "Định nghĩa giới hạn hàm số.", explain: "Khi x gần x0 thì f(x) gần L." },
     ],
   },
 ];
