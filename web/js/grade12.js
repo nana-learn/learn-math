@@ -762,6 +762,51 @@ const G12_LESSONS = [
       { type: "mc", prompt: "Diện tích xung quanh hình lăng trụ tam giác đều cạnh đáy 4, chiều cao 5 là?", choices: ["20", "40", "60", "80"], correct: 2, hint: "Sₓq=12×5.", explain: "60." },
     ],
   },
+  {
+    id: "g12-ch1-quiz",
+    num: 99,
+    chapter: 1,
+    title: "Chương 1: Ứng dụng đạo hàm - Trắc nghiệm",
+    summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
+    body: String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
+      <div class="example">
+        <p><strong>Câu 1.</strong> Hàm số y = x³ - 3x đồng biến trên khoảng nào?</p>
+        <p>A. (-∞, -1) và (1, +∞)</p>
+        <p>B. (-1, 1)</p>
+        <p>C. (-∞, +∞)</p>
+        <p>D. (0, +∞)</p>
+      </div>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên?", choices: ["(-∞, -1) và (1, +∞)", "(-1, 1)", "(-∞, +∞)", "(0, +∞)"], correct: 0, hint: "y' = 3x² - 3 > 0 khi x < -1 hoặc x > 1.", explain: "Đồng biến trên (-∞, -1) và (1, +∞)." },
+      { type: "mc", prompt: "Câu 2: Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' = 4x(x² - 1) có 3 nghiệm.", explain: "3 cực trị." },
+      { type: "mc", prompt: "Câu 3: GTLN của y = -x² + 4x trên [0;3] là?", choices: ["0", "4", "3", "5"], correct: 1, hint: "f(0)=0, f(2)=4, f(3)=3.", explain: "GTLN = 4." },
+      { type: "mc", prompt: "Câu 4: Tiệm cận đứng của y = 1/(x-2) là?", choices: ["x = 0", "x = 2", "y = 0", "y = 2"], correct: 1, hint: "Mẫu = 0 khi x = 2.", explain: "x = 2." },
+      { type: "mc", prompt: "Câu 5: Đồ thị y = x³ - 3x có bao nhiêu điểm cực trị?", choices: ["0", "1", "2", "3"], correct: 2, hint: "y' = 3x² - 3 có 2 nghiệm.", explain: "2 cực trị." },
+      { type: "mc", prompt: "Câu 6: Số giao điểm của y = x² và y = 2x là?", choices: ["0", "1", "2", "3"], correct: 2, hint: "x² = 2x ↔ x(x-2)=0.", explain: "2 giao điểm." },
+      { type: "mc", prompt: "Câu 7: 2³·2⁴ bằng?", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "aᵐ·aⁿ = aᵐ⁺ⁿ.", explain: "2⁷." },
+      { type: "mc", prompt: "Câu 8: log₃27 bằng?", choices: ["3", "9", "27", "1/3"], correct: 0, hint: "3³ = 27.", explain: "3." },
+      { type: "mc", prompt: "Câu 9: ∫2x dx bằng?", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
+      { type: "mc", prompt: "Câu 10: Phần ảo của z = 5 - 3i là?", choices: ["5", "-3", "3", "-5"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-3." },
+    ],
+  },
+  {
+    id: "g12-ch4-quiz",
+    num: 100,
+    chapter: 4,
+    title: "Chương 4: Số phức - Trắc nghiệm",
+    summary: "Luyện tập số phức và phép toán.",
+    body: String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p>`,
+    exercises: [
+      { type: "mc", prompt: "Câu 1: Phần ảo của z = 3 - 4i là?", choices: ["3", "-4", "4", "-3"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-4." },
+      { type: "mc", prompt: "Câu 2: |2 + i| bằng?", choices: ["√3", "√5", "√4", "√6"], correct: 1, hint: "|z| = √(a²+b²).", explain: "√5." },
+      { type: "mc", prompt: "Câu 3: (1 + i)² =", choices: ["2i", "-2i", "2", "-2"], correct: 0, hint: "1 + 2i + i² = 2i.", explain: "2i." },
+      { type: "mc", prompt: "Câu 4: 1/i =", choices: ["i", "-i", "1", "-1"], correct: 1, hint: "1/i = i/i² = -i.", explain: "-i." },
+      { type: "mc", prompt: "Câu 5: Nghiệm của x² + 4 = 0 là?", choices: ["x = ±2", "x = ±2i", "x = ±4", "x = ±4i"], correct: 1, hint: "x² = -4.", explain: "x = ±2i." },
+      { type: "mc", prompt: "Câu 6: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 - i", "2 + i", "2 - i"], correct: 0, hint: "Cộng phần thực và phần ảo.", explain: "3 + i." },
+      { type: "mc", prompt: "Câu 7: (2 + i)(1 - i) =", choices: ["3 + i", "3 - i", "1 + 3i", "1 - 3i"], correct: 0, hint: "2 - 2i + i - i² = 3 + i.", explain: "3 + i." },
+      { type: "mc", prompt: "Câu 8: (3 + i)/(1 - i) =", choices: ["1 + 2i", "1 - 2i", "2 + i", "2 - i"], correct: 0, hint: "Nhân với 1+i.", explain: "1 + 2i." },
+    ],
+  },
 ];
 
 (function attachGrade12() {
