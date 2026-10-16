@@ -21,6 +21,10 @@ const G7_CHAPTERS = [
 
     summary: "Luyện tập số thập phân, phép toán.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -50,6 +54,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 
     summary: "Luyện tập số thực, căn bậc hai.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -79,6 +87,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 
     summary: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -108,6 +120,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
 
     summary: "Luyện tập thống kê, bảng, biểu đồ.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -138,6 +154,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
 
     summary: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -164,6 +184,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
 
     summary: "Đề kiểm tra 45 phút chương Số thực.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -191,6 +215,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -3321,6 +3349,10 @@ String.raw`
 
     summary: "Luyện tập số hữu tỉ, số thực, giá trị tuyệt đối.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -3350,6 +3382,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>

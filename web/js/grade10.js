@@ -246,6 +246,10 @@ const G10_LESSONS = [
     title: "Mệnh đề",
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -314,6 +318,10 @@ exercises: [
     title: "Tập hợp",
     summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -368,6 +376,10 @@ exercises: [
 
     summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -421,6 +433,10 @@ exercises: [
 
     summary: "Hợp, giao, hiệu của hai tập hợp.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -476,6 +492,10 @@ exercises: [
 
     summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -533,6 +553,10 @@ exercises: [
 
     summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -588,6 +612,10 @@ exercises: [
 
     summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -645,6 +673,10 @@ exercises: [
 
     summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -704,6 +736,10 @@ exercises: [
 
     summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -761,6 +797,10 @@ exercises: [
     title: "Vector trong mặt phẳng",
     summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.", youtube: "dQw4w9WgXcQ",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -819,6 +859,10 @@ exercises: [
 
     summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -884,6 +928,10 @@ exercises: [
 
     summary: "Hiệu AB - AC = CB (quy tắc trừ).",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -949,6 +997,10 @@ exercises: [
 
     summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1011,6 +1063,10 @@ exercises: [
 
     summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1069,6 +1125,10 @@ exercises: [
 
     summary: "Vector AB = (xB - xA, yB - yA).",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1131,6 +1191,10 @@ exercises: [
 
     summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1197,6 +1261,10 @@ exercises: [
 
     summary: "Sin, cos, tan của góc trong tam giác.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1259,6 +1327,10 @@ exercises: [
 
     summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1325,6 +1397,10 @@ exercises: [
 
     summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1389,6 +1465,10 @@ exercises: [
 
     summary: "Định lí cosin và định lí sin trong tam giác.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1451,6 +1531,10 @@ exercises: [
 
     summary: "Đường tròn được xác định bởi tâm và bán kính.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1509,6 +1593,10 @@ exercises: [
 
     summary: "Elip, parabol, hypebol là ba đường conic.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1574,6 +1662,10 @@ exercises: [
 
     summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1632,6 +1724,10 @@ exercises: [
 
     summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1696,6 +1792,10 @@ exercises: [
 
     summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1758,6 +1858,10 @@ exercises: [
 
     summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1821,6 +1925,10 @@ exercises: [
 
     summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1885,6 +1993,10 @@ exercises: [
 
     summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -1947,6 +2059,10 @@ exercises: [
 
     summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -2010,6 +2126,10 @@ exercises: [
 
     summary: "Xác suất của hợp, giao, và biến cố đối.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>

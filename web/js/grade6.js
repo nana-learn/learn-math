@@ -53,6 +53,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tậ
 
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -83,6 +87,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
 
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -113,6 +121,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
 
     summary: "Luyện tập phân số, phép toán phân số.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -143,6 +155,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
 
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -173,6 +189,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -203,6 +223,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
 
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -3769,6 +3793,10 @@ String.raw`
 
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>

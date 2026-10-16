@@ -63,6 +63,10 @@ const G9_CHAPTERS = [
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
@@ -89,6 +93,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
     body: 
+    <div class="trap">
+      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
+    </div>
+
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
