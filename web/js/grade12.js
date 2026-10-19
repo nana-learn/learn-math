@@ -18,7 +18,7 @@ const G12_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập lũy thừa, mũ, logarit.",
 
     youtube: "",
 
@@ -49,7 +49,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     num: 100,
     chapter: 3,
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập nguyên hàm, tích phân.",
 
     youtube: "",
 
@@ -80,7 +80,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     num: 101,
     chapter: 4,
     title: "Chương 4: Số phức - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập số phức, phép toán, biểu diễn.",
 
     youtube: "",
 
@@ -111,7 +111,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 102,
     chapter: 5,
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập thể tích hộp, chóp, lăng trụ.",
 
     youtube: "",
 
@@ -142,7 +142,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 103,
     chapter: 6,
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
 
     youtube: "",
 
@@ -173,7 +173,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     num: 104,
     chapter: 7,
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
 
     youtube: "",
 
@@ -204,7 +204,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     num: 105,
     chapter: 8,
     title: "Chương 8: Ôn tập - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập tổng hợp các chương.",
 
     youtube: "",
 
@@ -236,7 +236,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Applications of derivatives.",
 
     youtube: "",
 
@@ -266,7 +266,7 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
 
     youtube: "",
 
@@ -294,7 +294,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     num: 103,
     chapter: 3,
     title: "Đề kiểm tra Chương 3: Integrals",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Integrals.",
 
     youtube: "",
 
@@ -1032,7 +1032,7 @@ exercises: [
     title: "Lũy thừa",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, tính chất của lũy thừa.",
 
     youtube: "",
 
@@ -1076,7 +1076,7 @@ exercises: [
     title: "Logarit",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, tính chất của logarit.",
 
     youtube: "",
 
@@ -1120,7 +1120,7 @@ exercises: [
     title: "Hàm số mũ, hàm số logarit",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đồ thị, tính chất của hàm số mũ và logarit.",
 
     youtube: "",
 
@@ -1177,7 +1177,7 @@ exercises: [
     title: "Phương trình mũ, phương trình logarit",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Các phương pháp giải phương trình mũ và logarit.",
 
     youtube: "",
 
@@ -1221,7 +1221,7 @@ exercises: [
     title: "Bất phương trình mũ, bất phương trình logarit",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Giải bất phương trình mũ và logarit.",
 
     youtube: "",
 
@@ -1265,7 +1265,7 @@ exercises: [
     title: "Nguyên hàm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
 
     youtube: "",
 
@@ -1309,7 +1309,7 @@ exercises: [
     title: "Tích phân",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
 
     youtube: "",
 
@@ -1368,7 +1368,7 @@ exercises: [
     title: "Ứng dụng tích phân tính diện tích, thể tích",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tính diện tích hình phẳng và thể tích vật thể.",
 
     youtube: "",
 
@@ -1425,7 +1425,7 @@ exercises: [
     title: "Số phức và biểu diễn hình học",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, số phức liên hợp, môđun.",
 
     youtube: "",
 
@@ -1485,7 +1485,7 @@ exercises: [
     title: "Phép cộng và phép nhân các số phức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Cộng, trừ, nhân số phức.",
 
     youtube: "",
 
@@ -1529,7 +1529,7 @@ exercises: [
     title: "Phép chia các số phức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Chia số phức, số phức nghịch đảo.",
 
     youtube: "",
 
@@ -1573,7 +1573,7 @@ exercises: [
     title: "Phương trình bậc hai với hệ số thực",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
 
     youtube: "",
 
@@ -1617,7 +1617,7 @@ exercises: [
     title: "Tọa độ trong không gian",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
 
     youtube: "",
 
@@ -1679,7 +1679,7 @@ exercises: [
     title: "Phương trình mặt phẳng",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Phương trình tổng quát của mặt phẳng.",
 
     youtube: "",
 
@@ -1733,7 +1733,7 @@ exercises: [
     title: "Phương trình đường thẳng",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Phương trình tham số và phương trình chính tắc.",
 
     youtube: "",
 
@@ -1786,7 +1786,7 @@ exercises: [
     title: "Tích vô hướng và ứng dụng",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
 
     youtube: "",
 
@@ -1830,7 +1830,7 @@ exercises: [
     title: "Khối đa diện",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
 
     youtube: "",
 
@@ -1887,7 +1887,7 @@ exercises: [
     num: 99,
     chapter: 1,
     title: "Chương 1: Ứng dụng đạo hàm - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
 
     youtube: "",
 

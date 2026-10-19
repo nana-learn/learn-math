@@ -20,7 +20,7 @@ const G10_CHAPTERS = [
     num: 99,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất và bậc hai - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
 
     youtube: "",
 
@@ -51,7 +51,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     num: 100,
     chapter: 3,
     title: "Chương 3: Phương trình và hệ phương trình - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
 
     youtube: "",
 
@@ -82,7 +82,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     num: 101,
     chapter: 4,
     title: "Chương 4: Vectơ - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập vectơ, tổng, hiệu, tích với số.",
 
     youtube: "",
 
@@ -113,7 +113,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     num: 102,
     chapter: 5,
     title: "Chương 5: Tích vô hướng - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
 
     youtube: "",
 
@@ -145,7 +145,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tíc
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Mệnh đề, Tập hợp",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
 
     youtube: "",
 
@@ -175,7 +175,7 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất, bậc hai",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
 
     youtube: "",
 
@@ -746,7 +746,7 @@ exercises: [
     title: "Tập con và tập bằng nhau",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
 
     youtube: "",
 
@@ -804,7 +804,7 @@ exercises: [
     title: "Các phép toán tập hợp",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hợp, giao, hiệu của hai tập hợp.",
 
     youtube: "",
 
@@ -864,7 +864,7 @@ exercises: [
     title: "Bất đẳng thức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Bất đẳng thức là so sánh giữa hai biểu thức.",
 
     youtube: "",
 
@@ -924,7 +924,7 @@ exercises: [
     title: "Bất phương trình một ẩn",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Bất phương trình chứa ẩn cần tìm nghiệm.",
 
     youtube: "",
 
@@ -982,7 +982,7 @@ exercises: [
     title: "Dấu của nhị thức bậc nhất",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
 
     youtube: "",
 
@@ -1042,7 +1042,7 @@ exercises: [
     title: "Hàm số bậc hai",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
 
     youtube: "",
 
@@ -1104,7 +1104,7 @@ exercises: [
     title: "Dấu của tam thức bậc hai",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
 
     youtube: "",
 
@@ -1223,7 +1223,7 @@ exercises: [
     title: "Tổng và hiệu của hai vector",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
 
     youtube: "",
 
@@ -1291,7 +1291,7 @@ exercises: [
     title: "Hiệu của hai vector",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hiệu AB - AC = CB (quy tắc trừ).",
 
     youtube: "",
 
@@ -1359,7 +1359,7 @@ exercises: [
     title: "Tích của vector với một số",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
 
     youtube: "",
 
@@ -1424,7 +1424,7 @@ exercises: [
     title: "Hệ trục tọa độ",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
 
     youtube: "",
 
@@ -1485,7 +1485,7 @@ exercises: [
     title: "Tọa độ của vector",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Vector AB = (xB - xA, yB - yA).",
 
     youtube: "",
 
@@ -1550,7 +1550,7 @@ exercises: [
     title: "Biểu thức tọa độ của phép toán vector",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
 
     youtube: "",
 
@@ -1619,7 +1619,7 @@ exercises: [
     title: "Giá trị lượng giác của một góc từ 0° đến 180°",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Sin, cos, tan của góc trong tam giác.",
 
     youtube: "",
 
@@ -1684,7 +1684,7 @@ exercises: [
     title: "Tích vô hướng của hai vector",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "AB·AC = |AB|·|AC|·cos(angle BAC).",
 
     youtube: "",
 
@@ -1753,7 +1753,7 @@ exercises: [
     title: "Ứng dụng tích vô hướng vào tính độ dài và góc",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
 
     youtube: "",
 
@@ -1820,7 +1820,7 @@ exercises: [
     title: "Các hệ thức lượng trong tam giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định lí cosin và định lí sin trong tam giác.",
 
     youtube: "",
 
@@ -1885,7 +1885,7 @@ exercises: [
     title: "Đường tròn trong mặt phẳng tọa độ",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đường tròn được xác định bởi tâm và bán kính.",
 
     youtube: "",
 
@@ -1946,7 +1946,7 @@ exercises: [
     title: "Ba đường conic",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Elip, parabol, hypebol là ba đường conic.",
 
     youtube: "",
 
@@ -2014,7 +2014,7 @@ exercises: [
     title: "Quy tắc cộng và quy tắc nhân",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
 
     youtube: "",
 
@@ -2075,7 +2075,7 @@ exercises: [
     title: "Hoán vị, chỉnh hợp",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
 
     youtube: "",
 
@@ -2142,7 +2142,7 @@ exercises: [
     title: "Tổ hợp",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
 
     youtube: "",
 
@@ -2207,7 +2207,7 @@ exercises: [
     title: "Số gần đúng và sai số",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Số gần đúng luôn có sai số, cần biết quy tròn.",
 
     youtube: "",
 
@@ -2273,7 +2273,7 @@ exercises: [
     title: "Các số đặc trưng đo xu thế trung tâm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
 
     youtube: "",
 
@@ -2340,7 +2340,7 @@ exercises: [
     title: "Các số đặc trưng đo độ phân tán",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
 
     youtube: "",
 
@@ -2405,7 +2405,7 @@ exercises: [
     title: "Xác suất của biến cố trong một số trò chơi đơn giản",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
 
     youtube: "",
 
@@ -2471,7 +2471,7 @@ exercises: [
     title: "Xác suất của biến cố",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Xác suất của hợp, giao, và biến cố đối.",
 
     youtube: "",
 

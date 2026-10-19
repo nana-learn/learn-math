@@ -22,7 +22,7 @@ const G6_CHAPTERS = [
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
 
 
     youtube: "",
@@ -462,7 +462,7 @@ exercises: [
     title: "Chương 3: Phép chia - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập phép chia, chia hết, chia có dư.",
 
     youtube: "",
 
@@ -504,7 +504,7 @@ exercises: [
     title: "Chương 4: Hình học - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
 
     youtube: "",
 
@@ -544,7 +544,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
     title: "Chương 5: Phân số - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập phân số, phép toán phân số.",
 
     youtube: "",
 
@@ -584,7 +584,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
     title: "Chương 6: Số đo góc - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập đo góc, vẽ góc, số đo góc.",
 
     youtube: "",
 
@@ -624,7 +624,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập thể tích hình hộp chữ nhật.",
 
     youtube: "",
 
@@ -664,7 +664,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     title: "Chương 8: Diện tích - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
 
     youtube: "",
 
@@ -4327,7 +4327,7 @@ String.raw`
     title: "Chương 2: Tính chia hết - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập chia hết, ước, bội, số nguyên tố.",
 
     youtube: "",
 

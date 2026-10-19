@@ -12,7 +12,7 @@ const G9_CHAPTERS = [
     num: 99,
     chapter: 1,
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập căn bậc hai và căn bậc ba.",
 
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -41,7 +41,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn
     num: 100,
     chapter: 2,
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập hàm số bậc nhất y = ax + b.",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -73,7 +73,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Căn bậc hai.",
 
     youtube: "",
 
@@ -517,7 +517,7 @@ exercises: [
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
 
     youtube: "",
 
@@ -554,7 +554,7 @@ exercises: [
     num: 101,
     chapter: 3,
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
 
     youtube: "",
 

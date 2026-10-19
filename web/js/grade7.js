@@ -19,7 +19,7 @@ const G7_CHAPTERS = [
     title: "Chương 3: Số thập phân - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập số thập phân, phép toán.",
 
     youtube: "",
 
@@ -463,7 +463,7 @@ exercises: [
     title: "Chương 4: Số thực - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập số thực, căn bậc hai.",
 
     youtube: "",
 
@@ -502,7 +502,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
 
     youtube: "",
 
@@ -541,7 +541,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
     title: "Chương 6: Thống kê - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập thống kê, bảng, biểu đồ.",
 
     youtube: "",
 
@@ -581,7 +581,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     title: "Đề kiểm tra Chương 1: Số hữu tỉ",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Số hữu tỉ.",
 
     youtube: "",
 
@@ -620,7 +620,7 @@ exercises: [
     title: "Đề kiểm tra Chương 2: Số thực",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đề kiểm tra 45 phút chương Số thực.",
 
     youtube: "",
 
@@ -659,7 +659,7 @@ exercises: [
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
 
     youtube: "",
 
@@ -943,7 +943,7 @@ String.raw`
     title: "Thứ tự phép tính và chuyển vế",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Ngoặc trước, rồi mũ, rồi nhân chia, rồi cộng trừ. Chuyển vế thì đổi dấu.",
 
     youtube: "",
 
@@ -1025,7 +1025,7 @@ String.raw`
     title: "Số thập phân vô hạn tuần hoàn",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Phân số thành thập phân: hoặc dừng, hoặc lặp một cụm chữ số.",
 
     youtube: "",
 
@@ -1104,7 +1104,7 @@ String.raw`
     title: "Số vô tỉ và căn bậc hai số học",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Cạnh hình vuông diện tích 2 không hữu tỉ. √a là số không âm có bình phương bằng a.",
 
     youtube: "",
 
@@ -1184,7 +1184,7 @@ String.raw`
     title: "Tập hợp các số thực",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Số thực gồm hữu tỉ và vô tỉ. Mỗi điểm trên trục số là một số thực.",
 
     youtube: "",
 
@@ -1267,7 +1267,7 @@ String.raw`
     title: "Góc kề bù, đối đỉnh và tia phân giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Kề bù cộng 180°. Đối đỉnh bằng nhau. Phân giác cắt góc thành hai góc bằng nhau.",
 
     youtube: "",
 
@@ -1363,7 +1363,7 @@ String.raw`
     title: "Hai đường thẳng song song",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Song song thì không gặp nhau. Cắt bởi một cát tuyến: so le trong bằng nhau, đồng vị bằng nhau.",
 
     youtube: "",
 
@@ -1462,7 +1462,7 @@ String.raw`
     title: "Tiên đề Euclid và tính chất đường song song",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Qua một điểm ngoài một đường, có đúng một đường song song với đường ấy.",
 
     youtube: "",
 
@@ -1558,7 +1558,7 @@ String.raw`
     title: "Định lí và chứng minh định lí",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Định lí có giả thiết và kết luận. Chứng minh là chuỗi lý do, không phải đo hình.",
 
     youtube: "",
 
@@ -1635,7 +1635,7 @@ String.raw`
     title: "Tổng các góc trong một tam giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Ba góc cộng 180°. Góc ngoài bằng tổng hai góc trong không kề với nó.",
 
     youtube: "",
 
@@ -1730,7 +1730,7 @@ String.raw`
     title: "Hai tam giác bằng nhau. Trường hợp cạnh–góc–cạnh",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Bằng nhau nghĩa là trùng khít. cgc: hai cạnh và góc xen giữa.",
 
     youtube: "",
 
@@ -1835,7 +1835,7 @@ String.raw`
     title: "Trường hợp góc–cạnh–góc và cạnh–cạnh–cạnh",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "gcg: hai góc và cạnh xen giữa. ccc: ba cạnh.",
 
     youtube: "",
 
@@ -1938,7 +1938,7 @@ String.raw`
     title: "Trường hợp bằng nhau của tam giác vuông",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Vuông rồi thì cạnh huyền và một cạnh góc vuông, hoặc cạnh huyền và một góc nhọn, cũng đủ.",
 
     youtube: "",
 
@@ -2036,7 +2036,7 @@ String.raw`
     title: "Tam giác cân và đường trung trực",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hai cạnh bên bằng nhau thì hai góc đáy bằng nhau. Trung trực là tập điểm cách đều hai đầu đoạn.",
 
     youtube: "",
 
@@ -2130,7 +2130,7 @@ exercises: [
     title: "Thu thập và phân loại dữ liệu",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Dữ liệu rời rạc đếm được từng giá trị. Dữ liệu liên tục thì ghép nhóm.",
 
     youtube: "",
 
@@ -2220,7 +2220,7 @@ String.raw`
     title: "Biểu đồ hình quạt tròn",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Cả vòng 360°. Mỗi phần lấy đúng tỉ lệ của nhóm ấy.",
 
     youtube: "",
 
@@ -2312,7 +2312,7 @@ String.raw`
     title: "Biểu đồ đoạn thẳng",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Dùng khi dữ liệu theo thời gian. Đọc dốc để biết tăng hay giảm.",
 
     youtube: "",
 
@@ -2426,7 +2426,7 @@ String.raw`
     title: "Tỉ lệ thức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "a/b = c/d khi ad = bc. Nhân chéo để kiểm tra hoặc tìm số chưa biết.",
 
     youtube: "",
 
@@ -2505,7 +2505,7 @@ String.raw`
     title: "Dãy tỉ số bằng nhau",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "a/b = c/d = e/f thì mỗi tỉ số bằng tổng tử trên tổng mẫu.",
 
     youtube: "",
 
@@ -2581,7 +2581,7 @@ String.raw`
     title: "Đại lượng tỉ lệ thuận",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "y tỉ lệ thuận với x khi y = kx, k không đổi. Tăng x thì y tăng cùng tỉ số.",
 
     youtube: "",
 
@@ -2660,7 +2660,7 @@ String.raw`
     title: "Đại lượng tỉ lệ nghịch",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "y tỉ lệ nghịch với x khi xy = k, k không đổi. Gấp x thì y giảm còn một nửa.",
 
     youtube: "",
 
@@ -2739,7 +2739,7 @@ String.raw`
     title: "Biểu thức đại số",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Chữ thay số. Điều kiện là mẫu khác 0 và căn không âm.",
 
     youtube: "",
 
@@ -2815,7 +2815,7 @@ String.raw`
     title: "Đa thức một biến",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Đa thức là tổng các hạng tử ax^n. Bậc là số mũ lớn nhất có hệ số khác 0.",
 
     youtube: "",
 
@@ -2889,7 +2889,7 @@ String.raw`
     title: "Cộng và trừ đa thức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Cộng trừ hạng tử đồng dạng. x² chỉ cộng với x², không cộng với x.",
 
     youtube: "",
 
@@ -2968,7 +2968,7 @@ String.raw`
     title: "Nhân đa thức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Nhân từng hạng tử. (a+b)(c+d) = ac + ad + bc + bd.",
 
     youtube: "",
 
@@ -3046,7 +3046,7 @@ exercises: [
     title: "Chia đa thức",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Chia đơn thức: trừ mũ. Chia đa thức: chia bậc cao, nhân, trừ, lặp lại.",
 
     youtube: "",
 
@@ -3125,7 +3125,7 @@ String.raw`
     title: "Làm quen với biến cố",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Phép thử có nhiều kết quả. Biến cố là tập một số kết quả ấy.",
 
     youtube: "",
 
@@ -3211,7 +3211,7 @@ String.raw`
     title: "Xác suất của biến cố",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "P = số kết quả thuận lợi chia cho số kết quả đồng khả năng.",
 
     youtube: "",
 
@@ -3296,7 +3296,7 @@ String.raw`
     title: "Góc và cạnh đối diện trong tam giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Góc lớn hơn thì cạnh đối diện dài hơn. Hai góc bằng nhau thì hai cạnh đối diện bằng nhau.",
 
     youtube: "",
 
@@ -3390,7 +3390,7 @@ String.raw`
     title: "Đường vuông góc và đường xiên",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Vuông góc là đoạn ngắn nhất từ một điểm đến đường thẳng. Xiên dài hơn, xiên xa chân hơn thì dài hơn.",
 
     youtube: "",
 
@@ -3490,7 +3490,7 @@ String.raw`
     title: "Ba cạnh của một tam giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Tổng hai cạnh lớn hơn cạnh còn lại. Hiệu hai cạnh nhỏ hơn cạnh còn lại.",
 
     youtube: "",
 
@@ -3580,7 +3580,7 @@ String.raw`
     title: "Đồng quy trung tuyến và phân giác",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Ba trung tuyến gặp nhau tại trọng tâm, chia mỗi trung tuyến theo tỉ số 2:1. Ba phân giác gặp nhau tại tâm đường tròn nội tiếp.",
 
     youtube: "",
 
@@ -3659,7 +3659,7 @@ String.raw`
     title: "Đồng quy trung trực và đường cao",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Ba trung trực gặp nhau tại tâm đường tròn ngoại tiếp. Ba đường cao gặp nhau tại trực tâm.",
 
     youtube: "",
 
@@ -3758,7 +3758,7 @@ String.raw`
     title: "Hình hộp chữ nhật và hình lập phương",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Thể tích = dài × rộng × cao. Lập phương là hộp có mọi cạnh bằng nhau.",
 
     youtube: "",
 
@@ -3851,7 +3851,7 @@ String.raw`
     title: "Hình lăng trụ đứng",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Hai đáy đa giác bằng nhau, mặt bên là hình chữ nhật. V = diện tích đáy × cao.",
 
     youtube: "",
 
@@ -3943,7 +3943,7 @@ String.raw`
     title: "Chương 1: Số hữu tỉ. Số thực - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập số hữu tỉ, số thực, giá trị tuyệt đối.",
 
     youtube: "",
 
@@ -3982,7 +3982,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     title: "Chương 7: Phép biến hình - Trắc nghiệm",
     video: "",
 
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+    spoken: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
 
     youtube: "",
 
