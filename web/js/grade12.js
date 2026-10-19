@@ -215,12 +215,12 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     id: "g12-exam-ch1",
     num: 101,
     chapter: 1,
-    title: "Đề kiểm tra Chương 1: Applications of derivatives",
-    spoken: "Đề kiểm tra 45 phút chương Applications of derivatives.",
+    title: "Đề kiểm tra Chương 1: Ứng dụng đạo hàm để khảo sát hàm số",
+    spoken: "Đề kiểm tra 45 phút chương Ứng dụng đạo hàm để khảo sát hàm số.",
 
     youtube: "",
 
-    summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
+    summary: "Đề kiểm tra 45 phút chương Ứng dụng đạo hàm để khảo sát hàm số.",
     body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
@@ -242,12 +242,12 @@ exercises: [
     id: "g12-exam-ch2",
     num: 102,
     chapter: 2,
-    title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
-    spoken: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
+    title: "Đề kiểm tra Chương 2: Lũy thừa, mũ, logarit",
+    spoken: "Đề kiểm tra 45 phút chương Lũy thừa, mũ, logarit.",
 
     youtube: "",
 
-    summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
+    summary: "Đề kiểm tra 45 phút chương Lũy thừa, mũ, logarit.",
     body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
@@ -267,12 +267,12 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     id: "g12-exam-ch3",
     num: 103,
     chapter: 3,
-    title: "Đề kiểm tra Chương 3: Integrals",
-    spoken: "Đề kiểm tra 45 phút chương Integrals.",
+    title: "Đề kiểm tra Chương 3: Nguyên hàm và tích phân",
+    spoken: "Đề kiểm tra 45 phút chương Nguyên hàm và tích phân.",
 
     youtube: "",
 
-    summary: "Đề kiểm tra 45 phút chương Integrals.",
+    summary: "Đề kiểm tra 45 phút chương Nguyên hàm và tích phân.",
     body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
