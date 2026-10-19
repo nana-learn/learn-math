@@ -1,18 +1,20 @@
 // Toán 7 Tập 1 – Kết nối tri thức. Mạch bài theo SGK. Mỗi bài: tình huống → làm chậm → dễ → khó hơn → bẫy → nhìn lại → luyện.
 // Không chép đề hay đoạn văn trong sách.
 const G7_CHAPTERS = [
-  { id: 1, title: "Số hữu tỉ" },
-  { id: 2, title: "Số thực" },
-  { id: 3, title: "Góc và đường thẳng song song" },
-  { id: 4, title: "Tam giác bằng nhau" },
-  { id: 5, title: "Thu thập và biểu diễn dữ liệu" },
-  { id: 6, title: "Tỉ lệ thức và đại lượng tỉ lệ" },
-  { id: 7, title: "Biểu thức đại số và đa thức một biến" },
-  { id: 8, title: "Biến cố và xác suất" },
-  { id: 9, title: "Quan hệ giữa các yếu tố trong một tam giác" },
-  { id: 10, title: "Một số hình khối trong thực tiễn" },
+{ id: 1, title: "Số hữu tỉ" },
+{ id: 2, title: "Số thực" },
+{ id: 3, title: "Góc và đường thẳng song song" },
+{ id: 4, title: "Tam giác bằng nhau" },
+{ id: 5, title: "Thu thập và biểu diễn dữ liệu" },
+{ id: 6, title: "Tỉ lệ thức và đại lượng tỉ lệ" },
+{ id: 7, title: "Biểu thức đại số và đa thức một biến" },
+{ id: 8, title: "Biến cố và xác suất" },
+{ id: 9, title: "Quan hệ giữa các yếu tố trong một tam giác" },
+{ id: 10, title: "Một số hình khối trong thực tiễn" }
+];
 
-  {
+const G7_LESSONS = [
+{
     id: "g7-ch3-quiz",
     num: 101,
     chapter: 3,
@@ -443,7 +445,7 @@ exercises: [
       { type: "mc", prompt: "Câu 8: Làm tròn 3,47 đến hàng phần mười là?", choices: ["3,5", "3,4", "3,0", "4"], correct: 0, hint: "7 ≥ 5 nên làm tròn lên: 3,47 ≈ 3,5.", explain: "3,5." },
     ],
   },
-  {
+{
     id: "g7-ch4-quiz",
     num: 102,
     chapter: 4,
@@ -473,7 +475,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
       { type: "mc", prompt: "Câu 8: Số 0,333... = ?", choices: ["1/3", "3/10", "33/100", "3/99"], correct: 0, hint: "0,333... = 1/3.", explain: "1/3." },
     ],
   },
-  {
+{
     id: "g7-ch5-quiz",
     num: 103,
     chapter: 5,
@@ -503,7 +505,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
       { type: "mc", prompt: "Câu 8: Hai đại lượng tỉ lệ thuận khi:", choices: ["Tỉ số y/x không đổi", "Tích x·y không đổi", "Tổng x+y không đổi", "Hiệu x-y không đổi"], correct: 0, hint: "y = kx → y/x = k (hằng số).", explain: "Tỉ số y/x không đổi." },
     ],
   },
-  {
+{
     id: "g7-ch6-quiz",
     num: 104,
     chapter: 6,
@@ -533,8 +535,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
       { type: "mc", prompt: "Câu 8: Số đơn vị điều tra là?", choices: ["Số lượng đơn vị được điều tra", "Số lượng giá trị", "Số lượng dấu hiệu", "Số lượng tần số"], correct: 0, hint: "N = tổng số đơn vị.", explain: "Số lượng đơn vị được điều tra." },
     ],
   },
-
-  {
+{
     id: "g7-exam-ch1",
     num: 101,
     chapter: 1,
@@ -564,7 +565,7 @@ exercises: [
       { type: "mc", prompt: "Câu 4: Số đối của -5/7 là?", choices: ["5/7", "-5/7", "7/5", "-7/5"], correct: 0, hint: "Đổi dấu.", explain: "5/7." },
     ],
   },
-  {
+{
     id: "g7-exam-ch2",
     num: 102,
     chapter: 2,
@@ -593,8 +594,7 @@ exercises: [
       { type: "mc", prompt: "Câu 4: Số vô tỉ là?", choices: ["Không viết được thành phân số", "Là số nguyên", "Là số thập phân hữu hạn", "Là số thập phân vô hạn tuần hoàn"], correct: 0, hint: "Số vô tỉ không biểu diễn được dưới dạng a/b.", explain: "Không viết được thành phân số." },
     ],
   },
-
-  {
+{
     id: "g7-ch7-quiz",
     num: 105,
     chapter: 7,
@@ -624,10 +624,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
       { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
   },
-];
-
-const G7_LESSONS = [
-  {
+{
     id: "g7-b1",
     num: 1,
     chapter: 1,
@@ -708,7 +705,7 @@ String.raw`
       { type: "num", prompt: "Điểm giữa 0 và 1 chia thành 5 phần bằng nhau, điểm thứ 2 từ 0 là a/5. a bằng bao nhiêu?", answer: 2, hint: "Hai bước đơn vị 1/5.", explain: "2/5." },
     ],
   },
-  {
+{
     id: "g7-b2",
     num: 2,
     chapter: 1,
@@ -782,7 +779,7 @@ String.raw`
       { type: "text", prompt: "(2/3) : (4/9). Phân số tối giản.", answer: "3/2", accept: ["3/2","1,5"], hint: "Nhân 9/4.", explain: "2/3 · 9/4 = 3/2." },
     ],
   },
-  {
+{
     id: "g7-b3",
     num: 3,
     chapter: 1,
@@ -851,7 +848,7 @@ String.raw`
       { type: "num", prompt: "3^2 · 3^3 = 3^k. k bằng bao nhiêu?", answer: 5, hint: "Cộng mũ.", explain: "5." },
     ],
   },
-  {
+{
     id: "g7-b4",
     num: 4,
     chapter: 1,
@@ -927,7 +924,7 @@ String.raw`
       { type: "num", prompt: "x/2 = 6. x bằng bao nhiêu?", answer: 12, hint: "Nhân hai vế với 2.", explain: "12." },
     ],
   },
-  {
+{
     id: "g7-b5",
     num: 5,
     chapter: 2,
@@ -1000,7 +997,7 @@ String.raw`
       { type: "text", prompt: "0,2 bằng phân số tối giản.", answer: "1/5", accept: ["1/5"], hint: "2/10.", explain: "1/5." },
     ],
   },
-  {
+{
     id: "g7-b6",
     num: 6,
     chapter: 2,
@@ -1074,7 +1071,7 @@ String.raw`
       { type: "mc", prompt: "√2 là", choices: ["Hữu tỉ","Vô tỉ","Số nguyên","Không phải số thực"], correct: 1, hint: "Không viết được a/b.", explain: "Vô tỉ." },
     ],
   },
-  {
+{
     id: "g7-b7",
     num: 7,
     chapter: 2,
@@ -1151,7 +1148,7 @@ String.raw`
       { type: "num", prompt: "Có bao nhiêu số nguyên trong khoảng (−2; 3)?", answer: 4, hint: "−1, 0, 1, 2.", explain: "4 số." },
     ],
   },
-  {
+{
     id: "g7-b8",
     num: 8,
     chapter: 3,
@@ -1241,7 +1238,7 @@ String.raw`
       { type: "mc", prompt: "Hai góc kề nhau, mỗi góc 40°. Chúng", choices: ["Kề bù","Đối đỉnh","Không kề bù vì tổng 80°","Phân giác"], correct: 2, hint: "Kề bù cần 180°.", explain: "Chỉ kề, chưa bù." },
     ],
   },
-  {
+{
     id: "g7-b9",
     num: 9,
     chapter: 3,
@@ -1334,7 +1331,7 @@ String.raw`
       { type: "num", prompt: "Hai góc trong cùng phía, một góc 95°. Góc kia bao nhiêu độ nếu hai đường song song?", answer: 85, hint: "Kề bù.", explain: "85°." },
     ],
   },
-  {
+{
     id: "g7-b10",
     num: 10,
     chapter: 3,
@@ -1424,7 +1421,7 @@ String.raw`
       { type: "mc", prompt: "Qua M ngoài d, số đường thẳng vuông góc với đường song song với d kẻ từ M là", choices: ["0","1","2","Vô số"], correct: 1, hint: "Đúng một đường vuông góc.", explain: "Một." },
     ],
   },
-  {
+{
     id: "g7-b11",
     num: 11,
     chapter: 3,
@@ -1495,7 +1492,7 @@ String.raw`
       { type: "mc", prompt: "Giả thiết nằm ở", choices: ["Điều đề cho","Điều phải chứng","Hình phụ","Đáp số"], correct: 0, hint: "Cái đã có.", explain: "Đề cho." },
     ],
   },
-  {
+{
     id: "g7-b12",
     num: 12,
     chapter: 4,
@@ -1584,7 +1581,7 @@ String.raw`
       { type: "num", prompt: "Góc ngoài 140°. Một góc trong không kề 50°. Góc trong không kề còn lại bao nhiêu độ?", answer: 90, hint: "140 = 50 + ?", explain: "90°." },
     ],
   },
-  {
+{
     id: "g7-b13",
     num: 13,
     chapter: 4,
@@ -1683,7 +1680,7 @@ String.raw`
       { type: "mc", prompt: "Hai cạnh bằng nhau và góc không xen giữa. Có kết luận cgc được không?", choices: ["Được","Chưa được","Luôn bằng nhau","Luôn vuông"], correct: 1, hint: "Góc phải xen giữa.", explain: "Chưa đủ cgc." },
     ],
   },
-  {
+{
     id: "g7-b14",
     num: 14,
     chapter: 4,
@@ -1780,7 +1777,7 @@ String.raw`
       { type: "num", prompt: "ccc, cạnh 4, 7, 9. Tam giác kia 4, 7, x. x bằng bao nhiêu?", answer: 9, hint: "Ba cạnh tương ứng.", explain: "9." },
     ],
   },
-  {
+{
     id: "g7-b15",
     num: 15,
     chapter: 4,
@@ -1872,7 +1869,7 @@ String.raw`
       { type: "num", prompt: "Hai tam giác vuông bằng nhau, một cạnh góc vuông 9 cm. Cạnh tương ứng kia bằng bao nhiêu cm?", answer: 9, hint: "Cạnh tương ứng bằng nhau.", explain: "9 cm." },
     ],
   },
-  {
+{
     id: "g7-b16",
     num: 16,
     chapter: 4,
@@ -1960,7 +1957,7 @@ exercises: [
       { type: "mc", prompt: "Mọi điểm trên trung trực của AB đều", choices: ["Nằm trên AB","Cách đều A và B","Gần A","Là trung điểm"], correct: 1, hint: "Định nghĩa.", explain: "MA = MB." },
     ],
   },
-  {
+{
     id: "g7-b17",
     num: 17,
     chapter: 5,
@@ -2044,7 +2041,7 @@ String.raw`
       { type: "mc", prompt: "Nhiệt độ từng giờ là dữ liệu", choices: ["Rời rạc","Liên tục, nên ghép nhóm nếu nhiều giá trị","Không thống kê","Chỉ vẽ quạt"], correct: 1, hint: "Đo trên thang liên tục.", explain: "Liên tục." },
     ],
   },
-  {
+{
     id: "g7-b18",
     num: 18,
     chapter: 5,
@@ -2130,7 +2127,7 @@ String.raw`
       { type: "num", prompt: "Góc 36° chiếm bao nhiêu phần trăm?", answer: 10, hint: "36/360.", explain: "10%." },
     ],
   },
-  {
+{
     id: "g7-b19",
     num: 19,
     chapter: 5,
@@ -2238,7 +2235,7 @@ String.raw`
       { type: "num", prompt: "Năm 1: 15, năm 3: 21. Tăng trung bình mỗi năm (hai khoảng) bằng bao nhiêu?", answer: 3, hint: "(21−15)/2.", explain: "3." },
     ],
   },
-  {
+{
     id: "g7-b20",
     num: 20,
     chapter: 6,
@@ -2311,7 +2308,7 @@ String.raw`
       { type: "mc", prompt: "4/6 = 6/9 đúng vì", choices: ["4+6=6+9","4·9=6·6","4·6=6·9","Mẫu tăng"], correct: 1, hint: "Nhân chéo.", explain: "36=36." },
     ],
   },
-  {
+{
     id: "g7-b21",
     num: 21,
     chapter: 6,
@@ -2381,7 +2378,7 @@ String.raw`
       { type: "num", prompt: "1/4 = 2/8 = 3/x. x bằng bao nhiêu?", answer: 12, hint: "1/4 = 3/x.", explain: "12." },
     ],
   },
-  {
+{
     id: "g7-b22",
     num: 22,
     chapter: 6,
@@ -2454,7 +2451,7 @@ String.raw`
       { type: "num", prompt: "y = 7x. x = 3. y bằng bao nhiêu?", answer: 21, hint: "Thế.", explain: "21." },
     ],
   },
-  {
+{
     id: "g7-b23",
     num: 23,
     chapter: 6,
@@ -2527,7 +2524,7 @@ String.raw`
       { type: "mc", prompt: "Cùng quãng đường, vận tốc gấp đôi thì thời gian", choices: ["Gấp đôi","Còn một nửa","Không đổi","Gấp bốn"], correct: 1, hint: "Nghịch.", explain: "Còn một nửa." },
     ],
   },
-  {
+{
     id: "g7-b24",
     num: 24,
     chapter: 7,
@@ -2597,7 +2594,7 @@ String.raw`
       { type: "mc", prompt: "1/(2 − x) không có nghĩa khi x bằng", choices: ["0","1","2","−2"], correct: 2, hint: "Mẫu 0.", explain: "x=2." },
     ],
   },
-  {
+{
     id: "g7-b25",
     num: 25,
     chapter: 7,
@@ -2665,7 +2662,7 @@ String.raw`
       { type: "mc", prompt: "√x + 1 có là đa thức không?", choices: ["Có","Không","Chỉ khi x≥0","Bậc 1/2"], correct: 1, hint: "Căn chữ.", explain: "Không." },
     ],
   },
-  {
+{
     id: "g7-b26",
     num: 26,
     chapter: 7,
@@ -2738,7 +2735,7 @@ String.raw`
       { type: "num", prompt: "Hệ số tự do của (x+3)−(x−5) bằng bao nhiêu?", answer: 8, hint: "3 − (−5).", explain: "8. Hạng x triệt tiêu." },
     ],
   },
-  {
+{
     id: "g7-b27",
     num: 27,
     chapter: 7,
@@ -2810,7 +2807,7 @@ exercises: [
       { type: "text", prompt: "x(x + 1). Viết đa thức, không cách.", answer: "x^2+x", accept: ["x^2+x","x²+x"], hint: "Phân phối.", explain: "x² + x." },
     ],
   },
-  {
+{
     id: "g7-b28",
     num: 28,
     chapter: 7,
@@ -2883,7 +2880,7 @@ String.raw`
       { type: "num", prompt: "(x² − 5x + 6) : (x − 2) = x + a. a bằng bao nhiêu?", answer: -3, hint: "(x−2)(x−3).", explain: "a = −3." },
     ],
   },
-  {
+{
     id: "g7-b29",
     num: 29,
     chapter: 8,
@@ -2963,7 +2960,7 @@ String.raw`
       { type: "mc", prompt: "Biến cố không thể", choices: ["Luôn xảy ra","Không xảy ra","P = 1","Có một kết quả"], correct: 1, hint: "Tập rỗng.", explain: "Không xảy ra." },
     ],
   },
-  {
+{
     id: "g7-b30",
     num: 30,
     chapter: 8,
@@ -3042,7 +3039,7 @@ String.raw`
       { type: "num", prompt: "Xúc xắc. P(số nguyên tố) = a/6. a bằng bao nhiêu?", answer: 3, hint: "2, 3, 5.", explain: "3." },
     ],
   },
-  {
+{
     id: "g7-b31",
     num: 31,
     chapter: 9,
@@ -3130,7 +3127,7 @@ String.raw`
       { type: "num", prompt: "Hai góc bằng nhau 50° và 50°. Góc còn lại bao nhiêu độ? Tam giác ấy cân.", answer: 80, hint: "180−100.", explain: "80°. Hai cạnh đối diện hai góc 50° bằng nhau." },
     ],
   },
-  {
+{
     id: "g7-b32",
     num: 32,
     chapter: 9,
@@ -3224,7 +3221,7 @@ String.raw`
       { type: "mc", prompt: "Khoảng cách từ điểm đến đường là", choices: ["Đường xiên ngắn nhất cảm tính","Đường vuông góc","Trung tuyến","Cạnh huyền"], correct: 1, hint: "Định nghĩa.", explain: "Vuông góc." },
     ],
   },
-  {
+{
     id: "g7-b33",
     num: 33,
     chapter: 9,
@@ -3308,7 +3305,7 @@ String.raw`
       { type: "num", prompt: "Cạnh 8 và 15. Cạnh thứ ba nguyên nhỏ nhất là bao nhiêu?", answer: 8, hint: "Lớn hơn 7.", explain: "8, vì 7+8=15 không được." },
     ],
   },
-  {
+{
     id: "g7-b34",
     num: 34,
     chapter: 9,
@@ -3381,7 +3378,7 @@ String.raw`
       { type: "mc", prompt: "Ba phân giác trong gặp nhau tại điểm cách đều", choices: ["Ba đỉnh","Ba cạnh","Ba trung điểm","Một đỉnh"], correct: 1, hint: "Tâm nội tiếp.", explain: "Ba cạnh." },
     ],
   },
-  {
+{
     id: "g7-b35",
     num: 35,
     chapter: 9,
@@ -3474,7 +3471,7 @@ String.raw`
       { type: "num", prompt: "Vuông, cạnh huyền 20 cm. R ngoại tiếp bằng bao nhiêu cm?", answer: 10, hint: "Nửa huyền.", explain: "10 cm." },
     ],
   },
-  {
+{
     id: "g7-b36",
     num: 36,
     chapter: 10,
@@ -3561,7 +3558,7 @@ String.raw`
       { type: "num", prompt: "Lập phương V = 8. Cạnh a bằng bao nhiêu?", answer: 2, hint: "a³=8.", explain: "2." },
     ],
   },
-  {
+{
     id: "g7-b37",
     num: 37,
     chapter: 10,
@@ -3646,8 +3643,7 @@ String.raw`
       { type: "mc", prompt: "Chu vi đáy 10 cm, cao 4 cm. Sxq lăng trụ đứng bằng", choices: ["40 cm²","14 cm²","80 cm²","20 cm²"], correct: 0, hint: "Chu vi × cao.", explain: "40 cm²." },
     ],
   },
-
-  {
+{
     id: "g7-ch1-quiz",
     num: 99,
     chapter: 1,
@@ -3677,7 +3673,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
       { type: "mc", prompt: "Câu 8: Số thực bao gồm:", choices: ["Số hữu tỉ và số vô tỉ", "Số nguyên và số thập phân", "Số dương và số âm", "Số chẵn và số lẻ"], correct: 0, hint: "R = Q ∪ I.", explain: "Số hữu tỉ và số vô tỉ." },
     ],
   },
-  {
+{
     id: "g7-ch2-quiz",
     num: 105,
     chapter: 7,
@@ -3706,7 +3702,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
       { type: "mc", prompt: "Câu 7: Phép quay góc âm là phép quay theo chiều:", choices: ["Ngược kim đồng hồ", "Cùng kim đồng hồ", "Ngẫu nhiên", "Không xác định"], correct: 0, hint: "Quy ước: dương = ngược kim, âm = cùng kim.", explain: "Ngược kim đồng hồ." },
       { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
-  },
+  }
 ];
 
 (function attachGrade7() {

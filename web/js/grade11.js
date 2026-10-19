@@ -4,16 +4,18 @@
  */
 
 const G11_CHAPTERS = [
-  { id: 1, title: "Hàm số lượng giác và phương trình lượng giác" },
-  { id: 2, title: "Tổ hợp và xác suất" },
-  { id: 3, title: "Dãy số. Cấp số cộng và cấp số nhân" },
-  { id: 4, title: "Giới hạn" },
-  { id: 5, title: "Đạo hàm" },
-  { id: 6, title: "Phép dời hình và phép đồng dạng trong mặt phẳng" },
-  { id: 7, title: "Đường thẳng và mặt phẳng trong không gian" },
-  { id: 8, title: "Vectơ trong không gian. Quan hệ vuông góc" },
+{ id: 1, title: "Hàm số lượng giác và phương trình lượng giác" },
+{ id: 2, title: "Tổ hợp và xác suất" },
+{ id: 3, title: "Dãy số. Cấp số cộng và cấp số nhân" },
+{ id: 4, title: "Giới hạn" },
+{ id: 5, title: "Đạo hàm" },
+{ id: 6, title: "Phép dời hình và phép đồng dạng trong mặt phẳng" },
+{ id: 7, title: "Đường thẳng và mặt phẳng trong không gian" },
+{ id: 8, title: "Vectơ trong không gian. Quan hệ vuông góc" }
+];
 
-  {
+const G11_LESSONS = [
+{
     id: "g11-ch2-quiz",
     num: 99,
     chapter: 2,
@@ -41,7 +43,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ
       { type: "mc", prompt: "Câu 8: Từ 10 HS chọn 3 vào đội văn nghệ là:", choices: ["Tổ hợp", "Chỉnh hợp", "Hoán vị", "Không xác định"], correct: 0, hint: "Thứ tự không quan trọng → tổ hợp.", explain: "Tổ hợp." },
     ],
   },
-  {
+{
     id: "g11-ch3-quiz",
     num: 100,
     chapter: 3,
@@ -69,7 +71,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy
       { type: "mc", prompt: "Câu 8: lim(1/n) khi n→∞ =", choices: ["0", "1", "∞", "không tồn tại"], correct: 0, hint: "1/n → 0 khi n→∞.", explain: "0." },
     ],
   },
-  {
+{
     id: "g11-ch4-quiz",
     num: 101,
     chapter: 4,
@@ -97,7 +99,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về gi�
       { type: "mc", prompt: "Câu 8: Hàm số f(x) có lim(x→x0) f(x) = L nghĩa là:", choices: ["Khi x gần x0 thì f(x) gần L", "f(x0) = L", "f(x) = L với mọi x", "Không có nghĩa"], correct: 0, hint: "Định nghĩa giới hạn hàm số.", explain: "Khi x gần x0 thì f(x) gần L." },
     ],
   },
-  {
+{
     id: "g11-ch5-quiz",
     num: 102,
     chapter: 5,
@@ -125,7 +127,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
       { type: "mc", prompt: "Câu 8: Đạo hàm của y = √x là?", choices: ["1/(2√x)", "2√x", "√x", "1/√x"], correct: 0, hint: "(x^{1/2})' = (1/2)x^{-1/2} = 1/(2√x).", explain: "1/(2√x)." },
     ],
   },
-  {
+{
     id: "g11-ch6-quiz",
     num: 103,
     chapter: 6,
@@ -153,7 +155,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
       { type: "mc", prompt: "Câu 8: Hai hình bằng nhau khi:", choices: ["Có phép dời hình biến hình này thành hình kia", "Có phép đồng dạng biến hình này thành hình kia", "Có cùng diện tích", "Có cùng chu vi"], correct: 0, hint: "Bằng nhau ↔ dời hình.", explain: "Có phép dời hình biến hình này thành hình kia." },
     ],
   },
-  {
+{
     id: "g11-ch7-quiz",
     num: 104,
     chapter: 7,
@@ -181,7 +183,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khô
       { type: "mc", prompt: "Câu 8: Trong không gian, qua một điểm ngoài đường thẳng vẽ được bao nhiêu đường thẳng song song?", choices: ["Đúng một", "Vô số", "Không có", "Hai"], correct: 0, hint: "Tiên đề Euclid: đúng một.", explain: "Đúng một." },
     ],
   },
-  {
+{
     id: "g11-ch8-quiz",
     num: 105,
     chapter: 8,
@@ -209,8 +211,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
       { type: "mc", prompt: "Câu 8: Tích vô hướng a·a =", choices: ["|a|²", "0", "1", "|a|"], correct: 0, hint: "a·a = |a||a|cos0 = |a|².", explain: "|a|²." },
     ],
   },
-
-  {
+{
     id: "g11-exam-ch1",
     num: 101,
     chapter: 1,
@@ -237,7 +238,7 @@ exercises: [
       { type: "mc", prompt: "Câu 4: Chu kỳ của y = sin(2x) là?", choices: ["π", "2π", "π/2", "4π"], correct: 0, hint: "Chu kỳ = 2π/2 = π.", explain: "π." },
     ],
   },
-  {
+{
     id: "g11-exam-ch2",
     num: 102,
     chapter: 2,
@@ -262,22 +263,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       { type: "mc", prompt: "Câu 4: Gieo 2 con súc sắc. Xác suất tổng bằng 7 là?", choices: ["1/6", "1/9", "1/12", "1/18"], correct: 0, hint: "6 cặp: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1). 6/36 = 1/6.", explain: "1/6." },
     ],
   },
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-];
-
-const G11_LESSONS = [
-  {
+{
     id: "g11-b1",
     num: 1,
     chapter: 1,
@@ -717,7 +703,7 @@ exercises: [
       { type: "text", prompt: "Tìm tập xác định của y = cot(x).", answer: "ℝ \ {kπ | k ∈ ℤ}", accept: ["ℝ \ {kπ | k ∈ ℤ}", "R \ {kπ | k ∈ Z}"], hint: "cot(x) = cos(x)/sin(x), sin(x) ≠ 0.", explain: "x ≠ kπ." },
 ],
   },
-  {
+{
     id: "g11-b2",
     num: 2,
     chapter: 1,
@@ -752,8 +738,7 @@ exercises: [
       { type: "text", prompt: "Giải phương trình tan(x) = √3.", answer: "x = π/3 + kπ", accept: ["x = π/3 + kπ", "x = pi/3 + k*pi"], hint: "tan(π/3) = √3.", explain: "x = π/3 + kπ." },
 ],
   },
-
-  {
+{
     id: "g11-b3",
     num: 3,
     chapter: 2,
@@ -790,7 +775,7 @@ exercises: [
       { type: "text", prompt: "Có bao nhiêu cách chọn 1 thủ khoa và 1 thủ quân từ 7 người?", answer: "42", accept: ["42"], hint: "Chọn thủ khoa (7), rồi thủ quân (6).", explain: "7 × 6 = 42." },
 ],
   },
-  {
+{
     id: "g11-b4",
     num: 4,
     chapter: 2,
@@ -827,7 +812,7 @@ exercises: [
       { type: "text", prompt: "Mở (a + b)^2.", answer: "a^2 + 2ab + b^2", accept: ["a^2 + 2ab + b^2", "a² + 2ab + b²"], hint: "C(2,0)=1, C(2,1)=2, C(2,2)=1.", explain: "a^2 + 2ab + b^2." },
 ],
   },
-  {
+{
     id: "g11-b5",
     num: 5,
     chapter: 3,
@@ -864,7 +849,7 @@ exercises: [
       { type: "text", prompt: "Dãy (z_n) với z_n = 3 + 1/n. Z_n có bị chặn không?", answer: "Có", accept: ["Có", "có"], hint: "3 < z_n ≤ 4.", explain: "Bị chặn giữa 3 và 4." },
 ],
   },
-  {
+{
     id: "g11-b6",
     num: 6,
     chapter: 3,
@@ -901,7 +886,7 @@ exercises: [
       { type: "text", prompt: "Cấp số cộng có u_3 = 8, u_5 = 14. Công sai d =", answer: "3", accept: ["3"], hint: "u_5 − u_3 = 2d.", explain: "d = (14 − 8)/2 = 3." },
 ],
   },
-  {
+{
     id: "g11-b7",
     num: 7,
     chapter: 4,
@@ -938,7 +923,7 @@ exercises: [
       { type: "text", prompt: "lim(2n + 5)/(n + 1) =", answer: "2", accept: ["2"], hint: "Chia tử và mẫu cho n: (2 + 5/n)/(1 + 1/n) → 2/1.", explain: "2." },
 ],
   },
-  {
+{
     id: "g11-b8",
     num: 8,
     chapter: 4,
@@ -975,7 +960,7 @@ exercises: [
       { type: "text", prompt: "lim_{x→−1} (x^2 − 1)/(x + 1) =", answer: "-2", accept: ["-2"], hint: "(x−1)(x+1)/(x+1) = x − 1 → −2.", explain: "-2." },
 ],
   },
-  {
+{
     id: "g11-b9",
     num: 9,
     chapter: 5,
@@ -1012,7 +997,7 @@ exercises: [
       { type: "text", prompt: "f(x) = x^2 + 3x. f'(1) =", answer: "5", accept: ["5"], hint: "f'(x) = 2x + 3, f'(1) = 5.", explain: "5." },
 ],
   },
-  {
+{
     id: "g11-b10",
     num: 10,
     chapter: 6,
@@ -1049,7 +1034,7 @@ exercises: [
       { type: "text", prompt: "Phép quay tâm O góc 90° biến điểm (1,0) thành", answer: "(0,1)", accept: ["(0,1)", "0,1"], hint: "Quay 90° ngược chiều kim đồng hồ: (x,y) → (−y,x).", explain: "(0,1)." },
 ],
   },
-  {
+{
     id: "g11-b11",
     num: 11,
     chapter: 6,
@@ -1086,7 +1071,7 @@ exercises: [
       { type: "text", prompt: "Hình chữ nhật ABCD có AB = 8 cm, AD = 6 cm. Phép vị tự tâm O tỉ số k = 3/2 biến thành A'B'C'D'. Chu vi A'B'C'D' =", answer: "42", accept: ["42"], hint: "Chu vi ban đầu = 2(8+6) = 28. Nhân 3/2: 42.", explain: "42." },
 ],
   },
-  {
+{
     id: "g11-b12",
     num: 12,
     chapter: 7,
@@ -1123,7 +1108,7 @@ exercises: [
       { type: "text", prompt: "Trong không gian, nếu hai đường thẳng không có điểm chung thì", answer: "song song hoặc chéo nhau", accept: ["song song hoặc chéo nhau", "song song hoặc chéo"], hint: "Hai trường hợp: cùng mặt phẳng hoặc khác mặt phẳng.", explain: "Song song (cùng mặt phẳng) hoặc chéo nhau (khác mặt phẳng)." },
 ],
   },
-  {
+{
     id: "g11-b13",
     num: 13,
     chapter: 7,
@@ -1160,7 +1145,7 @@ exercises: [
       { type: "text", prompt: "Trong không gian, điều kiện đủ để hai đường thẳng song song là", answer: "chúng cùng nằm trong một mặt phẳng và không có điểm chung", accept: ["chúng cùng nằm trong một mặt phẳng và không có điểm chung", "cùng mặt phẳng và không có điểm chung"], hint: "Định nghĩa song song.", explain: "Cùng mặt phẳng và không có điểm chung." },
 ],
   },
-  {
+{
     id: "g11-b14",
     num: 14,
     chapter: 8,
@@ -1197,7 +1182,7 @@ exercises: [
       { type: "text", prompt: "k = 2, AB = (3,−4,5). k·AB =", answer: "(6,−8,10)", accept: ["(6,−8,10)", "(6, -8, 10)"], hint: "Nhân mỗi tọa độ với k.", explain: "(6, −8, 10)." },
 ],
   },
-  {
+{
     id: "g11-b15",
     num: 15,
     chapter: 8,
@@ -1234,8 +1219,7 @@ exercises: [
       { type: "text", prompt: "Hai đường thẳng chéo nhau có bao nhiêu đường vuông góc chung?", answer: "Một", accept: ["1", "một"], hint: "Đường vuông góc chung duy nhất nối hai đường chéo nhau.", explain: "Một." },
 ],
   },
-
-  {
+{
     id: "g11-b16",
     num: 16,
     chapter: 7,
@@ -1272,7 +1256,7 @@ exercises: [
       { type: "text", prompt: "Trong hình lăng trụ tam giác ABC.A'B'C', mặt phẳng nào song song với (ABC)?", answer: "(A'B'C')", accept: ["(A'B'C')", "A'B'C'"], hint: "Hai mặt đáy song song.", explain: "(A'B'C')." },
 ],
   },
-  {
+{
     id: "g11-b17",
     num: 17,
     chapter: 7,
@@ -1309,7 +1293,7 @@ exercises: [
       { type: "text", prompt: "Phép chiếu song song bảo toàn tỉ số nào?", answer: "Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu", accept: ["Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu", "tỉ số đoạn thẳng song song phương chiếu"], hint: "Định lí.", explain: "Tỉ số đoạn thẳng trên đường thẳng song song phương chiếu." },
 ],
   },
-  {
+{
     id: "g11-b18",
     num: 18,
     chapter: 8,
@@ -1346,7 +1330,7 @@ exercises: [
       { type: "text", prompt: "Cho OA, OB, OC không đồng phẳng và OM = 2OA + 3OB − OC. Hệ số của OB là", answer: "3", accept: ["3"], hint: "Hệ số của OB là 3.", explain: "3." },
 ],
   },
-  {
+{
     id: "g11-b19",
     num: 19,
     chapter: 8,
@@ -1383,7 +1367,7 @@ exercises: [
       { type: "text", prompt: "Hình chiếu vuông góc của một tam giác lên mặt phẳng có diện tích bằng 1/2 diện tích tam giác. Góc giữa mặt phẳng tam giác và mặt phẳng chiếu là", answer: "60°", accept: ["60°"], hint: "S' = S·cos(α) → 1/2 = cos(α) → α = 60°.", explain: "60°." },
 ],
   },
-  {
+{
     id: "g11-b20",
     num: 20,
     chapter: 8,
@@ -1420,8 +1404,7 @@ exercises: [
       { type: "text", prompt: "Khoảng cách giữa hai mặt phẳng song song (P): x + y − z + 1 = 0 và (Q): x + y − z − 3 = 0 là", answer: "2/√3", accept: ["2/√3", "2/sqrt(3)"], hint: "Chọn điểm M trên (P), tính d(M, (Q)).", explain: "2/√3." },
 ],
   },
-
-  {
+{
     id: "g11-b21",
     num: 21,
     chapter: 1,
@@ -1458,7 +1441,7 @@ exercises: [
       { type: "text", prompt: "Giải phương trình 3tan²x − 4tanx + 1 = 0.", answer: "x = π/4 + kπ, x = arctan(1/3) + kπ", accept: ["x = π/4 + kπ, x = arctan(1/3) + kπ", "x = π/4 + kπ, x = arctan(1/3)+kπ"], hint: "t = 1 hoặc t = 1/3.", explain: "x = π/4 + kπ, x = arctan(1/3) + kπ." },
 ],
   },
-  {
+{
     id: "g11-b22",
     num: 22,
     chapter: 1,
@@ -1495,7 +1478,7 @@ exercises: [
       { type: "text", prompt: "Giải phương trình sin2x + cos2x = 0.", answer: "x = 3π/8 + kπ/2", accept: ["x = 3π/8 + kπ/2"], hint: "tan2x = −1.", explain: "x = 3π/8 + kπ/2." },
 ],
   },
-  {
+{
     id: "g11-b23",
     num: 23,
     chapter: 1,
@@ -1531,28 +1514,5 @@ exercises: [
       { type: "mc", prompt: "Hàm số y = √(1 − cosx) xác định khi", choices: ["x ≠ k2π", "x = k2π", "x ≠ π + k2π", "x ∈ ℝ"], correct: 1, hint: "1 − cosx ≥ 0 luôn đúng, nhưng = 0 khi cosx = 1 → x = k2π.", explain: "x = k2π." },
       { type: "text", prompt: "Hàm số y = sin3x có周期 là", answer: "2π/3", accept: ["2π/3"], hint: "周期 = 2π/|3| = 2π/3.", explain: "2π/3." },
 ],
-  },
-
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+  }
 ];

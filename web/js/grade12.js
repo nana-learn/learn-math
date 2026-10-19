@@ -4,16 +4,18 @@
  */
 
 const G12_CHAPTERS = [
-  { id: 1, title: "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số" },
-  { id: 2, title: "Lũy thừa, mũ, logarit" },
-  { id: 3, title: "Nguyên hàm, tích phân và ứng dụng" },
-  { id: 4, title: "Số phức" },
-  { id: 5, title: "Phương pháp tọa độ trong không gian" },
-  { id: 6, title: "Khối đa diện" },
-  { id: 7, title: "Mặt nón, mặt trụ, mặt cầu" },
-  { id: 8, title: "Phương pháp tọa độ trong không gian (tiếp)" },
+{ id: 1, title: "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số" },
+{ id: 2, title: "Lũy thừa, mũ, logarit" },
+{ id: 3, title: "Nguyên hàm, tích phân và ứng dụng" },
+{ id: 4, title: "Số phức" },
+{ id: 5, title: "Phương pháp tọa độ trong không gian" },
+{ id: 6, title: "Khối đa diện" },
+{ id: 7, title: "Mặt nón, mặt trụ, mặt cầu" },
+{ id: 8, title: "Phương pháp tọa độ trong không gian (tiếp)" }
+];
 
-  {
+const G12_LESSONS = [
+{
     id: "g12-ch2-quiz",
     num: 99,
     chapter: 2,
@@ -41,7 +43,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
       { type: "mc", prompt: "Câu 8: Đạo hàm của y = log₁₀(x) là?", choices: ["1/(x ln 10)", "1/x", "ln(10)/x", "x ln 10"], correct: 0, hint: "(log_a x)' = 1/(x ln a).", explain: "1/(x ln 10)." },
     ],
   },
-  {
+{
     id: "g12-ch3-quiz",
     num: 100,
     chapter: 3,
@@ -69,7 +71,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
       { type: "mc", prompt: "Câu 8: Diện tích hình phẳng giới hạn y=x², x=0, x=1 là?", choices: ["1/3", "1", "2/3", "1/2"], correct: 0, hint: "∫₀¹ x² dx = [x³/3]₀¹ = 1/3.", explain: "1/3." },
     ],
   },
-  {
+{
     id: "g12-ch4-quiz",
     num: 101,
     chapter: 4,
@@ -97,7 +99,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
       { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
     ],
   },
-  {
+{
     id: "g12-ch5-quiz",
     num: 102,
     chapter: 5,
@@ -125,7 +127,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
       { type: "mc", prompt: "Câu 8: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
     ],
   },
-  {
+{
     id: "g12-ch6-quiz",
     num: 103,
     chapter: 6,
@@ -153,7 +155,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
       { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
     ],
   },
-  {
+{
     id: "g12-ch7-quiz",
     num: 104,
     chapter: 7,
@@ -181,7 +183,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
       { type: "mc", prompt: "Câu 8: Khoảng cách từ điểm A(1,2,3) đến mặt phẳng x + y + z - 6 = 0 là?", choices: ["0", "√3", "3", "6"], correct: 0, hint: "d = |1+2+3-6|/√(1+1+1) = 0/√3 = 0.", explain: "0." },
     ],
   },
-  {
+{
     id: "g12-ch8-quiz",
     num: 105,
     chapter: 8,
@@ -209,8 +211,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
       { type: "mc", prompt: "Câu 8: Phương trình tiếp tuyến của y = x² tại x = 1 là?", choices: ["y = 2x - 1", "y = x + 1", "y = 2x + 1", "y = x - 1"], correct: 0, hint: "y' = 2x = 2 tại x=1, y(1)=1. y-1=2(x-1) → y=2x-1.", explain: "y = 2x - 1." },
     ],
   },
-
-  {
+{
     id: "g12-exam-ch1",
     num: 101,
     chapter: 1,
@@ -237,7 +238,7 @@ exercises: [
       { type: "mc", prompt: "Câu 4: Tiệm cận đứng của y = (2x+1)/(x-3) là?", choices: ["x=3", "x=-3", "y=2", "y=-2"], correct: 0, hint: "Mẫu = 0 → x=3.", explain: "x=3." },
     ],
   },
-  {
+{
     id: "g12-exam-ch2",
     num: 102,
     chapter: 2,
@@ -262,7 +263,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       { type: "mc", prompt: "Câu 4: Đạo hàm của y = e^{2x} là?", choices: ["2e^{2x}", "e^{2x}", "2e^x", "e^x"], correct: 0, hint: "(e^{u})' = u'e^u.", explain: "2e^{2x}." },
     ],
   },
-  {
+{
     id: "g12-exam-ch3",
     num: 103,
     chapter: 3,
@@ -287,18 +288,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
       { type: "mc", prompt: "Câu 4: ∫sin(2x) dx =", choices: ["-(1/2)cos(2x) + C", "(1/2)cos(2x) + C", "-cos(2x) + C", "cos(2x) + C"], correct: 0, hint: "(-1/2 cos(2x))' = sin(2x).", explain: "-(1/2)cos(2x) + C." },
     ],
   },
-
-  
-
-  
-
-  
-
-  
-];
-
-const G12_LESSONS = [
-  {
+{
     id: "g12-b1",
     num: 1,
     chapter: 1,
@@ -748,7 +738,7 @@ exercises: [
       { type: "mc", prompt: "Hàm số y = √x đồng biến trên?", choices: ["[0, +∞)", "(0, +∞)", "(-∞, +∞)", "[-1, +∞)"], correct: 0, hint: "Miền xác định là x ≥ 0.", explain: "Miền xác định [0, +∞)." },
     ],
   },
-  {
+{
     id: "g12-b2",
     num: 2,
     chapter: 1,
@@ -794,7 +784,7 @@ exercises: [
       { type: "mc", prompt: "Hàm số y = |x| có cực trị tại?", choices: ["x = 0", "x = 1", "x = -1", "không có"], correct: 0, hint: "Đồ thị dạng chữ V.", explain: "Cực tiểu tại x = 0." },
     ],
   },
-  {
+{
     id: "g12-b3",
     num: 3,
     chapter: 1,
@@ -827,7 +817,7 @@ exercises: [
       { type: "mc", prompt: "Hàm số y = x³ trên [0;2] có GTNN là?", choices: ["0", "1", "8", "không có"], correct: 0, hint: "Hàm đồng biến.", explain: "GTNN = f(0) = 0." },
     ],
   },
-  {
+{
     id: "g12-b4",
     num: 4,
     chapter: 1,
@@ -861,7 +851,7 @@ exercises: [
       { type: "mc", prompt: "Hàm số y = √x có tiệm cận nào?", choices: ["x = 0", "y = 0", "x = 1", "không có"], correct: 0, hint: "x = 0 là biên MXĐ.", explain: "x = 0." },
     ],
   },
-  {
+{
     id: "g12-b5",
     num: 5,
     chapter: 1,
@@ -909,7 +899,7 @@ exercises: [
       { type: "mc", prompt: "Đồ thị nào đối xứng qua gốc O?", choices: ["y = x²", "y = x³", "y = |x|", "y = x⁴"], correct: 1, hint: "Hàm lẻ: f(-x) = -f(x).", explain: "y = x³." },
     ],
   },
-  {
+{
     id: "g12-b6",
     num: 6,
     chapter: 1,
@@ -943,7 +933,7 @@ exercises: [
       { type: "mc", prompt: "Số giao điểm của y = 1/x và y = x là?", choices: ["0", "1", "2", "3"], correct: 2, hint: "1/x = x ↔ x² = 1.", explain: "2 giao điểm." },
     ],
   },
-  {
+{
     id: "g12-b7",
     num: 7,
     chapter: 2,
@@ -979,7 +969,7 @@ exercises: [
       { type: "mc", prompt: "5⁻² bằng?", choices: ["25", "1/25", "-25", "-1/25"], correct: 1, hint: "a⁻ⁿ = 1/aⁿ.", explain: "1/25." },
     ],
   },
-  {
+{
     id: "g12-b8",
     num: 8,
     chapter: 2,
@@ -1015,7 +1005,7 @@ exercises: [
       { type: "mc", prompt: "log₅25 - log₅5 bằng?", choices: ["0", "1", "2", "3"], correct: 1, hint: "log₅25=2, log₅5=1.", explain: "1." },
     ],
   },
-  {
+{
     id: "g12-b9",
     num: 9,
     chapter: 2,
@@ -1064,7 +1054,7 @@ exercises: [
       { type: "mc", prompt: "MXĐ của y = log₂(x - 1) là?", choices: ["x > 0", "x > 1", "x ≥ 1", "x > 1"], correct: 1, hint: "x - 1 > 0.", explain: "x > 1." },
     ],
   },
-  {
+{
     id: "g12-b10",
     num: 10,
     chapter: 2,
@@ -1100,7 +1090,7 @@ exercises: [
       { type: "mc", prompt: "Điều kiện của log₃(2x - 1) là?", choices: ["x > 0", "x > 1/2", "x ≥ 1/2", "x > 1"], correct: 1, hint: "2x - 1 > 0.", explain: "x > 1/2." },
     ],
   },
-  {
+{
     id: "g12-b11",
     num: 11,
     chapter: 2,
@@ -1136,7 +1126,7 @@ exercises: [
       { type: "mc", prompt: "Điều kiện của log₅(3 - x) là?", choices: ["x < 3", "x > 3", "x ≤ 3", "x ≥ 3"], correct: 0, hint: "3 - x > 0.", explain: "x < 3." },
     ],
   },
-  {
+{
     id: "g12-b12",
     num: 12,
     chapter: 3,
@@ -1172,7 +1162,7 @@ exercises: [
       { type: "mc", prompt: "∫x⁻¹ dx bằng?", choices: ["ln|x| + C", "x⁰ + C", "0 + C", "1/x + C"], correct: 0, hint: "∫x⁻¹dx = ln|x|.", explain: "ln|x| + C." },
     ],
   },
-  {
+{
     id: "g12-b13",
     num: 13,
     chapter: 3,
@@ -1223,7 +1213,7 @@ exercises: [
       { type: "mc", prompt: "∫₀²eˣ dx bằng?", choices: ["e²", "e² - 1", "e² + 1", "2e"], correct: 1, hint: "[eˣ]₀² = e² - 1.", explain: "e² - 1." },
     ],
   },
-  {
+{
     id: "g12-b14",
     num: 14,
     chapter: 3,
@@ -1272,7 +1262,7 @@ exercises: [
       { type: "mc", prompt: "Thể tích hình cầu bán kính 2 là?", choices: ["(4/3)π", "(8/3)π", "8π", "(32/3)π"], correct: 3, hint: "V = (4/3)πR³.", explain: "(32/3)π." },
     ],
   },
-  {
+{
     id: "g12-b15",
     num: 15,
     chapter: 4,
@@ -1324,7 +1314,7 @@ exercises: [
       { type: "mc", prompt: "z̄ của z = -1 + 2i là?", choices: ["-1 - 2i", "1 + 2i", "1 - 2i", "-1 + 2i"], correct: 0, hint: "Đổi dấu phần ảo.", explain: "-1 - 2i." },
     ],
   },
-  {
+{
     id: "g12-b16",
     num: 16,
     chapter: 4,
@@ -1360,7 +1350,7 @@ exercises: [
       { type: "mc", prompt: "(3-2i)-(1+4i) =", choices: ["2-6i", "2+6i", "-2-6i", "4-2i"], correct: 0, hint: "3-1=2, -2-4=-6.", explain: "2-6i." },
     ],
   },
-  {
+{
     id: "g12-b17",
     num: 17,
     chapter: 4,
@@ -1396,7 +1386,7 @@ exercises: [
       { type: "mc", prompt: "(1+2i)/(2+i) =", choices: ["(4+3i)/5", "(4-3i)/5", "(2+i)/5", "(2-i)/5"], correct: 0, hint: "Nhân với 2-i.", explain: "(4+3i)/5." },
     ],
   },
-  {
+{
     id: "g12-b18",
     num: 18,
     chapter: 4,
@@ -1432,7 +1422,7 @@ exercises: [
       { type: "mc", prompt: "Tổng hai nghiệm của x²+x+1=0 là?", choices: ["1", "-1", "i", "-i"], correct: 1, hint: "Tổng = -b/a.", explain: "-1." },
     ],
   },
-  {
+{
     id: "g12-b19",
     num: 19,
     chapter: 5,
@@ -1486,7 +1476,7 @@ exercises: [
       { type: "mc", prompt: "|(1,2,2)| bằng?", choices: ["3", "4", "5", "6"], correct: 0, hint: "√(1+4+4)=√9.", explain: "3." },
     ],
   },
-  {
+{
     id: "g12-b20",
     num: 20,
     chapter: 5,
@@ -1532,7 +1522,7 @@ exercises: [
       { type: "mc", prompt: "Mặt phẳng (Oyz) có phương trình?", choices: ["x=0", "y=0", "z=0", "y+z=0"], correct: 0, hint: "Tất cả điểm có x=0.", explain: "x=0." },
     ],
   },
-  {
+{
     id: "g12-b21",
     num: 21,
     chapter: 5,
@@ -1577,7 +1567,7 @@ exercises: [
       { type: "mc", prompt: "Đường thẳng song song Oz qua (2,3,4) có phương trình?", choices: ["x=2,y=3", "x=2,z=4", "y=3,z=4", "x+y+z=9"], correct: 0, hint: "x,y không đổi.", explain: "x=2,y=3." },
     ],
   },
-  {
+{
     id: "g12-b22",
     num: 22,
     chapter: 5,
@@ -1613,7 +1603,7 @@ exercises: [
       { type: "mc", prompt: "u=(1,1,1), v=(1,-1,0) thì?", choices: ["vuông góc", "song song", "cùng phương", "góc 60°"], correct: 0, hint: "u·v=1-1+0=0.", explain: "Vuông góc." },
     ],
   },
-  {
+{
     id: "g12-b23",
     num: 23,
     chapter: 6,
@@ -1664,7 +1654,7 @@ exercises: [
       { type: "mc", prompt: "Diện tích xung quanh hình lăng trụ tam giác đều cạnh đáy 4, chiều cao 5 là?", choices: ["20", "40", "60", "80"], correct: 2, hint: "Sₓq=12×5.", explain: "60." },
     ],
   },
-  {
+{
     id: "g12-ch1-quiz",
     num: 99,
     chapter: 1,
@@ -1697,36 +1687,7 @@ exercises: [
       { type: "mc", prompt: "Câu 9: ∫2x dx bằng?", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
       { type: "mc", prompt: "Câu 10: Phần ảo của z = 5 - 3i là?", choices: ["5", "-3", "3", "-5"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-3." },
     ],
-  },
-  
-
-  
-  
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
+  }
 ];
 
 (function attachGrade12() {

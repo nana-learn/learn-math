@@ -2,17 +2,21 @@
 // Không chép đề hay đoạn văn trong sách.
 
 const G6_CHAPTERS = [
-  { id: 1, title: "Tập hợp các số tự nhiên" },
-  { id: 2, title: "Tính chia hết trong tập hợp các số tự nhiên" },
-  { id: 3, title: "Số nguyên" },
-  { id: 4, title: "Một số hình phẳng trong thực tiễn" },
-  { id: 5, title: "Tính đối xứng của hình phẳng trong tự nhiên" },
-  { id: 6, title: "Phân số" },
-  { id: 7, title: "Số thập phân" },
-  { id: 8, title: "Những hình hình học cơ bản" },
-  { id: 9, title: "Dữ liệu và xác suất thực nghiệm" },
+{ id: 1, title: "Tập hợp các số tự nhiên" },
+{ id: 2, title: "Tính chia hết trong tập hợp các số tự nhiên" },
+{ id: 3, title: "Số nguyên" },
+{ id: 4, title: "Một số hình phẳng trong thực tiễn" },
+{ id: 5, title: "Tính đối xứng của hình phẳng trong tự nhiên" },
+{ id: 6, title: "Phân số" },
+{ id: 7, title: "Số thập phân" },
+{ id: 8, title: "Những hình hình học cơ bản" },
+{ id: 9, title: "Dữ liệu và xác suất thực nghiệm" }
+];
 
-  {
+// Grade 6 lessons - Chapters I-V (Tập 1) and VI-IX (Tập 2)
+// Tổng: 43 bài (Bài 1–43)
+const G6_LESSONS = [
+{
     id: "g6-ch1-quiz",
     num: 101,
     chapter: 1,
@@ -445,8 +449,7 @@ exercises: [
       { type: "mc", prompt: "Câu 8: Kí hiệu ∈ có nghĩa là:", choices: ["Thuộc", "Không thuộc", "Tập con", "Giao"], correct: 0, hint: "a ∈ A nghĩa là a thuộc A.", explain: "Thuộc." },
     ],
   },
-
-  {
+{
     id: "g6-ch3-quiz",
     num: 103,
     chapter: 3,
@@ -478,8 +481,7 @@ exercises: [
       { type: "mc", prompt: "Câu 8: Số dư lớn nhất khi chia cho 7 là?", choices: ["6", "7", "8", "5"], correct: 0, hint: "Dư < số chia.", explain: "6." },
     ],
   },
-
-  {
+{
     id: "g6-ch4-quiz",
     num: 104,
     chapter: 4,
@@ -509,8 +511,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
       { type: "mc", prompt: "Câu 8: Nếu ∠xOy = 30° và ∠yOz = 60° thì ∠xOz =", choices: ["90°", "30°", "60°", "180°"], correct: 0, hint: "30° + 60° = 90°.", explain: "90°." },
     ],
   },
-
-  {
+{
     id: "g6-ch5-quiz",
     num: 105,
     chapter: 5,
@@ -540,8 +541,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
       { type: "mc", prompt: "Câu 8: 3/4 > 2/3 vì:", choices: ["3×3=9 > 2×4=8", "3>2 và 4>3", "3/4=0,75 > 2/3≈0,67", "Cả A và C"], correct: 0, hint: "So sánh: a/b > c/d ↔ ad > bc (b,d>0).", explain: "Cả A và C." },
     ],
   },
-
-  {
+{
     id: "g6-ch6-quiz",
     num: 106,
     chapter: 6,
@@ -571,8 +571,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
       { type: "mc", prompt: "Câu 8: 1/2 góc bẹt là:", choices: ["90°", "45°", "180°", "360°"], correct: 0, hint: "1/2 × 180° = 90°.", explain: "90°." },
     ],
   },
-
-  {
+{
     id: "g6-ch7-quiz",
     num: 107,
     chapter: 7,
@@ -602,8 +601,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
       { type: "mc", prompt: "Câu 8: Một hộp sữa hình hộp chữ nhật dung tích 1l. Đáy 5cm×4cm. Chiều cao là?", choices: ["5cm", "10cm", "8cm", "6cm"], correct: 0, hint: "1l = 1000cm³. V =abh → h = 1000/(5×4) = 50cm. Đáp án sai - kiểm tra: 5×4=20, 1000/20=50. Không có 50cm. Giả sử đáp án đúng là 5cm nếu V=100cm³=0.1l. Đề phải là 100cm³ thì h=5cm. Giả sử đề đúng thì đáp án không có. Sửa lại: hộp 5cm×4cm×5cm thì V=100cm³=0.1l. Hoặc 10cm×8cm×5cm thì V=400cm³. Giả sử đáp án đúng là 5cm.", explain: "5cm." },
     ],
   },
-
-  {
+{
     id: "g6-ch8-quiz",
     num: 108,
     chapter: 8,
@@ -633,12 +631,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về di�
       { type: "mc", prompt: "Câu 8: Diện tích hình tròn bán kính 3cm (π≈3.14) là?", choices: ["28.26cm²", "18.84cm²", "9.42cm²", "37.68cm²"], correct: 0, hint: "S = πr² = 3.14 × 9 = 28.26cm².", explain: "28.26cm²." },
     ],
   },
-];
-
-// Grade 6 lessons - Chapters I-V (Tập 1) and VI-IX (Tập 2)
-// Tổng: 43 bài (Bài 1–43)
-const G6_LESSONS = [
-  {
+{
     id: "g6-b1",
     num: 1,
     chapter: 1,
@@ -716,8 +709,7 @@ String.raw`
       { type: "mc", prompt: "Kí hiệu nào dùng để nói một tập hợp là tập con của tập khác?", choices: ["∈", "∉", "⊂", "∩"], correct: 2, hint: "⊂ nghĩa là tập con.", explain: "A ⊂ B nghĩa là A là tập con của B." },
     ],
   },
-
-  {
+{
     id: "g6-b2",
     num: 2,
     chapter: 1,
@@ -802,7 +794,7 @@ exercises: [
       { type: "mc", prompt: "Số nào lớn hơn: 999 hay 1000?", choices: ["999", "1000", "Bằng nhau", "Không so được"], correct: 1, hint: "1000 có 4 chữ số, 999 có 3 chữ số.", explain: "1000 lớn hơn vì có nhiều chữ số hơn." },
     ],
   },
-  {
+{
     id: "g6-b3",
     num: 3,
     chapter: 1,
@@ -889,7 +881,7 @@ String.raw`
       { type: "num", prompt: "Tìm số tự nhiên x lẻ thỏa 4 < x < 9.", answer: 5, hint: "Các số 5, 6, 7, 8. Lẻ là 5 và 7.", accept: "5 hoặc 7", explain: "5 và 7 đều thỏa." },
     ],
   },
-  {
+{
     id: "g6-b4",
     num: 4,
     chapter: 1,
@@ -974,7 +966,7 @@ String.raw`
       { type: "mc", prompt: "Tính chất nào đúng với phép cộng?", choices: ["Giao hoán", "Kết hợp", "Cả hai tính chất trên", "Không có tính chất nào"], correct: 2, hint: "a+b=b+a (giao hoán), (a+b)+c=a+(b+c) (kết hợp).", explain: "Cả hai tính chất đều đúng." },
     ],
   },
-  {
+{
     id: "g6-b5",
     num: 5,
     chapter: 1,
@@ -1058,7 +1050,7 @@ String.raw`
       { type: "num", prompt: "Chia đều 48 cái kẹo cho 6 bạn. Mỗi bạn được bao nhiêu kẹo?", answer: 8, hint: "48 : 6 = 8.", explain: "8 kẹo." },
     ],
   },
-  {
+{
     id: "g6-b6",
     num: 6,
     chapter: 1,
@@ -1135,7 +1127,7 @@ String.raw`
       { type: "num", prompt: "Một hình lập phương cạnh 3 cm. Thể tích bằng bao nhiêu?", answer: 27, hint: "3^3 = 27.", explain: "27 cm³." },
     ],
   },
-  {
+{
     id: "g6-b7",
     num: 7,
     chapter: 1,
@@ -1211,7 +1203,7 @@ String.raw`
       { type: "num", prompt: "Một hình chữ nhật chiều dài 8 cm, chiều rộng 5 cm. Chu vi bằng bao nhiêu?", answer: 26, hint: "Chu vi = (dài + rộng) × 2 = (8+5)×2.", explain: "26 cm." },
     ],
   },
-  {
+{
     id: "g6-b8",
     num: 8,
     chapter: 2,
@@ -1284,7 +1276,7 @@ String.raw`
       { type: "mc", prompt: "Số nào sau đây chia hết cho 3?", choices: ["10", "11", "12", "13"], correct: 2, hint: "12 = 3×4.", explain: "12." },
     ],
   },
-  {
+{
     id: "g6-b9",
     num: 9,
     chapter: 2,
@@ -1377,7 +1369,7 @@ String.raw`
       { type: "mc", prompt: "Số nào sau đây chia hết cho cả 2 và 5?", choices: ["20", "25", "30", "Cả A và C"], correct: 3, hint: "Chia hết cho 2 và 5 thì phải tận cùng là 0.", explain: "20 và 30 đều tận cùng là 0." },
     ],
   },
-  {
+{
     id: "g6-b10",
     num: 10,
     chapter: 2,
@@ -1451,7 +1443,7 @@ String.raw`
       { type: "mc", prompt: "Số nào sau đây không phải số nguyên tố?", choices: ["11", "13", "17", "21"], correct: 3, hint: "21 = 3 × 7 là hợp số.", explain: "21." },
     ],
   },
-  {
+{
     id: "g6-b11",
     num: 11,
     chapter: 2,
@@ -1525,7 +1517,7 @@ String.raw`
       { type: "num", prompt: "ƯCLN(0, 15) bằng bao nhiêu?", answer: 15, hint: "ƯCLN(0, a) = a với a ≠ 0.", explain: "15." },
     ],
   },
-  {
+{
     id: "g6-b12",
     num: 12,
     chapter: 2,
@@ -1598,7 +1590,7 @@ String.raw`
       { type: "num", prompt: "BCNN(4, 6, 8) bằng bao nhiêu?", answer: 24, hint: "4=2², 6=2×3, 8=2³. Lấy 2³×3=24.", explain: "24." },
     ],
   },
-  {
+{
     id: "g6-b13",
     num: 13,
     chapter: 3,
@@ -1682,7 +1674,7 @@ String.raw`
       { type: "mc", prompt: "Số 0 là", choices: ["Số dương", "Số âm", "Cả hai", "Không phải số dương cũng không phải số âm"], correct: 3, hint: "0 là trung tính, không phải dương cũng không phải âm.", explain: "Không phải số dương cũng không phải số âm." },
     ],
   },
-  {
+{
     id: "g6-b14",
     num: 14,
     chapter: 3,
@@ -1763,7 +1755,7 @@ String.raw`
       { type: "num", prompt: "|(-3) + (-7)| bằng bao nhiêu?", answer: 10, hint: "(-3)+(-7)=-10, |-10|=10.", explain: "10." },
     ],
   },
-  {
+{
     id: "g6-b15",
     num: 15,
     chapter: 3,
@@ -1839,7 +1831,7 @@ String.raw`
       { type: "num", prompt: "(-50) + 30 bằng bao nhiêu?", answer: -20, hint: "50-30=20, số lớn hơn là -50 nên kết quả âm: -20.", explain: "-20." },
     ],
   },
-  {
+{
     id: "g6-b16",
     num: 16,
     chapter: 3,
@@ -1927,7 +1919,7 @@ String.raw`
       { type: "num", prompt: "Cộng một số với 0 thì được gì?", answer: "Chính số đó", accept: ["Chính số đó", "chính số đó"], hint: "a + 0 = a.", explain: "Chính số đó." },
     ],
   },
-  {
+{
     id: "g6-b17",
     num: 17,
     chapter: 3,
@@ -2003,7 +1995,7 @@ String.raw`
       { type: "num", prompt: "(-25) - (-25) bằng bao nhiêu?", answer: 0, hint: "(-25) + 25 = 0.", explain: "0." },
     ],
   },
-  {
+{
     id: "g6-b18",
     num: 18,
     chapter: 4,
@@ -2081,7 +2073,7 @@ String.raw`
       { type: "num", prompt: "Tam giác đều ABC có cạnh 5 cm. Tính chu vi.", answer: 15, hint: "5 × 3 = 15.", explain: "15 cm." },
     ],
   },
-  {
+{
     id: "g6-b19",
     num: 19,
     chapter: 4,
@@ -2161,7 +2153,7 @@ String.raw`
       { type: "mc", prompt: "Hình chữ nhật có chiều dài gấp đôi chiều rộng thì", choices: ["Là hình vuông", "Không phải hình vuông", "Luôn là hình vuông", "Không xác định"], correct: 1, hint: "Hình vuông cần dài = rộng.", explain: "Không phải hình vuông." },
     ],
   },
-  {
+{
     id: "g6-b20",
     num: 20,
     chapter: 4,
@@ -2233,7 +2225,7 @@ String.raw`
       { type: "mc", prompt: "Hình vuông là hình thoi", choices: ["Đúng", "Sai", "Chỉ khi có góc vuông", "Không xác định"], correct: 0, hint: "Hình vuông có bốn cạnh bằng nhau nên là hình thoi đặc biệt.", explain: "Đúng." },
     ],
   },
-  {
+{
     id: "g6-b21",
     num: 21,
     chapter: 4,
@@ -2310,7 +2302,7 @@ String.raw`
       { type: "mc", prompt: "Hình lục giác nào dưới đây là đều?", choices: ["Có 6 cạnh bằng nhau", "Có 6 góc bằng nhau", "Có cả 6 cạnh và 6 góc bằng nhau", "Có 3 cặp cạnh song song"], correct: 2, hint: "Cần cả 6 cạnh bằng nhau VÀ 6 góc bằng nhau.", explain: "Có cả 6 cạnh và 6 góc bằng nhau." },
     ],
   },
-  {
+{
     id: "g6-b22",
     num: 22,
     chapter: 5,
@@ -2385,7 +2377,7 @@ String.raw`
       { type: "mc", prompt: "Hình nào có vô số trục đối xứng?", choices: ["Hình vuông", "Hình tròn", "Tam giác đều", "Hình chữ nhật"], correct: 1, hint: "Hình tròn có mọi đường kính là trục đối xứng.", explain: "Hình tròn." },
     ],
   },
-  {
+{
     id: "g6-b23",
     num: 23,
     chapter: 5,
@@ -2460,7 +2452,7 @@ String.raw`
       { type: "num", prompt: "Tâm đối xứng của hình vuông là", answer: "giao điểm hai đường chéo", accept: ["giao điểm hai đường chéo", "giao điểm hai duong cheo"], hint: "Giao điểm của hai đường chéo vuông góc nhau.", explain: "Giao điểm hai đường chéo." },
     ],
   },
-  {
+{
     id: "g6-b24",
     num: 24,
     chapter: 9,
@@ -2535,7 +2527,7 @@ String.raw`
       { type: "num", prompt: "Điểm kiểm tra: 7, 8, 9, 10, 8, 9, 8. Tần số của điểm 8 là bao nhiêu?", answer: 3, hint: "Đếm số lần điểm 8 xuất hiện.", explain: "3 lần." },
     ],
   },
-  {
+{
     id: "g6-b25",
     num: 25,
     chapter: 9,
@@ -2612,7 +2604,7 @@ String.raw`
       { type: "mc", prompt: "Chú giải trong biểu đồ tranh dùng để", choices: ["Trang trí", "Giải thích biểu tượng", "Ghi số liệu", "Không cần thiết"], correct: 1, hint: "Chú giải giúp người đọc hiểu mỗi biểu tượng đại diện gì.", explain: "Giải thích biểu tượng." },
     ],
   },
-  {
+{
     id: "g6-b26",
     num: 26,
     chapter: 9,
@@ -2700,7 +2692,7 @@ String.raw`
       { type: "mc", prompt: "Biểu đồ cột phù hợp nhất để", choices: ["Thể hiện tỷ lệ phần trăm", "So sánh số lượng giữa các nhóm", "Thể hiện xu hướng theo thời gian", "Cả B và C"], correct: 3, hint: "Biểu đồ cột tốt cho so sánh và xu hướng.", explain: "Cả B và C." },
     ],
   },
-  {
+{
     id: "g6-b27",
     num: 27,
     chapter: 9,
@@ -2795,7 +2787,7 @@ String.raw`
       { type: "num", prompt: "Cột năm 1 cao 9cm, cột năm 2 cao 6cm. Tỷ lệ 1cm = 2 học sinh. Năm 1 hơn năm 2 bao nhiêu học sinh?", answer: 6, hint: "(9-6) × 2 = 6.", explain: "6 học sinh." },
     ],
   },
-  {
+{
     id: "g6-b28",
     num: 28,
     chapter: 6,
@@ -2879,7 +2871,7 @@ String.raw`
       { type: "mc", prompt: "Phân số \(\frac{a}{0}\)", choices: ["Bằng 0", "Bằng a", "Vô nghĩa", "Bằng 1"], correct: 2, hint: "Mẫu số không thể bằng 0.", explain: "Vô nghĩa." },
     ],
   },
-  {
+{
     id: "g6-b29",
     num: 29,
     chapter: 6,
@@ -2952,7 +2944,7 @@ String.raw`
       { type: "mc", prompt: "Phân số \(\frac{a}{a}\) (a ≠ 0) rút gọn được", choices: ["\(\frac{1}{1}\)", "\(\frac{a}{1}\)", "\(\frac{1}{a}\)", "\(\frac{a}{a}\)"], correct: 0, hint: "\(\frac{a}{a} = 1 = \frac{1}{1}\).", explain: "\(\frac{1}{1}\)." },
     ],
   },
-  {
+{
     id: "g6-b30",
     num: 30,
     chapter: 6,
@@ -3026,7 +3018,7 @@ String.raw`
       { type: "mc", prompt: "Khi quy đồng \(\frac{2}{5}\) thành \(\frac{8}{20}\), đã nhân với", choices: ["2", "3", "4", "5"], correct: 2, hint: "20:5 = 4.", explain: "4." },
     ],
   },
-  {
+{
     id: "g6-b31",
     num: 31,
     chapter: 6,
@@ -3111,7 +3103,7 @@ String.raw`
       { type: "mc", prompt: "So sánh \(\frac{8}{9}\) và \(\frac{9}{10}\)", choices: ["\(\frac{8}{9} > \frac{9}{10}\)", "\(\frac{8}{9} < \frac{9}{10}\)", "Bằng nhau", "Không xác định"], correct: 0, hint: "Phần bù: \(\frac{1}{9} > \frac{1}{10}\), nên \(\frac{8}{9} > \frac{9}{10}\).", explain: "\(\frac{8}{9} > \frac{9}{10}\)." },
     ],
   },
-  {
+{
     id: "g6-b32",
     num: 32,
     chapter: 6,
@@ -3184,7 +3176,7 @@ String.raw`
       { type: "mc", prompt: "Số nào lớn hơn: 2.5 hay 2.05?", choices: ["2.5", "2.05", "Bằng nhau", "Không xác định"], correct: 0, hint: "2.5 = 2.50 > 2.05.", explain: "2.5." },
     ],
   },
-  {
+{
     id: "g6-b33",
     num: 33,
     chapter: 6,
@@ -3256,7 +3248,7 @@ String.raw`
       { type: "num", prompt: "Tính \(\frac{3}{8} + \frac{1}{4}\).", answer: "5/8", accept: ["5/8", "5:8"], hint: "Quy đồng \(\frac{3}{8} + \frac{2}{8}\).", explain: "\(\frac{5}{8}\)." },
     ],
   },
-  {
+{
     id: "g6-b34",
     num: 34,
     chapter: 6,
@@ -3328,7 +3320,7 @@ String.raw`
       { type: "num", prompt: "Tính \(3\frac{1}{2} - 1\frac{1}{4}\).", answer: "2.25", accept: ["2.25", "9/4", "2 1/4"], hint: "3-1=2, \(\frac{1}{2} - \frac{1}{4} = \frac{1}{4}\).", explain: "2\(\frac{1}{4}\)." },
     ],
   },
-  {
+{
     id: "g6-b35",
     num: 35,
     chapter: 6,
@@ -3400,7 +3392,7 @@ String.raw`
       { type: "num", prompt: "Tính \(3\frac{1}{3} \cdot \frac{3}{5}\).", answer: "2", accept: ["2", "2/1"], hint: "\(\frac{10}{3} \cdot \frac{3}{5} = \frac{30}{15} = 2\).", explain: "2." },
     ],
   },
-  {
+{
     id: "g6-b36",
     num: 36,
     chapter: 6,
@@ -3472,7 +3464,7 @@ String.raw`
       { type: "num", prompt: "Tính \(\frac{7}{8} : \frac{14}{9}\).", answer: "9/16", accept: ["9/16", "9:16"], hint: "\(\frac{7}{8} \cdot \frac{9}{14} = \frac{63}{112} = \frac{9}{16}\).", explain: "\(\frac{9}{16}\)." },
     ],
   },
-  {
+{
     id: "g6-b37",
     num: 37,
     chapter: 6,
@@ -3546,7 +3538,7 @@ String.raw`
       { type: "num", prompt: "Tính \(\left(\frac{3}{4} - \frac{1}{2}\right) : \frac{1}{4}\).", answer: "1", accept: ["1", "1/1"], hint: "\(\frac{3}{4} - \frac{1}{2} = \frac{1}{4}\), \(\frac{1}{4} : \frac{1}{4} = 1\).", explain: "1." },
     ],
   },
-  {
+{
     id: "g6-b38",
     num: 38,
     chapter: 7,
@@ -3629,7 +3621,7 @@ String.raw`
       { type: "num", prompt: "Đổi \(\frac{7}{5}\) ra số thập phân.", answer: "1.4", accept: ["1.4", "1.40"], hint: "\(\frac{7}{5} = \frac{14}{10}\).", explain: "1.4." },
     ],
   },
-  {
+{
     id: "g6-b39",
     num: 39,
     chapter: 7,
@@ -3704,7 +3696,7 @@ String.raw`
       { type: "num", prompt: "So sánh 6.25 và 6.250.", answer: "=", accept: ["=", "eq"], hint: "6.25 = 6.250.", explain: "6.25 = 6.250." },
     ],
   },
-  {
+{
     id: "g6-b40",
     num: 40,
     chapter: 7,
@@ -3778,7 +3770,7 @@ String.raw`
       { type: "num", prompt: "Tính 12.5 + 8.75.", answer: "21.25", accept: ["21.25", "21,25"], hint: "Viết 12.5 thành 12.50, 0+5=5, 5+7=12, 12+8+1=21.", explain: "21.25." },
     ],
   },
-  {
+{
     id: "g6-b41",
     num: 41,
     chapter: 7,
@@ -3852,7 +3844,7 @@ String.raw`
       { type: "num", prompt: "Tính 4.5 × 2.", answer: "9", accept: ["9", "9.0"], hint: "45 × 2 = 90, một chữ số sau dấu phẩy: 9.0 = 9.", explain: "9." },
     ],
   },
-  {
+{
     id: "g6-b42",
     num: 42,
     chapter: 7,
@@ -3925,7 +3917,7 @@ String.raw`
       { type: "num", prompt: "Tính 2.5 : 0.05.", answer: "50", accept: ["50", "50.0"], hint: "250 : 5 = 50.", explain: "50." },
     ],
   },
-  {
+{
     id: "g6-b43",
     num: 43,
     chapter: 7,
@@ -3998,8 +3990,7 @@ String.raw`
       { type: "num", prompt: "Viết 0.05 thành phần trăm.", answer: "5%", accept: ["5%", "5 %"], hint: "0.05 × 100 = 5.", explain: "5%." },
     ],
   },
-
-  {
+{
     id: "g6-ch2-quiz",
     num: 102,
     chapter: 2,
@@ -4028,7 +4019,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về chia
       { type: "mc", prompt: "Câu 7: 2³ =", choices: ["6", "8", "9", "12"], correct: 1, hint: "2·2·2 = 8.", explain: "8." },
       { type: "mc", prompt: "Câu 8: 5² + 3² =", choices: ["16", "25", "34", "64"], correct: 2, hint: "25 + 9 = 34.", explain: "34." },
     ],
-  },
+  }
 ];
 
 (function attachGrade6() {
