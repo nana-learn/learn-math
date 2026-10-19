@@ -20,7 +20,7 @@ const G11_CHAPTERS = [
     title: "Chương 2: Tổ hợp và xác suất - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -51,7 +51,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ
     title: "Chương 3: Dãy số - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -82,7 +82,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy
     title: "Chương 4: Giới hạn - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -113,7 +113,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về gi�
     title: "Chương 5: Đạo hàm - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -144,7 +144,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
     title: "Chương 6: Phép dời hình và phép đồng dạng - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -175,7 +175,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
     title: "Chương 7: Đường thẳng và mặt phẳng - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -206,7 +206,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khô
     title: "Chương 8: Vector trong không gian - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -238,7 +238,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     title: "Đề kiểm tra Chương 1: Trigonometry",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -268,7 +268,7 @@ exercises: [
     title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -309,9 +309,9 @@ const G11_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Hàm số lượng giác",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "dQw4w9WgXcQ",
+    summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "",
     body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
 
     <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
@@ -759,9 +759,9 @@ exercises: [
     num: 2,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "dQw4w9WgXcQ",
+    summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
@@ -803,9 +803,9 @@ exercises: [
     num: 3,
     chapter: 2,
     title: "Hoán vị, chỉnh hợp, tổ hợp",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].", youtube: "dQw4w9WgXcQ",
+    summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].", youtube: "",
     body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
@@ -846,11 +846,11 @@ exercises: [
     num: 4,
     chapter: 2,
     title: "Nhị thức Newton",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -891,11 +891,11 @@ exercises: [
     num: 5,
     chapter: 3,
     title: "Dãy số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -936,11 +936,11 @@ exercises: [
     num: 6,
     chapter: 3,
     title: "Cấp số cộng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -981,11 +981,11 @@ exercises: [
     num: 7,
     chapter: 4,
     title: "Giới hạn của dãy số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1026,11 +1026,11 @@ exercises: [
     num: 8,
     chapter: 4,
     title: "Giới hạn của hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1071,11 +1071,11 @@ exercises: [
     num: 9,
     chapter: 5,
     title: "Đạo hàm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1116,11 +1116,11 @@ exercises: [
     num: 10,
     chapter: 6,
     title: "Phép dời hình",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1161,11 +1161,11 @@ exercises: [
     num: 11,
     chapter: 6,
     title: "Phép đồng dạng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1206,11 +1206,11 @@ exercises: [
     num: 12,
     chapter: 7,
     title: "Đại cương về đường thẳng và mặt phẳng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1251,11 +1251,11 @@ exercises: [
     num: 13,
     chapter: 7,
     title: "Hai đường thẳng song song",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1296,11 +1296,11 @@ exercises: [
     num: 14,
     chapter: 8,
     title: "Vectơ trong không gian",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1341,11 +1341,11 @@ exercises: [
     num: 15,
     chapter: 8,
     title: "Hai đường thẳng vuông góc",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1387,11 +1387,11 @@ exercises: [
     num: 16,
     chapter: 7,
     title: "Hai mặt phẳng song song",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1432,11 +1432,11 @@ exercises: [
     num: 17,
     chapter: 7,
     title: "Phép chiếu song song",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1477,11 +1477,11 @@ exercises: [
     num: 18,
     chapter: 8,
     title: " Vectơ trong không gian (tiếp)",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1522,11 +1522,11 @@ exercises: [
     num: 19,
     chapter: 8,
     title: "Hai mặt phẳng vuông góc",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1567,11 +1567,11 @@ exercises: [
     num: 20,
     chapter: 8,
     title: "Khoảng cách",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1613,11 +1613,11 @@ exercises: [
     num: 21,
     chapter: 1,
     title: "Phương trình lượng giác cơ bản (tiếp)",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1658,11 +1658,11 @@ exercises: [
     num: 22,
     chapter: 1,
     title: "Phương trình lượng giác thường gặp",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1703,11 +1703,11 @@ exercises: [
     num: 23,
     chapter: 1,
     title: "Hàm số lượng giác (tiếp)",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>

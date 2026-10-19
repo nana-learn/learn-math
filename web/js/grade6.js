@@ -20,12 +20,12 @@ const G6_CHAPTERS = [
     ],
 
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
     body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
@@ -460,11 +460,11 @@ exercises: [
     num: 103,
     chapter: 3,
     title: "Chương 3: Phép chia - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -502,11 +502,11 @@ exercises: [
     num: 104,
     chapter: 4,
     title: "Chương 4: Hình học - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -542,11 +542,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
     num: 105,
     chapter: 5,
     title: "Chương 5: Phân số - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập phân số, phép toán phân số.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -582,11 +582,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
     num: 106,
     chapter: 6,
     title: "Chương 6: Số đo góc - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -622,11 +622,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     num: 107,
     chapter: 7,
     title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -662,11 +662,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     num: 108,
     chapter: 8,
     title: "Chương 8: Diện tích - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -706,9 +706,9 @@ const G6_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Tập hợp",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ và ∉.",
     spoken: "Bài học về Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ v... (đọc tiếp để nắm vững kiến thức)",
@@ -791,9 +791,9 @@ String.raw`
     num: 2,
     chapter: 1,
     title: "Cách ghi số tự nhiên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hệ thập phân: mỗi hàng giá trị bằng 10 lần hàng bên phải.",
     spoken: "Bài học về Hệ thập phân: mỗi hàng giá trị bằng 10 lần hàng bê... (đọc tiếp để nắm vững kiến thức)",
@@ -882,9 +882,9 @@ exercises: [
     num: 3,
     chapter: 1,
     title: "Thứ tự trong tập hợp các số tự nhiên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Trên tia số, số càng bên phải càng lớn. So sánh hai số: xét hàng cao nhất khác nhau.",
     spoken: "Bài học về Trên tia số, số càng bên phải càng lớn. So sánh ha... (đọc tiếp để nắm vững kiến thức)",
@@ -975,9 +975,9 @@ String.raw`
     num: 4,
     chapter: 1,
     title: "Phép cộng và phép trừ số tự nhiên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng trừ theo hàng dọc hoặc ngang. Phép trừ chỉ thực hiện khi số bị trừ lớn hơn hoặc bằng số trừ.",
     spoken: "Bài học về Cộng trừ theo hàng dọc hoặc ngang. Phép trừ chỉ th... (đọc tiếp để nắm vững kiến thức)",
@@ -1066,9 +1066,9 @@ String.raw`
     num: 5,
     chapter: 1,
     title: "Phép nhân và phép chia số tự nhiên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Nhân là phép cộng lặp lại. Chia là phép trừ lặp lại. Phép chia có dư khi số bị chia không chia hết cho số chia.",
     spoken: "Bài học về Nhân là phép cộng lặp lại. Chia là phép trừ lặp lạ... (đọc tiếp để nắm vững kiến thức)",
@@ -1156,9 +1156,9 @@ String.raw`
     num: 6,
     chapter: 1,
     title: "Luỹ thừa với số mũ tự nhiên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0). Quy ước 0^0 không xác định.",
     spoken: "Bài học về a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0).... (đọc tiếp để nắm vững kiến thức)",
@@ -1239,9 +1239,9 @@ String.raw`
     num: 7,
     chapter: 1,
     title: "Thứ tự thực hiện các phép tính",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia → cộng/trừ. Có dấu ngoặc: trong ngoặc trước.",
     spoken: "Bài học về Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia... (đọc tiếp để nắm vững kiến thức)",
@@ -1321,9 +1321,9 @@ String.raw`
     num: 8,
     chapter: 2,
     title: "Quan hệ chia hết và tính chất",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "a chia hết b (a \u2223 b) khi tồn tại k sao cho a = b \u22c5 k. Tính chất: nếu a \u2223 b và a \u2223 c thì a \u2223 (b \u00b1 c).",
     spoken: "Bài học về a chia hết b (a \u2223 b) khi tồn tại k sao cho a ... (đọc tiếp để nắm vững kiến thức)",
@@ -1400,9 +1400,9 @@ String.raw`
     num: 9,
     chapter: 2,
     title: "Dấu hiệu chia hết",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3: tổng các chữ số chia hết cho 3.",
     spoken: "Bài học về Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận c... (đọc tiếp để nắm vững kiến thức)",
@@ -1499,9 +1499,9 @@ String.raw`
     num: 10,
     chapter: 2,
     title: "Số nguyên tố",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số có nhiều hơn hai ước.",
     spoken: "Bài học về Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là ... (đọc tiếp để nắm vững kiến thức)",
@@ -1579,9 +1579,9 @@ String.raw`
     num: 11,
     chapter: 2,
     title: "Ước chung. Ước chung lớn nhất",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Ước chung của hai hay nhiều số là ước của tất cả các số đó. ƯCLN là ước chung lớn nhất.",
     spoken: "Bài học về Ước chung của hai hay nhiều số là ước của tất cả c... (đọc tiếp để nắm vững kiến thức)",
@@ -1659,9 +1659,9 @@ String.raw`
     num: 12,
     chapter: 2,
     title: "Bội chung. Bội chung nhỏ nhất",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Bội chung của hai hay nhiều số là bội của tất cả các số đó. BCNN là bội chung nhỏ nhất.",
     spoken: "Bài học về Bội chung của hai hay nhiều số là bội của tất cả c... (đọc tiếp để nắm vững kiến thức)",
@@ -1738,9 +1738,9 @@ String.raw`
     num: 13,
     chapter: 3,
     title: "Tập hợp các số nguyên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Số nguyên gồm số dương, số 0, và số âm. Kí hiệu Z.",
     spoken: "Bài học về Số nguyên gồm số dương, số 0, và số âm. Kí hiệu Z.... (đọc tiếp để nắm vững kiến thức)",
@@ -1828,9 +1828,9 @@ String.raw`
     num: 14,
     chapter: 3,
     title: "Cộng hai số nguyên cùng dấu",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng hai số nguyên cùng dấu: cộng giá trị tuyệt đối, giữ dấu chung.",
     spoken: "Bài học về Cộng hai số nguyên cùng dấu: cộng giá trị tuyệt đố... (đọc tiếp để nắm vững kiến thức)",
@@ -1915,9 +1915,9 @@ String.raw`
     num: 15,
     chapter: 3,
     title: "Cộng hai số nguyên khác dấu",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.",
     spoken: "Bài học về Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối... (đọc tiếp để nắm vững kiến thức)",
@@ -1997,9 +1997,9 @@ String.raw`
     num: 16,
     chapter: 3,
     title: "Tính chất của phép cộng số nguyên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Giao hoán: a + b = b + a. Kết hợp: (a + b) + c = a + (b + c). Cộng với 0: a + 0 = a.",
     spoken: "Bài học về Giao hoán: a + b = b + a. Kết hợp: (a + b) + c = a... (đọc tiếp để nắm vững kiến thức)",
@@ -2091,9 +2091,9 @@ String.raw`
     num: 17,
     chapter: 3,
     title: "Phép trừ hai số nguyên",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "a - b = a + (-b). Trừ một số là cộng với số đối của nó.",
     spoken: "Bài học về a - b = a + (-b). Trừ một số là cộng với số đối củ... (đọc tiếp để nắm vững kiến thức)",
@@ -2173,9 +2173,9 @@ String.raw`
     num: 18,
     chapter: 4,
     title: "Tam giác cân. Tam giác đều",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tam giác cân: hai cạnh bằng nhau. Tam giác đều: ba cạnh bằng nhau.",
     spoken: "Bài học về Tam giác cân: hai cạnh bằng nhau. Tam giác đều: ba... (đọc tiếp để nắm vững kiến thức)",
@@ -2257,9 +2257,9 @@ String.raw`
     num: 19,
     chapter: 4,
     title: "Hình vuông. Hình chữ nhật",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hình vuông: bốn cạnh bằng nhau, bốn góc vuông. Hình chữ nhật: bốn góc vuông, hai cặp cạnh bằng nhau.",
     spoken: "Bài học về Hình vuông: bốn cạnh bằng nhau, bốn góc vuông. Hìn... (đọc tiếp để nắm vững kiến thức)",
@@ -2343,9 +2343,9 @@ String.raw`
     num: 20,
     chapter: 4,
     title: "Hình thoi. Hình bình hành",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hình thoi: bốn cạnh bằng nhau. Hình bình hành: hai cặp cạnh đối song song và bằng nhau.",
     spoken: "Bài học về Hình thoi: bốn cạnh bằng nhau. Hình bình hành: hai... (đọc tiếp để nắm vững kiến thức)",
@@ -2421,9 +2421,9 @@ String.raw`
     num: 21,
     chapter: 4,
     title: "Hình lục giác đều",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằng nhau và đều bằng 120°.",
     spoken: "Bài học về Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằn... (đọc tiếp để nắm vững kiến thức)",
@@ -2504,9 +2504,9 @@ String.raw`
     num: 22,
     chapter: 5,
     title: "Hình có trục đối xứng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hình có trục đối xứng: nếu gấp hình dọc theo trục thì hai phần trùng nhau hoàn toàn.",
     spoken: "Bài học về Hình có trục đối xứng: nếu gấp hình dọc theo trục ... (đọc tiếp để nắm vững kiến thức)",
@@ -2585,9 +2585,9 @@ String.raw`
     num: 23,
     chapter: 5,
     title: "Hình có tâm đối xứng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hình có tâm đối xứng: nếu quay hình 180° quanh tâm thì hình trùng với chính nó.",
     spoken: "Bài học về Hình có tâm đối xứng: nếu quay hình 180° quanh tâm... (đọc tiếp để nắm vững kiến thức)",
@@ -2666,9 +2666,9 @@ String.raw`
     num: 24,
     chapter: 9,
     title: "Thu thập và phân loại dữ liệu",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Thu thập dữ liệu từ thực tế, phân loại theo đặc điểm, lập bảng thống kê.",
     spoken: "Bài học về Thu thập dữ liệu từ thực tế, phân loại theo đặc đi... (đọc tiếp để nắm vững kiến thức)",
@@ -2747,9 +2747,9 @@ String.raw`
     num: 25,
     chapter: 9,
     title: "Biểu đồ tranh",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Biểu đồ tranh sử dụng hình vẽ hoặc biểu tượng để trình bày dữ liệu.",
     spoken: "Bài học về Biểu đồ tranh sử dụng hình vẽ hoặc biểu tượng để t... (đọc tiếp để nắm vững kiến thức)",
@@ -2830,9 +2830,9 @@ String.raw`
     num: 26,
     chapter: 9,
     title: "Biểu đồ cột",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Biểu đồ cột dùng các hình chữ nhật (cột) để trình bày và so sánh dữ liệu.",
     spoken: "Bài học về Biểu đồ cột dùng các hình chữ nhật (cột) để trình ... (đọc tiếp để nắm vững kiến thức)",
@@ -2924,9 +2924,9 @@ String.raw`
     num: 27,
     chapter: 9,
     title: "Biểu đồ cột kép",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng để so sánh hai bộ dữ liệu.",
     spoken: "Bài học về Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng... (đọc tiếp để nắm vững kiến thức)",
@@ -3025,9 +3025,9 @@ String.raw`
     num: 28,
     chapter: 6,
     title: "Phân số. Tính chất cơ bản của phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phân số là tỉ số của hai số nguyên. Tính chất cơ bản: nhân/chia tử và mẫu với cùng số khác 0.",
     spoken: "Bài học về Phân số là tỉ số của hai số nguyên. Tính chất cơ b... (đọc tiếp để nắm vững kiến thức)",
@@ -3115,9 +3115,9 @@ String.raw`
     num: 29,
     chapter: 6,
     title: "Rút gọn phân số. Phân số tối giản",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Rút gọn phân số về dạng tối giản (tử và mẫu nguyên tố cùng nhau).",
     spoken: "Bài học về Rút gọn phân số về dạng tối giản (tử và mẫu nguyên... (đọc tiếp để nắm vững kiến thức)",
@@ -3194,9 +3194,9 @@ String.raw`
     num: 30,
     chapter: 6,
     title: "Quy đồng mẫu số nhiều phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Quy đồng mẫu số là biến các phân số có mẫu khác nhau về cùng một mẫu số chung.",
     spoken: "Bài học về Quy đồng mẫu số là biến các phân số có mẫu khác nh... (đọc tiếp để nắm vững kiến thức)",
@@ -3274,9 +3274,9 @@ String.raw`
     num: 31,
     chapter: 6,
     title: "So sánh phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "So sánh phân số dựa trên quy đồng mẫu số hoặc so sánh với 1, so sánh phần bù.",
     spoken: "Bài học về So sánh phân số dựa trên quy đồng mẫu số hoặc so s... (đọc tiếp để nắm vững kiến thức)",
@@ -3365,9 +3365,9 @@ String.raw`
     num: 32,
     chapter: 6,
     title: "Hỗn số. Số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hỗn số là tổng của số nguyên và phân số. Số thập phân là phân số đặc biệt với mẫu là lũy thừa của 10.",
     spoken: "Bài học về Hỗn số là tổng của số nguyên và phân số. Số thập p... (đọc tiếp để nắm vững kiến thức)",
@@ -3444,9 +3444,9 @@ String.raw`
     num: 33,
     chapter: 6,
     title: "Phép cộng phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng phân số: quy đồng mẫu rồi cộng tử số, giữ mẫu số.",
     spoken: "Bài học về Cộng phân số: quy đồng mẫu rồi cộng tử số, giữ mẫu... (đọc tiếp để nắm vững kiến thức)",
@@ -3522,9 +3522,9 @@ String.raw`
     num: 34,
     chapter: 6,
     title: "Phép trừ phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Trừ phân số: quy đồng mẫu rồi trừ tử số, giữ mẫu số.",
     spoken: "Bài học về Trừ phân số: quy đồng mẫu rồi trừ tử số, giữ mẫu s... (đọc tiếp để nắm vững kiến thức)",
@@ -3600,9 +3600,9 @@ String.raw`
     num: 35,
     chapter: 6,
     title: "Phép nhân phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Nhân phân số: nhân tử với tử, mẫu với mẫu.",
     spoken: "Bài học về Nhân phân số: nhân tử với tử, mẫu với mẫu.... (đọc tiếp để nắm vững kiến thức)",
@@ -3678,9 +3678,9 @@ String.raw`
     num: 36,
     chapter: 6,
     title: "Phép chia phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Chia phân số: nhân với phân số nghịch đảo.",
     spoken: "Bài học về Chia phân số: nhân với phân số nghịch đảo.... (đọc tiếp để nắm vững kiến thức)",
@@ -3756,9 +3756,9 @@ String.raw`
     num: 37,
     chapter: 6,
     title: "Giá trị của phân số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tính giá trị biểu thức chứa phân số, áp dụng thứ tự phép tính.",
     spoken: "Bài học về Tính giá trị biểu thức chứa phân số, áp dụng thứ t... (đọc tiếp để nắm vững kiến thức)",
@@ -3836,9 +3836,9 @@ String.raw`
     num: 38,
     chapter: 7,
     title: "Số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Số thập phân là phân số có mẫu là lũy thừa của 10, biểu diễn với dấu phẩy.",
     spoken: "Bài học về Số thập phân là phân số có mẫu là lũy thừa của 10,... (đọc tiếp để nắm vững kiến thức)",
@@ -3925,9 +3925,9 @@ String.raw`
     num: 39,
     chapter: 7,
     title: "So sánh số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "So sánh số thập phân: so sánh phần nguyên trước, nếu bằng nhau so sánh phần thập phân.",
     spoken: "Bài học về So sánh số thập phân: so sánh phần nguyên trước, n... (đọc tiếp để nắm vững kiến thức)",
@@ -4006,9 +4006,9 @@ String.raw`
     num: 40,
     chapter: 7,
     title: "Cộng, trừ số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng/trừ số thập phân: đặt tính theo hàng dọc, dấu phẩy thẳng hàng.",
     spoken: "Bài học về Cộng/trừ số thập phân: đặt tính theo hàng dọc, dấu... (đọc tiếp để nắm vững kiến thức)",
@@ -4086,11 +4086,11 @@ String.raw`
     num: 41,
     chapter: 7,
     title: "Nhân số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Bài học Nhân số thập phân... (đọc để nắm vững kiến thức)",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Nhân số thập phân: nhân như số tự nhiên, đếm số chữ số sau dấu phẩy.",
     body: `    <div class="trap">
@@ -4166,9 +4166,9 @@ String.raw`
     num: 42,
     chapter: 7,
     title: "Chia số thập phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Chia số thập phân: chuyển thành chia số tự nhiên bằng cách nhân cả số bị chia và chia với 10.",
     spoken: "Bài học về Chia số thập phân: chuyển thành chia số tự nhiên b... (đọc tiếp để nắm vững kiến thức)",
@@ -4245,9 +4245,9 @@ String.raw`
     num: 43,
     chapter: 7,
     title: "Tỉ số phần trăm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tỉ số phần trăm là tỉ số có mẫu là 100, viết với ký hiệu %.",
     spoken: "Bài học về Tỉ số phần trăm là tỉ số có mẫu là 100, viết với k... (đọc tiếp để nắm vững kiến thức)",
@@ -4325,11 +4325,11 @@ String.raw`
     num: 102,
     chapter: 2,
     title: "Chương 2: Tính chia hết - Trắc nghiệm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>

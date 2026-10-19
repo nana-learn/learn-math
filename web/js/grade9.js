@@ -14,7 +14,7 @@ const G9_CHAPTERS = [
     title: "Chương 1: Căn bậc hai. Căn bậc ba - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "dQw4w9WgXcQ",
+    summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
@@ -43,7 +43,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn
     title: "Chương 2: Hàm số bậc nhất - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "dQw4w9WgXcQ",
+    summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
@@ -71,11 +71,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     num: 101,
     chapter: 1,
     title: "Đề kiểm tra Chương 1: Căn bậc hai",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
     body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
@@ -515,11 +515,11 @@ exercises: [
     num: 102,
     chapter: 2,
     title: "Đề kiểm tra Chương 2: Hàm số bậc nhất",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -556,7 +556,7 @@ exercises: [
     title: "Chương 3: Góc với đường tròn - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>

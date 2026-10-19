@@ -20,7 +20,7 @@ const G12_CHAPTERS = [
     title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -51,7 +51,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     title: "Chương 3: Nguyên hàm - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -82,7 +82,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     title: "Chương 4: Số phức - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -113,7 +113,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -144,7 +144,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -175,7 +175,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -206,7 +206,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     title: "Chương 8: Ôn tập - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập tổng hợp các chương.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -238,7 +238,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     title: "Đề kiểm tra Chương 1: Applications of derivatives",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -268,7 +268,7 @@ exercises: [
     title: "Đề kiểm tra Chương 2: Powers, Exponential, Logarithm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -296,7 +296,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     title: "Đề kiểm tra Chương 3: Integrals",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
     body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
@@ -333,9 +333,9 @@ const G12_LESSONS = [
     num: 1,
     chapter: 1,
     title: "Sự đồng biến, nghịch biến của hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
+    summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "",
     body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
 
     <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
@@ -795,9 +795,9 @@ exercises: [
     num: 2,
     chapter: 1,
     title: "Cực trị của hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
+    summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
@@ -849,9 +849,9 @@ exercises: [
     num: 3,
     chapter: 1,
     title: "Giá trị lớn nhất, giá trị nhỏ nhất của hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
+    summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
@@ -890,9 +890,9 @@ exercises: [
     num: 4,
     chapter: 1,
     title: "Đường tiệm cận của đồ thị hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -932,9 +932,9 @@ exercises: [
     num: 5,
     chapter: 1,
     title: "Khảo sát sự biến thiên và vẽ đồ thị hàm số",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -988,9 +988,9 @@ exercises: [
     num: 6,
     chapter: 1,
     title: "Tương giao của các đồ thị",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1030,11 +1030,11 @@ exercises: [
     num: 7,
     chapter: 2,
     title: "Lũy thừa",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1074,11 +1074,11 @@ exercises: [
     num: 8,
     chapter: 2,
     title: "Logarit",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, tính chất của logarit.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1118,11 +1118,11 @@ exercises: [
     num: 9,
     chapter: 2,
     title: "Hàm số mũ, hàm số logarit",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1175,11 +1175,11 @@ exercises: [
     num: 10,
     chapter: 2,
     title: "Phương trình mũ, phương trình logarit",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1219,11 +1219,11 @@ exercises: [
     num: 11,
     chapter: 2,
     title: "Bất phương trình mũ, bất phương trình logarit",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Giải bất phương trình mũ và logarit.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1263,11 +1263,11 @@ exercises: [
     num: 12,
     chapter: 3,
     title: "Nguyên hàm",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1307,11 +1307,11 @@ exercises: [
     num: 13,
     chapter: 3,
     title: "Tích phân",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1366,11 +1366,11 @@ exercises: [
     num: 14,
     chapter: 3,
     title: "Ứng dụng tích phân tính diện tích, thể tích",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1423,11 +1423,11 @@ exercises: [
     num: 15,
     chapter: 4,
     title: "Số phức và biểu diễn hình học",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1483,11 +1483,11 @@ exercises: [
     num: 16,
     chapter: 4,
     title: "Phép cộng và phép nhân các số phức",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Cộng, trừ, nhân số phức.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1527,11 +1527,11 @@ exercises: [
     num: 17,
     chapter: 4,
     title: "Phép chia các số phức",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Chia số phức, số phức nghịch đảo.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1571,11 +1571,11 @@ exercises: [
     num: 18,
     chapter: 4,
     title: "Phương trình bậc hai với hệ số thực",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1615,11 +1615,11 @@ exercises: [
     num: 19,
     chapter: 5,
     title: "Tọa độ trong không gian",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1677,11 +1677,11 @@ exercises: [
     num: 20,
     chapter: 5,
     title: "Phương trình mặt phẳng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phương trình tổng quát của mặt phẳng.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1731,11 +1731,11 @@ exercises: [
     num: 21,
     chapter: 5,
     title: "Phương trình đường thẳng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Phương trình tham số và phương trình chính tắc.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1784,11 +1784,11 @@ exercises: [
     num: 22,
     chapter: 5,
     title: "Tích vô hướng và ứng dụng",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1828,11 +1828,11 @@ exercises: [
     num: 23,
     chapter: 6,
     title: "Khối đa diện",
-    video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
+    video: "",
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
     body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
@@ -1889,7 +1889,7 @@ exercises: [
     title: "Chương 1: Ứng dụng đạo hàm - Trắc nghiệm",
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    youtube: "dQw4w9WgXcQ",
+    youtube: "",
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
     body: `    <div class="memory"><p><strong>Key point:</strong> Ghi nhớ điều quan trọng.</p></div>
