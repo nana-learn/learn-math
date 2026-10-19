@@ -15,14 +15,11 @@ const G9_CHAPTERS = [
     spoken: "Luyện tập căn bậc hai và căn bậc ba.",
 
     summary: "Luyện tập căn bậc hai và căn bậc ba.", youtube: "",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn bậc hai và căn bậc ba.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -44,14 +41,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về căn
     spoken: "Luyện tập hàm số bậc nhất y = ax + b.",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b.", youtube: "",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -78,24 +72,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Căn bậc hai.",
-    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
-
-    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
-
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -522,20 +503,11 @@ exercises: [
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -559,14 +531,11 @@ exercises: [
     youtube: "",
 
     summary: "Luyện tập góc nội tiếp, góc giữa tia tiếp tuyến và dây cung.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về góc với đường tròn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [

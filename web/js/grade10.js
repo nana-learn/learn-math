@@ -25,14 +25,11 @@ const G10_CHAPTERS = [
     youtube: "",
 
     summary: "Luyện tập hàm số bậc nhất y = ax + b và hàm số bậc hai y = ax².",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm số bậc nhất và bậc hai.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -56,14 +53,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hàm
     youtube: "",
 
     summary: "Luyện tập phương trình bậc nhất, bậc hai, hệ phương trình.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phương trình và hệ phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -87,14 +81,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phư
     youtube: "",
 
     summary: "Luyện tập vectơ, tổng, hiệu, tích với số.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vectơ.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -118,14 +109,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     youtube: "",
 
     summary: "Luyện tập tích vô hướng, độ dài, góc giữa hai vector.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tích vô hướng.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -150,14 +138,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tíc
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Mệnh đề, Tập hợp.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -180,14 +165,11 @@ exercises: [
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Hàm số bậc nhất, bậc hai.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -215,15 +197,7 @@ const G10_LESSONS = [
     video: "",
 
     summary: "Mệnh đề là câu khẳng định đúng hoặc sai.", spoken: "Mệnh đề là câu khẳng định có tính đúng hoặc sai. Ví dụ: 2+3=5 là mệnh đề đúng.", youtube: "",
-    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần mệnh đề?</strong> Toán học dựa trên khẳng định rõ ràng.</p>
       <div class="example">
@@ -690,15 +664,7 @@ exercises: [
     video: "",
 
     summary: "Tập hợp là nhóm các phần tử.", spoken: "Tập hợp là nhóm các đối tượng. Kí hiệu ∈ là thuộc, ∉ là không thuộc.", youtube: "",
-    body: `    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tập hợp?</strong> Tập hợp giúp nhóm đối tượng.</p>
       <div class="example">
@@ -751,13 +717,7 @@ exercises: [
     youtube: "",
 
     summary: "Tập A là tập con của B nếu mọi phần tử của A đều thuộc B.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tập con?</strong> Tập con giúp mô tả mối quan hệ giữa các tập hợp.</p>
       <div class="definition">
@@ -809,13 +769,7 @@ exercises: [
     youtube: "",
 
     summary: "Hợp, giao, hiệu của hai tập hợp.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần phép toán tập hợp?</strong> Phép toán giúp phân tích mối quan hệ.</p>
       <div class="definition">
@@ -869,13 +823,7 @@ exercises: [
     youtube: "",
 
     summary: "Bất đẳng thức là so sánh giữa hai biểu thức.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần bất đẳng thức?</strong> Bất đẳng thức giúp so sánh các đại lượng.</p>
       <div class="definition">
@@ -929,13 +877,7 @@ exercises: [
     youtube: "",
 
     summary: "Bất phương trình chứa ẩn cần tìm nghiệm.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần bất phương trình?</strong> Bất phương trình mô tả điều kiện.</p>
       <div class="definition">
@@ -987,13 +929,7 @@ exercises: [
     youtube: "",
 
     summary: "Nhị thức bậc nhất ax + b có dấu phụ thuộc vào a.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần dấu nhị thức?</strong> Dấu nhị thức giúp giải bất phương trình.</p>
       <div class="definition">
@@ -1047,13 +983,7 @@ exercises: [
     youtube: "",
 
     summary: "Hàm số bậc hai có dạng y = ax² + bx + c (a ≠ 0).",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần hàm số bậc hai?</strong> Hàm số bậc hai mô tả quỹ đạo parabol.</p>
       <div class="definition">
@@ -1109,13 +1039,7 @@ exercises: [
     youtube: "",
 
     summary: "Tam thức bậc hai ax² + bx + c có dấu phụ thuộc vào Δ.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần dấu tam thức?</strong> Dấu tam thức giúp giải bất phương trình bậc hai.</p>
       <div class="definition">
@@ -1167,13 +1091,7 @@ exercises: [
     video: "",
 
     summary: "Vector là đoạn thẳng có hướng.", spoken: "Vector có điểm đầu và điểm cuối. Kí hiệu AB là vector từ A đến B.", youtube: "",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần vector?</strong> Vector biểu diễn đại lượng có hướng.</p>
       <div class="definition">
@@ -1228,13 +1146,7 @@ exercises: [
     youtube: "",
 
     summary: "Tổng và hiệu vector được tính bằng quy tắc hình bình hành hoặc tam giác.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tổng vector?</strong> Nhiều đại lượng vector cần cộng lại.</p>
       <div class="definition">
@@ -1296,13 +1208,7 @@ exercises: [
     youtube: "",
 
     summary: "Hiệu AB - AC = CB (quy tắc trừ).",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần hiệu vector?</strong> Hiệu vector giúp tính khoảng cách.</p>
       <div class="definition">
@@ -1364,13 +1270,7 @@ exercises: [
     youtube: "",
 
     summary: "Tích k·AB là vector cùng/phản hướng AB và độ dài |k|·AB.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tích vector với số?</strong> scaling vector thay đổi độ dài.</p>
       <div class="definition">
@@ -1429,13 +1329,7 @@ exercises: [
     youtube: "",
 
     summary: "Hệ trục tọa độ Oxy gồm trục Ox và Oy vuông góc.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần hệ tọa độ?</strong> Hệ tọa độ liên kết hình học với đại số.</p>
       <div class="definition">
@@ -1490,13 +1384,7 @@ exercises: [
     youtube: "",
 
     summary: "Vector AB = (xB - xA, yB - yA).",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tọa độ vector?</strong> Vector biểu diễn bằng cặp số.</p>
       <div class="definition">
@@ -1555,13 +1443,7 @@ exercises: [
     youtube: "",
 
     summary: "Cộng, trừ, nhân vector với số thực làm trên tọa độ.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần biểu thức tọa độ?</strong> Tính toán vector qua số học.</p>
       <div class="definition">
@@ -1624,13 +1506,7 @@ exercises: [
     youtube: "",
 
     summary: "Sin, cos, tan của góc trong tam giác.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần giá trị lượng giác?</strong> Mở rộng khái niệm lượng giác cho góc tù.</p>
       <div class="definition">
@@ -1689,13 +1565,7 @@ exercises: [
     youtube: "",
 
     summary: "AB·AC = |AB|·|AC|·cos(angle BAC).",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tích vô hướng?</strong> Tích vô hướng liên hệ độ dài và góc.</p>
       <div class="definition">
@@ -1758,13 +1628,7 @@ exercises: [
     youtube: "",
 
     summary: "Tính độ dài vector và góc giữa hai vector bằng tích vô hướng.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần ứng dụng tích vô hướng?</strong> Từ tích vô hướng suy ra độ dài và góc.</p>
       <div class="definition">
@@ -1825,13 +1689,7 @@ exercises: [
     youtube: "",
 
     summary: "Định lí cosin và định lí sin trong tam giác.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần hệ thức lượng?</strong> Tính cạnh, góc khi biết một số yếu tố.</p>
       <div class="definition">
@@ -1890,13 +1748,7 @@ exercises: [
     youtube: "",
 
     summary: "Đường tròn được xác định bởi tâm và bán kính.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần đường tròn?</strong> Đường tròn xuất hiện nhiều trong hình học và thực tế.</p>
       <div class="definition">
@@ -1951,13 +1803,7 @@ exercises: [
     youtube: "",
 
     summary: "Elip, parabol, hypebol là ba đường conic.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần đường conic?</strong> Đường conic xuất hiện trong quỹ đạo hành tinh, phản xạ ánh sáng.</p>
       <div class="definition">
@@ -2019,13 +1865,7 @@ exercises: [
     youtube: "",
 
     summary: "Quy tắc cộng cho trường hợp loại trừ, quy tắc nhân cho trường hợp phối hợp.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần quy tắc cộng và nhân?</strong> Giải bài toán đếm số cách thực hiện hành động.</p>
       <div class="definition">
@@ -2080,13 +1920,7 @@ exercises: [
     youtube: "",
 
     summary: "Hoán vị là sắp xếp toàn bộ, chỉnh hợp là chọn có thứ tự.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần hoán vị và chỉnh hợp?</strong> Đếm số cách sắp xếp và chọn phần tử.</p>
       <div class="definition">
@@ -2147,13 +1981,7 @@ exercises: [
     youtube: "",
 
     summary: "Tổ hợp là chọn phần tử không quan tâm thứ tự.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần tổ hợp?</strong> Khi chọn phần tử mà thứ tự không quan trọng.</p>
       <div class="definition">
@@ -2212,13 +2040,7 @@ exercises: [
     youtube: "",
 
     summary: "Số gần đúng luôn có sai số, cần biết quy tròn.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần số gần đúng?</strong> Đo đạc thực tế luôn có sai số.</p>
       <div class="definition">
@@ -2278,13 +2100,7 @@ exercises: [
     youtube: "",
 
     summary: "Số trung bình, trung vị, mode đo vị trí trung tâm của mẫu số liệu.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần số đặc trưng?</strong> Mô tả mẫu số liệu bằng một giá trị đại diện.</p>
       <div class="definition">
@@ -2345,13 +2161,7 @@ exercises: [
     youtube: "",
 
     summary: "Phương sai, độ lệch chuẩn đo mức độ phân tán của mẫu số liệu.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần số đặc trưng đo độ phân tán?</strong> Đánh giá mức độ phân tán quanh giá trị trung bình.</p>
       <div class="definition">
@@ -2410,13 +2220,7 @@ exercises: [
     youtube: "",
 
     summary: "Xác suất là tỉ lệ giữa số kết quả thuận lợi và tổng số kết quả.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần xác suất?</strong> Đánh giá khả năng xảy ra của biến cố.</p>
       <div class="definition">
@@ -2476,13 +2280,7 @@ exercises: [
     youtube: "",
 
     summary: "Xác suất của hợp, giao, và biến cố đối.",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Vì sao cần xác suất của biến cố?</strong> Tính xác suất khi có nhiều biến cố kết hợp.</p>
       <div class="definition">

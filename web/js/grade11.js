@@ -23,14 +23,11 @@ const G11_CHAPTERS = [
     youtube: "",
 
     summary: "Luyện tập hoán vị, chỉnh hợp, tổ hợp, xác suất.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ hợp và xác suất.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -54,14 +51,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tổ
     youtube: "",
 
     summary: "Luyện tập dãy số, cấp số cộng, cấp số nhân.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -85,14 +79,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về dãy
     youtube: "",
 
     summary: "Luyện tập giới hạn dãy số, hàm số.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về giới hạn.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -116,14 +107,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về gi�
     youtube: "",
 
     summary: "Luyện tập đạo hàm, quy tắc đạo hàm.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đạo hàm.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -147,14 +135,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
     youtube: "",
 
     summary: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng, phép vị tự.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép biến hình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -178,14 +163,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
     youtube: "",
 
     summary: "Luyện tập vị trí tương đối trong không gian.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -209,14 +191,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khô
     youtube: "",
 
     summary: "Luyện tập vector, tích vô hướng trong không gian.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vector không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -241,14 +220,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Trigonometry.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -271,14 +247,11 @@ exercises: [
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -312,17 +285,7 @@ const G11_LESSONS = [
     video: "",
 
     summary: "sin, cos, tan, cot: chu kỳ, tính chẵn lẻ, khoảng biến thiên.", spoken: "Hàm số lượng giác周期: sin, cos chu kỳ 2π; tan, cot chu kỳ π.", youtube: "",
-    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
-
-    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Một con lắc đơn dao động theo hàm số \(y = \sin(t)\). Khi nào con lắc ở vị trí cao nhất, thấp nhất? Sau bao lâu nó lặp lại chuyển động?</p>
@@ -762,15 +725,7 @@ exercises: [
     video: "",
 
     summary: "Giải sin x = a, cos x = a, tan x = a, cot x = a.", spoken: "Giải phương trình lượng giác cơ bản: sin x = a ↔ x = arcsin a + k2π hoặc x = π - arcsin a + k2π.", youtube: "",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Một điểm chuyển động tròn đều, góc quay thỏa mãn sin(α) = 1/2. Hỏi α có thể bằng bao nhiêu?</p>
@@ -806,13 +761,7 @@ exercises: [
     video: "",
 
     summary: "Hoán vị Pn, chỉnh hợp Cnk, tổ hợp Cnk: công thức và cách đếm.", spoken: "Hoán vị: Pn = n!. Chỉnh hợp: A(n,k) = n!/(n-k)!. Tổ hợp: C(n,k) = n!/[k!(n-k)!].", youtube: "",
-    body: `    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Lớp 11A có 5 bạn muốn竞选班长. Có bao nhiêu cách chọn 1 lớp trưởng và 1 lớp phó nếu không ai kiêm nhiệm?</p>
@@ -853,15 +802,7 @@ exercises: [
     youtube: "",
 
     summary: "(a + b)^n = C(n,0)a^n + C(n,1)a^{n-1}b + ... + C(n,n)b^n.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Mở biểu thức (x + 2)^3. Hệ số của x^2 bằng bao nhiêu?</p>
@@ -898,15 +839,7 @@ exercises: [
     youtube: "",
 
     summary: "Dãy số hữu hạn/vô hạn, dãy tăng, dãy giảm, dãy bị chặn.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Dãy số (u_n) với u_n = 2n + 1. Dãy này tăng hay giảm? Có bị chặn không?</p>
@@ -943,15 +876,7 @@ exercises: [
     youtube: "",
 
     summary: "u_{n+1} = u_n + d. Số hạng tổng quát: u_n = u_1 + (n−1)d.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Một dãy số bắt đầu từ 3 và mỗi số hạng sau lớn hơn 4 đơn vị: 3, 7, 11, 15,... Số hạng thứ 10 bằng bao nhiêu?</p>
@@ -988,15 +913,7 @@ exercises: [
     youtube: "",
 
     summary: "lim u_n = L khi u_n gần L khi n → ∞.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Dãy số u_n = 1/n. Khi n rất lớn, u_n tiến về giá trị nào?</p>
@@ -1033,15 +950,7 @@ exercises: [
     youtube: "",
 
     summary: "lim_{x→x0} f(x) = L khi x gần x0 thì f(x) gần L.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hàm số f(x) = (x^2 − 4)/(x − 2). Khi x tiến đến 2, f(x) tiến đến giá trị nào?</p>
@@ -1078,15 +987,7 @@ exercises: [
     youtube: "",
 
     summary: "f'(x0) = lim_{Δx→0} [f(x0+Δx) − f(x0)]/Δx.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hàm số f(x) = x^2. Tính đạo hàm tại x = 3.</p>
@@ -1123,15 +1024,7 @@ exercises: [
     youtube: "",
 
     summary: "Phép tịnh tiến, phép quay, phép đối xứng: bảo toàn khoảng cách.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Tam giác ABC có A(1,2), B(3,5), C(4,1). Phép tịnh tiến theo vector v(2,−1) biến A thành điểm nào?</p>
@@ -1168,15 +1061,7 @@ exercises: [
     youtube: "",
 
     summary: "Phép vị tự tỉ số k: biến đoạn thẳng thành đoạn thẳng dài |k| lần.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Tam giác ABC có diện tích 12 cm². Phép vị tự tâm O tỉ số k = 2 biến ABC thành A'B'C'. Diện tích A'B'C' bằng bao nhiêu?</p>
@@ -1213,15 +1098,7 @@ exercises: [
     youtube: "",
 
     summary: "Điểm thuộc đường thẳng, điểm thuộc mặt phẳng, giao tuyến của hai mặt phẳng.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) cắt nhau. Giao tuyến của chúng là gì?</p>
@@ -1258,15 +1135,7 @@ exercises: [
     youtube: "",
 
     summary: "Điều kiện hai đường thẳng song song trong không gian.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Trong không gian, hai đường thẳng cùng song song với đường thẳng thứ ba thì vị trí tương đối của chúng là gì?</p>
@@ -1303,15 +1172,7 @@ exercises: [
     youtube: "",
 
     summary: "Vectơ trong không gian: cộng, trừ, nhân với số, tích vô hướng.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Ba vectơ OA, OB, OC không đồng phẳng. Vectơ OM = OA + OB − OC nằm trong không gian nào?</p>
@@ -1348,15 +1209,7 @@ exercises: [
     youtube: "",
 
     summary: "Điều kiện hai đường thẳng vuông góc trong không gian.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hai đường thẳng a và b vuông góc với nhau. Nếu c song song với a thì c và b có vuông góc không?</p>
@@ -1394,15 +1247,7 @@ exercises: [
     youtube: "",
 
     summary: "Điều kiện hai mặt phẳng song song, tính chất của mặt phẳng song song.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) không có điểm chung. Hỏi chúng có song song với nhau không?</p>
@@ -1439,15 +1284,7 @@ exercises: [
     youtube: "",
 
     summary: "Phép chiếu song song bảo toàn tính thẳng hàng, tỉ lệ trên đường thẳng song song với phương chiếu.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Chiếu song song tam giác ABC lên mặt phẳng (P) theo phương l. Hình chiếu có tính chất gì?</p>
@@ -1484,15 +1321,7 @@ exercises: [
     youtube: "",
 
     summary: "Ba vectơ không đồng phẳng, biểu thị một vectơ qua ba vectơ không đồng phẳng.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Trong không gian, cho ba vectơ OA, OB, OC không đồng phẳng. Hỏi mọi vectơ OM có thể biểu thị qua OA, OB, OC không?</p>
@@ -1529,15 +1358,7 @@ exercises: [
     youtube: "",
 
     summary: "Điều kiện hai mặt phẳng vuông góc, diện tích hình chiếu, tính chất.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hai mặt phẳng (P) và (Q) vuông góc với nhau. Đường thẳng a nằm trong (P) có vuông góc với (Q) không?</p>
@@ -1574,15 +1395,7 @@ exercises: [
     youtube: "",
 
     summary: "Khoảng cách từ điểm đến mặt phẳng, từ điểm đến đường thẳng, giữa hai đường thẳng chéo nhau.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Tính khoảng cách từ điểm M đến mặt phẳng (P). Làm thế nào?</p>
@@ -1620,15 +1433,7 @@ exercises: [
     youtube: "",
 
     summary: "Phương trình bậc hai đối với một hàm số lượng giác, phương trình tuyến tính.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Giải phương trình 2sin²x − 3sinx + 1 = 0. Ta đặt ẩn phụ như thế nào?</p>
@@ -1665,15 +1470,7 @@ exercises: [
     youtube: "",
 
     summary: "Phương trình đối xứng, phương trình bậc nhất đối với sinx và cosx.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Giải phương trình sinx + cosx = 1. Ta dùng công thức nào?</p>
@@ -1710,15 +1507,7 @@ exercises: [
     youtube: "",
 
     summary: "Tập xác định, tập giá trị, tính chẵn lẻ, tính周期 của hàm số lượng giác.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`
       <p><strong>Tình huống.</strong> Hàm số y = tanx có tập xác định là gì? Hàm số y = cotx呢?</p>

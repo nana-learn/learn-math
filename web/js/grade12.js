@@ -23,14 +23,11 @@ const G12_CHAPTERS = [
     youtube: "",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -54,14 +51,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     youtube: "",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -85,14 +79,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     youtube: "",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -116,14 +107,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     youtube: "",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -147,14 +135,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     youtube: "",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -178,14 +163,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     youtube: "",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -209,14 +191,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     youtube: "",
 
     summary: "Luyện tập tổng hợp các chương.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     exercises: [
@@ -241,14 +220,11 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -271,14 +247,11 @@ exercises: [
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -299,14 +272,11 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+    body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
       </details>
 `,
     pages: ["page1"],
@@ -336,19 +306,7 @@ const G12_LESSONS = [
     video: "",
 
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "",
-    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
-
-    <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
-
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
       <div class="figure">
@@ -798,15 +756,7 @@ exercises: [
     video: "",
 
     summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
       <div class="figure">
@@ -852,15 +802,7 @@ exercises: [
     video: "",
 
     summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
       <div class="example">
@@ -895,15 +837,7 @@ exercises: [
     youtube: "",
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
       <div class="example">
@@ -937,15 +871,7 @@ exercises: [
     youtube: "",
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
       <div class="figure">
@@ -993,15 +919,7 @@ exercises: [
     youtube: "",
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
       <div class="example">
@@ -1037,15 +955,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân số P(t) = P₀(1 + r)ᵗ.</p>
       <div class="example">
@@ -1081,15 +991,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, tính chất của logarit.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p>
       <div class="example">
@@ -1125,15 +1027,7 @@ exercises: [
     youtube: "",
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
       <div class="figure">
@@ -1182,15 +1076,7 @@ exercises: [
     youtube: "",
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp đôi: 2 = (1 + r)ᵗ.</p>
       <div class="example">
@@ -1226,15 +1112,7 @@ exercises: [
     youtube: "",
 
     summary: "Giải bất phương trình mũ và logarit.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất phóng xạ giảm dưới ngưỡng.</p>
       <div class="example">
@@ -1270,15 +1148,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm của quãng đường s(t).</p>
       <div class="example">
@@ -1314,15 +1184,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
       <div class="figure">
@@ -1373,15 +1235,7 @@ exercises: [
     youtube: "",
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
       <div class="figure">
@@ -1430,15 +1284,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
       <div class="figure">
@@ -1490,15 +1336,7 @@ exercises: [
     youtube: "",
 
     summary: "Cộng, trừ, nhân số phức.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tương tự đa thức, với i² = -1.</p>
       <div class="example">
@@ -1534,15 +1372,7 @@ exercises: [
     youtube: "",
 
     summary: "Chia số phức, số phức nghịch đảo.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|². Nhân tử và mẫu với liên hợp mẫu.</p>
       <div class="example">
@@ -1578,15 +1408,7 @@ exercises: [
     youtube: "",
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức khi delta<0.</p>
       <div class="example">
@@ -1622,15 +1444,7 @@ exercises: [
     youtube: "",
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
       <div class="figure">
@@ -1684,15 +1498,7 @@ exercises: [
     youtube: "",
 
     summary: "Phương trình tổng quát của mặt phẳng.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
       <div class="figure">
@@ -1738,15 +1544,7 @@ exercises: [
     youtube: "",
 
     summary: "Phương trình tham số và phương trình chính tắc.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
       <div class="figure">
@@ -1791,15 +1589,7 @@ exercises: [
     youtube: "",
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔ u ⊥ v.</p>
       <div class="example">
@@ -1835,15 +1625,7 @@ exercises: [
     youtube: "",
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
-    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
-
-    <div class="trap">
-      <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
-    </div>
-
-    <div class="tips">
-      <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
-    </div>
+    body: `
 ` +
 String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
       <div class="figure">
@@ -1893,10 +1675,6 @@ exercises: [
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
     body: `    <div class="memory"><p><strong>Key point:</strong> Ghi nhớ điều quan trọng.</p></div>
-
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
 ` +
 String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
       <div class="example">
