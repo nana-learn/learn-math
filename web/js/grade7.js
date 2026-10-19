@@ -17,8 +17,8 @@ const G7_LESSONS = [
 {
     id: "g7-ch3-quiz",
     num: 101,
-    chapter: 3,
-    title: "Chương 3: Số thập phân - Trắc nghiệm",
+    chapter: 2,
+    title: "Số thập phân - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập số thập phân, phép toán.",
@@ -448,8 +448,8 @@ exercises: [
 {
     id: "g7-ch4-quiz",
     num: 102,
-    chapter: 4,
-    title: "Chương 4: Số thực - Trắc nghiệm",
+    chapter: 2,
+    title: "Số thực - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập số thực, căn bậc hai.",
@@ -478,8 +478,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 {
     id: "g7-ch5-quiz",
     num: 103,
-    chapter: 5,
-    title: "Chương 5: Đại lượng tỉ lệ - Trắc nghiệm",
+    chapter: 6,
+    title: "Đại lượng tỉ lệ - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập đại lượng tỉ lệ thuận, tỉ lệ nghịch.",
@@ -508,8 +508,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về đ�
 {
     id: "g7-ch6-quiz",
     num: 104,
-    chapter: 6,
-    title: "Chương 6: Thống kê - Trắc nghiệm",
+    chapter: 5,
+    title: "Thu thập và biểu diễn dữ liệu - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập thống kê, bảng, biểu đồ.",
@@ -597,8 +597,8 @@ exercises: [
 {
     id: "g7-ch7-quiz",
     num: 105,
-    chapter: 7,
-    title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    chapter: 0,
+    title: "Phép biến hình - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",
@@ -3676,8 +3676,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 {
     id: "g7-ch2-quiz",
     num: 105,
-    chapter: 7,
-    title: "Chương 7: Phép biến hình - Trắc nghiệm",
+    chapter: 0,
+    title: "Phép biến hình - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập phép tịnh tiến, phép quay, phép đối xứng.",

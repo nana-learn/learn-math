@@ -215,12 +215,12 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vect
     id: "g11-exam-ch1",
     num: 101,
     chapter: 1,
-    title: "Đề kiểm tra Chương 1: Trigonometry",
-    spoken: "Đề kiểm tra 45 phút chương Trigonometry.",
+    title: "Đề kiểm tra Chương 1: Hàm số lượng giác",
+    spoken: "Đề kiểm tra 45 phút chương Hàm số lượng giác.",
 
     youtube: "",
 
-    summary: "Đề kiểm tra 45 phút chương Trigonometry.",
+    summary: "Đề kiểm tra 45 phút chương Hàm số lượng giác.",
     body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
@@ -242,12 +242,12 @@ exercises: [
     id: "g11-exam-ch2",
     num: 102,
     chapter: 2,
-    title: "Đề kiểm tra Chương 2: Combinatorics, Probability",
-    spoken: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
+    title: "Đề kiểm tra Chương 2: Tổ hợp và xác suất",
+    spoken: "Đề kiểm tra 45 phút chương Tổ hợp và xác suất.",
 
     youtube: "",
 
-    summary: "Đề kiểm tra 45 phút chương Combinatorics, Probability.",
+    summary: "Đề kiểm tra 45 phút chương Tổ hợp và xác suất.",
     body: `
 ` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>

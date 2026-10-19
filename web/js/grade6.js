@@ -452,8 +452,8 @@ exercises: [
 {
     id: "g6-ch3-quiz",
     num: 103,
-    chapter: 3,
-    title: "Chương 3: Phép chia - Trắc nghiệm",
+    chapter: 2,
+    title: "Phép chia và chia hết - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập phép chia, chia hết, chia có dư.",
@@ -484,8 +484,8 @@ exercises: [
 {
     id: "g6-ch4-quiz",
     num: 104,
-    chapter: 4,
-    title: "Chương 4: Hình học - Trắc nghiệm",
+    chapter: 8,
+    title: "Điểm và đoạn thẳng - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
@@ -514,8 +514,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
 {
     id: "g6-ch5-quiz",
     num: 105,
-    chapter: 5,
-    title: "Chương 5: Phân số - Trắc nghiệm",
+    chapter: 6,
+    title: "Phân số - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập phân số, phép toán phân số.",
@@ -544,8 +544,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
 {
     id: "g6-ch6-quiz",
     num: 106,
-    chapter: 6,
-    title: "Chương 6: Số đo góc - Trắc nghiệm",
+    chapter: 8,
+    title: "Số đo góc - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập đo góc, vẽ góc, số đo góc.",
@@ -574,8 +574,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 {
     id: "g6-ch7-quiz",
     num: 107,
-    chapter: 7,
-    title: "Chương 7: Hình hộp chữ nhật - Trắc nghiệm",
+    chapter: 8,
+    title: "Thể tích hình hộp chữ nhật - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập thể tích hình hộp chữ nhật.",
@@ -604,8 +604,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
 {
     id: "g6-ch8-quiz",
     num: 108,
-    chapter: 8,
-    title: "Chương 8: Diện tích - Trắc nghiệm",
+    chapter: 4,
+    title: "Diện tích hình phẳng - Trắc nghiệm",
     video: "",
 
     spoken: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",

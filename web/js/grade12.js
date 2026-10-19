@@ -102,8 +102,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
 {
     id: "g12-ch5-quiz",
     num: 102,
-    chapter: 5,
-    title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
+    chapter: 6,
+    title: "Khối đa diện - Trắc nghiệm",
     spoken: "Luyện tập thể tích hộp, chóp, lăng trụ.",
 
     youtube: "",
@@ -130,8 +130,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
 {
     id: "g12-ch6-quiz",
     num: 103,
-    chapter: 6,
-    title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
+    chapter: 7,
+    title: "Mặt nón, mặt trụ, mặt cầu - Trắc nghiệm",
     spoken: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
 
     youtube: "",
@@ -158,8 +158,8 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
 {
     id: "g12-ch7-quiz",
     num: 104,
-    chapter: 7,
-    title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
+    chapter: 5,
+    title: "Phương pháp tọa độ trong không gian - Trắc nghiệm",
     spoken: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
 
     youtube: "",
@@ -187,7 +187,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     id: "g12-ch8-quiz",
     num: 105,
     chapter: 8,
-    title: "Chương 8: Ôn tập - Trắc nghiệm",
+    title: "Ôn tập cuối năm - Trắc nghiệm",
     spoken: "Luyện tập tổng hợp các chương.",
 
     youtube: "",
