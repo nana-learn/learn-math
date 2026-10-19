@@ -17,8 +17,6 @@ const G6_CHAPTERS = [
     num: 101,
     chapter: 1,
     review: [
-      { type: "mc", prompt: "Câu hỏi ôn tập 1", choices: ["A", "B", "C", "D"], correct: "A" },
-      { type: "mc", prompt: "Câu hỏi ôn tập 2", choices: ["A", "B", "C", "D"], correct: "B" },
     ],
 
     title: "Chương 1: Tập hợp các số tự nhiên - Trắc nghiệm",
@@ -26,13 +24,11 @@ const G6_CHAPTERS = [
 
     spoken: "Đây là tóm tắt bài học bằng lời nói.",
 
-    <div class="trap"><p><strong>Cảnh báo:</strong> Ghi nhớ cảnh báo quan trọng.</p></div>
 
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tập hợp, số tự nhiên, số phần tử.",
-    body: 
-    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
+    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
 
     <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
 
@@ -41,6 +37,7 @@ const G6_CHAPTERS = [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tập hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -48,803 +45,404 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tậ
       </details>
 `,
     
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: Tập hợp N* gồm:", choices: ["0,1,2,3,...", "1,2,3,4,...", "0,2,4,6,...", "1,3,5,7,..."], correct: 1, hint: "N* là tập hợp số tự nhiên khác 0.", explain: "1,2,3,4,..." },
       { type: "mc", prompt: "Câu 2: Số 12 thuộc tập hợp nào?", choices: ["N", "N*", "Z", "Cả N và N*"], correct: 3, hint: "12 là số tự nhiên khác 0.", explain: "Cả N và N*." },
@@ -869,8 +467,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phép chia, chia hết, chia có dư.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -879,6 +476,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phép chia.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -886,9 +484,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phé
       </details>
 `,
     
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Câu 1: 24 ÷ 6 =", choices: ["4", "5", "6", "3"], correct: 0, hint: "6×4 = 24.", explain: "4." },
       { type: "mc", prompt: "Câu 2: 35 chia hết cho:", choices: ["5", "3", "4", "6"], correct: 0, hint: "35 = 5×7.", explain: "5." },
@@ -913,8 +509,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập điểm, đường thẳng, đoạn thẳng.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -923,6 +518,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hình học cơ bản.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -953,8 +549,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập phân số, phép toán phân số.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -963,6 +558,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về hìn
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phân số.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -993,8 +589,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập đo góc, vẽ góc, số đo góc.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1003,6 +598,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về phâ
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số đo góc.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -1033,8 +629,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hình hộp chữ nhật.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1043,6 +638,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -1073,8 +669,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích hình chữ nhật, hình vuông, tam giác.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1083,6 +678,7 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về diện tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -1116,14 +712,14 @@ const G6_LESSONS = [
 
     summary: "Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ và ∉.",
     spoken: "Bài học về Tập hợp là nhóm đối tượng được chỉ rõ. Kí hiệu ∈ v... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <figure class="figure" data-animation="g6-b1-sets">
         <svg viewBox="0 0 280 160" role="img" aria-label="Minh họa tập hợp A và B">
@@ -1201,14 +797,14 @@ String.raw`
 
     summary: "Hệ thập phân: mỗi hàng giá trị bằng 10 lần hàng bên phải.",
     spoken: "Bài học về Hệ thập phân: mỗi hàng giá trị bằng 10 lần hàng bê... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <figure class="figure" data-animation="g6-b2-place-value">
         <svg viewBox="0 0 320 120" role="img" aria-label="Hệ thập phân với các hàng">
@@ -1271,7 +867,6 @@ String.raw`
       <div class="memory"><p><strong>Nhìn lại.</strong> Hệ thập phân: 10 chữ số, mỗi hàng bằng 10 lần hàng bên phải. Đọc từ trái sang phải, tách thành lớp.</p></div>
     `,
     
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "num", prompt: "Số 527 gồm mấy trăm, mấy chục, mấy đơn vị?", answer: "5 trăm, 2 chục, 7 đơn vị", accept: ["5 trăm, 2 chục, 7 đơn vị", "500+20+7"], hint: "Hàng trăm là 5, chục là 2, đơn vị là 7.", explain: "527 = 500 + 20 + 7." },
       { type: "mc", prompt: "Số nào đúng với cách viết 3 trăm, 0 chục, 5 đơn vị?", choices: ["35", "305", "350", "503"], correct: 1, hint: "0 ở hàng chục nghĩa là hàng chục là 0.", explain: "305." },
@@ -1293,14 +888,14 @@ exercises: [
 
     summary: "Trên tia số, số càng bên phải càng lớn. So sánh hai số: xét hàng cao nhất khác nhau.",
     spoken: "Bài học về Trên tia số, số càng bên phải càng lớn. So sánh ha... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <figure class="figure" data-animation="g6-b3-number-line">
         <svg viewBox="0 0 320 100" role="img" aria-label="Tia số biểu thị thứ tự các số tự nhiên">
@@ -1386,14 +981,14 @@ String.raw`
 
     summary: "Cộng trừ theo hàng dọc hoặc ngang. Phép trừ chỉ thực hiện khi số bị trừ lớn hơn hoặc bằng số trừ.",
     spoken: "Bài học về Cộng trừ theo hàng dọc hoặc ngang. Phép trừ chỉ th... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần cộng trừ?</strong> Cộng là gộp nhóm, trừ là bớt đi. Đây là phép tính cơ bản nhất trong số học.</p>
       <div class="definition">
@@ -1477,14 +1072,14 @@ String.raw`
 
     summary: "Nhân là phép cộng lặp lại. Chia là phép trừ lặp lại. Phép chia có dư khi số bị chia không chia hết cho số chia.",
     spoken: "Bài học về Nhân là phép cộng lặp lại. Chia là phép trừ lặp lạ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <figure class="figure" data-animation="g6-b5-multiplication-division">
         <svg viewBox="0 0 280 140" role="img" aria-label="Minh họa phép nhân và phép chia">
@@ -1567,14 +1162,14 @@ String.raw`
 
     summary: "a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0). Quy ước 0^0 không xác định.",
     spoken: "Bài học về a^n là a nhân với chính nó n lần. a^0 = 1 (a ≠ 0).... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần luỹ thừa?</strong> Khi nhân nhiều số giống nhau, việc viết lại dưới dạng luỹ thừa giúp ngắn gọn và dễ tính toán.</p>
             <figure class="figure" data-animation="g6-b6-exponent">
@@ -1650,14 +1245,14 @@ String.raw`
 
     summary: "Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia → cộng/trừ. Có dấu ngoặc: trong ngoặc trước.",
     spoken: "Bài học về Biểu thức không có dấu ngoặc: luỹ thừa → nhân/chia... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần thứ tự?</strong> Trong biểu thức nhiều phép tính, phải làm theo thứ tự đúng thì mới ra kết quả đúng. Ví dụ: 2 + 3 × 4 ≠ (2 + 3) × 4.</p>
             <figure class="figure" data-animation="g6-b7-exponent-operations">
@@ -1732,14 +1327,14 @@ String.raw`
 
     summary: "a chia hết b (a \u2223 b) khi tồn tại k sao cho a = b \u22c5 k. Tính chất: nếu a \u2223 b và a \u2223 c thì a \u2223 (b \u00b1 c).",
     spoken: "Bài học về a chia hết b (a \u2223 b) khi tồn tại k sao cho a ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần quan hệ chia hết?</strong> Biết một số có chia hết cho số khác hay không giúp ta phân tích số, tìm ước, bội, và giải nhiều bài toán số học.</p>
             <figure class="figure" data-animation="g6-b8-order-of-operations">
@@ -1811,14 +1406,14 @@ String.raw`
 
     summary: "Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3: tổng các chữ số chia hết cho 3.",
     spoken: "Bài học về Chia hết cho 2: chữ số tận cùng chẵn. Cho 5: tận c... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <figure class="figure" data-animation="g6-b9-numberline">
         <svg viewBox="0 0 420 80" role="img" aria-label="Trục số với điểm 3/4">
@@ -1910,14 +1505,14 @@ String.raw`
 
     summary: "Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là 1 và chính nó. Hợp số là số có nhiều hơn hai ước.",
     spoken: "Bài học về Số nguyên tố là số lớn hơn 1 và chỉ có hai ước là ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần số nguyên tố?</strong> Số nguyên tố là "nguyên liệu xây dựng" của mọi số tự nhiên. Mọi số tự nhiên lớn hơn 1 đều phân tích được thành tích các số nguyên tố.</p>
             <figure class="figure" data-animation="g6-b10-rectangle">
@@ -1990,14 +1585,14 @@ String.raw`
 
     summary: "Ước chung của hai hay nhiều số là ước của tất cả các số đó. ƯCLN là ước chung lớn nhất.",
     spoken: "Bài học về Ước chung của hai hay nhiều số là ước của tất cả c... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần ước chung?</strong> Ước chung giúp ta tìm các số chia hết đồng thời cho nhiều số. ƯCLN giúp rút gọn phân số và giải nhiều bài toán chia đều.</p>
             <figure class="figure" data-animation="g6-b11-square">
@@ -2070,14 +1665,14 @@ String.raw`
 
     summary: "Bội chung của hai hay nhiều số là bội của tất cả các số đó. BCNN là bội chung nhỏ nhất.",
     spoken: "Bài học về Bội chung của hai hay nhiều số là bội của tất cả c... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần bội chung?</strong> Bội chung giúp ta tìm các số chia hết đồng thời cho nhiều số. BCNN thường dùng để quy đồng mẫu số và giải bài toán tìm thời điểm đồng bộ.</p>
             <figure class="figure" data-animation="g6-b12-triangle">
@@ -2149,14 +1744,14 @@ String.raw`
 
     summary: "Số nguyên gồm số dương, số 0, và số âm. Kí hiệu Z.",
     spoken: "Bài học về Số nguyên gồm số dương, số 0, và số âm. Kí hiệu Z.... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần số nguyên?</strong> Số tự nhiên không đủ để biểu thị các đại lượng có chiều (nhiệt độ, độ cao, thời gian trước/sau). Số nguyên giúp biểu thị cả hai chiều.</p>
       <div class="definition">
@@ -2239,14 +1834,14 @@ String.raw`
 
     summary: "Cộng hai số nguyên cùng dấu: cộng giá trị tuyệt đối, giữ dấu chung.",
     spoken: "Bài học về Cộng hai số nguyên cùng dấu: cộng giá trị tuyệt đố... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần cộng số nguyên?</strong> Cộng số nguyên giúp tính toán với các đại lượng có chiều như nhiệt độ, độ cao, thời gian, lợi nhuận/lỗ.</p>
       <div class="definition">
@@ -2326,14 +1921,14 @@ String.raw`
 
     summary: "Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.",
     spoken: "Bài học về Cộng hai số nguyên khác dấu: trừ giá trị tuyệt đối... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần cộng số nguyên khác dấu?</strong> Đây là phép cộng phổ biến nhất với số nguyên, ví dụ: lợi nhuận và lỗ, nhiệt độ tăng và giảm, thời gian trước và sau.</p>
       <div class="definition">
@@ -2408,14 +2003,14 @@ String.raw`
 
     summary: "Giao hoán: a + b = b + a. Kết hợp: (a + b) + c = a + (b + c). Cộng với 0: a + 0 = a.",
     spoken: "Bài học về Giao hoán: a + b = b + a. Kết hợp: (a + b) + c = a... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần tính chất?</strong> Các tính chất của phép cộng giúp ta tính nhẩm nhanh, biến đổi biểu thức, và giải toán một cách linh hoạt.</p>
       <div class="definition">
@@ -2502,14 +2097,14 @@ String.raw`
 
     summary: "a - b = a + (-b). Trừ một số là cộng với số đối của nó.",
     spoken: "Bài học về a - b = a + (-b). Trừ một số là cộng với số đối củ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần trừ số nguyên?</strong> Phép trừ giúp tính hiệu, độ chênh lệch, và nhiều bài toán thực tế như nhiệt độ, độ cao, lợi nhuận/lỗ.</p>
       <div class="definition">
@@ -2584,14 +2179,14 @@ String.raw`
 
     summary: "Tam giác cân: hai cạnh bằng nhau. Tam giác đều: ba cạnh bằng nhau.",
     spoken: "Bài học về Tam giác cân: hai cạnh bằng nhau. Tam giác đều: ba... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần tam giác cân đều?</strong> Tam giác cân và đều có nhiều tính chất đặc biệt giúp giải toán hình học và ứng dụng trong thực tế (kiến trúc, thiết kế).</p>
       <div class="definition">
@@ -2668,14 +2263,14 @@ String.raw`
 
     summary: "Hình vuông: bốn cạnh bằng nhau, bốn góc vuông. Hình chữ nhật: bốn góc vuông, hai cặp cạnh bằng nhau.",
     spoken: "Bài học về Hình vuông: bốn cạnh bằng nhau, bốn góc vuông. Hìn... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần hình vuông chữ nhật?</strong> Đây là hai hình cơ bản nhất trong hình học phẳng, dùng rộng rãi trong kiến trúc, thiết kế, và đời sống.</p>
       <div class="definition">
@@ -2754,14 +2349,14 @@ String.raw`
 
     summary: "Hình thoi: bốn cạnh bằng nhau. Hình bình hành: hai cặp cạnh đối song song và bằng nhau.",
     spoken: "Bài học về Hình thoi: bốn cạnh bằng nhau. Hình bình hành: hai... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần hình thoi hình bình hành?</strong> Đây là các hình đặc biệt có tính chất đối xứng và song song, quan trọng trong hình học và ứng dụng thực tế.</p>
       <div class="definition">
@@ -2832,14 +2427,14 @@ String.raw`
 
     summary: "Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằng nhau và đều bằng 120°.",
     spoken: "Bài học về Hình lục giác đều: sáu cạnh bằng nhau, sáu góc bằn... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần hình lục giác đều?</strong> Hình lục giác đều xuất hiện nhiều trong tự nhiên (tổ ong, tinh thể) và ứng dụng trong thiết kế.</p>
       <div class="definition">
@@ -2915,14 +2510,14 @@ String.raw`
 
     summary: "Hình có trục đối xứng: nếu gấp hình dọc theo trục thì hai phần trùng nhau hoàn toàn.",
     spoken: "Bài học về Hình có trục đối xứng: nếu gấp hình dọc theo trục ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần trục đối xứng?</strong> Trục đối xứng giúp nhận biết tính đối xứng trong hình học, tự nhiên và nghệ thuật.</p>
       <div class="definition">
@@ -2996,14 +2591,14 @@ String.raw`
 
     summary: "Hình có tâm đối xứng: nếu quay hình 180° quanh tâm thì hình trùng với chính nó.",
     spoken: "Bài học về Hình có tâm đối xứng: nếu quay hình 180° quanh tâm... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần tâm đối xứng?</strong> Tâm đối xứng là tính chất quan trọng của nhiều hình học, ứng dụng trong thiết kế và công nghệ.</p>
       <div class="definition">
@@ -3077,14 +2672,14 @@ String.raw`
 
     summary: "Thu thập dữ liệu từ thực tế, phân loại theo đặc điểm, lập bảng thống kê.",
     spoken: "Bài học về Thu thập dữ liệu từ thực tế, phân loại theo đặc đi... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần thu thập dữ liệu?</strong> Dữ liệu giúp chúng ta hiểu rõ tình hình, đưa ra quyết định dựa trên thông tin thực tế.</p>
       <div class="definition">
@@ -3158,14 +2753,14 @@ String.raw`
 
     summary: "Biểu đồ tranh sử dụng hình vẽ hoặc biểu tượng để trình bày dữ liệu.",
     spoken: "Bài học về Biểu đồ tranh sử dụng hình vẽ hoặc biểu tượng để t... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần biểu đồ tranh?</strong> Biểu đồ tranh giúp trực quan hóa dữ liệu, dễ so sánh và hiểu nhanh thông tin.</p>
       <div class="definition">
@@ -3241,14 +2836,14 @@ String.raw`
 
     summary: "Biểu đồ cột dùng các hình chữ nhật (cột) để trình bày và so sánh dữ liệu.",
     spoken: "Bài học về Biểu đồ cột dùng các hình chữ nhật (cột) để trình ... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần biểu đồ cột?</strong> Biểu đồ cột rất hiệu quả để so sánh số lượng giữa các nhóm hoặc theo thời gian.</p>
       <div class="definition">
@@ -3335,14 +2930,14 @@ String.raw`
 
     summary: "Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng để so sánh hai bộ dữ liệu.",
     spoken: "Bài học về Biểu đồ cột kép có hai cột cho mỗi đối tượng, dùng... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần biểu đồ cột kép?</strong> Biểu đồ cột kép giúp so sánh hai bộ dữ liệu trên cùng một đối tượng hoặc thời điểm.</p>
       <div class="definition">
@@ -3436,14 +3031,14 @@ String.raw`
 
     summary: "Phân số là tỉ số của hai số nguyên. Tính chất cơ bản: nhân/chia tử và mẫu với cùng số khác 0.",
     spoken: "Bài học về Phân số là tỉ số của hai số nguyên. Tính chất cơ b... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần phân số?</strong> Phân số dùng để biểu thị một phần của đơn vị, rất phổ biến trong đời sống và toán học.</p>
       <div class="definition">
@@ -3526,14 +3121,14 @@ String.raw`
 
     summary: "Rút gọn phân số về dạng tối giản (tử và mẫu nguyên tố cùng nhau).",
     spoken: "Bài học về Rút gọn phân số về dạng tối giản (tử và mẫu nguyên... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần rút gọn phân số?</strong> Phân số tối giản giúp dễ dàng so sánh và tính toán.</p>
       <div class="definition">
@@ -3605,14 +3200,14 @@ String.raw`
 
     summary: "Quy đồng mẫu số là biến các phân số có mẫu khác nhau về cùng một mẫu số chung.",
     spoken: "Bài học về Quy đồng mẫu số là biến các phân số có mẫu khác nh... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần quy đồng mẫu số?</strong> Quy đồng mẫu số giúp so sánh và cộng/trừ phân số dễ dàng hơn.</p>
       <div class="definition">
@@ -3685,14 +3280,14 @@ String.raw`
 
     summary: "So sánh phân số dựa trên quy đồng mẫu số hoặc so sánh với 1, so sánh phần bù.",
     spoken: "Bài học về So sánh phân số dựa trên quy đồng mẫu số hoặc so s... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần so sánh phân số?</strong> So sánh phân số giúp đánh giá giá trị tương đối của các phân số.</p>
       <div class="definition">
@@ -3776,14 +3371,14 @@ String.raw`
 
     summary: "Hỗn số là tổng của số nguyên và phân số. Số thập phân là phân số đặc biệt với mẫu là lũy thừa của 10.",
     spoken: "Bài học về Hỗn số là tổng của số nguyên và phân số. Số thập p... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần hỗn số và số thập phân?</strong> Chúng là cách biểu diễn số khác nhau, tiện lợi trong các tình huống khác nhau.</p>
       <div class="definition">
@@ -3855,14 +3450,14 @@ String.raw`
 
     summary: "Cộng phân số: quy đồng mẫu rồi cộng tử số, giữ mẫu số.",
     spoken: "Bài học về Cộng phân số: quy đồng mẫu rồi cộng tử số, giữ mẫu... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần cộng phân số?</strong> Cộng phân số giúp tính tổng các phần không nguyên.</p>
       <div class="definition">
@@ -3933,14 +3528,14 @@ String.raw`
 
     summary: "Trừ phân số: quy đồng mẫu rồi trừ tử số, giữ mẫu số.",
     spoken: "Bài học về Trừ phân số: quy đồng mẫu rồi trừ tử số, giữ mẫu s... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần trừ phân số?</strong> Trừ phân số giúp tính hiệu giữa các phần không nguyên.</p>
       <div class="definition">
@@ -4011,14 +3606,14 @@ String.raw`
 
     summary: "Nhân phân số: nhân tử với tử, mẫu với mẫu.",
     spoken: "Bài học về Nhân phân số: nhân tử với tử, mẫu với mẫu.... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần nhân phân số?</strong> Nhân phân số giúp tính giá trị của một phần của phân số.</p>
       <div class="definition">
@@ -4089,14 +3684,14 @@ String.raw`
 
     summary: "Chia phân số: nhân với phân số nghịch đảo.",
     spoken: "Bài học về Chia phân số: nhân với phân số nghịch đảo.... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần chia phân số?</strong> Chia phân số giúp tìm giá trị của một đơn vị khi biết tổng và số lượng.</p>
       <div class="definition">
@@ -4167,14 +3762,14 @@ String.raw`
 
     summary: "Tính giá trị biểu thức chứa phân số, áp dụng thứ tự phép tính.",
     spoken: "Bài học về Tính giá trị biểu thức chứa phân số, áp dụng thứ t... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần tính giá trị phân số?</strong> Tính giá trị giúp hiểu rõ kết quả của biểu thức phức tạp.</p>
       <div class="definition">
@@ -4247,14 +3842,14 @@ String.raw`
 
     summary: "Số thập phân là phân số có mẫu là lũy thừa của 10, biểu diễn với dấu phẩy.",
     spoken: "Bài học về Số thập phân là phân số có mẫu là lũy thừa của 10,... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần số thập phân?</strong> Số thập phân tiện lợi trong tính toán và đời sống (tiền bạc, đo đạc).</p>
       <div class="definition">
@@ -4336,14 +3931,14 @@ String.raw`
 
     summary: "So sánh số thập phân: so sánh phần nguyên trước, nếu bằng nhau so sánh phần thập phân.",
     spoken: "Bài học về So sánh số thập phân: so sánh phần nguyên trước, n... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần so sánh số thập phân?</strong> So sánh số thập phân giúp đánh giá giá trị số trong tính toán và đời sống.</p>
       <div class="definition">
@@ -4417,14 +4012,14 @@ String.raw`
 
     summary: "Cộng/trừ số thập phân: đặt tính theo hàng dọc, dấu phẩy thẳng hàng.",
     spoken: "Bài học về Cộng/trừ số thập phân: đặt tính theo hàng dọc, dấu... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần cộng/trừ số thập phân?</strong> Đây là phép tính cơ bản với số thập phân, dùng thường xuyên trong đời sống.</p>
       <div class="definition">
@@ -4498,14 +4093,14 @@ String.raw`
     youtube: "dQw4w9WgXcQ",
 
     summary: "Nhân số thập phân: nhân như số tự nhiên, đếm số chữ số sau dấu phẩy.",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần nhân số thập phân?</strong> Nhân số thập phân giúp tính diện tích, thể tích và nhiều bài toán thực tế.</p>
       <div class="definition">
@@ -4577,14 +4172,14 @@ String.raw`
 
     summary: "Chia số thập phân: chuyển thành chia số tự nhiên bằng cách nhân cả số bị chia và chia với 10.",
     spoken: "Bài học về Chia số thập phân: chuyển thành chia số tự nhiên b... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần chia số thập phân?</strong> Chia số thập phân giúp tính giá trị trung bình, tỷ lệ và nhiều bài toán thực tế.</p>
       <div class="definition">
@@ -4656,14 +4251,14 @@ String.raw`
 
     summary: "Tỉ số phần trăm là tỉ số có mẫu là 100, viết với ký hiệu %.",
     spoken: "Bài học về Tỉ số phần trăm là tỉ số có mẫu là 100, viết với k... (đọc tiếp để nắm vững kiến thức)",
-    body: 
-    <div class="trap">
+    body: `    <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
     </div>
 
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`
       <p><strong>Vì sao cần tỉ số phần trăm?</strong> Tỉ số phần trăm phổ biến trong đời sống: lãi suất, giảm giá, điểm thi, v.v.</p>
       <div class="definition">
@@ -4737,8 +4332,7 @@ String.raw`
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập chia hết, ước, bội, số nguyên tố.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -4747,6 +4341,7 @@ String.raw`
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về chia hết.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>

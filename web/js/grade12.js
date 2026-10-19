@@ -23,10 +23,10 @@ const G12_CHAPTERS = [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -54,10 +54,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -85,10 +85,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -116,10 +116,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -147,10 +147,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -178,10 +178,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -209,10 +209,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tổng hợp các chương.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -241,10 +241,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -253,9 +253,7 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
 `,
     pages: ["page1"],
     
-      { type: "mc", prompt: "Câu hỏi nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
 
-      { type: "mc", prompt: "Câu hỏi nâng cao", choices: ["A", "B", "C", "D"], correct: "C" },
 exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên khoảng nào?", choices: ["(-∞,-1) và (1,∞)", "(-1,1)", "(-∞,∞)", "không khoảng nào"], correct: 0, hint: "y' = 3x² - 3 = 3(x²-1). y'>0 khi |x|>1.", explain: "(-∞,-1) và (1,∞)." },
       { type: "mc", prompt: "Câu 2: Số cực trị của y = x⁴ - 2x² là?", choices: ["2", "1", "3", "0"], correct: 0, hint: "y' = 4x³ - 4x = 4x(x²-1). 3 nghiệm → 3 cực trị.", explain: "2." },
@@ -273,10 +271,10 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -301,10 +299,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -330,10 +328,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -362,10 +360,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -394,10 +392,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về th�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -426,10 +424,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -458,8 +456,7 @@ const G12_LESSONS = [
     video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
 
     summary: "Dựa vào đạo hàm để xét tính đồng biến, nghịch biến của hàm số.", spoken: "Nếu đạo hàm dương thì hàm đồng biến, âm thì nghịch biến. Xét dấu đạo hàm để biết hàm tăng hay giảm.", youtube: "dQw4w9WgXcQ",
-    body: 
-    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
+    body: `    <p><strong>Ghi chú:</strong> Những điểm quan trọng cần nhớ khi học bài này.</p>
 
     <p><strong>Bài toán thực hành:</strong> Áp dụng kiến thức vào bài toán thực tế.</p>
 
@@ -472,6 +469,7 @@ const G12_LESSONS = [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo quy luật s(t) = t² - 4t + 3.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -500,823 +498,411 @@ String.raw`<p><strong>Tình huống.</strong> Một vật chuyển động theo 
         <p><strong>Lỗi thường gặp.</strong> f(x) = 1/x không nghịch biến trên ℝ \ {0}.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 
-      { type: "mc", prompt: "Bài tập nâng cao 1", choices: ["A", "B", "C", "D"], correct: "C" },
-      { type: "mc", prompt: "Bài tập nâng cao 2", choices: ["A", "B", "C", "D"], correct: "D" },
 
-      { type: "mc", prompt: "Bài tập luyện tập thêm", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = -x²", "y = x³", "y = 1/x", "y = |x|"], correct: 1, hint: "y = x³ có đạo hàm ≥ 0.", explain: "y = x³ đồng biến trên ℝ." },
       { type: "mc", prompt: "Hàm số y = x² nghịch biến trên khoảng nào?", choices: ["(-∞, 0)", "(0, +∞)", "(-∞, +∞)", "không nghịch biến"], correct: 0, hint: "y' = 2x < 0 khi x < 0.", explain: "Nghịch biến trên (-∞, 0)." },
@@ -1332,8 +918,7 @@ exercises: [
     video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
 
     summary: "Điều kiện cần và đủ để hàm số có cực trị.", spoken: "Điều kiện cần: đạo hàm bằng 0. Điều kiện đủ: đạo hàm đổi dấu qua điểm đó.", youtube: "dQw4w9WgXcQ",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1342,6 +927,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có thể tích lớn nhất.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -1368,18 +954,9 @@ String.raw`<p><strong>Tình huống.</strong> Thiết kế hộp giấy có th�
         <p><strong>Lỗi thường gặp.</strong> f'(x₀) = 0 nhưng không đổi dấu → không phải cực trị.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 
-      { type: "mc", prompt: "Bài tập luyện tập", choices: ["A", "B", "C", "D"], correct: "A" },
 
-      { type: "text", prompt: "Giải thích rõ ràng cách giải." },
 exercises: [
       { type: "mc", prompt: "Hàm số y = x³ có cực trị nào?", choices: ["Cực đại tại x=0", "Cực tiểu tại x=0", "Không có cực trị", "Cực đại và cực tiểu"], correct: 2, hint: "y' = 3x² ≥ 0, không đổi dấu.", explain: "Không có cực trị." },
       { type: "mc", prompt: "Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' có 3 nghiệm và đổi dấu.", explain: "3 cực trị." },
@@ -1395,8 +972,7 @@ exercises: [
     video: "https://youtube.com/watch?v=dQw4w9WgXcQ",
 
     summary: "Tìm GTLN, GTNN trên đoạn và khoảng.", spoken: "GTLN/GTNN trên [a;b]: tính f(a), f(b), tìm cực trị trong (a;b), so sánh các giá trị.", youtube: "dQw4w9WgXcQ",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1405,6 +981,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật chu vi 100m, diện tích lớn nhất?</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> S(x) = x(50 - x). S'(x) = 50 - 2x = 0 ↔ x = 25. S(25) = 625m².</p>
@@ -1419,16 +996,8 @@ String.raw`<p><strong>Tình huống.</strong> Thửa ruộng hình chữ nhật 
         <p><strong>Lỗi thường gặp.</strong> Không áp dụng trên khoảng không đóng.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 
-      { type: "mc", prompt: "Bài tập nâng cao", choices: ["A", "B", "C", "D"], correct: "A" },
 exercises: [
       { type: "mc", prompt: "GTLN của y = -x² + 4x trên [0;3] là?", choices: ["0", "4", "3", "5"], correct: 1, hint: "f(0)=0, f(2)=4, f(3)=3.", explain: "GTLN = 4." },
       { type: "mc", prompt: "GTNN của y = x² + 1 trên [-1;2] là?", choices: ["0", "1", "2", "5"], correct: 1, hint: "x² ≥ 0 nên y ≥ 1.", explain: "GTNN = 1." },
@@ -1446,8 +1015,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tiệm cận đứng và tiệm cận ngang.", spoken: "Tiệm cận đứng khi giới hạn ra vô cùng, tiệm cận ngang khi x tiến ra vô cực.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1456,6 +1024,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x không chạm trục tọa độ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = 1/x: limₓ→0⁺ y = +∞ → tiệm cận đứng x = 0. limₓ→±∞ y = 0 → tiệm cận ngang y = 0.</p>
@@ -1470,14 +1039,7 @@ String.raw`<p><strong>Tình huống.</strong> Đồ thị hyperbol y = 1/x khôn
         <p><strong>Lỗi thường gặp.</strong> Hàm phải không xác định tại x₀ mới là tiệm cận.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Tiệm cận đứng của y = 1/(x - 2) là?", choices: ["x = 0", "x = 2", "y = 0", "y = 2"], correct: 1, hint: "Mẫu = 0 khi x = 2.", explain: "x = 2." },
       { type: "mc", prompt: "Tiệm cận ngang của y = (3x-1)/(x+2) là?", choices: ["y = 3", "y = -3", "y = 1/2", "y = -1/2"], correct: 0, hint: "Hệ số cao nhất: 3x/x = 3.", explain: "y = 3." },
@@ -1495,8 +1057,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Quy trình khảo sát hàm bậc 3, bậc 4, phân thức.", spoken: "Bước 1: tìm MXĐ. Bước 2: tính đạo hàm. Bước 3: bảng biến thiên. Bước 4: vẽ đồ thị.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1505,6 +1066,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị để phân tích hệ thống.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -1533,14 +1095,7 @@ String.raw`<p><strong>Tình huống.</strong> Kỹ sư cần vẽ đồ thị đ
         <p><strong>Lỗi thường gặp.</strong> Bỏ qua giới hạn ở vô cực.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Đồ thị y = x³ - 3x có bao nhiêu điểm cực trị?", choices: ["0", "1", "2", "3"], correct: 2, hint: "y' = 3x² - 3 có 2 nghiệm.", explain: "2 cực trị." },
       { type: "mc", prompt: "Đồ thị y = x⁴ có dạng gì?", choices: ["Hình chữ V", "Parabol", "Hình chữ W", "Đường thẳng"], correct: 1, hint: "Hàm bậc 4 dương.", explain: "Parabol dạng U." },
@@ -1558,8 +1113,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tìm số giao điểm của hai đồ thị.", spoken: "Giải phương trình hoành độ giao điểm, số nghiệm bằng số giao điểm.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1568,6 +1122,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặp nhau.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> y = x² và y = x + 2. x² = x + 2 ↔ x = -1 hoặc x = 2. 2 giao điểm.</p>
@@ -1582,14 +1137,7 @@ String.raw`<p><strong>Tình huống.</strong> Tìm thời điểm hai vật gặ
         <p><strong>Lỗi thường gặp.</strong> Quên điều kiện nghiệm.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Số giao điểm của y = x² và y = 2x là?", choices: ["0", "1", "2", "3"], correct: 2, hint: "x² = 2x ↔ x(x-2) = 0.", explain: "2 giao điểm." },
       { type: "mc", prompt: "x³ - 3x + 1 = m có 3 nghiệm khi?", choices: ["m < -1", "m > 1", "-1 < m < 1", "m = ±1"], correct: 2, hint: "y(1) = -1, y(-1) = 3.", explain: "-1 < m < 3." },
@@ -1609,8 +1157,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của lũy thừa.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1619,6 +1166,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân số P(t) = P₀(1 + r)ᵗ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᵐ·aⁿ = aᵐ⁺ⁿ. (aᵐ)ⁿ = aᵐⁿ. a⁻ⁿ = 1/aⁿ. a⁰ = 1 (a ≠ 0).</p>
@@ -1633,14 +1181,7 @@ String.raw`<p><strong>Tình huống.</strong> Tốc độ tăng trưởng dân s
         <p><strong>Lỗi thường gặp.</strong> 0⁰ không xác định.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "2³·2⁴ bằng?", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "aᵐ·aⁿ = aᵐ⁺ⁿ.", explain: "2⁷." },
       { type: "mc", prompt: "(3²)³ bằng?", choices: ["3⁵", "3⁶", "9³", "27²"], correct: 1, hint: "(aᵐ)ⁿ = aᵐⁿ.", explain: "3⁶." },
@@ -1660,8 +1201,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất của logarit.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1670,6 +1210,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> logₐb = x ↔ aˣ = b. logₐa = 1. logₐ1 = 0. logₐ(ab) = logₐa + logₐb.</p>
@@ -1684,14 +1225,7 @@ String.raw`<p><strong>Tình huống.</strong> pH = -log[H⁺] đo độ axit.</p
         <p><strong>Lỗi thường gặp.</strong> logₐ(b+c) ≠ logₐb + logₐc.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "log₃27 bằng?", choices: ["3", "9", "27", "1/3"], correct: 0, hint: "3³ = 27.", explain: "3." },
       { type: "mc", prompt: "log₁₀1000 bằng?", choices: ["2", "3", "4", "10"], correct: 1, hint: "10³ = 1000.", explain: "3." },
@@ -1711,8 +1245,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đồ thị, tính chất của hàm số mũ và logarit.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1721,6 +1254,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -1748,14 +1282,7 @@ String.raw`<p><strong>Tình huống.</strong> Lãi kép A = P(1 + r)ᵗ.</p>
         <p><strong>Lỗi thường gặp.</strong] Đồ thị y = aˣ không cắt trục Ox.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Hàm số nào đồng biến trên ℝ?", choices: ["y = (1/2)ˣ", "y = 2ˣ", "y = log₀.₅x", "y = log₂(1-x)"], correct: 1, hint: "a > 1 thì đồng biến.", explain: "y = 2ˣ." },
       { type: "mc", prompt: "Đồ thị y = log₃x đi qua điểm nào?", choices: ["(0, 1)", "(1, 0)", "(3, 0)", "(1, 3)"], correct: 1, hint: "logₐ1 = 0.", explain: "(1, 0)." },
@@ -1775,8 +1302,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Các phương pháp giải phương trình mũ và logarit.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1785,6 +1311,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp đôi: 2 = (1 + r)ᵗ.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᶠ⁽ˣ⁾ = aᶢ⁽ˣ⁾ ↔ f(x) = g(x). logₐf(x) = logₐg(x) ↔ f(x) = g(x) > 0.</p>
@@ -1799,14 +1326,7 @@ String.raw`<p><strong>Tình huống.</strong> Tìm thời gian để vốn gấp
         <p><strong>Lỗi thường gặp.</strong> Quên điều kiện x > 1.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ = 27 là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "27 = 3³.", explain: "x = 3." },
       { type: "mc", prompt: "Nghiệm của log₅x = 2 là?", choices: ["5", "10", "25", "125"], correct: 2, hint: "x = 5².", explain: "x = 25." },
@@ -1826,8 +1346,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải bất phương trình mũ và logarit.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1836,6 +1355,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất phóng xạ giảm dưới ngưỡng.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> aᶠ⁽ˣ⁾ > aᶢ⁽ˣ⁾: a > 1 thì f(x) > g(x); 0 < a < 1 thì f(x) < g(x).</p>
@@ -1850,14 +1370,7 @@ String.raw`<p><strong>Tình huống.</strong> Thời gian để lượng chất 
         <p><strong>Lỗi thường gặp.</strong> Đổi chiều sai khi 0 < a < 1.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của 3ˣ > 27 là?", choices: ["x > 2", "x > 3", "x < 3", "x < 2"], correct: 1, hint: "27 = 3³, a > 1.", explain: "x > 3." },
       { type: "mc", prompt: "Nghiệm của (1/3)ˣ < 9 là?", choices: ["x > -2", "x < -2", "x > 2", "x < 2"], correct: 0, hint: "9 = (1/3)⁻², đổi chiều.", explain: "x > -2." },
@@ -1877,8 +1390,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và bảng nguyên hàm cơ bản.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1887,6 +1399,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm của quãng đường s(t).</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> F(x) là nguyên hàm của f(x) nếu F'(x) = f(x). ∫xⁿdx = xⁿ⁺¹/(n+1) + C.</p>
@@ -1901,14 +1414,7 @@ String.raw`<p><strong>Tình huống.</strong> Vận tốc v(t) là đạo hàm c
         <p><strong>Lỗi thường gặp.</strong> Quên hằng số C. ∫x⁻¹dx = ln|x| + C.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "∫2x dx bằng?", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "∫xⁿdx = xⁿ⁺¹/(n+1).", explain: "x² + C." },
       { type: "mc", prompt: "∫e³ˣ dx bằng?", choices: ["e³ˣ + C", "3e³ˣ + C", "(1/3)e³ˣ + C", "eˣ + C"], correct: 2, hint: "∫eᵃˣdx = (1/a)eᵃˣ.", explain: "(1/3)e³ˣ + C." },
@@ -1928,8 +1434,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, tính chất và công thức Newton-Leibniz.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -1938,6 +1443,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ t₁ đến t₂.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -1967,14 +1473,7 @@ String.raw`<p><strong>Tình huống.</strong> Quãng đường = ∫v(t)dt từ 
         <p><strong>Lỗi thường gặp.</strong> Thay giới hạn sai.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "∫₀¹2x dx bằng?", choices: ["0", "1", "2", "4"], correct: 1, hint: "[x²]₀¹ = 1.", explain: "1." },
       { type: "mc", prompt: "∫₀^πcosx dx bằng?", choices: ["0", "1", "2", "-2"], correct: 0, hint: "[sinx]₀^π = 0.", explain: "0." },
@@ -1994,8 +1493,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tính diện tích hình phẳng và thể tích vật thể.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2004,6 +1502,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đường cong hoặc thể tích vật thể quay.</p>
       <div class="figure">
         <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;">
@@ -2031,14 +1530,7 @@ String.raw`<p><strong>Tình huống.</strong> Tính diện tích dưới đườ
         <p><strong>Lỗi thường gặp.</strong> Quên dấu giá trị tuyệt đối.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Diện tích dưới y = x từ 0 đến 2 là?", choices: ["1", "2", "4", "8"], correct: 1, hint: "∫₀²x dx = [x²/2]₀².", explain: "2." },
       { type: "mc", prompt: "Thể tích khối tròn xoay quanh Ox của y = x từ 0 đến 1 là?", choices: ["π/3", "π/2", "π", "2π"], correct: 0, hint: "V = π∫₀¹x²dx.", explain: "π/3." },
@@ -2058,8 +1550,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, số phức liên hợp, môđun.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2068,6 +1559,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. Dùng trong điện xoay chiều.</p>
       <div class="figure">
         <svg viewBox="0 0 300 250" style="width:100%;max-width:300px;">
@@ -2098,14 +1590,7 @@ String.raw`<p><strong>Tình huống.</strong> Số phức z = a + bi, i² = -1. 
         <p><strong>Lỗi thường gặp.</strong> i² = -1, không phải 1.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Phần ảo của z = 5 - 3i là?", choices: ["5", "-3", "3", "-5"], correct: 1, hint: "z = a + bi, b là phần ảo.", explain: "-3." },
       { type: "mc", prompt: "|3 + 4i| bằng?", choices: ["5", "6", "7", "25"], correct: 0, hint: "|z| = √(a²+b²).", explain: "5." },
@@ -2125,8 +1610,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Cộng, trừ, nhân số phức.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2135,6 +1619,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tương tự đa thức, với i² = -1.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> (a+bi)+(c+di) = (a+c)+(b+d)i. (a+bi)(c+di) = (ac-bd)+(ad+bc)i.</p>
@@ -2149,14 +1634,7 @@ String.raw`<p><strong>Tình huống.</strong> Tính toán với số phức tư�
         <p><strong>Lỗi thường gặp.</strong> Quên i² = -1 khi nhân.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "(3+2i)+(1-5i) =", choices: ["4-3i", "4+3i", "2-3i", "2+3i"], correct: 0, hint: "3+1=4, 2-5=-3.", explain: "4-3i." },
       { type: "mc", prompt: "(2+i)(3-i) =", choices: ["5+i", "6-2i", "7+i", "5-i"], correct: 0, hint: "6+i+1=5+i.", explain: "5+i." },
@@ -2176,8 +1654,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Chia số phức, số phức nghịch đảo.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2186,6 +1663,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|². Nhân tử và mẫu với liên hợp mẫu.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> (a+bi)/(c+di) = [(a+bi)(c-di)]/(c²+d²) = [(ac+bd)+(bc-ad)i]/(c²+d²).</p>
@@ -2200,14 +1678,7 @@ String.raw`<p><strong>Tình huống.</strong> z₁/z₂ = z₁·z₂̄/|z₂|².
         <p><strong>Lỗi thường gặp.</strong> Quên nhân cả tử và mẫu.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "(3+i)/(1-i) =", choices: ["1+2i", "1-2i", "2+i", "2-i"], correct: 0, hint: "Nhân với 1+i.", explain: "1+2i." },
       { type: "mc", prompt: "1/i bằng?", choices: ["i", "-i", "1", "-1"], correct: 1, hint: "1/i = i/i².", explain: "-i." },
@@ -2227,8 +1698,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Giải phương trình bậc hai với hệ số thực, nghiệm phức.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2237,6 +1707,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức khi delta<0.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> x = [-b±√Δ]/(2a). Nếu Δ<0: √Δ = i√|Δ|.</p>
@@ -2251,14 +1722,7 @@ String.raw`<p><strong>Tình huống.</strong> ax²+bx+c=0 có nghiệm phức kh
         <p><strong>Lỗi thường gặp.</strong> Tính delta sai. Quên i khi viết nghiệm.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Nghiệm của x²+9=0 là?", choices: ["x=±3", "x=±3i", "x=±9", "x=±9i"], correct: 1, hint: "x²=-9.", explain: "x=±3i." },
       { type: "mc", prompt: "Nghiệm của x²-2x+2=0 là?", choices: ["x=1±i", "x=1±2i", "x=2±i", "x=-1±i"], correct: 0, hint: "Δ=-4.", explain: "x=1±i." },
@@ -2278,8 +1742,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Hệ tọa độ Oxyz, tọa độ điểm, tọa độ vectơ.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2288,6 +1751,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gian cần 3 tọa độ: M(x,y,z).</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
@@ -2320,14 +1784,7 @@ String.raw`<p><strong>Tình huống.</strong> Vị trí điểm trong không gia
         <p><strong>Lỗi thường gặp.</strong> Hoán vị tọa độ. Quên bình phương.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Vectơ AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(3,5,7)"], correct: 0, hint: "4-1=3, 5-2=3, 6-3=3.", explain: "(3,3,3)." },
       { type: "mc", prompt: "Độ dài AB với A(0,0,0), B(3,4,12) là?", choices: ["13", "14", "15", "16"], correct: 0, hint: "√(9+16+144)=√169.", explain: "13." },
@@ -2347,8 +1804,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tổng quát của mặt phẳng.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2357,6 +1813,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VTPT n.</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
@@ -2381,14 +1838,7 @@ String.raw`<p><strong>Tình huống.</strong> Mặt phẳng qua điểm M có VT
         <p><strong>Lỗi thường gặp.</strong> Thay dấu sai khi khai triển.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Mặt phẳng (Oxy) có phương trình?", choices: ["x=0", "y=0", "z=0", "x+y=0"], correct: 2, hint: "Tất cả điểm có z=0.", explain: "z=0." },
       { type: "mc", prompt: "VTPT của 2x-3y+z-5=0 là?", choices: ["(2,-3,1)", "(-2,3,-1)", "(2,3,1)", "(1,-3,2)"], correct: 0, hint: "Hệ số của x,y,z.", explain: "(2,-3,1)." },
@@ -2408,8 +1858,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Phương trình tham số và phương trình chính tắc.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2418,6 +1867,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u.</p>
       <div class="figure">
         <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;">
@@ -2441,14 +1891,7 @@ String.raw`<p><strong>Tình huống.</strong> Đường thẳng qua M có VTCP u
         <p><strong>Lỗi thường gặp.</strong] Chia cho 0 khi a,b hoặc c = 0.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Đường thẳng song song Ox qua (1,2,3) có phương trình?", choices: ["y=2,z=3", "x=1,z=3", "x=1,y=2", "x+y+z=6"], correct: 0, hint: "y,z không đổi.", explain: "y=2,z=3." },
       { type: "mc", prompt: "VTCP của (x-1)/2=(y+3)/(-1)=z/4 là?", choices: ["(2,-1,4)", "(-2,1,-4)", "(1/2,-1,4)", "(2,1,4)"], correct: 0, hint: "Mẫu số là VTCP.", explain: "(2,-1,4)." },
@@ -2468,8 +1911,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Tích vô hướng, góc giữa hai vectơ, khoảng cách.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2478,6 +1920,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔ u ⊥ v.</p>
       <div class="example">
         <p><strong>Làm chậm.</strong> u·v = xᵤxᵥ+yᵤyᵥ+zᵤzᵥ. |u| = √(xᵤ²+yᵤ²+zᵤ²). cos(θ) = (u·v)/(|u||v|).</p>
@@ -2492,14 +1935,7 @@ String.raw`<p><strong>Tình huống.</strong> u·v = |u||v|cos(θ). u·v = 0 ↔
         <p><strong>Lỗi thường gặp.</strong> Tính tích vô hướng sai dấu.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0). u·v =", choices: ["0", "2", "4", "6"], correct: 0, hint: "1·2+2·(-1)+2·0.", explain: "0." },
       { type: "mc", prompt: "u=(1,2,2), v=(2,-1,0) thì?", choices: ["song song", "vuông góc", "cùng phương", "không vuông góc"], correct: 1, hint: "u·v=0.", explain: "Vuông góc." },
@@ -2519,8 +1955,7 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Định nghĩa, diện tích xung quanh, thể tích khối đa diện.",
-    body: 
-    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
+    body: `    <p><strong>Ví dụ:</strong> Giải bài toán mẫu với các bước chi tiết.</p>
 
     <div class="trap">
       <p><strong>Cảnh báo:</strong> Những sai lầm thường gặp khi làm bài.</p>
@@ -2529,6 +1964,7 @@ exercises: [
     <div class="tips">
       <p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng của bài học.</p>
     </div>
+` +
 String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, lăng trụ, chóp.</p>
       <div class="figure">
         <svg viewBox="0 0 400 250" style="width:100%;max-width:400px;">
@@ -2558,14 +1994,7 @@ String.raw`<p><strong>Tình huống.</strong> Tính thể tích hộp giấy, l�
         <p><strong>Lỗi thường gặp.</strong] Quên hệ số 1/3 với hình chóp.</p>
       </div>`,
     
-      <div class="example">
-        <p><strong>Làm chặt.</strong> Bước 1: Phân tích bài toán. Bước 2: Áp dụng công thức. Bước 3: Tính toán cẩn thận.</p>
-      </div>
 
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Thể tích hình hộp chữ nhật 2×3×4 là?", choices: ["12", "24", "36", "48"], correct: 1, hint: "V=abc.", explain: "24." },
       { type: "mc", prompt: "Thể tích hình chóp có đáy diện tích 9, chiều cao 6 là?", choices: ["9", "18", "27", "54"], correct: 1, hint: "V=(1/3)×9×6.", explain: "18." },
@@ -2583,12 +2012,12 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập ứng dụng đạo hàm để khảo sát hàm số.",
-    body: 
-    <div class="memory"><p><strong>Key point:</strong> Ghi nhớ điều quan trọng.</p></div>
+    body: `    <div class="memory"><p><strong>Key point:</strong> Ghi nhớ điều quan trọng.</p></div>
 
     <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đồng biến, nghịch biến, cực trị, GTLN-GTNN, tiệm cận.</p>
       <div class="example">
         <p><strong>Câu 1.</strong> Hàm số y = x³ - 3x đồng biến trên khoảng nào?</p>
@@ -2598,10 +2027,6 @@ String.raw`<p><strong>Làm bài.</strong> 10 câu hỏi trắc nghiệm về đ�
         <p>D. (0, +∞)</p>
       </div>`,
     
-      <details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em</p>
-      </details>
 exercises: [
       { type: "mc", prompt: "Câu 1: Hàm số y = x³ - 3x đồng biến trên?", choices: ["(-∞, -1) và (1, +∞)", "(-1, 1)", "(-∞, +∞)", "(0, +∞)"], correct: 0, hint: "y' = 3x² - 3 > 0 khi x < -1 hoặc x > 1.", explain: "Đồng biến trên (-∞, -1) và (1, +∞)." },
       { type: "mc", prompt: "Câu 2: Số cực trị của y = x⁴ - 2x² là?", choices: ["1", "2", "3", "4"], correct: 2, hint: "y' = 4x(x² - 1) có 3 nghiệm.", explain: "3 cực trị." },
@@ -2625,10 +2050,10 @@ exercises: [
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập số phức và phép toán.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức, phép toán, phương trình.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2657,10 +2082,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập lũy thừa, mũ, logarit và phương trình.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa, mũ, logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2688,10 +2113,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập nguyên hàm, tích phân và ứng dụng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm, tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2719,10 +2144,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguy
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập tọa độ điểm, vectơ, mặt phẳng, đường thẳng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2750,10 +2175,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập khối đa diện, diện tích, thể tích.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về khối đa diện.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2782,10 +2207,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về kh�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập mặt nón, mặt trụ, mặt cầu.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt nón, mặt trụ, mặt cầu.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2813,10 +2238,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặ
     youtube: "dQw4w9WgXcQ",
 
     summary: "Luyện tập vị trí tương đối, góc, khoảng cách trong không gian.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị trí tương đối và khoảng cách.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -2835,223 +2260,13 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về vị
     ],
   },
 
-  {
-    id: "g12-ch2-quiz",
-    num: 99,
-    chapter: 2,
-    title: "Chương 2: Hàm số lũy thừa - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập lũy thừa, mũ, logarit.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về lũy thừa và logarit.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: 2³ × 2⁴ =", choices: ["2⁷", "2¹²", "4⁷", "4¹²"], correct: 0, hint: "a^m × a^n = a^{m+n} = 2⁷.", explain: "2⁷." },
-      { type: "mc", prompt: "Câu 2: (3²)⁴ =", choices: ["3⁸", "3⁶", "9⁴", "6⁴"], correct: 0, hint: "(a^m)^n = a^{m·n} = 3⁸.", explain: "3⁸." },
-      { type: "mc", prompt: "Câu 3: log₂(8) =", choices: ["3", "2", "4", "1/2"], correct: 0, hint: "2³ = 8 → log₂(8) = 3.", explain: "3." },
-      { type: "mc", prompt: "Câu 4: log₁₀(100) =", choices: ["2", "10", "100", "1/2"], correct: 0, hint: "10² = 100 → log₁₀(100) = 2.", explain: "2." },
-      { type: "mc", prompt: "Câu 5: e^{ln(5)} =", choices: ["5", "e", "ln(5)", "1"], correct: 0, hint: "e^{ln a} = a.", explain: "5." },
-      { type: "mc", prompt: "Câu 6: 4^{log₂(3)} =", choices: ["9", "3", "6", "12"], correct: 0, hint: "4 = 2² → (2²)^{log₂(3)} = 2^{2log₂(3)} = 3² = 9.", explain: "9." },
-      { type: "mc", prompt: "Câu 7: Đạo hàm của y = e^x là?", choices: ["e^x", "xe^{x-1}", "ln(x)", "1"], correct: 0, hint: "(e^x)' = e^x.", explain: "e^x." },
-      { type: "mc", prompt: "Câu 8: Đạo hàm của y = log₁₀(x) là?", choices: ["1/(x ln 10)", "1/x", "ln(10)/x", "x ln 10"], correct: 0, hint: "(log_a x)' = 1/(x ln a).", explain: "1/(x ln 10)." },
-    ],
-  },
-  {
-    id: "g12-ch3-quiz",
-    num: 100,
-    chapter: 3,
-    title: "Chương 3: Nguyên hàm - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập nguyên hàm, tích phân.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về nguyên hàm và tích phân.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: ∫2x dx =", choices: ["x² + C", "2x² + C", "x²", "2x + C"], correct: 0, hint: "(x²)' = 2x.", explain: "x² + C." },
-      { type: "mc", prompt: "Câu 2: ∫sin(x) dx =", choices: ["-cos(x) + C", "cos(x) + C", "sin(x) + C", "-sin(x) + C"], correct: 0, hint: "(-cos x)' = sin x.", explain: "-cos(x) + C." },
-      { type: "mc", prompt: "Câu 3: ∫e^x dx =", choices: ["e^x + C", "xe^{x-1} + C", "ln|x| + C", "1 + C"], correct: 0, hint: "(e^x)' = e^x.", explain: "e^x + C." },
-      { type: "mc", prompt: "Câu 4: ∫₁² 2x dx =", choices: ["3", "4", "2", "1"], correct: 0, hint: "∫2x dx = x², từ 1 đến 2: 4 - 1 = 3.", explain: "3." },
-      { type: "mc", prompt: "Câu 5: ∫(x² + 2x) dx =", choices: ["x³/3 + x² + C", "x³ + x² + C", "x³/3 + 2x + C", "x² + 2 + C"], correct: 0, hint: "∫x² dx = x³/3, ∫2x dx = x².", explain: "x³/3 + x² + C." },
-      { type: "mc", prompt: "Câu 6: ∫dx/x =", choices: ["ln|x| + C", "1/x + C", "ln(x) + C", "x ln x + C"], correct: 0, hint: "(ln|x|)' = 1/x.", explain: "ln|x| + C." },
-      { type: "mc", prompt: "Câu 7: ∫cos(2x) dx =", choices: ["(1/2)sin(2x) + C", "sin(2x) + C", "2sin(2x) + C", "-(1/2)sin(2x) + C"], correct: 0, hint: "(1/2)sin(2x)' = cos(2x).", explain: "(1/2)sin(2x) + C." },
-      { type: "mc", prompt: "Câu 8: Diện tích hình phẳng giới hạn y=x², x=0, x=1 là?", choices: ["1/3", "1", "2/3", "1/2"], correct: 0, hint: "∫₀¹ x² dx = [x³/3]₀¹ = 1/3.", explain: "1/3." },
-    ],
-  },
-  {
-    id: "g12-ch4-quiz",
-    num: 101,
-    chapter: 4,
-    title: "Chương 4: Số phức - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
-      { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
-      { type: "mc", prompt: "Câu 3: (3 + 2i)(3 - 2i) =", choices: ["13", "9 - 4i", "9 + 4i", "5"], correct: 0, hint: "(a+bi)(a-bi) = a² + b² = 9 + 4 = 13.", explain: "13." },
-      { type: "mc", prompt: "Câu 4: |2 + 3i| =", choices: ["√13", "√5", "13", "5"], correct: 0, hint: "|a+bi| = √(a²+b²) = √(4+9) = √13.", explain: "√13." },
-      { type: "mc", prompt: "Câu 5: Số phức liên hợp của 1 - 2i là?", choices: ["1 + 2i", "-1 + 2i", "1 - 2i", "-1 - 2i"], correct: 0, hint: "Đổi dấu phần ảo.", explain: "1 + 2i." },
-      { type: "mc", prompt: "Câu 6: (1 + i)² =", choices: ["2i", "1 + 2i", "2", "1 - 2i"], correct: 0, hint: "1 + 2i + i² = 1 + 2i - 1 = 2i.", explain: "2i." },
-      { type: "mc", prompt: "Câu 7: z = 3 - 4i có tọa độ trên mặt phẳng phức là?", choices: ["(3,-4)", "(3,4)", "(-3,4)", "(-3,-4)"], correct: 0, hint: "Trục hoành: phần thực, trục tung: phần ảo.", explain: "(3,-4)." },
-      { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
-    ],
-  },
-  {
-    id: "g12-ch5-quiz",
-    num: 102,
-    chapter: 5,
-    title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
-      { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
-      { type: "mc", prompt: "Câu 3: Thể tích lăng trụ có diện tích đáy S, chiều cao h là?", choices: ["Sh", "(1/3)Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = S × h.", explain: "Sh." },
-      { type: "mc", prompt: "Câu 4: Hình lập phương cạnh a có thể tích là?", choices: ["a³", "3a²", "6a²", "a²"], correct: 0, hint: "V = a × a × a = a³.", explain: "a³." },
-      { type: "mc", prompt: "Câu 5: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
-      { type: "mc", prompt: "Câu 6: Hình chóp đều có đáy là hình vuông cạnh a, chiều cao h. Thể tích là?", choices: ["(1/3)a²h", "(1/3)ah²", "a²h", "ah"], correct: 0, hint: "S đáy = a², V = 1/3 × a² × h.", explain: "(1/3)a²h." },
-      { type: "mc", prompt: "Câu 7: Hai khối chóp có cùng diện tích đáy, chiều cao gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
-      { type: "mc", prompt: "Câu 8: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
-    ],
-  },
-  {
-    id: "g12-ch6-quiz",
-    num: 103,
-    chapter: 6,
-    title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
-      { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
-      { type: "mc", prompt: "Câu 3: Diện tích xung quanh hình trụ (bán kính r, chiều cao h) là?", choices: ["2πrh", "πrh", "2πr²h", "πr²h"], correct: 0, hint: "S_xq = 2 × π × r × h.", explain: "2πrh." },
-      { type: "mc", prompt: "Câu 4: Thể tích hình trụ (bán kính r, chiều cao h) là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = π × r² × h.", explain: "πr²h." },
-      { type: "mc", prompt: "Câu 5: Diện tích mặt cầu bán kính R là?", choices: ["4πR²", "2πR²", "πR²", "(4/3)πR³"], correct: 0, hint: "S = 4 × π × R².", explain: "4πR²." },
-      { type: "mc", prompt: "Câu 6: Thể tích hình cầu bán kính R là?", choices: ["(4/3)πR³", "4πR³", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
-      { type: "mc", prompt: "Câu 7: Hình nón có bán kính 3, đường sinh 5. Diện tích xung quanh là?", choices: ["15π", "9π", "25π", "30π"], correct: 0, hint: "S_xq = π × 3 × 5 = 15π.", explain: "15π." },
-      { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
-    ],
-  },
-  {
-    id: "g12-ch7-quiz",
-    num: 104,
-    chapter: 7,
-    title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
-      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
-      { type: "mc", prompt: "Câu 3: Tích vô hướng AB·AC với A(0,0,0), B(1,2,3), C(4,5,6) là?", choices: ["32", "28", "24", "20"], correct: 0, hint: "AB=(1,2,3), AC=(4,5,6). AB·AC = 4+10+18 = 32.", explain: "32." },
-      { type: "mc", prompt: "Câu 4: Phương trình mặt cầu tâm I(1,2,3), bán kính 5 là?", choices: ["(x-1)²+(y-2)²+(z-3)²=25", "(x+1)²+(y+2)²+(z+3)²=25", "(x-1)²+(y-2)²+(z-3)²=5", "(x-1)²+(y-2)²+(z-3)²=10"], correct: 0, hint: "(x-x₀)²+(y-y₀)²+(z-z₀)²=R².", explain: "(x-1)²+(y-2)²+(z-3)²=25." },
-      { type: "mc", prompt: "Câu 5: Mặt phẳng (P): 2x - 3y + 6z - 14 = 0 có vector pháp tuyến là?", choices: ["(2,-3,6)", "(2,3,6)", "(-2,3,-6)", "(1,-3/2,3)"], correct: 0, hint: "n = (A,B,C) từ Ax+By+Cz+D=0.", explain: "(2,-3,6)." },
-      { type: "mc", prompt: "Câu 6: Đường thẳng qua A(1,2,3) và có vector chỉ phương u=(4,5,6) có phương trình là?", choices: ["(x-1)/4 = (y-2)/5 = (z-3)/6", "(x+1)/4 = (y+2)/5 = (z+3)/6", "(x-4)/1 = (y-5)/2 = (z-6)/3", "4x+5y+6z=0"], correct: 0, hint: "(x-x₀)/a = (y-y₀)/b = (z-z₀)/c.", explain: "(x-1)/4 = (y-2)/5 = (z-3)/6." },
-      { type: "mc", prompt: "Câu 7: Hai vector (1,2,3) và (4,5,6) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
-      { type: "mc", prompt: "Câu 8: Khoảng cách từ điểm A(1,2,3) đến mặt phẳng x + y + z - 6 = 0 là?", choices: ["0", "√3", "3", "6"], correct: 0, hint: "d = |1+2+3-6|/√(1+1+1) = 0/√3 = 0.", explain: "0." },
-    ],
-  },
-  {
-    id: "g12-ch8-quiz",
-    num: 105,
-    chapter: 8,
-    title: "Chương 8: Ôn tập - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập tổng hợp các chương.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng hợp.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Đạo hàm của y = x³ - 3x² + 2 là?", choices: ["3x² - 6x", "3x² - 3x", "x⁴ - 3x³ + 2x", "3x² - 6x + 2"], correct: 0, hint: "(x³)'=3x², (3x²)'=6x.", explain: "3x² - 6x." },
-      { type: "mc", prompt: "Câu 2: Nguyên hàm của y = 2x + 3 là?", choices: ["x² + 3x + C", "2x² + 3x + C", "x² + 3x", "2x² + 3"], correct: 0, hint: "∫2x dx = x², ∫3 dx = 3x.", explain: "x² + 3x + C." },
-      { type: "mc", prompt: "Câu 3: Số phức z = 3 - 4i có môđun là?", choices: ["5", "4", "3", "7"], correct: 0, hint: "|z| = √(9+16) = 5.", explain: "5." },
-      { type: "mc", prompt: "Câu 4: Thể tích hình chóp tứ giác đều cạnh a, chiều cao h là?", choices: ["(1/3)a²h", "(1/3)ah²", "a²h", "ah"], correct: 0, hint: "S đáy = a², V = 1/3 × a² × h.", explain: "(1/3)a²h." },
-      { type: "mc", prompt: "Câu 5: Phương trình mặt cầu tâm (1,-2,3) bán kính 2 là?", choices: ["(x-1)²+(y+2)²+(z-3)²=4", "(x+1)²+(y-2)²+(z+3)²=4", "(x-1)²+(y-2)²+(z-3)²=4", "(x-1)²+(y+2)²+(z-3)²=2"], correct: 0, hint: "R² = 4.", explain: "(x-1)²+(y+2)²+(z-3)²=4." },
-      { type: "mc", prompt: "Câu 6: Diện tích xung quanh hình nón bán kính 3, đường sinh 5 là?", choices: ["15π", "9π", "25π", "30π"], correct: 0, hint: "S_xq = π × 3 × 5 = 15π.", explain: "15π." },
-      { type: "mc", prompt: "Câu 7: Tích phân ∫₀² (2x + 1) dx =", choices: ["4", "6", "8", "2"], correct: 0, hint: "[x² + x]₀² = 4 + 2 = 6.", explain: "6." },
-      { type: "mc", prompt: "Câu 8: Phương trình tiếp tuyến của y = x² tại x = 1 là?", choices: ["y = 2x - 1", "y = x + 1", "y = 2x + 1", "y = x - 1"], correct: 0, hint: "y' = 2x = 2 tại x=1, y(1)=1. y-1=2(x-1) → y=2x-1.", explain: "y = 2x - 1." },
-    ],
-  },
+  
+  
+  
+  
+  
+  
+  
 
   {
     id: "g12-exam-ch1",
@@ -3063,10 +2278,10 @@ String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm tổng h�
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Applications of derivatives.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -3091,10 +2306,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Powers, Exponential, Logarithm.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -3119,10 +2334,10 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     youtube: "dQw4w9WgXcQ",
 
     summary: "Đề kiểm tra 45 phút chương Integrals.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+    body: `    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
 
     <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
+` +
 String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
 <details class="check">
         <summary>Tự kiểm tra</summary>
@@ -3138,133 +2353,13 @@ String.raw`<p><strong>Làm bài.</strong> Đề kiểm tra 45 phút.</p><div cla
     ],
   },
 
-  {
-    id: "g12-ch4-quiz",
-    num: 106,
-    chapter: 4,
-    title: "Chương 4: Số phức - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
+  
 
-    youtube: "dQw4w9WgXcQ",
+  
 
-    summary: "Luyện tập số phức, phép toán, biểu diễn.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
+  
 
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về số phức.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: i² =", choices: ["-1", "1", "i", "-i"], correct: 0, hint: "i² = -1.", explain: "-1." },
-      { type: "mc", prompt: "Câu 2: (2 + 3i) + (1 - 2i) =", choices: ["3 + i", "3 + 5i", "1 + i", "3 - i"], correct: 0, hint: "(2+1) + (3i-2i) = 3 + i.", explain: "3 + i." },
-      { type: "text", prompt: "Tính (3 + 2i)(3 - 2i).", answer: "13", accept: ["13"], hint: "(a+bi)(a-bi) = a² + b² = 9 + 4 = 13.", explain: "13." },
-      { type: "mc", prompt: "Câu 4: |2 + 3i| =", choices: ["√13", "√5", "13", "5"], correct: 0, hint: "|a+bi| = √(a²+b²) = √(4+9) = √13.", explain: "√13." },
-      { type: "mc", prompt: "Câu 5: Số phức liên hợp của 1 - 2i là?", choices: ["1 + 2i", "-1 + 2i", "1 - 2i", "-1 - 2i"], correct: 0, hint: "Đổi dấu phần ảo.", explain: "1 + 2i." },
-      { type: "mc", prompt: "Câu 6: (1 + i)² =", choices: ["2i", "1 + 2i", "2", "1 - 2i"], correct: 0, hint: "1 + 2i + i² = 1 + 2i - 1 = 2i.", explain: "2i." },
-      { type: "mc", prompt: "Câu 7: z = 3 - 4i có tọa độ trên mặt phẳng phức là?", choices: ["(3,-4)", "(3,4)", "(-3,4)", "(-3,-4)"], correct: 0, hint: "Trục hoành: phần thực, trục tung: phần ảo.", explain: "(3,-4)." },
-      { type: "mc", prompt: "Câu 8: z·\overline{z} =", choices: ["|z|²", "0", "1", "2|z|"], correct: 0, hint: "z·\overline{z} = a² + b² = |z|².", explain: "|z|²." },
-    ],
-  },
-
-  {
-    id: "g12-ch5-quiz",
-    num: 107,
-    chapter: 5,
-    title: "Chương 5: Thể tích khối đa diện - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập thể tích hộp, chóp, lăng trụ.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về thể tích.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Thể tích hộp chữ nhật a×b×c là?", choices: ["abc", "2(a+b+c)", "ab+bc+ca", "a+b+c"], correct: 0, hint: "V = chiều dài × chiều rộng × chiều cao.", explain: "abc." },
-      { type: "mc", prompt: "Câu 2: Thể tích hình chóp có diện tích đáy S, chiều cao h là?", choices: ["(1/3)Sh", "Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = 1/3 × S × h.", explain: "(1/3)Sh." },
-      { type: "text", prompt: "Tính thể tích hình lập phương cạnh 3cm.", answer: "27cm³", accept: ["27cm³", "27"], hint: "V = 3³ = 27cm³.", explain: "27cm³." },
-      { type: "mc", prompt: "Câu 4: Thể tích lăng trụ có diện tích đáy S, chiều cao h là?", choices: ["Sh", "(1/3)Sh", "(1/2)Sh", "2Sh"], correct: 0, hint: "V = S × h.", explain: "Sh." },
-      { type: "mc", prompt: "Câu 5: Hình chóp đều có đáy là hình vuông cạnh a, chiều cao h. Thể tích là?", choices: ["(1/3)a²h", "(1/3)ah²", "a²h", "ah"], correct: 0, hint: "S đáy = a², V = 1/3 × a² × h.", explain: "(1/3)a²h." },
-      { type: "mc", prompt: "Câu 6: Hai khối chóp có cùng diện tích đáy, chiều cao gấp đôi thì thể tích:", choices: ["Gấp đôi", "Gấp bốn", "Bằng nhau", "Giảm một nửa"], correct: 0, hint: "V tỉ lệ với h.", explain: "Gấp đôi." },
-      { type: "mc", prompt: "Câu 7: Thể tích tứ diện đều cạnh a là?", choices: ["(√2/12)a³", "(√3/12)a³", "(1/3)a³", "(1/6)a³"], correct: 0, hint: "Công thức chuẩn: V = √2/12 × a³.", explain: "(√2/12)a³." },
-      { type: "mc", prompt: "Câu 8: Thể tích khối cầu bán kính R là?", choices: ["(4/3)πR³", "4πR²", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
-    ],
-  },
-
-  {
-    id: "g12-ch6-quiz",
-    num: 108,
-    chapter: 6,
-    title: "Chương 6: Mặt nón - Mặt trụ - Mặt cầu - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập diện tích xung quanh, thể tích mặt tròn xoay.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về mặt tròn xoay.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Diện tích xung quanh hình nón (bán kính r, đường sinh l) là?", choices: ["πrl", "πr²l", "2πrl", "πr²"], correct: 0, hint: "S_xq = π × r × l.", explain: "πrl." },
-      { type: "mc", prompt: "Câu 2: Thể tích hình nón (bán kính r, chiều cao h) là?", choices: ["(1/3)πr²h", "πr²h", "(2/3)πr²h", "2πr²h"], correct: 0, hint: "V = 1/3 × π × r² × h.", explain: "(1/3)πr²h." },
-      { type: "text", prompt: "Tính diện tích xung quanh hình trụ bán kính 3cm, chiều cao 5cm.", answer: "30πcm²", accept: ["30πcm²", "30π"], hint: "S_xq = 2πrh = 2π×3×5 = 30πcm².", explain: "30πcm²." },
-      { type: "mc", prompt: "Câu 4: Thể tích hình trụ (bán kính r, chiều cao h) là?", choices: ["πr²h", "2πr²h", "(1/3)πr²h", "4πr²h"], correct: 0, hint: "V = π × r² × h.", explain: "πr²h." },
-      { type: "mc", prompt: "Câu 5: Diện tích mặt cầu bán kính R là?", choices: ["4πR²", "2πR²", "πR²", "(4/3)πR³"], correct: 0, hint: "S = 4 × π × R².", explain: "4πR²." },
-      { type: "mc", prompt: "Câu 6: Thể tích hình cầu bán kính R là?", choices: ["(4/3)πR³", "4πR³", "(2/3)πR³", "πR³"], correct: 0, hint: "V = 4/3 × π × R³.", explain: "(4/3)πR³." },
-      { type: "mc", prompt: "Câu 7: Hình nón có bán kính 4, đường sinh 5. Diện tích xung quanh là?", choices: ["20π", "16π", "25π", "40π"], correct: 0, hint: "S_xq = π × 4 × 5 = 20π.", explain: "20π." },
-      { type: "mc", prompt: "Câu 8: Hình trụ có bán kính 2, chiều cao 3. Thể tích là?", choices: ["12π", "6π", "4π", "8π"], correct: 0, hint: "V = π × 2² × 3 = 12π.", explain: "12π." },
-    ],
-  },
-
-  {
-    id: "g12-ch7-quiz",
-    num: 109,
-    chapter: 7,
-    title: "Chương 7: Phương pháp tọa độ trong không gian - Trắc nghiệm",
-    spoken: "Đây là tóm tắt bài học bằng lời nói.",
-
-    youtube: "dQw4w9WgXcQ",
-
-    summary: "Luyện tập tọa độ điểm, vector, phương trình mặt phẳng, đường thẳng.",
-    body: 
-    <div class="tips"><p><strong>Lưu ý:</strong> Ghi nhớ các điểm quan trọng.</p></div>
-
-    <div class="trap"><p><strong>Cảnh báo:</strong> Những sai lầm thường gặp.</p></div>
-String.raw`<p><strong>Làm bài.</strong> 8 câu hỏi trắc nghiệm về tọa độ trong không gian.</p><div class="memory"><p><strong>Nhìn lại.</strong> Tóm tắt kiến thức chính của bài học.</p></div>
-<details class="check">
-        <summary>Tự kiểm tra</summary>
-        <p>Làm bài tập để kiểm tra hiểu biết của em.</p>
-      </details>
-`,
-    exercises: [
-      { type: "mc", prompt: "Câu 1: Vector AB với A(1,2,3), B(4,5,6) là?", choices: ["(3,3,3)", "(5,7,9)", "(-3,-3,-3)", "(4,5,6)"], correct: 0, hint: "AB = (4-1, 5-2, 6-3) = (3,3,3).", explain: "(3,3,3)." },
-      { type: "mc", prompt: "Câu 2: Khoảng cách giữa A(0,0,0) và B(3,4,12) là?", choices: ["13", "12", "5", "10"], correct: 0, hint: "AB = √(9+16+144) = √169 = 13.", explain: "13." },
-      { type: "text", prompt: "Tính tích vô hướng AB·AC với A(0,0,0), B(1,2,3), C(4,5,6).", answer: "32", accept: ["32"], hint: "AB=(1,2,3), AC=(4,5,6). AB·AC = 4+10+18 = 32.", explain: "32." },
-      { type: "mc", prompt: "Câu 4: Phương trình mặt cầu tâm I(1,2,3), bán kính 5 là?", choices: ["(x-1)²+(y-2)²+(z-3)²=25", "(x+1)²+(y+2)²+(z+3)²=25", "(x-1)²+(y-2)²+(z-3)²=5", "(x-1)²+(y-2)²+(z-3)²=10"], correct: 0, hint: "(x-x₀)²+(y-y₀)²+(z-z₀)²=R².", explain: "(x-1)²+(y-2)²+(z-3)²=25." },
-      { type: "mc", prompt: "Câu 5: Mặt phẳng (P): 2x - 3y + 6z - 14 = 0 có vector pháp tuyến là?", choices: ["(2,-3,6)", "(2,3,6)", "(-2,3,-6)", "(1,-3/2,3)"], correct: 0, hint: "n = (A,B,C) từ Ax+By+Cz+D=0.", explain: "(2,-3,6)." },
-      { type: "mc", prompt: "Câu 6: Đường thẳng qua A(1,2,3) và có vector chỉ phương u=(4,5,6) có phương trình là?", choices: ["(x-1)/4 = (y-2)/5 = (z-3)/6", "(x+1)/4 = (y+2)/5 = (z+3)/6", "(x-4)/1 = (y-5)/2 = (z-6)/3", "4x+5y+6z=0"], correct: 0, hint: "(x-x₀)/a = (y-y₀)/b = (z-z₀)/c.", explain: "(x-1)/4 = (y-2)/5 = (z-3)/6." },
-      { type: "mc", prompt: "Câu 7: Hai vector (1,2,3) và (4,5,6) vuông góc khi:", choices: ["Tích vô hướng bằng 0", "Tích vô hướng bằng 1", "Cùng phương", "Độ dài bằng nhau"], correct: 0, hint: "a·b = 0 ↔ a ⊥ b.", explain: "Tích vô hướng bằng 0." },
-      { type: "mc", prompt: "Câu 8: Khoảng cách từ điểm A(1,2,3) đến mặt phẳng x + y + z - 6 = 0 là?", choices: ["0", "√3", "3", "6"], correct: 0, hint: "d = |1+2+3-6|/√(1+1+1) = 0/√3 = 0.", explain: "0." },
-    ],
-  },
+  
 ];
 
 (function attachGrade12() {
