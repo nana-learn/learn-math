@@ -9,8 +9,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -21,19 +19,54 @@ env:
   PAGES_ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
 
 jobs:
+  upload:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
+      artifact_id: ${{ steps.upload.outputs.artifact_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: ${{ env.PAGES_ARTIFACT_NAME }}
+          path: web
+
   deploy:
+    needs: upload
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          name: ${{ env.PAGES_ARTIFACT_NAME }}
-          path: web
+      # Upload metadata can take a moment to become visible to the API.
+      - name: Wait for Pages artifact metadata
+        timeout-minutes: 2
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: ${{ needs.upload.outputs.artifact_name }}
+          ARTIFACT_ID: ${{ needs.upload.outputs.artifact_id }}
+        run: |
+          for attempt in {1..12}; do
+            if artifact_id=$(gh api \
+              "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=$ARTIFACT_NAME" \
+              --jq '.artifacts | if length == 1 then .[0].id else empty end') && \
+              [[ "$artifact_id" == "$ARTIFACT_ID" ]]; then
+              echo "Pages artifact $ARTIFACT_NAME ($artifact_id) is ready."
+              exit 0
+            fi
+            echo "Waiting for Pages artifact metadata ($attempt/12)..."
+            sleep 5
+          done
+          echo "::error::Expected Pages artifact $ARTIFACT_NAME ($ARTIFACT_ID) was not visible."
+          exit 1
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
+          # Use the upload job's output, including when only deploy is rerun.
+          artifact_name: ${{ needs.upload.outputs.artifact_name }}
