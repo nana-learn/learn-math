@@ -177,6 +177,153 @@ const THI10_LESSONS = [
     ],
   },
   {
+    id: "tv10-bai-13",
+    num: 13,
+    chapter: 2,
+    title: "Bài 13 · Rút gọn biểu thức chứa căn",
+    summary: "Học từng bước từ ảnh đề: đặt t = √x, phân tích nhân tử, rút gọn P rồi tìm x để P = 7.",
+    body: String.raw`
+      <p>Mục tiêu: hiểu <strong>vì sao rút gọn được</strong>, không chỉ chép đáp số. Em hãy thử mỗi bước trên giấy trước khi đọc tiếp. Toàn bộ hướng dẫn và phần tự luyện nằm trên trang này.</p>
+      <div class="examq">
+        <p><strong>Đề bài 13</strong> (chép từ ảnh <code>bai_13.jpg</code>). Cho biểu thức</p>
+        \[
+          \begin{aligned}
+            P&=\dfrac{x^2-\sqrt{x}}{x+\sqrt{x}+1}\\
+             &\quad-\dfrac{2x+\sqrt{x}}{\sqrt{x}}+\dfrac{2(x-1)}{\sqrt{x}-1},
+          \end{aligned}
+        \]
+        <p>với \(x>0,\ x\ne1\).</p>
+        <p><strong>a)</strong> Rút gọn biểu thức \(P\).<br><strong>b)</strong> Tìm các giá trị của \(x\) để \(P=7\).</p>
+      </div>
+
+      <h2>1. Đổi căn thành một ẩn dễ nhìn</h2>
+      <p>Đặt \(t=\sqrt{x}\). Khi đó \(t>0,\ t\ne1\), và</p>
+      \[ x=t^2,\qquad x^2=(t^2)^2=t^4. \]
+      <p>Chú ý: \(x^2\) trở thành <strong>\(t^4\), không phải \(t^2\)</strong>. Thay vào đề:</p>
+      \[
+        \begin{aligned}
+          P&=\dfrac{t^4-t}{t^2+t+1}\\
+           &\quad-\dfrac{2t^2+t}{t}+\dfrac{2(t^2-1)}{t-1}.
+        \end{aligned}
+      \]
+      <div class="idea">
+        <p><strong>Nhìn mẫu để tìm cách phân tích tử.</strong> Mẫu \(t^2+t+1\) gợi nhớ \(t^3-1\); mẫu \(t-1\) gợi nhớ \(t^2-1\). Vì vậy, hãy rút gọn <em>từng phân thức</em> trước, không cần quy đồng cả ba.</p>
+        \[ t^3-1=(t-1)(t^2+t+1), \]
+        \[ t^2-1=(t-1)(t+1). \]
+      </div>
+
+      <h2>2. Rút gọn ba phân thức</h2>
+      <h3>Phân thức thứ nhất: tách t, rồi dùng hiệu hai lập phương</h3>
+      \[
+        \begin{aligned}
+          t^4-t&=t(t^3-1)\\
+               &=t(t-1)(t^2+t+1).
+        \end{aligned}
+      \]
+      <p>Tử có đúng nhân tử giống mẫu. Vì \(t^2+t+1>0\), ta chia cả tử và mẫu cho nhân tử ấy:</p>
+      \[
+        \begin{aligned}
+          \dfrac{t(t-1)(t^2+t+1)}{t^2+t+1}&=t(t-1)\\
+                                               &=t^2-t.
+        \end{aligned}
+      \]
+      <h3>Phân thức thứ hai: đặt t làm nhân tử chung</h3>
+      \[
+        \begin{aligned}
+          \dfrac{2t^2+t}{t}&=\dfrac{t(2t+1)}{t}\\
+                          &=2t+1\quad(t>0).
+        \end{aligned}
+      \]
+      <p>Trong \(P\), phía trước phân thức này là <strong>dấu trừ</strong>, nên phải viết \(-(2t+1)=-2t-1\).</p>
+      <h3>Phân thức thứ ba: dùng hiệu hai bình phương</h3>
+      \[
+        \begin{aligned}
+          \dfrac{2(t^2-1)}{t-1}&=\dfrac{2(t-1)(t+1)}{t-1}\\
+                              &=2(t+1).
+        \end{aligned}
+      \]
+      <p>Được phép chia cho \(t-1\) vì \(t\ne1\).</p>
+      <div class="warn">
+        <p><strong>Chỉ khử nhân tử chung, không khử các số hạng trong tổng.</strong> Phải viết tử thành tích trước khi rút gọn. Dù mẫu đã được khử, điều kiện ban đầu \(x>0,\ x\ne1\) vẫn phải giữ.</p>
+      </div>
+
+      <h2>3. Ghép lại — hoàn thành câu a</h2>
+      \[
+        \begin{aligned}
+          P&=(t^2-t)-(2t+1)+2(t+1)\\
+           &=t^2-t-2t-1+2t+2\\
+           &=t^2-t+1.
+        \end{aligned}
+      \]
+      <p>Hai số hạng \(-2t\) và \(+2t\) triệt tiêu; \(-1+2=1\). Thay \(t=\sqrt{x}\), \(t^2=x\):</p>
+      <div class="memory">
+        <p><strong>Kết quả câu a:</strong> \(\boxed{P=x-\sqrt{x}+1}\), với \(x>0,\ x\ne1\).</p>
+      </div>
+
+      <h2>4. Dùng kết quả rút gọn để giải câu b</h2>
+      <p>Giữ ẩn \(t\) để không phải giải trực tiếp một phương trình chứa căn:</p>
+      \[
+        \begin{aligned}
+          P=7&\iff t^2-t+1=7\\
+             &\iff t^2-t-6=0\\
+             &\iff (t-3)(t+2)=0.
+        \end{aligned}
+      \]
+      <p>Vì sao tách được như vậy? Hai số \(-3\) và \(2\) có tổng \(-1\), tích \(-6\).</p>
+      <ul>
+        <li>\(t=3\): nhận vì \(t>0,\ t\ne1\). Suy ra \(x=t^2=9\).</li>
+        <li>\(t=-2\): loại vì \(t=\sqrt{x}>0\). <strong>Không bình phương nghiệm bị loại để nhận \(x=4\).</strong></li>
+      </ul>
+      <p>Đối chiếu: \(9>0\), \(9\ne1\). Thử vào <strong>biểu thức ban đầu</strong> để kiểm tra cả phép rút gọn:</p>
+      \[
+        \begin{aligned}
+          P(9)&=\dfrac{81-3}{9+3+1}\\
+              &\quad-\dfrac{18+3}{3}+\dfrac{2(9-1)}{3-1}\\
+              &=6-7+8=7.
+        \end{aligned}
+      \]
+      <div class="memory">
+        <p><strong>Kết quả câu b:</strong> giá trị duy nhất là \(\boxed{x=9}\).</p>
+        <p><strong>Cách làm để nhớ:</strong> Điều kiện → đặt \(t=\sqrt{x}\) → phân tích tử thành tích → rút gọn từng phân thức → giải theo \(t\) → loại nghiệm sai điều kiện → trả về \(x=t^2\).</p>
+      </div>
+      <p><strong>Đến lượt em:</strong> che lời giải và làm ba câu bên dưới. Đừng chỉ nhớ \(x=9\); hãy giải thích được mỗi phép rút gọn.</p>
+    `,
+    exercises: [
+      {
+        type: "mc",
+        prompt: String.raw`Đặt \(t=\sqrt{x}\). Phân tích nào đúng với tử \(x^2-\sqrt{x}\)?`,
+        choices: [
+          String.raw`\(t(t-1)\)`,
+          String.raw`\(t(t-1)(t^2+t+1)\)`,
+          String.raw`\(t(t+1)(t^2-t+1)\)`,
+        ],
+        correct: 1,
+        hint: String.raw`\(x=t^2\) nên \(x^2=t^4\). Tách \(t\), rồi dùng công thức \(t^3-1\).`,
+        explain: String.raw`\(t^4-t=t(t^3-1)=t(t-1)(t^2+t+1)\). Nhân tử cuối chính là mẫu thứ nhất.`,
+      },
+      {
+        type: "mc",
+        prompt: String.raw`Bỏ ngoặc trong \(-(2t+1)\), em được gì?`,
+        choices: [String.raw`\(-2t+1\)`, String.raw`\(2t-1\)`, String.raw`\(-2t-1\)`],
+        correct: 2,
+        hint: "Dấu trừ trước ngoặc đổi dấu mọi số hạng trong ngoặc.",
+        explain: String.raw`\(-(2t+1)=-2t-1\). Sau đó \(-2t+2t=0\) và \(-1+2=1\).`,
+      },
+      {
+        type: "mc",
+        prompt: String.raw`Từ \((t-3)(t+2)=0\), kết luận nào đúng cho câu b?`,
+        choices: [
+          String.raw`\(x=9\) hoặc \(x=4\)`,
+          String.raw`Chỉ \(x=3\)`,
+          String.raw`Chỉ \(x=9\)`,
+        ],
+        correct: 2,
+        hint: String.raw`Kiểm tra \(t>0,\ t\ne1\) trước, rồi mới tính \(x=t^2\).`,
+        explain: String.raw`Loại \(t=-2\) vì căn bậc hai không âm. Nhận \(t=3\), suy ra \(x=9\), thỏa điều kiện. Nếu thử \(x=4\) thì \(P=4-2+1=3\ne7\).`,
+      },
+    ],
+  },
+  {
     id: "tv10-4",
     num: 4,
     chapter: 3,
@@ -703,6 +850,7 @@ COURSES.push({
   blurb: "Ôn bằng đề chính thức của Sở và đề thi thử của các trường Hà Nội. Không gồm Văn hay Ngoại ngữ.",
   chapters: THI10_CHAPTERS,
   lessons: THI10_LESSONS,
+  featuredLessonId: "tv10-bai-13",
   papers: [
     {
       title: "Hà Nội 2026",

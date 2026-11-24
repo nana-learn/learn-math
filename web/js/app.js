@@ -305,6 +305,7 @@ function courseView(course) {
   const n = course.lessons.length;
   const done = Object.keys(progressFor(course.id)).length;
   const first = course.lessons[0];
+  const featured = course.lessons.find((l) => l.id === course.featuredLessonId);
   return `
     <p class="back"><a href="#/">← Các lớp</a></p>
     <section class="hero">
@@ -321,6 +322,10 @@ function courseView(course) {
           : `<p class="note">${escapeHtml(course.blurb)}</p>`
       }
     </section>
+    ${featured ? `<section aria-label="Học từng bước">
+      <h2>Học từng bước</h2>
+      ${lessonLink(course, featured, progressFor(course.id))}
+    </section>` : ""}
     ${parentGuideBlock(course)}
     ${examLessonsBlock(course)}
     ${papersBlock(course)}
